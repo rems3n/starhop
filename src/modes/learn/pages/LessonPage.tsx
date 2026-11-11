@@ -3,6 +3,7 @@ import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { lessonById, pathUnits, type Lesson } from '@/content';
 import { useProgress } from '@/store/progress';
 import { Button, Loading, McqQuestion, Prose, RichText } from '@/ui';
+import { LessonFigure, Misconception, QuickCheck, ThinkAbout } from '../figures/Figure';
 import type { SkyController } from '@/types';
 import { Crumbs, Empty, Page, Split } from '../components/common';
 import { DemoPlayer } from '../components/DemoPlayer';
@@ -96,6 +97,10 @@ function SectionScreen({ lesson, index, env, nav, demoStep }: { lesson: Lesson; 
     <>
       {section.heading && <h2 className="ln-h">{section.heading}</h2>}
       <Prose paragraphs={section.body} onTarget={onTarget} />
+      {section.figures?.map((f, i) => <LessonFigure key={i} figure={f} onTarget={onTarget} />)}
+      {section.misconception && <Misconception {...section.misconception} onTarget={onTarget} />}
+      {section.thinkAbout && <ThinkAbout {...section.thinkAbout} onTarget={onTarget} />}
+      {section.check && <QuickCheck question={section.check} />}
       {section.tryIt && (
         <aside className="ln-tryit">
           <strong>Try it outside</strong>

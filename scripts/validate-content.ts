@@ -120,6 +120,8 @@ for (const f of conFiles) {
 // Lessons
 const lessonDir = join(contentDir, 'lessons');
 const lessonIds = new Set<string>();
+let figureCount = 0;
+let boxCount = 0;
 for (const f of existsSync(lessonDir) ? readdirSync(lessonDir).filter((x) => x.endsWith('.json')) : []) {
   const file = `lessons/${f}`;
   lessonIds.add(basename(f, '.json'));
@@ -131,6 +133,16 @@ for (const f of existsSync(lessonDir) ? readdirSync(lessonDir).filter((x) => x.e
   if (l.id !== basename(f, '.json')) err(file, `id "${l.id}" does not match file name`);
   uniqueIds(file, l.questions.map((q) => q.id), 'question');
   if (!l.sections.some((s) => s.demo)) err(file, 'lesson has no interactive demo');
+  l.sections.forEach((sec, si) => {
+    for (const f of sec.figures ?? []) {
+      if (f.type === 'diagram' && !existsSync(join(root, 'src/modes/learn/figures/diagrams', `${f.id}.tsx`))) err(file, `section ${si}: diagram "${f.id}" does not exist`);
+      const imgs = f.type === 'image' ? [f.image] : f.type === 'gallery' ? f.images : [];
+      for (const im of imgs) if (!existsSync(join(root, 'public', im.file))) err(file, `section ${si}: image file public/${im.file} is missing`);
+    }
+    if (sec.check && new Set(sec.check.choices).size !== 4) err(file, `section ${si}: check choices must be distinct`);
+  });
+  figureCount += l.sections.reduce((n, sec) => n + (sec.figures?.length ?? 0), 0);
+  boxCount += l.sections.reduce((n, sec) => n + (sec.thinkAbout ? 1 : 0) + (sec.misconception ? 1 : 0) + (sec.check ? 1 : 0), 0);
   for (const s of l.sections) for (const st of s.demo?.steps ?? []) for (const h of st.highlights ?? []) if (h.type === 'constellation' && catalog && !catalog.conById.has(h.id)) err(file, `highlight constellation "${h.id}" unknown`);
 }
 
@@ -183,6 +195,7 @@ if (filters.length === 0) {
   const missingAsterisms = [...new Set(path.flatMap((u) => u.asterisms))].filter((a) => !asterismIds.has(a));
   coverage.push(`constellation pages: ${conDone.size}/${allCons.length}${missingCons.length ? ` — missing: ${missingCons.join(', ')}` : ''}`);
   coverage.push(`stories: ${storyCount} (${wordCount.toLocaleString()} words of retelling)`);
+  coverage.push(`lesson figures: ${figureCount}, think-about-it / misconception / quick-check boxes: ${boxCount}`);
   coverage.push(`lessons: ${lessonIds.size}${missingLessons.length ? ` — path references missing lessons: ${missingLessons.join(', ')}` : ''}`);
   coverage.push(`asterisms: ${asterisms.length}${missingAsterisms.length ? ` — path references missing asterisms: ${missingAsterisms.join(', ')}` : ''}`);
   coverage.push(`monthly guides: ${monthly.length}/12, meteor showers: ${showers.length}, object blurbs: ${blurbCount}`);

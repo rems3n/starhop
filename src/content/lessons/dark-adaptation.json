@@ -15,30 +15,68 @@
       ],
       "demo": {
         "title": "The first half hour outside",
-        "controls": ["bortle"],
+        "controls": [
+          "bortle"
+        ],
         "steps": [
           {
             "caption": "A simulation of stepping out of a bright room into a suburban backyard on a winter evening. In the first minute you see only the brightest stars: Orion's Belt, Betelgeuse, Rigel, Sirius.",
             "time": "month:1 21:00",
-            "view": { "target": "con:Ori", "fov": 90 },
-            "layers": { "constellationLines": false, "constellationNames": false, "milkyWay": false },
+            "view": {
+              "target": "con:Ori",
+              "fov": 90
+            },
+            "layers": {
+              "constellationLines": false,
+              "constellationNames": false,
+              "milkyWay": false
+            },
             "bortle": 9
           },
           {
             "caption": "Ten minutes in. Your cones have recovered and your rods are starting to take over. Orion has filled in: you can see his head and the sword hanging under the Belt.",
             "time": "month:1 21:00",
-            "view": { "target": "con:Ori", "fov": 90 },
-            "layers": { "constellationLines": false, "constellationNames": false, "milkyWay": false },
+            "view": {
+              "target": "con:Ori",
+              "fov": 90
+            },
+            "layers": {
+              "constellationLines": false,
+              "constellationNames": false,
+              "milkyWay": false
+            },
             "bortle": 7
           },
           {
             "caption": "Thirty minutes in, fully adapted. Same sky, same place: the only thing that changed is your eyes. Use the slider to compare. In the middle of a city the gain is smaller, because the sky itself glows, but it is still real.",
             "time": "month:1 21:00",
-            "view": { "target": "con:Ori", "fov": 90 },
-            "layers": { "constellationLines": false, "constellationNames": false, "milkyWay": false },
+            "view": {
+              "target": "con:Ori",
+              "fov": 90
+            },
+            "layers": {
+              "constellationLines": false,
+              "constellationNames": false,
+              "milkyWay": false
+            },
             "bortle": 5
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "eye-retina",
+          "params": {
+            "light": "night",
+            "offset": 0
+          },
+          "caption": "Light from a star is focused onto the retina at the back of your eye. Switch between daylight and starlight, then slide the spot away from the fovea: cones (colour, sharp detail) rule the centre, while the far more sensitive rods take over a few degrees out."
+        }
+      ],
+      "misconception": {
+        "myth": "Your eyes adjust to the dark in a minute or two.",
+        "fact": "Your pupils open within seconds, but that only gains you a little. The big change is chemical: the rods rebuild their light-sensitive pigment over 20 to 30 minutes, and keep improving slowly after that."
       }
     },
     {
@@ -47,7 +85,21 @@
         "Night vision takes half an hour to build and a few seconds to lose. One look at a phone at normal brightness, a car's headlights or a bare porch bulb bleaches the pigment again and sends you most of the way back to the start.",
         "Rods barely respond to deep red light. That is why astronomers use dim red flashlights: red lets your cones read a chart while your rods stay adapted. Dim matters as much as red, so keep any light as faint as you can. Starhop has a red night mode for exactly this; turn it on, and turn your screen brightness all the way down, before you go out."
       ],
-      "tryIt": "Before you go out tonight, switch Starhop to red night mode and set your phone to minimum brightness. Outside, note the faintest star you can see near the Big Dipper or Orion. Look again after 15 minutes without touching your phone."
+      "tryIt": "Before you go out tonight, switch Starhop to red night mode and set your phone to minimum brightness. Outside, note the faintest star you can see near the Big Dipper or Orion. Look again after 15 minutes without touching your phone.",
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "dark-adaptation-curve",
+          "params": {
+            "start": 0
+          },
+          "caption": "Sensitivity climbs in two stages: the cones finish in a few minutes, then the rods take over and keep improving for half an hour. Press Wait in the dark, then try Glance at a bright phone to see how quickly it is all lost."
+        }
+      ],
+      "thinkAbout": {
+        "question": "Why does a dim red flashlight protect your night vision, when a dim white one of the same brightness does not?",
+        "answer": "Rods are most sensitive to blue-green light and hardly respond to deep red, so red light barely bleaches their pigment. White light contains plenty of blue-green, which undoes the rods' half hour of rebuilding. Your cones can still see the red light, so you can read a chart."
+      }
     },
     {
       "heading": "Look slightly to one side",
@@ -62,11 +114,46 @@
           {
             "caption": "The Pleiades are the classic test. Stare straight at the cluster and you may see a small blur. Look a finger-width to one side while keeping your attention on it, and individual stars appear.",
             "time": "month:12 21:00",
-            "view": { "target": "dso:M45", "fov": 25 },
-            "layers": { "constellationLines": false, "constellationNames": false },
-            "highlights": [{ "type": "object", "ref": "dso:M45", "label": "Pleiades" }]
+            "view": {
+              "target": "dso:M45",
+              "fov": 25
+            },
+            "layers": {
+              "constellationLines": false,
+              "constellationNames": false
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "dso:M45",
+                "label": "Pleiades"
+              }
+            ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "eye-retina",
+          "params": {
+            "light": "night",
+            "offset": 15
+          },
+          "caption": "Fifteen degrees from the centre of your view, most of the cells are rods. Drag the spot back to the fovea and notice there are no rods there at all: that is why a faint star can disappear when you look straight at it."
+        }
+      ],
+      "check": {
+        "id": "check-averted",
+        "prompt": "A faint smudge vanishes whenever you look straight at it. What should you do?",
+        "choices": [
+          "Look a little to one side of it",
+          "Stare harder at the same spot",
+          "Turn on a white flashlight to find it",
+          "Close one eye and look straight at it"
+        ],
+        "answerIndex": 0,
+        "explanation": "Looking a few degrees to one side puts its light on the rods, which are absent from the very centre of your view."
       }
     },
     {
@@ -88,7 +175,12 @@
     {
       "id": "q1",
       "prompt": "You step outside from a bright kitchen. Roughly how long until your eyes are close to fully dark adapted?",
-      "choices": ["About 30 seconds, once your pupils open", "About 2 minutes", "20 to 30 minutes", "Several hours"],
+      "choices": [
+        "About 30 seconds, once your pupils open",
+        "About 2 minutes",
+        "20 to 30 minutes",
+        "Several hours"
+      ],
       "answerIndex": 2,
       "explanation": "Pupils open in seconds, but the rods need 20 to 30 minutes to rebuild the pigment that bright light bleached."
     },

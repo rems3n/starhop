@@ -179,6 +179,47 @@ export const demoSchema = z.object({
 });
 export type Demo = z.infer<typeof demoSchema>;
 
+// ───────────── Lesson figures (docs/FIGURES.md) ─────────────
+/** One open-licensed image shipped under public/img/lessons/. Every field is shown in the caption/credit line. */
+export const figureImageSchema = z.object({
+  /** Path relative to the site root: a new file in "img/lessons/…" or an existing gallery image such as "img/M42-1.jpg" */
+  file: z.string().regex(/^img\/(lessons\/)?[A-Za-z0-9_-]+\.(jpg|png|webp|svg)$/),
+  alt: z.string().min(10),
+  /** Short label under the picture in a gallery, e.g. "Rod cells" */
+  label: z.string().optional(),
+  kind: z.enum(['photograph', 'false-color', 'micrograph', 'illustration', 'artist-impression', 'simulation', 'chart']),
+  /** What made it / how the colour was made, e.g. "Scanning electron microscope, colourised" */
+  kindNote: z.string().optional(),
+  credit: z.string().min(2),
+  license: z.string().min(2),
+  licenseUrl: z.string().url().optional(),
+  sourceUrl: z.string().url(),
+});
+export const figureSchema = z.discriminatedUnion('type', [
+  z.object({
+    type: z.literal('diagram'),
+    /** File name (without .tsx) of a component in src/modes/learn/figures/diagrams/ */
+    id: z.string().regex(/^[a-z0-9-]+$/),
+    /** Free-form settings the diagram documents in its own `meta.params` */
+    params: z.record(z.string(), z.unknown()).optional(),
+    /** Teaching caption: states the point of the figure, not just its subject ("Figure: rods…" is weak; "Rods outnumber cones 20 to 1 and…" is strong) */
+    caption: z.string().min(30),
+  }),
+  z.object({
+    type: z.literal('image'),
+    image: figureImageSchema,
+    caption: z.string().min(30),
+  }),
+  z.object({
+    type: z.literal('gallery'),
+    /** 2–4 images side by side for comparison */
+    images: z.array(figureImageSchema).min(2).max(4),
+    caption: z.string().min(30),
+  }),
+]);
+export type Figure = z.infer<typeof figureSchema>;
+export type FigureImage = z.infer<typeof figureImageSchema>;
+
 export const lessonSchema = z.object({
   /** kebab-case, e.g. "dark-adaptation" */
   id: z.string().regex(/^[a-z0-9-]+$/),
@@ -197,6 +238,14 @@ export const lessonSchema = z.object({
         demo: demoSchema.optional(),
         /** "Try it outside tonight" style practical tip */
         tryIt: z.string().optional(),
+        /** Diagrams and images shown with this section's text, in order (see docs/FIGURES.md) */
+        figures: z.array(figureSchema).max(4).optional(),
+        /** "Think about it": a question to pause on, with an answer the learner reveals */
+        thinkAbout: z.object({ question: z.string().min(15), answer: z.string().min(20) }).optional(),
+        /** "Common misconception": what people often believe, and what is really going on */
+        misconception: z.object({ myth: z.string().min(10), fact: z.string().min(20) }).optional(),
+        /** A quick check placed right after this section's text (not graded; the end-of-lesson questions are) */
+        check: mcqSchema.optional(),
       }),
     )
     .min(1),
