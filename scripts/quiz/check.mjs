@@ -1,5 +1,5 @@
 // Headless walk through every quiz screen. Start the dev server first:
-//   npx vite --port 5203 --strictPort      then      node scripts/quiz/check.mjs
+//   npx vite --port 5234 --strictPort      then      QUIZ_URL=http://localhost:5234/ node scripts/quiz/check.mjs
 // Writes screenshots to docs/shots/quiz/ and exits non-zero on any failed expectation or console error.
 import puppeteer from 'puppeteer-core';
 import { mkdirSync } from 'node:fs';
@@ -99,6 +99,24 @@ async function answerFind(page, correct, midShot) {
   if (fb == null) console.log('   no result:', await text(page, '[data-testid="prompt"]'), JSON.stringify(await page.evaluate(() => [window.__quizSky.getView(), window.__quizSky.getSize()])), JSON.stringify(loop.slice(0, 3)));
   return fb;
 }
+/** Star-hop: click the target star (or, for a wrong answer, a spot well away from it). */
+async function clickHop(page, cur, wrong) {
+  const at = await page.evaluate(async (ref, wrong) => {
+    const [scheme, id] = ref.split(':');
+    const list = await fetch(scheme === 'star' ? 'data/stars.json' : 'data/dsos.json').then((r) => r.json());
+    const t = list.find((x) => String(x.id) === id);
+    const c = window.__quizSky;
+    const canvas = [...document.querySelectorAll('.qz-sky canvas')].pop();
+    const rect = canvas.getBoundingClientRect();
+    const p = c.project(t.ra, t.dec);
+    const x = wrong ? (p.x > rect.width / 2 ? p.x - 140 : p.x + 140) : p.x;
+    const y = wrong ? p.y + 30 : p.y;
+    return { x: rect.left + x, y: rect.top + y, onSky: document.elementFromPoint(rect.left + x, rect.top + y) === canvas };
+  }, cur.target, wrong);
+  expect(at.onSky, `hop ${cur.hopId}: ${wrong ? 'decoy spot' : 'target'} is on open sky`);
+  await page.mouse.click(at.x, at.y);
+  await sleep(250);
+}
 /** Answer the current question (correctly unless `wrong`). Returns its kind. */
 async function answerAny(page, wrong = false) {
   const cur = await q(page);
@@ -114,6 +132,9 @@ async function answerAny(page, wrong = false) {
     await waitSky(page);
     if (cur.typed) { await page.type('.qz-type input', wrong ? 'zzz' : cur.answerText); await page.keyboard.press('Enter'); }
     else await page.keyboard.press(String(((cur.choices.indexOf(cur.conId) + (wrong ? 1 : 0)) % cur.choices.length) + 1));
+  } else if (cur.kind === 'hop') {
+    await waitSky(page); await sleep(300);
+    await clickHop(page, cur, wrong);
   } else if (cur.kind === 'card') {
     await page.keyboard.press('Space'); await sleep(100); await page.keyboard.press(wrong ? '1' : '3');
   } else {
@@ -144,9 +165,9 @@ const store = (page, key) => page.evaluate((k) => JSON.parse(localStorage.getIte
 
 // ───────────── desktop
 const page = await newPage(1280, 800);
-await go(page, '/quiz');
+await go(page, '/practice');
 await page.evaluate(() => { localStorage.clear(); });
-await go(page, '/quiz');
+await go(page, '/practice');
 expect((await text(page, '[data-testid="preset-name"]')) === 'Easy', 'hub shows the matching preset (Easy)');
 expect((await text(page, '[data-testid="due-count"]')) === '0', 'hub: nothing due on a fresh profile');
 await shot(page, '01-hub');
@@ -156,12 +177,12 @@ await page.click('.qz-diff-switches .switch');
 expect((await text(page, '[data-testid="preset-name"]')) === 'Custom', 'changing one setting → Custom');
 await page.click('[data-preset="easy"]');
 
-await go(page, '/quiz/review');
+await go(page, '/practice/review');
 expect(!!(await page.$('[data-testid="nothing-due"]')), 'review: "nothing due" on a fresh profile');
 await shot(page, '02-review-empty');
 
 // Find it
-await go(page, '/quiz/find');
+await go(page, '/practice/find');
 await waitSky(page); await sleep(500);
 await shot(page, '03-find-prompt');
 expect((await page.$eval('.qz-stage', (el) => el.dataset.tool)) === 'draw', 'find: starts with the Draw tool');
@@ -195,7 +216,7 @@ let prog = await store(page, 'starhop.progress.v1');
 expect(Object.keys(prog.state.items).filter((k) => k.startsWith('find:')).length >= 5, 'find answers recorded as find:<Abbr>');
 
 // Name it: pick, then typed
-await go(page, '/quiz/name');
+await go(page, '/practice/name');
 await shot(page, '09-name-setup');
 await click(page, '[data-testid="start"]');
 await waitSky(page); await sleep(500);
@@ -206,7 +227,7 @@ await shot(page, '11-name-correct');
 await page.keyboard.press('Enter'); await sleep(300);
 await answerAny(page, true);
 expect((await feedback(page)) === 'false', 'name: wrong choice → wrong');
-await go(page, '/quiz/name');
+await go(page, '/practice/name');
 await page.evaluate(() => [...document.querySelectorAll('.segmented button')].find((b) => b.textContent === 'Type it').click());
 await click(page, '[data-testid="start"]');
 await waitSky(page); await sleep(400);
@@ -218,7 +239,7 @@ await shot(page, '12-name-typed');
 await page.evaluate(() => { const s = JSON.parse(localStorage.getItem('starhop.quiz.v1')); s.state.nameTyped = false; localStorage.setItem('starhop.quiz.v1', JSON.stringify(s)); });
 
 // Stories
-await go(page, '/quiz/story');
+await go(page, '/practice/story');
 await shot(page, '13-story-setup');
 await page.evaluate(() => [...document.querySelectorAll('.qz-setup .switch')][2].click());
 await click(page, '[data-testid="start"]');
@@ -229,7 +250,7 @@ prog = await store(page, 'starhop.progress.v1');
 expect(Object.keys(prog.state.items).some((k) => /^story:[A-Z][A-Za-z]{2}-/.test(k)), 'story answers recorded per myth (story:<storyId>:<qId>)');
 
 // Sky knowledge
-await go(page, '/quiz/knowledge');
+await go(page, '/practice/knowledge');
 await shot(page, '18-knowledge-setup');
 await click(page, '[data-testid="start"]');
 seen = await finish(page, { shots: { mcq: '19-knowledge-question', skyobj: '20-knowledge-planet', 'skyobj-answered': '21-knowledge-planet-answered' } });
@@ -238,7 +259,7 @@ prog = await store(page, 'starhop.progress.v1');
 expect(Object.values(prog.state.items).some((p) => p.skill === 'visibility' || p.skill === 'knowledge'), 'knowledge answers recorded (vis:/know:)');
 
 // Deep links from Learn: ?con=Abbr
-await go(page, '/quiz/visibility?con=Ori');
+await go(page, '/practice/visibility?con=Ori');
 await sleep(300);
 let cq = await q(page);
 expect(cq?.itemId === 'vis:Ori', `visibility?con=Ori asks about Orion (${cq?.itemId})`);
@@ -246,37 +267,37 @@ await shot(page, '37-visibility-con');
 seen = await finish(page);
 prog = await store(page, 'starhop.progress.v1');
 expect(prog.state.items['vis:Ori']?.skill === 'visibility', 'visibility answers recorded as vis:Ori with skill visibility');
-await go(page, '/quiz/visibility');
+await go(page, '/practice/visibility');
 await click(page, '[data-testid="start"]');
 await sleep(300);
 cq = await q(page);
 expect(cq?.skill === 'visibility', `visibility (no con) asks only visibility questions (${cq?.itemId})`);
-await go(page, '/quiz/find?con=Lyr');
+await go(page, '/practice/find?con=Lyr');
 await waitSky(page);
 cq = await q(page);
 expect(cq?.itemId === 'find:Lyr' && (await text(page, '[data-testid="progress"]')) === '1 / 1', 'find?con=Lyr asks only Lyra');
-await go(page, '/quiz/name?con=Cyg');
+await go(page, '/practice/name?con=Cyg');
 await waitSky(page);
 cq = await q(page);
 expect(cq?.itemId === 'name:Cyg', 'name?con=Cyg asks only Cygnus');
-await go(page, '/quiz/story?con=Ori');
+await go(page, '/practice/story?con=Ori');
 expect(/Orion/.test((await text(page, 'h2')) ?? '') && /from 1 constellations?/.test((await text(page, '[data-testid="story-count"]')) ?? ''), 'story?con=Ori is limited to Orion');
 
 // Objects
-await go(page, '/quiz/object');
+await go(page, '/practice/object');
 await shot(page, '23-object-setup');
 await page.evaluate(() => { const s = JSON.parse(localStorage.getItem('starhop.quiz.v1')); s.state.length = 20; localStorage.setItem('starhop.quiz.v1', JSON.stringify(s)); });
-await go(page, '/quiz/object');
+await go(page, '/practice/object');
 await click(page, '[data-testid="start"]');
 seen = await finish(page, { wrongEvery: 5, shots: { skyobj: '24-object-ringed', 'skyobj-answered': '25-object-answered', image: '26-object-image', 'mcq-answered': '27-object-image-answered' } });
 expect(seen.has('skyobj') && seen.has('mcq'), `object round mixed ringed objects and picture/type questions (${[...seen].join(', ')})`);
 
 // Review: make everything due
 await page.evaluate(() => { const s = JSON.parse(localStorage.getItem('starhop.progress.v1')); for (const p of Object.values(s.state.items)) p.due = Date.now() - 1000; localStorage.setItem('starhop.progress.v1', JSON.stringify(s)); });
-await go(page, '/quiz');
+await go(page, '/practice');
 expect(Number(await text(page, '[data-testid="due-count"]')) > 10, 'hub counts due items');
 await shot(page, '28-hub-with-progress');
-await go(page, '/quiz/review');
+await go(page, '/practice/review');
 await sleep(500);
 const first = await q(page);
 expect(!!first, 'review starts with a due item');
@@ -285,36 +306,79 @@ seen = await finish(page);
 expect(seen.size >= 2, `review mixes formats (${[...seen].join(', ')})`);
 await shot(page, '30-review-summary');
 
-// Unit quiz to completion
-await go(page, '/quiz/unit/anchor-north');
-await shot(page, '31-unit-intro');
+// Star-hops: setup, follow the hop (right and wrong), multiple choice, ?hop= deep link
+await go(page, '/practice/starhop');
+expect(!!(await page.$('[data-testid="hop-setup"]')), 'star-hop setup shows');
+await shot(page, '50-starhop-setup');
+await page.evaluate(() => [...document.querySelectorAll('.segmented button')].find((b) => /Any season/.test(b.textContent)).click());
 await click(page, '[data-testid="start"]');
-seen = await finish(page);
-expect(seen.has('find') && seen.has('name') && seen.has('mcq'), 'unit quiz mixes find, name and reading questions');
-await shot(page, '32-unit-result');
+seen = await finish(page, { wrongEvery: 3, shots: { hop: '51-starhop-question', 'hop-answered': '52-starhop-reveal', mcq: '53-starhop-mcq', 'mcq-answered': '54-starhop-mcq-answered' } });
+expect(seen.has('hop') && seen.has('mcq'), `star-hop round mixes "follow the hop" and multiple choice (${[...seen].join(', ')})`);
 prog = await store(page, 'starhop.progress.v1');
-expect(prog.state.unitScores['anchor-north'] >= 0.8, `unitScores['anchor-north'] saved (${prog.state.unitScores['anchor-north']})`);
-expect(/Passed/.test((await text(page, '[data-testid="unit-verdict"]')) ?? ''), 'unit quiz shows pass against the pass mark');
+expect(Object.keys(prog.state.items).some((k) => k.startsWith('hop:')), 'star-hop answers recorded as hop:<id>');
+await go(page, '/practice/starhop?hop=belt-to-sirius');
+await waitSky(page); await sleep(400);
+cq = await q(page);
+expect(cq?.kind === 'hop' && cq.hopId === 'belt-to-sirius' && (await text(page, '[data-testid="progress"]')) === '1 / 2', 'starhop?hop= asks that hop (sky + multiple choice)');
+await clickHop(page, cq, true);
+expect((await feedback(page)) === 'false', 'hop: clicking away from the target → wrong');
+await shot(page, '55-starhop-wrong');
+
+// One myth: ?story= starts at once on exactly that myth
+const mythId = await page.evaluate(() => { const s = JSON.parse(localStorage.getItem('starhop.progress.v1')); return Object.keys(s.state.items).find((k) => k.startsWith('story:'))?.split(':')[1]; });
+await go(page, `/practice/story?story=${mythId}`);
+await sleep(300);
+cq = await q(page);
+expect(!!cq && (cq.itemId.startsWith(`story:${mythId}:`) || cq.itemId === `card:${mythId}`), `story?story=${mythId} starts at once on that myth`);
+await shot(page, '56-myth-round');
+seen = await finish(page);
+expect(seen.has('card'), 'per-myth round ends with its flashcard');
+await shot(page, '57-myth-summary');
+
+// Module quizzes: star-hop module to completion, a lessons module, and a not-yet-resolved one
+await go(page, '/practice/module/finding-your-way');
+await shot(page, '31-module-intro');
+await click(page, '[data-testid="start"]');
+seen = await finish(page, { shots: { hop: '58-module-hop' } });
+expect(seen.has('mcq'), `module quiz asks questions (${[...seen].join(', ')})`);
+await shot(page, '32-module-result');
+prog = await store(page, 'starhop.progress.v1');
+expect(prog.state.unitScores['finding-your-way'] >= 0.8, `unitScores['finding-your-way'] saved (${prog.state.unitScores['finding-your-way']})`);
+expect(/Passed/.test((await text(page, '[data-testid="unit-verdict"]')) ?? ''), 'module quiz shows pass against the pass mark');
+await go(page, '/practice/module/how-to-look');
+expect(!!(await page.$('[data-testid="module-intro"]')), 'lessons module quiz has an intro and a start button');
+await go(page, '/practice/module/first-constellations');
+const anchorsReady = !!(await page.$('[data-testid="module-intro"]'));
+if (anchorsReady) {
+  await click(page, '[data-testid="start"]');
+  seen = await finish(page);
+  expect(seen.has('find') && seen.has('name'), 'constellation module quiz mixes find and name');
+  await shot(page, '59-module-constellations-result');
+} else {
+  expect(!!(await page.$('[data-testid="empty"]')), 'unresolved constellation module says practice is coming');
+  await shot(page, '59-module-soon');
+}
 
 // Dashboard
-await go(page, '/progress');
+await go(page, '/practice/progress');
 expect(Number(await text(page, '[data-testid="stat-started"]').then((t) => parseInt(t))) > 5, 'dashboard counts started constellations');
 expect((await page.$$('.qz-table tbody tr[data-con]')).length === 88, 'dashboard lists all 88 constellations');
+expect(!!(await page.$('[data-testid="hops-block"]')) && !!(await page.$('[data-testid="myths-block"]')) && !!(await page.$('[data-testid="module-scores"]')), 'dashboard has star-hop, myth and module-score blocks');
 await page.click('tr[data-con="Ori"] .qz-rowbtn');
 await shot(page, '33-dashboard');
 await page.evaluate(() => document.querySelector('tr[data-con="Ori"]').scrollIntoView({ block: 'start' }));
 await shot(page, '34-dashboard-expanded');
 await page.select('[data-testid="sort"]', 'weakest');
 await shot(page, '35-dashboard-weakest');
-await go(page, '/quiz/weakest');
+await go(page, '/practice/weakest');
 expect(!!(await q(page)), '"Practise weakest" builds a session');
 
 // ───────────── phone (park the desktop tab first: two software-rendered skies at once starve the GPU process)
 await page.goto('about:blank');
 const phone = await newPage(390, 844, true);
-await go(phone, '/quiz');
+await go(phone, '/practice');
 await shot(phone, '40-phone-hub');
-await go(phone, '/quiz/find');
+await go(phone, '/practice/find');
 await waitSky(phone); await sleep(600);
 await shot(phone, '41-phone-find');
 const cur = await q(phone);
@@ -322,17 +386,31 @@ const { loop } = await loopFor(phone, cur.conId, false);
 await draw(phone, loop, '42-phone-find-drawing');
 expect((await feedback(phone)) === 'true', 'phone: find loop → correct');
 await shot(phone, '43-phone-find-result');
-await go(phone, '/quiz/name');
+await go(phone, '/practice/name');
 await phone.click('[data-testid="start"]');
 await waitSky(phone); await sleep(500);
 await shot(phone, '44-phone-name');
-await go(phone, '/progress');
+await go(phone, '/practice/progress');
 await shot(phone, '45-phone-dashboard');
+await phone.evaluate(() => document.querySelector('[data-testid="hops-block"]').scrollIntoView({ block: 'start' }));
+await shot(phone, '46-phone-dashboard-hops');
+await go(phone, '/practice/starhop?hop=pointers-to-polaris');
+await waitSky(phone); await sleep(600);
+await shot(phone, '47-phone-starhop');
+const hq = await q(phone);
+await clickHop(phone, hq, false);
+expect((await feedback(phone)) === 'true', 'phone: tapping the hop target → correct');
+await shot(phone, '48-phone-starhop-reveal');
+await go(phone, `/practice/story?story=${mythId}`);
+await sleep(300);
+await shot(phone, '49-phone-myth');
+await go(phone, '/practice/module/finding-your-way');
+await shot(phone, '60-phone-module');
 
 // reset behind a confirmation (back on the desktop tab, which must be in front to run scripts reliably)
 await phone.close();
 await page.bringToFront();
-await go(page, '/progress');
+await go(page, '/practice/progress');
 await page.click('[data-testid="reset"]');
 await shot(page, '36-reset-confirm');
 await page.click('[data-testid="reset-confirm"]');

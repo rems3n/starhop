@@ -2,20 +2,21 @@ import { useEffect, useMemo, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { bestMonths, constellationPoints } from '@/astro';
 import { VisibilityStrip } from '@/components/object';
-import { loadConstellationContent, pathUnits, type ConstellationContent, type Story } from '@/content';
+import { loadConstellationContent, type ConstellationContent, type Story } from '@/content';
+import { routes } from '@/lib/routes';
 import { formatMag } from '@/lib/format';
 import { MONTH_NAMES, formatTime } from '@/lib/time';
 import { constellationMastery, useProgress } from '@/store/progress';
-import { Button, Chip, EquipChip, Loading, Meter, Prose, RichText, Switch } from '@/ui';
-import { ANCHORS, type Highlight, type ResolvedTarget, type SkyController } from '@/types';
+import { Button, Chip, EquipChip, Loading, Meter, Prose, RichText } from '@/ui';
+import { type Highlight, type ResolvedTarget, type SkyController } from '@/types';
 import { Crumbs, Empty, LocationLine, Page, Section, Split } from '../components/common';
 import { SkyStage } from '../components/SkyStage';
-import { objectHref, showInSky, useLearnEnv } from '../hooks';
-import { neighbours, unitOfConstellation } from '../logic/path';
+import { showInSky, useLearnEnv } from '../hooks';
+import { useCourse } from '../logic/course';
 import { placeTarget } from '../logic/place';
 import { heightWords } from '../logic/tonight';
 
-const SKILLS: { key: 'find' | 'name' | 'story' | 'visibility'; label: string; quiz: string; cta: string }[] = [
+const SKILLS: { key: 'find' | 'name' | 'story' | 'visibility'; label: string; quiz: 'find' | 'name' | 'story' | 'visibility'; cta: string }[] = [
   { key: 'find', label: 'Find it', quiz: 'find', cta: 'Practise finding it' },
   { key: 'name', label: 'Name it', quiz: 'name', cta: 'Practise naming it' },
   { key: 'story', label: 'Its stories', quiz: 'story', cta: 'Story quiz' },
@@ -25,13 +26,12 @@ const SKILLS: { key: 'find' | 'name' | 'story' | 'visibility'; label: string; qu
 export default function ConstellationPage() {
   const { id = '' } = useParams();
   const env = useLearnEnv();
+  const course = useCourse(env?.catalog ?? null);
   const markSeen = useProgress((s) => s.markSeen);
   const items = useProgress((s) => s.items);
   const [content, setContent] = useState<ConstellationContent | null | undefined>(undefined);
   const [ctl, setCtl] = useState<SkyController | null>(null);
   const [note, setNote] = useState<string | null>(null);
-  const [labels, setLabels] = useState(true);
-  const [boundary, setBoundary] = useState(false);
   const [starIdx, setStarIdx] = useState<number | null>(null);
   const con = env?.catalog.conById.get(id);
 
@@ -66,25 +66,26 @@ export default function ConstellationPage() {
 
   useEffect(() => {
     if (!ctl || !con) return;
-    const hl: Highlight[] = [{ type: 'constellation', id: con.id, lines: true, boundary, label: true }];
+    // star names and boundaries are the learner's choice in the embed's Layers panel (the scene starts with names on)
+    const hl: Highlight[] = [{ type: 'constellation', id: con.id, lines: true, label: true }];
     const s = starIdx != null ? stars[starIdx] : null;
     if (s) hl.push({ type: 'object', ref: s.ref, label: true });
     ctl.setHighlights(hl);
-    ctl.setLayers({ starNames: labels, constellationBoundaries: false });
-  }, [ctl, con, boundary, labels, starIdx, stars, placed]);
+  }, [ctl, con, starIdx, stars, placed]);
 
   if (!env) return <Loading />;
   if (!con || !placed)
     return (
       <Page>
         <Empty>There is no constellation with the abbreviation “{id}”.</Empty>
-        <Link to="/learn/constellations">All 88 constellations</Link>
+        <Link to={routes.constellations()}>All 88 constellations</Link>
       </Page>
     );
   const tz = env.observer.tz;
   const rank = [...env.catalog.constellations].sort((a, b) => b.areaSqDeg - a.areaSqDeg).findIndex((c) => c.id === con.id) + 1;
-  const unit = unitOfConstellation(pathUnits, con.id);
-  const nb = unit ? neighbours(unit.constellations, unit.constellations.indexOf(con.id)) : { prev: null, next: null };
+  const home = course?.modules.flatMap((m) => m.groups.map((g) => ({ m, g }))).find((x) => x.g.constellations.includes(con.id));
+  const gi = home ? home.g.constellations.indexOf(con.id) : -1;
+  const nb = { prev: home && gi > 0 ? home.g.constellations[gi - 1] : null, next: home && gi < home.g.constellations.length - 1 ? home.g.constellations[gi + 1] : null };
   const mastery = constellationMastery(items, con.id);
   const onTarget = (ref: string) => setNote(showInSky(ctl, env.catalog, ref));
   const v = placed.visibility;
@@ -109,12 +110,6 @@ export default function ConstellationPage() {
       note={note ?? (placed.mode === 'chart' ? `Not in tonight's sky from ${env.observer.name}. Shown as a star chart, north up.` : null)}
     >
       <div className="ln-controls">
-        <div className="ln-control">
-          <Switch checked={labels} onChange={setLabels} label="Star names" />
-        </div>
-        <div className="ln-control">
-          <Switch checked={boundary} onChange={setBoundary} label="Boundary" />
-        </div>
         <div className="ln-control ln-control--row">
           <span>Main stars</span>
           <Button size="sm" disabled={!stars.length} onClick={() => pickStar(starIdx == null ? 0 : (starIdx + stars.length - 1) % stars.length)} aria-label="Previous main star">
@@ -149,7 +144,7 @@ export default function ConstellationPage() {
 
   return (
     <Page wide>
-      <Crumbs items={[['Constellations', '/learn/constellations'], ...(unit ? [[unit.title, `/learn/unit/${unit.id}`] as [string, string]] : []), [con.name]]} />
+      <Crumbs items={[['Constellations', routes.constellations()], ...(home ? [[`Module ${home.m.number}: ${home.m.title}`, routes.module(home.m.id)] as [string, string]] : []), [con.name]]} />
       <header className="ln-head">
         <h1>
           {con.name} <span className="ln-h1-sub">{con.english}</span>
@@ -160,7 +155,7 @@ export default function ConstellationPage() {
           <Chip>
             {rank === 1 ? 'Largest' : rank === 88 ? 'Smallest' : `${ordinal(rank)} largest`} of 88 · {Math.round(con.areaSqDeg)} square degrees
           </Chip>
-          {(ANCHORS as readonly string[]).includes(con.id) && <Chip tone="amber">Anchor</Chip>}
+          {home?.m.kind === 'anchors' && <Chip tone="amber">Anchor constellation for your location</Chip>}
           {con.zodiac && <Chip>Zodiac</Chip>}
           {content && <Chip>{content.kind === 'ancient' ? 'Ancient' : 'Modern'} constellation</Chip>}
         </div>
@@ -232,7 +227,7 @@ export default function ConstellationPage() {
                     {img ? <img src={`${import.meta.env.BASE_URL}${img.file}`} alt="" loading="lazy" /> : <div className="ln-thumb-empty" aria-hidden />}
                     <div className="grow">
                       <div className="row row--wrap">
-                        <Link to={objectHref(o.ref)} className="ln-object-name">
+                        <Link to={routes.object(o.ref)} className="ln-object-name">
                           {objectTitle(t, o.ref)}
                         </Link>
                         <EquipChip equip={o.equip} />
@@ -290,7 +285,7 @@ export default function ConstellationPage() {
                   <span>{s.label}</span>
                   <Meter value={m ?? 0} label={`${s.label}: mastery`} />
                   <span className="dim ln-nowrap">{m == null ? 'not tried' : `${Math.round(m * 100)}%`}</span>
-                  <Link className="btn btn--sm" to={`/quiz/${s.quiz}?con=${con.id}`}>
+                  <Link className="btn btn--sm" to={routes.quiz(s.quiz, { con: con.id })}>
                     {s.cta}
                   </Link>
                 </div>
@@ -300,8 +295,8 @@ export default function ConstellationPage() {
         </Section>
 
         <nav className="ln-prevnext">
-          {nb.prev ? <Link to={`/learn/constellation/${nb.prev}`}>← {env.catalog.conById.get(nb.prev)?.name ?? nb.prev}</Link> : unit ? <Link to={`/learn/unit/${unit.id}`}>← {unit.title}</Link> : <span />}
-          {nb.next ? <Link to={`/learn/constellation/${nb.next}`}>{env.catalog.conById.get(nb.next)?.name ?? nb.next} →</Link> : unit ? <Link to={`/learn/unit/${unit.id}`}>Back to the unit →</Link> : <span />}
+          {nb.prev ? <Link to={routes.constellation(nb.prev)}>← {env.catalog.conById.get(nb.prev)?.name ?? nb.prev}</Link> : home ? <Link to={routes.module(home.m.id)}>← Module {home.m.number}: {home.m.title}</Link> : <span />}
+          {nb.next ? <Link to={routes.constellation(nb.next)}>{env.catalog.conById.get(nb.next)?.name ?? nb.next} →</Link> : home ? <Link to={routes.module(home.m.id)}>Back to module {home.m.number} →</Link> : <span />}
         </nav>
       </Split>
     </Page>

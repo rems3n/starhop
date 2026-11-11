@@ -1,10 +1,8 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react';
-import { Link } from 'react-router-dom';
-import { SkyView } from '@/sky';
+import { SkyEmbed, SKY_EMBED_RESET_EVENT } from '@/components/sky-embed';
 import { formatDate, formatTime } from '@/lib/time';
 import type { SkyController } from '@/types';
 import { applyScene, type SkyScene } from '../logic/scene';
-import { exploreHref } from '../hooks';
 
 declare global {
   interface Window {
@@ -28,7 +26,7 @@ export interface SkyStageProps {
   label?: string;
 }
 
-/** One sky view driven by a scene, with the clock readout, Reset and "Open in Explore". */
+/** One sky view driven by a scene, with the clock readout. Layers, Reset and "Open in sky map" come from <SkyEmbed>. */
 export function SkyStage({ scene, onController, onReset, note, children, exploreTarget, label }: SkyStageProps) {
   const [ctl, setCtl] = useState<SkyController | null>(null);
   const [time, setTime] = useState(scene.time);
@@ -37,6 +35,22 @@ export function SkyStage({ scene, onController, onReset, note, children, explore
   sceneRef.current = scene;
   const cbRef = useRef(onController);
   cbRef.current = onController;
+  const resetRef = useRef(onReset);
+  resetRef.current = onReset;
+  const skyRef = useRef<HTMLDivElement>(null);
+
+  // the embed's Reset puts back layers, faintest stars and camera; re-apply the rest of the scene too
+  useEffect(() => {
+    const el = skyRef.current;
+    if (!el || !ctl) return;
+    const onEmbedReset = () => {
+      applyScene(ctl, sceneRef.current);
+      setTime(sceneRef.current.time);
+      resetRef.current?.();
+    };
+    el.addEventListener(SKY_EMBED_RESET_EVENT, onEmbedReset);
+    return () => el.removeEventListener(SKY_EMBED_RESET_EVENT, onEmbedReset);
+  }, [ctl]);
 
   useEffect(() => {
     if (!ctl) return;
@@ -62,32 +76,16 @@ export function SkyStage({ scene, onController, onReset, note, children, explore
   const place = (ctl?.getObserver() ?? scene.observer).name;
   return (
     <div className="ln-stage">
-      <div className="ln-stage-sky" aria-label={label ?? 'Sky view'}>
-        <SkyView
+      <div ref={skyRef} className="ln-stage-sky" aria-label={label ?? 'Sky view'}>
+        <SkyEmbed
           options={{ observer: s0.observer, time: s0.time, timeRate: 0, layers: s0.layers, limitingMag: s0.limitingMag, view: s0.view, inputMode: 'navigate' }}
           onReady={setCtl}
+          openTarget={exploreTarget ?? scene.target?.ref}
         />
         <div className="ln-stage-clock">
           <span>{formatDate(time, tz, { month: 'short', day: 'numeric', year: 'numeric' })}</span>
           <strong>{formatTime(time, tz)}</strong>
           <span className="ln-stage-place">{place}</span>
-        </div>
-        <div className="ln-stage-tools">
-          <button
-            type="button"
-            className="ln-stage-tool"
-            title="Put the sky back the way this step set it up"
-            onClick={() => {
-              if (ctl) applyScene(ctl, sceneRef.current);
-              setTime(sceneRef.current.time);
-              onReset?.();
-            }}
-          >
-            Reset
-          </button>
-          <Link className="ln-stage-tool" to={exploreHref(exploreTarget ?? scene.target?.ref, time)}>
-            Open in Explore
-          </Link>
         </div>
         {note && (
           <div className="ln-stage-note" role="status">

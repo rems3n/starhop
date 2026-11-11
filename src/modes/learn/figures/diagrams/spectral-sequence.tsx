@@ -19,13 +19,13 @@ export const meta: DiagramMeta = {
  * Share of main-sequence stars: Wikipedia "Stellar classification" table (after LeDrew 2001), checked Nov 2026.
  */
 const CLASSES = [
-  { c: 'O', T: 36000, range: 'over 30,000 K', look: 'blue', ex: 'Alnitak, Mintaka', share: 0.00003 },
-  { c: 'B', T: 18000, range: '10,000–30,000 K', look: 'blue-white', ex: 'Rigel, Spica', share: 0.12 },
-  { c: 'A', T: 8700, range: '7,500–10,000 K', look: 'white', ex: 'Sirius, Vega', share: 0.61 },
-  { c: 'F', T: 6700, range: '6,000–7,500 K', look: 'yellow-white', ex: 'Procyon, Polaris', share: 3.0 },
-  { c: 'G', T: 5600, range: '5,200–6,000 K', look: 'yellow', ex: 'Sun, Capella', share: 7.6 },
-  { c: 'K', T: 4400, range: '3,700–5,200 K', look: 'orange', ex: 'Arcturus, Aldebaran', share: 12 },
-  { c: 'M', T: 3200, range: 'under 3,700 K', look: 'orange-red', ex: 'Betelgeuse, Antares', share: 76 },
+  { c: 'O', T: 36000, r1: 'over', r2: '30,000 K', range: 'over 30,000 K', look: 'blue', ex: 'Alnitak, Mintaka', share: 0.00003 },
+  { c: 'B', T: 18000, r1: '10,000–', r2: '30,000 K', range: '10,000–30,000 K', look: 'blue-white', ex: 'Rigel, Spica', share: 0.12 },
+  { c: 'A', T: 8700, r1: '7,500–', r2: '10,000 K', range: '7,500–10,000 K', look: 'white', ex: 'Sirius, Vega', share: 0.61 },
+  { c: 'F', T: 6700, r1: '6,000–', r2: '7,500 K', range: '6,000–7,500 K', look: 'yellow-white', ex: 'Procyon, Polaris', share: 3.0 },
+  { c: 'G', T: 5600, r1: '5,200–', r2: '6,000 K', range: '5,200–6,000 K', look: 'yellow', ex: 'Sun, Capella', share: 7.6 },
+  { c: 'K', T: 4400, r1: '3,700–', r2: '5,200 K', range: '3,700–5,200 K', look: 'orange', ex: 'Arcturus, Aldebaran', share: 12 },
+  { c: 'M', T: 3200, r1: 'under', r2: '3,700 K', range: 'under 3,700 K', look: 'orange-red', ex: 'Betelgeuse, Antares', share: 76 },
 ] as const;
 type Cls = (typeof CLASSES)[number]['c'];
 
@@ -51,7 +51,7 @@ export default function SpectralSequence({ params }: DiagramProps) {
 
   return (
     <div>
-      <Svg w={720} h={340} title={meta.title} desc={view === 'colour' ? 'Seven discs from blue (class O) to orange-red (class M), each labelled with its temperature range and two example stars.' : 'Paired bars for each class: share among all stars near the Sun, where class M dominates at about three quarters, and share among naked-eye stars, where B, A and K stars dominate and M stars are rare.'}>
+      <Svg w={720} h={300} title={meta.title} desc={view === 'colour' ? 'Seven discs from blue (class O) to orange-red (class M), each labelled with its temperature range and two example stars.' : 'Paired bars for each class: share among all stars near the Sun, where class M dominates at about three quarters, and share among naked-eye stars, where B, A and K stars dominate and M stars are rare.'}>
         <Label x={36} y={34} size="s" color={C.dim}>hottest</Label>
         <Label x={684} y={34} anchor="end" size="s" color={C.dim}>coolest</Label>
         <line x1={92} x2={628} y1={30} y2={30} stroke={C.line} markerEnd="url(#fig-arrow)" />
@@ -59,16 +59,16 @@ export default function SpectralSequence({ params }: DiagramProps) {
           const on = k.c === sel;
           return (
             <g key={k.c} onClick={() => setSel(k.c)} style={{ cursor: 'pointer' }}>
-              <rect x={cx(i) - 46} y={44} width={92} height={view === 'colour' ? 280 : 92} rx={8} fill={on ? C.panel : 'transparent'} stroke={on ? C.amber : 'transparent'} />
+              <rect x={cx(i) - 46} y={44} width={92} height={view === 'colour' ? 210 : 88} rx={8} fill={on ? C.panel : 'transparent'} stroke={on ? C.amber : 'transparent'} />
               <circle cx={cx(i)} cy={88} r={26} fill={tempColor(k.T)} />
               <text x={cx(i)} y={95} textAnchor="middle" fontSize={20} fontWeight={700} fill="#1b1b2b">{k.c}</text>
               {view === 'colour' && (
                 <>
-                  <Label x={cx(i)} y={140} anchor="middle" size="s" weight={600}>{k.look}</Label>
-                  <Label x={cx(i)} y={160} anchor="middle" size="s" color={C.dim}>{k.range.split(' ')[0]}</Label>
-                  <Label x={cx(i)} y={176} anchor="middle" size="s" color={C.dim}>{k.range.split(' ').slice(1).join(' ')}</Label>
+                  <Label x={cx(i)} y={138} anchor="middle" weight={700}>{k.look}</Label>
+                  <Label x={cx(i)} y={160} anchor="middle" size="s" color={C.dim}>{k.r1}</Label>
+                  <Label x={cx(i)} y={175} anchor="middle" size="s" color={C.dim}>{k.r2}</Label>
                   {k.ex.split(', ').map((e, j) => (
-                    <Label key={e} x={cx(i)} y={210 + j * 18} anchor="middle" size="s">{e}</Label>
+                    <Label key={e} x={cx(i)} y={204 + j * 19} anchor="middle">{e}</Label>
                   ))}
                 </>
               )}
@@ -76,7 +76,7 @@ export default function SpectralSequence({ params }: DiagramProps) {
           );
         })}
         {view === 'colour' && (
-          <Label x={360} y={300} anchor="middle" size="s" color={C.dim}>
+          <Label x={360} y={284} anchor="middle" size="s" color={C.dim}>
             Disc colours computed from each temperature; sizes are not to scale. Tap a class.
           </Label>
         )}
@@ -85,17 +85,17 @@ export default function SpectralSequence({ params }: DiagramProps) {
             {/* bars: all stars vs naked-eye stars, 0–80 % */}
             {[0, 20, 40, 60, 80].map((p) => (
               <g key={p}>
-                <line x1={24} x2={700} y1={318 - p * 2.3} y2={318 - p * 2.3} stroke={C.line} strokeDasharray={p ? '2 5' : undefined} />
+                <line x1={24} x2={700} y1={290 - p * 1.9} y2={290 - p * 1.9} stroke={C.line} strokeDasharray={p ? '2 5' : undefined} />
               </g>
             ))}
             {CLASSES.map((k, i) => {
               const a = k.share, b = eye?.pct[k.c] ?? 0;
               return (
                 <g key={k.c}>
-                  <rect x={cx(i) - 30} y={318 - Math.max(1, a * 2.3)} width={26} height={Math.max(1, a * 2.3)} fill={C.amber} />
-                  <rect x={cx(i) + 4} y={318 - Math.max(1, b * 2.3)} width={26} height={Math.max(1, b * 2.3)} fill={C.blue} />
-                  <Label x={cx(i) - 17} y={312 - Math.max(1, a * 2.3)} anchor="middle" size="s">{pctLabel(a)}</Label>
-                  {eye && <Label x={cx(i) + 17} y={312 - Math.max(1, b * 2.3) - (Math.abs(a - b) < 4 ? 14 : 0)} anchor="middle" size="s">{pctLabel(b)}</Label>}
+                  <rect x={cx(i) - 30} y={290 - Math.max(1, a * 1.9)} width={26} height={Math.max(1, a * 1.9)} fill={C.amber} />
+                  <rect x={cx(i) + 4} y={290 - Math.max(1, b * 1.9)} width={26} height={Math.max(1, b * 1.9)} fill={C.blue} />
+                  <Label x={cx(i) - 17} y={284 - Math.max(1, a * 1.9)} anchor="middle" size="s">{pctLabel(a)}</Label>
+                  {eye && <Label x={cx(i) + 17} y={284 - Math.max(1, b * 1.9) - (Math.abs(a - b) < 4 ? 14 : 0)} anchor="middle" size="s">{pctLabel(b)}</Label>}
                 </g>
               );
             })}

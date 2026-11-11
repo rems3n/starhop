@@ -16,6 +16,7 @@ import { ImageGallery } from './ImageGallery';
 import { asterismIdOf, observerKey, visTargetOf } from './targets';
 import { VisibilityStrip } from './VisibilityStrip';
 import './object.css';
+import { routes } from '@/lib/routes';
 
 export interface ObjectInfoProps {
   targetRef: TargetRef;
@@ -111,7 +112,16 @@ function WhenVisible({ t, catalog, observer, date, body }: { t: ResolvedTarget; 
 
   const cls = vis.cls;
   const best = vis.bestTime ? <> Best around <strong>{formatTime(vis.bestTime, tz)}</strong>, {whereWords(vis.bestAlt, vis.bestAz)}.</> : null;
-  const seasonWords = season && season !== 'never' ? (season === 'all-year' ? 'in the evening sky all year' : `${season === 'autumn' ? 'an autumn' : `a ${season}`} evening sight from here`) : null;
+  // eveningSeason names the observer's own season; say it both ways so it reads right in either hemisphere.
+  const otherSeason = { winter: 'summer', spring: 'autumn', summer: 'winter', autumn: 'spring' } as const;
+  const seasonWords =
+    season && season !== 'never'
+      ? season === 'all-year'
+        ? 'in the evening sky all year'
+        : observer.lat >= 0
+          ? `an evening sight of the northern ${season} (southern ${otherSeason[season]})`
+          : `an evening sight of the southern ${season} (northern ${otherSeason[season]})`
+      : null;
   return (
     <Section title="When it is visible">
       <p className="obj-p"><strong>At this moment:</strong> {nowText}.</p>
@@ -296,7 +306,7 @@ export function ObjectInfo({ targetRef, observer, date, variant = 'panel', onTar
         {con && (
           <p className="obj-con">
             {t.body ? 'Now in ' : 'In '}
-            <Link to={`/learn/constellation/${con.id}`}>{con.name}</Link>
+            <Link to={routes.constellation(con.id)}>{con.name}</Link>
             <span className="dim">, {con.english}</span>
           </p>
         )}
@@ -308,7 +318,7 @@ export function ObjectInfo({ targetRef, observer, date, variant = 'panel', onTar
             {about.filter(Boolean).map((p, i) => <p key={i} className="obj-read"><RichText text={p} onTarget={onTarget} /></p>)}
             {t.constellation && (
               <p className="obj-p">
-                <Link to={`/learn/constellation/${t.constellation.id}`}>{conContent ? `Stories, stars and objects of ${t.constellation.name}` : `${t.constellation.name} page`}</Link>
+                <Link to={routes.constellation(t.constellation.id)}>{conContent ? `Stories, stars and objects of ${t.constellation.name}` : `${t.constellation.name} page`}</Link>
               </p>
             )}
           </Section>
@@ -331,10 +341,10 @@ export function ObjectInfo({ targetRef, observer, date, variant = 'panel', onTar
       )}
 
       <footer className="obj-links">
-        {variant === 'panel' && !t.constellation && !asterism && <Link className="btn btn--sm" to={`/learn/object/${encodeURIComponent(t.ref)}`}>Open full page</Link>}
-        {variant === 'panel' && t.constellation && <Link className="btn btn--sm" to={`/learn/constellation/${t.constellation.id}`}>Open full page</Link>}
-        {asterism?.signpost && <Link className="btn btn--sm" to={`/learn/signpost/${asterism.id}`}>Signpost guide</Link>}
-        {t.constellation && <Link className="btn btn--sm btn--primary" to={`/quiz/find?con=${t.constellation.id}`}>Quiz me</Link>}
+        {variant === 'panel' && !t.constellation && !asterism && <Link className="btn btn--sm" to={routes.object(t.ref)}>Open full page</Link>}
+        {variant === 'panel' && t.constellation && <Link className="btn btn--sm" to={routes.constellation(t.constellation.id)}>Open full page</Link>}
+        {asterism?.signpost && <Link className="btn btn--sm" to={routes.asterism(asterism.id)}>Signpost guide</Link>}
+        {t.constellation && <Link className="btn btn--sm btn--primary" to={routes.quiz('find', { con: t.constellation.id })}>Quiz me</Link>}
         {variant === 'page' && <button type="button" className="btn btn--sm" onClick={() => onTargetOr(t.ref)}>Show in the sky</button>}
       </footer>
     </article>

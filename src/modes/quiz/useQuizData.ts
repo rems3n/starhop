@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
-import { lessons, loadAllConstellationContent, pathUnits, type ConstellationContent } from '@/content';
+import { lessons, loadAllConstellationContent, pathUnits, starhops, type ConstellationContent } from '@/content';
+import { resolveCourse } from '@/content/course';
 import { useCatalog } from '@/data/catalog';
 import { useSettings } from '@/store/settings';
 import type { QuizData } from './logic/types';
@@ -16,7 +17,11 @@ export function useQuizData(): QuizData | null {
       live = false;
     };
   }, []);
-  return useMemo(() => (catalog && content ? { catalog, content, lessons, units: pathUnits, observer, now: new Date() } : null), [catalog, content, observer]);
+  const course = useMemo(() => (catalog ? resolveCourse(observer, catalog) : undefined), [catalog, observer]);
+  return useMemo(
+    () => (catalog && content ? { catalog, content, lessons, units: pathUnits, observer, now: new Date(), course, hops: starhops } : null),
+    [catalog, content, observer, course],
+  );
 }
 
 export function cssToken(name: string, fallback: string): string {

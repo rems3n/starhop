@@ -12,7 +12,19 @@
         "After this lesson, when a guide says \"three fists to the left of the Dipper's handle\", you will be able to go straight there.",
         "Stars are so far away that we cannot talk about the distance between them in miles. Instead we measure how far apart they look, as an angle in degrees. From the horizon to the point straight overhead is 90°. All the way around the horizon is 360°.",
         "You carry a measuring tool for this. Hold your hand out at full arm's length, and it covers a nearly fixed angle of sky: the width of your little finger is about 1°, three middle fingers together about 5°, a closed fist about 10°, and a hand spread wide from thumb tip to little-finger tip about 20° to 25°. It works for almost everyone, children included, because people with bigger hands tend to have longer arms."
-      ]
+      ],
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "hand-angle-geometry",
+          "params": { "measure": "fist" },
+          "caption": "How much sky your hand covers depends on two things: how wide it is and how far it is from your eye. A fist about 10 cm across, held about 60 cm away, covers 10°. Switch to a child: the hand is smaller, but so is the arm, and the angle stays the same."
+        }
+      ],
+      "thinkAbout": {
+        "question": "You bend your elbow so your fist is only half as far from your eye as usual. Roughly how much sky does it cover now?",
+        "answer": "About twice as much, roughly 20°. The same fist closer to your eye covers a bigger angle, which is why the rule only works with your arm fully straight."
+      }
     },
     {
       "heading": "Check your hand against the Big Dipper",
@@ -69,7 +81,27 @@
           }
         ]
       },
-      "tryIt": "Tonight, hold three fingers at arm's length against the Pointers and a fist against the top of the Dipper's bowl. Then stack fists from the northern horizon up to Polaris and count them."
+      "tryIt": "Tonight, hold three fingers at arm's length against the Pointers and a fist against the top of the Dipper's bowl. Then stack fists from the northern horizon up to Polaris and count them.",
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "hand-on-dipper",
+          "params": { "measure": "pointers" },
+          "caption": "The Big Dipper is a ruler you can check your hand against: three fingers on the Pointers (5.4°), a fist across the top of the bowl (10.2°), a spread hand along the whole Dipper (25.7°). Drawn to scale from catalog positions; resize the hand to see how a correction works."
+        }
+      ],
+      "check": {
+        "id": "check-hand-dipper",
+        "prompt": "Your fist at arm's length covers the top of the Big Dipper's bowl with room to spare. A guide says a star is 'two fists' from somewhere. What should you do?",
+        "choices": [
+          "Use a little less than two of your fists",
+          "Use a little more than two of your fists",
+          "Use exactly two fists; hands do not vary",
+          "Ignore the guide; hand measures do not work for you"
+        ],
+        "answerIndex": 0,
+        "explanation": "Your fist covers more than the bowl's 10°, so it is a big fist for its arm. The guide's two fists, about 20°, will be a little less than two of yours."
+      }
     },
     {
       "heading": "The Moon is smaller than you think",
@@ -92,6 +124,18 @@
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "moon-size-scale",
+          "params": { "view": "finger" },
+          "caption": "The full Moon is only about half a degree wide, half the width of your little finger at arm's length. Ten or eleven full Moons fit between the Pointers, depending on how near the Moon is, and a rising Moon is no bigger than a high one: switch the comparison to see each at true scale."
+        }
+      ],
+      "misconception": {
+        "myth": "The Moon is bigger when it is near the horizon.",
+        "fact": "It only looks bigger. Measured with a finger or a camera, the rising Moon is the same half degree as the Moon overhead (in fact very slightly smaller, because it is a little farther from you). The enlargement happens in your brain, and it is called the Moon illusion."
       }
     }
   ],

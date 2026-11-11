@@ -33,7 +33,7 @@ const AU = 215; // solar radii
 const VIEWS: Record<View, { scale: number; stars: { k: Key; x: number }[]; note: string }> = {
   dwarfs: { scale: 58, stars: [{ k: 'siriusB', x: 40 }, { k: 'proxima', x: 82 }, { k: 'sun', x: 170 }, { k: 'sirius', x: 340 }, { k: 'procyon', x: 572 }], note: 'Main-sequence stars and a white dwarf' },
   giants: { scale: 2.5, stars: [{ k: 'sun', x: 90 }, { k: 'arcturus', x: 200 }, { k: 'aldebaran', x: 470 }], note: 'The Sun beside two orange giants' },
-  supergiants: { scale: 0.2, stars: [{ k: 'sun', x: 34 }, { k: 'aldebaran', x: 60 }, { k: 'rigel', x: 100 }, { k: 'antares', x: 268 }, { k: 'betelgeuse', x: 560 }], note: 'Red supergiants dwarf everything else' },
+  supergiants: { scale: 0.2, stars: [{ k: 'sun', x: 34 }, { k: 'aldebaran', x: 60 }, { k: 'rigel', x: 112 }, { k: 'antares', x: 268 }, { k: 'betelgeuse', x: 560 }], note: 'Red supergiants dwarf everything else' },
 };
 
 export default function StarSizes({ params }: DiagramProps) {
@@ -51,7 +51,6 @@ export default function StarSizes({ params }: DiagramProps) {
           const r = Math.max(1.2, s.R * v.scale);
           return (
             <g key={k}>
-              {r > 2 && <circle cx={x} cy={CY} r={r * 1.06} fill={tempColor(s.T)} opacity={0.25} />}
               <circle cx={x} cy={CY} r={r} fill={tempColor(s.T)} />
             </g>
           );
@@ -60,7 +59,7 @@ export default function StarSizes({ params }: DiagramProps) {
           <g>
             {[{ r: 1, n: 'Earth’s orbit' }, { r: 1.52, n: 'Mars’s orbit' }].map((o) => (
               <g key={o.n}>
-                <circle cx={560} cy={CY} r={o.r * AU * v.scale} fill="none" stroke={C.text} strokeOpacity={0.6} strokeDasharray="4 4" />
+                <circle cx={560} cy={CY} r={o.r * AU * v.scale} fill="none" stroke={C.bg} strokeOpacity={0.85} strokeWidth={1.6} strokeDasharray="5 4" />
               </g>
             ))}
           </g>
@@ -69,7 +68,7 @@ export default function StarSizes({ params }: DiagramProps) {
         {v.stars.map(({ k, x }, i) => {
           const s = S[k];
           const r = Math.max(1.2, s.R * v.scale);
-          const small = r < 14;
+          const small = r < 16;
           const ly = small ? (i % 2 ? CY + 34 : CY - 26) : CY + r + 22;
           return (
             <g key={`l${k}`}>
@@ -81,8 +80,9 @@ export default function StarSizes({ params }: DiagramProps) {
         })}
         {view === 'supergiants' && (
           <>
-            <Label x={560 + AU * v.scale * 0.7 + 4} y={CY - AU * v.scale * 0.7 - 2} size="s">Earth’s orbit</Label>
-            <Label x={560 + 1.52 * AU * v.scale * 0.7 + 4} y={CY - 1.52 * AU * v.scale * 0.7 - 2} size="s">Mars’s orbit</Label>
+            <circle cx={560} cy={CY} r={2} fill={C.bg} />
+            <Label x={560} y={CY - AU * v.scale + 16} anchor="middle" size="s">Earth’s orbit</Label>
+            <Label x={560} y={CY - 1.52 * AU * v.scale - 6} anchor="middle" size="s">Mars’s orbit</Label>
           </>
         )}
         {view === 'dwarfs' && <Label x={40} y={CY + 60} anchor="middle" size="s" color={C.dim}>Earth-sized</Label>}

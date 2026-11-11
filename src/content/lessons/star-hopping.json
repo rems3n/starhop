@@ -11,7 +11,14 @@
       "body": [
         "After this lesson you will be able to find a star you have never seen before, starting from one you already know. That is the whole method of learning the sky: nobody memorizes it all at once. You learn a few bright patterns and use them as signposts to everything else.",
         "A hop has three parts. A starting pair or pattern you are sure of. A direction, given by a line or curve through those stars. And a distance, measured with your hand: a fist at arm's length is about 10°. Then you confirm the catch by its brightness, its color and its neighbors."
-      ]
+      ],
+      "check": {
+        "id": "check-hop-parts",
+        "prompt": "You know Dubhe and Merak well. What else do you need before you can hop to a new star?",
+        "choices": ["A direction and a distance", "A telescope", "The new star's magnitude only", "The exact time of night"],
+        "answerIndex": 0,
+        "explanation": "A hop is a starting point, a direction given by a line or curve through it, and a distance measured with your hand. Brightness and colour then confirm you arrived."
+      }
     },
     {
       "heading": "Lines: two stars make a pointer",
@@ -36,7 +43,15 @@
             ]
           }
         ]
-      }
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "star-hop",
+          "params": { "hop": "pointers" },
+          "caption": "The classic first hop, from real star positions. Step through it: start from the Pointers, follow their line out of the bowl, count off about three fists, and Polaris is the first fairly bright star you meet. The line misses Polaris by about 2°, which is close enough to land you in the right patch of sky."
+        }
+      ]
     },
     {
       "heading": "Arcs: follow the curve",
@@ -71,6 +86,18 @@
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "star-hop",
+          "params": { "hop": "arcturus" },
+          "caption": "An arc carries a bend onward. Continue the curve of the Dipper's handle about three fists to orange Arcturus, then about three more to blue-white Spica. Colour is the confirmation: Arcturus is unmistakably orange, Spica plainly bluish."
+        }
+      ],
+      "thinkAbout": {
+        "question": "Why use the bend of the handle at all? Why not just say 'Arcturus is 31° from Alkaid'?",
+        "answer": "A distance alone describes a whole circle of sky around Alkaid. The curve adds the direction, and following a shape is much easier for the eye than judging an angle in empty sky."
       }
     },
     {
@@ -107,6 +134,18 @@
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "star-hop",
+          "params": { "hop": "belt" },
+          "caption": "One line, two targets. Extend Orion's Belt about two fists one way to Sirius, the brightest star of the night, and about two fists the other way to orange Aldebaran, which sits a little below the line, with the Pleiades beyond. Pointers are rarely exact: they bring you to the right neighbourhood."
+        }
+      ],
+      "thinkAbout": {
+        "question": "Seen from the southern hemisphere, Orion appears upside down. Does the Belt still lead to Sirius?",
+        "answer": "Yes. The stars keep their places among each other wherever you stand; only your idea of up and down changes. From the south the same line runs up and to the right to Sirius, and down and to the left to Aldebaran."
       }
     },
     {
@@ -132,7 +171,19 @@
           }
         ]
       },
-      "tryIt": "Pick the hop that suits tonight's sky: the Pointers to Polaris any night, the arc to Arcturus in spring and summer, Orion's Belt to Sirius in winter. Measure the distance with your fists before you look at the answer."
+      "tryIt": "Pick the hop that suits tonight's sky: the Pointers to Polaris any night, the arc to Arcturus in spring and summer, Orion's Belt to Sirius in winter. Measure the distance with your fists before you look at the answer.",
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "star-hop",
+          "params": { "hop": "triangle" },
+          "caption": "Two known stars fix a third as the missing corner of a triangle. Betelgeuse, Sirius and Procyon are each about 26° to 27° apart: a nearly equal-sided Winter Triangle. Shapes are also a check: if a corner is off, you have the wrong star or a planet."
+        }
+      ],
+      "misconception": {
+        "myth": "Any bright point you see in the sky is a star.",
+        "fact": "The brightest 'stars' are often planets. Venus, Jupiter, Mars and Saturn look like bright stars to the eye, but they move slowly against the constellations along the band of the zodiac. If a bright point spoils a pattern you know, it is probably a planet."
+      }
     }
   ],
   "keyPoints": [

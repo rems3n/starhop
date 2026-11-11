@@ -149,6 +149,20 @@
             "hours": 4
           },
           "caption": "With the shutter open, every star draws an arc around the celestial pole. Slide the exposure: each hour adds 15° to every trail, short or long, because the whole sky turns as one piece."
+        },
+        {
+          "type": "image",
+          "image": {
+            "file": "img/lessons/star-trails-north-maunakea.jpg",
+            "alt": "Long-exposure photograph of the Gemini North telescope dome under concentric star trails circling the north celestial pole.",
+            "kind": "photograph",
+            "kindNote": "Long exposure: many frames stacked",
+            "credit": "International Gemini Observatory/NOIRLab/NSF/AURA/T. Matsopoulos",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Star_Trails_Above_Gemini_North_(iotw2506a).jpg"
+          },
+          "caption": "A real long exposure over Maunakea, Hawaii. Every trail is part of a circle around the north celestial pole, the still point just right of the dome's top; Polaris made the tiny bright arc nearest the centre."
         }
       ]
     },
@@ -235,7 +249,17 @@
           }
         ]
       },
-      "tryIt": "Tonight, line up a bright star with the edge of a building or a rooftop antenna, standing in a spot you can find again. Come back to exactly that spot 20 minutes later. The star will have moved 5°, about three finger-widths at arm's length, and the direction it moved tells you whether you are looking east (up), south (rightward) or west (down)."
+      "tryIt": "Tonight, line up a bright star with the edge of a building or a rooftop antenna, standing in a spot you can find again. Come back to exactly that spot 20 minutes later. The star will have moved 5°, about three finger-widths at arm's length, and the direction it moved tells you whether you are looking east (up), south (rightward) or west (down).",
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "horizon-paths",
+          "params": {
+            "face": "east"
+          },
+          "caption": "Each line is one star's daily path; the dots are an hour apart. Facing east, stars climb out of the horizon on a slant of 90° minus your latitude. Switch to South to see the same paths peak, and try other latitudes to watch the slant change."
+        }
+      ]
     }
   ],
   "keyPoints": [

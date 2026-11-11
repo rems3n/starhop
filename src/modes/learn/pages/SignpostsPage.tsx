@@ -4,6 +4,7 @@ import { MONTH_NAMES } from '@/lib/time';
 import { Chip } from '@/ui';
 import { Check, Page } from '../components/common';
 import { useLearnLocal } from '../hooks';
+import { routes } from '@/lib/routes';
 
 const SEASON_WORD = { winter: 'Winter', spring: 'Spring', summer: 'Summer', autumn: 'Autumn', 'all-year': 'All year' } as const;
 
@@ -20,7 +21,7 @@ export default function SignpostsPage() {
       <ul className="ln-sign-grid">
         {signposts.map((a) => (
           <li key={a.id}>
-            <Link to={`/learn/signpost/${a.id}`} className="card ln-sign-card">
+            <Link to={routes.asterism(a.id)} className="card ln-sign-card">
               <div className="ln-unit-top">
                 <strong className="ln-unit-title">{a.name}</strong>
                 <Chip tone="amber">{SEASON_WORD[a.season]}</Chip>
@@ -39,7 +40,7 @@ export default function SignpostsPage() {
         <ol className="ln-checklist">
           {others.map((a) => (
             <li key={a.id}>
-              <Link to={`/learn/signpost/${a.id}`} className="ln-step">
+              <Link to={routes.asterism(a.id)} className="ln-step">
                 <Check done={!!seen[a.id]} />
                 <span className="grow">
                   <strong>{a.name}</strong>

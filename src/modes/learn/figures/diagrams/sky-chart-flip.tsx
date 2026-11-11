@@ -103,17 +103,19 @@ export default function SkyChartFlip({ params }: DiagramProps) {
             <circle cx={150} cy={138} r={13} fill={C.moon} />
             <circle cx={145} cy={136} r={1.8} fill={C.bg} />
             <circle cx={155} cy={136} r={1.8} fill={C.bg} />
-            <Label x={172} y={128} size="s" color={C.dim}>
+            <Label x={150} y={106} anchor="middle" size="s" color={C.dim}>
               head to the north
             </Label>
             <Label x={150} y={290} anchor="middle" size="s" color={C.dim}>
               lying on your back, looking up
             </Label>
-            <Label x={66} y={168} anchor="middle" size="s" color={C.blue}>
+            {/* face up with the head to the north, your left hand is on the east side */}
+            <circle cx={185} cy={166} r={5} fill={C.moon} />
+            <Label x={232} y={158} anchor="middle" size="s" color={C.blue}>
               left hand
             </Label>
-            <Label x={66} y={183} anchor="middle" size="s" color={C.blue}>
-              = east
+            <Label x={232} y={173} anchor="middle" size="s" color={C.blue}>
+              points east
             </Label>
           </g>
         )}

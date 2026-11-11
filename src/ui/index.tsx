@@ -3,6 +3,7 @@ import { useEffect, type ButtonHTMLAttributes, type ReactNode } from 'react';
 import { useNavigate } from 'react-router-dom';
 import type { Equipment } from '@/types';
 import { EQUIPMENT_LABEL } from '@/lib/format';
+import { routes } from '@/lib/routes';
 
 type BtnProps = ButtonHTMLAttributes<HTMLButtonElement> & { variant?: 'default' | 'primary' | 'quiet'; size?: 'md' | 'sm'; icon?: boolean; pressed?: boolean };
 
@@ -85,7 +86,7 @@ export function Loading({ label = 'Loading the sky…' }: { label?: string }) {
  */
 export function RichText({ text, onTarget }: { text: string; onTarget?: (ref: string) => void }) {
   const navigate = useNavigate();
-  const go = onTarget ?? ((ref: string) => navigate(`/explore?target=${encodeURIComponent(ref)}`));
+  const go = onTarget ?? ((ref: string) => navigate(routes.sky(ref)));
   const out: ReactNode[] = [];
   const re = /\[\[([^\]|]+)\|([^\]]+)\]\]|\*([^*\n]+)\*/g;
   let last = 0;

@@ -113,7 +113,7 @@ export default function PointersToPolaris({ params }: DiagramProps) {
   const faceAz = south ? 180 : 0;
   const poleAlt = Math.abs(observer.lat);
   const cAlt = clamp(poleAlt * 0.55, 4, 40);
-  const project = useMemo(() => makeProjection(faceAz, cAlt, 205, 262 + Math.max(0, cAlt - 22) * 2), [faceAz, cAlt]);
+  const project = useMemo(() => makeProjection(faceAz, cAlt, 232, 250 + Math.max(0, cAlt - 22) * 2), [faceAz, cAlt]);
 
   const sky = useMemo(() => {
     const year = new Date().getFullYear();
@@ -153,7 +153,7 @@ export default function PointersToPolaris({ params }: DiagramProps) {
   const night = sky.sun < -12;
   const daylight = sky.sun > -0.8;
   const starOpacity = night ? 1 : daylight ? 0.25 : 0.65;
-  const size = (m: number) => Math.max(1.6, 5.2 - m * 0.9);
+  const size = (m: number) => Math.max(2, 6.4 - m * 1.05);
 
   // Where is the pattern relative to the pole, as seen on screen?
   const body = (south ? ['Acrux', 'Mimosa', 'Gacrux', 'Imai'] : ['Dubhe', 'Merak', 'Phecda', 'Megrez']).map((n) => sky.stars[n]);
@@ -168,16 +168,16 @@ export default function PointersToPolaris({ params }: DiagramProps) {
 
   const ground = `M ${sky.horizon.map(([x, y]) => `${x.toFixed(1)},${y.toFixed(1)}`).join(' L ')} L ${W + 50},${H + 50} L -50,${H + 50} Z`;
   const poleLabelLeft = P.x > 470;
-  const poleName = south ? 'south celestial pole' : 'Polaris';
   const dir = south ? 'south' : 'north';
 
-  const nameStar = (n: string, other: string, ref: string) => {
-    const s = sky.stars[n], o = sky.stars[other], r = sky.stars[ref];
-    const dx = s.x - o.x, dy = s.y - o.y;
+  /** Name a corner star, pushed radially away from the centre of its pattern so neighbours never collide. */
+  const nameStar = (n: string, group: string[]) => {
+    const s = sky.stars[n];
+    const gx = group.reduce((a, k) => a + sky.stars[k].x, 0) / group.length;
+    const gy = group.reduce((a, k) => a + sky.stars[k].y, 0) / group.length;
+    const dx = s.x - gx, dy = s.y - gy;
     const l = Math.hypot(dx, dy) || 1;
-    const ox = -dy / l, oy = dx / l;
-    const sign = (r.x - s.x) * ox + (r.y - s.y) * oy > 0 ? -1 : 1;
-    const lx = s.x + sign * ox * 16, ly = s.y + sign * oy * 16;
+    const lx = s.x + (dx / l) * 14, ly = s.y + (dy / l) * 14 + (dy > 0 ? 8 : 0);
     return (
       <Label key={n} x={lx} y={ly + 4} anchor={lx < s.x - 3 ? 'end' : lx > s.x + 3 ? 'start' : 'middle'} weight={600}>
         {n}
@@ -257,15 +257,15 @@ export default function PointersToPolaris({ params }: DiagramProps) {
           </Label>
           {south ? (
             <>
-              {nameStar('Acrux', 'Gacrux', 'Mimosa')}
-              {nameStar('Gacrux', 'Acrux', 'Mimosa')}
+              {nameStar('Acrux', ['Acrux', 'Mimosa', 'Gacrux', 'Imai'])}
+              {nameStar('Gacrux', ['Acrux', 'Mimosa', 'Gacrux', 'Imai'])}
               {groupLabel('Imai', 'Southern Cross')}
               {groupLabel('Hadar', 'Pointers')}
             </>
           ) : (
             <>
-              {nameStar('Dubhe', 'Merak', 'Phecda')}
-              {nameStar('Merak', 'Dubhe', 'Phecda')}
+              {nameStar('Dubhe', ['Dubhe', 'Merak', 'Phecda', 'Megrez'])}
+              {nameStar('Merak', ['Dubhe', 'Merak', 'Phecda', 'Megrez'])}
               {groupLabel('Mizar', 'Big Dipper', -14, 26)}
               {groupLabel('Kochab', 'Little Dipper', -12, 22)}
               {groupLabel('Ruchbah', 'Cassiopeia')}
@@ -276,7 +276,7 @@ export default function PointersToPolaris({ params }: DiagramProps) {
               {daylight ? 'The Sun is up: stars drawn faintly for reference' : 'Twilight: only the brightest stars are out yet'}
             </Label>
           )}
-          <Label x={W - 20} y={H - 14} anchor="end" size="s" color={C.dim}>
+          <Label x={W - 20} y={30} anchor="end" size="s" color={C.dim}>
             {`facing ${dir} from ${observer.name}`}
           </Label>
         </g>
@@ -290,7 +290,7 @@ export default function PointersToPolaris({ params }: DiagramProps) {
         {south
           ? `Carry the Cross's long axis from Gacrux through Acrux about four and a half times its length, ${sky.poleDist.toFixed(0)}° beyond Acrux, to reach the pole, ${Math.round(P.alt)}° up over the south point. `
           : `Follow the Pointers from Merak through Dubhe about five times their ${sky.gap.toFixed(1)}° gap and you reach Polaris, ${Math.round(P.alt)}° up over the north point. `}
-        {minAlt < 0 ? 'Right now part of the pattern is below your horizon.' : minAlt < 12 ? 'It is low tonight, so buildings may hide it.' : `The ${poleName} is in the same place as always.`}
+        {minAlt < 0 ? 'Right now part of the pattern is below your horizon.' : minAlt < 12 ? 'It is low tonight, so buildings may hide it.' : south ? 'The pole itself stays in the same place all night.' : 'Polaris is in the same place as always.'}
       </Readout>
     </div>
   );

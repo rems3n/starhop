@@ -22,18 +22,18 @@ const STARS = [
   { id: 'procyon', name: 'Procyon', T: 6580, cls: 'F' },
   { id: 'sirius', name: 'Sirius', T: 9850, cls: 'A' },
   { id: 'rigel', name: 'Rigel', T: 12100, cls: 'B' },
-  { id: 'alnitak', name: 'Alnitak', T: 29000, cls: 'O' },
+  { id: 'alnitak', name: 'Alnitak', T: 29500, cls: 'O' },
 ] as const;
 const TMIN = 2500, TMAX = 40000;
 const toS = (T: number) => (1000 * Math.log(T / TMIN)) / Math.log(TMAX / TMIN);
 const fromS = (s: number) => TMIN * Math.pow(TMAX / TMIN, s / 1000);
 
 // Spectrum plot box
-const PX0 = 300, PX1 = 690, PY0 = 250, PY1 = 60;
+const PX0 = 300, PX1 = 690, PY0 = 250, PY1 = 74;
 const LMAX = 2000; // nm
 const px = (l: number) => PX0 + (l / LMAX) * (PX1 - PX0);
 // Temperature strip
-const SX0 = 40, SX1 = 680, SY = 312;
+const SX0 = 40, SX1 = 680, SY = 336;
 const sx = (T: number) => SX0 + (Math.log(T / TMIN) / Math.log(TMAX / TMIN)) * (SX1 - SX0);
 
 export default function BlackbodyColor({ params }: DiagramProps) {
@@ -57,7 +57,7 @@ export default function BlackbodyColor({ params }: DiagramProps) {
 
   return (
     <div>
-      <Svg w={720} h={360} title={meta.title} desc="Left: a disc glowing in the colour of the chosen temperature. Right: the spectrum of that glow, from ultraviolet through the visible rainbow to infrared, with its peak marked. Bottom: a temperature strip coloured from orange-red to blue with real stars marked.">
+      <Svg w={720} h={386} title={meta.title} desc="Left: a disc glowing in the colour of the chosen temperature. Right: the spectrum of that glow, from ultraviolet through the visible rainbow to infrared, with its peak marked. Bottom: a temperature strip coloured from orange-red to blue with real stars marked.">
         {/* Glowing body */}
         <defs>
           <radialGradient id="bb-halo">
@@ -65,15 +65,15 @@ export default function BlackbodyColor({ params }: DiagramProps) {
             <stop offset="1" stopColor={col} stopOpacity={0} />
           </radialGradient>
         </defs>
-        <circle cx={140} cy={160} r={108} fill="url(#bb-halo)" />
-        <circle cx={140} cy={160} r={66} fill={col} />
+        <circle cx={140} cy={170} r={108} fill="url(#bb-halo)" />
+        <circle cx={140} cy={170} r={66} fill={col} />
         <Label x={140} y={36} anchor="middle" size="s" color={C.dim}>
           a body glowing at
         </Label>
         <Label x={140} y={56} anchor="middle" size="l" weight={700}>
           {fmt(Math.round(T / 10) * 10)} K
         </Label>
-        <Label x={140} y={276} anchor="middle" color={C.text} weight={600}>
+        <Label x={140} y={290} anchor="middle" color={C.text} weight={600}>
           looks {looks}
         </Label>
 
@@ -96,20 +96,20 @@ export default function BlackbodyColor({ params }: DiagramProps) {
         <Label x={(PX0 + PX1) / 2} y={PY0 + 34} anchor="middle" size="s" color={C.dim}>
           wavelength of light (nanometres)
         </Label>
-        <Label x={px(565)} y={PY1 + 16} anchor="middle" size="s" color={C.text}>
+        <Label x={px(565)} y={PY1 - 8} anchor="middle" size="s" color={C.text}>
           visible
         </Label>
-        <Label x={px(190)} y={PY1 + 16} anchor="middle" size="s" color={C.dim}>
-          UV
+        <Label x={px(380) - 6} y={PY1 - 8} anchor="end" size="s" color={C.dim}>
+          ← ultraviolet
         </Label>
-        <Label x={px(1400)} y={PY1 + 16} anchor="middle" size="s" color={C.dim}>
-          infrared
+        <Label x={px(750) + 6} y={PY1 - 8} size="s" color={C.dim}>
+          infrared →
         </Label>
         <path d={curve} fill="none" stroke={col} strokeWidth={3} />
         {peak <= LMAX && peak >= 50 && (
           <g>
-            <line x1={px(peak)} x2={px(peak)} y1={PY1 + 22} y2={PY0} stroke={C.text} strokeOpacity={0.5} strokeDasharray="3 4" />
-            <Label x={px(peak) + (peak > 1300 ? -6 : 6)} y={PY1 + 40} anchor={peak > 1300 ? 'end' : 'start'} size="s" weight={600}>
+            <line x1={px(peak)} x2={px(peak)} y1={PY1 + 10} y2={PY0} stroke={C.text} strokeOpacity={0.5} strokeDasharray="3 4" />
+            <Label x={px(peak) + 8} y={PY1 + 34} size="m" weight={700}>
               peak {fmt(Math.round(peak / 10) * 10)} nm
             </Label>
           </g>
@@ -121,9 +121,12 @@ export default function BlackbodyColor({ params }: DiagramProps) {
         )}
 
         {/* Temperature strip with real stars */}
-        {strip.slice(0, -1).map((t, i) => (
-          <rect key={i} x={sx(t)} y={SY - 7} width={sx(strip[i + 1]) - sx(t) + 0.6} height={14} fill={tempColor(t)} />
-        ))}
+        <defs>
+          <linearGradient id="bb-strip" x1="0" x2="1">
+            {strip.map((t, i) => <stop key={i} offset={i / (strip.length - 1)} stopColor={tempColor(t)} />)}
+          </linearGradient>
+        </defs>
+        <rect x={SX0} y={SY - 7} width={SX1 - SX0} height={14} rx={3} fill="url(#bb-strip)" />
         {STARS.map((s, i) => {
           const up = i % 2 === 0;
           return (
@@ -155,7 +158,12 @@ export default function BlackbodyColor({ params }: DiagramProps) {
       <Readout>
         {near ? `${near.name} (class ${near.cls}), about ${fmt(near.T)} K: ` : `At ${fmt(Math.round(T / 10) * 10)} K: `}
         the glow peaks {band}, and the mix of all the colours it gives off looks {looks}.
-        {' '}Each square metre of its surface pours out {perArea >= 1 ? `${fmt(perArea)} times` : `${fmt(sig(1 / perArea, 2))} times less`} {perArea >= 1 ? 'as much light as' : 'light than'} the Sun’s.
+        {' '}
+        {perArea > 0.95 && perArea < 1.05
+          ? 'Each square metre of its surface gives off as much light as the Sun’s.'
+          : perArea > 1
+            ? `Each square metre of its surface gives off ${fmt(perArea)} times as much light as the Sun’s.`
+            : `Each square metre of its surface gives off ${fmt(sig(1 / perArea, 2))} times less light than the Sun’s.`}
         {T > 20000 ? ' Most of its energy is ultraviolet light our eyes cannot see.' : T < 3800 ? ' Most of its energy is infrared, which we feel as heat but cannot see.' : ''}
       </Readout>
     </div>

@@ -8,10 +8,11 @@ import { Chip, EquipChip, Loading, Prose, RichText } from '@/ui';
 import type { Highlight, SkyController } from '@/types';
 import { Crumbs, Empty, LocationLine, Page, Section, Split } from '../components/common';
 import { SkyStage } from '../components/SkyStage';
-import { objectHref, showInSky, useLearnEnv, type LearnEnv } from '../hooks';
+import { showInSky, useLearnEnv, type LearnEnv } from '../hooks';
 import { midMonthEvening } from '../logic/place';
 import { makeScene } from '../logic/scene';
 import { CLASS_LABEL, aroundTime, heightWords } from '../logic/tonight';
+import { routes } from '@/lib/routes';
 
 export default function MonthPage() {
   const { m } = useParams();
@@ -32,7 +33,7 @@ export default function MonthPage() {
             const g = monthlyGuides.find((x) => x.month === i + 1);
             return (
               <li key={name}>
-                <Link to={`/learn/month/${i + 1}`} className={`card ln-month-card${i + 1 === nowParts.month ? ' is-now' : ''}`}>
+                <Link to={routes.month(i + 1)} className={`card ln-month-card${i + 1 === nowParts.month ? ' is-now' : ''}`}>
                   <div className="ln-unit-top">
                     <strong className="ln-unit-title">{name}</strong>
                     {i + 1 === nowParts.month && <Chip tone="amber">This month</Chip>}
@@ -50,7 +51,7 @@ export default function MonthPage() {
     return (
       <Page>
         <Empty>Months run from 1 to 12.</Empty>
-        <Link to="/learn/month">All months</Link>
+        <Link to={routes.month()}>All months</Link>
       </Page>
     );
   return <MonthGuide key={month} month={month} year={nowParts.year} env={env} />;
@@ -100,10 +101,13 @@ function MonthGuide({ month, year, env }: { month: number; year: number; env: Le
     return { night, time, cons, stars, planets, phases };
   }, [env, month, year, tz]);
 
+  // The written guides are for mid-northern skies; elsewhere the live sections lead and we face the equator.
+  const north = env.observer.lat >= 15;
+  const faceAz = env.observer.lat >= 0 ? 180 : 0;
   const scene = useMemo(() => {
-    const hl: Highlight[] = (guide?.featured ?? live.cons.slice(0, 5).map((x) => x.c.id)).map((id) => ({ type: 'constellation', id, lines: true, label: true }));
-    return makeScene({ time: live.time, az: 180, alt: 42, fov: 125, highlights: hl, layers: { constellationNames: false } }, env);
-  }, [env, guide, live]);
+    const hl: Highlight[] = (north && guide?.featured ? guide.featured : live.cons.slice(0, 5).map((x) => x.c.id)).map((id) => ({ type: 'constellation', id, lines: true, label: true }));
+    return makeScene({ time: live.time, az: faceAz, alt: 42, fov: 125, highlights: hl, layers: { constellationNames: false } }, env);
+  }, [env, guide, live, north, faceAz]);
 
   const onTarget = (ref: string) => setNote(showInSky(ctl, env.catalog, ref));
   const fmt = (d: Date | null) => formatTime(d, tz);
@@ -113,7 +117,7 @@ function MonthGuide({ month, year, env }: { month: number; year: number; env: Le
   const next = month === 12 ? 1 : month + 1;
   return (
     <Page wide>
-      <Crumbs items={[['Monthly guides', '/learn/month'], [MONTH_NAMES[month - 1]]]} />
+      <Crumbs items={[['Monthly guides', routes.month()], [MONTH_NAMES[month - 1]]]} />
       <header className="ln-head">
         <h1>{guide?.title ?? `The sky in ${MONTH_NAMES[month - 1]}`}</h1>
         <LocationLine prefix={`${MONTH_NAMES[month - 1]} ${year}, for`} />
@@ -121,18 +125,19 @@ function MonthGuide({ month, year, env }: { month: number; year: number; env: Le
       <Split
         sky={
           <SkyStage scene={scene} onController={setCtl} note={note} onReset={() => setNote(null)}>
-            <p className="dim ln-small">Looking south on the 15th, {when}. {guide ? 'The featured constellations are outlined.' : 'The highest constellations are outlined.'}</p>
+            <p className="dim ln-small">Looking {faceAz === 180 ? 'south' : 'north'} on the 15th, {when}. {north && guide ? 'The featured constellations are outlined.' : 'The highest constellations are outlined.'}</p>
           </SkyStage>
         }
       >
-        {guide ? <Prose paragraphs={guide.intro} onTarget={onTarget} /> : <Empty>The written tour for {MONTH_NAMES[month - 1]} is not available yet. Everything below is worked out live for your location.</Empty>}
-        {signpost && (
+        {!north && guide?.southernNote && <p className="ln-lede">{guide.southernNote}</p>}
+        {north && guide ? <Prose paragraphs={guide.intro} onTarget={onTarget} /> : !guide ? <Empty>The written tour for {MONTH_NAMES[month - 1]} is not available yet. Everything below is worked out live for your location.</Empty> : <p className="dim">Everything below is worked out for {env.observer.name}. The written tour further down describes the view from mid-northern latitudes.</p>}
+        {north && signpost && (
           <p>
             Start from the{' '}
-            <Link to={`/learn/signpost/${signpost.id}`}>
+            <Link to={routes.asterism(signpost.id)}>
               {signpost.name}
             </Link>
-            , this season's signpost.
+            , this month's signpost.
           </p>
         )}
 
@@ -174,7 +179,7 @@ function MonthGuide({ month, year, env }: { month: number; year: number; env: Le
             {live.cons.map((x) => (
               <li key={x.c.id}>
                 <div className="ln-tn-row">
-                  <Link to={`/learn/constellation/${x.c.id}`}>
+                  <Link to={routes.constellation(x.c.id)}>
                     <strong>{x.c.name}</strong>
                   </Link>
                   <span className="dim">{heightWords(x.alt, x.az)}</span>
@@ -221,7 +226,7 @@ function MonthGuide({ month, year, env }: { month: number; year: number; env: Le
             <ul className="ln-plain ln-facts">
               {guide.objects.map((o) => (
                 <li key={o.ref}>
-                  <Link to={objectHref(o.ref)}>
+                  <Link to={routes.object(o.ref)}>
                     <strong>{env.catalog.resolve(o.ref)?.name ?? o.ref}</strong>
                   </Link>{' '}
                   <EquipChip equip={o.equip} />{' '}
@@ -237,14 +242,19 @@ function MonthGuide({ month, year, env }: { month: number; year: number; env: Le
             </ul>
           </Section>
         )}
-        {guide?.southernNote && (
+        {north && guide?.southernNote && (
           <Section title="South of the equator">
             <Prose paragraphs={[guide.southernNote]} onTarget={onTarget} />
           </Section>
         )}
+        {!north && guide && (
+          <Section title="The view from mid-northern latitudes">
+            <Prose paragraphs={guide.intro} onTarget={onTarget} />
+          </Section>
+        )}
         <nav className="ln-prevnext">
-          <Link to={`/learn/month/${prev}`}>← {MONTH_NAMES[prev - 1]}</Link>
-          <Link to={`/learn/month/${next}`}>{MONTH_NAMES[next - 1]} →</Link>
+          <Link to={routes.month(prev)}>← {MONTH_NAMES[prev - 1]}</Link>
+          <Link to={routes.month(next)}>{MONTH_NAMES[next - 1]} →</Link>
         </nav>
       </Split>
     </Page>

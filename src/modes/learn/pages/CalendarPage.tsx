@@ -1,13 +1,13 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { constellationPoints, yearVisibility } from '@/astro';
-import { pathUnits } from '@/content';
 import { MONTH_NAMES, zonedParts } from '@/lib/time';
 import { Loading, Segmented } from '@/ui';
 import type { Observer } from '@/types';
 import { LocationLine, Page } from '../components/common';
 import { useLearnEnv } from '../hooks';
-import { CLASS_SHORT, SEASON_LABEL, SEASON_ORDER, buildCalendarRows, filterRows, groupRows, runChunked, sortRows, type CalFilter, type CalGroupBy, type CalSort, type YearClasses } from '../logic/calendar';
+import { useCourse } from '../logic/course';
+import { CLASS_SHORT, buildCalendarRows, groupOrder, filterRows, groupRows, runChunked, sortRows, type CalFilter, type CalGroupBy, type CalSort, type YearClasses } from '../logic/calendar';
 
 // One cache per place and year: the grid is computed once, a few rows at a time.
 const cache = new Map<string, Map<string, YearClasses>>();
@@ -19,7 +19,8 @@ export default function CalendarPage() {
   const [groupBy, setGroupBy] = useState<CalGroupBy>('season');
   const [sort, setSort] = useState<CalSort>('when');
   const [, setTick] = useState(0);
-  const rows = useMemo(() => (env ? buildCalendarRows(env.catalog.constellations, pathUnits, (c) => constellationPoints(c, env.catalog)) : []), [env]);
+  const course = useCourse(env?.catalog ?? null);
+  const rows = useMemo(() => (env && course ? buildCalendarRows(env.catalog.constellations, course, (c) => constellationPoints(c, env.catalog)) : []), [env, course]);
   const now = env ? zonedParts(env.now, env.observer.tz) : null;
   const key = env && now ? cacheKey(env.observer, now.year) : '';
 
@@ -34,11 +35,11 @@ export default function CalendarPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [key, rows]);
 
-  if (!env || !now) return <Loading />;
+  if (!env || !now || !course) return <Loading />;
   const classes = cache.get(key) ?? new Map<string, YearClasses>();
   const done = rows.filter((r) => classes.has(r.key)).length;
   const shown = sortRows(filterRows(rows, filter), sort, classes, 1);
-  const groups = groupRows(shown, groupBy, pathUnits);
+  const groups = groupRows(shown, groupBy, course);
   return (
     <Page>
       <header className="ln-head">
@@ -50,19 +51,19 @@ export default function CalendarPage() {
             Show
             <select className="select" value={filter} onChange={(e) => setFilter(e.target.value as CalFilter)}>
               <option value="all">Everything</option>
-              <option value="anchors">The 15 anchors</option>
+              <option value="anchors">Anchor constellations for your location</option>
               <option value="planets">Planets only</option>
-              <optgroup label="By season">
-                {SEASON_ORDER.map((s) => (
-                  <option key={s} value={`season:${s}`}>
-                    {SEASON_LABEL[s]}
+              <optgroup label="Best in the evening">
+                {groupOrder(course).map((g) => (
+                  <option key={g.id} value={`group:${g.id}`}>
+                    {g.title}
                   </option>
                 ))}
               </optgroup>
-              <optgroup label="By path unit">
-                {pathUnits.map((u) => (
-                  <option key={u.id} value={`unit:${u.id}`}>
-                    {u.title}
+              <optgroup label="By course module">
+                {course.modules.filter((m) => m.groups.length).map((m) => (
+                  <option key={m.id} value={`module:${m.id}`}>
+                    Module {m.number}: {m.title}
                   </option>
                 ))}
               </optgroup>
@@ -70,7 +71,7 @@ export default function CalendarPage() {
           </label>
           <div className="field">
             Group by
-            <Segmented<CalGroupBy> label="Group rows by" value={groupBy} onChange={setGroupBy} options={[{ value: 'season', label: 'Season' }, { value: 'unit', label: 'Path unit' }, { value: 'none', label: 'No groups' }]} />
+            <Segmented<CalGroupBy> label="Group rows by" value={groupBy} onChange={setGroupBy} options={[{ value: 'season', label: 'Evening months' }, { value: 'module', label: 'Course module' }, { value: 'none', label: 'No groups' }]} />
           </div>
           <div className="field">
             Sort by

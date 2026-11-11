@@ -3,6 +3,7 @@ import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import type { ObjectMode, StoryMode } from './logic/build';
 import type { KnowledgeMode } from './logic/sessions';
+import type { HopMode, HopSeason } from './logic/starhop';
 import type { SessionLength } from './logic/types';
 
 interface QuizPrefs {
@@ -13,6 +14,8 @@ interface QuizPrefs {
   storyScope: 'pool' | 'all';
   knowledgeModes: Record<KnowledgeMode, boolean>;
   lessonUnit: string;
+  hopSeason: HopSeason;
+  hopModes: Record<HopMode, boolean>;
   set: (patch: Partial<Omit<QuizPrefs, 'set'>>) => void;
 }
 
@@ -26,6 +29,8 @@ export const useQuizPrefs = create<QuizPrefs>()(
       storyScope: 'all',
       knowledgeModes: { computed: true, lessons: true },
       lessonUnit: 'all',
+      hopSeason: 'now',
+      hopModes: { click: true, mcq: true },
       set: (patch) => set(patch),
     }),
     { name: 'starhop.quiz.v1', version: 1 },

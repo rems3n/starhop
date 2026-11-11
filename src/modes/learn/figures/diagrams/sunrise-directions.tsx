@@ -102,8 +102,8 @@ export default function SunriseDirections({ params }: DiagramProps) {
       <Svg w={720} h={400} title={meta.title} desc="Left: a compass map of the horizon seen from above with north at the top. Sunrise directions swing through a wedge on the eastern side during the year and sunset directions through a matching wedge on the western side; the noon Sun stands due south (or due north in the southern hemisphere) and the shadow points the other way. Right: a graph of the sunrise direction through the year, north of east in summer and south of east in winter.">
         {/* compass */}
         <circle cx={CX} cy={CY} r={R} fill={C.panel} stroke={C.lineStrong} strokeWidth={1.5} />
-        <path d={wedge(riseMin, riseMax)} fill={C.sun} opacity={0.14} />
-        <path d={wedge(setMin, setMax)} fill={C.sun} opacity={0.14} />
+        <path d={wedge(riseMin, riseMax)} fill={C.sun} opacity={0.2} />
+        <path d={wedge(setMin, setMax)} fill={C.sun} opacity={0.2} />
         {Array.from({ length: 24 }, (_, i) => {
           const [x0, y0] = map(i * 15, R - (i % 6 === 0 ? 12 : 6));
           const [x1, y1] = map(i * 15);
@@ -147,9 +147,11 @@ export default function SunriseDirections({ params }: DiagramProps) {
           {`noon, ${Math.round(now.noonAlt)}° up`}
         </Label>
         {shadowLen > 4 && <line x1={CX} y1={CY} x2={sx} y2={sy} stroke={C.dim} strokeWidth={5} strokeLinecap="round" opacity={0.8} />}
-        <Label x={CX + 8} y={(CY + sy) / 2 + (shadowAz === 0 ? 0 : 10)} size="s" color={C.dim}>
-          noon shadow
-        </Label>
+        {shadowLen > 26 && (
+          <Label x={CX + 8} y={(CY + sy) / 2 + (shadowAz === 0 ? 0 : 10)} size="s" color={C.dim}>
+            noon shadow
+          </Label>
+        )}
         <circle cx={CX} cy={CY} r={5} fill={C.text} />
         <Label x={CX} y={CY + 20} anchor="middle" size="s" color={C.dim}>
           you
@@ -190,6 +192,10 @@ export default function SunriseDirections({ params }: DiagramProps) {
         )}
         <Label x={(GX0 + GX1) / 2} y={GY1 + 44} anchor="middle" size="s" color={C.dim}>
           {short}
+        </Label>
+        <rect x={GX0} y={GY1 + 58} width={14} height={10} fill={C.sun} opacity={0.25} />
+        <Label x={GX0 + 20} y={GY1 + 68} size="s" color={C.dim}>
+          shaded on the map: the whole year's range
         </Label>
       </Svg>
       <Controls>

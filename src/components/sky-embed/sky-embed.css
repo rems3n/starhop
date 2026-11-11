@@ -1,0 +1,60 @@
+/* Embedded sky map + its compact controls. Tokens only, so red night mode applies.
+   Placement hooks a page may set through `style`:
+     --se-bar-top (default 10px), --se-bar-shift (translateY, default 0) */
+.sky-embed { position: relative; width: 100%; height: 100%; overflow: hidden; container: sky-embed / size; }
+.sky-embed > .sky-view { position: absolute; inset: 0; }
+
+/* Toolbar: a slim column in the top-right corner, out of the way of drags and pinches */
+.se-bar {
+  position: absolute; right: 10px; top: var(--se-bar-top, 10px); transform: translateY(var(--se-bar-shift, 0));
+  z-index: 6; display: flex; flex-direction: column; align-items: flex-end; gap: 6px; pointer-events: none;
+}
+.se-bar > * { pointer-events: auto; }
+.se-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-width: 38px; height: 38px; padding: 0;
+  border-radius: 999px; background: var(--panel); border: 1px solid var(--line-strong); color: var(--text);
+  font: 600 var(--fs-xs) / 1 var(--font-ui); text-decoration: none; cursor: pointer;
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); transition: border-color 0.12s, background 0.12s;
+}
+.se-btn:hover { border-color: var(--amber); }
+.se-btn--layers { padding: 0 12px 0 10px; }
+.se-btn--layers[aria-expanded='true'] { border-color: var(--amber); color: var(--amber); background: var(--panel-solid); }
+.se-zoom { display: flex; flex-direction: column; border-radius: 999px; background: var(--panel); border: 1px solid var(--line-strong); overflow: hidden; }
+.se-zoom .se-btn { border: 0; border-radius: 0; background: transparent; backdrop-filter: none; }
+.se-zoom .se-btn + .se-btn { border-top: 1px solid var(--line); }
+.se-zoom .se-btn:hover { background: rgba(156, 176, 255, 0.1); }
+
+/* Panel: beside the toolbar on roomy embeds, never wider than 60% of the view */
+.se-panel {
+  position: absolute; z-index: 7; top: 10px; right: 58px; width: min(420px, 60%); max-height: calc(100% - 20px);
+  display: flex; flex-direction: column; overflow: hidden; border-radius: var(--r-lg); background: var(--panel-solid);
+}
+.se-panel-head { display: flex; align-items: center; justify-content: space-between; gap: var(--sp-2); padding: 4px 4px 4px var(--sp-4); border-bottom: 1px solid var(--line); flex: none; }
+.se-panel-head strong { font-size: var(--fs-sm); }
+.se-close { background: transparent; border-color: transparent; backdrop-filter: none; }
+.se-panel-body { overflow-y: auto; overscroll-behavior: contain; touch-action: pan-y; padding: var(--sp-2) var(--sp-4) var(--sp-3); display: flex; flex-direction: column; gap: var(--sp-3); }
+.se-groups { display: grid; grid-template-columns: repeat(auto-fill, minmax(176px, 1fr)); gap: var(--sp-2) var(--sp-4); }
+.se-group { border: 0; margin: 0; padding: 0; min-width: 0; }
+.se-group legend { padding: 0; font-size: var(--fs-xs); font-weight: 600; color: var(--text-faint); margin-bottom: 0; }
+.se-group .switch { min-height: 38px; padding: 0; font-size: var(--fs-sm); line-height: 1.25; }
+.se-empty { margin: 0; font-size: var(--fs-sm); }
+
+.se-light { display: flex; flex-direction: column; gap: 6px; border-top: 1px solid var(--line); padding-top: var(--sp-2); }
+.se-light legend { float: left; width: 100%; margin-bottom: 2px; }
+.se-light-head { display: flex; align-items: baseline; gap: var(--sp-2); }
+.se-light-class { font-family: var(--font-read); font-size: var(--fs-lg); color: var(--amber); }
+.se-light-label { font-size: var(--fs-sm); }
+.se-light .slider { height: 38px; margin: 0; }
+.se-light-ends { display: flex; justify-content: space-between; font-size: var(--fs-xs); color: var(--text-faint); margin-top: -8px; }
+.se-light-count { margin: 0; font-size: var(--fs-sm); color: var(--text-dim); }
+.se-light-count strong { color: var(--amber); font-weight: 600; }
+
+/* Small embeds (phones, narrow columns): the panel becomes a bottom sheet inside the view, at most 60% tall */
+@container sky-embed (max-width: 560px) {
+  .se-panel { left: 0; right: 0; bottom: 0; top: auto; width: auto; max-height: 60%; border-radius: var(--r-lg) var(--r-lg) 0 0; border-left: 0; border-right: 0; border-bottom: 0; }
+  .se-groups { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0 var(--sp-3); }
+}
+@container sky-embed (max-width: 420px) {
+  .se-btn--layers { padding: 0; width: 38px; }
+  .se-btn--layers .se-btn-text { display: none; }
+}

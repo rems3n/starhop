@@ -83,8 +83,8 @@ export const SELF_GRADES: { grade: Grade; label: string; hint: string }[] = [
 ];
 
 /** Time limits (seconds) when the timer is on, and what counts as "quick". */
-export const TIME_LIMIT_S = { find: 60, findAnywhere: 100, name: 20, nameTyped: 30, skyobj: 20, mcq: 30 } as const;
-export const FAST_MS = { find: 15000, name: 6000, nameTyped: 10000, skyobj: 6000, mcq: 8000 } as const;
+export const TIME_LIMIT_S = { find: 60, findAnywhere: 100, name: 20, nameTyped: 30, skyobj: 20, mcq: 30, hop: 45 } as const;
+export const FAST_MS = { find: 15000, name: 6000, nameTyped: 10000, skyobj: 6000, mcq: 8000, hop: 15000 } as const;
 
 const SKILLS = ['find', 'name', 'story', 'visibility'] as const;
 

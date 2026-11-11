@@ -89,7 +89,7 @@
 .qz-read { max-width: 680px; margin: 0 auto; padding: var(--sp-6) var(--sp-4) var(--sp-7); display: flex; flex-direction: column; gap: var(--sp-4); }
 .qz-context { font-size: var(--fs-sm); }
 .qz-read .mcq-prompt { font-size: 1.3rem; }
-.qz-quote { margin: 0; padding: var(--sp-3) var(--sp-4); border-left: 3px solid var(--line-strong); font-family: var(--font-read); font-size: var(--fs-lg); line-height: 1.5; color: var(--text); background: var(--night-800); border-radius: 0 var(--r-md) var(--r-md) 0; }
+.qz-quote { white-space: pre-line; margin: 0; padding: var(--sp-3) var(--sp-4); border-left: 3px solid var(--line-strong); font-family: var(--font-read); font-size: var(--fs-lg); line-height: 1.5; color: var(--text); background: var(--night-800); border-radius: 0 var(--r-md) var(--r-md) 0; }
 .qz-figure { margin: 0; }
 .qz-figure img { display: block; max-width: 100%; max-height: 42vh; width: auto; height: auto; margin: 0 auto; border-radius: var(--r-md); background: var(--night-950); }
 .qz-figure figcaption { font-size: var(--fs-xs); margin-top: var(--sp-2); }
@@ -176,3 +176,21 @@
   .qz-weak-list li { grid-template-columns: 1fr 3ch auto auto; }
   .qz-weak-list .meter { display: none; }
 }
+
+/* star-hop: instructions in the prompt panel */
+.qz-hop-steps { margin: var(--sp-2) 0 0; padding-left: 1.4em; font-family: var(--font-read); font-size: var(--fs-md); line-height: 1.45; max-height: 30vh; overflow-y: auto; }
+.qz-hop-steps li + li { margin-top: 2px; }
+@media (max-width: 640px) {
+  .qz-hop-steps { font-size: var(--fs-sm); max-height: 26vh; }
+}
+/* practice hub: modules */
+.qz-modules { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--sp-2); }
+.qz-modules li { display: flex; align-items: center; gap: var(--sp-3); flex-wrap: wrap; }
+.qz-modules .qz-mod-num { color: var(--text-faint); font-variant-numeric: tabular-nums; min-width: 1.5em; }
+.qz-modules a.qz-mod-title { flex: 1 1 12em; }
+.qz-mythlist, .qz-hoplist { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--sp-2); }
+.qz-mythlist li, .qz-hoplist li { display: grid; grid-template-columns: minmax(0, 1fr) 90px 3.5em auto; align-items: center; gap: var(--sp-3); }
+@media (max-width: 640px) {
+  .qz-mythlist li, .qz-hoplist li { grid-template-columns: minmax(0, 1fr) 60px 3em auto; gap: var(--sp-2); }
+}
+.qz-good { color: var(--good); }

@@ -115,6 +115,28 @@
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "zodiac-orbit-top",
+          "params": {
+            "day": 64
+          },
+          "caption": "As Earth goes round the Sun, the Sun appears in front of a different zodiac constellation, one after another, and the constellation on the opposite side is the one up at midnight. Press Play a year and watch the amber line sweep the whole ring once a year; notice how small Scorpius's share of the ring is."
+        }
+      ],
+      "check": {
+        "id": "check-ecliptic-opposite",
+        "prompt": "On December 10 the Sun is in front of Ophiuchus. Which zodiac constellation is high in the sky around midnight?",
+        "choices": [
+          "Taurus",
+          "Ophiuchus",
+          "Scorpius",
+          "Virgo"
+        ],
+        "answerIndex": 0,
+        "explanation": "At midnight you face directly away from the Sun, so you see the zodiac constellation on the far side of the ring: Taurus. Ophiuchus itself is hidden in daylight."
       }
     },
     {
@@ -122,7 +144,22 @@
       "body": [
         "The twelve signs of astrology share their names with zodiac constellations but are not the same thing. A sign is one of twelve equal 30° slices of the ecliptic, counted from the point where the Sun stands at the March equinox. A constellation is a patch of sky of irregular size with fixed boundaries among the stars.",
         "When the signs were laid out, more than two thousand years ago, each roughly matched its constellation. Since then a slow wobble of Earth's axis, called precession, has shifted the equinox point westward by about one whole constellation. So on a date when the sign in a horoscope column is Aries, the Sun is actually in front of the stars of Pisces. In this course, names always mean the constellations."
-      ]
+      ],
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "signs-vs-constellations",
+          "params": {
+            "day": 84,
+            "era": "now"
+          },
+          "caption": "Signs are equal 30° slices counted from the March equinox point; constellations are star patterns of every width. Precession has slid the equinox point about 28° west in 2,000 years, so today the signs sit almost a whole constellation off the stars. Switch to 2,000 years ago to see them line up."
+        }
+      ],
+      "misconception": {
+        "myth": "Your star sign is the constellation the Sun was in front of on the day you were born.",
+        "fact": "For most birthdays the Sun was in front of the constellation to the west of your sign, because precession has slid the signs almost a whole constellation since they were laid out. About 1 person in 20 was born with the Sun in Ophiuchus, which has no sign at all."
+      }
     },
     {
       "heading": "A tilted path",
@@ -225,6 +262,24 @@
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "seasons-tilt",
+          "params": {
+            "day": 171
+          },
+          "caption": "Earth's axis stays tilted the same way in space all year. Around the June solstice the northern half leans toward the Sun, and around the December solstice the southern half does: the Sun climbs higher and stays up longer there, and its light falls more directly. The figure uses your location; slide to January and notice that Earth is then at its closest to the Sun."
+        }
+      ],
+      "misconception": {
+        "myth": "It is summer when Earth is closest to the Sun and winter when it is farthest.",
+        "fact": "Earth's distance from the Sun changes by only about 3% in a year, and Earth is closest in early January, during the northern winter. The seasons come from the tilt: it changes how high the Sun climbs and how long it stays up, and that is also why the two hemispheres have opposite seasons."
+      },
+      "thinkAbout": {
+        "question": "If the seasons really came from changing distance, what would be true of Australia's seasons compared with Canada's?",
+        "answer": "Both countries would have summer at the same time, when the whole Earth was nearest the Sun. In fact Australia has summer in December and January, exactly when Canada has winter. Only the tilt explains that: when one hemisphere leans toward the Sun, the other leans away."
       },
       "tryIt": "Tonight, find the Moon or any bright planet and one other of them, or a zodiac star such as Aldebaran, Regulus, Spica or Antares. Sweep your arm from one to the other and on across the sky. That arc is the ecliptic: the Sun was on it today."
     }

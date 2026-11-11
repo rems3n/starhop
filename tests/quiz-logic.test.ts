@@ -59,7 +59,18 @@ describe('buildPool', () => {
     const values = poolOptions(ctx).flatMap((g) => g.options.map((o) => o.value));
     expect(values).toContain('tonight');
     expect(values).toContain('all');
-    expect(values.filter((v) => v.startsWith('unit:'))).toHaveLength(units.length);
+    // path units are legacy: no longer offered; course groups are offered when the course is resolved
+    expect(values.filter((v) => v.startsWith('unit:'))).toHaveLength(0);
+    expect(values.filter((v) => v.startsWith('group:'))).toHaveLength(0);
+    const groups = [{ id: 'first-constellations/all', title: 'Your first constellations', constellations: ['Ori', 'Nope', 'Lyr'] }];
+    const withGroups = poolOptions({ ...ctx, groups }).flatMap((g) => g.options);
+    expect(withGroups).toContainEqual({ value: 'group:first-constellations/all', label: 'Your first constellations' });
+    expect(buildPool('group:first-constellations/all', { ...ctx, groups })).toEqual(['Ori', 'Lyr']);
+    expect(buildPool('group:missing', { ...ctx, groups })).toEqual([...ANCHORS]);
+  });
+  it('season labels name months, not northern seasons', () => {
+    expect(poolLabel('season:winter', ctx)).toBe('December–February evenings');
+    expect(poolLabel('season:summer', ctx)).toBe('June–August evenings');
   });
 });
 

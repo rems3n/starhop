@@ -19,7 +19,7 @@ const WIDTH: Record<Measure, number> = { finger: 1.0, three: 5.2, fist: 10.5, sp
 const NAME: Record<Measure, string> = { finger: 'little finger', three: 'three middle fingers', fist: 'closed fist', span: 'spread hand' };
 const ARM = 60; // eye-to-hand distance for an adult, cm
 
-const EYE: [number, number] = [70, 250];
+const EYE: [number, number] = [70, 215];
 const PX_PER_CM = 8.4;
 
 function FrontView({ m, x, y, s }: { m: Measure; x: number; y: number; s: number }) {
@@ -103,11 +103,11 @@ export default function HandAngleGeometry({ params }: DiagramProps) {
           {who === 'adult' ? 'adult' : 'child'}
         </Label>
         {/* front view inset */}
-        <rect x={520} y={250} width={180} height={124} rx={8} fill={C.panel} stroke={C.line} />
-        <Label x={610} y={268} anchor="middle" size="s" color={C.dim}>
+        <rect x={16} y={16} width={196} height={124} rx={8} fill={C.panel} stroke={C.line} />
+        <Label x={114} y={34} anchor="middle" size="s" color={C.dim}>
           {`seen from the front: ${NAME[m]}`}
         </Label>
-        <FrontView m={m} x={610} y={m === 'span' ? 326 : 322} s={m === 'span' ? 6.2 * f : 6.2 * f} />
+        <FrontView m={m} x={114} y={m === 'span' ? 92 : 88} s={6.2 * f} />
       </Svg>
       <Controls>
         <ChoiceControl

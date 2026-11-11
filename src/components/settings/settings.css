@@ -1,0 +1,22 @@
+/* Settings menu (header location + night vision) — prefix .st- */
+.st-menu { position: relative; }
+.st-trigger { display: inline-flex; align-items: center; gap: 6px; min-height: 34px; max-width: 240px; padding: 0 12px; border-radius: 999px; border: 1px solid var(--line-strong); background: transparent; color: var(--text); font: inherit; font-size: var(--fs-sm); font-weight: 600; cursor: pointer; }
+.st-trigger:hover { border-color: var(--amber); }
+.st-trigger[aria-expanded='true'] { border-color: var(--amber); }
+.st-trigger svg { flex: none; color: var(--amber); }
+.st-trigger-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.st-trigger-red { width: 8px; height: 8px; border-radius: 50%; background: #e0453a; flex: none; }
+.st-pop { position: absolute; right: 0; top: calc(100% + 8px); width: min(340px, calc(100vw - 24px)); padding: var(--sp-2) var(--sp-4); z-index: 60; box-shadow: var(--shadow); background: var(--panel-solid); }
+.st-row { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--sp-3); padding: var(--sp-3) 0; }
+.st-row + .st-row { border-top: 1px solid var(--line); }
+.st-label { font-size: var(--fs-xs); color: var(--text-faint); }
+.st-value { font-weight: 600; }
+.st-sub { font-size: var(--fs-xs); margin-top: 2px; }
+
+.st-first-intro { margin: 0; }
+
+
+@media (max-width: 720px) {
+  .app-settings { position: fixed; top: calc(8px + env(safe-area-inset-top)); right: 8px; z-index: 55; }
+  .st-trigger { max-width: 150px; min-height: 32px; padding: 0 10px; background: var(--panel); backdrop-filter: blur(8px); }
+}

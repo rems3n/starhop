@@ -7,6 +7,7 @@ import { Crumbs, Empty, Page, Split } from '../components/common';
 import { SkyStage } from '../components/SkyStage';
 import { showInSky, useLearnEnv } from '../hooks';
 import { placeTarget } from '../logic/place';
+import { routes } from '@/lib/routes';
 
 export default function ObjectPage() {
   const { ref = '' } = useParams();
@@ -25,20 +26,20 @@ export default function ObjectPage() {
     return (
       <Page>
         <Empty>Nothing in the catalog matches “{ref}”.</Empty>
-        <Link to="/learn/objects">Browse objects</Link>
+        <Link to={routes.objects()}>Browse objects</Link>
       </Page>
     );
   if (target.kind === 'constellation' && target.constellation)
     return (
       <Page>
         <p>
-          {target.name} is a constellation. <Link to={`/learn/constellation/${target.constellation.id}`}>Open its page</Link>
+          {target.name} is a constellation. <Link to={routes.constellation(target.constellation.id)}>Open its page</Link>
         </p>
       </Page>
     );
   return (
     <Page wide>
-      <Crumbs items={[['Objects', '/learn/objects'], [target.name]]} />
+      <Crumbs items={[['Objects', routes.objects()], [target.name]]} />
       <Split
         sky={
           <SkyStage

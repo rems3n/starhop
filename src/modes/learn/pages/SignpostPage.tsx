@@ -10,6 +10,7 @@ import { SkyStage } from '../components/SkyStage';
 import { showInSky, useLearnEnv, useLearnLocal } from '../hooks';
 import { CHART_LAYERS, pickEvening } from '../logic/place';
 import { makeScene } from '../logic/scene';
+import { routes } from '@/lib/routes';
 
 export default function SignpostPage() {
   const { id = '' } = useParams();
@@ -62,7 +63,7 @@ export default function SignpostPage() {
     return (
       <Page>
         <Empty>There is no star pattern called “{id}”.</Empty>
-        <Link to="/learn/signposts">All signposts</Link>
+        <Link to={routes.asterisms()}>All signposts</Link>
       </Page>
     );
   if (!env || !base) return <Loading />;
@@ -71,7 +72,7 @@ export default function SignpostPage() {
   const i = asterisms.findIndex((x) => x.id === a.id);
   return (
     <Page wide>
-      <Crumbs items={[['Signposts', '/learn/signposts'], [a.name]]} />
+      <Crumbs items={[['Signposts', routes.asterisms()], [a.name]]} />
       <header className="ln-head">
         <h1>{a.name}</h1>
         <p className="ln-lede">{a.summary}</p>
@@ -79,7 +80,7 @@ export default function SignpostPage() {
           {a.signpost && <Chip tone="amber">Seasonal signpost</Chip>}
           <Chip>Best in {a.bestMonths.map((m) => MONTH_NAMES[m - 1].slice(0, 3)).join(', ')}</Chip>
           {a.constellations.map((c) => (
-            <Link key={c} to={`/learn/constellation/${c}`} className="chip">
+            <Link key={c} to={routes.constellation(c)} className="chip">
               {env.catalog.conById.get(c)?.name ?? c}
             </Link>
           ))}
@@ -118,8 +119,8 @@ export default function SignpostPage() {
           </Section>
         )}
         <nav className="ln-prevnext">
-          {i > 0 ? <Link to={`/learn/signpost/${asterisms[i - 1].id}`}>← {asterisms[i - 1].name}</Link> : <span />}
-          {i < asterisms.length - 1 ? <Link to={`/learn/signpost/${asterisms[i + 1].id}`}>{asterisms[i + 1].name} →</Link> : <span />}
+          {i > 0 ? <Link to={routes.asterism(asterisms[i - 1].id)}>← {asterisms[i - 1].name}</Link> : <span />}
+          {i < asterisms.length - 1 ? <Link to={routes.asterism(asterisms[i + 1].id)}>{asterisms[i + 1].name} →</Link> : <span />}
         </nav>
       </Split>
     </Page>

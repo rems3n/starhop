@@ -1,12 +1,14 @@
 /** Runs one session: a question at a time, immediate feedback, score, timer, end summary. */
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { Link } from 'react-router-dom';
+import { routes } from '@/lib/routes';
 import { UNIT_PASS_SCORE, useProgress, type Grade } from '@/store/progress';
 import { useSettings } from '@/store/settings';
 import { Button, Chip } from '@/ui';
 import { uniqueKeys } from './logic/build';
 import { FAST_MS, gradeFor, SELF_GRADES, TIME_LIMIT_S } from './logic/select';
 import type { CardQ, McqQ, Question, QuizData } from './logic/types';
+import { HopStage } from './HopStage';
 import { debugOn, SkyStage } from './SkyStage';
 import { isTyping } from './useQuizData';
 
@@ -41,11 +43,12 @@ function limitFor(q: Question, anywhere: boolean): number | null {
     case 'name': return q.typed ? TIME_LIMIT_S.nameTyped : TIME_LIMIT_S.name;
     case 'skyobj': return TIME_LIMIT_S.skyobj;
     case 'mcq': return TIME_LIMIT_S.mcq;
+    case 'hop': return TIME_LIMIT_S.hop;
     default: return null;
   }
 }
 function fastFor(q: Question): number {
-  return q.kind === 'find' ? FAST_MS.find : q.kind === 'name' ? (q.typed ? FAST_MS.nameTyped : FAST_MS.name) : q.kind === 'skyobj' ? FAST_MS.skyobj : FAST_MS.mcq;
+  return q.kind === 'find' ? FAST_MS.find : q.kind === 'hop' ? FAST_MS.hop : q.kind === 'name' ? (q.typed ? FAST_MS.nameTyped : FAST_MS.name) : q.kind === 'skyobj' ? FAST_MS.skyobj : FAST_MS.mcq;
 }
 const clock = (ms: number) => `${Math.floor(ms / 60000)}:${String(Math.floor(ms / 1000) % 60).padStart(2, '0')}`;
 
@@ -57,13 +60,13 @@ export interface SessionProps {
   onNewRound?: () => void;
   /** Where "Quit" and "Back" lead */
   exitTo?: string;
-  /** End-of-unit quiz: record the score and show pass/fail */
-  unit?: { id: string; title: string };
+  /** Module quiz: record the score (setUnitScore) and show pass/fail; `backTo` = the module page */
+  unit?: { id: string; title: string; backTo: string; backLabel: string };
   /** Extra line on the summary (e.g. "12 more items are due") */
   summaryNote?: ReactNode;
 }
 
-export function Session({ data, title, questions: initial, onNewRound, exitTo = '/quiz', unit, summaryNote }: SessionProps) {
+export function Session({ data, title, questions: initial, onNewRound, exitTo = routes.practice(), unit, summaryNote }: SessionProps) {
   const diff = useSettings((s) => s.difficulty);
   const [questions, setQuestions] = useState(initial);
   const [idx, setIdx] = useState(0);
@@ -161,6 +164,7 @@ export function Session({ data, title, questions: initial, onNewRound, exitTo = 
     const props = { result, answer, next: nextButton };
     if (q.kind === 'mcq') return <McqView key={q.key} q={q} {...props} />;
     if (q.kind === 'card') return <CardView key={q.key} q={q} {...props} />;
+    if (q.kind === 'hop') return <HopStage key={q.key} q={q} data={data} {...props} />;
     return <SkyStage q={q} data={data} {...props} />;
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [q, result, answer, data]);
@@ -199,12 +203,12 @@ export function Session({ data, title, questions: initial, onNewRound, exitTo = 
                 </Button>
               )}
               {unit && (
-                <Link className="btn" to="/learn">
-                  Back to the path
+                <Link className="btn" to={unit.backTo}>
+                  {unit.backLabel}
                 </Link>
               )}
               <Link className="btn btn--quiet" to={exitTo}>
-                All quizzes
+                {exitTo === routes.practice() ? 'All practice' : 'Back'}
               </Link>
             </div>
             {missed.length > 0 ? (
@@ -230,7 +234,7 @@ export function Session({ data, title, questions: initial, onNewRound, exitTo = 
 
   const remaining = limit ? Math.max(0, limit * 1000 - elapsed) : null;
   return (
-    <div className={`qz-session qz-session--${q?.kind === 'mcq' || q?.kind === 'card' ? 'read' : 'sky'}`}>
+    <div className={`qz-session qz-session--${q?.kind === 'mcq' || q?.kind === 'card' ? 'read' : 'sky'}`} data-kind={q?.kind}>
       <div className="qz-top">
         <span className="qz-top-title">{title}</span>
         <span className="qz-top-count" data-testid="progress">

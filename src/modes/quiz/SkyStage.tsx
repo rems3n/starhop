@@ -1,8 +1,8 @@
 /** Sky-first questions: find it (lasso), name it, and "what is ringed?". One sky engine is reused across questions. */
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState, type CSSProperties } from 'react';
 import { getBody, scoreConstellationLasso, type LassoResult } from '@/astro';
 import { formatTime } from '@/lib/time';
-import { SkyView } from '@/sky';
+import { quizAllowedLayers, SkyEmbed } from '@/components/sky-embed';
 import { useSettings } from '@/store/settings';
 import type { Highlight, SkyController } from '@/types';
 import { Button } from '@/ui';
@@ -17,6 +17,9 @@ type SkyQ = FindQ | NameQ | SkyObjQ;
 
 export const LASSO_RULE =
   'Your loop counts when it holds at least 70% of the constellation’s main stars (the ones bright enough to be drawn), takes in no more than a couple of main stars of other constellations, and is not more than about four times the size of the figure.';
+
+/** Embed toolbar on the right edge, vertically centred: clear of the prompt (top) and the answer bar (bottom). */
+const EMBED_PLACEMENT = { '--se-bar-top': '50%', '--se-bar-shift': '-50%' } as CSSProperties;
 
 export const debugOn = () => typeof window !== 'undefined' && /[?&]debug=1/.test(window.location.search + window.location.hash);
 const coarse = () => typeof window !== 'undefined' && window.matchMedia?.('(pointer: coarse)').matches;
@@ -39,6 +42,8 @@ export function SkyStage({ q, data, result, answer, next }: ViewProps<SkyQ> & { 
   const real = useMemo(() => (q.kind !== 'name' && q.tonightTime ? { date: new Date(q.tonightTime), observer } : undefined), [q, observer]);
   const objTarget = useMemo(() => (q.kind === 'skyobj' ? catalog.resolve(q.ref, real ?? { date: data.now, observer }) : null), [q, catalog, real, data.now, observer]);
 
+  // the learner may toggle only what the difficulty already allows (see quizAllowedLayers)
+  const allowedLayers = useMemo(() => quizAllowedLayers(diff, q.kind), [diff, q.kind]);
   const initial = useRef({ observer, time: data.now, timeRate: 0, layers: quizLayers(diff), limitingMag: diff.limitingMag, inputMode: 'none' as const, showSelection: false, view: { mount: 'equatorial' as const, lon: 0, lat: 40, roll: 0, fov: 90 } });
 
   // ── set the scene for each question
@@ -175,7 +180,7 @@ export function SkyStage({ q, data, result, answer, next }: ViewProps<SkyQ> & { 
   const when = real ? `Tonight’s sky at ${formatTime(real.date, observer.tz)}` : null;
   return (
     <div ref={stageRef} className="qz-stage" data-kind={q.kind} data-tool={q.kind === 'find' && !result ? (tool === 'draw' && !spaceHeld ? 'draw' : 'move') : undefined}>
-      <SkyView options={initial.current} onReady={onReady} className="qz-sky" />
+      <SkyEmbed options={initial.current} onReady={onReady} className="qz-sky" controls="limited" allowedLayers={allowedLayers} style={EMBED_PLACEMENT} />
       {c && q.kind === 'skyobj' && objTarget && (
         <SkyMarker c={c} ra={objTarget.ra} dec={objTarget.dec} kind={q.objKind} label={result ? q.answerText : null} dotSize={q.objKind === 'planet' && objTarget.body && real ? planetDot(getBody(objTarget.body, real.date, observer).mag) : 0} />
       )}

@@ -19,6 +19,7 @@ import {
   monthlyGuideSchema,
   objectBlurbFileSchema,
   pathUnitSchema,
+  starhopSchema,
   showerSchema,
 } from '../src/content/schema';
 
@@ -159,6 +160,8 @@ const asterisms = collection('asterisms.json', asterismSchema);
 const monthly = collection('monthly.json', monthlyGuideSchema);
 const showers = collection('showers.json', showerSchema);
 const path = collection('path.json', pathUnitSchema);
+const starhopList = collection('starhops.json', starhopSchema);
+uniqueIds('starhops.json', starhopList.map((h) => h.id), 'star-hop');
 uniqueIds('asterisms.json', asterisms.map((a) => a.id), 'asterism');
 if (monthly.length && monthly.length !== 12) err('monthly.json', `expected 12 guides, found ${monthly.length}`);
 for (const g of monthly) for (const c of g.featured) if (catalog && !catalog.conById.has(c)) err('monthly.json', `month ${g.month}: unknown constellation "${c}"`);

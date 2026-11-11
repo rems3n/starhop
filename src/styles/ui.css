@@ -9,19 +9,17 @@
 .app-nav-right { margin-left: auto; display: flex; align-items: center; gap: var(--sp-2); }
 .app-main { flex: 1; min-height: 0; position: relative; overflow: auto; }
 .app-main--sky { overflow: hidden; }
-.app-nv-short { display: none; }
+.app-tab-icon { display: none; flex: none; }
+.app-settings { margin-left: auto; }
 
 @media (max-width: 720px) {
   .app { flex-direction: column-reverse; }
   .app-nav { border-bottom: 0; border-top: 1px solid var(--line); padding: 0 var(--sp-2); gap: 0; padding-bottom: env(safe-area-inset-bottom); height: calc(var(--nav-h) + env(safe-area-inset-bottom)); }
   .app-brand { display: none; }
-  .app-tabs { flex: 1; justify-content: space-around; }
-  .app-tab { border-bottom: 0; border-top: 2px solid transparent; margin: -1px 0 0; }
+  .app-tabs { flex: 1; justify-content: space-around; gap: 0; }
+  .app-tab { flex: 1 1 0; min-width: 0; flex-direction: column; justify-content: center; gap: 2px; padding: 0 2px; border-bottom: 0; border-top: 2px solid transparent; margin: -1px 0 0; font-size: var(--fs-xs); }
   .app-tab[aria-current='page'] { border-top-color: var(--amber); }
-  .app-tab { padding: 0 var(--sp-2); font-size: var(--fs-sm); }
-  .app-nv-long { display: none; }
-  .app-nv-short { display: inline; }
-  .app-nav-right .btn { padding: 0 var(--sp-2); }
+  .app-tab-icon { display: block; }
 }
 
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: var(--sp-2); min-height: 38px; padding: 0 var(--sp-4); border-radius: var(--r-md); border: 1px solid var(--line-strong); background: transparent; color: var(--text); font-weight: 600; cursor: pointer; text-decoration: none; white-space: nowrap; transition: background 0.12s, border-color 0.12s; }

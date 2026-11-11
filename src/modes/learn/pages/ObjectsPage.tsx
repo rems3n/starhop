@@ -7,8 +7,9 @@ import { useProgress } from '@/store/progress';
 import { Chip, EquipChip, Loading, Segmented, Switch } from '@/ui';
 import type { Dso, DsoType, Equipment, VisibilityClass } from '@/types';
 import { Check, Empty, LocationLine, Page } from '../components/common';
-import { objectHref, useLearnEnv } from '../hooks';
+import { useLearnEnv } from '../hooks';
 import { CLASS_LABEL } from '../logic/tonight';
+import { routes } from '@/lib/routes';
 
 type Tab = 'showpieces' | 'messier' | 'stars' | 'planets';
 type TypeGroup = 'all' | 'cluster' | 'nebula' | 'galaxy' | 'other';
@@ -72,7 +73,7 @@ export default function ObjectsPage() {
         <ol className="ln-checklist">
           {objectLessons.map((l) => (
             <li key={l.id}>
-              <Link to={`/learn/lesson/${l.id}`} className="ln-step">
+              <Link to={routes.lesson(l.id)} className="ln-step">
                 <Check done={!!done[l.id]} />
                 <span className="grow">
                   <strong>{l.title}</strong>
@@ -99,7 +100,7 @@ export default function ObjectsPage() {
         <ul className="ln-obj-grid">
           {items.map((i) => (
             <li key={i.ref}>
-              <Link to={objectHref(i.ref)} className="card ln-obj-card">
+              <Link to={routes.object(i.ref)} className="card ln-obj-card">
                 {i.img ? <img src={`${import.meta.env.BASE_URL}${i.img}`} alt="" loading="lazy" /> : <div className="ln-thumb-empty" aria-hidden />}
                 <div className="grow">
                   <strong>{i.title}</strong>

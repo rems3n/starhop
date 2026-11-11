@@ -1,43 +1,42 @@
 import { describe, expect, it } from 'vitest';
 import { constellationPoints, yearVisibility } from '@/astro';
-import pathJson from '@/content/path.json';
-import type { PathUnit } from '@/content/schema';
+import { resolveCourse } from '@/content/course';
 import type { VisibilityClass } from '@/types';
 import { buildCalendarRows, chunk, filterRows, groupRows, runChunked, sortRows, visibilitySortKey, type YearClasses } from '@/modes/learn/logic/calendar';
 import { BROOKLYN } from './fixtures/load';
 import { learnCatalog } from './learn-catalog';
 
 const cat = learnCatalog();
-const units = pathJson as PathUnit[];
-const rows = buildCalendarRows(cat.constellations, units, (c) => constellationPoints(c, cat));
+const course = resolveCourse(BROOKLYN, cat);
+const rows = buildCalendarRows(cat.constellations, course, (c) => constellationPoints(c, cat));
 const E: VisibilityClass = 'evening', M: VisibilityClass = 'morning', A: VisibilityClass = 'all-night', N: VisibilityClass = 'not-visible';
 
 describe('calendar rows', () => {
-  it('has 7 planets then the 88 constellations, with links and path units', () => {
+  it('has 7 planets then the 88 constellations, with links and course groups', () => {
     expect(rows.length).toBe(95);
     expect(rows.slice(0, 7).map((r) => r.id)).toEqual(['Mercury', 'Venus', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune']);
-    expect(rows[0]).toMatchObject({ kind: 'planet', key: 'body:Mercury', target: 'Mercury', href: '/learn/object/body%3AMercury' });
+    expect(rows[0]).toMatchObject({ kind: 'planet', key: 'body:Mercury', target: 'Mercury', href: '/library/object/body%3AMercury' });
     const ori = rows.find((r) => r.id === 'Ori')!;
-    expect(ori).toMatchObject({ kind: 'constellation', key: 'con:Ori', name: 'Orion', href: '/learn/constellation/Ori', season: 'winter', unitId: 'anchor-winter', anchor: true });
+    expect(ori).toMatchObject({ kind: 'constellation', key: 'con:Ori', name: 'Orion', href: '/library/constellation/Ori', group: 'dec-feb', moduleId: 'first-constellations', anchor: true });
     expect((ori.target as { points: unknown[] }).points.length).toBeGreaterThan(3);
-    expect(rows.filter((r) => r.kind === 'constellation').every((r) => !!r.unitId)).toBe(true);
+    expect(rows.filter((r) => r.kind === 'constellation').every((r) => !!r.moduleId)).toBe(true);
     expect(new Set(rows.map((r) => r.key)).size).toBe(95);
   });
-  it('filters by anchors, planets, season and unit', () => {
+  it('filters by anchors, planets, evening group and module', () => {
     expect(filterRows(rows, 'all').length).toBe(95);
     expect(filterRows(rows, 'anchors').length).toBe(15);
     expect(filterRows(rows, 'planets').length).toBe(7);
-    expect(filterRows(rows, 'season:winter').every((r) => r.season === 'winter')).toBe(true);
-    expect(filterRows(rows, 'unit:anchor-north').map((r) => r.id).sort()).toEqual(['Cas', 'UMa', 'UMi']);
+    expect(filterRows(rows, 'group:dec-feb').every((r) => r.group === 'dec-feb')).toBe(true);
+    expect(filterRows(rows, 'group:circumpolar').map((r) => r.id)).toEqual(['UMi']);
+    expect(filterRows(rows, 'module:first-constellations').length).toBe(15);
   });
-  it('groups with planets first, then seasons in sky order or path units in path order', () => {
-    const bySeason = groupRows(rows, 'season', units);
-    expect(bySeason.map((g) => g.id)).toEqual(['planets', 'season:north-circumpolar', 'season:winter', 'season:spring', 'season:summer', 'season:autumn', 'season:far-south']);
+  it('groups with planets first, then evening groups in month order or course modules in course order', () => {
+    const bySeason = groupRows(rows, 'season', course);
+    expect(bySeason.map((g) => g.id)).toEqual(['planets', 'group:dec-feb', 'group:mar-may', 'group:jun-aug', 'group:sep-nov', 'group:circumpolar', 'group:beyond']);
     expect(bySeason.reduce((n, g) => n + g.rows.length, 0)).toBe(95);
-    const byUnit = groupRows(rows, 'unit', units);
-    expect(byUnit[1]).toMatchObject({ id: 'unit:anchor-north', title: units[0].title });
-    expect(byUnit.length).toBe(units.length + 1);
-    expect(groupRows(filterRows(rows, 'anchors'), 'none', units).map((g) => g.id)).toEqual(['constellations']);
+    const byModule = groupRows(rows, 'module', course);
+    expect(byModule.map((g) => g.id)).toEqual(['planets', 'module:first-constellations', 'module:season-by-season', 'module:beyond-your-horizon']);
+    expect(groupRows(filterRows(rows, 'anchors'), 'none', course).map((g) => g.id)).toEqual(['constellations']);
   });
 });
 

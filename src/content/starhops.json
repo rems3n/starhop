@@ -1,1 +1,1069 @@
-[]
+[
+ {
+  "id": "pointers-to-polaris",
+  "name": "The Pointers to Polaris",
+  "rank": 1,
+  "method": "line",
+  "from": "asterism:big-dipper",
+  "to": "star:Polaris",
+  "summary": "The first hop almost everyone learns: two stars at the front of the Big Dipper point to Polaris, the star that marks north and barely moves all night.",
+  "steps": [
+   "Find the [[asterism:big-dipper|Big Dipper]] and pick out the two stars on the front edge of the bowl, the side away from the handle: [[star:Merak|Merak]] at the bottom and [[star:Dubhe|Dubhe]] at the rim. They are about three fingers (5°) apart.",
+   "Run a line from Merak through Dubhe, out of the open top of the bowl, and carry it on for about five times that gap, roughly one outstretched hand span (29°).",
+   "The first moderately bright star you meet, standing fairly alone, is [[star:Polaris|Polaris]]. The line misses it by about two degrees, which is close enough.",
+   "Check: Polaris is the end of the faint [[asterism:little-dipper|Little Dipper]] handle, and its height above your horizon equals your latitude."
+  ],
+  "path": [
+   "star:Merak",
+   "star:Dubhe",
+   "star:Polaris"
+  ],
+  "distanceDeg": 34.1,
+  "hemisphere": "N",
+  "monthsNorth": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   12
+  ],
+  "monthsSouth": [],
+  "constellations": [
+   "UMa",
+   "UMi"
+  ],
+  "next": [
+   "great-square-to-polaris",
+   "cassiopeia-to-double-cluster"
+  ]
+ },
+ {
+  "id": "arc-to-arcturus-spica",
+  "name": "Arc to Arcturus, speed on to Spica",
+  "rank": 2,
+  "method": "arc",
+  "from": "asterism:big-dipper",
+  "to": "star:Spica",
+  "summary": "The curve of the Big Dipper's handle leads to two of the brightest stars of the spring sky, orange Arcturus and blue-white Spica.",
+  "steps": [
+   "Start at the [[asterism:big-dipper|Big Dipper]]'s handle: [[star:Alioth|Alioth]], [[star:Mizar|Mizar]] and [[star:Alkaid|Alkaid]] make a gentle curve about a fist (11°) long.",
+   "Keep that curve going away from the bowl for about one outstretched hand span (31°) to the brightest star in that part of the sky, orange [[star:Arcturus|Arcturus]].",
+   "Carry the same curve on for about another hand span (33°) to [[star:Spica|Spica]], a single bright blue-white star lower down.",
+   "Say it as you go: arc to Arcturus, speed on to Spica. The whole sweep is about 75°, nearly halfway across the sky."
+  ],
+  "path": [
+   "star:Alioth",
+   "star:Mizar",
+   "star:Alkaid",
+   "star:Arcturus",
+   "star:Spica"
+  ],
+  "distanceDeg": 74.5,
+  "hemisphere": "N",
+  "monthsNorth": [
+   4,
+   5,
+   6,
+   7
+  ],
+  "monthsSouth": [],
+  "constellations": [
+   "UMa",
+   "Boo",
+   "Vir"
+  ],
+  "next": [
+   "corvus-to-spica",
+   "arcturus-to-m13"
+  ]
+ },
+ {
+  "id": "belt-to-sirius",
+  "name": "Orion's Belt to Sirius",
+  "rank": 3,
+  "method": "line",
+  "from": "asterism:orions-belt",
+  "to": "star:Sirius",
+  "summary": "The three stars of Orion's Belt point to Sirius, the brightest star in the night sky, and the hop works from almost anywhere on Earth.",
+  "steps": [
+   "Find [[asterism:orions-belt|Orion's Belt]], three evenly spaced stars in a short straight row about two fingers (3°) long: [[star:Mintaka|Mintaka]], [[star:Alnilam|Alnilam]] and [[star:Alnitak|Alnitak]].",
+   "Follow the row from Mintaka through Alnitak and keep going for about eight Belt-lengths, a fist and a half (22°).",
+   "You land on [[star:Sirius|Sirius]], far brighter than any other star nearby. When it is low it often twinkles in flashes of color."
+  ],
+  "path": [
+   "star:Mintaka",
+   "star:Alnilam",
+   "star:Alnitak",
+   "star:Sirius"
+  ],
+  "distanceDeg": 24.4,
+  "hemisphere": "both",
+  "monthsNorth": [
+   1,
+   2,
+   3
+  ],
+  "monthsSouth": [
+   1,
+   2,
+   3,
+   12
+  ],
+  "constellations": [
+   "Ori",
+   "CMa"
+  ],
+  "next": [
+   "shoulders-to-procyon",
+   "sirius-to-canopus"
+  ]
+ },
+ {
+  "id": "belt-to-aldebaran-pleiades",
+  "name": "Orion's Belt to Aldebaran and the Pleiades",
+  "rank": 4,
+  "method": "line",
+  "from": "asterism:orions-belt",
+  "to": "dso:M45",
+  "summary": "The Belt pointed the other way leads to orange Aldebaran, the eye of Taurus, and on to the Pleiades, the best-known star cluster in the sky.",
+  "steps": [
+   "Find [[asterism:orions-belt|Orion's Belt]] and this time follow it the other way, from [[star:Alnitak|Alnitak]] through [[star:Mintaka|Mintaka]], away from Sirius.",
+   "About a fist and a half (22°) along, a little off the line, is [[star:Aldebaran|Aldebaran]], a bright orange star at the tip of a V of fainter stars.",
+   "Carry on in roughly the same direction for another fist and a half (14°) to [[dso:M45|the Pleiades]], a tiny misty cluster shaped like a very small dipper."
+  ],
+  "path": [
+   "star:Alnitak",
+   "star:Alnilam",
+   "star:Mintaka",
+   "star:Aldebaran",
+   "dso:M45"
+  ],
+  "distanceDeg": 38.2,
+  "hemisphere": "both",
+  "monthsNorth": [
+   1,
+   2,
+   3,
+   12
+  ],
+  "monthsSouth": [
+   1,
+   2,
+   12
+  ],
+  "constellations": [
+   "Ori",
+   "Tau"
+  ],
+  "next": [
+   "pleiades-to-hyades",
+   "orion-to-capella"
+  ]
+ },
+ {
+  "id": "southern-cross-to-pole",
+  "name": "The Southern Cross to the south celestial pole",
+  "rank": 5,
+  "method": "line",
+  "from": "asterism:southern-cross",
+  "to": "point:scp",
+  "summary": "There is no bright star at the south celestial pole, so southern observers use the long bar of the Southern Cross to find south instead.",
+  "steps": [
+   "Find the [[asterism:southern-cross|Southern Cross]] and its long bar, from [[star:Gacrux|Gacrux]] at the top to [[star:Acrux|Acrux]] at the foot, about three fingers (6°) long.",
+   "Extend that bar past Acrux, away from Gacrux, for about four and a half times its length, one outstretched hand span (27°).",
+   "That spot, empty of bright stars, is the [[point:scp|south celestial pole]]. Drop straight down from it to the horizon and you are facing due south.",
+   "To check, draw a line halfway between the two [[star:Rigil Kentaurus|Pointers]] at right angles to them; it should cross the Cross's line within a few degrees of the same spot."
+  ],
+  "path": [
+   "star:Gacrux",
+   "star:Acrux",
+   "point:scp"
+  ],
+  "distanceDeg": 32.9,
+  "hemisphere": "S",
+  "monthsNorth": [],
+  "monthsSouth": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8
+  ],
+  "constellations": [
+   "Cru",
+   "Oct"
+  ],
+  "next": [
+   "southern-cross-to-coalsack-jewel-box",
+   "canopus-to-achernar"
+  ]
+ },
+ {
+  "id": "dipper-to-regulus",
+  "name": "The leaky Dipper to Regulus",
+  "rank": 6,
+  "method": "line",
+  "from": "asterism:big-dipper",
+  "to": "star:Regulus",
+  "summary": "Poke a hole in the bottom of the Big Dipper's bowl and the water drips onto Leo, landing near Regulus, the lion's heart.",
+  "steps": [
+   "In the [[asterism:big-dipper|Big Dipper]]'s bowl, use the two stars nearest the handle: [[star:Megrez|Megrez]], where the handle joins, and [[star:Phecda|Phecda]] below it, about three fingers (4°) apart.",
+   "Run a line from Megrez through Phecda, out through the bottom of the bowl, and keep going for about five fists (47°).",
+   "You reach [[star:Regulus|Regulus]], the bright star at the foot of a backward question mark of stars, the [[asterism:sickle-of-leo|Sickle]] of Leo."
+  ],
+  "path": [
+   "star:Megrez",
+   "star:Phecda",
+   "star:Regulus"
+  ],
+  "distanceDeg": 51.2,
+  "hemisphere": "N",
+  "monthsNorth": [
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "monthsSouth": [],
+  "constellations": [
+   "UMa",
+   "Leo"
+  ],
+  "next": [
+   "leo-to-coma-cluster",
+   "dipper-to-castor-pollux"
+  ]
+ },
+ {
+  "id": "cassiopeia-to-andromeda-galaxy",
+  "name": "Cassiopeia to the Andromeda Galaxy",
+  "rank": 7,
+  "method": "line",
+  "from": "asterism:cassiopeia-w",
+  "to": "dso:M31",
+  "summary": "The W of Cassiopeia gives a quick arrow to the Andromeda Galaxy, the most distant thing most people will ever see with their own eyes.",
+  "steps": [
+   "Find [[asterism:cassiopeia-w|Cassiopeia's W]] and look at the half of it that includes [[star:Caph|Caph]], [[star:Schedar|Schedar]] and the middle star [[star:γ Cas|γ Cassiopeiae]]. Schedar is the point of that V.",
+   "From γ Cas through Schedar, then on in the direction the point of the V aims, go about a fist and a half (15°) toward the Great Square.",
+   "Look for a faint elongated smudge: [[dso:M31|M31]]. It is easier if you look slightly to one side of it; binoculars show its bright oval core."
+  ],
+  "path": [
+   "star:γ Cas",
+   "star:Schedar",
+   "dso:M31"
+  ],
+  "distanceDeg": 20,
+  "hemisphere": "N",
+  "monthsNorth": [
+   1,
+   2,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "monthsSouth": [],
+  "constellations": [
+   "Cas",
+   "And"
+  ],
+  "next": [
+   "great-square-to-andromeda-galaxy",
+   "cassiopeia-to-double-cluster"
+  ]
+ },
+ {
+  "id": "pointers-to-southern-cross",
+  "name": "The Pointers to the Southern Cross",
+  "rank": 8,
+  "method": "line",
+  "from": "star:Rigil Kentaurus",
+  "to": "asterism:southern-cross",
+  "summary": "Alpha and Beta Centauri point the way to the Southern Cross and tell it apart from the larger, dimmer False Cross nearby.",
+  "steps": [
+   "Find the two brilliant stars close together low in the Milky Way: [[star:Rigil Kentaurus|Alpha Centauri]] (the brighter, yellowish one) and [[star:Hadar|Hadar]] (Beta Centauri), about three fingers (4°) apart.",
+   "Run a line from Alpha Centauri through Hadar and carry it on for about a fist (12°).",
+   "It arrives at the top of the [[asterism:southern-cross|Southern Cross]], [[star:Gacrux|Gacrux]], a reddish star. A cross with no bright pointers beside it is the False Cross."
+  ],
+  "path": [
+   "star:Rigil Kentaurus",
+   "star:Hadar",
+   "star:Gacrux"
+  ],
+  "distanceDeg": 16.8,
+  "hemisphere": "S",
+  "monthsNorth": [],
+  "monthsSouth": [
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8
+  ],
+  "constellations": [
+   "Cen",
+   "Cru"
+  ],
+  "next": [
+   "southern-cross-to-pole",
+   "southern-cross-to-coalsack-jewel-box"
+  ]
+ },
+ {
+  "id": "summer-triangle",
+  "name": "The Summer Triangle",
+  "rank": 9,
+  "method": "triangle",
+  "from": "star:Vega",
+  "to": "asterism:summer-triangle",
+  "summary": "Three bright stars in three constellations make a big triangle that anchors the whole July to October sky and frames the Milky Way.",
+  "steps": [
+   "Start at [[star:Vega|Vega]], the brightest of the three, a bluish-white star.",
+   "About one outstretched hand span (24°) away, in the Milky Way, is [[star:Deneb|Deneb]], the tail of the swan and the top of the [[asterism:northern-cross|Northern Cross]].",
+   "From Deneb go about one long hand span (38°) to [[star:Altair|Altair]], recognizable by a fainter star close on each side of it.",
+   "Altair back to Vega closes the [[asterism:summer-triangle|Summer Triangle]] (34°). The Milky Way runs through the triangle, between Vega and Altair."
+  ],
+  "path": [
+   "star:Vega",
+   "star:Deneb",
+   "star:Altair"
+  ],
+  "distanceDeg": 61.9,
+  "hemisphere": "N",
+  "monthsNorth": [
+   7,
+   8,
+   9,
+   10,
+   11
+  ],
+  "monthsSouth": [],
+  "constellations": [
+   "Lyr",
+   "Cyg",
+   "Aql"
+  ],
+  "next": [
+   "vega-to-albireo",
+   "altair-to-delphinus"
+  ]
+ },
+ {
+  "id": "dipper-to-castor-pollux",
+  "name": "The Big Dipper to Castor and Pollux",
+  "rank": 10,
+  "method": "line",
+  "from": "asterism:big-dipper",
+  "to": "star:Pollux",
+  "summary": "A diagonal across the Big Dipper's bowl leads to the Gemini twins, a matched pair of bright stars that is easy to confirm once you arrive.",
+  "steps": [
+   "Draw a diagonal across the [[asterism:big-dipper|Big Dipper]]'s bowl from [[star:Megrez|Megrez]], where the handle joins, to [[star:Merak|Merak]], the opposite corner, about a fist (10°).",
+   "Carry the line on out of the bowl for about four fists (43°) to [[star:Castor|Castor]], which sits almost exactly on it.",
+   "Just three fingers (4.5°) from Castor is [[star:Pollux|Pollux]], a little brighter and more orange. Two similar stars this close together confirm you have the twins."
+  ],
+  "path": [
+   "star:Megrez",
+   "star:Merak",
+   "star:Castor",
+   "star:Pollux"
+  ],
+  "distanceDeg": 57.7,
+  "hemisphere": "N",
+  "monthsNorth": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "monthsSouth": [],
+  "constellations": [
+   "UMa",
+   "Gem"
+  ],
+  "next": [
+   "shoulders-to-procyon"
+  ]
+ },
+ {
+  "id": "shoulders-to-procyon",
+  "name": "Orion's shoulders to Procyon",
+  "rank": 11,
+  "method": "line",
+  "from": "star:Bellatrix",
+  "to": "star:Procyon",
+  "summary": "The line across Orion's shoulders leads to Procyon, the third corner of the Winter Triangle with Betelgeuse and Sirius.",
+  "steps": [
+   "Find Orion's two shoulder stars: white [[star:Bellatrix|Bellatrix]] and orange-red [[star:Betelgeuse|Betelgeuse]], about three fingers (8°) apart.",
+   "Run a line from Bellatrix through Betelgeuse and continue about one outstretched hand span (26°), away from Orion.",
+   "The bright star there is [[star:Procyon|Procyon]]. With Betelgeuse and [[star:Sirius|Sirius]] it makes the [[asterism:winter-triangle|Winter Triangle]], almost equal-sided."
+  ],
+  "path": [
+   "star:Bellatrix",
+   "star:Betelgeuse",
+   "star:Procyon"
+  ],
+  "distanceDeg": 33.5,
+  "hemisphere": "both",
+  "monthsNorth": [
+   1,
+   2,
+   3
+  ],
+  "monthsSouth": [
+   1,
+   2,
+   3
+  ],
+  "constellations": [
+   "Ori",
+   "CMi"
+  ],
+  "next": [
+   "belt-to-sirius",
+   "dipper-to-castor-pollux"
+  ]
+ },
+ {
+  "id": "great-square-to-andromeda-galaxy",
+  "name": "The Great Square to the Andromeda Galaxy",
+  "rank": 12,
+  "method": "line",
+  "from": "star:Alpheratz",
+  "to": "dso:M31",
+  "summary": "The classic route to M31: walk along Andromeda's chain of stars from the corner of the Great Square, then turn and climb two steps.",
+  "steps": [
+   "Start at [[star:Alpheratz|Alpheratz]], the corner of the [[asterism:great-square|Great Square of Pegasus]] that also belongs to Andromeda.",
+   "Follow the chain of stars that leads away from the Square: [[star:δ And|δ Andromedae]] about three fingers (7°) along, then [[star:Mirach|Mirach]] about a fist (8°) farther.",
+   "At Mirach turn sharply toward Cassiopeia and step two fingers (4°) to the fainter [[star:μ And|μ Andromedae]].",
+   "The same step again brings you to [[dso:M31|the Andromeda Galaxy]], a soft oval glow, best seen with averted vision or binoculars."
+  ],
+  "path": [
+   "star:Alpheratz",
+   "star:δ And",
+   "star:Mirach",
+   "star:μ And",
+   "dso:M31"
+  ],
+  "distanceDeg": 22.6,
+  "hemisphere": "both",
+  "monthsNorth": [
+   1,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "monthsSouth": [
+   11
+  ],
+  "constellations": [
+   "Peg",
+   "And"
+  ],
+  "next": [
+   "cassiopeia-to-andromeda-galaxy",
+   "great-square-to-fomalhaut"
+  ]
+ },
+ {
+  "id": "great-square-to-fomalhaut",
+  "name": "The Great Square to Fomalhaut",
+  "rank": 13,
+  "method": "line",
+  "from": "asterism:great-square",
+  "to": "star:Fomalhaut",
+  "summary": "The west side of the Great Square points to Fomalhaut, the lone bright star of the autumn sky, in an otherwise faint region.",
+  "steps": [
+   "Find the [[asterism:great-square|Great Square of Pegasus]] and its western side, the one farther from Andromeda: [[star:Scheat|Scheat]] at its northern end and [[star:Markab|Markab]] at its southern end, about a fist (13°) apart.",
+   "Run a line from Scheat through Markab and keep going, away from the Square, for about four fists (45°).",
+   "The only bright star in that area is [[star:Fomalhaut|Fomalhaut]], in Piscis Austrinus. From mid-northern latitudes it never climbs very high."
+  ],
+  "path": [
+   "star:Scheat",
+   "star:Markab",
+   "star:Fomalhaut"
+  ],
+  "distanceDeg": 57.7,
+  "hemisphere": "both",
+  "monthsNorth": [
+   9,
+   10,
+   11
+  ],
+  "monthsSouth": [
+   9,
+   10,
+   11
+  ],
+  "constellations": [
+   "Peg",
+   "PsA"
+  ],
+  "next": [
+   "canopus-to-achernar",
+   "great-square-to-polaris"
+  ]
+ },
+ {
+  "id": "pleiades-to-hyades",
+  "name": "The Pleiades to the Hyades and Aldebaran",
+  "rank": 14,
+  "method": "shape",
+  "from": "dso:M45",
+  "to": "star:Aldebaran",
+  "summary": "From the Pleiades a short hop leads to the V-shaped Hyades, the nearest big star cluster, with bright Aldebaran sitting in front of it.",
+  "steps": [
+   "Find [[dso:M45|the Pleiades]], the small misty dipper of stars, and look about a fist (12°) away toward Orion.",
+   "There is a V of fairly bright stars a few fingers across: the [[dso:Mel25|Hyades]] cluster, the face of Taurus the bull.",
+   "Bright orange [[star:Aldebaran|Aldebaran]] marks the end of one arm of the V, two fingers (2°) from the cluster's center. It is not a member: it is less than half as far away as the Hyades."
+  ],
+  "path": [
+   "dso:M45",
+   "dso:Mel25",
+   "star:Aldebaran"
+  ],
+  "distanceDeg": 14.6,
+  "hemisphere": "both",
+  "monthsNorth": [
+   1,
+   2,
+   3,
+   11,
+   12
+  ],
+  "monthsSouth": [
+   1,
+   2,
+   12
+  ],
+  "constellations": [
+   "Tau"
+  ],
+  "next": [
+   "orion-to-capella",
+   "belt-to-aldebaran-pleiades"
+  ]
+ },
+ {
+  "id": "orion-to-capella",
+  "name": "Orion to Capella",
+  "rank": 15,
+  "method": "line",
+  "from": "asterism:orions-belt",
+  "to": "star:Capella",
+  "summary": "A line up through Orion's head leads to Capella, the bright yellowish star that crowns the winter sky for northern observers.",
+  "steps": [
+   "Start at [[star:Alnilam|Alnilam]], the middle star of [[asterism:orions-belt|Orion's Belt]], and find Orion's head, the faint small knot of stars led by [[star:Meissa|Meissa]], about a fist (11°) away between the shoulders.",
+   "Carry the line from Alnilam through Meissa on, away from the Belt, for about one long hand span (36°).",
+   "The brilliant star you reach is [[star:Capella|Capella]] in Auriga. A small triangle of fainter stars, the Kids, sits just beside it."
+  ],
+  "path": [
+   "star:Alnilam",
+   "star:Meissa",
+   "star:Capella"
+  ],
+  "distanceDeg": 47.4,
+  "hemisphere": "N",
+  "monthsNorth": [
+   1,
+   2,
+   3,
+   12
+  ],
+  "monthsSouth": [],
+  "constellations": [
+   "Ori",
+   "Aur"
+  ],
+  "next": [
+   "cassiopeia-to-double-cluster",
+   "pleiades-to-hyades"
+  ]
+ },
+ {
+  "id": "vega-to-albireo",
+  "name": "Vega to Albireo",
+  "rank": 16,
+  "method": "line",
+  "from": "star:Vega",
+  "to": "star:Albireo",
+  "summary": "Albireo, the foot of the Northern Cross, is one of the prettiest double stars in a small telescope, and it is easy to reach from Vega.",
+  "steps": [
+   "Start at [[star:Vega|Vega]] and look toward [[star:Altair|Altair]], the far corner of the [[asterism:summer-triangle|Summer Triangle]].",
+   "A little less than halfway there, about a fist and a half (16°) from Vega and slightly off the line, is a modest star alone in the Milky Way: [[star:Albireo|Albireo]].",
+   "Check it with the [[asterism:northern-cross|Northern Cross]]: the long bar from [[star:Deneb|Deneb]] through [[star:Sadr|Sadr]] ends at Albireo. A small telescope splits it into a gold star and a blue one."
+  ],
+  "path": [
+   "star:Vega",
+   "star:Albireo"
+  ],
+  "distanceDeg": 15.6,
+  "hemisphere": "both",
+  "monthsNorth": [
+   6,
+   7,
+   8,
+   9,
+   10,
+   11
+  ],
+  "monthsSouth": [
+   8
+  ],
+  "constellations": [
+   "Lyr",
+   "Cyg"
+  ],
+  "next": [
+   "altair-to-delphinus",
+   "arcturus-to-m13"
+  ]
+ },
+ {
+  "id": "antares-to-galactic-center",
+  "name": "Antares to the Teapot and the center of the galaxy",
+  "rank": 17,
+  "method": "line",
+  "from": "star:Antares",
+  "to": "radec:266.417,-29.008",
+  "summary": "From red Antares a hop east reaches the Teapot of Sagittarius, whose spout points to the direction of the center of our galaxy.",
+  "steps": [
+   "Find [[star:Antares|Antares]], the red heart of Scorpius, and follow the Milky Way east from it for about two and a half fists (25°).",
+   "You reach the [[asterism:teapot|Teapot]] of Sagittarius. Its spout is a narrow triangle; [[star:Kaus Media|Kaus Media]] is at its base and [[star:Alnasl|Alnasl]] is the tip, three fingers (3°) away.",
+   "The spout points back toward Scorpius. About three fingers (5°) past its tip lies the [[radec:266.417,-29.008|direction of the galactic center]], hidden behind dust, where the Milky Way's star clouds look thickest."
+  ],
+  "path": [
+   "star:Antares",
+   "star:Kaus Media",
+   "star:Alnasl",
+   "radec:266.417,-29.008"
+  ],
+  "distanceDeg": 32.7,
+  "hemisphere": "both",
+  "monthsNorth": [
+   7,
+   8
+  ],
+  "monthsSouth": [
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "constellations": [
+   "Sco",
+   "Sgr"
+  ],
+  "next": [
+   "scorpion-stinger-to-m7-m6"
+  ]
+ },
+ {
+  "id": "sirius-to-canopus",
+  "name": "Sirius to Canopus",
+  "rank": 18,
+  "method": "line",
+  "from": "star:Sirius",
+  "to": "star:Canopus",
+  "summary": "Canopus, the second-brightest star of the night, lies almost due south of Sirius and is a key signpost for southern observers.",
+  "steps": [
+   "Find [[star:Sirius|Sirius]], using [[asterism:orions-belt|Orion's Belt]] if you need to.",
+   "From Sirius go almost due south, toward the south celestial pole, for about three and a half fists (36°).",
+   "The brilliant white star there is [[star:Canopus|Canopus]]. It never rises for observers north of about 37°N, and it never sets for observers south of about 37°S."
+  ],
+  "path": [
+   "star:Sirius",
+   "star:Canopus"
+  ],
+  "distanceDeg": 36.2,
+  "hemisphere": "S",
+  "monthsNorth": [],
+  "monthsSouth": [
+   1,
+   2,
+   3,
+   4,
+   12
+  ],
+  "constellations": [
+   "CMa",
+   "Car"
+  ],
+  "next": [
+   "canopus-to-achernar"
+  ]
+ },
+ {
+  "id": "arcturus-to-m13",
+  "name": "Arcturus to the Hercules Cluster",
+  "rank": 19,
+  "method": "line",
+  "from": "star:Arcturus",
+  "to": "dso:M13",
+  "summary": "From Arcturus a three-step hop through Corona Borealis to the Keystone of Hercules finds M13, the best globular star cluster in the northern sky.",
+  "steps": [
+   "From [[star:Arcturus|Arcturus]] go about two fists (20°) to [[star:Alphecca|Alphecca]], the bright gem in the small semicircle of Corona Borealis, the Northern Crown.",
+   "Continue in nearly the same direction for a fist and a half (15°) to [[star:ζ Her|ζ Herculis]], one corner of the [[asterism:keystone|Keystone]], a lopsided square of four modest stars.",
+   "Along the Keystone's side from ζ to [[star:η Her|η Herculis]], about two-thirds of the way, is [[dso:M13|M13]], a faint fuzzy star to the eye in dark skies and a round glow in binoculars."
+  ],
+  "path": [
+   "star:Arcturus",
+   "star:Alphecca",
+   "star:ζ Her",
+   "dso:M13"
+  ],
+  "distanceDeg": 39.8,
+  "hemisphere": "both",
+  "monthsNorth": [
+   4,
+   5,
+   6,
+   7,
+   8
+  ],
+  "monthsSouth": [
+   6,
+   7
+  ],
+  "constellations": [
+   "Boo",
+   "CrB",
+   "Her"
+  ],
+  "next": [
+   "vega-to-albireo"
+  ]
+ },
+ {
+  "id": "cassiopeia-to-double-cluster",
+  "name": "Cassiopeia to the Double Cluster and Perseus",
+  "rank": 20,
+  "method": "line",
+  "from": "asterism:cassiopeia-w",
+  "to": "star:Mirfak",
+  "summary": "Two stars of Cassiopeia point to the Double Cluster, a pair of star clusters side by side, and on to Mirfak, the brightest star of Perseus.",
+  "steps": [
+   "Find [[asterism:cassiopeia-w|Cassiopeia's W]] on the opposite side of [[star:Polaris|Polaris]] from the Big Dipper. Use the middle star [[star:γ Cas|γ Cassiopeiae]] and its neighbor [[star:Ruchbah|Ruchbah]], about two fingers (4°) apart.",
+   "Run a line from γ Cas through Ruchbah and keep going about three fingers (8°), twice their gap.",
+   "There you should see a small hazy patch in the Milky Way. Binoculars turn it into two rich clusters side by side: [[dso:NGC869|h]] and [[dso:NGC884|χ Persei]], the Double Cluster.",
+   "About a fist (12°) farther on is [[star:Mirfak|Mirfak]], the brightest star of Perseus, set in a loose group of stars that looks lovely in binoculars."
+  ],
+  "path": [
+   "star:γ Cas",
+   "star:Ruchbah",
+   "dso:NGC869",
+   "star:Mirfak"
+  ],
+  "distanceDeg": 23.3,
+  "hemisphere": "N",
+  "monthsNorth": [
+   1,
+   2,
+   3,
+   9,
+   10,
+   11,
+   12
+  ],
+  "monthsSouth": [],
+  "constellations": [
+   "Cas",
+   "Per"
+  ],
+  "next": [
+   "orion-to-capella",
+   "cassiopeia-to-andromeda-galaxy"
+  ]
+ },
+ {
+  "id": "corvus-to-spica",
+  "name": "Corvus to Spica",
+  "rank": 21,
+  "method": "line",
+  "from": "star:Gienah",
+  "to": "star:Spica",
+  "summary": "The small four-sided figure of Corvus, the crow, points to Spica, a second way to Virgo's brightest star that works well from both hemispheres.",
+  "steps": [
+   "Find Corvus, a compact lopsided four-sided figure of stars of similar brightness, and its upper side, the one nearer Spica, from [[star:Gienah|Gienah]] to [[star:Algorab|Algorab]], about two fingers (3.5°).",
+   "Run a line from Gienah through Algorab and continue about a fist and a half (15°).",
+   "You arrive at [[star:Spica|Spica]], the bright blue-white star of Virgo."
+  ],
+  "path": [
+   "star:Gienah",
+   "star:Algorab",
+   "star:Spica"
+  ],
+  "distanceDeg": 18,
+  "hemisphere": "both",
+  "monthsNorth": [
+   4,
+   5,
+   6
+  ],
+  "monthsSouth": [
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "constellations": [
+   "Crv",
+   "Vir"
+  ],
+  "next": [
+   "arc-to-arcturus-spica"
+  ]
+ },
+ {
+  "id": "great-square-to-polaris",
+  "name": "The Great Square to Polaris",
+  "rank": 22,
+  "method": "line",
+  "from": "asterism:great-square",
+  "to": "star:Polaris",
+  "summary": "On autumn evenings, when the Big Dipper sits low, the eastern side of the Great Square points through Cassiopeia straight to Polaris.",
+  "steps": [
+   "Find the [[asterism:great-square|Great Square of Pegasus]] and its eastern side: [[star:Algenib|Algenib]] at its southern end and [[star:Alpheratz|Alpheratz]] at its northern end, about a fist and a half (14°) apart.",
+   "Run a line from Algenib through Alpheratz and on for about three fists (30°) to [[star:Caph|Caph]], the end star of [[asterism:cassiopeia-w|Cassiopeia's W]].",
+   "Keep the same line going another three fists (30°) to [[star:Polaris|Polaris]], which this line hits almost dead on."
+  ],
+  "path": [
+   "star:Algenib",
+   "star:Alpheratz",
+   "star:Caph",
+   "star:Polaris"
+  ],
+  "distanceDeg": 74.3,
+  "hemisphere": "N",
+  "monthsNorth": [
+   1,
+   9,
+   10,
+   11,
+   12
+  ],
+  "monthsSouth": [],
+  "constellations": [
+   "Peg",
+   "And",
+   "Cas",
+   "UMi"
+  ],
+  "next": [
+   "pointers-to-polaris",
+   "cassiopeia-to-double-cluster"
+  ]
+ },
+ {
+  "id": "leo-to-coma-cluster",
+  "name": "Leo to the Coma Star Cluster",
+  "rank": 23,
+  "method": "line",
+  "from": "star:Regulus",
+  "to": "dso:Mel111",
+  "summary": "Past Leo's tail lies Coma Berenices, a wide loose cluster of faint stars that is a fine test of a dark sky and a pair of binoculars.",
+  "steps": [
+   "Start at [[star:Regulus|Regulus]] and follow Leo's body to the tail star [[star:Denebola|Denebola]], about one outstretched hand span (25°) away.",
+   "Carry on past Denebola for about a fist and a half (14°), bending a little to the side nearer the Big Dipper.",
+   "In a dark sky you will see a sprinkle of faint stars spread over several fingers: the [[dso:Mel111|Coma Star Cluster]], Berenice's Hair. Binoculars frame it well."
+  ],
+  "path": [
+   "star:Regulus",
+   "star:Denebola",
+   "dso:Mel111"
+  ],
+  "distanceDeg": 38.9,
+  "hemisphere": "both",
+  "monthsNorth": [
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "monthsSouth": [
+   4,
+   5
+  ],
+  "constellations": [
+   "Leo",
+   "Com"
+  ],
+  "next": [
+   "arc-to-arcturus-spica"
+  ]
+ },
+ {
+  "id": "scorpion-stinger-to-m7-m6",
+  "name": "Scorpius's stinger to M7 and M6",
+  "rank": 24,
+  "method": "line",
+  "from": "star:Shaula",
+  "to": "dso:M6",
+  "summary": "The close pair of stars at the tip of Scorpius's tail points to two bright open star clusters, M7 and M6.",
+  "steps": [
+   "Follow the curved tail of Scorpius to its end, where two stars sit very close together: [[star:Shaula|Shaula]] and [[star:Lesath|Lesath]], less than a finger (0.6°) apart.",
+   "From Lesath through Shaula, look on toward the Teapot about three fingers (5°). A hazy patch there is [[dso:M7|M7]], which binoculars show as a big scatter of stars.",
+   "About two fingers (4°) from M7, on the side toward Antares, is the smaller [[dso:M6|M6]], the Butterfly Cluster.",
+   "From mid-northern latitudes the stinger never climbs much above 10° to 13°, so you need a clear, dark southern horizon; from mid-southern latitudes it passes high overhead."
+  ],
+  "path": [
+   "star:Lesath",
+   "star:Shaula",
+   "dso:M7",
+   "dso:M6"
+  ],
+  "distanceDeg": 9.1,
+  "hemisphere": "both",
+  "monthsNorth": [
+   6,
+   7,
+   8
+  ],
+  "monthsSouth": [
+   5,
+   6,
+   7,
+   8,
+   9,
+   10
+  ],
+  "constellations": [
+   "Sco"
+  ],
+  "next": [
+   "antares-to-galactic-center"
+  ]
+ },
+ {
+  "id": "southern-cross-to-coalsack-jewel-box",
+  "name": "The Southern Cross to the Coalsack and the Jewel Box",
+  "rank": 25,
+  "method": "shape",
+  "from": "star:Acrux",
+  "to": "dso:NGC4755",
+  "summary": "Two contrasting sights inside the Southern Cross: a dark cloud of dust that blots out the Milky Way, and a sparkling cluster of colorful stars.",
+  "steps": [
+   "Find the [[asterism:southern-cross|Southern Cross]] and its brightest star, [[star:Acrux|Acrux]], at the foot.",
+   "Right beside Acrux, on the eastern side of the Cross (the side [[star:Mimosa|Mimosa]] is on), the Milky Way has a dark, almost starless hole several fingers across: the [[dso:C99|Coalsack]], a cloud of dust in front of the stars.",
+   "Go to Mimosa, the bright star at the eastern end of the crossbar. Just a little-finger width (1°) from it is a fuzzy star that binoculars or a small telescope reveal as the [[dso:NGC4755|Jewel Box]] cluster."
+  ],
+  "path": [
+   "star:Acrux",
+   "dso:C99",
+   "star:Mimosa",
+   "dso:NGC4755"
+  ],
+  "distanceDeg": 6.3,
+  "hemisphere": "S",
+  "monthsNorth": [],
+  "monthsSouth": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "constellations": [
+   "Cru"
+  ],
+  "next": [
+   "pointers-to-southern-cross",
+   "southern-cross-to-pole"
+  ]
+ },
+ {
+  "id": "canopus-to-achernar",
+  "name": "Canopus to Achernar",
+  "rank": 26,
+  "method": "line",
+  "from": "star:Canopus",
+  "to": "star:Achernar",
+  "summary": "Achernar, the bright end of the river Eridanus, completes the set of signposts around the south celestial pole with Canopus and the Southern Cross.",
+  "steps": [
+   "Start at [[star:Canopus|Canopus]], the brilliant star south of [[star:Sirius|Sirius]].",
+   "Go about four fists (39°) away from Sirius's side of the sky, keeping about the same distance from the [[point:scp|south celestial pole]], to the next bright star, [[star:Achernar|Achernar]].",
+   "Check: Achernar and the [[asterism:southern-cross|Southern Cross]] sit on roughly opposite sides of the south celestial pole, so when one is high the other is low."
+  ],
+  "path": [
+   "star:Canopus",
+   "star:Achernar"
+  ],
+  "distanceDeg": 39.4,
+  "hemisphere": "S",
+  "monthsNorth": [],
+  "monthsSouth": [
+   1,
+   2,
+   3,
+   11,
+   12
+  ],
+  "constellations": [
+   "Car",
+   "Eri"
+  ],
+  "next": [
+   "southern-cross-to-pole"
+  ]
+ },
+ {
+  "id": "altair-to-delphinus",
+  "name": "Altair to Delphinus and Sagitta",
+  "rank": 27,
+  "method": "line",
+  "from": "star:Altair",
+  "to": "star:Rotanev",
+  "summary": "Two small but charming constellations sit right beside Altair: the dolphin Delphinus and the arrow Sagitta.",
+  "steps": [
+   "Start at [[star:Altair|Altair]], the [[asterism:summer-triangle|Summer Triangle]] corner with a fainter star on each side.",
+   "Look about a fist (10°) north of Altair, toward [[star:Albireo|Albireo]], for a short slim line of faint stars: Sagitta, the arrow, with [[star:δ Sge|δ Sagittae]] near its middle.",
+   "Now look east of Altair, about a fist (13°) away, for a tight little diamond of stars with a tail: Delphinus, the dolphin. [[star:Rotanev|Rotanev]] is the diamond's nearest corner to Altair."
+  ],
+  "path": [
+   "star:Altair",
+   "star:Rotanev"
+  ],
+  "distanceDeg": 12.8,
+  "hemisphere": "both",
+  "monthsNorth": [
+   7,
+   8,
+   9,
+   10,
+   11
+  ],
+  "monthsSouth": [
+   8,
+   9,
+   10
+  ],
+  "constellations": [
+   "Aql",
+   "Sge",
+   "Del"
+  ],
+  "next": [
+   "summer-triangle"
+  ]
+ }
+]

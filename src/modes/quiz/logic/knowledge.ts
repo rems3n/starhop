@@ -142,7 +142,7 @@ export function visibilityQuestion(conId: string, facts: readonly ConFacts[], ob
 
 /**
  * Every computed question that applies to one constellation (month, season, circumpolar, and Polaris for
- * Ursa Minor), in random order. Used by `/quiz/visibility?con=Abbr`, where one item gets several angles.
+ * Ursa Minor), in random order. Used by `/practice/visibility?con=Abbr`, where one item gets several angles.
  */
 export function visibilityQuestionsFor(conId: string, facts: readonly ConFacts[], observer: Observer, rng: Rng): McqQ[] {
   const f = facts.find((x) => x.id === conId);

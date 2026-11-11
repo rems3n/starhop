@@ -2,6 +2,15 @@ import { useMemo, useState } from 'react';
 import type { Observer } from '@/types';
 import { Button, Modal } from '@/ui';
 import { CITIES, cityToObserver, formatLatLon, parseManualLocation, searchCities } from './cities';
+import './explore.css';
+
+/** Extra content when the dialog is the first-run location prompt. */
+export interface FirstRunOptions {
+  title: string;
+  intro: string;
+  keepLabel: string;
+  onKeep: () => void;
+}
 
 function browserTz(): string {
   try {
@@ -20,7 +29,7 @@ function timeZoneNames(): string[] {
   }
 }
 
-export function LocationDialog({ observer, onSave, onClose }: { observer: Observer; onSave: (o: Observer) => void; onClose: () => void }) {
+export function LocationDialog({ observer, onSave, onClose, firstRun }: { observer: Observer; onSave: (o: Observer) => void; onClose: () => void; firstRun?: FirstRunOptions }) {
   const [q, setQ] = useState('');
   const [geo, setGeo] = useState<{ state: 'idle' | 'asking' | 'error'; message?: string }>({ state: 'idle' });
   const [manual, setManual] = useState({ name: '', lat: observer.lat.toFixed(4), lon: observer.lon.toFixed(4), tz: observer.tz });
@@ -54,13 +63,15 @@ export function LocationDialog({ observer, onSave, onClose }: { observer: Observ
   };
 
   return (
-    <Modal title="Where are you observing from?" onClose={onClose}>
+    <Modal title={firstRun?.title ?? 'Where are you observing from?'} onClose={onClose}>
       <div className="ex-loc">
-        <p className="dim ex-loc-current">
+        {firstRun && <p className="st-first-intro">{firstRun.intro}</p>}
+        {!firstRun && <p className="dim ex-loc-current">
           Now set to <strong>{observer.name}</strong> ({formatLatLon(observer.lat, observer.lon)}, {observer.tz.replace(/_/g, ' ')}). Your latitude decides which stars you can see; your time zone is used to show local times.
-        </p>
+        </p>}
         <div className="row row--wrap">
           <Button variant="primary" onClick={useMine} disabled={geo.state === 'asking'}>{geo.state === 'asking' ? 'Finding you…' : 'Use my location'}</Button>
+          {firstRun && <Button onClick={() => { firstRun.onKeep(); onClose(); }} title={`${formatLatLon(observer.lat, observer.lon)}, ${observer.tz.replace(/_/g, ' ')}`}>{firstRun.keepLabel}</Button>}
           {geo.state === 'error' && <span className="ex-loc-error" role="alert">{geo.message}</span>}
         </div>
 

@@ -1,47 +1,40 @@
 import { lazy, Suspense } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
+import { Redirect } from '@/lib/redirect';
+import { routes } from '@/lib/routes';
 import { Loading } from '@/ui';
-import { LearnNav } from './components/common';
 import './learn.css';
 
 const Home = lazy(() => import('./pages/Home'));
-const UnitPage = lazy(() => import('./pages/UnitPage'));
-const LessonsIndex = lazy(() => import('./pages/LessonsIndex'));
+const ModulePage = lazy(() => import('./pages/ModulePage'));
 const LessonPage = lazy(() => import('./pages/LessonPage'));
-const TonightPage = lazy(() => import('./pages/TonightPage'));
-const MonthPage = lazy(() => import('./pages/MonthPage'));
-const CalendarPage = lazy(() => import('./pages/CalendarPage'));
-const SignpostsPage = lazy(() => import('./pages/SignpostsPage'));
-const SignpostPage = lazy(() => import('./pages/SignpostPage'));
-const EventsPage = lazy(() => import('./pages/EventsPage'));
-const ConstellationIndex = lazy(() => import('./pages/ConstellationIndex'));
-const ConstellationPage = lazy(() => import('./pages/ConstellationPage'));
-const ObjectsPage = lazy(() => import('./pages/ObjectsPage'));
-const ObjectPage = lazy(() => import('./pages/ObjectPage'));
 
-/** Mode 2 — Learn. Nested under /learn/*. See docs/LEARN.md. */
+const p = (s: string | undefined) => s ?? '';
+
+/** Learn = the course only. Nested under /learn/*. Old v1 Learn routes redirect to their new sections. See docs/LEARN.md. */
 export default function LearnRoutes() {
   return (
     <div className="ln-root">
-      <LearnNav />
       <Suspense fallback={<Loading label="Loading…" />}>
         <Routes>
           <Route index element={<Home />} />
-          <Route path="unit/:id" element={<UnitPage />} />
-          <Route path="lessons" element={<LessonsIndex />} />
+          <Route path="module/:id" element={<ModulePage />} />
           <Route path="lesson/:id" element={<LessonPage />} />
-          <Route path="tonight" element={<TonightPage />} />
-          <Route path="month" element={<MonthPage />} />
-          <Route path="month/:m" element={<MonthPage />} />
-          <Route path="calendar" element={<CalendarPage />} />
-          <Route path="signposts" element={<SignpostsPage />} />
-          <Route path="signpost/:id" element={<SignpostPage />} />
-          <Route path="events" element={<EventsPage />} />
-          <Route path="constellations" element={<ConstellationIndex />} />
-          <Route path="constellation/:id" element={<ConstellationPage />} />
-          <Route path="objects" element={<ObjectsPage />} />
-          <Route path="object/:ref" element={<ObjectPage />} />
-          <Route path="*" element={<Navigate to="/learn" replace />} />
+          {/* v1 routes */}
+          <Route path="lessons" element={<Redirect to={() => routes.learn()} />} />
+          <Route path="unit/:id" element={<Redirect to={() => routes.learn()} />} />
+          <Route path="tonight" element={<Redirect to={() => routes.tonight()} />} />
+          <Route path="month" element={<Redirect to={() => routes.month()} />} />
+          <Route path="month/:m" element={<Redirect to={(x) => routes.month(Number(x.m) || undefined)} />} />
+          <Route path="calendar" element={<Redirect to={() => routes.calendar()} />} />
+          <Route path="events" element={<Redirect to={() => routes.events()} />} />
+          <Route path="constellations" element={<Redirect to={() => routes.constellations()} />} />
+          <Route path="constellation/:id" element={<Redirect to={(x) => routes.constellation(p(x.id))} />} />
+          <Route path="objects" element={<Redirect to={() => routes.objects()} />} />
+          <Route path="object/:ref" element={<Redirect to={(x) => routes.object(p(x.ref))} />} />
+          <Route path="signposts" element={<Redirect to={() => routes.asterisms()} />} />
+          <Route path="signpost/:id" element={<Redirect to={(x) => routes.asterism(p(x.id))} />} />
+          <Route path="*" element={<Navigate to={routes.learn()} replace />} />
         </Routes>
       </Suspense>
     </div>

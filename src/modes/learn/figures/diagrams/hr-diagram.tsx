@@ -77,7 +77,7 @@ export default function HrDiagram({ params }: DiagramProps) {
           <g key={m}>
             <line x1={X0} x2={X1} y1={y(m)} y2={y(m)} stroke={C.line} strokeDasharray="2 5" />
             <Label x={X1 + 6} y={y(m) + 4} size="s" color={C.dim}>
-              {(() => { const l = lum(m); return l >= 1 ? `${fmt(sig(l, 1))}` : `1/${fmt(sig(1 / l, 1))}`; })()}
+              {(() => { const l = lum(m); return l > 0.5 && l < 2 ? '1' : l >= 1 ? `${fmt(sig(l, 1))}` : `1/${fmt(sig(1 / l, 1))}`; })()}
             </Label>
           </g>
         ))}
@@ -94,9 +94,10 @@ export default function HrDiagram({ params }: DiagramProps) {
         <line x1={40} x2={40} y1={y(-4.5)} y2={y(14.5)} stroke={C.line} markerStart="url(#fig-arrow)" markerEnd="url(#fig-arrow)" />
 
         {/* regions */}
-        <path d={ms} fill="none" stroke={C.amber} strokeOpacity={0.14} strokeWidth={26} strokeLinecap="round" strokeLinejoin="round" />
+        <clipPath id="hr-clip"><rect x={X0} y={Y0} width={X1 - X0} height={Y1 - Y0} /></clipPath>
+        <path d={ms} clipPath="url(#hr-clip)" fill="none" stroke={C.amber} strokeOpacity={0.12} strokeWidth={26} strokeLinecap="round" strokeLinejoin="round" />
         <ellipse cx={x(1.25)} cy={y(0.3)} rx={62} ry={30} fill="none" stroke={C.blue} strokeOpacity={0.5} strokeDasharray="4 4" />
-        <rect x={x(-0.2)} y={y(-7.6)} width={x(1.9) - x(-0.2)} height={y(-4.8) - y(-7.6)} rx={14} fill="none" stroke={C.red} strokeOpacity={0.55} strokeDasharray="4 4" />
+        <rect x={x(-0.2)} y={y(-7.5)} width={x(1.9) - x(-0.2)} height={y(-4.6) - y(-7.5)} rx={14} fill="none" stroke={C.red} strokeOpacity={0.55} strokeDasharray="4 4" />
         <ellipse cx={x(0.1)} cy={y(12)} rx={36} ry={30} fill="none" stroke={C.text} strokeOpacity={0.35} strokeDasharray="4 4" />
 
         {dots}
@@ -106,11 +107,11 @@ export default function HrDiagram({ params }: DiagramProps) {
           </g>
         ))}
 
-        <Label x={x(-0.05)} y={y(1.6) + 24} size="s" color={C.amber} weight={700}>Main sequence</Label>
+        <Label x={x(-0.05)} y={y(1.6) + 24} color={C.amber} weight={700}>Main sequence</Label>
         <Label x={x(-0.05)} y={y(1.6) + 38} size="s" color={C.dim}>(dwarfs, like the Sun)</Label>
-        <Label x={x(1.25)} y={y(0.3) - 36} anchor="middle" size="s" color={C.blue} weight={700}>Giants</Label>
-        <Label x={x(0.85)} y={y(-7.6) - 4} anchor="middle" size="s" color={C.red} weight={700}>Supergiants</Label>
-        <Label x={x(0.1) + 40} y={y(12) + 4} size="s" color={C.text} weight={700}>White dwarfs</Label>
+        <Label x={x(1.25)} y={y(0.3) + 48} anchor="middle" color={C.blue} weight={700}>Giants</Label>
+        <Label x={x(1.9) - 4} y={y(-4.6) + 16} anchor="end" color={C.red} weight={700}>Supergiants</Label>
+        <Label x={x(0.1) + 40} y={y(12) + 4} color={C.text} weight={700}>White dwarfs</Label>
         {!nearby && (
           <Label x={x(1.75)} y={y(13.5)} anchor="middle" size="s" color={C.dim}>empty: too dim to see</Label>
         )}

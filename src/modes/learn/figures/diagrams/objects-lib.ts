@@ -120,3 +120,27 @@ export interface PhotoCredit {
   license: string;
   sourceUrl: string;
 }
+
+// ───────────── Main-sequence stars (rough textbook relations) ─────────────
+
+/** Luminosity in Suns from mass in Suns (piecewise mass–luminosity relation, Wikipedia "Mass–luminosity relation"). */
+export function msLum(M: number): number {
+  if (M < 0.43) return 0.23 * Math.pow(M, 2.3);
+  if (M < 2) return Math.pow(M, 4);
+  if (M < 55) return 1.4 * Math.pow(M, 3.5);
+  return 32000 * M;
+}
+/** Radius in Suns (rough: R ∝ M^0.8). */
+export const msRadius = (M: number) => Math.pow(M, 0.8);
+/** Surface temperature (K) from luminosity and radius (Stefan–Boltzmann, Sun = 5,772 K). */
+export const msTemp = (M: number) => 5772 * Math.pow(msLum(M) / msRadius(M) ** 2, 0.25);
+/**
+ * Main-sequence lifetime in years: the classic rule t ≈ 10 billion yr × M^−2.5, plus ~3 million years because
+ * even the heaviest stars take a few million years to burn through their cores. Good to a factor of ~2.
+ */
+export const msLifetime = (M: number) => 1e10 * Math.pow(M, -2.5) + 3e6;
+/** Inverse of msLifetime: the mass of star whose main-sequence life equals `t` years (for cluster turn-offs). */
+export function turnoffMass(t: number): number {
+  if (t <= 3.05e6) return 200;
+  return Math.pow((t - 3e6) / 1e10, -1 / 2.5);
+}

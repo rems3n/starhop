@@ -76,11 +76,11 @@
           "type": "gallery",
           "images": [
             {
-              "file": "img/Albireo-1.jpg",
+              "file": "img/lessons/albireo-crop.jpg",
               "alt": "Albireo through a telescope: a bright golden star beside a fainter blue one",
               "label": "Albireo: gold and blue",
               "kind": "photograph",
-              "kindNote": "Colour processing not stated at source",
+              "kindNote": "Cropped and enlarged from the original; colour processing not stated at source",
               "credit": "Brucewaters",
               "license": "CC BY 4.0",
               "licenseUrl": "https://creativecommons.org/licenses/by/4.0",

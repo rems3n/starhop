@@ -1,15 +1,20 @@
-/** Progress dashboard: mastery for all 88 constellations, per-myth breakdown, lessons, unit scores, reset. */
+/** Progress dashboard: module quiz scores, constellations by course module, star-hops, myths, lessons, reset. */
 import { Fragment, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { routes } from '@/lib/routes';
 import { constellationMastery, dueItems, itemMastery, UNIT_PASS_SCORE, useProgress, type ItemProgress } from '@/store/progress';
-import { Button, Chip, Loading, Modal } from '@/ui';
+import { Button, Chip, Loading, Meter, Modal } from '@/ui';
+import { plainText } from './logic/build';
+import { SEASON_LABEL } from './logic/pools';
 import { MASTERED_AT, recentAccuracy } from './logic/select';
+import { hopItemId, hopsFor } from './logic/starhop';
+import { weakestRoute } from './pages';
 import type { QuizData } from './logic/types';
 import { useQuizData } from './useQuizData';
 
 const SKILLS = ['find', 'name', 'story', 'visibility'] as const;
 const SKILL_LABEL = { find: 'Find', name: 'Name', story: 'Stories', visibility: 'When visible' } as const;
-type Sort = 'path' | 'name' | 'weakest' | 'strongest';
+type Sort = 'course' | 'name' | 'weakest' | 'strongest';
 type Row = { id: string; name: string; english: string; m: Record<(typeof SKILLS)[number], number | null>; avg: number | null };
 
 function Cell({ value, label }: { value: number | null; label: string }) {
@@ -54,7 +59,7 @@ export function Dashboard() {
   const lessonsDone = useProgress((s) => s.lessonsDone);
   const unitScores = useProgress((s) => s.unitScores);
   const reset = useProgress((s) => s.reset);
-  const [sort, setSort] = useState<Sort>('path');
+  const [sort, setSort] = useState<Sort>('course');
   const [open, setOpen] = useState<string | null>(null);
   const [confirm, setConfirm] = useState(false);
 
@@ -77,13 +82,9 @@ export function Dashboard() {
   const acc = recentAccuracy(items, now);
   const lessonCount = data.lessons.filter((l) => lessonsDone[l.id]).length;
 
-  const inUnits = new Set(data.units.flatMap((u) => u.constellations));
   const groups: { id: string; title: string; rows: Row[] }[] =
-    sort === 'path'
-      ? [
-          ...data.units.map((u) => ({ id: u.id, title: u.title, rows: u.constellations.map((id) => rows.get(id)).filter((r): r is Row => !!r) })),
-          { id: '_other', title: 'Not on the path yet', rows: all.filter((r) => !inUnits.has(r.id)) },
-        ].filter((g) => g.rows.length)
+    sort === 'course'
+      ? courseOrder(data, rows)
       : [{
           id: '_all', title: '',
           rows: [...all].sort((a, b) => (sort === 'name' ? a.name.localeCompare(b.name) : sort === 'weakest' ? (a.avg ?? 2) - (b.avg ?? 2) || a.name.localeCompare(b.name) : (b.avg ?? -1) - (a.avg ?? -1) || a.name.localeCompare(b.name))),
@@ -97,8 +98,8 @@ export function Dashboard() {
           <p className="dim qz-lead">How well you know each constellation, skill by skill. An empty box means not started; green means mastered ({Math.round(MASTERED_AT * 100)}% or better).</p>
         </div>
         <div className="row row--wrap">
-          <Link className="btn btn--primary" to="/quiz/weakest">Practise weakest</Link>
-          <Link className={`btn`} to="/quiz/review">Review {due ? `(${due} due)` : ''}</Link>
+          <Link className="btn btn--primary" to={weakestRoute()}>Practise weakest</Link>
+          <Link className={`btn`} to={routes.review()}>Review {due ? `(${due} due)` : ''}</Link>
         </div>
       </header>
 
@@ -110,20 +111,23 @@ export function Dashboard() {
         <div><dt>Lessons completed</dt><dd>{lessonCount}<span> / {data.lessons.length}</span></dd></div>
       </dl>
 
-      <section>
-        <h4>Unit quizzes</h4>
+      <section data-testid="module-scores">
+        <h4>Module quizzes</h4>
         <ul className="qz-units">
-          {data.units.map((u) => {
-            const s = unitScores[u.id];
+          {(data.course?.modules ?? []).map((m) => {
+            const sc = unitScores[m.id];
             return (
-              <li key={u.id}>
-                <Link to={`/quiz/unit/${u.id}`}>{u.title}</Link>
-                {s == null ? <span className="faint qz-small">not taken</span> : <Chip tone={s >= UNIT_PASS_SCORE ? 'good' : 'amber'}>{Math.round(s * 100)}%{s >= UNIT_PASS_SCORE ? ' passed' : ''}</Chip>}
+              <li key={m.id}>
+                <Link to={routes.moduleQuiz(m.id)}>{m.number}. {m.title}</Link>
+                {sc == null ? <span className="faint qz-small">not taken</span> : <Chip tone={sc >= UNIT_PASS_SCORE ? 'good' : 'amber'}>{Math.round(sc * 100)}%{sc >= UNIT_PASS_SCORE ? ' passed' : ''}</Chip>}
               </li>
             );
           })}
         </ul>
       </section>
+
+      <HopsBlock data={data} items={items} />
+      <MythsBlock data={data} items={items} />
 
       <section>
         <div className="qz-table-head">
@@ -131,7 +135,7 @@ export function Dashboard() {
           <label className="qz-sort">
             <span className="dim">Sort</span>
             <select className="select" value={sort} onChange={(e) => setSort(e.target.value as Sort)} data-testid="sort">
-              <option value="path">Path order</option>
+              <option value="course">Course order</option>
               <option value="name">Name</option>
               <option value="weakest">Weakest first</option>
               <option value="strongest">Strongest first</option>
@@ -209,7 +213,7 @@ function Detail({ con, items, data }: { con: string; items: Record<string, ItemP
               <span className="qz-story-title">{s.title}</span>
               <span className="dim qz-small">Questions: {pct(s.qMastery)}{s.asked ? ` (${s.asked}${s.questions ? ` of ${s.questions}` : ''} tried)` : ''}</span>
               <span className="dim qz-small">Flashcard: {pct(s.card)}</span>
-              <Link className="btn btn--sm btn--quiet" to={`/quiz/story?con=${con}&story=${s.id}`}>Practise</Link>
+              <Link className="btn btn--sm btn--quiet" to={routes.quiz('story', { story: s.id })}>Practise</Link>
             </li>
           ))}
         </ul>
@@ -217,11 +221,120 @@ function Detail({ con, items, data }: { con: string; items: Record<string, ItemP
         <p className="dim qz-small">{written ? 'No myth is attached to this constellation, so there are no story questions.' : 'Its page has not been written yet, so there are no story questions.'}</p>
       )}
       <div className="row row--wrap">
-        <Link className="btn btn--sm" to={`/quiz/find?con=${con}`}>Find it</Link>
-        <Link className="btn btn--sm" to={`/quiz/name?con=${con}`}>Name it</Link>
-        <Link className="btn btn--sm" to={`/quiz/visibility?con=${con}`}>When is it up?</Link>
-        <Link className="btn btn--sm btn--quiet" to={`/learn/constellation/${con}`}>Read its page</Link>
+        <Link className="btn btn--sm" to={routes.quiz('find', { con })}>Find it</Link>
+        <Link className="btn btn--sm" to={routes.quiz('name', { con })}>Name it</Link>
+        <Link className="btn btn--sm" to={routes.quiz('visibility', { con })}>When is it up?</Link>
+        <Link className="btn btn--sm btn--quiet" to={routes.constellation(con)}>Read its page</Link>
       </div>
     </div>
+  );
+}
+
+/**
+ * Course order: one group per constellation group of the course for this location (module title, then the
+ * group), then anything left. Until the course is resolved, the evening months of each constellation.
+ */
+function courseOrder(data: QuizData, rows: Map<string, Row>): { id: string; title: string; rows: Row[] }[] {
+  const seen = new Set<string>();
+  const out: { id: string; title: string; rows: Row[] }[] = [];
+  for (const m of data.course?.modules ?? []) {
+    for (const g of m.groups) {
+      const list = g.constellations.filter((id) => !seen.has(id)).map((id) => rows.get(id)).filter((r): r is Row => !!r);
+      list.forEach((r) => seen.add(r.id));
+      if (list.length) out.push({ id: `${m.id}/${g.id}`, title: m.groups.length > 1 ? `${m.number}. ${m.title} · ${g.title}` : `${m.number}. ${m.title}`, rows: list });
+    }
+  }
+  if (!out.length) {
+    for (const [season, title] of Object.entries(SEASON_LABEL)) {
+      const list = data.catalog.constellations.filter((c) => c.season === season).map((c) => rows.get(c.id)).filter((r): r is Row => !!r);
+      list.forEach((r) => seen.add(r.id));
+      if (list.length) out.push({ id: season, title, rows: list });
+    }
+  }
+  const rest = [...rows.values()].filter((r) => !seen.has(r.id));
+  if (rest.length) out.push({ id: '_other', title: out.length ? 'Other constellations' : '', rows: rest });
+  return out;
+}
+
+const pctText = (v: number | null) => (v == null ? '—' : `${Math.round(v * 100)}%`);
+
+/** Star-hop mastery: every hop usable from this hemisphere (then the rest), with a practise link. */
+function HopsBlock({ data, items }: { data: QuizData; items: Record<string, ItemProgress> }) {
+  const hops = data.hops ?? [];
+  const usable = new Set(hopsFor(hops, data.observer, 'any', data.now).map((h) => h.id));
+  const list = [...hops].sort((a, b) => Number(usable.has(b.id)) - Number(usable.has(a.id)) || a.rank - b.rank);
+  const ms = list.map((h) => ({ h, m: itemMastery(items[hopItemId(h.id)]) }));
+  const started = ms.filter((x) => x.m != null).length;
+  const mastered = ms.filter((x) => (x.m ?? 0) >= MASTERED_AT).length;
+  return (
+    <section data-testid="hops-block">
+      <div className="qz-table-head">
+        <h4>Star-hops</h4>
+        <span className="dim qz-small">{hops.length ? `${started} of ${hops.length} practised · ${mastered} mastered` : ''}</span>
+      </div>
+      {hops.length ? (
+        <ul className="qz-hoplist">
+          {ms.map(({ h, m }) => (
+            <li key={h.id} className={usable.has(h.id) ? undefined : 'qz-off'}>
+              <Link to={routes.starhop(h.id)}>{h.name}</Link>
+              <Meter value={m ?? 0} label={`${h.name} mastery`} />
+              <span className="faint qz-small">{pctText(m)}</span>
+              <Link className="btn btn--sm btn--quiet" to={routes.quiz('starhop', { hop: h.id })}>Practise</Link>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p className="dim qz-small">The star-hop library is still being written.</p>
+      )}
+    </section>
+  );
+}
+
+/** Per-myth mastery (questions and flashcard together), weakest first, plus how many myths are untouched. */
+function MythsBlock({ data, items }: { data: QuizData; items: Record<string, ItemProgress> }) {
+  const [showAll, setShowAll] = useState(false);
+  const myths = useMemo(() => {
+    const out: { id: string; title: string; con: string; m: number | null; tried: number }[] = [];
+    for (const c of data.content) {
+      for (const s of c.stories ?? []) {
+        const vals = Object.values(items)
+          .filter((p) => p.id === `card:${s.id}` || p.id.startsWith(`story:${s.id}:`))
+          .map(itemMastery)
+          .filter((v): v is number => v != null);
+        out.push({ id: s.id, title: plainText(s.title), con: data.catalog.conById.get(c.id)?.name ?? c.id, m: vals.length ? vals.reduce((a, b) => a + b, 0) / vals.length : null, tried: vals.length });
+      }
+    }
+    return out;
+  }, [data, items]);
+  const started = myths.filter((x) => x.m != null).sort((a, b) => a.m! - b.m! || a.title.localeCompare(b.title));
+  const shown = showAll ? [...started, ...myths.filter((x) => x.m == null).sort((a, b) => a.con.localeCompare(b.con) || a.title.localeCompare(b.title))] : started;
+  return (
+    <section data-testid="myths-block">
+      <div className="qz-table-head">
+        <h4>Myths</h4>
+        <span className="dim qz-small">{started.length} of {myths.length} practised · {started.filter((x) => x.m! >= MASTERED_AT).length} mastered</span>
+      </div>
+      {shown.length ? (
+        <ul className="qz-mythlist">
+          {shown.map((x) => (
+            <li key={x.id}>
+              <span>
+                <Link to={routes.myth(x.id)}>{x.title}</Link> <span className="faint qz-small">{x.con}</span>
+              </span>
+              <Meter value={x.m ?? 0} label={`${x.title} mastery`} />
+              <span className="faint qz-small">{pctText(x.m)}</span>
+              <Link className="btn btn--sm btn--quiet" to={routes.quiz('story', { story: x.id })}>Practise</Link>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p className="dim qz-small">No myths practised yet. Open one in the <Link to={routes.myths()}>myth library</Link> and practise it, or start a round of myth questions.</p>
+      )}
+      {myths.length > started.length && (
+        <Button size="sm" variant="quiet" onClick={() => setShowAll(!showAll)}>
+          {showAll ? 'Show only the ones practised' : `Show all ${myths.length} myths`}
+        </Button>
+      )}
+    </section>
   );
 }

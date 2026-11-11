@@ -89,7 +89,7 @@ export function LightPollutionPanel({ bortle, onBortle, catalog, observer, date 
       <Button size="sm" pressed={compareFrom != null} onClick={flip} title="Flip between your sky and the opposite extreme">
         {compareFrom != null ? `Back to Bortle ${compareFrom}` : `Compare: ${otherIsDark ? 'dark site' : 'city'} (Bortle ${other})`}
       </Button>
-      <p className="ex-light-hint faint">Brooklyn is roughly Bortle 8–9. The scale runs from 1, a sky with no artificial light, to 9, the middle of a big city.</p>
+      <p className="ex-light-hint faint">The scale runs from 1, a sky with no artificial light, to 9, the middle of a big city. As a guide: a big city centre is 8–9, a suburb 5–7, a village or the countryside 3–4, and a remote dark site 1–2.</p>
     </div>
   );
 }

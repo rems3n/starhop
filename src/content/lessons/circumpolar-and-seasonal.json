@@ -164,7 +164,17 @@
             ]
           }
         ]
-      }
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "sky-zones-latitude",
+          "params": {
+            "star": "none"
+          },
+          "caption": "A side view of the sky along the north–south line. The celestial pole stands as high above the horizon as your latitude, so a cap of sky that size around it never sets, and a matching cap around the other pole never rises. Slide the latitude and watch both caps grow or vanish."
+        }
+      ]
     },
     {
       "heading": "What is circumpolar from Brooklyn",
@@ -172,6 +182,16 @@
         "A star's distance from the pole is fixed, so you can sort stars by declination, the sky's version of latitude, measured in degrees north or south of the celestial equator. From latitude 40.7° north, stars with a declination above +49.3° (that is, 90 minus 40.7) never set. Stars below −49.3° never rise.",
         "The never-set group includes the Little Dipper ([[con:UMi|Ursa Minor]]), the W of [[con:Cas|Cassiopeia]], [[con:Cep|Cepheus]], [[con:Cam|Camelopardalis]] and nearly all of [[con:Dra|Draco]]. The Big Dipper only just qualifies. Its bowl is safely inside, but [[star:Alkaid|Alkaid]], the star at the tip of the handle, grazes the horizon at its lowest. In practice, when the Dipper is at the bottom of its circle on autumn evenings, city buildings and haze hide it.",
         "The never-rise group includes the Southern Cross, the bright stars Alpha and Beta Centauri, [[star:Canopus|Canopus]] and the Magellanic Clouds. To see those you have to travel south."
+      ],
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "circumpolar-cap",
+          "params": {
+            "month": 10
+          },
+          "caption": "Everything inside the dashed circle never sets from your latitude; the circle's radius equals your latitude, so it just touches the horizon. Play the year: the figures inside only swing around the pole, while those outside dip below the horizon for part of the night."
+        }
       ]
     },
     {
@@ -219,7 +239,17 @@
           }
         ]
       },
-      "tryIt": "Find Cassiopeia's W tonight, then find it again at the same time in three months. It will be in a different part of its circle around Polaris, but it will be there. Try the same with Orion and one of those two nights it will be missing."
+      "tryIt": "Find Cassiopeia's W tonight, then find it again at the same time in three months. It will be in a different part of its circle around Polaris, but it will be there. Try the same with Orion and one of those two nights it will be missing.",
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "sky-zones-latitude",
+          "params": {
+            "star": "Vega"
+          },
+          "caption": "Follow one star at a time. Each star's daily circle is seen edge-on as a line; the solid part is above the horizon. Compare Vega with Antares: the farther a star is from the visible pole, the shorter and lower its time above the horizon."
+        }
+      ]
     }
   ],
   "keyPoints": [

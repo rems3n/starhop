@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useParams, useSearchParams } from 'react-router-dom';
-import { lessonById, pathUnits, type Lesson } from '@/content';
+import { lessonById, type Lesson } from '@/content';
+import { routes } from '@/lib/routes';
 import { useProgress } from '@/store/progress';
 import { Button, Loading, McqQuestion, Prose, RichText } from '@/ui';
 import { LessonFigure, Misconception, QuickCheck, ThinkAbout } from '../figures/Figure';
@@ -8,18 +9,15 @@ import type { SkyController } from '@/types';
 import { Crumbs, Empty, Page, Split } from '../components/common';
 import { DemoPlayer } from '../components/DemoPlayer';
 import { SkyStage } from '../components/SkyStage';
-import { objectHref, showInSky, useLearnEnv, type LearnEnv } from '../hooks';
-import { unitOfLesson } from '../logic/path';
+import { showInSky, useLearnEnv, type LearnEnv } from '../hooks';
+import { lessonPlace } from '../logic/course';
 import { placeTarget } from '../logic/place';
-import { LESSON_UNITS } from './LessonsIndex';
 
 type Screen = { kind: 'section'; index: number } | { kind: 'examples' } | { kind: 'key' } | { kind: 'questions' };
 
 function screensOf(l: Lesson): Screen[] {
   return [...l.sections.map((_, index): Screen => ({ kind: 'section', index })), ...(l.examples.length ? [{ kind: 'examples' } as Screen] : []), { kind: 'key' }, { kind: 'questions' }];
 }
-
-const pathLessonOrder = pathUnits.flatMap((u) => u.lessons);
 
 export default function LessonPage() {
   const { id = '' } = useParams();
@@ -36,11 +34,11 @@ export default function LessonPage() {
     return (
       <Page>
         <Empty>This lesson has not been written yet.</Empty>
-        <Link to="/learn/lessons">All lessons</Link>
+        <Link to={routes.learn()}>Back to the course</Link>
       </Page>
     );
   if (!env) return <Loading />;
-  const unit = unitOfLesson(pathUnits, lesson.id);
+  const place = lessonPlace(lesson.id);
   const screen = screens[at];
   const nav = (
     <div className="ln-lesson-nav">
@@ -56,8 +54,19 @@ export default function LessonPage() {
   );
   return (
     <Page wide>
-      <Crumbs items={[['Lessons', '/learn/lessons'], ...(unit ? [[unit.title, `/learn/unit/${unit.id}`] as [string, string]] : [[LESSON_UNITS.find((u) => u.id === lesson.unit)?.title ?? lesson.unit] as [string]]), [lesson.title]]} />
+      <Crumbs items={[['The course', routes.learn()], ...(place ? [[`Module ${place.module.number}: ${place.module.title}`, routes.module(place.module.id)] as [string, string]] : []), [lesson.title]]} />
       <header className="ln-lesson-head">
+        {place && (
+          <div className="ln-lesson-place">
+            <p className="ln-kicker">
+              Module {place.module.number} · Lesson {place.k} of {place.n}
+            </p>
+            <nav aria-label="Lessons in this module">
+              {place.prev && <Link to={routes.lesson(place.prev)}>← {lessonById.get(place.prev)?.title}</Link>}
+              {place.next && <Link to={routes.lesson(place.next)}>{lessonById.get(place.next)?.title} →</Link>}
+            </nav>
+          </div>
+        )}
         <h1>{lesson.title}</h1>
         <p className="ln-lede">
           {lesson.subtitle} <span className="dim ln-nowrap">· {lesson.minutes} min</span>
@@ -143,7 +152,7 @@ function ExamplesScreen({ lesson, env, nav }: { lesson: Lesson; env: LearnEnv; n
               <strong>{e.label}</strong>
               <span className="dim">{e.note}</span>
             </button>
-            <Link to={objectHref(e.ref)} className="ln-small">
+            <Link to={routes.object(e.ref)} className="ln-small">
               Object page
             </Link>
           </li>
@@ -165,10 +174,10 @@ function Questions({ lesson, onBack }: { lesson: Lesson; onBack: () => void }) {
   useEffect(() => {
     if (finished) markLessonDone(lesson.id);
   }, [finished, lesson.id, markLessonDone]);
-  const unit = unitOfLesson(pathUnits, lesson.id);
-  const pi = pathLessonOrder.indexOf(lesson.id);
-  const next = pi >= 0 ? pathLessonOrder.slice(pi + 1).map((x) => lessonById.get(x)).find((x) => !!x) : undefined;
-  const nextInUnit = unit && next && unit.lessons.includes(next.id);
+  const place = lessonPlace(lesson.id);
+  const nx = place?.nextInCourse;
+  const next = nx ? lessonById.get(nx.id) : undefined;
+  const lastInModule = !!place && !place.next;
   if (finished)
     return (
       <div className="ln-narrow ln-done">
@@ -177,19 +186,19 @@ function Questions({ lesson, onBack }: { lesson: Lesson; onBack: () => void }) {
           You got {right} of {total} right{right === total ? '. Spotless.' : '. The ones you missed will come back in your reviews.'}
         </p>
         <div className="row row--wrap">
-          {unit && nextInUnit && next && (
-            <Link className="btn btn--primary" to={`/learn/lesson/${next.id}`}>
-              Next lesson: {next.title}
+          {place && lastInModule && (
+            <Link className="btn btn--primary" to={routes.moduleQuiz(place.module.id)}>
+              Practice module {place.module.number}
             </Link>
           )}
-          {unit && (
-            <Link className={`btn${nextInUnit ? '' : ' btn--primary'}`} to={`/learn/unit/${unit.id}`}>
-              Back to the unit
+          {next && nx && (
+            <Link className={`btn${lastInModule ? '' : ' btn--primary'}`} to={routes.lesson(next.id)}>
+              Next lesson{nx.sameModule ? '' : ` (module ${nx.moduleNumber})`}: {next.title}
             </Link>
           )}
-          {!unit && next && (
-            <Link className="btn btn--primary" to={`/learn/lesson/${next.id}`}>
-              Next lesson: {next.title}
+          {place && (
+            <Link className="btn btn--quiet" to={routes.module(place.module.id)}>
+              Back to module {place.module.number}
             </Link>
           )}
           <Button
@@ -202,9 +211,6 @@ function Questions({ lesson, onBack }: { lesson: Lesson; onBack: () => void }) {
           >
             Try the questions again
           </Button>
-          <Link className="btn btn--quiet" to="/learn/lessons">
-            All lessons
-          </Link>
         </div>
       </div>
     );

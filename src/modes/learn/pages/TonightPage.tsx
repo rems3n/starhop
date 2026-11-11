@@ -6,10 +6,11 @@ import { Button, Chip, Loading } from '@/ui';
 import type { Highlight, TonightItem } from '@/types';
 import { LocationLine, Page, Split } from '../components/common';
 import { SkyStage } from '../components/SkyStage';
-import { objectHref, useLearnEnv } from '../hooks';
+import { useLearnEnv } from '../hooks';
 import { eveningOf } from '../logic/place';
 import { makeScene } from '../logic/scene';
 import { CLASS_LABEL, darknessSentence, groupTonight, moonSentence, placePhrase } from '../logic/tonight';
+import { routes } from '@/lib/routes';
 
 const pad = (n: number) => String(n).padStart(2, '0');
 
@@ -80,7 +81,7 @@ export default function TonightPage() {
               {sel ? (
                 <>
                   Showing <strong>{sel.name}</strong> at its best, {fmt(sel.visibility.bestTime)}.{' '}
-                  <Link to={sel.kind === 'constellation' ? `/learn/constellation/${sel.ref.slice(4)}` : objectHref(sel.ref)}>Read about {sel.name}</Link>
+                  <Link to={sel.kind === 'constellation' ? routes.constellation(sel.ref.slice(4)) : routes.object(sel.ref)}>Read about {sel.name}</Link>
                 </>
               ) : (
                 'Looking south once it is dark. Choose anything in the list to see where it will be at its best time.'

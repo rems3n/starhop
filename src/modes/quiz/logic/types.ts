@@ -1,6 +1,7 @@
 /** Question model shared by every quiz type. A session is just a list of these. */
 import type { Catalog } from '@/data/catalog';
-import type { ConstellationContent, Lesson, PathUnit } from '@/content/schema';
+import type { ResolvedCourse } from '@/content/course';
+import type { ConstellationContent, Lesson, PathUnit, Starhop } from '@/content/schema';
 import type { Skill } from '@/store/progress';
 import type { Observer, SkyImage } from '@/types';
 
@@ -71,7 +72,29 @@ export interface CardQ extends QBase {
   characters: string[];
 }
 
-export type Question = FindQ | NameQ | SkyObjQ | McqQ | CardQ;
+/**
+ * Star-hop "follow the hop": the start star(s) are ringed and the hop's instructions shown (target masked);
+ * the learner clicks the star they land on. Item `hop:<id>` (skill 'object').
+ */
+export interface HopQ extends QBase {
+  kind: 'hop';
+  hopId: string;
+  /** The hop's name, shown only after answering (it usually names the target) */
+  title: string;
+  /** Instructions as plain text with the target masked */
+  steps: string[];
+  /** Canonical refs of the ringed start star(s) */
+  start: string[];
+  /** Canonical refs along the hop, start first, target last */
+  path: string[];
+  /** Canonical ref of the point to click (the last path point) */
+  target: string;
+  /** Display name of where the hop leads */
+  targetName: string;
+  explanation: string;
+}
+
+export type Question = FindQ | NameQ | SkyObjQ | McqQ | CardQ | HopQ;
 
 /** Everything question builders need. Plain data, so builders run in tests without a browser. */
 export interface QuizData {
@@ -79,9 +102,14 @@ export interface QuizData {
   /** Constellation pages that exist so far (may be a small subset of the 88) */
   content: ConstellationContent[];
   lessons: Lesson[];
+  /** Legacy path units (only for old `unit:` pool specs) */
   units: PathUnit[];
   observer: Observer;
   now: Date;
+  /** The course resolved for `observer` (src/content/course.ts); absent in some tests */
+  course?: ResolvedCourse;
+  /** The star-hop library (src/content/starhops.json) */
+  hops?: Starhop[];
 }
 
 export type SessionLength = 5 | 10 | 20 | 'all';

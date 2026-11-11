@@ -1,6 +1,7 @@
 /** Visibility calendar: rows, filters, sorting, and chunked computation. Pure (the chunk runner takes a scheduler). */
-import type { PathUnit } from '@/content/schema';
-import { ANCHORS, type BodyId, type Constellation, type Season, type VisibilityClass } from '@/types';
+import type { ResolvedCourse } from '@/content/course';
+import type { BodyId, Constellation, VisibilityClass } from '@/types';
+import { routes } from '@/lib/routes';
 
 export type CalTarget = BodyId | { points: { ra: number; dec: number }[] };
 
@@ -11,47 +12,43 @@ export interface CalRow {
   name: string;
   sub: string;
   href: string;
-  season?: Season;
-  unitId?: string;
+  /** Evening group for the learner's location ("dec-feb" … "circumpolar", or "beyond" when it never rises) */
+  group?: string;
+  /** Course module that teaches it (anchors / seasons / beyond module id) */
+  moduleId?: string;
   anchor: boolean;
   target: CalTarget;
 }
 
 export const CAL_PLANETS: BodyId[] = ['Mercury', 'Venus', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'];
 
-export const SEASON_LABEL: Record<Season, string> = {
-  winter: 'Winter evenings',
-  spring: 'Spring evenings',
-  summer: 'Summer evenings',
-  autumn: 'Autumn evenings',
-  'north-circumpolar': 'Around the north pole',
-  'far-south': 'Far south',
-};
-export const SEASON_ORDER: Season[] = ['north-circumpolar', 'winter', 'spring', 'summer', 'autumn', 'far-south'];
+/** Evening groups in display order, with titles (hemisphere-neutral; from the resolved course). */
+export function groupOrder(course: ResolvedCourse): { id: string; title: string }[] {
+  const seen = new Map<string, string>();
+  for (const id of ['dec-feb', 'mar-may', 'jun-aug', 'sep-nov', 'circumpolar', 'beyond'])
+    for (const m of course.modules) for (const g of m.groups) if (g.id === id && !seen.has(id)) seen.set(id, g.id === 'beyond' ? 'Never rises from here' : g.title);
+  return [...seen].map(([id, title]) => ({ id, title }));
+}
 
-export function buildCalendarRows(
-  constellations: Constellation[],
-  units: PathUnit[],
-  pointsOf: (c: Constellation) => { ra: number; dec: number }[],
-): CalRow[] {
-  const unitOf = new Map<string, string>();
-  for (const u of units) for (const c of u.constellations) if (!unitOf.has(c)) unitOf.set(c, u.id);
-  const anchors = new Set<string>(ANCHORS);
-  const rows: CalRow[] = CAL_PLANETS.map((b) => ({ key: `body:${b}`, kind: 'planet', id: b, name: b, sub: 'planet', href: `/learn/object/${encodeURIComponent(`body:${b}`)}`, anchor: false, target: b }));
+export function buildCalendarRows(constellations: Constellation[], course: ResolvedCourse, pointsOf: (c: Constellation) => { ra: number; dec: number }[]): CalRow[] {
+  const where = new Map<string, { group: string; moduleId: string; anchor: boolean }>();
+  for (const m of course.modules) for (const g of m.groups) for (const c of g.constellations) where.set(c, { group: g.id, moduleId: m.id, anchor: m.kind === 'anchors' });
+  const rows: CalRow[] = CAL_PLANETS.map((b) => ({ key: `body:${b}`, kind: 'planet', id: b, name: b, sub: 'planet', href: routes.object(`body:${b}`), anchor: false, target: b }));
   for (const c of constellations) {
-    rows.push({ key: `con:${c.id}`, kind: 'constellation', id: c.id, name: c.name, sub: c.english, href: `/learn/constellation/${c.id}`, season: c.season, unitId: unitOf.get(c.id), anchor: anchors.has(c.id), target: { points: pointsOf(c) } });
+    const w = where.get(c.id);
+    rows.push({ key: `con:${c.id}`, kind: 'constellation', id: c.id, name: c.name, sub: c.english, href: routes.constellation(c.id), group: w?.group, moduleId: w?.moduleId, anchor: !!w?.anchor, target: { points: pointsOf(c) } });
   }
   return rows;
 }
 
-export type CalFilter = 'all' | 'anchors' | 'planets' | `season:${Season}` | `unit:${string}`;
+export type CalFilter = 'all' | 'anchors' | 'planets' | `group:${string}` | `module:${string}`;
 
 export function filterRows(rows: CalRow[], filter: CalFilter): CalRow[] {
   if (filter === 'all') return rows;
   if (filter === 'anchors') return rows.filter((r) => r.anchor);
   if (filter === 'planets') return rows.filter((r) => r.kind === 'planet');
-  if (filter.startsWith('season:')) return rows.filter((r) => r.season === filter.slice(7));
-  if (filter.startsWith('unit:')) return rows.filter((r) => r.unitId === filter.slice(5));
+  if (filter.startsWith('group:')) return rows.filter((r) => r.group === filter.slice(6));
+  if (filter.startsWith('module:')) return rows.filter((r) => r.moduleId === filter.slice(7));
   return rows;
 }
 
@@ -87,7 +84,7 @@ export function sortRows(rows: CalRow[], sort: CalSort, classes: Map<string, Yea
   return out.sort((a, b) => visibilitySortKey(classes.get(a.key), startMonth) - visibilitySortKey(classes.get(b.key), startMonth) || a.name.localeCompare(b.name));
 }
 
-export type CalGroupBy = 'none' | 'season' | 'unit';
+export type CalGroupBy = 'none' | 'season' | 'module';
 
 export interface CalGroup {
   id: string;
@@ -95,8 +92,8 @@ export interface CalGroup {
   rows: CalRow[];
 }
 
-/** Planets always form their own group at the top; constellations are grouped as asked. */
-export function groupRows(rows: CalRow[], by: CalGroupBy, units: PathUnit[]): CalGroup[] {
+/** Planets always form their own group at the top; constellations are grouped by evening months or by course module. */
+export function groupRows(rows: CalRow[], by: CalGroupBy, course: ResolvedCourse): CalGroup[] {
   const planets = rows.filter((r) => r.kind === 'planet');
   const cons = rows.filter((r) => r.kind === 'constellation');
   const groups: CalGroup[] = [];
@@ -104,17 +101,15 @@ export function groupRows(rows: CalRow[], by: CalGroupBy, units: PathUnit[]): Ca
   if (by === 'none') {
     if (cons.length) groups.push({ id: 'constellations', title: 'Constellations', rows: cons });
   } else if (by === 'season') {
-    for (const s of SEASON_ORDER) {
-      const g = cons.filter((r) => r.season === s);
-      if (g.length) groups.push({ id: `season:${s}`, title: SEASON_LABEL[s], rows: g });
+    for (const g of groupOrder(course)) {
+      const list = cons.filter((r) => r.group === g.id);
+      if (list.length) groups.push({ id: `group:${g.id}`, title: g.title, rows: list });
     }
   } else {
-    for (const u of units) {
-      const g = cons.filter((r) => r.unitId === u.id);
-      if (g.length) groups.push({ id: `unit:${u.id}`, title: u.title, rows: g });
+    for (const m of course.modules) {
+      const list = cons.filter((r) => r.moduleId === m.id);
+      if (list.length) groups.push({ id: `module:${m.id}`, title: `Module ${m.number}: ${m.title}`, rows: list });
     }
-    const rest = cons.filter((r) => !r.unitId);
-    if (rest.length) groups.push({ id: 'unit:none', title: 'Not on the path', rows: rest });
   }
   return groups;
 }
