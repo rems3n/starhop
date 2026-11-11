@@ -5,7 +5,7 @@ import { mkdirSync } from 'node:fs';
 const BASE = process.argv[2] ?? 'http://localhost:4998/';
 const OUT = process.argv[3] ?? 'docs/shots/final';
 mkdirSync(OUT, { recursive: true });
-const routes = ['sky', 'sky?target=con:UMa', 'tonight', 'tonight/month/1', 'tonight/calendar', 'tonight/events',
+const routes = process.env.ROUTES ? process.env.ROUTES.split(',') : ['sky', 'sky?target=con:UMa', 'tonight', 'tonight/month/1', 'tonight/calendar', 'tonight/events',
   'learn', 'learn/module/how-to-look', 'learn/module/finding-your-way', 'learn/module/first-constellations', 'learn/module/season-by-season', 'learn/module/beyond-your-horizon',
   'learn/lesson/dark-adaptation', 'learn/lesson/star-hopping', 'learn/lesson/retrograde-motion', 'learn/lesson/star-colors-and-classes',
   'library', 'library/constellations', 'library/constellation/Ori', 'library/constellation/Cru', 'library/myths', 'library/myth/Ori-scorpion',
