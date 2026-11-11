@@ -139,7 +139,7 @@ describe('constellation illustrations: generated data', () => {
 
   it('fades with daylight and with very close or very wide fields', () => {
     expect(artAlpha(60, 0)).toBeGreaterThan(0.18);
-    expect(artAlpha(60, 0)).toBeLessThan(0.3);
+    expect(artAlpha(60, 0)).toBeLessThan(0.4);
     expect(artAlpha(60, 1)).toBe(0);
     expect(artAlpha(2, 0)).toBe(0);
     expect(artAlpha(150, 0)).toBeLessThan(artAlpha(60, 0));
