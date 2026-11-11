@@ -10,7 +10,7 @@
       "heading": "Three kinds of star",
       "body": [
         "After this lesson you will be able to say, for any star, whether it is always up from where you live, sometimes up, or never up, using nothing but your latitude and the star's distance from the pole.",
-        "The sky turns around the celestial pole that is above your horizon. From {{place}} that is the {{pole}}, and it stands {{poleAltitude}} above the horizon, the same number as your latitude. Picture a circle around that pole that just touches the horizon below it. Its radius equals your latitude. Any star inside that circle turns around the pole without ever reaching the horizon. Such stars are called circumpolar: they are up all night, every night of the year, and in the daytime too, hidden by the bright sky.",
+        "The sky turns around the celestial pole that is above your horizon. From {{place}}, that is the {{pole}}, and it stands {{poleAltitude}} above the horizon, the same number as your latitude. Picture a circle around that pole that just touches the horizon below it. Its radius equals your latitude. Any star inside that circle turns around the pole without ever reaching the horizon. Such stars are called circumpolar: they are up all night, every night of the year, and in the daytime too, hidden by the bright sky.",
         "There is a matching circle around the opposite pole, which lies the same number of degrees below your horizon on the other side. Stars inside it never climb above the horizon at all. Everything in between rises and sets. (On the equator both circles shrink to nothing, so every star rises and sets.)"
       ],
       "demo": {

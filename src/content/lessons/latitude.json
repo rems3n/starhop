@@ -10,7 +10,7 @@
       "heading": "The pole's height is your latitude",
       "body": [
         "After this lesson you will be able to work out what the sky does anywhere on Earth from one number, the latitude, and you will know what to expect on your first night under the other hemisphere's sky.",
-        "The height of the celestial pole above your horizon equals your latitude: from {{place}} the {{pole}} is {{poleAltitude}} up. In the northern hemisphere [[star:Polaris|Polaris]] is within 1° of the pole, so measuring its height tells you how far north you are; from 35°N it is three and a half fists up. Sailors used exactly this for centuries. The south celestial pole has no bright star to mark it, so southern navigators found it from the Southern Cross instead.",
+        "The height of the celestial pole above your horizon equals your latitude: from {{place}}, the {{pole}} is {{poleAltitude}} up. In the northern hemisphere [[star:Polaris|Polaris]] is within 1° of the pole, so measuring its height tells you how far north you are; from 35°N it is three and a half fists up. Sailors used exactly this for centuries. The south celestial pole has no bright star to mark it, so southern navigators found it from the Southern Cross instead.",
         "Travel toward a pole and that pole climbs. In Tromsø, in Arctic Norway, Polaris is 70° up and most of the sky you can see is circumpolar: it circles without setting. Travel toward the equator and the pole sinks. Each degree of latitude you go south lowers Polaris by one degree and uncovers one more degree of sky along your southern horizon; each degree north does the same for the south celestial pole and the northern horizon."
       ],
       "demo": {
