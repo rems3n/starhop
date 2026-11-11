@@ -20,6 +20,7 @@ const airRatio = (h: number) => (Math.sqrt((RE + HA) ** 2 - (RE * Math.cos(rad(h
 // drawing geometry (atmosphere exaggerated)
 const EX = 210, EY = 1000, ER = 700, AH = 90; // Earth centre, radius, drawn air thickness
 const OX = EX, OY = EY - ER; // observer on top
+const groundY = (x: number) => EY - Math.sqrt(ER * ER - (x - EX) ** 2);
 function exitPoint(h: number): [number, number] {
   const dx = Math.cos(rad(h)), dy = -Math.sin(rad(h));
   // |O + t d − E|² = (ER + AH)²
@@ -54,12 +55,15 @@ export default function AirmassGlow({ params }: DiagramProps) {
         </defs>
         <g clipPath="url(#am-left)">
           <circle cx={EX} cy={EY} r={ER + AH} fill={C.blue} opacity={0.12} />
-          {/* city glow on the right-hand horizon */}
-          <ellipse cx={400} cy={OY + 48} rx={110} ry={90} fill="url(#am-city)" />
           <circle cx={EX} cy={EY} r={ER} fill="#141a33" stroke={C.lineStrong} strokeWidth={1.5} />
-          {[360, 380, 400, 420].map((x, i) => (
-            <rect key={x} x={x} y={OY + 28 + i * 3 - [16, 26, 12, 20][i]} width={14} height={[16, 26, 12, 20][i] + 6} fill="#262d4f" transform={`rotate(${(x - EX) / 12} ${x} ${OY + 30})`} />
-          ))}
+          {/* a town on the ground to the right, with its glow */}
+          <ellipse cx={405} cy={groundY(405) - 6} rx={95} ry={80} fill="url(#am-city)" />
+          {[370, 388, 404, 420, 436].map((x, i) => {
+            const h = [16, 26, 12, 22, 14][i];
+            const g = groundY(x);
+            const tilt = (Math.asin((x - EX) / ER) * 180) / Math.PI;
+            return <rect key={x} x={x - 7} y={g - h} width={14} height={h + 4} fill="#262d4f" stroke={C.line} transform={`rotate(${tilt.toFixed(1)} ${x} ${g})`} />;
+          })}
           {/* line of sight */}
           <line x1={OX} y1={OY} x2={x2} y2={y2} stroke={C.amber} strokeWidth={4} opacity={0.85} />
           <line x1={OX} y1={OY} x2={OX} y2={OY - AH} stroke={C.text} strokeWidth={2} strokeDasharray="4 4" opacity={0.6} />
@@ -77,7 +81,7 @@ export default function AirmassGlow({ params }: DiagramProps) {
         <Label x={20} y={348} size="s" color={C.blue}>
           the air
         </Label>
-        <Label x={400} y={OY + 76} anchor="middle" size="s" color={C.amber}>
+        <Label x={405} y={groundY(405) + 26} anchor="middle" size="s" color={C.amber}>
           town
         </Label>
         {/* graph */}

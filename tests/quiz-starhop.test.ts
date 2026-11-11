@@ -150,10 +150,12 @@ describe('star-hop sessions', () => {
   it('every real star-hop builds both question formats', () => {
     for (const h of realHops) {
       const qs = questionsForHop(h, catalog, { click: true, mcq: true }, mulberry32(5));
-      expect(qs.map((q) => q.kind), h.id).toEqual(['hop', 'mcq']);
+      const point = catalog.resolve(h.to)?.kind === 'point';
+      // hops that end on an empty point (a pole, the galactic centre) are asked only in the sky
+      expect(qs.map((q) => q.kind), h.id).toEqual(point ? ['hop'] : ['hop', 'mcq']);
       const click = qs[0] as HopQ;
-      const mcq = qs[1] as McqQ;
-      expect(new Set(mcq.choices).size, h.id).toBe(4);
+      if (!point) expect(new Set((qs[1] as McqQ).choices).size, h.id).toBe(4);
+      expect(click.targetName, h.id).not.toBe('Point');
       // the target's name never shows in the steps
       const name = click.targetName.replace(/^M\d+ \((.*)\)$/, '$1');
       for (const s of click.steps) expect(s.includes(name), `${h.id}: ${s}`).toBe(false);

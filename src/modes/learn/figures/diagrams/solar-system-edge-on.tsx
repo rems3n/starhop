@@ -70,6 +70,7 @@ export default function SolarSystemEdgeOn({ params }: DiagramProps) {
         <line x1={14} y1={CY} x2={706} y2={CY} stroke={C.line} strokeDasharray="2 5" />
         {orbits.map((pts, i) => {
           const p = PLANETS[i];
+          if (p.dwarf && f > 1) return null;
           const d = pts.map((q) => proj(q)).map(([x, y], j) => `${j ? 'L' : 'M'} ${x.toFixed(1)} ${y.toFixed(1)}`).join(' ');
           return <path key={p.name} d={d} fill="none" stroke={p.color} strokeWidth={p.dwarf ? 1.2 : 1.6} strokeDasharray={p.dwarf ? '4 4' : undefined} opacity={0.85} />;
         })}
@@ -77,6 +78,7 @@ export default function SolarSystemEdgeOn({ params }: DiagramProps) {
         <circle cx={CX} cy={CY} r={4} fill={C.sun} />
         {orbits.map((pts, i) => {
           const p = PLANETS[i];
+          if (p.dwarf && f > 1) return null;
           const [x, y] = proj(pts[0]);
           // label at the orbit's rightmost point
           let best = proj(pts[0]);
@@ -100,7 +102,7 @@ export default function SolarSystemEdgeOn({ params }: DiagramProps) {
           {view < 5 ? 'Edge-on: as we see it from inside the disc' : view > 85 ? 'From above the north pole of the solar system' : `Seen from ${view}° above the plane`}
         </Label>
         <Label x={706} y={324} anchor="end" size="s" color={C.faint}>
-          {`real orbits · distances compressed${f > 1 ? ' · tilts exaggerated ×5' : ' · true tilts'} · dots: 1 Jan 2027`}
+          {`real orbits · distances compressed${f > 1 ? ' · tilts exaggerated ×5 (Pluto hidden)' : ' · true tilts'} · dots: 1 Jan 2027`}
         </Label>
       </Svg>
       <Controls>

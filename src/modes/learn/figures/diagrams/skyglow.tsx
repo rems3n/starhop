@@ -31,15 +31,15 @@ export default function Skyglow({ params }: DiagramProps) {
   const stars: [number, number, number][] = [
     [520, 60, 2.6], [600, 90, 1.6], [660, 50, 2.2], [560, 130, 1.3], [690, 120, 1.8], [480, 100, 1.2], [630, 160, 1.1], [540, 30, 1.4], [700, 200, 1.0], [590, 210, 1.5],
   ];
-  const limit = 2.6 - glow * 1.6; // radius threshold: stars smaller than this are drowned (illustrative)
+  const limit = 0.9 + glow * 1.6; // radius threshold: stars smaller than this are drowned (illustrative)
 
   return (
     <div>
       <Svg w={720} h={390} title={meta.title} desc="Side view: a town on the left with street lamps; light goes up from the lamps and from the ground, is scattered by particles in the air, and some of it comes back down toward an observer standing in the countryside on the right, making a glowing dome over the town that hides faint stars.">
         <defs>
           <radialGradient id="sg-dome" cx="0.38" cy="1" r="0.9">
-            <stop offset="0" stopColor="#e8a85a" stopOpacity={0.55 * glow + 0.05} />
-            <stop offset="0.45" stopColor="#c88a5a" stopOpacity={0.3 * glow} />
+            <stop offset="0" stopColor="#e8a85a" stopOpacity={0.75 * glow + 0.05} />
+            <stop offset="0.5" stopColor="#c88a5a" stopOpacity={0.4 * glow} />
             <stop offset="1" stopColor="#c88a5a" stopOpacity={0} />
           </radialGradient>
         </defs>

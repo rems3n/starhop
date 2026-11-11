@@ -198,14 +198,16 @@ export default function AltAzDome({ params }: DiagramProps) {
         <Label x={scr([0, 0, 1])[0] + 8} y={scr([0, 0, 1])[1] - 8} size="s" color={C.dim}>
           zenith, 90°
         </Label>
-        <Label x={scr(hv(62, 0))[0] + 8} y={scr(hv(62, 0))[1] + 4} size="s" color={C.blue}>
+        <Label x={scr(hv(40, 180))[0] + 8} y={scr(hv(40, 180))[1] + 4} size="s" color={C.blue}>
           meridian
         </Label>
         {/* daily path */}
         {daily &&
-          ptsAbove(pathPts).map((seg, i) => (
-            <path key={`p${i}`} d={`M ${seg.map((q) => scr(q).map((v) => v.toFixed(1)).join(' ')).join(' L ')}`} fill="none" stroke={C.amber} strokeWidth={1.5} strokeDasharray="5 4" opacity={0.8} />
-          ))}
+          ptsAbove(pathPts).flatMap((seg, i) =>
+            seg.length > 1
+              ? runs(seg).map((r, j) => <path key={`p${i}-${j}`} d={r.d} fill="none" stroke={C.amber} strokeWidth={r.front ? 2 : 1.2} strokeDasharray="5 4" opacity={r.front ? 0.9 : 0.4} />)
+              : [],
+          )}
         {/* observer */}
         <g>
           <circle cx={CX} cy={CY - 22} r={6} fill={C.moon} />

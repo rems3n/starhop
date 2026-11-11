@@ -50,6 +50,18 @@
             "highlights": [{ "type": "polyline", "points": ["star:Vega", "star:Deneb", "star:Altair"], "closed": true, "label": "Summer Triangle" }]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "skyglow",
+          "params": { "shielded": false },
+          "caption": "Skyglow in three steps: lamps send light upward, the air scatters it, and some of it comes back down from every direction, so the sky behind the stars glows. Switch to shielded lamps and the glow shrinks, though light bouncing off the pavement still escapes; humid, hazy air makes it worse."
+        }
+      ],
+      "misconception": {
+        "myth": "City lights make the stars themselves dimmer.",
+        "fact": "The stars send exactly as much light as they do anywhere else. Light pollution brightens the background they are seen against, so the faint ones no longer stand out from it, like a candle in a floodlit stadium."
       }
     },
     {
@@ -57,7 +69,19 @@
       "body": [
         "Light pollution takes the faint and the spread-out first. The Milky Way, a broad band of soft light, is gone by Bortle 7. So are almost all galaxies and nebulae, whose light is smeared over an area instead of packed into a point. Among the stars, a city limit of about magnitude 4 leaves only a few hundred of the several thousand a dark sky shows.",
         "For constellations this means you see skeletons. Bright figures like Orion, the Big Dipper and Scorpius keep their shape. Dim ones such as Cancer, Pisces or the Little Dipper's handle lose most or all of their stars. When a guide in this app describes a faint constellation, it will tell you honestly how much survives."
-      ]
+      ],
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "point-vs-diffuse",
+          "params": { "bortle": 3 },
+          "caption": "A star and a nebula can give the same total light, but the star packs it into a point while the nebula spreads it over a wide patch. Brighten the sky: the glow rises past the nebula's dim, spread-out light long before it reaches the star. That is why galaxies, nebulae and the Milky Way vanish first."
+        }
+      ],
+      "thinkAbout": {
+        "question": "The Andromeda Galaxy has a total magnitude of about 3.4, brighter than many stars you can see from a city. Why is it so hard to see from one?",
+        "answer": "Its light is spread over a patch of sky several times wider than the full Moon. Per patch of sky it is far dimmer than a magnitude-3 star, so the city's glow drowns it, while a star of the same total brightness, concentrated in a point, still shows."
+      }
     },
     {
       "heading": "What still works from Brooklyn",
@@ -76,7 +100,12 @@
             "layers": { "constellationNames": false },
             "bortle": 9,
             "highlights": [
-              { "type": "polyline", "points": ["star:Sirius", "star:Procyon", "star:Pollux", "star:Castor", "star:Capella", "star:Aldebaran", "star:Rigel"], "closed": true, "label": "Winter Hexagon" },
+              {
+                "type": "polyline",
+                "points": ["star:Sirius", "star:Procyon", "star:Pollux", "star:Castor", "star:Capella", "star:Aldebaran", "star:Rigel"],
+                "closed": true,
+                "label": "Winter Hexagon"
+              },
               { "type": "object", "ref": "dso:M45", "label": "Pleiades" }
             ]
           },
@@ -86,12 +115,16 @@
             "view": { "target": "star:Mizar", "fov": 12 },
             "layers": { "constellationNames": false },
             "bortle": 8,
-            "highlights": [
-              { "type": "object", "ref": "star:Mizar", "label": "Mizar" },
-              { "type": "object", "ref": "star:Alcor", "label": "Alcor" }
-            ]
+            "highlights": [{ "type": "object", "ref": "star:Mizar", "label": "Mizar" }, { "type": "object", "ref": "star:Alcor", "label": "Alcor" }]
           }
         ]
+      },
+      "check": {
+        "id": "check-city-targets",
+        "prompt": "From the middle of a city, which of these is still a rewarding target?",
+        "choices": ["The Moon's craters through binoculars", "The Milky Way", "A faint spiral galaxy", "The zodiacal light"],
+        "answerIndex": 0,
+        "explanation": "The Moon and bright planets are so bright that sky glow makes no difference to them. The Milky Way, faint galaxies and the zodiacal light are spread-out glows, the first things light pollution hides."
       }
     },
     {
@@ -101,7 +134,15 @@
         "Second, look high. The glow is thickest near the horizon, where you look through the most air and the most city. Overhead the sky is noticeably darker, so catch each constellation when it is highest.",
         "Third, pick your night and your place. A clear, dry night after a cold front, with no Moon, is worth several ordinary ones. And even a modest move helps: the middle of a large park, a beach or the waterfront facing away from Manhattan is noticeably darker than a lit street."
       ],
-      "tryIt": "Tonight, compare two spots a few minutes apart: under a streetlight, and somewhere all direct lights are blocked. After ten minutes in each, count the stars inside a pattern you know, such as the Big Dipper's bowl or the rectangle of Orion."
+      "tryIt": "Tonight, compare two spots a few minutes apart: under a streetlight, and somewhere all direct lights are blocked. After ten minutes in each, count the stars inside a pattern you know, such as the Big Dipper's bowl or the rectangle of Orion.",
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "airmass-glow",
+          "params": { "alt": 20 },
+          "caption": "The lower you look, the more air your line of sight crosses: about twice as much at 30° up, nearly six times at 10°, and almost 40 times at the horizon, where it also skims over every lit-up town. Catch each constellation when it is high."
+        }
+      ]
     }
   ],
   "keyPoints": [
@@ -123,12 +164,7 @@
     {
       "id": "q2",
       "prompt": "On the Bortle scale, what does class 1 mean?",
-      "choices": [
-        "The darkest, most pristine sky",
-        "The brightest inner-city sky",
-        "A sky with a full Moon",
-        "A sky with one visible star"
-      ],
+      "choices": ["The darkest, most pristine sky", "The brightest inner-city sky", "A sky with a full Moon", "A sky with one visible star"],
       "answerIndex": 0,
       "explanation": "Bortle 1 is the darkest sky on Earth and 9 is the inner city. Lower is darker."
     },
@@ -171,12 +207,7 @@
     {
       "id": "q6",
       "prompt": "Which is a good target for a Brooklyn rooftop with binoculars?",
-      "choices": [
-        "The summer Milky Way",
-        "The Pleiades star cluster",
-        "The spiral arms of the Andromeda Galaxy",
-        "The zodiacal light"
-      ],
+      "choices": ["The summer Milky Way", "The Pleiades star cluster", "The spiral arms of the Andromeda Galaxy", "The zodiacal light"],
       "answerIndex": 1,
       "explanation": "Bright clusters of stars hold up well in the city, and binoculars make the Pleiades spectacular. The Milky Way and zodiacal light need truly dark skies."
     }

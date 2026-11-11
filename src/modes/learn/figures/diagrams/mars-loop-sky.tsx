@@ -7,7 +7,7 @@
 import { useMemo, useState } from 'react';
 import { Body } from 'astronomy-engine';
 import { C, ChoiceControl, Controls, Label, PlayButton, RangeControl, Readout, Svg, useAnimatedValue, type DiagramMeta, type DiagramProps } from '../kit';
-import { eqToEcl, geoEcl, norm180 } from './ecliptic-common';
+import { eqToEcl, geoEcl, norm180, useObserver } from './ecliptic-common';
 
 export const meta: DiagramMeta = {
   title: 'A retrograde loop among the stars',
@@ -52,6 +52,7 @@ const W = 720, H = 360, S = 15, PX = 360, PY = 170;
 export default function MarsLoopSky({ params }: DiagramProps) {
   const init = (typeof params?.planet === 'string' && params.planet in PL ? params.planet : 'mars') as keyof typeof PL;
   const [pk, setPk] = useState<keyof typeof PL>(init);
+  const tz = useObserver().tz;
   const P = PL[pk];
   const data = useMemo(() => {
     const t0 = Date.parse(`${P.from}T05:00:00Z`), t1 = Date.parse(`${P.to}T05:00:00Z`);
@@ -69,9 +70,32 @@ export default function MarsLoopSky({ params }: DiagramProps) {
     }
     let opp = 0;
     pts.forEach((p, i) => { if (p.opp < pts[opp].opp) opp = i; });
+    // Refine to the hour: the longitude extreme at each station, and the moment of opposition.
+    const hourly = (i: number, f: (d: Date) => number, pick: 'max' | 'min') => {
+      let best = pts[Math.max(0, i - 1)].d, bv = pick === 'max' ? -Infinity : Infinity;
+      const ref = pts[i].lon;
+      for (let h = -30; h <= 30; h++) {
+        const d = new Date(pts[i].d.getTime() + h * 3600000);
+        const v = f(d) - ref;
+        const vv = norm180(v);
+        if (pick === 'max' ? vv > bv : vv < bv) { bv = vv; best = d; }
+      }
+      return best;
+    };
+    const stationDates = stations.map((j, n) => {
+      const rising = norm180(pts[j].lon - pts[j - 1].lon) > 0;
+      void n;
+      return hourly(j, (d) => geoEcl(P.body, d).lon, rising ? 'max' : 'min');
+    });
+    let oppDate = pts[opp].d, ob = Infinity;
+    for (let h = -30; h <= 30; h++) {
+      const d = new Date(pts[opp].d.getTime() + h * 3600000);
+      const v = Math.abs(norm180(geoEcl(P.body, d).lon - geoEcl(Body.Sun, d).lon - 180));
+      if (v < ob) { ob = v; oppDate = d; }
+    }
     const stars = P.stars.map(([n, ra, dec, mag]) => ({ n, mag, ...eqToEcl(ra, dec) }));
     const lines = P.lines.map((l) => l.map(([ra, dec]) => eqToEcl(ra, dec)));
-    return { pts, stations, opp, stars, lines };
+    return { pts, stations, stationDates, opp, oppDate, stars, lines };
   }, [P]);
   const [playing, setPlaying] = useState(false);
   const [i, setI] = useAnimatedValue(0, playing, 22, [0, data.pts.length - 1]);
@@ -82,7 +106,7 @@ export default function MarsLoopSky({ params }: DiagramProps) {
   const cur = data.pts[k];
   const wk = Math.min(data.pts.length - 1, k + 7);
   const rate = norm180(data.pts[wk].lon - data.pts[Math.max(0, wk - 7)].lon);
-  const fmt = (d: Date) => d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+  const fmt = (d: Date) => d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: tz });
   const [s1, s2] = data.stations;
   const retro = s1 !== undefined && s2 !== undefined && k > s1 && k < s2;
   const span = s1 !== undefined && s2 !== undefined ? Math.abs(norm180(data.pts[s2].lon - data.pts[s1].lon)) : 0;
@@ -108,7 +132,7 @@ export default function MarsLoopSky({ params }: DiagramProps) {
             <g key={j}>
               <circle cx={x(s.lon)} cy={y(s.lat)} r={Math.max(1, 4.2 - s.mag * 0.8)} fill={C.star} />
               {s.n && (
-                <Label x={x(s.lon) + 7} y={y(s.lat) - 6} size="s" color={C.dim}>
+                <Label x={x(s.lon) + (pk === 'jupiter' && s.n === 'Regulus' ? -7 : 7)} y={y(s.lat) - 6} anchor={pk === 'jupiter' && s.n === 'Regulus' ? 'end' : 'start'} size="s" color={C.dim}>
                   {s.n}
                 </Label>
               )}
@@ -123,25 +147,25 @@ export default function MarsLoopSky({ params }: DiagramProps) {
             return (
               <g key={j}>
                 <circle cx={x(p.lon)} cy={y(p.lat)} r={2.5} fill={P.color} />
-                {!near && (
+                {!near && pk === 'mars' && (
                   <Label x={x(p.lon)} y={y(p.lat) + (inLoop ? -10 : 20)} anchor="middle" size="s" color={j <= k ? C.text : C.faint}>
-                    {p.d.toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' })}
+                    {p.d.toLocaleDateString('en-US', { month: 'short', timeZone: tz })}
                   </Label>
                 )}
               </g>
             );
           })}
-          {data.stations.map((j) => (
+          {data.stations.map((j, n) => (
             <g key={j}>
               <circle cx={x(data.pts[j].lon)} cy={y(data.pts[j].lat)} r={6} fill="none" stroke={C.good} strokeWidth={1.5} />
-              <Label x={x(data.pts[j].lon)} y={y(data.pts[j].lat) + 24} anchor="middle" size="s" color={C.good}>
-                {`stops ${data.pts[j].d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' })}`}
+              <Label x={x(data.pts[j].lon) + (pk === 'mars' ? 0 : n === 0 ? -8 : 8)} y={y(data.pts[j].lat) + 24} anchor={pk === 'mars' ? 'middle' : n === 0 ? 'end' : 'start'} size="s" color={C.good}>
+                {`stops ${data.stationDates[n].toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: tz })}`}
               </Label>
             </g>
           ))}
           <circle cx={x(data.pts[data.opp].lon)} cy={y(data.pts[data.opp].lat)} r={3} fill={C.amber} />
-          <Label x={x(data.pts[data.opp].lon)} y={y(data.pts[data.opp].lat) - 14} anchor="middle" size="s" color={C.amber}>
-            {`opposition ${data.pts[data.opp].d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' })}`}
+          <Label x={x(data.pts[data.opp].lon)} y={y(data.pts[data.opp].lat) - (pk === 'mars' ? 14 : 22)} anchor="middle" size="s" color={C.amber}>
+            {`opposition ${data.oppDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: tz })}`}
           </Label>
           {/* The planet now: bigger when closer */}
           <circle cx={x(cur.lon)} cy={y(cur.lat)} r={Math.min(10, 4 + 3 / cur.dist)} fill={P.color} stroke={C.bg} strokeWidth={2} />

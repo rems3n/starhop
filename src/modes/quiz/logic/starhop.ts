@@ -88,13 +88,19 @@ export function hopStartRefs(h: Pick<Starhop, 'from' | 'path'>): string[] {
 
 /** The answer label of a resolved target, in the same style as its distractors. */
 export function targetLabel(t: ResolvedTarget): string {
+  if (t.kind === 'point' && t.name === 'Point') return 'the spot the hop describes';
   if (t.dso) return t.dso.messier ? (t.dso.name ? `M${t.dso.messier} (${t.dso.name})` : `M${t.dso.messier}`) : t.name;
   return t.name;
 }
 
-/** The click target and the "to" target of a hop (often the same object). */
+/**
+ * The click target (last path point) and the answer of "where does it lead?" — the hop's `to`, except that a
+ * shape (asterism) answer is replaced by the star the path ends on, so the four choices are all stars.
+ */
 export function hopTargets(h: Pick<Starhop, 'to' | 'path'>, catalog: Pick<Catalog, 'resolve'>): { click: ResolvedTarget | null; to: ResolvedTarget | null } {
-  return { click: catalog.resolve(h.path[h.path.length - 1]), to: catalog.resolve(h.to) };
+  const click = catalog.resolve(h.path[h.path.length - 1]);
+  const to = catalog.resolve(h.to);
+  return { click, to: to?.kind === 'asterism' || to?.kind === 'point' ? click : to };
 }
 
 /** "Follow the hop": ring the start, show the masked steps, click the star you land on. */
@@ -106,8 +112,8 @@ export function hopClickQuestion(h: Starhop, catalog: Cat): HopQ | null {
   const id = hopItemId(h.id);
   return {
     kind: 'hop', key: id, itemId: id, skill: 'object', hopId: h.id, title: h.name, steps: h.steps.map((s) => maskHopText(s, masks, catalog)),
-    start: hopStartRefs(h).map((r) => catalog.resolve(r)!.ref), path: path.map((p) => p!.ref), target: click.ref, targetName: targetLabel(to), explanation: plainText(h.summary),
-    promptText: `Follow the hop from ${catalog.resolve(h.path[0])!.name}`, answerText: `${targetLabel(to)} — ${h.name}`,
+    start: hopStartRefs(h).map((r) => catalog.resolve(r)!.ref), path: path.map((p) => p!.ref), target: click.ref, targetName: targetLabel(click), explanation: plainText(h.summary),
+    promptText: `Follow the hop from ${catalog.resolve(h.path[0])!.name}`, answerText: `${targetLabel(click)} — ${h.name}`,
   };
 }
 
@@ -140,7 +146,8 @@ export function hopDistractors(h: Pick<Starhop, 'path'>, to: ResolvedTarget, cat
 export function hopMcqQuestion(h: Starhop, catalog: Cat, rng: Rng): McqQ | null {
   const { click, to } = hopTargets(h, catalog);
   const start = catalog.resolve(h.path[0]);
-  if (!to || !start) return null;
+  // a point in empty sky (a celestial pole, the galactic centre) has no fair same-kind wrong answers
+  if (!to || !start || to.kind === 'point') return null;
   const answer = targetLabel(to);
   const wrong = hopDistractors(h, to, catalog, rng);
   if (wrong.length < 3) return null;

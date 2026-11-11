@@ -466,13 +466,14 @@ export function LessonQuizPage() {
   return <Session key={run.id} data={data} title={`Lesson · ${lesson.title}`} questions={run.questions} onNewRound={start} exitTo={routes.lesson(id)} />;
 }
 
-const KIND_TEXT: Record<string, string> = {
-  lessons: 'questions from this module’s lessons',
-  starhops: 'star-hops to follow in the sky, and questions from the star-hopping lesson',
-  anchors: 'finding and naming its constellations, their myths and when they are up',
-  seasons: 'finding and naming its constellations, their myths and when they are up',
-  beyond: 'finding and naming its constellations, their myths and when they are up',
-};
+/** What a module quiz asks, in one phrase. */
+function moduleQuizText(kind: string, hopCount: number, conCount: number): string {
+  if (kind === 'lessons') return 'questions from this module’s lessons';
+  if (kind === 'starhops') return `${hopCount ? `${hopCount} star-hops to follow in the sky or name` : 'star-hops'}, and questions from the star-hopping lesson`;
+  const cons = conCount ? `${conCount} constellations` : 'the constellations';
+  if (kind === 'beyond') return `finding and naming ${cons} that never rise from your location, and their myths`;
+  return `finding and naming ${cons} visible from your location, their myths and when they are up`;
+}
 
 /** `/practice/module/:id`: the closing quiz of a course module. Records the score with setUnitScore. */
 export function ModuleQuizPage() {
@@ -514,9 +515,7 @@ export function ModuleQuizPage() {
     <Page title={title} lead={mod.purpose}>
       <div className="qz-setup" data-testid="module-intro">
         <p>
-          Up to 12 questions: {KIND_TEXT[mod.kind]}
-          {conCount ? ` (${conCount} constellations from your location)` : ''}
-          {hopCount ? ` (${hopCount} star-hops)` : ''}. Score {Math.round(UNIT_PASS_SCORE * 100)}% or more to pass.
+          Up to 12 questions drawn from {moduleQuizText(mod.kind, hopCount, conCount)}. Score {Math.round(UNIT_PASS_SCORE * 100)}% or more to pass.
         </p>
         {best != null && <p className="dim">Best score so far: {Math.round(best * 100)}%{best >= UNIT_PASS_SCORE ? ' — passed' : ''}.</p>}
         <div className="row row--wrap">

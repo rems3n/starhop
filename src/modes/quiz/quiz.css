@@ -198,3 +198,5 @@
   /* leave the embedded sky's control column (top right) uncovered */
   .qz-hop .qz-prompt { left: var(--sp-2); transform: none; width: calc(100% - 64px - var(--sp-2)); }
 }
+.qz-mythlist a, .qz-hoplist a:not(.btn) { color: var(--text); text-decoration: none; }
+.qz-mythlist a:hover, .qz-hoplist a:not(.btn):hover { text-decoration: underline; }

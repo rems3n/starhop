@@ -24,7 +24,7 @@ const STARS: [string, number, number][] = [
 const PLACES: Record<string, { name: string; lat: number; lon: number }> = {
   london: { name: 'London', lat: 51.507, lon: -0.128 },
   chicago: { name: 'Chicago', lat: 41.878, lon: -87.63 },
-  sydney: { name: 'Sydney', lat: -33.869, lon: 151.209 },
+  rio: { name: 'Rio de Janeiro', lat: -22.907, lon: -43.173 },
 };
 
 function zonedDate(y: number, m: number, d: number, hour: number, tz: string): Date {
@@ -198,7 +198,7 @@ export default function AltazTimePlace({ params }: DiagramProps) {
             { value: 'here', label: 'Your location' },
             { value: 'london', label: 'London' },
             { value: 'chicago', label: 'Chicago' },
-            { value: 'sydney', label: 'Sydney' },
+            { value: 'rio', label: 'Rio' },
           ]}
           onChange={setPlace}
         />

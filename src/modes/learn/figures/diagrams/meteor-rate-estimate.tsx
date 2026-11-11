@@ -21,7 +21,7 @@ const SHOWERS = {
 } as const;
 /** Limiting magnitude for Bortle 1–9, same values as BORTLE in src/types.ts */
 const LM = [7.6, 7.3, 6.8, 6.3, 5.8, 5.3, 4.8, 4.3, 3.8];
-const SKY = ['excellent dark site', 'truly dark site', 'rural sky', 'rural/suburban', 'suburban', 'bright suburban', 'suburban/urban', 'city sky', 'inner-city sky'];
+const SKY = ['an excellent dark site', 'a truly dark site', 'a rural site', 'a rural/suburban site', 'the suburbs', 'bright suburbs', 'the suburban/urban edge', 'a city', 'an inner city'];
 
 export default function MeteorRateEstimate({ params }: DiagramProps) {
   const myBortle = useSettings((s) => s.bortle);
@@ -39,7 +39,7 @@ export default function MeteorRateEstimate({ params }: DiagramProps) {
 
   return (
     <div>
-      <Svg w={720} h={300} title={meta.title} desc={`${S.name}: ZHR ${S.zhr}. With the radiant ${alt} degrees up under a ${SKY[b - 1]} (limiting magnitude ${lm}), one observer would count about ${n} meteors an hour.`}>
+      <Svg w={720} h={300} title={meta.title} desc={`${S.name}: ZHR ${S.zhr}. With the radiant ${alt} degrees up from ${SKY[b - 1]} (limiting magnitude ${lm}), one observer would count about ${n} meteors an hour.`}>
         <Label x={X0} y={34} size="s" color={C.dim}>
           {`Published ZHR: radiant overhead, sky down to magnitude 6.5`}
         </Label>
@@ -86,7 +86,7 @@ export default function MeteorRateEstimate({ params }: DiagramProps) {
         <RangeControl label="Sky darkness (Bortle class)" value={10 - b} min={1} max={9} onChange={(v) => setB(10 - v)} format={() => `Bortle ${b}`} />
       </Controls>
       <Readout>
-        {`${S.name} under a ${SKY[b - 1]} with the radiant ${alt}° up: about ${n} meteors an hour, ${n < 0.5 * S.zhr ? `far below the published ${S.zhr}` : n < 0.9 * S.zhr ? `below the published ${S.zhr}` : `close to the published ${S.zhr}`}. `}
+        {`${S.name} from ${SKY[b - 1]} with the radiant ${alt}° up: about ${n} meteors an hour, ${n < 0.5 * S.zhr ? `far below the published ${S.zhr}` : n < 0.9 * S.zhr ? `below the published ${S.zhr}` : `close to the published ${S.zhr}`}. `}
         {b >= 8 ? 'City light hides the faint majority; only the bright ones get through.' : b <= 3 ? 'A truly dark sky shows the faint ones too.' : ''}
         {b === Math.round(myBortle) ? ' (This is the sky class saved in your settings.)' : ''}
       </Readout>

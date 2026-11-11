@@ -13,7 +13,7 @@ import type { QuizData } from './logic/types';
 import { useQuizData } from './useQuizData';
 
 const SKILLS = ['find', 'name', 'story', 'visibility'] as const;
-const SKILL_LABEL = { find: 'Find', name: 'Name', story: 'Stories', visibility: 'When visible' } as const;
+const SKILL_LABEL = { find: 'Find', name: 'Name', story: 'Myths', visibility: 'When visible' } as const;
 type Sort = 'course' | 'name' | 'weakest' | 'strongest';
 type Row = { id: string; name: string; english: string; m: Record<(typeof SKILLS)[number], number | null>; avg: number | null };
 
@@ -263,7 +263,9 @@ function HopsBlock({ data, items }: { data: QuizData; items: Record<string, Item
   const hops = data.hops ?? [];
   const usable = new Set(hopsFor(hops, data.observer, 'any', data.now).map((h) => h.id));
   const list = [...hops].sort((a, b) => Number(usable.has(b.id)) - Number(usable.has(a.id)) || a.rank - b.rank);
+  const [showAll, setShowAll] = useState(false);
   const ms = list.map((h) => ({ h, m: itemMastery(items[hopItemId(h.id)]) }));
+  const shown = showAll ? ms : ms.slice(0, 10);
   const started = ms.filter((x) => x.m != null).length;
   const mastered = ms.filter((x) => (x.m ?? 0) >= MASTERED_AT).length;
   return (
@@ -274,7 +276,7 @@ function HopsBlock({ data, items }: { data: QuizData; items: Record<string, Item
       </div>
       {hops.length ? (
         <ul className="qz-hoplist">
-          {ms.map(({ h, m }) => (
+          {shown.map(({ h, m }) => (
             <li key={h.id} className={usable.has(h.id) ? undefined : 'qz-off'}>
               <Link to={routes.starhop(h.id)}>{h.name}</Link>
               <Meter value={m ?? 0} label={`${h.name} mastery`} />
@@ -285,6 +287,11 @@ function HopsBlock({ data, items }: { data: QuizData; items: Record<string, Item
         </ul>
       ) : (
         <p className="dim qz-small">The star-hop library is still being written.</p>
+      )}
+      {ms.length > 10 && (
+        <Button size="sm" variant="quiet" onClick={() => setShowAll(!showAll)}>
+          {showAll ? 'Show the first 10' : `Show all ${ms.length} star-hops`}
+        </Button>
       )}
     </section>
   );

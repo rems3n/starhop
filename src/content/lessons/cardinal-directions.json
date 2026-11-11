@@ -62,6 +62,20 @@
           "id": "pointers-to-polaris",
           "params": { "month": 4, "hour": 21 },
           "caption": "The two stars at the end of the Big Dipper's bowl always point to Polaris, however the Dipper is turned. Change the month and the time: the Dipper wheels right round, but Polaris stays fixed above the north point of your horizon, as high up as your latitude. (From the southern hemisphere the figure shows the Southern Cross pointing to the south celestial pole instead.)"
+        },
+        {
+          "type": "image",
+          "image": {
+            "file": "img/lessons/star-trails-north-pole.jpg",
+            "alt": "Long-exposure photo of the northern sky above a country road and trees: hundreds of stars have drawn concentric circular trails around one point.",
+            "kind": "photograph",
+            "kindNote": "37 exposures of 25 seconds each, combined, so about a quarter of an hour of sky motion",
+            "credit": "Tyler Savitski",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Celestial_North_Pole_as_viewed_from_Pennsylvania_State_Game_Lands_13.jpg"
+          },
+          "caption": "Leave a camera pointed north and every star draws an arc around one spot: the north celestial pole, where Earth's axis points. Polaris makes the tiny arc almost at the centre, which is why it seems to stand still all night while everything else circles it."
         }
       ],
       "misconception": {

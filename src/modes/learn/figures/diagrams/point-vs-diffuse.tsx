@@ -14,7 +14,7 @@ export const meta: DiagramMeta = {
   params: { bortle: 'starting Bortle class 1–9 (default 3)' },
 };
 
-const LABELS = ['', 'excellent dark site', 'truly dark site', 'rural sky', 'rural/suburban', 'suburban', 'bright suburban', 'suburban/urban', 'city', 'inner city'];
+const LABELS = ['', 'excellent dark site', 'truly dark site', 'rural', 'rural/suburban', 'suburban', 'bright suburban', 'suburban/urban', 'city', 'inner city'];
 // log10 of surface brightness, arbitrary units: sky rises ~0.25 per Bortle class (illustrative)
 const sky = (b: number) => -1 + (b - 1) * 0.25;
 const NEB = 0.0; // the nebula's surface brightness (fades around Bortle 4–5)

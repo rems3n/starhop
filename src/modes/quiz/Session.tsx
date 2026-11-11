@@ -207,9 +207,16 @@ export function Session({ data, title, questions: initial, onNewRound, exitTo = 
                   {unit.backLabel}
                 </Link>
               )}
-              <Link className="btn btn--quiet" to={exitTo}>
-                {exitTo === routes.practice() ? 'All practice' : 'Back'}
-              </Link>
+              {!unit && (
+                <Link className="btn btn--quiet" to={exitTo}>
+                  {exitTo === routes.practice() ? 'All practice' : 'Back'}
+                </Link>
+              )}
+              {unit && (
+                <Link className="btn btn--quiet" to={routes.practice()}>
+                  All practice
+                </Link>
+              )}
             </div>
             {missed.length > 0 ? (
               <>

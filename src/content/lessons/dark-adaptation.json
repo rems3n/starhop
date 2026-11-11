@@ -72,6 +72,20 @@
             "offset": 0
           },
           "caption": "Light from a star is focused onto the retina at the back of your eye. Switch between daylight and starlight, then slide the spot away from the fovea: cones (colour, sharp detail) rule the centre, while the far more sensitive rods take over a few degrees out."
+        },
+        {
+          "type": "image",
+          "image": {
+            "file": "img/lessons/retina-rods-cones-sem.jpg",
+            "alt": "Electron microscope view of a primate retina: many slender rod cells standing side by side, with a few fatter, tapering cone cells among them.",
+            "kind": "micrograph",
+            "kindNote": "Scanning electron micrograph of a primate retina; the microscope records no colour, so the colours were added",
+            "credit": "Helga Kolb, Webvision",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rods_and_cones_of_the_primate_retina.jpg"
+          },
+          "caption": "The real thing, magnified thousands of times (scale bar: 10 micrometres, a hundredth of a millimetre). The slender cells are rods, the night-vision sensors; the fatter, tapering ones are cones, which need much more light but see colour. Away from the very centre of the eye, rods far outnumber cones."
         }
       ],
       "misconception": {
