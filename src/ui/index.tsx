@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import type { Equipment } from '@/types';
 import { EQUIPMENT_LABEL } from '@/lib/format';
 import { routes } from '@/lib/routes';
+import { fillTokens } from '@/lib/template';
+import { useSettings } from '@/store/settings';
 
 type BtnProps = ButtonHTMLAttributes<HTMLButtonElement> & { variant?: 'default' | 'primary' | 'quiet'; size?: 'md' | 'sm'; icon?: boolean; pressed?: boolean };
 
@@ -84,8 +86,10 @@ export function Loading({ label = 'Loading the sky…' }: { label?: string }) {
  * [[TargetRef|label]] → "show in sky" link, *text* → italics.
  * `onTarget` overrides the default behaviour (open the target in Explore).
  */
-export function RichText({ text, onTarget }: { text: string; onTarget?: (ref: string) => void }) {
+export function RichText({ text: raw, onTarget }: { text: string; onTarget?: (ref: string) => void }) {
   const navigate = useNavigate();
+  const observer = useSettings((s) => s.observer);
+  const text = fillTokens(raw, observer);
   const go = onTarget ?? ((ref: string) => navigate(routes.sky(ref)));
   const out: ReactNode[] = [];
   const re = /\[\[([^\]|]+)\|([^\]]+)\]\]|\*([^*\n]+)\*/g;
