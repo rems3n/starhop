@@ -113,6 +113,7 @@ const layerPatch = z
     constellationLines: z.boolean(),
     constellationBoundaries: z.boolean(),
     constellationNames: z.boolean(),
+    constellationArt: z.boolean(),
     starNames: z.boolean(),
     dsoMarkers: z.boolean(),
     planets: z.boolean(),

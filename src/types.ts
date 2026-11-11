@@ -198,6 +198,8 @@ export interface LayerState {
   constellationLines: boolean;
   constellationBoundaries: boolean;
   constellationNames: boolean;
+  /** Illustrated figures (the bear, the hunter…) drawn faintly behind the stars */
+  constellationArt: boolean;
   starNames: boolean;
   dsoMarkers: boolean;
   planets: boolean;
@@ -217,6 +219,7 @@ export const DEFAULT_LAYERS: LayerState = {
   constellationLines: true,
   constellationBoundaries: false,
   constellationNames: true,
+  constellationArt: false,
   starNames: true,
   dsoMarkers: true,
   planets: true,
