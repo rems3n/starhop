@@ -89,8 +89,8 @@ export default function HandAngleGeometry({ params }: DiagramProps) {
         <Label x={(EYE[0] + hx) / 2} y={EYE[1] + 100} anchor="middle" size="s" color={C.dim}>
           {`eye to hand: ${arm.toFixed(0)} cm`}
         </Label>
-        <Label x={hx + 12} y={EYE[1] - half - 8} size="s" color={C.dim}>
-          {`${width.toFixed(width < 2 ? 2 : 1)} cm across`}
+        <Label x={hx - 12} y={EYE[1] - half - 8} anchor="end" size="s" color={C.dim}>
+          {`hand ${width.toFixed(width < 1 ? 2 : 1)} cm across`}
         </Label>
         {/* angle label out in the sky */}
         <Label x={far - 8} y={ry(-half) - 10} anchor="end" weight={700} color={C.amber} size="l">

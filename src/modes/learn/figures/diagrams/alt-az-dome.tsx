@@ -212,7 +212,7 @@ export default function AltAzDome({ params }: DiagramProps) {
         <g>
           <circle cx={CX} cy={CY - 22} r={6} fill={C.moon} />
           <line x1={CX} y1={CY - 16} x2={CX} y2={CY} stroke={C.moon} strokeWidth={3} strokeLinecap="round" />
-          <Label x={CX + 10} y={CY + 18} size="s" color={C.dim}>
+          <Label x={CX - 10} y={CY + 16} anchor="end" size="s" color={C.dim}>
             you
           </Label>
         </g>
