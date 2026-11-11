@@ -3,28 +3,44 @@
   "unit": "skills",
   "order": 2,
   "title": "Find north, south, east and west",
-  "subtitle": "Use Polaris, the Sun and the Moon to get your bearings, and learn why sky maps look backwards",
+  "subtitle": "Use Polaris or the Southern Cross, the Sun and the Moon to get your bearings, and learn why sky maps look backwards",
   "minutes": 6,
   "sections": [
     {
-      "heading": "Polaris marks north",
+      "heading": "Polaris marks north, the Southern Cross marks south",
       "body": [
         "Every direction in this app, \"look southeast\", \"low in the west\", assumes you know which way you are facing. After this lesson you will be able to work that out anywhere, with no compass.",
-        "At night the surest guide is [[star:Polaris|Polaris]], the North Star. It sits less than 1° from the point in the sky that Earth's axis aims at, so while everything else wheels around during the night, Polaris stays put. Face it and you are facing north: east is on your right, west on your left, south behind you.",
-        "Polaris is not especially bright, only about the 50th brightest star, so do not hunt for it directly. Find the [[asterism:big-dipper|Big Dipper]] and use the two stars at the end of its bowl, [[star:Merak|Merak]] and [[star:Dubhe|Dubhe]], called the Pointers. Follow the line from Merak through Dubhe for about five times the gap between them. Polaris is the first fairly bright star you come to. From Brooklyn it is always about 41° up, a bit less than halfway from the horizon to overhead."
+        "At night in the northern hemisphere the surest guide is [[star:Polaris|Polaris]], the North Star. It sits less than 1° from the point in the sky that Earth's axis aims at, so while everything else wheels around during the night, Polaris stays put. Face it and you are facing north: east is on your right, west on your left, south behind you.",
+        "Polaris is not especially bright, only about the 50th brightest star, so do not hunt for it directly. Find the [[asterism:big-dipper|Big Dipper]] and use the two stars at the end of its bowl, [[star:Merak|Merak]] and [[star:Dubhe|Dubhe]], called the Pointers. Follow the line from Merak through Dubhe for about five times the gap between them. Polaris is the first fairly bright star you come to. Its height above the horizon always equals your latitude: from mid-northern latitudes, a bit less than halfway from the horizon to overhead.",
+        "In the southern hemisphere Polaris is below the horizon and there is no bright south pole star. Use the [[asterism:southern-cross|Southern Cross]] instead: extend its long bar from [[star:Gacrux|Gacrux]] through [[star:Acrux|Acrux]] about four and a half times its length (27°) to the south celestial pole, then drop straight down to the horizon. That point is due south; face it and east is on your left, west on your right."
       ],
       "demo": {
         "title": "From the Pointers to Polaris",
-        "controls": ["play", "time-scrub"],
+        "controls": [
+          "play",
+          "time-scrub"
+        ],
         "steps": [
           {
-            "caption": "A spring evening, facing north. The Big Dipper is high and upside down. Find the two stars at the end of its bowl, farthest from the handle.",
+            "caption": "An April evening, facing north. The Big Dipper is high and upside down. Find the two stars at the end of its bowl, farthest from the handle.",
             "time": "month:4 21:00",
-            "view": { "az": 0, "alt": 50, "fov": 100 },
+            "view": {
+              "target": "star:Polaris",
+              "fov": 100
+            },
             "highlights": [
               {
                 "type": "polyline",
-                "points": ["star:Alkaid", "star:Mizar", "star:Alioth", "star:Megrez", "star:Phecda", "star:Merak", "star:Dubhe", "star:Megrez"],
+                "points": [
+                  "star:Alkaid",
+                  "star:Mizar",
+                  "star:Alioth",
+                  "star:Megrez",
+                  "star:Phecda",
+                  "star:Merak",
+                  "star:Dubhe",
+                  "star:Megrez"
+                ],
                 "label": "Big Dipper"
               }
             ]
@@ -32,35 +48,137 @@
           {
             "caption": "Extend the line from Merak through Dubhe about five times their separation and you arrive at Polaris. Drop straight down from Polaris to the horizon: that point is due north.",
             "time": "month:4 21:00",
-            "view": { "az": 0, "alt": 50, "fov": 100 },
+            "view": {
+              "target": "star:Polaris",
+              "fov": 100
+            },
             "highlights": [
-              { "type": "polyline", "points": ["star:Merak", "star:Dubhe", "star:Polaris"], "dashed": true },
-              { "type": "angle", "from": "star:Dubhe", "to": "star:Merak", "label": "5°" },
-              { "type": "angle", "from": "star:Dubhe", "to": "star:Polaris", "label": "29°" },
-              { "type": "object", "ref": "star:Polaris", "label": "Polaris" },
-              { "type": "polyline", "points": ["star:Polaris", "point:north"], "dashed": true },
-              { "type": "label", "at": "point:north", "text": "North" }
+              {
+                "type": "polyline",
+                "points": [
+                  "star:Merak",
+                  "star:Dubhe",
+                  "star:Polaris"
+                ],
+                "dashed": true
+              },
+              {
+                "type": "angle",
+                "from": "star:Dubhe",
+                "to": "star:Merak",
+                "label": "5°"
+              },
+              {
+                "type": "angle",
+                "from": "star:Dubhe",
+                "to": "star:Polaris",
+                "label": "29°"
+              },
+              {
+                "type": "object",
+                "ref": "star:Polaris",
+                "label": "Polaris"
+              },
+              {
+                "type": "polyline",
+                "points": [
+                  "star:Polaris",
+                  "point:north"
+                ],
+                "dashed": true
+              },
+              {
+                "type": "label",
+                "at": "point:north",
+                "text": "North"
+              }
             ]
           },
           {
             "caption": "Now the night runs fast. The Dipper swings around like the hand of a clock running backwards, but the Pointers keep aiming at Polaris, and Polaris does not move. Drag the time slider to try other hours.",
             "time": "month:4 21:00",
             "rate": 1800,
-            "view": { "az": 0, "alt": 50, "fov": 100 },
+            "view": {
+              "target": "star:Polaris",
+              "fov": 100
+            },
             "highlights": [
-              { "type": "polyline", "points": ["star:Merak", "star:Dubhe", "star:Polaris"], "dashed": true },
-              { "type": "object", "ref": "star:Polaris", "label": "Polaris" },
-              { "type": "label", "at": "point:north", "text": "North" }
+              {
+                "type": "polyline",
+                "points": [
+                  "star:Merak",
+                  "star:Dubhe",
+                  "star:Polaris"
+                ],
+                "dashed": true
+              },
+              {
+                "type": "object",
+                "ref": "star:Polaris",
+                "label": "Polaris"
+              },
+              {
+                "type": "label",
+                "at": "point:north",
+                "text": "North"
+              }
+            ]
+          },
+          {
+            "caption": "The southern way, from mid-southern latitudes on a May evening, facing south. Extend the Southern Cross's long bar from Gacrux through Acrux about four and a half times its length to the south celestial pole, then drop straight down: that point on the horizon is due south.",
+            "observer": {
+              "name": "Mid-southern latitudes (34°S)",
+              "lat": -34,
+              "lon": 151.2,
+              "tz": "Australia/Sydney"
+            },
+            "time": "month:5 21:00",
+            "view": {
+              "az": 180,
+              "alt": 35,
+              "fov": 100
+            },
+            "highlights": [
+              {
+                "type": "polyline",
+                "points": [
+                  "star:Gacrux",
+                  "star:Acrux",
+                  "point:scp"
+                ],
+                "dashed": true
+              },
+              {
+                "type": "label",
+                "at": "point:scp",
+                "text": "South celestial pole"
+              },
+              {
+                "type": "polyline",
+                "points": [
+                  "point:scp",
+                  "point:south"
+                ],
+                "dashed": true
+              },
+              {
+                "type": "label",
+                "at": "point:south",
+                "text": "South"
+              }
             ]
           }
         ]
       },
-      "tryIt": "Tonight, find Polaris from your street or roof and note what it sits above: a chimney, a water tower, the end of the block. That landmark is now your permanent north marker for that spot.",
+      "tryIt": "Tonight, find Polaris (or, in the southern hemisphere, the south celestial pole from the Southern Cross) from your street or roof and note what sits below it on the horizon: a chimney, a water tower, the end of the block. That landmark is now your permanent north (or south) marker for that spot.",
       "figures": [
         {
           "type": "diagram",
           "id": "pointers-to-polaris",
-          "params": { "month": 4, "hour": 21 },
+          "params": {
+            "month": 4,
+            "hour": 21
+          },
           "caption": "The two stars at the end of the Big Dipper's bowl always point to Polaris, however the Dipper is turned. Change the month and the time: the Dipper wheels right round, but Polaris stays fixed above the north point of your horizon, as high up as your latitude. (From the southern hemisphere the figure shows the Southern Cross pointing to the south celestial pole instead.)"
         },
         {
@@ -85,7 +203,12 @@
       "check": {
         "id": "check-pointers",
         "prompt": "You find Polaris and face it. Which direction is behind you?",
-        "choices": ["East", "West", "South", "North"],
+        "choices": [
+          "East",
+          "West",
+          "South",
+          "North"
+        ],
         "answerIndex": 2,
         "explanation": "Polaris marks north, so south is directly behind you, east on your right and west on your left."
       }
@@ -93,8 +216,8 @@
     {
       "heading": "The Sun and Moon give east, south and west",
       "body": [
-        "By day, or when buildings hide the northern sky, use the Sun. It rises in the east, is highest when it is due south, and sets in the west. But \"east\" is only exact around the March and September equinoxes. From Brooklyn the June Sun rises about 30° north of east, in the northeast, and the December Sun about 30° south of east, in the southeast. Sunsets shift the same way along the western horizon.",
-        "The most reliable moment is the middle of the day: when the Sun is at its highest, around noon in winter and around 1 p.m. during daylight saving time, it is due south and shadows point due north. The Moon and the planets follow nearly the same track: up in the east, highest in the south, down in the west."
+        "By day, or when buildings hide the pole, use the Sun. It rises in the east, is highest when it crosses the north–south line, and sets in the west. But \"east\" is only exact around the March and September equinoxes. From mid-latitudes in either hemisphere the June Sun rises about 30° north of east, in the northeast, and the December Sun about 30° south of east, in the southeast. Sunsets shift the same way along the western horizon.",
+        "The most reliable moment is the middle of the day: when the Sun is at its highest, around noon, or around 1 p.m. during daylight saving time, it is due south from mid-northern latitudes, so shadows point due north; from mid-southern latitudes it is due north and shadows point due south. The Moon and the planets follow nearly the same track: up in the east, highest toward the equator side of the sky, down in the west."
       ],
       "demo": {
         "title": "Where the Sun comes up",
@@ -103,28 +226,162 @@
           {
             "caption": "Facing east at dawn. Three sunrise paths: the March equinox in the middle rises due east; the June solstice path starts far to the left (northeast); the December path starts far to the right (southeast).",
             "time": "2026-03-20 06:30",
-            "view": { "az": 90, "alt": 20, "fov": 120 },
-            "layers": { "constellationLines": false, "constellationNames": false, "starNames": false, "planets": false },
+            "view": {
+              "az": 90,
+              "alt": 20,
+              "fov": 120
+            },
+            "layers": {
+              "constellationLines": false,
+              "constellationNames": false,
+              "starNames": false,
+              "planets": false
+            },
             "highlights": [
-              { "type": "trail", "ref": "body:Sun", "from": "2026-06-21 05:00", "to": "2026-06-21 09:00", "stepHours": 0.5, "frame": "horizon" },
-              { "type": "trail", "ref": "body:Sun", "from": "2026-03-20 06:30", "to": "2026-03-20 10:30", "stepHours": 0.5, "frame": "horizon" },
-              { "type": "trail", "ref": "body:Sun", "from": "2026-12-21 07:00", "to": "2026-12-21 11:00", "stepHours": 0.5, "frame": "horizon" },
-              { "type": "label", "at": "altaz:58,3", "text": "June sunrise" },
-              { "type": "label", "at": "point:east", "text": "East: March and September" },
-              { "type": "label", "at": "altaz:121,3", "text": "December sunrise" }
+              {
+                "type": "trail",
+                "ref": "body:Sun",
+                "from": "2026-06-21 05:00",
+                "to": "2026-06-21 09:00",
+                "stepHours": 0.5,
+                "frame": "horizon"
+              },
+              {
+                "type": "trail",
+                "ref": "body:Sun",
+                "from": "2026-03-20 06:30",
+                "to": "2026-03-20 10:30",
+                "stepHours": 0.5,
+                "frame": "horizon"
+              },
+              {
+                "type": "trail",
+                "ref": "body:Sun",
+                "from": "2026-12-21 07:00",
+                "to": "2026-12-21 11:00",
+                "stepHours": 0.5,
+                "frame": "horizon"
+              },
+              {
+                "type": "label",
+                "at": "altaz:58,3",
+                "text": "June sunrise"
+              },
+              {
+                "type": "label",
+                "at": "point:east",
+                "text": "East: March and September"
+              },
+              {
+                "type": "label",
+                "at": "altaz:121,3",
+                "text": "December sunrise"
+              }
             ]
           },
           {
-            "caption": "Facing south at midday. Whatever the season, the Sun crosses due south at its highest point of the day: 73° up in June, 49° at the equinoxes, only 26° in December.",
+            "caption": "From mid-northern latitudes, facing south at midday. Whatever the season, the Sun crosses due south at its highest point of the day: 72° up in June, 49° at the equinoxes, only 26° in December.",
             "time": "2026-03-20 13:00",
-            "view": { "az": 180, "alt": 40, "fov": 150 },
-            "layers": { "constellationLines": false, "constellationNames": false, "starNames": false, "planets": false },
+            "view": {
+              "az": 180,
+              "alt": 40,
+              "fov": 150
+            },
+            "layers": {
+              "constellationLines": false,
+              "constellationNames": false,
+              "starNames": false,
+              "planets": false
+            },
             "highlights": [
-              { "type": "trail", "ref": "body:Sun", "from": "2026-06-21 09:00", "to": "2026-06-21 17:00", "stepHours": 0.5, "frame": "horizon" },
-              { "type": "trail", "ref": "body:Sun", "from": "2026-03-20 09:00", "to": "2026-03-20 17:00", "stepHours": 0.5, "frame": "horizon" },
-              { "type": "trail", "ref": "body:Sun", "from": "2026-12-21 09:00", "to": "2026-12-21 15:00", "stepHours": 0.5, "frame": "horizon" },
-              { "type": "label", "at": "point:south", "text": "South" }
-            ]
+              {
+                "type": "trail",
+                "ref": "body:Sun",
+                "from": "2026-06-21 09:00",
+                "to": "2026-06-21 17:00",
+                "stepHours": 0.5,
+                "frame": "horizon"
+              },
+              {
+                "type": "trail",
+                "ref": "body:Sun",
+                "from": "2026-03-20 09:00",
+                "to": "2026-03-20 17:00",
+                "stepHours": 0.5,
+                "frame": "horizon"
+              },
+              {
+                "type": "trail",
+                "ref": "body:Sun",
+                "from": "2026-12-21 09:00",
+                "to": "2026-12-21 15:00",
+                "stepHours": 0.5,
+                "frame": "horizon"
+              },
+              {
+                "type": "label",
+                "at": "point:south",
+                "text": "South"
+              }
+            ],
+            "observer": {
+              "name": "Mid-northern latitudes (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
+          },
+          {
+            "caption": "From mid-southern latitudes, facing north at midday: here the Sun crosses due north, 79° up in December, 56° at the equinoxes and only 33° in June. Shadows at midday point south.",
+            "time": "2026-03-20 13:00",
+            "view": {
+              "az": 0,
+              "alt": 40,
+              "fov": 150
+            },
+            "layers": {
+              "constellationLines": false,
+              "constellationNames": false,
+              "starNames": false,
+              "planets": false
+            },
+            "highlights": [
+              {
+                "type": "trail",
+                "ref": "body:Sun",
+                "from": "2026-12-21 09:00",
+                "to": "2026-12-21 17:00",
+                "stepHours": 0.5,
+                "frame": "horizon"
+              },
+              {
+                "type": "trail",
+                "ref": "body:Sun",
+                "from": "2026-03-20 09:00",
+                "to": "2026-03-20 17:00",
+                "stepHours": 0.5,
+                "frame": "horizon"
+              },
+              {
+                "type": "trail",
+                "ref": "body:Sun",
+                "from": "2026-06-21 09:00",
+                "to": "2026-06-21 15:00",
+                "stepHours": 0.5,
+                "frame": "horizon"
+              },
+              {
+                "type": "label",
+                "at": "point:north",
+                "text": "North"
+              }
+            ],
+            "observer": {
+              "name": "Mid-southern latitudes (34°S)",
+              "lat": -34,
+              "lon": 151.2,
+              "tz": "Australia/Sydney"
+            }
           }
         ]
       },
@@ -142,7 +399,12 @@
       "check": {
         "id": "check-sunrise-june",
         "prompt": "From mid-northern latitudes, where does the Sun rise on a June morning?",
-        "choices": ["Due east", "North of east, in the northeast", "South of east, in the southeast", "Due north"],
+        "choices": [
+          "Due east",
+          "North of east, in the northeast",
+          "South of east, in the southeast",
+          "Due north"
+        ],
         "answerIndex": 1,
         "explanation": "Near the June solstice the Sun is north of the celestial equator, so from mid-northern latitudes it rises well north of east and sets well north of west."
       }
@@ -160,21 +422,53 @@
           {
             "caption": "Facing north. East is to your right and west to your left, just as on a street map.",
             "time": "month:4 21:00",
-            "view": { "az": 0, "alt": 35, "fov": 150 },
+            "view": {
+              "az": 0,
+              "alt": 35,
+              "fov": 150
+            },
             "highlights": [
-              { "type": "label", "at": "point:north", "text": "North" },
-              { "type": "label", "at": "altaz:65,2", "text": "East this way" },
-              { "type": "label", "at": "altaz:295,2", "text": "West this way" }
+              {
+                "type": "label",
+                "at": "point:north",
+                "text": "North"
+              },
+              {
+                "type": "label",
+                "at": "altaz:65,2",
+                "text": "East this way"
+              },
+              {
+                "type": "label",
+                "at": "altaz:295,2",
+                "text": "West this way"
+              }
             ]
           },
           {
-            "caption": "Turn around to face south. Now east is on your left and west on your right. This is how most star charts are drawn, because most of the sky's action is in the south.",
+            "caption": "Turn around to face south. Now east is on your left and west on your right. This is how most northern star charts are drawn, because for northern observers most of the sky's action is in the south; southern charts are drawn facing north.",
             "time": "month:4 21:00",
-            "view": { "az": 180, "alt": 35, "fov": 150 },
+            "view": {
+              "az": 180,
+              "alt": 35,
+              "fov": 150
+            },
             "highlights": [
-              { "type": "label", "at": "point:south", "text": "South" },
-              { "type": "label", "at": "altaz:115,2", "text": "East this way" },
-              { "type": "label", "at": "altaz:245,2", "text": "West this way" }
+              {
+                "type": "label",
+                "at": "point:south",
+                "text": "South"
+              },
+              {
+                "type": "label",
+                "at": "altaz:115,2",
+                "text": "East this way"
+              },
+              {
+                "type": "label",
+                "at": "altaz:245,2",
+                "text": "West this way"
+              }
             ]
           }
         ]
@@ -193,10 +487,10 @@
     }
   ],
   "keyPoints": [
-    "The Big Dipper's Pointers, Merak and Dubhe, aim at Polaris; face Polaris and you face north.",
-    "From Brooklyn, Polaris is always about 41° above the northern horizon and never moves noticeably.",
+    "In the northern hemisphere the Big Dipper's Pointers, Merak and Dubhe, aim at Polaris; face Polaris and you face north. In the southern hemisphere the Southern Cross's long bar points to the south celestial pole.",
+    "Polaris stands as many degrees above the northern horizon as your latitude, and never moves noticeably.",
     "The Sun rises due east only near the equinoxes: northeast in June, southeast in December.",
-    "The Sun, Moon and planets are highest when they are due south.",
+    "The Sun, Moon and planets are highest when they cross the north–south line: due south from mid-northern latitudes, due north from mid-southern ones.",
     "Star charts show the sky from below, so with north up, east is on the left."
   ],
   "examples": [],
@@ -204,7 +498,12 @@
     {
       "id": "q1",
       "prompt": "You are facing Polaris. Which direction is on your right-hand side?",
-      "choices": ["West", "East", "South", "North"],
+      "choices": [
+        "West",
+        "East",
+        "South",
+        "North"
+      ],
       "answerIndex": 1,
       "explanation": "Facing Polaris means facing north, so east is to your right, west to your left and south behind you."
     },
@@ -222,8 +521,13 @@
     },
     {
       "id": "q3",
-      "prompt": "It is late December in Brooklyn and you watch the Sun come up. Where on the horizon does it appear?",
-      "choices": ["In the southeast", "Exactly due east", "In the northeast", "Due south"],
+      "prompt": "It is late December at mid-northern latitudes and you watch the Sun come up. Where on the horizon does it appear?",
+      "choices": [
+        "In the southeast",
+        "Exactly due east",
+        "In the northeast",
+        "Due south"
+      ],
       "answerIndex": 0,
       "explanation": "The Sun rises due east only near the equinoxes. In December it rises about 30° south of east; in June, about 30° north of east."
     },
@@ -253,8 +557,13 @@
     },
     {
       "id": "q6",
-      "prompt": "No stars are out yet, but the Sun is at its highest for the day. Which way do shadows point in Brooklyn?",
-      "choices": ["East", "South", "West", "North"],
+      "prompt": "No stars are out yet, but the Sun is at its highest for the day. Which way do shadows point from mid-northern latitudes?",
+      "choices": [
+        "East",
+        "South",
+        "West",
+        "North"
+      ],
       "answerIndex": 3,
       "explanation": "At its highest the Sun is due south, so shadows fall due north."
     }

@@ -17,7 +17,9 @@
         {
           "type": "diagram",
           "id": "hand-angle-geometry",
-          "params": { "measure": "fist" },
+          "params": {
+            "measure": "fist"
+          },
           "caption": "How much sky your hand covers depends on two things: how wide it is and how far it is from your eye. A fist about 10 cm across, held about 60 cm away, covers 10°. Switch to a child: the hand is smaller, but so is the arm, and the angle stays the same."
         }
       ],
@@ -30,7 +32,7 @@
       "heading": "Check your hand against the Big Dipper",
       "body": [
         "Hands differ a little, so calibrate yours on a pattern whose size is known. The [[asterism:big-dipper|Big Dipper]] is a ready-made ruler. The two Pointer stars at the end of the bowl, [[star:Dubhe|Dubhe]] and [[star:Merak|Merak]], are 5° apart: three fingers. The top of the bowl, from Dubhe to [[star:Megrez|Megrez]], is 10°: one fist. The whole Dipper, from Dubhe to [[star:Alkaid|Alkaid]] at the end of the handle, is 26°: one spread hand.",
-        "If your fist does not quite cover the top of the bowl, or overlaps it, you now know your own correction. The Dipper is in the northern sky every clear night of the year from Brooklyn, so the ruler is always there when you need it; in autumn, when it is low, check that buildings are not hiding it."
+        "If your fist does not quite cover the top of the bowl, or overlaps it, you now know your own correction. From mid-northern latitudes the Dipper is in the northern sky every clear night of the year, so the ruler is always there when you need it; on September–November evenings, when it is low, check that buildings are not hiding it. From the southern hemisphere use the Southern Cross instead: its long bar, from Gacrux to Acrux, is 6°, three fingers, and the two Pointers beside it are 4° apart."
       ],
       "demo": {
         "title": "A ruler in the sky",
@@ -39,54 +41,147 @@
           {
             "caption": "The Pointers are 5° apart: three fingers at arm's length. The top of the bowl is 10°: one fist.",
             "time": "month:4 21:00",
-            "view": { "target": "asterism:big-dipper", "fov": 50 },
-            "layers": { "constellationNames": false, "constellationLines": false },
+            "view": {
+              "target": "asterism:big-dipper",
+              "fov": 50
+            },
+            "layers": {
+              "constellationNames": false,
+              "constellationLines": false
+            },
             "highlights": [
-              { "type": "polyline", "points": ["star:Alkaid", "star:Mizar", "star:Alioth", "star:Megrez", "star:Phecda", "star:Merak", "star:Dubhe", "star:Megrez"] },
-              { "type": "angle", "from": "star:Dubhe", "to": "star:Merak", "label": "5° (three fingers)" },
-              { "type": "angle", "from": "star:Dubhe", "to": "star:Megrez", "label": "10° (one fist)" }
+              {
+                "type": "polyline",
+                "points": [
+                  "star:Alkaid",
+                  "star:Mizar",
+                  "star:Alioth",
+                  "star:Megrez",
+                  "star:Phecda",
+                  "star:Merak",
+                  "star:Dubhe",
+                  "star:Megrez"
+                ]
+              },
+              {
+                "type": "angle",
+                "from": "star:Dubhe",
+                "to": "star:Merak",
+                "label": "5° (three fingers)"
+              },
+              {
+                "type": "angle",
+                "from": "star:Dubhe",
+                "to": "star:Megrez",
+                "label": "10° (one fist)"
+              }
             ]
           },
           {
             "caption": "End to end the Dipper spans 26°, about one hand spread wide. It is bigger than most people expect.",
             "time": "month:4 21:00",
-            "view": { "target": "asterism:big-dipper", "fov": 50 },
-            "layers": { "constellationNames": false, "constellationLines": false },
+            "view": {
+              "target": "asterism:big-dipper",
+              "fov": 50
+            },
+            "layers": {
+              "constellationNames": false,
+              "constellationLines": false
+            },
             "highlights": [
-              { "type": "polyline", "points": ["star:Alkaid", "star:Mizar", "star:Alioth", "star:Megrez", "star:Phecda", "star:Merak", "star:Dubhe", "star:Megrez"] },
-              { "type": "angle", "from": "star:Dubhe", "to": "star:Alkaid", "label": "26° (one spread hand)" }
+              {
+                "type": "polyline",
+                "points": [
+                  "star:Alkaid",
+                  "star:Mizar",
+                  "star:Alioth",
+                  "star:Megrez",
+                  "star:Phecda",
+                  "star:Merak",
+                  "star:Dubhe",
+                  "star:Megrez"
+                ]
+              },
+              {
+                "type": "angle",
+                "from": "star:Dubhe",
+                "to": "star:Alkaid",
+                "label": "26° (one spread hand)"
+              }
             ]
           },
           {
-            "caption": "Now use it. From Dubhe to Polaris is 29°, nearly three fists. And Polaris stands 41° above the northern horizon from Brooklyn: four fists stacked one on another.",
-            "observer": { "name": "Brooklyn, NY", "lat": 40.6782, "lon": -73.9442, "tz": "America/New_York" },
+            "caption": "Now use it. From Dubhe to Polaris is 29°, nearly three fists. And from mid-northern latitudes (41°N) Polaris stands 41° above the northern horizon: four fists stacked one on another.",
+            "observer": {
+              "name": "Mid-northern latitudes (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            },
             "time": "month:4 21:00",
-            "view": { "az": 0, "alt": 45, "fov": 110 },
-            "layers": { "constellationNames": false },
+            "view": {
+              "az": 0,
+              "alt": 45,
+              "fov": 110
+            },
+            "layers": {
+              "constellationNames": false
+            },
             "highlights": [
-              { "type": "angle", "from": "star:Dubhe", "to": "star:Polaris", "label": "29° (nearly three fists)" },
-              { "type": "angle", "from": "point:north", "to": "star:Polaris", "label": "41° (four fists)" },
-              { "type": "object", "ref": "star:Polaris", "label": "Polaris" }
+              {
+                "type": "angle",
+                "from": "star:Dubhe",
+                "to": "star:Polaris",
+                "label": "29° (nearly three fists)"
+              },
+              {
+                "type": "angle",
+                "from": "point:north",
+                "to": "star:Polaris",
+                "label": "41° (four fists)"
+              },
+              {
+                "type": "object",
+                "ref": "star:Polaris",
+                "label": "Polaris"
+              }
             ]
           },
           {
-            "caption": "In winter, check yourself on Orion. The Belt is under 3° long, two fingers. From Betelgeuse to Rigel is 19°, two fists.",
+            "caption": "On December–March evenings, from either hemisphere, check yourself on Orion. The Belt is under 3° long, two fingers. From Betelgeuse to Rigel is 19°, two fists.",
             "time": "month:1 21:00",
-            "view": { "target": "con:Ori", "fov": 50 },
-            "layers": { "constellationNames": false },
+            "view": {
+              "target": "con:Ori",
+              "fov": 50
+            },
+            "layers": {
+              "constellationNames": false
+            },
             "highlights": [
-              { "type": "angle", "from": "star:Alnitak", "to": "star:Mintaka", "label": "3° (the Belt)" },
-              { "type": "angle", "from": "star:Betelgeuse", "to": "star:Rigel", "label": "19° (two fists)" }
+              {
+                "type": "angle",
+                "from": "star:Alnitak",
+                "to": "star:Mintaka",
+                "label": "3° (the Belt)"
+              },
+              {
+                "type": "angle",
+                "from": "star:Betelgeuse",
+                "to": "star:Rigel",
+                "label": "19° (two fists)"
+              }
             ]
           }
         ]
       },
-      "tryIt": "Tonight, hold three fingers at arm's length against the Pointers and a fist against the top of the Dipper's bowl. Then stack fists from the northern horizon up to Polaris and count them.",
+      "tryIt": "Tonight, hold three fingers at arm's length against the Pointers and a fist against the top of the Dipper's bowl. Then stack fists from the northern horizon up to Polaris and count them. In the southern hemisphere, hold three fingers against the Southern Cross's long bar, then stack fists from the southern horizon up to the south celestial pole.",
       "figures": [
         {
           "type": "diagram",
           "id": "hand-on-dipper",
-          "params": { "measure": "pointers" },
+          "params": {
+            "measure": "pointers"
+          },
           "caption": "The Big Dipper is a ruler you can check your hand against: three fingers on the Pointers (5.4°), a fist across the top of the bowl (10.2°), a spread hand along the whole Dipper (25.7°). Drawn to scale from catalog positions; resize the hand to see how a correction works."
         }
       ],
@@ -116,11 +211,27 @@
           {
             "caption": "The small circle beside Merak is the size of the full Moon, half a degree across. Ten of them would fit between the Pointers.",
             "time": "month:4 21:00",
-            "view": { "target": "star:Merak", "fov": 25 },
-            "layers": { "constellationNames": false, "constellationLines": false },
+            "view": {
+              "target": "star:Merak",
+              "fov": 25
+            },
+            "layers": {
+              "constellationNames": false,
+              "constellationLines": false
+            },
             "highlights": [
-              { "type": "angle", "from": "star:Dubhe", "to": "star:Merak", "label": "5°" },
-              { "type": "circle", "center": "star:Merak", "radiusDeg": 0.25, "label": "Size of the full Moon (0.5°)" }
+              {
+                "type": "angle",
+                "from": "star:Dubhe",
+                "to": "star:Merak",
+                "label": "5°"
+              },
+              {
+                "type": "circle",
+                "center": "star:Merak",
+                "radiusDeg": 0.25,
+                "label": "Size of the full Moon (0.5°)"
+              }
             ]
           }
         ]
@@ -129,7 +240,9 @@
         {
           "type": "diagram",
           "id": "moon-size-scale",
-          "params": { "view": "finger" },
+          "params": {
+            "view": "finger"
+          },
           "caption": "The full Moon is only about half a degree wide, half the width of your little finger at arm's length. Ten or eleven full Moons fit between the Pointers, depending on how near the Moon is, and a rising Moon is no bigger than a high one: switch the comparison to see each at true scale."
         }
       ],
@@ -151,14 +264,24 @@
     {
       "id": "q1",
       "prompt": "A guide says a star is \"two fists above the horizon\". About how many degrees up is that?",
-      "choices": ["2°", "10°", "20°", "45°"],
+      "choices": [
+        "2°",
+        "10°",
+        "20°",
+        "45°"
+      ],
       "answerIndex": 2,
       "explanation": "A fist at arm's length covers about 10°, so two stacked fists are about 20°."
     },
     {
       "id": "q2",
       "prompt": "Which of these would just about hide the full Moon when held at arm's length?",
-      "choices": ["Your little finger, with room to spare", "Three fingers held together", "Your closed fist, only just", "Your spread hand"],
+      "choices": [
+        "Your little finger, with room to spare",
+        "Three fingers held together",
+        "Your closed fist, only just",
+        "Your spread hand"
+      ],
       "answerIndex": 0,
       "explanation": "The Moon is only half a degree wide. A little finger covers about 1°, twice the Moon's width."
     },
@@ -188,8 +311,13 @@
     },
     {
       "id": "q5",
-      "prompt": "From Brooklyn, Polaris is about 41° above the northern horizon. How would you measure up to it?",
-      "choices": ["One spread hand", "Two fists", "Four fists", "Nine fists"],
+      "prompt": "From latitude 41°N, Polaris is about 41° above the northern horizon. How would you measure up to it?",
+      "choices": [
+        "One spread hand",
+        "Two fists",
+        "Four fists",
+        "Nine fists"
+      ],
       "answerIndex": 2,
       "explanation": "Four fists at 10° each make 40°. Nine fists would take you all the way to the point overhead."
     }

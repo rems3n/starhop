@@ -3,51 +3,121 @@
   "unit": "skills",
   "order": 7,
   "title": "Light pollution and the city sky",
-  "subtitle": "What Brooklyn's glow hides, what it cannot hide, and how to get the most from the sky you have",
+  "subtitle": "What a city's glow hides, what it cannot hide, and how to get the most from the sky you have",
   "minutes": 6,
   "sections": [
     {
       "heading": "Why the city sky is bright",
       "body": [
-        "After this lesson you will know what to expect from a city sky, which targets are worth your time in Brooklyn, and what you gain by traveling somewhere darker.",
+        "After this lesson you will know what to expect from a big-city, suburban or country sky, which targets are worth your time under each, and what you gain by traveling somewhere darker.",
         "Streetlights, signs, windows and headlights send a share of their light upward. Air, dust and moisture scatter it back down, and the whole sky glows. Stars are still there, shining exactly as before, but anything fainter than the glow is drowned out, the way a candle disappears in a floodlit stadium. This is light pollution. It dims nothing; it raises the background.",
-        "Stargazers rate the darkness of a site on the Bortle scale, published by the American observer John Bortle in 2001. It runs from class 1, the darkest skies on Earth, to class 9, an inner-city sky. Brooklyn is class 8 or 9. The outer suburbs are 6 or 7, rural areas 3 or 4, and classes 1 and 2 need a remote desert, mountain or ocean."
+        "Stargazers rate the darkness of a site on the Bortle scale, published by the American observer John Bortle in 2001. It runs from class 1, the darkest skies on Earth, to class 9, an inner-city sky. As a guide, a big city center is class 8 or 9, a suburb 5 to 7, a village or the countryside 3 or 4, and classes 1 and 2 need a remote desert, mountain or ocean site. The Sky page's light-pollution slider uses the same scale, so set it to match where you observe."
       ],
       "demo": {
-        "title": "The same sky, from Brooklyn to the desert",
-        "controls": ["bortle"],
+        "title": "The same sky, from the big city to the desert",
+        "controls": [
+          "bortle"
+        ],
         "steps": [
           {
-            "caption": "A summer evening, looking south and up, at Bortle 9: the inner city. The Summer Triangle, Arcturus and Antares are there, and not much else. The faintest stars shown are about magnitude 3.8.",
+            "caption": "An August evening at Bortle 9: a big city center. The Summer Triangle and Antares are there, and not much else. The faintest stars shown are about magnitude 3.8.",
             "time": "month:8 22:00",
-            "view": { "az": 170, "alt": 50, "fov": 130 },
-            "layers": { "constellationLines": false, "constellationNames": false },
+            "view": {
+              "target": "star:Rasalhague",
+              "fov": 130
+            },
+            "layers": {
+              "constellationLines": false,
+              "constellationNames": false
+            },
             "bortle": 9,
-            "highlights": [{ "type": "polyline", "points": ["star:Vega", "star:Deneb", "star:Altair"], "closed": true, "label": "Summer Triangle" }]
+            "highlights": [
+              {
+                "type": "polyline",
+                "points": [
+                  "star:Vega",
+                  "star:Deneb",
+                  "star:Altair"
+                ],
+                "closed": true,
+                "label": "Summer Triangle"
+              }
+            ]
           },
           {
-            "caption": "Bortle 7: an outer suburb. A full magnitude deeper, and roughly three times as many stars. The constellations start to fill in around the bright stars, but there is still no Milky Way.",
+            "caption": "Bortle 7: a suburb. A full magnitude deeper, and roughly three times as many stars. The constellations start to fill in around the bright stars, but there is still no Milky Way.",
             "time": "month:8 22:00",
-            "view": { "az": 170, "alt": 50, "fov": 130 },
-            "layers": { "constellationLines": false, "constellationNames": false },
+            "view": {
+              "target": "star:Rasalhague",
+              "fov": 130
+            },
+            "layers": {
+              "constellationLines": false,
+              "constellationNames": false
+            },
             "bortle": 7,
-            "highlights": [{ "type": "polyline", "points": ["star:Vega", "star:Deneb", "star:Altair"], "closed": true, "label": "Summer Triangle" }]
+            "highlights": [
+              {
+                "type": "polyline",
+                "points": [
+                  "star:Vega",
+                  "star:Deneb",
+                  "star:Altair"
+                ],
+                "closed": true,
+                "label": "Summer Triangle"
+              }
+            ]
           },
           {
-            "caption": "Bortle 4: the countryside, a couple of hours' drive from the city. The Milky Way appears as a pale band running down through the Summer Triangle to the southern horizon.",
+            "caption": "Bortle 4: the countryside, often a couple of hours' drive from a big city. The Milky Way appears as a pale band running through the Summer Triangle toward Scorpius and Sagittarius.",
             "time": "month:8 22:00",
-            "view": { "az": 170, "alt": 50, "fov": 130 },
-            "layers": { "constellationLines": false, "constellationNames": false },
+            "view": {
+              "target": "star:Rasalhague",
+              "fov": 130
+            },
+            "layers": {
+              "constellationLines": false,
+              "constellationNames": false
+            },
             "bortle": 4,
-            "highlights": [{ "type": "polyline", "points": ["star:Vega", "star:Deneb", "star:Altair"], "closed": true, "label": "Summer Triangle" }]
+            "highlights": [
+              {
+                "type": "polyline",
+                "points": [
+                  "star:Vega",
+                  "star:Deneb",
+                  "star:Altair"
+                ],
+                "closed": true,
+                "label": "Summer Triangle"
+              }
+            ]
           },
           {
-            "caption": "Bortle 1: a pristine sky. Thousands of stars, and a Milky Way so bright and detailed that the bright constellation stars become hard to pick out of the crowd. Drag the slider back to 9 to come home.",
+            "caption": "Bortle 1: a remote dark site. Thousands of stars, and a Milky Way so bright and detailed that the bright constellation stars become hard to pick out of the crowd. Drag the slider back to the class of your own sky to come home.",
             "time": "month:8 22:00",
-            "view": { "az": 170, "alt": 50, "fov": 130 },
-            "layers": { "constellationLines": false, "constellationNames": false },
+            "view": {
+              "target": "star:Rasalhague",
+              "fov": 130
+            },
+            "layers": {
+              "constellationLines": false,
+              "constellationNames": false
+            },
             "bortle": 1,
-            "highlights": [{ "type": "polyline", "points": ["star:Vega", "star:Deneb", "star:Altair"], "closed": true, "label": "Summer Triangle" }]
+            "highlights": [
+              {
+                "type": "polyline",
+                "points": [
+                  "star:Vega",
+                  "star:Deneb",
+                  "star:Altair"
+                ],
+                "closed": true,
+                "label": "Summer Triangle"
+              }
+            ]
           }
         ]
       },
@@ -55,7 +125,9 @@
         {
           "type": "diagram",
           "id": "skyglow",
-          "params": { "shielded": false },
+          "params": {
+            "shielded": false
+          },
           "caption": "Skyglow in three steps: lamps send light upward, the air scatters it, and some of it comes back down from every direction, so the sky behind the stars glows. Switch to shielded lamps and the glow shrinks, though light bouncing off the pavement still escapes; humid, hazy air makes it worse."
         },
         {
@@ -78,7 +150,7 @@
       }
     },
     {
-      "heading": "What the city hides",
+      "heading": "What the glow hides",
       "body": [
         "Light pollution takes the faint and the spread-out first. The Milky Way, a broad band of soft light, is gone by Bortle 7. So are almost all galaxies and nebulae, whose light is smeared over an area instead of packed into a point. Among the stars, a city limit of about magnitude 4 leaves only a few hundred of the several thousand a dark sky shows.",
         "For constellations this means you see skeletons. Bright figures like Orion, the Big Dipper and Scorpius keep their shape. Dim ones such as Cancer, Pisces or the Little Dipper's handle lose most or all of their stars. When a guide in this app describes a faint constellation, it will tell you honestly how much survives."
@@ -87,7 +159,9 @@
         {
           "type": "diagram",
           "id": "point-vs-diffuse",
-          "params": { "bortle": 3 },
+          "params": {
+            "bortle": 3
+          },
           "caption": "A star and a nebula can give the same total light, but the star packs it into a point while the nebula spreads it over a wide patch. Brighten the sky: the glow rises past the nebula's dim, spread-out light long before it reaches the star. That is why galaxies, nebulae and the Milky Way vanish first."
         },
         {
@@ -111,45 +185,85 @@
       }
     },
     {
-      "heading": "What still works from Brooklyn",
+      "heading": "What still works from a city",
       "body": [
-        "Plenty. The Moon and the bright planets are completely unaffected: Jupiter's moons, Saturn's rings and lunar craters look the same from a Brooklyn roof as from a mountaintop. So do the bright stars and their colors, every signpost pattern in this course, and the main stars of most major constellations.",
+        "Plenty. The Moon and the bright planets are completely unaffected: Jupiter's moons, Saturn's rings and lunar craters look the same from a city roof as from a mountaintop. So do the bright stars and their colors, every signpost pattern in this course, and the main stars of most major constellations.",
         "Double stars are perfect city targets, because they are points of light: try [[star:Mizar|Mizar]] and its companion Alcor in the Dipper's handle with your eyes alone, and gold-and-blue [[star:Albireo|Albireo]] in a small telescope. Bright star clusters hold up too, especially in binoculars: the [[dso:M45|Pleiades]], the [[dso:M44|Beehive]], the [[dso:NGC869|Double Cluster]]. Binoculars are the best city upgrade there is. Even a small pair shows stars dozens of times fainter than your eye can reach alone."
       ],
       "demo": {
         "title": "A city sky is not empty",
-        "controls": ["bortle"],
+        "controls": [
+          "bortle"
+        ],
         "steps": [
           {
-            "caption": "A winter evening at Bortle 9. Every corner of the Winter Hexagon, all of Orion's main stars and the Pleiades are still there. The bright winter sky is the city observer's best season.",
+            "caption": "A January evening at Bortle 9. Every corner of the Winter Hexagon, all of Orion's main stars and the Pleiades are still there. The bright December–March evening sky is the city observer's best season, in both hemispheres.",
             "time": "month:1 21:00",
-            "view": { "az": 160, "alt": 50, "fov": 130 },
-            "layers": { "constellationNames": false },
+            "view": {
+              "target": "star:Betelgeuse",
+              "fov": 130
+            },
+            "layers": {
+              "constellationNames": false
+            },
             "bortle": 9,
             "highlights": [
               {
                 "type": "polyline",
-                "points": ["star:Sirius", "star:Procyon", "star:Pollux", "star:Castor", "star:Capella", "star:Aldebaran", "star:Rigel"],
+                "points": [
+                  "star:Sirius",
+                  "star:Procyon",
+                  "star:Pollux",
+                  "star:Castor",
+                  "star:Capella",
+                  "star:Aldebaran",
+                  "star:Rigel"
+                ],
                 "closed": true,
                 "label": "Winter Hexagon"
               },
-              { "type": "object", "ref": "dso:M45", "label": "Pleiades" }
+              {
+                "type": "object",
+                "ref": "dso:M45",
+                "label": "Pleiades"
+              }
             ]
           },
           {
             "caption": "A city double star: Mizar, the middle star of the Dipper's handle, with fainter Alcor right beside it. They are a fifth of a degree apart, a classic test of eyesight. Alcor is magnitude 4, so it needs a clear city night and adapted eyes.",
             "time": "month:4 21:00",
-            "view": { "target": "star:Mizar", "fov": 12 },
-            "layers": { "constellationNames": false },
+            "view": {
+              "target": "star:Mizar",
+              "fov": 12
+            },
+            "layers": {
+              "constellationNames": false
+            },
             "bortle": 8,
-            "highlights": [{ "type": "object", "ref": "star:Mizar", "label": "Mizar" }, { "type": "object", "ref": "star:Alcor", "label": "Alcor" }]
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "star:Mizar",
+                "label": "Mizar"
+              },
+              {
+                "type": "object",
+                "ref": "star:Alcor",
+                "label": "Alcor"
+              }
+            ]
           }
         ]
       },
       "check": {
         "id": "check-city-targets",
         "prompt": "From the middle of a city, which of these is still a rewarding target?",
-        "choices": ["The Moon's craters through binoculars", "The Milky Way", "A faint spiral galaxy", "The zodiacal light"],
+        "choices": [
+          "The Moon's craters through binoculars",
+          "The Milky Way",
+          "A faint spiral galaxy",
+          "The zodiacal light"
+        ],
         "answerIndex": 0,
         "explanation": "The Moon and bright planets are so bright that sky glow makes no difference to them. The Milky Way, faint galaxies and the zodiacal light are spread-out glows, the first things light pollution hides."
       }
@@ -159,14 +273,16 @@
       "body": [
         "First, shield yourself. Glare from a nearby lamp does more damage to what you can see than the general sky glow, so stand where direct lights are blocked, and give your eyes 15 minutes to adapt. If a light is yours, aim it down and shield it.",
         "Second, look high. The glow is thickest near the horizon, where you look through the most air and the most city. Overhead the sky is noticeably darker, so catch each constellation when it is highest.",
-        "Third, pick your night and your place. A clear, dry night after a cold front, with no Moon, is worth several ordinary ones. And even a modest move helps: the middle of a large park, a beach or the waterfront facing away from Manhattan is noticeably darker than a lit street."
+        "Third, pick your night and your place. A clear, dry night after a cold front, with no Moon, is worth several ordinary ones. And even a modest move helps: the middle of a large park, a beach or a waterfront facing away from the city center is noticeably darker than a lit street."
       ],
       "tryIt": "Tonight, compare two spots a few minutes apart: under a streetlight, and somewhere all direct lights are blocked. After ten minutes in each, count the stars inside a pattern you know, such as the Big Dipper's bowl or the rectangle of Orion.",
       "figures": [
         {
           "type": "diagram",
           "id": "airmass-glow",
-          "params": { "alt": 20 },
+          "params": {
+            "alt": 20
+          },
           "caption": "The lower you look, the more air your line of sight crosses: about twice as much at 30° up, nearly six times at 10°, and almost 40 times at the horizon, where it also skims over every lit-up town. Catch each constellation when it is high."
         }
       ]
@@ -174,7 +290,7 @@
   ],
   "keyPoints": [
     "Light pollution brightens the sky background; it hides faint and spread-out things first.",
-    "The Bortle scale runs from 1 (pristine) to 9 (inner city); Brooklyn is 8 or 9.",
+    "The Bortle scale runs from 1 (pristine) to 9 (inner city): a big city is 8 or 9, a suburb 5 to 7, the countryside 3 or 4, a remote site 1 or 2.",
     "A city sky shows a few hundred stars instead of thousands, and no Milky Way.",
     "The Moon, planets, bright stars, double stars and bright clusters work fine from the city.",
     "Block direct glare, let your eyes adapt, look high, and use binoculars."
@@ -184,14 +300,24 @@
     {
       "id": "q1",
       "prompt": "Which of these is hurt least by observing from the middle of a city?",
-      "choices": ["The Milky Way", "A faint galaxy", "Saturn and its rings", "A dim constellation such as Cancer"],
+      "choices": [
+        "The Milky Way",
+        "A faint galaxy",
+        "Saturn and its rings",
+        "A dim constellation such as Cancer"
+      ],
       "answerIndex": 2,
       "explanation": "Planets are bright, compact targets far above the sky glow. The Milky Way, galaxies and faint stars are the first things light pollution erases."
     },
     {
       "id": "q2",
       "prompt": "On the Bortle scale, what does class 1 mean?",
-      "choices": ["The darkest, most pristine sky", "The brightest inner-city sky", "A sky with a full Moon", "A sky with one visible star"],
+      "choices": [
+        "The darkest, most pristine sky",
+        "The brightest inner-city sky",
+        "A sky with a full Moon",
+        "A sky with one visible star"
+      ],
       "answerIndex": 0,
       "explanation": "Bortle 1 is the darkest sky on Earth and 9 is the inner city. Lower is darker."
     },
@@ -209,7 +335,7 @@
     },
     {
       "id": "q4",
-      "prompt": "A constellation you want to see is low in the southeast now and will be high in the south in two hours. From a city, when should you look?",
+      "prompt": "A constellation you want to see is low in the east now and will be at its highest in two hours. From a city, when should you look?",
       "choices": [
         "Now, before it climbs into the brighter sky overhead",
         "In two hours, when it is highest and above the thickest glow",
@@ -233,8 +359,13 @@
     },
     {
       "id": "q6",
-      "prompt": "Which is a good target for a Brooklyn rooftop with binoculars?",
-      "choices": ["The summer Milky Way", "The Pleiades star cluster", "The spiral arms of the Andromeda Galaxy", "The zodiacal light"],
+      "prompt": "Which is a good target for a city rooftop with binoculars?",
+      "choices": [
+        "The Milky Way in Sagittarius",
+        "The Pleiades star cluster",
+        "The spiral arms of the Andromeda Galaxy",
+        "The zodiacal light"
+      ],
       "answerIndex": 1,
       "explanation": "Bright clusters of stars hold up well in the city, and binoculars make the Pleiades spectacular. The Milky Way and zodiacal light need truly dark skies."
     }

@@ -20,7 +20,7 @@
         ],
         "steps": [
           {
-            "caption": "A simulation of stepping out of a bright room into a suburban backyard on a winter evening. In the first minute you see only the brightest stars: Orion's Belt, Betelgeuse, Rigel, Sirius.",
+            "caption": "A simulation of stepping out of a bright room into a suburban backyard (a Bortle 5 to 7 sky) on a January evening. Here the faintest stars shown stand in for your eyes' sensitivity: in the first minute you see only the brightest stars, Orion's Belt, Betelgeuse, Rigel and Sirius.",
             "time": "month:1 21:00",
             "view": {
               "target": "con:Ori",
@@ -193,7 +193,7 @@
     {
       "heading": "Doing it in a city",
       "body": [
-        "In Brooklyn you will never be fully dark adapted, because the sky itself is bright. But the lights that hurt most are the ones shining directly into your eyes, and those you can fix. Stand where a building, wall or tree blocks nearby streetlights and windows. Shade your eyes with a hood or a cupped hand. Then give it at least 10 to 15 minutes before judging the sky. Rooftops, park interiors and the waterfront away from the lamps all work."
+        "In a big city (Bortle 8 or 9) you will never be fully dark adapted, because the sky itself is bright. But the lights that hurt most are the ones shining directly into your eyes, and those you can fix. Stand where a building, wall or tree blocks nearby streetlights and windows. Shade your eyes with a hood or a cupped hand. Then give it at least 10 to 15 minutes before judging the sky. Rooftops, park interiors and a waterfront or open field away from the lamps all work; in a suburb (Bortle 5 to 7) the same tricks get you much closer to full adaptation, and in the countryside (3 or 4) you can reach it."
       ]
     }
   ],

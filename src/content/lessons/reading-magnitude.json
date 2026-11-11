@@ -17,7 +17,10 @@
         {
           "type": "diagram",
           "id": "magnitude-ratio",
-          "params": { "a": 1, "b": 6 },
+          "params": {
+            "a": 1,
+            "b": 6
+          },
           "caption": "Each step of one magnitude is a factor of about 2.5 in brightness, and five steps make exactly 100. Set two magnitudes, or pick an example, and count how many of the fainter star it would take to match the brighter one."
         }
       ],
@@ -28,7 +31,12 @@
       "check": {
         "id": "check-mag-steps",
         "prompt": "Star A is magnitude 2 and star B is magnitude 4. Which is brighter, and by roughly how much?",
-        "choices": ["A, about 6 times", "B, about 2 times", "A, about 2 times", "B, about 6 times"],
+        "choices": [
+          "A, about 6 times",
+          "B, about 2 times",
+          "A, about 2 times",
+          "B, about 6 times"
+        ],
         "answerIndex": 0,
         "explanation": "A has the smaller number, so it is brighter. Two steps of 2.5 times each give 2.5 × 2.5 ≈ 6.3 times."
       }
@@ -44,26 +52,64 @@
         "controls": [],
         "steps": [
           {
-            "caption": "Orion and Sirius on a winter evening. Sirius is magnitude −1.5; Rigel 0.2; Betelgeuse about 0.5; the three Belt stars are close to 2. Each step down the list is easy to see.",
+            "caption": "Orion and Sirius on a January evening. Sirius is magnitude −1.5; Rigel 0.2; Betelgeuse about 0.5; the three Belt stars are close to 2. Each step down the list is easy to see.",
             "time": "month:1 21:00",
-            "view": { "target": "star:Alnitak", "fov": 80 },
-            "layers": { "constellationNames": false },
+            "view": {
+              "target": "star:Alnitak",
+              "fov": 80
+            },
+            "layers": {
+              "constellationNames": false
+            },
             "highlights": [
-              { "type": "object", "ref": "star:Sirius", "label": "Sirius −1.5" },
-              { "type": "object", "ref": "star:Rigel", "label": "Rigel 0.2" },
-              { "type": "object", "ref": "star:Betelgeuse", "label": "Betelgeuse 0.5" },
-              { "type": "object", "ref": "star:Alnilam", "label": "Belt stars: about 2" }
+              {
+                "type": "object",
+                "ref": "star:Sirius",
+                "label": "Sirius −1.5"
+              },
+              {
+                "type": "object",
+                "ref": "star:Rigel",
+                "label": "Rigel 0.2"
+              },
+              {
+                "type": "object",
+                "ref": "star:Betelgeuse",
+                "label": "Betelgeuse 0.5"
+              },
+              {
+                "type": "object",
+                "ref": "star:Alnilam",
+                "label": "Belt stars: about 2"
+              }
             ]
           },
           {
             "caption": "The Big Dipper is a row of magnitude 2 stars with one exception. Megrez, where the handle meets the bowl, is magnitude 3.3: about a third as bright as its neighbors.",
             "time": "month:4 21:00",
-            "view": { "target": "asterism:big-dipper", "fov": 50 },
-            "layers": { "constellationNames": false },
+            "view": {
+              "target": "asterism:big-dipper",
+              "fov": 50
+            },
+            "layers": {
+              "constellationNames": false
+            },
             "highlights": [
-              { "type": "object", "ref": "star:Dubhe", "label": "Dubhe 1.8" },
-              { "type": "object", "ref": "star:Megrez", "label": "Megrez 3.3" },
-              { "type": "object", "ref": "star:Alkaid", "label": "Alkaid 1.9" }
+              {
+                "type": "object",
+                "ref": "star:Dubhe",
+                "label": "Dubhe 1.8"
+              },
+              {
+                "type": "object",
+                "ref": "star:Megrez",
+                "label": "Megrez 3.3"
+              },
+              {
+                "type": "object",
+                "ref": "star:Alkaid",
+                "label": "Alkaid 1.9"
+              }
             ]
           }
         ]
@@ -88,46 +134,108 @@
       ],
       "demo": {
         "title": "The Little Dipper sky gauge",
-        "controls": ["bortle"],
+        "controls": [
+          "bortle"
+        ],
         "steps": [
           {
             "caption": "An inner-city sky, limit about magnitude 3.8. Of the Little Dipper only Polaris (2.0), Kochab (2.1) and Pherkad (3.0) show.",
             "time": "month:7 22:00",
-            "view": { "target": "asterism:little-dipper", "fov": 40 },
-            "layers": { "constellationNames": false, "constellationLines": false, "milkyWay": false },
+            "view": {
+              "target": "asterism:little-dipper",
+              "fov": 40
+            },
+            "layers": {
+              "constellationNames": false,
+              "constellationLines": false,
+              "milkyWay": false
+            },
             "bortle": 9,
             "highlights": [
               {
                 "type": "polyline",
-                "points": ["star:Polaris", "star:Yildun", "star:ε UMi", "star:ζ UMi", "star:η UMi", "star:Pherkad", "star:Kochab", "star:ζ UMi"],
+                "points": [
+                  "star:Polaris",
+                  "star:Yildun",
+                  "star:ε UMi",
+                  "star:ζ UMi",
+                  "star:η UMi",
+                  "star:Pherkad",
+                  "star:Kochab",
+                  "star:ζ UMi"
+                ],
                 "dashed": true
               },
-              { "type": "object", "ref": "star:Polaris", "label": "Polaris 2.0" },
-              { "type": "object", "ref": "star:Kochab", "label": "Kochab 2.1" },
-              { "type": "object", "ref": "star:Pherkad", "label": "Pherkad 3.0" }
+              {
+                "type": "object",
+                "ref": "star:Polaris",
+                "label": "Polaris 2.0"
+              },
+              {
+                "type": "object",
+                "ref": "star:Kochab",
+                "label": "Kochab 2.1"
+              },
+              {
+                "type": "object",
+                "ref": "star:Pherkad",
+                "label": "Pherkad 3.0"
+              }
             ]
           },
           {
             "caption": "A suburban sky, limit about 5.3. All seven stars are there: three in the handle near magnitude 4.3, and the faintest bowl star at 5.0. Move the slider and watch stars cross your limit.",
             "time": "month:7 22:00",
-            "view": { "target": "asterism:little-dipper", "fov": 40 },
-            "layers": { "constellationNames": false, "constellationLines": false, "milkyWay": false },
+            "view": {
+              "target": "asterism:little-dipper",
+              "fov": 40
+            },
+            "layers": {
+              "constellationNames": false,
+              "constellationLines": false,
+              "milkyWay": false
+            },
             "bortle": 6,
             "highlights": [
               {
                 "type": "polyline",
-                "points": ["star:Polaris", "star:Yildun", "star:ε UMi", "star:ζ UMi", "star:η UMi", "star:Pherkad", "star:Kochab", "star:ζ UMi"],
+                "points": [
+                  "star:Polaris",
+                  "star:Yildun",
+                  "star:ε UMi",
+                  "star:ζ UMi",
+                  "star:η UMi",
+                  "star:Pherkad",
+                  "star:Kochab",
+                  "star:ζ UMi"
+                ],
                 "dashed": true
               },
-              { "type": "object", "ref": "star:Yildun", "label": "4.4" },
-              { "type": "object", "ref": "star:ε UMi", "label": "4.2" },
-              { "type": "object", "ref": "star:ζ UMi", "label": "4.3" },
-              { "type": "object", "ref": "star:η UMi", "label": "5.0" }
+              {
+                "type": "object",
+                "ref": "star:Yildun",
+                "label": "4.4"
+              },
+              {
+                "type": "object",
+                "ref": "star:ε UMi",
+                "label": "4.2"
+              },
+              {
+                "type": "object",
+                "ref": "star:ζ UMi",
+                "label": "4.3"
+              },
+              {
+                "type": "object",
+                "ref": "star:η UMi",
+                "label": "5.0"
+              }
             ]
           }
         ]
       },
-      "tryIt": "On the next clear night, find Polaris and count the Little Dipper's stars. Three means a limit near magnitude 3 to 4; five or six means about 4.5; all seven means 5 or better.",
+      "tryIt": "On the next clear night, find Polaris and count the Little Dipper's stars. Three means a limit near magnitude 3 to 4; five or six means about 4.5; all seven means 5 or better. In the southern hemisphere use the Southern Cross: its four main stars are magnitude 0.8 to 2.8, and if you can also see the small fifth star, Epsilon Crucis (3.6), your limit is at least 3.6.",
       "figures": [
         {
           "type": "diagram",
@@ -138,7 +246,12 @@
       "check": {
         "id": "check-limit",
         "prompt": "Your sky's limiting magnitude tonight is 4.3. Which of these stars can you see without binoculars?",
-        "choices": ["A magnitude 4.8 star", "A magnitude 3.3 star", "A magnitude 5.5 star", "None of them"],
+        "choices": [
+          "A magnitude 4.8 star",
+          "A magnitude 3.3 star",
+          "A magnitude 5.5 star",
+          "None of them"
+        ],
         "answerIndex": 1,
         "explanation": "You can see stars brighter than your limit, which means stars with smaller magnitudes: 3.3 is below 4.3, so it shows; 4.8 and 5.5 do not."
       }
@@ -146,13 +259,15 @@
     {
       "heading": "Apparent and absolute",
       "body": [
-        "Everything above is apparent magnitude: how bright a star looks from Earth. That depends on two things, how much light the star really gives off and how far away it is. To compare stars fairly, astronomers also use absolute magnitude: how bright the star would look from a standard distance of 10 parsecs, which is 32.6 light-years. Sirius looks brilliant mainly because it is a neighbor, only 8.6 light-years away; its absolute magnitude is a modest 1.4. Our Sun, moved out to that standard distance, would be magnitude 4.8: a faint star you could not see from Brooklyn at all."
+        "Everything above is apparent magnitude: how bright a star looks from Earth. That depends on two things, how much light the star really gives off and how far away it is. To compare stars fairly, astronomers also use absolute magnitude: how bright the star would look from a standard distance of 10 parsecs, which is 32.6 light-years. Sirius looks brilliant mainly because it is a neighbor, only 8.6 light-years away; its absolute magnitude is a modest 1.4. Our Sun, moved out to that standard distance, would be magnitude 4.8: a faint star you could not see from a big city at all."
       ],
       "figures": [
         {
           "type": "diagram",
           "id": "apparent-absolute",
-          "params": { "star": "Sirius" },
+          "params": {
+            "star": "Sirius"
+          },
           "caption": "The same star looks five magnitudes fainter for every tenfold step farther away. Slide each star along the distance scale: Sirius is brilliant mostly because it is close, while Rigel, about 100 times farther away, is still one of the brightest stars in the sky. Moved to the standard 32.6 light-years, the Sun would be a faint magnitude 4.8."
         }
       ],
@@ -174,7 +289,12 @@
     {
       "id": "q1",
       "prompt": "Star A is magnitude 1.0 and star B is magnitude 4.0. Which statement is right?",
-      "choices": ["B is 4 times brighter than A", "A is 3 times brighter than B", "A is about 16 times brighter than B", "B is about 16 times brighter than A"],
+      "choices": [
+        "B is 4 times brighter than A",
+        "A is 3 times brighter than B",
+        "A is about 16 times brighter than B",
+        "B is about 16 times brighter than A"
+      ],
       "answerIndex": 2,
       "explanation": "Smaller is brighter, and each magnitude is about 2.5 times: 2.5 × 2.5 × 2.5 is about 16."
     },
@@ -205,7 +325,12 @@
     {
       "id": "q4",
       "prompt": "Roughly how many times brighter is a magnitude 1 star than a magnitude 6 star?",
-      "choices": ["5 times", "100 times", "12.5 times", "1,000 times"],
+      "choices": [
+        "5 times",
+        "100 times",
+        "12.5 times",
+        "1,000 times"
+      ],
       "answerIndex": 1,
       "explanation": "Five magnitudes is defined as exactly 100 times in brightness."
     },
@@ -224,7 +349,12 @@
     {
       "id": "q6",
       "prompt": "You count the Little Dipper and see only Polaris and the two stars at the end of the bowl. What is your sky's limiting magnitude, roughly?",
-      "choices": ["Between 3 and 4", "About 1", "About 6.5", "About 9"],
+      "choices": [
+        "Between 3 and 4",
+        "About 1",
+        "About 6.5",
+        "About 9"
+      ],
       "answerIndex": 0,
       "explanation": "Polaris, Kochab and Pherkad are magnitude 2 to 3; the other four are 4.2 or fainter. Seeing only three puts your limit between 3 and 4."
     }

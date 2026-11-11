@@ -568,6 +568,9 @@ export function createSkyEngine(container: HTMLElement, catalog: Catalog, option
     if (inputMode === 'none') return;
     root.focus({ preventScroll: true });
     const p = local(e);
+    // A mouse has one pointer: any other tracked pointer is stale (its pointerup landed outside the canvas without
+    // capture). Stale entries would make this press look like a second finger and turn a lasso into a pinch.
+    if (e.pointerType === 'mouse' || pointers.size >= 2) pointers.clear();
     pointers.set(e.pointerId, p);
     try { ovCanvas.setPointerCapture(e.pointerId); } catch { /* synthetic events have no capture */ }
     stopMotion();
@@ -748,6 +751,10 @@ export function createSkyEngine(container: HTMLElement, catalog: Catalog, option
   ovCanvas.addEventListener('pointerup', onPointerUp);
   ovCanvas.addEventListener('pointercancel', onPointerUp);
   ovCanvas.addEventListener('pointerleave', onLeave);
+  // A release outside the canvas (e.g. over a floating control) still ends the gesture.
+  const onWindowUp = (e: PointerEvent) => { if (pointers.has(e.pointerId) && e.target !== ovCanvas) onPointerUp(e); };
+  window.addEventListener('pointerup', onWindowUp);
+  window.addEventListener('pointercancel', onWindowUp);
   ovCanvas.addEventListener('wheel', onWheel, { passive: false });
   ovCanvas.addEventListener('contextmenu', onContext);
   root.addEventListener('keydown', onKey);
@@ -944,6 +951,8 @@ export function createSkyEngine(container: HTMLElement, catalog: Catalog, option
       ovCanvas.removeEventListener('pointermove', onPointerMove);
       ovCanvas.removeEventListener('pointerup', onPointerUp);
       ovCanvas.removeEventListener('pointercancel', onPointerUp);
+      window.removeEventListener('pointerup', onWindowUp);
+      window.removeEventListener('pointercancel', onWindowUp);
       ovCanvas.removeEventListener('pointerleave', onLeave);
       ovCanvas.removeEventListener('wheel', onWheel);
       ovCanvas.removeEventListener('contextmenu', onContext);
