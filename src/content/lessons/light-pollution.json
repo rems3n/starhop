@@ -57,6 +57,19 @@
           "id": "skyglow",
           "params": { "shielded": false },
           "caption": "Skyglow in three steps: lamps send light upward, the air scatters it, and some of it comes back down from every direction, so the sky behind the stars glows. Switch to shielded lamps and the glow shrinks, though light bouncing off the pavement still escapes; humid, hazy air makes it worse."
+        },
+        {
+          "type": "image",
+          "image": {
+            "file": "img/lessons/earth-at-night-nasa.jpg",
+            "alt": "Map of the whole Earth at night: dark continents speckled and streaked with the yellow lights of cities, brightest across the eastern United States, Europe, India and East Asia.",
+            "kind": "photograph",
+            "kindNote": "Composite of night-time data from the Suomi NPP satellite, April and October 2012, laid over Blue Marble imagery of the land",
+            "credit": "NASA Earth Observatory",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_earth_at_night.jpg"
+          },
+          "caption": "Every bright patch on this map of the Earth at night is light escaping upward, the raw material of skyglow. Wherever people live, the sky above them glows: more than a third of humanity can no longer see the Milky Way from home."
         }
       ],
       "misconception": {
@@ -76,6 +89,20 @@
           "id": "point-vs-diffuse",
           "params": { "bortle": 3 },
           "caption": "A star and a nebula can give the same total light, but the star packs it into a point while the nebula spreads it over a wide patch. Brighten the sky: the glow rises past the nebula's dim, spread-out light long before it reaches the star. That is why galaxies, nebulae and the Milky Way vanish first."
+        },
+        {
+          "type": "image",
+          "image": {
+            "file": "img/lessons/light-pollution-country-vs-city.jpg",
+            "alt": "Two photos of the same southern summer sky. Top, from a village: the Milky Way and thousands of stars above the trees. Bottom, from a city: a grey-orange sky with only a handful of stars.",
+            "kind": "photograph",
+            "kindNote": "The same part of the sky (Sagittarius and Scorpius) from a village of about 200 people (top) and a metro area of about 400,000 (bottom); the photographer matched the sky brightness to what the eye saw",
+            "credit": "Jeremy Stanley",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Light_pollution_country_versus_city.png"
+          },
+          "caption": "The same sky from a village and from a city. From the village the Milky Way pours down through Sagittarius and Scorpius; from the city it is gone, and only the few brightest stars remain. The stars did not change, only the glow behind them."
         }
       ],
       "thinkAbout": {

@@ -26,6 +26,7 @@ time the script ran. Wikipedia requests are spaced 1.5 s apart and retried on HT
 | `constellations.json` | 236 kB / 84 kB | 88 constellations |
 | `dsos.json` | 99 kB / 18 kB | 597 deep-sky objects |
 | `milkyway.json` | 112 kB / 39 kB | 5 brightness levels, 201 outlines |
+| `constellation-art.json` | 18 kB / 5 kB | 85 illustration anchors (+ `public/art/*.webp`, 323 KiB); optional step, `scripts/data/build-art.ts` (needs ImageMagick; `--no-art` skips) |
 | `meta.json` | 3 kB | build time, counts, sizes, sources |
 
 **stars.json** — `Star[]`, brightest first (ties by id). `id` is the HYG id. Unknown fields are left

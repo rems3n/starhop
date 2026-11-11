@@ -23,6 +23,7 @@ its first frame, so `onReady` fires only for the one that stays (checked headles
 | `ephemeris.ts` | The only astronomy-engine calls: J2000 → (North, East, Up) matrix, Sun/Moon/planet positions, sizes, magnitudes. |
 | `shaders.ts`, `renderer.ts` | GLSL and the WebGL2 renderer (buffers, passes, context loss). |
 | `milkyway.ts` | Paints the Milky Way contours into a texture, once. |
+| `art.ts` | Constellation illustrations, pure maths: anchor matrix, image grid → sphere, texture-array packing, fade curve. |
 | `labels.ts` | Label atlas (text drawn once, stamped each frame) and the collision box list. |
 | `overlay.ts` | Everything on the 2D canvas. |
 | `highlights.ts` | `Highlight[]` → ready-to-project geometry. |
@@ -55,6 +56,8 @@ Pass order (WebGL):
    `limitingMag` (full at ≤ 4.5, almost none at ≥ 6.5). The **Milky Way** is added here from a 1024×512
    equirectangular texture (see below); it is gone at `limitingMag` ≤ 5.0 and in twilight.
    With atmosphere off the sky is a flat dark colour with no hint of where the horizon is (quiz mode).
+1b. **Constellation illustrations** (layer `constellationArt`, off by default) – Stellarium's drawings (see below),
+   additive, behind lines and stars, one instanced draw call.
 2. **Lines** – equatorial grid, azimuthal grid (same buffer, horizon matrix), ecliptic, IAU boundaries
    (dimmer, shared edges drawn once), constellation figures. Every line is pre-cut into great-circle pieces
    ≤ 2.5°, drawn as instanced screen-space quads with a soft edge.
@@ -96,6 +99,25 @@ marker, lasso.
 `milkyway.json` contours are filled level by level (even-odd, all rings of a level and all three RA-wrapped
 copies in one path), each level adding light, then blurred. Rings that run all the way round the sky (the
 two edges of the band in level 1) are closed over the north pole so even-odd leaves the band between them.
+
+### Constellation illustrations
+
+`public/data/constellation-art.json` + `public/art/<Abbr>.webp` (85 drawings, ~320 KiB; built by
+`scripts/data/build-art.ts`). Nothing is fetched until the layer is first switched on; the index and all images then
+load once per page (shared by every engine) and the compressed blobs are kept so a lost WebGL context can re-upload.
+
+- **Placement** (as in Stellarium): each drawing has three anchor pixels pinned to three stars. `anchorMatrix` solves
+  the 3×3 M with M·(x, y, 1)ᵀ = each star's J2000 unit vector; a grid over the image (cells ≈ 3°, 6–40 per side) is
+  mapped through M and normalised onto the sphere.
+- **Drawing**: one instance per grid cell (four corner vectors, uv rectangle, layer, figure index), transformed in the
+  vertex shader with `w = 1 + z` so the texture is perspective-correct; a cell with any corner past the clip distance
+  is dropped whole (same rule as line pieces), so nothing streaks. All drawings live in one R8 `TEXTURE_2D_ARRAY` of
+  512² layers with mipmaps (256 and 128 px drawings packed four or sixteen to a layer: 43 layers, ~15 MB with mips).
+- **Look**: the `--sky-lines` hue lifted towards white, added at ~0.26 × image luminance. Fades with daylight
+  (`(1 − day)²`), out below a ~5° field and by 30 % at very wide fields. Constellations with a `constellation`
+  highlight, or a selected constellation, are drawn 2.3× brighter.
+- Puppis, Vela and Serpens have no drawing of their own: Carina's shows the whole ship Argo Navis and Ophiuchus'
+  includes the serpent.
 
 ## Highlights (`setHighlights`, replaces all)
 
@@ -180,6 +202,11 @@ Measured with `scripts/sky/perf.mjs`: 1280×800, DPR 1, 5 s scripted continuous 
 | 8,834 stars, default layers | 2.2 ms | 0.08 ms | 3.1 ms | 7 | 16,876 | 6.4 |
 | 28,495 stars, default layers | 2.3 ms | 0.09 ms | 5.3 ms | 8 | 36,537 | 6.1 |
 | 28,495 stars, every layer + 10 highlights | 3.7 ms | 0.13 ms | 10.2 ms | 12 | 89,289 | 3.3 |
+
+Constellation illustrations (9k stars, default layers, same run twice; the sandbox was shared with other jobs, so
+absolute numbers drifted): +1 draw call, +30,304 vertices (7,576 instanced cells), WebGL command time 0.5 ms with or
+without the layer, main-thread script per frame within run-to-run noise (4.2–5.6 ms in both). SwiftShader fps drops
+(about 4 → 2) because the extra full-sky additive fill is rasterised on the CPU; on a GPU that fill is trivial.
 
 Reading these honestly:
 

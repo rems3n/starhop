@@ -143,5 +143,5 @@ export function artAlpha(fov: number, day: number): number {
     const t = Math.max(0, Math.min(1, (x - a) / (b - a)));
     return t * t * (3 - 2 * t);
   };
-  return 0.26 * (1 - day) * (1 - day) * s(2.5, 7, fov) * (1 - 0.3 * s(90, 150, fov));
+  return 0.36 * (1 - day) * (1 - day) * s(2.5, 7, fov) * (1 - 0.3 * s(90, 150, fov));
 }

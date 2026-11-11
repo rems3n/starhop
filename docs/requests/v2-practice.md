@@ -20,3 +20,9 @@
    `--sky-embed-controls-width` would let quiz panels make room consistently.
 6. **Location header on phones** (owner: IA). At 390 px the location pill sits in the app header; fine now — earlier
    builds overlapped the session bar ("0 correct"). Please keep the session top bar (`.qz-top`) clear of it.
+7. **Lasso sometimes lost in multi-question rounds** (owner: sky engine / sky-embed). In `scripts/quiz/check.mjs`,
+   find-it loops drawn on open sky (the check confirms no element covers any loop point) occasionally produce no
+   `lasso` event in review / weakest / module rounds where one engine is reused across questions (1–5 of ~30 loops per
+   run; the first find-it round is reliable). Likely a stale entry in the engine's `pointers` map making the next
+   pointerdown look like a second finger (pinch), so `lassoing` never starts. Clearing `pointers` in `setInputMode`
+   or on `lostpointercapture` would rule it out.

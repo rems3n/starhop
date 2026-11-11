@@ -15,6 +15,11 @@ The image table at the end lists each of the 210 images individually (object, ki
 
 - International Meteor Organization, *2027 Meteor Shower Calendar*, ed. J. Rendtel, Table 5 "Working list of visual meteor showers" — https://www.imo.net/calendar/ — facts (solar longitude, activity window, radiant, speed, ZHR) for `src/content/showers.json`; cross-checked with Wikipedia "List of meteor showers" (CC BY-SA 4.0), which also supplied parent bodies.
 
+## Constellation illustrations
+
+- Constellation art by Johan Meuris and Stellarium contributors, from Stellarium's "modern" sky culture — https://github.com/Stellarium/stellarium/tree/master/skycultures/modern (files fetched from `raw.githubusercontent.com/Stellarium/stellarium/master/skycultures/modern/`) — **Free Art License** (https://artlibre.org/licence/lal/en/) — 85 drawings shown by the sky map's "Figures (illustrations)" layer (`public/art/*.webp`). The images were converted to grayscale and re-encoded as WebP (resized only if larger than 512 px); they are otherwise unchanged. Artist attribution as given in Stellarium's `CREDITS.md` (§4.10).
+- Stellarium "modern" sky culture `index.json` — CC BY-SA 4.0 (sky-culture text and data) — the three anchor stars of each drawing (`public/data/constellation-art.json`).
+
 ## Astronomy calculations and verification
 
 | Source | URL | Licence | Used for |
