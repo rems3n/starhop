@@ -22,7 +22,7 @@ export const SEASON_LABEL: Record<string, string> = {
 
 /**
  * Constellation ids for a pool spec:
- *   anchors · season:<Season> · hemisphere:<N|S> · tonight · group:<course group id> · unit:<path unit id> (legacy) · all
+ *   anchors (the course's anchors for the learner's location) · visible (everything that rises usefully there) · season:<Season> · hemisphere:<N|S> · tonight · group:<course group id> · unit:<path unit id> (legacy) · all
  * Unknown ids are dropped; an unknown spec falls back to the anchors. Order: anchors and units keep their
  * authored order, `tonight` keeps the order given (best time first), the rest follow the catalog.
  */
@@ -46,9 +46,17 @@ export function buildPool(spec: string, ctx: PoolContext): string[] {
     }
     case 'unit':
       return keep(ctx.units.find((u) => u.id === arg)?.constellations ?? []);
+    case 'visible': {
+      // everything the course lists for this location: anchors + season groups
+      const ids = (ctx.groups ?? []).filter((g) => g.id.startsWith('first-constellations/') || g.id.startsWith('season-by-season/')).flatMap((g) => g.constellations);
+      return ids.length ? keep(ids) : ctx.constellations.map((c) => c.id);
+    }
     case 'anchors':
-    default:
-      return keep(ANCHORS);
+    default: {
+      // the course's anchors for this location; the fixed list only when the course isn't available
+      const ids = (ctx.groups ?? []).filter((g) => g.id.startsWith('first-constellations/')).flatMap((g) => g.constellations);
+      return keep(ids.length ? ids : ANCHORS);
+    }
   }
 }
 
@@ -60,6 +68,8 @@ export function splitSpec(spec: string): [string, string] {
 export function poolLabel(spec: string, ctx: Pick<PoolContext, 'units' | 'groups'>): string {
   const [kind, arg] = splitSpec(spec);
   switch (kind) {
+    case 'visible':
+      return 'Everything visible from your location';
     case 'all':
       return 'All 88 constellations';
     case 'season':
@@ -81,7 +91,7 @@ export function poolLabel(spec: string, ctx: Pick<PoolContext, 'units' | 'groups
 export function poolOptions(ctx: Pick<PoolContext, 'units' | 'groups'>): { group: string; options: { value: string; label: string }[] }[] {
   const opt = (value: string) => ({ value, label: poolLabel(value, ctx) });
   return [
-    { group: 'Start here', options: [opt('anchors'), opt('tonight')] },
+    { group: 'Start here', options: [opt('anchors'), opt('tonight'), opt('visible')] },
     ...(ctx.groups?.length ? [{ group: 'Course groups for your location', options: ctx.groups.map((g) => opt(`group:${g.id}`)) }] : []),
     { group: 'By season', options: ['winter', 'spring', 'summer', 'autumn', 'north-circumpolar', 'far-south'].map((s) => opt(`season:${s}`)) },
     { group: 'By hemisphere', options: [opt('hemisphere:N'), opt('hemisphere:S')] },

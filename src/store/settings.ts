@@ -13,7 +13,7 @@ export interface QuizDifficulty {
   randomRotation: boolean;
   /** true = start centred near the target, false = anywhere */
   startNearTarget: boolean;
-  /** 'anchors' | 'season:<winter|spring|summer|autumn>' | 'hemisphere:<N|S>' | 'tonight' | 'all' | 'unit:<path unit id>' */
+  /** 'anchors' | 'visible' | 'group:<module>/<group>' | 'season:<…>' | 'hemisphere:<N|S>' | 'tonight' | 'all' */
   pool: string;
   timer: boolean;
 }
@@ -21,7 +21,7 @@ export interface QuizDifficulty {
 export const DIFFICULTY_PRESETS: Record<'easy' | 'medium' | 'hard' | 'expert', QuizDifficulty> = {
   easy: { limitingMag: 4.0, lines: true, boundaries: false, labels: false, randomRotation: false, startNearTarget: true, pool: 'anchors', timer: false },
   medium: { limitingMag: 4.8, lines: false, boundaries: false, labels: false, randomRotation: false, startNearTarget: true, pool: 'anchors', timer: false },
-  hard: { limitingMag: 5.5, lines: false, boundaries: false, labels: false, randomRotation: false, startNearTarget: false, pool: 'hemisphere:N', timer: true },
+  hard: { limitingMag: 5.5, lines: false, boundaries: false, labels: false, randomRotation: false, startNearTarget: false, pool: 'visible', timer: true },
   expert: { limitingMag: 6.5, lines: false, boundaries: false, labels: false, randomRotation: true, startNearTarget: false, pool: 'all', timer: true },
 };
 

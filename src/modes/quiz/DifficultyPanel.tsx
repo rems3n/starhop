@@ -3,6 +3,7 @@ import { DIFFICULTY_PRESETS, useSettings } from '@/store/settings';
 import { Slider, Switch } from '@/ui';
 import { matchingPreset, PRESET_LABEL, PRESET_NAMES, starCount } from './logic/difficulty';
 import { poolOptions } from './logic/pools';
+import { courseGroups } from './logic/sessions';
 import type { QuizData } from './logic/types';
 
 /** Every difficulty setting on its own, plus one-tap presets. Shows which preset matches, or "Custom". */
@@ -11,7 +12,7 @@ export function DifficultyPanel({ data }: { data: QuizData }) {
   const set = useSettings((s) => s.setDifficulty);
   const mags = useMemo(() => data.catalog.stars.map((s) => s.mag), [data.catalog]);
   const preset = matchingPreset(d);
-  const groups = useMemo(() => poolOptions({ units: data.units }), [data.units]);
+  const groups = useMemo(() => poolOptions({ units: data.units, groups: courseGroups(data) }), [data]);
   return (
     <section className="card qz-diff" aria-label="Difficulty" data-testid="difficulty">
       <div className="qz-diff-head">
