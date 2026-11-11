@@ -94,7 +94,7 @@ export default function MoonriseTimesChart({ params }: DiagramProps) {
       </Controls>
       <Readout>
         {`${label(d.a)}: ${name.toLowerCase()}, ${Math.round(d.ill * 100)}% lit. `}
-        {d.rises.length ? `Moonrise ${d.rises.map((t) => fmtTime(o.tz, t)).join(' and ')}` : 'No moonrise between this noon and the next'}
+        {d.rises.length ? `Moonrise ${d.rises.map((t) => fmtTime(o.tz, t)).join(' and ')}` : d.moon.some(([p]) => p === 0) ? 'The Moon is already up at noon' : 'No moonrise between this noon and the next'}
         {d.sets.length ? `, moonset ${d.sets.map((t) => fmtTime(o.tz, t)).join(' and ')}.` : '.'}
         {sel > 0 && days[sel - 1].rises.length && d.rises.length
           ? ` That is ${Math.round((d.rises[0].getTime() - days[sel - 1].rises[0].getTime()) / 60000 - 1440)} minutes later than the day before.`

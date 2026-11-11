@@ -56,6 +56,14 @@ export default function SunMoonSize({ params }: DiagramProps) {
         </Label>
         {/* Right panel */}
         <rect x={452} y={14} width={256} height={272} rx={10} fill="#060a1e" stroke={C.line} />
+        <defs>
+          <radialGradient id="sms-corona">
+            <stop offset="0.5" stopColor="#ffffff" stopOpacity="0.85" />
+            <stop offset="0.65" stopColor="#dfe7ff" stopOpacity="0.4" />
+            <stop offset="1" stopColor="#dfe7ff" stopOpacity="0" />
+          </radialGradient>
+        </defs>
+        {total && <circle cx={580} cy={140} r={R * 2} fill="url(#sms-corona)" />}
         <circle cx={580} cy={140} r={R} fill={C.sun} />
         <circle cx={580} cy={140} r={rm} fill="#05060f" />
         <Label x={580} y={240} anchor="middle" weight={700}>

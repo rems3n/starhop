@@ -40,7 +40,7 @@
 .lb-table { width: 100%; border-collapse: collapse; font-size: var(--fs-sm); }
 .lb-table thead th { position: sticky; top: 0; background: var(--night-800); z-index: 1; text-align: left; font-weight: 600; color: var(--text-dim); padding: 0 var(--sp-3); height: 40px; white-space: nowrap; border-bottom: 1px solid var(--line-strong); }
 .lb-table tbody th, .lb-table td { padding: 8px var(--sp-3); text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); font-weight: 400; }
-.lb-table tbody th { font-weight: 600; white-space: nowrap; }
+.lb-table tbody th { font-weight: 600; min-width: 9ch; max-width: 34ch; }
 .lb-table tbody th a { color: var(--text); text-decoration: none; }
 .lb-table tbody th a:hover, .lb-table tbody th a:focus-visible { color: var(--vega); text-decoration: underline; }
 .lb-table tbody tr { cursor: pointer; }
@@ -64,7 +64,7 @@
 .lb-badge--dim { border-color: var(--line); color: var(--text-faint); }
 
 .lb-cards { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--sp-2); }
-.lb-card { display: flex; flex-direction: column; gap: 6px; padding: var(--sp-3) var(--sp-4); }
+a.lb-card { display: flex; flex-direction: column; gap: 6px; padding: var(--sp-3) var(--sp-4); }
 .lb-card-head { display: flex; flex-direction: column; gap: 1px; }
 .lb-card-head strong { font-size: var(--fs-md); }
 .lb-card-head .dim { font-size: var(--fs-sm); }
@@ -77,7 +77,7 @@
 .lb-bigsearch { display: block; max-width: 720px; margin-bottom: var(--sp-5); }
 .lb-bigsearch .input { min-height: 48px; font-size: var(--fs-md); padding: 0 var(--sp-4); }
 .lb-collections { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: var(--sp-3); }
-.lb-collection-card { height: 100%; display: flex; flex-direction: column; gap: 4px; }
+a.lb-collection-card { height: 100%; display: flex; flex-direction: column; gap: 4px; }
 .lb-collection-card strong { font-family: var(--font-read); font-size: var(--fs-xl); font-weight: 500; }
 .lb-collection-card .dim { font-size: var(--fs-sm); }
 .lb-collection-count { font-variant-numeric: tabular-nums; color: var(--amber); font-weight: 600; font-size: var(--fs-sm); }
@@ -106,7 +106,7 @@
 .lb-step { width: 100%; display: flex; gap: var(--sp-3); align-items: flex-start; text-align: left; padding: var(--sp-3) var(--sp-4); border-radius: var(--r-lg); border: 1px solid var(--line); background: var(--night-800); cursor: pointer; }
 .lb-step:hover { border-color: var(--line-strong); background: var(--night-700); }
 .lb-step.is-on { border-color: var(--amber); background: rgba(240, 180, 92, 0.08); }
-.lb-step-num { flex: none; display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; border: 1px solid var(--line-strong); font-size: var(--fs-sm); font-weight: 600; font-variant-numeric: tabular-nums; }
+.lb-step-num { flex: none; cursor: pointer; background: none; color: inherit; padding: 0; display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; border: 1px solid var(--line-strong); font-size: var(--fs-sm); font-weight: 600; font-variant-numeric: tabular-nums; }
 .lb-step.is-on .lb-step-num { background: var(--amber); border-color: var(--amber); color: var(--amber-ink); }
 .lb-step-text { font-family: var(--font-read); font-size: 1.0625rem; line-height: 1.5; padding-top: 2px; }
 

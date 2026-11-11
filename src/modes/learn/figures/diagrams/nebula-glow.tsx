@@ -7,7 +7,7 @@
  */
 import { useMemo, useState } from 'react';
 import { C, Callout, ChoiceControl, Controls, Label, RangeControl, Readout, Svg, clamp, type DiagramMeta, type DiagramProps } from '../kit';
-import { fmt, gauss, rng, tempColor } from './objects-lib';
+import { fmt, gauss, rng, tempColor } from './_objects-lib';
 
 export const meta: DiagramMeta = {
   title: 'Why nebulae glow red or blue',

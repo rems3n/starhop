@@ -16,7 +16,7 @@ export const meta: DiagramMeta = {
   params: { day: 'starting day of 2027, 0–364 (default 214, 2 August)' },
 };
 
-const CX = 330, CY = 214, RO = 205, E = rad(24), RM = 50, TILT = rad(5.145 * 3);
+const CX = 340, CY = 206, RO = 210, E = rad(28), RM = 66, TILT = rad(5.145 * 3);
 const OM0 = 320.3, OM_T0 = Date.UTC(2027, 0, 10, 16);
 const omega = (d: Date) => norm360(OM0 - (19.34 * (d.getTime() - OM_T0)) / (365.25 * 86400000));
 const proj = (x: number, y: number, z: number): [number, number] => [CX + x, CY - y * Math.sin(E) - z * Math.cos(E)];
@@ -99,12 +99,13 @@ export default function EclipseNodes({ params }: DiagramProps) {
           const s = geoEcl(Body.Sun, g.items[0].date);
           const [x, y] = dir(s.lon + 180);
           const p = proj(RO * s.dist * x, RO * s.dist * y, 0);
-          const right = p[0] > CX;
+          const right = p[0] > CX, below = p[1] > CY;
+          const n = g.items.length;
           return (
             <g key={i}>
               <circle cx={p[0]} cy={p[1]} r={5} fill="none" stroke={C.amber} strokeWidth={2} />
               {g.items.map((e, j) => (
-                <Label key={j} x={p[0] + (right ? 12 : -12)} y={p[1] + 30 + j * 15} anchor={right ? 'end' : 'start'} size="s" color={C.amber}>
+                <Label key={j} x={p[0] + (right ? 10 : -10)} y={below ? p[1] + 70 + j * 15 : p[1] - 64 - (n - 1 - j) * 15} anchor={right ? 'start' : 'end'} size="s" color={C.amber}>
                   {`${fmt(e.date)} ${e.label}`}
                 </Label>
               ))}

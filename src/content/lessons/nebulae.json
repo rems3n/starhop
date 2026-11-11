@@ -236,6 +236,14 @@
       },
       "figures": [
         {
+          "type": "diagram",
+          "id": "nebula-glow",
+          "params": {
+            "temp": 14550
+          },
+          "caption": "A cooler star in a dusty cloud. Merope, in the Pleiades, is hot but not hot enough to make the surrounding hydrogen glow; the cloud shines only by starlight scattered off its dust, and dust scatters blue best. Remove the star altogether and the cloud would be dark."
+        },
+        {
           "type": "gallery",
           "images": [
             {

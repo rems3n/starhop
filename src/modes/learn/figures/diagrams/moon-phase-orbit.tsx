@@ -15,7 +15,7 @@ export const meta: DiagramMeta = {
 };
 
 const SYN = 29.53;
-const EX = 250, EY = 196, RO = 136;
+const EX = 250, EY = 190, RO = 132;
 const clock = (h: number) => {
   const x = ((h % 24) + 24) % 24;
   let hh = Math.floor(x), mm = Math.round(((x - hh) * 60) / 15) * 15;
@@ -85,7 +85,7 @@ export default function MoonPhaseOrbit({ params }: DiagramProps) {
         <line x1={EX} y1={EY} x2={mx} y2={my} stroke={C.text} strokeOpacity={0.35} strokeDasharray="4 4" />
         <circle cx={mx} cy={my} r={14} fill="#232a4d" stroke={C.text} strokeWidth={1.5} />
         <path d={litPath(mx, my, 14, -1, 0, 0)} fill={C.moon} />
-        <Label x={EX + 26} y={376} anchor="middle" size="s" color={C.faint}>
+        <Label x={472} y={384} anchor="end" size="s" color={C.faint}>
           seen from above the North Pole · not to scale
         </Label>
         {/* Inset */}

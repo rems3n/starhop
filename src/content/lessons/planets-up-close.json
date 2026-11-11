@@ -11,7 +11,21 @@
       "body": [
         "After this lesson you will know what to expect from each planet before you look, and what equipment each one needs.",
         "Planets are the easiest targets in a city sky. They shine by reflected sunlight, the bright ones outshine every star, and light pollution does nothing to dim them. They tend to shine with a steadier light than the twinkling stars, and they always lie near the ecliptic, the Sun's path through the zodiac. The app's sky view shows where each one is right now."
-      ]
+      ],
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "planet-sizes-to-scale",
+          "params": {
+            "planet": "Jupiter"
+          },
+          "caption": "The planets drawn to the same scale beside the edge of the Sun. The four rocky inner planets are specks next to the giants: Jupiter is eleven times wider than the Earth. Pick a planet to build a scale model in which the Earth is a 1 cm marble."
+        }
+      ],
+      "thinkAbout": {
+        "question": "Jupiter is eleven times wider than the Earth, yet to the eye it looks like a bright star. Why?",
+        "answer": "Distance. Even at its closest Jupiter is about 600 million km away, so its disc is under an arcminute across, far too small for the eye to see as anything but a point. Magnify it 30 times or so and the disc appears."
+      }
     },
     {
       "heading": "The inner planets: Mercury and Venus",
@@ -92,12 +106,74 @@
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "venus-phases",
+          "params": {
+            "day": 120
+          },
+          "caption": "Venus shows phases because we see different amounts of its sunlit half as it circles the Sun inside our orbit. Play one real cycle: small and nearly full on the far side of the Sun, then larger and thinner as it swings towards us, then lost in the Sun’s glare."
+        }
+      ],
+      "misconception": {
+        "myth": "Venus’s phases are caused by the Earth’s shadow falling on it.",
+        "fact": "The Earth’s shadow never reaches Venus. Venus is always half lit by the Sun, like every planet and moon; its phase depends on how much of that lit half is turned towards us, which changes as it moves around the Sun."
+      },
+      "check": {
+        "id": "check-venus-crescent-size",
+        "prompt": "Through a telescope, why does Venus look largest when it is a thin crescent?",
+        "choices": [
+          "It is then at its closest to Earth, between us and the Sun",
+          "Its clouds swell when it is near the Sun",
+          "The crescent shape makes it look bigger than it is",
+          "It is then on the far side of the Sun"
+        ],
+        "answerIndex": 0,
+        "explanation": "A thin crescent means Venus is nearly between us and the Sun, mostly showing its night side, and that is also when it is closest to us, so its disc looks biggest."
       }
     },
     {
       "heading": "Mars",
       "body": [
         "[[body:Mars|Mars]] is a cold desert world half the width of the Earth, and its rusty surface gives it an unmistakable orange-red color. No planet changes brightness as much. About every 26 months Earth overtakes Mars and the two are close together, with Mars opposite the Sun in our sky (an arrangement called opposition); for a few weeks it can rival Jupiter. In between, it recedes to the far side of the Sun and fades to an ordinary-looking star, more than fifty times fainter. A small telescope shows surface markings and a white polar cap only in the months around opposition. The rest of the time Mars is a tiny featureless orange dot."
+      ],
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "mars-opposition",
+          "params": {},
+          "caption": "Earth, on the faster inside track, overtakes Mars about every 26 months. Slide or play the years: at each opposition Mars is close and big, then it recedes to the far side of the Sun and shrinks to a dot. Some oppositions are much closer than others because Mars’s orbit is noticeably oval."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "file": "img/Mars-2.jpg",
+              "alt": "Mars through a 16-inch amateur telescope in 2020: an orange disc with dark surface markings and a white polar cap",
+              "label": "Mars at opposition, 2020",
+              "kind": "photograph",
+              "kindNote": "Colour processing not stated at source",
+              "credit": "User:Brucewaters",
+              "license": "CC BY-SA 4.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mars_-_2020_Opposition_(crop).jpg"
+            },
+            {
+              "file": "img/Mars-1.jpg",
+              "alt": "A global view of Mars showing rusty-orange deserts, dark regions and a polar cap",
+              "label": "Mars from spacecraft",
+              "kind": "photograph",
+              "kindNote": "Red, green and blue filter images (635, 546 and 437 nm) combined",
+              "credit": "Kevin Gill from Los Angeles, CA, United States",
+              "license": "CC BY 2.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mars_-_August_30_2021_-_Flickr_-_Kevin_M._Gill.png"
+            }
+          ],
+          "caption": "Near a close opposition a large amateur telescope shows dark markings and a white polar cap. A spacecraft view shows what those markings are. Away from opposition, Mars is a tiny orange dot in any small telescope."
+        }
       ]
     },
     {
@@ -169,6 +245,45 @@
           }
         ]
       },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "saturn-rings-tilt",
+          "params": {},
+          "caption": "Saturn’s rings keep the same tilt in space, so as Saturn circles the Sun every 29 years we see them from above, edge-on, from below and edge-on again. Slide the year: the rings were edge-on in 2025, open widest in the early 2030s, and turn edge-on again in 2038–39."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "file": "img/Jupiter-2.jpg",
+              "alt": "Jupiter as a banded disc with its moons as small dots in a line beside it, through an amateur Dobsonian telescope",
+              "label": "Jupiter and its moons",
+              "kind": "photograph",
+              "kindNote": "Colour processing not stated at source",
+              "credit": "user:salamander724",
+              "license": "Public domain",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jupiter-and-its-moons-amateur.jpg"
+            },
+            {
+              "file": "img/Saturn-3.jpg",
+              "alt": "Saturn and its rings through a 250 mm amateur telescope: a small yellow ball inside a tilted ring",
+              "label": "Saturn, 250 mm telescope",
+              "kind": "photograph",
+              "kindNote": "Single compact-camera photo held to the eyepiece",
+              "credit": "Lapos71",
+              "license": "CC BY-SA 4.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Planet_Saturn.jpg"
+            }
+          ],
+          "caption": "What the giants look like through amateur telescopes: Jupiter’s cloud bands with its moons strung out beside it, and Saturn’s rings. A small telescope shows less detail than these, but the rings and the moons are unmistakable."
+        }
+      ],
+      "thinkAbout": {
+        "question": "In 1612 Galileo reported that the strange “ears” he had seen on either side of Saturn had vanished. What had happened?",
+        "answer": "Saturn’s rings had turned edge-on to the Earth. They are so thin that his small telescope could not show them at all; a few years later they opened again. It took until 1655 for Christiaan Huygens to explain the ears as a flat ring."
+      },
       "tryIt": "The next time Jupiter is in the evening sky, lean against a wall, brace your binoculars and look for its moons. Sketch their positions, then look again the next night."
     },
     {
@@ -214,6 +329,48 @@
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "file": "img/Uranus-2.jpg",
+              "alt": "Uranus from the Hubble Space Telescope: a pale blue-green ball with faint rings",
+              "label": "Uranus (Hubble)",
+              "kind": "photograph",
+              "kindNote": "Colour processing not stated at source",
+              "credit": "NASA, ESA, A.A. Simon (NASA Goddard), and M.H. Wong and A.I. Hsu (University of California, Berkeley)",
+              "license": "CC BY 4.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Adding_to_Uranus's_legacy.tif"
+            },
+            {
+              "file": "img/Neptune-1.jpg",
+              "alt": "Neptune from Voyager 2: a deep blue ball with a dark spot and white clouds",
+              "label": "Neptune (Voyager 2)",
+              "kind": "photograph",
+              "kindNote": "Orange, green and blue frames calibrated to true colour",
+              "credit": "NASA / Voyager 2 / PDS / OPUS / Ardenau4",
+              "license": "CC0 1.0",
+              "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Neptune_Voyager2_color_calibrated.png"
+            }
+          ],
+          "caption": "Spacecraft and space telescopes show Uranus and Neptune as blue-green worlds, coloured by methane gas. From the ground, a small telescope shows Uranus as a tiny pale green disc and Neptune as a bluish dot, barely different from a star."
+        }
+      ],
+      "check": {
+        "id": "check-neptune-view",
+        "prompt": "Which planet needs binoculars or a telescope and a good chart, and even then looks like a faint bluish star?",
+        "choices": [
+          "Neptune",
+          "Saturn",
+          "Mars",
+          "Mercury"
+        ],
+        "answerIndex": 0,
+        "explanation": "Neptune is never visible to the naked eye; in binoculars or a small telescope it is a faint bluish point that you identify by comparing with a chart."
       }
     }
   ],

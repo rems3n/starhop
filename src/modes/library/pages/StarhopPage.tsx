@@ -55,7 +55,7 @@ export default function StarhopPage() {
     for (const r of [hop.from, hop.to]) {
       const a = r.startsWith('asterism:') ? asterismById.get(r.slice(9)) : null;
       if (a) a.lines.forEach((points, i) => hl.push({ type: 'polyline', points, closed: a.closed && a.lines.length === 1, label: i === 0 ? a.name : undefined, color: VEGA }));
-      else hl.push({ type: 'object', ref: r, label: true, color: r === hop.to ? AMBER : VEGA });
+      else hl.push({ type: 'object', ref: r, label: false, color: r === hop.to ? AMBER : VEGA });
     }
     hl.push({ type: 'polyline', points: hop.path, color: span ? DIM : AMBER });
     for (let i = 0; i < hop.path.length - 1; i++) {
@@ -135,15 +135,19 @@ export default function StarhopPage() {
           <p className="dim">Choose a step to draw just that part of the hop.</p>
           <ol className="lb-steps">
             {hop.steps.map((s, k) => (
-              <li key={k}>
-                <button type="button" className={`lb-step${k === step ? ' is-on' : ''}`} aria-pressed={k === step} onClick={() => setStep(k === step ? null : k)}>
-                  <span className="lb-step-num" aria-hidden>
-                    {k + 1}
-                  </span>
-                  <span className="lb-step-text">
-                    <RichText text={s} onTarget={onTarget} />
-                  </span>
+              <li
+                key={k}
+                className={`lb-step${k === step ? ' is-on' : ''}`}
+                onClick={(e) => {
+                  if (!(e.target as HTMLElement).closest('button')) setStep(k === step ? null : k);
+                }}
+              >
+                <button type="button" className="lb-step-num" aria-pressed={k === step} aria-label={`Step ${k + 1}: show this part on the sky`} onClick={() => setStep(k === step ? null : k)}>
+                  {k + 1}
                 </button>
+                <span className="lb-step-text">
+                  <RichText text={s} onTarget={onTarget} />
+                </span>
               </li>
             ))}
           </ol>

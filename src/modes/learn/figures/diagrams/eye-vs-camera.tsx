@@ -6,7 +6,7 @@
  */
 import { useId, useState } from 'react';
 import { C, ChoiceControl, Controls, Label, RangeControl, Readout, Svg, type DiagramMeta, type DiagramProps } from '../kit';
-import { imgUrl } from './objects-lib';
+import { imgUrl } from './_objects-lib';
 
 export const meta: DiagramMeta = {
   title: 'Your eye vs a camera',

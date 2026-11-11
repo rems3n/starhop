@@ -68,6 +68,8 @@ describe('library rows', () => {
     expect(spectralLetter('dF3')).toBe('F');
     expect(spectralLetter('WC8')).toBe('');
     expect(colourOf({ sp: undefined, bv: 1.6 })).toBe('red');
+    expect(colourOf({ sp: 'M1: comp', bv: 0.795 })).toBe('yellow'); // Capella
+    expect(colourOf({ sp: 'K0III', bv: undefined })).toBe('orange');
     expect(magBand(-1.4)).toBe('lt1');
     expect(magBand(2.5)).toBe('2-3');
   });

@@ -7,7 +7,7 @@
  */
 import { useMemo, useState } from 'react';
 import { C, Controls, Label, RangeControl, Readout, Svg, clamp, rad, type DiagramMeta, type DiagramProps } from '../kit';
-import { fmt, sig } from './objects-lib';
+import { fmt, sig } from './_objects-lib';
 
 export const meta: DiagramMeta = {
   title: 'Inside the disc of the Milky Way',

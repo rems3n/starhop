@@ -169,10 +169,12 @@ export function spectralLetter(sp: string | undefined): string {
   const m = /^(?:sd|d|g|c)?([OBAFGKM])/.exec((sp ?? '').trim());
   return m ? m[1] : '';
 }
+/** Colour as the eye sees it: from the B−V index when known (some catalogue spectral types describe a companion), else the class letter. */
 export function colourOf(s: Pick<Star, 'sp' | 'bv'>): string {
-  const l = spectralLetter(s.sp);
-  if (l) return LETTER_COLOUR[l];
-  if (s.bv == null) return '';
+  if (s.bv == null) {
+    const l = spectralLetter(s.sp);
+    return l ? LETTER_COLOUR[l] : '';
+  }
   const bv = s.bv;
   return bv < -0.1 ? 'blue' : bv < 0.15 ? 'blue-white' : bv < 0.3 ? 'white' : bv < 0.5 ? 'yellow-white' : bv < 0.8 ? 'yellow' : bv < 1.4 ? 'orange' : 'red';
 }

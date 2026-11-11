@@ -8,7 +8,7 @@
 import { useMemo, useRef, useState, type PointerEvent } from 'react';
 import { useCatalog } from '@/data/catalog';
 import { C, ChoiceControl, Controls, Label, Readout, Svg, clamp, type DiagramMeta, type DiagramProps } from '../kit';
-import { bvToTemp, fmt, sig, tempColor } from './objects-lib';
+import { bvToTemp, fmt, sig, tempColor } from './_objects-lib';
 
 export const meta: DiagramMeta = {
   title: 'Hertzsprung–Russell diagram of the naked-eye stars',

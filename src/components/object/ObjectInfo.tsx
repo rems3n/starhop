@@ -25,7 +25,7 @@ export interface ObjectInfoProps {
   date: Date;
   /** 'panel' = compact side panel in Explore; 'page' = roomy full page in Learn */
   variant?: 'panel' | 'page';
-  /** "Show in sky" for links inside the panel. Default: open /explore?target=… */
+  /** "Show in sky" for links inside the panel. Default: open the sky map at that target */
   onTarget?: (ref: TargetRef) => void;
 }
 
@@ -289,7 +289,7 @@ export function ObjectInfo({ targetRef, observer, date, variant = 'panel', onTar
 
   function onTargetOr(ref: string) {
     if (onTarget) onTarget(ref);
-    else window.location.hash = `#/explore?target=${encodeURIComponent(ref)}`;
+    else window.location.hash = `#${routes.sky(ref)}`;
   }
 
   // Text

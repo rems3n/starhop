@@ -5,7 +5,7 @@
  */
 import { useId, useMemo, useState } from 'react';
 import { C, ChoiceControl, Controls, Label, Readout, Svg, type DiagramMeta, type DiagramProps } from '../kit';
-import { imgUrl, type PhotoCredit } from './objects-lib';
+import { imgUrl, type PhotoCredit } from './_objects-lib';
 
 export const meta: DiagramMeta = {
   title: 'Galaxy shapes: Hubble’s tuning fork',

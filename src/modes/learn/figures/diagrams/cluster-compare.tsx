@@ -6,7 +6,7 @@
  */
 import { useMemo, useState } from 'react';
 import { C, ChoiceControl, Controls, Label, Readout, Svg, type DiagramMeta, type DiagramProps } from '../kit';
-import { gauss, rng } from './objects-lib';
+import { gauss, rng } from './_objects-lib';
 
 export const meta: DiagramMeta = {
   title: 'Open and globular clusters',
@@ -30,7 +30,7 @@ export default function ClusterCompare({ params }: DiagramProps) {
       const g = r() < 0.03;
       return { x: 540 + rad * Math.sin(ph) * Math.cos(th), y: 170 + rad * Math.sin(ph) * Math.sin(th), rr: g ? 1.6 : 0.6, c: g ? '#ffc98a' : r() < 0.6 ? '#fff0d6' : '#ffe2b0' };
     });
-    const opens = Array.from({ length: 40 }, () => ({ x: 360 + gauss(r) * 130, y: 210 + gauss(r) * 4 }));
+    const opens = Array.from({ length: 40 }, () => ({ x: Math.min(648, Math.max(72, 360 + gauss(r) * 130)), y: 210 + gauss(r) * 3 }));
     const globs = Array.from({ length: 70 }, () => {
       const u = Math.max(0.03, r());
       const rad = Math.min(170, 40 / Math.sqrt(Math.pow(u, -2 / 3) - 1));

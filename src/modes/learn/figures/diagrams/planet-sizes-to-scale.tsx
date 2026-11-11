@@ -6,7 +6,7 @@
  */
 import { useState } from 'react';
 import { C, ChoiceControl, Controls, Label, Readout, Svg, type DiagramMeta, type DiagramProps } from '../kit';
-import { fmt, sig } from './objects-lib';
+import { fmt, sig } from './_objects-lib';
 
 export const meta: DiagramMeta = {
   title: 'The planets to scale',

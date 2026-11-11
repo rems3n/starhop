@@ -12,7 +12,21 @@
         "After this lesson you will be able to plan a meteor watch: which nights, which hours, where to look, and how many to expect realistically.",
         "A meteor, or shooting star, is a streak of light made when a bit of space debris, usually no bigger than a grain of sand or a pea, hits Earth's upper atmosphere at tens of kilometers per second and burns up about 50 to 60 miles overhead. A few random ones can be seen on any clear night.",
         "Showers are different. Comets shed dust as they go around the Sun, and the dust spreads along the comet's orbit like gravel along a road. Earth crosses several of these streams each year, each at the same point in its orbit and so on the same dates. For a night or a few nights the number of meteors jumps."
-      ]
+      ],
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "meteor-stream-crossing",
+          "params": {
+            "day": 20
+          },
+          "caption": "Comet Swift–Tuttle's orbit and the dust it has shed along it. Earth's orbit cuts through the dust stream at one point, which Earth reaches around 12–13 August every year: the Perseid peak. Slide through July and August to see the shower build and fade."
+        }
+      ],
+      "thinkAbout": {
+        "question": "If Earth crosses the same stream every year, why are some years' showers much stronger than others?",
+        "answer": "The dust is not spread evenly. Each time the comet comes round it leaves a fresh, dense trail, and in some years Earth passes through one of these. That is how the Leonids have produced storms of thousands of meteors an hour in a few years, and only a handful in most."
+      }
     },
     {
       "heading": "The radiant",
@@ -162,6 +176,42 @@
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "meteor-radiant-perspective",
+          "params": {
+            "alt": 55
+          },
+          "caption": "Shower meteors travel on parallel paths, so, like railway rails, their trails seem to spread from one point: the radiant. They can appear anywhere in the sky. Turn on Trace the trails back, then lower the radiant: the closer it is to the horizon, the fewer shower meteors reach your sky."
+        },
+        {
+          "type": "image",
+          "image": {
+            "file": "img/lessons/meteor-perseid-night-2014.jpg",
+            "alt": "A single bright meteor streak in a blue night sky above dark trees and a house",
+            "kind": "photograph",
+            "kindNote": "Long-exposure photograph, night of 12 August 2014 (the Perseid maximum)",
+            "credit": "Jacek Halicki",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:2014_Meteor.jpg"
+          },
+          "caption": "A meteor photographed on the night of the 2014 Perseid maximum. To the eye, a meteor is over in a second or less: a brief streak, usually white, sometimes with a fading trail."
+        }
+      ],
+      "check": {
+        "id": "check-radiant-trace",
+        "prompt": "On the Perseid peak night a meteor flashes low in the south, far from Perseus. How can you tell whether it is a Perseid?",
+        "choices": [
+          "Trace its trail backward: a Perseid's path leads back to Perseus",
+          "Only meteors right next to Perseus can be Perseids",
+          "Perseids are always red",
+          "Check whether it moved from west to east"
+        ],
+        "answerIndex": 0,
+        "explanation": "Shower meteors can appear anywhere; what they share is direction. Extend the trail backward, and if it points to the radiant in Perseus, it belongs to the shower."
       }
     },
     {
@@ -169,7 +219,22 @@
       "body": [
         "Seven showers are the main ones. The Quadrantids peak around January 3–4; they are strong but the peak lasts only a few hours, and they are named for a constellation, Quadrans Muralis, that is no longer on the charts. Their radiant is in northern Boötes. The Lyrids come around April 22 and are modest. The Eta Aquariids, around May 5–6, are dust from Halley's Comet and are better from the southern hemisphere. The Perseids, around August 12–13, come from Comet Swift–Tuttle and are the favorite, rich and on warm nights. The Orionids, around October 21, are Halley dust again. The Leonids, around November 17, are usually weak but have produced historic storms. The Geminids, around December 13–14, are the strongest of all, and unusual in coming from an asteroid, 3200 Phaethon.",
         "Published strengths are given as the zenithal hourly rate, or ZHR: the number one observer would count in an hour with the radiant straight overhead under a perfectly dark sky. It is about 100 for the Perseids and up to 150 for the Geminids. You will see fewer. The radiant is rarely overhead, and city light hides the faint majority. From Brooklyn, a handful to a dozen bright ones in an hour is a good result on a peak night; from a dark site, perhaps 40 to 60."
-      ]
+      ],
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "meteor-rate-estimate",
+          "params": {
+            "shower": "per",
+            "alt": 55
+          },
+          "caption": "The published ZHR assumes the radiant overhead and a perfect dark sky. Lower the radiant or brighten the sky and the count drops fast, because most meteors are faint. The sky starts at the class saved in your settings; slide it to a dark site to see what a trip out of town gains you."
+        }
+      ],
+      "misconception": {
+        "myth": "During a big meteor shower, shooting stars rain down every few seconds.",
+        "fact": "Even the best annual showers bring about one or two meteors a minute to an observer under a dark sky, and far fewer from a city. Meteors also come in bursts and lulls, so give it at least half an hour."
+      }
     },
     {
       "heading": "How to watch",
@@ -177,6 +242,28 @@
         "Use your eyes alone. Binoculars and telescopes show far too little sky. Lie back on a reclining chair so you can take in a wide area, get as far from direct lights as you can, and give your eyes 20 minutes to adapt to the dark. Then keep watching for at least half an hour, because meteors come in clumps and lulls.",
         "The hours after midnight are usually better. After midnight your side of Earth faces forward along its orbit and runs into the debris head-on, like the front windshield of a car in rain. Finally, check the Moon. A bright Moon in the sky can cut the count by more than half, so a shower that peaks near new Moon is the one to stay up for."
       ],
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "meteor-morning-side",
+          "params": {
+            "hour": 21
+          },
+          "caption": "Earth moves round the Sun with its dawn side in front. In the evening your sky faces backward; after midnight it turns to face forward and runs into the debris head-on, like a windshield in rain. Move the clock through the night and watch your sky turn into the oncoming dust."
+        }
+      ],
+      "check": {
+        "id": "check-meteor-hours",
+        "prompt": "On the Perseid peak night you can watch for one hour: 9 to 10 pm or 3 to 4 am. Which gives more meteors, and why?",
+        "choices": [
+          "3 to 4 am: the radiant is higher and your side of Earth faces forward",
+          "9 to 10 pm: the sky is darker in the evening",
+          "They are the same: the shower rate is fixed",
+          "9 to 10 pm: the radiant is highest just after dark"
+        ],
+        "answerIndex": 0,
+        "explanation": "Both effects favour the small hours: Perseus climbs higher through the night, and after midnight your side of Earth leads in its orbit and sweeps up more debris."
+      },
       "tryIt": "Look up the next major shower on the Events page, with its peak night and the Moon's phase. On that night go to the darkest spot you can easily reach, a park or a rooftop, lie back facing away from the brightest lights, and count for 30 minutes."
     }
   ],

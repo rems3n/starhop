@@ -2,11 +2,11 @@
  * Mass decides a star's life. Slide the mass of a main-sequence star from 0.1 to 40 Suns: the star's colour and size
  * change, a "fuel" bar (∝ mass) and a "burn rate" bar (∝ luminosity, log scale) show why heavier stars die younger,
  * and the lifetime appears on a log timeline next to the age of the Earth and of the universe.
- * Relations are rough textbook rules (objects-lib: msLum, msLifetime); the figure says so.
+ * Relations are rough textbook rules (_objects-lib: msLum, msLifetime); the figure says so.
  */
 import { useState } from 'react';
 import { C, ChoiceControl, Controls, Label, RangeControl, Readout, Svg, clamp, type DiagramMeta, type DiagramProps } from '../kit';
-import { fmt, msLifetime, msLum, msRadius, msTemp, sig, tempColor, years } from './objects-lib';
+import { fmt, msLifetime, msLum, msRadius, msTemp, sig, tempColor, years } from './_objects-lib';
 
 export const meta: DiagramMeta = {
   title: 'Heavier stars live shorter lives',

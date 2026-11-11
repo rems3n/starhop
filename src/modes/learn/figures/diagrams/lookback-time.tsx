@@ -7,7 +7,7 @@
  */
 import { useState } from 'react';
 import { C, ChoiceControl, Controls, Label, RangeControl, Readout, Svg, type DiagramMeta, type DiagramProps } from '../kit';
-import { years } from './objects-lib';
+import { years } from './_objects-lib';
 
 export const meta: DiagramMeta = {
   title: 'Looking out is looking back in time',

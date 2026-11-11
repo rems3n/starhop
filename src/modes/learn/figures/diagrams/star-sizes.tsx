@@ -5,7 +5,7 @@
  */
 import { useState } from 'react';
 import { C, ChoiceControl, Controls, Label, Readout, Svg, type DiagramMeta, type DiagramProps } from '../kit';
-import { fmt, sig, tempColor } from './objects-lib';
+import { fmt, sig, tempColor } from './_objects-lib';
 
 export const meta: DiagramMeta = {
   title: 'How big stars are',

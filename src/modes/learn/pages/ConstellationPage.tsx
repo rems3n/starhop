@@ -247,7 +247,7 @@ export default function ConstellationPage() {
         )}
 
         {content && content.stories.length > 0 && (
-          <Section title={content.stories.length > 1 ? 'Stories' : 'Story'}>
+          <Section title={content.stories.length > 1 ? 'Stories' : 'Story'} aside={<Link to={`${routes.myths()}?con=${con.id}`}>{content.stories.length > 1 ? `All ${content.stories.length} in the myth library` : 'In the myth library'}</Link>}>
             {content.stories.map((s) => (
               <StoryBlock key={s.id} story={s} onTarget={onTarget} />
             ))}
@@ -308,7 +308,9 @@ function StoryBlock({ story, onTarget }: { story: Story; onTarget: (ref: string)
   return (
     <article className="ln-story">
       <div className="ln-story-head">
-        <h4>{story.title}</h4>
+        <h4>
+          <Link to={routes.myth(story.id)}>{story.title}</Link>
+        </h4>
         <Chip>{story.culture}</Chip>
       </div>
       <div className="prose">

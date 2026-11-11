@@ -6,7 +6,7 @@
  */
 import { useMemo, useState } from 'react';
 import { C, ChoiceControl, Controls, Label, RangeControl, Readout, Svg, clamp, type DiagramMeta, type DiagramProps } from '../kit';
-import { fmt, planck, sig, tempColor, wavelengthColor, wienPeakNm } from './objects-lib';
+import { fmt, planck, sig, tempColor, wavelengthColor, wienPeakNm } from './_objects-lib';
 
 export const meta: DiagramMeta = {
   title: 'Temperature sets a star’s colour',

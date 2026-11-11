@@ -109,6 +109,24 @@
             }
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "moon-phase-orbit",
+          "params": {
+            "day": 7.4
+          },
+          "caption": "The Moon is always half lit by the Sun; its phase is how much of that lit half faces us. Slide through the month: at new Moon the lit half faces away, at first quarter we see half of it side-on, at full Moon all of it. The inset shows the Moon the way it looks from your hemisphere, with rough rising and setting times."
+        }
+      ],
+      "misconception": {
+        "myth": "The phases are caused by Earth's shadow falling across the Moon.",
+        "fact": "Earth's shadow points away from the Sun and touches the Moon only during a lunar eclipse, at full Moon. A crescent Moon is close to the Sun in the sky, nowhere near Earth's shadow; we are simply seeing a thin edge of its sunlit half."
+      },
+      "thinkAbout": {
+        "question": "If you stood on the near side of the Moon at new Moon, what would Earth look like?",
+        "answer": "A full Earth. At new Moon the Sun is behind the Moon and shining on the side of Earth that faces it. Earth's phases seen from the Moon are always the opposite of the Moon's phases seen from Earth. That full Earth is what lights the dark part of a thin crescent Moon with a faint grey glow: earthshine."
       }
     },
     {
@@ -156,6 +174,28 @@
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "moonrise-times-chart",
+          "params": {
+            "day": 7
+          },
+          "caption": "One real month, April to May 2027, worked out for your location: each column is a day from noon to the next noon, and the bar shows when the Moon is up. Crescents set in the evening, the full Moon is up all night, and waning phases move into the morning. Step through the days and compare each moonrise with the day before."
+        }
+      ],
+      "check": {
+        "id": "check-waning-crescent",
+        "prompt": "You want to see a waning crescent Moon. When and where should you look?",
+        "choices": [
+          "Low in the east shortly before sunrise",
+          "Low in the west shortly after sunset",
+          "High in the south at midnight",
+          "Low in the east at sunset"
+        ],
+        "answerIndex": 0,
+        "explanation": "A waning crescent is a little west of the Sun, so it rises shortly before the Sun and is seen in the east at dawn."
       }
     },
     {
@@ -164,6 +204,53 @@
         "Moonlight is the countryside's light pollution. Around full Moon the sky is bright enough to wash out the Milky Way and the fainter stars even from a dark site, and faint constellations become hard to trace. In the city the bright stars and planets are unaffected. Deep-sky objects such as nebulae and galaxies are best hunted in the two weeks centered on new Moon, or at any time when the Moon is below the horizon.",
         "For looking at the Moon itself, full Moon is the worst time. Sunlight then falls straight down on the surface, there are no shadows and it looks flat. The best views are along the terminator, the line between lunar day and night, where the Sun is rising or setting on the Moon and every crater and mountain casts a long shadow. Binoculars show it well any evening between crescent and gibbous."
       ],
+      "figures": [
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "file": "img/Moon-1.jpg",
+              "alt": "The full Moon: bright and evenly lit, with dark grey plains and bright rayed craters but no shadows",
+              "label": "Full Moon: flat light",
+              "kind": "photograph",
+              "kindNote": "Single-camera colour photo through a 9.25-inch amateur telescope",
+              "credit": "Gregory H. Revera",
+              "license": "CC BY-SA 3.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:FullMoon2010.jpg"
+            },
+            {
+              "file": "img/Moon-2.jpg",
+              "alt": "A half-lit first quarter Moon, with craters casting long shadows along the line between light and dark",
+              "label": "First quarter: the terminator",
+              "kind": "photograph",
+              "kindNote": "Single colour-camera image through a 9.25-inch amateur telescope",
+              "credit": "Taavi Niittee",
+              "license": "CC0 1.0",
+              "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Moon_in_Tõrva.png"
+            }
+          ],
+          "caption": "At full Moon the Sun shines straight down on the face we see and there are no shadows, so the surface looks flat. At first quarter, craters and mountains along the terminator cast long shadows and stand out in relief: the best time for binoculars."
+        },
+        {
+          "type": "image",
+          "image": {
+            "file": "img/Moon-3.jpg",
+            "alt": "The far side of the Moon, heavily cratered and with very few dark plains, photographed from lunar orbit",
+            "kind": "photograph",
+            "kindNote": "Greyscale mosaic of Lunar Reconnaissance Orbiter wide-angle camera images",
+            "credit": "NASA/GSFC/Arizona State University",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Moon_Farside_LRO.jpg"
+          },
+          "caption": "The side of the Moon we never see from Earth, photographed from lunar orbit with the Sun shining on it. It gets as much sunlight as the near side: at new Moon it is in full daylight."
+        }
+      ],
+      "misconception": {
+        "myth": "The far side of the Moon is the 'dark side', always in darkness.",
+        "fact": "The Moon keeps the same face toward Earth, so we never see the far side, but it gets just as much sunlight as the near side. At new Moon, when the side facing us is dark, the far side is fully lit. 'Far side' is the accurate name."
+      },
       "tryIt": "Find the Moon tonight and note its phase and the time. Tomorrow at the same time, see how far east it has moved (a little more than a fist) and how the lit part has changed. If you cannot find it in the evening, look around sunrise."
     }
   ],

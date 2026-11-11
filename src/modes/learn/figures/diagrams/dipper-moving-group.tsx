@@ -7,7 +7,7 @@
 import { useEffect, useState } from 'react';
 import { useCatalog } from '@/data/catalog';
 import { C, Controls, Label, PlayButton, RangeControl, Readout, Svg, rad, usePrefersReducedMotion, type DiagramMeta, type DiagramProps } from '../kit';
-import { fmt } from './objects-lib';
+import { fmt } from './_objects-lib';
 
 export const meta: DiagramMeta = {
   title: 'The Big Dipper changing shape',

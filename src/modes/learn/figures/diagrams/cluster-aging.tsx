@@ -2,11 +2,11 @@
  * A star cluster growing old. One simulated cluster (stars born together, masses drawn from a standard
  * initial-mass distribution) is aged with a slider: the heaviest stars run out of fuel first, swell briefly into
  * red giants and vanish, so the cluster's brightest stars and overall colour shift from blue-white to yellow-orange.
- * Real clusters of known age are marked. Lifetimes from the rough rule in objects-lib (msLifetime).
+ * Real clusters of known age are marked. Lifetimes from the rough rule in _objects-lib (msLifetime).
  */
 import { useMemo, useState } from 'react';
 import { C, ChoiceControl, Controls, Label, RangeControl, Readout, Svg, clamp, type DiagramMeta, type DiagramProps } from '../kit';
-import { fmt, gauss, msLifetime, msLum, msTemp, rng, sig, tempColor, turnoffMass, years } from './objects-lib';
+import { fmt, gauss, msLifetime, msLum, msTemp, rng, sig, tempColor, turnoffMass, years } from './_objects-lib';
 
 export const meta: DiagramMeta = {
   title: 'A cluster growing old',

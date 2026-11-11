@@ -6,7 +6,7 @@
 import { useMemo, useState } from 'react';
 import { useCatalog } from '@/data/catalog';
 import { C, ChoiceControl, Controls, Label, Readout, Svg, type DiagramMeta, type DiagramProps } from '../kit';
-import { fmt, tempColor } from './objects-lib';
+import { fmt, tempColor } from './_objects-lib';
 
 export const meta: DiagramMeta = {
   title: 'The seven spectral classes',

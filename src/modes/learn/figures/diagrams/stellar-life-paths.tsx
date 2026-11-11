@@ -6,7 +6,7 @@
  */
 import { useId, useState } from 'react';
 import { C, ChoiceControl, Controls, Label, RangeControl, Readout, Step, Svg, type DiagramMeta, type DiagramProps } from '../kit';
-import { imgUrl, type PhotoCredit } from './objects-lib';
+import { imgUrl, type PhotoCredit } from './_objects-lib';
 
 export const meta: DiagramMeta = {
   title: 'The two life paths of stars',

@@ -94,6 +94,35 @@
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "eclipse-shadows",
+          "params": {
+            "kind": "lunar",
+            "path": "total"
+          },
+          "caption": "Earth's shadow has a dark core, the umbra, inside a pale fringe, the penumbra. Move the Moon through it on different paths: through the middle it turns copper red, off centre a dark bite appears, and in the penumbra alone it barely dims. Switch to Solar to see how small the Moon's shadow is on Earth."
+        },
+        {
+          "type": "image",
+          "image": {
+            "file": "img/lessons/total-lunar-eclipse-2007.jpg",
+            "alt": "A diagonal row of nine pictures of the totally eclipsed Moon, each a coppery red disc with darker markings",
+            "kind": "photograph",
+            "kindNote": "Several exposures taken during totality, combined into one sequence",
+            "credit": "Giuseppe Donatiello",
+            "license": "CC0",
+            "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:3%E2%80%934_March_2007_Total_Lunar_Eclipse_(49316509383).jpg"
+          },
+          "caption": "The total lunar eclipse of 3–4 March 2007, as the Moon crossed Earth's umbra. It never vanished: light bent and reddened by Earth's atmosphere kept it glowing copper red throughout totality."
+        }
+      ],
+      "thinkAbout": {
+        "question": "What would an astronaut standing on the Moon see during a total lunar eclipse?",
+        "answer": "A total eclipse of the Sun by Earth. Earth would look like a black disc nearly four times wider than the Sun, with a thin glowing red ring around its edge: the light of every sunrise and sunset on Earth at that moment. That red light is what colours the Moon."
       }
     },
     {
@@ -135,6 +164,32 @@
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "eclipse-nodes",
+          "params": {
+            "day": 214
+          },
+          "caption": "The Moon's orbit is tilted to Earth's, crossing it at two nodes. That line of nodes keeps nearly the same direction in space, so it points at the Sun only about twice a year. Play 2027: most new and full Moons pass above or below the Sun's line, but in February and in July–August the nodes line up and the eclipses come in pairs."
+        }
+      ],
+      "misconception": {
+        "myth": "There should be a solar eclipse at every new Moon and a lunar eclipse at every full Moon.",
+        "fact": "The Moon's orbit is tilted about 5°, so at most new and full Moons it passes above or below the Sun or Earth's shadow. Eclipses happen only in the eclipse seasons, when a new or full Moon falls near a node: twice a year, with two or three eclipses each time."
+      },
+      "check": {
+        "id": "check-next-eclipse-season",
+        "prompt": "In 2027 the eclipse seasons fall in February and in July–August. When is the next one?",
+        "choices": [
+          "Around January 2028",
+          "Around May 2028",
+          "Around February 2029",
+          "There is no pattern"
+        ],
+        "answerIndex": 0,
+        "explanation": "Eclipse seasons come about every six months, and a little earlier each year because the line of nodes slowly turns. The next one brings a partial lunar eclipse on 12 January 2028 and an annular solar eclipse on 26 January 2028."
       }
     },
     {
@@ -204,6 +259,47 @@
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "sun-moon-size",
+          "params": {
+            "dist": 360000
+          },
+          "caption": "The Moon's distance swings between about 357,000 and 407,000 km, so its disc grows and shrinks a little against the Sun's. Near enough, it covers the Sun completely and its dark shadow reaches the ground: a total eclipse. Farther away it leaves a ring: an annular eclipse."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "file": "img/lessons/total-solar-eclipse-2017.jpg",
+              "alt": "A black Moon covering the Sun completely, surrounded by the white glow of the corona, with tiny pink spots at the edge",
+              "label": "Total: the corona",
+              "kind": "photograph",
+              "kindNote": "From a NASA aircraft 25,000 feet above the Oregon coast, 21 August 2017; cropped",
+              "credit": "NASA/Carla Thomas",
+              "license": "Public domain",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:2017_Total_Solar_Eclipse_(AFRC2017-0233-005).jpg"
+            },
+            {
+              "file": "img/lessons/annular-solar-eclipse-2019.jpg",
+              "alt": "A thin bright ring of sunlight around the dark disc of the Moon on a black background",
+              "label": "Annular: a ring of Sun",
+              "kind": "photograph",
+              "kindNote": "Kanhangad, Kerala, India, 26 December 2019; cropped",
+              "credit": "Arjun Venugopal",
+              "license": "CC BY-SA 4.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:%27Ring_of_fire%27_Annular_Solar_Eclipse_2019.jpg"
+            }
+          ],
+          "caption": "Left: totality on 21 August 2017, when the Sun's faint outer atmosphere, the corona, appears. Right: an annular eclipse, with the Moon a little too far away to cover the Sun. Only the brief total phase is safe to look at without a solar filter."
+        }
+      ],
+      "thinkAbout": {
+        "question": "Will total solar eclipses happen forever?",
+        "answer": "No. The Moon is slowly moving away from Earth, by about 4 cm a year. Many millions of years from now it will always look smaller than the Sun, and every central eclipse will be annular. We happen to live at a time when the two discs match."
       },
       "tryIt": "Open the Events page and find the next lunar eclipse visible from your location. Put it in your calendar now. A lunar eclipse needs no equipment and no dark sky: it works perfectly well from a Brooklyn stoop."
     }

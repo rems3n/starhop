@@ -109,9 +109,14 @@ async function clickHop(page, cur, wrong) {
     const canvas = [...document.querySelectorAll('.qz-sky canvas')].pop();
     const rect = canvas.getBoundingClientRect();
     const p = c.project(t.ra, t.dec);
-    const x = wrong ? (p.x > rect.width / 2 ? p.x - 140 : p.x + 140) : p.x;
-    const y = wrong ? p.y + 30 : p.y;
-    return { x: rect.left + x, y: rect.top + y, onSky: document.elementFromPoint(rect.left + x, rect.top + y) === canvas };
+    const onSky = (x, y) => document.elementFromPoint(rect.left + x, rect.top + y) === canvas;
+    let [x, y] = [p.x, p.y];
+    if (wrong) {
+      // a spot on open sky well away from the target
+      const spots = [[140, 30], [-140, 30], [140, -60], [-140, -60], [0, 120], [0, -120], [200, 0], [-200, 0]].map(([dx, dy]) => [p.x + dx, p.y + dy]);
+      [x, y] = spots.find(([sx, sy]) => sx > 10 && sy > 10 && sx < rect.width - 10 && sy < rect.height - 10 && onSky(sx, sy)) ?? spots[0];
+    }
+    return { x: rect.left + x, y: rect.top + y, onSky: onSky(x, y) };
   }, cur.target, wrong);
   expect(at.onSky, `hop ${cur.hopId}: ${wrong ? 'decoy spot' : 'target'} is on open sky`);
   await page.mouse.click(at.x, at.y);
@@ -133,7 +138,7 @@ async function answerAny(page, wrong = false) {
     if (cur.typed) { await page.type('.qz-type input', wrong ? 'zzz' : cur.answerText); await page.keyboard.press('Enter'); }
     else await page.keyboard.press(String(((cur.choices.indexOf(cur.conId) + (wrong ? 1 : 0)) % cur.choices.length) + 1));
   } else if (cur.kind === 'hop') {
-    await waitSky(page); await sleep(300);
+    await waitSky(page); await sleep(1200);
     await clickHop(page, cur, wrong);
   } else if (cur.kind === 'card') {
     await page.keyboard.press('Space'); await sleep(100); await page.keyboard.press(wrong ? '1' : '3');
@@ -150,7 +155,7 @@ async function finish(page, { wrongEvery = 0, shots = {} } = {}) {
     if (await page.$('[data-testid="summary"]')) return seen;
     const cur = await q(page);
     if (!cur) { await sleep(200); continue; }
-    if (shots[cur.kind] && !seen.has(cur.kind)) { if (cur.kind !== 'mcq' && cur.kind !== 'card') { await waitSky(page); await sleep(400); } await shot(page, shots[cur.kind]); }
+    if (shots[cur.kind] && !seen.has(cur.kind)) { if (cur.kind !== 'mcq' && cur.kind !== 'card') { await waitSky(page); await sleep(cur.kind === 'hop' ? 1200 : 400); } await shot(page, shots[cur.kind]); }
     if (cur.image && shots.image && !seen.has('image')) { seen.add('image'); await sleep(500); await shot(page, shots.image); }
     seen.add(cur.kind);
     await answerAny(page, wrongEvery > 0 && i % wrongEvery === wrongEvery - 1);
@@ -317,7 +322,7 @@ expect(seen.has('hop') && seen.has('mcq'), `star-hop round mixes "follow the hop
 prog = await store(page, 'starhop.progress.v1');
 expect(Object.keys(prog.state.items).some((k) => k.startsWith('hop:')), 'star-hop answers recorded as hop:<id>');
 await go(page, '/practice/starhop?hop=belt-to-sirius');
-await waitSky(page); await sleep(400);
+await waitSky(page); await sleep(1200);
 cq = await q(page);
 expect(cq?.kind === 'hop' && cq.hopId === 'belt-to-sirius' && (await text(page, '[data-testid="progress"]')) === '1 / 2', 'starhop?hop= asks that hop (sky + multiple choice)');
 await clickHop(page, cq, true);
@@ -395,7 +400,7 @@ await shot(phone, '45-phone-dashboard');
 await phone.evaluate(() => document.querySelector('[data-testid="hops-block"]').scrollIntoView({ block: 'start' }));
 await shot(phone, '46-phone-dashboard-hops');
 await go(phone, '/practice/starhop?hop=pointers-to-polaris');
-await waitSky(phone); await sleep(600);
+await waitSky(phone); await sleep(1500);
 await shot(phone, '47-phone-starhop');
 const hq = await q(phone);
 await clickHop(phone, hq, false);
