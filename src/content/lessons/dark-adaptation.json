@@ -94,11 +94,31 @@
             "start": 0
           },
           "caption": "Sensitivity climbs in two stages: the cones finish in a few minutes, then the rods take over and keep improving for half an hour. Press Wait in the dark, then try Glance at a bright phone to see how quickly it is all lost."
+        },
+        {
+          "type": "diagram",
+          "id": "rod-cone-sensitivity",
+          "params": {
+            "nm": 630
+          },
+          "caption": "Rods are most sensitive to blue-green light and almost blind to deep red; cones still see red well. Slide toward red and watch the rod response fall to a fraction of a percent: that is why a dim red light lets you read a chart without undoing your night vision."
         }
       ],
       "thinkAbout": {
         "question": "Why does a dim red flashlight protect your night vision, when a dim white one of the same brightness does not?",
         "answer": "Rods are most sensitive to blue-green light and hardly respond to deep red, so red light barely bleaches their pigment. White light contains plenty of blue-green, which undoes the rods' half hour of rebuilding. Your cones can still see the red light, so you can read a chart."
+      },
+      "check": {
+        "id": "check-red-light",
+        "prompt": "Which light does the least damage to your dark adaptation, at the same dim brightness?",
+        "choices": [
+          "Blue-green",
+          "White",
+          "Deep red",
+          "Yellow-green"
+        ],
+        "answerIndex": 2,
+        "explanation": "Rods hardly respond to deep red, so a dim red light barely bleaches their pigment. Blue-green is the worst: it is the colour rods are most sensitive to."
       }
     },
     {

@@ -22,7 +22,11 @@
             "time": "month:4 21:00",
             "view": { "az": 0, "alt": 50, "fov": 100 },
             "highlights": [
-              { "type": "polyline", "points": ["star:Alkaid", "star:Mizar", "star:Alioth", "star:Megrez", "star:Phecda", "star:Merak", "star:Dubhe", "star:Megrez"], "label": "Big Dipper" }
+              {
+                "type": "polyline",
+                "points": ["star:Alkaid", "star:Mizar", "star:Alioth", "star:Megrez", "star:Phecda", "star:Merak", "star:Dubhe", "star:Megrez"],
+                "label": "Big Dipper"
+              }
             ]
           },
           {
@@ -51,7 +55,26 @@
           }
         ]
       },
-      "tryIt": "Tonight, find Polaris from your street or roof and note what it sits above: a chimney, a water tower, the end of the block. That landmark is now your permanent north marker for that spot."
+      "tryIt": "Tonight, find Polaris from your street or roof and note what it sits above: a chimney, a water tower, the end of the block. That landmark is now your permanent north marker for that spot.",
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "pointers-to-polaris",
+          "params": { "month": 4, "hour": 21 },
+          "caption": "The two stars at the end of the Big Dipper's bowl always point to Polaris, however the Dipper is turned. Change the month and the time: the Dipper wheels right round, but Polaris stays fixed above the north point of your horizon, as high up as your latitude. (From the southern hemisphere the figure shows the Southern Cross pointing to the south celestial pole instead.)"
+        }
+      ],
+      "misconception": {
+        "myth": "Polaris, the North Star, is the brightest star in the sky.",
+        "fact": "Polaris is only about the 50th brightest star, a medium-bright star that many people walk past. What makes it special is its position: it sits almost exactly above Earth's north pole, so it barely moves while every other star circles around it. Sirius, the brightest, is about 20 times brighter."
+      },
+      "check": {
+        "id": "check-pointers",
+        "prompt": "You find Polaris and face it. Which direction is behind you?",
+        "choices": ["East", "West", "South", "North"],
+        "answerIndex": 2,
+        "explanation": "Polaris marks north, so south is directly behind you, east on your right and west on your left."
+      }
     },
     {
       "heading": "The Sun and Moon give east, south and west",
@@ -90,6 +113,24 @@
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "sunrise-directions",
+          "caption": "The Sun rises exactly in the east only around the March and September equinoxes. Drag the date: north of the tropics, sunrise swings north of east from March to September and south of east from September to March, and the noon Sun is always due south, so its shadow points due north. The figure is computed for the location in your settings."
+        }
+      ],
+      "thinkAbout": {
+        "question": "The Sun is highest in the sky at about 1 p.m. on a summer afternoon, not at noon. How can that be, if 'noon' means the middle of the day?",
+        "answer": "Clock time is shared across a whole time zone and shifted an hour by daylight saving time, while the Sun's highest moment depends on your exact longitude. During daylight saving the Sun's peak lands near 1 p.m. on the clock, a little earlier or later depending on where you are in the zone."
+      },
+      "check": {
+        "id": "check-sunrise-june",
+        "prompt": "From mid-northern latitudes, where does the Sun rise on a June morning?",
+        "choices": ["Due east", "North of east, in the northeast", "South of east, in the southeast", "Due north"],
+        "answerIndex": 1,
+        "explanation": "Near the June solstice the Sun is north of the celestial equator, so from mid-northern latitudes it rises well north of east and sets well north of west."
       }
     },
     {
@@ -123,6 +164,17 @@
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "sky-chart-flip",
+          "caption": "A street map is drawn for looking down; a star chart is drawn for looking up. Press Look up: north stays at the top, but turning your view over sends east from the right-hand side to the left. Hold a chart over your head with its north edge toward north and it matches the sky."
+        }
+      ],
+      "thinkAbout": {
+        "question": "You lie on your back with your feet toward the south and look straight up. Is east on your left or your right?",
+        "answer": "On your left. With your head to the north and your face to the sky, your left hand points east and your right hand points west, exactly as on a star chart with north at the top."
       }
     }
   ],

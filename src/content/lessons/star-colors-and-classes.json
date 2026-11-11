@@ -10,32 +10,100 @@
       "heading": "Color is a thermometer",
       "body": [
         "After this lesson you will be able to look at a bright star, notice its tint, and say roughly how hot its surface is. Stars are not all white. Look at Orion on a winter evening: [[star:Betelgeuse|Betelgeuse]] at his shoulder is plainly orange, while [[star:Rigel|Rigel]] at his foot is an icy blue-white.",
-        "The reason is the same one that makes a stove element glow dull red and a welding arc glow blue-white: the hotter a glowing object is, the bluer its light. Betelgeuse has a surface near 3,500 kelvin (K, the scientist's temperature scale; the Sun's surface is about 5,800 K). Rigel is about 12,000 K. Red means cool, blue means hot — the opposite of the colors on a faucet."
+        "The reason is the same one that makes a stove element glow dull red and a welding arc glow blue-white: the hotter a glowing object is, the bluer its light. Betelgeuse has a surface near 3,600 kelvin (K, the scientist's temperature scale; the Sun's surface is about 5,800 K). Rigel is about 12,000 K. Red means cool, blue means hot — the opposite of the colors on a faucet."
       ],
       "demo": {
         "title": "Two colors in one constellation",
         "controls": [],
         "steps": [
           {
-            "caption": "Orion on a January evening. Compare the two brightest stars: Betelgeuse (upper left) is orange, Rigel (lower right) is blue-white. One is about 3,500 K, the other about 12,000 K.",
+            "caption": "Orion on a January evening. Compare the two brightest stars: Betelgeuse (upper left) is orange, Rigel (lower right) is blue-white. One is about 3,600 K, the other about 12,000 K.",
             "time": "month:1 21:00",
-            "view": { "target": "con:Ori", "fov": 45 },
+            "view": {
+              "target": "con:Ori",
+              "fov": 45
+            },
             "highlights": [
-              { "type": "object", "ref": "star:Betelgeuse", "label": "Betelgeuse — cool, class M" },
-              { "type": "object", "ref": "star:Rigel", "label": "Rigel — hot, class B" }
+              {
+                "type": "object",
+                "ref": "star:Betelgeuse",
+                "label": "Betelgeuse — cool, class M"
+              },
+              {
+                "type": "object",
+                "ref": "star:Rigel",
+                "label": "Rigel — hot, class B"
+              }
             ]
           },
           {
             "caption": "The three Belt stars are hotter still. Mintaka and Alnitak are class O stars near 30,000 K, and Alnilam between them is an early class B. To the eye they are simply white with a hint of blue.",
             "time": "month:1 21:00",
-            "view": { "target": "asterism:orions-belt", "fov": 20 },
+            "view": {
+              "target": "asterism:orions-belt",
+              "fov": 20
+            },
             "highlights": [
-              { "type": "object", "ref": "star:Mintaka", "label": "Mintaka — O" },
-              { "type": "object", "ref": "star:Alnilam", "label": "Alnilam — B" },
-              { "type": "object", "ref": "star:Alnitak", "label": "Alnitak — O" }
+              {
+                "type": "object",
+                "ref": "star:Mintaka",
+                "label": "Mintaka — O"
+              },
+              {
+                "type": "object",
+                "ref": "star:Alnilam",
+                "label": "Alnilam — B"
+              },
+              {
+                "type": "object",
+                "ref": "star:Alnitak",
+                "label": "Alnitak — O"
+              }
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "blackbody-color",
+          "params": {
+            "start": 5772
+          },
+          "caption": "A glowing body’s colour is set by its temperature alone. Slide from 2,500 K to 40,000 K: the peak of the light shifts from infrared through the visible rainbow into ultraviolet, and the colour runs from orange-red through white to blue. The real stars on the strip below follow the same rule."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "file": "img/Albireo-1.jpg",
+              "alt": "Albireo through a telescope: a bright golden star beside a fainter blue one",
+              "label": "Albireo: gold and blue",
+              "kind": "photograph",
+              "kindNote": "Colour processing not stated at source",
+              "credit": "Brucewaters",
+              "license": "CC BY 4.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Albireo_Killarney_Provincial_Park_Observatory.jpg"
+            },
+            {
+              "file": "img/Betelgeuse-3.jpg",
+              "alt": "A telescope photograph of Betelgeuse showing its strong orange colour",
+              "label": "Betelgeuse: orange",
+              "kind": "photograph",
+              "kindNote": "Colour processing not stated at source",
+              "credit": "Adam Block/Steward Observatory/University of Arizona",
+              "license": "CC BY-SA 3.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Betelgeuse_(star).jpg"
+            }
+          ],
+          "caption": "Telescope photographs bring out colours the eye sees only faintly. The golden star of Albireo is a cool K giant; its blue companion is a hot B star. Betelgeuse, at about 3,600 K, is one of the coolest bright stars."
+        }
+      ],
+      "misconception": {
+        "myth": "Red stars are the hottest, because red means hot.",
+        "fact": "For glowing objects it is the other way round. A red star is a cool one, around 3,000–3,800 K; a blue-white star is two to ten times hotter. The red-hot, blue-cold code on taps and maps is a human convention, not physics."
       },
       "tryIt": "Star colors are subtle. Look slightly out of focus (or defocus binoculars a little): spreading the light into a small disc makes the tint much easier to see."
     },
@@ -48,47 +116,154 @@
       ],
       "demo": {
         "title": "A tour of the classes",
-        "controls": ["time-scrub"],
+        "controls": [
+          "time-scrub"
+        ],
         "steps": [
           {
             "caption": "The winter sky holds almost the whole sequence at once: Rigel (B), Sirius (A), Procyon (F), Capella (G), Aldebaran and Pollux (K), Betelgeuse (M).",
             "time": "month:1 21:00",
-            "view": { "az": 150, "alt": 50, "fov": 110 },
-            "layers": { "constellationNames": false },
+            "view": {
+              "az": 150,
+              "alt": 50,
+              "fov": 110
+            },
+            "layers": {
+              "constellationNames": false
+            },
             "highlights": [
-              { "type": "object", "ref": "star:Rigel", "label": "Rigel — B" },
-              { "type": "object", "ref": "star:Sirius", "label": "Sirius — A" },
-              { "type": "object", "ref": "star:Procyon", "label": "Procyon — F" },
-              { "type": "object", "ref": "star:Capella", "label": "Capella — G" },
-              { "type": "object", "ref": "star:Aldebaran", "label": "Aldebaran — K" },
-              { "type": "object", "ref": "star:Pollux", "label": "Pollux — K" },
-              { "type": "object", "ref": "star:Betelgeuse", "label": "Betelgeuse — M" }
+              {
+                "type": "object",
+                "ref": "star:Rigel",
+                "label": "Rigel — B"
+              },
+              {
+                "type": "object",
+                "ref": "star:Sirius",
+                "label": "Sirius — A"
+              },
+              {
+                "type": "object",
+                "ref": "star:Procyon",
+                "label": "Procyon — F"
+              },
+              {
+                "type": "object",
+                "ref": "star:Capella",
+                "label": "Capella — G"
+              },
+              {
+                "type": "object",
+                "ref": "star:Aldebaran",
+                "label": "Aldebaran — K"
+              },
+              {
+                "type": "object",
+                "ref": "star:Pollux",
+                "label": "Pollux — K"
+              },
+              {
+                "type": "object",
+                "ref": "star:Betelgeuse",
+                "label": "Betelgeuse — M"
+              }
             ]
           },
           {
             "caption": "Summer has its own pair of extremes. White Vega (class A) shines high overhead, while red Antares (class M) smolders low in the south. Orange Arcturus (K) is sinking in the west.",
             "time": "month:7 22:00",
-            "view": { "az": 180, "alt": 50, "fov": 130 },
-            "layers": { "constellationNames": false },
+            "view": {
+              "az": 180,
+              "alt": 50,
+              "fov": 130
+            },
+            "layers": {
+              "constellationNames": false
+            },
             "highlights": [
-              { "type": "object", "ref": "star:Vega", "label": "Vega — A, 9,600 K" },
-              { "type": "object", "ref": "star:Antares", "label": "Antares — M, 3,700 K" },
-              { "type": "object", "ref": "star:Arcturus", "label": "Arcturus — K, 4,300 K" }
+              {
+                "type": "object",
+                "ref": "star:Vega",
+                "label": "Vega — A, 9,600 K"
+              },
+              {
+                "type": "object",
+                "ref": "star:Antares",
+                "label": "Antares — M, 3,700 K"
+              },
+              {
+                "type": "object",
+                "ref": "star:Arcturus",
+                "label": "Arcturus — K, 4,300 K"
+              }
             ]
           },
           {
             "caption": "Polaris, the North Star, is a class F star, slightly yellower than white Vega. It is here every night of the year.",
-            "view": { "target": "star:Polaris", "fov": 50 },
-            "highlights": [{ "type": "object", "ref": "star:Polaris", "label": "Polaris — F" }]
+            "view": {
+              "target": "star:Polaris",
+              "fov": 50
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "star:Polaris",
+                "label": "Polaris — F"
+              }
+            ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "spectral-sequence",
+          "params": {
+            "view": "colour"
+          },
+          "caption": "The seven classes run from hot blue O stars to cool orange-red M stars, each with a familiar example. Switch to How common: three quarters of all stars are M dwarfs, yet they are barely represented among the stars you can see without a telescope."
+        }
+      ],
+      "check": {
+        "id": "check-hottest-star",
+        "prompt": "Which of these stars has the hottest surface?",
+        "choices": [
+          "Rigel (class B)",
+          "Sirius (class A)",
+          "The Sun (class G)",
+          "Betelgeuse (class M)"
+        ],
+        "answerIndex": 0,
+        "explanation": "The classes run from hottest to coolest as O B A F G K M, so a B star such as Rigel (about 12,000 K) is hotter than Sirius (A, about 9,800 K), the Sun (G) and Betelgeuse (M)."
       }
     },
     {
       "heading": "Dwarfs, giants and supergiants",
       "body": [
         "Temperature is only half the story. Two stars of the same color can differ enormously in size, and so in luminosity (the total light a star gives off). A second label, the luminosity class, records this. Ordinary stars in the long, stable middle of their lives are called dwarfs, or main-sequence stars: the Sun, Sirius and Vega are dwarfs. Giants are stars that have swollen late in life: Arcturus, Aldebaran and Pollux. Supergiants are the rarest and largest: Rigel, Betelgeuse and Antares. Put Betelgeuse where the Sun is and it would swallow the orbits of Mercury, Venus, Earth and Mars."
-      ]
+      ],
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "hr-diagram",
+          "params": {
+            "nearby": false
+          },
+          "caption": "Plot every naked-eye star by colour (temperature) and true brightness and they fall into groups, not a random scatter: most lie on the diagonal main sequence, cool giants sit above it, and a few supergiants run across the top. Hover over or tap a dot to name a bright star."
+        },
+        {
+          "type": "diagram",
+          "id": "star-sizes",
+          "params": {
+            "view": "giants"
+          },
+          "caption": "Same colour, different size. Arcturus and Aldebaran are cooler than the Sun but 25 and 45 times wider, which is why they outshine it. Zoom out to the supergiants: Betelgeuse would fill the inner solar system."
+        }
+      ],
+      "thinkAbout": {
+        "question": "Betelgeuse is cooler than the Sun, so each square metre of its surface gives off less light. How can it be tens of thousands of times more luminous?",
+        "answer": "Size. Each square metre of Betelgeuse gives off only about a seventh as much light as a square metre of the Sun, but Betelgeuse is roughly 700 times wider, so its surface has about half a million times the area. Multiply the two and it outshines the Sun tens of thousands of times over."
+      }
     },
     {
       "heading": "The missing red dwarfs",
@@ -98,16 +273,50 @@
       ],
       "demo": {
         "title": "What the eye is missing",
-        "controls": ["bortle"],
+        "controls": [
+          "bortle"
+        ],
         "steps": [
           {
             "caption": "A dark country sky shows a few thousand stars. Even here, none of them is a red dwarf. Slide the light-pollution control toward the city and watch which stars survive: the luminous blue-white ones and the giants.",
             "time": "month:1 21:00",
             "bortle": 2,
-            "view": { "target": "con:Ori", "fov": 80 },
-            "layers": { "constellationNames": false, "starNames": false }
+            "view": {
+              "target": "con:Ori",
+              "fov": 80
+            },
+            "layers": {
+              "constellationNames": false,
+              "starNames": false
+            }
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "hr-diagram",
+          "params": {
+            "nearby": true
+          },
+          "caption": "The naked-eye stars leave the bottom of the diagram empty. Add the Sun and a few of the nearest stars and it fills in: faint red dwarfs at the lower right, and white dwarfs such as Sirius B at the lower left. The most common stars are the ones you never see."
+        }
+      ],
+      "misconception": {
+        "myth": "The stars you see at night are typical stars, mostly like the Sun.",
+        "fact": "They are a biased sample. Naked-eye stars are mostly rare, luminous stars that can be seen across hundreds of light-years. Typical stars are dim red dwarfs, and not one of them is visible without a telescope."
+      },
+      "check": {
+        "id": "check-hr-red-dwarfs",
+        "prompt": "On the H–R diagram, where do red dwarfs sit?",
+        "choices": [
+          "Lower right: cool and dim",
+          "Upper right: cool and very bright",
+          "Lower left: hot and dim",
+          "Upper left: hot and very bright"
+        ],
+        "answerIndex": 0,
+        "explanation": "Red dwarfs are cool (right side) and give off very little light (bottom). Upper right is where red giants and supergiants such as Betelgeuse sit; lower left is the white dwarfs."
       },
       "tryIt": "Tonight, find one star of each color you can: a blue-white one, a pure white one, a yellow one and an orange one. From Brooklyn the brightest dozen stars are enough, and star colors survive city lights well."
     }
@@ -119,14 +328,46 @@
     "Red dwarfs are the most common stars, but none is bright enough to see without optical aid; every red naked-eye star is a giant or supergiant."
   ],
   "examples": [
-    { "ref": "star:Alnitak", "label": "Alnitak", "note": "Class O: a blue star near 30,000 K at the left end of Orion's Belt. Naked eye, even from the city." },
-    { "ref": "star:Rigel", "label": "Rigel", "note": "Class B blue-white supergiant at Orion's foot, about 12,000 K. Naked eye." },
-    { "ref": "star:Sirius", "label": "Sirius", "note": "Class A: a white main-sequence star near 9,900 K and the brightest star of the night sky. Naked eye." },
-    { "ref": "star:Procyon", "label": "Procyon", "note": "Class F yellow-white star in Canis Minor, a little hotter than the Sun. Naked eye." },
-    { "ref": "star:Capella", "label": "Capella", "note": "Class G: a pair of yellow giants with nearly the Sun's color, seen as one star. Naked eye." },
-    { "ref": "star:Arcturus", "label": "Arcturus", "note": "Class K orange giant, the brightest star of the northern half of the sky. Naked eye." },
-    { "ref": "star:Betelgeuse", "label": "Betelgeuse", "note": "Class M red supergiant at Orion's shoulder, about 3,500 K. Naked eye." },
-    { "ref": "star:Antares", "label": "Antares", "note": "Class M red supergiant, the heart of Scorpius, low in the south on summer evenings. Naked eye." }
+    {
+      "ref": "star:Alnitak",
+      "label": "Alnitak",
+      "note": "Class O: a blue star near 30,000 K at the left end of Orion's Belt. Naked eye, even from the city."
+    },
+    {
+      "ref": "star:Rigel",
+      "label": "Rigel",
+      "note": "Class B blue-white supergiant at Orion's foot, about 12,000 K. Naked eye."
+    },
+    {
+      "ref": "star:Sirius",
+      "label": "Sirius",
+      "note": "Class A: a white main-sequence star near 9,900 K and the brightest star of the night sky. Naked eye."
+    },
+    {
+      "ref": "star:Procyon",
+      "label": "Procyon",
+      "note": "Class F yellow-white star in Canis Minor, a little hotter than the Sun. Naked eye."
+    },
+    {
+      "ref": "star:Capella",
+      "label": "Capella",
+      "note": "Class G: a pair of yellow giants with nearly the Sun's color, seen as one star. Naked eye."
+    },
+    {
+      "ref": "star:Arcturus",
+      "label": "Arcturus",
+      "note": "Class K orange giant, the brightest star of the northern half of the sky. Naked eye."
+    },
+    {
+      "ref": "star:Betelgeuse",
+      "label": "Betelgeuse",
+      "note": "Class M red supergiant at Orion's shoulder, about 3,600 K. Naked eye."
+    },
+    {
+      "ref": "star:Antares",
+      "label": "Antares",
+      "note": "Class M red supergiant, the heart of Scorpius, low in the south on summer evenings. Naked eye."
+    }
   ],
   "questions": [
     {
@@ -144,14 +385,24 @@
     {
       "id": "q2",
       "prompt": "Which list runs correctly from the hottest spectral class to the coolest?",
-      "choices": ["A, B, F, G, K, M, O", "M, K, G, F, A, B, O", "O, B, A, F, G, K, M", "O, A, B, G, F, K, M"],
+      "choices": [
+        "A, B, F, G, K, M, O",
+        "M, K, G, F, A, B, O",
+        "O, B, A, F, G, K, M",
+        "O, A, B, G, F, K, M"
+      ],
       "answerIndex": 2,
       "explanation": "The sequence is O B A F G K M, from blue stars above 30,000 K down to orange-red stars below 3,700 K."
     },
     {
       "id": "q3",
       "prompt": "The Sun is a class G star with a surface near 5,800 K. Which of these bright stars is most similar to it in color?",
-      "choices": ["Capella", "Rigel", "Betelgeuse", "Vega"],
+      "choices": [
+        "Capella",
+        "Rigel",
+        "Betelgeuse",
+        "Vega"
+      ],
       "answerIndex": 0,
       "explanation": "Capella is also class G and looks yellow. Rigel (B) and Vega (A) are hotter and whiter; Betelgeuse (M) is much cooler and orange-red."
     },

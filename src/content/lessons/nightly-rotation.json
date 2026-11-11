@@ -123,13 +123,33 @@
             ]
           }
         ]
-      }
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "celestial-sphere",
+          "params": {
+            "hours": 0
+          },
+          "caption": "Earth spins inside a sphere of stars. Press Spin Earth: the stars never move, but your horizon (green) tips across them, so stars come up over it in the east and drop below it in the west."
+        }
+      ]
     },
     {
       "heading": "The pivot and the speed",
       "body": [
         "The still point of the turning sky is the north celestial pole, the spot directly above Earth's North Pole. [[star:Polaris|Polaris]] happens to sit less than 1° from it, which is why it stays put while everything else circles. Facing north, the motion is counter-clockwise.",
         "The speed is easy to remember: a full turn of 360° in 24 hours is 15° per hour. A fist held at arm's length covers about 10°, so in one hour a star moves a fist and a half along its circle. Stars close to the pole trace small circles and seem to crawl; stars far from it sweep long arcs across the sky, but all of them turn through the same 15° each hour."
+      ],
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "star-trails",
+          "params": {
+            "hours": 4
+          },
+          "caption": "With the shutter open, every star draws an arc around the celestial pole. Slide the exposure: each hour adds 15° to every trail, short or long, because the whole sky turns as one piece."
+        }
       ]
     },
     {
