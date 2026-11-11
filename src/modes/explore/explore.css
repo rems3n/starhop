@@ -67,7 +67,7 @@
 .ex-info-bar { display: flex; align-items: center; justify-content: flex-end; gap: 2px; padding: 6px 8px 0; flex: none; }
 .ex-info-grip { display: none; }
 .ex-info-body { flex: 1; min-height: 0; overflow: auto; padding: 0 var(--sp-4) var(--sp-5); overscroll-behavior: contain; scrollbar-width: thin; scrollbar-color: var(--night-600) transparent; }
-.ex-hint { display: flex; flex-direction: column; align-items: flex-start; gap: var(--sp-2); padding: var(--sp-3); margin-bottom: var(--sp-3); border-radius: var(--r-md); border: 1px solid rgba(240, 180, 92, 0.4); background: rgba(240, 180, 92, 0.08); font-size: var(--fs-sm); }
+.ex-hint { display: flex; flex-direction: column; align-items: flex-start; gap: var(--sp-2); padding: var(--sp-3); margin-bottom: var(--sp-3); border-radius: var(--r-md); border: 1px solid rgba(56, 225, 255, 0.4); background: rgba(56, 225, 255, 0.08); font-size: var(--fs-sm); }
 .ex-hint .btn { white-space: normal; text-align: left; height: auto; padding-top: 6px; padding-bottom: 6px; }
 
 /* ── bottom: readout + time bar ── */
@@ -82,7 +82,7 @@
 .ex-time-extra { gap: var(--sp-3); }
 .ex-time-group { gap: 2px; }
 .ex-time-clock { display: flex; flex-direction: column; align-items: flex-start; line-height: 1.2; background: none; border: 1px solid transparent; border-radius: var(--r-sm); padding: 2px 8px; cursor: pointer; min-width: 9.5em; text-align: left; }
-.ex-time-clock:hover, .ex-time-clock[aria-expanded='true'] { border-color: var(--line-strong); background: rgba(156, 176, 255, 0.08); }
+.ex-time-clock:hover, .ex-time-clock[aria-expanded='true'] { border-color: var(--line-strong); background: rgba(255, 255, 255, 0.08); }
 .ex-time-hm { font-family: var(--font-read); font-size: 1.3rem; font-variant-numeric: tabular-nums; }
 .ex-time-date { font-size: var(--fs-xs); color: var(--text-dim); white-space: nowrap; }
 .ex-time .btn--quiet { color: var(--text); }

@@ -1,46 +1,51 @@
 /* Design tokens. Palette comes from the subject: a deep blue-violet night (never pure black),
    warm starlight for text, Arcturus amber for actions, Vega blue for sky links. */
 :root {
-  --night-950: #060a1a;
-  --night-900: #0a1024;
-  --night-800: #101836;
-  --night-700: #182247;
-  --night-600: #24305e;
-  --line: rgba(156, 176, 255, 0.16);
-  --line-strong: rgba(156, 176, 255, 0.32);
-  --text: #ece7da;
-  --text-dim: #aab0cc;
-  --text-faint: #7a82a6;
-  --amber: #f0b45c;
-  --amber-ink: #21170a;
-  --vega: #9cc0ff;
-  --good: #7fd6a4;
-  --bad: #ff8f80;
-  --panel: rgba(13, 20, 46, 0.88);
-  --panel-solid: #0f1736;
+  /* Theme "Trajectory": mission-control black, condensed capitals, mono telemetry, one ion-cyan accent. */
+  --night-950: #000000;
+  --night-900: #000000;
+  --night-800: #080a0e;
+  --night-700: #0e1319;
+  --night-600: #1b232d;
+  --line: rgba(255, 255, 255, 0.14);
+  --line-strong: rgba(255, 255, 255, 0.34);
+  --text: #f2f5f7;
+  --text-dim: #a7b0b9;
+  --text-faint: #6d7781;
+  /* accent (the token keeps its old name; it is the ion cyan now) */
+  --amber: #38e1ff;
+  --amber-ink: #001318;
+  --vega: #9fe8ff;
+  --sun: #ffc857;
+  --good: #6fe3a5;
+  --bad: #ff7a6b;
+  --panel: rgba(0, 0, 0, 0.74);
+  --panel-solid: #080a0e;
 
   /* Sky drawing colours (read by the sky engine) */
-  --sky-lines: rgba(132, 164, 255, 0.5);
-  --sky-boundaries: rgba(240, 180, 92, 0.3);
-  --sky-grid: rgba(130, 150, 210, 0.2);
-  --sky-ecliptic: rgba(240, 180, 92, 0.65);
-  --sky-label: rgba(200, 212, 255, 0.85);
-  --sky-highlight: #f0b45c;
+  --sky-lines: rgba(120, 200, 255, 0.5);
+  --sky-boundaries: rgba(255, 200, 87, 0.3);
+  --sky-grid: rgba(150, 170, 190, 0.2);
+  --sky-ecliptic: rgba(255, 200, 87, 0.65);
+  --sky-label: rgba(215, 228, 240, 0.85);
+  --sky-highlight: #ffc857;
 
-  --font-ui: 'Figtree Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --font-read: 'Newsreader Variable', 'Iowan Old Style', Georgia, serif;
+  --font-display: 'Saira Condensed', 'Arial Narrow', sans-serif;
+  --font-ui: 'Inter Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-read: 'Inter Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, 'SFMono-Regular', monospace;
 
   --fs-xs: 0.75rem;
   --fs-sm: 0.875rem;
   --fs-md: 1rem;
   --fs-lg: 1.1875rem;
-  --fs-xl: 1.5rem;
-  --fs-2xl: 2rem;
-  --fs-3xl: 2.75rem;
+  --fs-xl: 1.6rem;
+  --fs-2xl: 2.3rem;
+  --fs-3xl: 3.4rem;
 
-  --r-sm: 6px;
-  --r-md: 10px;
-  --r-lg: 16px;
+  --r-sm: 0px;
+  --r-md: 0px;
+  --r-lg: 0px;
   --sp-1: 4px;
   --sp-2: 8px;
   --sp-3: 12px;
@@ -48,8 +53,9 @@
   --sp-5: 24px;
   --sp-6: 32px;
   --sp-7: 48px;
-  --nav-h: 52px;
-  --shadow: 0 10px 40px rgba(2, 4, 14, 0.55);
+  --nav-h: 56px;
+  --shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+  color-scheme: dark;
 }
 
 * { box-sizing: border-box; }
@@ -64,7 +70,8 @@ body {
   -webkit-font-smoothing: antialiased;
   overscroll-behavior: none;
 }
-h1, h2, h3, h4 { font-family: var(--font-read); font-weight: 500; line-height: 1.15; margin: 0; letter-spacing: -0.01em; }
+h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height: 1; margin: 0; letter-spacing: 0.02em; text-transform: uppercase; text-wrap: balance; }
+h3, h4 { font-weight: 500; letter-spacing: 0.05em; line-height: 1.1; }
 h1 { font-size: var(--fs-3xl); }
 h2 { font-size: var(--fs-2xl); }
 h3 { font-size: var(--fs-xl); }
@@ -73,10 +80,10 @@ p { margin: 0 0 var(--sp-4); }
 a { color: var(--vega); text-underline-offset: 3px; }
 button { font: inherit; color: inherit; }
 :focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; border-radius: 4px; }
-::selection { background: rgba(240, 180, 92, 0.35); }
+::selection { background: rgba(56, 225, 255, 0.35); }
 
 /* Long-form reading (stories, lessons) */
-.prose { font-family: var(--font-read); font-size: 1.1875rem; line-height: 1.62; max-width: 66ch; }
+.prose { font-family: var(--font-read); font-size: 1.0625rem; line-height: 1.7; max-width: 66ch; color: #d5dbe0; }
 .prose p { margin-bottom: 1.05em; }
 
 /* Red night-vision mode: multiply everything by pure red so no green/blue light reaches the eye. */

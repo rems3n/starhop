@@ -950,7 +950,7 @@ export function createSkyEngine(container: HTMLElement, catalog: Catalog, option
   window.addEventListener('resize', onWinResize);
   const onFonts = () => { if (!destroyed) { overlay.resetGlyphs(); invalidate(); } };
   if (document.fonts) {
-    document.fonts.load("500 13px 'Figtree Variable'").then(onFonts, () => undefined);
+    document.fonts.load("500 13px 'Inter Variable'").then(onFonts, () => undefined);
     document.fonts.addEventListener?.('loadingdone', onFonts);
   }
   let faintRequested = false;

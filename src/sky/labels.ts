@@ -27,7 +27,7 @@ export interface Glyph {
   pad: number;
 }
 
-export const LABEL_FONT = "'Figtree Variable', 'Figtree', system-ui, -apple-system, 'Segoe UI', sans-serif";
+export const LABEL_FONT = "'Inter Variable', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif";
 const HALO = 'rgba(5, 8, 22, 0.86)';
 const HALO_W = 3;
 const PAGE = 1024;

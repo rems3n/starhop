@@ -27,7 +27,7 @@
 .lb-collection { display: flex; flex-direction: column; gap: var(--sp-3); }
 .lb-toolbar { display: flex; gap: var(--sp-2); align-items: stretch; }
 .lb-search { flex: 1; max-width: 560px; }
-.lb-filters { display: flex; flex-wrap: wrap; gap: var(--sp-3) var(--sp-4); align-items: flex-end; padding: var(--sp-3) var(--sp-4); border: 1px solid var(--line); border-radius: var(--r-lg); background: rgba(16, 24, 54, 0.5); }
+.lb-filters { display: flex; flex-wrap: wrap; gap: var(--sp-3) var(--sp-4); align-items: flex-end; padding: var(--sp-3) var(--sp-4); border: 1px solid var(--line); border-radius: var(--r-lg); background: rgba(0, 0, 0, 0.5); }
 .lb-field { min-width: 150px; max-width: 240px; flex: 0 1 auto; }
 .lb-field .select, .lb-field .input { min-height: 34px; font-size: var(--fs-sm); }
 .lb-toggle { min-height: 34px; display: flex; align-items: center; }
@@ -44,7 +44,7 @@
 .lb-table tbody th a { color: var(--text); text-decoration: none; }
 .lb-table tbody th a:hover, .lb-table tbody th a:focus-visible { color: var(--vega); text-decoration: underline; }
 .lb-table tbody tr { cursor: pointer; }
-.lb-table tbody tr:hover { background: rgba(156, 176, 255, 0.06); }
+.lb-table tbody tr:hover { background: rgba(255, 255, 255, 0.06); }
 .lb-table tbody tr:last-child > * { border-bottom: 0; }
 .lb-table .is-num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .lb-table td a { text-decoration: none; }
@@ -59,7 +59,7 @@
 
 .lb-badge { display: inline-flex; align-items: center; padding: 1px 8px; border-radius: 999px; border: 1px solid var(--line-strong); font-size: var(--fs-xs); color: var(--text-dim); white-space: nowrap; }
 .lb-badge--good { border-color: rgba(127, 214, 164, 0.5); color: var(--good); }
-.lb-badge--amber { border-color: rgba(240, 180, 92, 0.5); color: var(--amber); }
+.lb-badge--amber { border-color: rgba(56, 225, 255, 0.5); color: var(--amber); }
 .lb-badge--bad { border-color: rgba(255, 143, 128, 0.5); color: var(--bad); }
 .lb-badge--dim { border-color: var(--line); color: var(--text-faint); }
 
@@ -105,7 +105,7 @@ a.lb-collection-card { height: 100%; display: flex; flex-direction: column; gap:
 .lb-steps { list-style: none; margin: 0 0 var(--sp-2); padding: 0; display: grid; gap: var(--sp-2); }
 .lb-step { width: 100%; display: flex; gap: var(--sp-3); align-items: flex-start; text-align: left; padding: var(--sp-3) var(--sp-4); border-radius: var(--r-lg); border: 1px solid var(--line); background: var(--night-800); cursor: pointer; }
 .lb-step:hover { border-color: var(--line-strong); background: var(--night-700); }
-.lb-step.is-on { border-color: var(--amber); background: rgba(240, 180, 92, 0.08); }
+.lb-step.is-on { border-color: var(--amber); background: rgba(56, 225, 255, 0.08); }
 .lb-step-num { flex: none; cursor: pointer; background: none; color: inherit; padding: 0; display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; border: 1px solid var(--line-strong); font-size: var(--fs-sm); font-weight: 600; font-variant-numeric: tabular-nums; }
 .lb-step.is-on .lb-step-num { background: var(--amber); border-color: var(--amber); color: var(--amber-ink); }
 .lb-step-text { font-family: var(--font-read); font-size: 1.0625rem; line-height: 1.5; padding-top: 2px; }

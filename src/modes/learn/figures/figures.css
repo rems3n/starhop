@@ -1,5 +1,5 @@
 /* Lesson figures and boxes. Prefix .fig- */
-:root { --fig-bg: #0d1430; --fig-line: rgba(156, 176, 255, 0.22); --fig-line-strong: rgba(200, 212, 255, 0.55); }
+:root { --fig-bg: #07090d; --fig-line: rgba(255, 255, 255, 0.22); --fig-line-strong: rgba(200, 212, 255, 0.55); }
 .fig { margin: var(--sp-5) 0; padding: 0; }
 .fig-svg { display: block; width: 100%; height: auto; background: var(--fig-bg); border: 1px solid var(--line); border-radius: var(--r-lg); font-family: var(--font-ui); user-select: none; }
 .fig-label { paint-order: stroke; stroke: var(--fig-bg); stroke-width: 3px; stroke-linejoin: round; }

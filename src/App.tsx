@@ -7,6 +7,7 @@ import { Loading } from '@/ui';
 import { SettingsMenu } from '@/components/settings/SettingsMenu';
 import { FirstRunLocation } from '@/components/settings/FirstRunLocation';
 
+const HomePage = lazy(() => import('@/modes/home/HomePage'));
 const ExplorePage = lazy(() => import('@/modes/explore/ExplorePage'));
 const TonightRoutes = lazy(() => import('@/modes/tonight/TonightRoutes'));
 const LearnRoutes = lazy(() => import('@/modes/learn/LearnRoutes'));
@@ -42,10 +43,16 @@ export default function App() {
   }, [redMode]);
   const fullBleed = pathname.startsWith('/sky');
   const needsLocation = LOCATION_PAGES.some((x) => pathname === x || pathname.startsWith(`${x}/`));
+  if (pathname === '/')
+    return (
+      <Suspense fallback={<Loading />}>
+        <HomePage />
+      </Suspense>
+    );
   return (
     <div className={`app${fullBleed ? ' app--sky' : ''}`}>
       <nav className="app-nav" aria-label="Main">
-        <NavLink to={routes.sky()} className="app-brand">
+        <NavLink to="/" className="app-brand" title="Starhop home">
           Starhop
         </NavLink>
         <div className="app-tabs">
@@ -65,7 +72,6 @@ export default function App() {
       <main className={`app-main${fullBleed ? ' app-main--sky' : ''}`}>
         <Suspense fallback={<Loading />}>
           <Routes>
-            <Route path="/" element={<Navigate to={routes.sky()} replace />} />
             <Route path="/sky" element={<ExplorePage />} />
             <Route path="/tonight/*" element={<TonightRoutes />} />
             <Route path="/learn/*" element={<LearnRoutes />} />
