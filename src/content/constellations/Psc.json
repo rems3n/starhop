@@ -1,0 +1,249 @@
+{
+  "id": "Psc",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); a Greek figure inherited from Babylonian astronomy",
+    "when": "2nd century CE (Almagest); the Babylonian pair of fish is older",
+    "history": [
+      "Pisces, the Fishes, is one of the 48 constellations in Ptolemy's *Almagest* of about 150 CE, where it is called Ichthyes. Ptolemy listed the stars of two fish and of the long cord that ties their tails together.",
+      "The Greeks did not invent the picture. The Babylonians already imagined a pair of fish joined by a cord in this part of the sky, and every Greek story about Pisces is set on the river Euphrates or in Syria, a strong hint about where the constellation came from. The Greeks kept the cord but had no real explanation for it.",
+      "Later atlases sometimes labeled the cord separately. Johann Bode called it Linum Piscium, the Fishes' line, and the star at the knot is still named Alrescha, from the Arabic for 'the cord'."
+    ]
+  },
+  "overview": "Pisces is a pair of fish swimming in different directions, their tails tied together by a long cord. It is a big, dim V of fourth-magnitude stars wrapped around the Great Square of Pegasus, known mainly for the Circlet, a small ring of stars marking one fish, and for holding the point where the Sun crosses into the northern sky each spring.",
+  "howToFind": [
+    "Find the Great Square of Pegasus, high in the south on autumn evenings. A little more than a fist below its bottom edge, under [[star:Markab|Markab]], look for a faint ring of stars about two-thirds of a fist across. This is the Circlet, the body of the western fish; its brightest star is [[star:γ Psc|Gamma Piscium]].",
+    "From the Circlet a ragged line of faint stars runs left (east) for nearly four fists, sagging slightly, to [[star:Alrescha|Alrescha]], the knot in the cord. There the line turns sharply and climbs up and to the right, through [[star:Alpherg|Alpherg]], toward the second fish, a loose clump of dim stars below [[star:Mirach|Mirach]] in Andromeda. From Brooklyn, Pisces is high in the evening sky from October through January, but you need a dark, moonless night to trace it."
+  ],
+  "shape": "A huge, lopsided V lying on its side, with the point at Alrescha to the east, one arm running west under the Great Square to the Circlet and the other running north toward Andromeda. Each arm is three to four fists long. Honestly, in a city sky Pisces is a blank: none of its stars is brighter than magnitude 3.6.",
+  "mainStars": [
+    {
+      "ref": "star:Alpherg",
+      "note": "Eta Piscium, the brightest star of the constellation at only magnitude 3.6, a yellow giant about 350 light-years away. It lies on the cord near the tail of the northern fish."
+    },
+    {
+      "ref": "star:γ Psc",
+      "note": "The brightest star of the Circlet, a yellow giant of magnitude 3.7 and the easiest handle on the western fish."
+    },
+    {
+      "ref": "star:Alrescha",
+      "note": "Alpha Piscium, magnitude 3.8, marks the knot where the two halves of the cord are tied. Its name comes from the Arabic for 'the cord'. A telescope shows it to be a very close pair of white stars."
+    },
+    {
+      "ref": "star:ω Psc",
+      "note": "A magnitude 4.0 star just east of the Circlet. The March equinox point, where the Sun crosses the celestial equator, lies a little to its south."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "star:19 Psc",
+      "equip": "binoculars",
+      "note": "Also called TX Piscium, the easternmost star of the Circlet. It is a carbon star, a cool giant with a sooty atmosphere, and in binoculars it glows a distinct orange-red, one of the reddest stars you can see."
+    },
+    {
+      "ref": "star:ζ Psc",
+      "equip": "small-telescope",
+      "note": "A pleasing double star on the cord, easily separated by a small telescope into two white stars."
+    },
+    {
+      "ref": "dso:M74",
+      "equip": "telescope",
+      "note": "A spiral galaxy seen face-on, about 30 million light-years away, close to Alpherg. Its light is spread so thinly that it is one of the hardest objects in Messier's list; expect a faint round glow under a dark sky."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Psc-aphrodite-eros",
+      "title": "Aphrodite and Eros escape from Typhon",
+      "culture": "Greek and Roman",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.30, citing Diognetus Erythraeus", "date": "1st century BCE – 2nd century CE" },
+        { "author": "Ovid", "work": "Fasti 2.459–474", "date": "c. 8 CE" },
+        { "author": "Ovid", "work": "Metamorphoses 5.331", "date": "c. 8 CE" }
+      ],
+      "summary": "When the monster Typhon appeared on the banks of the Euphrates, the goddess Aphrodite and her son Eros leapt into the river. In one telling they turned into fish; in another, two fish carried them to safety. Either way the pair of fish was set in the sky.",
+      "retelling": [
+        "The gods had beaten the Titans and the Giants, and the Earth, Gaia, was not finished with them. She bore one last child, Typhon, the worst monster the world had ever held. The poet Hesiod gives him a hundred serpent heads with flickering black tongues and fire in every eye. From those heads came every kind of noise: sometimes speech the gods could understand, sometimes a bull's bellow, a lion's roar, the yelping of puppies, or a hiss like a nest of snakes. Gaia sent him against Olympus, and the gods scattered.",
+        "Aphrodite, the goddess of love, fled east with her small son Eros. The Romans, who called them Venus and Cupid, told the story too, and Ovid's version is the most vivid. He says the goddess came at last to the river Euphrates, in Syria, and sat down on the bank to rest. Poplars and reeds grew thick along the water, and willows, and she hoped the two of them could hide there.",
+        "Then the wind moved in the trees. The whole grove rustled, and Aphrodite went white. She was sure it was the enemy closing in. She clutched her child to her lap and cried out to the nymphs of the river to come and save two gods. And without waiting for an answer she jumped.",
+        "What happened in the water is told in two ways. In the older account that Hyginus takes from a writer named Diognetus, mother and son changed themselves into fish as they went under, and in that shape swam out of danger. Ovid, in another poem, likewise lists Venus among the gods who hid from Typhon in animal form: she was the one concealed in a fish.",
+        "But in Ovid's calendar poem the goddess is not transformed. Instead two fish rose under her and her son, took them on their backs, and carried them away down the river. For that service, he says, the twin fish now possess the stars, a fair reward.",
+        "The two versions lead to the same place in the sky: a pair of fish, side by side, with a cord between them.",
+        "Both authors add the same note at the end. Because of this story, they say, the people of Syria would not eat fish. To catch one might be to trap a god, or to harm the creatures that once protected the gods."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Star Tales – Pisces",
+        "url": "http://www.ianridpath.com/startales/pisces.html"
+      },
+      "characters": ["Aphrodite (Venus)", "Eros (Cupid)", "Typhon", "Gaia"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Beside which river did Aphrodite and Eros hide from Typhon?",
+          "choices": ["The Nile", "The Tiber", "The Euphrates", "The Styx"],
+          "answerIndex": 2,
+          "explanation": "The story is set on the Euphrates in Syria, a sign that the constellation came to Greece from the East."
+        },
+        {
+          "id": "q2",
+          "prompt": "In Ovid's telling, what frightened Aphrodite into jumping into the river?",
+          "choices": [
+            "The wind rustling in the trees",
+            "Typhon's hand reaching for her",
+            "A clap of thunder",
+            "A serpent in the reeds"
+          ],
+          "answerIndex": 0,
+          "explanation": "The grove rustled in the wind and she took it for the approach of the enemy."
+        },
+        {
+          "id": "q3",
+          "prompt": "How do the two versions of the story differ?",
+          "choices": [
+            "In one Eros is left behind",
+            "In one Typhon catches them",
+            "In one they hide in a cave instead",
+            "In one they become fish; in the other two fish carry them"
+          ],
+          "answerIndex": 3,
+          "explanation": "Hyginus says they changed into fish; Ovid's Fasti says twin fish bore them on their backs."
+        },
+        {
+          "id": "q4",
+          "prompt": "What custom did ancient writers explain with this story?",
+          "choices": [
+            "The Greek habit of sacrificing fish to Poseidon",
+            "The Syrians' refusal to eat fish",
+            "The Roman festival of fishermen",
+            "The Egyptian worship of the Nile"
+          ],
+          "answerIndex": 1,
+          "explanation": "Both Hyginus and Ovid say the Syrians would not eat fish for fear of harming gods or their protectors."
+        }
+      ]
+    },
+    {
+      "id": "Psc-egg",
+      "title": "The egg in the Euphrates",
+      "culture": "Syrian, as told by a Roman writer",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Fabulae 197", "date": "1st century BCE – 2nd century CE" }
+      ],
+      "summary": "A different story says nothing of Typhon. A wonderful egg fell from the sky into the Euphrates, fish rolled it ashore, doves hatched it, and out came the goddess the Romans called the Syrian Venus. The fish were placed among the stars for their part in her birth.",
+      "retelling": [
+        "The collection of myths that goes under the name of Hyginus preserves a short, strange tale about the Fishes that sounds nothing like a Greek story. It has no monster in it and no chase. It reads like what it probably is: a piece of Syrian temple lore, written down by a foreigner in a few plain sentences.",
+        "One day, it says, an egg fell out of the sky into the river Euphrates. It was an egg of astonishing size. It did not sink and it did not break; it lay in the current, and the fish of the river gathered around it.",
+        "The fish put their noses to the great egg and pushed. Little by little they rolled it through the water to the bank and up onto dry ground. Then the doves came. They settled on the egg and sat there, as birds do, keeping it warm.",
+        "When it had been warmed long enough, the shell opened, and out of it stepped a goddess. Hyginus calls her Venus, and adds that she was afterward known as the Syrian goddess. This is the great goddess of Syria whom the Greeks elsewhere called Atargatis or Derceto, and whom they identified with their own Aphrodite. Fish and doves were both sacred to her, and ancient travelers reported pools of holy fish at her temples.",
+        "The goddess, Hyginus continues, surpassed all others in justice and uprightness. So Jupiter granted her a favor, and the favor she was given was for the creatures that had helped her into the world. The fish were set among the number of the stars.",
+        "And for the same reason, he ends, the Syrians eat neither fish nor doves, regarding them as gods.",
+        "It is a small story, but it explains what the Typhon story also tries to explain: why two fish should have a place of honor in the zodiac, and why the people who lived along the Euphrates treated fish with such respect. It also hints at how the constellation traveled. The Greeks received a pair of sacred fish from the East, together with scraps of the stories told about them there, and fitted those scraps to their own goddess of love."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Star Tales – Pisces",
+        "url": "http://www.ianridpath.com/startales/pisces.html"
+      },
+      "characters": ["The Syrian goddess (Venus, Aphrodite)", "Jupiter", "the fish", "the doves"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "What fell into the Euphrates at the start of this story?",
+          "choices": ["A golden apple", "An enormous egg", "A burning star", "A sealed chest"],
+          "answerIndex": 1,
+          "explanation": "An egg of wonderful size fell into the river, and from it the goddess was later hatched."
+        },
+        {
+          "id": "q2",
+          "prompt": "What part did the fish play?",
+          "choices": [
+            "They guarded the egg from Typhon",
+            "They swallowed the egg",
+            "They carried the goddess across the sea",
+            "They rolled the egg to the riverbank"
+          ],
+          "answerIndex": 3,
+          "explanation": "The fish pushed the egg ashore, where doves could sit on it."
+        },
+        {
+          "id": "q3",
+          "prompt": "Which birds hatched the egg?",
+          "choices": ["Doves", "Swans", "Eagles", "Cranes"],
+          "answerIndex": 0,
+          "explanation": "Doves warmed the egg until the goddess emerged, which is why doves as well as fish were sacred to her."
+        },
+        {
+          "id": "q4",
+          "prompt": "Who came out of the egg?",
+          "choices": ["Eros", "The twins Castor and Pollux", "The Syrian goddess, called Venus by Hyginus", "The river god Euphrates"],
+          "answerIndex": 2,
+          "explanation": "Hyginus says the egg hatched Venus, afterward called the Syrian goddess."
+        }
+      ]
+    },
+    {
+      "id": "Psc-great-fish",
+      "title": "The children of the Great Fish",
+      "culture": "Greek, from a Syrian story",
+      "ancientSources": [
+        { "author": "Eratosthenes", "work": "Catasterisms (Pisces; the Great Fish)", "date": "3rd century BCE; surviving summary later" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.41", "date": "1st century BCE – 2nd century CE" }
+      ],
+      "summary": "Eratosthenes gave the simplest account of all: the two Fishes are the young of the Great Fish, the constellation we call Piscis Austrinus. Their parent once saved a Syrian goddess from drowning, and she honored the whole family with places in the sky.",
+      "retelling": [
+        "Eratosthenes, the librarian of Alexandria, wrote one of the earliest handbooks of star myths that has come down to us, and his entry on Pisces does not mention Aphrodite or Typhon at all. He sends the reader south instead, to another constellation: the single large fish that lies beneath Aquarius with the bright star Fomalhaut in its mouth. The Greeks called it the Great Fish. The two Fishes of the zodiac, he says, are its offspring.",
+        "The story belongs to the parent. In northern Syria, not far from the Euphrates, stood the holy city of Bambyce, and beside it was a lake. The great goddess of that country, whom the Greeks called Derceto, once fell into the lake and would have drowned. A large fish came up beneath her and bore her to safety.",
+        "The goddess did not forget. She raised her rescuer to the sky, and with it she raised its two young. The big fish was set in the south, where it seems to drink the stream that pours from the Water Carrier's jar. The two small ones were given a place higher up, on the path of the Sun.",
+        "Hyginus knew the same story with a different goddess in it. In his version it is the Egyptian Isis whom the fish saved, at a moment when she was in labor, and it is Isis who rewarded the fish and its young with stars. He adds the usual conclusion: this is why the Syrians do not eat fish, and why they keep gilded images of fish and honor them as gods of the household.",
+        "It is hardly a story at all, more a family tree. But it is worth knowing for what it shows about the autumn sky. The ancients did not see Aquarius, Pisces and the Southern Fish as three unrelated pictures. They saw one scene: water falling from a jar, a great fish below drinking it, and the fish's two children swimming nearby.",
+        "As for the cord that ties the two young fish together, the Greek writers offer no explanation at all; they took it over, with the fish themselves, from the Babylonians."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Star Tales – Pisces",
+        "url": "http://www.ianridpath.com/startales/pisces.html"
+      },
+      "characters": ["Derceto (Atargatis)", "Isis", "the Great Fish"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "According to Eratosthenes, what are the two fish of Pisces?",
+          "choices": [
+            "Aphrodite and Eros in disguise",
+            "Two dolphins sent by Poseidon",
+            "The offspring of the Great Fish, Piscis Austrinus",
+            "The souls of two drowned sailors"
+          ],
+          "answerIndex": 2,
+          "explanation": "He calls them the young of the larger fish that lies to the south beneath Aquarius."
+        },
+        {
+          "id": "q2",
+          "prompt": "What did the Great Fish do to earn its place in the sky?",
+          "choices": [
+            "It rescued a goddess who had fallen into a lake",
+            "It swallowed the monster Typhon",
+            "It guided Jason's ship",
+            "It carried the Sun across the sea each night"
+          ],
+          "answerIndex": 0,
+          "explanation": "It saved the Syrian goddess Derceto when she fell into the lake at Bambyce."
+        },
+        {
+          "id": "q3",
+          "prompt": "Which goddess does Hyginus name as the one saved by the fish?",
+          "choices": ["Hera", "Isis", "Artemis", "Demeter"],
+          "answerIndex": 1,
+          "explanation": "Hyginus tells the same story of the Egyptian goddess Isis, who placed the fish and its young among the stars."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Pisces lies on the ecliptic, the path of the Sun, Moon and planets. The Sun passes through it from about mid-March to mid-April.",
+    "The March equinox point, where the Sun crosses the celestial equator into the northern sky, lies in Pisces just south of the Circlet. It is still called the first point of Aries, because it lay in Aries when Greek astronomers defined it; the slow wobble of Earth's axis has since carried it here, and around the year 2600 it will pass into Aquarius.",
+    "Ptolemy listed fifteen stars in the cord alone. The Babylonians also pictured two fish joined by a cord here, but the meaning of the cord was already lost by Greek times.",
+    "Pisces is the fourteenth-largest constellation, yet it has no star brighter than magnitude 3.6."
+  ]
+}

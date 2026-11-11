@@ -1,0 +1,196 @@
+{
+  "id": "cardinal-directions",
+  "unit": "skills",
+  "order": 2,
+  "title": "Find north, south, east and west",
+  "subtitle": "Use Polaris, the Sun and the Moon to get your bearings, and learn why sky maps look backwards",
+  "minutes": 6,
+  "sections": [
+    {
+      "heading": "Polaris marks north",
+      "body": [
+        "Every direction in this app, \"look southeast\", \"low in the west\", assumes you know which way you are facing. After this lesson you will be able to work that out anywhere, with no compass.",
+        "At night the surest guide is [[star:Polaris|Polaris]], the North Star. It sits less than 1° from the point in the sky that Earth's axis aims at, so while everything else wheels around during the night, Polaris stays put. Face it and you are facing north: east is on your right, west on your left, south behind you.",
+        "Polaris is not especially bright, only about the 50th brightest star, so do not hunt for it directly. Find the [[asterism:big-dipper|Big Dipper]] and use the two stars at the end of its bowl, [[star:Merak|Merak]] and [[star:Dubhe|Dubhe]], called the Pointers. Follow the line from Merak through Dubhe for about five times the gap between them. Polaris is the first fairly bright star you come to. From Brooklyn it is always about 41° up, a bit less than halfway from the horizon to overhead."
+      ],
+      "demo": {
+        "title": "From the Pointers to Polaris",
+        "controls": ["play", "time-scrub"],
+        "steps": [
+          {
+            "caption": "A spring evening, facing north. The Big Dipper is high and upside down. Find the two stars at the end of its bowl, farthest from the handle.",
+            "time": "month:4 21:00",
+            "view": { "az": 0, "alt": 50, "fov": 100 },
+            "highlights": [
+              { "type": "polyline", "points": ["star:Alkaid", "star:Mizar", "star:Alioth", "star:Megrez", "star:Phecda", "star:Merak", "star:Dubhe", "star:Megrez"], "label": "Big Dipper" }
+            ]
+          },
+          {
+            "caption": "Extend the line from Merak through Dubhe about five times their separation and you arrive at Polaris. Drop straight down from Polaris to the horizon: that point is due north.",
+            "time": "month:4 21:00",
+            "view": { "az": 0, "alt": 50, "fov": 100 },
+            "highlights": [
+              { "type": "polyline", "points": ["star:Merak", "star:Dubhe", "star:Polaris"], "dashed": true },
+              { "type": "angle", "from": "star:Dubhe", "to": "star:Merak", "label": "5°" },
+              { "type": "angle", "from": "star:Dubhe", "to": "star:Polaris", "label": "29°" },
+              { "type": "object", "ref": "star:Polaris", "label": "Polaris" },
+              { "type": "polyline", "points": ["star:Polaris", "point:north"], "dashed": true },
+              { "type": "label", "at": "point:north", "text": "North" }
+            ]
+          },
+          {
+            "caption": "Now the night runs fast. The Dipper swings around like the hand of a clock running backwards, but the Pointers keep aiming at Polaris, and Polaris does not move. Drag the time slider to try other hours.",
+            "time": "month:4 21:00",
+            "rate": 1800,
+            "view": { "az": 0, "alt": 50, "fov": 100 },
+            "highlights": [
+              { "type": "polyline", "points": ["star:Merak", "star:Dubhe", "star:Polaris"], "dashed": true },
+              { "type": "object", "ref": "star:Polaris", "label": "Polaris" },
+              { "type": "label", "at": "point:north", "text": "North" }
+            ]
+          }
+        ]
+      },
+      "tryIt": "Tonight, find Polaris from your street or roof and note what it sits above: a chimney, a water tower, the end of the block. That landmark is now your permanent north marker for that spot."
+    },
+    {
+      "heading": "The Sun and Moon give east, south and west",
+      "body": [
+        "By day, or when buildings hide the northern sky, use the Sun. It rises in the east, is highest when it is due south, and sets in the west. But \"east\" is only exact around the March and September equinoxes. From Brooklyn the June Sun rises about 30° north of east, in the northeast, and the December Sun about 30° south of east, in the southeast. Sunsets shift the same way along the western horizon.",
+        "The most reliable moment is the middle of the day: when the Sun is at its highest, around noon in winter and around 1 p.m. during daylight saving time, it is due south and shadows point due north. The Moon and the planets follow nearly the same track: up in the east, highest in the south, down in the west."
+      ],
+      "demo": {
+        "title": "Where the Sun comes up",
+        "controls": [],
+        "steps": [
+          {
+            "caption": "Facing east at dawn. Three sunrise paths: the March equinox in the middle rises due east; the June solstice path starts far to the left (northeast); the December path starts far to the right (southeast).",
+            "time": "2026-03-20 06:30",
+            "view": { "az": 90, "alt": 20, "fov": 120 },
+            "layers": { "constellationLines": false, "constellationNames": false, "starNames": false, "planets": false },
+            "highlights": [
+              { "type": "trail", "ref": "body:Sun", "from": "2026-06-21 05:00", "to": "2026-06-21 09:00", "stepHours": 0.5, "frame": "horizon" },
+              { "type": "trail", "ref": "body:Sun", "from": "2026-03-20 06:30", "to": "2026-03-20 10:30", "stepHours": 0.5, "frame": "horizon" },
+              { "type": "trail", "ref": "body:Sun", "from": "2026-12-21 07:00", "to": "2026-12-21 11:00", "stepHours": 0.5, "frame": "horizon" },
+              { "type": "label", "at": "altaz:58,3", "text": "June sunrise" },
+              { "type": "label", "at": "point:east", "text": "East: March and September" },
+              { "type": "label", "at": "altaz:121,3", "text": "December sunrise" }
+            ]
+          },
+          {
+            "caption": "Facing south at midday. Whatever the season, the Sun crosses due south at its highest point of the day: 73° up in June, 49° at the equinoxes, only 26° in December.",
+            "time": "2026-03-20 13:00",
+            "view": { "az": 180, "alt": 40, "fov": 150 },
+            "layers": { "constellationLines": false, "constellationNames": false, "starNames": false, "planets": false },
+            "highlights": [
+              { "type": "trail", "ref": "body:Sun", "from": "2026-06-21 09:00", "to": "2026-06-21 17:00", "stepHours": 0.5, "frame": "horizon" },
+              { "type": "trail", "ref": "body:Sun", "from": "2026-03-20 09:00", "to": "2026-03-20 17:00", "stepHours": 0.5, "frame": "horizon" },
+              { "type": "trail", "ref": "body:Sun", "from": "2026-12-21 09:00", "to": "2026-12-21 15:00", "stepHours": 0.5, "frame": "horizon" },
+              { "type": "label", "at": "point:south", "text": "South" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "heading": "Why sky maps have east and west swapped",
+      "body": [
+        "On a street map with north at the top, east is on the right. On a star chart with north at the top, east is on the left. Nobody made a mistake. A street map shows the ground as seen from above, looking down. A star chart shows the sky as seen from below, looking up, and turning over flips left and right.",
+        "To use a printed chart, hold it over your head with its north edge toward north; then every direction on it matches the real one. Starhop does this for you: whichever way the view faces, it shows the sky as you would really see it. Face south and east is on your left. Face north and east is on your right."
+      ],
+      "demo": {
+        "title": "Turn around and the sides swap",
+        "controls": [],
+        "steps": [
+          {
+            "caption": "Facing north. East is to your right and west to your left, just as on a street map.",
+            "time": "month:4 21:00",
+            "view": { "az": 0, "alt": 35, "fov": 150 },
+            "highlights": [
+              { "type": "label", "at": "point:north", "text": "North" },
+              { "type": "label", "at": "altaz:65,2", "text": "East this way" },
+              { "type": "label", "at": "altaz:295,2", "text": "West this way" }
+            ]
+          },
+          {
+            "caption": "Turn around to face south. Now east is on your left and west on your right. This is how most star charts are drawn, because most of the sky's action is in the south.",
+            "time": "month:4 21:00",
+            "view": { "az": 180, "alt": 35, "fov": 150 },
+            "highlights": [
+              { "type": "label", "at": "point:south", "text": "South" },
+              { "type": "label", "at": "altaz:115,2", "text": "East this way" },
+              { "type": "label", "at": "altaz:245,2", "text": "West this way" }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "keyPoints": [
+    "The Big Dipper's Pointers, Merak and Dubhe, aim at Polaris; face Polaris and you face north.",
+    "From Brooklyn, Polaris is always about 41° above the northern horizon and never moves noticeably.",
+    "The Sun rises due east only near the equinoxes: northeast in June, southeast in December.",
+    "The Sun, Moon and planets are highest when they are due south.",
+    "Star charts show the sky from below, so with north up, east is on the left."
+  ],
+  "examples": [],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "You are facing Polaris. Which direction is on your right-hand side?",
+      "choices": ["West", "East", "South", "North"],
+      "answerIndex": 1,
+      "explanation": "Facing Polaris means facing north, so east is to your right, west to your left and south behind you."
+    },
+    {
+      "id": "q2",
+      "prompt": "Which two stars of the Big Dipper do you use to find Polaris?",
+      "choices": [
+        "The two at the end of the handle",
+        "The two where the handle joins the bowl",
+        "The two at the end of the bowl farthest from the handle",
+        "The middle star of the handle and its faint companion"
+      ],
+      "answerIndex": 2,
+      "explanation": "Merak and Dubhe, the Pointers, form the outer side of the bowl. A line from Merak through Dubhe, extended about five times, reaches Polaris."
+    },
+    {
+      "id": "q3",
+      "prompt": "It is late December in Brooklyn and you watch the Sun come up. Where on the horizon does it appear?",
+      "choices": ["In the southeast", "Exactly due east", "In the northeast", "Due south"],
+      "answerIndex": 0,
+      "explanation": "The Sun rises due east only near the equinoxes. In December it rises about 30° south of east; in June, about 30° north of east."
+    },
+    {
+      "id": "q4",
+      "prompt": "A star chart is printed with north at the top. Why is east on its left side?",
+      "choices": [
+        "It is a printing convention left over from telescopes that flip the image",
+        "The chart is drawn for the Southern Hemisphere",
+        "Stars move from left to right, so east must be on the left",
+        "The chart shows the sky as you look up at it, which mirrors a map made looking down"
+      ],
+      "answerIndex": 3,
+      "explanation": "A ground map is a view from above; a sky chart is a view from below. Hold the chart overhead with its north edge pointing north and the directions line up."
+    },
+    {
+      "id": "q5",
+      "prompt": "At two in the morning the Big Dipper has swung to a completely different position than it had at nine. What about Polaris?",
+      "choices": [
+        "It has set in the northwest",
+        "It has moved the same amount, staying beside the Dipper",
+        "It is in almost exactly the same place",
+        "It has risen much higher"
+      ],
+      "answerIndex": 2,
+      "explanation": "Polaris lies less than 1° from the point the sky turns around, so it barely moves. The Dipper circles it, with the Pointers always aimed at it."
+    },
+    {
+      "id": "q6",
+      "prompt": "No stars are out yet, but the Sun is at its highest for the day. Which way do shadows point in Brooklyn?",
+      "choices": ["East", "South", "West", "North"],
+      "answerIndex": 3,
+      "explanation": "At its highest the Sun is due south, so shadows fall due north."
+    }
+  ]
+}

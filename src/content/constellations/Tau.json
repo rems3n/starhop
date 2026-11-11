@@ -1,0 +1,318 @@
+{
+  "id": "Tau",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ancient Greek tradition, with a Mesopotamian forerunner; catalogued by Ptolemy",
+    "when": "Known to Homer and Hesiod (8th–7th century BCE); listed in the Almagest, 2nd century CE",
+    "history": [
+      "A bull has been seen in these stars for a very long time. Babylonian star lists such as the compendium called MUL.APIN name this group the Bull of Heaven, and the Greeks kept the animal while giving it stories of their own. Its two star clusters were famous before the constellation itself was: Homer and Hesiod both name the Pleiades and the Hyades, and Hesiod's *Works and Days* tells farmers to begin the harvest when the Pleiades rise at dawn and to plow when they set.",
+      "Ptolemy listed Taurus among the 48 constellations of his *Almagest* in the 2nd century CE. Only the front half of the animal is drawn: head, horns, shoulders and forelegs. The Greek poet Aratus called the bull 'crouching', and old star maps show it with its front legs folded. The storytellers explained the missing hindquarters by saying the bull is swimming, its back half under the waves.",
+      "The star at the tip of the northern horn, Elnath, was shared in Ptolemy's catalog between the Bull's horn and the foot of Auriga, the Charioteer. When astronomers drew official constellation borders in 1930, the star went to Taurus alone."
+    ]
+  },
+  "overview": "Taurus is the Bull, lowering his head at Orion. His face is a sideways V of stars with one bright orange eye, Aldebaran; two long horns reach up and to the left; and on his shoulder rides the Pleiades, the most famous star cluster in the sky. The V and the Pleiades are both easy to see, even from a city.",
+  "howToFind": [
+    "Start at Orion's Belt. Follow the line of the three Belt stars up and to the right for about two fists (20 degrees) and you arrive at a bright orange star, [[star:Aldebaran|Aldebaran]], the Bull's eye. Under a reasonably dark sky you will see that it sits at the lower-left tip of a V of fainter stars lying on its side: the [[dso:Mel25|Hyades]], the Bull's face. Keep going along the same line for another fist and a half and you reach a tiny, misty knot of stars shaped like a miniature dipper. That is the [[dso:M45|Pleiades]].",
+    "For the horns, extend the two arms of the V up and to the left for about a fist and a half each. The upper arm leads to bright [[star:Elnath|Elnath]], which also completes the pentagon of [[con:Aur|Auriga]]; the lower arm leads to fainter [[star:Tianguan|Tianguan]].",
+    "From latitude 40 degrees north Taurus rises in the east-northeast in the evenings of October and November, the Pleiades leading the way. It is high in the south on evenings from December through February and sets in the west-northwest in April. The Sun passes through Taurus from mid-May to late June, when the Bull cannot be seen."
+  ],
+  "shape": "A V of stars on its side, about half a fist across, with one bright orange star at the tip of its lower arm; two long lines running up and left from the V as horns, each about a fist and a half long; and a separate, tight little cluster a fist and a half to the upper right. In a city you will see Aldebaran, the Pleiades as a small smudge or a few stars, and Elnath; the V fills in under a suburban sky.",
+  "mainStars": [
+    {
+      "ref": "star:Aldebaran",
+      "note": "The Bull's glaring eye, an orange giant about 65 light-years away and the 14th-brightest star in the sky. Its name is Arabic for 'the follower', because it follows the Pleiades across the sky. It looks like part of the Hyades but is less than half as far away, a foreground star that happens to lie in the same direction."
+    },
+    {
+      "ref": "star:Elnath",
+      "note": "The tip of the northern horn, a blue-white star about 130 light-years away. Its Arabic name means 'the butting one'. It doubles as a corner of Auriga's pentagon, and the ancient Greeks counted it as belonging to both figures."
+    },
+    {
+      "ref": "star:Tianguan",
+      "note": "The tip of the southern horn, noticeably fainter than Elnath. It is the signpost for the Crab Nebula, which lies about one degree (two Moon-widths) to its northwest."
+    },
+    {
+      "ref": "star:Alcyone",
+      "note": "The brightest of the Pleiades, at the center of the cluster. A hot blue-white star around 440 light-years away, like its sisters."
+    },
+    {
+      "ref": "star:Ain",
+      "note": "The Bull's other eye, an orange giant at the tip of the V opposite Aldebaran. Unlike Aldebaran it is a true member of the Hyades cluster."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "dso:M45",
+      "equip": "naked-eye",
+      "note": "The Pleiades or Seven Sisters, a cluster of young blue stars about 440 light-years away. Most people see six stars in a tiny dipper shape a little wider than two full Moons; sharp eyes under dark skies see more. Binoculars are the best way to look: dozens of ice-blue stars fill the view."
+    },
+    {
+      "ref": "dso:Mel25",
+      "equip": "naked-eye",
+      "note": "The Hyades, the V of the Bull's face. At about 150 light-years it is the nearest star cluster to us, which is why it looks so large and loose. It is too big for a telescope; sweep it with binoculars and look for the many pairs of stars."
+    },
+    {
+      "ref": "star:θ2 Tau",
+      "equip": "naked-eye",
+      "note": "On the lower arm of the V, not far from Aldebaran, this star and its neighbor Theta-1 form a close pair that good eyes can split without help. Binoculars make it easy. Both stars belong to the Hyades."
+    },
+    {
+      "ref": "dso:M1",
+      "equip": "small-telescope",
+      "note": "The Crab Nebula, the wreck of a star that was seen to explode in the year 1054. In a small telescope under a dark sky it is a faint oval smudge near Tianguan, and in the city it is very difficult. What matters is what it is: the first object on Charles Messier's list, and the remains of a supernova that people watched happen."
+    },
+    {
+      "ref": "dso:NGC1647",
+      "equip": "binoculars",
+      "note": "A large, loose cluster a little over three degrees northeast of Aldebaran, between the horns. Binoculars show a faint grainy glow under a dark sky; a small telescope at low power shows a few dozen stars."
+    },
+    {
+      "ref": "star:λ Tau",
+      "equip": "naked-eye",
+      "note": "A star on the Bull's chest that dims noticeably for a few hours every four days or so, when a fainter companion star passes in front of it. It is one of the easiest eclipsing double stars to follow by eye."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Tau-europa",
+      "title": "Europa and the white bull",
+      "culture": "Greek and Roman",
+      "ancientSources": [
+        { "author": "Ovid", "work": "Metamorphoses, end of Book 2", "date": "c. 8 CE" },
+        { "author": "Ovid", "work": "Fasti, Book 5", "date": "early 1st century CE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.21 (citing Euripides)", "date": "1st century BCE – 2nd century CE" }
+      ],
+      "summary": "Zeus falls for Europa, a princess of Phoenicia, and comes to her on the beach disguised as a beautiful, gentle white bull. When she climbs onto his back he wades into the sea and swims with her to Crete. The bull that carried her is remembered in the sky as Taurus.",
+      "retelling": [
+        "Europa was the daughter of Agenor, king of Tyre on the coast of Phoenicia. She liked to go down to the shore with the other girls of the city, to pick flowers in the meadows above the sand.",
+        "Zeus saw her there and wanted her, and he knew better than to arrive as himself. He sent his son Hermes to drive the king's cattle down from the hill pastures toward the beach. Then the ruler of the gods put aside his thunderbolt and his dignity and joined the herd as a bull.",
+        "He made sure he was the handsomest bull anyone had ever seen. His hide was white as snow that no foot has marked. His horns were small and neat and seemed to be polished by hand, clearer than gemstones. Nothing about him threatened: his forehead was not lowered, and his eyes were mild. Europa was charmed, though at first she did not dare to touch him. Then she held out flowers to his mouth, and he kissed her hands. He frisked on the grass and lay down on the yellow sand and let her stroke his chest and hang garlands on his horns.",
+        "At last, growing bold, the princess climbed onto his back, not knowing whom she was sitting on. The bull got up and ambled, as if by chance, toward the water. He put his hooves in the shallows. Then he went deeper, and then he was swimming, and the shore was sliding away behind them. Europa looked back, terrified. She gripped a horn with one hand and steadied herself on his back with the other, and her dress streamed out in the wind. Ovid adds a sly detail in the *Fasti*: now and then the god dipped his back lower into the waves on purpose, so that she would cling to him more tightly.",
+        "He carried her across the sea to the island of Crete. There the horns vanished, the bull was gone, and Zeus stood in front of her as himself. Europa bore him sons, and one of them, Minos, became the great king of Crete. Ovid says that a third part of the world, the continent of Europe, took her name.",
+        "As for the bull, it went up into the sky. Euripides, according to Hyginus, said the Bull was set among the stars because it carried Europa safely to Crete. Look at the constellation and you can see why the story fit so well: only the front half of the animal is there, head and shoulders and forelegs, as though the rest were under water, still swimming."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Taurus: Europa and the bull",
+        "url": "http://www.ianridpath.com/startales/taurus.html"
+      },
+      "characters": ["Europa", "Zeus", "Hermes", "Agenor", "Minos"],
+      "questions": [
+        {
+          "id": "europa-q1",
+          "prompt": "Why did Zeus take the form of a bull?",
+          "choices": ["To escape the anger of Hera", "To fight the hunter Orion", "To get close to Europa without frightening her", "To hide among Hermes's stolen cattle"],
+          "answerIndex": 2,
+          "explanation": "Zeus disguised himself as a beautiful, gentle white bull and mingled with the king's herd so that Europa would come near and climb on his back."
+        },
+        {
+          "id": "europa-q2",
+          "prompt": "Where did the bull carry Europa?",
+          "choices": ["To the island of Crete", "To Mount Olympus", "To Egypt, on the banks of the Nile", "To the island of Chios"],
+          "answerIndex": 0,
+          "explanation": "The bull swam from the coast of Phoenicia to Crete, where Zeus revealed himself. Their son Minos later ruled the island."
+        },
+        {
+          "id": "europa-q3",
+          "prompt": "Europa was a princess of which city?",
+          "choices": ["Athens", "Sparta", "Thebes in Boeotia", "Tyre in Phoenicia"],
+          "answerIndex": 3,
+          "explanation": "She was the daughter of King Agenor of Tyre (Ovid also calls her the 'Sidonian' girl), on the coast of what is now Lebanon."
+        },
+        {
+          "id": "europa-q4",
+          "prompt": "How does the story explain why Taurus shows only the front half of a bull?",
+          "choices": ["Orion cut the bull in two", "The hindquarters are imagined under the sea as the bull swims", "Hera hid the other half behind Aries", "The rest was sacrificed on Crete"],
+          "answerIndex": 1,
+          "explanation": "Only the head, shoulders and forelegs are drawn. Storytellers said the back half is hidden beneath the waves as the bull swims to Crete."
+        },
+        {
+          "id": "europa-q5",
+          "prompt": "Who drove the royal cattle down to the shore at Zeus's request?",
+          "choices": ["Apollo", "Hermes", "Minos", "Agenor"],
+          "answerIndex": 1,
+          "explanation": "Zeus had his son Hermes (Mercury in Ovid's Latin) herd the king's cattle toward the beach so that he could slip in among them."
+        }
+      ]
+    },
+    {
+      "id": "Tau-io",
+      "title": "Io, the girl who became a heifer",
+      "culture": "Greek and Roman",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.21", "date": "1st century BCE – 2nd century CE" },
+        { "author": "Ovid", "work": "Fasti, Book 5", "date": "early 1st century CE" },
+        { "author": "Ovid", "work": "Metamorphoses, Book 1", "date": "c. 8 CE" }
+      ],
+      "summary": "A rival tradition says Taurus is not a bull at all but a cow: Io, a river-god's daughter whom Zeus turned into a white heifer to hide her from Hera. Guarded by hundred-eyed Argus and then driven across the world, she was finally restored in Egypt and honored as a goddess.",
+      "retelling": [
+        "Io was the daughter of Inachus, a river-god of Argos. Zeus desired her, and to keep what he was doing from his wife he pulled a blanket of dark cloud over the land in the middle of a bright day. Hera noticed the cloud. She knew her husband, and she came down to look.",
+        "By the time she arrived there was no girl to be seen. Zeus had felt her coming and turned Io into a heifer, glossy and white. Hera admired the animal, asked whose it was, and then, sweetly, asked to have it as a gift. Zeus could not refuse so small a thing without giving himself away. He handed Io over.",
+        "Hera did not trust the gift any more than the giver. She put the heifer under the guard of Argus, a watchman with a hundred eyes, who never closed more than a few of them at a time. Io grazed by day and was tied up at night. When she tried to complain, the sound that came out was a cow's lowing, and it frightened her. She wandered to the banks of her father's river, and Inachus did not know her.",
+        "Zeus could not bear it and sent Hermes to set her free. Hermes came as a shepherd, sat down beside Argus, and played his reed pipes and told stories through the long afternoon. One by one the hundred eyes drooped and shut. When the last was closed, Hermes killed the watchman. Hera took the eyes and set them in the tail of her bird, the peacock, where they still are.",
+        "Then she turned her anger on Io. In Ovid she sends a Fury to torment her; Ian Ridpath's retelling makes it a gadfly. Either way the heifer ran, maddened, from land to land, until she came to the bank of the Nile and could go no farther. There she sank to her knees and lifted her face to the sky. Zeus begged Hera to end it and swore the girl would trouble her no more. Hera relented. The horns shrank, the hooves split into fingers, and Io stood up as a woman again, though for a long time she was afraid to speak in case she mooed. In Egypt she was worshipped as a goddess.",
+        "This is why some ancient writers said the figure in the sky is a heifer and not a bull. Hyginus reports that when Io was transformed, Zeus, to make some amends, placed among the stars an image that looks like a bull in its foreparts but is dim behind. Ovid gives the same alternative in a single line: others say this constellation is the heifer of the Nile, who from a woman became a cow and from a cow a goddess."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Taurus: the alternative story of Io",
+        "url": "http://www.ianridpath.com/startales/taurus.html"
+      },
+      "characters": ["Io", "Zeus", "Hera", "Argus", "Hermes", "Inachus"],
+      "questions": [
+        {
+          "id": "io-q1",
+          "prompt": "Why did Zeus turn Io into a heifer?",
+          "choices": ["To punish her for boasting", "So she could swim to Crete", "To hide her from his wife Hera", "Because she asked to escape from Argus"],
+          "answerIndex": 2,
+          "explanation": "Hera was coming to investigate, so Zeus disguised Io as a white heifer. Hera then asked for the animal as a present."
+        },
+        {
+          "id": "io-q2",
+          "prompt": "Who guarded Io on Hera's orders?",
+          "choices": ["Argus, the watchman with a hundred eyes", "Cerberus, the three-headed dog", "The hunter Orion", "Her father Inachus"],
+          "answerIndex": 0,
+          "explanation": "Hera set hundred-eyed Argus to watch the heifer day and night, since some of his eyes were always open."
+        },
+        {
+          "id": "io-q3",
+          "prompt": "How did Hermes overcome Argus?",
+          "choices": ["He blinded him with a mirror", "He stole the heifer while Argus bathed", "He challenged him to a wrestling match", "He lulled all his eyes to sleep with music and stories, then killed him"],
+          "answerIndex": 3,
+          "explanation": "Disguised as a shepherd, Hermes played his pipes and talked until every eye closed. Hera afterward put the eyes in the peacock's tail."
+        },
+        {
+          "id": "io-q4",
+          "prompt": "Where did Io's wandering end, and what happened there?",
+          "choices": ["In Crete, where she married Minos", "At the Nile in Egypt, where she became a woman again and was honored as a goddess", "On Mount Nysa, where she nursed Dionysus", "At the river Eridanus, where she drowned"],
+          "answerIndex": 1,
+          "explanation": "Driven across the world, she reached the Nile. Hera relented, Io regained her human form, and she was worshipped in Egypt."
+        }
+      ]
+    },
+    {
+      "id": "Tau-pleiades",
+      "title": "The Pleiades: seven sisters and the one who hides",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.21", "date": "1st century BCE – 2nd century CE" },
+        { "author": "Ovid", "work": "Fasti, Book 4", "date": "early 1st century CE" },
+        { "author": "Eratosthenes", "work": "Catasterisms (as reported in Ridpath's Star Tales)", "date": "3rd century BCE (surviving summary is later)" },
+        { "author": "Hesiod", "work": "Works and Days 383–387", "date": "c. 700 BCE" }
+      ],
+      "summary": "The Pleiades were the seven daughters of the Titan Atlas and the sea-nymph Pleione. Six took gods as lovers and one married a mortal. People have long said seven sisters but counted only six stars, and the myths offer two explanations for the one who cannot be seen.",
+      "retelling": [
+        "Atlas, the Titan who carries the sky on his shoulders, had seven daughters by Pleione, a daughter of Ocean. They were named Maia, Electra, Taygete, Alcyone, Celaeno, Sterope and Merope, and together they were called the Pleiades.",
+        "Six of the seven were loved by gods. Zeus was the father of Maia's son Hermes, the messenger; of Electra's son Dardanus, from whom the kings of Troy descended; and of Taygete's son Lacedaemon, founder of Sparta. Poseidon was the lover of Alcyone and of Celaeno. Ares, the war-god, fathered a son on Sterope: Oenomaus, the chariot-racing king who appears in the story of Auriga.",
+        "The seventh sister, Merope, married a mortal man. He was Sisyphus of Corinth, the trickster who was later condemned to roll a boulder up a hill forever. Their son Glaucus was said to be the father of the hero Bellerophon.",
+        "How the sisters came to be stars is told in more than one way. The best-known account is that the hunter Orion chased them and their mother for seven years until Zeus, pitying them, opened a road into the sky. Hyginus also preserves an older-sounding tale from the poet Musaeus: when their brother Hyas was killed while hunting, some of Atlas's daughters died of grief and became the Hyades, and the rest, mourning their sisters in turn, became the Pleiades.",
+        "Then there is the puzzle the Greeks loved best. Everyone said there were seven Pleiades, but most people looking up could count only six. Where was the seventh? One answer, which Ridpath traces back to Eratosthenes and which Hyginus and Ovid repeat, is Merope. Alone among her sisters she had married a mortal, and she is ashamed of it, so her star is dim or she hides her face. The other answer is Electra. She was the mother of Dardanus, and when his city of Troy was taken and burned she could not bear to watch. Ovid says she covered her eyes with her hand. Hyginus says she left her sisters altogether and wanders the sky with her hair streaming loose as a comet.",
+        "The names you will find on a modern star chart were not assigned by the Greeks. Astronomers attached them to particular stars in the 1600s, after the telescope made the cluster easy to map, and they added the parents Atlas and Pleione at one end. By that scheme the faintest named sister is neither Merope nor Electra but Sterope. Go out and count for yourself. Six is the usual answer from a suburb; from a truly dark place, patient eyes can reach eight or more."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Taurus, part 2: the Pleiades and the 'missing' Pleiad",
+        "url": "http://www.ianridpath.com/startales/taurus2.html"
+      },
+      "characters": ["Atlas", "Pleione", "Maia", "Electra", "Taygete", "Alcyone", "Celaeno", "Sterope", "Merope", "Sisyphus", "Orion"],
+      "questions": [
+        {
+          "id": "sisters-q1",
+          "prompt": "Why, in one explanation, is Merope the 'missing' Pleiad?",
+          "choices": ["She was carried off by Orion", "She was the only sister to marry a mortal and hides in shame", "She was turned into a comet", "She was the youngest and smallest"],
+          "answerIndex": 1,
+          "explanation": "Merope married Sisyphus, a mortal, while her six sisters had gods for lovers. Her star was said to be dim because of her shame."
+        },
+        {
+          "id": "sisters-q2",
+          "prompt": "In the other explanation, why does Electra hide?",
+          "choices": ["She could not bear to see the fall of Troy, founded by her son's line", "She was blinded by King Oenopion", "She was punished by Hera for loving Zeus", "She fled from the scorpion"],
+          "answerIndex": 0,
+          "explanation": "Electra was the mother of Dardanus, ancestor of the Trojans. When Troy fell she covered her eyes (Ovid) or left the group as a comet (Hyginus)."
+        },
+        {
+          "id": "sisters-q3",
+          "prompt": "Which Pleiad was the mother of the god Hermes?",
+          "choices": ["Alcyone", "Taygete", "Celaeno", "Maia"],
+          "answerIndex": 3,
+          "explanation": "Maia bore Hermes to Zeus. The other two sisters loved by Zeus were Electra (mother of Dardanus) and Taygete (mother of Lacedaemon)."
+        },
+        {
+          "id": "sisters-q4",
+          "prompt": "Who were the parents of the seven Pleiades?",
+          "choices": ["Zeus and Europa", "Hyas and Aethra", "Atlas and Pleione", "Poseidon and Alcyone"],
+          "answerIndex": 2,
+          "explanation": "They were daughters of the Titan Atlas and the Oceanid Pleione, and the cluster takes its name from their mother."
+        },
+        {
+          "id": "sisters-q5",
+          "prompt": "Who was Merope's mortal husband?",
+          "choices": ["Sisyphus", "Oenomaus", "Dardanus", "Cephalus"],
+          "answerIndex": 0,
+          "explanation": "Merope married Sisyphus, the crafty king later condemned to push a boulder uphill forever."
+        }
+      ]
+    },
+    {
+      "id": "Tau-hyades",
+      "title": "The Hyades: the sisters who wept for Hyas",
+      "culture": "Greek and Roman",
+      "ancientSources": [
+        { "author": "Ovid", "work": "Fasti, Book 5", "date": "early 1st century CE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.21 (citing Musaeus and Pherecydes)", "date": "1st century BCE – 2nd century CE" }
+      ],
+      "summary": "The V of stars on the Bull's face is the Hyades, half-sisters of the Pleiades. Their brother Hyas was killed by a lioness while hunting, and they mourned him so bitterly that they were raised to the sky. A second tradition makes them the nymphs who nursed the infant god Dionysus.",
+      "retelling": [
+        "Before Atlas was made to carry the sky, he had children by Aethra, a daughter of Ocean: a band of daughters and one son. The son was the eldest, and his name was Hyas.",
+        "Hyas was a hunter from the time his beard first showed. As a boy he snared deer and was pleased with himself when he bagged a hare. As he grew he wanted more dangerous game, and he went after boar and lions. One day he tracked a lioness to her den, meaning to take her cubs. She had young to defend, and she killed him.",
+        "His mother wept for him, and so did Atlas. But his sisters' grief went beyond that of both parents. They would not stop crying. Hyginus, following the old poet Musaeus, says they wore themselves out with mourning and died of it.",
+        "Their devotion earned them the sky. They were set on the forehead of the Bull, and they took their name, Hyades, from the brother they had loved. Musaeus added a second chapter: Atlas's remaining daughters grieved so much for the dead sisters that they died too, and because there were more of them they were called the Pleiades.",
+        "The Greeks heard something else in the name as well. *Hyein* is the Greek word for 'to rain', and Ovid says Greek sailors called these stars the Hyades for that reason. When the cluster rose or set in the dawn or dusk twilight at certain times of year, it was taken as a sign of wet weather coming. Rain and tears fit together easily, and the weeping sisters became the rainy stars. The Romans, less romantic, called them the *suculae*, the piglets.",
+        "There was a different story about who they were, and Ovid mentions it in the same breath. Some say the Hyades nursed Bacchus, he writes, meaning the wine-god Dionysus. Hyginus gives the details from the mythographer Pherecydes: they were seven nymphs of Dodona named Ambrosia, Eudora, Pedile, Coronis, Polyxo, Phyto and Thyone, who cared for the baby god and delivered him safely to his aunt Ino at Thebes. For that service Zeus thanked them by placing them among the stars. No two ancient lists of their names agree, and astronomers never did assign the names to individual stars, so the V of the Bull's face remains simply the Hyades."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Taurus: the Hyades, the face of the bull",
+        "url": "http://www.ianridpath.com/startales/taurus.html"
+      },
+      "characters": ["Hyas", "the Hyades", "Atlas", "Aethra", "Dionysus", "Zeus"],
+      "questions": [
+        {
+          "id": "hyades-q1",
+          "prompt": "How did Hyas, the brother of the Hyades, die?",
+          "choices": ["He was stung by a scorpion", "He drowned in the river Eridanus", "He was killed by a lioness while hunting", "He was thrown from a chariot"],
+          "answerIndex": 2,
+          "explanation": "Hyas went after a lioness and her cubs and was killed. His sisters' endless mourning won them a place in the sky."
+        },
+        {
+          "id": "hyades-q2",
+          "prompt": "What does the Greek word behind one explanation of the name 'Hyades' mean?",
+          "choices": ["To rain", "To shine", "To weep", "To follow"],
+          "answerIndex": 0,
+          "explanation": "Ovid derives the name from *hyein*, 'to rain', because the cluster's risings and settings were signs of rainy weather. The other derivation is from the brother Hyas."
+        },
+        {
+          "id": "hyades-q3",
+          "prompt": "In the alternative tradition, which infant god did the Hyades nurse?",
+          "choices": ["Zeus", "Hermes", "Apollo", "Dionysus"],
+          "answerIndex": 3,
+          "explanation": "Pherecydes, quoted by Hyginus, said the Hyades were nymphs who nursed the infant Dionysus (Bacchus, or Liber to the Romans), and Zeus rewarded them with the stars."
+        },
+        {
+          "id": "hyades-q4",
+          "prompt": "Who was the father of both the Hyades and the Pleiades?",
+          "choices": ["Oceanus", "Atlas", "Orion", "Agenor"],
+          "answerIndex": 1,
+          "explanation": "Both groups were daughters of Atlas, by different mothers in most accounts (Aethra for the Hyades, Pleione for the Pleiades), so the two clusters are half-sisters."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Taurus is a constellation of the zodiac, the band of sky that the Sun, Moon and planets travel through. There is often a bright planet somewhere in or near the Bull, and the Moon passes through every month, sometimes covering stars of the Pleiades or Hyades.",
+    "The Hyades and Pleiades are both real clusters, families of stars born together. The Hyades are about 150 light-years away and the Pleiades about 440, so the Pleiades look smaller mainly because they are nearly three times as far.",
+    "The supernova that made the Crab Nebula was recorded by Chinese astronomers in 1054 and was bright enough to be seen in daylight for about three weeks. The nebula was found in 1731 by the English astronomer John Bevis, and it got its name from a drawing Lord Rosse made in 1844.",
+    "Roman writers called the Pleiades the Vergiliae. Hesiod's farming calendar, around 700 BCE, starts the harvest at their dawn rising and the plowing at their dawn setting.",
+    "In China the Pleiades were Mao, the 'hairy head', and the Hyades were Bi, a long-handled net for catching rabbits.",
+    "Two meteor showers, the Southern and Northern Taurids, appear to come from this part of the sky in late October and November. They are sparse but are known for slow, bright fireballs."
+  ]
+}

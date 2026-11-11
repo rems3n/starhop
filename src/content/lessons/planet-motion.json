@@ -1,0 +1,278 @@
+{
+  "id": "planet-motion",
+  "unit": "ecliptic",
+  "order": 3,
+  "title": "How the planets move",
+  "subtitle": "Evening stars, morning stars, and planets that are up all night",
+  "minutes": 7,
+  "sections": [
+    {
+      "heading": "Inside track: Mercury and Venus",
+      "body": [
+        "After this lesson you will be able to say when and where to look for each planet from one fact about it: where it is in its orbit relative to the Sun and Earth.",
+        "Mercury and Venus orbit closer to the Sun than we do. Looking in from outside, we see them swing from one side of the Sun to the other and back. They can never be opposite the Sun in our sky, so from Brooklyn they are never up in the middle of the night.",
+        "When one of them is east of the Sun it sets after the Sun and shows in the western sky at dusk: an evening star. When it is west of the Sun it rises first and shows in the east before dawn: a morning star. The widest swing is called greatest elongation. For Venus that is about 46°, which keeps it up for three hours or more after sunset. For Mercury it is between 18° and 28°, never clear of twilight for long. In between, each planet passes behind the Sun or between us and the Sun and is lost in its glare.",
+        "Venus takes about 19 months to go through the whole cycle, with roughly eight months as an evening star and eight as a morning star. Mercury does it in under four months, so it has several short appearances a year."
+      ],
+      "demo": {
+        "title": "Venus either side of the Sun",
+        "controls": [
+          "month-step",
+          "date-step"
+        ],
+        "steps": [
+          {
+            "caption": "March 22, 2028, 7:45 pm, looking west. Venus is at greatest elongation as an evening star, 46° from the Sun, which set half an hour ago. Step forward a month at a time and watch Venus sink back toward the Sun by June.",
+            "time": "2028-03-22 19:45",
+            "view": {
+              "az": 265,
+              "alt": 30,
+              "fov": 100
+            },
+            "layers": {
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "body:Venus",
+                "label": "Venus"
+              },
+              {
+                "type": "angle",
+                "from": "body:Sun",
+                "to": "body:Venus"
+              }
+            ]
+          },
+          {
+            "caption": "January 3, 2027, 6:15 am, looking southeast. Here Venus is at greatest elongation on the other side: 47° west of the Sun, rising more than three hours before it as the morning star.",
+            "time": "2027-01-03 06:15",
+            "view": {
+              "az": 140,
+              "alt": 25,
+              "fov": 100
+            },
+            "layers": {
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "body:Venus",
+                "label": "Venus"
+              },
+              {
+                "type": "angle",
+                "from": "body:Sun",
+                "to": "body:Venus"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "heading": "Outside track: Mars, Jupiter and Saturn",
+      "body": [
+        "The planets beyond Earth can be anywhere along the ecliptic, including straight opposite the Sun. That moment is called opposition, and it is the best time to see an outer planet. It rises at sunset, is highest around midnight and sets at sunrise, so it is up all night. Earth is passing between it and the Sun, so it is also at its closest and brightest.",
+        "After opposition the planet rises earlier each night. For a few months it is an evening object, already up when darkness falls and setting earlier and earlier. Then it sinks into the sunset glow and passes behind the Sun. That is conjunction, when the planet is invisible for weeks. It reappears before dawn and slowly works its way back to the next opposition.",
+        "Earth is on the faster inside lane, so we come round to lap Jupiter every 13 months and Saturn every 12 and a half. Mars moves nearly as fast as we do and takes about 26 months to catch, which is why good views of Mars are rare."
+      ],
+      "demo": {
+        "title": "Mars at opposition: up all night",
+        "controls": [
+          "time-scrub",
+          "play"
+        ],
+        "steps": [
+          {
+            "caption": "February 19, 2027, 6:30 pm, looking east. The Sun has just set behind you and Mars is coming up directly opposite it, with Jupiter above. The nearly full Moon happens to be right beside them tonight; a full Moon is at opposition too.",
+            "time": "2027-02-19 18:30",
+            "view": {
+              "az": 85,
+              "alt": 25,
+              "fov": 90
+            },
+            "layers": {
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "body:Mars",
+                "label": "Mars"
+              },
+              {
+                "type": "object",
+                "ref": "body:Jupiter",
+                "label": "Jupiter"
+              },
+              {
+                "type": "object",
+                "ref": "star:Regulus",
+                "label": "Regulus"
+              }
+            ]
+          },
+          {
+            "caption": "A quarter past midnight. Mars is due south and at its highest, 65° up, at the hour when the Sun is farthest below your feet.",
+            "time": "2027-02-20 00:15",
+            "view": {
+              "az": 180,
+              "alt": 50,
+              "fov": 110
+            },
+            "layers": {
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "body:Mars",
+                "label": "Mars"
+              },
+              {
+                "type": "object",
+                "ref": "body:Jupiter",
+                "label": "Jupiter"
+              }
+            ]
+          },
+          {
+            "caption": "6 am, looking west. Mars is going down as the eastern sky brightens. It has been up for the whole night.",
+            "time": "2027-02-20 06:00",
+            "view": {
+              "az": 280,
+              "alt": 25,
+              "fov": 90
+            },
+            "layers": {
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "body:Mars",
+                "label": "Mars"
+              }
+            ]
+          },
+          {
+            "caption": "The opposite case: Saturn at conjunction, midday on April 7, 2027, with the blue sky removed. Saturn is 2° from the Sun and cannot be seen at all for several weeks around this date.",
+            "time": "2027-04-07 12:00",
+            "view": {
+              "target": "body:Sun",
+              "fov": 30
+            },
+            "layers": {
+              "atmosphere": false,
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "body:Sun",
+                "label": "Sun"
+              },
+              {
+                "type": "object",
+                "ref": "body:Saturn",
+                "label": "Saturn"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "heading": "How fast they cross the zodiac",
+      "body": [
+        "Against the stars, the outer planets usually creep eastward, the same direction as the Sun and Moon. Their speed depends on the size of their orbit. Mars goes around the Sun in just under two years and normally crosses a zodiac constellation in a month or two. Jupiter takes almost 12 years, so it spends about a year in each constellation: learn where it is this year and you know roughly where it will be next year, one constellation to the east. Saturn takes 29 and a half years and lingers in each constellation for two years or more.",
+        "Mercury and Venus, tied to the Sun, average the Sun's pace of one lap a year, darting ahead of it and falling behind."
+      ],
+      "tryIt": "Find Jupiter or Saturn and note which zodiac constellation it is in and what time it rises. If it rises around sunset, it is near opposition and this is the month to look at it. If it is already in the west at dusk, catch it soon: it is heading for conjunction."
+    }
+  ],
+  "keyPoints": [
+    "Mercury and Venus stay near the Sun: evening stars in the west after sunset or morning stars in the east before sunrise, widest at greatest elongation.",
+    "Mars, Jupiter and Saturn are best at opposition: opposite the Sun, up all night, closest and brightest.",
+    "Near conjunction a planet is behind the Sun and invisible for weeks.",
+    "Jupiter moves about one zodiac constellation a year; Saturn takes two years or more per constellation; Mars a month or two."
+  ],
+  "examples": [],
+  "questions": [
+    {
+      "id": "pm-q1",
+      "prompt": "Why is Venus never seen high in the sky at midnight from Brooklyn?",
+      "choices": [
+        "It is too faint by then",
+        "Its orbit is inside Earth's, so it never gets more than about 47° from the Sun",
+        "It only shines by reflected moonlight",
+        "It sets at the same time as the Sun every day"
+      ],
+      "answerIndex": 1,
+      "explanation": "An inner planet can only swing a limited angle either side of the Sun, so it is confined to the hours after sunset or before sunrise."
+    },
+    {
+      "id": "pm-q2",
+      "prompt": "Jupiter is at opposition tonight. When does it rise?",
+      "choices": [
+        "Around sunrise",
+        "Around midnight",
+        "It does not rise",
+        "Around sunset"
+      ],
+      "answerIndex": 3,
+      "explanation": "At opposition a planet is opposite the Sun, so it rises as the Sun sets, is highest at midnight and sets at sunrise."
+    },
+    {
+      "id": "pm-q3",
+      "prompt": "Why is an outer planet brightest at opposition?",
+      "choices": [
+        "Earth is between it and the Sun, so it is at its closest to us",
+        "The planet is closest to the Sun then",
+        "It is full of reflected moonlight",
+        "The night is darker at midnight"
+      ],
+      "answerIndex": 0,
+      "explanation": "At opposition Earth is on the same side of the Sun as the planet, at the minimum distance for that lap."
+    },
+    {
+      "id": "pm-q4",
+      "prompt": "Jupiter is in Leo this year. Where will it most likely be three years from now?",
+      "choices": [
+        "Still in Leo",
+        "Back in Cancer",
+        "About three zodiac constellations farther east",
+        "On the opposite side of the sky"
+      ],
+      "answerIndex": 2,
+      "explanation": "Jupiter takes nearly 12 years to circle the 12 traditional zodiac constellations, about one a year, moving east."
+    },
+    {
+      "id": "pm-q5",
+      "prompt": "What is happening when Saturn is at conjunction?",
+      "choices": [
+        "It is opposite the Sun and up all night",
+        "It is on the far side of the Sun and hidden in its glare",
+        "It is passing in front of the Sun as a black dot",
+        "It is as far from the ecliptic as it can get"
+      ],
+      "answerIndex": 1,
+      "explanation": "At conjunction an outer planet lies beyond the Sun in the same direction, rising and setting with it."
+    },
+    {
+      "id": "pm-q6",
+      "prompt": "Venus is 40° east of the Sun. When and where do you look for it?",
+      "choices": [
+        "In the east before sunrise",
+        "In the south at midnight",
+        "In the west after sunset",
+        "It cannot be seen"
+      ],
+      "answerIndex": 2,
+      "explanation": "East of the Sun means it follows the Sun across the sky and sets after it: an evening star in the west."
+    }
+  ]
+}

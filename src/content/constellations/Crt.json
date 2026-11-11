@@ -1,0 +1,153 @@
+{
+  "id": "Crt",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); an older Greek figure",
+    "when": "2nd century CE (catalogued); known to Aratus in the 3rd century BCE",
+    "history": [
+      "Crater, the Cup, is one of the 48 constellations of Ptolemy's *Almagest* (about 150 CE). Its Greek name, Krater, does not mean a drinking cup in our sense: a krater was the large two-handled bowl in which the Greeks mixed wine with water. Aratus, about 275 BCE, placed it midway along the coils of the Water Snake, and the moral tale that explains it goes back at least to Eratosthenes in the 3rd century BCE.",
+      "Ptolemy noted that the star in the base of the bowl, now Alpha Crateris, was shared with [[con:Hya|Hydra]]. The Cup has always been drawn standing on the Water Snake's back, tilted toward the Crow, [[con:Crv|Corvus]], who stands a little farther along and cannot reach it."
+    ]
+  },
+  "overview": "Crater is the cup, or mixing bowl, that Apollo's crow was sent to fill. It is a faint goblet shape resting on the back of Hydra just to the right of Corvus, with no star brighter than magnitude 3.6, so it takes a dark sky to see as a picture.",
+  "howToFind": [
+    "Crater is highest in the south on spring evenings, in April and May. Find the small box of [[con:Crv|Corvus]] first (follow the arc of the Big Dipper's handle to [[star:Arcturus|Arcturus]], on to [[star:Spica|Spica]], and a little under two fists farther). Crater is the next thing to the right: its brightest star, [[star:δ Crt|Delta Crateris]], is about a fist and a half to the right (west) of [[star:Gienah|Gienah]], the top-right star of Corvus.",
+    "Another way in: from [[star:Denebola|Denebola]], the star at the tail end of [[con:Leo|Leo]], drop straight down three fists. Delta, [[star:Alkes|Alkes]] and [[star:γ Crt|Gamma Crateris]] make a small triangle that forms the bottom of the bowl; a wide half-circle of fainter stars opening to the upper left is the rim."
+  ],
+  "shape": "A goblet lying on its side: a small triangle of 4th-magnitude stars for the base and bowl, and a ragged arc of fainter stars for the rim, about a fist across in all. From a city you may see only Delta Crateris, if that. Under a dark sky the cup shape is surprisingly convincing.",
+  "mainStars": [
+    {
+      "ref": "star:δ Crt",
+      "note": "The brightest star of the Cup at magnitude 3.6, an orange giant in the middle of the bowl."
+    },
+    {
+      "ref": "star:Alkes",
+      "note": "Alpha Crateris, an orange star of magnitude 4.1 marking the base of the cup. The name comes from the Arabic for the cup. Ptolemy counted it as shared with Hydra."
+    },
+    {
+      "ref": "star:γ Crt",
+      "note": "A white star of magnitude 4.1 that completes the triangle with Delta and Alkes. A small telescope shows it as a double star with a faint close companion."
+    },
+    {
+      "ref": "star:β Crt",
+      "note": "Magnitude 4.5, at the bottom of the figure near the Water Snake's back."
+    }
+  ],
+  "notableObjects": [],
+  "stories": [
+    {
+      "id": "Crt-apollo-cup",
+      "title": "The cup the crow could not drink from",
+      "culture": "Greek and Roman",
+      "ancientSources": [
+        { "author": "Ovid", "work": "Fasti 2.243–266", "date": "early 1st century CE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.40", "date": "2nd century CE" },
+        { "author": "Eratosthenes", "work": "Catasterisms (as reported in Star Tales)", "date": "3rd century BCE" }
+      ],
+      "summary": "Apollo gave his crow a bowl and sent it for spring water. The bird came back days late with an excuse, and Apollo set the bowl in the sky, full and tilted toward the Crow, but forever out of its reach. The Cup is the instrument of the punishment.",
+      "retelling": [
+        "A sacrifice among the Greeks needed clean water, and when the god Apollo prepared to honor his father Zeus he wanted the best: water drawn from a living, running spring. He picked up a bowl. Ovid says it was gilded. He gave it to the crow, the bird that ran his errands, and told it not to delay the ceremony.",
+        "The bowl left the altar gripped in a pair of black claws and for a long time it did not come back. The crow had found a fig tree on the way, loaded with fruit that was not yet ripe, and had decided that the god's water could wait while the figs sweetened. So the bowl sat empty under a tree, day after day, while Apollo stood at his altar. In the end the god fetched other water and made his sacrifice without it.",
+        "When the crow had eaten its fill, it finally carried the bowl to the spring. What happened next depends on who is telling the story. In Ovid the bird came home with a water snake in its talons and blamed the snake for blocking the spring. In Hyginus it simply came flying in a great hurry with the bowl brimming, as if speed now could make up for the days lost.",
+        "Neither approach worked on the god of prophecy. Apollo ruled that the crow should go thirsty every year for as long as figs are ripening on the tree. And he found a use for the bowl that had caused the trouble.",
+        "He set it among the stars, full of water, on the back of the Water Snake. He set the Crow on the same long back, close by. The Cup leans toward the bird, as old star atlases love to draw it, so that the water is in plain view. But the Snake lies between them, and the Crow can only peck at its coils and look. Hyginus puts it plainly: the god wished to show the crow's thirst, so he placed the bowl among the constellations and the snake beneath it to hold the bird back.",
+        "That is why this dim little figure matters more than its stars deserve. Without the Cup the scene overhead would only be a bird standing on a snake. With it, the picture becomes a sentence being served. Look a fist and a half to the right of the bright box of [[con:Crv|Corvus]] on a spring night and you will find it, still full."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Corvus and Crater, the crow and the cup",
+        "url": "http://www.ianridpath.com/startales/corvusandcrater.html"
+      },
+      "characters": ["Apollo", "the crow", "the water snake", "Zeus"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "What was the bowl meant to hold when Apollo handed it to the crow?",
+          "choices": ["Wine for a feast", "Figs for the altar", "Water from a running spring", "Oil for a lamp"],
+          "answerIndex": 2,
+          "explanation": "Apollo wanted fresh spring water for a sacrifice to Zeus."
+        },
+        {
+          "id": "q2",
+          "prompt": "In the sky, how is the Cup placed in relation to the Crow?",
+          "choices": ["Close by and tilted toward him, but out of reach", "Balanced on the Crow's back", "On the opposite side of the sky", "Under the Crow's feet"],
+          "answerIndex": 0,
+          "explanation": "The Cup stands near the Crow on Hydra's back, in full view, with the Water Snake keeping the bird away."
+        },
+        {
+          "id": "q3",
+          "prompt": "What did the Greek word krater actually refer to?",
+          "choices": ["A small drinking cup", "A water jar carried on the head", "A cooking pot", "A large bowl for mixing wine with water"],
+          "answerIndex": 3,
+          "explanation": "A krater was the big two-handled mixing bowl of a Greek banquet, not an individual cup."
+        },
+        {
+          "id": "q4",
+          "prompt": "To which god was Apollo preparing to sacrifice?",
+          "choices": ["Poseidon", "Zeus", "Dionysus", "Hermes"],
+          "answerIndex": 1,
+          "explanation": "Ovid says Apollo was preparing a solemn rite for Jupiter, the Roman name for Zeus."
+        }
+      ]
+    },
+    {
+      "id": "Crt-mastusius",
+      "title": "The bowl of Mastusius",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.40 (citing the historian Phylarchus)", "date": "2nd century CE" }
+      ],
+      "summary": "Hyginus preserves a darker explanation from the historian Phylarchus. A king who sacrificed other men's daughters to end a plague, while sparing his own, was repaid by a grieving father with a terrible drink from a mixing bowl. The bowl was set in the stars as a warning that wrongs are not forgotten.",
+      "retelling": [
+        "On the peninsula across the strait from Troy, where people said the hero Protesilaus was buried, stood a city called Elaeusa. Its king was a man named Demophon. In his reign a plague struck the land, and the citizens began to die in frightening numbers.",
+        "Demophon sent to the oracle of Apollo to ask for a cure. The answer was a hard one: every year one girl of noble family must be sacrificed to the gods of the city. The king obeyed, and he made it look fair by drawing lots among the daughters of the nobles. But he quietly left his own daughters out of the draw.",
+        "This went on, year after year, until one of the leading citizens, Mastusius, refused. He said his daughter's name would not go in unless the king's daughters went in as well. Demophon was furious. He did not bother with the lottery at all that year. He simply had the daughter of Mastusius killed.",
+        "Mastusius hid what he felt. He said that he bore no grudge, since after all the lot might have fallen on his girl anyway. He made himself agreeable, and as time passed the king forgot the matter and came to think of him as a friend. Then Mastusius announced that he was holding a solemn sacrifice and invited the king and the king's daughters to attend.",
+        "Demophon was held up by some business of state and sent his daughters on ahead. That was what Mastusius had hoped for. He killed them, mixed their blood with wine in a bowl, and when the king arrived had the bowl handed to him to drink. The king asked where his daughters were, and was told.",
+        "Demophon ordered Mastusius to be thrown into the sea, and the bowl with him. The headland from which he was thrown was afterward called Mastusian, and the harbor below it was called the Bowl. And the astronomers of old, Hyginus says, drew the bowl among the stars so that people would remember that no one profits from an evil deed without paying for it, and that hatred is not easily forgotten.",
+        "It is a grim story for such a faint constellation, and Hyginus offers it only as one explanation among several. But it suits the object: a krater was the bowl in which wine was mixed at a feast."
+      ],
+      "link": {
+        "site": "ToposText",
+        "label": "Hyginus, Astronomica 2.40 (translated by Mary Grant)",
+        "url": "https://topostext.org/work/207"
+      },
+      "characters": ["Demophon", "Mastusius", "Phylarchus"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "What did the oracle demand to end the plague at Elaeusa?",
+          "choices": ["A golden bowl for Apollo's temple", "The yearly sacrifice of a girl of noble family", "The exile of King Demophon", "A hundred oxen"],
+          "answerIndex": 1,
+          "explanation": "The oracle said one noble girl must be sacrificed every year to the city's gods."
+        },
+        {
+          "id": "q2",
+          "prompt": "How did King Demophon cheat in carrying out the oracle's order?",
+          "choices": ["He sacrificed animals instead", "He bribed the oracle", "He drew lots only among foreigners", "He left his own daughters out of the lottery"],
+          "answerIndex": 3,
+          "explanation": "He chose victims by lot from other noble families while keeping his own daughters safe."
+        },
+        {
+          "id": "q3",
+          "prompt": "Why did the astronomers place the bowl among the stars, according to Hyginus?",
+          "choices": ["As a reminder that evil deeds are repaid and grudges are not forgotten", "To honor Demophon's piety", "To mark the end of the plague", "To celebrate the invention of wine"],
+          "answerIndex": 0,
+          "explanation": "Hyginus says it was pictured in the stars so that people would remember that no one profits from an evil deed with impunity."
+        },
+        {
+          "id": "q4",
+          "prompt": "Which ancient writer does Hyginus credit with this tale?",
+          "choices": ["Aratus", "Homer", "Phylarchus", "Ovid"],
+          "answerIndex": 2,
+          "explanation": "Hyginus introduces it as a tale written by the historian Phylarchus."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Hyginus lists two more identities for the Cup without telling them as stories here: some, following Eratosthenes, said it was the bowl Icarius used when he first showed wine to mankind; others said it was the jar in which the giants Otus and Ephialtes imprisoned the war god Ares.",
+    "Like Corvus next door, Crater's Alpha star is not its brightest: Delta outshines Alkes by half a magnitude.",
+    "In Chinese astronomy the stars of Crater, with some of Hydra, formed Yi, the wings of the Red Bird of the South, the 27th lunar mansion."
+  ]
+}

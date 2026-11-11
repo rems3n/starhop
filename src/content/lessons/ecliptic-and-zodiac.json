@@ -1,0 +1,301 @@
+{
+  "id": "ecliptic-and-zodiac",
+  "unit": "ecliptic",
+  "order": 1,
+  "title": "The ecliptic and the zodiac",
+  "subtitle": "The one line in the sky that the Sun, Moon and planets all follow",
+  "minutes": 6,
+  "sections": [
+    {
+      "heading": "The Sun's yearly path",
+      "body": [
+        "After this lesson you will be able to trace the ecliptic across your own sky on any night, name the constellations along it, and explain why the summer Sun is high and the winter Sun low.",
+        "Earth circles the Sun once a year. From our moving platform the Sun seems to drift eastward against the background stars, about 1° a day, and returns to its starting point after a year. The line it follows is called the ecliptic. It is simply the plane of Earth's orbit drawn on the sky. You cannot see the stars behind the Sun, but you can work out where it is, and astronomers have tracked it for thousands of years.",
+        "The constellations the ecliptic passes through are the zodiac. By the official boundaries drawn by the International Astronomical Union in 1930 there are thirteen: Pisces, Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpius, Ophiuchus, Sagittarius, Capricornus and Aquarius. The Sun spends very unequal times in them: about six weeks in sprawling Virgo, under a week in Scorpius, and nearly three weeks in Ophiuchus, which tradition leaves out."
+      ],
+      "demo": {
+        "title": "The Sun among the stars",
+        "controls": [
+          "play"
+        ],
+        "steps": [
+          {
+            "caption": "A star chart with daylight removed. The dots show the Sun every 15 days from the March equinox (right) to the September equinox (left), sliding east through Pisces, Aries, Taurus, Gemini, Cancer and Leo. The line it follows is the ecliptic.",
+            "time": "2027-06-21 13:00",
+            "view": {
+              "target": "radec:90,15",
+              "fov": 150,
+              "mount": "equatorial"
+            },
+            "layers": {
+              "atmosphere": false,
+              "ground": false,
+              "horizon": false,
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "trail",
+                "ref": "body:Sun",
+                "from": "2027-03-20 12:00",
+                "to": "2027-09-23 12:00",
+                "stepHours": 360,
+                "frame": "stars",
+                "dateLabels": true
+              },
+              {
+                "type": "constellation",
+                "id": "Ari",
+                "label": true
+              },
+              {
+                "type": "constellation",
+                "id": "Tau",
+                "label": true
+              },
+              {
+                "type": "constellation",
+                "id": "Gem",
+                "label": true
+              },
+              {
+                "type": "constellation",
+                "id": "Cnc",
+                "label": true
+              },
+              {
+                "type": "constellation",
+                "id": "Leo",
+                "label": true
+              }
+            ]
+          },
+          {
+            "caption": "The thirteenth zodiac constellation. In 2027 the Sun crosses a corner of Scorpius from November 24 to 30, then spends November 30 to December 19 inside Ophiuchus before entering Sagittarius. The dots are five days apart.",
+            "time": "2027-12-05 12:00",
+            "view": {
+              "target": "radec:255,-22",
+              "fov": 60,
+              "mount": "equatorial"
+            },
+            "layers": {
+              "atmosphere": false,
+              "ground": false,
+              "horizon": false,
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "trail",
+                "ref": "body:Sun",
+                "from": "2027-11-15 12:00",
+                "to": "2027-12-25 12:00",
+                "stepHours": 120,
+                "frame": "stars",
+                "dateLabels": true
+              },
+              {
+                "type": "constellation",
+                "id": "Sco",
+                "boundary": true,
+                "label": true
+              },
+              {
+                "type": "constellation",
+                "id": "Oph",
+                "boundary": true,
+                "label": true
+              },
+              {
+                "type": "constellation",
+                "id": "Sgr",
+                "boundary": true,
+                "label": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "heading": "Constellations and signs",
+      "body": [
+        "The twelve signs of astrology share their names with zodiac constellations but are not the same thing. A sign is one of twelve equal 30° slices of the ecliptic, counted from the point where the Sun stands at the March equinox. A constellation is a patch of sky of irregular size with fixed boundaries among the stars.",
+        "When the signs were laid out, more than two thousand years ago, each roughly matched its constellation. Since then a slow wobble of Earth's axis, called precession, has shifted the equinox point westward by about one whole constellation. So on a date when the sign in a horoscope column is Aries, the Sun is actually in front of the stars of Pisces. In this course, names always mean the constellations."
+      ]
+    },
+    {
+      "heading": "A tilted path",
+      "body": [
+        "Earth's axis is tilted 23.4° to its orbit, so the ecliptic is tilted 23.4° to the celestial equator. For half the year the Sun is north of the equator and for half it is south. Around June 21 it is at its farthest north: from Brooklyn it climbs 73° high at midday and stays up for 15 hours. Around December 21 it is at its farthest south, only 26° up at noon, and the day lasts barely 9 hours. That difference in the height of the Sun and the length of the day, and not any change in distance, is what makes the seasons.",
+        "At night the picture reverses. The part of the ecliptic that is up at midnight is the part opposite the Sun. A full Moon is opposite the Sun too, so the full Moons of winter ride high overhead, where the summer Sun was, and the full Moons of summer skim low across the south. Planets follow the same rule: one that is opposite the Sun in winter is high, in summer low."
+      ],
+      "demo": {
+        "title": "High path, low path",
+        "controls": [
+          "time-scrub"
+        ],
+        "steps": [
+          {
+            "caption": "Facing south at midday on June 21. Three daily arcs of the Sun, marked every hour: the top one is today, the middle one the March equinox, the bottom one December 21. At noon the Sun stands 73°, 49° and 26° high.",
+            "time": "2027-06-21 13:00",
+            "view": {
+              "az": 180,
+              "alt": 40,
+              "fov": 150
+            },
+            "highlights": [
+              {
+                "type": "trail",
+                "ref": "body:Sun",
+                "from": "2027-06-21 05:30",
+                "to": "2027-06-21 20:30",
+                "stepHours": 1,
+                "frame": "horizon"
+              },
+              {
+                "type": "trail",
+                "ref": "body:Sun",
+                "from": "2027-03-20 07:00",
+                "to": "2027-03-20 19:00",
+                "stepHours": 1,
+                "frame": "horizon"
+              },
+              {
+                "type": "trail",
+                "ref": "body:Sun",
+                "from": "2027-12-21 07:30",
+                "to": "2027-12-21 16:30",
+                "stepHours": 1,
+                "frame": "horizon"
+              },
+              {
+                "type": "label",
+                "at": "altaz:180,76",
+                "text": "June 21"
+              },
+              {
+                "type": "label",
+                "at": "altaz:180,52",
+                "text": "March 20"
+              },
+              {
+                "type": "label",
+                "at": "altaz:180,29",
+                "text": "December 21"
+              }
+            ]
+          },
+          {
+            "caption": "Midnight under the full Moon of December 13, 2027. The Moon is 75° up, almost overhead, on the stretch of the ecliptic where the June Sun stands.",
+            "time": "2027-12-13 23:59",
+            "view": {
+              "az": 180,
+              "alt": 50,
+              "fov": 140
+            },
+            "layers": {
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "body:Moon",
+                "label": "Full Moon, December: 75° high"
+              }
+            ]
+          },
+          {
+            "caption": "The full Moon of June 18–19, 2027 at 1 am, as high as it gets: 22°, about two fists. It follows the low path of the winter Sun.",
+            "time": "2027-06-19 01:00",
+            "view": {
+              "az": 180,
+              "alt": 50,
+              "fov": 140
+            },
+            "layers": {
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "body:Moon",
+                "label": "Full Moon, June: 22° high"
+              }
+            ]
+          }
+        ]
+      },
+      "tryIt": "Tonight, find the Moon or any bright planet and one other of them, or a zodiac star such as Aldebaran, Regulus, Spica or Antares. Sweep your arm from one to the other and on across the sky. That arc is the ecliptic: the Sun was on it today."
+    }
+  ],
+  "keyPoints": [
+    "The ecliptic is the Sun's yearly path among the stars: the plane of Earth's orbit seen from inside.",
+    "Thirteen constellations lie on it, including Ophiuchus; the twelve astrological signs are equal 30° slices that no longer line up with the constellations.",
+    "The ecliptic is tilted 23.4° to the celestial equator, which gives the high summer Sun, the low winter Sun and the seasons.",
+    "At night the ecliptic does the opposite of the daytime Sun: high on winter nights, low on summer nights."
+  ],
+  "examples": [],
+  "questions": [
+    {
+      "id": "ez-q1",
+      "prompt": "What is the ecliptic?",
+      "choices": [
+        "The path the Moon's shadow traces on Earth",
+        "The Sun's apparent yearly path among the stars",
+        "The line of the horizon at sunset",
+        "The band of the Milky Way"
+      ],
+      "answerIndex": 1,
+      "explanation": "The ecliptic is the plane of Earth's orbit projected on the sky, which is where the Sun appears from Earth over a year."
+    },
+    {
+      "id": "ez-q2",
+      "prompt": "Which constellation does the Sun pass through that is not one of the twelve traditional zodiac figures?",
+      "choices": [
+        "Orion",
+        "Cetus",
+        "Ophiuchus",
+        "Auriga"
+      ],
+      "answerIndex": 2,
+      "explanation": "By the modern boundaries the Sun spends nearly three weeks in Ophiuchus, between Scorpius and Sagittarius."
+    },
+    {
+      "id": "ez-q3",
+      "prompt": "Why is the full Moon so high in the sky in December?",
+      "choices": [
+        "The Moon is closer to Earth in winter",
+        "Cold air bends its light upward",
+        "The Moon's orbit tilts by 23° in winter",
+        "A full Moon is opposite the Sun, so it sits on the part of the ecliptic where the summer Sun stands"
+      ],
+      "answerIndex": 3,
+      "explanation": "When the Sun is at the low, southern end of the ecliptic, the point opposite it, where a full Moon must be, is at the high, northern end."
+    },
+    {
+      "id": "ez-q4",
+      "prompt": "How does an astrological sign differ from a zodiac constellation?",
+      "choices": [
+        "A sign is an equal 30° slice of the ecliptic measured from the equinox; a constellation is a patch of stars of irregular size",
+        "They are two names for the same thing",
+        "A sign is larger than a constellation",
+        "Signs are in the northern sky, constellations in the southern"
+      ],
+      "answerIndex": 0,
+      "explanation": "Precession has slid the equal signs about one constellation west of the star patterns they were named for."
+    },
+    {
+      "id": "ez-q5",
+      "prompt": "What causes the seasons?",
+      "choices": [
+        "Earth is closer to the Sun in summer",
+        "The Sun gives off more heat in summer",
+        "Earth's axis is tilted 23.4°, changing the height of the Sun and the length of the day",
+        "The Moon blocks sunlight in winter"
+      ],
+      "answerIndex": 2,
+      "explanation": "The tilt puts the Sun high and the days long in summer, low and short in winter. Earth is in fact closest to the Sun in early January."
+    }
+  ]
+}

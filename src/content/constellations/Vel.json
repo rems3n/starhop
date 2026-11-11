@@ -1,0 +1,136 @@
+{
+  "id": "Vel",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Nicolas-Louis de Lacaille (as a division of the ancient Greek constellation Argo Navis, catalogued by Ptolemy)",
+    "when": "1756 (divided from Argo Navis); the ship itself was known by the 3rd century BCE",
+    "history": [
+      "Vela is the sails of the ship Argo. The Greeks knew a single great constellation here, Argo Navis, the ship in which Jason and the Argonauts fetched the Golden Fleece; Aratus described it about 275 BCE and Ptolemy listed it in the *Almagest* about 150 CE. On the old charts the sail is usually shown furled around a spar on the mast rather than spread to the wind.",
+      "The French astronomer Nicolas-Louis de Lacaille observed the southern sky from the Cape of Good Hope in 1751–52 and, finding Argo too large, divided it in his catalog published in 1756 into the hull ([[con:Car|Carina]]), the stern ([[con:Pup|Puppis]]) and the sails, which he first called Voilure du Navire and Latinized as Vela in 1763. He explained that he counted as the sails everything outside the vessel between its edges and the spar on which the sail is reefed.",
+      "Lacaille relettered the stars at the same time, but with one run of Greek letters for the whole ship. Alpha and Beta fell in Carina, so Vela has neither; its lettering starts with Gamma, its brightest star, and Delta. The four stars that Ptolemy had placed in Argo's mast were not given to Vela at all: Lacaille used them for his new constellation [[con:Pyx|Pyxis]], the compass. In 1844 John Herschel proposed turning Pyxis back into a fourth part of the ship called Malus, the Mast, but the idea did not catch on."
+    ]
+  },
+  "overview": "Vela is the sails of the ship Argo, a wide ring of bright stars in the southern Milky Way between Carina and the faint stars of Antlia. It is a fine sight from the southern hemisphere, but from Brooklyn all of its bright stars except one are below the horizon, and that one barely clears it.",
+  "howToFind": [
+    "From Brooklyn, Vela is very nearly a lost cause. Its northern edge rises a little over one fist above the southern horizon on evenings in March, but that part is empty of bright stars. The only prominent star that gets up at all is orange [[star:Suhail|Suhail]] (Lambda Velorum), which reaches about 6 degrees, roughly three finger-widths, above a perfectly flat horizon. To try for it, find [[star:Alphard|Alphard]], the lone bright star of Hydra, and look three and a half fists straight below it when Alphard is due south. Binoculars and a sea horizon are almost essential. The brightest star, [[star:γ2 Vel|Gamma Velorum]], rises only 2 degrees and is not realistically visible; everything south of it never rises.",
+    "From the tropics or the southern hemisphere, Vela is easy. It lies between brilliant [[star:Canopus|Canopus]] and the Southern Cross, [[con:Cru|Crux]]. About halfway along that line look for the False Cross, a large kite of four stars: two of its stars, [[star:Markeb|Markeb]] and [[star:Alsephina|Alsephina]], belong to Vela, and the other two to Carina. Gamma Velorum is about a fist to the northwest of Alsephina, and Suhail a little more than a fist to its north."
+  ],
+  "shape": "A rough oval or octagon of 2nd- and 3rd-magnitude stars about two fists across, with the False Cross attached at its southern edge. It does not look much like a sail, but the ring is easy to trace in a dark southern sky. From Brooklyn there is no shape to see, only Suhail on the horizon on the clearest nights.",
+  "mainStars": [
+    {
+      "ref": "star:γ2 Vel",
+      "note": "Gamma Velorum, magnitude 1.8, the brightest star of the Sails. It is a pair of very hot stars, one of them a Wolf-Rayet star, a rare type that is blowing off its outer layers; it is the nearest and brightest of its kind in the sky. Binoculars show a 4th-magnitude companion beside it. Not visible from Brooklyn."
+    },
+    {
+      "ref": "star:Alsephina",
+      "note": "Delta Velorum, a white star of magnitude 1.9 about 80 light-years away and one corner of the False Cross. It is actually several stars, two of which eclipse each other every 45 days. Never rises from Brooklyn."
+    },
+    {
+      "ref": "star:Suhail",
+      "note": "Lambda Velorum, an orange supergiant of magnitude 2.2 about 550 light-years away, and the only bright star of Vela that rises over New York, just barely."
+    },
+    {
+      "ref": "star:Markeb",
+      "note": "Kappa Velorum, a blue-white star of magnitude 2.5 at the top of the False Cross. Never rises from Brooklyn."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "star:γ2 Vel",
+      "equip": "binoculars",
+      "note": "A wide double star: steady binoculars split the brilliant blue-white primary from a 4th-magnitude companion, and a small telescope adds two fainter stars nearby. Southern latitudes only."
+    },
+    {
+      "ref": "dso:IC2391",
+      "equip": "naked-eye",
+      "note": "The Omicron Velorum Cluster, a bright, scattered group of stars near the False Cross, visible to the eye as a small hazy knot and best in binoculars. Never rises from Brooklyn."
+    },
+    {
+      "ref": "dso:NGC2547",
+      "equip": "binoculars",
+      "note": "A pretty open cluster of about 50 stars two degrees south of Gamma Velorum. Southern hemisphere only."
+    },
+    {
+      "ref": "dso:NGC3132",
+      "equip": "small-telescope",
+      "note": "The Eight-Burst or Southern Ring Nebula, a bright planetary nebula on the border with Antlia: a small oval ring with a star in the middle. It does rise from Brooklyn, but only to about 9 degrees, so it is a target for a trip south."
+    },
+    {
+      "ref": "dso:NGC3201",
+      "equip": "binoculars",
+      "note": "A loose globular cluster of the 7th magnitude, discovered by James Dunlop in 1826. A soft round glow in binoculars from southern sites; only about 3 degrees up at best from Brooklyn."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Vel-fleece-and-medea",
+      "title": "The Golden Fleece and Medea",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Apollodorus", "work": "Library 1.9.23–27", "date": "1st–2nd century CE" },
+        { "author": "Apollonius of Rhodes", "work": "Argonautica (as reported in Star Tales)", "date": "3rd century BCE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.37", "date": "2nd century CE" }
+      ],
+      "summary": "At Colchis King Aeetes set Jason impossible tasks as the price of the Golden Fleece. The king's daughter Medea, a sorceress, fell in love with Jason and carried him through them, then fled with him aboard the Argo. The ship that brought them home was afterward placed among the stars.",
+      "retelling": [
+        "When the Argo had passed the Clashing Rocks and crossed the Black Sea, she ran up the river Phasis into the land of Colchis, and Jason went to the king. He told Aeetes plainly what he had been sent for: the golden fleece of the ram that had once carried the boy Phrixus to Colchis, which hung on an oak in the grove of Ares.",
+        "Aeetes did not refuse. He said that Jason could have it if, alone, he yoked the king's two bulls and sowed a field with them. These bulls were a gift from the smith god Hephaestus. They were huge and wild, their hooves were bronze, and they breathed fire. And the seed to be sown was dragon's teeth, half of those that Cadmus had once sown at Thebes, which Athena had given to the king.",
+        "Jason had no idea how to begin. But someone had been watching him. Medea, the king's daughter, was a sorceress, and she had fallen in love with the stranger. Afraid the bulls would kill him, she came to him in secret and offered a bargain: she would see him through the trial and put the fleece in his hands, if he would swear to marry her and take her away to Greece. Jason swore.",
+        "She gave him an ointment and told him to rub it on his shield, his spear and his body. For one day neither fire nor iron could hurt him. She told him, too, what the teeth would do. Next morning Jason walked up to the bulls through their flames, forced them under the yoke, and plowed. He sowed the teeth, and out of the furrows rose armed men. As Medea had advised, he threw stones into the thick of them from where they could not see him. Each thought his neighbor had struck him, they turned on one another, and Jason finished those who were left.",
+        "Aeetes had lost his wager and had no intention of paying. He meant to burn the Argo and kill her crew. Medea did not give him time. That night she led Jason to the grove where the fleece shone on its oak with the sleepless dragon coiled beneath. She put the creature to sleep with her drugs. Jason lifted down the fleece, and the two of them ran for the river. Before dawn the Argo was at sea.",
+        "The escape cost dearly. Apollodorus tells the cruelest version: Medea had brought her young brother Apsyrtus, and when her father's ships drew close she killed the boy and scattered his body on the water, so that Aeetes would stop to gather it. For that murder Zeus sent storms against the ship, until the witch Circe purified them. Medea's arts saved the crew once more off Crete, where she brought down Talos, the giant of bronze. In four months, says Apollodorus, the whole voyage was done, and Jason laid the fleece before Pelias.",
+        "Jason dedicated the Argo to Poseidon at the Isthmus of Corinth. The star-myth writers say she was set in the sky as the first ship to cross the sea; only her after half is shown, from stern to mast. Her furled sail and spar are the stars of [[con:Vel|Vela]], which carried Jason and Medea home, for better and, as their later story shows, for worse."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Argo Navis, the ship of the Argonauts",
+        "url": "http://www.ianridpath.com/startales/argo.html"
+      },
+      "characters": ["Jason", "Medea", "Aeetes", "Apsyrtus", "Circe", "Talos", "Pelias"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "What tasks did King Aeetes set Jason as the price of the fleece?",
+          "choices": ["To kill the dragon and drain the river", "To yoke fire-breathing bulls and sow dragon's teeth", "To out-row the Colchian fleet", "To capture the Harpies"],
+          "answerIndex": 1,
+          "explanation": "Jason had to yoke two bronze-footed, fire-breathing bulls and sow a field with dragon's teeth, from which armed men sprang."
+        },
+        {
+          "id": "q2",
+          "prompt": "What did Medea ask of Jason in return for her help?",
+          "choices": ["Half the Golden Fleece", "The throne of Iolcus", "That he marry her and take her to Greece", "That he kill her father"],
+          "answerIndex": 2,
+          "explanation": "Medea promised to help with the bulls and deliver the fleece if Jason swore to make her his wife and take her with him."
+        },
+        {
+          "id": "q3",
+          "prompt": "How did Jason defeat the armed men who grew from the dragon's teeth?",
+          "choices": ["He threw stones among them so that they fought one another", "He burned the field", "Orpheus sang them to sleep", "He hid until nightfall"],
+          "answerIndex": 0,
+          "explanation": "On Medea's advice he pelted them unseen with stones; they turned on each other and he killed the survivors."
+        },
+        {
+          "id": "q4",
+          "prompt": "How was the dragon guarding the fleece overcome?",
+          "choices": ["Jason cut off its head", "Heracles shot it", "Athena turned it to stone", "Medea put it to sleep with her drugs"],
+          "answerIndex": 3,
+          "explanation": "Medea lulled the sleepless dragon with her drugs, and they took the fleece from the oak in the grove of Ares."
+        },
+        {
+          "id": "q5",
+          "prompt": "To which god did Jason dedicate the Argo after the voyage?",
+          "choices": ["Zeus", "Poseidon", "Apollo", "Ares"],
+          "answerIndex": 1,
+          "explanation": "Apollodorus says Jason sailed to the Isthmus of Corinth and dedicated the ship to Poseidon, god of the sea."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Vela is a Latin plural: it means the sails, not the sail.",
+    "Because the three parts of Argo share one set of Greek letters, Vela has no Alpha or Beta. Its brightest star is Gamma.",
+    "The False Cross is made of Delta and Kappa Velorum with Epsilon and Iota Carinae. It is bigger and fainter than the true Southern Cross.",
+    "Vela contains the remains of a star that exploded roughly 10,000 years ago, the Vela Supernova Remnant, with a rapidly spinning pulsar at its heart.",
+    "The name Suhail is Arabic. The Arabs also called Canopus, in the hull of the same ship, Suhail."
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "id": "Hya",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); an older Greek figure with a Babylonian serpent as forerunner",
+    "when": "2nd century CE (catalogued); known to Aratus in the 3rd century BCE",
+    "history": [
+      "Hydra, the Water Snake, is one of the 48 constellations that Ptolemy listed in his *Almagest* around 150 CE, where he gave it 25 stars. It was already old by then. The poet Aratus, about 275 BCE, described it winding along with its head under the Crab, its coils under the Lion and its tail over the Centaur, with the Cup set on its middle and the Crow pecking at its end. Older still, the Babylonian star list called MUL.APIN includes a serpent constellation in roughly this part of the sky, and the Greek figure is thought to be an adaptation of it.",
+      "Aratus used the feminine name Hydra. Eratosthenes and Ptolemy used the masculine form Hydros, but the feminine name is the one that lasted. That matters, because Dutch navigators in the 1590s added a second, male water snake near the south celestial pole and called it Hydrus. The two are easy to confuse on paper and impossible to confuse in the sky: Hydrus is small and never rises from Brooklyn.",
+      "Ptolemy noted that three stars were shared between the Water Snake and the two small figures riding on its back, the Crow ([[con:Crv|Corvus]]) and the Cup ([[con:Crt|Crater]]). The three constellations were always thought of as a single scene."
+    ]
+  },
+  "overview": "Hydra is a long water snake, the largest of all 88 constellations, stretching more than a quarter of the way around the sky. For all that size it is faint: one lonely orange star, Alphard, and a small ring of stars for the head are all most people ever notice.",
+  "howToFind": [
+    "Hydra is a spring constellation. The head rises in the east on winter evenings and the whole snake is laid out across the southern sky on evenings in April and May. Start with the head. Find [[star:Procyon|Procyon]], the bright star to the upper left of Sirius, and [[star:Regulus|Regulus]], the bright star at the bottom of the backward question mark of [[con:Leo|Leo]]. A little less than halfway from Procyon to Regulus, about a fist and a half to the left (east) of Procyon, is a small lopsided ring of six faint stars, only about three finger-widths across. That is the Water Snake's head; its brightest stars are [[star:ζ Hya|Zeta]] and [[star:ε Hya|Epsilon Hydrae]].",
+    "Now find the heart. From Regulus, drop a bit more than two fists down and to the right (southwest). The only reasonably bright star in that large empty area is orange [[star:Alphard|Alphard]]. Its name means the solitary one, and it looks it. From Alphard the body runs to the lower left in a long, faint, gently waving line: past [[star:ν Hya|Nu Hydrae]], under the Cup ([[con:Crt|Crater]]) and the Crow ([[con:Crv|Corvus]]), to [[star:γ Hya|Gamma Hydrae]], which sits about a fist below the bright star [[star:Spica|Spica]], and on to [[star:π Hya|Pi Hydrae]] near the tail. Because the snake is so long, the head is already sinking in the west by the time the tail is at its highest."
+  ],
+  "shape": "A small ring of six faint stars for the head, then a single wandering line of dim stars running east and south for more than ten fists (over 100 degrees). Nothing else in the sky is so long and so thin. From a city you will usually see only Alphard, and on a good night the head and Gamma Hydrae; the full snake needs a dark sky and patience.",
+  "mainStars": [
+    {
+      "ref": "star:Alphard",
+      "note": "The heart of the snake and its only bright star, magnitude 2.0 (magnitude is the brightness scale, where smaller numbers are brighter). An orange giant about 180 light-years away. The name is Arabic for the solitary one."
+    },
+    {
+      "ref": "star:γ Hya",
+      "note": "A yellow giant of magnitude 3.0 far down the body, about a fist below Spica. It is the second-brightest star in Hydra and a useful marker for the tail end."
+    },
+    {
+      "ref": "star:ζ Hya",
+      "note": "The brightest star of the head ring, a yellow giant of magnitude 3.1."
+    },
+    {
+      "ref": "star:ε Hya",
+      "note": "Next to Zeta in the head. In 2018 it was given the official name Ashlesha, from the Indian lunar mansion that the head of Hydra marks."
+    },
+    {
+      "ref": "star:ν Hya",
+      "note": "An orange giant of magnitude 3.1 in the middle of the body, just to the right of the Cup. It helps you trace the line from Alphard toward Corvus."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "dso:M48",
+      "equip": "binoculars",
+      "note": "A large, loose open cluster of several dozen stars, wider than the full Moon, about a fist and a half below and to the left of Procyon near the border with Monoceros. In binoculars it is a grainy patch; a small telescope shows a rough triangle of stars."
+    },
+    {
+      "ref": "dso:NGC3242",
+      "equip": "small-telescope",
+      "note": "The Ghost of Jupiter, a planetary nebula (the glowing shell thrown off by a dying star) about two degrees south of [[star:μ Hya|Mu Hydrae]]. A small telescope shows a tiny blue-green disk about the apparent size of the planet Jupiter. William Herschel discovered it in 1785."
+    },
+    {
+      "ref": "dso:M83",
+      "equip": "small-telescope",
+      "note": "The Southern Pinwheel, a face-on spiral galaxy near the tail on the border with Centaurus. It is one of the brighter galaxies in the sky, but from Brooklyn it never climbs higher than two fists above the southern horizon, so it needs a dark site with a clear southern view; expect a round glow with a brighter center."
+    },
+    {
+      "ref": "dso:M68",
+      "equip": "small-telescope",
+      "note": "A globular cluster (a ball of very old stars) of the 8th magnitude, about three and a half degrees below and slightly left of [[star:β Crv|Beta Corvi]], the lower-left star of Corvus. It appears as a small round fuzzy spot."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Hya-lernaean-hydra",
+      "title": "Heracles and the Hydra of Lerna",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Apollodorus", "work": "Library 2.5.2", "date": "1st–2nd century CE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.23 (the Crab that helped the Hydra)", "date": "2nd century CE" }
+      ],
+      "summary": "For his second labor Heracles was sent to kill the Hydra, a many-headed water snake living in the swamp of Lerna. Each head he destroyed grew back double until his nephew Iolaus burned the stumps. The long snake in the sky is popularly taken to be this monster, with the Crab that came to its aid close by.",
+      "retelling": [
+        "King Eurystheus of Mycenae could not kill his cousin Heracles outright, so he tried to do it by errands. The first was a lion whose skin no weapon could cut, and Heracles came home wearing the skin. The second errand was worse. In the marshes of Lerna, near Argos, there lived a water snake called the Hydra, a child of the monsters Typhon and Echidna. It had a huge body and nine heads. Eight of them could die. The one in the middle could not.",
+        "The Hydra came out of its swamp onto the plain whenever it pleased, killing cattle and ruining the farmland. Heracles drove there in a chariot with his young nephew Iolaus holding the reins. They found the creature's den on a rise beside the springs of Amymone. Heracles shot burning arrows into the den until the Hydra came out, and then he seized it.",
+        "It was like wrestling a river. The snake threw a coil around one of his legs and held on. Heracles swung his club and crushed a head, and from the ruined neck two new heads grew. He crushed another, and the same thing happened. The harder he fought, the more heads there were to fight. Then a giant crab crawled out of the marsh to help the snake and bit him on the foot. Heracles killed the crab, but he understood that he was losing.",
+        "So he shouted for Iolaus. The boy set fire to part of the nearby woods and came running with burning branches. Each time Heracles destroyed a head, Iolaus pressed fire against the stump before anything could sprout from it. One by one the mortal heads were finished. The immortal head Heracles cut off, still alive, and buried beside the road that leads through Lerna, with a heavy rock on top of it.",
+        "Before he left he slit the body open and dipped his arrows in the Hydra's gall. From then on any wound from those arrows could not be healed, a fact that would later cost the life of the good centaur Chiron and, in the end, of Heracles himself. And Eurystheus refused to count the labor at all, because Heracles had needed help.",
+        "The goddess Hera, who hated Heracles, rewarded the crab for its loyalty by setting it among the stars as the constellation Cancer. The head of the celestial Water Snake lies directly below the Crab, and so the long snake of the sky has come to be seen as the Hydra of Lerna, shown with a single head, as if only the immortal one were left. It is fair to add that the ancient star handbooks that survive tell a different tale about this constellation, the story of Apollo's crow; the link with Heracles is the one most people know today."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Hydra, the water snake",
+        "url": "http://www.ianridpath.com/startales/hydra.html"
+      },
+      "characters": ["Heracles", "Iolaus", "Eurystheus", "Hera", "the Hydra", "the Crab"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "What happened each time Heracles crushed one of the Hydra's heads with his club?",
+          "choices": ["The head turned to stone", "Two heads grew in its place", "The snake shrank", "The swamp caught fire"],
+          "answerIndex": 1,
+          "explanation": "Every destroyed head was replaced by two, so fighting the Hydra the ordinary way only made it stronger."
+        },
+        {
+          "id": "q2",
+          "prompt": "Who helped Heracles defeat the Hydra, and how?",
+          "choices": ["Athena, by lending him a shield", "Chiron, by supplying a poison", "Iolaus, by burning the neck stumps with firebrands", "Eurystheus, by sending soldiers"],
+          "answerIndex": 2,
+          "explanation": "His nephew and charioteer Iolaus seared each stump with burning wood so no new heads could grow."
+        },
+        {
+          "id": "q3",
+          "prompt": "What did Heracles do with the Hydra's immortal head?",
+          "choices": ["Buried it under a heavy rock beside the road", "Carried it back to Mycenae", "Threw it into the sea", "Gave it to Hera"],
+          "answerIndex": 0,
+          "explanation": "The middle head could not die, so he cut it off and buried it under a great rock by the road through Lerna."
+        },
+        {
+          "id": "q4",
+          "prompt": "Which other constellation comes from this fight?",
+          "choices": ["Scorpius, the scorpion that stung Heracles", "Draco, the dragon of the swamp", "Leo, the lion that guarded Lerna", "Cancer, the crab that bit Heracles' foot"],
+          "answerIndex": 3,
+          "explanation": "A crab came out of the marsh to help the Hydra. Heracles killed it, and Hera placed it in the sky as Cancer, right above the Water Snake's head."
+        },
+        {
+          "id": "q5",
+          "prompt": "Why did Heracles dip his arrows in the Hydra's gall?",
+          "choices": ["To make them fly farther", "To poison them", "To make them invisible", "To prove he had killed it"],
+          "answerIndex": 1,
+          "explanation": "The Hydra's gall was a deadly poison. Wounds from those arrows could not be cured, which later doomed the centaur Chiron."
+        }
+      ]
+    },
+    {
+      "id": "Hya-apollo-crow",
+      "title": "The water snake and the lying crow",
+      "culture": "Greek and Roman",
+      "ancientSources": [
+        { "author": "Ovid", "work": "Fasti 2.243–266", "date": "early 1st century CE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.40", "date": "2nd century CE" },
+        { "author": "Eratosthenes", "work": "Catasterisms (as reported in Star Tales)", "date": "3rd century BCE" },
+        { "author": "Aratus", "work": "Phaenomena 443–449", "date": "c. 275 BCE" }
+      ],
+      "summary": "Apollo sent his crow to fetch water, but the bird dawdled over a fig tree and then carried home a water snake as its excuse. Apollo saw through the lie and set the Snake, the Cup and the Crow together in the sky. Here the snake is no monster at all, only a prop in a bird's bad alibi that became a jailer.",
+      "retelling": [
+        "In this story the Water Snake does nothing wrong. It was simply in the wrong spring on the wrong day.",
+        "Apollo was preparing a sacrifice to Zeus and needed fresh water from a running spring. He handed a bowl to the crow, the bird that served him, and told it to be quick. The crow flew off with the bowl in its claws, but on the way it noticed a fig tree heavy with fruit. The figs were still green and hard. Instead of going on, the crow settled down to wait for them to ripen, and it waited for days. Apollo, tired of waiting himself, found water elsewhere and finished his sacrifice.",
+        "When the crow had finally eaten all it wanted, it remembered its errand and began to worry. It needed someone to blame. Near the spring a long water snake was going about its business. The crow snatched it up in its claws and flew back to Apollo with the snake dangling beneath it. This creature, it announced, had been living in the spring and blocking the water. That was why the errand had taken so long.",
+        "It was a poor lie to tell to the god of prophecy. Apollo knew exactly where the crow had been. He told the bird that it had made a bad fault worse, and he sentenced it to thirst: every year, for as long as the figs are ripening on the tree, the crow would not be able to drink.",
+        "Then, so that nobody would forget, Apollo put all three into the sky. The Cup sits on the Water Snake's back, tipped and full. The Crow stands a little farther along the same back, close enough to see the Cup. And the Snake, the false excuse, was given a real job at last: it lies stretched between the bird and the water and keeps them apart. Hyginus says the Crow can be seen pecking at the Snake's tail, as though asking to be let past.",
+        "That is the version Ovid tells in his poem on the Roman calendar. Hyginus tells it a little differently. In his account the crow brought no snake and told no lie; it simply came hurrying back late with the bowl full, and Apollo himself added the Water Snake to the picture to stand guard over the water. Either way the result overhead is the same. On spring evenings you can follow the long faint line of [[con:Hya|Hydra]] to the lower left of Alphard and find the dim Cup, [[con:Crt|Crater]], and then the brighter four-sided Crow, [[con:Crv|Corvus]], riding on its back."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Corvus and Crater, the crow and the cup",
+        "url": "http://www.ianridpath.com/startales/corvusandcrater.html"
+      },
+      "characters": ["Apollo", "the crow", "the water snake", "Zeus"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "In Ovid's version, why did the crow bring a water snake back to Apollo?",
+          "choices": ["As a gift for the sacrifice", "As an excuse, claiming it had blocked the spring", "Because Apollo had asked for one", "Because the snake had stolen the cup"],
+          "answerIndex": 1,
+          "explanation": "The crow had wasted days waiting for figs to ripen and blamed the snake for the delay."
+        },
+        {
+          "id": "q2",
+          "prompt": "What is the Water Snake's role in the sky in this story?",
+          "choices": ["It guards the golden apples", "It carries the crow across the sky", "It drinks the water so the crow cannot", "It lies between the Crow and the Cup and keeps the bird from drinking"],
+          "answerIndex": 3,
+          "explanation": "Apollo arranged the three figures so the snake would forever keep the thirsty crow away from the cup."
+        },
+        {
+          "id": "q3",
+          "prompt": "Why was the crow's lie especially foolish?",
+          "choices": ["Apollo is the god of prophecy and already knew the truth", "The snake could talk and denied it", "Zeus had watched the whole thing", "The cup was still empty"],
+          "answerIndex": 0,
+          "explanation": "Apollo, god of prophecy, could not be fooled by a made-up story."
+        },
+        {
+          "id": "q4",
+          "prompt": "How does Hyginus's version differ from Ovid's?",
+          "choices": ["The crow is rewarded instead of punished", "The cup is stolen by the snake", "The crow brings no snake and tells no lie; Apollo adds the snake himself", "The fig tree is replaced by a vineyard"],
+          "answerIndex": 2,
+          "explanation": "In Hyginus the crow is punished only for being late, and Apollo places the Water Snake under the Cup to delay the thirsty bird."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Hydra is the largest constellation, covering 1,303 square degrees, and the longest, at more than 100 degrees from end to end. It takes over six hours for the whole snake to rise.",
+    "The name Alphard comes from the Arabic for the solitary one. The astronomer al-Sufi recorded it in his *Book of the Fixed Stars* in 964 CE.",
+    "Do not confuse Hydra with Hydrus, the small male water snake near the south celestial pole that Dutch navigators introduced in the 1590s.",
+    "In Chinese astronomy the head of Hydra was Liu, the Willow, and the stars around Alphard were Xing, the Star; both marked parts of the Red Bird of the South and gave their names to lunar mansions."
+  ]
+}

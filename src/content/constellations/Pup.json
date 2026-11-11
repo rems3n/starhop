@@ -1,0 +1,177 @@
+{
+  "id": "Pup",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Nicolas-Louis de Lacaille (as a division of the ancient Greek constellation Argo Navis, catalogued by Ptolemy)",
+    "when": "1756 (divided from Argo Navis); the ship itself was known by the 3rd century BCE",
+    "history": [
+      "Puppis is the stern, or poop deck, of the ship Argo. For the Greeks there was a single huge constellation here, Argo Navis, the ship of Jason and the Argonauts, described by Aratus about 275 BCE and listed by Ptolemy in the *Almagest* about 150 CE with 45 stars. Ptolemy located stars by their place on the ship; one, for example, he put in the stern ornament, and it is now 11 Puppis.",
+      "In the 1750s the French astronomer Nicolas-Louis de Lacaille, who had mapped the southern stars from the Cape of Good Hope, decided the ship was too large to handle as one figure. In his catalog published in 1756 he divided Argo into three: the stern (Puppis, at first under the French name Pouppe du Navire), the hull ([[con:Car|Carina]]) and the sails ([[con:Vel|Vela]]). The Latin names appeared in his final catalog of 1763. Puppis is the largest of the three pieces, and the only one with a good part that rises over New York.",
+      "Lacaille also relettered the ship's stars, but he ran one sequence of Greek letters through all three parts as if Argo were still whole. Alpha and Beta went to the two brightest stars, both in Carina, and Gamma and Delta to stars in Vela. The consequence is that Puppis has no Alpha, Beta, Gamma, Delta or Epsilon; its lettering begins with Zeta, which is its brightest star. For fainter stars Lacaille used Roman letters, which is why Puppis has stars with names like k Puppis and c Puppis."
+    ]
+  },
+  "overview": "Puppis is the high stern of the ship Argo, a large stretch of the winter Milky Way to the left of and below Sirius. It has no first-rank star and no obvious shape, but its northern half rises well over Brooklyn and is full of star clusters for binoculars.",
+  "howToFind": [
+    "Puppis is up on winter evenings, best in February and March when it is due south. Start from [[star:Sirius|Sirius]], the brightest star in the sky. The northern part of Puppis is the region to its left (east): about two fists left of Sirius and somewhat lower is [[star:Tureis|Tureis]] (Rho Puppis), and a little to its right is [[star:Azmidi|Azmidi]] (Xi Puppis). Sweep binoculars about a fist and a quarter to the left of Sirius and a touch higher and you will run into the twin clusters [[dso:M47|M47]] and [[dso:M46|M46]].",
+    "The brightest star, [[star:Naos|Naos]] (Zeta Puppis), is much lower: about three fists below and to the left of Sirius, less than one fist above the southern horizon from Brooklyn. [[star:π Pup|Pi Puppis]] is to its right, straight below the hindquarters of [[con:CMa|Canis Major]]. You need a clear, open southern horizon to catch either. The southernmost part of Puppis, including the star [[star:τ Pup|Tau Puppis]], never rises here at all."
+  ],
+  "shape": "No clear picture: a broad, ragged column of 3rd-magnitude stars about four fists tall, running from beside Sirius down to the horizon and below it. From a city you can pick out Tureis and Azmidi east of Sirius, and Naos on a good night from a spot with a low southern skyline. Think of it less as a figure and more as a region to explore with binoculars.",
+  "mainStars": [
+    {
+      "ref": "star:Naos",
+      "note": "Zeta Puppis, the brightest star of the Stern at magnitude 2.2. It is a blue supergiant and one of the hottest stars visible to the naked eye, more than a thousand light-years away. The name comes from the Greek word for ship. From Brooklyn it never climbs above about 9 degrees."
+    },
+    {
+      "ref": "star:π Pup",
+      "note": "An orange supergiant of magnitude 2.7 at the center of a loose, bright group of stars that binoculars show well. About 12 degrees up at best from Brooklyn."
+    },
+    {
+      "ref": "star:Tureis",
+      "note": "Rho Puppis, a yellow-white star of magnitude 2.8 only 64 light-years away, and the easiest bright star of Puppis from New York, two fists east of Sirius."
+    },
+    {
+      "ref": "star:Azmidi",
+      "note": "Xi Puppis, a yellow supergiant of magnitude 3.3 just west of Tureis. The cluster M93 lies a degree and a half to its upper right."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "dso:M47",
+      "equip": "binoculars",
+      "note": "A bright, coarse open cluster of a few dozen stars, visible to the naked eye from a dark site as a hazy spot. In binoculars it is a sparkling scatter with several stars standing out."
+    },
+    {
+      "ref": "dso:M46",
+      "equip": "binoculars",
+      "note": "In the same binocular field as M47, a little over a degree to its east, but completely different: a faint, even, round mist of many dim stars, about 5,400 light-years away. A telescope shows a tiny ring nebula, NGC 2438, in front of its northern edge."
+    },
+    {
+      "ref": "dso:M93",
+      "equip": "binoculars",
+      "note": "A small, bright, wedge-shaped open cluster beside Azmidi. A hazy knot in binoculars; a small telescope resolves a triangle of stars."
+    },
+    {
+      "ref": "dso:NGC2477",
+      "equip": "binoculars",
+      "note": "One of the richest open clusters in the sky, so dense that it looks like a loose globular cluster. It lies near Naos and reaches only about 11 degrees above the horizon from Brooklyn, so it needs an excellent southern view; from farther south it is a showpiece."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Pup-building-the-argo",
+      "title": "The building of the Argo and the gathering of the crew",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Apollodorus", "work": "Library 1.9.16–19", "date": "1st–2nd century CE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.37", "date": "2nd century CE" },
+        { "author": "Apollonius of Rhodes", "work": "Argonautica (as reported in Star Tales)", "date": "3rd century BCE" }
+      ],
+      "summary": "When Jason was ordered to fetch the Golden Fleece, he had a ship built at Pagasae by the craftsman Argus under the eye of Athena, who fitted her with a speaking beam from the oak of Dodona. Then the heroes of Greece gathered to row her. The ship was honored with a place among the stars.",
+      "retelling": [
+        "The quest for the Golden Fleece began as an attempt at murder by errand. King Pelias of Iolcus, warned by an oracle against a man with one sandal, sent his one-sandaled nephew Jason to the far end of the Black Sea to fetch a ram's golden fleece from a dragon's keeping. To get there Jason needed something the Greeks of the story had never had: a ship that could cross open sea.",
+        "He turned to a builder named Argus. The work was done at Pagasae on the Thessalian coast, a place that, Hyginus says, got its name from the Greek word for fitting together, because that is where the ship was first assembled. The timber, according to the poets, came down from the forests of Mount Pelion nearby. And Argus did not work alone. The goddess Athena, patron of every craft, stood over the job and told him what to do.",
+        "Athena added one piece with her own hands. At Dodona, in the northwest of Greece, stood an oak sacred to Zeus, whose rustling leaves were read as oracles. From that tree she took a beam and fitted it into the prow. It kept its gift. The Argo could speak, and more than once on the voyage she did: one old writer said that she announced, before they had gone far, that she could not carry the weight of Heracles, and later it was the ship herself who told the crew how to win back the favor of Zeus.",
+        "She was built for fifty oars. As for her name, Hyginus gives two explanations: some said she was called Argo, swift, for her speed, and others that she was named after Argus who made her. The poet Apollonius called her the finest ship that ever went under oars, whose timbers held fast in any sea.",
+        "A ship of fifty oars needs fifty rowers, and Jason was given leave by the oracle to call on the nobles of Greece. They came from everywhere. Tiphys came to steer. Orpheus came with his lyre. Castor came with his brother Polydeuces the boxer, and Zetes and Calais, the winged sons of the North Wind. There were the brothers Peleus and Telamon, the first of them the future father of Achilles; the huntress Atalanta; Argus the builder himself; and Heracles, who broke off his labors to join. The lists differ from poet to poet, as every city wanted an ancestor aboard.",
+        "So the Argo was run down into the sea at Pagasae with the best of a generation at her benches, the first ship, as many told it, ever to sail the deep. That is the reason the ancient writers give for her place in the sky: Eratosthenes and Manilius say the constellation honors the first sea-going ship, and Hyginus reports the same. When you look to the left of Sirius on a winter night you are looking at her tall, carved stern, [[con:Pup|Puppis]], the part of the ship where the helmsman stood."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Argo Navis, the ship of the Argonauts",
+        "url": "http://www.ianridpath.com/startales/argo.html"
+      },
+      "characters": ["Jason", "Pelias", "Argus", "Athena", "Tiphys", "Orpheus", "Heracles", "Castor and Polydeuces", "Atalanta"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Who built the Argo?",
+          "choices": ["Jason himself", "Daedalus", "Argus, guided by Athena", "Hephaestus"],
+          "answerIndex": 2,
+          "explanation": "The craftsman Argus built the ship under Athena's direction; one explanation of the name Argo is that it comes from his."
+        },
+        {
+          "id": "q2",
+          "prompt": "Where did the Argo's speaking beam come from?",
+          "choices": ["The sacred oak of Zeus at Dodona", "A pine on Mount Olympus", "The olive tree of Athens", "The grove of Ares at Colchis"],
+          "answerIndex": 0,
+          "explanation": "Athena fitted a timber from the oracular oak of Dodona into the prow, and it gave the ship a voice."
+        },
+        {
+          "id": "q3",
+          "prompt": "Which Argonaut steered the ship when she set out?",
+          "choices": ["Orpheus", "Heracles", "Lynceus", "Tiphys"],
+          "answerIndex": 3,
+          "explanation": "Apollodorus names Tiphys as the helmsman; Orpheus was the ship's musician."
+        },
+        {
+          "id": "q4",
+          "prompt": "What two explanations does Hyginus give for the name Argo?",
+          "choices": ["Her white sails, or the city of Argos", "Her speed, or her builder Argus", "Her fifty oars, or the hundred-eyed giant", "Her golden prow, or the god Ares"],
+          "answerIndex": 1,
+          "explanation": "Hyginus says some derived the name from her swiftness and others from Argus, who made her."
+        }
+      ]
+    },
+    {
+      "id": "Pup-clashing-rocks",
+      "title": "Through the Clashing Rocks",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Apollodorus", "work": "Library 1.9.21–22", "date": "1st–2nd century CE" },
+        { "author": "Apollonius of Rhodes", "work": "Argonautica (as reported in Star Tales)", "date": "3rd century BCE" }
+      ],
+      "summary": "To enter the Black Sea the Argo had to pass between two cliffs that crashed together on anything between them. Advised by the blind prophet Phineus, the crew sent a dove ahead and then rowed for their lives. The ship got through, but the rocks sheared off the tip of her stern.",
+      "retelling": [
+        "This is the story of how the Argo's stern, the very part of the ship that became Puppis, was nearly lost.",
+        "On the coast of Thrace the Argonauts found an old man starving at a full table. He was Phineus, a prophet who had lost his sight, and the gods had set the Harpies on him. These were winged creatures who dropped from the sky whenever food was put before him, snatched most of it, and left the rest stinking so that no one could eat it. The Argonauts wanted his advice about the route ahead. Phineus promised it, if they would rid him of his tormentors.",
+        "So the crew laid a meal beside him as bait. Down came the Harpies, shrieking. Two of the Argonauts, Zetes and Calais, were sons of the North Wind and had wings of their own; they drew their swords and gave chase through the air. In the version Apollonius tells, they hunted the Harpies as far as the islands called the Strophades and let them go only when the creatures swore never to trouble Phineus again.",
+        "Phineus ate in peace, and then he told the Argonauts what lay ahead. At the mouth of the Black Sea stood the Clashing Rocks, two enormous cliffs that the winds drove together, closing the passage. Mist hung over them and the crash was terrible. Not even birds, he said, could get through. He told them what to do: let a dove fly between the rocks. If she came through alive, they should follow at once. If she was crushed, they should give up.",
+        "They rowed up the strait and heard the rocks before they saw them. From the prow they let the dove go. She darted into the gap; the cliffs rushed together behind her and clipped the tip of her tail, but she was through. The rocks rebounded. In that moment, while the passage was opening again, the Argonauts hauled on their oars with all the strength they had.",
+        "It was not quite enough, and a goddess made up the difference. Apollodorus says Hera helped them; Apollonius says Athena herself gave the ship a shove. The Argo shot through as the cliffs slammed shut a second time. They caught the very end of her: the carved ornament at the top of the stern was sliced off all the way round, just as the dove had lost her tail feathers. Nothing else was touched.",
+        "It had been fated that if ever a ship passed between them, the Clashing Rocks would stop moving for good. They have stood still at the entrance to the Black Sea ever since. And some of the old star-map makers remembered the scene when they drew the constellation. The celestial Argo has only her stern half, from the mast back; Johann Bayer's atlas of 1603 explains the missing prow by showing it passing between the Clashing Rocks."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Argo Navis, the ship of the Argonauts",
+        "url": "http://www.ianridpath.com/startales/argo.html"
+      },
+      "characters": ["Phineus", "the Harpies", "Zetes and Calais", "Hera", "Athena", "the Argonauts"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "What did Phineus ask in return for his advice?",
+          "choices": ["A share of the Golden Fleece", "To be rid of the Harpies that stole his food", "Passage home to Greece", "The return of his sight"],
+          "answerIndex": 1,
+          "explanation": "The Harpies snatched or spoiled every meal set before Phineus; the winged sons of the North Wind drove them off."
+        },
+        {
+          "id": "q2",
+          "prompt": "What part of the Argo was lost at the Clashing Rocks?",
+          "choices": ["The mast", "The speaking beam in the prow", "A bank of oars", "The ornament at the tip of the stern"],
+          "answerIndex": 3,
+          "explanation": "The rocks sheared off the end of the ornamented stern, just as they had clipped the dove's tail."
+        },
+        {
+          "id": "q3",
+          "prompt": "What happened to the Clashing Rocks after the Argo passed?",
+          "choices": ["They stood still forever", "They sank beneath the sea", "They followed the ship to Colchis", "They were set in the sky by Zeus"],
+          "answerIndex": 0,
+          "explanation": "It was fated that once a ship made the passage the rocks would come to rest for good."
+        },
+        {
+          "id": "q4",
+          "prompt": "Which Argonauts chased away the Harpies?",
+          "choices": ["Castor and Polydeuces", "Jason and Orpheus", "Zetes and Calais, sons of the North Wind", "Peleus and Telamon"],
+          "answerIndex": 2,
+          "explanation": "Zetes and Calais had wings like their father Boreas and pursued the Harpies through the air."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Puppis is Latin for the stern or poop deck of a ship. The name Naos comes from the Greek word for ship.",
+    "Because the three parts of Argo share one set of Greek letters, Puppis has no Alpha or Beta. Its brightest star is Zeta.",
+    "The Milky Way runs through Puppis, which is why it is so rich in open clusters: three Messier objects and dozens more.",
+    "On the old atlases the ship sails backward: as the sky turns, Argo moves stern first, which Aratus compared to a ship being backed into harbor."
+  ]
+}

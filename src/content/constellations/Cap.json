@@ -1,0 +1,191 @@
+{
+  "id": "Cap",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); a Greek figure taken over from the Sumerian and Babylonian goat-fish",
+    "when": "2nd century CE (Almagest); the goat-fish is at least a thousand years older",
+    "history": [
+      "Capricornus is one of the oldest figures in the sky. The Sumerians and Babylonians called it SUHUR-MASH, the goat-fish, a creature with the head and forelegs of a goat and the tail of a fish. It appears on a cylinder seal of around the 21st century BCE and in Babylonian star lists from before 1000 BCE, and the Babylonians used the goat-fish as a symbol of Ea, their god of fresh water and wisdom.",
+      "The Greeks inherited the strange animal and named it Aigokeros, 'goat-horned'; Capricornus is the Latin equivalent. Since no Greek myth featured a goat-fish, they explained it with stories about goat-legged Pan, told below. Ptolemy listed the constellation among his 48 in the *Almagest* around 150 CE.",
+      "In early Greek times the Sun reached its most southerly point of the year, the December solstice, while in Capricornus. That is why the line on Earth where the Sun is overhead on that day is still called the Tropic of Capricorn, even though the slow wobble of Earth's axis has since moved the solstice into Sagittarius."
+    ]
+  },
+  "overview": "Capricornus is the Sea Goat, a goat in front and a fish behind. In the sky it is a large, dim triangle of third- and fourth-magnitude stars with no bright leader, the smallest of the twelve zodiac constellations and one of the faintest.",
+  "howToFind": [
+    "Start with the Summer Triangle. Draw a line from [[star:Vega|Vega]] to [[star:Altair|Altair]] and continue it a little more than two fists toward the southern horizon. It lands near a close pair of stars, one above the other: [[star:Algedi|Algedi]] on top and [[star:Dabih|Dabih]] below. These mark the goat's horns and the western corner of the constellation.",
+    "From there the figure stretches two fists to the left (east), ending at [[star:Deneb Algedi|Deneb Algedi]], its brightest star, with [[star:Nashira|Nashira]] just beside it. From Brooklyn, Capricornus crosses the southern sky about a third of the way up on evenings from late August to October. It lies between the Teapot of Sagittarius to the right and the lonely bright star [[star:Fomalhaut|Fomalhaut]] to the lower left."
+  ],
+  "shape": "A broad, sagging triangle about two fists wide, something like a wide grin or the bottom of a boat: Algedi and Dabih at the upper right, Deneb Algedi and Nashira at the upper left, and a curve of fainter stars drooping to a point at [[star:ω Cap|Omega]] and [[star:ψ Cap|Psi Capricorni]] at the bottom. In a city sky you may catch only the two corner pairs, and the lower curve disappears.",
+  "mainStars": [
+    {
+      "ref": "star:Deneb Algedi",
+      "note": "The brightest star in Capricornus at magnitude 2.9, a white star just 39 light-years away. Its name is Arabic for 'the tail of the kid'. It is a very close pair of stars that eclipse each other about once a day, dimming slightly each time."
+    },
+    {
+      "ref": "star:Dabih",
+      "note": "A yellowish star of magnitude 3.1 below Algedi. Binoculars show a fainter, bluish companion. The name means 'the slaughterer', from an old Arab tradition of ritual sacrifice."
+    },
+    {
+      "ref": "star:Algedi",
+      "note": "'The kid'. Look closely and you will see two yellow stars side by side, magnitudes 3.6 and 4.3. They only appear together by chance: one is about 110 light-years away and the other nearly 700."
+    },
+    {
+      "ref": "star:Nashira",
+      "note": "A white star of magnitude 3.7 just west of Deneb Algedi; the two together mark the tail end of the figure."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "star:Algedi",
+      "equip": "naked-eye",
+      "note": "A naked-eye double star and a good test of eyesight; binoculars make the pair obvious."
+    },
+    {
+      "ref": "star:Dabih",
+      "equip": "binoculars",
+      "note": "A wide double with a pleasing color contrast: a yellow star of magnitude 3.1 and a blue-white one of magnitude 6.1."
+    },
+    {
+      "ref": "dso:M30",
+      "equip": "small-telescope",
+      "note": "A globular cluster about 30,000 light-years away, near [[star:ζ Cap|Zeta Capricorni]] in the lower left of the figure. It shows as a small bright ball of haze; larger telescopes pick out short chains of stars running from its north side."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Cap-pan-typhon",
+      "title": "Pan's leap into the river",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.28", "date": "1st century BCE – 2nd century CE" },
+        { "author": "Hyginus", "work": "Fabulae 196", "date": "1st century BCE – 2nd century CE" },
+        { "author": "Apollodorus", "work": "Library 1.6.3", "date": "1st–2nd century CE" },
+        { "author": "Ovid", "work": "Metamorphoses 5.321–331", "date": "c. 8 CE" }
+      ],
+      "summary": "When the monster Typhon attacked the gods, they fled to Egypt and hid in the shapes of animals. Pan, the goat-legged god of the wild, jumped into a river and turned his lower half into a fish. Zeus admired the trick and placed the goat-fish in the sky.",
+      "retelling": [
+        "The gods of Olympus had beaten the Titans, and then the Giants, and they thought the wars were over. But the Earth, Gaia, had one more child to send against them. His name was Typhon, and he was the most terrible thing that ever lived. Apollodorus says he stood taller than the mountains, so that his head brushed the stars. A hundred serpent heads grew from his hands, coils of vipers served him for legs, fire flashed from his eyes, and he came at heaven hurling blazing rocks.",
+        "The gods did not stand and fight. They ran, all the way to Egypt, and Typhon came after them. According to Hyginus it was Pan who saw what had to be done. Pan was the god of shepherds and wild places, with the horns and legs of a goat, and a shout that could scatter an army; our word 'panic' comes from his name. He told the others to hide in the shapes of beasts.",
+        "So they did. Hermes became an ibis, Artemis a cat, Apollo a bird. Ovid adds that Zeus himself took the form of a ram, Dionysus a goat, Hera a white cow, and Aphrodite a fish. The Greeks told this story partly to explain why the Egyptians honored animals as images of the gods.",
+        "Pan was the last to hide, and he chose badly or brilliantly, depending on how you look at it. He threw himself into the river. The part of him that went under the water he turned into a fish, and the part that stayed above remained a goat. The result was a creature that had never existed before, and Typhon passed it by.",
+        "Zeus recovered his nerve and turned on the monster with his thunderbolts. The fight went badly at first. Typhon caught him in his coils, cut the sinews from his hands and feet, and hid them in a cave under guard, leaving the king of the gods helpless. It was Hermes, together with Aegipan, the goat-Pan, who stole the sinews back and fitted them into place again. With his strength restored, Zeus chased Typhon across the world and finally buried him under Mount Etna in Sicily, where the fire still breaks out.",
+        "Afterward Zeus remembered who had given the warning and who had saved himself so cleverly. Admiring Pan's quick wits, he set his likeness among the constellations just as he had appeared in the river: a goat in front, a fish behind. The Greeks called him Aigokeros, the goat-horned one, and we call him Capricornus.",
+        "The same flight explains a neighboring constellation. Aphrodite and her son Eros escaped Typhon by leaping into a river too, and they became Pisces, the Fishes."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Star Tales – Capricornus",
+        "url": "http://www.ianridpath.com/startales/capricornus.html"
+      },
+      "characters": ["Pan (Aegipan)", "Typhon", "Zeus", "Gaia", "Hermes"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Who was the monster that drove the gods to disguise themselves as animals?",
+          "choices": ["The Hydra", "Cetus", "Typhon", "The Minotaur"],
+          "answerIndex": 2,
+          "explanation": "Typhon, a child of Gaia, attacked heaven and sent the gods fleeing to Egypt."
+        },
+        {
+          "id": "q2",
+          "prompt": "How did Pan come to be half goat and half fish?",
+          "choices": [
+            "He jumped into a river and changed only his lower half into a fish",
+            "Zeus cursed him for cowardice",
+            "He was born that way",
+            "A sea nymph enchanted him"
+          ],
+          "answerIndex": 0,
+          "explanation": "The part of him under the water became a fish while the rest stayed a goat."
+        },
+        {
+          "id": "q3",
+          "prompt": "What did Typhon do to Zeus during their fight, according to Apollodorus?",
+          "choices": [
+            "Blinded him",
+            "Turned him to stone",
+            "Stole his thunderbolts",
+            "Cut the sinews from his hands and feet"
+          ],
+          "answerIndex": 3,
+          "explanation": "Typhon removed and hid Zeus's sinews; Hermes and Aegipan stole them back."
+        },
+        {
+          "id": "q4",
+          "prompt": "Where did Zeus finally bury Typhon?",
+          "choices": ["Under Mount Olympus", "Under Mount Etna", "In the river Nile", "Beneath the island of Crete"],
+          "answerIndex": 1,
+          "explanation": "Zeus threw Mount Etna in Sicily on top of him, and its fires are said to be the monster's."
+        }
+      ]
+    },
+    {
+      "id": "Cap-aegipan-titans",
+      "title": "Aegipan, foster brother of Zeus",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Eratosthenes", "work": "Catasterisms (Capricornus)", "date": "3rd century BCE; surviving summary later" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.28", "date": "1st century BCE – 2nd century CE" }
+      ],
+      "summary": "An older explanation, given by Eratosthenes, says the Sea Goat is Aegipan, who was nursed alongside the infant Zeus and later helped him defeat the Titans by spreading panic among them. His fish's tail recalls the sea shell he used as a weapon.",
+      "retelling": [
+        "Before Zeus was king of the gods he was a hidden baby. His father Cronus, the ruler of the Titans, swallowed each of his children as it was born, having been warned that one of them would overthrow him. When Zeus was born, his mother Rhea gave Cronus a stone wrapped in baby clothes and sent the real child to a cave on Crete, where he was fed on the milk of a goat.",
+        "He did not grow up alone. Hyginus says that the creature we see in Capricornus was nursed with him. This was Aegipan, 'Goat-Pan', a being with the horns and legs of a goat. The two were foster brothers, raised on the same milk.",
+        "When Zeus was grown he freed his brothers and sisters and led them to war against Cronus and the Titans. It was a long war and a hard one, and Zeus needed every ally he could find. Aegipan stood with him. He was no great warrior, but he had a gift that turned out to matter more than strength.",
+        "Eratosthenes says that Aegipan was the first to throw into the enemy the sudden, senseless terror that makes an army break and run. The Greeks named that terror after him: *panikos*, panic. In the version that Eratosthenes gives, he did it with the blast of a conch, the great spiral shell of the sea, blown like a trumpet. The Titans heard the sound, did not know what it was, and fled.",
+        "That shell, Eratosthenes explains, is the reason for the fish's tail: the goat-god is marked with a sign of the sea because his weapon came from it. Hyginus had heard a blunter version, in which Aegipan simply pelted the Titans with shellfish instead of stones, and the tail is his reward for that.",
+        "Zeus won the war and took the throne of heaven, and he did not forget those who had shared his childhood. He set the goat that had nursed him in the sky, where she shines as the bright star Capella in Auriga. And he placed his foster brother there too, as the goat-horned figure with a fish's tail, so that the companion of his cradle and his first battle would be remembered among the stars."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Star Tales – Capricornus",
+        "url": "http://www.ianridpath.com/startales/capricornus.html"
+      },
+      "characters": ["Aegipan (Pan)", "Zeus", "Cronus", "Rhea", "the Titans"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "What was Aegipan's connection to the young Zeus?",
+          "choices": [
+            "He was Zeus's tutor",
+            "He was nursed alongside him as a foster brother",
+            "He was Zeus's son",
+            "He guarded the cave with a spear"
+          ],
+          "answerIndex": 1,
+          "explanation": "Hyginus says Zeus wanted him among the stars because the two were nourished together."
+        },
+        {
+          "id": "q2",
+          "prompt": "How did Aegipan help Zeus in the war against the Titans?",
+          "choices": [
+            "He forged the thunderbolts",
+            "He carried messages between the gods",
+            "He flooded the battlefield",
+            "He spread sudden terror, or panic, among them"
+          ],
+          "answerIndex": 3,
+          "explanation": "He was the first to cast the fear called panikos into the enemy, and the word panic comes from his name."
+        },
+        {
+          "id": "q3",
+          "prompt": "According to Eratosthenes, why does the Sea Goat have a fish's tail?",
+          "choices": [
+            "Because of the sea shell he used in the battle",
+            "Because his mother was a mermaid",
+            "Because he drowned in the sea",
+            "Because Poseidon adopted him"
+          ],
+          "answerIndex": 0,
+          "explanation": "The fishy half recalls the conch shell he blew to frighten the Titans; Hyginus says he threw shellfish at them."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Capricornus lies on the ecliptic, the path of the Sun, Moon and planets. The Sun passes through it from late January to mid-February.",
+    "It is the smallest of the twelve zodiac constellations, with less than a third of the area of Virgo, the largest.",
+    "The planet Neptune was first seen on September 23, 1846, close to Deneb Algedi, although by today's official boundaries the spot lies just over the border in Aquarius.",
+    "The Greek and Roman writers disagreed about the goat's horns and tail, and so did later map makers: Ptolemy described short straight horns, while atlases such as Johann Bode's drew long ones sweeping back over the neck and a tail tied in a loop."
+  ]
+}

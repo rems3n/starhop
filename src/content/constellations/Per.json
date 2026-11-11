@@ -1,0 +1,201 @@
+{
+  "id": "Per",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); an older Greek figure already described by Aratus",
+    "when": "2nd century CE (Almagest); known to the Greeks by the 3rd century BCE",
+    "history": [
+      "Perseus is one of the 48 constellations in Ptolemy's *Almagest* (about 150 CE). Aratus, in the 3rd century BCE, already pictured him as the tall bridegroom of Andromeda, striding through the sky 'dust-stained', perhaps because the figure stands in a bright stretch of the Milky Way.",
+      "He is drawn holding a sword above his head in one hand and the severed head of Medusa in the other. Ptolemy listed four stars in 'the Gorgon head', the brightest of them the star we call Algol, and from the 16th century some mapmakers labeled that group as a little sub-constellation of its own, Caput Medusae. Ptolemy also noted a 'nebulous mass' at the sword hand: the pair of star clusters now known as the Double Cluster.",
+      "Arabic astronomers took over the Greek figure whole. They called it 'the bearer of the demon's head', and Algol is what is left of their phrase *ra's al-ghul*, 'the demon's head'."
+    ]
+  },
+  "overview": "Perseus is the hero who beheaded Medusa and rescued Andromeda. He stands in the Milky Way between Cassiopeia and the bright star Capella, a curving line of stars with one famous oddity: Algol, a star that visibly dims every three days.",
+  "howToFind": [
+    "Start from Andromeda's chain of three bright stars that runs from the corner of the Great Square. Follow it from [[star:Alpheratz|Alpheratz]] through [[star:Mirach|Mirach]] to [[star:Almach|Almach]] and keep going a fist and a half in the same direction (a fist at arm's length is roughly 10 degrees). The bright star you reach is [[star:Mirfak|Mirfak]], the heart of Perseus. You can also simply look below Cassiopeia's W, in the direction of brilliant [[star:Capella|Capella]]: Mirfak is the brightest star in between.",
+    "From Mirfak a curved line of stars runs up toward Cassiopeia through [[star:γ Per|Gamma]] and [[star:η Per|Eta Persei]], and down toward the Pleiades through [[star:δ Per|Delta]], [[star:ε Per|Epsilon]] and [[star:ζ Per|Zeta Persei]]. [[star:Algol|Algol]] sits off to the side, about a fist south of Mirfak, on the way back toward Almach. From Brooklyn Perseus rises in the northeast on autumn evenings and passes nearly overhead in December and January; its northern stars barely set at all."
+  ],
+  "shape": "A long, bent line of stars about three fists from top to bottom, something like a stretched letter K or a wishbone, with Mirfak at the bend and Algol on a short branch. From the city you will catch Mirfak, Algol and three or four third-magnitude stars along the curve (magnitude is the brightness scale, where smaller numbers are brighter); the rich background of faint stars needs a darker sky or binoculars.",
+  "mainStars": [
+    {
+      "ref": "star:Mirfak",
+      "note": "Alpha Persei, the brightest star in the constellation, a yellow-white supergiant roughly 500 light-years away. Its name is from the Arabic for 'elbow'. Binoculars show it surrounded by a loose swarm of fainter stars, the Alpha Persei Cluster."
+    },
+    {
+      "ref": "star:Algol",
+      "note": "Beta Persei, 'the demon's head', set in the head of Medusa. It is really two stars circling each other every 2.87 days; when the dimmer one passes in front, Algol fades from magnitude 2.1 to 3.4 for a few hours and then recovers."
+    },
+    {
+      "ref": "star:ζ Per",
+      "note": "Zeta Persei, a hot blue-white supergiant about 750 light-years away marking the hero's foot at the southern end of the figure, a fist north of the Pleiades."
+    },
+    {
+      "ref": "star:ε Per",
+      "note": "Epsilon Persei, a blue-white star on the leg, part of the line running down from Mirfak."
+    },
+    {
+      "ref": "star:γ Per",
+      "note": "Gamma Persei, a yellowish star at the hero's shoulder, the first stop on the way from Mirfak up toward Cassiopeia and the Double Cluster."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "dso:C14",
+      "equip": "naked-eye",
+      "note": "The Double Cluster: two rich star clusters side by side, more than 7,000 light-years away, at Perseus's sword hand. Look about halfway between Gamma Persei and [[star:Ruchbah|Ruchbah]] in Cassiopeia. A hazy patch to the eye under a dark sky, and one of the best sights in the sky in binoculars."
+    },
+    {
+      "ref": "star:Mirfak",
+      "equip": "binoculars",
+      "note": "The Alpha Persei Cluster: point binoculars at Mirfak and the field fills with a winding chain of blue-white stars several Moon-widths across. Easy even from the city."
+    },
+    {
+      "ref": "star:Algol",
+      "equip": "naked-eye",
+      "note": "Catch an eclipse of Algol: compare it with Mirfak and with Almach. Normally Algol nearly matches Almach; at minimum it is clearly fainter, and the whole dip and recovery takes about ten hours."
+    },
+    {
+      "ref": "dso:M34",
+      "equip": "binoculars",
+      "note": "An open cluster about halfway between Algol and Almach, a little north of the line joining them. Binoculars show a misty patch with a few stars sparkling in it."
+    },
+    {
+      "ref": "dso:M76",
+      "equip": "telescope",
+      "note": "The Little Dumbbell, a small, faint planetary nebula (the glowing gas shed by a dying star) and one of the dimmest objects in Messier's catalogue."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Per-medusa",
+      "title": "Danaë's son and the Gorgon's head",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Apollodorus", "work": "Library 2.4.1–2", "date": "1st–2nd century CE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.12", "date": "2nd century CE" },
+        { "author": "Ovid", "work": "Metamorphoses 4.772–803", "date": "c. 8 CE" }
+      ],
+      "summary": "Perseus, son of Zeus and the imprisoned princess Danaë, was sent by a scheming king to fetch the head of Medusa, whose gaze turned people to stone. With gifts from the gods and a polished shield for a mirror, he cut off her head while she slept.",
+      "retelling": [
+        "King Acrisius of Argos asked an oracle whether he would ever have sons. The answer was that his daughter would have one, and that the boy would kill him. So Acrisius built a chamber of bronze under the ground and shut his daughter Danaë inside it. Walls did not keep out Zeus. He came to her as a stream of gold pouring through the roof into her lap, and she bore a son, Perseus.",
+        "Acrisius did not believe the story about Zeus. He put mother and child into a wooden chest and pushed it out to sea. The chest drifted to the island of Seriphos, where a man named Dictys found it and raised the boy.",
+        "Dictys had a brother, Polydectes, who was king of the island and wanted Danaë. Perseus, grown up by now, stood in his way. So the king announced that he was collecting gifts toward a royal wedding and asked each man for a horse. Perseus had none, but he had declared that he would not refuse even the Gorgon's head. Polydectes took him at his word.",
+        "There were three Gorgons, Stheno, Euryale and Medusa, with snaky heads, tusks like boars, hands of bronze and wings of gold, and whoever looked at them turned to stone. Only Medusa was mortal. Hermes and Athena took the young man in hand. First he went to the Gorgons' sisters, three women who had been old from birth and had a single eye and a single tooth among them, passed from hand to hand. Perseus snatched both in mid-pass and would not give them back until they told him the way to certain nymphs. From the nymphs he got winged sandals, a bag for the head, and the cap of Hades, which made its wearer invisible. Hermes added a sickle of adamant, the hardest substance there was.",
+        "He flew to the edge of the world, by the river Ocean, and found the Gorgons asleep. Ovid has him pick his way there past the shapes of men and animals that had looked at Medusa and stayed forever as stone. He did not look. He kept his eyes on her reflection in his bronze shield, Athena guided his hand, and he took off her head with one stroke. Out of her neck sprang the winged horse Pegasus and the warrior Chrysaor, her children by Poseidon. Perseus dropped the head into the bag and was gone. The two immortal sisters woke and gave chase, but they could not see a man in the cap of Hades.",
+        "The tellers disagree on details. Hyginus has Hermes himself supply the sandals and the cap, has the god Hephaestus forge the blade, and says Perseus threw the old women's eye into a lake so that the guards were blind when he passed. Hyginus also gives the reason this hero is in the sky at all: he came to the stars, he says, because of his nobility and the strange manner of his conception. On the old star maps he is still holding what he was sent for. The head of Medusa hangs from his left hand, and its brightest star is Algol."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Perseus and Medusa the Gorgon",
+        "url": "http://www.ianridpath.com/startales/perseus.html"
+      },
+      "characters": ["Perseus", "Danaë", "Acrisius", "Zeus", "Dictys", "Polydectes", "Medusa", "Hermes", "Athena"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Why did King Acrisius lock away his daughter Danaë?",
+          "choices": ["An oracle said her son would kill him", "She had refused to marry Polydectes", "She had boasted of her beauty", "Zeus had ordered him to"],
+          "answerIndex": 0,
+          "explanation": "The oracle foretold that Danaë's son would kill his grandfather, so Acrisius tried to make sure she never had one."
+        },
+        {
+          "id": "q2",
+          "prompt": "In what form did Zeus reach Danaë in her bronze chamber?",
+          "choices": ["As a white bull", "As a swan", "As a shower of gold", "As an eagle"],
+          "answerIndex": 2,
+          "explanation": "Zeus poured through the roof as a stream of gold, and Danaë became the mother of Perseus."
+        },
+        {
+          "id": "q3",
+          "prompt": "How did Perseus avoid being turned to stone by Medusa?",
+          "choices": ["He fought with his eyes closed", "He wore the cap of Hades", "Athena covered Medusa's face", "He looked only at her reflection in his shield"],
+          "answerIndex": 3,
+          "explanation": "He watched her image in his bronze shield while he struck. The cap of Hades made him invisible but did not protect him from her gaze."
+        },
+        {
+          "id": "q4",
+          "prompt": "What did the three old sisters of the Gorgons share among them?",
+          "choices": ["One pair of wings", "One eye and one tooth", "One golden sword", "One cap of invisibility"],
+          "answerIndex": 1,
+          "explanation": "They passed a single eye and a single tooth between them; Perseus seized these to make them tell him the way."
+        },
+        {
+          "id": "q5",
+          "prompt": "Who sent Perseus to fetch the Gorgon's head, hoping to be rid of him?",
+          "choices": ["King Cepheus", "King Acrisius", "King Polydectes", "King Iobates"],
+          "answerIndex": 2,
+          "explanation": "Polydectes of Seriphos wanted Danaë and saw her grown son as an obstacle, so he sent him on what should have been a fatal errand."
+        }
+      ]
+    },
+    {
+      "id": "Per-homecoming",
+      "title": "The long way home: Atlas, Andromeda and the prophecy",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Ovid", "work": "Metamorphoses 4.604–803 and 5.1–249", "date": "c. 8 CE" },
+        { "author": "Apollodorus", "work": "Library 2.4.3–5", "date": "1st–2nd century CE" },
+        { "author": "Aratus", "work": "Phaenomena 248–253", "date": "3rd century BCE" }
+      ],
+      "summary": "Flying home with Medusa's head, Perseus turned the giant Atlas into a mountain, killed a sea monster to win Andromeda, and petrified his enemies at his own wedding and back on Seriphos. In the end the old prophecy came true anyway, by accident, at an athletic contest.",
+      "retelling": [
+        "The winds blew Perseus about the sky like a cloud, Ovid says, three times to the cold north and three times to the south. Drops of blood from the bag fell on the sands of Libya and became snakes, which is why that desert is full of them. At nightfall he came down in the far west, in the realm of the giant Atlas, and asked for a night's rest. Atlas had been warned that a son of Zeus would one day rob his orchard of golden apples, and he drove the stranger off. Perseus turned his own face away and held up the head. Atlas became a mountain, his beard and hair forests, his shoulders ridges, and the sky has rested on him since.",
+        "Next morning Perseus strapped on his wings again and flew east until he saw, far below on the coast of King Cepheus's country, a girl chained to a rock. He came down, learned that she was the princess Andromeda and that a sea monster was coming for her, and struck a quick bargain with her parents: her life for her hand.",
+        "The fight was not as easy as the bargain. Perseus climbed into the air, and the monster first attacked his shadow on the water. He dived onto its back and buried his blade to the hilt in its right shoulder. It reared, plunged and spun like a boar among hounds while he stabbed wherever its shell left a gap. Then he felt his sandals growing heavy: the wings were soaked with spray and blood, and he did not trust them to hold him. He caught hold of a rock that stood just clear of the waves, braced himself with his left hand, and finished the creature from there.",
+        "Before washing his hands he laid Medusa's head on a bed of leaves and seaweed so the sand would not bruise it. The seaweed hardened at the touch, and the sea nymphs, delighted, tried it on more and more. That, Ovid says, is where coral comes from. Perseus built three altars of turf, to Athena, to Hermes and to Zeus, and married Andromeda. When her uncle Phineus burst into the feast with armed men to claim her, Perseus fought until the numbers were hopeless, then called to his friends to look away and raised the head. Two hundred men, and at last Phineus himself, stood in the hall as statues.",
+        "On Seriphos he found his mother Danaë and old Dictys sheltering at an altar from King Polydectes. He walked into the palace, where the king sat among his friends, and showed them what they had sent him for. He made Dictys king, returned the sandals, bag and cap, and gave the head to Athena, who set it in the middle of her shield.",
+        "Then he went looking for his grandfather. Acrisius, remembering the oracle, had fled Argos. But at funeral games in the town of Larissa, Perseus entered the pentathlon, and his discus struck an old man among the spectators on the foot and killed him. It was Acrisius. Ashamed to inherit the throne of a man he had killed, Perseus traded kingdoms with a cousin and ruled at Tiryns instead, and fortified Mycenae.",
+        "He was given a place in the sky beside the family he married into. Aratus shows him to us there: taller than the rest, close to Andromeda's feet, his right hand reaching toward the throne of her mother, taking great strides through the heaven of Zeus."
+      ],
+      "link": {
+        "site": "Theoi",
+        "label": "Perseus in the ancient sources",
+        "url": "https://www.theoi.com/Heros/Perseus.html"
+      },
+      "characters": ["Perseus", "Atlas", "Andromeda", "Cepheus", "Phineus", "Polydectes", "Dictys", "Danaë", "Acrisius", "Athena"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "What happened to the giant Atlas when he refused Perseus a place to rest?",
+          "choices": ["He was thrown into the sea", "He was turned into a mountain", "He lost his golden apples", "He was chained to a rock"],
+          "answerIndex": 1,
+          "explanation": "In Ovid's telling Perseus showed him Medusa's head and Atlas became the mountain that bears his name."
+        },
+        {
+          "id": "q2",
+          "prompt": "During the fight with the sea monster, why did Perseus land on a rock?",
+          "choices": ["His wings were soaked and too heavy to trust", "He had dropped his sword", "Andromeda called him back", "The monster had bitten off one sandal"],
+          "answerIndex": 0,
+          "explanation": "Spray and blood drenched his winged sandals, so he held on to a rock with his left hand and struck the final blows from there."
+        },
+        {
+          "id": "q3",
+          "prompt": "According to Ovid, what was created when Medusa's head was laid on seaweed?",
+          "choices": ["Pearls", "Sea serpents", "Amber", "Coral"],
+          "answerIndex": 3,
+          "explanation": "The seaweed hardened at the touch of the Gorgon's head, and Ovid makes this the origin of coral."
+        },
+        {
+          "id": "q4",
+          "prompt": "How was the prophecy about Acrisius finally fulfilled?",
+          "choices": ["Perseus showed him Medusa's head", "Perseus killed him in battle for Argos", "A discus thrown by Perseus struck him by accident", "He drowned fleeing from Perseus"],
+          "answerIndex": 2,
+          "explanation": "At games in Larissa a discus thrown by Perseus hit Acrisius, who was among the spectators, and killed him."
+        },
+        {
+          "id": "q5",
+          "prompt": "What became of Medusa's head in the end?",
+          "choices": ["Perseus buried it on Seriphos", "Athena set it on her shield", "It was thrown into the sea at Joppa", "Zeus placed it under Mount Atlas"],
+          "answerIndex": 1,
+          "explanation": "Perseus gave the head to Athena, who fixed it in the middle of her shield."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Algol's regular dimming was first reported by Geminiano Montanari in 1671, and its period was worked out in 1783 by John Goodricke, an English amateur astronomer still in his teens.",
+    "The Perseid meteors, which peak around August 12 each year, appear to streak out of northern Perseus. They are dust from Comet Swift–Tuttle burning up in our atmosphere.",
+    "Six constellations come from this one story: Perseus, Andromeda, Cassiopeia, Cepheus, Cetus and Pegasus.",
+    "Chinese astronomers saw the curve of stars through Mirfak as a boat on the river of the Milky Way."
+  ]
+}

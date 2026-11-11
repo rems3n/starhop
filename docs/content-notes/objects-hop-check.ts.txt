@@ -1,0 +1,11 @@
+// Lists what each key/link resolves to, and for showpiece keys the nearest bright stars (sep°, direction of target from star).
+import { readFileSync } from 'node:fs';
+import { buildCatalog, separation } from '/home/claude/starhop/src/data/catalog';
+const R='/home/claude/starhop/';
+const j=(p:string)=>JSON.parse(readFileSync(R+p,'utf8'));
+const cat=buildCatalog({stars:j('public/data/stars.json'),constellations:j('public/data/constellations.json'),dsos:j('public/data/dsos.json')});
+const dir=(a:any,b:any)=>{const r=Math.PI/180,d=(b.ra-a.ra)*r;const y=Math.sin(d)*Math.cos(b.dec*r),x=Math.cos(a.dec*r)*Math.sin(b.dec*r)-Math.sin(a.dec*r)*Math.cos(b.dec*r)*Math.cos(d);return ['N','NE','E','SE','S','SW','W','NW'][Math.round(((Math.atan2(y,x)/r+360)%360)/45)%8]};
+for (const f of ['stars','showpieces']) { const o=j(`src/content/objects/${f}.json`);
+  for (const k of Object.keys(o)) { const t=cat.resolve(k)!; 
+    const links=[...JSON.stringify(o[k]).matchAll(/\[\[([^\]|]+)\|([^\]]*)\]\]/g)].map(m=>{const x=cat.resolve(m[1])!;return `${m[2]}→${x.name} ${separation(x,t).toFixed(1)}°${dir(x,t)}`});
+    console.log(`${k} = ${t.name} (dec ${t.dec.toFixed(0)}) :: ${links.join('; ')}`); } }

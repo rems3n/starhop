@@ -1,0 +1,252 @@
+{
+  "id": "moon-phases",
+  "unit": "ecliptic",
+  "order": 5,
+  "title": "The phases of the Moon",
+  "subtitle": "Why the Moon changes shape, and when each phase is in the sky",
+  "minutes": 7,
+  "sections": [
+    {
+      "heading": "Half lit, always",
+      "body": [
+        "After this lesson you will be able to look at the Moon, name its phase, say roughly what time it rose and will set, and judge whether tonight is a good night for faint objects.",
+        "The Moon is a ball lit by the Sun, so half of it is always in sunlight. The phases are how much of that sunlit half is turned toward us as the Moon circles Earth. They have nothing to do with Earth's shadow, which touches the Moon only during a lunar eclipse.",
+        "When the Moon is in the same direction as the Sun we face its dark side: new Moon. As it moves away from the Sun we see a thin sliver of the lit half, a crescent, which grows night by night. A quarter of the way round it looks half lit; this is called first quarter. Then it is gibbous, more than half lit, and when it is opposite the Sun we see the whole sunlit face: full Moon. The second half of the cycle runs the same shapes in reverse: gibbous, last quarter, crescent, new. One cycle takes 29.5 days. A growing Moon is called waxing and a shrinking one waning.",
+        "The lit edge always points to the Sun. From Brooklyn, an evening Moon lit on the right is waxing; a morning Moon lit on the left is waning."
+      ],
+      "demo": {
+        "title": "Two weeks of evenings",
+        "controls": [
+          "date-step"
+        ],
+        "steps": [
+          {
+            "caption": "April 9, 2027, 8:30 pm, an hour after sunset, looking west. The Moon is three days past new: a thin crescent, 11% lit, two and a half fists up and following the Sun down.",
+            "time": "2027-04-09 20:30",
+            "view": {
+              "az": 275,
+              "alt": 25,
+              "fov": 80
+            },
+            "layers": {
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "body:Moon",
+                "label": "Crescent, 3 days old"
+              }
+            ]
+          },
+          {
+            "caption": "Four evenings later at the same time: first quarter. The Moon is half lit and 66° high in the south-southwest, a quarter of the sky away from the Sun.",
+            "time": "2027-04-13 20:30",
+            "view": {
+              "az": 215,
+              "alt": 50,
+              "fov": 100
+            },
+            "layers": {
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "body:Moon",
+                "label": "First quarter"
+              }
+            ]
+          },
+          {
+            "caption": "April 16: waxing gibbous, 82% lit, and now in the southeast at the same hour. Each night the Moon has been about 13° farther east.",
+            "time": "2027-04-16 20:30",
+            "view": {
+              "az": 150,
+              "alt": 40,
+              "fov": 100
+            },
+            "layers": {
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "body:Moon",
+                "label": "Waxing gibbous"
+              }
+            ]
+          },
+          {
+            "caption": "April 20: full Moon, only just risen in the east-southeast. It came up at 7:49 pm, nine minutes after the Sun went down on the opposite side of the sky.",
+            "time": "2027-04-20 20:30",
+            "view": {
+              "az": 110,
+              "alt": 15,
+              "fov": 80
+            },
+            "layers": {
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "body:Moon",
+                "label": "Full Moon, just risen"
+              }
+            ]
+          },
+          {
+            "caption": "April 23, same time, facing east: no Moon. It will not rise until after 11 pm. The evening sky is dark again, and the waning Moon belongs to the late night and morning.",
+            "time": "2027-04-23 20:30",
+            "view": {
+              "az": 110,
+              "alt": 25,
+              "fov": 100
+            },
+            "layers": {
+              "ecliptic": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "heading": "When each phase is up",
+      "body": [
+        "Because the phase is set by the Moon's angle from the Sun, each phase keeps its own hours. A new Moon rises and sets with the Sun. A waxing crescent is in the west after sunset and sets in the evening. A first-quarter Moon is highest around sunset and sets around midnight. A full Moon rises at sunset and is up all night. A last-quarter Moon rises around midnight and is high at dawn. A waning crescent rises shortly before the Sun.",
+        "The Moon circles the sky, eastward along the zodiac, once in about 27 days: 13° per day, or its own width every hour. So each day Earth has to turn a little farther to bring it back into view, and moonrise comes later by about 50 minutes a day on average. The delay varies a lot with the season, from under half an hour to well over an hour."
+      ],
+      "demo": {
+        "title": "13° a day",
+        "controls": [
+          "date-step"
+        ],
+        "steps": [
+          {
+            "caption": "The Moon at 8:30 pm on seven evenings, April 9 to 15, 2027, on a star chart. It steps east (left) about 13° a day, from Taurus through Gemini and Cancer into Leo, staying within 5° of the ecliptic line.",
+            "time": "2027-04-12 21:00",
+            "view": {
+              "target": "radec:100,20",
+              "fov": 120,
+              "mount": "equatorial"
+            },
+            "layers": {
+              "atmosphere": false,
+              "ground": false,
+              "horizon": false,
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "trail",
+                "ref": "body:Moon",
+                "from": "2027-04-09 20:30",
+                "to": "2027-04-15 20:30",
+                "stepHours": 24,
+                "frame": "stars",
+                "dateLabels": true
+              },
+              {
+                "type": "angle",
+                "from": "radec:85.0,27.0",
+                "to": "radec:100.9,25.8",
+                "label": "one day: about 14°"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "heading": "The Moon and your observing",
+      "body": [
+        "Moonlight is the countryside's light pollution. Around full Moon the sky is bright enough to wash out the Milky Way and the fainter stars even from a dark site, and faint constellations become hard to trace. In the city the bright stars and planets are unaffected. Deep-sky objects such as nebulae and galaxies are best hunted in the two weeks centered on new Moon, or at any time when the Moon is below the horizon.",
+        "For looking at the Moon itself, full Moon is the worst time. Sunlight then falls straight down on the surface, there are no shadows and it looks flat. The best views are along the terminator, the line between lunar day and night, where the Sun is rising or setting on the Moon and every crater and mountain casts a long shadow. Binoculars show it well any evening between crescent and gibbous."
+      ],
+      "tryIt": "Find the Moon tonight and note its phase and the time. Tomorrow at the same time, see how far east it has moved (a little more than a fist) and how the lit part has changed. If you cannot find it in the evening, look around sunrise."
+    }
+  ],
+  "keyPoints": [
+    "Phases come from our changing view of the Moon's sunlit half as it orbits Earth, not from Earth's shadow.",
+    "The cycle from new Moon to new Moon takes 29.5 days.",
+    "First quarter: high at sunset, sets around midnight. Full: rises at sunset, up all night. Last quarter: rises around midnight.",
+    "The Moon moves about 13° east per day and rises about 50 minutes later each day.",
+    "Hunt faint objects near new Moon; look at the Moon itself along the terminator."
+  ],
+  "examples": [],
+  "questions": [
+    {
+      "id": "mp-q1",
+      "prompt": "What causes the phases of the Moon?",
+      "choices": [
+        "Earth's shadow covering part of the Moon",
+        "Clouds on the Moon",
+        "We see different amounts of the Moon's sunlit half as it orbits Earth",
+        "The Moon giving off less light at certain times"
+      ],
+      "answerIndex": 2,
+      "explanation": "Half the Moon is always sunlit. The phase depends on how much of that half faces Earth. Earth's shadow is involved only in lunar eclipses."
+    },
+    {
+      "id": "mp-q2",
+      "prompt": "You see a half-lit Moon high in the south at sunset. Which phase is it, and when will it set?",
+      "choices": [
+        "First quarter; around midnight",
+        "Last quarter; around noon",
+        "Full; at sunrise",
+        "First quarter; at sunrise"
+      ],
+      "answerIndex": 0,
+      "explanation": "A Moon a quarter of the way around the sky east of the Sun is at first quarter. It trails the Sun by about six hours."
+    },
+    {
+      "id": "mp-q3",
+      "prompt": "When does a full Moon rise?",
+      "choices": [
+        "Around midnight",
+        "Around noon",
+        "Around sunrise",
+        "Around sunset"
+      ],
+      "answerIndex": 3,
+      "explanation": "A full Moon is opposite the Sun, so it comes up as the Sun goes down and stays up all night."
+    },
+    {
+      "id": "mp-q4",
+      "prompt": "You want to see the Milky Way on a trip to a dark site. Which nights should you choose?",
+      "choices": [
+        "The week around full Moon",
+        "Nights near new Moon",
+        "Any night: the Moon makes no difference",
+        "Only nights of first quarter"
+      ],
+      "answerIndex": 1,
+      "explanation": "Moonlight brightens the whole sky. Near new Moon the Moon is absent or a thin crescent that sets early."
+    },
+    {
+      "id": "mp-q5",
+      "prompt": "The Moon rose at 8 pm tonight. About when will it rise tomorrow?",
+      "choices": [
+        "Around 7:10 pm",
+        "At 8 pm again",
+        "Around 8:50 pm",
+        "Around 10 pm"
+      ],
+      "answerIndex": 2,
+      "explanation": "The Moon moves about 13° east along its orbit each day, so Earth must turn about 50 minutes longer, on average, to bring it back above the horizon."
+    },
+    {
+      "id": "mp-q6",
+      "prompt": "Where on the Moon do craters stand out most sharply through binoculars?",
+      "choices": [
+        "At the center of the full Moon",
+        "Along the terminator, the line between light and dark",
+        "On the dark part",
+        "At the bright edge facing the Sun"
+      ],
+      "answerIndex": 1,
+      "explanation": "Near the terminator the Sun is low in the lunar sky and features cast long shadows that reveal their relief."
+    }
+  ]
+}

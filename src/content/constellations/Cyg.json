@@ -1,0 +1,240 @@
+{
+  "id": "Cyg",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued as 'the Bird'); identified as a swan by Eratosthenes",
+    "when": "2nd century CE (catalogued); known by the 3rd century BCE",
+    "history": [
+      "The Greeks first knew this constellation simply as Ornis, the Bird. That is what the poet Aratus called it about 275 BCE, describing it gliding along in fair weather, 'wreathed in mist', a clear reference to the Milky Way that runs through it. A generation or two later Eratosthenes identified the bird as a swan (Kyknos in Greek, Cygnus in Latin) and attached the story of Zeus's disguise. Even so, when Ptolemy listed it among his 48 constellations in the *Almagest* around 150 CE he kept the older, anonymous name, the Bird.",
+      "Arab astronomers saw a hen rather than a swan. The name of the brightest star, [[star:Deneb|Deneb]], is the Arabic word for tail, short for 'tail of the hen', and the four stars across the wings were 'the horsemen'. The name Albireo for the beak star looks Arabic but is not: it is the result of a chain of medieval mistranslations and means nothing at all.",
+      "The popular modern name for the brightest stars of Cygnus is the Northern Cross. In Johann Bayer's atlas of 1603 the swan's body and wings were already being read as a cross."
+    ]
+  },
+  "overview": "Cygnus is a swan flying south along the Milky Way with its long neck stretched out and its wings spread wide. Its brightest stars form a large, obvious cross, the Northern Cross, with brilliant Deneb at the top marking the swan's tail; Deneb is also one corner of the Summer Triangle.",
+  "howToFind": [
+    "Find the Summer Triangle, the three bright stars that dominate the evening sky from June into November. [[star:Vega|Vega]], nearly overhead in summer, is the brightest. [[star:Deneb|Deneb]] is the corner about two and a half fists (25 degrees) to Vega's northeast, and is the faintest of the three. [[star:Altair|Altair]] is the southern corner. From Brooklyn, Deneb passes almost exactly overhead on evenings in September and October.",
+    "Deneb is the tail of the swan and the top of the cross. From Deneb, look into the triangle toward the midpoint between Vega and Altair. One hand-width along you reach [[star:Sadr|Sadr]], the star at the center of the cross. Keep going the same direction for another fist and a half to the fainter star [[star:Albireo|Albireo]], the swan's beak and the foot of the cross, which sits near the middle of the triangle. Then go back to Sadr and look to either side for the wings: [[star:δ Cyg|Delta Cygni]] toward Vega's side and [[star:ε Cyg|Epsilon Cygni]] on the other."
+  ],
+  "shape": "A big cross lying along the Milky Way, a little over two fists tall from Deneb to Albireo and more than a fist and a half across the wings. Deneb, Sadr, and the two wing stars are bright enough to see from a city, so the cross survives Brooklyn skies; Albireo at the foot is third magnitude and may need a moment to pick out. The fainter stars that curve the wingtips back, and the Milky Way itself, need a dark site.",
+  "mainStars": [
+    {
+      "ref": "star:Deneb",
+      "note": "White, magnitude 1.3, the swan's tail. It looks like the faintest corner of the Summer Triangle, but it is by far the most distant: estimates range from about 1,400 to 2,600 light-years, against 25 for Vega and 17 for Altair. It is a supergiant, one of the most luminous stars you can see with the naked eye."
+    },
+    {
+      "ref": "star:Sadr",
+      "note": "Gamma Cygni, a yellowish supergiant of magnitude 2.2 at the crossing point of the cross. Its name means 'breast' in Arabic: it marks the swan's chest."
+    },
+    {
+      "ref": "star:Albireo",
+      "note": "Beta Cygni, the swan's beak. To the eye it is a single third-magnitude star; in a small telescope it becomes one of the most beautiful double stars in the sky, a golden-orange star with a blue companion."
+    },
+    {
+      "ref": "star:ε Cyg",
+      "note": "Aljanah, an orange giant of magnitude 2.5 about 72 light-years away, marking the swan's eastern wing."
+    },
+    {
+      "ref": "star:δ Cyg",
+      "note": "Fawaris, blue-white and magnitude 2.9, marking the western wing. Its name remembers the Arabic 'horsemen', an old grouping of the wing stars."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "star:Albireo",
+      "equip": "small-telescope",
+      "note": "The showpiece double star: a gold primary and a blue secondary, wide enough to split at low power in any telescope, and just possible in steadily held large binoculars."
+    },
+    {
+      "ref": "dso:M39",
+      "equip": "binoculars",
+      "note": "A large, loose open cluster (a group of stars born together) about a fist northeast of Deneb. Binoculars show a sparse triangle of a couple of dozen stars."
+    },
+    {
+      "ref": "dso:NGC7000",
+      "equip": "binoculars",
+      "note": "The North America Nebula, a glowing gas cloud shaped like the continent, just a few degrees east of Deneb. It is large but very faint: you need a truly dark sky, where it shows in binoculars as a pale patch of Milky Way. It is not a city object."
+    },
+    {
+      "ref": "dso:M29",
+      "equip": "small-telescope",
+      "note": "A small open cluster just south of Sadr. A small telescope shows a tight little box of half a dozen stars against the crowded Milky Way."
+    },
+    {
+      "ref": "dso:NGC6992",
+      "equip": "telescope",
+      "note": "The eastern arc of the Veil Nebula, the delicate wreckage of a star that exploded thousands of years ago, south of Epsilon Cygni. It needs a dark sky and a telescope, ideally with a nebula filter."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Cyg-zeus-nemesis",
+      "title": "Zeus, Nemesis, and the egg",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Eratosthenes", "work": "Catasterisms (the Bird)", "date": "3rd century BCE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.8" }
+      ],
+      "summary": "In the oldest explanation of the Swan, the bird is Zeus himself, in the disguise he used to overpower the goddess Nemesis. From their union came an egg, and from the egg came Helen of Troy. Zeus set the swan in the sky to mark the event.",
+      "retelling": [
+        "Nemesis was the goddess who made sure that no one, mortal or god, got more good fortune than they deserved. She had a famous sanctuary at Rhamnus, on the coast northeast of Athens. Zeus, king of the gods, wanted her, and she wanted nothing to do with him.",
+        "As Eratosthenes told it, she tried to escape by changing her shape. She became one creature after another, plunging into water, then racing across the land, and each time Zeus matched her, turning himself into something bigger and faster. At last she took to the air as a goose. Zeus became a swan, overtook her, and forced himself on her. The ancient writers present this plainly as a pursuit she did not welcome and could not escape.",
+        "Hyginus tells it another way, as a trick rather than a chase. In his version Zeus could not persuade Nemesis and so made a plan with Aphrodite, the goddess of love. Aphrodite turned herself into an eagle, Zeus turned himself into a swan, and the eagle chased the swan across the sky as if to kill it. The swan fled straight to Nemesis and dropped into her lap. Feeling sorry for the hunted bird, she sheltered it in her arms and, holding it, fell asleep. While she slept Zeus had his way, and then flew off.",
+        "Both versions agree on what followed. In time Nemesis, having been taken in the shape of a bird, produced an egg. Hermes carried the egg to Sparta and gave it to Queen Leda; others said a shepherd found it lying in a wood and brought it to her. Leda kept it safe, and from it hatched a girl whom she raised as her own daughter. The girl was Helen, the most beautiful woman in the world, whose abduction would one day start the Trojan War. It is a fitting child for Nemesis, the goddess of retribution.",
+        "People had seen the swan flying high overhead when Zeus left, Hyginus says, and it was put about that he had been set among the stars. To make the story true, Zeus placed the image of the flying swan in the sky. In the trick version he added the eagle as well, still in pursuit, and that is why Aquila the Eagle flies close behind Cygnus on summer nights."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Cygnus, the swan",
+        "url": "http://www.ianridpath.com/startales/cygnus.html"
+      },
+      "characters": ["Zeus", "Nemesis", "Aphrodite", "Hermes", "Leda", "Helen"],
+      "questions": [
+        {
+          "id": "nemesis-q1",
+          "prompt": "In Eratosthenes's version, what bird did Nemesis become in her last attempt to escape Zeus?",
+          "choices": ["A dove", "A swan", "A goose", "An eagle"],
+          "answerIndex": 2,
+          "explanation": "She finally fled as a goose, and Zeus overtook her as a swan, the form remembered in the constellation."
+        },
+        {
+          "id": "nemesis-q2",
+          "prompt": "In Hyginus's version, who played the eagle that pretended to chase the swan?",
+          "choices": ["Aphrodite", "Hera", "Hermes", "Athena"],
+          "answerIndex": 0,
+          "explanation": "Aphrodite (Venus) took the form of an eagle so that the swan, Zeus in disguise, could seek shelter with Nemesis."
+        },
+        {
+          "id": "nemesis-q3",
+          "prompt": "Who hatched from the egg of Nemesis?",
+          "choices": ["Castor", "Clytemnestra", "Achilles", "Helen"],
+          "answerIndex": 3,
+          "explanation": "The egg was given to Leda of Sparta, and from it came Helen, later called Helen of Troy."
+        },
+        {
+          "id": "nemesis-q4",
+          "prompt": "Who, in Hyginus's account, carried the egg to Leda in Sparta?",
+          "choices": ["Apollo", "Hermes", "Tyndareus", "Zeus himself"],
+          "answerIndex": 1,
+          "explanation": "Hermes (Mercury) brought the egg to Leda; another version says a shepherd found it in a wood."
+        }
+      ]
+    },
+    {
+      "id": "Cyg-leda",
+      "title": "Leda and the swan",
+      "culture": "Greek and Roman",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.8" },
+        { "author": "Germanicus", "work": "Aratea (his Latin version of Aratus's Phaenomena)", "date": "early 1st century CE" }
+      ],
+      "summary": "The simpler and more famous story says that Zeus, as a swan, came to Leda, queen of Sparta, on the banks of the river Eurotas. Her children included Helen of Troy and the twins Castor and Polydeuces, who became the constellation Gemini.",
+      "retelling": [
+        "Many people in the ancient world skipped Nemesis altogether and told a shorter story. Hyginus, after giving the Nemesis version, adds that others say Zeus in the form of a swan lay with Leda herself, and he declines to decide between them. The Roman prince and poet Germanicus clearly had this version in mind when he called the celestial swan 'the winged adulterer'.",
+        "Leda was the wife of Tyndareus, king of Sparta. One day, on the banks of the river Eurotas, a great white swan came to her. It was Zeus in disguise, and by the time the bird flew away she was carrying his children.",
+        "What made the outcome so tangled is that Leda also lay with her husband Tyndareus that same night. So when her children were born, no one could be sure whose they were, and the storytellers never agreed on the details. Some said she bore a single egg, and that out of it came the twin brothers Castor and Polydeuces and their sister Helen. The shell of that egg, it was claimed, was kept on display in a temple at Sparta, hanging from the ceiling by ribbons.",
+        "Others said there were two eggs. From one came Castor and Polydeuces, and from the other Helen and her sister Clytemnestra. The usual way of dividing them was that Polydeuces and Helen were the immortal children of Zeus, while Castor and Clytemnestra were the mortal children of Tyndareus.",
+        "All four went on to shape the great stories of Greece. Helen's beauty caused the Trojan War. Clytemnestra married Agamemnon, the commander of the Greek army. Castor and Polydeuces, inseparable in life, were placed in the sky together as Gemini, the Twins, where Polydeuces is better known by his Latin name, Pollux.",
+        "And the swan was placed there too. Whichever woman the story names, the ending is the same one the Greeks gave for the Bird: Zeus fixed among the stars the shape he had worn, wings spread, flying down the Milky Way. On an autumn evening you can watch it dive toward the western horizon while the Twins, his sons in this version, climb in the east."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Cygnus: Leda and the swan",
+        "url": "http://www.ianridpath.com/startales/cygnus.html"
+      },
+      "characters": ["Zeus", "Leda", "Tyndareus", "Helen", "Clytemnestra", "Castor", "Polydeuces (Pollux)"],
+      "questions": [
+        {
+          "id": "leda-q1",
+          "prompt": "Leda was queen of which Greek city?",
+          "choices": ["Athens", "Thebes", "Sparta", "Corinth"],
+          "answerIndex": 2,
+          "explanation": "Leda was the wife of Tyndareus, king of Sparta; the swan came to her beside the river Eurotas."
+        },
+        {
+          "id": "leda-q2",
+          "prompt": "Which constellation commemorates two of Leda's sons?",
+          "choices": ["Gemini", "Pisces", "Canis Major and Canis Minor", "Auriga"],
+          "answerIndex": 0,
+          "explanation": "Castor and Polydeuces (Pollux) are the Twins, Gemini."
+        },
+        {
+          "id": "leda-q3",
+          "prompt": "In the usual account, which two of Leda's children were fathered by Zeus?",
+          "choices": ["Castor and Clytemnestra", "Castor and Helen", "Clytemnestra and Polydeuces", "Polydeuces and Helen"],
+          "answerIndex": 3,
+          "explanation": "Polydeuces and Helen were Zeus's children; Castor and Clytemnestra were the children of the mortal Tyndareus."
+        },
+        {
+          "id": "leda-q4",
+          "prompt": "What phrase did the Roman poet Germanicus use for the constellation of the Swan?",
+          "choices": ["The bird of Apollo", "The winged adulterer", "The singer of Liguria", "The goose of Nemesis"],
+          "answerIndex": 1,
+          "explanation": "Germanicus called it 'the winged adulterer', pointing to Zeus's disguise in the Leda story."
+        }
+      ]
+    },
+    {
+      "id": "Cyg-cycnus-phaethon",
+      "title": "Cycnus, who mourned for Phaethon",
+      "culture": "Roman",
+      "ancientSources": [
+        { "author": "Ovid", "work": "Metamorphoses 2.367-380", "date": "c. 8 CE" },
+        { "author": "Virgil", "work": "Aeneid" },
+        { "author": "Servius", "work": "Commentary on Virgil's Aeneid" }
+      ],
+      "summary": "Roman writers told of Cycnus, king of Liguria, who grieved so long beside the river Eridanus for his beloved Phaethon that he was changed into a swan. The commentator Servius adds that Apollo afterwards placed him among the stars.",
+      "retelling": [
+        "Phaethon was the son of the Sun god. Wanting proof of who his father was, he traveled to the Sun's palace and asked for one favor: to drive the chariot of the Sun across the sky for a single day. His father had sworn to grant whatever he asked, and could not take the promise back.",
+        "The boy could not hold the horses. They felt how light the hand on the reins was and bolted, dragging the Sun's fire far off its road. It swung so low that mountains burned and rivers boiled away, and the whole earth cried out. To save the world, Jupiter struck the chariot with a thunderbolt. Phaethon fell blazing out of the sky like a shooting star and dropped into the great river Eridanus, which has its own constellation winding beneath Orion.",
+        "His sisters came to the riverbank and wept there for so long that they took root and turned into poplar trees, and their tears, hardened by the sun, became amber. Ovid then turns to one more mourner. Cycnus, son of Sthenelus, was king of Liguria in northern Italy. He was related to Phaethon on his mother's side and bound to him even more closely by love.",
+        "Cycnus left his kingdom and his cities and came to the green banks of the Eridanus, to the new grove that the sisters had become, and filled the place with his lament. As he cried out, his voice grew thin and shrill. White feathers hid his hair. His neck stretched long from his chest, a web joined his reddening toes, wings covered his sides, and his mouth became a blunt beak. Cycnus had become a new kind of bird: the swan, which still carries his name.",
+        "Ovid says the swan never forgot. Remembering the fire that Jupiter had hurled so unjustly, it does not trust the sky or soar high in it, but keeps to pools and broad lakes, choosing water, the enemy of flame. Virgil adds that Cycnus sang to console his grief, and grew old singing, so that his white hair became white plumage.",
+        "Ovid leaves him on the water. It is the later commentator Servius, explaining Virgil's lines, who finishes the story for stargazers: Cycnus, he says, was a musician loved by Apollo, and after he was changed into a swan Apollo set him among the stars. So for Roman readers the Swan overhead was the faithful friend, still flying above the river of the Milky Way."
+      ],
+      "link": {
+        "site": "Wikipedia",
+        "label": "Cycnus (son of Sthenelus)",
+        "url": "https://en.wikipedia.org/wiki/Cycnus_(son_of_Sthenelus)"
+      },
+      "characters": ["Cycnus", "Phaethon", "Jupiter (Zeus)", "Apollo", "The sisters of Phaethon"],
+      "questions": [
+        {
+          "id": "cycnus-q1",
+          "prompt": "Cycnus was king of which people or region?",
+          "choices": ["Liguria", "Thrace", "Arcadia", "Lydia"],
+          "answerIndex": 0,
+          "explanation": "Ovid calls him king of Liguria, in northern Italy, who left his kingdom to mourn beside the Eridanus."
+        },
+        {
+          "id": "cycnus-q2",
+          "prompt": "Into which river did Phaethon fall?",
+          "choices": ["The Eurotas", "The Hebrus", "The Eridanus", "The Styx"],
+          "answerIndex": 2,
+          "explanation": "He fell into the Eridanus, a mythical river that is also a long winding constellation."
+        },
+        {
+          "id": "cycnus-q3",
+          "prompt": "According to Ovid, why do swans keep to lakes and pools rather than flying high?",
+          "choices": ["They are too heavy to fly far", "They are searching the water for Phaethon's bones", "Apollo forbade them the sky", "They remember Jupiter's thunderbolt and distrust the sky and fire"],
+          "answerIndex": 3,
+          "explanation": "Cycnus remembered the fire that killed Phaethon, so the swan shuns heat and chooses water, the opposite of flame."
+        },
+        {
+          "id": "cycnus-q4",
+          "prompt": "What happened to Phaethon's sisters as they wept on the riverbank?",
+          "choices": ["They became swans too", "They turned into poplar trees weeping amber", "They were carried to Olympus", "They became the Pleiades"],
+          "answerIndex": 1,
+          "explanation": "They were rooted to the bank as poplars, and their tears hardened into amber."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Deneb means 'tail' in Arabic. The name Albireo, despite appearances, is a medieval garble with no meaning.",
+    "A faint star in Cygnus called 61 Cygni was the first star to have its distance measured, by Friedrich Bessel in 1838. It is 11.4 light-years away.",
+    "Cygnus X-1, an X-ray source in the swan's neck, was the first object widely accepted to be a black hole.",
+    "Ovid's *Metamorphoses* contains three different men named Cycnus who turn into swans. Only the friend of Phaethon was connected with the constellation.",
+    "Some modern guides say the swan is Orpheus, placed beside his lyre. We could not trace that identification to an ancient writer on the constellations, so it is not retold here.",
+    "In China the wing stars of Cygnus together with Deneb formed a ford or bridge across the celestial river, the Milky Way."
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "id": "Eri",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ancient Greek tradition; catalogued by Ptolemy; extended southward by Dutch navigators and Petrus Plancius",
+    "when": "Named by Aratus in the 3rd century BCE; in the Almagest, 2nd century CE; lengthened to Achernar in the 1590s",
+    "history": [
+      "The Greeks saw a river in the long, winding chain of faint stars that starts beside Orion's foot. The poet Aratus, in the 3rd century BCE, gave it the mythical name Eridanus and called it a 'river of many tears'. Many others, including Ptolemy in the *Almagest*, called it simply *Potamos*, the River. Which river was a matter of debate. Eratosthenes and Hyginus said it was the Nile; Hyginus adds that many called it Ocean; later Greek and Roman writers identified the Eridanus of legend with the Po in northern Italy. One modern suggestion links the name with a Babylonian constellation called the Star of Eridu.",
+      "Ptolemy's river ended at the star we now call Acamar, about as far south as could be seen from Alexandria. When Dutch ships began sailing to the East Indies in the 1590s, the navigator Pieter Dirkszoon Keyser recorded the far southern stars, and on a celestial globe of 1598 the mapmaker Petrus Plancius showed the river flowing on south to a brilliant star that no Greek astronomer had catalogued. That star inherited the Arabic name meaning 'the river's end': Achernar. The old end-point kept a variant of the same name, Acamar."
+    ]
+  },
+  "overview": "Eridanus is the River, a long, faint, meandering line of stars that begins next to Rigel in Orion and wanders far down into the southern sky. It is the sixth-largest constellation and stretches farther from north to south than any other, but it has only one bright star, and that one never rises over Brooklyn.",
+  "howToFind": [
+    "Begin at [[star:Rigel|Rigel]], Orion's bright blue-white foot. Just up and to the right of it, about three finger-widths away, is a third-magnitude star: [[star:Cursa|Cursa]], the source of the river. From there the stream runs to the right (west) for about three fists in a ragged line of faint stars, passing [[star:Zaurak|Zaurak]], toward the dim stars of Cetus. Then it doubles back to the left, lower down, and finally turns south and drops toward the horizon.",
+    "You need a dark sky and some patience; there is no shape to recognize, only a trail to follow star by star, and from the city only Cursa and Zaurak are likely to show. The northern loop is best on evenings from December through February, when Orion is high in the south and the river runs to his right and below.",
+    "From latitude 40 degrees north the southern third of the river is hidden. [[star:Acamar|Acamar]], the ancient end of the river, scrapes only about nine degrees above the southern horizon at best. [[star:Achernar|Achernar]], the brilliant modern end, never rises at all from Brooklyn: you must be south of about latitude 32 degrees north, roughly the far south of Texas or Florida, even to glimpse it on the horizon, and it is properly a Southern Hemisphere star."
+  ],
+  "shape": "A long, loose, winding chain of mostly fourth-magnitude stars, about six fists from top to bottom, with no bright pattern anywhere in the part visible from New York. Think of it as a path to trace rather than a picture to see. Almost none of it survives city lights.",
+  "mainStars": [
+    {
+      "ref": "star:Achernar",
+      "note": "The river's end, and the ninth-brightest star in the sky, a hot blue-white star about 140 light-years away. It spins so fast that it bulges at the equator, making it one of the least round stars known. It cannot be seen from Brooklyn."
+    },
+    {
+      "ref": "star:Cursa",
+      "note": "The river's source, a white star beside Rigel and the brightest part of Eridanus visible from New York. About 90 light-years away."
+    },
+    {
+      "ref": "star:Zaurak",
+      "note": "A red giant with a faint orange tint, marking a bend in the northern stretch of the river, about 200 light-years away."
+    },
+    {
+      "ref": "star:Acamar",
+      "note": "Where the river ended for the ancient Greeks. A small telescope shows it as a fine pair of white stars. From Brooklyn it is very low, visible only with a perfectly clear southern horizon."
+    },
+    {
+      "ref": "star:Ran",
+      "note": "Epsilon Eridani, an orange star a little smaller and cooler than the Sun and only 10.5 light-years away, one of our nearest neighbors that can be seen without a telescope. At least one planet orbits it."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "star:Keid",
+      "equip": "small-telescope",
+      "note": "Also called 40 Eridani, a triple star 16 light-years away. A small telescope shows the fourth-magnitude orange main star with a faint companion well off to one side. That companion is a white dwarf, the burnt-out core of a dead star, and it is the easiest white dwarf in the sky to see; a red dwarf sits right beside it."
+    },
+    {
+      "ref": "dso:NGC1535",
+      "equip": "small-telescope",
+      "note": "A small, round, blue-gray planetary nebula, the shell of gas puffed off by a dying star, east of Zaurak. At low power it looks like an out-of-focus star; higher power shows a tiny disk."
+    },
+    {
+      "ref": "star:Acamar",
+      "equip": "small-telescope",
+      "note": "A handsome double star with components of magnitude 3.2 and 4.3. It is a showpiece from farther south; from New York the thick air near the horizon blurs it."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Eri-phaethon",
+      "title": "Phaethon and the chariot of the Sun",
+      "culture": "Greek and Roman",
+      "ancientSources": [
+        { "author": "Ovid", "work": "Metamorphoses, end of Book 1 and Book 2", "date": "c. 8 CE" },
+        { "author": "Apollonius of Rhodes", "work": "Argonautica, Book 4", "date": "3rd century BCE" },
+        { "author": "Aratus", "work": "Phaenomena 359–360", "date": "3rd century BCE" }
+      ],
+      "summary": "Phaethon, a son of the Sun-god, demands to drive his father's chariot for one day to prove who he is. He cannot hold the horses, the Sun swings wildly and sets the Earth on fire, and Zeus strikes the boy down with a thunderbolt. He falls, burning, into the river Eridanus.",
+      "retelling": [
+        "Phaethon was a boy who had been told that his father was the Sun. His mother Clymene had always said so. But a friend his own age, Epaphus, laughed at him for it: you believe anything your mother tells you. Phaethon went red and said nothing, and went home and asked for proof. Clymene swore it was true and told him that if he doubted her he could go and ask his father himself. The Sun's house was not far from where the day begins.",
+        "So he went. He found the palace and the god, so bright he could not look at him, and Helios took off his crown of rays and embraced the boy and called him his son. To settle the matter for good he swore the oath gods cannot break: ask me for anything, and it is yours. Phaethon asked to drive the chariot of the Sun across the sky for a single day.",
+        "His father was sorry at once that he had sworn. He tried to talk him out of it. No one else can do this, he said, not even Zeus. The road is steep at morning, dizzyingly high at noon, and headlong at evening, and the horses breathe fire and fight the rein. He begged the boy to choose something else. Phaethon would not. So, as Dawn opened her doors, Helios gave what he had promised, with one piece of advice: keep to the middle, and follow my wheel-tracks.",
+        "The four horses knew at once that the hand on the reins was not their master's. The chariot was too light and bucked like a ship without ballast. They left the road. They swung north, and the cold stars of the Bears felt heat for the first time; the boy looked down from the top of the sky and went weak at the knees. Then he saw the Scorpion ahead, its claws spread and its tail curved to strike, and in terror he dropped the reins.",
+        "After that nobody was driving. The horses ran where they liked, and when they plunged low the Earth caught fire. Mountains burned, forests burned, cities turned to ash. Ovid says that was the day Libya became a desert, and that springs and rivers boiled away, and the Nile fled to the ends of the earth and hid its head. The Earth herself cried out to Zeus that she could not bear it. There was only one way to stop it. Zeus climbed to the top of heaven and threw a thunderbolt, and it knocked the driver out of the chariot and out of his life together.",
+        "Phaethon fell a long way, with his hair on fire, like a shooting star. Far from home, the river Eridanus received him and washed his scorched face. The nymphs of the western land buried what was left and carved a line on the stone: here lies Phaethon, who drove his father's chariot, and though he could not hold it, he fell daring a great thing. His sisters, the daughters of the Sun, came and wept at the grave until they took root and became poplar trees, and their tears hardened into amber. When the Argonauts later sailed up the Eridanus, Apollonius says, the water was still steaming from the wound.",
+        "The Greeks found that river in the sky, winding away from Orion's foot. Aratus calls it the poor remains of Eridanus, river of many tears, as though the heat of that day had dried up most of it. On a winter night you can follow it yourself, a thin, broken stream of faint stars running down toward the southern horizon."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Eridanus: the river and the fall of Phaethon",
+        "url": "http://www.ianridpath.com/startales/eridanus.html"
+      },
+      "characters": ["Phaethon", "Helios (the Sun)", "Clymene", "Epaphus", "Zeus", "the Heliades"],
+      "questions": [
+        {
+          "id": "phaethon-q1",
+          "prompt": "What did Phaethon ask his father, the Sun, to let him do?",
+          "choices": ["Marry a goddess", "Drive the chariot of the Sun for a day", "Become immortal", "Sail with the Argonauts"],
+          "answerIndex": 1,
+          "explanation": "Helios had sworn to grant any request, and Phaethon asked to drive the Sun's chariot across the sky to prove he was the god's son."
+        },
+        {
+          "id": "phaethon-q2",
+          "prompt": "How did Zeus stop the runaway chariot from destroying the Earth?",
+          "choices": ["He froze the horses in place", "He sent Hermes to take the reins", "He flooded the world with rain", "He struck Phaethon down with a thunderbolt"],
+          "answerIndex": 3,
+          "explanation": "With the Earth on fire, Zeus hurled a thunderbolt that threw Phaethon from the chariot and killed him."
+        },
+        {
+          "id": "phaethon-q3",
+          "prompt": "Into which river did Phaethon fall?",
+          "choices": ["The Eridanus", "The Nile", "The Styx", "The Inachus"],
+          "answerIndex": 0,
+          "explanation": "He fell into the Eridanus, the river the Greeks saw in the long chain of stars beside Orion. Later writers identified it with the Po in Italy."
+        },
+        {
+          "id": "phaethon-q4",
+          "prompt": "What became of Phaethon's sisters as they mourned at his grave?",
+          "choices": ["They became the Pleiades", "They were turned into swans", "They turned into poplar trees weeping amber", "They leapt into the river and drowned"],
+          "answerIndex": 2,
+          "explanation": "The daughters of the Sun wept until they were changed into poplars, and their tears became drops of amber."
+        },
+        {
+          "id": "phaethon-q5",
+          "prompt": "What sight in the sky made Phaethon drop the reins in terror?",
+          "choices": ["The Bull lowering its horns", "The Scorpion with its claws and sting raised", "The Great Dog's blazing jaws", "The Hunter raising his club"],
+          "answerIndex": 1,
+          "explanation": "Already out of control, Phaethon came upon the Scorpion and let go of the reins in fright, after which the horses ran wild."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Eridanus is the sixth-largest of the 88 constellations and spans nearly 60 degrees from north to south, more than any other.",
+    "Achernar is the only first-magnitude star missing from Ptolemy's *Almagest*; it was too far south for him to see.",
+    "Eratosthenes argued that the river must be the Nile because it is the only river that runs from south to north. The river in the sky is drawn flowing the other way, from Orion southward.",
+    "Bedouin Arabs saw Achernar and the star Fomalhaut as a pair of ostriches, with an ostrich nest and eggs among the faint stars of northern Eridanus.",
+    "The asteroid whose dust makes the Geminid meteors each December is named 3200 Phaethon. Its orbit takes it closer to the Sun than Mercury."
+  ]
+}

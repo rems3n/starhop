@@ -1,0 +1,130 @@
+{
+  "id": "Com",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Conon of Samos (named the star group, about 245 BCE); Caspar Vopel (first drew it as a separate constellation)",
+    "when": "3rd century BCE as a named star group; a constellation since 1536",
+    "history": [
+      "Coma Berenices has an unusual double history. The story and the name are ancient: around 245 BCE the court astronomer Conon of Samos, working at Alexandria, declared that a faint swarm of stars behind the Lion's tail was the hair of the Egyptian queen Berenice II, and the poet Callimachus celebrated the event in verse. It is one of the very few constellations tied to a real historical person. But the Greeks never counted it as a constellation in its own right. Eratosthenes mentions it under Leo as the hair of Berenice (and, under the Northern Crown, as the hair of Ariadne). Ptolemy, in the *Almagest*, lists it only among the 'unformed' stars outside Leo, as 'a nebulous mass, called the Lock', and adds that it is shaped like an ivy leaf.",
+      "It became a constellation in the Renaissance. The German globe-maker Caspar Vopel showed it separately in 1536 under the name Berenices Crinis; Gerardus Mercator followed in 1551, and Tycho Brahe's inclusion of it in his great star catalogue, published in 1602, made it permanent. The modern constellation is much larger than Ptolemy's 'lock', which survives as the Coma Star Cluster in its northwestern corner."
+    ]
+  },
+  "overview": "The hair of Queen Berenice: no bright stars at all, but a delicate sprinkling of faint ones, the Coma Star Cluster, that looks like a wisp of mist or a spider web catching the light. Under a dark sky it is charming; from the city it is a blank patch between Leo and Boötes that binoculars bring to life.",
+  "howToFind": [
+    "Find [[star:Denebola|Denebola]], the tail star of Leo, and [[star:Cor Caroli|Cor Caroli]], the lone moderately bright star that sits under the curve of the Big Dipper's handle. The Coma Star Cluster lies halfway between them, about a fist and a half from each. Another way to frame it: Coma Berenices fills the middle of the big triangle formed by Denebola, Cor Caroli and [[star:Arcturus|Arcturus]]. On a dark night you will notice a faint, grainy shimmer a few degrees across, with [[star:γ Com|Gamma Comae]] at its northern edge. From the city, sweep the spot with binoculars and a couple of dozen stars spring out.",
+    "The rest of the constellation is three faint stars forming a rough right angle: Gamma at the top by the cluster, [[star:β Com|Beta Comae]] a fist to the east, and [[star:Diadem|Diadem]] a fist south of Beta. Coma is a spring constellation, high in the evening sky from April to June as seen from Brooklyn and very high in the south in May."
+  ],
+  "shape": "No real figure: an upside-down L of three fourth-magnitude stars about a fist on each side, with the star cluster as a wide, V-shaped scatter of fifth- and sixth-magnitude stars at one corner (magnitude is the brightness scale, where smaller numbers are brighter). Little of it survives a Brooklyn sky to the naked eye.",
+  "mainStars": [
+    {
+      "ref": "star:β Com",
+      "note": "Marginally the brightest star in the constellation at magnitude 4.2. It is a star very like our Sun, only about 30 light-years away, so this is roughly how the Sun would look from that distance."
+    },
+    {
+      "ref": "star:Diadem",
+      "note": "Alpha Comae Berenices, magnitude 4.3, the southeastern corner. The name refers to the crown or headband the queen would have worn. A handy pointer to the globular cluster M53 right beside it."
+    },
+    {
+      "ref": "star:γ Com",
+      "note": "An orange giant of magnitude 4.4 at the top of the Coma Star Cluster. It is one of the three stars Ptolemy listed around his 'nebulous mass called the Lock'."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "star:γ Com",
+      "equip": "binoculars",
+      "note": "The Coma Star Cluster (Melotte 111), spreading south from Gamma: one of the nearest star clusters to us, under 300 light-years away, and so large, more than five degrees across, that binoculars show it far better than a telescope. This is Berenice's hair itself."
+    },
+    {
+      "ref": "dso:M64",
+      "equip": "small-telescope",
+      "note": "The Black Eye Galaxy, about 17 million light-years away, a short way northeast of the star 35 Comae and about a third of the way from Diadem toward Gamma. A small oval glow; the dark dust band that gives it its name needs a larger telescope."
+    },
+    {
+      "ref": "dso:M53",
+      "equip": "small-telescope",
+      "note": "A globular cluster, a ball of many thousands of ancient stars, less than a finger-width northeast of [[star:Diadem|Diadem]]. A small round fuzzy patch that a larger telescope begins to break into stars."
+    },
+    {
+      "ref": "dso:NGC4565",
+      "equip": "telescope",
+      "note": "The Needle Galaxy, a spiral seen exactly edge-on, just east of the Coma Star Cluster. In a telescope under dark skies it is a thin sliver of light with a bulge in the middle, one of the finest of its kind."
+    },
+    {
+      "ref": "dso:M100",
+      "equip": "telescope",
+      "note": "A face-on spiral, one of the brighter members of the great Virgo Cluster of galaxies, which spills across Coma's southern border. The whole region between Denebola and Diadem is strewn with faint galaxies for those with a telescope and a dark sky."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Com-berenice",
+      "title": "The lock of Queen Berenice",
+      "culture": "Hellenistic Greek (Ptolemaic Egypt): a court legend about real people",
+      "ancientSources": [
+        { "author": "Callimachus", "work": "Aetia, 'The Lock of Berenice'", "date": "about 245 BCE; survives in fragments" },
+        { "author": "Catullus", "work": "Poem 66 (a Latin version of Callimachus)", "date": "1st century BCE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.24", "date": "2nd century CE" }
+      ],
+      "summary": "Berenice II, queen of Egypt, vowed to cut off her hair as an offering if her husband Ptolemy III came home safe from war. He did, and she kept her word, but the lock vanished from the temple overnight. The court astronomer Conon announced that he had found it among the stars.",
+      "retelling": [
+        "This story is different from the others in the sky. Its people really lived, its war was really fought, and the astronomer in it was a real mathematician, a friend of Archimedes. Only the ending is a myth, and we know roughly when and by whom it was made up.",
+        "In 246 BCE a new king came to the throne of Egypt: Ptolemy III, of the Greek dynasty that had ruled the country since Alexander the Great. In the same year he married Berenice, a princess of Cyrene. She was no sheltered bride. She bred racehorses and sent them to compete at Olympia, and a story told how, when her father's army broke and ran, she jumped on a horse, rallied the troops and won the battle. The poet Callimachus called her great-hearted.",
+        "The marriage was only a little old when Ptolemy had to leave. War had broken out in Syria, and he marched off to invade Asia. Berenice, left behind in Alexandria, made a vow before the gods: if her husband returned victorious, she would cut off her hair and dedicate it in thanks.",
+        "Ptolemy came home safe, a conqueror. Berenice did as she had sworn. Her hair was cut and laid as an offering in the temple of Arsinoe Zephyritis, a shrine where a former queen was worshipped as Aphrodite.",
+        "The next day the lock was gone. No one could say how; a queen's offering had disappeared from a holy place overnight. The king was upset, and the situation was awkward for everyone responsible.",
+        "It was Conon of Samos, the court astronomer, who rescued it. Hyginus says frankly that he wanted to win the king's favor. Conon told Ptolemy that the hair had not been stolen at all. He had seen it in the sky. And he pointed to a dim cluster of stars beyond the tail of the Lion that belonged to no constellation, a faint mesh of light that looked, if one were willing, like a tress of shining hair. The gods, he explained, had accepted the queen's gift and set it in the heavens.",
+        "Callimachus, the leading poet of Alexandria, turned the discovery into an elegant poem, spoken by the lock itself, which complains gently that it would rather be back on the queen's head than up among the stars. Two centuries later the Roman poet Catullus translated it into Latin, and that is how most of it has reached us. Was the whole thing a piece of court theater, staged to flatter a popular young queen? Very probably. But the name stuck, and nearly eighteen hundred years later the mapmakers made the queen's hair a constellation at last."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Coma Berenices, Berenice's Hair",
+        "url": "http://www.ianridpath.com/startales/comaberenices.html"
+      },
+      "characters": ["Berenice II", "Ptolemy III Euergetes", "Conon of Samos", "Callimachus", "Catullus"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "What did Queen Berenice vow to do if her husband returned safely from war?",
+          "choices": ["Build a new temple", "Free a thousand prisoners", "Cut off her hair as an offering", "Give up her throne"],
+          "answerIndex": 2,
+          "explanation": "Berenice promised to cut off her hair and dedicate it to the gods if Ptolemy III came home victorious from the war in Syria."
+        },
+        {
+          "id": "q2",
+          "prompt": "Who announced that the missing lock of hair was now among the stars?",
+          "choices": ["Conon of Samos, the court astronomer", "Ptolemy, author of the Almagest", "Eratosthenes, the librarian", "Hipparchus of Rhodes"],
+          "answerIndex": 0,
+          "explanation": "Conon, a mathematician and astronomer at the Alexandrian court, pointed out a faint group of stars near Leo's tail as the queen's hair."
+        },
+        {
+          "id": "q3",
+          "prompt": "Which poet wrote the original Greek poem 'The Lock of Berenice'?",
+          "choices": ["Homer", "Catullus", "Aratus", "Callimachus"],
+          "answerIndex": 3,
+          "explanation": "Callimachus, court poet at Alexandria, wrote the poem; Catullus later translated it into Latin as his Poem 66."
+        },
+        {
+          "id": "q4",
+          "prompt": "Why is Coma Berenices unusual among the constellations?",
+          "choices": ["It is the only one invisible from Europe", "It is named after a real historical person, not a mythical one", "It is the only one named by the Romans", "It contains no stars at all"],
+          "answerIndex": 1,
+          "explanation": "Berenice II was a real queen of Egypt in the 3rd century BCE. The story of her hair was a court legend created in her own lifetime."
+        },
+        {
+          "id": "q5",
+          "prompt": "When did Berenice's Hair become a separate constellation on globes and maps?",
+          "choices": ["In the 16th century, starting with Caspar Vopel's globe of 1536", "In Ptolemy's Almagest", "In 1922, by the International Astronomical Union", "In Homer's time"],
+          "answerIndex": 0,
+          "explanation": "The ancient Greeks treated the lock as a loose group of stars attached to Leo. Vopel drew it separately in 1536, and Tycho Brahe's catalogue made it standard."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "The north pole of our Milky Way galaxy lies in Coma Berenices. Looking this way we look straight up out of the galaxy's dusty disk, which is why so many distant galaxies can be seen here.",
+    "In the Middle Ages the same star-swarm was sometimes drawn as an ivy leaf above Leo's tail, following Ptolemy's description. In 2024 the star 23 Comae was officially named Phyllon Kissinou, Greek for 'ivy leaf'.",
+    "Chinese astronomers saw the stars of the Coma cluster as Langwei, a gathering of court officials and bodyguards.",
+    "Hyginus calls Berenice the king's sister. She was in fact his cousin, and he says the vow came a few days after the wedding when it was really some months."
+  ]
+}

@@ -1,0 +1,189 @@
+[
+  {
+    "id": "quadrantids",
+    "name": "Quadrantids",
+    "peakSolarLongitude": 283.15,
+    "activeFrom": "12-28",
+    "activeTo": "01-12",
+    "zhr": 80,
+    "radiant": {
+      "ra": 230,
+      "dec": 49,
+      "con": "Boo"
+    },
+    "speedKmS": 41,
+    "parent": "Asteroid (196256) 2003 EH1 (probable)",
+    "note": "A strong but very brief shower: the peak lasts only about six hours, so some years it falls in daylight for New York. The radiant lies in northern Boötes, near the end of the Big Dipper's handle, and is highest before dawn. The name comes from an obsolete constellation, Quadrans Muralis.",
+    "source": "IMO 2027 Meteor Shower Calendar (ed. J. Rendtel, IMO INFO 3-26), Table 5 'Working List of Visual Meteor Showers', https://www.imo.net/files/data/calendar/cal2027.pdf (fetched 2026-11-10); values cross-checked against English Wikipedia 'List of meteor showers' (parent body from Wikipedia)."
+  },
+  {
+    "id": "lyrids",
+    "name": "Lyrids",
+    "peakSolarLongitude": 32.32,
+    "activeFrom": "04-14",
+    "activeTo": "04-30",
+    "zhr": 18,
+    "radiant": {
+      "ra": 271,
+      "dec": 34,
+      "con": "Lyr"
+    },
+    "speedKmS": 49,
+    "parent": "Comet C/1861 G1 (Thatcher)",
+    "note": "A modest spring shower with occasional bright meteors, best after midnight. Meteors appear to stream from a point near Vega (strictly just over the border in Hercules).",
+    "source": "IMO 2027 Meteor Shower Calendar (ed. J. Rendtel, IMO INFO 3-26), Table 5 'Working List of Visual Meteor Showers', https://www.imo.net/files/data/calendar/cal2027.pdf (fetched 2026-11-10); values cross-checked against English Wikipedia 'List of meteor showers' (parent body from Wikipedia)."
+  },
+  {
+    "id": "eta-aquariids",
+    "name": "Eta Aquariids",
+    "peakSolarLongitude": 45.5,
+    "activeFrom": "04-19",
+    "activeTo": "05-28",
+    "zhr": 50,
+    "radiant": {
+      "ra": 338,
+      "dec": -1,
+      "con": "Aqr"
+    },
+    "speedKmS": 66,
+    "parent": "Comet 1P/Halley",
+    "note": "Fast meteors made of dust from Halley's Comet. The shower is rich from the southern hemisphere; from 40°N the radiant rises shortly before dawn, so expect only around 10 an hour in the last dark hour of the night.",
+    "source": "IMO 2027 Meteor Shower Calendar (ed. J. Rendtel, IMO INFO 3-26), Table 5 'Working List of Visual Meteor Showers', https://www.imo.net/files/data/calendar/cal2027.pdf (fetched 2026-11-10); values cross-checked against English Wikipedia 'List of meteor showers' (parent body from Wikipedia)."
+  },
+  {
+    "id": "southern-delta-aquariids",
+    "name": "Southern Delta Aquariids",
+    "peakSolarLongitude": 128,
+    "activeFrom": "07-12",
+    "activeTo": "08-23",
+    "zhr": 25,
+    "radiant": {
+      "ra": 340,
+      "dec": -16,
+      "con": "Aqr"
+    },
+    "speedKmS": 41,
+    "parent": "Uncertain; probably the comet 96P/Machholz complex (Wikipedia's list gives P/2008 Y12 (SOHO))",
+    "note": "Faint meteors over a broad late-July peak, better the farther south you are. From New York the radiant stays low in the south; watch after midnight under a dark sky.",
+    "source": "IMO 2027 Meteor Shower Calendar (ed. J. Rendtel, IMO INFO 3-26), Table 5 'Working List of Visual Meteor Showers', https://www.imo.net/files/data/calendar/cal2027.pdf (fetched 2026-11-10); values cross-checked against English Wikipedia 'List of meteor showers' (parent body from Wikipedia)."
+  },
+  {
+    "id": "perseids",
+    "name": "Perseids",
+    "peakSolarLongitude": 140.0,
+    "activeFrom": "07-17",
+    "activeTo": "08-24",
+    "zhr": 110,
+    "radiant": {
+      "ra": 48,
+      "dec": 58,
+      "con": "Per"
+    },
+    "speedKmS": 59,
+    "parent": "Comet 109P/Swift–Tuttle",
+    "note": "The favorite shower of the year: fast, bright meteors on warm August nights. Rates climb from late evening until dawn as the radiant in Perseus rises in the northeast.",
+    "source": "IMO 2027 Meteor Shower Calendar (ed. J. Rendtel, IMO INFO 3-26), Table 5 'Working List of Visual Meteor Showers', https://www.imo.net/files/data/calendar/cal2027.pdf (fetched 2026-11-10); values cross-checked against English Wikipedia 'List of meteor showers' (parent body from Wikipedia)."
+  },
+  {
+    "id": "orionids",
+    "name": "Orionids",
+    "peakSolarLongitude": 208,
+    "activeFrom": "10-02",
+    "activeTo": "11-07",
+    "zhr": 20,
+    "radiant": {
+      "ra": 95,
+      "dec": 16,
+      "con": "Ori"
+    },
+    "speedKmS": 66,
+    "parent": "Comet 1P/Halley",
+    "note": "The autumn shower from Halley's Comet dust: swift meteors radiating from near Orion's raised club, north of Betelgeuse. Best after midnight, with a broad peak lasting several nights.",
+    "source": "IMO 2027 Meteor Shower Calendar (ed. J. Rendtel, IMO INFO 3-26), Table 5 'Working List of Visual Meteor Showers', https://www.imo.net/files/data/calendar/cal2027.pdf (fetched 2026-11-10); values cross-checked against English Wikipedia 'List of meteor showers' (parent body from Wikipedia)."
+  },
+  {
+    "id": "southern-taurids",
+    "name": "Southern Taurids",
+    "peakSolarLongitude": 223,
+    "activeFrom": "09-20",
+    "activeTo": "11-20",
+    "zhr": 7,
+    "radiant": {
+      "ra": 52,
+      "dec": 15,
+      "con": "Tau"
+    },
+    "speedKmS": 27,
+    "parent": "Comet 2P/Encke",
+    "note": "A weak, long-lasting shower of slow meteors known for occasional bright fireballs. Visible most of the night in autumn, with no sharp peak.",
+    "source": "IMO 2027 Meteor Shower Calendar (ed. J. Rendtel, IMO INFO 3-26), Table 5 'Working List of Visual Meteor Showers', https://www.imo.net/files/data/calendar/cal2027.pdf (fetched 2026-11-10); values cross-checked against English Wikipedia 'List of meteor showers' (parent body from Wikipedia)."
+  },
+  {
+    "id": "northern-taurids",
+    "name": "Northern Taurids",
+    "peakSolarLongitude": 230,
+    "activeFrom": "10-20",
+    "activeTo": "12-10",
+    "zhr": 5,
+    "radiant": {
+      "ra": 58,
+      "dec": 22,
+      "con": "Tau"
+    },
+    "speedKmS": 29,
+    "parent": "Asteroid 2004 TG10 (Encke complex)",
+    "note": "The slightly later twin of the Southern Taurids: few meteors, but slow and sometimes brilliant. The radiant is near the Pleiades and is up all night in November.",
+    "source": "IMO 2027 Meteor Shower Calendar (ed. J. Rendtel, IMO INFO 3-26), Table 5 'Working List of Visual Meteor Showers', https://www.imo.net/files/data/calendar/cal2027.pdf (fetched 2026-11-10); values cross-checked against English Wikipedia 'List of meteor showers' (parent body from Wikipedia)."
+  },
+  {
+    "id": "leonids",
+    "name": "Leonids",
+    "peakSolarLongitude": 235.27,
+    "activeFrom": "11-06",
+    "activeTo": "11-30",
+    "zhr": 15,
+    "radiant": {
+      "ra": 152,
+      "dec": 22,
+      "con": "Leo"
+    },
+    "speedKmS": 71,
+    "parent": "Comet 55P/Tempel–Tuttle",
+    "note": "The fastest shower meteors, radiating from the Sickle of Leo after midnight. Normally modest, but famous for rare meteor storms in years such as 1833, 1966 and 1999–2002.",
+    "source": "IMO 2027 Meteor Shower Calendar (ed. J. Rendtel, IMO INFO 3-26), Table 5 'Working List of Visual Meteor Showers', https://www.imo.net/files/data/calendar/cal2027.pdf (fetched 2026-11-10); values cross-checked against English Wikipedia 'List of meteor showers' (parent body from Wikipedia)."
+  },
+  {
+    "id": "geminids",
+    "name": "Geminids",
+    "peakSolarLongitude": 262.2,
+    "activeFrom": "12-04",
+    "activeTo": "12-20",
+    "zhr": 150,
+    "radiant": {
+      "ra": 112,
+      "dec": 33,
+      "con": "Gem"
+    },
+    "speedKmS": 35,
+    "parent": "Asteroid 3200 Phaethon",
+    "note": "Usually the richest shower of the year, with bright, medium-speed meteors. The radiant near Castor is well up by mid-evening, so this is the one major shower you can watch before midnight. Dress warmly.",
+    "source": "IMO 2027 Meteor Shower Calendar (ed. J. Rendtel, IMO INFO 3-26), Table 5 'Working List of Visual Meteor Showers', https://www.imo.net/files/data/calendar/cal2027.pdf (fetched 2026-11-10); values cross-checked against English Wikipedia 'List of meteor showers' (parent body from Wikipedia)."
+  },
+  {
+    "id": "ursids",
+    "name": "Ursids",
+    "peakSolarLongitude": 270.7,
+    "activeFrom": "12-17",
+    "activeTo": "12-26",
+    "zhr": 10,
+    "radiant": {
+      "ra": 217,
+      "dec": 76,
+      "con": "UMi"
+    },
+    "speedKmS": 33,
+    "parent": "Comet 8P/Tuttle",
+    "note": "A minor shower around the winter solstice radiating from near Kochab in the Little Dipper's bowl. The radiant never sets from New York, but rates are low, with rare outbursts.",
+    "source": "IMO 2027 Meteor Shower Calendar (ed. J. Rendtel, IMO INFO 3-26), Table 5 'Working List of Visual Meteor Showers', https://www.imo.net/files/data/calendar/cal2027.pdf (fetched 2026-11-10); values cross-checked against English Wikipedia 'List of meteor showers' (parent body from Wikipedia)."
+  }
+]

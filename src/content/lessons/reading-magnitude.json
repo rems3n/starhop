@@ -1,0 +1,173 @@
+{
+  "id": "reading-magnitude",
+  "unit": "skills",
+  "order": 5,
+  "title": "Reading magnitude",
+  "subtitle": "The brightness scale that runs backwards, and how it tells you what you can see tonight",
+  "minutes": 6,
+  "sections": [
+    {
+      "heading": "Smaller number, brighter star",
+      "body": [
+        "Every star chart and every object page in Starhop gives a magnitude. After this lesson you will be able to read that number and know at once whether the thing is a showpiece, a challenge, or hopeless from your street.",
+        "Magnitude is the astronomer's brightness scale, and it runs backwards: the smaller the number, the brighter the star. The idea is ancient. Greek astronomers sorted the stars into six classes, calling the brightest \"first magnitude\" and the faintest they could see \"sixth magnitude\", the way we might say first class and sixth class.",
+        "In 1856 the English astronomer Norman Pogson put numbers on it: a difference of 5 magnitudes is exactly 100 times in brightness. So each single step is about 2.5 times. A magnitude 1 star is 2.5 times brighter than magnitude 2, about 6 times brighter than magnitude 3, and 100 times brighter than magnitude 6."
+      ]
+    },
+    {
+      "heading": "The scale from Sirius to the limit of sight",
+      "body": [
+        "Once the scale was measured precisely, some stars turned out brighter than magnitude 1, so the scale runs through zero into negative numbers. [[star:Vega|Vega]] is magnitude 0.0. [[star:Sirius|Sirius]], the brightest star in the night sky, is −1.5. Jupiter is between −2 and −3, Venus around −4 or brighter, the full Moon about −13 and the Sun about −27.",
+        "Going the other way: [[star:Spica|Spica]] is magnitude 1.0, [[star:Polaris|Polaris]] and most of the Big Dipper's stars are 2, the Dipper's dim star [[star:Megrez|Megrez]] is 3.3, and the faintest stars a good eye can see under a truly dark sky are about 6.5. Sirius is more than 20 times brighter than Polaris, and about 1,500 times brighter than those faintest stars."
+      ],
+      "demo": {
+        "title": "Magnitudes you can compare",
+        "controls": [],
+        "steps": [
+          {
+            "caption": "Orion and Sirius on a winter evening. Sirius is magnitude −1.5; Rigel 0.2; Betelgeuse about 0.5; the three Belt stars are close to 2. Each step down the list is easy to see.",
+            "time": "month:1 21:00",
+            "view": { "target": "star:Alnitak", "fov": 80 },
+            "layers": { "constellationNames": false },
+            "highlights": [
+              { "type": "object", "ref": "star:Sirius", "label": "Sirius −1.5" },
+              { "type": "object", "ref": "star:Rigel", "label": "Rigel 0.2" },
+              { "type": "object", "ref": "star:Betelgeuse", "label": "Betelgeuse 0.5" },
+              { "type": "object", "ref": "star:Alnilam", "label": "Belt stars: about 2" }
+            ]
+          },
+          {
+            "caption": "The Big Dipper is a row of magnitude 2 stars with one exception. Megrez, where the handle meets the bowl, is magnitude 3.3: about a third as bright as its neighbors.",
+            "time": "month:4 21:00",
+            "view": { "target": "asterism:big-dipper", "fov": 50 },
+            "layers": { "constellationNames": false },
+            "highlights": [
+              { "type": "object", "ref": "star:Dubhe", "label": "Dubhe 1.8" },
+              { "type": "object", "ref": "star:Megrez", "label": "Megrez 3.3" },
+              { "type": "object", "ref": "star:Alkaid", "label": "Alkaid 1.9" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "heading": "Limiting magnitude: your sky's cutoff",
+      "body": [
+        "The faintest star you can see at a given place and time is called the limiting magnitude. Under a dark country sky it is about 6.5. In the middle of a big city it is closer to 4, and that small-sounding difference is enormous. The whole sky holds about 9,000 stars down to magnitude 6.5, but only about 400 down to magnitude 3.8, and only half of either number is above your horizon at once.",
+        "This is the practical use of magnitude. If your limit tonight is 4 and a constellation's stars are magnitude 4.5, you will not see it without binoculars, however carefully you look. A handy gauge is the [[asterism:little-dipper|Little Dipper]], whose seven stars run from magnitude 2 down to 5: count how many you can see."
+      ],
+      "demo": {
+        "title": "The Little Dipper sky gauge",
+        "controls": ["bortle"],
+        "steps": [
+          {
+            "caption": "An inner-city sky, limit about magnitude 3.8. Of the Little Dipper only Polaris (2.0), Kochab (2.1) and Pherkad (3.0) show.",
+            "time": "month:7 22:00",
+            "view": { "target": "asterism:little-dipper", "fov": 40 },
+            "layers": { "constellationNames": false, "constellationLines": false, "milkyWay": false },
+            "bortle": 9,
+            "highlights": [
+              { "type": "polyline", "points": ["star:Polaris", "star:Yildun", "star:ε UMi", "star:ζ UMi", "star:η UMi", "star:Pherkad", "star:Kochab", "star:ζ UMi"], "dashed": true },
+              { "type": "object", "ref": "star:Polaris", "label": "Polaris 2.0" },
+              { "type": "object", "ref": "star:Kochab", "label": "Kochab 2.1" },
+              { "type": "object", "ref": "star:Pherkad", "label": "Pherkad 3.0" }
+            ]
+          },
+          {
+            "caption": "A suburban sky, limit about 5.3. All seven stars are there: three in the handle near magnitude 4.3, and the faintest bowl star at 5.0. Move the slider and watch stars cross your limit.",
+            "time": "month:7 22:00",
+            "view": { "target": "asterism:little-dipper", "fov": 40 },
+            "layers": { "constellationNames": false, "constellationLines": false, "milkyWay": false },
+            "bortle": 6,
+            "highlights": [
+              { "type": "polyline", "points": ["star:Polaris", "star:Yildun", "star:ε UMi", "star:ζ UMi", "star:η UMi", "star:Pherkad", "star:Kochab", "star:ζ UMi"], "dashed": true },
+              { "type": "object", "ref": "star:Yildun", "label": "4.4" },
+              { "type": "object", "ref": "star:ε UMi", "label": "4.2" },
+              { "type": "object", "ref": "star:ζ UMi", "label": "4.3" },
+              { "type": "object", "ref": "star:η UMi", "label": "5.0" }
+            ]
+          }
+        ]
+      },
+      "tryIt": "On the next clear night, find Polaris and count the Little Dipper's stars. Three means a limit near magnitude 3 to 4; five or six means about 4.5; all seven means 5 or better."
+    },
+    {
+      "heading": "Apparent and absolute",
+      "body": [
+        "Everything above is apparent magnitude: how bright a star looks from Earth. That depends on two things, how much light the star really gives off and how far away it is. To compare stars fairly, astronomers also use absolute magnitude: how bright the star would look from a standard distance of 10 parsecs, which is 32.6 light-years. Sirius looks brilliant mainly because it is a neighbor, only 8.6 light-years away; its absolute magnitude is a modest 1.4. Our Sun, moved out to that standard distance, would be magnitude 4.8: a faint star you could not see from Brooklyn at all."
+      ]
+    }
+  ],
+  "keyPoints": [
+    "Smaller magnitude means brighter; the very brightest objects have negative magnitudes.",
+    "One magnitude is about 2.5 times in brightness; five magnitudes is exactly 100 times.",
+    "Sirius is −1.5, Polaris 2.0, the dark-sky naked-eye limit about 6.5.",
+    "Limiting magnitude is the faintest star your sky shows: about 4 in a city, about 6.5 in the country.",
+    "Apparent magnitude is how bright a star looks; absolute magnitude is how bright it would look from 32.6 light-years."
+  ],
+  "examples": [],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Star A is magnitude 1.0 and star B is magnitude 4.0. Which statement is right?",
+      "choices": [
+        "B is 4 times brighter than A",
+        "A is 3 times brighter than B",
+        "A is about 16 times brighter than B",
+        "B is about 16 times brighter than A"
+      ],
+      "answerIndex": 2,
+      "explanation": "Smaller is brighter, and each magnitude is about 2.5 times: 2.5 × 2.5 × 2.5 is about 16."
+    },
+    {
+      "id": "q2",
+      "prompt": "A planet is listed at magnitude −2.5. How does it compare with Sirius at −1.5?",
+      "choices": [
+        "It is about 2.5 times brighter than Sirius",
+        "It is about 2.5 times fainter than Sirius",
+        "Negative magnitudes mean it is invisible",
+        "They look equally bright"
+      ],
+      "answerIndex": 0,
+      "explanation": "The scale keeps running through zero: −2.5 is one magnitude brighter than −1.5, which is about 2.5 times."
+    },
+    {
+      "id": "q3",
+      "prompt": "Your limiting magnitude tonight is 4.0. A guide says the stars of a small constellation are all magnitude 4.5 to 5. What should you expect?",
+      "choices": [
+        "It will be easy once your eyes adapt",
+        "It will be visible only near the horizon",
+        "It will show as a single blended glow",
+        "You will not see it without binoculars"
+      ],
+      "answerIndex": 3,
+      "explanation": "Stars fainter than your limiting magnitude are simply below the cutoff. Binoculars gather more light and push the limit several magnitudes deeper."
+    },
+    {
+      "id": "q4",
+      "prompt": "Roughly how many times brighter is a magnitude 1 star than a magnitude 6 star?",
+      "choices": ["5 times", "100 times", "12.5 times", "1,000 times"],
+      "answerIndex": 1,
+      "explanation": "Five magnitudes is defined as exactly 100 times in brightness."
+    },
+    {
+      "id": "q5",
+      "prompt": "Sirius has apparent magnitude −1.5 but absolute magnitude 1.4. What does that tell you?",
+      "choices": [
+        "Sirius is getting fainter over time",
+        "Sirius is one of the most powerful stars known",
+        "Sirius looks so bright largely because it is close to us",
+        "Sirius is brighter in winter than in summer"
+      ],
+      "answerIndex": 2,
+      "explanation": "Absolute magnitude places every star at the same distance, 32.6 light-years. Sirius is only 8.6 light-years away, so it looks much brighter than it would from that standard distance."
+    },
+    {
+      "id": "q6",
+      "prompt": "You count the Little Dipper and see only Polaris and the two stars at the end of the bowl. What is your sky's limiting magnitude, roughly?",
+      "choices": ["Between 3 and 4", "About 1", "About 6.5", "About 9"],
+      "answerIndex": 0,
+      "explanation": "Polaris, Kochab and Pherkad are magnitude 2 to 3; the other four are 4.2 or fainter. Seeing only three puts your limit between 3 and 4."
+    }
+  ]
+}

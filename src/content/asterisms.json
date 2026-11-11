@@ -1,0 +1,673 @@
+[
+  {
+    "id": "big-dipper",
+    "name": "Big Dipper",
+    "signpost": true,
+    "season": "all-year",
+    "lines": [["star:Alkaid", "star:Mizar", "star:Alioth", "star:Megrez", "star:Phecda", "star:Merak", "star:Dubhe", "star:Megrez"]],
+    "closed": false,
+    "constellations": ["UMa"],
+    "summary": "Seven bright stars in the shape of a long-handled pot: four make the bowl, three the bent handle. It is the tail and hindquarters of Ursa Major, the Great Bear, and the most useful signpost in the northern sky.",
+    "howToFind": [
+      "Face north. From Brooklyn the Big Dipper never sets, it just wheels around [[star:Polaris|Polaris]] once a day. On spring evenings it is very high, almost overhead and upside down, spilling its contents; in summer it hangs by its handle in the northwest; on autumn evenings it scrapes the northern horizon, where buildings often hide it; in winter it stands on its handle in the northeast.",
+      "Look for a pattern much bigger than most people expect. From [[star:Dubhe|Dubhe]] at the lip of the bowl to [[star:Alkaid|Alkaid]] at the end of the handle is 26°, more than a spread hand at arm's length. Six of the seven stars are about magnitude 2 and survive city skies easily; only [[star:Megrez|Megrez]], where the handle joins the bowl, is noticeably dimmer."
+    ],
+    "hops": [
+      {
+        "title": "Pointers to Polaris",
+        "to": "star:Polaris",
+        "text": "[[star:Merak|Merak]] and [[star:Dubhe|Dubhe]], the two bowl stars farthest from the handle, are called the Pointers. Follow the line from Merak through Dubhe, out of the open top of the bowl, for about five times the gap between them: 29°, nearly three fists. The first fairly bright star you meet is [[star:Polaris|Polaris]], the North Star, at the tip of the Little Dipper's handle.",
+        "highlights": [
+          { "type": "polyline", "points": ["star:Merak", "star:Dubhe", "star:Polaris"], "dashed": true },
+          { "type": "angle", "from": "star:Dubhe", "to": "star:Merak", "label": "5° (the Pointers)" },
+          { "type": "angle", "from": "star:Dubhe", "to": "star:Polaris", "label": "29° (nearly three fists)" },
+          { "type": "object", "ref": "star:Polaris", "label": true },
+          { "type": "constellation", "id": "UMi", "lines": true, "label": true }
+        ]
+      },
+      {
+        "title": "Across the pole to Cassiopeia",
+        "to": "asterism:cassiopeia-w",
+        "text": "Start at [[star:Alioth|Alioth]], the handle star nearest the bowl, and draw a line to [[star:Polaris|Polaris]]. Keep going almost as far again, another 29° or three fists, and you land in the middle of the W of [[con:Cas|Cassiopeia]]. The Dipper and the W sit on opposite sides of the pole, so when one is low the other is high.",
+        "highlights": [
+          { "type": "polyline", "points": ["star:Alioth", "star:Polaris", "star:γ Cas"], "dashed": true },
+          { "type": "angle", "from": "star:Polaris", "to": "star:γ Cas", "label": "29° (three fists)" },
+          { "type": "polyline", "points": ["star:Caph", "star:Schedar", "star:γ Cas", "star:Ruchbah", "star:Segin"], "label": "Cassiopeia's W" }
+        ]
+      },
+      {
+        "title": "Past Polaris to Cepheus",
+        "to": "star:Errai",
+        "text": "Take the Pointer line through [[star:Polaris|Polaris]] and continue for 12° more, a fist and a bit. You arrive at [[star:Errai|Errai]], the peak of the roof of [[con:Cep|Cepheus]], a dim figure shaped like a child's drawing of a house. Most of its stars are third magnitude, so in the city expect to pick out only two or three of them.",
+        "highlights": [
+          { "type": "polyline", "points": ["star:Merak", "star:Dubhe", "star:Polaris", "star:Errai"], "dashed": true },
+          { "type": "angle", "from": "star:Polaris", "to": "star:Errai", "label": "12°" },
+          { "type": "constellation", "id": "Cep", "lines": true, "label": true }
+        ]
+      },
+      {
+        "title": "Between the Dippers: Thuban and the Dragon",
+        "to": "star:Thuban",
+        "text": "Find [[star:Mizar|Mizar]], the middle star of the handle, and [[star:Kochab|Kochab]], the brightest star in the Little Dipper's bowl. Exactly halfway between them, 11° from each, is [[star:Thuban|Thuban]], a faint star in the tail of [[con:Dra|Draco]] the Dragon, whose body winds between the two Dippers. Thuban is magnitude 3.7, right at the limit for a city sky, so try binoculars.",
+        "highlights": [
+          { "type": "polyline", "points": ["star:Mizar", "star:Thuban", "star:Kochab"], "dashed": true },
+          { "type": "angle", "from": "star:Mizar", "to": "star:Thuban", "label": "11°" },
+          { "type": "object", "ref": "star:Thuban", "label": true },
+          { "type": "constellation", "id": "Dra", "lines": true, "label": true }
+        ]
+      },
+      {
+        "title": "Arc to Arcturus",
+        "to": "star:Arcturus",
+        "text": "Follow the curve of the handle away from the bowl and keep the same bend going. After 31°, three fists past [[star:Alkaid|Alkaid]], you reach a brilliant orange star: [[star:Arcturus|Arcturus]], the brightest star of [[con:Boo|Boötes]] the Herdsman and of the whole spring sky.",
+        "highlights": [
+          { "type": "polyline", "points": ["star:Alioth", "star:Mizar", "star:Alkaid", "star:Arcturus"], "dashed": true },
+          { "type": "angle", "from": "star:Alkaid", "to": "star:Arcturus", "label": "31° (three fists)" },
+          { "type": "object", "ref": "star:Arcturus", "label": true },
+          { "type": "constellation", "id": "Boo", "lines": true, "label": true }
+        ]
+      },
+      {
+        "title": "A leak in the bowl drips on Leo",
+        "to": "star:Regulus",
+        "text": "Imagine the bowl springs a leak at the bottom. Draw a line from [[star:Megrez|Megrez]] through [[star:Phecda|Phecda]], the two bowl stars nearest the handle, and continue it for 47°, a little more than four and a half fists. It lands on [[star:Regulus|Regulus]], the bright star at the foot of the backward question mark that makes the head of [[con:Leo|Leo]] the Lion.",
+        "highlights": [
+          { "type": "polyline", "points": ["star:Megrez", "star:Phecda", "star:Regulus"], "dashed": true },
+          { "type": "angle", "from": "star:Phecda", "to": "star:Regulus", "label": "47°" },
+          { "type": "polyline", "points": ["star:Regulus", "star:η Leo", "star:Algieba", "star:Adhafera", "star:Rasalas", "star:ε Leo"], "label": "The Sickle" },
+          { "type": "constellation", "id": "Leo", "lines": true, "label": true }
+        ]
+      },
+      {
+        "title": "Diagonal across the bowl to the Twins",
+        "to": "star:Castor",
+        "text": "Draw the diagonal of the bowl from [[star:Megrez|Megrez]] to [[star:Merak|Merak]] and extend it 43°, a bit over four fists. You arrive at [[star:Castor|Castor]], with slightly brighter [[star:Pollux|Pollux]] 4.5° beside it: the heads of [[con:Gem|Gemini]] the Twins. This hop works best in late winter and spring, when Gemini is high in the west.",
+        "highlights": [
+          { "type": "polyline", "points": ["star:Megrez", "star:Merak", "star:Castor"], "dashed": true },
+          { "type": "angle", "from": "star:Merak", "to": "star:Castor", "label": "43°" },
+          { "type": "angle", "from": "star:Castor", "to": "star:Pollux", "label": "4.5°" },
+          { "type": "constellation", "id": "Gem", "lines": true, "label": true }
+        ]
+      },
+      {
+        "title": "The rest of the Great Bear",
+        "to": "con:UMa",
+        "text": "The Dipper is only the Bear's tail and hindquarters. Its paws are three close pairs of stars strung out beneath the bowl, each pair under 2° wide: the Alulas about 22° south of [[star:Phecda|Phecda]], the Tanias 15° from [[star:Merak|Merak]], and [[star:Talitha|Talitha]] with its neighbor 20° from Merak. Arab stargazers called them the three leaps of the gazelle. The Bear's nose, [[star:Muscida|Muscida]], is 18° ahead of [[star:Dubhe|Dubhe]]. These stars are third magnitude: easy in the suburbs, a challenge in the city.",
+        "highlights": [
+          { "type": "constellation", "id": "UMa", "lines": true, "label": true },
+          { "type": "object", "ref": "star:Alula Borealis", "label": "Hind paw (the Alulas)" },
+          { "type": "object", "ref": "star:Tania Australis", "label": "Hind paw (the Tanias)" },
+          { "type": "object", "ref": "star:Talitha", "label": "Front paw (Talitha)" },
+          { "type": "object", "ref": "star:Muscida", "label": "Nose (Muscida)" }
+        ]
+      }
+    ],
+    "bestMonths": [2, 3, 4, 5, 6, 7]
+  },
+  {
+    "id": "little-dipper",
+    "name": "Little Dipper",
+    "signpost": false,
+    "season": "all-year",
+    "lines": [["star:Polaris", "star:Yildun", "star:ε UMi", "star:ζ UMi", "star:η UMi", "star:Pherkad", "star:Kochab", "star:ζ UMi"]],
+    "closed": false,
+    "constellations": ["UMi"],
+    "summary": "A small, faint copy of the Big Dipper with Polaris, the North Star, at the end of its handle. It is the whole of Ursa Minor, the Little Bear.",
+    "howToFind": [
+      "Use the Pointers of the [[asterism:big-dipper|Big Dipper]] to find [[star:Polaris|Polaris]]: that is the tip of the Little Dipper's handle. The other end of the pattern is the pair [[star:Kochab|Kochab]] and [[star:Pherkad|Pherkad]], 17° and 19° from Polaris on the side toward the Big Dipper's handle. They are called the Guardians of the Pole because they circle it every night.",
+      "From the city, Polaris and the two Guardians are usually all you will see. The four stars between them are magnitude 4 to 5, which makes the Little Dipper a handy test of your sky: count how many of its seven stars you can see. On most Brooklyn nights the answer is three."
+    ],
+    "hops": [],
+    "bestMonths": [4, 5, 6, 7, 8]
+  },
+  {
+    "id": "cassiopeia-w",
+    "name": "Cassiopeia's W",
+    "signpost": false,
+    "season": "all-year",
+    "lines": [["star:Caph", "star:Schedar", "star:γ Cas", "star:Ruchbah", "star:Segin"]],
+    "closed": false,
+    "constellations": ["Cas"],
+    "summary": "Five stars in a zigzag that reads as a W or an M depending on the time of night. It marks Queen Cassiopeia and sits opposite the Big Dipper across the North Star.",
+    "howToFind": [
+      "Face north and find [[star:Polaris|Polaris]]. The W is about three fists (29°) from Polaris, on the opposite side from the [[asterism:big-dipper|Big Dipper]]. On autumn and winter evenings it is high above Polaris and looks like an M; on spring evenings it is low in the north as a W. From Brooklyn it never sets.",
+      "The whole zigzag is 13° long, a fist and a half, from [[star:Caph|Caph]] to [[star:Segin|Segin]]. Four of the five stars are second magnitude and show in city skies; Segin, at the faint end, is magnitude 3.4."
+    ],
+    "hops": [],
+    "bestMonths": [9, 10, 11, 12, 1, 2]
+  },
+  {
+    "id": "orions-belt",
+    "name": "Orion's Belt",
+    "signpost": false,
+    "season": "winter",
+    "lines": [["star:Alnitak", "star:Alnilam", "star:Mintaka"]],
+    "closed": false,
+    "constellations": ["Ori"],
+    "summary": "Three evenly spaced, equally bright stars in a short straight row across the middle of Orion. Nothing else in the sky looks like it.",
+    "howToFind": [
+      "On winter evenings face south and look about halfway up the sky for three bright stars in a tight, straight line, tilted a little. The row is only 2.7° long, less than three fingers at arm's length. Orange [[star:Betelgeuse|Betelgeuse]] is 10° above it and blue-white [[star:Rigel|Rigel]] 9° below it.",
+      "The Belt is a two-way pointer. Followed down and to the left it leads to [[star:Sirius|Sirius]]; followed up and to the right it leads to [[star:Aldebaran|Aldebaran]] and the [[dso:M45|Pleiades]]. The [[asterism:winter-hexagon|Winter Hexagon]] guide walks through both."
+    ],
+    "hops": [],
+    "bestMonths": [12, 1, 2, 3]
+  },
+  {
+    "id": "winter-hexagon",
+    "name": "Winter Hexagon",
+    "signpost": true,
+    "season": "winter",
+    "lines": [["star:Sirius", "star:Procyon", "star:Pollux", "star:Castor", "star:Capella", "star:Aldebaran", "star:Rigel"]],
+    "closed": true,
+    "constellations": ["CMa", "CMi", "Gem", "Aur", "Tau", "Ori"],
+    "summary": "A huge ring of the brightest stars of winter, drawn through six constellations with Orion's Betelgeuse inside it. Also called the Winter Circle.",
+    "howToFind": [
+      "On a winter evening face south and find [[con:Ori|Orion]] by the three stars of his Belt. Orion's bright foot, [[star:Rigel|Rigel]], is one corner. Going around: down-left to [[star:Sirius|Sirius]], up to [[star:Procyon|Procyon]], on up to [[star:Pollux|Pollux]] and [[star:Castor|Castor]], over the top at [[star:Capella|Capella]], and down through [[star:Aldebaran|Aldebaran]] back to Rigel.",
+      "It is enormous: about 66° from Sirius at the bottom to Capella at the top, and apart from the close pair Castor and Pollux its corners are 23° to 31° apart, so you have to sweep your eyes around it. Every corner is first magnitude or close to it, which makes this the one big pattern that light pollution cannot erase. Orange [[star:Betelgeuse|Betelgeuse]] sits inside, a little off center."
+    ],
+    "hops": [
+      {
+        "title": "Start at Orion",
+        "to": "con:Ori",
+        "text": "Find the three stars of the [[asterism:orions-belt|Belt]] in a short straight row. Orange [[star:Betelgeuse|Betelgeuse]], Orion's shoulder, is a fist above the Belt and blue-white [[star:Rigel|Rigel]], his foot, a fist below; the two are 19° apart. Rigel is the Hexagon's first corner and Betelgeuse sits inside the ring.",
+        "highlights": [
+          { "type": "constellation", "id": "Ori", "lines": true, "label": true },
+          { "type": "polyline", "points": ["star:Alnitak", "star:Alnilam", "star:Mintaka"], "label": "The Belt" },
+          { "type": "angle", "from": "star:Betelgeuse", "to": "star:Rigel", "label": "19° (two fists)" }
+        ]
+      },
+      {
+        "title": "Belt down to Sirius",
+        "to": "star:Sirius",
+        "text": "Follow the line of the Belt down and to the left for 22°, a little over two fists. You cannot miss [[star:Sirius|Sirius]], the brightest star in the night sky, flashing white and often flickering with color when it is low. It is the head of [[con:CMa|Canis Major]], the Great Dog.",
+        "highlights": [
+          { "type": "polyline", "points": ["star:Mintaka", "star:Alnitak", "star:Sirius"], "dashed": true },
+          { "type": "angle", "from": "star:Alnitak", "to": "star:Sirius", "label": "22° (two fists)" },
+          { "type": "object", "ref": "star:Sirius", "label": true },
+          { "type": "constellation", "id": "CMa", "lines": true, "label": true }
+        ]
+      },
+      {
+        "title": "Belt up to Aldebaran",
+        "to": "star:Aldebaran",
+        "text": "Now follow the Belt the other way, up and to the right, for 22°. A little above the line you come to orange [[star:Aldebaran|Aldebaran]], the eye of [[con:Tau|Taurus]] the Bull, at one tip of a V of fainter stars that forms the Bull's face.",
+        "highlights": [
+          { "type": "polyline", "points": ["star:Alnitak", "star:Mintaka", "star:Aldebaran"], "dashed": true },
+          { "type": "angle", "from": "star:Mintaka", "to": "star:Aldebaran", "label": "22° (two fists)" },
+          { "type": "object", "ref": "star:Aldebaran", "label": true },
+          { "type": "constellation", "id": "Tau", "lines": true, "label": true }
+        ]
+      },
+      {
+        "title": "On to the Pleiades",
+        "to": "dso:M45",
+        "text": "Keep going past [[star:Aldebaran|Aldebaran]] in the same direction for another 14°, a fist and a half. You reach a tiny, tight knot of stars shaped like a miniature dipper: the [[dso:M45|Pleiades]], or Seven Sisters, riding on the Bull's shoulder. In the city it may look like a small smudge until you use binoculars.",
+        "highlights": [
+          { "type": "polyline", "points": ["star:Mintaka", "star:Aldebaran", "dso:M45"], "dashed": true },
+          { "type": "angle", "from": "star:Aldebaran", "to": "dso:M45", "label": "14°" },
+          { "type": "object", "ref": "dso:M45", "label": "Pleiades" }
+        ]
+      },
+      {
+        "title": "Orion's shoulders to Procyon",
+        "to": "star:Procyon",
+        "text": "Draw a line across Orion's shoulders from [[star:Bellatrix|Bellatrix]] to [[star:Betelgeuse|Betelgeuse]] and continue to the left for 26°, two and a half fists. The bright, slightly yellowish star there is [[star:Procyon|Procyon]] in [[con:CMi|Canis Minor]], the Little Dog. Procyon, Betelgeuse and [[star:Sirius|Sirius]] make the almost perfectly equal-sided [[asterism:winter-triangle|Winter Triangle]].",
+        "highlights": [
+          { "type": "polyline", "points": ["star:Bellatrix", "star:Betelgeuse", "star:Procyon"], "dashed": true },
+          { "type": "angle", "from": "star:Betelgeuse", "to": "star:Procyon", "label": "26°" },
+          { "type": "polyline", "points": ["star:Sirius", "star:Procyon", "star:Betelgeuse"], "closed": true, "label": "Winter Triangle" },
+          { "type": "constellation", "id": "CMi", "lines": true, "label": true }
+        ]
+      },
+      {
+        "title": "Rigel through Betelgeuse to the Twins",
+        "to": "star:Pollux",
+        "text": "Draw a line from [[star:Rigel|Rigel]] diagonally through Orion to [[star:Betelgeuse|Betelgeuse]], then continue for 34°, about three and a half fists. You arrive at a matched pair of stars 4.5° apart: [[star:Castor|Castor]] and, slightly brighter and more golden, [[star:Pollux|Pollux]], the heads of [[con:Gem|Gemini]] the Twins. Their bodies are two lines of stars running back toward Orion.",
+        "highlights": [
+          { "type": "polyline", "points": ["star:Rigel", "star:Betelgeuse", "star:Castor"], "dashed": true },
+          { "type": "angle", "from": "star:Betelgeuse", "to": "star:Castor", "label": "34°" },
+          { "type": "angle", "from": "star:Castor", "to": "star:Pollux", "label": "4.5°" },
+          { "type": "constellation", "id": "Gem", "lines": true, "label": true }
+        ]
+      },
+      {
+        "title": "Straight up to Capella",
+        "to": "star:Capella",
+        "text": "From [[star:Alnilam|Alnilam]], the middle star of the Belt, go straight up between Orion's shoulders for 30° to [[star:Elnath|Elnath]], the tip of the Bull's horn. Keep going 17° more in the same line and you reach golden [[star:Capella|Capella]], the brightest star of [[con:Aur|Auriga]] the Charioteer. On winter evenings it is almost overhead.",
+        "highlights": [
+          { "type": "polyline", "points": ["star:Alnilam", "star:Elnath", "star:Capella"], "dashed": true },
+          { "type": "angle", "from": "star:Alnilam", "to": "star:Elnath", "label": "30°" },
+          { "type": "angle", "from": "star:Elnath", "to": "star:Capella", "label": "17°" },
+          { "type": "constellation", "id": "Aur", "lines": true, "label": true }
+        ]
+      },
+      {
+        "title": "Capella to Perseus",
+        "to": "star:Mirfak",
+        "text": "From [[star:Capella|Capella]] look 19°, two fists, to the west-northwest, in the general direction of [[asterism:cassiopeia-w|Cassiopeia's W]]. The brightest star on the way is [[star:Mirfak|Mirfak]], the heart of [[con:Per|Perseus]]. It is also 26° from the [[dso:M45|Pleiades]], which sit at the Hero's feet.",
+        "highlights": [
+          { "type": "angle", "from": "star:Capella", "to": "star:Mirfak", "label": "19° (two fists)" },
+          { "type": "object", "ref": "star:Mirfak", "label": true },
+          { "type": "constellation", "id": "Per", "lines": true, "label": true }
+        ]
+      }
+    ],
+    "bestMonths": [12, 1, 2, 3]
+  },
+  {
+    "id": "winter-triangle",
+    "name": "Winter Triangle",
+    "signpost": false,
+    "season": "winter",
+    "lines": [["star:Sirius", "star:Procyon", "star:Betelgeuse"]],
+    "closed": true,
+    "constellations": ["CMa", "CMi", "Ori"],
+    "summary": "Three first-magnitude stars, white Sirius, yellow-white Procyon and orange Betelgeuse, in a nearly perfect equilateral triangle about two and a half fists on a side.",
+    "howToFind": [
+      "Find [[con:Ori|Orion]] and his orange shoulder star [[star:Betelgeuse|Betelgeuse]]. Follow the Belt down-left to dazzling [[star:Sirius|Sirius]]. The third corner, [[star:Procyon|Procyon]], is to the left of Betelgeuse and above Sirius. The sides measure 26°, 26° and 27°.",
+      "All three stars are bright enough for any city sky. The triangle is the southeastern part of the bigger [[asterism:winter-hexagon|Winter Hexagon]], which shares Sirius and Procyon."
+    ],
+    "hops": [],
+    "bestMonths": [1, 2, 3]
+  },
+  {
+    "id": "spring-arc",
+    "name": "Spring Arc",
+    "signpost": true,
+    "season": "spring",
+    "lines": [["star:Alioth", "star:Mizar", "star:Alkaid", "star:Arcturus", "star:Spica"]],
+    "closed": false,
+    "constellations": ["UMa", "Boo", "Vir"],
+    "summary": "A long sweeping curve that starts in the Big Dipper's handle, arcs to orange Arcturus and speeds on to blue-white Spica. Stargazers remember it as arc to Arcturus, speed on to Spica.",
+    "howToFind": [
+      "On a spring evening the [[asterism:big-dipper|Big Dipper]] is high in the north, nearly overhead. Follow the bend of its handle away from the bowl, keeping the same curve, for three fists (31°) to the bright orange star [[star:Arcturus|Arcturus]], then three fists more (33°) to [[star:Spica|Spica]], lower in the south.",
+      "The whole arc from the handle to Spica covers more than 60° of sky, a third of the way from horizon to horizon. Arcturus is the brightest star in the northern half of the sky and Spica is first magnitude, so the arc works well from the city."
+    ],
+    "hops": [
+      {
+        "title": "Arc to Arcturus",
+        "to": "star:Arcturus",
+        "text": "Follow the curve of the Dipper's handle past its last star, [[star:Alkaid|Alkaid]], for 31°, three fists. The brilliant orange star you reach is [[star:Arcturus|Arcturus]]. Its color is the giveaway: no other star that bright in the spring sky is so plainly orange.",
+        "highlights": [
+          { "type": "polyline", "points": ["star:Alioth", "star:Mizar", "star:Alkaid", "star:Arcturus"], "dashed": true },
+          { "type": "angle", "from": "star:Alkaid", "to": "star:Arcturus", "label": "31° (three fists)" },
+          { "type": "object", "ref": "star:Arcturus", "label": true }
+        ]
+      },
+      {
+        "title": "Speed on to Spica",
+        "to": "star:Spica",
+        "text": "Keep the same curve going past [[star:Arcturus|Arcturus]] for another 33°. The next bright star, blue-white and all alone, is [[star:Spica|Spica]], the ear of wheat in the hand of [[con:Vir|Virgo]] the Maiden. The rest of Virgo is a large, faint sprawl up and to the right of Spica that city skies mostly hide.",
+        "highlights": [
+          { "type": "polyline", "points": ["star:Alkaid", "star:Arcturus", "star:Spica"], "dashed": true },
+          { "type": "angle", "from": "star:Arcturus", "to": "star:Spica", "label": "33° (three fists)" },
+          { "type": "object", "ref": "star:Spica", "label": true },
+          { "type": "constellation", "id": "Vir", "lines": true, "label": true }
+        ]
+      },
+      {
+        "title": "The kite of Boötes",
+        "to": "con:Boo",
+        "text": "[[star:Arcturus|Arcturus]] is the bottom point of a tall, narrow kite, or an ice cream cone, that stretches north toward the Dipper's handle. [[star:Izar|Izar]] is one fist (10°) up one side, [[star:Seginus|Seginus]] two fists (20°) up the other, and [[star:Nekkar|Nekkar]] makes the top, 23° from Arcturus. That kite is [[con:Boo|Boötes]], the Herdsman.",
+        "highlights": [
+          { "type": "constellation", "id": "Boo", "lines": true, "label": true },
+          { "type": "angle", "from": "star:Arcturus", "to": "star:Izar", "label": "10°" },
+          { "type": "angle", "from": "star:Arcturus", "to": "star:Nekkar", "label": "23°" }
+        ]
+      },
+      {
+        "title": "Arcturus to the Northern Crown",
+        "to": "star:Alphecca",
+        "text": "From [[star:Arcturus|Arcturus]] look two fists (20°) toward the east-northeast, on the left side of the kite. A small, neat half circle of stars opens toward the north: [[con:CrB|Corona Borealis]], the Northern Crown. Its one bright star, [[star:Alphecca|Alphecca]], is the jewel in the middle; the rest need a darker sky or binoculars.",
+        "highlights": [
+          { "type": "polyline", "points": ["star:Arcturus", "star:Alphecca"], "dashed": true },
+          { "type": "angle", "from": "star:Arcturus", "to": "star:Alphecca", "label": "20° (two fists)" },
+          { "type": "object", "ref": "star:Alphecca", "label": true },
+          { "type": "constellation", "id": "CrB", "lines": true, "label": true }
+        ]
+      },
+      {
+        "title": "Keep going to the Keystone of Hercules",
+        "to": "asterism:keystone",
+        "text": "Continue the line from [[star:Arcturus|Arcturus]] through [[star:Alphecca|Alphecca]] for 15° more, a fist and a half, and you reach the nearest corner of the [[asterism:keystone|Keystone]], the lopsided square at the center of [[con:Her|Hercules]]. A handy rule: on the line from Arcturus to [[star:Vega|Vega]], the Crown is one third of the way and the Keystone is two thirds.",
+        "highlights": [
+          { "type": "polyline", "points": ["star:Arcturus", "star:Alphecca", "star:ζ Her"], "dashed": true },
+          { "type": "angle", "from": "star:Alphecca", "to": "star:ζ Her", "label": "15°" },
+          { "type": "polyline", "points": ["star:π Her", "star:η Her", "star:ζ Her", "star:ε Her"], "closed": true, "label": "Keystone" },
+          { "type": "constellation", "id": "Her", "lines": true, "label": true }
+        ]
+      },
+      {
+        "title": "The Spring Triangle and the Lion's tail",
+        "to": "star:Denebola",
+        "text": "[[star:Arcturus|Arcturus]] and [[star:Spica|Spica]] make two corners of a big, nearly equal-sided triangle. The third corner, 35° to the west of both (to their right when you face south), is [[star:Denebola|Denebola]], the tail of [[con:Leo|Leo]] the Lion. The Lion's heart, [[star:Regulus|Regulus]], is 25° farther west.",
+        "highlights": [
+          { "type": "polyline", "points": ["star:Arcturus", "star:Spica", "star:Denebola"], "closed": true, "label": "Spring Triangle" },
+          { "type": "angle", "from": "star:Arcturus", "to": "star:Denebola", "label": "35°" },
+          { "type": "angle", "from": "star:Denebola", "to": "star:Regulus", "label": "25°" },
+          { "type": "constellation", "id": "Leo", "lines": true, "label": true }
+        ]
+      },
+      {
+        "title": "Spica to the Crow",
+        "to": "con:Crv",
+        "text": "Look a fist and a half to the lower right of [[star:Spica|Spica]] for a small, lopsided box of four stars: [[con:Crv|Corvus]] the Crow. The two stars along the top of the box, [[star:γ Crv|Gienah]] and [[star:Algorab|Algorab]], point straight back at Spica, 15° away, which is how you know you have the right box.",
+        "highlights": [
+          { "type": "polyline", "points": ["star:γ Crv", "star:Algorab", "star:Spica"], "dashed": true },
+          { "type": "angle", "from": "star:Algorab", "to": "star:Spica", "label": "15°" },
+          { "type": "constellation", "id": "Crv", "lines": true, "label": true }
+        ]
+      },
+      {
+        "title": "Under the handle: Cor Caroli",
+        "to": "star:α2 CVn",
+        "text": "Tucked inside the curve of the Dipper's handle, 14° from [[star:Alkaid|Alkaid]], is a single third-magnitude star with nothing else around it: [[star:α2 CVn|Cor Caroli]], the brightest star of [[con:CVn|Canes Venatici]], the Hunting Dogs that Boötes holds on a leash.",
+        "highlights": [
+          { "type": "angle", "from": "star:Alkaid", "to": "star:α2 CVn", "label": "14°" },
+          { "type": "object", "ref": "star:α2 CVn", "label": true },
+          { "type": "constellation", "id": "CVn", "lines": true, "label": true }
+        ]
+      }
+    ],
+    "bestMonths": [4, 5, 6, 7]
+  },
+  {
+    "id": "sickle-of-leo",
+    "name": "Sickle of Leo",
+    "signpost": false,
+    "season": "spring",
+    "lines": [["star:Regulus", "star:η Leo", "star:Algieba", "star:Adhafera", "star:Rasalas", "star:ε Leo"]],
+    "closed": false,
+    "constellations": ["Leo"],
+    "summary": "A backward question mark of six stars with bright Regulus as the dot at the bottom. It outlines the head and mane of Leo the Lion.",
+    "howToFind": [
+      "On a spring evening face south and look high up for bright, blue-white [[star:Regulus|Regulus]]. If you are unsure, use the [[asterism:big-dipper|Big Dipper]]: a line from [[star:Megrez|Megrez]] through [[star:Phecda|Phecda]], carried on for four and a half fists, drips onto it. The hook of the Sickle curves up from Regulus through [[star:Algieba|Algieba]], the second-brightest star in it, and bends over to the right.",
+      "The Sickle is about 14° tall, a fist and a half. From the city, Regulus and Algieba are easy; the stars of the curved blade are magnitude 3 to 4 and may need binoculars. The Lion's hindquarters are a triangle of stars two fists to the left, ending in [[star:Denebola|Denebola]]."
+    ],
+    "hops": [],
+    "bestMonths": [2, 3, 4, 5]
+  },
+  {
+    "id": "summer-triangle",
+    "name": "Summer Triangle",
+    "signpost": true,
+    "season": "summer",
+    "lines": [["star:Vega", "star:Deneb", "star:Altair"]],
+    "closed": true,
+    "constellations": ["Lyr", "Cyg", "Aql"],
+    "summary": "Three bright stars from three different constellations, Vega, Deneb and Altair, forming a large triangle that rides high overhead on summer and early autumn evenings.",
+    "howToFind": [
+      "On a summer evening look high in the east, or straight overhead by late summer. The brightest star up there is blue-white [[star:Vega|Vega]]. [[star:Deneb|Deneb]] is 24° from it, two and a half fists toward the northeast, and [[star:Altair|Altair]] is 34° from Vega, lower toward the south, with a small star on each side of it.",
+      "The long side from Deneb to Altair is 38°, almost four fists. All three stars are first magnitude, so the Triangle is often the first thing to appear in a city sky as summer twilight fades. Under a dark sky the Milky Way runs right through it."
+    ],
+    "hops": [
+      {
+        "title": "Vega and the Lyre",
+        "to": "con:Lyr",
+        "text": "[[star:Vega|Vega]] is the brightest corner of the Triangle. Hanging from it, on the side toward [[star:Altair|Altair]], is a small parallelogram of four fainter stars whose far end, [[star:Sheliak|Sheliak]] and [[star:Sulafat|Sulafat]], is 6° to 8° from Vega. That little shape with Vega on top is the whole of [[con:Lyr|Lyra]], the Lyre. Binoculars show it well from the city.",
+        "highlights": [
+          { "type": "constellation", "id": "Lyr", "lines": true, "label": true },
+          { "type": "object", "ref": "star:Vega", "label": true },
+          { "type": "angle", "from": "star:Vega", "to": "star:Sulafat", "label": "8°" }
+        ]
+      },
+      {
+        "title": "Deneb and the Northern Cross",
+        "to": "asterism:northern-cross",
+        "text": "[[star:Deneb|Deneb]], the faintest corner, is the top of the [[asterism:northern-cross|Northern Cross]]. The long beam of the Cross runs from Deneb 22° into the middle of the Triangle and ends at [[star:Albireo|Albireo]], roughly midway between [[star:Vega|Vega]] and [[star:Altair|Altair]]. Turn the Cross into a bird and you have [[con:Cyg|Cygnus]] the Swan: Deneb is the tail, Albireo the beak, the crossbar the wings.",
+        "highlights": [
+          { "type": "polyline", "points": ["star:Deneb", "star:Sadr", "star:η Cyg", "star:Albireo"], "label": "Northern Cross" },
+          { "type": "polyline", "points": ["star:Aljanah", "star:Sadr", "star:Fawaris"] },
+          { "type": "angle", "from": "star:Deneb", "to": "star:Albireo", "label": "22° (two fists)" },
+          { "type": "constellation", "id": "Cyg", "label": true }
+        ]
+      },
+      {
+        "title": "Altair and the Eagle",
+        "to": "con:Aql",
+        "text": "[[star:Altair|Altair]], the southern corner, is easy to confirm because it has a companion on each side in a short straight line: [[star:Tarazed|Tarazed]] 2° one way and fainter [[star:Alshain|Alshain]] 3° the other. The row of three points up the sky toward [[star:Vega|Vega]]. Altair is the head of [[con:Aql|Aquila]] the Eagle, whose wings spread out to either side.",
+        "highlights": [
+          { "type": "polyline", "points": ["star:Alshain", "star:Altair", "star:Tarazed"] },
+          { "type": "object", "ref": "star:Altair", "label": true },
+          { "type": "constellation", "id": "Aql", "lines": true, "label": true }
+        ]
+      },
+      {
+        "title": "Vega to the Keystone of Hercules",
+        "to": "asterism:keystone",
+        "text": "From [[star:Vega|Vega]] look west, away from [[star:Deneb|Deneb]] and toward bright orange [[star:Arcturus|Arcturus]]. A fist and a half (16°) along that line is the near corner of the [[asterism:keystone|Keystone]], a lopsided square about 7° across that makes the body of [[con:Her|Hercules]]. A fist and a half beyond the Keystone's far corner, on the same line, is the half circle of the Northern Crown.",
+        "highlights": [
+          { "type": "polyline", "points": ["star:Vega", "star:π Her"], "dashed": true },
+          { "type": "angle", "from": "star:Vega", "to": "star:π Her", "label": "16°" },
+          { "type": "polyline", "points": ["star:π Her", "star:η Her", "star:ζ Her", "star:ε Her"], "closed": true, "label": "Keystone" },
+          { "type": "constellation", "id": "Her", "lines": true, "label": true }
+        ]
+      },
+      {
+        "title": "Deneb through Altair to the Teapot",
+        "to": "asterism:teapot",
+        "text": "Draw the long side of the Triangle from [[star:Deneb|Deneb]] to [[star:Altair|Altair]], then continue the same distance again, 38° or almost four fists. You land on the handle of the [[asterism:teapot|Teapot]], the bright part of [[con:Sgr|Sagittarius]] the Archer. It sits low in the south, never more than about two fists above Brooklyn's horizon, so you need an open view that way.",
+        "highlights": [
+          { "type": "polyline", "points": ["star:Deneb", "star:Altair", "star:Nunki"], "dashed": true },
+          { "type": "angle", "from": "star:Altair", "to": "star:Nunki", "label": "38° (four fists)" },
+          { "type": "polyline", "points": ["star:Alnasl", "star:Kaus Australis", "star:Ascella", "star:τ Sgr", "star:Nunki", "star:φ Sgr", "star:Kaus Borealis", "star:Kaus Media", "star:Alnasl"], "label": "Teapot" },
+          { "type": "constellation", "id": "Sgr", "label": true }
+        ]
+      },
+      {
+        "title": "Vega through Rasalhague to Antares",
+        "to": "star:Antares",
+        "text": "From [[star:Vega|Vega]] drop three fists (30°) toward the south-southwest to [[star:Rasalhague|Rasalhague]], the lone second-magnitude star marking the head of the Serpent Bearer. Carry the same line on for four fists (42°) more and you reach a bright, distinctly red star low in the south: [[star:Antares|Antares]], the heart of [[con:Sco|Scorpius]] the Scorpion. It is also two fists to the right of the Teapot's spout.",
+        "highlights": [
+          { "type": "polyline", "points": ["star:Vega", "star:Rasalhague", "star:Antares"], "dashed": true },
+          { "type": "angle", "from": "star:Vega", "to": "star:Rasalhague", "label": "30°" },
+          { "type": "angle", "from": "star:Rasalhague", "to": "star:Antares", "label": "42°" },
+          { "type": "object", "ref": "star:Antares", "label": true },
+          { "type": "constellation", "id": "Sco", "lines": true, "label": true }
+        ]
+      },
+      {
+        "title": "Beside Altair: the Dolphin and the Arrow",
+        "to": "con:Del",
+        "text": "Two tiny constellations sit just off the Triangle's southern corner. A fist and a half (14°) to the east-northeast of [[star:Altair|Altair]], outside the Triangle, is a little diamond with a tail: [[con:Del|Delphinus]] the Dolphin. One fist (11°) north of Altair, just inside the Triangle on the way to [[star:Albireo|Albireo]], is the short straight shaft of [[con:Sge|Sagitta]] the Arrow. Both are fourth magnitude: binocular targets from the city.",
+        "highlights": [
+          { "type": "angle", "from": "star:Altair", "to": "star:Sualocin", "label": "14°" },
+          { "type": "angle", "from": "star:Altair", "to": "star:γ Sge", "label": "11°" },
+          { "type": "constellation", "id": "Del", "lines": true, "label": true },
+          { "type": "constellation", "id": "Sge", "lines": true, "label": true }
+        ]
+      },
+      {
+        "title": "Altair through Vega to the Dragon's head",
+        "to": "star:Eltanin",
+        "text": "Run a line from [[star:Altair|Altair]] to [[star:Vega|Vega]] and continue past Vega for a fist and a half (14°). You come to [[star:Eltanin|Eltanin]], the brightest star in [[con:Dra|Draco]] the Dragon, with [[star:Rastaban|Rastaban]] 4° beside it. Together they are the eyes of the Dragon's small, four-sided head.",
+        "highlights": [
+          { "type": "polyline", "points": ["star:Altair", "star:Vega", "star:Eltanin"], "dashed": true },
+          { "type": "angle", "from": "star:Vega", "to": "star:Eltanin", "label": "14°" },
+          { "type": "object", "ref": "star:Eltanin", "label": true },
+          { "type": "constellation", "id": "Dra", "lines": true, "label": true }
+        ]
+      }
+    ],
+    "bestMonths": [6, 7, 8, 9, 10]
+  },
+  {
+    "id": "northern-cross",
+    "name": "Northern Cross",
+    "signpost": false,
+    "season": "summer",
+    "lines": [
+      ["star:Deneb", "star:Sadr", "star:η Cyg", "star:Albireo"],
+      ["star:Aljanah", "star:Sadr", "star:Fawaris"]
+    ],
+    "closed": false,
+    "constellations": ["Cyg"],
+    "summary": "A large cross of five main stars lying along the Milky Way, with Deneb at the top and the double star Albireo at the foot. It is the brighter part of Cygnus the Swan.",
+    "howToFind": [
+      "Find the [[asterism:summer-triangle|Summer Triangle]] and pick out [[star:Deneb|Deneb]], its northeastern corner. Deneb is the head of the Cross. The long beam runs 22° from Deneb through [[star:Sadr|Sadr]], where the beams cross, to [[star:Albireo|Albireo]] in the middle of the Triangle. The crossbar, 16° long, runs through Sadr from [[star:Aljanah|Aljanah]] to [[star:Fawaris|Fawaris]].",
+      "From the city Deneb and Sadr are easy and the crossbar stars are visible on a clear night; Albireo is magnitude 3 and takes some care. Early on winter evenings the Cross stands upright on the northwestern horizon."
+    ],
+    "hops": [],
+    "bestMonths": [7, 8, 9, 10, 11]
+  },
+  {
+    "id": "great-square",
+    "name": "Great Square of Pegasus",
+    "signpost": true,
+    "season": "autumn",
+    "lines": [["star:Markab", "star:Scheat", "star:Alpheratz", "star:Algenib"]],
+    "closed": true,
+    "constellations": ["Peg", "And"],
+    "summary": "Four second-magnitude stars marking a big, nearly empty square that is the body of Pegasus, the Winged Horse. It is the hub of the autumn sky.",
+    "howToFind": [
+      "On an autumn evening face south and look high up, two thirds of the way from the horizon to overhead. The Square is large, 13° to 16° on a side, so each side is about a fist and a half, and the stars are only moderately bright. What gives it away is how little there is inside it. In September it stands on one corner in the east, like a baseball diamond.",
+      "No luck? Start from the W of [[asterism:cassiopeia-w|Cassiopeia]], high in the north. Three fists (30°) south of [[star:Caph|Caph]], the end star of the W, is [[star:Alpheratz|Alpheratz]], the Square's northeastern corner. All four corners are visible from the city on a clear night, though [[star:Algenib|Algenib]] at magnitude 2.8 is the weakest."
+    ],
+    "hops": [
+      {
+        "title": "The Flying Horse's neck and nose",
+        "to": "star:Enif",
+        "text": "The Square is the body of [[con:Peg|Pegasus]], who flies upside down. From [[star:Markab|Markab]], the southwestern corner, his neck runs away from the Square to the west: 7° to [[star:Homam|Homam]] and on to [[star:Enif|Enif]], the Horse's nose, two fists (20°) from Markab. Enif is the only fairly bright star in that direction.",
+        "highlights": [
+          { "type": "polyline", "points": ["star:Markab", "star:Homam", "star:Enif"], "dashed": true },
+          { "type": "angle", "from": "star:Markab", "to": "star:Enif", "label": "20° (two fists)" },
+          { "type": "object", "ref": "star:Enif", "label": true },
+          { "type": "constellation", "id": "Peg", "lines": true, "label": true }
+        ]
+      },
+      {
+        "title": "Andromeda's chain",
+        "to": "con:And",
+        "text": "The northeastern corner, [[star:Alpheratz|Alpheratz]], officially belongs to [[con:And|Andromeda]]. From it a gently curving line of equally bright stars runs off to the northeast, away from the Square: 14° to [[star:Mirach|Mirach]], then 12° more to [[star:Almach|Almach]]. Those three stars are the chained princess.",
+        "highlights": [
+          { "type": "polyline", "points": ["star:Alpheratz", "star:Mirach", "star:Almach"], "dashed": true },
+          { "type": "angle", "from": "star:Alpheratz", "to": "star:Mirach", "label": "14°" },
+          { "type": "angle", "from": "star:Mirach", "to": "star:Almach", "label": "12°" },
+          { "type": "constellation", "id": "And", "lines": true, "label": true }
+        ]
+      },
+      {
+        "title": "Mirach to the Andromeda Galaxy",
+        "to": "dso:M31",
+        "text": "At [[star:Mirach|Mirach]], the middle star of the chain, turn a right angle toward [[asterism:cassiopeia-w|Cassiopeia]]. Step 4° to the fainter star [[star:μ And|Mu Andromedae]], then the same distance again in the same direction. The dim oval glow there is the [[dso:M31|Andromeda Galaxy]], 2.5 million light-years away. From Brooklyn you will need binoculars; under a dark sky it is the most distant thing you can see with your own eyes.",
+        "highlights": [
+          { "type": "polyline", "points": ["star:Alpheratz", "star:Mirach"] },
+          { "type": "polyline", "points": ["star:Mirach", "star:μ And", "dso:M31"], "dashed": true },
+          { "type": "angle", "from": "star:Mirach", "to": "star:μ And", "label": "4°" },
+          { "type": "angle", "from": "star:μ And", "to": "dso:M31", "label": "4°" },
+          { "type": "object", "ref": "dso:M31", "label": "Andromeda Galaxy" }
+        ]
+      },
+      {
+        "title": "Past Almach to Perseus",
+        "to": "star:Mirfak",
+        "text": "Continue Andromeda's chain beyond [[star:Almach|Almach]] in the same direction for a fist and a half (16°). The next bright star is [[star:Mirfak|Mirfak]], the brightest of [[con:Per|Perseus]], the hero who rescued Andromeda. [[star:Algol|Algol]], the famous winking Demon Star, is 12° from Almach, a little to the south of that line.",
+        "highlights": [
+          { "type": "polyline", "points": ["star:Alpheratz", "star:Mirach", "star:Almach", "star:Mirfak"], "dashed": true },
+          { "type": "angle", "from": "star:Almach", "to": "star:Mirfak", "label": "16°" },
+          { "type": "object", "ref": "star:Algol", "label": true },
+          { "type": "constellation", "id": "Per", "lines": true, "label": true }
+        ]
+      },
+      {
+        "title": "East side north to Cassiopeia and Polaris",
+        "to": "asterism:cassiopeia-w",
+        "text": "Run a line up the Square's eastern side from [[star:Algenib|Algenib]] through [[star:Alpheratz|Alpheratz]] and keep going north for three fists (30°). You reach [[star:Caph|Caph]], the end star of the W of [[con:Cas|Cassiopeia]]. Carry on for another three fists and you arrive at [[star:Polaris|Polaris]], the North Star: a way to find north when the Big Dipper is hidden behind buildings.",
+        "highlights": [
+          { "type": "polyline", "points": ["star:Algenib", "star:Alpheratz", "star:Caph", "star:Polaris"], "dashed": true },
+          { "type": "angle", "from": "star:Alpheratz", "to": "star:Caph", "label": "30°" },
+          { "type": "angle", "from": "star:Caph", "to": "star:Polaris", "label": "30°" },
+          { "type": "polyline", "points": ["star:Caph", "star:Schedar", "star:γ Cas", "star:Ruchbah", "star:Segin"], "label": "Cassiopeia's W" }
+        ]
+      },
+      {
+        "title": "Top side east to Aries",
+        "to": "star:Hamal",
+        "text": "Extend the Square's northern side from [[star:Scheat|Scheat]] through [[star:Alpheratz|Alpheratz]] and continue eastward for about two more side lengths, 27°. You come to [[star:Hamal|Hamal]], with [[star:Sheratan|Sheratan]] 4° beside it: the short bent line that is the head of [[con:Ari|Aries]] the Ram. Hamal is also 17° southeast of Mirach in Andromeda's chain.",
+        "highlights": [
+          { "type": "polyline", "points": ["star:Scheat", "star:Alpheratz", "star:Hamal"], "dashed": true },
+          { "type": "angle", "from": "star:Alpheratz", "to": "star:Hamal", "label": "27°" },
+          { "type": "object", "ref": "star:Hamal", "label": true },
+          { "type": "constellation", "id": "Ari", "lines": true, "label": true }
+        ]
+      },
+      {
+        "title": "Below the Square: the Circlet of Pisces",
+        "to": "con:Psc",
+        "text": "Look one fist below the Square's southern side, the one joining [[star:Markab|Markab]] and [[star:Algenib|Algenib]]. A ring of faint stars 6° to 7° across marks the head of the western fish of [[con:Psc|Pisces]]. Its stars are fourth and fifth magnitude, so from the city this is a binocular hop. From the Circlet, the Fishes' ribbon trails off to the east below Andromeda.",
+        "highlights": [
+          { "type": "polyline", "points": ["star:Markab", "star:Algenib"] },
+          { "type": "angle", "from": "star:Markab", "to": "star:γ Psc", "label": "12°" },
+          { "type": "constellation", "id": "Psc", "lines": true, "label": true }
+        ]
+      },
+      {
+        "title": "West side south to Fomalhaut",
+        "to": "star:Fomalhaut",
+        "text": "Follow the Square's western side downward from [[star:Scheat|Scheat]] through [[star:Markab|Markab]] and keep going for 45°, four and a half fists, through a dim region with no bright stars. Low in the south, never more than two fists above Brooklyn's horizon, a single first-magnitude star shines by itself: [[star:Fomalhaut|Fomalhaut]], in [[con:PsA|the Southern Fish]].",
+        "highlights": [
+          { "type": "polyline", "points": ["star:Scheat", "star:Markab", "star:Fomalhaut"], "dashed": true },
+          { "type": "angle", "from": "star:Markab", "to": "star:Fomalhaut", "label": "45°" },
+          { "type": "object", "ref": "star:Fomalhaut", "label": true }
+        ]
+      }
+    ],
+    "bestMonths": [9, 10, 11, 12]
+  },
+  {
+    "id": "keystone",
+    "name": "Keystone of Hercules",
+    "signpost": false,
+    "season": "summer",
+    "lines": [["star:π Her", "star:η Her", "star:ζ Her", "star:ε Her"]],
+    "closed": true,
+    "constellations": ["Her"],
+    "summary": "Four modest stars in a lopsided square, wider at the top than the bottom like the wedge-shaped stone at the top of an arch. It is the torso of Hercules.",
+    "howToFind": [
+      "Draw a line between the two brightest stars of the late spring and summer evening sky, orange [[star:Arcturus|Arcturus]] and blue-white [[star:Vega|Vega]]. The Keystone lies on that line, two thirds of the way from Arcturus to Vega; its nearest corner is a fist and a half (16°) from Vega. On summer evenings it passes almost overhead.",
+      "The Keystone is about 7° across, a little less than a fist. Its stars are magnitude 3 to 4, so from the city it is faint: wait for a clear, moonless night, let your eyes adapt, and use binoculars if only two or three corners show. One third of the way down its western side, from [[star:η Her|Eta Herculis]] toward [[star:ζ Her|Zeta Herculis]], binoculars show the fuzzy ball of the great globular cluster [[dso:M13|M13]]."
+    ],
+    "hops": [],
+    "bestMonths": [5, 6, 7, 8, 9]
+  },
+  {
+    "id": "teapot",
+    "name": "Teapot of Sagittarius",
+    "signpost": false,
+    "season": "summer",
+    "lines": [
+      ["star:Alnasl", "star:Kaus Australis", "star:Ascella", "star:τ Sgr", "star:Nunki", "star:φ Sgr", "star:Kaus Borealis", "star:Kaus Media", "star:Alnasl"],
+      ["star:Kaus Media", "star:Kaus Australis"],
+      ["star:Kaus Media", "star:φ Sgr"],
+      ["star:φ Sgr", "star:Ascella"]
+    ],
+    "closed": false,
+    "constellations": ["Sgr"],
+    "summary": "Eight stars that draw a convincing teapot, with a pointed lid, a spout on the right and a handle on the left. It is the bright heart of Sagittarius the Archer and lies in the direction of the center of our galaxy.",
+    "howToFind": [
+      "On a summer evening face due south with a clear view down to the horizon. The Teapot is low: from Brooklyn it never climbs higher than about two fists. Find red [[star:Antares|Antares]] first; the tip of the spout, [[star:Alnasl|Alnasl]], is two fists (21°) to its left. Or extend the long side of the [[asterism:summer-triangle|Summer Triangle]] from [[star:Deneb|Deneb]] through [[star:Altair|Altair]] by its own length to land on the handle.",
+      "The pot is 12° wide from spout to handle and 9° tall from base to lid. [[star:Kaus Australis|Kaus Australis]] at the base of the spout and [[star:Nunki|Nunki]] in the handle are second magnitude and show through city haze; the others are magnitude 3 and need a clear night. Under a dark sky the Milky Way rises from the spout like steam."
+    ],
+    "hops": [],
+    "bestMonths": [7, 8, 9]
+  },
+  {
+    "id": "southern-cross",
+    "name": "Southern Cross",
+    "signpost": false,
+    "season": "spring",
+    "lines": [
+      ["star:Gacrux", "star:Acrux"],
+      ["star:Mimosa", "star:Imai"]
+    ],
+    "closed": false,
+    "constellations": ["Cru"],
+    "summary": "Four bright stars in a small, compact cross, the most famous pattern of the southern sky and the whole figure of Crux, the smallest constellation. Its long arm points toward the south celestial pole.",
+    "howToFind": [
+      "The Southern Cross never rises over Brooklyn. Its foot, [[star:Acrux|Acrux]], lies 63° south of the celestial equator, so the whole Cross clears the horizon only from south of about latitude 25°N: Hawaii, the Caribbean, and everywhere in the Southern Hemisphere, where it is best on April to June evenings. That is why this entry lists no best months for mid-northern latitudes.",
+      "When you travel south, find the two brilliant Pointers, [[star:Rigil Kentaurus|Alpha Centauri]] and [[star:Hadar|Hadar]], 4° apart; they aim at the Cross, a fist away. It is small: the long arm from [[star:Gacrux|Gacrux]] at the top to Acrux at the foot is only 6°. Extend that arm four and a half times its length beyond Acrux and you reach the south celestial pole, which has no bright star of its own."
+    ],
+    "hops": [],
+    "bestMonths": []
+  }
+]

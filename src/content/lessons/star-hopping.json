@@ -1,0 +1,210 @@
+{
+  "id": "star-hopping",
+  "unit": "skills",
+  "order": 4,
+  "title": "Star-hopping",
+  "subtitle": "Get from a star you know to one you do not, using lines, arcs and triangles",
+  "minutes": 6,
+  "sections": [
+    {
+      "heading": "Start from what you know",
+      "body": [
+        "After this lesson you will be able to find a star you have never seen before, starting from one you already know. That is the whole method of learning the sky: nobody memorizes it all at once. You learn a few bright patterns and use them as signposts to everything else.",
+        "A hop has three parts. A starting pair or pattern you are sure of. A direction, given by a line or curve through those stars. And a distance, measured with your hand: a fist at arm's length is about 10°. Then you confirm the catch by its brightness, its color and its neighbors."
+      ]
+    },
+    {
+      "heading": "Lines: two stars make a pointer",
+      "body": [
+        "Any two stars define a line you can extend across the sky. The most famous pointer is the end of the [[asterism:big-dipper|Big Dipper]]'s bowl: from [[star:Merak|Merak]] through [[star:Dubhe|Dubhe]], carried on for five times the gap between them, 29° or nearly three fists, to [[star:Polaris|Polaris]].",
+        "Pointers are rarely perfect. The Dipper's line misses Polaris by a couple of degrees. That is fine: the hop gets you to the right patch of sky, and the target is the obvious star there."
+      ],
+      "demo": {
+        "title": "A straight-line hop",
+        "controls": [],
+        "steps": [
+          {
+            "caption": "Start pair: Merak and Dubhe, 5° apart. Direction: from Merak through Dubhe. Distance: five times the gap. Catch: Polaris, the only fairly bright star in that area.",
+            "time": "month:4 21:00",
+            "view": { "az": 5, "alt": 52, "fov": 80 },
+            "layers": { "constellationNames": false },
+            "highlights": [
+              { "type": "polyline", "points": ["star:Merak", "star:Dubhe", "star:Polaris"], "dashed": true },
+              { "type": "angle", "from": "star:Dubhe", "to": "star:Merak", "label": "5°" },
+              { "type": "angle", "from": "star:Dubhe", "to": "star:Polaris", "label": "29°" },
+              { "type": "object", "ref": "star:Polaris", "label": "Polaris" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "heading": "Arcs: follow the curve",
+      "body": [
+        "Three stars in a bend define a curve. The Dipper's handle is bent, and if you keep that bend going past the last star you sweep three fists (31°) to brilliant orange [[star:Arcturus|Arcturus]]. Keep the same curve going three fists more (33°) and you reach blue-white [[star:Spica|Spica]]. Generations of stargazers have remembered it as: arc to Arcturus, then speed on to Spica."
+      ],
+      "demo": {
+        "title": "Arc to Arcturus, speed on to Spica",
+        "controls": [],
+        "steps": [
+          {
+            "caption": "A late spring evening, looking high in the south. The handle's curve leads 31° to Arcturus. Check the color: Arcturus is clearly orange.",
+            "time": "month:5 22:00",
+            "view": { "target": "star:Arcturus", "fov": 110 },
+            "layers": { "constellationNames": false },
+            "highlights": [
+              { "type": "polyline", "points": ["star:Megrez", "star:Alioth", "star:Mizar", "star:Alkaid", "star:Arcturus"], "dashed": true },
+              { "type": "angle", "from": "star:Alkaid", "to": "star:Arcturus", "label": "31° (three fists)" },
+              { "type": "object", "ref": "star:Arcturus", "label": "Arcturus" }
+            ]
+          },
+          {
+            "caption": "Carry the same curve on for another 33° to Spica, a lone blue-white star lower in the south.",
+            "time": "month:5 22:00",
+            "view": { "target": "star:Arcturus", "fov": 110 },
+            "layers": { "constellationNames": false },
+            "highlights": [
+              { "type": "polyline", "points": ["star:Megrez", "star:Alioth", "star:Mizar", "star:Alkaid", "star:Arcturus", "star:Spica"], "dashed": true },
+              { "type": "angle", "from": "star:Arcturus", "to": "star:Spica", "label": "33° (three fists)" },
+              { "type": "object", "ref": "star:Arcturus", "label": "Arcturus" },
+              { "type": "object", "ref": "star:Spica", "label": "Spica" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "heading": "One pointer, two directions",
+      "body": [
+        "A line can be followed both ways. [[asterism:orions-belt|Orion's Belt]] is three stars in a short row. Follow it down and to the left for two fists (22°) and you hit [[star:Sirius|Sirius]], the brightest star in the night sky. Follow it up and to the right for the same two fists and you reach orange [[star:Aldebaran|Aldebaran]], the eye of the Bull; a fist and a half (14°) farther on is the tight little cluster of the [[dso:M45|Pleiades]]."
+      ],
+      "demo": {
+        "title": "Orion's Belt, both ways",
+        "controls": [],
+        "steps": [
+          {
+            "caption": "Down and left from the Belt, 22° to Sirius. Nothing else in that part of the sky comes close in brightness.",
+            "time": "month:2 20:00",
+            "view": { "target": "star:Alnilam", "fov": 100 },
+            "layers": { "constellationNames": false },
+            "highlights": [
+              { "type": "polyline", "points": ["star:Mintaka", "star:Alnitak", "star:Sirius"], "dashed": true },
+              { "type": "angle", "from": "star:Alnitak", "to": "star:Sirius", "label": "22° (two fists)" },
+              { "type": "object", "ref": "star:Sirius", "label": "Sirius" }
+            ]
+          },
+          {
+            "caption": "Up and right from the Belt, 22° to Aldebaran, then 14° more to the Pleiades. The line passes a little below Aldebaran; close is good enough.",
+            "time": "month:2 20:00",
+            "view": { "target": "star:Alnilam", "fov": 100 },
+            "layers": { "constellationNames": false },
+            "highlights": [
+              { "type": "polyline", "points": ["star:Alnitak", "star:Mintaka", "star:Aldebaran", "dso:M45"], "dashed": true },
+              { "type": "angle", "from": "star:Mintaka", "to": "star:Aldebaran", "label": "22°" },
+              { "type": "angle", "from": "star:Aldebaran", "to": "dso:M45", "label": "14°" },
+              { "type": "object", "ref": "star:Aldebaran", "label": "Aldebaran" },
+              { "type": "object", "ref": "dso:M45", "label": "Pleiades" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "heading": "Triangles: confirm with a shape",
+      "body": [
+        "When you know two stars, a third can be described as the missing corner of a triangle. [[star:Betelgeuse|Betelgeuse]] in Orion's shoulder and [[star:Sirius|Sirius]] are 27° apart. The star that completes an equal-sided triangle with them, to the left of Betelgeuse and above Sirius, is [[star:Procyon|Procyon]]. That is the [[asterism:winter-triangle|Winter Triangle]]. Shapes like this are also a check: if your three stars do not make the triangle you expected, one of them is the wrong star, or a planet."
+      ],
+      "demo": {
+        "title": "The missing corner",
+        "controls": [],
+        "steps": [
+          {
+            "caption": "Betelgeuse and Sirius are two corners. The third corner of an equal-sided triangle, 26° from each, is Procyon.",
+            "time": "month:2 20:00",
+            "view": { "target": "asterism:winter-triangle", "fov": 90 },
+            "layers": { "constellationNames": false },
+            "highlights": [
+              { "type": "polyline", "points": ["star:Sirius", "star:Procyon", "star:Betelgeuse"], "closed": true, "label": "Winter Triangle" },
+              { "type": "angle", "from": "star:Betelgeuse", "to": "star:Sirius", "label": "27°" },
+              { "type": "angle", "from": "star:Betelgeuse", "to": "star:Procyon", "label": "26°" },
+              { "type": "angle", "from": "star:Sirius", "to": "star:Procyon", "label": "26°" }
+            ]
+          }
+        ]
+      },
+      "tryIt": "Pick the hop that suits tonight's sky: the Pointers to Polaris any night, the arc to Arcturus in spring and summer, Orion's Belt to Sirius in winter. Measure the distance with your fists before you look at the answer."
+    }
+  ],
+  "keyPoints": [
+    "A hop is a known starting point, a direction and a distance measured with your hand.",
+    "Two stars make a line to extend; a bent row of stars makes an arc to follow.",
+    "Pointers to Polaris; arc to Arcturus, speed on to Spica; Orion's Belt to Sirius one way and Aldebaran the other.",
+    "Confirm the catch by brightness, color and the shape it makes with stars you know.",
+    "Hop from bright to faint, never the other way."
+  ],
+  "examples": [],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "You follow the curve of the Big Dipper's handle away from the bowl for about three fists. Which star do you reach first?",
+      "choices": ["Spica", "Polaris", "Regulus", "Arcturus"],
+      "answerIndex": 3,
+      "explanation": "Arc to Arcturus: 31° along the handle's curve. Spica comes after it, another 33° along the same curve."
+    },
+    {
+      "id": "q2",
+      "prompt": "You extend Orion's Belt up and to the right and reach a bright star, but it is white, not orange, and brighter than you expected. What is the most likely explanation?",
+      "choices": [
+        "You have found a planet near Aldebaran, not Aldebaran itself",
+        "Aldebaran changes color with the seasons",
+        "You went the wrong way and found Sirius",
+        "City lights have bleached the star's color"
+      ],
+      "answerIndex": 0,
+      "explanation": "Aldebaran is distinctly orange. Planets travel through Taurus and can outshine it, which is why you confirm a hop by color and by the shape of nearby stars."
+    },
+    {
+      "id": "q3",
+      "prompt": "Which three things does every star-hop need?",
+      "choices": [
+        "A telescope, a chart and a compass",
+        "A known starting point, a direction and a distance",
+        "The date, the time and your latitude",
+        "A bright star, a planet and the Moon"
+      ],
+      "answerIndex": 1,
+      "explanation": "Start from stars you are sure of, take the direction from a line or curve through them, and measure the distance with your hand."
+    },
+    {
+      "id": "q4",
+      "prompt": "The line of the Dipper's Pointers misses Polaris by about 2°. What does that mean for the hop?",
+      "choices": [
+        "The hop only works at certain times of night",
+        "You need binoculars to finish the hop",
+        "The hop is unreliable and should be avoided",
+        "Nothing: a pointer only has to get you to the right area, where the target stands out"
+      ],
+      "answerIndex": 3,
+      "explanation": "Few pointers are exact. They aim you at the right patch of sky; brightness and surroundings tell you which star is the target."
+    },
+    {
+      "id": "q5",
+      "prompt": "Following Orion's Belt down and to the left for two fists brings you to which star?",
+      "choices": ["Procyon", "Aldebaran", "Sirius", "Rigel"],
+      "answerIndex": 2,
+      "explanation": "Sirius is 22° from the Belt in that direction. Aldebaran is the same distance the other way, and Rigel is Orion's own foot, less than a fist from the Belt."
+    },
+    {
+      "id": "q6",
+      "prompt": "Why is it better to hop from a bright pattern to a faint target than the other way around?",
+      "choices": [
+        "Faint stars move faster across the sky",
+        "Bright patterns are unmistakable starting points; faint stars are easy to confuse with each other",
+        "Bright stars are always closer to the horizon",
+        "Faint stars are only visible for a few minutes each night"
+      ],
+      "answerIndex": 1,
+      "explanation": "A hop is only as good as its starting point. Bright, distinctive patterns are certain; a faint star could be any of dozens."
+    }
+  ]
+}

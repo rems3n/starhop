@@ -1,0 +1,215 @@
+{
+  "id": "Sgr",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); a Greek archer adopted from a Sumerian and Babylonian figure",
+    "when": "2nd century CE (Almagest); the Mesopotamian archer is far older",
+    "history": [
+      "Sagittarius began in Mesopotamia as the Sumerian PA.BIL.SAG, a god of war and hunting drawn as a winged, centaur-like archer. The Greeks adopted the figure, dropped the wings, and called it Toxotes, the Archer. Aratus in the 3rd century BCE spoke of the Archer and his Bow almost as two separate groups, probably because the bow and arrow are the part that stands out.",
+      "Ptolemy listed the constellation among his 48 in the *Almagest* around 150 CE and described a four-legged creature with a cloak streaming from its shoulders. Because the picture was borrowed rather than born from a Greek story, Greek writers could not agree on who the archer was: a centaur, or a two-legged satyr named Crotus. Both accounts are told below.",
+      "The star names preserve the picture. Kaus Borealis, Kaus Media and Kaus Australis are the northern, middle and southern parts of the bow, from the Arabic word for a bow, and Alnasl is the point of the arrow."
+    ]
+  },
+  "overview": "Sagittarius is the Archer, a centaur drawing a bow aimed at the heart of the Scorpion. Modern stargazers know its brightest stars better as the Teapot, complete with handle, lid and spout, and the Milky Way billows up from the spout like steam because here we are looking toward the center of our Galaxy.",
+  "howToFind": [
+    "On an August or September evening, find the Summer Triangle high overhead and draw a line from [[star:Deneb|Deneb]] through [[star:Altair|Altair]]. Keep going the same distance again, almost four fists, down toward the southern horizon, and you arrive at [[star:Nunki|Nunki]] in the handle of the Teapot.",
+    "Alternatively, start from red [[star:Antares|Antares]] in the Scorpion and look two and a half fists to the left; the Teapot's spout sits just a fist to the upper left of the Scorpion's sting. From Brooklyn the Teapot is low: its base, at [[star:Kaus Australis|Kaus Australis]], is only about 15 degrees up, a fist and a half, when it is due south, so choose a spot with an open southern view."
+  ],
+  "shape": "Eight stars make a convincing teapot a little more than a fist wide: a triangle for the spout on the right ([[star:Alnasl|Alnasl]], [[star:Kaus Media|Kaus Media]], Kaus Australis), [[star:Kaus Borealis|Kaus Borealis]] at the top of the lid, and a four-star handle on the left ([[star:φ Sgr|Phi]], Nunki, [[star:τ Sgr|Tau]] and [[star:Ascella|Ascella]]). The rest of the Archer is a scatter of faint stars to the east and south. In a city sky the Teapot's second-magnitude stars survive, but the Milky Way behind it does not.",
+  "mainStars": [
+    {
+      "ref": "star:Kaus Australis",
+      "note": "The southern end of the bow and the bottom of the Teapot's spout. A blue-white giant of magnitude 1.8, it is the brightest star in Sagittarius even though it was labeled Epsilon, the fifth Greek letter."
+    },
+    {
+      "ref": "star:Nunki",
+      "note": "A hot blue-white star of magnitude 2.0 at the top of the handle. Its name was borrowed from a Babylonian star list and is often said to be the oldest star name still in use."
+    },
+    {
+      "ref": "star:Ascella",
+      "note": "The bottom of the handle, magnitude 2.6. The name is Latin for 'armpit', which is where Ptolemy placed it on the Archer."
+    },
+    {
+      "ref": "star:Kaus Media",
+      "note": "The middle of the bow, an orange giant of magnitude 2.7. A line from here through Alnasl, the arrow's tip, points on toward Antares, the Scorpion's heart."
+    },
+    {
+      "ref": "star:Kaus Borealis",
+      "note": "The northern end of the bow and the knob of the Teapot's lid, an orange giant of magnitude 2.8. It is the best starting point for finding the globular cluster M22."
+    },
+    {
+      "ref": "star:Rukbat",
+      "note": "Alpha Sagittarii, the Archer's knee, is only magnitude 4.0 and far to the south. It got the first letter of the Greek alphabet because Ptolemy, who saw it near his horizon, recorded it as much brighter than it is."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "dso:M8",
+      "equip": "binoculars",
+      "note": "The Lagoon Nebula, a cloud of glowing gas with a star cluster inside it, about half a fist above the spout. Under a dark sky it is a hazy patch to the eye; binoculars show an oval glow beside a knot of stars."
+    },
+    {
+      "ref": "dso:M22",
+      "equip": "binoculars",
+      "note": "One of the finest globular clusters in the sky, just to the upper left of Kaus Borealis and about 10,000 light-years away. Binoculars show a round fuzzy ball; a small telescope starts to sprinkle it with stars."
+    },
+    {
+      "ref": "dso:M24",
+      "equip": "binoculars",
+      "note": "The Small Sagittarius Star Cloud, a bright slab of the Milky Way a fist above the lid. It is not a cluster but a window between dust clouds through which we see thousands of distant stars."
+    },
+    {
+      "ref": "dso:M17",
+      "equip": "small-telescope",
+      "note": "The Omega or Swan Nebula, north of M24. A small telescope shows a bright bar of light with a hook at one end, like a swan floating on water."
+    },
+    {
+      "ref": "dso:M20",
+      "equip": "small-telescope",
+      "note": "The Trifid Nebula, a degree and a half north of the Lagoon. It is a fainter round glow; larger telescopes show the dark lanes that divide it into three."
+    },
+    {
+      "ref": "dso:M25",
+      "equip": "binoculars",
+      "note": "A loose open cluster east of M24, an easy sprinkle of stars in binoculars."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Sgr-crotus",
+      "title": "Crotus, the archer who lived with the Muses",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Eratosthenes", "work": "Catasterisms (Sagittarius)", "date": "3rd century BCE; surviving summary later" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.27, citing the tragedian Sositheus", "date": "1st century BCE – 2nd century CE" },
+        { "author": "Hyginus", "work": "Fabulae 224", "date": "1st century BCE – 2nd century CE" }
+      ],
+      "summary": "Eratosthenes argued that the Archer could not be a centaur, because centaurs do not use bows. He said the figure was Crotus, a satyr-like hunter who grew up among the nine Muses on Mount Helicon and delighted them so much that they asked Zeus to place him in the sky.",
+      "retelling": [
+        "The scholars of ancient Alexandria looked at the Archer and saw a problem. Everyone called him a centaur, but in all the old stories centaurs fight with tree trunks and boulders. None of them ever draws a bow. And the figure on the globe had a satyr's tail. So Eratosthenes, the most learned man of his day, offered a different name. The Archer, he said, is Crotus.",
+        "Crotus was the son of Eupheme, the nurse who had cared for the nine Muses when they were small. Hyginus adds that his father was Pan, the goat-legged god of the wild, which would explain the tail. He grew up on Mount Helicon, the Muses' own mountain, as something like their foster brother.",
+        "He was good at everything he tried. In the woods he was a tireless hunter, very swift on his feet, and he was said to have invented archery. He spent long days on horseback. And he was just as much at home with the arts. When the Muses sang, Crotus was their most devoted listener. Words were not enough to tell them what he thought of a song, so he struck his hands together and applauded them loudly. The Muses loved him for it.",
+        "They wanted his talents remembered, and so they went to their father Zeus and asked him to set Crotus among the stars. Zeus agreed, and decided to show every one of his skills in a single figure. He gave him a horse's flanks, because Crotus had ridden so much. He put a bow and arrow in his hands, to show both his keen eye and his speed. And he let him keep his satyr's tail, because, as the playwright Sositheus put it, the Muses took as much pleasure in Crotus as the wine god Dionysus did in his satyrs.",
+        "One detail remained. In front of the Archer's feet is a small ring of faint stars, the constellation we call Corona Australis, the Southern Crown. Hyginus says some people explained it as a wreath that Crotus had been wearing and had tossed to the ground, the way someone does in the middle of a game.",
+        "So the Archer of this story is not a wild centaur at all, but an artist's friend: a hunter who knew when to put down his bow and clap. He stands in the brightest part of the Milky Way, still demonstrating the art of archery."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Star Tales – Sagittarius",
+        "url": "http://www.ianridpath.com/startales/sagittarius.html"
+      },
+      "characters": ["Crotus", "Eupheme", "Pan", "the Muses", "Zeus"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Why did Eratosthenes doubt that the Archer was a centaur?",
+          "choices": [
+            "Centaurs were never placed among the stars",
+            "Centaurs do not use bows",
+            "The figure has wings",
+            "The figure is too small"
+          ],
+          "answerIndex": 1,
+          "explanation": "In Greek stories centaurs never fight with bows, so he proposed the satyr-like Crotus instead."
+        },
+        {
+          "id": "q2",
+          "prompt": "Who was Eupheme, the mother of Crotus?",
+          "choices": ["A queen of Troy", "A sea nymph", "One of the Muses", "The nurse of the Muses"],
+          "answerIndex": 3,
+          "explanation": "Eupheme nursed the nine Muses, so Crotus grew up beside them on Mount Helicon."
+        },
+        {
+          "id": "q3",
+          "prompt": "Who asked Zeus to put Crotus among the stars?",
+          "choices": ["The Muses", "Pan", "Artemis", "Crotus himself"],
+          "answerIndex": 0,
+          "explanation": "The Muses, who enjoyed his company and his applause, asked their father Zeus to honor him."
+        },
+        {
+          "id": "q4",
+          "prompt": "Why did Zeus give the starry Crotus the flanks of a horse?",
+          "choices": [
+            "Because his father was a horse",
+            "To make him run faster",
+            "Because he had been a great rider",
+            "As a punishment"
+          ],
+          "answerIndex": 2,
+          "explanation": "Zeus wanted to display all of Crotus's skills in one body, and the horse's flanks recalled his horsemanship."
+        }
+      ]
+    },
+    {
+      "id": "Sgr-chiron",
+      "title": "The centaur with a bow: Chiron mistaken for the Archer",
+      "culture": "Greek and Roman",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.27 and 2.38", "date": "1st century BCE – 2nd century CE" },
+        { "author": "Ovid", "work": "Fasti 5.379–414", "date": "c. 8 CE" }
+      ],
+      "summary": "Many people in antiquity, and many since, have called the Archer a centaur and named him Chiron, the wise teacher of heroes. Ancient astronomers assigned Chiron to the other centaur in the sky, Centaurus, but the confusion is old, and his story is the one most often attached to Sagittarius.",
+      "retelling": [
+        "There are two centaurs among the constellations, and the ancients themselves mixed them up. Hyginus admits that many call the Archer 'the Centaur', while others object. The careful writers gave the name Chiron to Centaurus, far to the south, and left the Archer to Crotus. But a centaur with a bow in the middle of the zodiac was too easy to remember, and Chiron's name has clung to Sagittarius ever since. Here is the story people had in mind.",
+        "Most centaurs were wild, drunken and violent. Chiron was different in every way, beginning with his birth: he was the son of the Titan Cronus and the nymph Philyra, which made him half-brother to Zeus. He lived in the hills of Thessaly and was known as the most just of his kind, surpassing even human beings in fairness. Heroes were sent to him as boys to be raised. He taught the healer Asclepius his medicine and brought up the young Achilles.",
+        "Ovid describes the day it ended. Hercules, most of his labors behind him, came to visit the old centaur, and Achilles, still a boy, was there too. Chiron welcomed his guest and admired his weapons: the club, the lion skin, and the quiver of arrows that Hercules had dipped in the poisonous blood of the Hydra. Achilles could not keep his hands off the shaggy lion skin.",
+        "While the old centaur was turning the arrows over in his fingers, one slipped. It fell point down and pierced his left foot. Hyginus tells it the same way, and adds another account in which Chiron, marveling that such slight arrows could kill centaurs, tried to draw the bow himself and dropped the shaft.",
+        "Chiron pulled the arrow out and mixed herbs from the hills, for he was the greatest healer alive. Nothing worked. The Hydra's poison sank into his bones. Achilles stood beside him weeping as he would for a father, holding the centaur's hands and begging him to live.",
+        "On the ninth day, Ovid says, Chiron's body was ringed with fourteen stars. Zeus, in Hyginus's words, pitied him and placed him among the constellations. Strictly, those stars are Centaurus. But when you look at the Archer on a summer night, you are seeing the centaur most people have imagined there for two thousand years: the gentle teacher, undone by an arrow."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Star Tales – Sagittarius",
+        "url": "http://www.ianridpath.com/startales/sagittarius.html"
+      },
+      "characters": ["Chiron", "Hercules", "Achilles", "Cronus", "Philyra", "Asclepius", "Zeus"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Which constellation did ancient astronomers properly assign to Chiron?",
+          "choices": ["Centaurus", "Sagittarius", "Pegasus", "Ophiuchus"],
+          "answerIndex": 0,
+          "explanation": "Chiron is the other celestial centaur, Centaurus; calling the Archer Chiron is an old and common mix-up."
+        },
+        {
+          "id": "q2",
+          "prompt": "How was Chiron fatally wounded?",
+          "choices": [
+            "He was shot by Achilles in a hunting accident",
+            "He was stung by a scorpion",
+            "One of Hercules's poisoned arrows fell on his foot",
+            "He was struck by Zeus's thunderbolt"
+          ],
+          "answerIndex": 2,
+          "explanation": "While he examined the arrows, one dipped in the Hydra's blood dropped and pierced his foot."
+        },
+        {
+          "id": "q3",
+          "prompt": "Which young hero wept at Chiron's side as he lay dying, in Ovid's account?",
+          "choices": ["Jason", "Achilles", "Theseus", "Perseus"],
+          "answerIndex": 1,
+          "explanation": "Achilles, whom Chiron had raised, stood by him as he would by a father."
+        },
+        {
+          "id": "q4",
+          "prompt": "What made Chiron different from other centaurs?",
+          "choices": [
+            "He had wings",
+            "He had only two legs",
+            "He could not speak",
+            "He was wise, just and a teacher of heroes"
+          ],
+          "answerIndex": 3,
+          "explanation": "Unlike the wild centaurs, Chiron was famed for justice and learning and reared Asclepius and Achilles."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Sagittarius lies on the ecliptic, the path of the Sun, Moon and planets. The Sun is in Sagittarius from about December 18 to January 18, so it is here at the December solstice, the shortest day of the northern year.",
+    "The center of our Milky Way galaxy lies in Sagittarius, just off the Teapot's spout, about 26,000 light-years away. It is hidden behind dust, but radio telescopes detect the source called Sagittarius A*, which marks the giant black hole at the Galaxy's heart.",
+    "Sagittarius holds 15 of the objects in Charles Messier's catalog, more than any other constellation, most of them star clusters and nebulae in the Milky Way.",
+    "Five stars of the Teapot (the handle plus the lid) are also known as the Milk Dipper. Chinese astronomers saw a dipper here too and called it the Southern Dipper, to match the Big Dipper in the north.",
+    "The Archer's arrow, from Kaus Media through Alnasl, points toward Antares, the heart of the Scorpion."
+  ]
+}

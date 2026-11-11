@@ -1,0 +1,34 @@
+{
+  "id": "Phe",
+  "kind": "modern",
+  "origin": {
+    "namedBy": "Pieter Dirkszoon Keyser and Frederick de Houtman; first shown by Petrus Plancius",
+    "when": "1595–1598",
+    "history": [
+      "Phoenix is the largest of the twelve constellations created from the southern star observations of the Dutch navigators Pieter Dirkszoon Keyser and Frederick de Houtman in 1595–97. Like the others it was first drawn on Petrus Plancius's celestial globe in 1598 and first printed in Johann Bayer's *Uranometria* in 1603.",
+      "It is the odd one out. Apart from the Southern Triangle, the other eleven figures are real creatures and people the sailors had seen; the phoenix is the bird of legend that dies in flames and is reborn. The likeliest explanation involves the bird of paradise. When the first dazzling skins of those birds reached Europe in the 16th century, some people wondered whether they came from the phoenix or a relative of it, and a respected naturalist, Pierre Belon, gave the phoenix an entry in his book on birds in 1555. So in the 1590s a phoenix could still pass as a creature that might really live somewhere in the East.",
+      "The classical accounts of the phoenix, such as the one in Ovid's *Metamorphoses*, are therefore background, not the origin of the constellation: no ancient writer placed a phoenix among these stars, which lie too far south to have been charted from Greece."
+    ]
+  },
+  "overview": "Phoenix is the legendary fire-bird, added to the sky by Dutch navigators in the 1590s. It is a fairly large, dim constellation with one 2nd-magnitude star, Ankaa, sitting between Fomalhaut and Achernar.",
+  "howToFind": [
+    "From Brooklyn the northern part of Phoenix does clear the horizon: [[star:Ankaa|Ankaa]] reaches about 7 degrees up, less than a fist, due south on November evenings. You need a flat, haze-free southern horizon and binoculars to have a chance. The whole constellation is visible south of about latitude 32°N, and from the Southern Hemisphere it passes high overhead in spring evenings (October to December).",
+    "Find [[star:Fomalhaut|Fomalhaut]], the lone bright star of the autumn southern sky. Ankaa is about two fists to its left (east) and slightly lower. From southern latitudes you can also use [[star:Achernar|Achernar]]: Ankaa is just under two fists from it, roughly halfway back toward Fomalhaut. [[star:β Phe|Beta]] and [[star:γ Phe|Gamma Phoenicis]] continue a line eastward from Ankaa, about a fist away."
+  ],
+  "shape": "A rough lopsided box or kite about a fist and a half across, with Ankaa at the western corner. Ankaa is the only star that shows in a bright sky; the rest are 3rd and 4th magnitude and need darkness.",
+  "mainStars": [
+    { "ref": "star:Ankaa", "note": "Alpha Phoenicis, magnitude 2.4, an orange giant about 80 light-years away and much the brightest star in the constellation." },
+    { "ref": "star:β Phe", "note": "Magnitude 3.3, a pair of yellow giant stars too close together to split in a small telescope; they take about 170 years to circle each other." },
+    { "ref": "star:γ Phe", "note": "Magnitude 3.4, a red giant about 230 light-years away whose brightness wavers slightly." },
+    { "ref": "star:Wurren", "note": "Zeta Phoenicis, about 300 light-years away. It is an eclipsing pair: two blue-white stars that pass in front of each other, dimming from magnitude 3.9 to 4.4 and back every 1.7 days." }
+  ],
+  "notableObjects": [
+    { "ref": "star:Wurren", "equip": "naked-eye", "note": "An eclipsing variable you can follow without a telescope in a dark sky, or easily with binoculars: it fades by half a magnitude for a few hours every 40 hours." }
+  ],
+  "stories": [],
+  "facts": [
+    "Phoenix is the only one of the Dutch navigators' twelve constellations named for a creature of legend rather than something they had seen.",
+    "Before the constellation existed, Arab stargazers saw a curved line of its stars, including Ankaa, Beta and Gamma, as a boat.",
+    "Ovid wrote that the phoenix lived for 500 years and that a new bird rose from the body of the old one in a nest of cinnamon and incense."
+  ]
+}

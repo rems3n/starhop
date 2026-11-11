@@ -1,0 +1,175 @@
+{
+  "id": "PsA",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); a Greek figure taken from the Babylonian constellation of the Fish",
+    "when": "2nd century CE (Almagest); the Babylonian Fish is older",
+    "history": [
+      "Piscis Austrinus, the Southern Fish, is the last of the 48 constellations in Ptolemy's *Almagest* (about 150 CE), listed as Ichthys Notios. It descends from a Babylonian constellation known simply as the Fish, and its Greek stories are all set in Syria. Eratosthenes called it the Great Fish, to distinguish it from the two smaller fish of Pisces.",
+      "Ancient pictures show the fish lying on its back, drinking the stream of water that pours from the jar of Aquarius. The stream ends at the bright star in its mouth, Fomalhaut, which Ptolemy counted as belonging to both constellations.",
+      "The fish has been trimmed since Ptolemy's day. The star at the tip of its tail was taken around 1600 to make the head of the new constellation Grus, the Crane, and six stars Ptolemy listed nearby now belong to Microscopium. The Latin name also varied, as Piscis Notius or Piscis Australis, until astronomers settled on Piscis Austrinus in the 20th century."
+    ]
+  },
+  "overview": "Piscis Austrinus is the Southern Fish, shown drinking the water poured by Aquarius. To the eye it is really one star: Fomalhaut, a first-magnitude beacon alone in an empty part of the autumn sky, with a faint loop of dim stars trailing away to its right.",
+  "howToFind": [
+    "On an October or November evening, find the Great Square of Pegasus high in the south. Take the two stars on its right-hand (western) side, [[star:Scheat|Scheat]] at the top and [[star:Markab|Markab]] below, and extend the line from one through the other straight down toward the horizon for about four and a half fists. It leads to [[star:Fomalhaut|Fomalhaut]], the only bright star in that whole region.",
+    "From Brooklyn Fomalhaut never gets high: at its best it is about two fists above the southern horizon, so you need a reasonably open view. It is in the evening sky from late September through December. The rest of the fish lies to the right of Fomalhaut, at the same height or a little lower."
+  ],
+  "shape": "A flattened oval of fourth- and fifth-magnitude stars about a fist and a half long, with Fomalhaut at its eastern (left) end marking the mouth. Low in a city sky the oval is invisible, and Fomalhaut seems to stand entirely alone.",
+  "mainStars": [
+    {
+      "ref": "star:Fomalhaut",
+      "note": "The fish's mouth, which is what its Arabic name means. A white star of magnitude 1.2, the 18th brightest in the night sky and a near neighbor at 25 light-years. It is surrounded by a huge ring of dust, the leftover rubble of a young planetary system."
+    },
+    {
+      "ref": "star:ε PsA",
+      "note": "A blue-white star of magnitude 4.2 just to the upper right of Fomalhaut, the second brightest in the constellation and a long way behind the first."
+    },
+    {
+      "ref": "star:β PsA",
+      "note": "A white star of magnitude 4.3 in the middle of the fish's body, physically similar to Fomalhaut but several times farther away."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "star:Fomalhaut",
+      "equip": "naked-eye",
+      "note": "The showpiece. In 2008 the Hubble Space Telescope photographed what looked like a planet beside Fomalhaut's dust ring, the first seen directly in visible light; later observations suggest it was an expanding cloud of dust instead. You will see just the star, flashing colors when it is low."
+    }
+  ],
+  "stories": [
+    {
+      "id": "PsA-derceto-bambyce",
+      "title": "The fish that saved the Syrian goddess",
+      "culture": "Syrian, as told by Greek and Roman writers",
+      "ancientSources": [
+        { "author": "Eratosthenes", "work": "Catasterisms (the Great Fish)", "date": "3rd century BCE; surviving summary later" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.41, citing Ctesias", "date": "1st century BCE – 2nd century CE" }
+      ],
+      "summary": "The great goddess of Syria, called Derceto by the Greeks and Atargatis in her own land, fell into a lake at Bambyce and was rescued by a large fish. In gratitude she set the fish in the sky, along with its two young, which became Pisces.",
+      "retelling": [
+        "In the north of Syria, a little way from the river Euphrates, there was a city the Syrians called Bambyce. The Greeks later named it Hierapolis, the Holy City, because of the goddess who was worshipped there. In her own country she was Atargatis, a goddess of fertility and of the life-giving waters. The Greeks called her Derceto.",
+        "Beside the city lay a lake, and the story the Greeks heard about it was very short. Eratosthenes gives it in a few lines, and no one else adds much. Once, he says, the goddess fell into the lake. She was in danger of drowning. Then a great fish rose beneath her and carried her to safety.",
+        "That is all we are told of the event itself. We are not told how she came to fall or what kind of fish it was. But the goddess's gratitude is described, and it was generous. She raised the fish into the heavens and made it a constellation, and she did the same for its two offspring. The parent became the Great Fish in the south, and the young ones became the two Fishes of the zodiac, which is why the sky contains three fish in all.",
+        "Hyginus repeats the story with a different goddess. He had read that it was Isis, the great goddess of Egypt, whom the fish saved, at a time when she was in the pains of childbirth, and that it was Isis who placed the fish and its young among the stars. He names the Greek historian Ctesias as another who wrote about it.",
+        "Both writers end with the same observation about the living Syrians of their own day. Because of what the fish did, the Syrians would not eat fish. They kept images of fish, covered in gold, and honored them as gods of the household. Other ancient visitors confirm the custom: the temples of Atargatis had ponds of sacred fish, and the goddess was said to punish anyone who ate fish with sickness.",
+        "In the sky the rescuer has been given an easy life. It lies beneath the Water Carrier with its mouth open, exactly where the stream from his jar comes down, and the bright star Fomalhaut marks the place where the water goes in."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Star Tales – Piscis Austrinus",
+        "url": "http://www.ianridpath.com/startales/piscisaustrinus.html"
+      },
+      "characters": ["Derceto (Atargatis)", "Isis", "the Great Fish"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "By what name did the Greeks know the Syrian goddess Atargatis?",
+          "choices": ["Derceto", "Astraea", "Dione", "Eupheme"],
+          "answerIndex": 0,
+          "explanation": "Derceto is the Greek form of the name of Atargatis, the great goddess worshipped at Bambyce."
+        },
+        {
+          "id": "q2",
+          "prompt": "How did the Great Fish earn its place among the stars?",
+          "choices": [
+            "It swallowed a sea monster",
+            "It guided a lost ship to port",
+            "It rescued the goddess when she fell into a lake",
+            "It brought a pearl to a king"
+          ],
+          "answerIndex": 2,
+          "explanation": "It carried Derceto to safety after she fell into the lake at Bambyce."
+        },
+        {
+          "id": "q3",
+          "prompt": "According to Eratosthenes, how is the Southern Fish related to Pisces?",
+          "choices": [
+            "It is their enemy",
+            "It is one of them, moved south",
+            "It is their prey",
+            "It is their parent"
+          ],
+          "answerIndex": 3,
+          "explanation": "He calls the two fish of Pisces the offspring of the Great Fish."
+        },
+        {
+          "id": "q4",
+          "prompt": "What custom do the ancient writers connect with this story?",
+          "choices": [
+            "The Greeks sacrificed fish at harvest",
+            "The Syrians refused to eat fish and honored fish images",
+            "The Egyptians mummified fish",
+            "The Romans kept fish in their temples to Jupiter"
+          ],
+          "answerIndex": 1,
+          "explanation": "Hyginus says the Syrians do not eat fish and worship gilded images of them as household gods."
+        }
+      ]
+    },
+    {
+      "id": "PsA-derceto-ascalon",
+      "title": "Derceto of Ascalon and the child raised by doves",
+      "culture": "Syrian, as told by a Greek historian",
+      "ancientSources": [
+        { "author": "Diodorus Siculus", "work": "Library of History 2.4", "date": "1st century BCE" }
+      ],
+      "summary": "The historian Diodorus tells a darker story about the same goddess. Shamed by a love affair, Derceto threw herself into a lake near Ascalon and became half fish, while her abandoned baby was kept alive by doves and grew up to be Semiramis, queen of Babylon.",
+      "retelling": [
+        "Diodorus of Sicily, writing a history of the world in the 1st century BCE, came to the legendary queen Semiramis and stopped to explain where she came from. His account says nothing of the stars, but it is the fullest story we have about the fish goddess, and it shows what kind of figure stood behind the Southern Fish.",
+        "Near the city of Ascalon, on the coast of what Diodorus calls Syria, there was a large, deep lake full of fish. On its shore stood the sanctuary of a famous goddess whom the Syrians called Derceto. Her image was strange: she had the head of a woman and the body of a fish. The most learned people of the region, Diodorus says, explained it this way.",
+        "Derceto had offended Aphrodite. In revenge the goddess of love filled her with a violent passion for a handsome young man among those who worshipped at her shrine. Derceto gave herself to the young Syrian and bore him a daughter.",
+        "Afterward she was overcome with shame. She killed the young man. She took the baby out into a rocky wilderness and left it there. And then, in shame and grief, she threw herself into the lake. She did not die. Her body was changed into the form of a fish, and that, Diodorus says, is why the Syrians to this day will not eat fish and honor them as gods.",
+        "The child lived. A great flock of doves nested near the place where she had been left. Some of them covered the baby with their wings to keep her warm. Others watched for the moment when the herdsmen were away from their huts and carried off milk in their beaks, feeding it to her drop by drop. When she was a year old and needed more, they pecked crumbs from the herdsmen's cheeses.",
+        "The herdsmen noticed the nibbled cheeses, kept watch, followed the doves, and found a child of extraordinary beauty. They took her to Simmas, the keeper of the royal herds, who had no children and raised her as his own. He named her Semiramis, which Diodorus derives from the Syrian word for doves. She grew up to become queen of Babylon.",
+        "Here the goddess is not rescued by a fish; she becomes one. The gentle version that the star handbooks tell, in which a fish saves her and is lifted to heaven, and this harsher one are two ways of explaining the same thing: a goddess pictured as half fish, lakes of sacred fish beside her temples, and a great fish among the southern stars."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Star Tales – Piscis Austrinus",
+        "url": "http://www.ianridpath.com/startales/piscisaustrinus.html"
+      },
+      "characters": ["Derceto", "Aphrodite", "Semiramis", "Simmas"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "In Diodorus's account, what happened to Derceto when she threw herself into the lake?",
+          "choices": [
+            "She drowned and became a star",
+            "Her body was changed into the form of a fish",
+            "A dolphin carried her to Egypt",
+            "She was turned into a dove"
+          ],
+          "answerIndex": 1,
+          "explanation": "She was transformed, and her statue at Ascalon showed a woman's head on a fish's body."
+        },
+        {
+          "id": "q2",
+          "prompt": "Who kept Derceto's abandoned baby alive?",
+          "choices": ["A she-wolf", "The fish of the lake", "A shepherd's wife", "A flock of doves"],
+          "answerIndex": 3,
+          "explanation": "Doves warmed the child with their wings and fed her milk and bits of cheese."
+        },
+        {
+          "id": "q3",
+          "prompt": "Who did the child grow up to be?",
+          "choices": ["Semiramis, queen of Babylon", "Dido, queen of Carthage", "Helen of Troy", "The goddess Atargatis"],
+          "answerIndex": 0,
+          "explanation": "Simmas, keeper of the royal herds, raised her and named her Semiramis."
+        },
+        {
+          "id": "q4",
+          "prompt": "Which goddess caused Derceto's fatal love affair?",
+          "choices": ["Hera", "Artemis", "Aphrodite", "Isis"],
+          "answerIndex": 2,
+          "explanation": "Aphrodite, offended by Derceto, inspired her with a passion for a young worshipper."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Fomalhaut comes from the Arabic for 'mouth of the fish'. Desert Arabs also pictured Fomalhaut and Achernar, another lone bright star far to the south, as a pair of ostriches.",
+    "Piscis Austrinus is not a zodiac constellation; the Sun's path runs well to the north of it, through Aquarius and Capricornus.",
+    "The constellation also contains Lacaille 9352, one of the brightest red dwarf stars in our sky, though still too faint to see without optical aid."
+  ]
+}

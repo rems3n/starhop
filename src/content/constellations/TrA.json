@@ -1,0 +1,33 @@
+{
+  "id": "TrA",
+  "kind": "modern",
+  "origin": {
+    "namedBy": "Pieter Dirkszoon Keyser and Frederick de Houtman; first shown by Petrus Plancius",
+    "when": "1595–1598",
+    "history": [
+      "Triangulum Australe, the Southern Triangle, is the smallest of the twelve constellations that came from the observations of the Dutch navigators Pieter Dirkszoon Keyser and Frederick de Houtman in 1595–97. Petrus Plancius had drawn a southern triangle on a globe in 1589, but in a different place and not based on real measurements. The triangle we know first appeared, unnamed, on his globe of 1598, and in print in Johann Bayer's *Uranometria* of 1603.",
+      "It is the one figure of the twelve that is neither an animal nor a person: simply a southern partner for the ancient northern Triangulum, and a more striking one, since its three stars are brighter.",
+      "In the 1750s Nicolas-Louis de Lacaille gave it a second identity. On his chart of 1756 he called it the Southern Triangle or the Level and drew a plumb bob hanging from it, making it a surveyor's level to go with his new neighboring constellations Norma (the set square) and Circinus (the compasses). Johann Bode's atlas of 1801 still gives the alternative name Libella, the level."
+    ]
+  },
+  "overview": "Triangulum Australe is exactly what it says: a neat, nearly equilateral triangle of three bright stars in the Milky Way, just east of the Pointers to the Southern Cross.",
+  "howToFind": [
+    "The Southern Triangle never rises from Brooklyn. The whole of it is visible south of about latitude 19°N; from the Southern Hemisphere it circles the pole and is highest on evenings from June to August.",
+    "Start from the Pointers, [[star:Hadar|Beta]] and [[star:Rigil Kentaurus|Alpha Centauri]]. Go from Beta to Alpha and keep going a fist and a half, curving a little toward the south celestial pole: you arrive at orange [[star:Atria|Atria]], the brightest corner of the triangle. The other two corners, [[star:β TrA|Beta]] and [[star:γ TrA|Gamma Trianguli Australis]], lie west of Atria, back toward the Pointers."
+  ],
+  "shape": "A clean triangle with sides of 6 to 8 degrees, so the whole figure hides behind a fist held at arm's length. All three stars are bright enough for suburban skies, which makes this one of the few modern southern constellations that looks like its name.",
+  "mainStars": [
+    { "ref": "star:Atria", "note": "Alpha Trianguli Australis, magnitude 1.9, a distinctly orange giant about 400 light-years away. The name is simply a contraction of its designation, coined by navigators." },
+    { "ref": "star:β TrA", "note": "Magnitude 2.8, a yellow-white star only 40 light-years away, at the corner nearest the Pointers." },
+    { "ref": "star:γ TrA", "note": "Magnitude 2.9, a white star about 180 light-years away at the third corner." },
+    { "ref": "star:δ TrA", "note": "Magnitude 3.9, a yellow giant just outside the triangle near Beta." }
+  ],
+  "notableObjects": [
+    { "ref": "dso:NGC6025", "equip": "binoculars", "note": "A bright open cluster (a loose family of young stars) about three degrees from Beta, on the border with Norma. Binoculars show a small patch with a few stars sparkling in it; a small telescope shows a few dozen." }
+  ],
+  "stories": [],
+  "facts": [
+    "Atria, Peacock and Acrux are all modern names coined for navigators rather than inherited from Arabic or Greek.",
+    "Triangulum is a neuter word in Latin, which is why this is Triangulum Australe while the Southern Crown is Corona Australis and the Southern Fish is Piscis Austrinus."
+  ]
+}

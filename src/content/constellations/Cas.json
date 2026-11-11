@@ -1,0 +1,144 @@
+{
+  "id": "Cas",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); an older Greek figure already described by Aratus",
+    "when": "2nd century CE (Almagest); known to the Greeks by the 3rd century BCE",
+    "history": [
+      "Cassiopeia is one of the 48 constellations that Ptolemy listed in his *Almagest* around 150 CE. She was already well established four centuries earlier, when the poet Aratus described her in the *Phaenomena* as the unhappy wife of Cepheus, picked out by a few alternating stars that reminded him of the key of a double door. The Greek spelling of her name was Kassiepeia; astronomers settled on the Latin form Cassiopeia.",
+      "She belongs to the largest family group in the sky. Her husband [[con:Cep|Cepheus]] stands beside her, her daughter [[con:And|Andromeda]] lies just to the south, her son-in-law [[con:Per|Perseus]] follows, and the sea monster [[con:Cet|Cetus]] lurks far below. The Roman-era writer Hyginus says that the tragedians Sophocles and Euripides both told her story on the stage.",
+      "Other peoples drew this bright zigzag differently. Arabic astronomers pictured a hand stained with henna, which is where the star name Caph comes from, and in their version of Ptolemy's catalogue called her 'the woman with the throne'. Chinese sky-watchers saw no W at all: three of its stars belonged to the team and chariot of a legendary driver named Wangliang."
+    ]
+  },
+  "overview": "Cassiopeia is the vain queen of Ethiopia, seated on her throne and circling the pole forever. In the sky she is one of the easiest figures of all: five bright stars in a crisp W (or M) on the opposite side of the North Star from the Big Dipper, visible on every clear night of the year from Brooklyn.",
+  "howToFind": [
+    "Start at the Big Dipper. Follow its two pointer stars, [[star:Merak|Merak]] and [[star:Dubhe|Dubhe]], about three fists (a fist at arm's length is roughly 10 degrees) to [[star:Polaris|Polaris]], the North Star. Keep going in nearly the same direction for another three fists and you land in the middle of a bright zigzag of five stars. That is Cassiopeia. The Dipper and the W sit on opposite sides of Polaris like the two ends of a seesaw: when one is high, the other is low.",
+    "From latitude 40 degrees north Cassiopeia never sets. It is circumpolar, meaning it circles the pole without dipping below the horizon. On autumn and early winter evenings it rides high in the north and looks like an M; on spring evenings it skims low over the northern rooftops and looks like a W. The five stars in order along the zigzag are [[star:Caph|Caph]], [[star:Schedar|Schedar]], [[star:γ Cas|Gamma Cassiopeiae]], [[star:Ruchbah|Ruchbah]] and [[star:Segin|Segin]]."
+  ],
+  "shape": "A lopsided W of five stars a little wider than a fist at arm's length (about 13 degrees end to end). One half of the W is deeper and brighter than the other. Four of the five stars are second magnitude (magnitude is the brightness scale, where smaller numbers are brighter), so the whole W survives a city sky; only Segin, the faint end, may need a moment to pick out.",
+  "mainStars": [
+    {
+      "ref": "star:Schedar",
+      "note": "Alpha Cassiopeiae, an orange giant about 230 light-years away at the bottom of the deeper V. Its name comes from the Arabic for 'the breast', which is where Ptolemy placed it on the queen. Compare its warm tint with its white neighbors."
+    },
+    {
+      "ref": "star:Caph",
+      "note": "Beta Cassiopeiae, the western end of the W, a yellow-white star only about 55 light-years away. The name is from an Arabic phrase meaning 'the stained hand', a reminder that Arab sky-watchers saw these stars as a hand dyed with henna."
+    },
+    {
+      "ref": "star:γ Cas",
+      "note": "Gamma Cassiopeiae, the middle star of the W, is a hot blue-white star that varies unpredictably and has at times outshone every other star in the constellation. Chinese astronomers called it the charioteer's whip."
+    },
+    {
+      "ref": "star:Ruchbah",
+      "note": "Delta Cassiopeiae, the bottom of the shallower V, about 100 light-years away. Its name is Arabic for 'knee', following Ptolemy's description of where it sits on the seated queen."
+    },
+    {
+      "ref": "star:Segin",
+      "note": "Epsilon Cassiopeiae, the faintest of the five and the eastern tip of the W, a blue-white star roughly 400 light-years away."
+    },
+    {
+      "ref": "star:η Cas",
+      "note": "Eta Cassiopeiae (Achird) sits between Schedar and Gamma. At about 19 light-years it is one of the nearer Sun-like stars, and a small telescope shows a dimmer reddish companion beside its yellow primary."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "dso:NGC457",
+      "equip": "binoculars",
+      "note": "The Owl Cluster, two fingers below Ruchbah. Binoculars show a small hazy knot with two bright 'eyes'; a small telescope turns it into a stick figure with outstretched wings."
+    },
+    {
+      "ref": "dso:M52",
+      "equip": "binoculars",
+      "note": "A rich open cluster (a loose family of stars born together). Extend the line from Schedar through Caph by the same distance again to find a small misty patch that a telescope breaks into dozens of faint stars."
+    },
+    {
+      "ref": "dso:NGC7789",
+      "equip": "binoculars",
+      "note": "A large, faint open cluster a short hop southwest of Caph, discovered by Caroline Herschel in 1783. From a dark site it is a soft round glow in binoculars; a telescope shows a swarm of dim stars."
+    },
+    {
+      "ref": "dso:M103",
+      "equip": "small-telescope",
+      "note": "A compact fan-shaped cluster just beside Ruchbah on the side toward Segin. Easy to locate because it lies so close to a bright star."
+    },
+    {
+      "ref": "dso:NGC663",
+      "equip": "binoculars",
+      "note": "A bright open cluster between Ruchbah and Segin, a little off the line joining them. Often easier to see in binoculars than its Messier neighbor M103."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Cas-boast",
+      "title": "The queen who boasted to the sea",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Apollodorus", "work": "Library 2.4.3", "date": "1st–2nd century CE" },
+        { "author": "Aratus", "work": "Phaenomena 188–196, and the later passage on her setting (c. 650–658)", "date": "3rd century BCE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.10", "date": "2nd century CE" },
+        { "author": "Ovid", "work": "Metamorphoses 4.670–739", "date": "c. 8 CE" }
+      ],
+      "summary": "Queen Cassiopeia of Ethiopia claimed to be more beautiful than the Nereids, the nymphs of the sea. Poseidon punished her whole country, and the price demanded was her daughter Andromeda. The queen was set among the stars on her throne, but in a place where she must spend half of every night hanging upside down.",
+      "retelling": [
+        "Cassiopeia was queen of Ethiopia, wife of King Cepheus and mother of a daughter named Andromeda. She had a throne, a kingdom on the sea and a face people praised, and one day praise from other people stopped being enough. She said aloud that she was lovelier than the Nereids, and not just one of them: lovelier than them all.",
+        "The Nereids were the fifty daughters of the old sea god Nereus, the nymphs who live in the waves. The poet Aratus names two of them, Doris and Panope, as the ones Cassiopeia dared to rival. They were not the sort to shrug off an insult from a mortal. They took their anger to Poseidon, lord of the sea, and he made it his own.",
+        "First the sea rose and flooded the land. Then something came out of it: a monster that worked its way along the coast, wrecking whatever it reached. The people turned on their rulers, and Cepheus sent to the oracle of Ammon to ask how the plague could be ended. The answer could hardly have been crueler to the woman who had caused it. The boast was the mother's, but the payment was to be the daughter. Andromeda must be put out on the shore for the monster.",
+        "The Ethiopians forced the king's hand, and Andromeda was chained to a rock at the water's edge. Ovid describes her parents standing by, able to do nothing but weep and cling to her, and he calls the mother the more wretched of the two, since every wave that broke on the rock was the echo of her own words. Then a stranger dropped out of the sky on winged sandals. Perseus, on his way home with the head of Medusa, asked for the girl's hand if he could save her. Cassiopeia and Cepheus agreed at once and offered their kingdom as a dowry besides. He killed the monster, and the queen who had nearly lost her daughter to her own tongue welcomed him as the savior of her house.",
+        "She kept her daughter only briefly. Hyginus says that neither Cepheus nor Cassiopeia could talk Andromeda out of leaving parents and country to follow her husband.",
+        "When the family was placed among the stars, Cassiopeia was given her throne, and with it a punishment that never ends. She sits so close to the pole that the turning sky carries her around it in a tight circle, and for half of each night she is tipped over on her back or hanging head down. Aratus pictured her plunging headfirst toward the ocean like a diver, feet in the air, and added that she seems to stretch out her arms as if grieving for her child. Hyginus put it bluntly: it is on account of her impiety that she is carried along upside down. Watch the W turn into an M over a few hours and you are watching the sentence being served."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Cassiopeia, the boastful queen",
+        "url": "http://www.ianridpath.com/startales/cassiopeia.html"
+      },
+      "characters": ["Cassiopeia", "Cepheus", "Andromeda", "The Nereids", "Poseidon", "Perseus", "Ammon"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Whom did Cassiopeia claim to surpass in beauty?",
+          "choices": ["The goddess Athena", "The Nereids, nymphs of the sea", "The nine Muses", "Her own daughter Andromeda"],
+          "answerIndex": 1,
+          "explanation": "She boasted that she was more beautiful than the Nereids, the sea-nymph daughters of Nereus, and they complained to Poseidon."
+        },
+        {
+          "id": "q2",
+          "prompt": "How did Poseidon punish Cassiopeia's kingdom?",
+          "choices": ["With a flood and a sea monster", "With a seven-year drought", "With an earthquake that toppled the palace", "By turning its people to stone"],
+          "answerIndex": 0,
+          "explanation": "Apollodorus says Poseidon sent both a flood and a monster against the land. The monster is the constellation Cetus."
+        },
+        {
+          "id": "q3",
+          "prompt": "What did the oracle of Ammon say would end the disaster?",
+          "choices": ["Cassiopeia must give up her throne", "Cepheus must go to war with the sea", "Andromeda must be exposed to the monster", "The Nereids must be given a temple"],
+          "answerIndex": 2,
+          "explanation": "The oracle demanded the queen's daughter, so Andromeda was chained to a rock on the shore for a boast that was not hers."
+        },
+        {
+          "id": "q4",
+          "prompt": "Why, according to the myth-tellers, does Cassiopeia spend part of each night upside down?",
+          "choices": ["She is diving to rescue Andromeda", "She is hiding her face from Perseus", "The Nereids pulled her throne over", "It is her punishment, carried out as she circles the pole"],
+          "answerIndex": 3,
+          "explanation": "Hyginus says that because of her impiety she is carried around lying on her back; Aratus compares her to a diver plunging headfirst."
+        },
+        {
+          "id": "q5",
+          "prompt": "Who rescued Andromeda and so became Cassiopeia's son-in-law?",
+          "choices": ["Bellerophon", "Heracles", "Perseus", "Phineus"],
+          "answerIndex": 2,
+          "explanation": "Perseus killed the monster after her parents promised him Andromeda as his wife. Phineus was the uncle she had been promised to before."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "In November 1572 a 'new star' appeared beside the W, near [[star:κ Cas|Kappa Cassiopeiae]], and for a time rivaled Venus. The Danish astronomer Tycho Brahe studied it so carefully that it is still called Tycho's Star. It was a supernova, the explosion of a star, and it stayed visible to the naked eye for more than a year.",
+    "Cassiopeia and Cepheus are the only husband and wife among the constellations.",
+    "The remains of another exploded star, Cassiopeia A, are invisible to the eye but are one of the strongest sources of radio waves in the whole sky beyond the solar system.",
+    "Chinese astronomers linked several of these stars to Wangliang, a charioteer remembered in a moral tale: he refused to keep driving for a hunter who could only succeed when the driver cheated, saying that a man cannot straighten others by bending himself.",
+    "The Milky Way runs straight through Cassiopeia, which is why sweeping the W with binoculars turns up one star cluster after another."
+  ]
+}

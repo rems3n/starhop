@@ -1,0 +1,247 @@
+{
+  "id": "Gem",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ancient Greek tradition, with a Babylonian forerunner; catalogued by Ptolemy",
+    "when": "The Twins are in Aratus (3rd century BCE); listed in the Almagest, 2nd century CE",
+    "history": [
+      "Two bright stars of nearly the same brightness, side by side, have suggested a pair of people to many cultures. Babylonian astronomers called them the Great Twins. The Greeks called the constellation *Didymoi*, the Twins. The poet Aratus, in the 3rd century BCE, uses only that name and does not say who the twins are; a century later Eratosthenes identified them as the Dioscuri, Castor and Polydeuces, whom the Romans called Castor and Pollux.",
+      "That identification won, and the two brightest stars now carry the brothers' names. It was never the only one. Hyginus reports that others called the pair Apollo and Heracles, and Ptolemy, who lists the constellation as the Twins in his *Almagest*, elsewhere calls Castor 'the star of Apollo' and Pollux 'the star of Heracles'. Several old star atlases draw one twin with a lyre and the other with a club for that reason.",
+      "Gemini is one of the twelve constellations of the zodiac, so the Sun, Moon and planets pass through it. The Sun is in Gemini from late June to late July."
+    ]
+  },
+  "overview": "Gemini is the Twins, Castor and Pollux, standing side by side with their arms around each other. Two bright stars close together mark their heads, and two roughly parallel lines of fainter stars run down from them toward Orion to make their bodies and feet. The two head stars are obvious from anywhere; the bodies need a suburban sky.",
+  "howToFind": [
+    "Start with Orion. Draw a line from [[star:Rigel|Rigel]], his bright foot, up through [[star:Betelgeuse|Betelgeuse]], his orange shoulder, and keep going for about three fists (30 degrees). You arrive at a pair of bright stars half a fist apart: [[star:Castor|Castor]], the upper and slightly fainter one, and [[star:Pollux|Pollux]], the lower, brighter and more golden one. They are the Twins' heads.",
+    "The bodies stretch back from the heads toward Orion. From Pollux a line runs down to bright [[star:Alhena|Alhena]] at his feet, which sits about a fist and a half to the upper left of Betelgeuse. From Castor a line runs through [[star:Mebsuta|Mebsuta]] to [[star:Tejat|Tejat]] and [[star:Propus|Propus]] at his feet, close above Orion's raised club.",
+    "From latitude 40 degrees north Gemini rises in the northeast in the evenings of December, lying on its side with Castor leading. On evenings in February and March it passes almost overhead, and by late May the Twins are standing upright on the west-northwestern horizon after sunset, heads up, the last of the winter figures to go."
+  ],
+  "shape": "Two bright stars half a fist apart, with two nearly parallel chains of stars trailing from them for about two fists, like two stick figures lying side by side. The whole figure is a long, narrow rectangle. From the city you will usually see Castor, Pollux and Alhena; the rest fills in from a suburb.",
+  "mainStars": [
+    {
+      "ref": "star:Pollux",
+      "note": "The head of the immortal twin, and the brighter of the pair despite being labeled beta. An orange giant 34 light-years away, the nearest giant star to the Sun, with a tint you can see by comparing it with white Castor. A planet larger than Jupiter is known to orbit it."
+    },
+    {
+      "ref": "star:Castor",
+      "note": "The head of the mortal twin, white and a little fainter than Pollux, 51 light-years away. What looks like one star is a family of six: a small telescope shows two close white stars, each of those is itself a tight pair, and a faint third pair of red dwarfs orbits the rest."
+    },
+    {
+      "ref": "star:Alhena",
+      "note": "The bright white star at Pollux's feet, about 110 light-years away. It is the third-brightest star in Gemini and the one that anchors the Orion end of the figure."
+    },
+    {
+      "ref": "star:Tejat",
+      "note": "One of Castor's feet, a red giant with a faint orange tint. With its neighbor [[star:Propus|Propus]], another red giant whose Greek name means 'the forward foot', it points the way to the cluster M35."
+    },
+    {
+      "ref": "star:Mekbuda",
+      "note": "Pollux's knee. A pulsating yellow supergiant that swells and shrinks every ten days, brightening and fading by about half a magnitude. You can follow the change by eye by comparing it with nearby stars."
+    },
+    {
+      "ref": "star:Wasat",
+      "note": "The middle of Pollux's body, lying almost exactly on the ecliptic, the Sun's path through the sky. Pluto was discovered close to this star in 1930."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "dso:M35",
+      "equip": "binoculars",
+      "note": "A big, bright cluster of a couple of hundred stars just above Castor's foot, a little northwest of Propus. In binoculars it is a round misty patch about as wide as the full Moon; a small telescope breaks it into curving chains of stars. It lies about 2,800 light-years away, and from a dark site it can just be glimpsed without any optical aid."
+    },
+    {
+      "ref": "dso:NGC2158",
+      "equip": "small-telescope",
+      "note": "A small, dim smudge at the southwestern edge of M35. It is another cluster, much older and several times farther away, seen behind its bright neighbor. Spotting both in one view gives a real sense of depth."
+    },
+    {
+      "ref": "star:Castor",
+      "equip": "small-telescope",
+      "note": "One of the best double stars for a small telescope. At about 100 power the single white star splits into two brilliant points almost touching."
+    },
+    {
+      "ref": "dso:NGC2392",
+      "equip": "small-telescope",
+      "note": "A planetary nebula, the glowing shell thrown off by a dying Sun-like star, a couple of degrees southeast of Wasat. At low power it looks like a slightly fuzzy bluish star; higher power shows a small disk with a star at the center."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Gem-shared-immortality",
+      "title": "Castor and Pollux: the brother who would not be immortal alone",
+      "culture": "Greek and Roman",
+      "ancientSources": [
+        { "author": "Ovid", "work": "Fasti, Book 5", "date": "early 1st century CE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.22", "date": "1st century BCE – 2nd century CE" },
+        { "author": "Eratosthenes", "work": "Catasterisms (as reported in Ridpath's Star Tales)", "date": "3rd century BCE (surviving summary is later)" }
+      ],
+      "summary": "Castor and Pollux were twin sons of Leda, but only Pollux, fathered by Zeus, was immortal. When Castor was killed in a fight with their cousins Idas and Lynceus over two stolen brides, Pollux begged Zeus to let him share his own immortality. Zeus set the brothers side by side in the sky.",
+      "retelling": [
+        "Leda was queen of Sparta and the wife of King Tyndareus. Zeus came to her in the shape of a swan, and on the same night she lay with her husband. So when her children were born there was a question that never quite went away about who their father was. As the story is usually told, Pollux and his sister Helen were children of Zeus and could not die, while Castor and his sister Clytemnestra were the children of Tyndareus and could.",
+        "The difference meant nothing to the boys. They grew up doing everything together. Hyginus says that of all brothers they were the most devoted: neither tried to take the lead over the other, and neither did anything without talking it over with his twin first. Castor became a famous horseman and Pollux a champion boxer. People called them the Dioscuri, the sons of Zeus, and did not trouble about which of them it was true of.",
+        "They had cousins who were also a matched pair: Idas and Lynceus, sons of Aphareus. Those two were promised in marriage to the daughters of Leucippus, the sisters Phoebe and Hilaira. Castor and Pollux carried the brides off for themselves. Idas and Lynceus armed and came after them to demand the women back. Love drove one pair to ask, Ovid says, and love drove the other to refuse.",
+        "The twins could have outrun them. It seemed shameful to win by running, so they stopped at a clearing, a place with no trees, and waited. In the fight that followed Lynceus drove his sword through Castor's chest, a wound Castor had not seen coming, and Castor fell. Pollux reached Lynceus an instant later and ran his spear in where the neck meets the shoulders. Then Idas came at Pollux, and Zeus threw a thunderbolt to stop him, and even that, they say, hardly made Idas drop his weapon.",
+        "The fight was over, and Castor was dead on the ground. Heaven was already opening for Pollux, the god's son, when he spoke. Father, he said, hear me. Do not give this heaven to me alone. Divide it between the two of us. Half of the gift will be worth more to me than the whole.",
+        "Zeus granted it. In the oldest form of the story the brothers share one immortality by turns, a day among the gods and a day among the dead; Hyginus says, citing Homer, that Pollux gave his brother half his life, so that they shine on alternate days. In the version the sky tells, Zeus simply set them together as the constellation of the Twins, as a reward, Hyginus says, for their faithful friendship. They stand there with their heads together and their arms about each other's shoulders, and the two bright stars are named for them: Castor, who died, and beside him, a little brighter, Pollux, who refused to live forever without him."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Gemini: Castor and Pollux, the inseparable twins",
+        "url": "http://www.ianridpath.com/startales/gemini.html"
+      },
+      "characters": ["Castor", "Pollux (Polydeuces)", "Leda", "Zeus", "Tyndareus", "Idas", "Lynceus", "Phoebe", "Hilaira"],
+      "questions": [
+        {
+          "id": "twins-q1",
+          "prompt": "Which of the twins was immortal, and why?",
+          "choices": ["Castor, because Athena favored him", "Pollux, because his father was Zeus", "Both, because their mother was a goddess", "Neither, until they drank nectar on Olympus"],
+          "answerIndex": 1,
+          "explanation": "In the usual account Pollux was the son of Zeus, who came to Leda as a swan, while Castor was the son of her mortal husband Tyndareus."
+        },
+        {
+          "id": "twins-q2",
+          "prompt": "What did Pollux ask of Zeus after Castor was killed?",
+          "choices": ["To bring Idas back to be punished", "To make him forget his brother", "To turn Castor into a swan", "To share his immortality with his brother"],
+          "answerIndex": 3,
+          "explanation": "Pollux refused to have heaven alone and asked that the gift be divided between them. Zeus agreed, and the two are together in the sky."
+        },
+        {
+          "id": "twins-q3",
+          "prompt": "In Ovid's account, what started the fight in which Castor died?",
+          "choices": ["The twins had carried off the brides promised to Idas and Lynceus", "A boxing match with King Amycus", "A quarrel over the Golden Fleece", "An insult to their sister Helen"],
+          "answerIndex": 0,
+          "explanation": "Castor and Pollux abducted Phoebe and Hilaira, daughters of Leucippus, who were betrothed to their cousins Idas and Lynceus."
+        },
+        {
+          "id": "twins-q4",
+          "prompt": "Who struck the blow that killed Castor in Ovid's version?",
+          "choices": ["Idas", "Tyndareus", "Lynceus", "Amycus"],
+          "answerIndex": 2,
+          "explanation": "Lynceus ran Castor through with a sword; Pollux then killed Lynceus with his spear, and Zeus drove off Idas with a thunderbolt."
+        },
+        {
+          "id": "twins-q5",
+          "prompt": "Who was the mother of Castor and Pollux?",
+          "choices": ["Europa", "Leda, queen of Sparta", "Pleione", "Alcmene"],
+          "answerIndex": 1,
+          "explanation": "Leda, wife of King Tyndareus of Sparta, bore the twins along with Helen and Clytemnestra."
+        }
+      ]
+    },
+    {
+      "id": "Gem-cattle-raid",
+      "title": "The cattle raid: another account of Castor's death",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Apollodorus", "work": "Library 3.11.2", "date": "1st–2nd century CE" }
+      ],
+      "summary": "Apollodorus tells the death of Castor differently. The twins and their cousins Idas and Lynceus steal a herd of cattle together, Idas cheats them out of their share with an eating contest, and the feud that follows ends in an ambush, a thunderbolt and the same bargain with Zeus.",
+      "retelling": [
+        "In this telling the stolen brides are old news. Castor and Pollux have already carried off the daughters of Leucippus and married them, and nobody has come to blows over it. The trouble starts later, and it starts over cows.",
+        "The twins went raiding into Arcadia with their cousins Idas and Lynceus, the sons of Aphareus, and the four of them came away with a fine herd. Then they had to divide it, and they left the dividing to Idas. Idas cut one cow into four parts and announced the rules. Whoever finished eating his portion first would take half the herd. Whoever finished second would take the rest.",
+        "Before the twins properly understood what had been proposed, Idas had bolted down his own quarter and then his brother's as well. By his own rules the whole herd now belonged to him and Lynceus, and the two of them drove it off home to Messene.",
+        "Castor and Pollux did not accept the result. They marched on Messene and took back those cattle and a great many more besides. Then they lay in wait for their cousins to finish the matter. But Lynceus spotted Castor in his hiding place and pointed him out to Idas, and Idas killed him.",
+        "Pollux went after them. He brought Lynceus down with a throw of his spear, but as he closed in he was hit on the head by a stone and dropped senseless. Idas might have finished him then, but Zeus struck Idas dead with a thunderbolt and carried Pollux up to heaven.",
+        "Pollux would not have it. With Castor dead, he refused to be a god. So Zeus allowed the two of them to spend every other day among the gods and every other day among the dead, sharing one immortal life between them. The quarrel is pettier here than in Ovid's poem and the fighting is uglier, but the ending is the one that matters to the sky: the brother who could have lived forever chose not to do it alone, and the two bright stars of Gemini stand together because of it."
+      ],
+      "link": {
+        "site": "Theoi",
+        "label": "Apollodorus, Library, Book 3 (see 3.11.2)",
+        "url": "https://www.theoi.com/Text/Apollodorus3.html"
+      },
+      "characters": ["Castor", "Pollux (Polydeuces)", "Idas", "Lynceus", "Zeus"],
+      "questions": [
+        {
+          "id": "cattle-q1",
+          "prompt": "How did Idas cheat the twins out of the stolen cattle?",
+          "choices": ["He hid the herd in a cave", "He set an eating contest and wolfed down his own share and his brother's", "He bribed the judges of a chariot race", "He swapped the cattle for goats at night"],
+          "answerIndex": 1,
+          "explanation": "Idas quartered a cow, said the fastest eaters would take the herd, and promptly ate both his portion and Lynceus's."
+        },
+        {
+          "id": "cattle-q2",
+          "prompt": "Who spotted Castor lying in ambush?",
+          "choices": ["Idas", "Tyndareus", "Zeus", "Lynceus"],
+          "answerIndex": 3,
+          "explanation": "Lynceus saw Castor and pointed him out to Idas, who killed him. In this version it is Idas, not Lynceus, who strikes the fatal blow."
+        },
+        {
+          "id": "cattle-q3",
+          "prompt": "What arrangement did Zeus make when Pollux refused immortality without his brother?",
+          "choices": ["They would spend alternate days among the gods and among the dead", "Castor would live and Pollux would die", "Both would be turned into swans", "Both would rule Sparta forever"],
+          "answerIndex": 0,
+          "explanation": "Apollodorus says Zeus let them both be among the gods and among mortals on alternate days."
+        },
+        {
+          "id": "cattle-q4",
+          "prompt": "How did Idas die in Apollodorus's account?",
+          "choices": ["Pollux speared him", "He was trampled by the cattle", "Zeus struck him with a thunderbolt", "Castor killed him from ambush"],
+          "answerIndex": 2,
+          "explanation": "After Pollux was knocked down by a stone, Zeus killed Idas with a thunderbolt and took Pollux up to heaven."
+        }
+      ]
+    },
+    {
+      "id": "Gem-amycus",
+      "title": "Pollux, the bully king, and the sailors' stars",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Apollonius of Rhodes", "work": "Argonautica 2.1–97", "date": "3rd century BCE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.22", "date": "1st century BCE – 2nd century CE" },
+        { "author": "Pliny the Elder", "work": "Natural History (as quoted in Ridpath's Star Tales)", "date": "1st century CE" }
+      ],
+      "summary": "Sailing with Jason and the Argonauts, Pollux answers the challenge of Amycus, a king who forces every stranger to box him and has killed many, and beats him. The twins became the protectors of sailors, who saw them in the glowing lights that sometimes play on a ship's rigging in a storm.",
+      "retelling": [
+        "When Jason gathered a crew to sail for the Golden Fleece, Castor and Pollux went with him. The ship *Argo* was working its way east along the coast of Asia Minor when it put in at the country of the Bebrycians.",
+        "Their king was Amycus, a son of Poseidon and, the poet Apollonius says, the most arrogant of men. He had a rule for visitors. No stranger was allowed to leave his land until he had put up his fists against the king, and Amycus had already killed a number of his neighbors that way. He came down to the beach and did not bother to ask the Argonauts who they were or where they were bound. Pick your best man, he told them, and stand him here to box me, or it will go badly for you.",
+        "The whole crew was angry, but the insult struck Pollux hardest. He stepped forward at once. We will follow your rules, he said, and I am the man who will meet you.",
+        "They made an odd pair on the sand. Amycus was huge and rough, like something the Earth had brought forth in a bad temper. Pollux was still young, with the first down on his cheeks, and Apollonius says he looked like the evening star. He took off the fine cloak a woman of Lemnos had given him and flexed his hands to see that the long days at the oar had not stiffened them. The king stood glaring and did not bother to warm up.",
+        "Amycus fought the way a wave hits a ship, rushing in to overwhelm. Pollux fought with his head. He slipped each charge, studied where the big man was strong and where he was clumsy, and traded blow for blow until both were gasping. At last Amycus rose up on his toes to bring his fist down like a man felling an ox. Pollux leaned aside, took the blow on his shoulder, stepped in and struck him above the ear. The bones broke, and the king dropped to his knees and died.",
+        "The twins did the *Argo* other services, and sailors remembered. Hyginus says Poseidon himself rewarded the brothers with horses to ride and with the power to rescue shipwrecked men. In storms, sailors sometimes saw balls of pale fire clinging to the masthead and the yards, and they took two such lights together for Castor and Pollux, come to see them safely home. The Roman writer Pliny records the belief: a pair of lights meant a good voyage, and men prayed to the twins by name. Ovid ends his own account of them with the same thought, that both stars bring help to a storm-tossed ship. It is a fitting job for a pair of stars that have guided travelers for as long as anyone has looked up."
+      ],
+      "link": {
+        "site": "Theoi",
+        "label": "Apollonius Rhodius, Argonautica, Book 2 (the boxing match with Amycus)",
+        "url": "https://www.theoi.com/Text/ApolloniusRhodius2.html"
+      },
+      "characters": ["Pollux (Polydeuces)", "Castor", "Amycus", "Jason", "Poseidon"],
+      "questions": [
+        {
+          "id": "amycus-q1",
+          "prompt": "What did King Amycus demand of every stranger who landed in his country?",
+          "choices": ["A tribute of gold", "A boxing match against him", "A chariot race for his daughter's hand", "The answer to a riddle"],
+          "answerIndex": 1,
+          "explanation": "Amycus, king of the Bebrycians, let no visitor leave without boxing him, and he had killed many opponents."
+        },
+        {
+          "id": "amycus-q2",
+          "prompt": "Which of the twins was the boxer who fought Amycus?",
+          "choices": ["Castor", "Both together", "Neither; Heracles fought him", "Pollux"],
+          "answerIndex": 3,
+          "explanation": "Pollux (Polydeuces) was the boxer of the pair; Castor was the horseman. Pollux killed Amycus with a blow above the ear."
+        },
+        {
+          "id": "amycus-q3",
+          "prompt": "On which famous voyage did this boxing match take place?",
+          "choices": ["The voyage of the Argo for the Golden Fleece", "The return of Odysseus from Troy", "The Greek fleet's crossing to Troy", "Europa's crossing to Crete"],
+          "answerIndex": 0,
+          "explanation": "Castor and Pollux sailed with Jason and the Argonauts, and the fight happened when the Argo landed among the Bebrycians."
+        },
+        {
+          "id": "amycus-q4",
+          "prompt": "Why did ancient sailors pray to Castor and Pollux?",
+          "choices": ["They were gods of fishing", "They had built the first ship", "They were believed to protect ships and rescue sailors in storms", "They controlled the tides"],
+          "answerIndex": 2,
+          "explanation": "The twins were patrons of seafarers. Twin glowing lights on a ship's rigging during a storm (St. Elmo's fire) were taken as a sign of their presence."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Hyginus lists other identities for the pair besides Castor and Pollux: Heracles and Apollo, or Triptolemus and Iasion. None of these alternatives comes with a story about the stars.",
+    "Castor is labeled alpha and Pollux beta even though Pollux is brighter. Johann Bayer, who assigned the Greek letters in 1603, did not always go strictly by brightness.",
+    "The Geminid meteor shower, one of the best of the year, peaks around December 13–14, when meteors seem to fan out from a point near Castor. Unusually, the dust comes from an asteroid rather than a comet. The asteroid is named 3200 Phaethon, after the boy whose story is told under [[con:Eri|Eridanus]].",
+    "Castor and Pollux are not physically related: Pollux is 34 light-years away and Castor 51.",
+    "In China the feet of the Twins formed Jing, the Well, and Castor and Pollux were part of Beihe, the Northern River."
+  ]
+}

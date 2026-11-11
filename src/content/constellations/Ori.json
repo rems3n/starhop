@@ -1,0 +1,365 @@
+{
+  "id": "Ori",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ancient Greek tradition (already in Homer and Hesiod); catalogued by Ptolemy",
+    "when": "Before the 8th century BCE; listed in the Almagest, 2nd century CE",
+    "history": [
+      "Orion is one of the oldest star figures we can name. Homer and Hesiod, the earliest Greek poets whose work survives, already speak of Orion as a group of stars: Hesiod's farming poem *Works and Days* times the grape harvest and the autumn plowing by where Orion stands at dawn, and Homer's *Odyssey* has Odysseus steer by the Bear, 'which watches Orion'. In the 2nd century CE the astronomer Ptolemy listed Orion among the 48 constellations of his *Almagest*, describing a man with a club and a lion's skin.",
+      "The figure may be older still. Ian Ridpath's *Star Tales* traces it to Mesopotamia, where these stars were a great hero and neighboring Taurus was the Bull of Heaven, a pairing often linked with the tale of Gilgamesh. That would explain something the Greek stories never do: why the sky shows Orion squaring up to a charging bull that no Greek myth says he fought.",
+      "The star names came later and from elsewhere. The Greeks left Betelgeuse and Rigel unnamed; the names we use are worn-down Arabic. Rigel is from *rijl*, 'foot'. Betelgeuse comes from *yad al-jauza*, 'the hand of al-Jauza', the name Arabic sky-watchers gave to a figure they saw in these stars. The three Belt stars carry Arabic names too: Alnitak and Mintaka both mean 'the belt', and Alnilam means 'the string of pearls'."
+    ]
+  },
+  "overview": "Orion is the Hunter, a giant with a club raised over his head and a shield or lion's skin held out toward Taurus the Bull. It is the easiest constellation in the whole sky to recognize: three bright stars in a short straight row (the Belt) inside a tall rectangle of four brighter ones, visible even from the middle of a city.",
+  "howToFind": [
+    "On winter evenings face south and look about halfway up the sky for three equally bright stars in a short, tilted, straight line, close enough together to hide behind two fingers held at arm's length. That is Orion's Belt: from left to right [[star:Alnitak|Alnitak]], [[star:Alnilam|Alnilam]] and [[star:Mintaka|Mintaka]]. Nothing else in the sky looks like it. About one fist (10 degrees) above and to the left of the Belt is orange [[star:Betelgeuse|Betelgeuse]], the Hunter's shoulder; about one fist below and to the right is blue-white [[star:Rigel|Rigel]], his foot. [[star:Bellatrix|Bellatrix]] marks the other shoulder and [[star:Saiph|Saiph]] the other knee.",
+    "From latitude 40 degrees north Orion climbs out of the east in the evenings of late November and December, lying on his side with the Belt standing almost upright. He stands tall in the south through the evenings of January and February, and by April he is tipping over into the western twilight. In summer he is in the daytime sky and cannot be seen at all.",
+    "Once you have Orion you have the whole winter sky. Follow the Belt down and to the left for two fists and you hit [[star:Sirius|Sirius]], the brightest star of the night. Follow it up and to the right for two fists and you reach orange [[star:Aldebaran|Aldebaran]] in [[con:Tau|Taurus]], and a fist and a half farther the little cluster of the [[dso:M45|Pleiades]]. A line from Rigel through Betelgeuse, carried on for three fists, lands on [[star:Castor|Castor]] and [[star:Pollux|Pollux]] in [[con:Gem|Gemini]]."
+  ],
+  "shape": "A tall rectangle of four bright stars, about two fists high and a little less than one fist wide, pinched at the middle by the three-star Belt so that it looks like an hourglass or a bow tie stood on end. A short, fainter line of stars hangs below the Belt as the Sword, and a faint arc to the right is the shield or lion's skin. All seven main stars shine through city light pollution; the Sword shows from a suburb, and the shield and upraised club need a darker sky.",
+  "mainStars": [
+    {
+      "ref": "star:Betelgeuse",
+      "note": "The Hunter's right shoulder (upper left as we look). A red supergiant whose orange tint is obvious beside the blue-white of the other stars, and so swollen that it would engulf the orbits of the inner planets if it sat where the Sun is. Its brightness wanders, and in the winter of 2019–2020 it faded so far that people noticed with the naked eye. It will one day explode as a supernova, though probably not for many thousands of years."
+    },
+    {
+      "ref": "star:Rigel",
+      "note": "The left foot (lower right), and usually the brightest star in Orion even though it carries the letter beta. A blue-white supergiant about 860 light-years away, tens of thousands of times more luminous than the Sun. Compare its icy color with Betelgeuse: it is the best color contrast in the sky."
+    },
+    {
+      "ref": "star:Bellatrix",
+      "note": "The left shoulder (upper right). A hot blue-white star about 250 light-years away, the nearest of Orion's bright stars. The name is Latin for 'the female warrior'."
+    },
+    {
+      "ref": "star:Alnilam",
+      "note": "The middle star of the Belt, a blue supergiant roughly 2,000 light-years away and much farther off than it looks. Its name means 'the string of pearls'."
+    },
+    {
+      "ref": "star:Mintaka",
+      "note": "The right-hand (western) Belt star. It sits almost exactly on the celestial equator, so it rises due east and sets due west from anywhere on Earth, which makes it a handy compass."
+    },
+    {
+      "ref": "star:Alnitak",
+      "note": "The left-hand (eastern) Belt star, a hot blue star. The Flame and Horsehead nebulae lie right beside it, but they are targets for cameras and dark skies, not for the eye."
+    },
+    {
+      "ref": "star:Saiph",
+      "note": "The right knee (lower left). As hot and nearly as powerful as Rigel, but it looks dimmer because much of its light is ultraviolet that our eyes cannot see. The name is Arabic for 'sword', applied to the wrong part of the figure."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "dso:M42",
+      "equip": "naked-eye",
+      "note": "The Orion Nebula, the middle 'star' of the Sword, about 1,300 light-years away. To the eye it is a slightly fuzzy star; binoculars show a small glowing cloud, and any telescope shows a fan of gray-green mist with dark bays cut into it. This is a cloud of gas where stars are being born right now, and it is the finest nebula visible from northern latitudes."
+    },
+    {
+      "ref": "star:θ1 Ori",
+      "equip": "small-telescope",
+      "note": "The Trapezium: at the heart of the Orion Nebula, what looks like one star splits into four in a small telescope at about 50 power, arranged in a tiny lopsided box. These hot young stars light up the whole nebula."
+    },
+    {
+      "ref": "dso:M43",
+      "equip": "small-telescope",
+      "note": "A small comma-shaped puff of nebula just north of the Orion Nebula, separated from it by a dark lane. It is part of the same cloud."
+    },
+    {
+      "ref": "dso:NGC1981",
+      "equip": "binoculars",
+      "note": "A loose sprinkling of stars that forms the top of the Sword. In binoculars the whole Sword, from this cluster down through the nebula to the star [[star:Hatysa|Hatysa]] at the tip, fits in one view and is one of the richest sights in the winter sky."
+    },
+    {
+      "ref": "star:σ Ori",
+      "equip": "small-telescope",
+      "note": "Just below Alnitak. A small telescope turns this single star into a pretty group of four, with a faint triple star in the same field."
+    },
+    {
+      "ref": "dso:M78",
+      "equip": "small-telescope",
+      "note": "A small patch of dust lit by two young stars, a couple of degrees up and to the left of Alnitak. It looks like a faint, tailless comet. It needs a dark sky; from the city it is very hard."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Ori-birth",
+      "title": "The birth of Orion: the old farmer's wish",
+      "culture": "Greek and Roman",
+      "ancientSources": [
+        { "author": "Ovid", "work": "Fasti, Book 5", "date": "early 1st century CE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.34 (citing Aristomachus, Pindar and Hesiod)", "date": "1st century BCE – 2nd century CE" }
+      ],
+      "summary": "A poor, childless old farmer named Hyrieus entertains gods in disguise and is granted one wish: a son. The gods make a child for him from the hide of the ox he sacrificed, buried in the earth, and the boy grows into the giant hunter Orion. Another tradition simply makes Orion a son of the sea-god Poseidon.",
+      "retelling": [
+        "Three travelers were walking a country road in Boeotia as the day ran out. They were Zeus, his brother Poseidon and the messenger Hermes, but they had put their glory away and looked like any tired men on a long road. An old farmer named Hyrieus saw them from the door of his cottage. The road is long, he called, and there is not much daylight left, and my door is open to strangers.",
+        "It was a poor house, black with years of smoke. The old man knelt to blow yesterday's embers into flame, set a pot of beans and a pot of greens to boil, and poured out red wine with a shaking hand. He handed the first cup to the god of the sea, who drained it and said, without thinking, Now pour for Zeus. The old man went white. When he could move again he did the only thing he could think of to honor such guests. He went out and killed the one ox that pulled his plow, roasted it, and brought out a jar of wine he had laid down as a boy.",
+        "When they had eaten, Zeus told him to choose a gift. Anything. Hyrieus thought about it. He had had a wife once, he said, and loved her, and when she died he had sworn before these same gods that he would never take another. He meant to keep that promise. But there was one thing he had always wanted, and it was not to be a husband again. It was to be a father.",
+        "The gods agreed. They gathered around the hide of the ox they had just eaten and, the poet Ovid says, did something he is ashamed to describe: they wet the hide as a man relieves himself. Then they told Hyrieus to bury it in the ground. Ten months later the earth gave up a baby boy. Hyrieus named him Urion, after the way he was made, and the Roman writers add that time wore the first letter of the name down to the gentler Orion.",
+        "The boy did not stop growing. He became the tallest and handsomest of men, a hunter who could face any animal, and the goddess Artemis took him as her companion in the chase. Ovid's telling runs straight on from here to his end, when a giant scorpion came against the goddess's mother and Orion put himself in its way; for that, Ovid says, Leto herself set him among the stars.",
+        "Not everyone told it this way. Hyginus reports that the writer Aristomachus named only two divine guests, Zeus and Hermes, and that the poet Pindar set the tale on the island of Chios rather than at Thebes. And Hesiod, he says, gave Orion a grander pedigree altogether: son of Poseidon and of Euryale, a daughter of King Minos of Crete, with his father's gift of striding across the sea as if it were dry land. Either way the child of the earth or of the sea ended in the same place: the brightest figure in the winter sky."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Orion: tales of the hunter, including his birth",
+        "url": "http://www.ianridpath.com/startales/orion.html"
+      },
+      "characters": ["Hyrieus", "Zeus", "Poseidon", "Hermes", "Orion", "Artemis", "Euryale"],
+      "questions": [
+        {
+          "id": "birth-q1",
+          "prompt": "In Ovid's story, what did the old farmer Hyrieus ask the gods for?",
+          "choices": ["Riches to replace his poor farm", "A new wife", "To be a father", "A longer life"],
+          "answerIndex": 2,
+          "explanation": "Hyrieus had sworn to his dead wife never to remarry, so he asked not for a wife but for a son. The gods produced Orion from the buried ox-hide."
+        },
+        {
+          "id": "birth-q2",
+          "prompt": "What did Hyrieus sacrifice to feed his divine guests?",
+          "choices": ["The only ox that pulled his plow", "A white bull from the king's herd", "A hare he had snared", "His last goat and her kids"],
+          "answerIndex": 0,
+          "explanation": "He killed his single plow-ox, a real sacrifice for a poor farmer. Its hide then became the means of Orion's birth."
+        },
+        {
+          "id": "birth-q3",
+          "prompt": "Which three gods visit Hyrieus in Ovid's version?",
+          "choices": ["Apollo, Artemis and Leto", "Zeus, Poseidon and Hermes", "Zeus, Hades and Ares", "Hephaestus, Hermes and Dionysus"],
+          "answerIndex": 1,
+          "explanation": "Ovid names Jupiter, his sea-ruling brother (Neptune) and Mercury: in Greek terms Zeus, Poseidon and Hermes. Hyginus, following Aristomachus, mentions only Zeus and Hermes."
+        },
+        {
+          "id": "birth-q4",
+          "prompt": "According to Hesiod (as reported by Hyginus), who were Orion's parents?",
+          "choices": ["Zeus and Leda", "Hephaestus and the Earth", "Atlas and Pleione", "Poseidon and Euryale"],
+          "answerIndex": 3,
+          "explanation": "In this other tradition Orion is the son of the sea-god Poseidon and Euryale, daughter of Minos, and inherits the power to walk across the sea."
+        }
+      ]
+    },
+    {
+      "id": "Ori-merope",
+      "title": "Orion on Chios: Merope and the blinding",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.34", "date": "1st century BCE – 2nd century CE" },
+        { "author": "Apollodorus", "work": "Library 1.4.3–4", "date": "1st–2nd century CE" }
+      ],
+      "summary": "On the island of Chios, Orion wants Merope, daughter of King Oenopion. After a night of wine ends in violence, the king has the giant blinded and thrown out. Orion walks east with a boy on his shoulders to guide him, and the rising Sun gives him back his sight.",
+      "retelling": [
+        "Orion came to the island of Chios, where Oenopion was king. The king had a daughter, Merope, and Orion wanted her.",
+        "What happened next depends on who is telling it. Apollodorus says only that Orion courted Merope and that her father, who did not want the match, got him drunk. Hyginus is blunter: Orion, heated with wine, attacked the girl. Both agree about the king's answer. While the giant lay in a drunken sleep, Oenopion put out his eyes and had him dumped on the shore.",
+        "Blind, Orion did the one thing a man of his kind could still do, which was walk. He could cross the sea on foot, and he made his way north to the island of Lemnos, to the forge of the smith-god Hephaestus. Hephaestus pitied him and gave him one of his helpers, a boy named Cedalion, to be his eyes. Orion lifted the boy onto his shoulders. Take me toward the sunrise, he said.",
+        "So the two of them went east, the boy steering the giant like a rider on a horse, until they reached the edge of the world where the Sun comes up out of the Ocean. Orion turned his ruined eyes to the first rays, and the Sun healed him. He could see.",
+        "The first thing he wanted to see was Oenopion. He went straight back to Chios for revenge, but the islanders had hidden their king in a chamber under the ground, a room that Apollodorus says Hephaestus himself had built. Orion searched and found nothing. In the end he gave up and crossed to Crete, where he took up hunting in the company of the goddess Artemis.",
+        "It was there on Crete, Hyginus says, that he made the boast that brought the scorpion against him and so carried him up to the stars. The blinding on Chios is the hinge of his whole story: the giant at his worst, then at his most pitiable, feeling his way across the sea toward the dawn. It is easy to imagine a trace of it overhead: Orion comes up over the eastern horizon each winter evening, the side of the sky where the Sun rises, like a man still feeling his way toward the dawn."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Orion: Merope, Oenopion and the journey to the sunrise",
+        "url": "http://www.ianridpath.com/startales/orion.html"
+      },
+      "characters": ["Orion", "Merope", "Oenopion", "Hephaestus", "Cedalion", "Helios", "Artemis"],
+      "questions": [
+        {
+          "id": "merope-q1",
+          "prompt": "Who blinded Orion on the island of Chios?",
+          "choices": ["The goddess Artemis", "King Oenopion", "The smith-god Hephaestus", "A giant scorpion"],
+          "answerIndex": 1,
+          "explanation": "Oenopion, king of Chios and father of Merope, put out Orion's eyes while he slept off the wine and cast him out of the island."
+        },
+        {
+          "id": "merope-q2",
+          "prompt": "Who rode on Orion's shoulders to guide him while he was blind?",
+          "choices": ["Cedalion, a helper from Hephaestus's forge", "Hermes, the messenger god", "Merope, the king's daughter", "His hunting dog Sirius"],
+          "answerIndex": 0,
+          "explanation": "Hephaestus lent Orion the boy Cedalion from his forge on Lemnos. Carried on the giant's shoulders, Cedalion steered him east."
+        },
+        {
+          "id": "merope-q3",
+          "prompt": "How did Orion get his sight back?",
+          "choices": ["Artemis touched his eyes with a healing herb", "He bathed in the river Eridanus", "Zeus restored it as a reward for courage", "He faced the rising Sun, whose rays healed him"],
+          "answerIndex": 3,
+          "explanation": "An oracle sent him toward the sunrise. When the Sun's first rays fell on his eyes, his sight returned."
+        },
+        {
+          "id": "merope-q4",
+          "prompt": "Why did Orion's revenge on Oenopion fail?",
+          "choices": ["Oenopion had already died", "Artemis forbade it", "The king was hidden in a chamber under the ground", "Orion lost his way at sea"],
+          "answerIndex": 2,
+          "explanation": "The people of Chios hid their king underground (in a room built by Hephaestus, says Apollodorus), so Orion gave up and went to Crete."
+        }
+      ]
+    },
+    {
+      "id": "Ori-scorpion",
+      "title": "Orion and the scorpion",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Eratosthenes", "work": "Catasterisms (as reported in Ridpath's Star Tales)", "date": "3rd century BCE (surviving summary is later)" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.26 and 2.34", "date": "1st century BCE – 2nd century CE" },
+        { "author": "Aratus", "work": "Phaenomena 634–646", "date": "3rd century BCE" },
+        { "author": "Ovid", "work": "Fasti, Book 5", "date": "early 1st century CE" }
+      ],
+      "summary": "Orion boasts that he can kill every animal the Earth produces. The Earth answers with a scorpion, which stings the great hunter to death. Hunter and scorpion are both placed in the sky, but on opposite sides, so that Orion sets as Scorpius rises.",
+      "retelling": [
+        "After his troubles on Chios, Orion came to Crete and hunted there with Artemis, goddess of wild things, and her mother Leto. He was very good at it. Nothing that ran or climbed or hid could get away from him, and he knew it.",
+        "One day he said so out loud. There was no beast on Earth, he told the two goddesses, that he could not kill. If he chose, he could empty the world of animals.",
+        "The Earth herself heard him. Gaia is the mother of everything that creeps and runs, and she did not care to hear her children counted off as a hunter's future trophies. The ground split, and out of the crack came a scorpion. Orion had fought lions and boars. He had no answer to this. It stung him, and the biggest and strongest of men died of it.",
+        "Zeus admired the fight in both of them. He set the scorpion among the stars, Hyginus says, as a warning to people not to be too sure of themselves. Artemis, who had been fond of her hunting companion, asked that Orion be given the same honor. Zeus agreed, and he arranged the two with care: he put them on opposite sides of the sky. When the Scorpion climbs over the eastern horizon, Orion is already slipping away in the west, and the two are never seen above the horizon together.",
+        "That is the version of Eratosthenes and Hyginus, set in Crete. The poet Aratus knew a darker one, set on Chios, and he begs Artemis's pardon before he tells it. In his account Orion, clearing the island of wild beasts as a service to King Oenopion, laid hands on the goddess herself. She tore open the hills of Chios and brought out the scorpion to kill him. Ovid tells it a third way, and the kindest to Orion: the scorpion was sent against Leto, and Orion died throwing himself between them, so that it was Leto who raised him to the stars.",
+        "You can watch the ending for yourself. Orion owns the winter evening sky and [[con:Sco|Scorpius]] the summer one. On a spring evening Orion sinks into the west as the Scorpion's claws come up in the southeast; on a late-autumn morning before dawn it is the other way around. After all this time the hunter still will not share the sky with the creature that killed him."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Orion, part 2: the death of Orion",
+        "url": "http://www.ianridpath.com/startales/orion2.html"
+      },
+      "characters": ["Orion", "Artemis", "Leto", "Gaia (Earth)", "the scorpion", "Zeus"],
+      "questions": [
+        {
+          "id": "scorpion-q1",
+          "prompt": "What boast of Orion's angered the Earth?",
+          "choices": ["That he was more beautiful than Apollo", "That he could kill every beast the Earth produced", "That he could outrun the Sun's chariot", "That he was a better archer than Artemis"],
+          "answerIndex": 1,
+          "explanation": "Orion told Artemis and Leto he could kill any animal on Earth. Earth (Gaia) sent the scorpion in reply."
+        },
+        {
+          "id": "scorpion-q2",
+          "prompt": "How does the sky preserve the enmity of Orion and the scorpion?",
+          "choices": ["They are on opposite sides of the sky, so one sets as the other rises", "Scorpius's sting touches Orion's foot", "They face each other across the Milky Way all night", "Orion's club is raised over the scorpion's head"],
+          "answerIndex": 0,
+          "explanation": "Orion and Scorpius lie on opposite sides of the sky. As Scorpius rises in the east, Orion sets in the west, as if still fleeing."
+        },
+        {
+          "id": "scorpion-q3",
+          "prompt": "In Aratus's version, where did Orion die, and why did Artemis send the scorpion?",
+          "choices": ["On Crete, because he killed her sacred deer", "On Delos, because he challenged her at the discus", "On Lemnos, because he stole from Hephaestus", "On Chios, because he laid hands on her"],
+          "answerIndex": 3,
+          "explanation": "Aratus sets the story on Chios, where Orion was hunting for King Oenopion, and says Artemis raised the scorpion after he grabbed at her."
+        },
+        {
+          "id": "scorpion-q4",
+          "prompt": "In Ovid's telling, whom was Orion defending when the scorpion killed him?",
+          "choices": ["Merope", "The Pleiades", "Leto, mother of Artemis and Apollo", "The boy Cedalion"],
+          "answerIndex": 2,
+          "explanation": "Ovid says the scorpion attacked the 'Mother of Twins', Leto (Latona), and Orion threw himself in the way. She placed him among the stars as his reward."
+        }
+      ]
+    },
+    {
+      "id": "Ori-artemis-arrow",
+      "title": "Orion and the arrow of Artemis",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.34 (citing Istros and Callimachus)", "date": "1st century BCE – 2nd century CE" },
+        { "author": "Homer", "work": "Odyssey 5.121–124", "date": "8th century BCE" },
+        { "author": "Apollodorus", "work": "Library 1.4.3–5", "date": "1st–2nd century CE" }
+      ],
+      "summary": "In this version there is no scorpion. Artemis loves Orion and means to marry him, and her brother Apollo, to stop it, tricks her into shooting at a dark speck far out at sea. The speck is Orion's head. Grieving, she sets him among the stars.",
+      "retelling": [
+        "Artemis had sworn never to marry. She was the goddess of the hunt and of wild places, and she kept company with nymphs and hounds, not with husbands. Then she met Orion, the one mortal who could match her on the trail, and the oath began to look less certain. The writer Istros, whom Hyginus quotes, says she loved him and came close to marrying him.",
+        "Her twin brother Apollo did not like it. He argued with her and got nowhere. So he waited for another way.",
+        "One day Orion went swimming, far out from shore. He was a son of the sea, in some accounts, and the open water was nothing to him. From the beach all that could be seen of him was his head, a small dark dot rising and falling on the swell. Apollo pointed it out to his sister. You call yourself an archer, he said. I will bet you cannot hit that black thing out there in the waves.",
+        "Artemis was proud of her aim, and she did not look twice. She set an arrow to the string and let it go, and it flew true. The dark speck sank.",
+        "The sea brought the body in. When the waves rolled it onto the sand she saw whom she had killed. She wept over him for a long time, and since she could not give him back his life, she gave him the sky: she placed Orion among the constellations, where the greatest hunter still walks the winter nights with his dogs behind him.",
+        "The Greeks had other ways of putting Artemis's arrow into the story, and they do not agree. In the oldest of all, a few lines of Homer's *Odyssey*, the dawn goddess Eos fell in love with Orion and carried him off, and the gods resented it until Artemis shot him down on the island of Ortygia. Apollodorus knew two more reasons for the shot: that Orion had challenged the goddess to a contest with the discus, or that he had assaulted Opis, one of her maiden attendants. And Hyginus adds that the poet Callimachus had Orion attack Artemis herself and die by her arrows. In every version the ending is the same. The goddess's arrow kills him, and afterward the stars keep him."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Orion, part 2: Artemis, Apollo and the death of Orion",
+        "url": "http://www.ianridpath.com/startales/orion2.html"
+      },
+      "characters": ["Orion", "Artemis", "Apollo", "Eos (Dawn)", "Opis"],
+      "questions": [
+        {
+          "id": "arrow-q1",
+          "prompt": "Why did Apollo want Orion out of the way?",
+          "choices": ["Orion had stolen his cattle", "Orion had boasted of being the better musician", "He opposed his sister Artemis marrying Orion", "Zeus had ordered Orion's death"],
+          "answerIndex": 2,
+          "explanation": "In the version Hyginus takes from Istros, Artemis loved Orion and nearly married him; Apollo objected and, when scolding failed, turned to a trick."
+        },
+        {
+          "id": "arrow-q2",
+          "prompt": "How did Apollo trick Artemis into killing Orion?",
+          "choices": ["He disguised Orion as a stag", "He dared her to hit a dark speck in the sea, which was Orion's head", "He swapped her arrows for poisoned ones", "He told her Orion had insulted their mother"],
+          "answerIndex": 1,
+          "explanation": "Orion was swimming far out; Apollo wagered that she could not hit the black object among the waves. She did, and only learned the truth when the body washed ashore."
+        },
+        {
+          "id": "arrow-q3",
+          "prompt": "In Homer's *Odyssey*, which goddess had taken Orion as her lover before Artemis shot him?",
+          "choices": ["Eos, the Dawn", "Aphrodite", "Selene, the Moon", "Calypso"],
+          "answerIndex": 0,
+          "explanation": "Homer has Calypso recall that rosy-fingered Dawn (Eos) took Orion for herself, and the gods begrudged it until Artemis killed him in Ortygia."
+        },
+        {
+          "id": "arrow-q4",
+          "prompt": "What did Artemis do after she discovered whom she had shot?",
+          "choices": ["She turned him into a hunting dog", "She buried him on the island of Chios", "She asked Hades to release him for half of each year", "She mourned him and placed him among the constellations"],
+          "answerIndex": 3,
+          "explanation": "Hyginus says she grieved with many tears and set Orion among the stars."
+        }
+      ]
+    },
+    {
+      "id": "Ori-pleiades",
+      "title": "Orion's pursuit of the Pleiades",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.21", "date": "1st century BCE – 2nd century CE" },
+        { "author": "Hesiod", "work": "Works and Days 618–621", "date": "c. 700 BCE" }
+      ],
+      "summary": "Orion meets Pleione and her seven daughters on a road in Boeotia and tries to seize her. They run, and he hunts them for seven years. Zeus lifts the sisters into the sky as the Pleiades, and Orion, set among the stars as well, still follows them across it every night.",
+      "retelling": [
+        "Pleione was a daughter of Ocean, and her husband was Atlas, the Titan who holds up the sky. She had seven daughters, and people called the girls the Pleiades after her.",
+        "One day, Hyginus says, Pleione was traveling through Boeotia with her daughters, and Orion fell in with them on the road. He was a giant and a hunter and used to taking what he wanted. He tried to force himself on Pleione. She broke away, and mother and daughters fled.",
+        "Orion went after them. A hunter does not give up a trail, and this one could cross mountains in a few strides and wade through the sea. For seven years he searched, and for seven years the women kept ahead of him, and he never laid a hand on them. In the usual telling it is the seven sisters he wanted; Hyginus is careful to say it was their mother.",
+        "At last Zeus took pity on the girls. He opened a road for them into the sky and set them there as a small, tight knot of stars. Some astronomers of old, Hyginus adds, called that cluster the Bull's tail, because it rides on the back of Taurus.",
+        "It did not end the chase. It only moved it. Orion was put among the stars as well, and he came up just behind them. Look on any winter evening: the [[dso:M45|Pleiades]] rise first, then the Bull's red eye, then Orion, striding after them from east to west all night long. He never gets any closer.",
+        "Greek farmers and sailors used the chase as a calendar. Hesiod, some seven centuries before the common era, told his brother that when the Pleiades plunge into the misty sea to escape the rough strength of Orion, that is, when they are seen setting at dawn in late autumn, the season of gales has come and it is time to haul the ship up on the beach and stay ashore."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Taurus, part 2: the Pleiades and Orion's pursuit",
+        "url": "http://www.ianridpath.com/startales/taurus2.html"
+      },
+      "characters": ["Orion", "Pleione", "the Pleiades", "Atlas", "Zeus"],
+      "questions": [
+        {
+          "id": "pleiades-q1",
+          "prompt": "According to Hyginus, whom was Orion actually pursuing?",
+          "choices": ["Artemis", "Pleione, the mother of the Pleiades", "Merope of Chios", "Europa"],
+          "answerIndex": 1,
+          "explanation": "The story is usually told as a chase after the seven sisters, but Hyginus says Orion tried to attack their mother Pleione, and all of them fled."
+        },
+        {
+          "id": "pleiades-q2",
+          "prompt": "For how long did Orion hunt Pleione and her daughters?",
+          "choices": ["One night", "Forty days", "Three years", "Seven years"],
+          "answerIndex": 3,
+          "explanation": "Hyginus says he sought her for seven years without finding her, until Zeus placed the girls in the sky."
+        },
+        {
+          "id": "pleiades-q3",
+          "prompt": "Who were the parents of the Pleiades?",
+          "choices": ["Atlas and Pleione", "Zeus and Leda", "Poseidon and Euryale", "Oenopion and Merope"],
+          "answerIndex": 0,
+          "explanation": "The seven sisters were daughters of the Titan Atlas and Pleione, a daughter of Ocean; they are named after their mother."
+        },
+        {
+          "id": "pleiades-q4",
+          "prompt": "How is the chase still visible in the sky?",
+          "choices": ["Orion's club points at the Pleiades", "The Pleiades lie inside Orion's Belt", "Orion rises after the Pleiades and follows them westward all night", "The Pleiades set whenever Scorpius rises"],
+          "answerIndex": 2,
+          "explanation": "The Pleiades rise ahead of Orion and he follows them across the sky from east to west, never catching up."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Orion ranks only 26th in size among the 88 constellations. It looks huge because so many of its stars are bright: seven of them are second magnitude or brighter (magnitude is the brightness scale, where smaller numbers mean brighter stars).",
+    "Because Orion straddles the celestial equator, it can be seen from every inhabited place on Earth. From the Southern Hemisphere the Hunter appears standing on his head.",
+    "Most of Orion's bright stars are related: young, hot, blue stars born from the same giant complex of gas clouds over the last few million years. Betelgeuse is the odd one out in color, a massive star that has already swollen into a red supergiant.",
+    "The Orion Nebula is not mentioned by any ancient or medieval astronomer. The first known record is by the Frenchman Nicolas-Claude Fabri de Peiresc, who saw it through a telescope in 1610.",
+    "The Orionid meteor shower, at its best around October 21 each year, appears to stream from a point near Orion's raised club. The meteors are dust shed by Halley's Comet.",
+    "Chinese astronomers saw almost the same figure here: Shen, a great hunter or warrior, built around the three stars of the Belt."
+  ]
+}

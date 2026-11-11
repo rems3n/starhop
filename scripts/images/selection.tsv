@@ -1,0 +1,213 @@
+# key | Commons file | title | kind | kindNote | telescope | credit override (optional) | crop l,t,r,b fractions (optional)
+# `KEY | =OTHER` reuses OTHER's first image. Order = gallery order. Labels come from each file's Commons description.
+Sun | The Sun in white light.jpg | The Sun in white light, with sunspots | photograph | White light (true colour), as described at source | Not stated at source
+Sun | The Sun by the Atmospheric Imaging Assembly of NASA's Solar Dynamics Observatory - 20100819.jpg | The Sun in extreme ultraviolet | false-color | Extreme ultraviolet light shown in false colour | Solar Dynamics Observatory (AIA)
+Sun | The Largest Sunspot Group (noao0114).tiff | A large sunspot group | photograph | Film-camera photo in visible light | McMath-Pierce Solar Telescope, Kitt Peak
+Moon | FullMoon2010.jpg | Full Moon | photograph | Single-camera colour photo through a telescope | Celestron 9.25-inch Schmidt-Cassegrain telescope (amateur) with Canon EOS 500D
+Moon | Moon in Tõrva.png | First quarter Moon | photograph | Single colour-camera image | Celestron EdgeHD 9.25 telescope (amateur) with ZWO ASI071MC Pro camera
+Moon | Moon Farside LRO.jpg | Far side of the Moon | photograph | Greyscale mosaic of orbiter camera images | Lunar Reconnaissance Orbiter (LROC Wide Angle Camera)
+Mercury | Mercury in true color.jpg | Mercury in approximately true colour | photograph | Approximately true colour, made from narrow-band colour filter images | MESSENGER (MDIS Wide Angle Camera)
+Mercury | Mercury in color - Prockter07-edit1.jpg | Mercury in exaggerated colour | false-color | Enhanced colour | MESSENGER
+Mercury | Transit Of Mercury, May 9th, 2016.png | Mercury crossing the Sun, 9 May 2016 | photograph | DSLR photo through a solar filter and a dark green filter | Celestron C6-R refractor (amateur) with Nikon D5500
+Venus | Venus from Mariner 10.jpg | Venus cloud tops from Mariner 10 | photograph | Colour processing not stated at source | Mariner 10
+Venus | Venus - December 23 2016.png | Venus clouds in ultraviolet | false-color | Ultraviolet images (283 and 365 nm) mapped to visible colours | Akatsuki
+Venus | Venus globe.jpg | Venus surface mapped by radar | false-color | Radar map on a computer-simulated globe, shown in simulated colour | Magellan (radar), gaps filled with Pioneer Venus Orbiter data
+Mars | Mars - August 30 2021 - Flickr - Kevin M. Gill.png | Mars global view | photograph | Red, green and blue filter images (635, 546 and 437 nm) combined | Emirates Mars Mission (EXI camera)
+Mars | Mars - 2020 Opposition (crop).jpg | Mars through a 16-inch telescope, 2020 | photograph | Colour processing not stated at source | 16-inch telescope, Killarney Provincial Park Observatory
+Mars | OSIRIS Mars true color.jpg | Mars from the Rosetta spacecraft | photograph | True colour from orange (red), green and blue filter images | Rosetta (OSIRIS)
+Jupiter | Jupiter OPAL 2024.png | Jupiter from Hubble, January 2024 | photograph | True colour, as described at source | Hubble Space Telescope (OPAL programme)
+Jupiter | Jupiter-and-its-moons-amateur.jpg | Jupiter and its moons through a Dobsonian telescope | photograph | Colour processing not stated at source | Dobsonian telescope (amateur)
+Jupiter | Jupiter Showcases Auroras, Hazes (NIRCam Widefield View) (jupiter-auroras2).jpeg | Jupiter in infrared with rings and auroras | false-color | Near-infrared light (two filters) mapped to visible colours | James Webb Space Telescope (NIRCam)
+Saturn | Saturn during Equinox.jpg | Saturn at equinox from Cassini | photograph | Natural colour view | Cassini
+Saturn | Saturn in natural colors (captured by the Hubble Space Telescope).jpg | Saturn from Hubble | photograph | Natural colour, as described at source | Hubble Space Telescope
+Saturn | Planet Saturn.jpg | Saturn through a 250 mm Dobsonian telescope | photograph | Single compact-camera photo held to the eyepiece | 250 mm Dobsonian telescope (amateur) with Sony DSC-H20 compact camera
+Uranus | Uranus Voyager2 color calibrated.png | Uranus from Voyager 2 | photograph | Orange, green and blue frames calibrated to true colour | Voyager 2
+Uranus | Adding to Uranus's legacy.tif | Uranus from Hubble | photograph | Colour processing not stated at source | Hubble Space Telescope (WFC3)
+Neptune | Neptune Voyager2 color calibrated.png | Neptune from Voyager 2 | photograph | Orange, green and blue frames calibrated to true colour | Voyager 2
+Neptune | Neptune Full.jpg | Neptune in enhanced colour | false-color | Enhanced colour from green and orange filter images | Voyager 2 (narrow-angle camera)
+Neptune | New Webb Image Captures Clearest View of Neptune’s Rings in Decades.png | Neptune and its rings in infrared | false-color | Near-infrared light mapped to visible colours | James Webb Space Telescope (NIRCam)
+M1 | Crab Nebula.jpg | Crab Nebula mosaic | false-color | Colours show chemical elements (oxygen and sulphur), not natural colour | Hubble Space Telescope (WFPC2)
+M1 | M1 Crab Nebula Supernova Remnant from the Mount Lemmon SkyCenter Schulman Telescope courtesy Adam Block.jpg | Crab Nebula from the ground | photograph | Red, green and blue filters with added hydrogen-alpha | 32-inch Schulman Telescope, Mount Lemmon SkyCenter
+M1 | Crab Nebula (MIRI and NIRCam image) (weic2417a).jpg | Crab Nebula in infrared | false-color | Near- and mid-infrared light mapped to visible colours | James Webb Space Telescope (NIRCam and MIRI)
+M2 | Messier2 - HST - Potw1913a.jpg | Globular cluster M2 | false-color | Visible and infrared light combined | Hubble Space Telescope
+M3 | NASA’s Hubble Spots Star-Spangled Cosmic Scene (M3).jpg | Globular cluster M3 | photograph | Colour processing not stated at source | Hubble Space Telescope
+M4 | Globular star cluster Messier 4.jpg | Globular cluster M4 | photograph | Colour processing not stated at source | MPG/ESO 2.2-metre telescope (Wide Field Imager)
+M5 | M5-Messier-5.png | Globular cluster M5 | photograph | Colour camera image | Celestron RASA (amateur telescope)
+M6 | Messier 6 - The Butterfly Cluster.jpg | Butterfly Cluster | photograph | Colour processing not stated at source | Not stated at source
+M7 | The star cluster Messier 7.jpg | Ptolemy Cluster | photograph | Blue, green (V) and near-infrared (I) filter images combined | MPG/ESO 2.2-metre telescope (Wide Field Imager)
+M8 | VST images the Lagoon Nebula.jpg | Lagoon Nebula | photograph | Colour processing not stated at source | ESO VLT Survey Telescope
+M8 | M8 Lagoon Nebula - M20 Trifid Nebula.jpg | Lagoon and Trifid nebulae together | photograph | Luminance, hydrogen-alpha, oxygen and RGB data combined (LHORGB) | Not stated at source
+M9 | Globular cluster Messier 9 (captured by the Hubble Space Telescope).tif | Globular cluster M9 | photograph | Colour processing not stated at source | Hubble Space Telescope
+M10 | Messier 10 Hubble WikiSky.jpg | Centre of globular cluster M10 | photograph | Colour processing not stated at source | Hubble Space Telescope
+M11 | Eso1430a.jpg | Wild Duck Cluster | photograph | Colour processing not stated at source | MPG/ESO 2.2-metre telescope (Wide Field Imager)
+M12 | M12 Adam Block.jpg | Globular cluster M12 | photograph | Colour processing not stated at source | Not stated at source
+M13 | M13-Globular-Cluster.png | Great Hercules Cluster | photograph | Broadband filter and colour camera | Celestron RASA (amateur telescope)
+M13 | Heart of M13 Hercules Globular Cluster.jpg | Heart of the Hercules Cluster | photograph | Colour processing not stated at source | Hubble Space Telescope (ACS)
+M14 | Messier 14.jpg | Globular cluster M14 | photograph | Colour processing not stated at source | KPNO 0.9-meter telescope
+M15 | M15 Globular Cluster from the Mount Lemmon SkyCenter Schulman Telescope courtesy Adam Block.jpg | Globular cluster M15 | photograph | Red, green and blue filter exposures | 32-inch Schulman Telescope, Mount Lemmon SkyCenter
+M16 | Eagle Nebula from ESO.jpg | Eagle Nebula | photograph | Blue, green (V) and red filters in visible light | MPG/ESO 2.2-metre telescope (Wide Field Imager)
+M16 | Pillars of creation 2014 HST WFC3-UVIS full-res denoised.jpg | Pillars of Creation | false-color | Colours highlight emission from several chemical elements | Hubble Space Telescope (WFC3)
+M17 | VST image of the spectacular star-forming region Messier 17 (Omega Nebula).jpg | Omega Nebula | photograph | Colour processing not stated at source | ESO VLT Survey Telescope (OmegaCAM)
+M17 | Omega Nebula.jpg | Detail of the Omega Nebula | false-color | Colours represent gases: sulphur red, hydrogen green, oxygen blue | Hubble Space Telescope (WFPC2)
+M18 | Messier 18.jpg | Open cluster M18 | photograph | Colour processing not stated at source | Not stated at source
+M19 | M19-Cluster.png | Globular cluster M19 | photograph | Broadband filter and colour camera | Celestron RASA (amateur telescope)
+M20 | Trifid Nebula (noirlab2521ah).jpg | Trifid Nebula | photograph | Colour processing not stated at source | Vera C. Rubin Observatory
+M21 | Trifid and Lagoon Nebulae Excerpt- Messier 21 (noirlab2521ag).jpg | Open cluster M21 | photograph | Colour processing not stated at source | Vera C. Rubin Observatory
+M22 | The crammed centre of Messier 22.jpg | Centre of globular cluster M22 | photograph | Colour processing not stated at source | Hubble Space Telescope
+M23 | M23 Open Star Cluster.png | Open cluster M23 | photograph | Broadband filter and colour camera | Celestron RASA (amateur telescope)
+M24 | M24 - VST - potw2237a.jpg | Dark clouds in the Small Sagittarius Star Cloud | photograph | Green (g), red (r) and hydrogen-alpha filter images | ESO VLT Survey Telescope (OmegaCAM)
+M25 | M025.jpg | Open cluster M25 | photograph | Luminance, red, green and blue filter exposures (LRGB) | 200 mm f/5 Newtonian telescope (amateur)
+M26 | Messier 26 Cluster.png | Open cluster M26 | photograph | Broadband filter and colour camera | Celestron RASA (amateur telescope)
+M27 | M27 - Noao-m27.jpg | Dumbbell Nebula | photograph | Approximately true colour | Kitt Peak 2.1-meter telescope
+M27 | M27 - The Dumbbell Nebula.jpg | Dumbbell Nebula in narrowband | false-color | Narrowband: hydrogen-alpha as red, oxygen-III as blue | Celestron NexStar 8SE (amateur telescope)
+M28 | M28 - HST-U-V-IR.jpg | Globular cluster M28 | false-color | Visible, infrared and ultraviolet light combined | Hubble Space Telescope
+M29 | Messier 29.jpg | Open cluster M29 | photograph | Colour processing not stated at source | 360 mm f/7.5 Ritchey-Chrétien telescope
+M30 | Lessons from a stellar instructor (potm2610a).jpg | Globular cluster M30 | photograph | Colour processing not stated at source | Hubble Space Telescope
+M31 | M31-Andromede-16-09-2023-Hamois.jpg | Andromeda Galaxy | photograph | Colour processing not stated at source | Not stated at source
+M31 | M31, the Andromeda Galaxy, Killarney Provincial Park Observatory.jpg | Andromeda Galaxy through a 130 mm telescope | photograph | DSLR colour image, colour enhanced | 130 mm telescope, Killarney Provincial Park Observatory
+M31 | Andromeda galaxy Ssc2005-20a1.jpg | Andromeda Galaxy in infrared | false-color | Infrared light (24 microns) | Spitzer Space Telescope (MIPS)
+M32 | M32 Francione inverted.jpg | Dwarf galaxy M32 | photograph | Colour processing not stated at source | Not stated at source
+M33 | VST snaps a very detailed view of the Triangulum Galaxy.jpg | Triangulum Galaxy | photograph | Green (g), red (r) and hydrogen-alpha filter images | ESO VLT Survey Telescope
+M33 | Messier33 - HST - Heic1901a.jpg | Triangulum Galaxy mosaic | photograph | Colour processing not stated at source | Hubble Space Telescope (ACS)
+M34 | M34 Mazur.jpg | Open cluster M34 | photograph | Colour processing not stated at source | Not stated at source
+M35 | M35 and NGC 2158.png | Open cluster M35 with NGC 2158 | photograph | Broadband filter and colour camera | Celestron RASA (amateur telescope)
+M36 | M36-pinwheel-cluster.png | Pinwheel Cluster | photograph | Colour camera image | Celestron RASA (amateur telescope)
+M37 | M37 Star Cluster.png | Open cluster M37 | photograph | Broadband filter and colour camera | Celestron RASA (amateur telescope)
+M38 | M38, NGC 1912 (noao-m38).jpg | Open cluster M38 | photograph | Approximately true colour from blue, green (V) and red filter images | Burrell Schmidt telescope, Kitt Peak
+M39 | M39-Star-Cluster.png | Open cluster M39 | photograph | Colour camera image | Celestron RASA (amateur telescope)
+M40 | M40 (Winnecke 4) (noao-m40).jpg | Double star M40 | photograph | Colour processing not stated at source | Not stated at source
+M41 | M41-Open-Cluster-of-Stars.png | Open cluster M41 | photograph | Broadband filter and colour camera | Celestron RASA (amateur telescope)
+M42 | Orion Nebula - Hubble 2006 mosaic 18000.jpg | Orion Nebula mosaic | photograph | Optical filter images combined, including blue, green (V) and hydrogen-alpha | Hubble Space Telescope (ACS)
+M42 | Messier 42 - The Great Orion Nebula - Flickr - castro.pic.jpg | Orion Nebula through an 80 mm refractor | photograph | DSLR colour (RGB) with added hydrogen-alpha data | Skywatcher ED80 80 mm refractors (amateur)
+M43 | M43 HST.jpg | De Mairan's Nebula | photograph | Colour processing not stated at source | Hubble Space Telescope
+M44 | M44-Star-Cluster.png | Beehive Cluster | photograph | Broadband filter and colour camera | Celestron RASA (amateur telescope)
+M44 | M44 47x300s-10°C O30 G0 PM RGB 03032022.jpg | Beehive Cluster through an 800 mm Newtonian | photograph | Colour processing not stated at source | Lacerta Newtonian telescope, f/4, 800 mm focal length (amateur)
+M45 | Pleiades large.jpg | Pleiades | photograph | Colour processing not stated at source | Palomar Observatory (telescope not stated at source)
+M45 | Pleiades - February 2022 (51908673789).png | Pleiades through a telephoto lens | photograph | Luminance camera plus colour (RGB) camera | Tamron 150-600 mm lens with ZWO cameras (amateur)
+M46 | M46-star-cluster.png | Open cluster M46 with planetary nebula NGC 2438 | photograph | Broadband filter and colour camera | Celestron RASA (amateur telescope)
+M47 | M47-Star-Cluster.png | Open cluster M47 | photograph | Broadband filter and colour camera | Celestron RASA (amateur telescope)
+M48 | M48 Mazur.jpg | Open cluster M48 | photograph | Colour processing not stated at source | Not stated at source
+M49 | Messier 49-Rubin Observatory.png | Elliptical galaxy M49 | photograph | Colour processing not stated at source | Vera C. Rubin Observatory
+M50 | M50 Open Star Cluster.png | Open cluster M50 | photograph | Broadband filter and colour camera | Celestron RASA (amateur telescope)
+M51 | Messier51 sRGB.jpg | Whirlpool Galaxy | photograph | Colour processing not stated at source | Not stated at source
+M51 | M51 (MIRI image) (potm2308c).jpg | Whirlpool Galaxy in mid-infrared | false-color | Mid-infrared light mapped to visible colours | James Webb Space Telescope (MIRI)
+M52 | Messier 52 M52 NGC 7654 Cassiopeia, with a Meade ACF 8 in 0.7x (51686750656).jpg | Open cluster M52 | photograph | Modified DSLR with a light-pollution (CLS-CCD) filter | Meade 8-inch ACF telescope (amateur) |  | 0,0,1,0.93
+M53 | Messier53 - SDSS DR14 (panorama).jpg | Globular cluster M53 | photograph | Sloan Digital Sky Survey colour image | Sloan Digital Sky Survey telescope
+M54 | Messier 54 HST.jpg | Globular cluster M54 | false-color | Yellow-orange light shown as blue, near-infrared light as red | Hubble Space Telescope (ACS)
+M55 | Messier 55 VISTA.jpg | Globular cluster M55 in infrared | false-color | Infrared light mapped to visible colours | ESO VISTA survey telescope
+M56 | Messier 56 Hubble WikiSky.jpg | Globular cluster M56 | photograph | Colour processing not stated at source | Hubble Space Telescope
+M57 | Webb captures detailed beauty of Ring Nebula (NIRCam image) (weic2320b).jpg | Ring Nebula in near-infrared | false-color | Near-infrared light mapped to visible colours | James Webb Space Telescope (NIRCam)
+M57 | The Ring Nebula M57 Goran Nilsson & The Liverpool Telescope.jpg | Ring Nebula with its faint outer shells | photograph | Visible-light colour with extra hydrogen-alpha data blended in (HaRGB) | Liverpool Telescope (2 m)
+M58 | M58s (visible).jpg | Barred spiral galaxy M58 | photograph | Luminance, red, green and blue filter exposures (LRGB) | 32-inch Schulman Telescope, Mount Lemmon SkyCenter
+M59 | Messier59 - HST - Potw1921a.jpg | Elliptical galaxy M59 | photograph | Optical g, V and i filter images combined | Hubble Space Telescope (ACS)
+M60 | Arp116 Hubble.jpg | Elliptical galaxy M60 with spiral NGC 4647 | photograph | Colour processing not stated at source | Hubble Space Telescope
+M61 | A hungry starburst galaxy.jpg | Core of spiral galaxy M61 | photograph | Colour processing not stated at source | Hubble Space Telescope (ACS)
+M62 | Messier62 - HST - Potw1915a.jpg | Globular cluster M62 | false-color | Ultraviolet and visible light combined | Hubble Space Telescope (ACS)
+M63 | A galactic sunflower.jpg | Sunflower Galaxy | photograph | Colour processing not stated at source | Hubble Space Telescope
+M63 | M63 Sunflower Galaxy.png | Sunflower Galaxy from the ground | photograph | Colour processing not stated at source | Not stated at source
+M64 | NGC 4826 - HST.png | Black Eye Galaxy | photograph | Broadband filters (F814W, F555W, F438W) as red, green, blue, plus hydrogen-alpha in red | Hubble Space Telescope (WFC3 and WFPC2)
+M64 | M64 Blackeye Galaxy from the Mount Lemmon SkyCenter Schulman Telescope courtesy Adam Block.jpg | Black Eye Galaxy from the ground | photograph | Colour processing not stated at source | 0.8 m Schulman Telescope, Mount Lemmon SkyCenter
+M65 | Messier 65 through the years.jpg | Spiral galaxy M65 | photograph | Colour processing not stated at source | Hubble Space Telescope
+M66 | Phot-33c-03-fullres.jpg | Spiral galaxy M66 | photograph | Colour processing not stated at source | ESO Very Large Telescope (FORS1 and FORS2)
+M67 | M67-Star-Cluster.png | Open cluster M67 | photograph | Broadband filter and colour camera | Celestron RASA (amateur telescope)
+M68 | Messier 68 Hubble WikiSky.jpg | Globular cluster M68 | photograph | Colour processing not stated at source | Hubble Space Telescope
+M69 | Cosmic riches.jpg | Globular cluster M69 | false-color | Visible and near-infrared light combined | Hubble Space Telescope (ACS)
+M70 | Messier70-HST-Potw1215a.jpg | Globular cluster M70 | false-color | Optical and near-infrared (814 nm) filter images combined | Hubble Space Telescope (ACS)
+M71 | Messier 71, an Unusual Globular Cluster.jpg | Globular cluster M71 | false-color | Yellow (F606W) light shown as blue, combined with near-infrared (F814W) | Hubble Space Telescope (ACS)
+M72 | M72 Hubble WikiSky.jpg | Globular cluster M72 | photograph | Colour processing not stated at source | Hubble Space Telescope
+M73 | M73, NGC 6994 (noao-m73).jpg | Asterism M73 | photograph | Colour processing not stated at source | Kitt Peak 0.9-meter telescope
+M74 | PESSTO Snaps Supernova in Messier 74.jpg | Spiral galaxy M74 with supernova SN 2013ej | photograph | Colour processing not stated at source | ESO New Technology Telescope
+M75 | Crowded cluster Messier 75.jpg | Globular cluster M75 | photograph | Colour processing not stated at source | Hubble Space Telescope
+M76 | Little Dumbbell Nebula M76 by Goran Nilsson, Wim van Berlo & Liverpool Telescope.jpg | Little Dumbbell Nebula | photograph | Visible-light colour with extra hydrogen-alpha data blended in (HaRGB) | Liverpool Telescope (2 m)
+M77 | Messier 77 spiral galaxy by HST.jpg | Spiral galaxy M77 | photograph | Colour processing not stated at source | Hubble Space Telescope
+M78 | Messier 78.jpg | Reflection nebula M78 | photograph | Blue, yellow/green and red filters plus a hydrogen filter | MPG/ESO 2.2-metre telescope (Wide Field Imager)
+M79 | A snowstorm of stars.jpg | Globular cluster M79 | photograph | Colour processing not stated at source | Hubble Space Telescope
+M80 | Messier 80 Cluster.png | Globular cluster M80 | photograph | Broadband filter and colour camera | Celestron RASA (amateur telescope)
+M81 | Messier 81 HST.jpg | Bode's Galaxy | photograph | Colour processing not stated at source | Hubble Space Telescope
+M81 | Bode and Cigar galaxies.jpg | Bode's Galaxy and the Cigar Galaxy together | photograph | Colour camera with a light-pollution filter | Orion 8-inch f/3.9 astrograph (amateur)
+M82 | M82 HST ACS 2006-14-a-large web.jpg | Cigar Galaxy | false-color | Four filters: visible and infrared starlight plus glowing hydrogen | Hubble Space Telescope (ACS)
+M82 | M82 Chandra HST Spitzer.jpg | Cigar Galaxy in X-ray, visible and infrared light | false-color | X-ray shown blue, infrared red, hydrogen emission orange, bluest visible light yellow-green | Chandra X-ray Observatory, Hubble Space Telescope and Spitzer Space Telescope
+M83 | The Outskirts of the Southern Pinwheel Galaxy (noirlab2429a).jpg | Southern Pinwheel Galaxy | photograph | Colour processing not stated at source | Víctor M. Blanco 4-meter Telescope (Dark Energy Camera)
+M83 | M83 - Southern Pinwheel.jpg | Southern Pinwheel Galaxy close-up | photograph | Blue, green (V) and red filters in visible light | MPG/ESO 2.2-metre telescope (Wide Field Imager)
+M84 | A fascinating core.jpg | Elliptical galaxy M84 | photograph | Colour processing not stated at source | Hubble Space Telescope
+M85 | Messier85 - HST - Potw1905a.jpg | Lenticular galaxy M85 | false-color | Infrared, visible and ultraviolet light combined | Hubble Space Telescope (WFC3)
+M86 | Beacon of Light Messier 86.jpg | Galaxy M86 | photograph | Colour processing not stated at source | Hubble Space Telescope
+M87 | Messier 87 Hubble WikiSky.jpg | Giant elliptical galaxy M87 and its jet | false-color | Composite of visible and infrared observations | Hubble Space Telescope
+M87 | M87 jet.jpg | The jet of M87 | photograph | Composite of Hubble observations; colour processing not stated at source | Hubble Space Telescope (WFPC2)
+M87 | Black hole - Messier 87 crop max res.jpg | Shadow of the black hole in M87 | false-color | Radio waves shown in false colour | Event Horizon Telescope
+M88 | M88 2022 revision.jpg | Spiral galaxy M88 | photograph | Colour processing not stated at source | Mount Lemmon SkyCenter (telescope not stated at source)
+M89 | Messier89 - HST - Potw1902a.tif | Elliptical galaxy M89 | photograph | Optical V (555 nm) and I (814 nm) filter images | Hubble Space Telescope (WFPC2)
+M90 | Messier 90 - HST.png | Spiral galaxy M90 | photograph | Broadband filters: F814W as red, F555W as green, F438W+F336W as blue | Hubble Space Telescope (WFC3)
+M91 | M91 wfc3 4 crop v2 final.jpg | Centre of barred spiral galaxy M91 | photograph | Colour processing not stated at source | Hubble Space Telescope (WFC3)
+M92 | M92 Hubble WikiSky.jpg | Globular cluster M92 | photograph | Colour processing not stated at source | Hubble Space Telescope
+M93 | M93 Eguivar.jpg | Open cluster M93 | photograph | Colour processing not stated at source | Not stated at source
+M94 | Messier 94.jpg | Spiral galaxy M94 | photograph | Colour processing not stated at source | Blackbird Observatory (telescope not stated at source)
+M95 | The VLT goes lion hunting.jpg | Barred spiral galaxy M95 | photograph | Colour processing not stated at source | ESO Very Large Telescope
+M96 | Messier 96 as Seen with DESI Legacy Survey (noirlab2620a).jpg | Spiral galaxy M96 | photograph | Colour processing not stated at source | Víctor M. Blanco 4-meter Telescope (Dark Energy Camera)
+M97 | The Owl Nebula M97 Goran Nilsson & The Liverpool Telescope.jpg | Owl Nebula | photograph | Visible-light colour with extra hydrogen-alpha data blended in (HaRGB) | Liverpool Telescope (2 m)
+M97 | M97 3h59m 121923 FINAL.jpg | Owl Nebula with an amateur telescope | photograph | Colour camera image | Sky-Watcher Esprit 120ED refractor (amateur)
+M98 | Messier 98.jpg | Spiral galaxy M98 | photograph | Colour processing not stated at source | ESO New Technology Telescope
+M99 | M99s crop.jpg | Spiral galaxy M99 | photograph | Colour processing not stated at source | Mount Lemmon SkyCenter (telescope not stated at source)
+M100 | Messier 100 — Grand Design Splendour.jpg | Spiral galaxy M100 | photograph | Red, green (V) and blue filters in visible light | ESO Very Large Telescope (FORS)
+M101 | M101 hires STScI-PRC2006-10a.jpg | Pinwheel Galaxy | photograph | Colour processing not stated at source | Hubble Space Telescope
+M101 | NASA-SpiralGalaxyM101-20140505.jpg | Pinwheel Galaxy in X-ray, ultraviolet, visible and infrared light | false-color | X-ray, ultraviolet, visible and infrared data combined | Chandra, GALEX, Spitzer and ground-based optical data
+M102 | M102 PS.jpg | Spindle Galaxy (M102, NGC 5866) | photograph | Colour processing not stated at source | Not stated at source
+M103 | M103 Mazur.jpg | Open cluster M103 | photograph | Colour processing not stated at source | Not stated at source
+M104 | Sombrero Galaxy (heic2506a).jpg | Sombrero Galaxy | photograph | Colour processing not stated at source | Hubble Space Telescope
+M104 | Sombrero Galaxy (MIRI Image) (2024-137).png | Sombrero Galaxy in mid-infrared | false-color | Mid-infrared light mapped to visible colours | James Webb Space Telescope (MIRI)
+M105 | Messier105 - HST - Potw1901a.jpg | Elliptical galaxy M105 | photograph | Optical g (475 nm) and z (850 nm) filter images | Hubble Space Telescope (ACS)
+M106 | Messier 106 visible and infrared composite.jpg | Spiral galaxy M106 | false-color | Visible and infrared composite (per file title); Hubble data plus amateur telescope data | Hubble Space Telescope (ACS, WFC3, WFPC2) with 12.5-inch and 20-inch amateur telescopes
+M107 | Messier 107 Hubble WikiSky.jpg | Globular cluster M107 | photograph | Colour processing not stated at source | Hubble Space Telescope
+M108 | Messier108 - SDSS DR 14 (panorama).jpg | Spiral galaxy M108 | photograph | Sloan Digital Sky Survey colour image | Sloan Digital Sky Survey telescope
+M109 | M109 (noao-m109hatfield).jpg | Barred spiral galaxy M109 | photograph | Colour processing not stated at source | Kitt Peak National Observatory (telescope not stated at source)
+M110 | Not So Dead After All (48763200193).jpg | Dwarf elliptical galaxy M110 | photograph | Colour processing not stated at source | Hubble Space Telescope
+NGC869 | The Double Cluster in Perseus.jpg | Double Cluster | photograph | Colour processing not stated at source | Not stated at source
+NGC884 | =NGC869
+NGC7000 | NGC 7000 + IC 5070.jpg | North America and Pelican nebulae | photograph | Colour processing not stated at source | Tair-3S lens with Canon 250 mm f/2.2, as stated at source
+NGC6960 | Veil Nebula - NGC6960.jpg | Western Veil Nebula | false-color | Red, green and blue filters enhanced with narrowband hydrogen (as red) and oxygen (as teal) | Not stated at source
+NGC6992 | NGC 6992 (50667967031).jpg | Eastern Veil Nebula | photograph | Colour processing not stated at source | Not stated at source
+NGC7293 | NGC7293 (2004).jpg | Helix Nebula | false-color | Narrowband: oxygen-III and hydrogen-alpha filters | Hubble Space Telescope (ACS) and CTIO 4 m telescope (Mosaic II)
+NGC2237 | SHO Final with copyright.jpg | Rosette Nebula in narrowband | false-color | Narrowband "Hubble palette" | Not stated at source
+NGC2264 | NGC 2264 by ESO.jpg | Christmas Tree Cluster and Cone Nebula | photograph | Blue, green (V) and red filters plus hydrogen-alpha | MPG/ESO 2.2-metre telescope (Wide Field Imager)
+NGC2024 | Flame-Nebula.jpg | Flame Nebula | photograph | Visible light (broadband) | Celestron RASA (amateur telescope)
+IC434 | Nebulosa testa di cavallo con SPECULOOS.jpg | Horsehead Nebula | photograph | Colour processing not stated at source | Callisto telescope (1 m), SPECULOOS Southern Observatory
+NGC1499 | NCG1499CalNeb.jpg | California Nebula in narrowband | false-color | Narrowband filters | Not stated at source
+IC1805 | Heart Nebula (2020-08-11).jpg | Heart Nebula | false-color | Narrowband: hydrogen-alpha, oxygen-III and sulphur-II filters | Stellarvue SV70T refractor (amateur)
+IC1848 | Celestial Valentine.jpg | Soul Nebula (W5) in infrared | false-color | Infrared light mapped to visible colours | Spitzer Space Telescope
+NGC281 | PacMan Nebula, NGC 281.jpg | Pacman Nebula | false-color | Narrowband: hydrogen-alpha, oxygen and sulphur (Hubble palette) | Explore Scientific 127 mm ED refractor (amateur)
+NGC457 | BGC 457Cluster.png | Owl (E.T.) Cluster | photograph | Broadband filter and colour camera | Celestron RASA (amateur telescope)
+NGC6543 | Looking at the Cat’s Eye Nebula with Hubble (potm2602b).jpg | Cat's Eye Nebula | photograph | Colour processing not stated at source | Hubble Space Telescope (ACS High Resolution Channel)
+NGC2392 | Lion Nebula roars to life for Webb ESA524574.jpg | NGC 2392 in infrared | false-color | Infrared light mapped to visible colours | James Webb Space Telescope
+NGC3242 | NGC 3242 "Ghost of Jupiter".png | Ghost of Jupiter | false-color | Narrowband filters (658 nm, 656 nm, 502 nm and others) | Hubble Space Telescope (WFPC2)
+NGC7009 | MUSE image of the Saturn Nebula.jpg | Saturn Nebula | false-color | Spectrograph data (emission lines) mapped to colours | ESO Very Large Telescope (MUSE)
+NGC7662 | NGC 7662 "Blue Snowball".jpg | Blue Snowball Nebula | false-color | Narrowband 658 nm as red, broadband 555 nm as green, narrowband 502 nm as blue | Hubble Space Telescope (WFPC2)
+NGC891 | NGC891HunterWilson.jpg | Edge-on galaxy NGC 891 | photograph | Colour processing not stated at source | Not stated at source
+NGC4565 | Needle Galaxy 4565.jpeg | Needle Galaxy | photograph | Colour processing not stated at source | Not stated at source
+NGC4631 | Whale-Galaxy-2026.png | Whale Galaxy | photograph | Broadband filter and colour camera | Celestron RASA (amateur telescope)
+NGC253 | NGC 253 - Sculptor.png | Sculptor Galaxy | photograph | Colour camera image | Celestron RASA (amateur telescope)
+NGC5128 | ESO Centaurus A LABOCA.jpg | Centaurus A with its jets and lobes | false-color | Visible light with submillimetre (orange) and X-ray data added | MPG/ESO 2.2-metre telescope (WFI), APEX (LABOCA) and Chandra X-ray Observatory
+NGC5139 | Omega Centauri Stars.png | Omega Centauri | photograph | Colour camera image | Celestron RASA (amateur telescope)
+NGC104 | Heic1510a.tif | 47 Tucanae | photograph | Optical B (475 nm), V (606 nm) and I (814 nm) filter images | Hubble Space Telescope (ACS)
+NGC4755 | A Snapshot of the Jewel Box cluster with the ESO VLT.jpg | Jewel Box cluster | photograph | Short exposures through blue, yellow/green and other filters | ESO Very Large Telescope (FORS1)
+NGC3372 | Carina Nebula by Harel Boren (151851961, modified).jpg | Carina Nebula | photograph | Luminance, red, green and blue filter exposures | Officina Stellare RH 200 telescope (amateur)
+NGC2070 | NGC 2070 ESO.jpg | Tarantula Nebula | photograph | Colour processing not stated at source | Not stated at source
+LMC | Cloudy with a Chance of Star Formation (iotw2547a).jpg | Large Magellanic Cloud | photograph | Commercial camera photo | Telephoto lens on a commercial camera
+SMC | Small Magellanic Cloud (Digitized Sky Survey 2).jpg | Small Magellanic Cloud | photograph | Two-colour composite of Digitized Sky Survey 2 images | Digitized Sky Survey 2
+NGC1365 | Portrait of the Great Barred Spiral.jpg | Great Barred Spiral Galaxy | photograph | Colour processing not stated at source | Víctor M. Blanco 4-meter Telescope (Dark Energy Camera)
+NGC6946 | Fireworks Galaxy.jpg | Fireworks Galaxy | photograph | Colour processing not stated at source | 10-inch Newtonian telescope (amateur)
+NGC7331 | NGC 7331 Acquired with the Schulman Telescope at the Mount Lemmon SkyCenter.jpg | Spiral galaxy NGC 7331 | photograph | Colour processing not stated at source | Schulman Telescope, Mount Lemmon SkyCenter
+NGC2403 | NGC 2403 - A Galaxy of Birth and Death (iotw2221a).jpg | Spiral galaxy NGC 2403 | photograph | Colour processing not stated at source | Nicholas U. Mayall 4-meter Telescope (Mosaic camera), Kitt Peak
+NGC6752 | NGC 6752 Hubble WikiSky.jpg | Globular cluster NGC 6752 | photograph | Colour processing not stated at source | Hubble Space Telescope
+NGC3532 | Eso1439a.jpg | Wishing Well Cluster | photograph | Filters include blue, green (V) and hydrogen-alpha | MPG/ESO 2.2-metre telescope
+NGC6744 | Wide Field Imager view of a Milky Way look-alike NGC 6744.jpg | Spiral galaxy NGC 6744 | photograph | Blue, yellow-green and red filters plus hydrogen light | MPG/ESO 2.2-metre telescope (Wide Field Imager)
+Betelgeuse | Eso2003c.jpg | Betelgeuse before and during its 2019–20 dimming | photograph | Colour processing not stated at source | ESO Very Large Telescope (SPHERE)
+Betelgeuse | ESO-Betelgeuse.jpg | Betelgeuse resolved with adaptive optics | false-color | Near-infrared light mapped to visible colours | ESO Very Large Telescope (NACO)
+Betelgeuse | Betelgeuse (star).jpg | Betelgeuse and its orange colour | photograph | Colour processing not stated at source | Steward Observatory (telescope not stated at source)
+Sirius | Sirius A and B Hubble photo.jpg | Sirius A with its white-dwarf companion Sirius B | photograph | Colour processing not stated at source | Hubble Space Telescope (WFPC2)
+Albireo | Albireo Killarney Provincial Park Observatory.jpg | Albireo, a gold and blue double star | photograph | Colour processing not stated at source | 0.4 m telescope, Killarney Provincial Park Observatory
+Mizar | Mizar and Alcor.jpg | Mizar and Alcor | photograph | Colour processing not stated at source | Not stated at source
+Polaris | Polaris star and companion.jpg | Polaris A and its companion Polaris B | photograph | Colour processing not stated at source | 2700 mm telescope, as stated at source
+Antares | VLTI reconstructed view of the surface of Antares.jpg | Reconstructed surface of Antares | false-color | Image reconstructed from interferometer data | ESO Very Large Telescope Interferometer
+Vega | Debris Disk Around Vega.jpg | Dust disc around Vega in infrared | false-color | Infrared light (24 and 70 microns) mapped to visible colours | Spitzer Space Telescope
+Fomalhaut | Fomalhaut B entire-Hubble Telescope.jpg | Fomalhaut's debris ring from Hubble | photograph | Colour processing not stated at source | Hubble Space Telescope
+Mira | Mira the star-by Nasa alt crop.jpg | Mira and its tail in ultraviolet | false-color | Ultraviolet light mapped to visible colours | GALEX

@@ -1,0 +1,706 @@
+[
+  {
+    "month": 1,
+    "title": "January: Orion at his best",
+    "signpost": "orions-belt",
+    "intro": [
+      "January evenings belong to [[con:Ori|Orion]]. Face south-southeast and look halfway up the sky for three evenly spaced stars in a short straight row: [[asterism:orions-belt|Orion's Belt]]. Orange [[star:Betelgeuse|Betelgeuse]] marks a shoulder above it and blue-white [[star:Rigel|Rigel]] a foot below. This is the brightest region of the whole sky, and all of it survives city lights.",
+      "Use the Belt as a pointer. Follow it up and to the right to orange [[star:Aldebaran|Aldebaran]] and the V of [[con:Tau|Taurus]], and on to the little cluster of [[dso:M45|the Pleiades]]. Follow it down and to the left to [[star:Sirius|Sirius]], the brightest star of the night, still low in the southeast. Nearly overhead shines yellow [[star:Capella|Capella]] in [[con:Aur|Auriga]], and to the east the twin stars [[star:Castor|Castor]] and [[star:Pollux|Pollux]] stand one above the other.",
+      "Turn around to the north and the W of [[con:Cas|Cassiopeia]] is high in the northwest, with [[con:Per|Perseus]] between it and Capella, while the Big Dipper stands on its handle low in the northeast."
+    ],
+    "featured": [
+      "Ori",
+      "Tau",
+      "Aur",
+      "Gem",
+      "Per",
+      "CMi",
+      "Lep",
+      "Cas"
+    ],
+    "stars": [
+      "star:Betelgeuse",
+      "star:Rigel",
+      "star:Aldebaran",
+      "star:Capella",
+      "star:Sirius",
+      "star:Procyon"
+    ],
+    "objects": [
+      {
+        "ref": "dso:M42",
+        "equip": "binoculars",
+        "note": "The Orion Nebula, the misty middle of Orion's Sword: a cloud where stars are forming."
+      },
+      {
+        "ref": "dso:M45",
+        "equip": "naked-eye",
+        "note": "The Pleiades, a tiny dipper of blue-white stars; glorious in binoculars."
+      },
+      {
+        "ref": "dso:C41",
+        "equip": "naked-eye",
+        "note": "The Hyades, the V-shaped face of the Bull and the nearest open cluster."
+      },
+      {
+        "ref": "dso:M35",
+        "equip": "binoculars",
+        "note": "A rich open cluster at the foot of Gemini; a dim round patch in binoculars from a dark site."
+      },
+      {
+        "ref": "dso:C14",
+        "equip": "binoculars",
+        "note": "The Double Cluster between Perseus and Cassiopeia, two knots of stars side by side."
+      }
+    ],
+    "southernNote": "From the southern hemisphere Orion stands high in the north and upside down, with Sirius nearly overhead and Canopus high in the south."
+  },
+  {
+    "month": 2,
+    "title": "February: the Winter Hexagon",
+    "signpost": "winter-hexagon",
+    "intro": [
+      "In February the brilliant winter stars stand due south as darkness falls. Start at [[con:Ori|Orion]] and trace the [[asterism:winter-hexagon|Winter Hexagon]] around him: from [[star:Rigel|Rigel]] down to [[star:Sirius|Sirius]], up to [[star:Procyon|Procyon]], on to [[star:Pollux|Pollux]] and [[star:Castor|Castor]], over the top through [[star:Capella|Capella]] almost overhead, and back down past [[star:Aldebaran|Aldebaran]]. Orange Betelgeuse sits inside the ring.",
+      "Sirius is now at its highest, sparkling with flashes of color because we see it through so much air. It leads [[con:CMa|Canis Major]], the big dog at Orion's heel; [[con:Lep|Lepus]] the hare crouches under Orion's feet, and the faint unicorn [[con:Mon|Monoceros]] fills the space between Sirius and Procyon, where the dim winter Milky Way runs.",
+      "In the east, the Sickle of Leo is rising, a first hint of spring, and the Big Dipper is climbing in the northeast."
+    ],
+    "featured": [
+      "Ori",
+      "CMa",
+      "CMi",
+      "Gem",
+      "Aur",
+      "Tau",
+      "Mon",
+      "Lep"
+    ],
+    "stars": [
+      "star:Sirius",
+      "star:Procyon",
+      "star:Castor",
+      "star:Pollux",
+      "star:Capella",
+      "star:Adhara"
+    ],
+    "objects": [
+      {
+        "ref": "dso:M42",
+        "equip": "binoculars",
+        "note": "The Orion Nebula is still perfectly placed in the early evening."
+      },
+      {
+        "ref": "dso:M41",
+        "equip": "binoculars",
+        "note": "An open cluster four degrees straight below Sirius, about the width of the full Moon."
+      },
+      {
+        "ref": "dso:M35",
+        "equip": "binoculars",
+        "note": "Open cluster beside the feet of Gemini, now very high."
+      },
+      {
+        "ref": "dso:M37",
+        "equip": "small-telescope",
+        "note": "The richest of the three Messier clusters in Auriga, a fine dusting of faint stars."
+      },
+      {
+        "ref": "dso:M44",
+        "equip": "binoculars",
+        "note": "The Beehive cluster in Cancer, climbing in the east between Pollux and Regulus."
+      }
+    ],
+    "southernNote": "Southern observers have Sirius and Canopus high overhead and the Southern Cross rising in the southeast in the evening."
+  },
+  {
+    "month": 3,
+    "title": "March: winter west, spring east",
+    "signpost": "winter-hexagon",
+    "intro": [
+      "March is a month of handover. The [[asterism:winter-hexagon|Winter Hexagon]] still blazes, but it has shifted into the southwest, and Orion is leaning over toward the western horizon. Catch him early in the evening.",
+      "High in the south are the twins [[star:Castor|Castor]] and [[star:Pollux|Pollux]] of [[con:Gem|Gemini]], with [[star:Procyon|Procyon]] below them. East of the twins is a dark gap, the faint constellation [[con:Cnc|Cancer]], and then [[con:Leo|Leo]]: look for a backward question mark of stars, [[asterism:sickle-of-leo|the Sickle]], with bright [[star:Regulus|Regulus]] at its base. The Sickle is the lion's head and mane.",
+      "In the northeast the [[asterism:big-dipper|Big Dipper]] is standing high on its handle. The faint stars of [[con:Lyn|Lynx]] and [[con:LMi|Leo Minor]] fill the space between the Dipper and the twins, a region that really needs a dark sky."
+    ],
+    "featured": [
+      "Gem",
+      "Cnc",
+      "CMi",
+      "Leo",
+      "UMa",
+      "Lyn",
+      "LMi",
+      "Aur"
+    ],
+    "stars": [
+      "star:Castor",
+      "star:Pollux",
+      "star:Procyon",
+      "star:Regulus",
+      "star:Algieba",
+      "star:Dubhe"
+    ],
+    "objects": [
+      {
+        "ref": "dso:M44",
+        "equip": "binoculars",
+        "note": "The Beehive, a swarm of stars in the middle of Cancer, is at its highest."
+      },
+      {
+        "ref": "dso:M67",
+        "equip": "small-telescope",
+        "note": "An old, compact open cluster in southern Cancer."
+      },
+      {
+        "ref": "dso:M35",
+        "equip": "binoculars",
+        "note": "Open cluster at the feet of Gemini, still high in the west."
+      },
+      {
+        "ref": "dso:M81",
+        "equip": "small-telescope",
+        "note": "Bright spiral galaxy above the Dipper's bowl, with M82 beside it; needs a dark sky."
+      },
+      {
+        "ref": "star:Castor",
+        "equip": "small-telescope",
+        "note": "A close double star: a telescope at 100× splits it into two white stars."
+      }
+    ],
+    "southernNote": "From the south, Leo appears upside down in the northeast while Canopus, the Southern Cross and the rich Milky Way of Carina ride high."
+  },
+  {
+    "month": 4,
+    "title": "April: the Lion and the Great Bear",
+    "signpost": "big-dipper",
+    "intro": [
+      "On April evenings the [[asterism:big-dipper|Big Dipper]] is almost overhead, upside down, as if pouring out its bowl. It is the key to the spring sky. The two stars at the end of the bowl point north to [[star:Polaris|Polaris]]; go the other way, as if the bowl leaked, and the drips fall on the back of [[con:Leo|Leo]].",
+      "Leo stands high in the south: [[asterism:sickle-of-leo|the Sickle]] with [[star:Regulus|Regulus]] in front, and a triangle of stars ending in [[star:Denebola|Denebola]] for the hindquarters and tail. Follow the curve of the Dipper's handle outward to find orange [[star:Arcturus|Arcturus]] rising in the east.",
+      "Below Leo sprawls [[con:Hya|Hydra]], the longest constellation; its lone bright star, [[star:Alphard|Alphard]], sits in an empty stretch of the south. Between Leo's tail and Arcturus, away from the Milky Way, lies the realm of galaxies in [[con:Com|Coma Berenices]] and [[con:CVn|Canes Venatici]]. In the west, the last winter stars are setting."
+    ],
+    "featured": [
+      "Leo",
+      "UMa",
+      "LMi",
+      "Cnc",
+      "Sex",
+      "CVn",
+      "Com",
+      "Hya",
+      "Crt"
+    ],
+    "stars": [
+      "star:Regulus",
+      "star:Denebola",
+      "star:Alphard",
+      "star:Dubhe",
+      "star:Merak",
+      "star:Mizar",
+      "star:Cor Caroli"
+    ],
+    "objects": [
+      {
+        "ref": "star:Mizar",
+        "equip": "naked-eye",
+        "note": "The middle star of the Dipper's handle has a faint companion, Alcor; a small telescope splits Mizar itself in two."
+      },
+      {
+        "ref": "dso:M81",
+        "equip": "small-telescope",
+        "note": "Spiral galaxy near the Dipper's bowl, with the streak of M82 in the same view."
+      },
+      {
+        "ref": "dso:M51",
+        "equip": "small-telescope",
+        "note": "The Whirlpool Galaxy near the end of the Dipper's handle; a dark sky is essential."
+      },
+      {
+        "ref": "dso:Mel111",
+        "equip": "binoculars",
+        "note": "The Coma Star Cluster, a wide scatter of faint stars that is the 'hair' of Coma Berenices."
+      },
+      {
+        "ref": "dso:M44",
+        "equip": "binoculars",
+        "note": "The Beehive in Cancer, now in the southwest."
+      }
+    ],
+    "southernNote": "Southern observers see Leo low in the north, with the Southern Cross and the Pointers, Alpha and Beta Centauri, climbing high in the southeast."
+  },
+  {
+    "month": 5,
+    "title": "May: follow the arc",
+    "signpost": "spring-arc",
+    "intro": [
+      "May's sky is drawn with one sweeping line. Find the Big Dipper high in the north, follow the curve of its handle away from the bowl, and \"arc to Arcturus\": [[star:Arcturus|Arcturus]], a brilliant orange star high in the southeast. Keep going the same distance and \"speed on to Spica\", the blue-white star of [[con:Vir|Virgo]], lower in the south. That is the [[asterism:spring-arc|Spring Arc]].",
+      "Arcturus is the base of [[con:Boo|Boötes]], a kite shape stretching up toward the Dipper's handle. Just east of the kite is a neat half-circle of stars, [[con:CrB|Corona Borealis]], the Northern Crown. To the right of Spica, four stars make the lopsided box of [[con:Crv|Corvus]] the crow.",
+      "[[con:Leo|Leo]] is now heading down the western sky. Between Leo's tail and Arcturus you are looking straight out of our galaxy, toward thousands of others in [[con:Com|Coma Berenices]] and Virgo. In the northeast, [[star:Vega|Vega]] is rising: summer is on the way."
+    ],
+    "featured": [
+      "Boo",
+      "Vir",
+      "Com",
+      "CVn",
+      "UMa",
+      "Leo",
+      "CrB",
+      "Crv"
+    ],
+    "stars": [
+      "star:Arcturus",
+      "star:Spica",
+      "star:Denebola",
+      "star:Cor Caroli",
+      "star:Alkaid",
+      "star:Alphecca"
+    ],
+    "objects": [
+      {
+        "ref": "dso:M3",
+        "equip": "binoculars",
+        "note": "A globular cluster between Arcturus and Cor Caroli; a fuzzy star in binoculars."
+      },
+      {
+        "ref": "dso:Mel111",
+        "equip": "binoculars",
+        "note": "The Coma Star Cluster, a loose spray of stars best in binoculars."
+      },
+      {
+        "ref": "dso:M51",
+        "equip": "small-telescope",
+        "note": "The Whirlpool Galaxy near Alkaid, almost overhead on May evenings."
+      },
+      {
+        "ref": "dso:M104",
+        "equip": "small-telescope",
+        "note": "The Sombrero Galaxy on the Virgo–Corvus border, a small spindle of light."
+      },
+      {
+        "ref": "dso:M87",
+        "equip": "small-telescope",
+        "note": "Giant elliptical galaxy at the heart of the Virgo Cluster; needs a dark sky."
+      },
+      {
+        "ref": "star:Cor Caroli",
+        "equip": "small-telescope",
+        "note": "An easy, pretty double star under the Dipper's handle."
+      }
+    ],
+    "southernNote": "From the south, Arcturus and Spica shine in the north while the Southern Cross stands upright at its highest, with Omega Centauri nearby."
+  },
+  {
+    "month": 6,
+    "title": "June: the Herdsman and the Crown",
+    "signpost": "spring-arc",
+    "intro": [
+      "June nights are short, and it is not fully dark until late. When the stars do come out, the [[asterism:spring-arc|Spring Arc]] is at its best: from the Dipper's handle, now high in the northwest, arc to [[star:Arcturus|Arcturus]] very high in the south and speed on to [[star:Spica|Spica]] in the southwest.",
+      "East of the kite of [[con:Boo|Boötes]] comes the little half-ring of [[con:CrB|Corona Borealis]], and east of that the four-star [[asterism:keystone|Keystone]] of [[con:Her|Hercules]], climbing toward the zenith. Under the Crown, the head of the serpent [[con:Ser|Serpens]] is a small triangle of stars. Low in the south, two modest stars mark the scales of [[con:Lib|Libra]], and to their left red [[star:Antares|Antares]] is rising with the claws of Scorpius.",
+      "In the north, the Little Dipper stands straight up from [[star:Polaris|Polaris]], and the long body of [[con:Dra|Draco]] winds between the two Dippers. In the east, [[star:Vega|Vega]], [[star:Deneb|Deneb]] and [[star:Altair|Altair]] are all up: the Summer Triangle has arrived."
+    ],
+    "featured": [
+      "Boo",
+      "CrB",
+      "Her",
+      "Vir",
+      "Ser",
+      "Lib",
+      "UMi",
+      "Dra"
+    ],
+    "stars": [
+      "star:Arcturus",
+      "star:Spica",
+      "star:Alphecca",
+      "star:Kochab",
+      "star:Zubenelgenubi",
+      "star:Vega"
+    ],
+    "objects": [
+      {
+        "ref": "dso:M13",
+        "equip": "binoculars",
+        "note": "The great globular cluster on the side of the Keystone; a round fuzzy spot in binoculars."
+      },
+      {
+        "ref": "dso:M5",
+        "equip": "binoculars",
+        "note": "A fine globular cluster in the head of Serpens."
+      },
+      {
+        "ref": "dso:M3",
+        "equip": "binoculars",
+        "note": "Globular cluster between Arcturus and Cor Caroli, now high in the west."
+      },
+      {
+        "ref": "star:Zubenelgenubi",
+        "equip": "binoculars",
+        "note": "The brighter scale of Libra is a wide double star that binoculars split easily."
+      },
+      {
+        "ref": "star:Mizar",
+        "equip": "naked-eye",
+        "note": "Mizar and Alcor in the Dipper's handle, a classic naked-eye pair."
+      }
+    ],
+    "southernNote": "For southern observers this is early winter: Scorpius climbs high in the east and the Milky Way from the Cross to Sagittarius arches overhead."
+  },
+  {
+    "month": 7,
+    "title": "July: Hercules overhead, the Scorpion below",
+    "signpost": "summer-triangle",
+    "intro": [
+      "By the time the July sky is dark, three bright stars dominate the east: [[star:Vega|Vega]], highest and brightest; [[star:Deneb|Deneb]] to its lower left; and [[star:Altair|Altair]] to the lower right. They form the [[asterism:summer-triangle|Summer Triangle]], your signpost until autumn.",
+      "From Vega look west to find the [[asterism:keystone|Keystone]] of [[con:Her|Hercules]] nearly overhead, then the half-ring of [[con:CrB|Corona Borealis]], then orange [[star:Arcturus|Arcturus]] in the west. Below Hercules is the big, dim house shape of [[con:Oph|Ophiuchus]], the serpent bearer, holding [[con:Ser|Serpens]].",
+      "Now look low in the south. Red [[star:Antares|Antares]] marks the heart of Scorpius, with a row of three stars for the head to its right and the tail curling down to the horizon. Scorpius never rises high from New York, so find a spot with a clear southern view. To its left the Teapot of Sagittarius is rising, and between them is the direction of the center of the Milky Way."
+    ],
+    "featured": [
+      "Her",
+      "Lyr",
+      "CrB",
+      "Oph",
+      "Ser",
+      "Dra",
+      "Lib",
+      "Boo"
+    ],
+    "stars": [
+      "star:Vega",
+      "star:Antares",
+      "star:Arcturus",
+      "star:Rasalhague",
+      "star:Alphecca",
+      "star:Eltanin"
+    ],
+    "objects": [
+      {
+        "ref": "dso:M13",
+        "equip": "binoculars",
+        "note": "The Hercules globular cluster, almost overhead: the best in the northern sky."
+      },
+      {
+        "ref": "dso:M92",
+        "equip": "binoculars",
+        "note": "A second, smaller globular in Hercules, north of the Keystone."
+      },
+      {
+        "ref": "dso:M4",
+        "equip": "binoculars",
+        "note": "A loose globular cluster just west of Antares; needs a clear, dark southern sky."
+      },
+      {
+        "ref": "dso:M57",
+        "equip": "small-telescope",
+        "note": "The Ring Nebula between the two bottom stars of Lyra: a tiny smoke ring."
+      },
+      {
+        "ref": "star:ε Lyr",
+        "equip": "small-telescope",
+        "note": "The Double Double near Vega: binoculars show two stars, a telescope at 150× shows each is double again."
+      }
+    ],
+    "southernNote": "From the south, Scorpius passes overhead in its full glory and the center of the Milky Way is high in the sky all evening."
+  },
+  {
+    "month": 8,
+    "title": "August: the Summer Triangle and the Milky Way",
+    "signpost": "summer-triangle",
+    "intro": [
+      "In August the [[asterism:summer-triangle|Summer Triangle]] is overhead. [[star:Vega|Vega]] is almost at the zenith, [[star:Deneb|Deneb]] is to the east of it and [[star:Altair|Altair]] halfway up the southern sky. Each belongs to its own constellation: the small parallelogram of [[con:Lyr|Lyra]], the long cross of [[con:Cyg|Cygnus]] the swan flying south down the Milky Way, and [[con:Aql|Aquila]] the eagle.",
+      "Inside and around the Triangle are three small figures worth learning: the arrow [[con:Sge|Sagitta]], the faint fox [[con:Vul|Vulpecula]] above it, and to the east the neat kite of [[con:Del|Delphinus]] the dolphin. At the foot of the Northern Cross, [[star:Albireo|Albireo]] marks the swan's head.",
+      "If you can get to a dark place, this is the month for the Milky Way. It runs from Cassiopeia in the northeast, through Cygnus overhead, down past Aquila and the bright cloud of [[con:Sct|Scutum]] to the Teapot of Sagittarius low in the south, where it is widest and brightest. West of it, [[con:Oph|Ophiuchus]] and [[con:Her|Hercules]] are still high."
+    ],
+    "featured": [
+      "Lyr",
+      "Cyg",
+      "Aql",
+      "Her",
+      "Sge",
+      "Vul",
+      "Del",
+      "Sct",
+      "Oph"
+    ],
+    "stars": [
+      "star:Vega",
+      "star:Deneb",
+      "star:Altair",
+      "star:Albireo",
+      "star:Sadr",
+      "star:Rasalhague"
+    ],
+    "objects": [
+      {
+        "ref": "star:Albireo",
+        "equip": "small-telescope",
+        "note": "A showpiece double star: one gold, one blue, split at low power."
+      },
+      {
+        "ref": "dso:M57",
+        "equip": "small-telescope",
+        "note": "The Ring Nebula in Lyra, a planetary nebula, now overhead."
+      },
+      {
+        "ref": "dso:M27",
+        "equip": "binoculars",
+        "note": "The Dumbbell Nebula near Sagitta, a small gray glow in binoculars from a dark site."
+      },
+      {
+        "ref": "dso:M11",
+        "equip": "binoculars",
+        "note": "The Wild Duck Cluster in Scutum, a dense open cluster off the tail of Aquila."
+      },
+      {
+        "ref": "dso:M8",
+        "equip": "binoculars",
+        "note": "The Lagoon Nebula above the Teapot's spout; low in the south, so pick a clear horizon."
+      },
+      {
+        "ref": "dso:M22",
+        "equip": "binoculars",
+        "note": "A bright globular cluster beside the Teapot's lid."
+      }
+    ],
+    "southernNote": "Southern observers see Sagittarius and the galactic center straight overhead, with the Summer Triangle low in the north."
+  },
+  {
+    "month": 9,
+    "title": "September: the Swan flies overhead",
+    "signpost": "northern-cross",
+    "intro": [
+      "September evenings are dark early and still mild. Look straight up for the [[asterism:northern-cross|Northern Cross]]: [[star:Deneb|Deneb]] at the top, [[star:Albireo|Albireo]] at the foot, and a crossbar through [[star:Sadr|Sadr]]. This is [[con:Cyg|Cygnus]], the swan, and the three stars of the Summer Triangle are still high around it.",
+      "South of the Cross, [[star:Altair|Altair]] and [[con:Aql|Aquila]] stand high, with the little arrow [[con:Sge|Sagitta]] and the dolphin [[con:Del|Delphinus]] nearby. Farther down in the south is a large, dim triangle like a wide smile: [[con:Cap|Capricornus]], the sea-goat.",
+      "The season is turning. In the east the [[asterism:great-square|Great Square of Pegasus]] is up, standing on one corner like a baseball diamond, and in the northeast the W of Cassiopeia is climbing. Between Cassiopeia and Deneb, the house-shaped [[con:Cep|Cepheus]] is at its highest. In the west, Arcturus is setting."
+    ],
+    "featured": [
+      "Cyg",
+      "Lyr",
+      "Aql",
+      "Del",
+      "Sge",
+      "Vul",
+      "Cep",
+      "Cap",
+      "Equ"
+    ],
+    "stars": [
+      "star:Deneb",
+      "star:Albireo",
+      "star:Altair",
+      "star:Vega",
+      "star:Alderamin",
+      "star:Enif"
+    ],
+    "objects": [
+      {
+        "ref": "star:Albireo",
+        "equip": "small-telescope",
+        "note": "Gold and blue double star at the foot of the Northern Cross."
+      },
+      {
+        "ref": "dso:M27",
+        "equip": "binoculars",
+        "note": "The Dumbbell Nebula, high in the south: the easiest planetary nebula."
+      },
+      {
+        "ref": "dso:M57",
+        "equip": "small-telescope",
+        "note": "The Ring Nebula in Lyra."
+      },
+      {
+        "ref": "dso:Cr399",
+        "equip": "binoculars",
+        "note": "The Coathanger, a charming upside-down hanger of ten stars between Albireo and Sagitta."
+      },
+      {
+        "ref": "dso:M15",
+        "equip": "binoculars",
+        "note": "A compact globular cluster off the nose of Pegasus, beyond the star Enif."
+      },
+      {
+        "ref": "star:μ Cep",
+        "equip": "binoculars",
+        "note": "Herschel's Garnet Star, one of the reddest stars visible, below the base of Cepheus."
+      }
+    ],
+    "southernNote": "From the south, the Summer Triangle is low in the north while Fomalhaut and the bright star Achernar rise in the southeast."
+  },
+  {
+    "month": 10,
+    "title": "October: the Great Square rises",
+    "signpost": "great-square",
+    "intro": [
+      "October's signpost is a big, nearly empty box of four stars high in the southeast: the [[asterism:great-square|Great Square of Pegasus]]. Each side is about a fist and a half long, and none of the four stars is very bright, so let your eyes settle. It is the body of [[con:Peg|Pegasus]], the winged horse, who flies upside down with his neck and head stretching west to the star [[star:Enif|Enif]].",
+      "From the Square's top-left corner, [[star:Alpheratz|Alpheratz]], two gently curving chains of stars run northeast: [[con:And|Andromeda]]. Above her, the W of [[con:Cas|Cassiopeia]] is high in the northeast, with [[con:Cep|Cepheus]] and the small zigzag of [[con:Lac|Lacerta]] beside it. The Summer Triangle is still high in the west.",
+      "The south is a dim, watery part of the sky: [[con:Aqr|Aquarius]] and [[con:Cap|Capricornus]] have no bright stars. One star stands out all alone, low in the south: [[star:Fomalhaut|Fomalhaut]], sometimes called the lonely star of autumn. Find it by running a line down the right-hand side of the Square and continuing about four and a half fists."
+    ],
+    "featured": [
+      "Peg",
+      "And",
+      "Cyg",
+      "Cep",
+      "Lac",
+      "Aqr",
+      "Cas",
+      "Cap"
+    ],
+    "stars": [
+      "star:Alpheratz",
+      "star:Markab",
+      "star:Scheat",
+      "star:Enif",
+      "star:Fomalhaut",
+      "star:Deneb"
+    ],
+    "objects": [
+      {
+        "ref": "dso:M31",
+        "equip": "binoculars",
+        "note": "The Andromeda Galaxy, 2.5 million light-years away; naked eye from a dark site."
+      },
+      {
+        "ref": "dso:M15",
+        "equip": "binoculars",
+        "note": "Globular cluster near Enif, the nose of Pegasus."
+      },
+      {
+        "ref": "dso:M2",
+        "equip": "binoculars",
+        "note": "Globular cluster in Aquarius, a small round glow."
+      },
+      {
+        "ref": "dso:C14",
+        "equip": "binoculars",
+        "note": "The Double Cluster, rising in the northeast below Cassiopeia."
+      },
+      {
+        "ref": "star:δ Cep",
+        "equip": "naked-eye",
+        "note": "The original Cepheid variable star: it brightens and fades every 5.4 days."
+      }
+    ],
+    "southernNote": "Southern observers see Pegasus low in the north and Fomalhaut nearly overhead, with the Magellanic Clouds high in the south."
+  },
+  {
+    "month": 11,
+    "title": "November: Andromeda and the royal family",
+    "signpost": "great-square",
+    "intro": [
+      "On November evenings the [[asterism:great-square|Great Square of Pegasus]] is high in the south, and the constellations of one Greek myth surround it. From the corner star [[star:Alpheratz|Alpheratz]], the chained princess [[con:And|Andromeda]] stretches northeast, almost overhead. Her mother, [[con:Cas|Cassiopeia]], is the W high in the north; her father, [[con:Cep|Cepheus]], is beside it; and her rescuer [[con:Per|Perseus]] follows in the northeast.",
+      "Below Andromeda are three small figures: the thin triangle of [[con:Tri|Triangulum]], the short bent line of [[con:Ari|Aries]] with its bright star [[star:Hamal|Hamal]], and under the Square a faint ring of stars, the Circlet of [[con:Psc|Pisces]]. South and east of them sprawls the sea monster [[con:Cet|Cetus]], large and dim.",
+      "In the east, winter is announcing itself: the Pleiades are well up, followed by orange [[star:Aldebaran|Aldebaran]] and bright [[star:Capella|Capella]]. In the west, the Summer Triangle is sinking, with the Northern Cross soon to stand upright on the horizon."
+    ],
+    "featured": [
+      "Peg",
+      "And",
+      "Cas",
+      "Psc",
+      "Ari",
+      "Tri",
+      "Per",
+      "Cet",
+      "Cep"
+    ],
+    "stars": [
+      "star:Alpheratz",
+      "star:Mirach",
+      "star:Almach",
+      "star:Hamal",
+      "star:Schedar",
+      "star:Mirfak",
+      "star:Algol"
+    ],
+    "objects": [
+      {
+        "ref": "dso:M31",
+        "equip": "binoculars",
+        "note": "The Andromeda Galaxy, now passing nearly overhead: the farthest thing you can see without a telescope."
+      },
+      {
+        "ref": "dso:M33",
+        "equip": "binoculars",
+        "note": "The Triangulum Galaxy, large and very faint; only from a truly dark site."
+      },
+      {
+        "ref": "dso:C14",
+        "equip": "binoculars",
+        "note": "The Double Cluster between Cassiopeia and Perseus."
+      },
+      {
+        "ref": "star:Almach",
+        "equip": "small-telescope",
+        "note": "A fine gold and blue double star at the end of Andromeda's chain."
+      },
+      {
+        "ref": "star:Algol",
+        "equip": "naked-eye",
+        "note": "The Demon Star: every 2.87 days it dims noticeably for a few hours as a fainter companion eclipses it."
+      },
+      {
+        "ref": "dso:M45",
+        "equip": "naked-eye",
+        "note": "The Pleiades, climbing in the east."
+      }
+    ],
+    "southernNote": "From the south, the Great Square is low in the north, Achernar is high, and both Magellanic Clouds are well placed."
+  },
+  {
+    "month": 12,
+    "title": "December: Perseus overhead, winter rising",
+    "signpost": "cassiopeia-w",
+    "intro": [
+      "Long December nights start with the [[asterism:cassiopeia-w|W of Cassiopeia]] high in the north, tipped over into an M. From it, follow the Milky Way toward the east and you come to [[con:Per|Perseus]], almost overhead: a curved line of stars around its brightest, [[star:Mirfak|Mirfak]], with the famous variable star [[star:Algol|Algol]] to the south.",
+      "Continue down the same line and you reach brilliant [[star:Capella|Capella]] in [[con:Aur|Auriga]], then the Pleiades and the V of [[con:Tau|Taurus]] with orange [[star:Aldebaran|Aldebaran]], all high in the east. Below them Orion is clearing the horizon, lying on his side with the Belt pointing straight up.",
+      "To the west of the zenith, [[con:And|Andromeda]], [[con:Tri|Triangulum]] and [[con:Ari|Aries]] are high, and the Great Square of Pegasus is tilting down toward the west. The dim sea monster [[con:Cet|Cetus]] fills the south."
+    ],
+    "featured": [
+      "Per",
+      "And",
+      "Cas",
+      "Ari",
+      "Tri",
+      "Tau",
+      "Aur",
+      "Cet",
+      "Psc"
+    ],
+    "stars": [
+      "star:Mirfak",
+      "star:Algol",
+      "star:Capella",
+      "star:Aldebaran",
+      "star:Hamal",
+      "star:Menkar"
+    ],
+    "objects": [
+      {
+        "ref": "dso:M45",
+        "equip": "naked-eye",
+        "note": "The Pleiades, high in the east; count the stars by eye, then try binoculars."
+      },
+      {
+        "ref": "dso:C41",
+        "equip": "naked-eye",
+        "note": "The Hyades, the V of Taurus, beside Aldebaran."
+      },
+      {
+        "ref": "dso:C14",
+        "equip": "binoculars",
+        "note": "The Double Cluster, nearly overhead between Perseus and Cassiopeia."
+      },
+      {
+        "ref": "dso:M34",
+        "equip": "binoculars",
+        "note": "An open cluster in Perseus, between Algol and Almach; a small hazy patch in binoculars."
+      },
+      {
+        "ref": "dso:M31",
+        "equip": "binoculars",
+        "note": "The Andromeda Galaxy, still high in the west."
+      },
+      {
+        "ref": "star:Mira",
+        "equip": "binoculars",
+        "note": "A red giant in Cetus that swings from naked-eye visibility to invisibility over about eleven months."
+      }
+    ],
+    "southernNote": "Southern observers enjoy summer nights with Orion rising in the east, Achernar and Canopus high, and the Magellanic Clouds at their best."
+  }
+]

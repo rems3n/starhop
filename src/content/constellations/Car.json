@@ -1,0 +1,136 @@
+{
+  "id": "Car",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Nicolas-Louis de Lacaille (as a division of the ancient Greek constellation Argo Navis, catalogued by Ptolemy)",
+    "when": "1756 (divided from Argo Navis); the ship itself was known by the 3rd century BCE",
+    "history": [
+      "Carina is the hull of a ship that no longer exists as a constellation. The Greeks saw one enormous figure here, Argo Navis, the ship in which Jason and the Argonauts sailed for the Golden Fleece. Aratus described it about 275 BCE, and Ptolemy listed it in the *Almagest* about 150 CE with 45 stars, more than any other constellation. Only the back half of the ship was pictured, from the stern to the mast; the prow was said to be lost in mist or between the Clashing Rocks.",
+      "The French astronomer Nicolas-Louis de Lacaille charted the southern sky from the Cape of Good Hope in 1751–52 and found Argo too big and unwieldy to work with. In his catalog published in 1756 he divided it into three parts: the body of the ship (Carina, usually translated the Keel), the stern or poop deck ([[con:Pup|Puppis]]) and the sails ([[con:Vel|Vela]]). He gave them French names at first and Latin ones in his final catalog of 1763. Had Argo been left whole it would be the largest constellation in the sky, bigger than Hydra by more than a quarter.",
+      "Lacaille also threw out Johann Bayer's Greek letters for Argo and assigned new ones, but he used a single run of letters, alpha to omega, across the whole ship. That is why the three parts share one alphabet today. Alpha and Beta, the two brightest stars of Argo, fell in Carina, as did Epsilon; Gamma and Delta are in Vela; Zeta is in Puppis. So there is no Alpha or Beta in Puppis or Vela, and no Gamma or Delta in Carina. The nearby constellation [[con:Pyx|Pyxis]], the compass, was a separate invention of Lacaille's and was never one of the parts of Argo."
+    ]
+  },
+  "overview": "Carina is the hull of the ship Argo. It holds Canopus, the second-brightest star in the whole night sky, and some of the finest star clusters and nebulae of the southern Milky Way. None of it can be seen from Brooklyn: the entire constellation stays below the horizon all year.",
+  "howToFind": [
+    "Carina never rises from Brooklyn. Everything south of about declination −49 degrees is permanently hidden here, and the northernmost star of Carina is at about −51. [[star:Canopus|Canopus]] itself, at −52.7 degrees, can only be seen from south of about latitude 37°N. From the southern United States (Florida, the Gulf Coast, south Texas, southern Arizona) it appears low in the south on winter evenings, in January and February: find [[star:Sirius|Sirius]] and look three and a half fists almost straight below it, just above the horizon. No other star so bright is anywhere near.",
+    "The rest of the hull runs east from Canopus for nearly six fists and needs a tropical or southern-hemisphere sky. There, start from the Southern Cross ([[con:Cru|Crux]]): a little more than one fist to its west (right, when the Cross stands upright in the south) is the glowing patch of the [[dso:NGC3372|Carina Nebula]] in a rich stretch of the Milky Way. Farther west again, [[star:Avior|Avior]] and [[star:Aspidiske|Aspidiske]] join two stars of Vela to make the False Cross, a larger, fainter look-alike of the real Cross that has fooled many a navigator."
+  ],
+  "shape": "A long, shallow curve of bright stars like the bottom of a boat, running from brilliant Canopus at the western end through the False Cross to the bright Milky Way near the Southern Cross. It is about six fists long. From Brooklyn none of it is visible in any sky, city or country.",
+  "mainStars": [
+    {
+      "ref": "star:Canopus",
+      "note": "Alpha Carinae, magnitude −0.6 to −0.7 and second only to Sirius in the night sky: a white supergiant about 310 light-years away, thousands of times more luminous than the Sun. It marks the blade of the ship's steering oar. Never visible from Brooklyn."
+    },
+    {
+      "ref": "star:Miaplacidus",
+      "note": "Beta Carinae, a blue-white star of magnitude 1.7 at the southern edge of the hull, only 20 degrees from the south celestial pole. The origin of its name is unknown."
+    },
+    {
+      "ref": "star:Avior",
+      "note": "Epsilon Carinae, an orange giant of magnitude 1.9 and the bottom star of the False Cross. Its name is modern: it was coined in the late 1930s for a British air navigation almanac, because the Royal Air Force wanted every navigation star to have a name."
+    },
+    {
+      "ref": "star:Aspidiske",
+      "note": "Iota Carinae, a white supergiant of magnitude 2.2 and another corner of the False Cross."
+    },
+    {
+      "ref": "star:η Car",
+      "note": "One of the most massive and unstable stars known, buried in the Carina Nebula. In 1843 it flared up to outshine Canopus; today it hovers around the limit of naked-eye visibility. It is expected to end as a supernova."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "dso:NGC3372",
+      "equip": "naked-eye",
+      "note": "The Carina Nebula, a vast cloud of glowing gas about 8,000 light-years away and several times the apparent width of the full Moon. To the eye it is a bright knot in the Milky Way; binoculars show dark lanes dividing it, and a telescope shows the dark Keyhole beside Eta Carinae. Southern hemisphere only."
+    },
+    {
+      "ref": "dso:IC2602",
+      "equip": "naked-eye",
+      "note": "The Southern Pleiades, a bright, loose cluster around the star [[star:θ Car|Theta Carinae]], about twice the width of the full Moon. Best in binoculars. Southern hemisphere only."
+    },
+    {
+      "ref": "dso:NGC3532",
+      "equip": "naked-eye",
+      "note": "The Wishing Well Cluster, about 150 stars in an oval swarm a short hop from the Carina Nebula; many observers call it the finest open cluster in the sky. Southern hemisphere only."
+    },
+    {
+      "ref": "dso:NGC2516",
+      "equip": "naked-eye",
+      "note": "A bright open cluster of about 80 stars near the foot of the False Cross, visible to the eye as a hazy spot and beautiful in binoculars. Southern hemisphere only."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Car-voyage-of-the-argo",
+      "title": "The voyage of the Argo",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Apollonius of Rhodes", "work": "Argonautica (as reported in Star Tales)", "date": "3rd century BCE" },
+        { "author": "Apollodorus", "work": "Library 1.9.16–28", "date": "1st–2nd century CE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.37", "date": "2nd century CE" },
+        { "author": "Eratosthenes", "work": "Catasterisms (as reported in Star Tales)", "date": "3rd century BCE" }
+      ],
+      "summary": "Jason was sent by his uncle Pelias to fetch the Golden Fleece from Colchis at the far end of the Black Sea. With a crew of heroes in the ship Argo he passed the Clashing Rocks, won the fleece with the help of the king's daughter Medea, and came home. The ship was set among the stars.",
+      "retelling": [
+        "The throne of Iolcus, in Thessaly, was held by Pelias, and an oracle had told him to beware of a man wearing one sandal. One day, when Pelias was sacrificing by the sea, his nephew Jason arrived from the country with one foot bare; he had lost a sandal crossing a river. Pelias asked him what he would do with a man fated to kill him. Jason answered: send him to fetch the Golden Fleece. Pelias gave exactly that order. The fleece hung on an oak in a grove at Colchis, at the eastern end of the Black Sea, guarded by a dragon that never slept. Pelias did not expect to see his nephew again.",
+        "Jason needed a ship such as no one had built. The shipwright Argus made her, with the goddess Athena directing the work, and she was named Argo. She had fifty oars, and into her prow Athena set a beam from the sacred oak of Zeus at Dodona, a timber that could speak. The best men in Greece came to row: the twins Castor and Polydeuces, the musician Orpheus, the winged sons of the North Wind, Peleus the father of Achilles, the huntress Atalanta, and for part of the way Heracles himself.",
+        "The way out was long. On Lemnos they found an island ruled by women. In Mysia the boy Hylas was pulled into a spring by nymphs, and Heracles, searching for him, was left behind. Polydeuces boxed the brutal king Amycus and killed him. In Thrace they met the blind prophet Phineus, tormented by the Harpies, winged creatures that snatched or fouled his food; the sons of the North Wind chased them away, and in thanks Phineus told the crew how to pass the danger ahead.",
+        "That danger was the Clashing Rocks, two cliffs at the mouth of the Black Sea that slammed together on anything that came between them. Following Phineus's advice, the Argonauts released a dove. It shot through, losing only the tip of its tail. As the rocks drew back the crew rowed with everything they had, and with a goddess's help the Argo got through, losing only the ornament at the end of her stern. From then on the rocks stood still forever.",
+        "At Colchis King Aeetes promised the fleece if Jason could yoke two fire-breathing bulls with bronze hooves and sow a field with dragon's teeth. It was meant to kill him. But the king's daughter Medea, who was skilled in magic, had fallen in love with the stranger. She gave him an ointment that made him proof against fire and iron for a day, and told him that armed men would sprout from the teeth and that he should throw a stone among them so they would fight one another. Jason did all of it. Aeetes still refused to pay, so by night Medea led Jason to the grove, drugged the dragon to sleep, and they took the fleece and ran for the ship.",
+        "The road home was dark and roundabout. To slow her father's pursuit Medea killed her own brother Apsyrtus, and the speaking beam of the Argo announced that Zeus would not forgive them until the sorceress Circe had cleansed them of the murder. They sailed past the Sirens, whose song Orpheus drowned out with his own, past Scylla and Charybdis, and past the bronze giant Talos who guarded Crete, and came at last to Iolcus with the fleece. Jason later dedicated the ship to Poseidon at the Isthmus of Corinth.",
+        "And then she was raised to the sky. Eratosthenes says she is there because she was the first ship ever to cross the open sea; Hyginus says many held the same, and that Athena was credited with placing her there. Only the stern half appears, from the steering oars to the mast, a reminder, Hyginus suggests, that sailors should not lose heart when a ship is wrecked. Aratus noticed that she crosses the sky stern first, like a ship being backed into harbor. Today the old ship lies in three pieces: [[con:Car|Carina]] the hull, [[con:Pup|Puppis]] the stern and [[con:Vel|Vela]] the sails."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Argo Navis, the ship of the Argonauts",
+        "url": "http://www.ianridpath.com/startales/argo.html"
+      },
+      "characters": ["Jason", "Pelias", "Argus", "Athena", "Heracles", "Orpheus", "Castor and Polydeuces", "Phineus", "Aeetes", "Medea", "Apsyrtus"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Why did King Pelias send Jason to fetch the Golden Fleece?",
+          "choices": ["To cure a plague in Iolcus", "To be rid of him, after an oracle warned of a man with one sandal", "To pay a debt to King Aeetes", "Because Athena commanded it"],
+          "answerIndex": 1,
+          "explanation": "Pelias had been warned against a one-sandaled man. When Jason arrived with one sandal, Pelias sent him on a quest he expected to be fatal."
+        },
+        {
+          "id": "q2",
+          "prompt": "What was special about the beam Athena fitted into the Argo's prow?",
+          "choices": ["It was made of gold", "It could never sink", "It glowed in the dark", "It came from the oracle oak of Dodona and could speak"],
+          "answerIndex": 3,
+          "explanation": "The timber came from Zeus's sacred oak at Dodona and had the power of speech."
+        },
+        {
+          "id": "q3",
+          "prompt": "How did the Argonauts test the Clashing Rocks before rowing through?",
+          "choices": ["They released a dove to fly between them", "They threw a spear", "Orpheus played his lyre", "They sent a small boat ahead"],
+          "answerIndex": 0,
+          "explanation": "On Phineus's advice they let a dove fly through first; it lost only its tail feathers, and the ship lost only her stern ornament."
+        },
+        {
+          "id": "q4",
+          "prompt": "Who made it possible for Jason to win the fleece at Colchis?",
+          "choices": ["Heracles, by strangling the dragon", "King Aeetes, who kept his word", "Medea, the king's daughter, with her magic", "Orpheus, by singing the bulls to sleep"],
+          "answerIndex": 2,
+          "explanation": "Medea gave Jason a protective ointment, told him how to defeat the earth-born warriors, and drugged the dragon that guarded the fleece."
+        },
+        {
+          "id": "q5",
+          "prompt": "Why, according to Eratosthenes, was the Argo placed among the stars?",
+          "choices": ["Because Jason died aboard her", "Because she was said to be the first ship to sail the open sea", "Because she carried the gods to Olympus", "Because Poseidon admired her speed"],
+          "answerIndex": 1,
+          "explanation": "Eratosthenes, followed by Manilius and reported by Hyginus, said the constellation honors the first sea-going ship."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Greek writers such as Conon and Strabo say Canopus is named after the helmsman of King Menelaus. On the voyage home from Troy the fleet was driven to Egypt, where Canopus died of a snake bite; Helen killed the snake, and the town of Canopus at the mouth of the Nile grew up around his tomb.",
+    "Aratus never mentions Canopus, because it did not rise over Greece. It was the most southerly star in Ptolemy's catalog, seen low on the horizon from Alexandria.",
+    "Spacecraft use Canopus as a guide star: it is bright and lies far from the plane of the planets, so star trackers can lock onto it to keep a probe pointed correctly.",
+    "The False Cross is made of Avior and Aspidiske in Carina plus Delta and Kappa Velorum in Vela. It is larger and dimmer than the Southern Cross and has no bright pointer stars beside it.",
+    "In China Canopus was Laoren, the Old Man of the South Pole, linked with the god of long life."
+  ]
+}

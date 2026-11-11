@@ -1,0 +1,47 @@
+{
+  "id": "Col",
+  "kind": "modern",
+  "origin": {
+    "namedBy": "Petrus Plancius",
+    "when": "1592",
+    "history": [
+      "Columba, the Dove, was created by the Dutch theologian and mapmaker Petrus Plancius. In his *Almagest*, Ptolemy had listed a number of stars south of the Great Dog and the Hare that he did not assign to any figure. Plancius gathered those 'unformed' stars into a bird and first showed it in 1592, on a small chart of the heavens set in the corner of a large world map. It appeared again, more clearly, on his celestial globe of 1598.",
+      "Plancius named it Columba Noachi, Noah's Dove. In the Book of Genesis, Noah sends a dove out from the Ark to learn whether the Flood is going down, and it returns with an olive leaf in its beak. The dove is drawn in the sky carrying that sprig, flying just behind the great ship Argo, and Plancius completed the picture on a later globe by relabeling Argo as Noah's Ark.",
+      "Johann Bayer drew the Dove on his chart of Canis Major in 1603, which helped it spread, and the French astronomer Nicolas-Louis de Lacaille gave its stars their Greek letters in the 1750s. The name was later shortened to Columba."
+    ]
+  },
+  "overview": "Columba is the Dove, a small southern constellation below the Hare and to the lower right of the Great Dog. It has two fairly bright stars and a few fainter ones. From Brooklyn it sits very low over the southern horizon, so it is seldom noticed.",
+  "howToFind": [
+    "Start with Orion and drop down to [[con:Lep|Lepus]], the Hare, beneath his feet. Find the Hare's two brightest stars, [[star:Arneb|Arneb]] with [[star:Nihal|Nihal]] just below it. Keep going straight down from them for about a fist and a half and you come to [[star:Phact|Phact]], the brightest star of the Dove. [[star:Wazn|Wazn]] is a couple of finger-widths to its lower left. Alternatively, look about two fists to the lower right of [[star:Sirius|Sirius]].",
+    "From latitude 40 degrees north Phact reaches only about 15 degrees above the horizon, a fist and a half, when it is due south. You need a clear, unobstructed southern horizon and a night without haze. The best time is around 8 to 9 p.m. in late January and February, when Orion is highest."
+  ],
+  "shape": "A short, slightly bent line of three or four stars about a fist long, with Phact and Wazn the only ones at all conspicuous. Low altitude and city haze usually hide everything but those two, and often them as well.",
+  "mainStars": [
+    {
+      "ref": "star:Phact",
+      "note": "The brightest star in Columba at magnitude 2.6, a blue-white star about 260 light-years away. The name comes from the Arabic for 'ring dove'."
+    },
+    {
+      "ref": "star:Wazn",
+      "note": "An orange giant of magnitude 3.1, about 87 light-years away."
+    },
+    {
+      "ref": "star:μ Col",
+      "note": "A faint fifth-magnitude star with a remarkable history. It is a runaway, speeding away from the region of Orion, while another star, in Auriga, flies off in the opposite direction; the two seem to have been thrown out of the same place a couple of million years ago."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "dso:NGC1851",
+      "equip": "small-telescope",
+      "note": "A bright, compact globular cluster, a ball of ancient stars about 39,000 light-years away, in the southwest corner of the constellation. From the southern United States it is a fine sight. From Brooklyn it climbs less than ten degrees above the horizon and is very hard to see through the thick air."
+    }
+  ],
+  "stories": [],
+  "facts": [
+    "The Dove is made from stars Ptolemy catalogued but left outside any constellation. Plancius noted this on his 1598 globe, labeling them as all lying 'outside the Dog'.",
+    "The Sun and its planets are moving through the galaxy away from a point in Columba. The point we are heading toward lies on the opposite side of the sky, in Hercules.",
+    "Some people who know the story of the ship Argo prefer to see Columba as the dove that the Argonauts released to fly ahead of them between the Clashing Rocks. That reading is a later fancy; Plancius meant Noah's dove.",
+    "In Chinese astronomy three pairs of stars here stood for three generations of one family: an old farmer, his son and his grandson."
+  ]
+}

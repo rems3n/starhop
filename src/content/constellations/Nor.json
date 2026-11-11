@@ -1,0 +1,36 @@
+{
+  "id": "Nor",
+  "kind": "modern",
+  "origin": {
+    "namedBy": "Nicolas-Louis de Lacaille",
+    "when": "1756",
+    "history": [
+      "Norma is one of the fourteen constellations that Nicolas-Louis de Lacaille introduced after mapping the southern sky from the Cape of Good Hope in 1751–52. He made it from faint stars between Ara and Lupus that Ptolemy could have seen but never cataloged.",
+      "On his chart of 1756 Lacaille called it l'Équerre et la Règle, and his notes describe it as the architect's set square and ruler. He put it beside Circinus, the compasses, and next to the older Southern Triangle, which he redrew as a builder's level, so that three drafting and surveying instruments lie together. In 1763 he shortened and Latinized the name to Norma (a carpenter's square); some later atlases, including Bode's, preferred Norma et Regula.",
+      "Two mix-ups followed. When the official boundaries were tidied, Lacaille's Alpha and Beta Normae ended up inside Scorpius, so Norma today has no stars with those letters. And the widely read 1899 book by R. H. Allen called Norma the Level and Square, apparently by misreading a French chart on which the word for level belonged to the Southern Triangle; the slip has been copied ever since."
+    ]
+  },
+  "overview": "Norma is a draftsman's set square (originally a square and ruler). Its stars are faint, but it lies in a rich part of the Milky Way between the tail of Scorpius and Alpha Centauri and is full of star clusters.",
+  "howToFind": [
+    "From Brooklyn only the northern fringe of Norma rises, and no higher than a few degrees: [[star:δ Nor|Delta Normae]] reaches about 4 degrees and [[star:ε Nor|Epsilon]] under 2, so in practice the constellation is not seen. The whole of it is visible south of latitude 29°N, and it is high in the evening from June to August in the Southern Hemisphere.",
+    "Norma fills the stretch of Milky Way between two landmarks: the sting of the Scorpion, [[star:Shaula|Shaula]], and the Pointers, [[star:Rigil Kentaurus|Alpha]] and [[star:Hadar|Beta Centauri]]. Its brightest star, [[star:γ Nor|Gamma-2 Normae]], is almost exactly halfway, a little under two fists from Shaula and from Alpha Centauri alike. It also stands two fists north of [[star:Atria|Atria]] in the Southern Triangle."
+  ],
+  "shape": "A small crooked square of four dim stars (Gamma, Delta, Epsilon and Eta) about half a fist on a side. All are 4th to 5th magnitude and sit against the glow of the Milky Way, so a dark sky and binoculars help.",
+  "mainStars": [
+    { "ref": "star:γ Nor", "note": "Gamma-2 Normae, magnitude 4.0, a yellow giant about 130 light-years away and the brightest star in the constellation. Fainter Gamma-1 beside it is a far more distant supergiant that merely lies in the same direction." },
+    { "ref": "star:ε Nor", "note": "Magnitude 4.5, a blue-white star about 530 light-years away with a 7.5-magnitude companion that a small telescope shows." },
+    { "ref": "star:η Nor", "note": "Magnitude 4.7, a yellow giant at the western corner of the square." },
+    { "ref": "star:δ Nor", "note": "Magnitude 4.7, a white star at the northern corner, toward Lupus and Scorpius." }
+  ],
+  "notableObjects": [
+    { "ref": "dso:NGC6087", "equip": "binoculars", "note": "The S Normae Cluster, a bright open cluster of about 40 stars in the south of the constellation. Binoculars show a sparkling patch; at its center is S Normae, a Cepheid variable star that pulses in brightness." },
+    { "ref": "dso:NGC6067", "equip": "binoculars", "note": "A rich open cluster about four degrees south of Gamma-2, set in a dense Milky Way field. Binoculars show a hazy spot; a small telescope turns it into a crowd of a hundred faint stars." },
+    { "ref": "dso:NGC6167", "equip": "binoculars", "note": "A looser open cluster on the eastern side toward Ara, a scattering of stars for binoculars or a low-power telescope." }
+  ],
+  "stories": [],
+  "facts": [
+    "Norma has no Alpha or Beta star: the two stars Lacaille gave those letters now belong to Scorpius.",
+    "Although the constellation is modern, Chinese astronomers included some of its northern stars in an ancient figure, Jizu, a battalion of soldiers.",
+    "One of the Milky Way's spiral arms, the Norma Arm, is named after this constellation because it is seen in this direction."
+  ]
+}

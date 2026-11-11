@@ -1,0 +1,214 @@
+{
+  "id": "Del",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); an older Greek figure already described by Aratus",
+    "when": "2nd century CE (catalogued); known by the 3rd century BCE",
+    "history": [
+      "Dolphins were a familiar and welcome sight to Greek sailors, and one has swum in the sky since at least the time of Aratus, who about 275 BCE described the Dolphin as having few bright stars, but four 'brilliants' set side by side in pairs. Ptolemy included it among his 48 constellations in the *Almagest* around 150 CE. Its Greek name was Delphin or Delphis; Delphinus is the Latin form.",
+      "Its two brightest stars carry the strangest names in the sky. Sualocin and Rotanev first appeared in a star catalogue published at Palermo Observatory in Sicily in 1814. Read backwards they spell Nicolaus Venator, the Latin form of Niccolo Cacciatore, the assistant (and later successor) of the observatory's director Giuseppe Piazzi. Whether Cacciatore slipped his own name in or Piazzi did it to honor him is not known.",
+      "English-speaking stargazers long called the diamond of four stars Job's Coffin. Nobody knows who invented that name or when."
+    ]
+  },
+  "overview": "Delphinus is a dolphin leaping out of the sea: a tight little diamond of four stars for the body and a fifth trailing below for the tail. It is small and none of its stars is bright, but the pattern is so compact and so dolphin-like that it catches the eye at once in a reasonably dark sky.",
+  "howToFind": [
+    "Start from [[star:Altair|Altair]], the southern corner of the [[asterism:summer-triangle|Summer Triangle]], easy to recognize by the fainter star close on either side of it. Look about a fist and a half (14 degrees) to the left of Altair, toward the east-northeast, just outside the triangle. A fist held at arm's length covers about 10 degrees.",
+    "There you will find a small kite or diamond of four stars, hardly bigger than the tip of your thumb at arm's length: [[star:Sualocin|Sualocin]], [[star:Rotanev|Rotanev]], [[star:γ Del|Gamma]], and [[star:δ Del|Delta Delphini]]. A fifth star, [[star:ε Del|Epsilon Delphini]], hangs off the diamond to the southwest as the tail. Delphinus is in the evening sky from July into December and is highest in the south on evenings in September."
+  ],
+  "shape": "A neat diamond about two finger-widths across with a short tail, the whole dolphin no more than half a fist long. Its stars are around fourth magnitude (magnitude is the brightness scale, where smaller numbers are brighter), so in Brooklyn you will most likely need binoculars, which frame the whole figure beautifully. Under a suburban or country sky it is an easy and memorable naked-eye pattern.",
+  "mainStars": [
+    {
+      "ref": "star:Rotanev",
+      "note": "Beta Delphini, the brightest star at magnitude 3.6, about 97 light-years away. Its name is 'Venator' spelled backwards."
+    },
+    {
+      "ref": "star:Sualocin",
+      "note": "Alpha Delphini, a blue-white star of magnitude 3.8, about 240 light-years away. Its name is 'Nicolaus' backwards."
+    },
+    {
+      "ref": "star:γ Del",
+      "note": "The tip of the dolphin's nose. To the eye a single fourth-magnitude star; in a small telescope a lovely pair, golden and pale yellow."
+    },
+    {
+      "ref": "star:ε Del",
+      "note": "Aldulfin, magnitude 4.0, the dolphin's tail. The name comes from the Arabic for 'the dolphin's tail'."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "star:γ Del",
+      "equip": "small-telescope",
+      "note": "One of the prettiest double stars of late summer: a golden-orange star of magnitude 4.3 with a yellowish companion of magnitude 5.1, comfortably separated in any small telescope."
+    },
+    {
+      "ref": "dso:NGC6934",
+      "equip": "small-telescope",
+      "note": "A small, distant globular cluster (a ball of very old stars) a few degrees south of the tail star Epsilon. In a small telescope it is a little round haze beside a faint star."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Del-poseidon-and-amphitrite",
+      "title": "The dolphin who won a bride for Poseidon",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Eratosthenes", "work": "Catasterisms (the Dolphin), as reported by Hyginus", "date": "3rd century BCE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.17" },
+        { "author": "Ovid", "work": "Fasti 2.79-82", "date": "c. 8 CE" }
+      ],
+      "summary": "According to Eratosthenes, the Dolphin was Poseidon's messenger. When the sea nymph Amphitrite fled from the god's proposal, a dolphin found her and persuaded her to marry him, and Poseidon rewarded it with a place among the stars.",
+      "retelling": [
+        "When Zeus and his brothers overthrew their father and divided the world, Zeus took the sky, Hades the Underworld, and Poseidon the sea. Poseidon had his kingdom, but he had no queen.",
+        "His choice fell on Amphitrite, one of the Nereids, the nymphs of the sea. He wanted to marry her. She did not want to marry anyone; she meant to stay as she was. When Poseidon pressed his suit she fled, and Hyginus says she went as far as Atlas, at the very edge of the world, and hid there.",
+        "Poseidon sent out many searchers to look for her. Among them was one named Delphin, the dolphin. He wandered from island to island through the seas until at last he came upon the place where Amphitrite was hiding.",
+        "Where the god's own rough courtship had failed, the dolphin succeeded. He did not drag her back. He talked to her and won her over, persuading her to accept Poseidon after all. Then he took charge of the wedding arrangements himself.",
+        "Amphitrite became queen of the sea, and Poseidon did not forget who had brought her. In gratitude he set the form of a dolphin among the constellations. Hyginus adds that this is why sculptors who make statues of Poseidon put a dolphin in his hand or under his foot: they think nothing will please the god more.",
+        "Ovid, noting in his calendar poem the night when the Dolphin disappears from the evening sky, sums the creature up in a phrase as the lucky go-between in a love affair."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Delphinus, the dolphin",
+        "url": "http://www.ianridpath.com/startales/delphinus.html"
+      },
+      "characters": ["Poseidon (Neptune)", "Amphitrite", "Delphin"],
+      "questions": [
+        {
+          "id": "amphitrite-q1",
+          "prompt": "Whom did the dolphin persuade to marry Poseidon?",
+          "choices": ["Thetis", "Amphitrite", "Galatea", "Leda"],
+          "answerIndex": 1,
+          "explanation": "Amphitrite, a sea nymph, had fled from Poseidon; the dolphin found her and won her consent."
+        },
+        {
+          "id": "amphitrite-q2",
+          "prompt": "Why had Amphitrite run away?",
+          "choices": ["She was afraid of the sea", "She was already promised to Zeus", "She had offended Hera", "She wished to remain unmarried"],
+          "answerIndex": 3,
+          "explanation": "She preferred to keep her independence, and fled to Atlas to escape Poseidon's proposal."
+        },
+        {
+          "id": "amphitrite-q3",
+          "prompt": "According to Hyginus, why do statues of Poseidon often include a dolphin?",
+          "choices": ["Because it is thought to please the god, in memory of this service", "Because dolphins pulled his chariot", "Because he was raised by dolphins", "Because he once turned into one"],
+          "answerIndex": 0,
+          "explanation": "Sculptors placed a dolphin in his hand or beneath his foot as the thing they thought would please him most."
+        },
+        {
+          "id": "amphitrite-q4",
+          "prompt": "Which realm had Poseidon received when the three brothers divided the world?",
+          "choices": ["The sky", "The Underworld", "The sea", "The mountains"],
+          "answerIndex": 2,
+          "explanation": "Zeus took the sky, Hades the Underworld, and Poseidon the sea."
+        }
+      ]
+    },
+    {
+      "id": "Del-arion",
+      "title": "Arion and the dolphin",
+      "culture": "Greek and Roman",
+      "ancientSources": [
+        { "author": "Ovid", "work": "Fasti 2.79-118", "date": "c. 8 CE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.17" },
+        { "author": "Herodotus", "work": "Histories 1.23-24", "date": "5th century BCE" }
+      ],
+      "summary": "The other famous story says this is the dolphin that saved Arion, the greatest musician of his day. Robbed at sea and forced to jump overboard, he was carried safely to shore on a dolphin's back after it was charmed by his last song.",
+      "retelling": [
+        "Arion came from the island of Lesbos and lived in the seventh century BCE; he was a real poet, though this story about him is a legend. No one of his time played the lyre or sang as he did. Ovid says that his voice could stop running water, that wolves and lambs stood still together to listen, and that the Moon goddess herself paused to hear him, thinking it was her brother Apollo playing.",
+        "He made a concert tour of Sicily and southern Italy, and his performances there earned him a fortune. When it was time to go home he took passage on a ship, carrying his winnings with him.",
+        "He would have been safer in the open sea than on that deck. Once they were out of sight of land the crew surrounded him. The helmsman himself left the tiller and stood over him with a drawn sword. They wanted the money, and they did not intend to leave a witness. (In Hyginus's version the plotters are Arion's own servants.)",
+        "Arion did not beg for his life. He asked for one thing: to be allowed to play a last song. The sailors, amused, agreed. He put on the full costume of a performer, the wreath on his hair and the long robe dyed purple, took up his lyre, and sang his own lament from the stern of the ship. Then, still in all his finery, he jumped into the sea.",
+        "His song had been heard. Dolphins, drawn by the music, had gathered around the ship, and one of them took the singer on its curved back. Ovid pictures him riding there with the lyre in his hands, paying his fare with a song and calming the waves as he went. The dolphin brought him to land at Cape Taenarum, at the southern tip of Greece.",
+        "The robbers did not profit. Arion reached Corinth, where the ruler Periander was his patron, and when the ship came in, the crew were confronted with the man they believed drowned and were punished. Hyginus says a statue of Arion with a dolphin stood at Taenarum in memory of the rescue.",
+        "The gods, Ovid concludes, notice good deeds. Jupiter took the dolphin up into the sky and gave it nine stars. And so it leaps there still, just east of the Eagle, in the same part of the sky as the Lyre."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Delphinus: saving Arion",
+        "url": "http://www.ianridpath.com/startales/delphinus.html"
+      },
+      "characters": ["Arion", "Periander", "Jupiter (Zeus)"],
+      "questions": [
+        {
+          "id": "arion-q1",
+          "prompt": "What was Arion famous for?",
+          "choices": ["Singing and playing the lyre", "Winning chariot races", "Building ships", "Prophecy"],
+          "answerIndex": 0,
+          "explanation": "Arion was the most celebrated musician of his time, a singer and lyre player from Lesbos."
+        },
+        {
+          "id": "arion-q2",
+          "prompt": "What did Arion ask of the men who were about to kill him?",
+          "choices": ["To be put ashore on an island", "To keep half of his money", "To be allowed to perform one last song", "To send a message to Corinth"],
+          "answerIndex": 2,
+          "explanation": "He asked to sing a final song, dressed in his performer's robes, and then leaped into the sea."
+        },
+        {
+          "id": "arion-q3",
+          "prompt": "Why did the dolphin come to Arion's rescue?",
+          "choices": ["Poseidon ordered it to", "Arion had once saved its life", "It mistook him for a sea god", "It had been drawn to the ship by his music"],
+          "answerIndex": 3,
+          "explanation": "Dolphins gathered around the ship, charmed by his singing, and one carried him to shore."
+        },
+        {
+          "id": "arion-q4",
+          "prompt": "Where did the dolphin bring Arion ashore?",
+          "choices": ["The island of Lesbos", "Cape Taenarum, at the southern tip of Greece", "The harbor of Syracuse", "The island of Naxos"],
+          "answerIndex": 1,
+          "explanation": "He landed at Taenarum, where a statue of a man on a dolphin was said to commemorate the event."
+        }
+      ]
+    },
+    {
+      "id": "Del-dionysus-and-the-sailors",
+      "title": "Dionysus and the sailors who became dolphins",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Aglaosthenes", "work": "Naxica, as reported by Hyginus, Poetic Astronomy 2.17" }
+      ],
+      "summary": "A third story, from the island of Naxos, says that Etruscan sailors who tried to kidnap the young god Dionysus were bewitched by music, leaped into the sea, and became dolphins. Dionysus put one of them in the sky as a reminder.",
+      "retelling": [
+        "Dionysus, the god of wine, was raised by nymphs, and the people of Naxos claimed that their island was where it happened. Their historian Aglaosthenes told how the god first came there.",
+        "When Dionysus was still a child, he and his companions were put aboard a ship to be carried to Naxos and handed over to the nymphs who would nurse him. The ship's masters were Tyrrhenians, as the Greeks called the Etruscans of Italy, a people with a reputation as pirates.",
+        "The sailors saw a chance to make money. Instead of holding course for Naxos they made ready to turn the ship aside and carry off their passengers, no doubt to sell them.",
+        "Dionysus guessed what they were planning. He did not call down thunder or fight. He simply told his companions to start singing.",
+        "The Tyrrhenians had never heard anything like that music. It took hold of them completely. They began to dance, and in the ecstasy of the dance they lost all sense of where they were, and flung themselves over the side into the sea. There they were turned into dolphins.",
+        "Dionysus wanted people to remember what had happened to those men. So he placed the image of one of them among the constellations. If this is the true story, the little dolphin leaping beside the Milky Way is a warning as well as an ornament: a pirate who tried to kidnap a god."
+      ],
+      "link": {
+        "site": "ToposText",
+        "label": "Hyginus, Astronomica 2.17 (the Dolphin)",
+        "url": "https://topostext.org/work/207"
+      },
+      "characters": ["Dionysus (Liber)", "The Tyrrhenian sailors"],
+      "questions": [
+        {
+          "id": "sailors-q1",
+          "prompt": "Which god did the sailors try to carry off?",
+          "choices": ["Hermes", "Apollo", "Dionysus", "Poseidon"],
+          "answerIndex": 2,
+          "explanation": "The child Dionysus was a passenger on their ship, bound for Naxos."
+        },
+        {
+          "id": "sailors-q2",
+          "prompt": "How did Dionysus defeat the sailors?",
+          "choices": ["He had his companions sing, and the bewitched sailors danced into the sea", "He raised a storm that wrecked the ship", "He turned the mast into a serpent", "He called a sea monster"],
+          "answerIndex": 0,
+          "explanation": "The music entranced the sailors so completely that they leaped overboard, where they became dolphins."
+        },
+        {
+          "id": "sailors-q3",
+          "prompt": "To which island was the ship supposed to be taking Dionysus?",
+          "choices": ["Crete", "Lesbos", "Cos", "Naxos"],
+          "answerIndex": 3,
+          "explanation": "He was to be handed over to the nymphs of Naxos, who would raise him."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Sualocin and Rotanev, read backwards, spell Nicolaus Venator, the Latinized name of the Palermo astronomer Niccolo Cacciatore.",
+    "The diamond of four stars has the old popular name Job's Coffin.",
+    "In China these stars were seen as two gourds: the diamond was a good, hard gourd and the fainter stars nearby a rotten one.",
+    "A nova in Delphinus in 1967 became bright enough to see with the naked eye, and another did so in 2013."
+  ]
+}

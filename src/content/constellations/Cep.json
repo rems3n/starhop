@@ -1,0 +1,135 @@
+{
+  "id": "Cep",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); an older Greek figure already described by Aratus",
+    "when": "2nd century CE (Almagest); known to the Greeks by the 3rd century BCE",
+    "history": [
+      "Cepheus is one of the 48 constellations of Ptolemy's *Almagest* (about 150 CE). Aratus, in the 3rd century BCE, introduces 'the hapless family of Cepheus' as a group and says their names reached the sky because they were close kin of Zeus: the king was counted a descendant of Io, one of Zeus's loves. Aratus pictures him behind the Little Bear with both arms stretched out.",
+      "Ptolemy described the king as wearing the tall headdress of a Persian ruler, and old atlases dress him in robes and crown with a scepter in his hand. Hyginus says simply that the gods put him among the stars so that the whole family of Andromeda would be remembered together.",
+      "Arabic sky-watchers saw something humbler in the same stars: a shepherd with his dog and sheep. The star name Errai comes from the Arabic for 'the shepherd'."
+    ]
+  },
+  "overview": "Cepheus is the king of Ethiopia, husband of Cassiopeia and father of Andromeda. His stars are much fainter than his wife's: look for a shape like a child's drawing of a house with a steep roof, standing between Cassiopeia and the North Star with its peak pointing toward the pole.",
+  "howToFind": [
+    "Find Cassiopeia's W, then follow the line from [[star:Schedar|Schedar]] through [[star:Caph|Caph]], the end star of the W, and continue about two fists (a fist at arm's length is roughly 10 degrees). The first fairly bright star you meet is [[star:Alderamin|Alderamin]], one bottom corner of the house. The peak of the roof, [[star:Errai|Errai]], is the star a little over a fist from [[star:Polaris|Polaris]] on the Cassiopeia side: the Big Dipper's pointer stars, carried on past Polaris, arrive close to it.",
+    "The square body of the house is made by Alderamin, [[star:Alfirk|Alfirk]], [[star:ι Cep|Iota]] and [[star:ζ Cep|Zeta Cephei]]. From Brooklyn Cepheus never sets. It is highest, above Polaris, on autumn evenings from September to November, when the house appears upside down with its roof pointing down toward the North Star."
+  ],
+  "shape": "A lopsided pentagon about two fists tall: a rough square with a pointed roof. The stars are third and fourth magnitude apart from Alderamin (magnitude is the brightness scale, where smaller numbers are brighter), so from the city you may see only Alderamin and two or three others; the full house needs a suburban sky.",
+  "mainStars": [
+    {
+      "ref": "star:Alderamin",
+      "note": "Alpha Cephei, a white star only 49 light-years away and the brightest in the constellation, on the king's shoulder."
+    },
+    {
+      "ref": "star:Errai",
+      "note": "Gamma Cephei, an orange star 46 light-years away at the peak of the roof, known to have a planet. The slow wobble of Earth's axis will carry the pole toward it, making it a future North Star some two thousand years from now."
+    },
+    {
+      "ref": "star:Alfirk",
+      "note": "Beta Cephei, a hot blue-white star at the corner of the square nearest the roof."
+    },
+    {
+      "ref": "star:δ Cep",
+      "note": "Delta Cephei, a yellow supergiant near the king's head that swells and shrinks, changing from magnitude 3.5 to 4.4 and back every 5.4 days. It gave its name to the Cepheid variable stars."
+    },
+    {
+      "ref": "star:μ Cep",
+      "note": "Mu Cephei, the Garnet Star, an enormous red supergiant and one of the reddest stars visible to the naked eye. William Herschel admired its deep garnet color in 1783."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "star:δ Cep",
+      "equip": "naked-eye",
+      "note": "Watch a star pulse: compare Delta with its neighbors [[star:ζ Cep|Zeta]] (brighter) and [[star:ε Cep|Epsilon Cephei]] (fainter) on a few nights in a row. From a dark sky the change is visible to the eye; from the city use binoculars."
+    },
+    {
+      "ref": "star:μ Cep",
+      "equip": "binoculars",
+      "note": "The Garnet Star lies just below the base of the house, between Alderamin and Zeta. Binoculars bring out its orange-red color, strongest when you compare it with white Alderamin."
+    },
+    {
+      "ref": "dso:NGC188",
+      "equip": "small-telescope",
+      "note": "One of the oldest open star clusters known, only a few degrees from Polaris. A faint, large glow of dim stars that needs a dark sky."
+    },
+    {
+      "ref": "dso:NGC6946",
+      "equip": "telescope",
+      "note": "The Fireworks Galaxy, a face-on spiral on the border with Cygnus. Faint and diffuse; a target for a dark night."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Cep-king",
+      "title": "The king who gave up his daughter",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Apollodorus", "work": "Library 2.4.3 and 2.4.5", "date": "1st–2nd century CE" },
+        { "author": "Ovid", "work": "Metamorphoses 4.668–764 and 5.1–45", "date": "c. 8 CE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.9", "date": "2nd century CE" },
+        { "author": "Aratus", "work": "Phaenomena 179–187, and the later passage on his setting (c. 645–652)", "date": "3rd century BCE" }
+      ],
+      "summary": "King Cepheus of Ethiopia was forced by an oracle and by his own people to chain his daughter Andromeda on the shore for a sea monster. When Perseus saved her, Cepheus kept his word and gave her to the stranger, then faced his own brother's fury at the wedding. The gods set him in the sky so the family would be complete.",
+      "retelling": [
+        "Cepheus ruled the Ethiopians, and by the standards of myth he was well connected: Aratus says his family won a place in heaven because they were near relations of Zeus. None of that helped him when his wife opened her mouth. Queen Cassiopeia boasted that she was more beautiful than the Nereids, the nymphs of the sea, and Poseidon sent a flood over the king's land and a monster after it.",
+        "A king is supposed to fix such things. Cepheus sent to the oracle of the god Ammon, and the reply was that the trouble would end only when his daughter Andromeda was set out as prey for the creature. He did not rush to obey. Apollodorus says outright that he was compelled to it by the Ethiopians, his own subjects, who would not go on dying for the royal family's pride. So the king bound his daughter to a rock.",
+        "Ovid shows him there at the last moment, a father who can give no help, weeping with his wife and clinging to the girl as the monster's wake comes on. When a young man with wings on his feet offers to kill the beast in exchange for Andromeda's hand, Cepheus does not haggle. He agrees and throws in his kingdom as a dowry. Perseus kills the monster, and the king greets him as the savior of his house, opens the palace and seats his nobles at a wedding feast.",
+        "The feast is where Cepheus finds his voice. His brother Phineus, who had been engaged to Andromeda, storms in with armed men, shaking a spear and shouting that his bride has been stolen. Cepheus stops him with a speech that is the best thing he does in the whole story. It was not Perseus who took her from you, he says; it was the god of the sea, and horned Ammon, and the monster that came to feed on my child. You lost her the moment she was left to die. You were her uncle and her promised husband, and you stood and watched her chained and did nothing. If you wanted the prize, you should have gone to the rock and won it.",
+        "Phineus answered with a spear, thrown at Perseus. As the hall dissolved into fighting, the old king walked out over his own threshold, calling on the gods of justice and hospitality to witness that none of this was his doing. Perseus ended it with the Gorgon's head.",
+        "Cepheus lost his daughter after all, since Andromeda chose to sail away with her husband. But the couple left him their first son, Perses, to raise, and the Greeks said the kings of Persia were descended from that boy.",
+        "Hyginus gives the reason for his constellation in a sentence: so that the whole family might be commemorated, the gods numbered Cepheus among the stars too. He stands beside Cassiopeia with his feet near the pole and his arms held out. Aratus noticed that from Greece, as the sky turns, the king tips over and dips his head and shoulders toward the sea, while the Bears keep his feet from ever going under. He shares a little of his wife's punishment, as he shared the rest."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Cepheus, king of Ethiopia",
+        "url": "http://www.ianridpath.com/startales/cepheus.html"
+      },
+      "characters": ["Cepheus", "Cassiopeia", "Andromeda", "Perseus", "Phineus", "Perses", "Ammon"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "According to Apollodorus, who forced Cepheus to carry out the oracle and bind his daughter?",
+          "choices": ["His wife Cassiopeia", "The priests of Poseidon", "His own people, the Ethiopians", "His brother Phineus"],
+          "answerIndex": 2,
+          "explanation": "Apollodorus says Cepheus was compelled by the Ethiopians, who were suffering from the flood and the monster."
+        },
+        {
+          "id": "q2",
+          "prompt": "What did Cepheus promise Perseus for saving Andromeda?",
+          "choices": ["Her hand in marriage, and the kingdom as dowry", "A ship and a crew to sail home", "The head of the sea monster", "A place among the stars"],
+          "answerIndex": 0,
+          "explanation": "In Ovid her parents gladly agree to the marriage and offer their kingdom as well."
+        },
+        {
+          "id": "q3",
+          "prompt": "How was Phineus related to Cepheus?",
+          "choices": ["He was his son", "He was his brother", "He was his father", "He was his chief priest"],
+          "answerIndex": 1,
+          "explanation": "Phineus was the king's brother and so Andromeda's uncle, and had been betrothed to her before the monster came."
+        },
+        {
+          "id": "q4",
+          "prompt": "What did Cepheus tell Phineus when he came to claim Andromeda?",
+          "choices": ["That the oracle had forbidden the marriage", "That Perseus was a god in disguise", "That Andromeda had chosen to stay unmarried", "That he had lost his claim by doing nothing while she was chained"],
+          "answerIndex": 3,
+          "explanation": "Cepheus points out that Phineus stood by while she was left to the monster, so the man who rescued her deserves her."
+        },
+        {
+          "id": "q5",
+          "prompt": "Which grandson was left with Cepheus, and what was said of him?",
+          "choices": ["Perses, from whom the Persian kings were said to descend", "Electryon, later king of Mycenae", "Chrysaor, father of Geryon", "Dictys, later king of Seriphos"],
+          "answerIndex": 0,
+          "explanation": "Apollodorus says Perseus and Andromeda left their son Perses with Cepheus, and the kings of Persia traced their line to him."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Delta Cephei's regular pulsing was discovered in 1784 by John Goodricke. Stars of its kind, Cepheid variables, pulse at a rate tied to their true brightness, which lets astronomers measure distances to other galaxies.",
+    "In the Greek myth Cepheus's 'Ethiopia' was not the modern country; ancient writers placed his kingdom on the coast, and the rock of Andromeda was later shown to travelers at Joppa.",
+    "Hyginus, citing Euripides, makes Cepheus a son of Phoenix.",
+    "Chinese astronomers drew a charioteer named Zaofu from the stars around Delta and Mu Cephei."
+  ]
+}

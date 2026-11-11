@@ -1,0 +1,35 @@
+{
+  "id": "Aps",
+  "kind": "modern",
+  "origin": {
+    "namedBy": "Pieter Dirkszoon Keyser and Frederick de Houtman; first shown by Petrus Plancius",
+    "when": "1595–1598",
+    "history": [
+      "Apus is one of twelve constellations built from the star positions that two Dutch navigators, Pieter Dirkszoon Keyser and Frederick de Houtman, measured on the first Dutch trading voyage to the East Indies in 1595–97. Their observations gave European mapmakers their first reliable view of the stars around the south celestial pole. The cartographer Petrus Plancius put the new figures on a celestial globe in 1598, and Johann Bayer copied them into his star atlas *Uranometria* in 1603, which made them standard.",
+      "The figure is a bird of paradise, the spectacular bird of New Guinea. The name comes from a Greek word meaning footless. Europeans first knew these birds only as traded skins, brought home by the survivors of Magellan's voyage in 1522, and the people who prepared the skins had removed the feet and wings. So the early globes show a bird with neither. Plancius labeled it Paradys-vogel, Apis Indica; the word apis (bee) was apparently a slip for avis (bird), and Bayer repeated it. Johannes Kepler's *Rudolphine Tables* of 1627 gave the form Apus, Avis Indica (the bird of India), and Apus stuck.",
+      "In the 1750s Nicolas-Louis de Lacaille cut off part of the bird's tail to make room for his new polar constellation Octans; four stars that once belonged to the tail are now in Octans. In 2025 the International Astronomical Union named the brightest star Paradys, after the original Dutch name."
+    ]
+  },
+  "overview": "Apus is the bird of paradise, a small, faint constellation close to the south celestial pole. Its best stars are only of 4th magnitude (magnitude is the brightness scale, where smaller numbers are brighter), so it is a patch of sky you find by its neighbors rather than by its own light.",
+  "howToFind": [
+    "Apus never rises from Brooklyn; nothing in it comes within 18 degrees of our southern horizon. You need to be south of about latitude 7°N (Colombia, Malaysia, or anywhere in the Southern Hemisphere) to see all of it, and from Australia, South Africa or Chile it circles the pole all night, all year.",
+    "Start at the Pointers, [[star:Rigil Kentaurus|Alpha Centauri]] and [[star:Hadar|Beta Centauri]], the two bright stars that aim at the [[asterism:southern-cross|Southern Cross]]. From Alpha Centauri go nearly two fists (a fist at arm's length is about 10°) straight toward the south celestial pole to reach [[star:α Aps|Alpha Apodis]]. Or find the bright orange star [[star:Atria|Atria]] in the Southern Triangle and drop about a fist toward the pole: [[star:γ Aps|Gamma]] and [[star:β Aps|Beta Apodis]] sit there, with Alpha about half a fist to their west."
+  ],
+  "shape": "A thin sliver of three faint stars (Beta, Gamma and Delta) with Alpha set off to one side about half a fist away. It looks nothing like a bird. You need a properly dark sky; under city lights the constellation is blank.",
+  "mainStars": [
+    { "ref": "star:α Aps", "note": "Paradys, magnitude 3.8, an orange giant more than 400 light-years away. It stands apart from the other three, marking the original head end of the bird." },
+    { "ref": "star:γ Aps", "note": "Magnitude 3.9, a yellow-orange giant about 150 light-years away; with Beta and Delta it makes the narrow triangle that is the body of the constellation." },
+    { "ref": "star:β Aps", "note": "Magnitude 4.2, an orange giant about 150 light-years away." },
+    { "ref": "star:δ Aps", "note": "A wide pair of reddish giants that binoculars split easily. The brighter one varies slightly in brightness over a couple of months." }
+  ],
+  "notableObjects": [
+    { "ref": "star:δ Aps", "equip": "binoculars", "note": "Delta-1 and Delta-2 Apodis: two red-orange stars side by side, a pretty color pair in any binoculars." },
+    { "ref": "dso:NGC6101", "equip": "telescope", "note": "A dim globular cluster (a ball of ancient stars), about 9th magnitude. It lies about four degrees from Atria toward the pole. A telescope shows a faint round glow; it takes a large one to see individual stars." }
+  ],
+  "stories": [],
+  "facts": [
+    "Apus means footless: the first bird-of-paradise skins to reach Europe had no feet, and for a time people supposed the living birds never landed.",
+    "The earliest name on a globe, Apis Indica, literally says Indian bee. It was almost certainly a misprint for Avis Indica, Indian bird.",
+    "The five brightest stars of Apus are all orange or reddish, which is unusual for a constellation."
+  ]
+}

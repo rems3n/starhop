@@ -1,0 +1,164 @@
+{
+  "id": "CrA",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); first named as a separate figure by Geminus of Rhodes",
+    "when": "2nd century CE (catalogued); named in the 1st century BCE; described by Aratus in the 3rd century BCE",
+    "history": [
+      "Corona Australis, the Southern Crown, is one of the 48 constellations of Ptolemy's *Almagest* (about 150 CE), where it has 13 stars. To the Greeks it was a wreath of leaves rather than a jeweled crown. Aratus, about 275 BCE, did not give it a name; he simply mentions stars turning in a ring beneath the forefeet of the Archer. The first writer known to name it as a constellation of its own is the astronomer Geminus of Rhodes in the 1st century BCE, who called it the Southern Wreath and added that some people called it the Canopy.",
+      "The Latin name took a while to settle. Albrecht Dürer and Johann Bayer called it Corona Meridionalis; the Dutch map-maker Petrus Plancius wrote Corona Austra. on his globe of 1598, and that form, spelled out as Australis, won. One of Ptolemy's 13 stars now belongs to the modern constellation Telescopium. The Greek letters in use today were assigned by Nicolas-Louis de Lacaille in the 1750s.",
+      "A Mesopotamian forerunner has been suggested, a star group called the Bark (a boat) in the MUL.APIN lists, but the identification is uncertain."
+    ]
+  },
+  "overview": "Corona Australis is a wreath lying at the feet of Sagittarius, the southern counterpart of the Northern Crown. It is a neat, tight curve of faint stars, lovely in a dark sky, but from Brooklyn it is low in the summer haze and has no star brighter than magnitude 4.",
+  "howToFind": [
+    "Look on evenings in July and August, when [[con:Sgr|Sagittarius]] is due south. Find the Teapot of Sagittarius, to the left of the Scorpion's tail. The Southern Crown lies just under the Teapot's base: from [[star:Ascella|Ascella]], the star at the bottom of the Teapot's handle, drop a little less than one fist straight down to reach [[star:α CrA|Alpha]] and [[star:β CrA|Beta Coronae Australis]], which mark the eastern end of the arc. The curve of fainter stars bends away from them to the right and downward.",
+    "From Brooklyn the Crown reaches only about one fist above the southern horizon, so you need an open view to the south, no Moon, and a transparent night; binoculars swept slowly under the Teapot will show the arc when the eye alone cannot. From the southern United States it is much easier, and from the southern hemisphere it passes nearly overhead."
+  ],
+  "shape": "A small hook or horseshoe of half a dozen 4th- and 5th-magnitude stars, about four finger-widths across, open toward the Teapot. It looks like a miniature, fainter copy of the Northern Crown. It is invisible from city streets; under a dark sky its tidy curve catches the eye at once.",
+  "mainStars": [
+    {
+      "ref": "star:α CrA",
+      "note": "Meridiana, a white star of magnitude 4.1 about 125 light-years away, and the only star in the constellation with a proper name. It spins extremely fast, turning once in about 14 hours."
+    },
+    {
+      "ref": "star:β CrA",
+      "note": "An orange giant of magnitude 4.1, so close to Alpha in brightness that the eye cannot tell which is brighter."
+    },
+    {
+      "ref": "star:γ CrA",
+      "note": "Magnitude 4.2 to the eye; a telescope of about 4 inches (100 mm) aperture splits it into two matching yellow-white stars that orbit each other every 122 years."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "star:γ CrA",
+      "equip": "telescope",
+      "note": "A close, evenly matched double star: two yellow-white suns of magnitude 5, 58 light-years away. Their low altitude from Brooklyn makes them hard to separate cleanly."
+    },
+    {
+      "ref": "dso:NGC6541",
+      "equip": "binoculars",
+      "note": "A bright, compact globular cluster of magnitude 6.6 in the constellation's southwestern corner. From southern sites it is an easy fuzzy star in binoculars; from Brooklyn it never climbs above about 6 degrees and is usually lost."
+    },
+    {
+      "ref": "dso:NGC6729",
+      "equip": "telescope",
+      "note": "A small, fan-shaped nebula lit by the young variable star R Coronae Australis, part of a dark dust cloud where stars are forming near the top of the Crown. It needs a telescope and a dark, low southern horizon."
+    }
+  ],
+  "stories": [
+    {
+      "id": "CrA-archers-wreath",
+      "title": "The wreath the Archer threw off",
+      "culture": "Greek and Roman",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.27 (citing the playwright Sositheus)", "date": "2nd century CE" },
+        { "author": "Aratus", "work": "Phaenomena 399–401", "date": "c. 275 BCE" }
+      ],
+      "summary": "The oldest explanation of the Southern Crown ties it to the figure standing above it. Hyginus says the ring of stars before the Archer's feet is a wreath he has tossed aside, as someone does at play. The Archer, in this account, is Crotus, the hunter and friend of the Muses.",
+      "retelling": [
+        "The Greeks did not at first think of this little ring of stars as a constellation with a story of its own. It was an accessory. It lay at the front hooves of the Archer, and whatever it was, it was his.",
+        "Who the Archer was had been argued over for a long time. Many called him a centaur. Others objected that no centaur ever used a bow. Hyginus passes on a different answer from the playwright Sositheus: the Archer is Crotus, the son of Eupheme, who was nurse to the nine Muses.",
+        "Crotus grew up on Mount Helicon in the Muses' company. He was not a god and not quite an ordinary man. He loved hunting, and he was faster through the woods than anyone alive; he was also quick and clever in the arts his foster sisters practiced, and he liked nothing better than to sit and listen to them. The Muses were as fond of him as he was of them.",
+        "When the time came they asked Zeus to honor him with a place among the stars, and Zeus agreed. He wanted to show all of Crotus's gifts in one body, so he made the figure a patchwork. He gave it a horse's flanks, because Crotus was so often on horseback. He gave it a bow and arrows, to stand for his sharp mind and his speed. And he added a satyr's tail, because the Muses took as much delight in Crotus as Dionysus did in his satyrs.",
+        "One more detail finished the picture. In front of the Archer's feet Zeus left a few stars arranged in a circle. Some people, Hyginus says, called these a wreath, thrown off as by someone at play.",
+        "It is a small, human touch. Wreaths were what Greeks wore at feasts, games and sacrifices, and what a winner was handed at the end of a contest. A wreath lying on the ground is a sign that the festivities are in full swing, or just over: the garland has slipped, or been tossed aside for a moment while its owner takes up his bow. Later ages gave it grander names, the Southern Crown, the Crown of Sagittarius, but in the oldest account it is only a ring of leaves dropped by a hunter who would rather be listening to music. Look just below the Teapot of [[con:Sgr|Sagittarius]] on a clear summer night and you can see where it fell."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Corona Australis, the southern crown",
+        "url": "http://www.ianridpath.com/startales/coronaaustralis.html"
+      },
+      "characters": ["Crotus", "Eupheme", "the Muses", "Zeus"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "In the oldest account, what is the ring of stars at the Archer's feet?",
+          "choices": ["A wreath he has thrown off, as if at play", "A wheel from his chariot", "A coiled snake", "A quiver for his arrows"],
+          "answerIndex": 0,
+          "explanation": "Hyginus says some called the circle of stars before the Archer's feet a wreath, thrown off as by one at play."
+        },
+        {
+          "id": "q2",
+          "prompt": "According to the version Hyginus reports from Sositheus, who is the Archer?",
+          "choices": ["Chiron the centaur", "Apollo", "Crotus, son of the Muses' nurse Eupheme", "Heracles"],
+          "answerIndex": 2,
+          "explanation": "Sositheus said the Archer was Crotus, who lived on Mount Helicon with the Muses and was a swift hunter."
+        },
+        {
+          "id": "q3",
+          "prompt": "Who asked Zeus to place Crotus among the stars?",
+          "choices": ["The centaurs", "The Muses", "Artemis", "His mother Eupheme"],
+          "answerIndex": 1,
+          "explanation": "The Muses, who loved his company, asked Zeus to honor him with a constellation."
+        },
+        {
+          "id": "q4",
+          "prompt": "Why did Zeus give the starry figure a satyr's tail?",
+          "choices": ["Because Crotus was half goat", "As a punishment for hunting", "To balance the horse's body", "Because the Muses delighted in Crotus as Dionysus did in his satyrs"],
+          "answerIndex": 3,
+          "explanation": "Hyginus explains each feature: horse flanks for riding, arrows for keenness and speed, and the satyr's tail for the pleasure the Muses took in him."
+        }
+      ]
+    },
+    {
+      "id": "CrA-dionysus-semele",
+      "title": "The crown Dionysus left at the gate of the dead",
+      "culture": "Greek and Roman",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.5 (told there of the Northern Crown, citing the writers of the Argolica)", "date": "2nd century CE" }
+      ],
+      "summary": "Hyginus tells how Dionysus went down to the underworld to fetch his dead mother Semele, left his crown at the entrance, and afterward set it in the sky. Hyginus tells this of the Northern Crown; the modern writer Ian Ridpath suggests it may really belong to the Southern one. It is a possibility, not an ancient identification.",
+      "retelling": [
+        "A caution first. No ancient author says in so many words that this story explains the Southern Crown. Hyginus tells it as one of several explanations of the other crown, Corona Borealis. But it sits oddly there beside the famous story of Ariadne, and it has been suggested in modern times that Hyginus, or his source, confused the two wreaths. If so, this is the Southern Crown's only real myth.",
+        "Dionysus, the god of wine, never knew his mother. She was Semele, a mortal woman loved by Zeus, and she died before her son was born, burned up when she persuaded Zeus to show himself to her in his full glory. Zeus saved the unborn child. Dionysus grew up, wandered the world, and took his place among the gods. And then he asked his father for one thing: leave to go down to the land of the dead and bring his mother back.",
+        "Zeus allowed it. The difficulty was finding the way in. Dionysus searched until he came to the country of Argos, and there he met a man named Hypolipnus, who knew where the entrance lay. Hypolipnus looked at the beautiful young god and named a shameless price for the information. Dionysus, who could think of nothing but his mother, swore to pay it if he brought her back, though he swore, Hyginus says, in the careful terms a god uses to a man without shame. Hypolipnus showed him the place.",
+        "Dionysus was wearing a crown, a gift from Aphrodite. Standing at the mouth of the underworld, he took it off. It was an immortal thing made by the gods, and he would not let it be tainted by contact with the dead. He laid it on the ground at the entrance, and the spot was called Stephanos, the Crown, ever after. Then he went down.",
+        "He came back up with Semele, unharmed. And he took the crown he had left at the gate and set it among the stars as a lasting memorial of the day he brought his mother out of death.",
+        "If this is the Southern Crown, the old pictures fit well enough. The Greeks drew it as a wreath of leaves, not a circlet of gold, and the followers of Dionysus wore wreaths at all their rites. But the plain fact is that the Greeks left this small constellation almost without legend, and the reader should hold the tale as a likely guess. The ring of stars under the feet of [[con:Sgr|Sagittarius]] is faint enough to keep its secret."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Corona Australis, the southern crown",
+        "url": "http://www.ianridpath.com/startales/coronaaustralis.html"
+      },
+      "characters": ["Dionysus", "Semele", "Zeus", "Hypolipnus", "Aphrodite"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Why did Dionysus go down to the underworld?",
+          "choices": ["To steal the helmet of Hades", "To bring back his mother Semele", "To escape from Hera", "To find Ariadne"],
+          "answerIndex": 1,
+          "explanation": "With his father's permission, Dionysus went to fetch his dead mother Semele."
+        },
+        {
+          "id": "q2",
+          "prompt": "Why did Dionysus leave his crown at the entrance?",
+          "choices": ["As payment to the ferryman", "It was too heavy to carry", "Hypolipnus demanded it", "So an immortal gift of the gods would not be tainted by the dead"],
+          "answerIndex": 3,
+          "explanation": "The crown was a divine gift from Aphrodite, and he did not want it contaminated by contact with the dead."
+        },
+        {
+          "id": "q3",
+          "prompt": "How sure is the link between this story and the Southern Crown?",
+          "choices": ["Not sure: Hyginus tells it of the Northern Crown, and the link to the Southern Crown is a modern suggestion", "Certain: Ptolemy says so in the Almagest", "Certain: Aratus tells the story under this constellation", "It was invented by Lacaille in the 1750s"],
+          "answerIndex": 0,
+          "explanation": "Hyginus gives the story under Corona Borealis; that it may belong to Corona Australis is a modern conjecture, not an ancient statement."
+        },
+        {
+          "id": "q4",
+          "prompt": "Who had given Dionysus the crown?",
+          "choices": ["Zeus", "Semele", "Aphrodite", "Hephaestus"],
+          "answerIndex": 2,
+          "explanation": "Hyginus says he had received the crown as a gift from Venus, the Roman name for Aphrodite."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "The Greeks called the Northern Crown simply Stephanos, the Wreath, and this one Stephanos Notios, the Southern Wreath.",
+    "Geminus of Rhodes recorded another name for it, the Canopy, as if it were the awning over a throne, without saying whose throne.",
+    "Chinese astronomers saw the same arc as Bie, a river turtle on the bank of the Milky Way."
+  ]
+}

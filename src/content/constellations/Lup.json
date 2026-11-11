@@ -1,0 +1,112 @@
+{
+  "id": "Lup",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); a Greek figure called simply the Beast, with a Babylonian forerunner",
+    "when": "2nd century CE (catalogued); known to Aratus in the 3rd century BCE",
+    "history": [
+      "Lupus is one of the 48 constellations in Ptolemy's *Almagest* (about 150 CE), but to the Greeks it was not a wolf. They called it Therion, the Beast, an unnamed wild animal, and the Romans called it Bestia or Fera. Aratus, about 275 BCE, mentions it only as the creature gripped in the Centaur's right hand, and for a long time it was treated as part of [[con:Cen|Centaurus]] rather than a figure of its own. Ptolemy listed it separately.",
+      "The figure seems to have been borrowed from Mesopotamia, where the Babylonians had a constellation here called UR.IDIM, usually translated the Mad Dog or wild dog. That may be why the Greeks had the picture but no story for it. The name Wolf became fixed only in Renaissance times, when Latin translations and star atlases settled on Lupus. In 2024 the International Astronomical Union named its brightest star Uridim in memory of the Babylonian original.",
+      "As with its neighbors, the Greek letters used for its stars today were assigned by Nicolas-Louis de Lacaille in the 1750s, replacing those Johann Bayer had given in 1603."
+    ]
+  },
+  "overview": "Lupus is the wild animal that the Centaur carries to the Altar, known since the Renaissance as the Wolf. It is a rich knot of 2nd- and 3rd-magnitude stars between Scorpius and Centaurus, but it lies so far south that from Brooklyn only its upper half ever rises, low in the summer haze.",
+  "howToFind": [
+    "Look on evenings in June and early July, when Lupus is due south at its highest. Find red [[star:Antares|Antares]], the heart of [[con:Sco|Scorpius]]. Lupus lies to the lower right of Antares, below the faint stars of [[con:Lib|Libra]]: about two fists down and to the right of Antares you come to [[star:γ Lup|Gamma Lupi]] and, just to its right, [[star:δ Lup|Delta Lupi]]. [[star:β Lup|Beta Lupi]] is a little lower and farther right. All of these stand less than one fist above a flat southern horizon from Brooklyn, so you need a truly open view and a clear, dry night.",
+    "The brightest star, [[star:α Lup|Alpha Lupi]], technically rises here but reaches only about 2 degrees of altitude, which in practice means it is never seen. The southern part of the Wolf does not rise at all. The whole figure is easy from the southern United States and splendid from the southern hemisphere, where it stands high between the Scorpion and the Pointers of Centaurus."
+  ],
+  "shape": "From a southern site, a crowded, irregular oblong of a dozen moderately bright stars about a fist and a half long, with no obvious animal in it. From Brooklyn, at best three or four dim stars strung along the horizon to the lower right of Scorpius; from a lit city street you should not expect to see it at all.",
+  "mainStars": [
+    {
+      "ref": "star:α Lup",
+      "note": "The brightest star of Lupus at magnitude 2.3, a hot blue giant about 460 light-years away. Officially named Uridim in 2024 after the Babylonian constellation. Effectively invisible from Brooklyn."
+    },
+    {
+      "ref": "star:β Lup",
+      "note": "A blue-white giant of magnitude 2.7. From Brooklyn it climbs to about 6 degrees. The great supernova of the year 1006 appeared not far from it."
+    },
+    {
+      "ref": "star:γ Lup",
+      "note": "Magnitude 2.8, blue-white, and the easiest of the Wolf's bright stars to catch from Brooklyn, reaching about 8 degrees above the horizon."
+    },
+    {
+      "ref": "star:δ Lup",
+      "note": "A blue-white star of magnitude 3.2 close beside Gamma. Like most of the bright stars here it belongs to a loose family of young hot stars that stretches from Scorpius to Centaurus."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "dso:NGC5986",
+      "equip": "small-telescope",
+      "note": "A 7th-magnitude globular cluster in the northern part of Lupus, a small round haze in a telescope. It is the one deep-sky object in the Wolf that gets a little above the murk from Brooklyn, to about 11 degrees."
+    },
+    {
+      "ref": "dso:NGC5822",
+      "equip": "binoculars",
+      "note": "A large, loose open cluster in the far south of the constellation, a pleasant scatter of faint stars in binoculars. It never rises from Brooklyn."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Lup-centaurs-offering",
+      "title": "The Beast in the Centaur's hand",
+      "culture": "Greek and Roman",
+      "ancientSources": [
+        { "author": "Aratus", "work": "Phaenomena 436–442", "date": "c. 275 BCE" },
+        { "author": "Eratosthenes", "work": "Catasterisms (as reported in Star Tales)", "date": "3rd century BCE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.38", "date": "2nd century CE" },
+        { "author": "Germanicus Caesar", "work": "Aratea (as reported in Star Tales)", "date": "early 1st century CE" }
+      ],
+      "summary": "The Greeks told no separate myth about this constellation. To them it was the Beast, a nameless wild animal that the Centaur holds out toward the Altar as a sacrifice. Its only story is its part in that scene, and the way a nameless victim slowly turned into a wolf.",
+      "retelling": [
+        "Most constellations come with a hero or a victim who has a name. This one never did. When Aratus described the southern sky he came to the Centaur, half man and half horse, lying under the Scorpion, and said that the Centaur forever stretches his right hand toward the round Altar, and that in that hand he firmly grips another sign: the Beast. That is all. Men of old, Aratus says, gave it that name, and he does not say what kind of beast.",
+        "The writers who came after him filled in the scene but not the animal. The Centaur, they explained, is the wise Chiron, or perhaps the good Pholus, and after his death Zeus set him in the sky in the act of worship. Eratosthenes says the Centaur is holding the creature toward the Altar as if about to sacrifice it, and that this shows what a pious being Chiron was. Hyginus does not even call it a beast; to him it is simply a victim, which the Centaur seems to hold above the Altar. The Roman prince Germanicus, turning Aratus into Latin verse, could not decide whether the Centaur was carrying home game from the woods or bringing a gift to the altar of the gods.",
+        "There was even a version with no animal at all. Eratosthenes mentions that some people saw in these stars a wineskin, from which the Centaur was about to pour an offering, while in his other hand he carried a thyrsus, the ivy-wound staff of the followers of Dionysus. Later artists combined the two ideas and drew the Beast skewered on the staff like a spit, which is how it appears in most old atlases, though Aratus and Ptolemy have the Centaur holding it in his hand.",
+        "So the three constellations along the southern horizon of the Greeks made a single picture. On the left stood the Altar, [[con:Ara|Ara]], with its fire lit. On the right came the Centaur, [[con:Cen|Centaurus]]. Between them hung the Beast, always about to be offered and never quite arriving, as the whole scene wheeled low across the south.",
+        "Why was there no story? Probably because the figure was not Greek to begin with. The Babylonians had a constellation in these same stars called UR.IDIM, a wild dog or mad dog, and the Greeks seem to have taken over the outline without the lore that went with it. They kept the animal and forgot which animal it was.",
+        "The wolf arrived much later. Scholars and map-makers of the Renaissance, wanting a proper Latin name for the Beast, settled on Lupus, perhaps with a dim echo of the Babylonian dog. It is tempting to connect it with Lycaon, the Arcadian king whom Zeus turned into a wolf, but no ancient writer makes that link, and it would be wrong to pass it off as the constellation's myth. The honest account is the old one: a wild creature, carried to the gods by a centaur."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Lupus, the wolf",
+        "url": "http://www.ianridpath.com/startales/lupus.html"
+      },
+      "characters": ["the Centaur (Chiron or Pholus)", "the Beast"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "What did the ancient Greeks call the constellation we know as Lupus?",
+          "choices": ["Lykos, the Wolf", "Therion, the Beast", "Kyon, the Dog", "Leon, the Lion"],
+          "answerIndex": 1,
+          "explanation": "The Greeks called it Therion, an unspecified wild animal. The name Wolf dates from Renaissance times."
+        },
+        {
+          "id": "q2",
+          "prompt": "What is the Centaur doing with the Beast in the sky?",
+          "choices": ["Riding it into battle", "Rescuing it from the Scorpion", "Carrying it toward the Altar as a sacrifice", "Feeding it from a cup"],
+          "answerIndex": 2,
+          "explanation": "Eratosthenes says the Centaur holds the animal toward the Altar (Ara) as if about to sacrifice it, a sign of his piety."
+        },
+        {
+          "id": "q3",
+          "prompt": "According to Eratosthenes, what did some people see here instead of an animal?",
+          "choices": ["A wineskin for pouring an offering", "A shield", "A lyre", "A bundle of arrows"],
+          "answerIndex": 0,
+          "explanation": "In an alternative picture the Centaur holds a wineskin to pour a libation on the Altar, with a thyrsus in his other hand."
+        },
+        {
+          "id": "q4",
+          "prompt": "Why did the Greeks probably have no myth of their own for this figure?",
+          "choices": ["It was invented in the 1750s", "Its stars were too faint to notice", "The story was lost in a fire at Alexandria", "It was borrowed from Babylon, where it was a wild dog called UR.IDIM"],
+          "answerIndex": 3,
+          "explanation": "The figure appears to be an imported Babylonian constellation, so the Greeks inherited the shape without a story."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "In the spring of 1006 a new star blazed out in Lupus, bright enough to cast shadows and to be seen in daylight. It was a supernova, an exploding star, and is thought to be the brightest stellar event in recorded history.",
+    "The name Lupus is Latin for wolf, but the Greek name Therion and the Latin Bestia and Fera all simply mean wild beast.",
+    "In Chinese astronomy most of Lupus belonged to Qiguan, the imperial cavalry officers, a large constellation of 27 stars."
+  ]
+}

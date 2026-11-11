@@ -1,0 +1,35 @@
+{
+  "id": "Mus",
+  "kind": "modern",
+  "origin": {
+    "namedBy": "Pieter Dirkszoon Keyser and Frederick de Houtman; first shown by Petrus Plancius",
+    "when": "1595–1598",
+    "history": [
+      "Musca, the Fly, is one of the twelve southern constellations that grew out of the star observations made by Pieter Dirkszoon Keyser and Frederick de Houtman during the first Dutch expedition to the East Indies, 1595–97. It exists because of its neighbor: during the fleet's long stop at Madagascar the sailors watched chameleons catching flies with their tongues, and in the sky the fly sits right next to Chamaeleon.",
+      "The fly took a while to get its name. Petrus Plancius drew the insect on his globe of 1598 but left it unlabeled. De Houtman's catalog of 1603 calls it De Vlieghe, Dutch for the fly, and the Latin Musca first appears on a globe by Willem Janszoon Blaeu in 1602. Johann Bayer, working from globes on which the figure had no name, guessed wrong and labeled it Apis, the Bee, in his *Uranometria* of 1603.",
+      "Bayer's atlas was so widely used that the Bee lasted for two hundred years; Johann Bode still drew Apis in 1801. Lacaille correctly called it la Mouche, the fly, on his chart of 1756. For a time it was Musca Australis, the Southern Fly, to tell it apart from a northern fly near Aries that has since been dropped."
+    ]
+  },
+  "overview": "Musca is a fly, placed beside the chameleon that hunts it. It is a small but fairly distinct group of 3rd- and 4th-magnitude stars immediately south of the Southern Cross.",
+  "howToFind": [
+    "Musca never rises from Brooklyn. All of it is visible only south of about latitude 14°N; from the Southern Hemisphere it circles the pole with the Southern Cross and is highest on evenings from April to June.",
+    "This is one of the easiest hops in the southern sky. Find the [[asterism:southern-cross|Southern Cross]] and its foot star, [[star:Acrux|Acrux]]. Just over half a fist beyond Acrux, toward the south celestial pole, are two stars close together: [[star:α Mus|Alpha]] and [[star:β Mus|Beta Muscae]]. The dark [[dso:C99|Coalsack Nebula]] lies between the Cross and the fly."
+  ],
+  "shape": "A compact pattern half a fist to a fist across that looks like a tiny dipper: a little bowl with a short handle. Alpha and Beta show from suburbs when high; the rest needs a darker sky.",
+  "mainStars": [
+    { "ref": "star:α Mus", "note": "Magnitude 2.7, a hot blue-white star a little over 300 light-years away and the brightest in the constellation." },
+    { "ref": "star:β Mus", "note": "Magnitude 3.0, blue-white and at about the same distance as Alpha; the two make a close, obvious pair to the eye." },
+    { "ref": "star:δ Mus", "note": "Magnitude 3.6, an orange giant about 91 light-years away, a color contrast with the blue stars around it." },
+    { "ref": "star:γ Mus", "note": "Magnitude 3.8, a blue-white star marking the fly's tail." }
+  ],
+  "notableObjects": [
+    { "ref": "dso:NGC4833", "equip": "binoculars", "note": "A globular cluster close to Delta Muscae. Binoculars show a small round blur; a small telescope begins to break its edges into stars." },
+    { "ref": "dso:NGC4372", "equip": "small-telescope", "note": "A large but dim globular cluster near Gamma Muscae, seen as a faint, loose glow. It lies behind dust of the Milky Way, which dulls it." },
+    { "ref": "dso:C99", "equip": "naked-eye", "note": "The Coalsack is mostly in Crux, but its southern edge spills over the border into Musca." }
+  ],
+  "stories": [],
+  "facts": [
+    "For two centuries many atlases called this constellation Apis, the Bee, because Johann Bayer misidentified the unnamed insect on the globes he copied.",
+    "Musca is the only insect among the 88 official constellations."
+  ]
+}

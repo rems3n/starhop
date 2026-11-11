@@ -1,0 +1,77 @@
+{
+  "id": "Mon",
+  "kind": "modern",
+  "origin": {
+    "namedBy": "Petrus Plancius",
+    "when": "1612",
+    "history": [
+      "Monoceros, the Unicorn, was unknown to the ancient Greeks. The large, dim region between Orion, the two Dogs and Hydra held no bright stars and no figure until the Dutch theologian and mapmaker Petrus Plancius filled it in. The unicorn first appears, under the name Monoceros Unicornis, on a celestial globe he produced in 1612, the same globe that introduced Camelopardalis, the Giraffe.",
+      "Plancius left no explanation of his choice. The German astronomer Jacob Bartsch, who showed the figure as 'Unicornu' on a star chart in 1624 and was for a time wrongly credited with inventing it, pointed to passages in the Bible that were then translated as mentioning unicorns; those are now regarded as mistranslations. The unicorn was also a familiar Christian symbol of purity, and Plancius had drawn one among the animals of Asia on a world map of 1594.",
+      "The constellation became permanent when the Polish astronomer Johannes Hevelius included it in his influential star atlas and catalog published in 1690. Its stars were given Greek letters only in 1879, by the American astronomer Benjamin Gould. There are no myths attached to it, and none of its stars has a traditional name."
+    ]
+  },
+  "overview": "Monoceros is the Unicorn, a faint modern constellation that fills the middle of the Winter Triangle. Its brightest stars are only fourth magnitude and it has no recognizable shape, but the Milky Way runs straight through it, so it is rich in star clusters and nebulae for binoculars and telescopes.",
+  "howToFind": [
+    "You find Monoceros by its frame, not by its stars. Locate the Winter Triangle: orange [[star:Betelgeuse|Betelgeuse]] in Orion, dazzling [[star:Sirius|Sirius]] below it, and [[star:Procyon|Procyon]] off to the left. The seemingly empty area inside that triangle, and a little beyond it to the left, is the Unicorn.",
+    "Under a dark sky you can pick out a few of its stars. [[star:β Mon|Beta Monocerotis]] lies about a fist above Sirius and slightly to the right. [[star:α Mon|Alpha Monocerotis]] is about a fist and a half to the left of Sirius and somewhat higher. [[star:δ Mon|Delta Monocerotis]] sits inside the triangle, between Sirius and Procyon. From the city none of them is likely to show.",
+    "From latitude 40 degrees north Monoceros is in the evening sky from December to April and is highest in the south on February evenings, when the Winter Triangle stands above the southern horizon."
+  ],
+  "shape": "No real pattern: a wide, loose scatter of fourth-magnitude stars about four fists across, lying along the faint band of the winter Milky Way. To the unaided eye in a city it is a blank patch between three brilliant stars.",
+  "mainStars": [
+    {
+      "ref": "star:β Mon",
+      "note": "By modern measurement the brightest star in the constellation, though only magnitude 3.8. A telescope reveals it as three blue-white stars in a tight, narrow triangle. William Herschel found it in 1781 and called it one of the most beautiful sights in the heavens."
+    },
+    {
+      "ref": "star:α Mon",
+      "note": "An orange giant of magnitude 3.9 about 150 light-years away, in the southeastern part of the constellation."
+    },
+    {
+      "ref": "star:γ Mon",
+      "note": "An orange giant of fourth magnitude at the western end of the figure, a few degrees from Beta."
+    },
+    {
+      "ref": "star:δ Mon",
+      "note": "A white fourth-magnitude star lying almost exactly on the celestial equator, in the middle of the Winter Triangle."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "star:β Mon",
+      "equip": "small-telescope",
+      "note": "One of the finest triple stars in the sky. At about 100 power a small telescope shows three nearly equal blue-white points, two of them very close together."
+    },
+    {
+      "ref": "dso:M50",
+      "equip": "binoculars",
+      "note": "A bright star cluster about a third of the way from Sirius to Procyon. Binoculars show a small misty patch; a small telescope shows a heart-shaped spray of several dozen stars, with one reddish star standing out."
+    },
+    {
+      "ref": "dso:NGC2244",
+      "equip": "binoculars",
+      "note": "A cluster of hot young stars about a fist to the left of Betelgeuse. In binoculars it is a neat little rectangle of half a dozen stars. These stars have hollowed out the center of the Rosette Nebula and make it glow."
+    },
+    {
+      "ref": "dso:NGC2237",
+      "equip": "telescope",
+      "note": "The Rosette Nebula, a huge wreath of glowing gas more than twice the width of the full Moon, surrounding the cluster NGC 2244. It is famous from photographs. By eye it is very faint: it needs a truly dark sky and a wide-field telescope or large binoculars, and is not a city object."
+    },
+    {
+      "ref": "dso:NGC2264",
+      "equip": "binoculars",
+      "note": "The Christmas Tree Cluster, in the north of the constellation near the feet of Gemini. About twenty stars form a triangle like a small fir tree, with the bright star [[star:15 Mon|15 Monocerotis]] at the base of the trunk. The Cone Nebula at the tree's tip shows only in photographs."
+    },
+    {
+      "ref": "dso:NGC2232",
+      "equip": "binoculars",
+      "note": "A large, loose scattering of bright stars two degrees north of Beta Monocerotis, easy to sweep up in binoculars once you have found Beta."
+    }
+  ],
+  "stories": [],
+  "facts": [
+    "Monoceros is Greek for 'one-horned', the word that Latin turned into 'unicorn'.",
+    "Because the constellation was invented in 1612, it has no classical myth. The unicorn itself comes from medieval legend and from old natural histories, not from Greek star-lore.",
+    "Monoceros has an Alpha that is not its brightest star: Beta outshines it slightly.",
+    "Ian Ridpath suggests the neighboring hunter and dogs may have reminded Plancius of the famous late-medieval tapestries showing the hunt of the unicorn, but this is a guess; Plancius left no record of his reasons."
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "id": "dark-adaptation",
+  "unit": "skills",
+  "order": 1,
+  "title": "Let your eyes adapt",
+  "subtitle": "How to get your night vision, keep it, and make the most of it under city lights",
+  "minutes": 5,
+  "sections": [
+    {
+      "heading": "Your eyes have a night mode",
+      "body": [
+        "After this lesson you will know how to see two or three times as many stars from the same spot, with no equipment at all. The trick is patience: your eyes need time in the dark, and most people go back inside before they have finished switching over.",
+        "The back of your eye holds two kinds of light sensors. Cones work in bright light and give you color and sharp detail; they are packed into the very center of your view. Rods are far more sensitive but see only in shades of gray, and they are spread everywhere except that central spot. Daylight vision is cone vision. Night vision is rod vision.",
+        "When you step out of a lit room, your pupils open wide within seconds, but that only helps a little. The real change is chemical. Bright light bleaches the light-sensitive pigment in your rods, and it has to be rebuilt in the dark. Your cones recover in about 10 minutes. Your rods need 20 to 30 minutes, and keep improving a little after that."
+      ],
+      "demo": {
+        "title": "The first half hour outside",
+        "controls": ["bortle"],
+        "steps": [
+          {
+            "caption": "A simulation of stepping out of a bright room into a suburban backyard on a winter evening. In the first minute you see only the brightest stars: Orion's Belt, Betelgeuse, Rigel, Sirius.",
+            "time": "month:1 21:00",
+            "view": { "target": "con:Ori", "fov": 90 },
+            "layers": { "constellationLines": false, "constellationNames": false, "milkyWay": false },
+            "bortle": 9
+          },
+          {
+            "caption": "Ten minutes in. Your cones have recovered and your rods are starting to take over. Orion has filled in: you can see his head and the sword hanging under the Belt.",
+            "time": "month:1 21:00",
+            "view": { "target": "con:Ori", "fov": 90 },
+            "layers": { "constellationLines": false, "constellationNames": false, "milkyWay": false },
+            "bortle": 7
+          },
+          {
+            "caption": "Thirty minutes in, fully adapted. Same sky, same place: the only thing that changed is your eyes. Use the slider to compare. In the middle of a city the gain is smaller, because the sky itself glows, but it is still real.",
+            "time": "month:1 21:00",
+            "view": { "target": "con:Ori", "fov": 90 },
+            "layers": { "constellationLines": false, "constellationNames": false, "milkyWay": false },
+            "bortle": 5
+          }
+        ]
+      }
+    },
+    {
+      "heading": "What ruins it, and what does not",
+      "body": [
+        "Night vision takes half an hour to build and a few seconds to lose. One look at a phone at normal brightness, a car's headlights or a bare porch bulb bleaches the pigment again and sends you most of the way back to the start.",
+        "Rods barely respond to deep red light. That is why astronomers use dim red flashlights: red lets your cones read a chart while your rods stay adapted. Dim matters as much as red, so keep any light as faint as you can. Starhop has a red night mode for exactly this; turn it on, and turn your screen brightness all the way down, before you go out."
+      ],
+      "tryIt": "Before you go out tonight, switch Starhop to red night mode and set your phone to minimum brightness. Outside, note the faintest star you can see near the Big Dipper or Orion. Look again after 15 minutes without touching your phone."
+    },
+    {
+      "heading": "Look slightly to one side",
+      "body": [
+        "Because the center of your view has cones but almost no rods, it is the least sensitive part of your eye at night. A faint star can vanish when you stare straight at it and pop back when you look a little to one side. This is called averted vision, and every experienced observer uses it constantly.",
+        "It also explains why faint stars all look white or gray. Only the brighter ones deliver enough light to wake your cones and show their color: orange [[star:Betelgeuse|Betelgeuse]], blue-white [[star:Rigel|Rigel]]."
+      ],
+      "demo": {
+        "title": "An averted vision target",
+        "controls": [],
+        "steps": [
+          {
+            "caption": "The Pleiades are the classic test. Stare straight at the cluster and you may see a small blur. Look a finger-width to one side while keeping your attention on it, and individual stars appear.",
+            "time": "month:12 21:00",
+            "view": { "target": "dso:M45", "fov": 25 },
+            "layers": { "constellationLines": false, "constellationNames": false },
+            "highlights": [{ "type": "object", "ref": "dso:M45", "label": "Pleiades" }]
+          }
+        ]
+      }
+    },
+    {
+      "heading": "Doing it in a city",
+      "body": [
+        "In Brooklyn you will never be fully dark adapted, because the sky itself is bright. But the lights that hurt most are the ones shining directly into your eyes, and those you can fix. Stand where a building, wall or tree blocks nearby streetlights and windows. Shade your eyes with a hood or a cupped hand. Then give it at least 10 to 15 minutes before judging the sky. Rooftops, park interiors and the waterfront away from the lamps all work."
+      ]
+    }
+  ],
+  "keyPoints": [
+    "Cones see color and detail in bright light; rods see faint light in gray, and they are missing from the very center of your view.",
+    "Full dark adaptation takes 20 to 30 minutes, and one bright light undoes it in seconds.",
+    "Dim red light protects night vision; white phone screens destroy it.",
+    "Look slightly to one side of a faint object to see it better (averted vision).",
+    "In a city, block direct glare and wait at least 10 to 15 minutes."
+  ],
+  "examples": [],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "You step outside from a bright kitchen. Roughly how long until your eyes are close to fully dark adapted?",
+      "choices": ["About 30 seconds, once your pupils open", "About 2 minutes", "20 to 30 minutes", "Several hours"],
+      "answerIndex": 2,
+      "explanation": "Pupils open in seconds, but the rods need 20 to 30 minutes to rebuild the pigment that bright light bleached."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why do stargazers use a dim red flashlight instead of a white one?",
+      "choices": [
+        "Rods are almost blind to deep red, so they stay dark adapted",
+        "Red light travels farther through city haze",
+        "Red light makes the stars look brighter by contrast",
+        "White light attracts insects to the telescope"
+      ],
+      "answerIndex": 0,
+      "explanation": "Deep red light is seen by the cones but hardly affects the rods, so you can read a chart without resetting your night vision."
+    },
+    {
+      "id": "q3",
+      "prompt": "A faint star disappears when you look straight at it but shows when you look just beside it. Why?",
+      "choices": [
+        "The star is flickering because of the atmosphere",
+        "Your eye's lens focuses better off-center",
+        "Your pupil closes when you concentrate",
+        "The center of your view has almost no rods, the sensors that detect faint light"
+      ],
+      "answerIndex": 3,
+      "explanation": "The central spot of the retina is packed with cones and has almost no rods. Looking slightly aside puts the star's light on rod-rich areas: averted vision."
+    },
+    {
+      "id": "q4",
+      "prompt": "You have been outside for 25 minutes and a friend sends a text. What is the best way to protect your night vision?",
+      "choices": [
+        "Read it quickly at full brightness; a short look does no harm",
+        "Read it with one eye closed and the screen dimmed and red, or leave it for later",
+        "Hold the phone farther away at normal brightness",
+        "Stare at the brightest star afterwards to reset your eyes"
+      ],
+      "answerIndex": 1,
+      "explanation": "Even a short look at a bright white screen bleaches the rods. Dim and red is best, and closing one eye saves that eye's adaptation."
+    },
+    {
+      "id": "q5",
+      "prompt": "Why do most faint stars look colorless, while a few bright ones look clearly orange or blue?",
+      "choices": [
+        "Faint stars really are all white",
+        "City lights wash the color out of faint stars only",
+        "Only bright stars give enough light to trigger the cones, which are the sensors that see color",
+        "The atmosphere filters color out of dim light"
+      ],
+      "answerIndex": 2,
+      "explanation": "Faint light is detected by rods, which see only gray. A star has to be bright enough to stimulate the cones before you can see its color."
+    }
+  ]
+}

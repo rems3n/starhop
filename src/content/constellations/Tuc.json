@@ -1,0 +1,37 @@
+{
+  "id": "Tuc",
+  "kind": "modern",
+  "origin": {
+    "namedBy": "Pieter Dirkszoon Keyser and Frederick de Houtman; first shown by Petrus Plancius",
+    "when": "1595–1598",
+    "history": [
+      "Tucana is one of the twelve southern constellations devised from the observations of the Dutch navigators Pieter Dirkszoon Keyser and Frederick de Houtman at the end of the 16th century. Petrus Plancius named it Toucan when he first drew it on a globe in 1598, and Johann Bayer followed in his *Uranometria* of 1603.",
+      "There is a small puzzle in the name. The toucan is a South American bird, but the voyage went to the East Indies, and de Houtman's own catalog of 1603 describes the figure as the Indian magpie, called Lang in the Indies. That is a description of a hornbill, a big-billed Asian bird, and some globes based on his catalog draw a hornbill with a casque on its bill. Keyser, however, had sailed to South America before the East Indies voyage and could have seen real toucans, so he may be the one who thought of it. Plancius's toucan won.",
+      "The constellation gained its two showpieces later. The Small Magellanic Cloud and the bright globular cluster 47 Tucanae were originally drawn inside the coils of the water snake Hydrus. Nicolas-Louis de Lacaille moved them into Tucana when he reorganized this part of the sky in the 1750s; he was also the first to notice that the supposed star 47 Tucanae was in fact a fuzzy object."
+    ]
+  },
+  "overview": "Tucana is the toucan, the big-billed bird of tropical America. Its stars are faint, but it contains two of the best sights in the whole sky: the Small Magellanic Cloud and the globular cluster 47 Tucanae.",
+  "howToFind": [
+    "Tucana never rises from Brooklyn. Its brightest star needs a latitude south of about 30°N, the Small Magellanic Cloud about 17°N, and the whole constellation about 14°N. From the Southern Hemisphere it circles the pole and is highest on evenings from September to November.",
+    "For the showpieces, start at [[star:Achernar|Achernar]]. A fist and a half from it toward the south celestial pole is a soft glowing patch the size of several full Moons: the [[dso:SMC|Small Magellanic Cloud]]. Right beside the Cloud, about two degrees to its west, a single fuzzy star is [[dso:NGC104|47 Tucanae]]. For the bird itself, [[star:α Tuc|Alpha Tucanae]] makes a flattened triangle with [[star:Alnair|Alnair]] and [[star:Peacock|Peacock]], lying about a fist and a half from each on the side toward the pole."
+  ],
+  "shape": "A loose kite of 3rd- to 5th-magnitude stars about two fists long, with Alpha at the beak end and the Small Magellanic Cloud near the tail. The stars are lost in city light; the Cloud needs a dark, moonless sky.",
+  "mainStars": [
+    { "ref": "star:α Tuc", "note": "Magnitude 2.9, an orange giant about 200 light-years away marking the toucan's beak. In 2024 the International Astronomical Union named it Lang-Exster, combining de Houtman's local name for the bird with the old Dutch word for magpie." },
+    { "ref": "star:γ Tuc", "note": "Magnitude 4.0, a yellow-white star about 75 light-years away." },
+    { "ref": "star:ζ Tuc", "note": "Magnitude 4.2, a Sun-like star only 28 light-years away." },
+    { "ref": "star:β Tuc", "note": "A showpiece multiple star: binoculars or a small telescope split it into two nearly equal blue-white stars, with a third member a little farther off." }
+  ],
+  "notableObjects": [
+    { "ref": "dso:SMC", "equip": "naked-eye", "note": "The Small Magellanic Cloud, a dwarf galaxy about 200,000 light-years away that accompanies the Milky Way. To the eye it is a hazy wedge about four degrees long; binoculars show it grainy with star clusters." },
+    { "ref": "dso:NGC104", "equip": "naked-eye", "note": "47 Tucanae, generally rated the second-best globular cluster in the sky after Omega Centauri. It looks like a 4th-magnitude fuzzy star to the eye, a bright ball in binoculars, and a blazing swarm of stars with a dense core in a small telescope." },
+    { "ref": "dso:NGC362", "equip": "binoculars", "note": "A second, smaller globular cluster on the northern edge of the Small Magellanic Cloud. Like 47 Tucanae it is a foreground object in our own galaxy, not part of the Cloud." },
+    { "ref": "star:β Tuc", "equip": "small-telescope", "note": "An easy and attractive double star, with Beta-3 visible to sharp eyes or binoculars a short distance away." }
+  ],
+  "stories": [],
+  "facts": [
+    "The 47 in 47 Tucanae is not a normal star number: it comes from Johann Bode's catalog of 1801, because the cluster is bright enough to have been listed as a star.",
+    "Old charts label the Small Magellanic Cloud Nubecula Minor, the lesser little cloud.",
+    "Some early globes show this constellation as a hornbill, an Asian bird, rather than an American toucan."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "Hor",
+  "kind": "modern",
+  "origin": {
+    "namedBy": "Nicolas-Louis de Lacaille",
+    "when": "1756",
+    "history": [
+      "Horologium, the Clock, is one of the fourteen constellations that the French astronomer Nicolas-Louis de Lacaille added to the southern sky after cataloging its stars from the Cape of Good Hope in 1751–52. Where earlier astronomers had drawn animals and heroes, Lacaille drew the instruments of science.",
+      "This one is his own working equipment: a pendulum clock beating seconds, the kind he used to time each star as it crossed his telescope's field of view. It appeared on his first chart in 1756 as l'Horloge and was put into Latin as Horologium in the edition of 1763. He placed it next to Reticulum, which represents the eyepiece grid he used with the clock, so the two instruments sit side by side in the sky as they did in his observatory.",
+      "Lacaille drew a complete clock face with a seconds hand, quite an achievement for a thin scatter of faint stars. Artists never agreed on which part the brightest star marks: Lacaille put Alpha on one of the driving weights, while Johann Bode in 1801 made it the pendulum bob."
+    ]
+  },
+  "overview": "Horologium is a pendulum clock, the timekeeper Lacaille used when he mapped the southern stars. It is a long, thin, faint constellation running south from near the river Eridanus toward the Large Magellanic Cloud, with a single 4th-magnitude star.",
+  "howToFind": [
+    "From Brooklyn only the top of the clock rises. Its brightest star, [[star:α Hor|Alpha Horologii]], gets about 7 degrees above the southern horizon on winter evenings, too low to see without a perfect horizon and binoculars. The whole constellation is visible south of latitude 23°N, and it rides high on evenings from November to January in the Southern Hemisphere.",
+    "The clock lies alongside the last stretch of the river Eridanus. Find [[star:Achernar|Achernar]], the bright star at the river's end, and [[star:Acamar|Acamar]], a 3rd-magnitude star two fists upstream. Alpha Horologii is a fist and a half east of Acamar. From Alpha the constellation trails back south and west for more than two fists, passing between Achernar and the small diamond of [[con:Ret|Reticulum]]."
+  ],
+  "shape": "No recognizable figure: one modest star at the northern end and a ragged chain of 5th-magnitude stars curving away to the south for more than two fists. It needs a dark sky and a chart.",
+  "mainStars": [
+    { "ref": "star:α Hor", "note": "Magnitude 3.9, an orange giant about 115 light-years away and the only star here brighter than 4th magnitude. Depending on the atlas it is the pendulum bob or one of the clock's weights." },
+    { "ref": "star:δ Hor", "note": "Magnitude 4.9, a white star close beside Alpha, with which it makes a wide pair for the naked eye." },
+    { "ref": "star:β Hor", "note": "Magnitude 5.0, a white giant at the far southern end of the clock, near Hydrus." }
+  ],
+  "notableObjects": [
+    { "ref": "dso:NGC1261", "equip": "small-telescope", "note": "A small, distant globular cluster in the southern half of the constellation. A small telescope shows a round 8th-magnitude fuzz that does not break up into stars." },
+    { "ref": "dso:NGC1433", "equip": "small-telescope", "note": "A barred spiral galaxy about 7 degrees from Alpha. In a small telescope it is a faint oval glow with a brighter middle." }
+  ],
+  "stories": [],
+  "facts": [
+    "The clock and the reticle next door are a matched set: Lacaille timed stars with one as they drifted across the other.",
+    "Some old books call the constellation Horologium Oscillatorium, but Lacaille never used that longer name."
+  ]
+}

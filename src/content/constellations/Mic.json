@@ -1,0 +1,46 @@
+{
+  "id": "Mic",
+  "kind": "modern",
+  "origin": {
+    "namedBy": "Nicolas-Louis de Lacaille",
+    "when": "1751–52 (first published 1756)",
+    "history": [
+      "Microscopium, the Microscope, is one of fourteen constellations invented by the French astronomer Nicolas-Louis de Lacaille. In 1751 and 1752 he worked at the Cape of Good Hope in southern Africa, measuring the positions of nearly 10,000 southern stars, and he filled the gaps between the old constellations with new figures of his own. Nearly all of them honor the tools of science and the arts of his time, the Age of Enlightenment, rather than gods and heroes.",
+      "This one represents an early compound microscope, the kind with more than one lens. Lacaille showed it on his map of 1756 under the French name le Microscope and gave it the Latin form Microscopium in the edition of 1763. He described the figure as a tube above a square box. When Johann Bode drew it in his atlas of 1801 he added a slide holder with specimens ready to be examined.",
+      "The patch of sky was not entirely unclaimed. Ptolemy, sixteen centuries earlier, had listed six faint 'unformed' stars here, lying outside the figure of the Southern Fish. Lacaille folded them into his Microscope. There is no myth attached to the constellation, and even its admirers concede that the stars do not look like anything in particular."
+    ]
+  },
+  "overview": "Microscopium is a small, dim rectangle of fifth-magnitude stars below Capricornus, invented in the 1750s to honor the microscope. It has no bright stars and no myth, and is a constellation to tick off rather than to admire.",
+  "howToFind": [
+    "First find Capricornus by extending a line from [[star:Vega|Vega]] through [[star:Altair|Altair]] down toward the southern horizon. Microscopium lies directly underneath the Sea Goat. From [[star:ω Cap|Omega Capricorni]], the lowest star of Capricornus, drop a little more than half a fist to reach [[star:α Mic|Alpha Microscopii]]; [[star:γ Mic|Gamma Microscopii]], the brightest star, is just to its upper left. Another way to place it is to look two and a half fists to the right (west) of bright [[star:Fomalhaut|Fomalhaut]].",
+    "Be realistic about this one. From Brooklyn the constellation climbs only about 15 to 20 degrees above the southern horizon on September and October evenings, and its brightest star is magnitude 4.7. In a city sky it cannot be seen at all. You need a dark site with a clean southern horizon, and binoculars help. It is far better seen from the Southern Hemisphere, where it passes overhead."
+  ],
+  "shape": "A narrow upright rectangle about a fist tall, outlined by four or five stars near the limit of naked-eye visibility. Nothing about it suggests a microscope, and it has no bright star to anchor it.",
+  "mainStars": [
+    {
+      "ref": "star:γ Mic",
+      "note": "The brightest star, a yellow giant of magnitude 4.7 about 225 light-years away. Calculations suggest it may have passed within a few light-years of the Sun almost four million years ago."
+    },
+    {
+      "ref": "star:ε Mic",
+      "note": "A white star of magnitude 4.7, a shade fainter than Gamma, on the eastern side of the rectangle."
+    },
+    {
+      "ref": "star:α Mic",
+      "note": "A yellow giant of magnitude 4.9. Despite the letter Alpha it is only the fourth brightest star here."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "star:α Mic",
+      "equip": "small-telescope",
+      "note": "A small telescope shows a tenth-magnitude companion beside the yellow star. The two are not really connected; they just lie in the same direction."
+    }
+  ],
+  "stories": [],
+  "facts": [
+    "Microscopium contains Lacaille 8760, a red dwarf only about 13 light-years away. At magnitude 6.7 it is the brightest red dwarf in the sky, just too faint for the naked eye but easy in binoculars if you know where to look.",
+    "The young red dwarf star AU Microscopii is surrounded by a disk of dust in which planets have been discovered.",
+    "The British astronomer Patrick Moore summed up the constellation as 'totally unremarkable'."
+  ]
+}

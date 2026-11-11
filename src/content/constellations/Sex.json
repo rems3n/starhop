@@ -1,0 +1,46 @@
+{
+  "id": "Sex",
+  "kind": "modern",
+  "origin": {
+    "namedBy": "Johannes Hevelius",
+    "when": "1687",
+    "history": [
+      "Sextans, the Sextant, was introduced by the Polish astronomer Johannes Hevelius of Danzig (Gdańsk) in his star catalogue of 1687, under the fuller name Sextans Uraniae, 'Urania's sextant', and drawn in his atlas, published after his death in 1690. It honors a real instrument: the large metal sextant, a sixth of a circle fitted with sights, with which he measured the positions of the stars from the rooftop observatory he had built across three adjoining houses. In 1679 a fire destroyed his home, the observatory and his instruments, the sextant among them. Putting it in the sky was his memorial to it.",
+      "There is no myth here and not much to see, and that may have been deliberate. Hevelius went on measuring star positions with the naked eye and plain sights all his life, even though telescopic sights were by then available, and he seems to have chosen very faint stars for this figure, as for his Lynx, to show how keen his eyesight was. John Flamsteed shortened the name to Sextans in 1725. The stars were so dim that they did not receive Greek letters until Benjamin Gould assigned them in 1879."
+    ]
+  },
+  "overview": "An astronomer's measuring instrument, drawn from a handful of very faint stars in the empty space south of Leo and above the long body of Hydra. Its brightest star is only magnitude 4.5, so from a city Sextans is invisible; under dark skies it is three or four dim stars and no recognizable shape.",
+  "howToFind": [
+    "Find [[star:Regulus|Regulus]], the bright star at the foot of Leo's Sickle. Drop straight down from it toward the southern horizon for a little more than a fist. On a dark night you will come to a faint star by itself: that is [[star:α Sex|Alpha Sextantis]]. Farther down and to the right (southwest), about two and a half fists from Regulus, is the lone orange star [[star:Alphard|Alphard]], the heart of Hydra. Sextans is the dim area inside the triangle these stars suggest, mostly to the left (east) of the line from Regulus to Alphard.",
+    "The other stars, [[star:β Sex|Beta]], [[star:γ Sex|Gamma]] and [[star:δ Sex|Delta Sextantis]], are fainter still and scattered over a fist or so around Alpha. Sextans crosses the southern sky with Leo and is highest on evenings in March and April, about halfway up the sky as seen from Brooklyn."
+  ],
+  "shape": "No pattern to speak of: a few fifth-magnitude stars that mapmakers join into a wedge or a bent line about a fist across (magnitude is the brightness scale, where smaller numbers are brighter). Nothing of it survives city lights. Treat it as a dark patch on the map, bounded by Regulus above and Alphard to the lower right.",
+  "mainStars": [
+    {
+      "ref": "star:α Sex",
+      "note": "The brightest star in Sextans, a white giant of magnitude 4.5 directly south of Regulus. It lies almost exactly on the celestial equator, the line in the sky above the Earth's equator."
+    },
+    {
+      "ref": "star:γ Sex",
+      "note": "Magnitude 5.1, to the southwest of Alpha. Useful mainly as the stepping-stone to the Spindle Galaxy."
+    },
+    {
+      "ref": "star:β Sex",
+      "note": "Magnitude 5.1, a blue-white star to the east of Alpha, marking the other end of the instrument's arc."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "dso:NGC3115",
+      "equip": "small-telescope",
+      "note": "The Spindle Galaxy, a lens-shaped galaxy seen edge-on, about three finger-widths east of [[star:γ Sex|Gamma Sextantis]]. At ninth magnitude, with a bright, concentrated center, it shows in a small telescope as a short, sharp streak of light, and it is the one object that brings observers to Sextans."
+    }
+  ],
+  "stories": [],
+  "facts": [
+    "A sextant measures the angle between two objects in the sky. The name comes from its curved scale, which spans a sixth of a circle. Hevelius's was a large fixed observatory instrument, not the hand-held kind later used by sailors.",
+    "Hevelius's book *Machina Coelestis* of 1673 includes an engraving of him using the sextant at his rooftop observatory, six years before the fire.",
+    "In Chinese astronomy three stars here formed Tianxiang, the Celestial Minister.",
+    "Because Sextans lies along the celestial equator, it can be seen from almost everywhere on Earth."
+  ]
+}

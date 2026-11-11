@@ -1,0 +1,202 @@
+{
+  "id": "Tri",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); an older Greek figure, with a Babylonian forerunner",
+    "when": "2nd century CE (Almagest); described by Aratus in the 3rd century BCE",
+    "history": [
+      "Triangulum is one of the 48 constellations of Ptolemy's *Almagest* (about 150 CE), listed there as Trigonon, 'the triangle'. Earlier Greek writers, including Aratus and Eratosthenes, called it Deltoton, because it looks like the capital form of the Greek letter delta (Δ). Aratus describes it exactly: three sides, two of them equal and the third shorter, and easy to find below Andromeda.",
+      "The stars were noticed long before that. In Babylonian star lists the triangle, together with the star we call Almach in Andromeda, formed the Plough, the first constellation named on the tablets known as MUL.APIN, which were compiled around 1000 BCE.",
+      "Because a triangle is only a shape, the Greeks and Romans never agreed on what it was a picture of. Hyginus collects the proposals: a letter set in the sky by a god, the land of Egypt, the island of Sicily. Each is given below. In 1687 Johannes Hevelius added a second, smaller triangle from three faint stars beside it and renamed the original Triangulum Majus; his Triangulum Minus was later dropped."
+    ]
+  },
+  "overview": "Triangulum is exactly what its name says: a small, slim triangle of three stars. It is faint but tidy, sitting between Andromeda and Aries in the autumn sky, and it holds the Triangulum Galaxy, the second-nearest large spiral galaxy to our own.",
+  "howToFind": [
+    "Find Andromeda's chain of bright stars running from the Great Square, ending at [[star:Almach|Almach]], and find [[star:Hamal|Hamal]], the brightest star of Aries, about two fists to its south (a fist at arm's length is roughly 10 degrees). Triangulum lies midway between them. Its sharp point, [[star:Mothallah|Mothallah]], aims back toward the Great Square; the short far side is made by [[star:β Tri|Beta]] and [[star:γ Tri|Gamma Trianguli]].",
+    "From Brooklyn the Triangle is up on autumn and winter evenings and passes close to overhead in November and December."
+  ],
+  "shape": "A long, thin isosceles triangle about two-thirds of a fist long and a couple of finger-widths across the base. The stars are third and fourth magnitude (magnitude is the brightness scale, where smaller numbers are brighter), so from the city you may see just Beta and Mothallah; in a suburban sky the neat wedge is obvious once you know where to look.",
+  "mainStars": [
+    {
+      "ref": "star:β Tri",
+      "note": "Beta Trianguli, a white star 127 light-years away at one end of the triangle's short side. At magnitude 3.0 it is the brightest star in the constellation, despite being labeled Beta."
+    },
+    {
+      "ref": "star:Mothallah",
+      "note": "Alpha Trianguli, a yellow-white star 63 light-years away at the sharp point. Its name comes from the Arabic for 'the triangle'."
+    },
+    {
+      "ref": "star:γ Tri",
+      "note": "Gamma Trianguli, a white star at the other end of the short side, with fainter [[star:δ Tri|Delta Trianguli]] close beside it."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "dso:M33",
+      "equip": "binoculars",
+      "note": "The Triangulum Galaxy, a spiral nearly 3 million light-years away. It lies about four degrees from Mothallah in the direction of [[star:Mirach|Mirach]]. Its light is spread thin over an area bigger than the full Moon, so it needs a truly dark sky: there, binoculars show a large, ghostly oval. From the city it is invisible."
+    },
+    {
+      "ref": "star:6 Tri",
+      "equip": "small-telescope",
+      "note": "A pretty double star just south of the triangle, also known as Iota Trianguli: a yellow star with a close, fainter bluish companion."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Tri-delta",
+      "title": "The letter of Zeus",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.19", "date": "2nd century CE" },
+        { "author": "Aratus", "work": "Phaenomena 233–238", "date": "3rd century BCE" }
+      ],
+      "summary": "The oldest Greek name for the Triangle was Deltoton, 'the delta-shaped thing'. According to Hyginus, the god Hermes set it above the dim stars of the Ram, both to mark where the Ram is and to write in the sky the first letter of the name of Zeus.",
+      "retelling": [
+        "To a Greek reader a triangle in the sky was, before anything else, a letter. The capital delta of the Greek alphabet is a triangle, Δ, and so the first name the constellation had was Deltoton. Aratus uses that name, and Hyginus opens his entry on it by saying that the constellation has three angles like the letter delta and is named for that reason.",
+        "Hyginus then explains who put a letter up there and why. It was Hermes, whom the Romans called Mercury, the messenger of the gods. Next to the Triangle lies the Ram, Aries, a constellation honored as the leader of the zodiac but made of disappointingly faint stars; Aratus calls it weak and starless, as on a moonlit night. Hermes is thought to have placed the Deltoton above the Ram's head, Hyginus says, so that the dimness of Aries would be marked by its brightness, wherever it might be. The Triangle is a signpost: find the clear little wedge and you have found the vague animal underneath it.",
+        "The second purpose was a kind of signature. In Greek the name of Zeus, in the form used when speaking of something as belonging to him, is Dios, and Dios begins with delta. So the Triangle, Hyginus reports, also forms the first letter of the name of the king of the gods, written above the first sign of the zodiac.",
+        "Hyginus adds one further idea in the same spirit, that the three corners stand for the three parts into which the gods divided the universe. He does not choose between the explanations. None of them is a tale with heroes and monsters; they are the answers of people who looked at a plain geometric shape among so many pictures of animals and people and felt it must mean something. Aratus, for his part, treats the Triangle purely as a guide. It is drawn with three sides, he says, two equal and one shorter, it is easy to find, and a little south of it are the stars of the Ram."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Triangulum, the triangle",
+        "url": "http://www.ianridpath.com/startales/triangulum.html"
+      },
+      "characters": ["Hermes (Mercury)", "Zeus"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "What did the early Greek name Deltoton refer to?",
+          "choices": ["The delta-like shape of the constellation", "A river in Thessaly", "A hero who drew triangles", "The three-headed dog Cerberus"],
+          "answerIndex": 0,
+          "explanation": "The constellation looks like the capital Greek letter delta, Δ, so it was called Deltoton."
+        },
+        {
+          "id": "q2",
+          "prompt": "According to Hyginus, which god placed the Triangle in the sky?",
+          "choices": ["Athena", "Poseidon", "Hermes", "Apollo"],
+          "answerIndex": 2,
+          "explanation": "Hyginus says Mercury, the Roman name for Hermes, is thought to have set it above the head of the Ram."
+        },
+        {
+          "id": "q3",
+          "prompt": "Why was the Triangle said to be placed above Aries?",
+          "choices": ["To protect the Ram from Cetus", "To punish the Ram for losing its fleece", "To hold up Andromeda's chains", "To mark the position of the dim Ram with something brighter"],
+          "answerIndex": 3,
+          "explanation": "Aries is faint, and the neat Triangle above its head was said to show where the Ram is."
+        },
+        {
+          "id": "q4",
+          "prompt": "Whose name was the delta in the sky said to begin?",
+          "choices": ["Demeter", "Zeus, in the Greek form Dios", "Danaë", "Dionysus"],
+          "answerIndex": 1,
+          "explanation": "Hyginus says the Triangle forms the first letter of the name of Jove, in Greek Dios."
+        }
+      ]
+    },
+    {
+      "id": "Tri-nile",
+      "title": "The Delta of the Nile",
+      "culture": "Greek (Alexandrian)",
+      "ancientSources": [
+        { "author": "Eratosthenes", "work": "Catasterisms (Deltoton)", "date": "3rd century BCE, surviving in a later summary" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.19", "date": "2nd century CE" }
+      ],
+      "summary": "A second ancient reading made the Triangle a map. Eratosthenes, who worked in Egypt, linked it with the delta of the Nile, and Hyginus reports that some people saw in it the outline of Egypt, or of Egypt and Ethiopia where the Nile divides them.",
+      "retelling": [
+        "The same letter that gave the Triangle its first name also named a piece of the Earth. Where the Nile nears the Mediterranean it splits into branches and fans out across a great wedge of flat, fertile land, and the Greeks called that wedge the Delta, after the shape of the letter. It was the richest farmland they knew.",
+        "Eratosthenes spent his working life in Egypt, at Alexandria on the edge of the Delta, as head of the famous library there. The collection of star myths that goes under his name is reported as saying that the Deltoton in the sky represents the Nile delta. For someone looking up from Alexandria the match must have seemed natural: the triangle that fed the country had its portrait overhead.",
+        "Hyginus, writing later in Latin, passes on the idea in a slightly different form. Some have said, he writes, that the constellation pictures the position of Egypt; others, that it shows Ethiopia and Egypt, where the Nile marks the boundary between them. He simply lists these opinions beside the others he had collected and leaves the reader to pick.",
+        "There is no adventure in this version and no one is rescued or punished, but it puts the Triangle in good company. The sky around it is full of Egypt and Ethiopia and their river. Hyginus records that some people took the long constellation Eridanus, the River, to be the Nile. Andromeda, just above the Triangle, was a princess of Ethiopia. And Ovid tells how the gods themselves once fled from the monster Typhoeus to Egypt, to the place where the Nile spreads out into its seven mouths. In this reading the little wedge of stars is that same place, the meeting of the great river and the sea, drawn among the stars as the capital letter that names it."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Triangulum, the triangle",
+        "url": "http://www.ianridpath.com/startales/triangulum.html"
+      },
+      "characters": ["Eratosthenes"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "What did Eratosthenes say the Triangle represented?",
+          "choices": ["The pyramids of Egypt", "The delta of the Nile", "The harbor of Alexandria", "The island of Crete"],
+          "answerIndex": 1,
+          "explanation": "Eratosthenes linked the sky's Deltoton with the Nile delta, the wedge of land where the river meets the sea."
+        },
+        {
+          "id": "q2",
+          "prompt": "Why is the mouth of the Nile called a delta?",
+          "choices": ["It was named after a queen called Delta", "The word means 'gift of the river'", "Its wedge of land is shaped like the Greek letter delta", "It was the fourth river the Greeks explored"],
+          "answerIndex": 2,
+          "explanation": "The fan of land between the river's branches is triangular, like the capital letter Δ."
+        },
+        {
+          "id": "q3",
+          "prompt": "Which alternative does Hyginus report alongside 'the position of Egypt'?",
+          "choices": ["Ethiopia and Egypt, where the Nile marks their boundary", "Greece and Troy, divided by the sea", "Libya and the mountain of Atlas", "Persia and its three rivers"],
+          "answerIndex": 0,
+          "explanation": "Hyginus says some thought the Triangle pictured Ethiopia and Egypt together, with the Nile as the border."
+        }
+      ]
+    },
+    {
+      "id": "Tri-sicily",
+      "title": "Sicily, the three-cornered island",
+      "culture": "Roman",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.19", "date": "2nd century CE" },
+        { "author": "Ovid", "work": "Metamorphoses 5.346–408 (for the myths of Sicily itself)", "date": "c. 8 CE" }
+      ],
+      "summary": "Hyginus records that still others saw the island of Sicily pictured in the Triangle. Sicily has three capes and was called Trinacria for that reason, and it was a land thick with myth: the giant Typhoeus lay buried under it, and it was sacred to the grain goddess Ceres.",
+      "retelling": [
+        "The third identification comes from the Roman side of the Mediterranean. 'Still others,' Hyginus writes after listing the Greek ideas, 'think that Sicily is pictured there.' He says no more than that, but any Roman would have understood. Sicily is a triangular island with a cape at each corner, and its old name was Trinacria, the land of three headlands.",
+        "Those three capes had a story of their own, and Ovid tells it. When the monster Typhoeus dared to reach for the thrones of heaven, he was thrown down and the island of Sicily was heaped on top of him. He lies there on his back. His hands are pinned under the capes Pelorus and Pachynus, his legs under the cape of Lilybaeum, and Mount Etna presses on his head. When he struggles to get up, the cities shake; the fire and ash that Etna throws out come from his mouth.",
+        "The shaking alarmed even the king of the dead, who drove up from the underworld to see whether the ground would hold. That errand led to the most famous event in Sicilian myth. Near the town of Henna there is a deep lake ringed with trees where, Ovid says, it is always spring. Proserpina, the daughter of Ceres, was gathering violets and lilies there with her friends when Pluto saw her, and in almost the same moment seized her and carried her off in his chariot. Her mother's search for her, and the bargain that brings the girl back for part of every year, became the Greek and Roman explanation of the seasons.",
+        "Sicily was Rome's great grain country, and Ceres, goddess of the harvest, was its patron. To see her island in the sky was a natural thought for a people who ate its bread. Ancient writers do not preserve a tale of how the island's likeness was raised to the stars; Hyginus gives only the bare identification. What he does show is how freely the same three stars could be read: a letter for the Greeks, a river mouth for an Alexandrian, and for some in Italy the three-cornered island with a giant underneath it."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Triangulum, the triangle",
+        "url": "http://www.ianridpath.com/startales/triangulum.html"
+      },
+      "characters": ["Typhoeus", "Ceres", "Proserpina", "Pluto"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Why was Sicily called Trinacria?",
+          "choices": ["It had three kings", "It has three capes, one at each corner", "It took three days to sail around", "Three goddesses were born there"],
+          "answerIndex": 1,
+          "explanation": "The island is roughly triangular, with a headland at each corner, which is why some saw it in the Triangle."
+        },
+        {
+          "id": "q2",
+          "prompt": "In Ovid's telling, which monster lies pinned beneath Sicily?",
+          "choices": ["The Chimera", "Medusa", "Cetus", "Typhoeus"],
+          "answerIndex": 3,
+          "explanation": "Typhoeus was buried under the island for trying to seize heaven; Mount Etna rests on his head."
+        },
+        {
+          "id": "q3",
+          "prompt": "Which goddess was especially linked with Sicily?",
+          "choices": ["Ceres, goddess of grain", "Juno, queen of the gods", "Diana, goddess of the hunt", "Minerva, goddess of wisdom"],
+          "answerIndex": 0,
+          "explanation": "Sicily was a great grain-growing land, sacred to Ceres; her daughter Proserpina was carried off from Henna on the island."
+        },
+        {
+          "id": "q4",
+          "prompt": "What does Hyginus actually say about the Triangle and Sicily?",
+          "choices": ["That Ceres begged Jupiter to put the island in the sky", "That Typhoeus threw the island at the stars", "Only that some people think Sicily is pictured there", "That Sicilian sailors invented the constellation"],
+          "answerIndex": 2,
+          "explanation": "Hyginus gives just the identification, with no story of how it came about."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "The Triangulum Galaxy, the Andromeda Galaxy and our own Milky Way are the three big spirals of the Local Group, our small neighborhood of galaxies.",
+    "Under a truly dark sky a few sharp-eyed observers can glimpse the Triangulum Galaxy without optical aid, which would make it a rival to the Andromeda Galaxy as the most distant thing visible to the naked eye.",
+    "Hevelius's lost constellation Triangulum Minus is remembered in the official name Triminus, given in 2025 to its brightest star, [[star:6 Tri|6 Trianguli]].",
+    "Chinese astronomers counted the stars of the short side as officers of the Great General of Heaven in Andromeda."
+  ]
+}

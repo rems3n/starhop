@@ -1,0 +1,56 @@
+{
+  "id": "Cam",
+  "kind": "modern",
+  "origin": {
+    "namedBy": "Petrus Plancius",
+    "when": "1612",
+    "history": [
+      "Camelopardalis, the Giraffe, was invented by the Dutch theologian and mapmaker Petrus Plancius, who first showed it on a celestial globe in 1612, the same globe on which he introduced Monoceros, the Unicorn. The name is the old Greek and Latin word for a giraffe, literally 'camel-leopard': an animal with a camel's long neck and a leopard's spots. Plancius placed it in the large, dim region between the Great Bear and Cassiopeia, which Greek astronomers had left empty because it contains no star brighter than fourth magnitude.",
+      "The figure first appeared in print in 1624, in a book by the German astronomer Jacob Bartsch. Bartsch explained it as the camel on which Rebecca rode to her marriage with Isaac in the Book of Genesis, an interpretation that does not fit, since the constellation is a giraffe and not a camel; he also credited it to the wrong inventor. What Plancius himself meant by it is not recorded.",
+      "Johannes Hevelius secured the Giraffe's place by cataloguing 32 stars in it and giving it a full plate in his atlas of 1690. Old maps spell the name several ways, including Camelopardalus and Camelopardus. Its three lettered stars, Alpha, Beta and Gamma, were labeled by Francis Baily in 1845. There are no myths attached to it."
+    ]
+  },
+  "overview": "Camelopardalis is the Giraffe, a big but very dim constellation filling the blank area between the North Star, Capella and Cassiopeia. It is the eighteenth-largest constellation, yet it has no star brighter than fourth magnitude, so to the eye it is mostly an absence.",
+  "howToFind": [
+    "Think of the triangle formed by [[star:Polaris|Polaris]], bright [[star:Capella|Capella]] and [[star:Segin|Segin]] at the end of Cassiopeia's W. The Giraffe is the dark space inside and around it, and it extends on past Polaris toward the head of the Great Bear. For its brightest stars, start at Capella and move toward Polaris: about a fist and a half along (a fist at arm's length is roughly 10 degrees) you meet [[star:β Cam|Beta Camelopardalis]] with [[star:7 Cam|7 Camelopardalis]] nearby, and half a fist farther on, [[star:α Cam|Alpha Camelopardalis]].",
+    "From Brooklyn Camelopardalis is circumpolar, meaning it circles the pole and never sets. It is highest, standing above Polaris, on winter evenings from December to February. You need a dark sky to trace any of it."
+  ],
+  "shape": "A sparse scatter of fourth- and fifth-magnitude stars (magnitude is the brightness scale, where smaller numbers are brighter) spread over more than three fists of sky, with no pattern that jumps out. From the city the whole constellation is invisible to the naked eye; it is best treated as the empty region you cross between Capella and the pole.",
+  "mainStars": [
+    {
+      "ref": "star:β Cam",
+      "note": "Beta Camelopardalis, a yellow supergiant roughly a thousand light-years away. At magnitude 4.0 it is the brightest star in the Giraffe, outshining Alpha."
+    },
+    {
+      "ref": "star:α Cam",
+      "note": "Alpha Camelopardalis, a blue supergiant of magnitude 4.3. It is thousands of light-years away, one of the most distant stars that can be seen at all easily without optical aid."
+    },
+    {
+      "ref": "star:γ Cam",
+      "note": "Gamma Camelopardalis, a white star of magnitude 4.6 farther up toward Polaris."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "dso:NGC1502",
+      "equip": "binoculars",
+      "note": "A small, bright knot of stars at the end of Kemble's Cascade, a straight chain of about twenty faint stars two and a half degrees long that looks like water tumbling into a pool. To find it, extend the line from Caph through Segin in Cassiopeia by the same distance again. A favorite binocular sight under a dark sky."
+    },
+    {
+      "ref": "dso:NGC2403",
+      "equip": "small-telescope",
+      "note": "A spiral galaxy about 12 million light-years away, on the Giraffe's far side toward the nose of the Great Bear. A dim oval glow in a small telescope from a dark site."
+    },
+    {
+      "ref": "dso:IC342",
+      "equip": "small-telescope",
+      "note": "The Hidden Galaxy, a large face-on spiral dimmed by the dust of our own Milky Way lying in front of it. Its light is spread very thin; it needs a dark, clear night."
+    }
+  ],
+  "stories": [],
+  "facts": [
+    "When the Chinese constellations took shape, roughly 1,600 years ago, the north celestial pole lay in what is now Camelopardalis, and a fifth-magnitude star here was honored as the Celestial Pivot.",
+    "In Camelopardalis, as in a number of faint constellations, the star labeled Alpha is not the brightest.",
+    "Kemble's Cascade is named for Lucian Kemble, a Canadian amateur astronomer and Franciscan friar who described it in a letter to a sky-watching columnist."
+  ]
+}

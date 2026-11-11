@@ -1,0 +1,33 @@
+{
+  "id": "Men",
+  "kind": "modern",
+  "origin": {
+    "namedBy": "Nicolas-Louis de Lacaille",
+    "when": "1756",
+    "history": [
+      "Mensa is the only one of Nicolas-Louis de Lacaille's fourteen southern constellations that is not an instrument or a tool. It is a place: Table Mountain, the flat-topped mountain above Cape Town in South Africa, beneath which Lacaille set up his small observatory and cataloged the southern stars in 1751–52.",
+      "On his chart published in 1756 he named it Montagne de la Table, and in the 1763 edition he gave it in Latin as Mons Mensae, the Table Mountain. He chose its position with care. The constellation lies just under the Large Magellanic Cloud, so the celestial mountain wears a white cloud on its summit, exactly like the real one: Lacaille noted that a cloud forms over Table Mountain at the approach of a strong south-easterly wind. Capetonians call that cloud the tablecloth.",
+      "In 1844 John Herschel, who had himself observed from the Cape, proposed shortening the name to Mensa, the Table. Francis Baily adopted the suggestion in the British Association's catalog of 1845."
+    ]
+  },
+  "overview": "Mensa is Table Mountain at Cape Town, where Lacaille observed. It is the faintest of all 88 constellations, with no star brighter than 5th magnitude, but it is easy to locate because the Large Magellanic Cloud rests on its northern edge.",
+  "howToFind": [
+    "Mensa never rises from Brooklyn; it lies within about 20 degrees of the south celestial pole. All of it can be seen only from south of about latitude 5°N, and from the Southern Hemisphere it circles the pole, highest on evenings from December to February.",
+    "Find the [[dso:LMC|Large Magellanic Cloud]], almost two fists from [[star:Canopus|Canopus]] toward the south celestial pole. Mensa is the dim area immediately on the pole side of the Cloud. Its brightest star, [[star:α Men|Alpha Mensae]], is about half a fist from the center of the Cloud, in the direction away from Canopus."
+  ],
+  "shape": "A handful of stars at the very limit of naked-eye visibility, spread over about a fist of sky between the Large Magellanic Cloud and the pole. There is no pattern to see, and none of it is visible without a truly dark sky.",
+  "mainStars": [
+    { "ref": "star:α Men", "note": "Magnitude 5.1, and still the brightest star in Mensa; no other constellation has so faint a leader. It is a yellow dwarf very like the Sun, 33 light-years away; this is roughly how the Sun would look from that distance." },
+    { "ref": "star:γ Men", "note": "Magnitude 5.2, an orange giant about 100 light-years away." },
+    { "ref": "star:β Men", "note": "Magnitude 5.3, a yellow giant seen near the southern edge of the Large Magellanic Cloud." }
+  ],
+  "notableObjects": [
+    { "ref": "dso:LMC", "equip": "naked-eye", "note": "Most of the Large Magellanic Cloud is in Dorado, but its southern part crosses into Mensa: this is the tablecloth cloud on Lacaille's mountain. Sweep the area with binoculars for its star clouds and clusters." }
+  ],
+  "stories": [],
+  "facts": [
+    "Mensa is the only constellation with no star brighter than magnitude 5.0.",
+    "It is the only constellation named after a real landmark on Earth's surface.",
+    "About 250,000 years ago Alpha Mensae passed within about 11 light-years of the Sun and would have shone at nearly 2nd magnitude."
+  ]
+}

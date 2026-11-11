@@ -1,0 +1,36 @@
+{
+  "id": "Cae",
+  "kind": "modern",
+  "origin": {
+    "namedBy": "Nicolas-Louis de Lacaille",
+    "when": "1756",
+    "history": [
+      "Caelum, the Chisel, is one of fourteen constellations invented by the French astronomer Nicolas-Louis de Lacaille to fill the gaps between the older figures of the far southern sky, which he had surveyed from the Cape of Good Hope in 1751 and 1752. Lacaille named most of his inventions after the tools of the arts and sciences of his day. This one honors the engraver.",
+      "It first appeared on his map of the southern stars published in 1756, under the French name *les Burins*. In his notes Lacaille explained that it shows two engraving tools crossed and tied with a ribbon: a burin, the sharp steel graver used to cut lines into a copper plate, and an échoppe, a kind of etching needle. On the second edition of the map in 1763 the name was put into Latin as Caelum Scalptorium, the engraver's chisel.",
+      "In 1844 the English astronomer John Herschel proposed shortening several of Lacaille's two-word names. Francis Baily adopted the suggestion in his star catalog of 1845, and the constellation has been plain Caelum ever since. There are no legends attached to it."
+    ]
+  },
+  "overview": "Caelum is the engraver's Chisel, a tiny and very faint southern constellation squeezed between Columba and Eridanus. Its brightest star is only magnitude 4.4. It is the eighth-smallest constellation in the sky and one of the least conspicuous.",
+  "howToFind": [
+    "Caelum lies below [[con:Lep|Lepus]] and to the right of [[con:Col|Columba]]. From [[star:Phact|Phact]], the brightest star of Columba, look about a fist and a half to the lower right for [[star:α Cae|Alpha Caeli]]. There is no bright star to guide you closer and no pattern to recognize.",
+    "From Brooklyn this is, honestly, a constellation to know about and not one to see. Its northern part does rise, but Alpha Caeli climbs only about seven degrees above the southern horizon, where haze and city glow swallow a star that faint. It is due south around 8 p.m. in late January. To see Caelum properly, travel to the southern United States or, better, the Southern Hemisphere, where it passes high overhead on summer evenings there."
+  ],
+  "shape": "A short, crooked line of three or four dim stars about a fist long, running north to south. Nothing about it suggests a chisel. It is invisible from a city and from 40 degrees north in almost any conditions.",
+  "mainStars": [
+    {
+      "ref": "star:α Cae",
+      "note": "The brightest star in the constellation at magnitude 4.4, a white star a little hotter than the Sun and about 66 light-years away."
+    },
+    {
+      "ref": "star:γ1 Cae",
+      "note": "An orange giant of magnitude 4.6, about 180 light-years away, in the northern part of the constellation. It is the Caelum star that rises highest from New York."
+    }
+  ],
+  "notableObjects": [],
+  "stories": [],
+  "facts": [
+    "The Latin word *caelum* meaning 'chisel' is a rare one, unrelated to the common Latin *caelum* meaning 'sky' or 'heaven'.",
+    "Caelum ranks 81st in size out of the 88 constellations.",
+    "Lacaille's other tool-constellations include the Telescope, the Microscope, the Air Pump, the Furnace and the Painter's Easel. Pictor, the easel, borders Caelum to the south."
+  ]
+}

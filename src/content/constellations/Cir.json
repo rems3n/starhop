@@ -1,0 +1,33 @@
+{
+  "id": "Cir",
+  "kind": "modern",
+  "origin": {
+    "namedBy": "Nicolas-Louis de Lacaille",
+    "when": "1756",
+    "history": [
+      "Circinus is one of the fourteen constellations invented in the 1750s by the French astronomer Nicolas-Louis de Lacaille, who cataloged the southern stars from the Cape of Good Hope in 1751–52 and fitted new figures into the gaps between the old ones. It represents a pair of dividing compasses, the hinged two-legged instrument that geometers, draftsmen and navigators use to draw circles and step off distances on a chart.",
+      "The gap in this case was tiny. The compasses are squeezed, legs closed, between the forefeet of the Centaur and the Southern Triangle; it is the smallest of Lacaille's fourteen and the fourth-smallest constellation in the sky. It first appeared as le Compas on his chart published by the French Royal Academy of Sciences in 1756, described in his notes simply as the geometer's compass, and became Circinus in the Latin edition of 1763.",
+      "Lacaille placed it deliberately. Next to it are Norma, his set square, and Triangulum Australe, which he redrew as a surveyor's level, so that a little kit of drawing and surveying instruments sits together in the southern Milky Way."
+    ]
+  },
+  "overview": "Circinus is a pair of drafting compasses with its legs closed: a small, narrow, faint triangle of stars. It would be hard to find were it not sitting right beside Alpha Centauri.",
+  "howToFind": [
+    "Circinus never rises from Brooklyn. Its brightest star needs a latitude south of about 25°N and the whole figure about 19°N. From the Southern Hemisphere it circles the pole with the Pointers and is highest on evenings from May to July.",
+    "Find the Pointers, [[star:Rigil Kentaurus|Alpha]] and [[star:Hadar|Beta Centauri]]. [[star:α Cir|Alpha Circini]] is four degrees, less than half a fist, from Alpha Centauri, straight toward the south celestial pole. The two faint stars at the other end of the compasses, [[star:β Cir|Beta]] and [[star:γ Cir|Gamma Circini]], sit close together about half a fist east of Alpha Centauri."
+  ],
+  "shape": "A long, thin triangle about three-quarters of a fist tall: Alpha at the point where the compass legs are hinged, and Beta and Gamma, a degree apart, at the tips. Alpha is visible from the suburbs; the other two need a darker sky.",
+  "mainStars": [
+    { "ref": "star:α Cir", "note": "Magnitude 3.2, a white star 54 light-years away with an unusual chemical make-up and a very slight, rapid flicker in brightness. A small telescope shows an orange 8.5-magnitude companion close by." },
+    { "ref": "star:β Cir", "note": "Magnitude 4.1, a white star about 100 light-years away." },
+    { "ref": "star:γ Cir", "note": "Magnitude 4.5, a close pair of stars, one bluish and one yellow, about 450 light-years away; it takes a good-sized telescope to separate them." }
+  ],
+  "notableObjects": [
+    { "ref": "star:α Cir", "equip": "small-telescope", "note": "A pleasing unequal double: a white 3rd-magnitude star with a faint orange companion 5.7 arcseconds away." },
+    { "ref": "dso:NGC5823", "equip": "small-telescope", "note": "An open cluster at the northern edge of the constellation, toward Lupus. A small telescope shows a small hazy patch sprinkled with faint stars." }
+  ],
+  "stories": [],
+  "facts": [
+    "Circinus is the fourth-smallest of the 88 constellations.",
+    "Do not confuse it with Pyxis, the mariner's magnetic compass, another of Lacaille's instruments; Circinus is the compass you draw circles with."
+  ]
+}

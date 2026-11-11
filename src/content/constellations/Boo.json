@@ -1,0 +1,232 @@
+{
+  "id": "Boo",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); an older Greek figure already named by Homer",
+    "when": "2nd century CE (Almagest); named in Homer's Odyssey around the 8th century BCE",
+    "history": [
+      "Boötes (say boh-OH-teez) is as old as Greek literature: in the *Odyssey* Odysseus watches 'late-setting Boötes' as he steers his raft. The name probably means 'ox-driver', from the days when the seven stars of the Big Dipper were pictured as a wagon or a team of oxen, though some derive it from a word for 'noisy', the shouting of a herdsman. When the Dipper came to be seen as a bear, the man behind it gained a second name, Arctophylax, the Bear-Keeper or Bear-Watcher. Aratus in the 3rd century BCE uses both: 'Arctophylax, whom men also call Boötes', who seems to drive the Bear around the pole.",
+      "Ptolemy listed the constellation in the *Almagest* and described the figure as holding a staff or club. The two hunting dogs he is often shown with are a much later addition, now the separate constellation Canes Venatici; they seem to have begun as a mistranslation of the Arabic word for his staff. The bright star Arcturus is older in the record than the constellation's myths: Homer, Hesiod and Aratus all name it."
+    ]
+  },
+  "overview": "A tall herdsman standing behind the Great Bear, usually seen as a big kite or ice-cream cone of stars with brilliant orange Arcturus at its base. Arcturus is the brightest star in the northern half of the sky and impossible to miss; the kite above it is fainter but traceable from a suburb.",
+  "howToFind": [
+    "Find the Big Dipper and follow the curve of its handle away from the bowl, through [[star:Mizar|Mizar]] and [[star:Alkaid|Alkaid]], and keep bending the same way for about three fists at arm's length. You arrive at a bright, steady, orange-tinted star: [[star:Arcturus|Arcturus]]. Stargazers remember it as 'arc to Arcturus'. (Keep going another three fists along the same curve and you 'speed on to Spica' in Virgo.)",
+    "Arcturus is the bottom point of the kite. The body of Boötes extends from it toward the north, in the direction of the end of the Dipper's handle: [[star:Izar|Izar]] and [[star:ρ Boo|Rho Boötis]] form the waist a fist above Arcturus, [[star:δ Boo|Delta]] and [[star:Seginus|Seginus]] the shoulders, and [[star:Nekkar|Nekkar]] the head at the top, about two and a half fists from Arcturus. [[star:Muphrid|Muphrid]], close to Arcturus on the side toward the Dipper, marks a leg. From Brooklyn, Boötes climbs the eastern sky on spring evenings, passes high overhead in June, and Arcturus stays visible in the west after dusk until October."
+  ],
+  "shape": "A narrow kite about two and a half fists long and one fist wide, lying on its side as it rises and standing upright as it sets, with Arcturus as the brilliant knot where the tail would be tied. From the city you get Arcturus easily and Izar, Seginus and Muphrid with a little effort; the rest of the kite is third- and fourth-magnitude (magnitude is the brightness scale, where smaller numbers are brighter) and needs a darker sky.",
+  "mainStars": [
+    {
+      "ref": "star:Arcturus",
+      "note": "The fourth-brightest star in the night sky and the brightest north of the celestial equator, an orange giant some 25 times the Sun's width and only 37 light-years away. The name is Greek for 'bear guard'. Ptolemy placed it between the herdsman's thighs."
+    },
+    {
+      "ref": "star:Izar",
+      "note": "The herdsman's belt or loincloth (which is what the Arabic name means), second-brightest in the constellation at magnitude 2.4. In a telescope it is a famous orange-and-blue double that the astronomer Struve called 'pulcherrima', most beautiful."
+    },
+    {
+      "ref": "star:Seginus",
+      "note": "The western shoulder, a white star of magnitude 3.0 at the upper corner of the kite nearest the Big Dipper's handle."
+    },
+    {
+      "ref": "star:Nekkar",
+      "note": "The head, at the top of the kite. Its name is a garbled form of the Arabic for 'the ox-driver', the constellation's own name."
+    },
+    {
+      "ref": "star:Muphrid",
+      "note": "A yellowish star close to Arcturus that marks one leg. It is at almost the same distance from us as Arcturus, about 37 light-years, so the two are neighbors in space as well as in the sky."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "star:Arcturus",
+      "equip": "naked-eye",
+      "note": "Look at the color. Compare Arcturus with blue-white [[star:Spica|Spica]] farther along the arc, or with [[star:Vega|Vega]] rising in the northeast: Arcturus is plainly orange, the glow of a cooler, older star."
+    },
+    {
+      "ref": "star:Izar",
+      "equip": "telescope",
+      "note": "A close double star: a bright orange giant with a smaller bluish companion almost touching it. It needs high magnification and steady air, and rewards the effort with one of the best color contrasts in the sky."
+    },
+    {
+      "ref": "star:Alkalurops",
+      "equip": "binoculars",
+      "note": "Mu Boötis, the tip of the herdsman's staff, just beyond the kite's northeast side. Binoculars show it as a wide pair of stars."
+    },
+    {
+      "ref": "dso:NGC5466",
+      "equip": "telescope",
+      "note": "A loose, faint globular cluster (a ball of very old stars) in the western part of the constellation. A dim, ghostly patch for dark skies only; nearby [[dso:M3|M3]], just over the border in Canes Venatici, is far more rewarding."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Boo-arcas",
+      "title": "Arcas, the boy who was served at a feast",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Eratosthenes", "work": "Catasterisms 8", "date": "3rd century BCE; survives in a later summary" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.4", "date": "2nd century CE" },
+        { "author": "Ovid", "work": "Fasti 2.153–192", "date": "early 1st century CE" }
+      ],
+      "summary": "Boötes as the Bear-Keeper is Arcas, son of Zeus and Callisto. As a child he was butchered by his grandfather Lycaon to test whether a dinner guest was truly a god; Zeus restored him to life. Grown up, he unknowingly hunted his own mother, who had become a bear, and Zeus set them both in the sky.",
+      "retelling": [
+        "Arcas was the son of Zeus and of Callisto, daughter of Lycaon, the king of Arcadia. His mother he never knew: she had been turned into a bear and was living wild in the mountains. The boy grew up in his grandfather's house, and his grandfather was not a good man.",
+        "One day a stranger came to Lycaon's door and asked for hospitality. It was Zeus himself, and there was something about him that made the household uneasy. Lycaon wanted to know for certain whether his guest was a god. The test he thought of was monstrous. A god, he reasoned, would know what he was eating. So he took the child Arcas, killed him, cut him up, and had the pieces cooked and set on the table mixed in with other meat. Some said it was Lycaon's sons who did the deed.",
+        "Zeus knew at once what was in front of him. He threw over the table, brought down a thunderbolt that burned the house, and turned Lycaon into a wolf, an animal fit for a man who preyed on his own kin. Then he gathered the scattered limbs of his son, put them together and made the boy live again. He did not leave him in Arcadia. According to Hyginus he gave him to an Aetolian to bring up; others say his foster mother was Maia, one of the Pleiades.",
+        "Arcas grew tall and strong and, like his mother before him, took to hunting. One day in the forest he met a bear. It was Callisto. She knew him. She stood still and tried to call to him, but a bear has only one kind of voice, and what her son heard was a growl. He saw a dangerous animal, nothing more, and went after it with his spear.",
+        "The bear ran, and in her terror she ran into the one place she should not have gone: the sanctuary of Zeus Lycaeus, on the mountain. It was holy ground that no one was allowed to enter, and under Arcadian law anyone who set foot there must die. Arcas, intent on his quarry, followed her straight in. Now mother and son were both condemned, and one of them was about to kill the other besides.",
+        "Zeus took pity. Before the spear could be thrown or the law carried out, he lifted them both away and fixed them among the stars. Callisto became the Great Bear. Arcas was placed just behind her, where he can be seen to this day following the Bear around the pole. Because he watches over her he was called Arctophylax, the Bear-Keeper, and the brilliant star at his knee still carries almost the same name: Arcturus, the bear guard."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Boötes, the Herdsman",
+        "url": "http://www.ianridpath.com/startales/bootes.html"
+      },
+      "characters": ["Arcas", "Callisto", "Zeus", "Lycaon", "Maia"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Why did King Lycaon kill his grandson Arcas?",
+          "choices": ["To test whether his guest was really a god", "Because an oracle demanded it", "To take revenge on Callisto", "To stop him inheriting the throne"],
+          "answerIndex": 0,
+          "explanation": "Lycaon served the boy's flesh to his guest to see whether Zeus would recognize it, a test of divinity. Zeus did, and punished him."
+        },
+        {
+          "id": "q2",
+          "prompt": "What punishment did Zeus give Lycaon?",
+          "choices": ["He chained him to a rock", "He turned him into a bear", "He turned him into a wolf", "He drowned Arcadia in a flood"],
+          "answerIndex": 2,
+          "explanation": "Zeus overturned the table, struck the house with a thunderbolt and changed Lycaon into a wolf. The name Lycaon itself echoes the Greek word for wolf, lykos."
+        },
+        {
+          "id": "q3",
+          "prompt": "Where did the bear flee when Arcas hunted her?",
+          "choices": ["Into the sea", "To the cave on Mount Dicte", "Into Lycaon's palace", "Into the sanctuary of Zeus Lycaeus, where entry was punished by death"],
+          "answerIndex": 3,
+          "explanation": "Both mother and son entered the forbidden sanctuary, so both faced death under Arcadian law. Zeus rescued them by placing them in the sky."
+        },
+        {
+          "id": "q4",
+          "prompt": "What does the Greek name Arctophylax, given to Arcas in the sky, mean?",
+          "choices": ["Ox-driver", "Bear-Keeper", "Wolf-slayer", "Son of Zeus"],
+          "answerIndex": 1,
+          "explanation": "Arctophylax means bear-keeper or bear-watcher, because the figure follows the Great Bear. The star name Arcturus, 'bear guard', has the same root."
+        }
+      ]
+    },
+    {
+      "id": "Boo-icarius",
+      "title": "Icarius and the first wine",
+      "culture": "Greek (Athenian)",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.4", "date": "2nd century CE" }
+      ],
+      "summary": "A second tradition says Boötes is Icarius of Attica, the man to whom Dionysus first taught winemaking. Shepherds who drank his wine believed they had been poisoned and murdered him; his daughter Erigone and his dog Maera died of grief. All three were placed in the sky: Icarius as Boötes, Erigone as Virgo, the dog as Procyon.",
+      "retelling": [
+        "Icarius was a farmer in Attica, the countryside around Athens, and a just and god-fearing man. (He is not the Icarus who flew too near the Sun; that was someone else's son.) Because of his goodness the god Dionysus chose him for a gift the world had not yet seen. He gave Icarius the vine, and showed him how to plant it, how to prune it, and what to do with the grapes.",
+        "Icarius tended his vineyard carefully and it flourished. When the first vintage was ready he wanted to share it. He loaded full wineskins onto a wagon, and some said it was this, a man driving a loaded cart, that earned him the name Boötes. He set off through the Attic countryside and presently met a group of shepherds, to whom he poured out his new drink.",
+        "The shepherds had never tasted wine. It was sweet, and nobody had told them to add water or to stop. They drank greedily. Before long some of them were sprawled on the ground, slurring nonsense, unable to stand, and looking for all the world like dying men. Their companions drew the natural conclusion. This stranger had poisoned their friends, no doubt to steal the flocks. They fell on Icarius and killed him, and either threw his body down a well or buried it under a tree.",
+        "In the morning the drinkers woke up, announced that they had never slept better in their lives, and asked where the generous farmer had gone, for they wished to thank him. The murderers understood what they had done. They fled, and took ship to the island of Ceos.",
+        "At home, Icarius's daughter Erigone waited. Days went by. She was on the point of setting out to search when her father's dog, Maera, came back alone, howling. The dog took hold of her dress in its teeth and pulled, and led her across country to the tree where Icarius lay. Erigone, alone now and without hope, hanged herself from its branches. The dog would not leave. Some say it died there of grief, and others that it threw itself into a well.",
+        "Zeus, pitying so much undeserved misery, set all three among the stars; others say it was Dionysus himself who did so, for his own worshippers. Icarius became Boötes. Erigone became the Maiden, Virgo, who stands just beneath his feet. Maera became the Little Dog, the star the Greeks call Procyon. And the tale has a harsh ending on earth as well: a plague of suicides fell on the daughters of Athens until the city honored Erigone with a festival, and the rising of the Dog Star scorched the fields of Ceos, where the killers had been sheltered, until its king won from Zeus the cooling winds that still blow there every summer."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Boötes, the Herdsman",
+        "url": "http://www.ianridpath.com/startales/bootes.html"
+      },
+      "characters": ["Icarius", "Dionysus", "Erigone", "Maera", "Zeus"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "What did Dionysus teach Icarius?",
+          "choices": ["How to tame oxen", "How to navigate by the stars", "How to grow vines and make wine", "How to play the lyre"],
+          "answerIndex": 2,
+          "explanation": "Dionysus, god of wine, rewarded Icarius's piety by giving him the vine and teaching him winemaking."
+        },
+        {
+          "id": "q2",
+          "prompt": "Why did the shepherds kill Icarius?",
+          "choices": ["They thought his wine had poisoned their friends", "He refused to share his wine", "He had stolen their sheep", "Hera drove them mad"],
+          "answerIndex": 0,
+          "explanation": "The shepherds had never seen drunkenness, and took their collapsed companions for poisoned men."
+        },
+        {
+          "id": "q3",
+          "prompt": "Who led Erigone to her father's body?",
+          "choices": ["Dionysus in disguise", "A repentant shepherd", "An eagle sent by Zeus", "The dog Maera"],
+          "answerIndex": 3,
+          "explanation": "Maera, Icarius's dog, came home howling and pulled Erigone by her dress to the tree where he was buried."
+        },
+        {
+          "id": "q4",
+          "prompt": "In this story, which constellation does Erigone become?",
+          "choices": ["Andromeda", "Virgo", "Cassiopeia", "Corona Borealis"],
+          "answerIndex": 1,
+          "explanation": "Erigone becomes Virgo, the Maiden, which lies directly below Boötes in the sky, with the dog as Procyon in Canis Minor (some said Canis Major)."
+        }
+      ]
+    },
+    {
+      "id": "Boo-philomelus",
+      "title": "Philomelus, inventor of the wagon",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.4 (citing Hermippus and Petellides)", "date": "2nd century CE" }
+      ],
+      "summary": "The least-known account takes the name Boötes, 'ox-driver', literally. He is Philomelus, a poor son of the goddess Demeter, who bought two oxen with the little he had, invented the wagon, and lived by ploughing. His mother, proud of his invention, set him among the stars.",
+      "retelling": [
+        "This is the plainest of the stories told about Boötes, and it comes with a pedigree of forgotten authors. Hyginus says he found it in Hermippus, a writer on the stars, who drew on a Cretan historian named Petellides. It has no bears in it and no murders. It is a story about work.",
+        "The goddess Demeter, who gave grain to the world, once lay with a mortal named Iasion. Many, following Homer, said that Zeus struck Iasion with a thunderbolt for it. But the union had children. Two sons were born, Philomelus and Plutus.",
+        "The brothers could hardly have been less alike, and they were never on good terms. Plutus was rich; his very name means wealth. Philomelus had nothing. And Plutus, for all his plenty, would not give his brother any share of it.",
+        "So Philomelus had to find his own way to live. He scraped together everything he owned and spent it on two oxen. Then he did something no one had done before: he built a wagon for them to pull. With his team he ploughed and worked the fields, and supported himself by his own labor, asking nothing of his brother.",
+        "Demeter watched her poorer son and admired what he had made. The goddess of the harvest knew better than anyone what a wagon and a ploughing team would mean to farmers. To honor his invention she placed him among the stars, ploughing still, and gave him the name Boötes, the ox-driver. Hyginus adds that Philomelus had a son, Parias, who gave his name to the people of Parium.",
+        "The tale fits the sky as the Greeks first drew it. Before the seven stars of the Big Dipper were a bear's hindquarters they were a wagon, or a team of oxen, as their old names show. Hyginus explains that the earliest stargazers took two of the seven for oxen and the other five for the cart, and so they named the figure that follows close behind the driver. Night after night Boötes still walks after his team as it circles the pole, the brilliant star Arcturus at his knee, a farmer who never gets to the end of his field."
+      ],
+      "link": {
+        "site": "ToposText",
+        "label": "Hyginus, Astronomica 2.4: the Bear-Watcher",
+        "url": "https://topostext.org/work/207"
+      },
+      "characters": ["Philomelus", "Plutus", "Demeter", "Iasion", "Parias"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Who were the parents of Philomelus?",
+          "choices": ["Zeus and Callisto", "Demeter and Iasion", "Dionysus and Ariadne", "Atlas and Pleione"],
+          "answerIndex": 1,
+          "explanation": "Philomelus and his brother Plutus were sons of the grain goddess Demeter and the mortal Iasion."
+        },
+        {
+          "id": "q2",
+          "prompt": "What invention is Philomelus credited with?",
+          "choices": ["The sail", "The wine press", "The sickle", "The wagon"],
+          "answerIndex": 3,
+          "explanation": "Refused help by his rich brother, Philomelus bought two oxen and invented the wagon, then supported himself by ploughing."
+        },
+        {
+          "id": "q3",
+          "prompt": "Why did Philomelus have to fend for himself?",
+          "choices": ["His wealthy brother Plutus would share nothing with him", "Demeter had cursed him", "He was exiled from Crete", "His oxen had been stolen"],
+          "answerIndex": 0,
+          "explanation": "Plutus, whose name means wealth, gave nothing to his brother, so Philomelus spent what little he had on two oxen."
+        },
+        {
+          "id": "q4",
+          "prompt": "Who placed Philomelus among the stars as Boötes?",
+          "choices": ["Zeus", "Dionysus", "His mother Demeter", "Athena"],
+          "answerIndex": 2,
+          "explanation": "Demeter, admiring her son's invention, set him in the sky ploughing and named him Boötes, the ox-driver."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Arcturus drifts across the sky unusually fast for a bright star. It has shifted about one degree, twice the width of the full Moon, since Ptolemy catalogued it.",
+    "In 1933 light from Arcturus, focused onto a photocell, was used to switch on the lights of the Chicago World's Fair.",
+    "The Quadrantid meteor shower of early January radiates from northern Boötes. It is named for Quadrans Muralis, a constellation invented in 1795 that no longer exists.",
+    "In China, Arcturus was Dajiao, the Great Horn of the Blue Dragon of spring.",
+    "Arab astronomers called Arcturus and Spica the two 'sky-raisers', props holding up the canopy of the heavens; Arcturus was the one with the lance."
+  ]
+}

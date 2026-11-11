@@ -1,0 +1,296 @@
+{
+  "id": "Lyr",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); an older Greek figure already described by Aratus",
+    "when": "2nd century CE (catalogued); known by the 3rd century BCE",
+    "history": [
+      "The Lyre is one of the 48 constellations that the Greek astronomer Ptolemy listed in his *Almagest* around 150 CE, but it is far older than that. The poet Aratus, writing about 275 BCE, already called it the little Tortoise that Hermes turned into a lyre while still beside his cradle, and placed it in the sky in front of the nameless kneeling figure we now call Hercules. Ptolemy gave its brightest star no name of its own: he simply called it Lyra, the same as the whole constellation.",
+      "Arab stargazers saw a different picture here. They joined [[star:Vega|Vega]] to the two faint stars beside it and saw an eagle or vulture dropping on its prey with folded wings. The name Vega comes from the Arabic word for that swooping motion. European map-makers later merged both traditions, drawing a bird of prey carrying a lyre, and older atlases sometimes label the constellation as the Falling Vulture. The name Sulafat for one of its stars is Arabic for tortoise, a memory of the shell Hermes used, and Sheliak comes from an Arabic word for harp."
+    ]
+  },
+  "overview": "Lyra is the lyre, the small stringed instrument that the god Hermes invented and the musician Orpheus made famous. It is a tiny constellation, but impossible to miss because it holds Vega, the brilliant blue-white star that is the brightest corner of the Summer Triangle and the fifth-brightest star in the whole night sky.",
+  "howToFind": [
+    "Start with the brightest star high in the summer evening sky: that is [[star:Vega|Vega]]. From Brooklyn it passes almost straight overhead on evenings from July to September, and it is in the evening sky somewhere from late spring until the end of autumn. If you are unsure, check that it makes a huge triangle with two other bright stars, [[star:Deneb|Deneb]] about two and a half fists to its lower left (northeast) and [[star:Altair|Altair]] about three and a half fists below it toward the south. A fist held at arm's length covers about 10 degrees of sky.",
+    "Once you have Vega, the rest of the Lyre hangs just below it like a small charm on a chain. Look for a little slanted box of four faint stars, starting only two finger-widths from Vega. The two stars at the far end of the box are [[star:Sheliak|Sheliak]] and [[star:Sulafat|Sulafat]]; the two nearer Vega are [[star:ζ Lyr|Zeta]] and [[star:δ Lyr|Delta Lyrae]]. A sixth star, [[star:ε Lyr|Epsilon Lyrae]], sits right beside Vega and makes a tiny triangle with Vega and Zeta."
+  ],
+  "shape": "One dazzling star with a small, neat parallelogram of four dim stars dangling from it, the whole thing no bigger than three or four fingers held at arm's length. From a city you will always see Vega; the parallelogram's stars are third and fourth magnitude (magnitude is the brightness scale, where smaller numbers are brighter), so under Brooklyn skies you may catch only Sheliak and Sulafat with the naked eye and need binoculars for the rest.",
+  "mainStars": [
+    {
+      "ref": "star:Vega",
+      "note": "Blue-white and brilliant, magnitude 0.0, only 25 light-years away. It is the brightest star of the Summer Triangle. Because Earth's axis slowly wobbles, Vega was the north pole star about 14,000 years ago and will be again in roughly 12,000 years."
+    },
+    {
+      "ref": "star:Sulafat",
+      "note": "Gamma Lyrae, a blue-white giant and the second-brightest star of the Lyre, at one of the far corners of the parallelogram. Its name is Arabic for tortoise, after the shell from which Hermes made the first lyre."
+    },
+    {
+      "ref": "star:Sheliak",
+      "note": "Beta Lyrae, the other far corner. It is really two stars so close that one is pouring gas onto the other; they eclipse each other every 13 days, so Sheliak slowly dims by almost a magnitude and recovers. Compare it with Sulafat next door to catch it faint."
+    },
+    {
+      "ref": "star:ε Lyr",
+      "note": "The famous Double Double, right beside Vega. Binoculars (or very sharp eyes) show two stars; a telescope at high power splits each of those into a close pair."
+    },
+    {
+      "ref": "star:δ Lyr",
+      "note": "A wide pair of unrelated stars easy to separate in binoculars, one red and one blue-white, marking a near corner of the parallelogram."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "dso:M57",
+      "equip": "small-telescope",
+      "note": "The Ring Nebula, the glowing shell thrown off by a dying star. It lies between Sheliak and Sulafat, a little nearer Sheliak. A small telescope shows a tiny gray smoke ring; it is too small to recognize in binoculars."
+    },
+    {
+      "ref": "star:ε Lyr",
+      "equip": "binoculars",
+      "note": "The Double Double. Binoculars show a neat pair; a telescope at about 100 power or more turns each star into two, four suns in all."
+    },
+    {
+      "ref": "star:Sheliak",
+      "equip": "naked-eye",
+      "note": "An eclipsing variable star you can follow without any equipment from a dark site: over 13 days it fades from about as bright as Sulafat to clearly fainter, then climbs back."
+    },
+    {
+      "ref": "dso:M56",
+      "equip": "small-telescope",
+      "note": "A small, faint globular cluster (a ball of very old stars) about halfway between Sulafat and Albireo in Cygnus. In a small telescope it is a soft round glow."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Lyr-hermes-tortoise",
+      "title": "Hermes and the tortoise: the first lyre",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Anonymous", "work": "Homeric Hymn to Hermes (Hymn 4)" },
+        { "author": "Aratus", "work": "Phaenomena 268-274", "date": "c. 275 BCE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.7" },
+        { "author": "Apollodorus", "work": "Library 3.10.2" }
+      ],
+      "summary": "On the day he was born, the god Hermes slipped out of his cradle, found a tortoise, and turned its shell into the first lyre. He then stole his brother Apollo's cattle and bought his way out of trouble with the new instrument. The poet Aratus says Hermes himself set the lyre in the sky.",
+      "retelling": [
+        "Hermes was the son of Zeus and Maia, one of the seven sisters we call the Pleiades. He was born at dawn in a cave on Mount Cyllene in Arcadia, and he did not stay a baby for long. Before the day was out he had climbed from his cradle and gone to the mouth of the cave to see what the world had to offer.",
+        "The first thing he met was a tortoise, waddling through the grass by the gate. The infant god laughed out loud. Here, he said, was a piece of luck: alive, the creature was only a tortoise, but he could make it sing. He carried it inside, scooped out the shell, fixed stalks of reed across it, stretched oxhide over the hollow, fitted two arms and a crossbar, and strung it with seven strings of gut. Later writers said the seven strings matched the seven Pleiades, his mother and her sisters. When he ran his fingers over them, the cave filled with a sound no one had ever heard before.",
+        "Music was not enough for one day. That evening Hermes crept north to the meadows where the god Apollo kept his cattle, cut fifty cows out of the herd, and drove them away, disguising their tracks so that no one could tell which way they had gone. Then he slipped home, wrapped himself in his baby blankets, and lay in the cradle looking innocent, with the lyre tucked under his arm.",
+        "Apollo was not fooled for long. He tracked the thief to Cyllene, hauled the child before their father Zeus, and demanded justice. Zeus, more amused than angry, ordered Hermes to lead his brother to the hidden cattle. But when they got there Hermes took out the tortoise shell and began to play and sing. Apollo, the god of music, had never heard anything like it. He stopped being angry and started to bargain.",
+        "The two brothers struck a deal. Apollo took the lyre, and in exchange Hermes kept the cattle and became the protector of herds; Hyginus adds that Apollo also gave him a herald's staff. Apollo later passed the instrument on to the greatest of mortal singers, Orpheus, and that part of the tale is told separately.",
+        "As for the stars, the oldest account is the simplest. Aratus says that the little Tortoise in the sky is the very one Hermes pierced for strings beside his cradle, that he ordered it to be called the Lyre, and that he carried it into the heavens himself and set it down in front of the kneeling figure, where it still hangs beneath Vega."
+      ],
+      "link": {
+        "site": "Theoi",
+        "label": "Homeric Hymn to Hermes (full text in translation)",
+        "url": "https://www.theoi.com/Text/HomericHymns2.html"
+      },
+      "characters": ["Hermes", "Maia", "Apollo", "Zeus"],
+      "questions": [
+        {
+          "id": "hermes-q1",
+          "prompt": "What did Hermes use to make the body of the first lyre?",
+          "choices": ["A ram's horn", "A tortoise shell", "A hollow gourd", "A piece of driftwood"],
+          "answerIndex": 1,
+          "explanation": "Hermes found a tortoise outside his cave and built the lyre on its hollowed shell. The star name Sulafat, Arabic for tortoise, remembers this."
+        },
+        {
+          "id": "hermes-q2",
+          "prompt": "Whose cattle did the infant Hermes steal?",
+          "choices": ["Apollo's", "Zeus's", "Poseidon's", "Hades's"],
+          "answerIndex": 0,
+          "explanation": "He stole cattle belonging to his half-brother Apollo, who tracked him down and took him before Zeus."
+        },
+        {
+          "id": "hermes-q3",
+          "prompt": "How did the quarrel between Hermes and Apollo end?",
+          "choices": ["Zeus banished Hermes from Olympus", "Hermes returned the cattle and broke the lyre", "Apollo kept the lyre and Hermes kept the cattle", "The two fought until Maia separated them"],
+          "answerIndex": 2,
+          "explanation": "Apollo was so charmed by the music that he traded: the lyre for the cattle."
+        },
+        {
+          "id": "hermes-q4",
+          "prompt": "Later writers said the lyre's seven strings stood for which group of seven?",
+          "choices": ["The seven gates of Thebes", "The seven stars of the Big Dipper", "The seven Muses", "The seven Pleiades, Hermes's mother Maia and her sisters"],
+          "answerIndex": 3,
+          "explanation": "Maia was one of the Pleiades, and Hyginus says Hermes gave the lyre seven strings to match their number."
+        }
+      ]
+    },
+    {
+      "id": "Lyr-orpheus-eurydice",
+      "title": "Orpheus and Eurydice",
+      "culture": "Greek and Roman",
+      "ancientSources": [
+        { "author": "Ovid", "work": "Metamorphoses 10.1-85 and 11.1-66", "date": "c. 8 CE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.7" },
+        { "author": "Eratosthenes", "work": "Catasterisms (Lyra), as reported by Hyginus", "date": "3rd century BCE" }
+      ],
+      "summary": "Orpheus, the greatest singer of myth, went down alive into the Underworld to win back his dead wife Eurydice, and lost her a second time by looking back too soon. After he was killed by the women of Thrace, the Muses set his lyre among the stars.",
+      "retelling": [
+        "Apollo gave the lyre to Orpheus, son of the Muse Calliope, and taught him to play it. No one ever played it better. When Orpheus sang, wild animals lay down to listen, rivers slowed, and it was said that even trees and rocks edged closer. He sailed with Jason and the Argonauts, and when their ship passed the Sirens, whose song lured sailors to their deaths, Orpheus played louder and sweeter until the danger was behind them.",
+        "He married Eurydice, and lost her almost at once. Walking in the meadows she was bitten on the ankle by a snake and died; in one telling she was running from a man named Aristaeus when she stepped on it. Orpheus mourned her in the upper world until he had no more tears, and then did what no living man had done. He walked down through the gate at Taenarum into the land of the dead, carrying his lyre.",
+        "Standing before Hades and Persephone, the king and queen of the dead, he did not argue. He sang. He sang that everyone comes to this kingdom in the end and that he asked only for a loan, a few more years for a wife taken too early. Ovid says the bloodless ghosts wept, the tormented forgot their torments for a moment, and for the first time the Furies' cheeks were wet. The rulers of the dead could not refuse. Eurydice was called, still limping from her wound, and given back on one condition: Orpheus must walk ahead and not look back at her until both had left the valley of the dead.",
+        "They climbed in silence through the dark, up a steep and misty path. They were almost at the rim of the upper world when Orpheus, afraid that she was failing and aching to see her, turned his head. In that instant she slipped backward. He reached for her and caught only air. She did not blame him, for what was there to blame except that he loved her; she said one faint farewell and was gone. The ferryman would not carry him across a second time.",
+        "For three years Orpheus kept away from women and sang his grief to the hills of Thrace, and the trees crowded round to shade him. Many women wanted him and he refused them all; Ovid says he turned his love toward young men instead. One day a band of Thracian women, followers of Dionysus in their frenzy, caught sight of him and cried that here was the man who scorned them. The first stones and spears they threw were tamed by his song and fell at his feet. But the women raised such a din of flutes, drums, and howling that the music could no longer be heard, and then the stones struck home.",
+        "They tore him apart. His head and his lyre fell into the river Hebrus and floated, still murmuring, down to the sea and across to the island of Lesbos. His shade went below and found Eurydice, and now, Ovid says, they walk together and he may look back at her as often as he likes.",
+        "The lyre itself was not left to the river. According to Eratosthenes and Hyginus, the Muses gathered up the singer's scattered limbs and buried them, and then, as the greatest honor they could give him, they asked Zeus to place his lyre in the sky. Zeus and Apollo agreed, and there it shines beneath Vega. A rival version of how Orpheus died, in which the god Dionysus himself sent the killers, is told as its own story."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Lyra, the lyre",
+        "url": "http://www.ianridpath.com/startales/lyra.html"
+      },
+      "characters": ["Orpheus", "Eurydice", "Hades", "Persephone", "Calliope", "Apollo", "The Muses"],
+      "questions": [
+        {
+          "id": "eurydice-q1",
+          "prompt": "How did Eurydice die?",
+          "choices": ["She drowned in the river Hebrus", "She was bitten by a snake", "She was struck by a thunderbolt", "She was killed by the Sirens"],
+          "answerIndex": 1,
+          "explanation": "A snake bit her on the ankle soon after the wedding, which sent Orpheus down to the Underworld to plead for her."
+        },
+        {
+          "id": "eurydice-q2",
+          "prompt": "What condition did the rulers of the dead set for Eurydice's return?",
+          "choices": ["Orpheus must never play the lyre again", "Eurydice must not speak for a year", "Orpheus must leave his lyre behind as payment", "Orpheus must not look back at her until they had left the Underworld"],
+          "answerIndex": 3,
+          "explanation": "He was to walk ahead without looking back. He turned at the very edge of the upper world and lost her."
+        },
+        {
+          "id": "eurydice-q3",
+          "prompt": "Who placed Orpheus's lyre among the stars, according to Eratosthenes and Hyginus?",
+          "choices": ["The Muses, with the consent of Zeus", "Hades, out of pity", "Eurydice's ghost", "Hermes, who had made it"],
+          "answerIndex": 0,
+          "explanation": "The Muses buried Orpheus and asked Zeus to set his lyre in the sky as a memorial. Orpheus's mother, Calliope, was one of the Muses."
+        },
+        {
+          "id": "eurydice-q4",
+          "prompt": "Why did the first stones thrown at Orpheus fail to hurt him?",
+          "choices": ["Apollo turned them to dust", "He was wearing enchanted armor", "His music charmed them so they fell harmlessly", "The women were too far away"],
+          "answerIndex": 2,
+          "explanation": "His song tamed even stones and spears, until the attackers' noise drowned out the lyre."
+        },
+        {
+          "id": "eurydice-q5",
+          "prompt": "On his voyage with the Argonauts, how did Orpheus save the crew from the Sirens?",
+          "choices": ["He plugged the sailors' ears with wax", "He out-sang them with his own music", "He steered the ship away at night", "He prayed to Poseidon for a storm"],
+          "answerIndex": 1,
+          "explanation": "Orpheus played a rival melody that drowned the Sirens' deadly song."
+        }
+      ]
+    },
+    {
+      "id": "Lyr-orpheus-dionysus",
+      "title": "Orpheus on the mountain: the anger of Dionysus",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Eratosthenes", "work": "Catasterisms (Lyra), as reported by Hyginus", "date": "3rd century BCE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.7" }
+      ],
+      "summary": "In the version Eratosthenes told, Orpheus died because he honored Apollo, the Sun, above all gods and neglected Dionysus, who sent his followers to tear him apart. Hyginus collects other explanations too, including a quarrel among goddesses over Adonis.",
+      "retelling": [
+        "The astronomer-poet Eratosthenes told the end of Orpheus differently from the Roman poets, and his version explains the constellation most directly. In it the trouble was not with women but with a god.",
+        "After Orpheus came back from the Underworld without Eurydice, he sang hymns in praise of the gods and their children. He praised them all except one: he forgot Dionysus, the god of wine and ecstasy, whom the Romans called Father Liber. Worse, Orpheus had come to think of Apollo, whom he identified with the Sun, as the greatest of the gods. Each night he climbed Mount Pangaion in Thrace and waited on the summit in the dark so that he would be the first to greet the sunrise with a song.",
+        "Dionysus took this as an insult. He stirred up the Bacchanals, the women who followed him in a divine frenzy, and sent them up the mountain. They found the singer sitting with his lyre, lost in his music, and they killed him and scattered his limbs across the hillside. Hyginus adds that some people gave a slightly different reason: Orpheus had spied on the secret rites of Dionysus, which no outsider was permitted to see.",
+        "Hyginus also preserves a stranger explanation. The goddesses Aphrodite and Persephone both wanted the beautiful youth Adonis, and Zeus appointed the Muse Calliope, mother of Orpheus, to judge between them. She ruled that each should have him for half the year. Aphrodite, furious at getting only half, took her revenge on the judge's son: she filled the women of Thrace with such desire for Orpheus that, each trying to seize him for herself, they pulled him to pieces.",
+        "In this telling his head rolled down the mountain into the sea and the waves carried it to the island of Lesbos, where the people buried it with honor. In return, it was said, the islanders were given an unusual gift for music.",
+        "Every version ends the same way. The Muses collected what remained of Orpheus and gave him a proper burial. Then they asked for one last favor. Apollo consented because Orpheus had praised him so highly, and Zeus consented for the sake of his daughters the Muses, and so the lyre that had charmed animals, trees, and the rulers of the dead was drawn in stars and placed in the sky."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Lyra, the lyre",
+        "url": "http://www.ianridpath.com/startales/lyra.html"
+      },
+      "characters": ["Orpheus", "Dionysus", "Apollo", "Calliope", "Aphrodite", "Persephone", "Adonis", "The Muses"],
+      "questions": [
+        {
+          "id": "dionysus-q1",
+          "prompt": "In Eratosthenes's version, which god did Orpheus offend?",
+          "choices": ["Apollo", "Hades", "Dionysus", "Poseidon"],
+          "answerIndex": 2,
+          "explanation": "Orpheus left Dionysus out of his praises and honored Apollo as the greatest god, so Dionysus sent his followers against him."
+        },
+        {
+          "id": "dionysus-q2",
+          "prompt": "Why did Orpheus climb Mount Pangaion before dawn?",
+          "choices": ["To be the first to greet the rising Sun with his music", "To search for Eurydice's ghost", "To hide from the women of Thrace", "To gather herbs for healing"],
+          "answerIndex": 0,
+          "explanation": "He regarded Apollo, the Sun, as the supreme god and wanted to salute the sunrise before anyone else."
+        },
+        {
+          "id": "dionysus-q3",
+          "prompt": "In the variant Hyginus records, which Muse judged the dispute over Adonis and so brought Aphrodite's anger on Orpheus?",
+          "choices": ["Urania", "Clio", "Terpsichore", "Calliope, the mother of Orpheus"],
+          "answerIndex": 3,
+          "explanation": "Calliope ruled that Aphrodite and Persephone should share Adonis, and Aphrodite took revenge on Calliope's son."
+        },
+        {
+          "id": "dionysus-q4",
+          "prompt": "Where was the head of Orpheus said to have washed ashore?",
+          "choices": ["Crete", "Lesbos", "Naxos", "Rhodes"],
+          "answerIndex": 1,
+          "explanation": "The people of Lesbos buried it, and were said to be especially gifted in music ever after."
+        }
+      ]
+    },
+    {
+      "id": "Lyr-weaving-girl",
+      "title": "The Weaving Girl and the Cowherd",
+      "culture": "Chinese",
+      "ancientSources": [
+        { "author": "Anonymous", "work": "Classic of Poetry (Shijing), the earliest known allusion to the Weaving Girl and the Draught Ox stars" }
+      ],
+      "summary": "In China, Vega and two faint neighbors are Zhinu, the Weaving Girl, and Altair across the Milky Way is her husband the Cowherd. Separated by the river of stars for neglecting their work, they may meet on only one night each year, when magpies form a bridge.",
+      "retelling": [
+        "Chinese sky-watchers did not see a lyre here at all. To them, bright Vega and the two faint stars beside it were Zhinu, the Weaving Girl. In the folk tale she was a granddaughter of the Emperor of Heaven, and her work was to weave beautiful silks for the gods and goddesses.",
+        "On the far side of the Milky Way, which the Chinese pictured as a great river in the sky, lived a humble cowherd. He is the star we call Altair. The Weaving Girl fell in love with him, and the two married and had two sons.",
+        "They were so happy together that both forgot their duties. The loom stood idle and the heavenly cloth went unwoven, and the cowherd's animals were left to wander. The Emperor of Heaven would not allow it. To put an end to the distraction he parted the couple and set them on opposite banks of the river of stars, the Weaving Girl on one side and the Cowherd on the other.",
+        "The Cowherd was left to raise the children. You can see them still: the two fainter stars on either side of Altair, Tarazed and Alshain, are the two boys beside their father, looking across the water toward their mother.",
+        "The separation was not quite total. One night each summer the pair are allowed to meet. On that night, the story says, all the magpies in the world fly up and spread their wings to make a bridge across the Milky Way, and the Weaving Girl crosses it to her family.",
+        "That meeting is still celebrated as the Qixi festival, held on the seventh day of the seventh month of the Chinese lunar calendar, which usually falls in August. On any clear summer evening you can find the two lovers for yourself: Vega high overhead, Altair lower in the south, and between them the pale band of the Milky Way, widest and richest where it runs through Cygnus."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Lyra: Chinese associations",
+        "url": "http://www.ianridpath.com/startales/lyra.html"
+      },
+      "characters": ["Zhinu (the Weaving Girl)", "The Cowherd", "The Emperor of Heaven"],
+      "questions": [
+        {
+          "id": "weaver-q1",
+          "prompt": "Which star is the Weaving Girl in the Chinese story?",
+          "choices": ["Vega", "Deneb", "Altair", "Arcturus"],
+          "answerIndex": 0,
+          "explanation": "Vega, with two faint neighbors, is Zhinu the Weaving Girl. Her husband the Cowherd is Altair."
+        },
+        {
+          "id": "weaver-q2",
+          "prompt": "What separates the Weaving Girl from the Cowherd in the sky?",
+          "choices": ["The Great Wall of Heaven", "The Moon's path", "The Milky Way, seen as a river", "A range of celestial mountains"],
+          "answerIndex": 2,
+          "explanation": "The Emperor of Heaven placed them on opposite banks of the celestial river, our Milky Way."
+        },
+        {
+          "id": "weaver-q3",
+          "prompt": "What forms the bridge that lets the couple meet once a year?",
+          "choices": ["A rainbow", "A flock of magpies", "A boat of clouds", "A fallen tree"],
+          "answerIndex": 1,
+          "explanation": "Magpies spread their wings across the Milky Way. The reunion is celebrated at the Qixi festival on the seventh day of the seventh lunar month."
+        },
+        {
+          "id": "weaver-q4",
+          "prompt": "Why did the Emperor of Heaven separate the couple?",
+          "choices": ["The Cowherd had stolen heavenly cattle", "The Weaving Girl had married without permission from her mother", "They had insulted the magpies", "They were so absorbed in each other that they neglected their work"],
+          "answerIndex": 3,
+          "explanation": "The weaving stopped and the herd was neglected, so the Emperor parted them to get them back to their duties."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "The name Vega comes from an Arabic phrase meaning the swooping eagle (or vulture). Its partner is Altair, the flying eagle, on the other side of the Milky Way.",
+    "Vega was the first star other than the Sun ever to be photographed.",
+    "Orpheus was not the only owner proposed. Hyginus records that some said the lyre belonged to the hero Theseus, whom they pictured in the neighboring kneeling figure, and tellers of the Arion story sometimes claim it for that musician, whose dolphin swims nearby as Delphinus.",
+    "Star maps rarely agree on the number of strings. The myth says seven, but old atlases show anything from six to thirteen."
+  ]
+}

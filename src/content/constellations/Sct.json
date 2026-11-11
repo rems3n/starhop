@@ -1,0 +1,52 @@
+{
+  "id": "Sct",
+  "kind": "modern",
+  "origin": {
+    "namedBy": "Johannes Hevelius",
+    "when": "1684",
+    "history": [
+      "Scutum, the Shield, has no ancient myth: it is a piece of 17th-century politics that stuck. The Polish astronomer Johannes Hevelius of Danzig (Gdansk) introduced it in 1684 as Scutum Sobiescianum, 'Sobieski's Shield', in honor of King John III Sobieski of Poland. His description and chart first appeared that August in the scientific journal *Acta Eruditorum*.",
+      "Hevelius had good reason for gratitude. In 1679 a fire had destroyed his rooftop observatory, his instruments, and most of his three houses, and Sobieski helped him rebuild. The king was also the hero of the hour: in 1683 he had led the army that broke the Ottoman siege of Vienna, and the shield is usually understood to commemorate that victory as well. Hevelius cited as his precedent Edmond Halley's Robur Carolinum, an oak tree placed in the sky a few years earlier for King Charles II of England. The oak has disappeared from the maps; the shield is the only constellation created for political reasons that is still in use.",
+      "It nearly did not survive. John Flamsteed, Britain's first Astronomer Royal, ignored it and listed its stars under Aquila. Johann Bode restored it in his great atlas of 1801, Francis Baily left it out again in 1845, and the matter was settled only in 1879, when the American astronomer Benjamin Gould included it as plain Scutum and gave its stars Greek letters for the first time."
+    ]
+  },
+  "overview": "Scutum is a small shield invented in 1684 to honor a Polish king. Its stars are faint, but it sits on one of the brightest patches of the summer Milky Way and contains the Wild Duck Cluster, one of the finest star clusters for a small telescope.",
+  "howToFind": [
+    "Start at [[star:Altair|Altair]], the southern corner of the [[asterism:summer-triangle|Summer Triangle]]. The body of the Eagle trails away from Altair toward the southwest. Follow it nearly two fists (18 degrees) down and to the right to the eagle's tail star, [[star:λ Aql|Lambda Aquilae]]. Scutum begins just beyond the tail: its brightest star, [[star:α Sct|Alpha Scuti]], is another seven or eight degrees farther on in the same direction.",
+    "From a dark site you do not need the stars at all: look for a bright, rounded cloud of Milky Way between Aquila and the Teapot of Sagittarius. That glow is the Scutum Star Cloud, and the constellation is wrapped around it. Scutum is highest in the south on evenings in August and September, a little under halfway up the sky from Brooklyn."
+  ],
+  "shape": "A small, narrow diamond of four faint stars, less than a fist tall. The brightest is only magnitude 3.9 and the rest are fourth and fifth magnitude (magnitude is the brightness scale, where smaller numbers are brighter), so from a city the shield is invisible to the naked eye and you will be navigating by Altair and the Eagle's tail with binoculars.",
+  "mainStars": [
+    {
+      "ref": "star:α Sct",
+      "note": "An orange giant of magnitude 3.9, the brightest star of the shield. Like every star in Scutum it has no traditional name."
+    },
+    {
+      "ref": "star:β Sct",
+      "note": "Magnitude 4.2, at the northern point of the diamond. It is your guide to the Wild Duck Cluster, which lies about two degrees to its southeast."
+    },
+    {
+      "ref": "star:δ Sct",
+      "note": "A fifth-magnitude star that gave its name to a whole class of stars, the Delta Scuti variables, which pulse slightly in brightness over a few hours."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "dso:M11",
+      "equip": "binoculars",
+      "note": "The Wild Duck Cluster, about 6,200 light-years away and packed with nearly three thousand stars. Binoculars show a small, bright fuzzy patch just off the eagle's tail; a small telescope turns it into a dense swarm of faint stars in a fan shape that reminded an early observer of a flight of ducks."
+    },
+    {
+      "ref": "dso:M26",
+      "equip": "small-telescope",
+      "note": "A smaller, fainter open cluster a degree from Delta Scuti. A small telescope shows a tight sprinkling of dim stars."
+    }
+  ],
+  "stories": [],
+  "facts": [
+    "Scutum is the fifth-smallest of the 88 constellations.",
+    "Before the constellation was accepted, its main stars were catalogued as part of Aquila: Alpha Scuti, for example, was 1 Aquilae.",
+    "The Wild Duck Cluster got its name from the English observer William Henry Smyth in 1844.",
+    "In China these stars, with a few in Aquila, represented a team of officials overseeing the celestial marketplace next door in Ophiuchus."
+  ]
+}

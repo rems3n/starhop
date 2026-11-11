@@ -1,0 +1,140 @@
+{
+  "id": "Lib",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Roman astronomers of the 1st century BCE (as the Scales); catalogued by Ptolemy as the Claws of the Scorpion; a Babylonian balance stood here earlier still",
+    "when": "1st century BCE as Libra; listed in the Almagest in the 2nd century CE",
+    "history": [
+      "For the Greeks these stars were not a separate figure at all. They were the Chelae, the Claws of the great Scorpion next door, and that is the name used by Aratus and Eratosthenes in the 3rd century BCE. Even Ptolemy, writing the *Almagest* around 150 CE, kept the old Greek name and listed the constellation as the Claws.",
+      "The Romans saw a balance instead. During the 1st century BCE Latin writers began calling the sign Libra, the Scales, although nobody recorded who first made the change. By Ptolemy's day a Roman statue now known as the Farnese Atlas already showed a pair of scales on its celestial globe, and the new picture gradually won.",
+      "The idea was in fact a revival. Around 1000 BCE the Babylonians knew this region as ZIB.BA.AN.NA, the balance of heaven. At that time the Sun stood among these stars at the September equinox, when day and night are equal, which is probably what the balance was weighing."
+    ]
+  },
+  "overview": "Libra is the Scales, the only constellation of the zodiac that shows an object rather than a living creature. It is a faint, kite-shaped group between the bright stars Spica and Antares, and its two main stars still carry Arabic names meaning the southern and northern claw of the Scorpion.",
+  "howToFind": [
+    "Find [[star:Spica|Spica]] by following the arc of the Big Dipper's handle through [[star:Arcturus|Arcturus]], then look for red [[star:Antares|Antares]] rising farther left (east) and lower. Libra fills the gap between them. About two fists to the left of Spica, a little lower, is [[star:Zubenelgenubi|Zubenelgenubi]]; one fist up and to the left of that is [[star:Zubeneschamali|Zubeneschamali]], slightly the brighter of the two.",
+    "You can also come from the other side: Zubenelgenubi is two and a half fists to the right (west) of Antares, just beyond the upright row of three stars that marks the Scorpion's head. From Brooklyn, Libra is in the southern evening sky from May to August and is best placed on June and early July evenings, about a third of the way up the sky."
+  ],
+  "shape": "A lopsided diamond about a fist across: Zubenelgenubi at the right, Zubeneschamali at the top, fainter [[star:Zubenelhakrabi|Zubenelhakrabi]] at the left, with [[star:Brachium|Brachium]] hanging below. The two Zuben stars are the beam of the balance and the fainter ones the pans. In a city sky usually only the two brightest show, a wide pair of third-magnitude stars with nothing much around them.",
+  "mainStars": [
+    {
+      "ref": "star:Zubeneschamali",
+      "note": "The northern claw, and at magnitude 2.6 the brightest star of Libra. It is a blue-white star about 185 light-years away that some observers insist looks faintly green, a color stars are not supposed to show; judge for yourself in binoculars."
+    },
+    {
+      "ref": "star:Zubenelgenubi",
+      "note": "The southern claw, magnitude 2.8, about 76 light-years away. It lies almost exactly on the ecliptic, so the Moon and planets pass very close to it, and binoculars show that it has a fainter companion."
+    },
+    {
+      "ref": "star:Brachium",
+      "note": "A red giant of magnitude 3.3 south of the main diamond. It was once counted as part of the Scorpion and labeled Gamma Scorpii; it was reassigned to Libra in the 19th century."
+    },
+    {
+      "ref": "star:Zubenelhakrabi",
+      "note": "An orange giant of magnitude 3.9 marking the eastern pan. Its name comes from the Arabic for 'the scorpion's claw', one more reminder of the constellation's first life."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "star:Zubenelgenubi",
+      "equip": "binoculars",
+      "note": "An easy wide double: a magnitude 2.8 star with a magnitude 5.2 companion close beside it. Sharp-eyed observers under a dark sky can split it without optical aid."
+    },
+    {
+      "ref": "star:δ Lib",
+      "equip": "binoculars",
+      "note": "An eclipsing binary of the same kind as Algol. Every 2 days and 8 hours one star passes in front of the other and the combined light dips from magnitude 4.9 to 5.9 for a few hours."
+    },
+    {
+      "ref": "dso:NGC5897",
+      "equip": "telescope",
+      "note": "Libra's one reasonably bright globular cluster, a large, loose ball of stars about 50,000 light-years away. It is a dim, ghostly patch that needs a dark sky."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Lib-claws",
+      "title": "The claws that became the scales",
+      "culture": "Roman",
+      "ancientSources": [
+        { "author": "Aratus", "work": "Phaenomena (the Claws)", "date": "3rd century BCE" },
+        { "author": "Virgil", "work": "Georgics 1.32–35", "date": "c. 29 BCE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.26", "date": "1st century BCE – 2nd century CE" },
+        { "author": "Manilius", "work": "Astronomica", "date": "1st century CE" }
+      ],
+      "summary": "Libra has no hero and no monster. Its story is the tale of how a piece of one constellation was cut off to make another: the Greeks saw these stars as the outstretched claws of the Scorpion, and the Romans turned them into a balance that they claimed as the sign of their own city.",
+      "retelling": [
+        "The Scorpion of the early Greek sky was a giant. Its body and raised sting lay where Scorpius is today, but its two great pincers reached far out to the west, across a whole extra stretch of the zodiac. The Greeks called that stretch the Chelae, the Claws. Aratus, in the 3rd century BCE, wrote of the Claws as a dull region with few stars worth noticing, and he told no story about them, because they were only part of the beast that killed Orion.",
+        "This left the zodiac lopsided. The Sun's yearly path was divided into twelve equal signs, and eleven of them had a figure of their own. The twelfth was a pair of pincers borrowed from its neighbor. Ovid would later describe the Scorpion sprawling across two signs at once.",
+        "Sometime in the 1st century BCE the Romans tidied things up. We do not know who had the idea, but Latin writers began to speak of the Claws as Libra, a balance with two pans. Hyginus explains it in a single line: the Scorpion is so spread out that the sign is divided in two, and one part 'our writers have called the Balance'. The poet Virgil caught the change as it happened. Flattering the young Caesar who would become Augustus, he suggested that the ruler might one day join the zodiac as a new star in the space between the Maiden and the Claws, and he pictured the blazing Scorpion politely drawing in its arms to make room.",
+        "Why a balance? The Roman poet Manilius gives the best clue. He calls Libra the sign in which the seasons are balanced and the hours of night and day are matched. The Sun passed through this sign at the September equinox, when light and darkness are equal all over the world, so a pair of scales was a fitting emblem. What the Romans may not have known is that the Babylonians had placed a balance in the same spot a thousand years earlier, for the same reason.",
+        "The Romans took the new sign to heart. Tradition held that the Moon stood in Libra at the hour Rome was founded, and Manilius declares that Italy belongs to the Balance, under which Rome and her rule over the world began. Once the scales existed they also drifted toward the constellation on their other side. Virgo, to the west, was Dike or Astraea, the goddess of justice, and it was hard to resist handing her the balance, even though in the sky it lies at her feet rather than in her hand.",
+        "So Libra reached the heavens not by a god's favor but by a surveyor's cut. The Scorpion lost its claws, the zodiac gained its only lifeless figure, and the join still shows. Greek astronomers such as Ptolemy went on calling the constellation the Claws for another two centuries, and Arab astronomers kept both names side by side. The two brightest stars of the Scales are still called Zubenelgenubi and Zubeneschamali: the southern claw and the northern claw."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Star Tales – Libra",
+        "url": "http://www.ianridpath.com/startales/libra.html"
+      },
+      "characters": ["Aratus", "Virgil", "Manilius", "Augustus", "Dike (Astraea)"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "What did the early Greeks call the stars we now know as Libra?",
+          "choices": ["The Yoke", "The Claws of the Scorpion", "The Altar", "The Maiden's Basket"],
+          "answerIndex": 1,
+          "explanation": "They were the Chelae, the Claws, the front half of a much larger Scorpion."
+        },
+        {
+          "id": "q2",
+          "prompt": "Which people turned the Claws into a pair of scales in the 1st century BCE?",
+          "choices": ["The Egyptians", "The Persians", "The Romans", "The Arabs"],
+          "answerIndex": 2,
+          "explanation": "Roman writers began calling the sign Libra, the Balance, although nobody recorded who first did so."
+        },
+        {
+          "id": "q3",
+          "prompt": "According to Manilius, why is a balance a fitting emblem for this sign?",
+          "choices": [
+            "Night and day are equal when the Sun is there",
+            "Merchants held their markets in that month",
+            "The stars form two perfect circles",
+            "It weighs the souls of the dead"
+          ],
+          "answerIndex": 0,
+          "explanation": "The Sun passed through the sign at the September equinox, when the hours of day and night match."
+        },
+        {
+          "id": "q4",
+          "prompt": "What do the star names Zubenelgenubi and Zubeneschamali mean?",
+          "choices": [
+            "The two pans of the scales",
+            "The judge and the witness",
+            "The rising and the setting one",
+            "The southern claw and the northern claw"
+          ],
+          "answerIndex": 3,
+          "explanation": "The Arabic names preserve the older Greek picture of these stars as the Scorpion's claws."
+        },
+        {
+          "id": "q5",
+          "prompt": "In Virgil's poem, what does the Scorpion do to make room for a new star?",
+          "choices": [
+            "It sinks below the horizon",
+            "It hands its sting to the Maiden",
+            "It draws in its claws",
+            "It turns into a pair of scales"
+          ],
+          "answerIndex": 2,
+          "explanation": "Virgil imagines the Scorpion pulling in its arms to open a space between the Maiden and the Claws."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Libra lies on the ecliptic, the path of the Sun, Moon and planets. The Sun passes through it from about October 31 to November 22, and Zubenelgenubi sits so close to the ecliptic that the Moon sometimes passes directly in front of it.",
+    "Libra is the only one of the twelve zodiac constellations that does not represent an animal or a mythological person.",
+    "The September equinox is still sometimes called the first point of Libra, although the slow wobble of Earth's axis, called precession, carried that point out of Libra and into Virgo around 730 BCE.",
+    "Ancient Chinese astronomers saw the diamond of Libra as Di, 'the root', the third of their 28 lunar mansions."
+  ]
+}

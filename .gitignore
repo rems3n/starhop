@@ -1,0 +1,7 @@
+node_modules
+dist
+.cache
+scripts/data/raw
+*.log
+docs/shots
+docs/sky-shots

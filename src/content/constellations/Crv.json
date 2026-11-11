@@ -1,0 +1,171 @@
+{
+  "id": "Crv",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); an older Greek figure with a Babylonian raven as forerunner",
+    "when": "2nd century CE (catalogued); known to Aratus in the 3rd century BCE",
+    "history": [
+      "Corvus, the Crow (or Raven), is one of the 48 constellations in Ptolemy's *Almagest* of about 150 CE. The Greeks called it Korax. Aratus, around 275 BCE, already described a raven at the far end of the Water Snake that seems to peck at the coil. The picture is older than the Greeks: Babylonian star catalogs from at least 1100 BCE list a Raven sitting on the tail of the Serpent in the same place.",
+      "Ptolemy said that two of the Crow's stars, the ones in its beak and feet, were shared with [[con:Hya|Hydra]], on whose back it stands. From the beginning it was drawn as part of one scene with the Water Snake and the Cup, [[con:Crt|Crater]], and the same story explains all three.",
+      "The star names here are a tangle left by Arabic astronomy. Arab stargazers saw the four main stars as a tent, al-khiba, and that word became Alchiba, now the name of faint Alpha Corvi. Gienah comes from the Arabic for wing, and Algorab from the Arabic for the raven."
+    ]
+  },
+  "overview": "Corvus is Apollo's crow, a small lopsided box of four medium-bright stars standing on the back of the Water Snake. It is compact and sits in an empty part of the spring sky, so it is far easier to spot than its brightness would suggest.",
+  "howToFind": [
+    "Corvus is best on spring evenings, highest in the south in April and May, about three fists above the horizon from Brooklyn. Use the classic spring arc. Follow the curve of the Big Dipper's handle away from the bowl to brilliant orange [[star:Arcturus|Arcturus]], keep the same curve going to blue-white [[star:Spica|Spica]], and continue the curve for a little under two more fists down and to the right. You land on a small, tilted four-sided figure. That is Corvus.",
+    "You can check it in reverse. The two stars along the top of the box, [[star:Gienah|Gienah]] on the right and [[star:Algorab|Algorab]] on the left, make a line that points left toward Spica. The dim Cup, [[con:Crt|Crater]], lies about a fist and a half to the right (west) of the box."
+  ],
+  "shape": "A slightly squashed box or kite of four stars, about three finger-widths wide and four tall, sometimes called the Sail. All four corner stars are near magnitude 3, so the whole box is visible from a city on a clear night. The fifth star, Alchiba, sits just below the lower-right corner and is hard to see in town.",
+  "mainStars": [
+    {
+      "ref": "star:Gienah",
+      "note": "Gamma Corvi, the upper-right corner and the brightest star in Corvus at magnitude 2.6. A blue-white giant about 154 light-years away. The name means wing."
+    },
+    {
+      "ref": "star:Kraz",
+      "note": "Beta Corvi, the lower-left corner, a yellow giant of magnitude 2.7. Ptolemy placed it in the crow's feet, planted on the Water Snake's back."
+    },
+    {
+      "ref": "star:Algorab",
+      "note": "Delta Corvi, the upper-left corner, magnitude 2.9. The name is Arabic for the raven. A small telescope shows a faint companion star beside it."
+    },
+    {
+      "ref": "star:ε Crv",
+      "note": "The lower-right corner, an orange giant of magnitude 3.0, noticeably warmer in color than the other three if you compare them in binoculars."
+    },
+    {
+      "ref": "star:Alchiba",
+      "note": "Alpha Corvi, the beak, pecking at the Water Snake. Despite the letter alpha it is only magnitude 4.0, the fifth-brightest star in the constellation."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "star:Algorab",
+      "equip": "small-telescope",
+      "note": "A wide, unequal double star: the magnitude 2.9 white primary has a much fainter companion of about magnitude 8.5 that a small telescope shows clearly."
+    },
+    {
+      "ref": "dso:NGC4038",
+      "equip": "telescope",
+      "note": "The Antennae, a pair of colliding galaxies about 45 million light-years away, near the western edge of Corvus. A telescope under a dark sky shows a small faint smudge shaped like a comma or a heart; the long streamers that give it the name show only in photographs."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Crv-figs",
+      "title": "The crow who waited for the figs",
+      "culture": "Greek and Roman",
+      "ancientSources": [
+        { "author": "Ovid", "work": "Fasti 2.243–266", "date": "early 1st century CE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.40", "date": "2nd century CE" },
+        { "author": "Eratosthenes", "work": "Catasterisms (as reported in Star Tales)", "date": "3rd century BCE" }
+      ],
+      "summary": "Apollo sent his crow with a bowl to fetch water for a sacrifice. The bird stopped for days at a fig tree, then lied about the delay, and Apollo condemned it to thirst. The Crow now stands in the sky within sight of the Cup, with the Water Snake between them.",
+      "retelling": [
+        "The crow was Apollo's own bird, and it had one job that day. Apollo was about to sacrifice to Zeus and wanted clean water from a running spring. He gave the crow a bowl, told it to hurry so the rite would not be held up, and sent it off.",
+        "The crow meant to hurry. It gripped the bowl in its claws and flew straight toward the spring. But on the way it passed a fig tree covered in fruit, and it dropped down for a taste. The figs were green and hard, not yet fit to eat. A sensible bird would have shrugged and gone on. This one perched under the tree and decided to wait until they were sweet.",
+        "Figs do not ripen in an afternoon. Days went by. Back at the altar Apollo gave up, found water somewhere else and carried out the sacrifice without his messenger. At last the fruit softened, the crow ate until it could eat no more, and only then did it think about what it was going to say.",
+        "It chose to lie. In Ovid's telling it caught a long water snake in its talons, flew home with the snake and the bowl, and declared that this creature had been sitting in the spring and stopping the flow, and that it had taken all this time to deal with it. Apollo is the god of prophecy. He does not need to be told where anyone has been. He answered that the crow had now added a lie to its laziness, and passed sentence: as long as the figs hang ripening on the tree, the crow shall drink from no spring.",
+        "Hyginus adds the detail that this is why crows cannot drink in the season when figs ripen, when their throats are sore; some later writers heard the punishment in the crow's dry, croaking voice.",
+        "To make the lesson permanent, Apollo set the scene among the stars. The Crow stands on the back of the Water Snake. A short way along the same back is the Cup, tilted toward him and full. He can see it, and he can never reach it, because the Snake lies in between. On a spring evening look at the little four-cornered figure of [[con:Crv|Corvus]] and then at the faint [[con:Crt|Crater]] to its right: the gap between them is only a fist and a half, and the crow has not crossed it yet."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Corvus and Crater, the crow and the cup",
+        "url": "http://www.ianridpath.com/startales/corvusandcrater.html"
+      },
+      "characters": ["Apollo", "the crow", "the water snake", "Zeus"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Why did Apollo send the crow away with a bowl?",
+          "choices": ["To fetch water for a sacrifice", "To gather figs for a feast", "To carry wine to Zeus", "To catch a water snake"],
+          "answerIndex": 0,
+          "explanation": "Apollo needed fresh spring water for a sacrifice to Zeus and sent his bird to fetch it."
+        },
+        {
+          "id": "q2",
+          "prompt": "What delayed the crow?",
+          "choices": ["A storm over the sea", "A fight with a snake", "It waited days for unripe figs to ripen", "It lost the bowl"],
+          "answerIndex": 2,
+          "explanation": "The crow found a fig tree with unripe fruit and waited beside it until the figs were sweet."
+        },
+        {
+          "id": "q3",
+          "prompt": "What punishment did Apollo give the crow?",
+          "choices": ["Its feathers were turned white", "It was struck dumb", "It was changed into a snake", "It was condemned to thirst while the figs ripen"],
+          "answerIndex": 3,
+          "explanation": "Apollo decreed that the crow would not drink while figs were ripening, and placed it in the sky just out of reach of the Cup."
+        },
+        {
+          "id": "q4",
+          "prompt": "In the sky, what keeps the Crow from the Cup?",
+          "choices": ["The Lion", "The Water Snake", "The Centaur", "The Virgin"],
+          "answerIndex": 1,
+          "explanation": "Both figures stand on the back of Hydra, the Water Snake, which lies between the bird and the water."
+        }
+      ]
+    },
+    {
+      "id": "Crv-coronis",
+      "title": "How the white crow turned black",
+      "culture": "Greek and Roman",
+      "ancientSources": [
+        { "author": "Ovid", "work": "Metamorphoses 2.531–632", "date": "c. 8 CE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.40 (citing Istros)", "date": "2nd century CE" }
+      ],
+      "summary": "Apollo's bird was once pure white. When it carried him the news that his lover Coronis had been unfaithful, Apollo killed in anger, regretted it at once, and turned the tale-bearer black. Hyginus records that some writers connected the constellation of the Crow with this story.",
+      "retelling": [
+        "There was a time, the poets say, when Apollo's bird was as white as a dove or a swan. It was also a talker, and that was its ruin.",
+        "Apollo loved Coronis, a young woman of Thessaly, daughter of Phlegyas. She was carrying his child. But while the god was away she took a mortal lover, a young Thessalian; Hyginus gives his name as Ischys, son of Elatus. The white bird saw them together, and it set off at once to tell its master, sure that such loyal service would be well rewarded.",
+        "In Ovid's version another bird tried to stop it on the way. A crow flew alongside and warned the raven that she herself had once been a favorite of the goddess Athena and had been cast off for reporting something Athena did not want to hear. Nobody thanks the bearer of bad news, she said. The white bird told her to keep her warnings, and flew on.",
+        "It found Apollo and told him everything. The laurel wreath slid from the god's head and the pick for his lyre dropped from his hand. In a fury he took up his bow and shot. In Ovid's telling the arrow struck Coronis herself, and as she died she told him that he might at least have waited until their child was born. In the version Hyginus reports, it was the lover Ischys whom Apollo shot.",
+        "The anger was gone as fast as it had come. Apollo, the god of healing, tried every art he knew to call Coronis back, and none of them worked. When her body was laid on the funeral pyre he would not let his son burn with her. He took the unborn child from the flames and carried him to the cave of the wise centaur Chiron to be raised. The boy was Asclepius, who would grow up to be the greatest of healers.",
+        "Then Apollo turned to the bird that was still waiting for its reward. He hated his bow, his hand, and above all the messenger. He changed its white feathers to black and banished it from the company of white birds forever.",
+        "Hyginus notes that the historian Istros and several others said the Crow in the sky was connected with Coronis and this story. So the small dark-minded bird perched on the Water Snake carries two tales with the same moral: once it told a lie, once it told the truth, and both times it was punished for speaking."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Corvus and Crater, the crow and the cup",
+        "url": "http://www.ianridpath.com/startales/corvusandcrater.html"
+      },
+      "characters": ["Apollo", "Coronis", "Ischys", "Asclepius", "Chiron", "the raven"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "What color was Apollo's bird before this story?",
+          "choices": ["Black", "White", "Golden", "Gray"],
+          "answerIndex": 1,
+          "explanation": "The bird was pure white until Apollo turned it black as punishment for its unwelcome news."
+        },
+        {
+          "id": "q2",
+          "prompt": "What news did the bird bring to Apollo?",
+          "choices": ["That Zeus was angry with him", "That the spring had dried up", "That Coronis had been unfaithful to him", "That Chiron had been wounded"],
+          "answerIndex": 2,
+          "explanation": "The bird had seen Coronis, who was pregnant with Apollo's child, with a mortal lover."
+        },
+        {
+          "id": "q3",
+          "prompt": "Who was the child Apollo rescued from the funeral pyre?",
+          "choices": ["Asclepius", "Orpheus", "Achilles", "Ischys"],
+          "answerIndex": 0,
+          "explanation": "Apollo saved his unborn son Asclepius and gave him to the centaur Chiron to raise; he became the great healer."
+        },
+        {
+          "id": "q4",
+          "prompt": "According to Hyginus's sources, whom did Apollo shoot?",
+          "choices": ["The raven", "Phlegyas", "Chiron", "Ischys, the lover of Coronis"],
+          "answerIndex": 3,
+          "explanation": "Hyginus says Apollo shot Ischys; in Ovid's poem the arrow strikes Coronis herself."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Corvus is one of the constellations where the star labeled Alpha is not the brightest: Alchiba is only fifth, at magnitude 4.0.",
+    "The four main stars are sometimes called the Sail or Spica's Spanker, because the box looks like a small sail and its top edge points at Spica.",
+    "In Chinese astronomy the same four stars were Zhen, a chariot, which gave its name to the 28th and last lunar mansion.",
+    "The Babylonian Raven in this spot was linked with Adad, the god of rain and storm."
+  ]
+}

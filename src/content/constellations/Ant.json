@@ -1,0 +1,46 @@
+{
+  "id": "Ant",
+  "kind": "modern",
+  "origin": {
+    "namedBy": "Nicolas-Louis de Lacaille",
+    "when": "1756 (observed 1751–52)",
+    "history": [
+      "Antlia, the Air Pump, is one of the 14 constellations invented by the French astronomer Nicolas-Louis de Lacaille after his survey of the southern sky from the Cape of Good Hope in 1751–52. He named nearly all of them after the tools of science and the arts, in the spirit of the Enlightenment. This one appeared on his map published in 1756 as la Machine Pneumatique, and he said it stood for experimental physics.",
+      "Lacaille drew it as the single-cylinder vacuum pump that the French physicist Denis Papin used for his experiments in the early 1670s. Papin later moved to London and worked with Robert Boyle on an improved pump with two cylinders, and that later design is the one Johann Bode drew in his atlas of 1801. On the 1763 edition of his map Lacaille gave the constellation the Latin name Antlia Pneumatica. In 1844 John Herschel suggested shortening Lacaille's two-word names, and Francis Baily printed it as plain Antlia in the British Association Catalogue of 1845; it has been Antlia ever since.",
+      "There is no myth here and none should be looked for. The stars of Antlia were above the horizon for the ancient Greeks, but they are so faint that no Greek figure used them. Chinese astronomers did: some belonged to Dong'ou, named for a region on China's southeastern coast, and others to Tianmiao, the Celestial Temple."
+    ]
+  },
+  "overview": "Antlia is a laboratory air pump, one of Lacaille's 18th-century tributes to science. It is a faint, shapeless patch of sky under the body of Hydra, with no star brighter than magnitude 4.3, low in the south on spring evenings from Brooklyn.",
+  "howToFind": [
+    "Look on evenings in March and April, when Antlia is due south and a little under two fists above the horizon. Find [[star:Alphard|Alphard]], the lone orange star of Hydra (a bit more than two fists below and to the right of [[star:Regulus|Regulus]]). From Alphard go about two and a half fists down and to the left. The dim orange star there is [[star:α Ant|Alpha Antliae]]. It lies under the long faint body of [[con:Hya|Hydra]] and above the northern edge of [[con:Vel|Vela]], with [[con:Pyx|Pyxis]] to its right.",
+    "The other stars, such as [[star:ε Ant|Epsilon]] and [[star:ι Ant|Iota Antliae]], are fainter still and scattered about a fist to either side. From the city you will need binoculars even for Alpha; treat finding Antlia as a test of your sky and your star-hopping rather than a sight in itself."
+  ],
+  "shape": "No recognizable pattern: three or four stars of magnitude 4.3 to 4.8 spread thinly over an area about two fists wide. It is one of the faintest constellations and is invisible to the naked eye from a city.",
+  "mainStars": [
+    {
+      "ref": "star:α Ant",
+      "note": "The brightest star in the Air Pump, yet only magnitude 4.3: an orange giant a little over 300 light-years away whose brightness varies very slightly."
+    },
+    {
+      "ref": "star:ε Ant",
+      "note": "An orange giant of magnitude 4.5 at the western end of the constellation, near the border with Pyxis."
+    },
+    {
+      "ref": "star:ι Ant",
+      "note": "An orange giant of magnitude 4.6 at the eastern end, about 200 light-years away. It was added to the list of lettered stars by Benjamin Gould in the 19th century."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "dso:NGC2997",
+      "equip": "telescope",
+      "note": "A face-on spiral galaxy, the brightest of many faint galaxies in Antlia. In a telescope under a dark sky it is a dim oval glow; its loose spiral arms appear only in photographs. At 18 degrees maximum altitude it is a difficult object from the New York area."
+    }
+  ],
+  "stories": [],
+  "facts": [
+    "Antlia is a Latinized form of a Greek word for a pump. It is often misspelled Antila.",
+    "Lacaille's original French name was la Machine Pneumatique; the full Latin name was Antlia Pneumatica.",
+    "Two of the stars Lacaille lettered, his Beta and Gamma Antliae, ended up in Hydra when the official constellation boundaries were drawn in 1930."
+  ]
+}

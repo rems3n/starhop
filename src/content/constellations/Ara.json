@@ -1,0 +1,119 @@
+{
+  "id": "Ara",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); an older Greek figure",
+    "when": "2nd century CE (catalogued); known to Aratus in the 3rd century BCE",
+    "history": [
+      "Ara, the Altar, is one of the 48 constellations of Ptolemy's *Almagest* (about 150 CE), where it has seven stars. The Greeks called it Thymiaterion, the incense burner; a common Latin name before the 1700s was Thuribulum, with the same meaning. Aratus, about 275 BCE, placed it below the Scorpion's sting and remarked that it is above the horizon only briefly. Even for the Greeks it was a far-southern figure that skimmed the sea.",
+      "Old atlases draw it two ways: as a censer with incense smoking, or as a stone altar with a fire on top. In either form it usually stands upside down to northern eyes, with its base to the north and its flames rising southward, as Ptolemy described. It was also seen as the altar toward which the Centaur, [[con:Cen|Centaurus]], carries the Beast, [[con:Lup|Lupus]].",
+      "Johann Bayer lettered eight stars here in 1603 without ever having seen the constellation, and his chart was badly out of place. Nicolas-Louis de Lacaille re-observed Ara from the Cape of Good Hope in the 1750s and relabeled it; his Greek letters are the ones used today."
+    ]
+  },
+  "overview": "Ara is the altar on which the Olympian gods swore their alliance before the war with the Titans. It is a compact group of 3rd-magnitude stars in the Milky Way directly beneath the tail of Scorpius, and for practical purposes it cannot be seen from Brooklyn.",
+  "howToFind": [
+    "From Brooklyn, Ara stays out of sight. Anything south of about declination −49 degrees never rises here, and Ara's main stars lie between −50 and −61. Only an empty northern strip of the constellation creeps a degree or two above a perfect horizon in July, with nothing in it the eye can see. Its place is straight below [[star:Shaula|Shaula]], the sting at the end of the Scorpion's tail, which itself only clears Brooklyn's horizon by about a fist.",
+    "To see the Altar, travel south. From the Florida Keys or Hawaii it stands a fist or so above the southern horizon on summer evenings, and from the southern hemisphere it rides high in winter (June to August). Find the curved tail of [[con:Sco|Scorpius]] and go a fist and a half south from Shaula: [[star:α Ara|Alpha Arae]] and [[star:β Ara|Beta Arae]] lead two short, roughly parallel chains of stars running north to south."
+  ],
+  "shape": "Two short, nearly parallel lines of three or four stars each, about a fist long and half a fist apart, like the two sides of a small table seen end on. The stars are all magnitude 3 or fainter, but the pattern is tidy and shows well under a dark southern sky. None of it survives from Brooklyn.",
+  "mainStars": [
+    {
+      "ref": "star:β Ara",
+      "note": "The brightest star of the Altar by a hair, magnitude 2.8: an orange supergiant about 650 light-years away."
+    },
+    {
+      "ref": "star:α Ara",
+      "note": "A hot blue-white star of magnitude 2.8 to 2.9, spinning so fast that it has thrown off a disk of gas around its equator."
+    },
+    {
+      "ref": "star:ζ Ara",
+      "note": "An orange giant of magnitude 3.1, on the opposite side of the figure from Beta."
+    },
+    {
+      "ref": "star:γ Ara",
+      "note": "A blue supergiant of magnitude 3.3 right beside Beta; the two make a pretty orange-and-blue pair in binoculars."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "dso:NGC6397",
+      "equip": "binoculars",
+      "note": "One of the nearest globular clusters to the Sun and a showpiece of the southern sky: a 6th-magnitude fuzzy ball in binoculars, loosely sprinkled with stars in a small telescope. Never rises from Brooklyn."
+    },
+    {
+      "ref": "dso:NGC6193",
+      "equip": "binoculars",
+      "note": "A bright open cluster of about 30 stars in the Milky Way at the Altar's northwestern corner, wrapped in faint nebulosity that shows only in photographs. It lies just below Brooklyn's horizon."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Ara-oath-of-the-gods",
+      "title": "The altar of the gods' oath",
+      "culture": "Greek and Roman",
+      "ancientSources": [
+        { "author": "Eratosthenes", "work": "Catasterisms (as reported in Star Tales)", "date": "3rd century BCE" },
+        { "author": "Manilius", "work": "Astronomica (as reported in Star Tales)", "date": "1st century CE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.39", "date": "2nd century CE" }
+      ],
+      "summary": "Before Zeus and his brothers and sisters went to war against Cronus and the Titans, they built an altar and swore an oath of alliance upon it. After ten years of war and their victory, Zeus set the altar in the sky. Hyginus adds that the Cyclopes made it.",
+      "retelling": [
+        "Before Zeus ruled the sky, the world belonged to the Titans, and their king was Cronus. Cronus had taken power by overthrowing his own father, Uranus, and he had been warned that one of his children would do the same to him. His answer was simple and terrible. Each time his wife Rhea bore a child, he swallowed it: Hestia, Demeter, Hera, Hades, Poseidon, one after another.",
+        "When the sixth child was due, Rhea had had enough. She bore Zeus in secret, hid him in a cave on the island of Crete, and gave Cronus a stone wrapped up like a baby. He swallowed that instead and never noticed the difference.",
+        "Zeus grew up on Crete. When he was strong enough he came back and forced his father to bring up everything he had swallowed. Out came his brothers and sisters, grown gods and goddesses now, and very angry. They had every reason to make war, and they knew what kind of war it would be: the young gods on Mount Olympus against the whole race of Titans on Mount Othrys.",
+        "So before a blow was struck they did what careful people do before a great undertaking. They raised an altar, made their first offerings on it, and swore over the fire to stand together until Cronus was thrown down. Hyginus says the Cyclopes built it, and that this is where human beings learned the custom of sacrificing before they begin anything important.",
+        "The war lasted ten years without a winner. Then, on the advice of Gaia, the Earth, Zeus went down into Tartarus, the pit beneath the underworld, where Cronus had locked away his own monstrous brothers: the one-eyed Cyclopes and the giants with a hundred hands. Zeus set them free. In gratitude the Cyclopes forged weapons for the three brothers, a helmet of darkness for Hades, a trident for Poseidon, and for Zeus the thunderbolt. With those weapons and those allies the gods broke the Titans at last.",
+        "Afterward the brothers drew lots for the world. Poseidon received the sea, Hades the underworld, and Zeus the sky. The oath had been kept. And so that it would be remembered, Zeus lifted the altar on which it had been sworn and set it among the stars, low in the south beneath the Scorpion, with its incense still burning.",
+        "Sailors gave the starry Altar a second meaning. Aratus says that ancient Night, grieving for the sufferings of men at sea, made it a sign of storms: if the Altar shone clear while cloud banked up above it, a mariner should expect a gale from the south and shorten sail."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Ara, the altar",
+        "url": "http://www.ianridpath.com/startales/ara.html"
+      },
+      "characters": ["Zeus", "Cronus", "Rhea", "Poseidon", "Hades", "Gaia", "the Cyclopes", "the Titans"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "What did the gods do at the altar that became the constellation Ara?",
+          "choices": ["Sacrificed the Titans' cattle", "Crowned Zeus as king", "Swore an oath of alliance before fighting the Titans", "Divided the world by lot"],
+          "answerIndex": 2,
+          "explanation": "The gods made offerings and swore to stand together against Cronus and the Titans; Zeus later placed the altar in the sky."
+        },
+        {
+          "id": "q2",
+          "prompt": "How did Rhea save the infant Zeus from Cronus?",
+          "choices": ["She gave Cronus a wrapped stone to swallow instead", "She turned Zeus into a bird", "She hid him in the sea with Poseidon", "She put Cronus to sleep"],
+          "answerIndex": 0,
+          "explanation": "Rhea hid Zeus on Crete and tricked Cronus into swallowing a stone."
+        },
+        {
+          "id": "q3",
+          "prompt": "According to Hyginus, who built the altar?",
+          "choices": ["Hephaestus", "The Cyclopes", "Prometheus", "Chiron the centaur"],
+          "answerIndex": 1,
+          "explanation": "Hyginus says the Cyclopes made the altar, and that the human custom of sacrificing before an undertaking comes from it."
+        },
+        {
+          "id": "q4",
+          "prompt": "What did the Cyclopes give Zeus to help win the war?",
+          "choices": ["A trident", "A helmet of darkness", "A golden bow", "The thunderbolt"],
+          "answerIndex": 3,
+          "explanation": "The freed Cyclopes forged the thunderbolt for Zeus, the trident for Poseidon and the helmet of darkness for Hades."
+        },
+        {
+          "id": "q5",
+          "prompt": "What did the poet Aratus say the Altar meant to sailors?",
+          "choices": ["A sign of storms at sea", "The direction of home", "A promise of calm weather", "The start of the sailing season"],
+          "answerIndex": 0,
+          "explanation": "Aratus says Night set the Altar as a warning of storm, especially of a southerly gale when it shines clear beneath a bank of cloud."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Ara is Latin for altar. The Greek name, Thymiaterion, means incense burner, which Aratus shortened to Thyterion.",
+    "On most old charts the Altar is upside down for northern observers: base to the north, flames to the south.",
+    "In Chinese astronomy five stars of Ara formed Gui, a turtle living in the river of the Milky Way."
+  ]
+}

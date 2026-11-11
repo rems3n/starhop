@@ -1,0 +1,34 @@
+{
+  "id": "Pav",
+  "kind": "modern",
+  "origin": {
+    "namedBy": "Pieter Dirkszoon Keyser and Frederick de Houtman; first shown by Petrus Plancius",
+    "when": "1595–1598",
+    "history": [
+      "Pavo, the Peacock, is one of the twelve figures added to the southern sky from the observations of the Dutch navigators Pieter Dirkszoon Keyser and Frederick de Houtman in 1595–97. It was first shown on Petrus Plancius's globe of 1598 and first printed in Johann Bayer's *Uranometria* in 1603.",
+      "The navigators named animals they had actually seen. This bird is probably not the familiar blue Indian peacock of parks but the larger green peafowl of Java, which Keyser and de Houtman would have met in the East Indies. Greek literature has a famous peacock tale (Hera setting the hundred eyes of the watchman Argus in the bird's tail), but that story has nothing to do with how this constellation came to be: the Greeks never saw these stars, and the Dutch were cataloging wildlife, not illustrating myths.",
+      "On the first globes the peacock had a wider fan of tail feathers and one foot resting on a coil of the water snake Hydrus. In the 1750s Lacaille trimmed the tail to fit his new constellation Telescopium to the north, and rerouted Hydrus away from the bird's feet."
+    ]
+  },
+  "overview": "Pavo is a peacock, most likely the green peafowl the Dutch navigators saw in Java. One bright star, itself called Peacock, marks it; the rest is a broad scatter of 3rd- and 4th-magnitude stars that holds two fine deep-sky objects.",
+  "howToFind": [
+    "Pavo never rises from Brooklyn. Its bright star [[star:Peacock|Peacock]] appears only south of about latitude 33°N, and the whole constellation needs latitude 15°N or less. From the Southern Hemisphere it is highest on evenings from July to September.",
+    "Peacock is a solitary 2nd-magnitude star at the northern corner of the constellation. If you know [[star:Alnair|Alnair]] in Grus, Peacock is the similar star nearly two fists to its west. From the other side, start at the Pointers, pass through the Southern Triangle, and Peacock is two and a half fists east of [[star:Atria|Atria]]. The body of the bird spreads from Peacock toward the pole; [[star:β Pav|Beta]] and [[star:δ Pav|Delta Pavonis]] are a fist from Peacock in that direction."
+  ],
+  "shape": "No clear outline: a large, loose box of faint stars about two fists across with Peacock standing off at one corner. Peacock is easy anywhere it is above the horizon; the body stars need a reasonably dark sky.",
+  "mainStars": [
+    { "ref": "star:Peacock", "note": "Alpha Pavonis, magnitude 1.9, a blue-white star about 180 light-years away. Its English name was invented around 1937, when Britain's Nautical Almanac Office needed a proper name for every navigation star in an almanac for the Royal Air Force." },
+    { "ref": "star:β Pav", "note": "Magnitude 3.4, a white star about 135 light-years away in the bird's body." },
+    { "ref": "star:δ Pav", "note": "Magnitude 3.6, a yellow star only 20 light-years away. It is much like the Sun but a little older and beginning to swell." },
+    { "ref": "star:η Pav", "note": "Magnitude 3.6, an orange giant at the western end of the constellation, toward Ara." }
+  ],
+  "notableObjects": [
+    { "ref": "dso:NGC6752", "equip": "binoculars", "note": "One of the finest globular clusters in the sky, a ball of old stars about a fist from Peacock. Binoculars show a bright fuzzy disk; a small telescope resolves it into a swarm of faint stars." },
+    { "ref": "dso:NGC6744", "equip": "small-telescope", "note": "A large spiral galaxy seen nearly face-on, often compared to our own Milky Way. In a small telescope under dark skies it is a wide, dim oval with a brighter core." }
+  ],
+  "stories": [],
+  "facts": [
+    "The star name Peacock dates only from the 1930s and was coined for aircraft navigators.",
+    "Delta Pavonis is one of the nearest Sun-like stars and a regular target in searches for planets."
+  ]
+}

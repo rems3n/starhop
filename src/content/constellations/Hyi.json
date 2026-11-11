@@ -1,0 +1,31 @@
+{
+  "id": "Hyi",
+  "kind": "modern",
+  "origin": {
+    "namedBy": "Pieter Dirkszoon Keyser and Frederick de Houtman; first shown by Petrus Plancius",
+    "when": "1595–1598",
+    "history": [
+      "Hydrus, the Little Water Snake, is one of the twelve southern constellations introduced from the observations of the Dutch navigators Pieter Dirkszoon Keyser and Frederick de Houtman, made on the voyage to the East Indies in 1595–97. It first appeared on Petrus Plancius's celestial globe of 1598 and stands for the sea snakes the sailors met in tropical waters. It is a male snake; the huge ancient constellation Hydra is female. Lacaille underlined the difference by labeling it l'Hydre Mâle on his chart of 1756.",
+      "No constellation has been redrawn more often. On the first globes and in Bayer's *Uranometria* of 1603 the snake wriggled beneath the feet of the Toucan and the Peacock and curled on past the south celestial pole toward Apus. De Houtman's own catalog of 1603 gave it a somewhat shorter course.",
+      "In the 1750s Nicolas-Louis de Lacaille rebuilt this part of the sky. He rerouted Hydrus to run between the two Magellanic Clouds, moved some of its stars into Tucana (including the fuzzy star now known as the globular cluster 47 Tucanae), took others for his new Horologium and Reticulum, and cut off the tail to make room for Octans. The short snake ending at Beta Hydri that we use today is Lacaille's."
+    ]
+  },
+  "overview": "Hydrus is a small male water snake, not to be confused with the giant Hydra. It is a big, plain triangle of three 3rd-magnitude stars lying between the two Magellanic Clouds, with its head beside the bright star Achernar.",
+  "howToFind": [
+    "Hydrus never rises from Brooklyn. Its northernmost bright star needs a latitude south of about 28°N, and Beta, near the pole, needs about 12°N or less. From the Southern Hemisphere it circles the pole and is highest on evenings from October to December.",
+    "Find [[star:Achernar|Achernar]], the bright star at the end of the river Eridanus. [[star:α Hyi|Alpha Hydri]], the snake's head, is the first reasonably bright star half a fist from Achernar on the side toward the pole. From there the triangle opens out: [[star:β Hyi|Beta Hydri]] is almost two fists away toward the pole, just beyond the [[dso:SMC|Small Magellanic Cloud]], and [[star:γ Hyi|Gamma Hydri]] is a fist and a half away in the direction of the [[dso:LMC|Large Magellanic Cloud]]."
+  ],
+  "shape": "A large, nearly empty triangle with sides of about 12, 16 and 17 degrees, each a fist and a bit to a fist and a half. The three corner stars are visible from suburbs when high; the two Magellanic Clouds that bracket the triangle need a dark sky.",
+  "mainStars": [
+    { "ref": "star:β Hyi", "note": "Magnitude 2.8, the brightest star in Hydrus and the nearest fairly bright star to the south celestial pole, about 13 degrees from it. It is a yellow star only 24 light-years away, a slightly older and more swollen version of the Sun." },
+    { "ref": "star:α Hyi", "note": "Magnitude 2.9, a white star about 72 light-years away marking the snake's head, half a fist from Achernar." },
+    { "ref": "star:γ Hyi", "note": "Magnitude 3.3, a red giant about 210 light-years away; its orange tint is plain in binoculars." }
+  ],
+  "notableObjects": [],
+  "stories": [],
+  "facts": [
+    "The sky is full of doubles: Great and Little Bear, Great and Little Dog, two crowns, two triangles, and the two water snakes Hydra and Hydrus.",
+    "The Small Magellanic Cloud and the great globular cluster 47 Tucanae were once drawn inside the coils of Hydrus. Lacaille transferred them to Tucana in the 1750s.",
+    "Beta Hydri is one of the closest Sun-like stars and gives a preview of how the Sun will look when it begins to run out of hydrogen in its core."
+  ]
+}

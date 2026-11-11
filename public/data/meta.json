@@ -1,0 +1,89 @@
+{
+  "builtAt": "2026-11-10T21:51:00.531Z",
+  "counts": {
+    "stars": 8920,
+    "starsFaint": 19575,
+    "constellations": 88,
+    "dsos": 599,
+    "messier": 110,
+    "caldwell": 109,
+    "milkyWayLevels": 5,
+    "milkyWayPolygons": 201
+  },
+  "files": {
+    "stars.json": {
+      "bytes": 1538436,
+      "gzipBytes": 406662
+    },
+    "stars-faint.json": {
+      "bytes": 521967,
+      "gzipBytes": 173266
+    },
+    "constellations.json": {
+      "bytes": 235965,
+      "gzipBytes": 84417
+    },
+    "dsos.json": {
+      "bytes": 98971,
+      "gzipBytes": 17632
+    },
+    "milkyway.json": {
+      "bytes": 112339,
+      "gzipBytes": 38837
+    }
+  },
+  "sources": [
+    {
+      "name": "HYG Database (David Nash / astronexus)",
+      "url": "https://raw.githubusercontent.com/astronexus/HYG-Database/main/hyg/CURRENT/hygdata_v41.csv",
+      "licence": "CC BY-SA 4.0",
+      "version": "v4.1",
+      "sha256": "d9f69fd86bbf90a4",
+      "usedFor": "stars.json, stars-faint.json"
+    },
+    {
+      "name": "d3-celestial data (Olaf Frohn)",
+      "url": "https://raw.githubusercontent.com/ofrohn/d3-celestial/master/data/",
+      "licence": "BSD-3-Clause",
+      "version": "master branch (commit not recorded; see sha256 of each file in scripts/data/raw/manifest.json)",
+      "sha256": "294f66bef5d5cf50",
+      "usedFor": "constellation names, genitives, label positions, stick figures, IAU boundaries; Milky Way contours"
+    },
+    {
+      "name": "OpenNGC (Mattia Verga)",
+      "url": "https://raw.githubusercontent.com/mattiaverga/OpenNGC/master/database_files/",
+      "licence": "CC BY-SA 4.0",
+      "version": "master branch (commit not recorded)",
+      "sha256": "54abea0b57b0a103",
+      "usedFor": "dsos.json: positions, types, magnitudes, sizes, Hubble types, names, constellations"
+    },
+    {
+      "name": "Wikipedia — Messier object (list table)",
+      "url": "https://en.wikipedia.org/w/index.php?title=Messier_object&oldid=1372398875",
+      "licence": "CC BY-SA 4.0",
+      "version": "revision 1372398875",
+      "usedFor": "Messier distances, article names, type hints, magnitude where OpenNGC has none"
+    },
+    {
+      "name": "Wikipedia — Caldwell catalogue (list table)",
+      "url": "https://en.wikipedia.org/w/index.php?title=Caldwell_catalogue&oldid=1383500944",
+      "licence": "CC BY-SA 4.0",
+      "version": "revision 1383500944",
+      "usedFor": "Caldwell → NGC/IC mapping, distances, names and magnitudes where OpenNGC has none"
+    },
+    {
+      "name": "Wikipedia — IAU designated constellations by area",
+      "url": "https://en.wikipedia.org/wiki/IAU_designated_constellations_by_area",
+      "licence": "CC BY-SA 4.0",
+      "version": "revision 1380319577",
+      "usedFor": "cross-check of the authored IAU area table (no data copied beyond the check)"
+    },
+    {
+      "name": "astronomy-engine (Don Cross)",
+      "url": "https://github.com/cosinekitty/astronomy",
+      "licence": "MIT",
+      "version": "npm dependency",
+      "usedFor": "constellation lookup for positions, B1875 ↔ J2000 rotation for boundary densification"
+    }
+  ]
+}

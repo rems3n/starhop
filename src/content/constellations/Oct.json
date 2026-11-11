@@ -1,0 +1,35 @@
+{
+  "id": "Oct",
+  "kind": "modern",
+  "origin": {
+    "namedBy": "Nicolas-Louis de Lacaille",
+    "when": "1756",
+    "history": [
+      "Octans is one of the fourteen constellations introduced by the French astronomer Nicolas-Louis de Lacaille after his survey of the southern sky from the Cape of Good Hope in 1751–52. It represents the reflecting octant, a navigation instrument invented in 1730 by the Englishman John Hadley. Lacaille called it l'Octans de Réflexion on his chart of 1756 and shortened it to Octans in the Latin edition of 1763.",
+      "An octant has a scale that spans an eighth of a circle, 45 degrees, hence the name. The navigator looked at the horizon through a small telescope and swung a mirror arm until the reflected Sun or star appeared to sit on the horizon; the scale then gave its height above it. Later the arc was widened to a sixth of a circle and the instrument became the sextant.",
+      "Lacaille described the octant as the main instrument navigators used to measure the height of the pole, and he gave it the fitting place: the constellation surrounds the south celestial pole. To build it he took stars from two of the older Dutch constellations, cutting short the tail of the water snake Hydrus and the tail feathers of Apus, the bird of paradise."
+    ]
+  },
+  "overview": "Octans is a navigator's octant, the forerunner of the sextant. It is a dim constellation whose one distinction is its location: it contains the south celestial pole, the point the whole southern sky turns around.",
+  "howToFind": [
+    "Octans can never be seen from Brooklyn, or from anywhere much north of the equator: its brightest star needs a latitude south of about 12°N, and the pole itself is on the horizon at the equator. From the Southern Hemisphere it is the opposite: it never sets, and it sits at the same height above the southern horizon as your latitude, every hour of every night.",
+    "There is no bright southern pole star, so you find the pole by pointing. Extend the long bar of the [[asterism:southern-cross|Southern Cross]], from [[star:Gacrux|Gacrux]] through [[star:Acrux|Acrux]], four and a half times its length: that empty spot is the pole. The nearest naked-eye star, [[star:σ Oct|Sigma Octantis]], is one degree from it but so faint that you need a dark sky and a chart to pick it out.",
+    "For the brighter stars, hop from [[star:Achernar|Achernar]] past the [[dso:SMC|Small Magellanic Cloud]] to [[star:β Hyi|Beta Hydri]]; [[star:ν Oct|Nu Octantis]], the brightest star of Octans, is a little under a fist beyond, at the same distance from the pole. It is also two fists from [[star:Peacock|Peacock]] straight toward the pole."
+  ],
+  "shape": "A large, flat triangle of three faint stars, Nu, Beta and Delta, well over a fist long, with the pole lying outside it near the long side. Everything here is 4th magnitude or fainter, so the constellation is invisible in city light.",
+  "mainStars": [
+    { "ref": "star:ν Oct", "note": "Magnitude 3.7, an orange star about 69 light-years away. It is the brightest star in the constellation despite having a letter far down the Greek alphabet." },
+    { "ref": "star:β Oct", "note": "Magnitude 4.1, a white star about 150 light-years away, half a fist from Nu toward the pole." },
+    { "ref": "star:δ Oct", "note": "Magnitude 4.3, an orange giant on the far side of the pole from Nu and Beta. It once belonged to the tail of Apus." },
+    { "ref": "star:σ Oct", "note": "Polaris Australis, the southern pole star, about one degree from the pole. At magnitude 5.4 it is more than 20 times fainter than the northern Polaris and no use for finding direction at a glance." }
+  ],
+  "notableObjects": [
+    { "ref": "star:σ Oct", "equip": "binoculars", "note": "Tracking down the south pole star is a rite of passage for southern observers. Use binoculars and a detailed chart: it is an unremarkable 5th-magnitude point among several similar ones." }
+  ],
+  "stories": [],
+  "facts": [
+    "The south celestial pole is slowly drifting away from Sigma Octantis into an even emptier patch of sky.",
+    "Alpha Octantis, at magnitude 5.2, is the faintest star to carry the letter Alpha in any constellation.",
+    "Delta Octantis happens to be the south pole star of the planet Saturn."
+  ]
+}

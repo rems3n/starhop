@@ -1,0 +1,153 @@
+{
+  "id": "hand-angles",
+  "unit": "skills",
+  "order": 3,
+  "title": "Measure the sky with your hand",
+  "subtitle": "Fingers and fists at arm's length turn \"over there somewhere\" into degrees",
+  "minutes": 5,
+  "sections": [
+    {
+      "heading": "Distances in the sky are angles",
+      "body": [
+        "After this lesson, when a guide says \"three fists to the left of the Dipper's handle\", you will be able to go straight there.",
+        "Stars are so far away that we cannot talk about the distance between them in miles. Instead we measure how far apart they look, as an angle in degrees. From the horizon to the point straight overhead is 90°. All the way around the horizon is 360°.",
+        "You carry a measuring tool for this. Hold your hand out at full arm's length, and it covers a nearly fixed angle of sky: the width of your little finger is about 1°, three middle fingers together about 5°, a closed fist about 10°, and a hand spread wide from thumb tip to little-finger tip about 20° to 25°. It works for almost everyone, children included, because people with bigger hands tend to have longer arms."
+      ]
+    },
+    {
+      "heading": "Check your hand against the Big Dipper",
+      "body": [
+        "Hands differ a little, so calibrate yours on a pattern whose size is known. The [[asterism:big-dipper|Big Dipper]] is a ready-made ruler. The two Pointer stars at the end of the bowl, [[star:Dubhe|Dubhe]] and [[star:Merak|Merak]], are 5° apart: three fingers. The top of the bowl, from Dubhe to [[star:Megrez|Megrez]], is 10°: one fist. The whole Dipper, from Dubhe to [[star:Alkaid|Alkaid]] at the end of the handle, is 26°: one spread hand.",
+        "If your fist does not quite cover the top of the bowl, or overlaps it, you now know your own correction. The Dipper is in the northern sky every clear night of the year from Brooklyn, so the ruler is always there when you need it; in autumn, when it is low, check that buildings are not hiding it."
+      ],
+      "demo": {
+        "title": "A ruler in the sky",
+        "controls": [],
+        "steps": [
+          {
+            "caption": "The Pointers are 5° apart: three fingers at arm's length. The top of the bowl is 10°: one fist.",
+            "time": "month:4 21:00",
+            "view": { "target": "asterism:big-dipper", "fov": 50 },
+            "layers": { "constellationNames": false, "constellationLines": false },
+            "highlights": [
+              { "type": "polyline", "points": ["star:Alkaid", "star:Mizar", "star:Alioth", "star:Megrez", "star:Phecda", "star:Merak", "star:Dubhe", "star:Megrez"] },
+              { "type": "angle", "from": "star:Dubhe", "to": "star:Merak", "label": "5° (three fingers)" },
+              { "type": "angle", "from": "star:Dubhe", "to": "star:Megrez", "label": "10° (one fist)" }
+            ]
+          },
+          {
+            "caption": "End to end the Dipper spans 26°, about one hand spread wide. It is bigger than most people expect.",
+            "time": "month:4 21:00",
+            "view": { "target": "asterism:big-dipper", "fov": 50 },
+            "layers": { "constellationNames": false, "constellationLines": false },
+            "highlights": [
+              { "type": "polyline", "points": ["star:Alkaid", "star:Mizar", "star:Alioth", "star:Megrez", "star:Phecda", "star:Merak", "star:Dubhe", "star:Megrez"] },
+              { "type": "angle", "from": "star:Dubhe", "to": "star:Alkaid", "label": "26° (one spread hand)" }
+            ]
+          },
+          {
+            "caption": "Now use it. From Dubhe to Polaris is 29°, nearly three fists. And Polaris stands 41° above the northern horizon from Brooklyn: four fists stacked one on another.",
+            "observer": { "name": "Brooklyn, NY", "lat": 40.6782, "lon": -73.9442, "tz": "America/New_York" },
+            "time": "month:4 21:00",
+            "view": { "az": 0, "alt": 45, "fov": 110 },
+            "layers": { "constellationNames": false },
+            "highlights": [
+              { "type": "angle", "from": "star:Dubhe", "to": "star:Polaris", "label": "29° (nearly three fists)" },
+              { "type": "angle", "from": "point:north", "to": "star:Polaris", "label": "41° (four fists)" },
+              { "type": "object", "ref": "star:Polaris", "label": "Polaris" }
+            ]
+          },
+          {
+            "caption": "In winter, check yourself on Orion. The Belt is under 3° long, two fingers. From Betelgeuse to Rigel is 19°, two fists.",
+            "time": "month:1 21:00",
+            "view": { "target": "con:Ori", "fov": 50 },
+            "layers": { "constellationNames": false },
+            "highlights": [
+              { "type": "angle", "from": "star:Alnitak", "to": "star:Mintaka", "label": "3° (the Belt)" },
+              { "type": "angle", "from": "star:Betelgeuse", "to": "star:Rigel", "label": "19° (two fists)" }
+            ]
+          }
+        ]
+      },
+      "tryIt": "Tonight, hold three fingers at arm's length against the Pointers and a fist against the top of the Dipper's bowl. Then stack fists from the northern horizon up to Polaris and count them."
+    },
+    {
+      "heading": "The Moon is smaller than you think",
+      "body": [
+        "The full Moon looks huge, especially near the horizon, but it is only half a degree across. Your little finger at arm's length covers it twice over, wherever it is in the sky. The Sun is the same apparent size, which is why the Moon can just cover it in a total solar eclipse. You could line up ten full Moons across the gap between the Pointers.",
+        "Keeping these sizes in mind stops the most common beginner mistake: looking for constellations that are far too small. The famous patterns are big. Orion is two fists tall; the Summer Triangle is almost four fists long."
+      ],
+      "demo": {
+        "title": "Moon-sized",
+        "controls": [],
+        "steps": [
+          {
+            "caption": "The small circle beside Merak is the size of the full Moon, half a degree across. Ten of them would fit between the Pointers.",
+            "time": "month:4 21:00",
+            "view": { "target": "star:Merak", "fov": 25 },
+            "layers": { "constellationNames": false, "constellationLines": false },
+            "highlights": [
+              { "type": "angle", "from": "star:Dubhe", "to": "star:Merak", "label": "5°" },
+              { "type": "circle", "center": "star:Merak", "radiusDeg": 0.25, "label": "Size of the full Moon (0.5°)" }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "keyPoints": [
+    "At arm's length: little finger 1°, three fingers 5°, fist 10°, spread hand 20° to 25°.",
+    "Calibrate on the Big Dipper: Pointers 5°, top of the bowl 10°, whole Dipper 26°.",
+    "Horizon to overhead is 90°, nine fists.",
+    "The Moon and Sun are only half a degree wide, half a little finger.",
+    "Constellations are bigger than beginners expect."
+  ],
+  "examples": [],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "A guide says a star is \"two fists above the horizon\". About how many degrees up is that?",
+      "choices": ["2°", "10°", "20°", "45°"],
+      "answerIndex": 2,
+      "explanation": "A fist at arm's length covers about 10°, so two stacked fists are about 20°."
+    },
+    {
+      "id": "q2",
+      "prompt": "Which of these would just about hide the full Moon when held at arm's length?",
+      "choices": ["Your little finger, with room to spare", "Three fingers held together", "Your closed fist, only just", "Your spread hand"],
+      "answerIndex": 0,
+      "explanation": "The Moon is only half a degree wide. A little finger covers about 1°, twice the Moon's width."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why does the hand rule work about equally well for a tall adult and a child?",
+      "choices": [
+        "Everyone's hands are the same size",
+        "Bigger hands usually come with longer arms, so the angle stays about the same",
+        "The sky looks bigger to children",
+        "It does not; children must halve every measurement"
+      ],
+      "answerIndex": 1,
+      "explanation": "The angle depends on the ratio of hand size to arm length, and that ratio is similar for most people. Calibrating on the Dipper takes care of the rest."
+    },
+    {
+      "id": "q4",
+      "prompt": "Your fist held against the top of the Big Dipper's bowl, from Dubhe to Megrez, covers only three quarters of it. What should you conclude?",
+      "choices": [
+        "The bowl has grown since the charts were made",
+        "You are looking at the Little Dipper",
+        "Your fist is exactly 10° and the bowl is 13°",
+        "Your fist covers a bit less than 10°, so count slightly more fists than a guide says"
+      ],
+      "answerIndex": 3,
+      "explanation": "The top of the bowl is a known 10°. If your fist falls short, your personal fist is smaller than 10°, which is exactly what calibration is for."
+    },
+    {
+      "id": "q5",
+      "prompt": "From Brooklyn, Polaris is about 41° above the northern horizon. How would you measure up to it?",
+      "choices": ["One spread hand", "Two fists", "Four fists", "Nine fists"],
+      "answerIndex": 2,
+      "explanation": "Four fists at 10° each make 40°. Nine fists would take you all the way to the point overhead."
+    }
+  ]
+}

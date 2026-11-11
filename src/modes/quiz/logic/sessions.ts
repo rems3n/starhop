@@ -1,0 +1,164 @@
+/** Assembling whole sessions: pool → candidate items → spaced-repetition pick → questions. */
+import { tonight, type Tonight } from '@/astro';
+import { dueItems, type ItemProgress } from '@/store/progress';
+import type { QuizDifficulty } from '@/store/settings';
+import type { Constellation } from '@/types';
+import {
+  buildFrom, findQuestion, lessonBuilders, listStories, nameQuestion, objectBuilders, questionForItem, storyBuilders, uniqueKeys,
+  type ObjectMode, type ReviewContext, type StoryMode,
+} from './build';
+import { computeFacts, planetQuestion, planetsUp, visibilityQuestion, visibilityQuestionsFor } from './knowledge';
+import { buildPool } from './pools';
+import type { Rng } from './rng';
+import { constellationUpAt, eveningTime } from './sky';
+import { selectSession, weakestConstellations } from './select';
+import type { Question, QuizData, SessionLength } from './types';
+
+const tonightCache = new WeakMap<QuizData, Tonight>();
+export function getTonight(data: QuizData): Tonight {
+  let t = tonightCache.get(data);
+  if (!t) {
+    t = tonight(data.now, data.observer, data.catalog);
+    tonightCache.set(data, t);
+  }
+  return t;
+}
+
+export function reviewContext(data: QuizData): ReviewContext {
+  return { ...data, facts: () => computeFacts(data.catalog, data.observer, data.now.getFullYear()), planets: () => getTonight(data).planets };
+}
+
+/** Constellation ids of a pool spec for this learner (computes tonight's sky only when asked for). */
+export function poolIds(data: QuizData, spec: string): string[] {
+  const tonightIds = spec === 'tonight' ? getTonight(data).constellations.filter((c) => c.visibility.cls !== 'not-visible').map((c) => c.ref.slice(4)) : undefined;
+  return buildPool(spec, { constellations: data.catalog.constellations, units: data.units, tonightIds });
+}
+
+export interface SessionArgs {
+  data: QuizData;
+  diff: QuizDifficulty;
+  items: Record<string, ItemProgress>;
+  length: SessionLength;
+  rng: Rng;
+  /** Only this constellation (deep link ?con=Abbr) */
+  con?: string | null;
+}
+
+function cons(a: SessionArgs): Constellation[] {
+  const ids = a.con && a.data.catalog.conById.has(a.con) ? [a.con] : poolIds(a.data, a.diff.pool);
+  return ids.map((id) => a.data.catalog.conById.get(id)).filter((c): c is Constellation => !!c);
+}
+const byItem = (list: Constellation[], prefix: string) => new Map(list.map((c) => [`${prefix}:${c.id}`, c]));
+
+/**
+ * Time (epoch ms) at which to show tonight's real sky for a constellation: the session's evening time when
+ * the constellation is up then, otherwise its own best time tonight.
+ */
+export function tonightTimes(data: QuizData): Map<string, number> {
+  const evening = eveningTime(data.now, data.observer);
+  const out = new Map<string, number>();
+  for (const item of getTonight(data).constellations) {
+    const c = data.catalog.conById.get(item.ref.slice(4));
+    if (!c || item.visibility.cls === 'not-visible') continue;
+    out.set(c.id, constellationUpAt(c, data.catalog.starById, evening, data.observer) ? evening.getTime() : (item.visibility.bestTime ?? evening).getTime());
+  }
+  return out;
+}
+
+export function buildFindSession(a: SessionArgs): Question[] {
+  const map = byItem(cons(a), 'find');
+  const times = a.diff.pool === 'tonight' && !a.con ? tonightTimes(a.data) : null;
+  const ids = selectSession([...map.keys()], a.items, a.length, a.data.now.getTime(), a.rng);
+  return uniqueKeys(ids.map((id) => findQuestion(map.get(id)!, times?.get(map.get(id)!.id))));
+}
+
+export function buildNameSession(a: SessionArgs & { typed: boolean }): Question[] {
+  const map = byItem(cons(a), 'name');
+  const ids = selectSession([...map.keys()], a.items, a.length, a.data.now.getTime(), a.rng);
+  return uniqueKeys(ids.map((id) => nameQuestion(map.get(id)!, a.data.catalog.constellations, a.rng, a.typed)));
+}
+
+export function buildObjectSession(a: SessionArgs & { modes: Record<ObjectMode, boolean> }): Question[] {
+  const { builders } = objectBuilders(a.data.catalog, poolIds(a.data, a.diff.pool), a.modes, a.rng);
+  return buildFrom(selectSession([...builders.keys()], a.items, a.length, a.data.now.getTime(), a.rng), builders);
+}
+
+export function buildStorySession(a: SessionArgs & { modes: Record<StoryMode, boolean>; scope: 'pool' | 'all'; story?: string | null }): Question[] {
+  const conIds = a.con ? [a.con] : a.scope === 'pool' ? poolIds(a.data, a.diff.pool) : undefined;
+  let stories = listStories(a.data.content, a.data.catalog, conIds);
+  if (a.story) stories = stories.filter((s) => s.story.id === a.story);
+  // "which constellation?" needs wrong answers from every constellation that has a story, not just the ones in scope
+  const builders = storyBuilders(stories, { ...a.modes, which: false }, a.rng);
+  if (a.modes.which) {
+    const all = listStories(a.data.content, a.data.catalog);
+    const whichAll = storyBuilders(all, { mcq: false, which: true, card: false }, a.rng);
+    for (const s of stories) {
+      const id = `story:${s.story.id}:which`;
+      const make = whichAll.get(id);
+      if (make) builders.set(id, make);
+    }
+  }
+  return buildFrom(selectSession([...builders.keys()], a.items, a.length, a.data.now.getTime(), a.rng), builders);
+}
+
+export type KnowledgeMode = 'computed' | 'lessons';
+
+export function buildKnowledgeSession(a: SessionArgs & { modes: Record<KnowledgeMode, boolean>; lessonUnit: string }): Question[] {
+  const { data, rng } = a;
+  const builders = new Map<string, () => Question | null>();
+  if (a.modes.computed) {
+    const facts = computeFacts(data.catalog, data.observer, data.now.getFullYear());
+    for (const id of poolIds(data, a.diff.pool)) builders.set(`vis:${id}`, () => visibilityQuestion(id, facts, data.observer, rng));
+    for (const p of planetsUp(getTonight(data).planets)) builders.set(`vis:${p.name}`, () => planetQuestion(p, rng));
+  }
+  if (a.modes.lessons) {
+    for (const [id, make] of lessonBuilders(data.lessons.filter((l) => a.lessonUnit === 'all' || l.unit === a.lessonUnit), rng)) builders.set(id, make);
+  }
+  // ask for a few spares: some computed questions do not apply to every constellation
+  const ids = selectSession([...builders.keys()], a.items, a.length === 'all' ? 'all' : ((a.length + 4) as number as SessionLength), data.now.getTime(), rng);
+  const qs = buildFrom(ids, builders);
+  return a.length === 'all' ? qs : qs.slice(0, a.length);
+}
+
+/**
+ * Visibility only (`/quiz/visibility`). With `con`: every computed question that applies to that one
+ * constellation. Without: the computed half of the knowledge quiz over the difficulty pool (plus planets).
+ */
+export function buildVisibilitySession(a: SessionArgs): Question[] {
+  const { data, rng } = a;
+  if (a.con && data.catalog.conById.has(a.con)) {
+    const qs = visibilityQuestionsFor(a.con, computeFacts(data.catalog, data.observer, data.now.getFullYear()), data.observer, rng);
+    return uniqueKeys(a.length === 'all' ? qs : qs.slice(0, a.length));
+  }
+  return buildKnowledgeSession({ ...a, con: null, modes: { computed: true, lessons: false }, lessonUnit: 'all' });
+}
+
+export function buildLessonSession(data: QuizData, lessonId: string, rng: Rng): Question[] {
+  const builders = lessonBuilders(data.lessons.filter((l) => l.id === lessonId), rng);
+  return buildFrom([...builders.keys()], builders);
+}
+
+/** Largest review round; the rest stays due and is offered as the next round. */
+export const REVIEW_BATCH = 20;
+
+/** Due items, weakest first, each in its own question format. Items whose content has gone are skipped. */
+export function buildReviewSession(data: QuizData, items: Record<string, ItemProgress>, rng: Rng, limit = REVIEW_BATCH): { questions: Question[]; due: number } {
+  const due = dueItems(items, data.now.getTime());
+  const ctx = reviewContext(data);
+  const out: Question[] = [];
+  for (const p of due) {
+    if (out.length >= limit) break;
+    const q = questionForItem(p.id, ctx, rng);
+    if (q) out.push(q);
+  }
+  return { questions: uniqueKeys(out), due: due.length };
+}
+
+/** Find-it and name-it for the weakest constellations practised so far (or the first anchors for a newcomer). */
+export function buildWeakestSession(a: Omit<SessionArgs, 'length' | 'con'>, count = 5): Question[] {
+  const { catalog } = a.data;
+  let ids = weakestConstellations(a.items, catalog.constellations.map((c) => c.id), count).map((w) => w.id);
+  if (!ids.length) ids = buildPool('anchors', { constellations: catalog.constellations, units: [] }).slice(0, count);
+  const list = ids.map((id) => catalog.conById.get(id)).filter((c): c is Constellation => !!c);
+  return uniqueKeys([...list.map((c) => findQuestion(c)), ...list.map((c) => nameQuestion(c, catalog.constellations, a.rng))]);
+}

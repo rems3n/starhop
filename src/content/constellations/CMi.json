@@ -1,0 +1,144 @@
+{
+  "id": "CMi",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ancient Greek tradition, grown around the star Procyon; catalogued by Ptolemy",
+    "when": "Named in Greek astronomy by the 3rd century BCE; listed in the Almagest, 2nd century CE",
+    "history": [
+      "Like the Greater Dog, the Lesser Dog began as one star. The Greeks called both the star and the constellation *Prokyon*, which means 'before the dog', because from Mediterranean latitudes it rises a little earlier than Sirius and so announces the Dog Star's coming. Roman writers translated the name as Antecanis; Cicero used that form in his Latin version of Aratus.",
+      "Ptolemy's *Almagest* lists just two stars in the constellation: Procyon in the dog's body and the star now called Gomeisa at its neck. It has never amounted to much more. The usual explanation of the figure is that it is the second of Orion's hunting dogs, and Hyginus says it was put into all the same stories as the greater Dog. Its one distinctive myth is the Athenian tale of Maera, the dog of Icarius."
+    ]
+  },
+  "overview": "Canis Minor is the Lesser Dog, the smaller of Orion's two hounds. In the sky it is simply two stars: brilliant Procyon, the eighth-brightest star of the night, and fainter Gomeisa beside it. It is easy to find and there is almost nothing to trace.",
+  "howToFind": [
+    "From Orion, start at [[star:Bellatrix|Bellatrix]], the Hunter's right-hand shoulder as you look at him, and draw a line across to [[star:Betelgeuse|Betelgeuse]], the orange left-hand shoulder. Keep going in the same direction for about two and a half fists and you come to a bright, slightly yellowish white star standing by itself, a little below that line: [[star:Procyon|Procyon]]. Half a fist above and to its right is [[star:Gomeisa|Gomeisa]]. That short line is the whole dog.",
+    "Another way: Procyon, [[star:Sirius|Sirius]] and Betelgeuse make the Winter Triangle, with sides of about two and a half fists each. Sirius is the dazzling one at the bottom, Betelgeuse the orange one at upper right, and Procyon the one at upper left. Procyon is also a little over two fists below [[star:Pollux|Pollux]] and [[star:Castor|Castor]], the Twins.",
+    "From latitude 40 degrees north Canis Minor rises almost due east in the evenings of December, shortly before Sirius comes up to its lower right, stands high in the south on evenings in February and March, and sets in the west in May."
+  ],
+  "shape": "Two stars half a fist apart, one very bright and one modest, like a short hyphen in the sky. Both are visible from the city. To imagine a dog here takes goodwill.",
+  "mainStars": [
+    {
+      "ref": "star:Procyon",
+      "note": "The eighth-brightest star in the night sky and one of the Sun's nearest neighbors at 11.5 light-years. It is yellowish white, a little hotter and several times more luminous than the Sun. Like Sirius it has a faint white-dwarf companion, which circles it every 41 years and is beyond the reach of small telescopes."
+    },
+    {
+      "ref": "star:Gomeisa",
+      "note": "The dog's neck, a hot blue-white star about 160 light-years away. It is really far more powerful than Procyon and looks fainter only because it is fourteen times farther off. Its Arabic name, meaning 'the bleary-eyed one', originally belonged to Procyon."
+    }
+  ],
+  "notableObjects": [],
+  "stories": [
+    {
+      "id": "CMi-maera",
+      "title": "Maera, the faithful dog of Icarius",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.4 (the story is told under Boötes)", "date": "1st century BCE – 2nd century CE" }
+      ],
+      "summary": "Icarius of Attica was the first man taught by Dionysus to make wine. Shepherds who had never been drunk before thought he had poisoned them and killed him. His dog Maera led his daughter Erigone to the body, and girl and dog both died of grief. All three were placed in the sky: Icarius as Boötes, Erigone as Virgo, and Maera as the Lesser Dog.",
+      "retelling": [
+        "In the countryside near Athens there lived a man named Icarius, known for being just and god-fearing. When the god Dionysus came through the land, it was to Icarius that he gave his great gift: the vine, the grape and the knowledge of how to make wine from them. Icarius was to pass it on.",
+        "He planted his vines and tended them, and when the wine was ready he loaded full wineskins onto a wagon and drove around the Attic countryside so that others could taste it. He came upon some shepherds and poured for them. They had never had anything like it. They drank it greedily, and soon some of them were sprawled on the ground, senseless, mumbling nonsense.",
+        "Their friends looked at the bodies and drew the obvious conclusion. Icarius had poisoned them, they decided, so that he could steal their flocks. They killed him, and they either threw his body into a well or buried it under a tree. In the morning the sleepers woke, said they had never rested so well, and asked where the kind stranger was so that they could thank him. The murderers, sick with what they had done, fled across the sea to the island of Ceos.",
+        "Icarius had a daughter, Erigone, and a dog named Maera. As the days went by and her father did not come home, Erigone grew frightened and was about to set out to look for him. Then the dog came back alone, howling as though it were mourning. It took the hem of her dress in its teeth and pulled, and led her across the country to the tree where her father lay buried.",
+        "When the girl understood, she had no hope left. She was alone and poor, and her father had been murdered for a kindness. She hanged herself from the tree above his grave. The dog would not leave. Hyginus says Maera paid for her death with its own life; some said it threw itself into a well, and that no one would drink from that well afterward.",
+        "Zeus, pitying so much undeserved misery, set all of them among the stars. Others said it was Dionysus himself who did it. Icarius became Boötes, the herdsman with his wagon. Erigone became the Virgin. And the dog became the little dog-star that the Romans called Canicula and the Greeks Procyon, because it rises before the greater Dog. The Athenians, for their part, were struck by a strange plague of suicides among their young women until an oracle told them to make amends to Erigone, and they founded a rite in her memory in which people swung on ropes hung with wooden bars."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Canis Minor: a tragic misunderstanding",
+        "url": "http://www.ianridpath.com/startales/canisminor.html"
+      },
+      "characters": ["Icarius", "Erigone", "Maera", "Dionysus", "Zeus"],
+      "questions": [
+        {
+          "id": "maera-q1",
+          "prompt": "Why did the shepherds kill Icarius?",
+          "choices": ["He had stolen their sheep", "They thought the wine he gave them was poison", "He refused to share his wine", "Dionysus ordered it"],
+          "answerIndex": 1,
+          "explanation": "The shepherds had never drunk wine. When some of them collapsed, the rest assumed Icarius had poisoned them and killed him."
+        },
+        {
+          "id": "maera-q2",
+          "prompt": "How did Erigone find her father's body?",
+          "choices": ["An oracle told her where to look", "The murderers confessed", "Dionysus appeared to her in a dream", "The dog Maera took hold of her dress and led her there"],
+          "answerIndex": 3,
+          "explanation": "Maera came home howling, caught her dress in its teeth, and led her to the place where Icarius was buried."
+        },
+        {
+          "id": "maera-q3",
+          "prompt": "In this story, which constellations do Icarius and Erigone become?",
+          "choices": ["Boötes and Virgo", "Orion and the Pleiades", "Auriga and Andromeda", "Cepheus and Cassiopeia"],
+          "answerIndex": 0,
+          "explanation": "Icarius with his wagon is Boötes, Erigone is Virgo, and the dog Maera is the Lesser Dog."
+        },
+        {
+          "id": "maera-q4",
+          "prompt": "Which god taught Icarius to make wine?",
+          "choices": ["Apollo", "Hermes", "Dionysus", "Hephaestus"],
+          "answerIndex": 2,
+          "explanation": "Dionysus (called Liber or Bacchus by the Romans) gave Icarius the vine and the art of wine-making as a reward for his justice and piety."
+        }
+      ]
+    },
+    {
+      "id": "CMi-etesian-winds",
+      "title": "The Dog Star's heat and the forty days of wind",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.4", "date": "1st century BCE – 2nd century CE" }
+      ],
+      "summary": "The killers of Icarius took refuge on the island of Ceos, and the island was punished for sheltering them: the rising Dog Star scorched its fields and brought sickness. King Aristaeus asked his father Apollo what to do, and by prayer and sacrifice won from Zeus the cool Etesian winds that blow each summer for forty days.",
+      "retelling": [
+        "The men who murdered Icarius did not stay in Attica to face what they had done. They took ship to Ceos, an island off the coast, and the people there, knowing nothing of the matter, welcomed them as guests. The fugitives settled down and built homes.",
+        "But the dog of the man they had killed was now a star. When Canicula, the little dog-star, rose with its heat that summer, it burned Ceos as it had never burned before. The crops withered in the fields. The islanders fell sick. Hyginus says they were paying the penalty to Icarius for having taken in the bandits who killed him.",
+        "The king of Ceos at that time was Aristaeus. He was a son of the god Apollo and the nymph Cyrene, and he was the father of the hunter Actaeon. Seeing his people suffer, he went to his own father and asked how the island could be freed.",
+        "Apollo's answer had two parts. First, the death of Icarius must be atoned for with many sacrifices. Second, Aristaeus must ask Zeus for a particular favor: that whenever the Dog Star rose, a wind should blow for forty days to temper its heat.",
+        "Aristaeus did both. He made the offerings, and he prayed to Zeus, and Zeus granted what he asked. From then on, every year at the rising of the Dog Star, steady north winds have blown across the Aegean Sea and cooled the islands through the worst of the summer. The Greeks called them the Etesian winds. Hyginus offers two explanations of the name: that it comes from the Greek word for 'year', because the winds return on schedule every year, or that it comes from a word for 'asking', because Aristaeus asked for them.",
+        "The story mixes up the two dogs, and it is not alone in that. The star whose dawn rising marked the great heat was Sirius, in the Greater Dog; but Hyginus tells this tale about the dog of Icarius, which he identifies with Procyon. The two dog-stars rise close together in time, the lesser a little ahead of the greater, and ancient writers moved the stories freely from one to the other. The winds, at least, are real. Sailors in Greek waters still plan around the strong northerlies of July and August."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Canis Minor: the plague on Ceos and the Etesian winds",
+        "url": "http://www.ianridpath.com/startales/canisminor.html"
+      },
+      "characters": ["Aristaeus", "Apollo", "Zeus", "Icarius", "Maera"],
+      "questions": [
+        {
+          "id": "etesian-q1",
+          "prompt": "Why was the island of Ceos scorched and struck by sickness?",
+          "choices": ["Its king had insulted Apollo", "Its people had sheltered the murderers of Icarius", "Phaethon's chariot passed too close", "The islanders refused to plant vines"],
+          "answerIndex": 1,
+          "explanation": "The killers of Icarius had fled to Ceos and been welcomed there. The Dog Star's heat punished the island for harboring them."
+        },
+        {
+          "id": "etesian-q2",
+          "prompt": "Who was the king of Ceos who sought a remedy?",
+          "choices": ["Aristaeus, son of Apollo", "Oenopion, son of Dionysus", "Minos, son of Zeus", "Erichthonius, son of Hephaestus"],
+          "answerIndex": 0,
+          "explanation": "Aristaeus, son of Apollo and Cyrene, asked his father how to end the affliction."
+        },
+        {
+          "id": "etesian-q3",
+          "prompt": "What did Zeus grant in answer to the king's prayer?",
+          "choices": ["A season of rain", "A new, cooler star to replace the Dog", "An end to wine-making on the island", "Winds that blow for forty days when the Dog Star rises"],
+          "answerIndex": 3,
+          "explanation": "Zeus sent the Etesian winds, which return each summer for forty days to temper the heat of the Dog Star."
+        },
+        {
+          "id": "etesian-q4",
+          "prompt": "According to one of Hyginus's explanations, why are the winds called 'Etesian'?",
+          "choices": ["After the island of Ceos", "After Erigone", "From the Greek word for 'year', because they return annually", "From the Greek word for 'dog'"],
+          "answerIndex": 2,
+          "explanation": "Hyginus says some derive the name from *etos*, 'year', because the winds come at a fixed time each year; others say it is because they were 'asked for'."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Procyon means 'before the dog'. From Brooklyn it rises a little under half an hour before Sirius, even though Procyon lies farther east in the sky, because it is also farther north.",
+    "Procyon, Sirius and Betelgeuse form the Winter Triangle. Procyon is also one corner of the larger Winter Hexagon, with Sirius, Rigel, Aldebaran, Capella and Pollux.",
+    "An Arabic folk tale makes Procyon and Sirius sisters. Sirius crossed the Milky Way to join their brother Canopus in the south; Procyon was left behind on the northern bank, and her tears dimmed her light.",
+    "In Chinese astronomy Procyon and two neighboring stars formed Nanhe, the Southern River, paired with a Northern River made from Castor and Pollux."
+  ]
+}

@@ -1,0 +1,290 @@
+{
+  "id": "nightly-rotation",
+  "unit": "motion",
+  "order": 1,
+  "title": "The sky turns",
+  "subtitle": "Why stars rise, set and circle the pole, and how fast they do it",
+  "minutes": 6,
+  "sections": [
+    {
+      "heading": "One sky, turning as a piece",
+      "body": [
+        "After this lesson you will be able to look at any star and say where it will be in an hour, and you will know why the chart you learned at 8 pm looks tilted at midnight.",
+        "Go out twice on the same night, an hour apart, and the stars have moved. They have not moved against each other: the constellations keep their shapes. The whole sky has turned as one piece, like a picture painted on the inside of a dome. The dome is not really turning. You are. Earth spins once a day from west to east, so everything in the sky appears to drift the other way, from east to west."
+      ],
+      "demo": {
+        "title": "Facing north with the clock running",
+        "controls": [
+          "play",
+          "time-scrub"
+        ],
+        "steps": [
+          {
+            "caption": "Facing north at 8 pm in mid-January. Polaris is four fists above the horizon. The Big Dipper stands on its handle, low in the north-northeast.",
+            "time": "2027-01-15 20:00",
+            "view": {
+              "az": 0,
+              "alt": 40,
+              "fov": 110
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "star:Polaris",
+                "label": "Polaris"
+              },
+              {
+                "type": "polyline",
+                "points": [
+                  "star:Alkaid",
+                  "star:Mizar",
+                  "star:Alioth",
+                  "star:Megrez",
+                  "star:Dubhe",
+                  "star:Merak",
+                  "star:Phecda",
+                  "star:Megrez"
+                ],
+                "label": "Big Dipper"
+              }
+            ]
+          },
+          {
+            "caption": "Now time runs at half an hour per second. Everything wheels counter-clockwise around Polaris, which hardly moves. The dots mark the Dipper star Dubhe once an hour until dawn: each gap is 15° of turn.",
+            "time": "2027-01-15 20:00",
+            "rate": 1800,
+            "view": {
+              "az": 0,
+              "alt": 40,
+              "fov": 110
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "star:Polaris",
+                "label": "Polaris"
+              },
+              {
+                "type": "polyline",
+                "points": [
+                  "star:Alkaid",
+                  "star:Mizar",
+                  "star:Alioth",
+                  "star:Megrez",
+                  "star:Dubhe",
+                  "star:Merak",
+                  "star:Phecda",
+                  "star:Megrez"
+                ]
+              },
+              {
+                "type": "trail",
+                "ref": "star:Dubhe",
+                "from": "2027-01-15 20:00",
+                "to": "2027-01-16 06:00",
+                "stepHours": 1,
+                "frame": "horizon"
+              }
+            ]
+          },
+          {
+            "caption": "1 am, five hours later. Dubhe has swung 75° around the pole, from the lower right of Polaris to the upper right, and the whole Dipper is high in the northeast. Dubhe never leaves this circle, day or night.",
+            "time": "2027-01-16 01:00",
+            "view": {
+              "az": 0,
+              "alt": 45,
+              "fov": 120
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "star:Polaris",
+                "label": "Polaris"
+              },
+              {
+                "type": "polyline",
+                "points": [
+                  "star:Alkaid",
+                  "star:Mizar",
+                  "star:Alioth",
+                  "star:Megrez",
+                  "star:Dubhe",
+                  "star:Merak",
+                  "star:Phecda",
+                  "star:Megrez"
+                ]
+              },
+              {
+                "type": "circle",
+                "center": "point:ncp",
+                "radiusDeg": 28.2,
+                "label": "Dubhe's daily circle"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "heading": "The pivot and the speed",
+      "body": [
+        "The still point of the turning sky is the north celestial pole, the spot directly above Earth's North Pole. [[star:Polaris|Polaris]] happens to sit less than 1° from it, which is why it stays put while everything else circles. Facing north, the motion is counter-clockwise.",
+        "The speed is easy to remember: a full turn of 360° in 24 hours is 15° per hour. A fist held at arm's length covers about 10°, so in one hour a star moves a fist and a half along its circle. Stars close to the pole trace small circles and seem to crawl; stars far from it sweep long arcs across the sky, but all of them turn through the same 15° each hour."
+      ]
+    },
+    {
+      "heading": "Rising in the east, setting in the west",
+      "body": [
+        "Turn around and face south and the same rotation looks different. Now the circles are so large that you only see their upper parts: stars come up along the eastern horizon on your left, climb to their highest point when they are due south, and go down in the west on your right. Facing south, the sky moves left to right, clockwise.",
+        "From Brooklyn stars do not rise straight up. They climb on a slant, leaning to the right at about 49° to the horizon, which is 90° minus your latitude. They set on the same slant in the west.",
+        "The Sun, the Moon and the planets share this daily turn. Their own slower movements against the stars come later in the course."
+      ],
+      "demo": {
+        "title": "Facing south, east and west",
+        "controls": [
+          "play",
+          "time-scrub"
+        ],
+        "steps": [
+          {
+            "caption": "Facing south at 8 pm in January, half an hour per second. Stars move left to right. The dotted arc is the whole night of Sirius: up in the southeast, highest due south around 11 pm, down in the southwest before dawn.",
+            "time": "2027-01-15 20:00",
+            "rate": 1800,
+            "view": {
+              "az": 180,
+              "alt": 35,
+              "fov": 120
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "star:Sirius",
+                "label": "Sirius"
+              },
+              {
+                "type": "trail",
+                "ref": "star:Sirius",
+                "from": "2027-01-15 19:00",
+                "to": "2027-01-16 04:00",
+                "stepHours": 1,
+                "frame": "horizon"
+              }
+            ]
+          },
+          {
+            "caption": "Facing east. Stars come up slanting to the right; the dots follow Regulus for five hours after it rises. On this date in 2027 the two bright extra lights rising with Regulus are Jupiter and Mars: planets ride the daily turn too.",
+            "time": "2027-01-15 20:00",
+            "rate": 1800,
+            "view": {
+              "az": 90,
+              "alt": 30,
+              "fov": 100
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "star:Regulus",
+                "label": "Regulus"
+              },
+              {
+                "type": "trail",
+                "ref": "star:Regulus",
+                "from": "2027-01-15 20:00",
+                "to": "2027-01-16 01:00",
+                "stepHours": 1,
+                "frame": "horizon"
+              }
+            ]
+          },
+          {
+            "caption": "Facing west at 9 pm. Everything sinks down and to the right. The half-lit Moon is going down with the stars: it shares the same daily motion.",
+            "time": "2027-01-15 21:00",
+            "rate": 1800,
+            "view": {
+              "az": 270,
+              "alt": 30,
+              "fov": 100
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "body:Moon",
+                "label": "Moon"
+              }
+            ]
+          }
+        ]
+      },
+      "tryIt": "Tonight, line up a bright star with the edge of a building or a rooftop antenna, standing in a spot you can find again. Come back to exactly that spot 20 minutes later. The star will have moved 5°, about three finger-widths at arm's length, and the direction it moved tells you whether you are looking east (up), south (rightward) or west (down)."
+    }
+  ],
+  "keyPoints": [
+    "The whole sky turns as one piece because Earth spins; the constellations keep their shapes.",
+    "The turn is 15° per hour: about a fist and a half at arm's length.",
+    "Facing north, stars circle Polaris counter-clockwise; facing south, they move left to right.",
+    "Stars rise in the east, are highest when due south, and set in the west, on a slant set by your latitude."
+  ],
+  "examples": [],
+  "questions": [
+    {
+      "id": "nr-q1",
+      "prompt": "At 9 pm a star is due south. Roughly where will it be at 11 pm?",
+      "choices": [
+        "About 30° farther west (to the right), a little lower",
+        "About 30° farther east (to the left), a little lower",
+        "In the same place: only planets move",
+        "About 15° higher, still due south"
+      ],
+      "answerIndex": 0,
+      "explanation": "The sky turns 15° per hour, east to west, so in two hours the star has moved about 30° to the right and started to sink from its highest point."
+    },
+    {
+      "id": "nr-q2",
+      "prompt": "Why does Polaris appear to stay still all night?",
+      "choices": [
+        "It is the closest star to Earth",
+        "It is so far away that it cannot be seen to move",
+        "It lies almost exactly above Earth's axis of rotation",
+        "It moves, but too slowly because it is so bright"
+      ],
+      "answerIndex": 2,
+      "explanation": "Polaris sits less than 1° from the north celestial pole, the pivot of the turning sky, so its nightly circle is too small to notice."
+    },
+    {
+      "id": "nr-q3",
+      "prompt": "You face north and watch the Big Dipper for several hours. Which way does it move?",
+      "choices": [
+        "Clockwise around Polaris",
+        "Counter-clockwise around Polaris",
+        "Straight down toward the horizon",
+        "Left to right in a straight line"
+      ],
+      "answerIndex": 1,
+      "explanation": "Facing north, the sky turns counter-clockwise around the pole. Facing south, the same rotation looks like left-to-right motion."
+    },
+    {
+      "id": "nr-q4",
+      "prompt": "What actually causes the nightly motion of the stars?",
+      "choices": [
+        "The stars orbit the Earth once a day",
+        "Earth travels around the Sun",
+        "The Moon's pull drags the sky around",
+        "Earth rotates on its axis once a day"
+      ],
+      "answerIndex": 3,
+      "explanation": "Earth spins west to east once a day, so the sky appears to turn east to west. Earth's orbit around the Sun causes the slower seasonal shift."
+    },
+    {
+      "id": "nr-q5",
+      "prompt": "A star rises at 7 pm. About how far has it travelled along its path by 10 pm?",
+      "choices": [
+        "15°",
+        "30°",
+        "45°",
+        "90°"
+      ],
+      "answerIndex": 2,
+      "explanation": "Three hours at 15° per hour is 45°, about four and a half fists at arm's length."
+    }
+  ]
+}

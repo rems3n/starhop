@@ -1,0 +1,202 @@
+{
+  "id": "Sge",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); an older Greek figure already described by Aratus",
+    "when": "2nd century CE (catalogued); known by the 3rd century BCE",
+    "history": [
+      "The Arrow is tiny and faint, but the Greeks knew it well. Aratus, about 275 BCE, called it an arrow 'alone, without a bow', since no archer stands anywhere near it, and Ptolemy included it among his 48 constellations in the *Almagest* around 150 CE. Its Greek name was Oistos, the arrow; the Romans called it Sagitta. For centuries it also went by another Latin name, Telum, meaning a dart or missile, which appears on Albrecht Durer's star chart of 1515.",
+      "The name of the star [[star:α Sge|Alpha Sagittae]], Sham, comes from the Arabic name for the whole constellation, 'the arrow'. Sagitta should not be confused with Sagittarius, the Archer, a large zodiac constellation far to the south."
+    ]
+  },
+  "overview": "Sagitta is an arrow in flight: a short, straight line of faint stars with a pair at one end for the feathers. It is the third-smallest constellation in the sky, but its shape is so neat that it is easy to recognize once you know where to look, inside the Summer Triangle just north of Altair.",
+  "howToFind": [
+    "Start from [[star:Altair|Altair]], the southern corner of the Summer Triangle, with its two close companion stars. Look one fist (10 degrees) due north of Altair, into the triangle, toward [[star:Albireo|Albireo]], the star at the foot of the Northern Cross. Sagitta lies about halfway between Altair and Albireo.",
+    "You are looking for a small arrow about four finger-widths long, pointing east. The feathered end is a close pair of stars, [[star:α Sge|Alpha]] and [[star:β Sge|Beta Sagittae]]; from them the shaft runs through [[star:δ Sge|Delta]] to the tip at [[star:γ Sge|Gamma Sagittae]], the brightest. It is in the evening sky from June into November, at the same times as the Summer Triangle."
+  ],
+  "shape": "A slim arrow of four stars, about half a fist long, with a little fork at the tail end. All four stars are between magnitude 3.5 and 4.4 (magnitude is the brightness scale, where smaller numbers are brighter), so from a city you will probably need binoculars, in which the whole arrow fits neatly in one view. From a dark site it is a charming naked-eye sight against the Milky Way.",
+  "mainStars": [
+    {
+      "ref": "star:γ Sge",
+      "note": "The arrowhead and the brightest star, magnitude 3.5. It is a cool red giant about 258 light-years away and shows an orange tint in binoculars."
+    },
+    {
+      "ref": "star:δ Sge",
+      "note": "The middle of the shaft, magnitude 3.8: a red giant with a hot blue-white companion too close to separate in a telescope."
+    },
+    {
+      "ref": "star:α Sge",
+      "note": "Sham, a yellow giant of magnitude 4.4, one of the two feather stars. Its name is from the Arabic for 'arrow'."
+    },
+    {
+      "ref": "star:β Sge",
+      "note": "The other feather star, a near twin of Alpha in brightness and color."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "dso:M71",
+      "equip": "small-telescope",
+      "note": "A loose, faint globular cluster lying right on the arrow's shaft, about midway between Delta and Gamma. A small telescope shows a dim grainy patch; binoculars under a dark sky show only a faint smudge."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Sge-apollo-and-the-cyclopes",
+      "title": "Apollo's arrow and the Cyclopes",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Eratosthenes", "work": "Catasterisms (the Arrow), as reported by Hyginus", "date": "3rd century BCE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.15" }
+      ],
+      "summary": "Eratosthenes said this is the arrow with which Apollo killed the Cyclopes, in revenge for the death of his son Asclepius. Apollo hid the arrow in the far north, and when Zeus forgave him it flew back to him on the wind.",
+      "retelling": [
+        "Apollo had a son named Asclepius, who became the greatest doctor the world had seen. He was so skilled that he went past healing the sick and began to bring the dead back to life.",
+        "That upset the order of things. Hades, lord of the Underworld, complained that he was being robbed of his subjects, and Zeus settled the matter in his usual way: he killed Asclepius with a thunderbolt.",
+        "Apollo was beside himself with grief and anger. He could not strike at Zeus, his own father and the king of the gods. So he struck at the makers of the weapon. The thunderbolts of Zeus were forged by the Cyclopes, the one-eyed giant smiths. Apollo took his bow and shot them dead.",
+        "Hyginus, reporting Eratosthenes, tells what became of the arrow. Apollo buried it far away in the land of the Hyperboreans, the people who lived beyond the north wind. There it stayed while Apollo bore the consequences of what he had done.",
+        "In time Zeus pardoned his son. When that happened, the arrow came back: it was carried through the air on the wind, together with the grain that was ripening at that season, and returned to Apollo.",
+        "For this reason, says Hyginus, the arrow is shown among the constellations. Asclepius is in the sky too, as Ophiuchus, the Serpent Holder, a large constellation to the southwest. So on a summer night you can see the healer and, not far off, the arrow that avenged him."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Sagitta, the arrow",
+        "url": "http://www.ianridpath.com/startales/sagitta.html"
+      },
+      "characters": ["Apollo", "Asclepius", "Zeus", "Hades", "The Cyclopes"],
+      "questions": [
+        {
+          "id": "cyclopes-q1",
+          "prompt": "Why did Apollo kill the Cyclopes?",
+          "choices": ["They had stolen his cattle", "They forged the thunderbolt that killed his son Asclepius", "They had insulted his music", "Zeus ordered him to"],
+          "answerIndex": 1,
+          "explanation": "Apollo could not attack Zeus, so he took revenge on the Cyclopes who made Zeus's thunderbolts."
+        },
+        {
+          "id": "cyclopes-q2",
+          "prompt": "Where did Apollo hide the arrow afterwards?",
+          "choices": ["Under Mount Etna", "In the temple at Delphi", "At the bottom of the sea", "In the land of the Hyperboreans, in the far north"],
+          "answerIndex": 3,
+          "explanation": "He buried it among the Hyperboreans, and it flew back on the wind when Zeus pardoned him."
+        },
+        {
+          "id": "cyclopes-q3",
+          "prompt": "Which constellation represents Apollo's son Asclepius?",
+          "choices": ["Ophiuchus", "Hercules", "Bootes", "Orion"],
+          "answerIndex": 0,
+          "explanation": "Asclepius the healer is Ophiuchus, the Serpent Holder."
+        },
+        {
+          "id": "cyclopes-q4",
+          "prompt": "Why had Zeus killed Asclepius?",
+          "choices": ["He had stolen fire", "He refused to worship Zeus", "He was raising the dead, and Hades complained", "He had wounded Apollo"],
+          "answerIndex": 2,
+          "explanation": "Asclepius's power to bring back the dead threatened the Underworld, so Zeus struck him down."
+        }
+      ]
+    },
+    {
+      "id": "Sge-heracles-and-prometheus",
+      "title": "The arrow that freed Prometheus",
+      "culture": "Greek and Roman",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.15" }
+      ],
+      "summary": "Hyginus says the Arrow is one of the shafts of Heracles, the one that killed the eagle sent each day to tear at the liver of the chained Prometheus. He takes the chance to tell the whole story of Prometheus, the trick at the sacrifice, and the theft of fire.",
+      "retelling": [
+        "Prometheus was a Titan, famous for his cleverness, and he was said to have made the first human beings. He was always on their side. In the earliest days people burned whole animals when they sacrificed to the gods, which the poor could not afford. Prometheus won permission from Zeus for them to burn only a part and keep the rest to eat.",
+        "Then he fixed which part. He killed two bulls. He heaped all the meat together and covered it with a hide, and he wrapped the bare bones in the other hide, and he invited Zeus to choose his share. Zeus chose the bones. That, says Hyginus, is why people eat the meat of a sacrifice and burn the rest for the gods.",
+        "When Zeus realized he had been fooled, he took fire away from mankind, so that their meat would be no use to them. Prometheus went to the fire of Zeus when no one was watching, shut a spark of it inside a hollow fennel stalk, and ran back to earth, swinging the stalk as he went to keep the ember alive. Hyginus says that is why runners in the torch races wave their torches.",
+        "The punishment was terrible. Zeus had Prometheus bound with an iron chain to a peak of the Caucasus mountains. Every day an eagle came and fed on his liver, and every night the liver grew whole again, ready for the next day.",
+        "Ages later Heracles came that way. He had been sent to fetch the golden apples of the Hesperides and did not know the road, and Prometheus told him how to go. When Heracles had succeeded, he came back to thank him in the only way that mattered: he shot the eagle dead with an arrow. Zeus, who by then had reasons of his own to be grateful to Prometheus for a timely warning, let him go free.",
+        "That arrow, Hyginus says, is the one in the sky. The setting suits the tale. Heracles kneels a little way to the northwest as the constellation Hercules, and the Arrow flies beside Aquila, the Eagle, as if it had just left the bow."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Sagitta, the arrow",
+        "url": "http://www.ianridpath.com/startales/sagitta.html"
+      },
+      "characters": ["Prometheus", "Zeus", "Heracles"],
+      "questions": [
+        {
+          "id": "prometheus-q1",
+          "prompt": "What did Heracles shoot with the arrow in this story?",
+          "choices": ["The eagle that fed on Prometheus's liver", "The dragon of the Hesperides", "A Cyclops", "The centaur Nessus"],
+          "answerIndex": 0,
+          "explanation": "He killed the eagle that tormented the chained Prometheus."
+        },
+        {
+          "id": "prometheus-q2",
+          "prompt": "In what did Prometheus carry the stolen fire?",
+          "choices": ["A clay lamp", "A seashell", "A hollow fennel stalk", "A bronze helmet"],
+          "answerIndex": 2,
+          "explanation": "He hid a spark in a fennel stalk and ran with it, swinging the stalk to keep it alight."
+        },
+        {
+          "id": "prometheus-q3",
+          "prompt": "In the trick at the sacrifice, which portion did Zeus choose?",
+          "choices": ["The meat hidden under a hide", "The liver", "The whole of both bulls", "The bones wrapped in a hide"],
+          "answerIndex": 3,
+          "explanation": "Zeus picked the bundle of bones, which is why the gods' share of a sacrifice was burned and people ate the meat."
+        },
+        {
+          "id": "prometheus-q4",
+          "prompt": "Where was Prometheus chained?",
+          "choices": ["Mount Olympus", "The Caucasus mountains", "Mount Etna", "Mount Atlas"],
+          "answerIndex": 1,
+          "explanation": "He was bound with an iron chain to a peak in the Caucasus."
+        }
+      ]
+    },
+    {
+      "id": "Sge-arrow-of-eros",
+      "title": "The arrow of Eros",
+      "culture": "Roman",
+      "ancientSources": [
+        { "author": "Germanicus", "work": "Aratea (his Latin version of Aratus's Phaenomena)", "date": "early 1st century CE" }
+      ],
+      "summary": "The Roman poet Germanicus gave the Arrow a gentler owner: Eros, the god of love. It is the arrow that made Zeus fall in love with Ganymede, and the eagle of Zeus, the constellation next door, now guards it.",
+      "retelling": [
+        "Eros, whom the Romans called Cupid, was the god of desire, and his weapons were a bow and arrows. Whoever was struck by one of them fell helplessly in love. Not even the gods were safe from him.",
+        "Germanicus, a Roman prince who turned Aratus's poem about the stars into Latin verse, says that the little arrow in the sky is one of these. It is the arrow that kindled in Zeus his passion for Ganymede.",
+        "Ganymede was a beautiful boy of the royal house of Troy. Once Zeus had been struck, he had the boy carried up to Olympus by his eagle, to serve as cupbearer to the gods. That story is told with the Eagle, Aquila, and Ganymede himself is often identified with Aquarius, the Water Carrier.",
+        "The map of the sky fits the idea neatly. The Arrow lies directly beside Aquila, and according to Germanicus that is no accident: the eagle of Zeus is standing guard over the arrow that started it all. So three neighboring constellations can be read as one small story of the summer sky, with the arrow of love, the eagle sent because of it, and the boy it carried away."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Sagitta, the arrow",
+        "url": "http://www.ianridpath.com/startales/sagitta.html"
+      },
+      "characters": ["Eros (Cupid)", "Zeus", "Ganymede"],
+      "questions": [
+        {
+          "id": "eros-q1",
+          "prompt": "According to Germanicus, whose arrow is Sagitta?",
+          "choices": ["Apollo's", "Artemis's", "Eros's", "Heracles's"],
+          "answerIndex": 2,
+          "explanation": "Germanicus identified it as the arrow of Eros, the god of love."
+        },
+        {
+          "id": "eros-q2",
+          "prompt": "With whom did the arrow make Zeus fall in love?",
+          "choices": ["Ganymede", "Leda", "Nemesis", "Callisto"],
+          "answerIndex": 0,
+          "explanation": "It kindled his passion for Ganymede, the Trojan boy carried off by the eagle."
+        },
+        {
+          "id": "eros-q3",
+          "prompt": "Which neighboring constellation is said to guard the arrow?",
+          "choices": ["Cygnus, the Swan", "Aquila, the Eagle", "Delphinus, the Dolphin", "Vulpecula, the Fox"],
+          "answerIndex": 1,
+          "explanation": "Aquila, the eagle of Zeus, lies right next to Sagitta and was said to watch over it."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Sagitta is the third-smallest of the 88 constellations; only Equuleus and Crux are smaller.",
+    "The official abbreviation is Sge, taken from the genitive form Sagittae, because 'Sag' would be confused with Sagittarius.",
+    "Oddly, Eratosthenes called this constellation Toxon, which means 'bow' rather than 'arrow'.",
+    "In China the stars of Sagitta were a banner used for signaling to troops, flying beside a battle drum formed by Altair and its two neighbors."
+  ]
+}

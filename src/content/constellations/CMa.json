@@ -1,0 +1,187 @@
+{
+  "id": "CMa",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ancient Greek tradition, grown around the star Sirius; catalogued by Ptolemy",
+    "when": "Sirius is named by Homer and Hesiod (8th–7th century BCE); the constellation is in the Almagest, 2nd century CE",
+    "history": [
+      "Canis Major, the Greater Dog, almost certainly began as a single star. Sirius is so much brighter than anything around it that it had a name and a reputation long before a dog was drawn around it. Homer's *Iliad* calls it 'the Dog of Orion', the brightest of stars and a sign of evil that brings fever, and Hesiod's *Works and Days* complains that Sirius parches a man's head and knees in high summer. The name comes from the Greek *seirios*, meaning 'searing' or 'scorching'.",
+      "By the 3rd century BCE the poet Aratus describes a whole animal: the guard-dog of Orion, standing on its hind legs behind its master, with Sirius blazing at the tip of its jaw. Ptolemy listed the figure in his *Almagest* simply as *Kyon*, the Dog, and used the same word for the star. Older Mesopotamian sky-watchers had seen something quite different here: Babylonian star lists make Sirius an arrow and the stars to its south a bow.",
+      "Ptolemy also listed eleven stars lying around the Dog that belonged to no figure. Centuries later most of them were used to make a new constellation, [[con:Col|Columba]] the Dove."
+    ]
+  },
+  "overview": "Canis Major is the larger of Orion's two hunting dogs, following at his heels. It holds Sirius, the brightest star in the night sky, and enough other bright stars that the dog is one of the few constellations that really looks like its name: a stick-figure hound standing upright with Sirius at its collar.",
+  "howToFind": [
+    "Find Orion's Belt and follow its line down and to the left for about two fists (20 degrees). You cannot miss [[star:Sirius|Sirius]]: it is twice as bright as any other star. When it is low it flashes red, blue and green as its light is scrambled by the thick air near the horizon. Sirius is the dog's head or collar. About half a fist to its right is [[star:Mirzam|Mirzam]], a front paw. The body runs down and to the left from Sirius for a little more than a fist to a neat triangle of stars, [[star:Wezen|Wezen]], [[star:Adhara|Adhara]] and [[star:Aludra|Aludra]], which form the hindquarters and tail.",
+    "From latitude 40 degrees north Sirius never climbs very high, only about a third of the way up the southern sky. Canis Major rises in the southeast a little after Orion, is in view in the evening from December, stands due south in the evenings of February, and is gone into the southwestern twilight by early May."
+  ],
+  "shape": "A dog standing on its hind legs, about a fist and a half tall: brilliant Sirius at the top, a single star just to its right for a forepaw, a line running down to a bright triangle at the bottom for the rump, hind legs and tail. Sirius and the lower triangle are all bright enough to show from a city, though the triangle sits low and needs a clear southern view.",
+  "mainStars": [
+    {
+      "ref": "star:Sirius",
+      "note": "The Dog Star, brightest star of the night at magnitude −1.4 (magnitude is the brightness scale, where smaller numbers are brighter and the very brightest go below zero). It is a white star about twice the mass of the Sun, and it looks so bright mainly because it is a close neighbor, only 8.6 light-years away. It has a tiny, dense companion, a white dwarf, that circles it every 50 years and is very hard to see in the glare."
+    },
+    {
+      "ref": "star:Adhara",
+      "note": "The brightest star of the lower triangle and the second-brightest in the constellation, just short of first magnitude. A blue-white giant about 400 light-years away. If it were as close as Sirius it would outshine every star and planet in our sky."
+    },
+    {
+      "ref": "star:Wezen",
+      "note": "The top of the lower triangle, at the dog's hip. A yellow-white supergiant more than a thousand light-years away, one of the most luminous stars visible to the naked eye."
+    },
+    {
+      "ref": "star:Mirzam",
+      "note": "The forepaw, just west of Sirius. Because it rises a little before Sirius it was treated in Arabic tradition as the star that announces the Dog Star's coming. A blue-white giant about 500 light-years away."
+    },
+    {
+      "ref": "star:Aludra",
+      "note": "The tip of the tail, at the left of the lower triangle. A blue supergiant roughly 2,000 light-years off, which looks third magnitude only because of its great distance."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "dso:M41",
+      "equip": "binoculars",
+      "note": "A bright cluster of stars four degrees straight below Sirius, so that the two fit in the same binocular view. It appears as a soft glowing patch about the size of the full Moon, with a sprinkling of individual stars. A small telescope shows dozens, including an orange one near the middle. It lies about 2,300 light-years away."
+    },
+    {
+      "ref": "dso:NGC2362",
+      "equip": "small-telescope",
+      "note": "A tight, sparkling little cluster wrapped around the fourth-magnitude star [[star:τ CMa|Tau Canis Majoris]], a few degrees northeast of Wezen. In a telescope the bright star sits in a swarm of faint ones like a jewel in a setting."
+    },
+    {
+      "ref": "dso:NGC2360",
+      "equip": "small-telescope",
+      "note": "Caroline's Cluster, found by Caroline Herschel in 1783. A rich patch of faint stars about eight degrees east of Sirius, best under a dark sky."
+    }
+  ],
+  "stories": [
+    {
+      "id": "CMa-laelaps",
+      "title": "Laelaps, the hound that always caught its prey",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.35 (citing Istros)", "date": "1st century BCE – 2nd century CE" },
+        { "author": "Eratosthenes", "work": "Catasterisms (as reported in Ridpath's Star Tales)", "date": "3rd century BCE (surviving summary is later)" },
+        { "author": "Apollodorus", "work": "Library 2.4.6–7 and 3.15.1", "date": "1st–2nd century CE" },
+        { "author": "Ovid", "work": "Metamorphoses, Book 7", "date": "c. 8 CE" }
+      ],
+      "summary": "Laelaps was a magical dog that was fated to catch whatever it chased. It passed from Zeus to Europa, to Minos, to Procris and finally to her husband Cephalus, who set it on a fox that was fated never to be caught. Zeus settled the impossible chase by turning both animals to stone, and he put the dog in the sky.",
+      "retelling": [
+        "The dog was a gift from a god. Zeus gave it to Europa, the princess he had carried off to Crete, to be her guardian, and it was no ordinary animal: no creature it hunted could ever escape it. From Europa it passed to her son Minos, king of Crete.",
+        "From Minos it came to an Athenian woman named Procris, a daughter of King Erechtheus who loved hunting. The tellers disagree about how. Hyginus says that Minos fell ill, that Procris cured him, and that the dog was her fee. Apollodorus tells a less respectable story in which the king desired her and bought her favors with two marvelous gifts: the hound that could not fail, and a javelin that never missed its mark.",
+        "Procris went home to Athens and to her husband Cephalus, and the two of them hunted together. It ended badly. One day she was moving through a thicket after game and Cephalus, not knowing she was there, threw the javelin at the rustling leaves. The spear that never missed did not miss. So the dog had a new master, a widower.",
+        "About that time the country around Thebes was being torn apart by a fox. It was a monstrous vixen, and there was a fate on it as strong as the fate on the dog: it could never be caught by anything that pursued it. Apollodorus says the Thebans were reduced to leaving out one of their own children for it every month to keep it from taking more. Amphitryon, who needed the Thebans' help in a war, undertook to rid them of the beast and sent to Athens to borrow the famous hound.",
+        "Cephalus brought the dog and slipped the leash. In Ovid's poem he tells the story himself. He climbed a hill to watch. The fox ran straight, then doubled back in circles; the hound stayed on its heels, jaws snapping shut on air, always a breath away and never closer. The dog that must catch its prey was chasing the prey that could not be caught, and there was no way for both fates to come true.",
+        "Zeus saw the dilemma and ended it the only way he could. Cephalus glanced down to fit his fingers to the strap of his spear, and when he looked up there were two marble statues on the plain, one straining forward in flight, the other with its mouth open to bite. Neither had won and neither had lost. The fox stayed stone. The dog, the old star-writers say, Zeus lifted into the sky, where it runs still as Canis Major."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Canis Major: Laelaps and the uncatchable fox",
+        "url": "http://www.ianridpath.com/startales/canismajor.html"
+      },
+      "characters": ["Laelaps", "Zeus", "Europa", "Minos", "Procris", "Cephalus", "Amphitryon", "the Theban fox"],
+      "questions": [
+        {
+          "id": "laelaps-q1",
+          "prompt": "What was special about the dog Laelaps?",
+          "choices": ["It had three heads", "It could speak with a human voice", "It was fated to catch whatever it chased", "It breathed fire"],
+          "answerIndex": 2,
+          "explanation": "Laelaps was so swift that no prey could escape it. The trouble came when it met a fox fated never to be caught."
+        },
+        {
+          "id": "laelaps-q2",
+          "prompt": "How did Zeus resolve the chase between the dog and the fox?",
+          "choices": ["He turned both of them to stone", "He let the dog win", "He hid the fox in a cave", "He struck the fox with a thunderbolt"],
+          "answerIndex": 0,
+          "explanation": "An inescapable hound chasing an uncatchable fox was a paradox, so Zeus froze both as stone. The dog was then placed in the sky."
+        },
+        {
+          "id": "laelaps-q3",
+          "prompt": "To whom did Zeus first give the dog?",
+          "choices": ["Orion", "Artemis", "Cephalus", "Europa"],
+          "answerIndex": 3,
+          "explanation": "According to Hyginus, Zeus gave the dog to Europa as a guardian. It then went to her son Minos, to Procris and to Cephalus."
+        },
+        {
+          "id": "laelaps-q4",
+          "prompt": "How did Cephalus come to own the dog?",
+          "choices": ["He won it in a chariot race", "He inherited it after accidentally killing his wife Procris", "He stole it from King Minos", "Artemis gave it to him for his skill"],
+          "answerIndex": 1,
+          "explanation": "Procris received the dog and an unerring javelin from Minos. Cephalus killed her by accident with that javelin while hunting, and the dog became his."
+        },
+        {
+          "id": "laelaps-q5",
+          "prompt": "Near which city was the uncatchable fox doing its damage?",
+          "choices": ["Athens", "Thebes", "Sparta", "Troy"],
+          "answerIndex": 1,
+          "explanation": "The fox ravaged the land around Thebes in Boeotia. Amphitryon asked Cephalus to bring his hound from Athens to hunt it."
+        }
+      ]
+    },
+    {
+      "id": "CMa-orions-dog",
+      "title": "Orion's hound and the scorching Dog Star",
+      "culture": "Greek and Roman",
+      "ancientSources": [
+        { "author": "Homer", "work": "Iliad 22.25–31", "date": "8th century BCE" },
+        { "author": "Hesiod", "work": "Works and Days 582–588", "date": "c. 700 BCE" },
+        { "author": "Aratus", "work": "Phaenomena 326–341", "date": "3rd century BCE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.35", "date": "1st century BCE – 2nd century CE" }
+      ],
+      "summary": "The oldest idea about this constellation is the simplest: it is the hunting dog of Orion, set in the sky behind its master. Its great star Sirius was feared as well as admired, because its return to the dawn sky brought the hottest, most feverish weeks of the Greek summer, the 'dog days'.",
+      "retelling": [
+        "A hunter needs a dog, and the greatest hunter had the greatest dog. Long before anyone told the tale of Laelaps, the Greeks looked at the brilliant star that follows Orion up from the horizon and called it his hound. Hyginus puts it plainly: some say this is the dog of Orion, and because Orion was devoted to hunting, the dog was placed with him among the stars.",
+        "The poet Aratus describes how the two stand in the sky. Under Orion's towering back the Dog rears on its hind legs like a guard, its body picked out in stars, though dim about the belly. At the tip of its terrible jaw burns the star that outshines all others, and men call it Seirios, the Scorcher.",
+        "The dog has its quarry too. Under Orion's feet crouches the Hare, and Aratus says the Dog chases it through all time: it rises close behind the Hare and watches the Hare set before it. Night after night the chase crosses the sky from east to west, and the gap between hound and hare never closes.",
+        "The star was more than an ornament. In the Greek summer there came a few weeks when Sirius, after being hidden in the Sun's glare, could be seen again rising just before dawn. That was the worst heat of the year. Hesiod, writing a farmer's almanac around 700 BCE, says it is the season when the artichoke flowers and the cicada sings in the trees, when goats are fattest and wine is sweetest, and when men are weakest, because Sirius parches the head and the knees and the skin is dry with heat. His advice is to find a shady rock and a cup of wine.",
+        "People believed the star itself added its fire to the Sun's. Aratus says that when the Dog rises with the Sun the trees cannot fool it with a show of leaves: its keen glance goes through them, strengthening some and blighting the bark of others. Homer uses the same star for one of the most frightening moments in the *Iliad*. Old King Priam, watching from the walls of Troy, sees Achilles running toward the city in his bronze armor, shining like the star that comes at harvest time, the one men call Orion's Dog. It is the brightest of all, Homer says, and yet it is a sign of evil and brings great fever on wretched mortals.",
+        "So the faithful hound carried a mixed reputation, loyal to its master and dangerous to everyone else. The Romans called the star Canicula, the little dog, and named the hot weeks after it: the *dies caniculares*, our 'dog days' of summer. You will not see Sirius in those weeks, for it is in the daytime sky with the Sun. To see Orion's dog properly you have to wait for winter, when it trots up over the southeastern horizon behind its master, flashing every color it has."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Canis Major: Orion's dog and Sirius, the Dog Star",
+        "url": "http://www.ianridpath.com/startales/canismajor.html"
+      },
+      "characters": ["Orion", "the Dog (Sirius)", "the Hare", "Achilles", "Priam"],
+      "questions": [
+        {
+          "id": "dogstar-q1",
+          "prompt": "What does the Greek name Sirius (Seirios) mean?",
+          "choices": ["Faithful", "Scorching or searing", "Swift runner", "Bright eye"],
+          "answerIndex": 1,
+          "explanation": "Seirios means 'searing' or 'scorching'. The star's dawn rising marked the hottest part of the Greek summer."
+        },
+        {
+          "id": "dogstar-q2",
+          "prompt": "In Homer's *Iliad*, which warrior is compared to the star called Orion's Dog?",
+          "choices": ["Hector", "Odysseus", "Achilles", "Agamemnon"],
+          "answerIndex": 2,
+          "explanation": "Priam sees Achilles racing across the plain, his bronze gleaming like the Dog of Orion, the brightest star and a sign of evil and fever."
+        },
+        {
+          "id": "dogstar-q3",
+          "prompt": "According to Aratus, what does the Dog chase across the sky forever?",
+          "choices": ["The Bull", "The Pleiades", "The Scorpion", "The Hare"],
+          "answerIndex": 3,
+          "explanation": "Lepus, the Hare, lies under Orion's feet just west of the Dog. It sets first, with the Dog following close behind."
+        },
+        {
+          "id": "dogstar-q4",
+          "prompt": "Why are the hottest weeks of summer called the 'dog days'?",
+          "choices": ["They began when Sirius, the Dog Star, reappeared in the dawn sky", "Dogs were sacrificed then to cool the weather", "Orion's dogs were said to rest in summer", "The Sun was thought to pass through Canis Major"],
+          "answerIndex": 0,
+          "explanation": "In ancient Greece and Rome the first dawn sighting of Sirius came at the height of summer, and people believed the star added its heat to the Sun's."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Hyginus mentions a third identity for the dog: some called it the hound of Icarius, the first wine-maker. That sad story is usually attached to the Lesser Dog and is told under [[con:CMi|Canis Minor]].",
+    "In ancient Egypt the first dawn appearance of Sirius each summer came shortly before the Nile's yearly flood, and the star's return was used to mark the start of the year.",
+    "Sirius forms the Winter Triangle with [[star:Procyon|Procyon]] in Canis Minor and [[star:Betelgeuse|Betelgeuse]] in Orion: a nearly equal-sided triangle about two and a half fists on a side.",
+    "An Arabic folk tale makes Sirius and Procyon sisters and the southern star Canopus their brother. Sirius crossed the Milky Way to join him in the south; Procyon stayed behind on the northern bank, weeping until her eyes grew dim.",
+    "Chinese astronomers called Sirius Tianlang, the Celestial Wolf, and saw a bow and arrow aimed at it among the stars to its south.",
+    "The white-dwarf companion of Sirius was first seen in 1862 by the American telescope maker Alvan Graham Clark while he was testing a new lens."
+  ]
+}

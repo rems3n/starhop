@@ -1,0 +1,113 @@
+{
+  "id": "UMi",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); Greek tradition credits Thales of Miletus with introducing it",
+    "when": "2nd century CE (Almagest); introduced to the Greeks around 600 BCE",
+    "history": [
+      "Homer, who names the Great Bear, never mentions a small one. The Greeks themselves said the Little Bear was introduced by the philosopher Thales of Miletus, who lived around 600 BCE: the poet Callimachus wrote that Thales 'measured out the little stars of the Wagon by which the Phoenicians sail'. Thales was said to come from a Phoenician family, and Hyginus explains that this is why the constellation was also called Phoenice, the Phoenician. Whether Thales invented the figure or simply taught the Greeks a pattern Phoenician sailors already used, nobody can now say.",
+      "The practical point is made by Aratus in the 3rd century BCE. Greek sailors, he says, steer by the Great Bear because it is big, bright and easy to spot at nightfall; the men of Sidon trust the smaller Bear, which is dimmer but circles closer to the pole and so marks north more exactly. Aratus calls the Little Bear Cynosura, 'dog's tail', which is the origin of the English word cynosure, something that draws every eye. Ptolemy listed it in the *Almagest* as Arktos Mikra, the Little Bear, with seven stars. In Babylonia these stars were the Wagon of Heaven.",
+      "One thing the ancient navigators did not have was a pole star. The sky's pivot point drifts slowly as the Earth's axis wobbles (the motion called precession), and in Ptolemy's day the star we call Polaris stood about 11 degrees from the pole, with Kochab slightly closer. Only in the last few centuries has Polaris moved in. The Latin name *stella polaris* first appears in print in 1492. Today it lies less than one degree from true north and will be closest around the year 2100."
+    ]
+  },
+  "overview": "The Little Bear is better known as the Little Dipper: seven stars in a small ladle shape whose handle ends at Polaris, the North Star. Polaris and the two stars at the far end of the bowl are easy to see; the four stars between them are faint and usually missing from a city sky.",
+  "howToFind": [
+    "Start at the Big Dipper. Find the two stars at the end of its bowl farthest from the handle, [[star:Merak|Merak]] and [[star:Dubhe|Dubhe]]. Draw a line from Merak through Dubhe and keep going for about five times the distance between them, a little under three fists at arm's length. The first reasonably bright star you come to, standing by itself in a rather empty part of the sky, is [[star:Polaris|Polaris]]. From Brooklyn it sits due north and about four fists above the horizon, at every hour of every night of the year: the whole sky appears to turn around it.",
+    "Polaris is the tip of the Little Dipper's handle. To find the bowl, look about a fist and a half from Polaris back in the direction of the Big Dipper's handle for a pair of stars, orange [[star:Kochab|Kochab]] and fainter [[star:Pherkad|Pherkad]]. These are the Guardians of the Pole, and they mark the outer edge of the bowl. The handle curves from Polaris to the bowl the opposite way from the Big Dipper's handle, and the two dippers always seem to pour into each other. Because it is so close to the pole, the Little Dipper never sets from 40 degrees north; it just swings around Polaris like the hand of a clock, once a day."
+  ],
+  "shape": "A miniature, fainter copy of the Big Dipper, about a fist and a half long, with its handle bent the other way. In practice a city observer sees three stars: Polaris at one end and Kochab and Pherkad at the other. The remaining four are fourth and fifth magnitude (magnitude is the brightness scale, where smaller numbers are brighter), and how many of them you can see is a good test of how dark your sky is.",
+  "mainStars": [
+    {
+      "ref": "star:Polaris",
+      "note": "The North Star, at the end of the Little Bear's tail. It is not especially bright (magnitude 2.0, around fiftieth in the sky) but it is the one star that stays put, within a degree of true north. It is a yellow-white supergiant whose brightness pulses very slightly every four days."
+    },
+    {
+      "ref": "star:Kochab",
+      "note": "The brighter Guardian of the Pole, at the lip of the bowl, almost equal to Polaris in brightness and distinctly orange. Around the time of Ptolemy it was a little closer to the pole than Polaris was."
+    },
+    {
+      "ref": "star:Pherkad",
+      "note": "The fainter Guardian, third magnitude, next to Kochab in the bowl. The name comes from the Arabic for the pair, 'the two calves'."
+    },
+    {
+      "ref": "star:Yildun",
+      "note": "The star next to Polaris in the handle, faint at magnitude 4.4. Its name is a misspelling of the Turkish word for 'star'."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "star:Polaris",
+      "equip": "small-telescope",
+      "note": "Polaris has a faint ninth-magnitude companion close beside it that a small telescope will show, a tiny spark next to a bright yellowish star. Handy as a target because it never moves out of the field of view."
+    },
+    {
+      "ref": "star:Kochab",
+      "equip": "naked-eye",
+      "note": "Compare the color of orange Kochab with white Pherkad next to it, then watch over a few hours as the two Guardians circle Polaris counterclockwise. The naked eye is enough; binoculars deepen the color."
+    }
+  ],
+  "stories": [
+    {
+      "id": "UMi-cynosura",
+      "title": "Cynosura, the smaller nurse of Zeus",
+      "culture": "Greek (Cretan tradition)",
+      "ancientSources": [
+        { "author": "Aratus", "work": "Phaenomena 26–44", "date": "3rd century BCE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.2 (citing Aglaosthenes, Naxica)", "date": "2nd century CE" },
+        { "author": "Apollodorus", "work": "Library 1.1.6–7 (the nurse named Ida)", "date": "1st–2nd century CE" }
+      ],
+      "summary": "The Little Bear has only one real myth in the ancient star books. She is Cynosura, a nymph of Mount Ida on Crete who helped nurse the infant Zeus while he was hidden from his father Cronus, and who was set near the pole of the sky as his thanks. Sailors from Phoenicia learned to steer by her.",
+      "retelling": [
+        "When Zeus was born, his life depended on not being heard. His father, the Titan Cronus, had swallowed every one of his earlier children for fear of being overthrown, and his mother Rhea had saved this last baby only by feeding Cronus a stone wrapped in swaddling clothes. The child himself was hidden in a cave on the island of Crete.",
+        "There the nymphs of Mount Ida took charge of him. According to a writer named Aglaosthenes, whom Hyginus quotes, one of these nurses was called Cynosura. The poet Aratus pairs her with a second nymph, Helice, and says that the two of them kept Zeus in the cave and reared him for a year. Outside, the armed Curetes clashed spear on shield whenever the baby cried, so that the noise never reached Cronus. Hyginus adds that Cynosura was counted among those attendants of the young god.",
+        "She must have been remembered fondly on Crete. Hyginus reports that in a city called Histoe, both the harbor and most of the surrounding land were named Cynosura after her. A harbor is a fitting memorial, given what came next.",
+        "Zeus grew up, freed his brothers and sisters, defeated the Titans and took the throne of heaven. Then, Aratus says, he lifted his two nurses up from Crete into the sky. Both were given the shape of bears, for a reason no ancient author manages to explain. Helice, the elder and greater, became the big Bear with its seven brilliant stars. Cynosura became the small one. The two were placed back to back near the top of the sky, with the long body of the Dragon winding between them, and neither ever sinks into the sea.",
+        "The smaller nurse turned out to be the more useful. Helice is bright and easy to find at dusk, and the Greeks steered by her. But Cynosura, Aratus points out, wheels in a much smaller circle, so she shows the direction of north more truly, and it is in her that the Phoenicians, the best seamen of the ancient Mediterranean, put their trust. By her guidance, he says, the men of Sidon steer the straightest course. That is why the Little Bear was also known as Phoenice, the Phoenician star group.",
+        "Other writers gave the nurse a different name. Apollodorus calls the two nymphs Adrasteia and Ida, and in that tradition it is Ida who shines as the Little Bear. Whatever she was called, her job has not changed since she left the cave: she stays close to the one still point in a turning sky, and people who are lost look for her."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Ursa Minor, the Little Bear",
+        "url": "http://www.ianridpath.com/startales/ursaminor.html"
+      },
+      "characters": ["Cynosura", "Helice", "Zeus", "Cronus", "Rhea", "the Curetes", "Ida"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Who was Cynosura in the myth of the Little Bear?",
+          "choices": ["A huntress of Artemis", "A daughter of King Lycaon", "A sea monster", "A nymph who nursed the infant Zeus on Crete"],
+          "answerIndex": 3,
+          "explanation": "Cynosura was one of the nymphs of Mount Ida who looked after the baby Zeus. Zeus placed her in the sky in gratitude."
+        },
+        {
+          "id": "q2",
+          "prompt": "According to Aratus, which sailors steered by the Little Bear rather than the Great Bear?",
+          "choices": ["The Phoenicians", "The Athenians", "The Egyptians", "The Romans"],
+          "answerIndex": 0,
+          "explanation": "Aratus says the Greeks used the bright Great Bear while the Phoenicians, the men of Sidon, trusted the smaller Bear because it circles nearer the pole."
+        },
+        {
+          "id": "q3",
+          "prompt": "Why is the Little Bear a better guide to north than the Great Bear?",
+          "choices": ["Its stars are brighter", "It turns in a smaller circle, closer to the pole", "It rises earlier in the evening", "It is visible only in the north"],
+          "answerIndex": 1,
+          "explanation": "The Little Bear is fainter, but all its stars wheel in a tight circle around the pole, so it never strays far from true north."
+        },
+        {
+          "id": "q4",
+          "prompt": "Which nymph is paired with Cynosura as the Great Bear in Aratus's poem?",
+          "choices": ["Callisto", "Amalthea", "Helice", "Maia"],
+          "answerIndex": 2,
+          "explanation": "Aratus names the two nurses Helice (the Great Bear) and Cynosura (the Little Bear). Callisto belongs to a separate story about the Great Bear."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Many modern books say the Little Bear is Arcas, the son of Callisto. The ancient writers consulted for this page (Eratosthenes, Ovid and Hyginus) put Arcas in Boötes instead, as the Bear-Keeper who follows his mother, the Great Bear.",
+    "The height of Polaris above your northern horizon equals your latitude: about 41 degrees in Brooklyn, straight overhead at the North Pole, on the horizon at the equator.",
+    "The Arabs called the present Polaris 'the young goat' and saw the Little Dipper, like the Big one, as a bier followed by mourners.",
+    "In Chinese astronomy this region was the Purple Palace, home of the celestial emperor. The emperor's own star was Kochab, not Polaris.",
+    "The Ursid meteor shower, active around December 22, appears to radiate from near Kochab."
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "id": "eclipses",
+  "unit": "ecliptic",
+  "order": 6,
+  "title": "Eclipses",
+  "subtitle": "When the Sun, Earth and Moon line up exactly, and how to watch safely",
+  "minutes": 7,
+  "sections": [
+    {
+      "heading": "Two kinds of shadow",
+      "body": [
+        "After this lesson you will be able to say what is happening during a lunar and a solar eclipse, why they are uncommon, and how to watch each one safely.",
+        "A lunar eclipse happens at full Moon, when the Moon passes through Earth's shadow. Everyone on the night side of Earth sees it at the same moment. A solar eclipse happens at new Moon, when the Moon passes in front of the Sun and its shadow falls on Earth. That shadow is small, so only people in the right place see it.",
+        "Earth's shadow has two parts. The umbra is the dark core where the Sun is completely hidden. The penumbra is the pale outer zone where only part of the Sun is blocked. A Moon that passes only through the penumbra dims so slightly that most people notice nothing. When part of it enters the umbra you see a dark curved bite: a partial eclipse. When all of it is inside, the eclipse is total.",
+        "A totally eclipsed Moon does not vanish. It turns a dim copper red, because Earth's atmosphere bends a little sunlight into the shadow and filters out the blue on the way. You are seeing the glow of every sunrise and sunset on Earth at once. Totality can last more than an hour, and a lunar eclipse is completely safe to watch with eyes, binoculars or a telescope."
+      ],
+      "demo": {
+        "title": "A total lunar eclipse over Brooklyn",
+        "controls": [
+          "time-scrub",
+          "play"
+        ],
+        "steps": [
+          {
+            "caption": "June 25, 2029, 9:32 pm in Brooklyn. The full Moon is low in the southeast, 10° up, as its edge first touches the umbra. Over the next hour a dark bite spreads across it.",
+            "time": "2029-06-25 21:32",
+            "view": {
+              "target": "body:Moon",
+              "fov": 40
+            },
+            "layers": {
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "body:Moon",
+                "label": "Partial eclipse begins"
+              }
+            ]
+          },
+          {
+            "caption": "10:30 pm: totality begins. The whole Moon is now inside Earth's shadow and glows red, 17° above the horizon in Sagittarius. With the moonlight gone, the stars around it come out.",
+            "time": "2029-06-25 22:30",
+            "view": {
+              "target": "body:Moon",
+              "fov": 40
+            },
+            "layers": {
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "body:Moon",
+                "label": "Totality begins"
+              }
+            ]
+          },
+          {
+            "caption": "11:22 pm: mid-eclipse, 21° up in the south-southeast. Totality lasts an unusually long 1 hour 43 minutes or so, until 12:13 am, and the last of the umbra leaves the Moon at 1:12 am. All of it is visible from Brooklyn.",
+            "time": "2029-06-25 23:22",
+            "view": {
+              "target": "body:Moon",
+              "fov": 40
+            },
+            "layers": {
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "body:Moon",
+                "label": "Mid-eclipse"
+              }
+            ]
+          },
+          {
+            "caption": "Sooner, but slighter: on January 11, 2028 at 11:13 pm the Moon, 69° high in Gemini, just clips the umbra, and a small dark notch shows on its edge for about an hour. This is the first umbral lunar eclipse visible from Brooklyn after 2026.",
+            "time": "2028-01-11 23:13",
+            "view": {
+              "target": "body:Moon",
+              "fov": 40
+            },
+            "layers": {
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "body:Moon",
+                "label": "Small partial eclipse"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "heading": "Why not every month",
+      "body": [
+        "There is a new Moon and a full Moon every month, yet most months pass without an eclipse. The reason is that the Moon's orbit is tilted about 5° to the plane of Earth's orbit. At most new Moons the Moon passes above or below the Sun, and at most full Moons it misses Earth's shadow, which is less than three Moon-widths across at that distance.",
+        "The Moon crosses the plane of Earth's orbit, the ecliptic, at two points called nodes. An eclipse can happen only when a new or full Moon falls near a node. The name ecliptic comes from this: it is the line where eclipses occur. The nodes are lined up with the Sun twice a year, about six months apart, and each alignment opens an eclipse season about five weeks long. Every season brings at least one solar and one lunar eclipse somewhere on Earth, two weeks apart, though many are partial or penumbral."
+      ],
+      "demo": {
+        "title": "The Moon's tilted path",
+        "controls": [
+          "date-step"
+        ],
+        "steps": [
+          {
+            "caption": "The Moon each evening from April 10 to 19, 2027, against the ecliptic line. It starts almost 5° north of the line, crosses it at a node on April 14–15, and ends more than 4° south. The crossing came at half phase, a week from new or full, so April 2027 has no eclipse.",
+            "time": "2027-04-14 21:00",
+            "view": {
+              "target": "radec:132,12",
+              "fov": 140,
+              "mount": "equatorial"
+            },
+            "layers": {
+              "atmosphere": false,
+              "ground": false,
+              "horizon": false,
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "trail",
+                "ref": "body:Moon",
+                "from": "2027-04-10 20:30",
+                "to": "2027-04-19 20:30",
+                "stepHours": 24,
+                "frame": "stars",
+                "dateLabels": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "heading": "Solar eclipses and your eyes",
+      "body": [
+        "By coincidence the Moon and the Sun appear almost exactly the same size in our sky. When the Moon passes centrally across the Sun and is near enough to cover it, the eclipse is total along a narrow track, usually 100 miles wide or less, for at most a few minutes. The sky darkens and the Sun's pearly outer atmosphere, the corona, appears. When the Moon is in the farther part of its orbit it looks slightly too small and leaves a ring of Sun showing: an annular eclipse. Over a much wider region either side of the track, the eclipse is partial.",
+        "Safety matters here. Never look at the Sun without proper protection, not even when most of it is covered. The remaining sliver can burn the retina without any pain. Use eclipse glasses or handheld viewers certified to the ISO 12312-2 standard; ordinary sunglasses are useless. Binoculars and telescopes must have a solar filter made for the purpose fixed over the front of the instrument. Never look through one while wearing eclipse glasses, because the concentrated light will burn through them. A pinhole projecting the Sun's image onto paper is always safe. The only time you may look with bare eyes is during the brief total phase of a total eclipse, and a partial eclipse has no such phase."
+      ],
+      "demo": {
+        "title": "Two solar eclipses",
+        "controls": [
+          "time-scrub"
+        ],
+        "steps": [
+          {
+            "caption": "Brooklyn, January 14, 2029, 12:50 pm, with the blue sky removed. The new Moon covers about 40% of the Sun's disc, 27° up in the south. This partial eclipse runs from 11:25 am to 2:10 pm and is the next substantial solar eclipse for Brooklyn. Eye protection is needed throughout.",
+            "time": "2029-01-14 12:50",
+            "view": {
+              "target": "body:Sun",
+              "fov": 8
+            },
+            "layers": {
+              "atmosphere": false,
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "body:Sun",
+                "label": "Sun"
+              },
+              {
+                "type": "object",
+                "ref": "body:Moon",
+                "label": "Moon"
+              }
+            ]
+          },
+          {
+            "caption": "Luxor, Egypt, August 2, 2027, 1:05 pm local time. The Moon covers the Sun completely, 82° up, almost overhead, for about 6 minutes 20 seconds: one of the longest totalities of the century. None of this eclipse can be seen from Brooklyn.",
+            "observer": {
+              "name": "Luxor, Egypt",
+              "lat": 25.6872,
+              "lon": 32.6396,
+              "tz": "Africa/Cairo"
+            },
+            "time": "2027-08-02 13:05",
+            "view": {
+              "target": "body:Sun",
+              "fov": 8
+            },
+            "layers": {
+              "atmosphere": false,
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "body:Sun",
+                "label": "Sun"
+              },
+              {
+                "type": "object",
+                "ref": "body:Moon",
+                "label": "Moon"
+              }
+            ]
+          }
+        ]
+      },
+      "tryIt": "Open the Events page and find the next lunar eclipse visible from your location. Put it in your calendar now. A lunar eclipse needs no equipment and no dark sky: it works perfectly well from a Brooklyn stoop."
+    }
+  ],
+  "keyPoints": [
+    "Lunar eclipse: full Moon in Earth's shadow, seen from the whole night side. Solar eclipse: new Moon in front of the Sun, seen from a limited area.",
+    "The Moon's orbit is tilted 5°, so eclipses happen only when a new or full Moon falls near a node, in eclipse seasons about six months apart.",
+    "The totally eclipsed Moon is red from sunlight bent through Earth's atmosphere.",
+    "Lunar eclipses are safe to watch. For the Sun, use ISO 12312-2 eclipse glasses, and front-mounted solar filters on any binoculars or telescope."
+  ],
+  "examples": [],
+  "questions": [
+    {
+      "id": "ec-q1",
+      "prompt": "Why is there not a lunar eclipse at every full Moon?",
+      "choices": [
+        "Earth's shadow is too faint most months",
+        "The Moon's orbit is tilted about 5°, so it usually passes above or below Earth's shadow",
+        "The Moon is usually too far away",
+        "Lunar eclipses happen only in winter"
+      ],
+      "answerIndex": 1,
+      "explanation": "Only when a full Moon occurs near a node, where the Moon's orbit crosses the ecliptic, does it pass through the shadow."
+    },
+    {
+      "id": "ec-q2",
+      "prompt": "At which phase of the Moon can a solar eclipse happen?",
+      "choices": [
+        "Full Moon",
+        "First quarter",
+        "Any phase",
+        "New Moon"
+      ],
+      "answerIndex": 3,
+      "explanation": "The Moon must be between Earth and the Sun to cover it, and that is new Moon."
+    },
+    {
+      "id": "ec-q3",
+      "prompt": "Why does the Moon turn red during a total lunar eclipse?",
+      "choices": [
+        "Sunlight bent and reddened by Earth's atmosphere reaches it inside the shadow",
+        "The Moon heats up",
+        "Mars reflects red light onto it",
+        "Its surface is naturally red and only then visible"
+      ],
+      "answerIndex": 0,
+      "explanation": "The atmosphere scatters away blue light and bends the remaining red light into the umbra."
+    },
+    {
+      "id": "ec-q4",
+      "prompt": "You want to look at a partial solar eclipse through binoculars. What is the safe way?",
+      "choices": [
+        "Wear eclipse glasses and look through the binoculars",
+        "Wear good sunglasses",
+        "Fit certified solar filters over the front lenses of the binoculars",
+        "Look only for a second at a time"
+      ],
+      "answerIndex": 2,
+      "explanation": "The filter must cut the light before it enters the optics. Eclipse glasses behind binoculars receive concentrated sunlight and can fail instantly."
+    },
+    {
+      "id": "ec-q5",
+      "prompt": "A total lunar eclipse is under way. Who can see it?",
+      "choices": [
+        "Only people on a narrow track",
+        "Only people at the equator",
+        "Everyone on the side of Earth where the Moon is above the horizon",
+        "Only people with telescopes"
+      ],
+      "answerIndex": 2,
+      "explanation": "The Moon really is darkened, so the whole night side of Earth sees the same eclipse at the same time."
+    },
+    {
+      "id": "ec-q6",
+      "prompt": "What is an annular solar eclipse?",
+      "choices": [
+        "One where the Moon looks slightly too small to cover the Sun and leaves a ring",
+        "One that happens every year",
+        "One seen only in the penumbra",
+        "One that takes place at night"
+      ],
+      "answerIndex": 0,
+      "explanation": "When the Moon is in the more distant part of its orbit its disc is smaller than the Sun's and a ring, or annulus, of sunlight remains."
+    }
+  ]
+}

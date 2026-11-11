@@ -1,0 +1,69 @@
+{
+  "id": "CVn",
+  "kind": "modern",
+  "origin": {
+    "namedBy": "Johannes Hevelius",
+    "when": "1687",
+    "history": [
+      "Canes Venatici, the Hunting Dogs, was formed by the Polish astronomer Johannes Hevelius of Danzig (Gdańsk) in his star catalogue of 1687 and drawn in his atlas, published in 1690 after his death. He took a thin scattering of stars beneath the tail of the Great Bear, which Ptolemy had left 'unformed' outside any figure, and made them into two greyhounds held on a leash by Boötes and snapping at the Bear's heels. He named the northern dog Asterion ('starry') and the southern one Chara ('dear'). There is no ancient myth: the dogs were never part of the Greek picture of Boötes.",
+      "The idea was older than Hevelius, and began with a mistake. Ptolemy describes Boötes as carrying a staff; when the *Almagest* was translated from Arabic into Latin in the 12th century, the Arabic word for the staff seems to have been misread as a similar word meaning 'dogs'. By 1533 Peter Apian was drawing Boötes with dogs at his heels, and in 1602 the Dutch globe-maker Willem Blaeu attached two dogs to the stars we now call Alpha and Beta Canum Venaticorum. Hevelius enlarged the figure, named the dogs, and replaced an earlier constellation in this area, the river Jordan of Petrus Plancius.",
+      "The brightest star has its own history. It was named Cor Caroli, 'Charles's Heart', in the 1670s by Sir Charles Scarborough, physician to King Charles II, in memory of the executed King Charles I, and English mapmakers drew a crowned heart around it before the dogs existed. A later tale that the star shone especially brightly on the night Charles II returned to London in 1660 is a 19th-century invention."
+    ]
+  },
+  "overview": "Two hunting dogs on a leash, in practice two stars: moderately bright Cor Caroli and fainter Chara, tucked under the handle of the Big Dipper. The constellation is plain to the eye but rich for a telescope, with a superb globular cluster and several famous galaxies, including the Whirlpool.",
+  "howToFind": [
+    "Find the Big Dipper's handle. The handle curves, and in the hollow of that curve, about a fist and a half from the end star [[star:Alkaid|Alkaid]], is a lone third-magnitude star with nothing bright near it. That is [[star:Cor Caroli|Cor Caroli]]. Half a fist from Cor Caroli toward the bowl is the fainter [[star:Chara|Chara]]. Those two stars are the southern dog; the northern dog is only a sprinkle of faint stars.",
+    "Because it follows the Dipper around the pole, Canes Venatici is in the evening sky from Brooklyn for most of the year, and is best placed, nearly overhead, on spring evenings from April to June."
+  ],
+  "shape": "A single short line: two stars half a fist apart. Cor Caroli, at magnitude 2.9 (magnitude is the brightness scale, where smaller numbers are brighter), can be picked out from the city on a clear night; Chara, at 4.2, usually cannot. There is no dog shape to be seen.",
+  "mainStars": [
+    {
+      "ref": "star:Cor Caroli",
+      "note": "Alpha Canum Venaticorum, 'the heart of Charles', a white star on the collar of the southern dog. It is a double star, and its brighter member is a strongly magnetic star whose light varies slightly; it gave its name to a whole class of such variable stars."
+    },
+    {
+      "ref": "star:Chara",
+      "note": "Beta Canum Venaticorum, magnitude 4.2, on the southern dog's head and sharing her name. It is a yellow star very similar to the Sun and a close neighbor at about 27 light-years."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "star:Cor Caroli",
+      "equip": "small-telescope",
+      "note": "An easy and attractive double star: two white stars of unequal brightness, comfortably separated at low magnification. A good first double for a new telescope."
+    },
+    {
+      "ref": "dso:M3",
+      "equip": "binoculars",
+      "note": "One of the finest globular clusters in the northern sky: about half a million very old stars packed into a ball some 34,000 light-years away. It lies almost midway between [[star:Cor Caroli|Cor Caroli]] and [[star:Arcturus|Arcturus]], a little nearer Arcturus. Binoculars show a fuzzy star; a telescope shows a glowing ball with a grainy edge."
+    },
+    {
+      "ref": "dso:M51",
+      "equip": "small-telescope",
+      "note": "The Whirlpool Galaxy, a face-on spiral with a smaller companion galaxy at the end of one arm, more than 20 million light-years away. Look about two finger-widths from [[star:Alkaid|Alkaid]], the end of the Dipper's handle, on the side toward Cor Caroli. Small telescopes under dark skies show two touching patches of haze; the spiral arms need a large instrument. It was the first galaxy in which spiral structure was seen, by Lord Rosse in 1845."
+    },
+    {
+      "ref": "dso:M94",
+      "equip": "small-telescope",
+      "note": "A compact, bright-centered spiral galaxy that makes a shallow triangle with [[star:Cor Caroli|Cor Caroli]] and [[star:Chara|Chara]], just north of the line between them. It looks like a small round glow with a starlike core and stands up to suburban skies better than most galaxies."
+    },
+    {
+      "ref": "dso:M63",
+      "equip": "small-telescope",
+      "note": "The Sunflower Galaxy, about a third of the way from Cor Caroli toward Alkaid. An oval haze with a brighter middle."
+    },
+    {
+      "ref": "dso:M106",
+      "equip": "small-telescope",
+      "note": "A large spiral galaxy roughly midway between [[star:Chara|Chara]] and [[star:Phecda|Phecda]] in the Dipper's bowl. A long oval glow, one of the brighter galaxies in this part of the sky."
+    }
+  ],
+  "stories": [],
+  "facts": [
+    "Hevelius described the southern dog as 'grata et chara', pleasing and dear; the star Beta took over the dog's name Chara only in 1899.",
+    "Which King Charles? The star was named for Charles I. The German mapmaker Bode mislabelled it 'Cor Caroli II' in 1801, and the confusion has been repeated ever since.",
+    "Y Canum Venaticorum, a fifth-magnitude star north of Chara, is one of the reddest stars visible in binoculars. The Italian astronomer Angelo Secchi called its spectrum 'superb', and it is still known as La Superba.",
+    "The name Whirlpool for M51 was coined in 1847, two years after Lord Rosse first made out its spiral pattern with his giant 72-inch telescope in Ireland.",
+    "Chinese astronomers saw the stars from Cor Caroli to Chara as part of Changchen, a company of palace guards."
+  ]
+}

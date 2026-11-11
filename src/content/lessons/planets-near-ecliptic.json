@@ -1,0 +1,291 @@
+{
+  "id": "planets-near-ecliptic",
+  "unit": "ecliptic",
+  "order": 2,
+  "title": "Finding planets",
+  "subtitle": "Why the planets keep to one track, and how to tell one from a star",
+  "minutes": 6,
+  "sections": [
+    {
+      "heading": "A flat solar system",
+      "body": [
+        "After this lesson you will be able to look at a bright point of light and decide, without an app, whether it is a star or a planet, and make a good guess at which planet.",
+        "The solar system is flat. The planets formed from a spinning disc of gas and dust around the young Sun, and they still orbit in nearly the same plane. Measured against Earth's orbit, the orbits of Venus, Mars, Jupiter and Saturn are tilted by between 1° and 3.5°, and Mercury's by 7°.",
+        "We live inside that disc, so we see it edge-on, as a line around the sky. That line is the ecliptic. The Sun is on it by definition, the planets are never more than a few degrees from it, and the Moon stays within about 5°. So you never have to search the whole sky for a planet. There are none near the Big Dipper or in Orion. They are always somewhere along the zodiac."
+      ],
+      "demo": {
+        "title": "Planets on the line",
+        "controls": [
+          "time-scrub"
+        ],
+        "steps": [
+          {
+            "caption": "February 12, 2027, 8 pm, looking west. Saturn is a fist and a half above the horizon and the Moon is higher up. Both sit on the ecliptic line.",
+            "time": "2027-02-12 20:00",
+            "view": {
+              "az": 250,
+              "alt": 30,
+              "fov": 100
+            },
+            "layers": {
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "body:Saturn",
+                "label": "Saturn"
+              },
+              {
+                "type": "object",
+                "ref": "body:Moon",
+                "label": "Moon"
+              }
+            ]
+          },
+          {
+            "caption": "Same moment, turned to face east. The ecliptic comes down to the opposite horizon, and on it are Jupiter, the brightest point in this part of the sky, and orange Mars below it, either side of the star Regulus.",
+            "time": "2027-02-12 20:00",
+            "view": {
+              "az": 95,
+              "alt": 30,
+              "fov": 100
+            },
+            "layers": {
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "body:Jupiter",
+                "label": "Jupiter"
+              },
+              {
+                "type": "object",
+                "ref": "body:Mars",
+                "label": "Mars"
+              },
+              {
+                "type": "object",
+                "ref": "star:Regulus",
+                "label": "Regulus (a star)"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "heading": "Star or planet?",
+      "body": [
+        "Four clues, in the order you will use them. First, position: is it near the ecliptic? If it is far from the zodiac, it is a star. Second, the chart: the constellation patterns you are learning contain only stars, so a bright “extra star” in Leo or Taurus that is not in the pattern is a planet.",
+        "Third, steadiness. Stars are so distant that they are true points of light, and turbulent air makes them twinkle. Planets are close enough to show tiny discs, which average the turbulence out, so they shine with a steadier light. This works best when the object is well above the horizon; near the horizon everything shimmers.",
+        "Fourth, motion. The word planet comes from the Greek for wanderer. Note where a suspect is relative to nearby stars, look again in a week or two, and a planet will have shifted."
+      ],
+      "demo": {
+        "title": "The extra stars in Leo",
+        "controls": [
+          "date-step"
+        ],
+        "steps": [
+          {
+            "caption": "Leo in February 2027. The Sickle and the triangle of Leo are on every chart. The two brightest lights here are on none of them: Jupiter to the west of Regulus and Mars to the east.",
+            "time": "2027-02-12 22:00",
+            "view": {
+              "target": "star:Regulus",
+              "fov": 50
+            },
+            "highlights": [
+              {
+                "type": "constellation",
+                "id": "Leo",
+                "lines": true,
+                "label": true
+              },
+              {
+                "type": "object",
+                "ref": "body:Jupiter",
+                "label": "Jupiter"
+              },
+              {
+                "type": "object",
+                "ref": "body:Mars",
+                "label": "Mars"
+              }
+            ]
+          },
+          {
+            "caption": "Where the two planets are from January 1 to April 1, 2027, marked every ten days. Mars covers about 20° while the stars of Leo do not budge. Step the date to watch them go. (Both happen to be moving westward here; the lesson on retrograde motion explains why.)",
+            "time": "2027-02-12 22:00",
+            "view": {
+              "target": "star:Regulus",
+              "fov": 50
+            },
+            "highlights": [
+              {
+                "type": "trail",
+                "ref": "body:Mars",
+                "from": "2027-01-01 00:00",
+                "to": "2027-04-01 00:00",
+                "stepHours": 240,
+                "frame": "stars",
+                "dateLabels": true
+              },
+              {
+                "type": "trail",
+                "ref": "body:Jupiter",
+                "from": "2027-01-01 00:00",
+                "to": "2027-04-01 00:00",
+                "stepHours": 240,
+                "frame": "stars"
+              },
+              {
+                "type": "object",
+                "ref": "star:Regulus",
+                "label": "Regulus"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "heading": "The five you can see",
+      "body": [
+        "Venus is unmistakable: brilliant white and far brighter than any star. It is only ever seen in the west after sunset or in the east before sunrise. Jupiter is next, a steady cream-white light that outshines every star and can be up at any hour of the night.",
+        "Mars is the changeable one. For a few months around its closest approach, every 26 months or so, it rivals Jupiter; the rest of the time it is a modest star-like point. Its orange-red color gives it away. Saturn looks like a bright, steady, pale yellow star, never dazzling. Mercury is as bright as the brightest stars but hugs the Sun so closely that it shows only low in twilight, for a couple of weeks at a time.",
+        "Uranus and Neptune follow the ecliptic too, but need binoculars or a telescope and a detailed chart."
+      ],
+      "demo": {
+        "title": "Venus and Mercury in twilight",
+        "controls": [
+          "time-scrub"
+        ],
+        "steps": [
+          {
+            "caption": "January 3, 2027, 6:15 am, looking southeast before sunrise. Venus blazes two fists up as the morning star, with a thin crescent Moon below it and the star Spica off to the upper right. All three are close to the ecliptic.",
+            "time": "2027-01-03 06:15",
+            "view": {
+              "az": 150,
+              "alt": 25,
+              "fov": 90
+            },
+            "layers": {
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "body:Venus",
+                "label": "Venus"
+              },
+              {
+                "type": "object",
+                "ref": "body:Moon",
+                "label": "Moon"
+              },
+              {
+                "type": "object",
+                "ref": "star:Spica",
+                "label": "Spica"
+              }
+            ]
+          },
+          {
+            "caption": "February 3, 2027, 6 pm, looking west-southwest 45 minutes after sunset. Mercury at its best is still only 8° above the horizon in bright twilight. You need a clear, low horizon and good timing. Saturn is much higher up the same line.",
+            "time": "2027-02-03 18:00",
+            "view": {
+              "az": 240,
+              "alt": 22,
+              "fov": 80
+            },
+            "layers": {
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "body:Mercury",
+                "label": "Mercury"
+              },
+              {
+                "type": "object",
+                "ref": "body:Saturn",
+                "label": "Saturn"
+              }
+            ]
+          }
+        ]
+      },
+      "tryIt": "Open the Events page to see which planets are up this evening, then go out and find one without the app. Check it against the four clues: near the zodiac, not on the chart, steady light, and (next week) moved."
+    }
+  ],
+  "keyPoints": [
+    "The planets orbit in nearly the same plane as Earth, so they always appear within a few degrees of the ecliptic.",
+    "A planet is on the zodiac, is missing from the star chart, shines steadily and shifts position over days or weeks.",
+    "Venus: brilliant, dusk or dawn only. Jupiter: very bright, cream-white. Mars: orange-red, brightness varies. Saturn: pale yellow, steady. Mercury: low in twilight."
+  ],
+  "examples": [],
+  "questions": [
+    {
+      "id": "pe-q1",
+      "prompt": "Why are the planets always found near the ecliptic?",
+      "choices": [
+        "They are attracted to the zodiac stars",
+        "They all orbit the Sun in nearly the same plane as Earth",
+        "They are the brightest objects, so they gather where the sky is darkest",
+        "They follow the Moon"
+      ],
+      "answerIndex": 1,
+      "explanation": "The solar system formed from a flat disc. Seen from inside, that disc is a line around the sky: the ecliptic."
+    },
+    {
+      "id": "pe-q2",
+      "prompt": "You see a very bright, steady “star” high in the north near the Big Dipper. Could it be a planet?",
+      "choices": [
+        "Yes, probably Jupiter",
+        "Yes, probably Venus",
+        "Only in winter",
+        "No: the Big Dipper is far from the ecliptic"
+      ],
+      "answerIndex": 3,
+      "explanation": "Planets never stray more than a few degrees from the zodiac. Anything bright near the Dipper is a star, or an aircraft or satellite."
+    },
+    {
+      "id": "pe-q3",
+      "prompt": "Why do planets twinkle less than stars?",
+      "choices": [
+        "They show tiny discs rather than points, which averages out the air's turbulence",
+        "They are brighter",
+        "They give off their own steadier light",
+        "They are above the atmosphere"
+      ],
+      "answerIndex": 0,
+      "explanation": "A star is a single point, easily jiggled by moving air. A planet's small disc is many points whose flickers cancel."
+    },
+    {
+      "id": "pe-q4",
+      "prompt": "It is midnight and a brilliant white point is high in the south, brighter than any star. Which planet is it most likely to be?",
+      "choices": [
+        "Venus",
+        "Mercury",
+        "Jupiter",
+        "Saturn"
+      ],
+      "answerIndex": 2,
+      "explanation": "Venus and Mercury stay near the Sun and are never high at midnight from Brooklyn. Saturn is never that bright. Jupiter outshines every star and can be up all night."
+    },
+    {
+      "id": "pe-q5",
+      "prompt": "Which planet's orbit is tilted most to the ecliptic?",
+      "choices": [
+        "Mercury, at 7°",
+        "Mars, at 25°",
+        "Jupiter, at 15°",
+        "Venus, at 0°"
+      ],
+      "answerIndex": 0,
+      "explanation": "Mercury's orbit is inclined 7°. The other naked-eye planets are all within 3.5° of Earth's orbital plane."
+    }
+  ]
+}

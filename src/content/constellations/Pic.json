@@ -1,0 +1,33 @@
+{
+  "id": "Pic",
+  "kind": "modern",
+  "origin": {
+    "namedBy": "Nicolas-Louis de Lacaille",
+    "when": "1756",
+    "history": [
+      "Pictor is one of the fourteen constellations that Nicolas-Louis de Lacaille added to the southern sky after his observing expedition to the Cape of Good Hope in 1751–52. Most of his inventions honor scientific instruments; a few, like this one, honor the arts.",
+      "It began as a painter's easel. On his chart of 1756 Lacaille labeled it le Chevalet et la Palette, and his notes describe the painter's easel with a palette attached. In the 1763 edition he Latinized it as Equuleus Pictorius; Johann Bode's atlas of 1801 has Pluteum Pictoris. In 1844 John Herschel proposed cutting the name down to Pictor, the Painter, and Francis Baily adopted that in the British Association's catalog of 1845. So the constellation's name now means the artist, although the figure drawn was always the easel.",
+      "The stars were not new. The four brightest had been cataloged a century and a half earlier by the Dutch navigator Frederick de Houtman, who counted them as part of the ship Argo, whose keel passes just above."
+    ]
+  },
+  "overview": "Pictor is a painter's easel, standing beside the brilliant star Canopus. Its stars are faint, but one of them, Beta Pictoris, is famous as the first star found to be circled by a disk of dust in which planets are forming.",
+  "howToFind": [
+    "Pictor is effectively invisible from Brooklyn. A blank northern strip of it rises, but its naked-eye stars do not: [[star:β Pic|Beta Pictoris]] stays less than two degrees below our horizon, and you would have to go south of about 39°N to raise it at all. For a real view you want latitude 26°N or less, where the whole constellation clears the horizon on evenings from January to March.",
+    "Find [[star:Canopus|Canopus]], the second-brightest star in the sky, which culminates about 20 minutes before Sirius and far below it. Beta Pictoris is just over half a fist west of Canopus, and [[star:γ Pic|Gamma Pictoris]] is the same distance from Canopus a little farther toward the pole. [[star:α Pic|Alpha Pictoris]], the brightest of the three, is a full fist from Canopus straight toward the south celestial pole."
+  ],
+  "shape": "A long, bent line of three stars: Beta and Gamma half a fist apart to the west of Canopus, and Alpha off on its own more than a fist away. None is brighter than magnitude 3.2, so only Alpha shows in a suburban sky.",
+  "mainStars": [
+    { "ref": "star:α Pic", "note": "Magnitude 3.2, a white star about 97 light-years away that spins very rapidly. It sits apart from the rest, toward Volans and the pole." },
+    { "ref": "star:β Pic", "note": "Magnitude 3.9, a young white star 63 light-years away. In 1984 it became the first star shown to have a disk of dust and debris around it, and two giant planets have since been found there." },
+    { "ref": "star:γ Pic", "note": "Magnitude 4.5, an orange giant about 177 light-years away." }
+  ],
+  "notableObjects": [
+    { "ref": "star:β Pic", "equip": "naked-eye", "note": "There is nothing to see but an ordinary white point, yet this is a planetary system only about 12 million years old caught in the act of forming. Its disk, seen edge-on, shows only in observatory images." }
+  ],
+  "stories": [],
+  "facts": [
+    "The constellation's name means the painter, but Lacaille drew and named only the easel and palette.",
+    "Beta Pictoris gives its name to a loose group of young stars near the Sun that were all born together and still drift through space in the same direction.",
+    "Pictor was one of six of Lacaille's constellations whose names John Herschel shortened in 1844."
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "For",
+  "kind": "modern",
+  "origin": {
+    "namedBy": "Nicolas-Louis de Lacaille",
+    "when": "1756",
+    "history": [
+      "Fornax is one of fourteen constellations invented by the French astronomer Nicolas-Louis de Lacaille, who spent 1751–52 at the Cape of Good Hope measuring the positions of nearly ten thousand southern stars. He filled the gaps between the older figures with new ones that honored the tools of science and the arts instead of gods and heroes.",
+      "This one is a chemist's furnace. On his chart of the southern sky, published by the French Royal Academy of Sciences in 1756, Lacaille called it le Fourneau and drew a small furnace with an alembic and a receiving flask, the equipment for distilling. In the 1763 edition he put the name into Latin as Fornax Chimiae, the chemical furnace.",
+      "It is often said that Lacaille meant to honor the chemist Antoine Lavoisier. That cannot be right: Lavoisier was thirteen in 1756. The link is later. Johann Bode redrew the figure in his atlas of 1801 as Lavoisier's apparatus for splitting water into hydrogen and oxygen and renamed it Apparatus Chemicus, but the new name never caught on. In 1845 Francis Baily, following John Herschel's advice to cut Lacaille's two-word names to one, shortened it to Fornax."
+    ]
+  },
+  "overview": "Fornax is a laboratory furnace, tucked into a bend of the river Eridanus. Its stars are faint, but it is the one constellation in this group that Brooklyn sees whole, and it holds a rich cluster of galaxies.",
+  "howToFind": [
+    "Fornax does rise from Brooklyn. The whole constellation is above the horizon from anywhere south of latitude 50°N, and from here [[star:Dalim|Alpha Fornacis]] reaches about 20 degrees, two fists, above the southern horizon on December and January evenings. The southern part, where the galaxy cluster lies, gets only about 14 degrees up, so you need a clear, dark southern horizon. It is far better from the southern United States and superb from the Southern Hemisphere.",
+    "There is no bright signpost nearby. Start at [[star:Diphda|Diphda]], the brightest star in the southern part of Cetus, and sweep three and a half fists to the left and a little down: Alpha Fornacis is the brightest star in a dull region. Another check: it sits a little over three fists directly below [[star:Menkar|Menkar]], the star at the head of Cetus. [[star:β For|Beta Fornacis]] is half a fist to Alpha's lower right."
+  ],
+  "shape": "A flat, shallow triangle of three faint stars (Alpha, Beta and Nu) about a fist and a half long. With stars of magnitude 4 and fainter, nothing shows from the city; even in the country it is an inconspicuous patch.",
+  "mainStars": [
+    { "ref": "star:Dalim", "note": "Alpha Fornacis, magnitude 3.8, a yellow-white star 46 light-years away. A small telescope shows a fainter companion close by. John Flamsteed had cataloged it as a star of Eridanus before Lacaille claimed it for his furnace." },
+    { "ref": "star:β For", "note": "Magnitude 4.5, a yellow giant about 170 light-years away at the shallow southern point of the triangle." },
+    { "ref": "star:ν For", "note": "Magnitude 4.7, a blue-white star at the western end." }
+  ],
+  "notableObjects": [
+    { "ref": "dso:NGC1399", "equip": "small-telescope", "note": "The giant elliptical galaxy at the heart of the Fornax Cluster, a swarm of galaxies about 60 million light-years away near the border with Eridanus. In a small telescope it is a round glow with several fainter galaxies in the same field; the cluster's best-known member, the barred spiral NGC 1365, is close by." },
+    { "ref": "dso:NGC1316", "equip": "small-telescope", "note": "Fornax A, the brightest galaxy in the constellation and a strong source of radio waves. It appears as a bright oval haze about three and a half degrees from NGC 1399." },
+    { "ref": "dso:NGC1097", "equip": "small-telescope", "note": "A barred spiral galaxy two degrees north of Beta Fornacis. A small telescope shows a bright core with a faint bar of light running through it." },
+    { "ref": "dso:NGC1360", "equip": "small-telescope", "note": "A large, dim planetary nebula, the cast-off shell of a dying star, seen in a small telescope as a pale oval smudge about five and a half degrees from Alpha." }
+  ],
+  "stories": [],
+  "facts": [
+    "Lacaille did not name Fornax after Lavoisier; that connection was added by Johann Bode half a century later.",
+    "Fornax looks out of the plane of the Milky Way, away from its dust, which is why so many distant galaxies can be seen here.",
+    "Chinese astronomers saw a triangle of faint stars in this area as Tianyu, grain stacked in ricks in the fields."
+  ]
+}

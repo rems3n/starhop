@@ -1,0 +1,51 @@
+{
+  "id": "Lac",
+  "kind": "modern",
+  "origin": {
+    "namedBy": "Johannes Hevelius",
+    "when": "1687",
+    "history": [
+      "Lacerta, the Lizard, was introduced by the Polish astronomer Johannes Hevelius of Danzig (Gdańsk) in his star catalogue of 1687 and drawn in his atlas *Firmamentum Sobiescianum*, published in 1690 after his death. It is one of seven constellations of his that are still in use. The ancient astronomers had left this patch of sky between Cygnus and Andromeda unclaimed because it holds no bright stars, and Hevelius filled it with a small creature that could plausibly squeeze into the gap. He offered a second name, Stellio, a kind of spotted lizard found around the Mediterranean, but that alternative soon dropped out of use.",
+      "The English astronomer John Flamsteed later stretched the Lizard northward by adding a triangle of stars that Hevelius had drawn as part of the headdress of Cepheus; mapmakers such as Johann Bode made those stars the lizard's head, and two of them are now Alpha and Beta Lacertae. Those Greek letters, the only two in the constellation, were assigned by Francis Baily in his British Association Catalogue of 1845.",
+      "Lacerta had rivals for the same stars. The French mapmaker Augustin Royer had placed a scepter and hand of justice here in honor of King Louis XIV, and in 1787 Bode proposed Honores Friderici, 'Frederick's Glory', for Frederick the Great of Prussia. Both have vanished and the Lizard survives. There are no myths attached to it."
+    ]
+  },
+  "overview": "Lacerta is a small, faint lizard wedged between Cygnus, Cassiopeia and Andromeda. It has no bright stars: under a dark sky it is a thin zigzag of fourth-magnitude stars against the Milky Way, sometimes nicknamed 'Little Cassiopeia' for the small W at its northern end.",
+  "howToFind": [
+    "Locate [[star:Deneb|Deneb]], the bright star at the top of the Northern Cross in Cygnus, and [[star:Caph|Caph]], the end star of Cassiopeia's W. Lacerta's head lies about halfway between them, a little under two fists from each (a fist at arm's length is roughly 10 degrees). Its brightest star, [[star:α Lac|Alpha Lacertae]], sits in a small zigzag with [[star:β Lac|Beta Lacertae]], [[star:4 Lac|4]] and [[star:5 Lac|5 Lacertae]]; from there the body trails a fist and a half south to [[star:1 Lac|1 Lacertae]], just above the forelegs of Pegasus.",
+    "From Brooklyn Lacerta passes nearly overhead on evenings in September and October, and its northern part never sets. Do not expect to see it from the city without binoculars."
+  ],
+  "shape": "A narrow zigzag about a fist and a half long and only two or three fingers wide, with a tiny W at the top. All its stars are fourth magnitude or fainter (magnitude is the brightness scale, where smaller numbers are brighter), so it disappears in city light; from a dark site it shows as a faint chain running along the edge of the Milky Way.",
+  "mainStars": [
+    {
+      "ref": "star:α Lac",
+      "note": "Alpha Lacertae, a blue-white star 103 light-years away and the brightest in the constellation at magnitude 3.8. In 2024 it was given the official name Stellio, after Hevelius's alternative name for the Lizard."
+    },
+    {
+      "ref": "star:β Lac",
+      "note": "Beta Lacertae, a yellow giant about 170 light-years away at the northern tip, on the lizard's head."
+    },
+    {
+      "ref": "star:1 Lac",
+      "note": "1 Lacertae, an orange giant marking the southern end of the figure, the tail tip near the border with Pegasus."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "dso:NGC7243",
+      "equip": "binoculars",
+      "note": "A loose open cluster of stars about 2,500 light-years away, a short hop west of Alpha Lacertae. Binoculars show a faint grainy patch; a small telescope picks out a few dozen scattered stars."
+    },
+    {
+      "ref": "dso:NGC7209",
+      "equip": "small-telescope",
+      "note": "Another open cluster in the Milky Way farther down the lizard's body, a sprinkling of faint stars best seen at low magnification."
+    }
+  ],
+  "stories": [],
+  "facts": [
+    "Lacerta lent its name to a whole class of objects. BL Lacertae, first catalogued as an ordinary variable star, turned out to be the brilliant, flickering core of a distant galaxy, and similar objects are now called BL Lac objects, a kind of blazar.",
+    "Chinese astronomers saw the northern part of Lacerta as the center of Tengshe, the Flying Serpent, a sprawling figure of 22 stars.",
+    "Hevelius's seven surviving constellations are Lacerta, Lynx, Canes Venatici, Leo Minor, Scutum, Sextans and Vulpecula."
+  ]
+}

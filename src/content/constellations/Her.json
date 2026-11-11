@@ -1,0 +1,348 @@
+{
+  "id": "Her",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued as 'the Kneeler'); identified as Heracles by Eratosthenes",
+    "when": "2nd century CE (catalogued); known by the 3rd century BCE",
+    "history": [
+      "This is one of the oldest and strangest figures in the sky. The Greeks inherited it without a story and called it simply Engonasin, 'the one on his knees'. The poet Aratus, about 275 BCE, described a worn-out man kneeling with his arms raised and one foot on the head of the Dragon, and admitted that nobody knew who he was or what he was laboring at.",
+      "About a century later Eratosthenes said the kneeler was Heracles, the greatest of Greek heroes (Hercules to the Romans), fighting the dragon that guarded the golden apples. Other writers kept proposing other names, and Hyginus lists half a dozen. Ptolemy, cataloguing the 48 constellations in his *Almagest* around 150 CE, still used the old name, the Kneeler. The name Hercules won out later, through Latin writers and the star atlases.",
+      "The hero is drawn upside down from our point of view, with his feet toward the north pole and his head to the south, next to the head of Ophiuchus. His head star is called [[star:Rasalgethi|Rasalgethi]], Arabic for 'the kneeler's head', so the old anonymous name survives there."
+    ]
+  },
+  "overview": "Hercules is the kneeling strongman of Greek myth, shown upside down with a club raised and one foot on the Dragon's head. It is the fifth-largest constellation but has no bright stars; what you look for is the Keystone, a lopsided square of four modest stars between Vega and Arcturus.",
+  "howToFind": [
+    "Use two bright stars as bookends. [[star:Vega|Vega]] is the brilliant blue-white star nearly overhead on summer evenings, and [[star:Arcturus|Arcturus]] is the bright orange star you reach by following the curve of the Big Dipper's handle. Hercules fills the space between them. Start at Vega and go one third of the way toward Arcturus, about two fists (a fist at arm's length is about 10 degrees). There you will find the Keystone: four stars, [[star:η Her|Eta]], [[star:ζ Her|Zeta]], [[star:ε Her|Epsilon]], and [[star:π Her|Pi Herculis]], in a box that is wider at one end. If you reach the small half-circle of stars called [[con:CrB|Corona Borealis]], you have gone a little too far.",
+    "The Keystone is the hero's torso. His legs run north from it toward [[con:Dra|Draco]], and his arms and shoulders spread south: [[star:Kornephoros|Kornephoros]], the constellation's brightest star, is a fist southwest of the Keystone, and his head, reddish [[star:Rasalgethi|Rasalgethi]], is two fists south of it, right beside [[star:Rasalhague|Rasalhague]], the head of Ophiuchus. From Brooklyn, Hercules is in the evening sky from May through October and passes nearly overhead on evenings in July and August."
+  ],
+  "shape": "A box of four third- and fourth-magnitude stars about three-quarters of a fist across (magnitude is the brightness scale, where smaller numbers are brighter), with crooked lines of similar stars running off each corner like bent arms and legs. The whole figure is nearly three fists tall. In a city sky the Keystone is at the edge of what the naked eye can do: you may see two or three of its stars on a clear night and need binoculars to complete it.",
+  "mainStars": [
+    {
+      "ref": "star:Kornephoros",
+      "note": "Beta Herculis, a yellow giant of magnitude 2.8, about 148 light-years away. It is the brightest star in Hercules even though it is labeled Beta. The name is Greek for 'club-bearer', and it marks one shoulder."
+    },
+    {
+      "ref": "star:Rasalgethi",
+      "note": "Alpha Herculis, the kneeler's head. It is a huge red giant whose brightness wanders between third and fourth magnitude. A small telescope shows it as a double: an orange-red star with a smaller blue-green companion."
+    },
+    {
+      "ref": "star:ζ Her",
+      "note": "Magnitude 2.9 and yellowish, the brightest corner of the Keystone, only 35 light-years away. The great cluster M13 lies on the line from here to Eta."
+    },
+    {
+      "ref": "star:η Her",
+      "note": "The northwest corner of the Keystone and your starting point for finding M13, which sits one third of the way from Eta toward Zeta."
+    },
+    {
+      "ref": "star:π Her",
+      "note": "An orange giant at the northeast corner of the Keystone, the corner nearest Vega."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "dso:M13",
+      "equip": "binoculars",
+      "note": "The Great Hercules Cluster, the finest globular cluster in the northern sky: a ball of several hundred thousand ancient stars about 25,000 light-years away. It lies on the west side of the Keystone, a third of the way from Eta to Zeta. Binoculars show a small round fuzzy spot; a small telescope begins to break its edges into stars. From a very dark site it is just visible to the naked eye."
+    },
+    {
+      "ref": "dso:M92",
+      "equip": "binoculars",
+      "note": "A second fine globular cluster, a little smaller and tighter than M13 and often overlooked. It is about six degrees north of Pi Herculis, the Keystone's northeast corner. Binoculars show a fuzzy star."
+    },
+    {
+      "ref": "star:Rasalgethi",
+      "equip": "small-telescope",
+      "note": "A lovely color-contrast double star: orange-red and blue-green, close together. Needs a telescope at medium power."
+    },
+    {
+      "ref": "dso:NGC6210",
+      "equip": "small-telescope",
+      "note": "A small, bright planetary nebula (the shell of gas puffed off by a dying star), ninth magnitude. A telescope shows a tiny blue-green disk, slightly bigger than a star."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Her-nameless-kneeler",
+      "title": "The Kneeler nobody could name",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Aratus", "work": "Phaenomena 63-70", "date": "c. 275 BCE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.6" }
+      ],
+      "summary": "For the earliest Greek writers this constellation was only 'the one on his knees', an exhausted man whose name and task had been forgotten. Later authors offered many candidates besides Heracles, among them a grieving father, a blinded singer, and two famous prisoners of Zeus.",
+      "retelling": [
+        "Most constellations came to the Greeks with a story attached. This one came with a question. In the oldest full description of the sky that survives, the poet Aratus arrives at this group of stars and can only describe what he sees: a phantom shape like a man straining at some task. He seems to be down on one knee. Both arms are lifted from his shoulders and stretched wide. The tip of one foot rests on the head of the crooked Dragon. No one, Aratus says, knows how to read that sign clearly or what work he is bent on; people simply call him On His Knees.",
+        "A puzzle like that invited answers, and by Roman times there was a long list. Hyginus, who collected star myths, dutifully writes them all down.",
+        "One writer, Araethus, said the kneeling man was Ceteus, son of Lycaon. His daughter Megisto had been turned into a bear, and there he kneels, hands held up to heaven, begging the gods to give her back. The Great Bear is close enough in the sky to make the picture work.",
+        "Others looked at the Lyre, which hangs right beside the figure, and thought of musicians. Some said he was Thamyris, a singer who boasted that he could outdo the Muses; they blinded him for it, and he kneels to ask their mercy. Some said he was Orpheus himself, at the moment the women of Thrace killed him.",
+        "Others saw a prisoner. Some said he was Ixion, with his arms bound, punished because he tried to assault Hera, the queen of the gods. Some said he was Prometheus, who stole fire for mankind and was chained to a peak in the Caucasus.",
+        "And some gave him to the hero Theseus, heaving up a great stone, or to Heracles in one of two different fights. Those have their own stories. But it is worth standing under these stars once with Aratus's version in mind. Before he was Hercules he was just a tired figure on his knees, placed in the sky by people whose reasons were already forgotten two thousand three hundred years ago."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Hercules: the kneeling one",
+        "url": "http://www.ianridpath.com/startales/hercules.html"
+      },
+      "characters": ["Ceteus", "Megisto", "Thamyris", "Orpheus", "Ixion", "Prometheus"],
+      "questions": [
+        {
+          "id": "kneeler-q1",
+          "prompt": "What did the earliest Greek writers call this constellation?",
+          "choices": ["The Club-bearer", "The Kneeler (Engonasin)", "The Lion-slayer", "The Wrestler"],
+          "answerIndex": 1,
+          "explanation": "It was Engonasin, 'the one on his knees'. Aratus says no one knew his name or his task."
+        },
+        {
+          "id": "kneeler-q2",
+          "prompt": "According to Araethus, why is Ceteus kneeling with his hands raised?",
+          "choices": ["He is lifting a stone", "He is surrendering to the Ligurians", "He is begging the gods to restore his daughter, who had been turned into a bear", "He is praying for rain"],
+          "answerIndex": 2,
+          "explanation": "Ceteus was said to be lamenting his daughter Megisto's transformation into a bear."
+        },
+        {
+          "id": "kneeler-q3",
+          "prompt": "Which nearby constellation led some writers to identify the Kneeler as a musician such as Thamyris or Orpheus?",
+          "choices": ["Lyra, the Lyre", "Corona Borealis, the Crown", "Draco, the Dragon", "Bootes, the Herdsman"],
+          "answerIndex": 0,
+          "explanation": "The Lyre lies right beside the kneeling figure, so musicians were natural candidates."
+        },
+        {
+          "id": "kneeler-q4",
+          "prompt": "On what does the Kneeler rest his foot in Aratus's description?",
+          "choices": ["The back of the Great Bear", "The Northern Crown", "A pile of stones", "The head of the Dragon"],
+          "answerIndex": 3,
+          "explanation": "Aratus places the tip of his foot over the head of the Dragon, Draco, a detail that later suggested Heracles and the dragon of the Hesperides."
+        }
+      ]
+    },
+    {
+      "id": "Her-dragon-of-the-hesperides",
+      "title": "Heracles and the dragon of the golden apples",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Eratosthenes", "work": "Catasterisms (the Kneeler), as reported by Hyginus", "date": "3rd century BCE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.6 (citing Panyassis, Heraclea)" },
+        { "author": "Apollodorus", "work": "Library, Book 2" }
+      ],
+      "summary": "Eratosthenes was the first to say that the Kneeler is Heracles, caught in the middle of his fight with the unsleeping dragon that guarded the golden apples of the Hesperides. Zeus admired the struggle so much that he placed both fighters in the sky, where Hercules still has his foot on Draco's head.",
+      "retelling": [
+        "Heracles had already completed ten labors for his cousin Eurystheus, king of Mycenae, when the king cheated him. Two of the ten, Eurystheus announced, did not count, and he set two more. The first of these was to bring back the golden apples of the Hesperides.",
+        "The apples grew on a tree at the western edge of the world, on the slopes of Mount Atlas. The tree had been a wedding present to Hera from the Earth herself, and Hera had planted it in her own garden. Nymphs called the Hesperides, daughters of Atlas, were set to tend it, but they helped themselves to the fruit. So Hera gave the tree a second guardian: a dragon that coiled about the trunk. Its name was Ladon, and it was said never to sleep or even close its eyes.",
+        "Heracles did not know the way. His long journey took him to the Caucasus mountains, where he found Prometheus in chains, and Prometheus told him the road. At last he reached the garden, and beside it stood the Titan Atlas, holding up the sky on his shoulders.",
+        "Then came the fight that the stars record. The epic poet Panyassis, as Hyginus reports him, described it as a picture: the dragon with its head reared up; Heracles down on his right knee, trying with his left foot to crush the side of its head; his right hand raised to strike with the club, his left arm thrust forward wrapped in the lion's skin, every muscle in it. That is exactly the pose of the constellation, and it is why Hercules is drawn with his foot planted on the head of Draco.",
+        "Heracles killed the dragon. The story of how he actually got the apples has a different shape in Apollodorus: there Prometheus warns him not to pick the fruit himself, so he offers to hold up the sky while Atlas fetches it, and then has to trick Atlas into taking the weight back. Either way he carried the golden apples home to Eurystheus.",
+        "Zeus, watching his son and the monster locked together, admired the contest so much that he set its image among the stars. Hera for her part placed her faithful dragon there. So the two are fixed in the northern sky at the height of the struggle, the Kneeler above and the Dragon beneath his heel, circling the pole together every night."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Hercules, the kneeling one",
+        "url": "http://www.ianridpath.com/startales/hercules.html"
+      },
+      "characters": ["Heracles", "Eurystheus", "Hera", "Ladon", "The Hesperides", "Atlas", "Prometheus", "Zeus"],
+      "questions": [
+        {
+          "id": "apples-q1",
+          "prompt": "Which constellation is the dragon that guarded the golden apples?",
+          "choices": ["Draco", "Hydra", "Serpens", "Cetus"],
+          "answerIndex": 0,
+          "explanation": "The dragon Ladon became Draco, and Hercules kneels with one foot on its head."
+        },
+        {
+          "id": "apples-q2",
+          "prompt": "Who first identified the Kneeler as Heracles fighting the dragon?",
+          "choices": ["Aratus", "Ptolemy", "Eratosthenes", "Homer"],
+          "answerIndex": 2,
+          "explanation": "Eratosthenes, about a century after Aratus, named the anonymous figure as Heracles."
+        },
+        {
+          "id": "apples-q3",
+          "prompt": "Who had given the tree of golden apples to Hera as a wedding gift?",
+          "choices": ["Zeus", "Atlas", "The Hesperides", "The Earth (Gaia)"],
+          "answerIndex": 3,
+          "explanation": "The tree was Earth's wedding present to Hera, who set the Hesperides and then the dragon to guard it."
+        },
+        {
+          "id": "apples-q4",
+          "prompt": "In Apollodorus's version, who actually fetched the apples while Heracles held up the sky?",
+          "choices": ["Prometheus", "Atlas", "Hermes", "Eurystheus"],
+          "answerIndex": 1,
+          "explanation": "Atlas fetched them, and Heracles then had to trick him into taking the sky back."
+        }
+      ]
+    },
+    {
+      "id": "Her-ligurians",
+      "title": "Heracles on his knees among the Ligurians",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Aeschylus", "work": "Prometheus Unbound (lost play), as reported by Hyginus", "date": "5th century BCE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.6" }
+      ],
+      "summary": "The playwright Aeschylus explained the Kneeler differently: it shows Heracles wounded, out of arrows, and forced to his knees while fighting the Ligurians, at the moment Zeus saved him with a shower of stones.",
+      "retelling": [
+        "The tenth labor of Heracles took him to the far west, to the island of Erytheia, to steal the cattle of Geryon, a monster with three bodies. He killed Geryon and set out for home, driving the herd overland the whole length of Europe.",
+        "The road led through the country of the Ligurians, on the coast where France and Italy now meet. The Ligurians looked at the splendid cattle and at the single man driving them, and decided to take the herd. They came against him in great numbers.",
+        "Heracles fought them with his bow, as he had fought so many others. But there were too many. Arrows flew back at him and into the herd, and he was hit again and again. He shot until his quiver was empty. Then, worn down by the swarm of enemies, bleeding from many wounds and with no weapon left, the strongest man in the world sank to his knees.",
+        "He was the son of Zeus, and Zeus was watching. Out of pity for his son, the god saw to it that the ground around him was suddenly thick with stones. Heracles snatched them up and hurled them, one after another, and with these he defended himself until the Ligurians broke and ran.",
+        "Aeschylus told this in his play about the freeing of Prometheus. The play is lost, but Hyginus preserved the point that matters for stargazers: Zeus, he says, set among the constellations the image of his son as he was in that fight. In this version the Kneeler is not a victor with his foot on a dragon. He is a hero at the lowest moment of a battle, on his knees, arms flung up, about to be rescued."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Hercules, the kneeling one",
+        "url": "http://www.ianridpath.com/startales/hercules.html"
+      },
+      "characters": ["Heracles", "Geryon", "Zeus", "The Ligurians"],
+      "questions": [
+        {
+          "id": "ligurians-q1",
+          "prompt": "What was Heracles bringing home when the Ligurians attacked him?",
+          "choices": ["The golden apples", "The cattle of Geryon", "The belt of Hippolyte", "The horses of Diomedes"],
+          "answerIndex": 1,
+          "explanation": "He was driving Geryon's cattle back to Greece, and the Ligurians tried to seize the herd."
+        },
+        {
+          "id": "ligurians-q2",
+          "prompt": "How did Zeus help his son in the battle?",
+          "choices": ["He struck the Ligurians with lightning", "He sent an eagle with fresh arrows", "He hid Heracles in a cloud", "He provided a great supply of stones for Heracles to throw"],
+          "answerIndex": 3,
+          "explanation": "With his arrows gone, Heracles fought off the Ligurians with the stones Zeus supplied."
+        },
+        {
+          "id": "ligurians-q3",
+          "prompt": "Which ancient author is the source of this explanation of the Kneeler?",
+          "choices": ["Aeschylus", "Ovid", "Eratosthenes", "Aratus"],
+          "answerIndex": 0,
+          "explanation": "It comes from Aeschylus's lost play *Prometheus Unbound*, quoted by Hyginus."
+        },
+        {
+          "id": "ligurians-q4",
+          "prompt": "Why did Heracles fall to his knees?",
+          "choices": ["He was praying at an altar", "He tripped over the cattle", "He was wounded, exhausted, and had run out of arrows", "He was struck by a thunderbolt"],
+          "answerIndex": 2,
+          "explanation": "Outnumbered and out of weapons, he dropped to his knees, the pose the constellation is said to show."
+        }
+      ]
+    },
+    {
+      "id": "Her-theseus-and-the-stone",
+      "title": "Theseus lifts the stone",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Hegesianax", "work": "as reported by Hyginus, Poetic Astronomy 2.6" },
+        { "author": "Apollodorus", "work": "Library 3.15.7-3.16.1" }
+      ],
+      "summary": "The writer Hegesianax said the Kneeler is the young Theseus at Troezen, straining to raise the great stone under which his father had hidden a sword. On this reading the Lyre beside him is the lyre of Theseus.",
+      "retelling": [
+        "Aegeus, king of Athens, had no son. On his way home from consulting an oracle he stayed at the town of Troezen, across the gulf from Athens, and there he spent a night with Aethra, the daughter of the local king.",
+        "Before he left, Aegeus did a curious thing. He took his sword, with other tokens, and put them under a great rock. Then he gave Aethra her instructions. If she bore a son, she was to tell him nothing and send him nowhere until he was strong enough to lift that stone by his own strength. When he could, he was to take what lay beneath and bring the sword to his father in Athens.",
+        "Aethra had a son, Theseus, and raised him in Troezen. He grew up clever and accomplished; Hyginus remarks that he was skilled in all the arts and seems to have learned the lyre too. When he came of age his mother led him to the rock and told him whose son he was.",
+        "This is the moment Hegesianax saw in the stars: the young man braced on one knee, arms spread, heaving the stone as high as he can. Theseus raised it, took the sword, and set off for Athens, a road on which he would kill a series of famous bandits and, in time, the Minotaur.",
+        "The reading had one attractive consequence. Right next to the Kneeler hangs the Lyre, and so, Hyginus tells us, some people said it was the lyre of Theseus, set beside its owner. He quotes a line of the poet Anacreon to prove the idea was old: 'Near Theseus, son of Aegeus, is the Lyre.'",
+        "No ancient source that survives says which god put Theseus there. The picture is the whole argument: a kneeling man, straining, with his arms out. For those who preferred Athens's own hero to Heracles, that was enough."
+      ],
+      "link": {
+        "site": "ToposText",
+        "label": "Hyginus, Astronomica 2.6 (the Kneeler)",
+        "url": "https://topostext.org/work/207"
+      },
+      "characters": ["Theseus", "Aegeus", "Aethra"],
+      "questions": [
+        {
+          "id": "theseus-q1",
+          "prompt": "What did Aegeus hide under the stone for his son to find?",
+          "choices": ["A sword", "A crown", "A lyre", "A golden apple"],
+          "answerIndex": 0,
+          "explanation": "He left a sword under the rock, to be brought to him in Athens when the boy was strong enough to lift it."
+        },
+        {
+          "id": "theseus-q2",
+          "prompt": "In which town did Theseus grow up and lift the stone?",
+          "choices": ["Athens", "Sparta", "Troezen", "Corinth"],
+          "answerIndex": 2,
+          "explanation": "He was raised by his mother Aethra at Troezen."
+        },
+        {
+          "id": "theseus-q3",
+          "prompt": "If the Kneeler is Theseus, what did some ancient writers say the neighboring constellation Lyra was?",
+          "choices": ["The harp of Apollo", "The lyre of Theseus", "The loom of Aethra", "The shield of Aegeus"],
+          "answerIndex": 1,
+          "explanation": "Hyginus reports that some called it the lyre of Theseus, and quotes Anacreon in support."
+        },
+        {
+          "id": "theseus-q4",
+          "prompt": "Who was the mother of Theseus?",
+          "choices": ["Alcmene", "Leda", "Ariadne", "Aethra"],
+          "answerIndex": 3,
+          "explanation": "Aethra of Troezen raised Theseus and showed him the stone when he came of age."
+        }
+      ]
+    },
+    {
+      "id": "Her-labors-and-pyre",
+      "title": "The labors of Heracles and his place among the gods",
+      "culture": "Greek and Roman",
+      "ancientSources": [
+        { "author": "Apollodorus", "work": "Library, Book 2" }
+      ],
+      "summary": "Once the Kneeler was accepted as Heracles, his whole life became the constellation's story: the son of Zeus hounded by Hera, the twelve labors, and his death on a funeral pyre, after which Zeus raised him to the sky. Several labors left constellations of their own.",
+      "retelling": [
+        "Heracles was the son of Zeus and a mortal woman, Alcmene, whom Zeus visited disguised as her own husband. That made Hera, Zeus's wife, his enemy from the day he was born. He grew into the strongest man alive, but Hera sent a madness on him, and in it he killed his own children. When he came to himself he went to the oracle at Delphi to ask how he could atone. He was told to serve Eurystheus, king of Mycenae, and do whatever was asked of him.",
+        "What was asked became the famous labors. It is not necessary to know all twelve to read the sky, but several are written there. The first was the lion of Nemea, whose hide no weapon could pierce; Heracles strangled it and afterwards wore its skin. That lion is Leo. The second was the Hydra of Lerna, a swamp monster that grew two heads for each one cut off. While he fought it a crab crawled out and nipped his foot, and he crushed it. The Hydra is the constellation Hydra, and the crab is Cancer. He dipped his arrows in the Hydra's poisonous blood, which mattered later.",
+        "Others took him across the known world: a golden-horned deer and a wild boar to capture, stables to clean, man-eating birds and man-eating horses to deal with, a bull to fetch from Crete (some connect it with Taurus), an Amazon queen's belt, the cattle of three-bodied Geryon. Near the end came the golden apples of the Hesperides, guarded by the dragon that is now Draco. Last of all he went down to the Underworld and dragged its three-headed watchdog, Cerberus, up into the daylight. Old star atlases sometimes drew Cerberus or an apple branch in the hand of Hercules.",
+        "His death came long after, and by accident. He had married Deianeira. At a river crossing the centaur Nessus tried to carry her off, and Heracles shot him with one of the poisoned arrows. The dying centaur told Deianeira to keep some of his blood as a charm that would hold her husband's love. Years later, fearing she was losing him to another woman, she smeared it on a shirt and sent it to him.",
+        "The blood carried the Hydra's poison. When Heracles put the shirt on, it burned into his flesh and could not be pulled away. Knowing nothing could cure him, he climbed Mount Oeta, built a pyre, spread his lion skin over it, and lay down.",
+        "The fire consumed what was mortal in him. The part that came from Zeus rose to Olympus, where he was welcomed among the gods and at last reconciled with Hera. And Zeus set his image among the stars, where he kneels with his club lifted. Look for the companions of his adventures around the sky: the Dragon under his foot on summer nights, and the Lion, the Crab, and the Hydra in spring."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Hercules, part 2: the death of Heracles",
+        "url": "http://www.ianridpath.com/startales/hercules2.html"
+      },
+      "characters": ["Heracles", "Zeus", "Alcmene", "Hera", "Eurystheus", "Deianeira", "Nessus", "Cerberus"],
+      "questions": [
+        {
+          "id": "labors-q1",
+          "prompt": "Which constellation is the lion that Heracles strangled in his first labor?",
+          "choices": ["Leo Minor", "Lupus", "Leo", "Lynx"],
+          "answerIndex": 2,
+          "explanation": "The Nemean lion became Leo. Heracles wore its skin, which no weapon could pierce."
+        },
+        {
+          "id": "labors-q2",
+          "prompt": "Which creature interfered while Heracles fought the Hydra, and became the constellation Cancer?",
+          "choices": ["A crab", "A scorpion", "A snake", "A raven"],
+          "answerIndex": 0,
+          "explanation": "A crab nipped his foot during the fight and was crushed; it is remembered as Cancer."
+        },
+        {
+          "id": "labors-q3",
+          "prompt": "What finally killed Heracles?",
+          "choices": ["The bite of Cerberus", "A thunderbolt from Zeus", "An arrow shot by Eurystheus", "A shirt smeared with the poisoned blood of the centaur Nessus"],
+          "answerIndex": 3,
+          "explanation": "Deianeira, deceived by Nessus, sent the shirt as a love charm; the blood carried the Hydra's poison from Heracles's own arrow."
+        },
+        {
+          "id": "labors-q4",
+          "prompt": "Which goddess was the lifelong enemy of Heracles?",
+          "choices": ["Athena", "Hera", "Artemis", "Aphrodite"],
+          "answerIndex": 1,
+          "explanation": "Hera resented him as the son of Zeus by another woman and drove him mad, which led to the labors."
+        },
+        {
+          "id": "labors-q5",
+          "prompt": "Where did Heracles build his funeral pyre?",
+          "choices": ["Mount Oeta", "Mount Olympus", "Mount Atlas", "Mount Ida"],
+          "answerIndex": 0,
+          "explanation": "He built it on Mount Oeta; the fire burned away his mortal part and he joined the gods."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Hercules is the fifth-largest of the 88 constellations, and the largest that has no star brighter than magnitude 2.5.",
+    "The globular cluster M13 was discovered by Edmond Halley in 1714. He noted that it shows itself to the naked eye when the sky is clear and the Moon is absent.",
+    "The Sun, carrying the Earth and the other planets with it, is moving through space roughly toward a point in Hercules, not far from Vega.",
+    "Hyginus mentions the hero a second time, under Ophiuchus: some said the Serpent Holder was Heracles killing a snake in Lydia.",
+    "In China the star Rasalgethi was the Emperor's throne, at the center of a great celestial marketplace whose walls ran through Hercules, Serpens, and Ophiuchus."
+  ]
+}

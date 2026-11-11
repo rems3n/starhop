@@ -1,0 +1,34 @@
+{
+  "id": "Ret",
+  "kind": "modern",
+  "origin": {
+    "namedBy": "Nicolas-Louis de Lacaille",
+    "when": "1756",
+    "history": [
+      "Reticulum is one of the fourteen constellations that the French astronomer Nicolas-Louis de Lacaille created from his survey of the southern sky at the Cape of Good Hope in 1751–52, and it commemorates the very device he did the survey with. A reticle is a pattern placed in a telescope's eyepiece for measuring. Lacaille's was a diamond-shaped opening cut in a copper plate. He let each star drift across the diamond, timed its entry and exit with his pendulum clock, and from the times worked out its position.",
+      "He called it le Réticule Rhomboïde on his chart of 1756, describing it in his notes as the little instrument used to draw up the catalog, and Latinized it as Reticulus in 1763. The form Reticulum dates from Benjamin Gould's catalog of 1879. Fittingly, it lies next to Horologium, the clock he used with it.",
+      "The same stars had been grouped before. In 1621 the German astronomer Isaac Habrecht put a larger figure called Rhombus here on a globe. And in 1822 the British author Alexander Jamieson tried to replace Reticulum with Solarium, the Sundial, as a companion for the clock; a few atlases copied him, but it did not last."
+    ]
+  },
+  "overview": "Reticulum is the measuring grid from the eyepiece of Lacaille's telescope. It is a small but tidy diamond of faint stars, easy to pick out in a dark sky because it lies between Achernar, Canopus and the Large Magellanic Cloud.",
+  "howToFind": [
+    "Reticulum never rises from Brooklyn. Its brightest star needs a latitude south of about 27°N and the whole figure about 23°N. From the Southern Hemisphere it circles the pole and is highest on evenings from November to January.",
+    "Find [[star:Achernar|Achernar]] and [[star:Canopus|Canopus]], the two bright stars four fists apart across a dull stretch of sky. [[star:α Ret|Alpha Reticuli]] is two fists from each of them, on the side of the line toward the south celestial pole, and one fist from the [[dso:LMC|Large Magellanic Cloud]]. The little diamond extends from Alpha toward Achernar."
+  ],
+  "shape": "A compact kite or diamond of four to five stars about half a fist long, with Alpha and Beta the brightest corners. It is small enough to fit in a wide binocular field and shows to the naked eye only away from city lights.",
+  "mainStars": [
+    { "ref": "star:α Ret", "note": "Magnitude 3.3, a yellow giant about 160 light-years away. In 2024 the International Astronomical Union named it Rhombus, after the forgotten earlier constellation in this spot." },
+    { "ref": "star:β Ret", "note": "Magnitude 3.8, an orange star about 97 light-years away, at the opposite end of the diamond." },
+    { "ref": "star:ε Ret", "note": "Magnitude 4.4, an orange star about 60 light-years away with a planet and a white-dwarf companion." },
+    { "ref": "star:ζ Ret", "note": "A wide pair of yellow stars 39 light-years away, both close twins of the Sun, lying to the west of the diamond." }
+  ],
+  "notableObjects": [
+    { "ref": "star:ζ Ret", "equip": "binoculars", "note": "Zeta-1 and Zeta-2 Reticuli are two 5th-magnitude Sun-like stars that sharp eyes can separate in a dark sky and any binoculars split easily." },
+    { "ref": "dso:NGC1313", "equip": "small-telescope", "note": "A ragged barred spiral galaxy about three degrees southwest of Beta. In a small telescope it is a faint, mottled oval patch." }
+  ],
+  "stories": [],
+  "facts": [
+    "Lacaille's reticle had one solid quarter so that he could tell whether a star had crossed the upper or the lower half of the diamond.",
+    "Zeta Reticuli is notorious in UFO lore: Betty and Barney Hill, an American couple who said they had been abducted by aliens, named it as their captors' home."
+  ]
+}

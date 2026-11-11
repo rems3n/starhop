@@ -1,0 +1,343 @@
+{
+  "id": "planets-up-close",
+  "unit": "objects",
+  "order": 6,
+  "title": "The planets up close",
+  "subtitle": "What each planet is, and what you can honestly expect to see with eyes, binoculars and a small telescope.",
+  "minutes": 7,
+  "sections": [
+    {
+      "heading": "Wanderers that survive the city",
+      "body": [
+        "After this lesson you will know what to expect from each planet before you look, and what equipment each one needs.",
+        "Planets are the easiest targets in a city sky. They shine by reflected sunlight, the bright ones outshine every star, and light pollution does nothing to dim them. They tend to shine with a steadier light than the twinkling stars, and they always lie near the ecliptic, the Sun's path through the zodiac. The app's sky view shows where each one is right now."
+      ]
+    },
+    {
+      "heading": "The inner planets: Mercury and Venus",
+      "body": [
+        "[[body:Mercury|Mercury]] and [[body:Venus|Venus]] orbit closer to the Sun than we do, so they never stray far from it in the sky. You find them only in the west after sunset or in the east before sunrise, never in the middle of the night.",
+        "Mercury, a small airless rock, is the elusive one: it never gets more than 28° from the Sun, so it is only ever seen low in twilight for a couple of weeks at a time. Venus is impossible to miss. Wrapped in brilliant white clouds, it is the brightest thing in the sky after the Sun and Moon. A small telescope shows that Venus goes through phases like the Moon, from a small nearly full disc when it is on the far side of the Sun to a large thin crescent when it swings close to Earth. No surface detail is visible; you are looking at cloud tops."
+      ],
+      "demo": {
+        "title": "Tied to the Sun",
+        "controls": [
+          "date-step"
+        ],
+        "steps": [
+          {
+            "caption": "The view is centered on Venus at this moment, with the daylight switched off so the Sun shows too. However you step the date, Venus never gets more than about 47° from the Sun along the ecliptic, which is why it is only an evening or a morning object.",
+            "time": "now",
+            "view": {
+              "target": "body:Venus",
+              "fov": 110
+            },
+            "layers": {
+              "ecliptic": true,
+              "atmosphere": false,
+              "ground": false,
+              "constellationLines": false,
+              "constellationNames": false,
+              "starNames": false
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "body:Venus",
+                "label": true
+              },
+              {
+                "type": "object",
+                "ref": "body:Sun",
+                "label": true
+              },
+              {
+                "type": "angle",
+                "from": "body:Sun",
+                "to": "body:Venus"
+              }
+            ]
+          },
+          {
+            "caption": "Now Mercury. It keeps even closer to the Sun, never more than 28° away, so it only ever shows low in twilight. Step the date to watch it dart from one side of the Sun to the other in a few weeks.",
+            "time": "now",
+            "view": {
+              "target": "body:Mercury",
+              "fov": 80
+            },
+            "layers": {
+              "ecliptic": true,
+              "atmosphere": false,
+              "ground": false,
+              "constellationLines": false,
+              "constellationNames": false,
+              "starNames": false
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "body:Mercury",
+                "label": true
+              },
+              {
+                "type": "object",
+                "ref": "body:Sun",
+                "label": true
+              },
+              {
+                "type": "angle",
+                "from": "body:Sun",
+                "to": "body:Mercury"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "heading": "Mars",
+      "body": [
+        "[[body:Mars|Mars]] is a cold desert world half the width of the Earth, and its rusty surface gives it an unmistakable orange-red color. No planet changes brightness as much. About every 26 months Earth overtakes Mars and the two are close together, with Mars opposite the Sun in our sky (an arrangement called opposition); for a few weeks it can rival Jupiter. In between, it recedes to the far side of the Sun and fades to an ordinary-looking star, more than fifty times fainter. A small telescope shows surface markings and a white polar cap only in the months around opposition. The rest of the time Mars is a tiny featureless orange dot."
+      ]
+    },
+    {
+      "heading": "The giants: Jupiter and Saturn",
+      "body": [
+        "[[body:Jupiter|Jupiter]], a ball of gas eleven times the width of the Earth, is the most rewarding planet for small instruments. Steadily held binoculars show up to four tiny stars in a line beside it: Io, Europa, Ganymede and Callisto, the moons Galileo discovered in 1610. They change places from night to night, and sometimes one is hidden in front of or behind the planet. A small telescope shows Jupiter as a slightly flattened disc crossed by two dark cloud bands.",
+        "[[body:Saturn|Saturn]] looks like a steady yellowish star to the eye, and binoculars show nothing more. But any small telescope magnifying about 30 times or more shows the rings, and very few people forget their first look. The rings are tilted, and as Saturn goes around the Sun every 29 years we see them from a changing angle: wide open, then closing to a thin line when they are edge-on, then opening again to show the other face. They were edge-on in 2025 and are opening up, reaching their widest in the early 2030s before closing to edge-on again in 2038 and 2039. A telescope also shows Titan, Saturn's largest moon, as a nearby star."
+      ],
+      "demo": {
+        "title": "Find the giants now",
+        "controls": [
+          "time-scrub",
+          "date-step"
+        ],
+        "steps": [
+          {
+            "caption": "The view is centered on Jupiter at this moment. If the ground fills the screen, Jupiter is below the horizon right now: drag the time slider to find when it rises. When it is up, nothing starlike near it is as bright.",
+            "time": "now",
+            "view": {
+              "target": "body:Jupiter",
+              "fov": 60
+            },
+            "layers": {
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "body:Jupiter",
+                "label": "Jupiter — moons in binoculars"
+              }
+            ]
+          },
+          {
+            "caption": "Now centered on Saturn. If it is above the horizon, look for a steady, pale yellow point, much fainter than Jupiter. The rings need a telescope at about 30×.",
+            "time": "now",
+            "view": {
+              "target": "body:Saturn",
+              "fov": 60
+            },
+            "layers": {
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "body:Saturn",
+                "label": "Saturn — rings in a small telescope"
+              }
+            ]
+          },
+          {
+            "caption": "Centered on Mars. If it is up, check its color against a nearby star: Mars is distinctly orange. How bright it is depends on how close it currently is to opposition.",
+            "time": "now",
+            "view": {
+              "target": "body:Mars",
+              "fov": 60
+            },
+            "layers": {
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "body:Mars",
+                "label": "Mars"
+              }
+            ]
+          }
+        ]
+      },
+      "tryIt": "The next time Jupiter is in the evening sky, lean against a wall, brace your binoculars and look for its moons. Sketch their positions, then look again the next night."
+    },
+    {
+      "heading": "Uranus, Neptune and the rest",
+      "body": [
+        "[[body:Uranus|Uranus]] and [[body:Neptune|Neptune]] are giant planets of gas and ice, each about four times the width of the Earth but so remote that they are just dots. Uranus is at the very edge of naked-eye visibility in a dark sky and easy in binoculars if you know exactly where to look; a telescope shows a tiny pale green disc. Neptune needs binoculars or a telescope and a good chart, and looks like a faint bluish star.",
+        "Our own [[body:Moon|Moon]] is the most detailed object you will ever see: binoculars show its dark plains and biggest craters, and any telescope shows hundreds. As for the dwarf planets, Ceres can be followed in binoculars as a faint star, while Pluto needs a large telescope and a dark sky."
+      ],
+      "demo": {
+        "title": "The far planets",
+        "controls": [
+          "time-scrub"
+        ],
+        "steps": [
+          {
+            "caption": "Centered on Uranus at this moment. If it is above the horizon, the stars around it are your map for finding it in binoculars; it looks like one more faint star.",
+            "time": "now",
+            "view": {
+              "target": "body:Uranus",
+              "fov": 30
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "body:Uranus",
+                "label": "Uranus — binoculars"
+              }
+            ]
+          },
+          {
+            "caption": "Centered on Neptune. Fainter still, it is a binocular or telescope object even under a dark sky, if it is up at all tonight.",
+            "time": "now",
+            "view": {
+              "target": "body:Neptune",
+              "fov": 30
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "body:Neptune",
+                "label": "Neptune — telescope"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "keyPoints": [
+    "Planets shine by reflected sunlight, stay near the ecliptic and are unaffected by light pollution.",
+    "Mercury and Venus are seen only near sunset or sunrise; Venus shows phases in a small telescope.",
+    "Mars is worth a telescope only around opposition, about every 26 months.",
+    "Binoculars show Jupiter's four big moons; a small telescope at about 30× shows Saturn's rings, whose tilt changes over a 29-year cycle.",
+    "Uranus and Neptune are faint dots that need binoculars or a telescope and a chart."
+  ],
+  "examples": [
+    {
+      "ref": "body:Venus",
+      "label": "Venus",
+      "note": "Brilliant cloud-covered planet near the Sun in the evening or morning sky. Naked eye; a small telescope shows its phases."
+    },
+    {
+      "ref": "body:Mercury",
+      "label": "Mercury",
+      "note": "Small rocky planet seen only low in twilight. Naked eye with a clear horizon; binoculars help."
+    },
+    {
+      "ref": "body:Mars",
+      "label": "Mars",
+      "note": "Orange-red desert planet whose brightness varies hugely. Naked eye; a telescope shows detail only near opposition."
+    },
+    {
+      "ref": "body:Jupiter",
+      "label": "Jupiter",
+      "note": "Largest planet. Naked eye; binoculars show four moons; a small telescope shows cloud bands."
+    },
+    {
+      "ref": "body:Saturn",
+      "label": "Saturn",
+      "note": "The ringed planet. Naked eye as a yellowish star; any small telescope at about 30× shows the rings."
+    },
+    {
+      "ref": "body:Uranus",
+      "label": "Uranus",
+      "note": "Distant ice giant. A faint star in binoculars; a tiny greenish disc in a telescope."
+    },
+    {
+      "ref": "body:Neptune",
+      "label": "Neptune",
+      "note": "The farthest planet. A faint bluish dot that needs binoculars or a telescope and a chart."
+    },
+    {
+      "ref": "body:Moon",
+      "label": "The Moon",
+      "note": "Earth's satellite. Naked eye; binoculars show plains and large craters; any telescope shows mountains and hundreds of craters."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "A friend says they saw Venus high in the south at midnight. Why must they be mistaken?",
+      "choices": [
+        "Venus is too faint to see at midnight",
+        "Venus orbits inside Earth's orbit, so it always appears fairly near the Sun and is never up in the middle of the night",
+        "Venus is only visible from the southern hemisphere",
+        "Venus is only visible in winter"
+      ],
+      "answerIndex": 1,
+      "explanation": "An inner planet never gets far from the Sun in our sky, so it is seen only after sunset or before sunrise. A bright midnight 'star' in the south is more likely Jupiter."
+    },
+    {
+      "id": "q2",
+      "prompt": "What is the least equipment that will show the four large moons of Jupiter?",
+      "choices": [
+        "The naked eye",
+        "A large observatory telescope",
+        "A small telescope at 100× or more",
+        "Steadily held binoculars"
+      ],
+      "answerIndex": 3,
+      "explanation": "Ordinary binoculars show the Galilean moons as tiny stars in a line, provided you hold them steady."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why do Saturn's rings sometimes look wide open and at other times almost vanish?",
+      "choices": [
+        "The rings are tilted, and we view them from a changing angle as Saturn orbits the Sun",
+        "The rings grow and shrink",
+        "Saturn's clouds cover them",
+        "The rings only reflect light in summer"
+      ],
+      "answerIndex": 0,
+      "explanation": "Over Saturn's 29-year orbit we see the rings from above, edge-on, then from below. Edge-on, they are too thin to see in small telescopes."
+    },
+    {
+      "id": "q4",
+      "prompt": "When is Mars a rewarding telescope target?",
+      "choices": [
+        "Any time it is above the horizon",
+        "Only when it is next to the Moon",
+        "In the months around opposition, when Earth is passing close to it",
+        "Only when it is seen in twilight"
+      ],
+      "answerIndex": 2,
+      "explanation": "Mars is small. Only near opposition, about every 26 months, is it close enough to show markings; otherwise it is a tiny dot."
+    },
+    {
+      "id": "q5",
+      "prompt": "Through a small telescope Venus appears as a thin crescent. What does that tell you?",
+      "choices": [
+        "Part of Venus is hidden by the Moon",
+        "Venus is on the far side of the Sun",
+        "Venus has a ring",
+        "Venus is on the near side of its orbit, so we see mostly its night side"
+      ],
+      "answerIndex": 3,
+      "explanation": "Like the Moon, Venus shows phases. A large thin crescent means it is between us and the Sun's direction, with its lit face turned mostly away."
+    },
+    {
+      "id": "q6",
+      "prompt": "Why are planets good targets from a light-polluted city?",
+      "choices": [
+        "They are bright, concentrated sources, so skyglow does not hide them",
+        "City lights make planets brighter",
+        "Planets give off their own light",
+        "Planets are always overhead in cities"
+      ],
+      "answerIndex": 0,
+      "explanation": "Skyglow drowns faint, spread-out objects. The bright planets are small, intense discs that stay easy in any sky."
+    }
+  ]
+}

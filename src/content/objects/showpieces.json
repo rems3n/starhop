@@ -1,0 +1,353 @@
+{
+  "dso:NGC869": {
+    "about": "NGC 869, also called h Persei, is the western half of the famous Double Cluster. It is a rich open cluster — a family of stars born together from one gas cloud — about 7,500 light-years away in the Perseus Arm of the Milky Way, and only about 14 million years old, so its brightest members are hot blue-white giants. Its twin, [[dso:NGC884|NGC 884]], sits half a degree to the east and is the same age and distance.",
+    "howToFind": "Start at Cassiopeia's W. From [[star:Ruchbah|Ruchbah]], the bottom of the W's second V, go 7.5° (three-quarters of a fist) east-southeast, toward [[star:Mirfak|Mirfak]] in Perseus; the Double Cluster is a little under halfway. From 40°N it never sets, and it is highest on autumn and winter evenings.",
+    "whatYouSee": "Under a dark sky the pair shows to the naked eye as a hazy knot in the Milky Way. From the city, binoculars show two small grainy clumps side by side; a small telescope at low power fills the view with two glittering swarms of stars, NGC 869 being the denser one.",
+    "physicalSize": "roughly 60 to 70 light-years across"
+  },
+  "dso:NGC884": {
+    "about": "NGC 884, also called Chi Persei, is the eastern half of the Double Cluster, a young open cluster about 7,600 light-years away and some 14 million years old. It lies only a few hundred light-years from its partner [[dso:NGC869|NGC 869]]; the two formed in the same burst of star birth. The pair has been known since antiquity — Hipparchus recorded it as a misty patch.",
+    "howToFind": "From [[star:Ruchbah|Ruchbah]] in Cassiopeia's W go about 8° (a little under a fist) east-southeast toward [[star:Mirfak|Mirfak]]. NGC 884 is the left-hand (eastern) clump of the pair, half a degree from NGC 869. Autumn and winter evenings; it never sets from 40°N.",
+    "whatYouSee": "Binoculars show it as the looser of the two star clumps, even from the city. In a small telescope look for a few orange-red supergiant stars scattered among the blue-white ones — a pretty color contrast."
+  },
+  "dso:Mel25": {
+    "about": "The Hyades is the nearest open star cluster to us, about 153 light-years away, and one of the most carefully studied: its distance is a first step in measuring the scale of the universe. Its several hundred stars were born together about 625 million years ago and still drift through space as a group. The brightest ones form the V-shaped face of Taurus, the Bull. In Greek myth the Hyades were sisters of the Pleiades.",
+    "howToFind": "Follow Orion's Belt up and to the right (northwest) for two fists to orange [[star:Aldebaran|Aldebaran]]. The Hyades is the sideways V of stars, about 5° across, that Aldebaran appears to complete — though Aldebaran is a foreground star, less than half as far away. Late autumn and winter evenings.",
+    "whatYouSee": "The V is visible to the naked eye from the suburbs, and its brightest stars even from the city. It is too big for a telescope: binoculars are the ideal instrument, showing dozens of stars, several of them in pairs.",
+    "physicalSize": "core about 20 light-years across; outlying members spread much farther"
+  },
+  "dso:Cr399": {
+    "about": "The Coathanger, also called Brocchi's Cluster or Collinder 399, is a pattern of ten stars that looks exactly like an upside-down coat hanger: six in a straight row with a hook of four below. Despite its catalog name it is not a real cluster — the stars lie at very different distances and only happen to line up from our viewpoint. The Persian astronomer al-Sufi described it in the 10th century.",
+    "howToFind": "Draw a line from [[star:Altair|Altair]] to [[star:Vega|Vega]] and stop a little over a third of the way along, about a fist and a bit (13°) from Altair. It is also 8° due south of [[star:Albireo|Albireo]]. Summer and autumn evenings.",
+    "whatYouSee": "To the naked eye under a dark sky it is a small fuzzy patch. Any binoculars, even from the city, show the coat hanger shape at once — the bar is 1.3° long — and it is too large for most telescopes."
+  },
+  "dso:NGC7000": {
+    "about": "The North America Nebula is a huge cloud of glowing hydrogen gas about 2,600 light-years away in Cygnus, whose outline in photographs looks uncannily like the continent, complete with a 'Gulf of Mexico' made by dark dust in front of it. It is part of a much larger star-forming region that includes the neighboring Pelican Nebula.",
+    "howToFind": "It lies just 3° (two finger-widths) east-southeast of [[star:Deneb|Deneb]], the tail of the Swan. Summer and autumn evenings, nearly overhead.",
+    "whatYouSee": "This is a dark-sky object. It covers four times the width of the full Moon but glows very faintly: from a truly dark site it can be seen with the naked eye or binoculars as a brighter wedge of Milky Way, especially through a nebula filter. From the city it is invisible, though it photographs easily.",
+    "physicalSize": "about 90 light-years from north to south"
+  },
+  "dso:NGC6960": {
+    "about": "The Western Veil, nicknamed the Witch's Broom, is one edge of the Cygnus Loop: the expanding shell of gas from a star about 20 times the Sun's mass that exploded as a supernova 10,000 to 20,000 years ago. The shell is about 2,400 light-years away and still plowing into the surrounding gas, which makes it glow in delicate filaments. Its other bright arc is the [[dso:NGC6992|Eastern Veil]].",
+    "howToFind": "Find [[star:ε Cyg|Aljanah]], the eastern wingtip of the Swan (the left arm of the Northern Cross). Go 3.4° due south to the naked-eye star [[star:52 Cyg|52 Cygni]]; the Western Veil is a thin streak running north–south right through that star. Summer and autumn evenings.",
+    "whatYouSee": "Not visible from the city. Under a dark sky a small telescope at low power shows a faint ghostly thread passing 52 Cygni; a nebula filter (the type called O-III) makes it far easier.",
+    "physicalSize": "the whole Cygnus Loop is about 130 light-years across"
+  },
+  "dso:NGC6992": {
+    "about": "The Eastern Veil is the brightest arc of the Cygnus Loop, the wreckage of a star that exploded 10,000 to 20,000 years ago about 2,400 light-years from us. The whole loop spans 3° of sky — six Moon-widths — and the Eastern Veil is its curved eastern rim, with the [[dso:NGC6960|Western Veil]] on the opposite side. Seen from Earth at the time, the supernova would have outshone Venus.",
+    "howToFind": "From [[star:ε Cyg|Aljanah]], the eastern wingtip of the Swan, go 3° to the southeast; or from [[star:52 Cyg|52 Cygni]] in the Western Veil go 2.5° east-northeast. Summer and autumn evenings.",
+    "whatYouSee": "Not visible from the city. Under a dark sky it is the easier half of the Veil: binoculars show a faint curved streak about 1° long, and a small telescope with a nebula filter shows a braided arc of light.",
+    "physicalSize": "the whole Cygnus Loop is about 130 light-years across"
+  },
+  "dso:NGC7293": {
+    "about": "The Helix Nebula is one of the nearest planetary nebulae — the glowing shell of gas puffed off by a dying Sun-like star — at about 650 light-years. The star's exposed core, a tiny white dwarf, sits at the center and makes the gas shine. Photographs show a great ring like an eye, and it is a preview of what the Sun may do some five billion years from now.",
+    "howToFind": "It lies in an empty part of Aquarius, about one fist (11°) northwest of [[star:Fomalhaut|Fomalhaut]] and 8° southwest of [[star:Skat|Skat]]. Autumn evenings, low in the south — about 28° up from Brooklyn at best.",
+    "whatYouSee": "A dark-sky object: it is half as wide as the full Moon, so its light is spread thin. Under dark skies binoculars show a large, dim, round gray patch, and a small telescope with a nebula filter hints at the ring. From the city it is invisible.",
+    "physicalSize": "nearly 6 light-years across"
+  },
+  "dso:NGC2237": {
+    "about": "The Rosette Nebula is a vast, roughly circular cloud of glowing hydrogen about 5,200 light-years away in Monoceros, the Unicorn. Hot young stars of the cluster [[dso:NGC2244|NGC 2244]] at its center have blown a hole in the middle with their radiation and winds, giving it the look of a rose or a wreath in photographs.",
+    "howToFind": "It lies about one fist (9°) east-southeast of [[star:Betelgeuse|Betelgeuse]], roughly a third of the way from Betelgeuse to [[star:Procyon|Procyon]]. Sweep there with binoculars for the small rectangular cluster at its heart. Winter evenings.",
+    "whatYouSee": "From the city only the central star cluster is visible. Under a dark sky binoculars show a faint round glow more than 1° wide around the cluster, and a wide-field telescope with a nebula filter shows the dark central hole.",
+    "physicalSize": "about 130 light-years across"
+  },
+  "dso:NGC2244": {
+    "about": "NGC 2244 is the young star cluster at the center of the [[dso:NGC2237|Rosette Nebula]], about 5,200 light-years away. Its stars condensed out of the nebula's gas less than five million years ago, and several are extremely hot class O stars whose ultraviolet light makes the whole Rosette glow and whose winds have hollowed out its center.",
+    "howToFind": "Go about one fist (9.5°) east-southeast from [[star:Betelgeuse|Betelgeuse]], toward [[star:Procyon|Procyon]]. In binoculars look for two short parallel rows of stars forming a small rectangle. Winter evenings.",
+    "whatYouSee": "Binoculars show six or so stars in a neat rectangle about half a degree long, visible even from the city; a small telescope adds a couple of dozen fainter members. The brightest, yellowish star in the group is a foreground star, not a true member."
+  },
+  "dso:NGC2264": {
+    "about": "NGC 2264 is two things in one: the Christmas Tree Cluster, a young group of stars arranged in a triangle like a decorated fir tree, and the gas cloud around it, which includes the dark, pointed Cone Nebula at the tree's tip. The complex is about 2,350 light-years away in Monoceros and is still forming stars.",
+    "howToFind": "From [[star:Alhena|Alhena]] in the feet of Gemini go 6.6° due south; or go 3° south-southwest from [[star:Alzirr|Alzirr]]. The fifth-magnitude star at the base of the tree is just visible to the naked eye under a dark sky. Winter evenings.",
+    "whatYouSee": "Binoculars or a small telescope show about twenty stars in a clear arrowhead shape half a degree tall, upside down from 40°N, with the bright base star at one end — visible from the suburbs and, in a telescope, from the city. The Cone Nebula itself is a photographic object."
+  },
+  "dso:NGC2024": {
+    "about": "The Flame Nebula is a cloud of glowing gas about 1,350 light-years away, right beside the Belt star Alnitak in Orion. A cluster of newborn stars hidden inside the cloud lights it up, and dark lanes of dust across the front give it the look of a burning bush or flame in photographs.",
+    "howToFind": "It lies just a quarter of a degree east-northeast of [[star:Alnitak|Alnitak]], the left-hand star of Orion's Belt. Winter evenings.",
+    "whatYouSee": "Not visible from the city: Alnitak's glare sits right next to it. Under a dark sky a small or medium telescope, with Alnitak kept just outside the field of view, shows a faint glow split by a dark lane.",
+    "physicalSize": "about 12 light-years across"
+  },
+  "dso:B33": {
+    "about": "The Horsehead Nebula is a small, dense cloud of dark dust about 1,375 light-years away that happens to be shaped like a horse's head — or a chess knight — and stands out in silhouette against the faint red glow of the hydrogen cloud IC 434 behind it. It is one of the most photographed objects in the sky and part of the great Orion star-forming complex.",
+    "howToFind": "It lies half a degree due south of [[star:Alnitak|Alnitak]], the left-hand star of Orion's Belt. Winter evenings.",
+    "whatYouSee": "Famous in photographs but notoriously hard to see: it needs a dark sky, a fairly large telescope and usually a special hydrogen-beta filter, and even then it is only a small dark notch in a barely visible glow. It cannot be seen from the city."
+  },
+  "dso:NGC1499": {
+    "about": "The California Nebula is a long cloud of glowing hydrogen in Perseus, roughly 1,000 to 1,300 light-years away, named because its outline in photographs resembles the state of California. It is lit by the very hot star Menkib (Xi Persei) beside it.",
+    "howToFind": "Find [[star:Menkib|Menkib]], a fourth-magnitude star about 13° (a fist and a bit) north of the [[dso:M45|Pleiades]]. The nebula is a band 2.5° long lying just north of that star. Autumn and winter evenings, very high.",
+    "whatYouSee": "A dark-sky object, and a hard one: it is large but extremely dim to the eye. Under a very dark sky, binoculars or a wide-field telescope with a hydrogen-beta filter show a faint elongated glow. From the city it is invisible; it shows well in photographs."
+  },
+  "dso:IC1805": {
+    "about": "The Heart Nebula is a large cloud of glowing hydrogen about 7,500 light-years away in the Perseus Arm of the Milky Way. A cluster of hot young stars at its center, called Melotte 15, lights the gas and has sculpted it into the shape of a heart in photographs. With the neighboring [[dso:IC1848|Soul Nebula]] it makes the pair known as the Heart and Soul.",
+    "howToFind": "From [[star:Segin|Segin]], the eastern end of Cassiopeia's W, go 5° (three finger-widths) east-southeast. It is also about 4.5° north of the Double Cluster ([[dso:NGC869|NGC 869]]). Autumn and winter evenings; it never sets from 40°N.",
+    "whatYouSee": "From the city only the central star cluster shows, as a sprinkling of faint stars in a small telescope. The nebula itself spans about 2° and is very dim: under a dark sky a wide-field telescope with a nebula filter shows parts of it, but it is mainly a photographer's object."
+  },
+  "dso:IC1848": {
+    "about": "The Soul Nebula is a cloud of glowing gas and embedded young star clusters in Cassiopeia, roughly 7,000 light-years away, next door to the [[dso:IC1805|Heart Nebula]]. Radio astronomers know it as W5. Infrared pictures show pillars of gas being eroded by the hot stars inside it, with new stars forming at their tips.",
+    "howToFind": "From [[star:Segin|Segin]], the eastern end of Cassiopeia's W, go 7.5° east-southeast; it lies 2.5° beyond the Heart Nebula in the same direction. Autumn and winter evenings.",
+    "whatYouSee": "The star cluster at its center shows as a loose scatter of faint stars in a small telescope. The glow of the nebula is very faint and needs a dark sky, a wide field and a nebula filter; it is not visible from the city."
+  },
+  "dso:NGC281": {
+    "about": "NGC 281, the Pacman Nebula, is a cloud of glowing hydrogen about 9,500 light-years away in Cassiopeia. A dark wedge of dust cuts into it like a mouth, giving it the look of the video-game character in photographs. A small cluster of hot young stars at its center makes the gas shine.",
+    "howToFind": "It lies 1.7° due east of [[star:Schedar|Schedar]], the orange star at the bottom of the first stroke of Cassiopeia's W. Autumn and winter evenings; it never sets from 40°N.",
+    "whatYouSee": "Not visible from the city. Under a dark sky a small telescope with a nebula filter shows a dim, roughly round glow about half a degree wide around a tight multiple star.",
+    "physicalSize": "roughly 100 light-years across"
+  },
+  "dso:NGC457": {
+    "about": "NGC 457 is an open cluster of young stars about 7,900 light-years away in Cassiopeia, and one of the most charming in the sky: its two brightest stars look like a pair of glowing eyes and the rest form a body with outstretched arms. People call it the Owl Cluster, the E.T. Cluster or the Dragonfly. William Herschel discovered it in 1780.",
+    "howToFind": "From [[star:Ruchbah|Ruchbah]], the bottom of the second V of Cassiopeia's W, go 2° (one finger-width) south-southwest. Autumn and winter evenings; it never sets from 40°N.",
+    "whatYouSee": "Binoculars show the two 'eye' stars with a small hazy patch beside them. A small telescope, even from the city, shows the whole stick figure of several dozen stars — a favorite with children."
+  },
+  "dso:NGC663": {
+    "about": "NGC 663 is a young open cluster of about 400 stars in Cassiopeia, several thousand light-years away in the Perseus Arm of the Milky Way. It is the best of a little group of clusters around the eastern end of the W, and it contains an unusual number of stars that are spinning fast enough to throw off disks of gas.",
+    "howToFind": "It sits between the last two stars of Cassiopeia's W: from [[star:Ruchbah|Ruchbah]] go 2.7° east-northeast, a little over halfway to [[star:Segin|Segin]]. Autumn and winter evenings.",
+    "whatYouSee": "Binoculars show a small hazy patch with a few stars. A small telescope shows a rich, compact group of several dozen stars, about a quarter of a degree wide, and it holds up fairly well from the city."
+  },
+  "dso:NGC752": {
+    "about": "NGC 752 is a large, loose open cluster about 1,500 light-years away in Andromeda. Unlike most open clusters, which drift apart within a few hundred million years, it is more than a billion years old, so its hot blue stars have long since died and the remaining stars are yellow and orange.",
+    "howToFind": "From [[star:Almach|Almach]], Andromeda's foot, go 4.7° (about three finger-widths) south-southwest, toward the small constellation Triangulum. Autumn and winter evenings.",
+    "whatYouSee": "At more than 1° across it is best in binoculars, which show a wide sprinkling of faint stars — easy under suburban skies and washed out but detectable from the city. A close pair of yellow stars, 56 Andromedae, sits on its southwest edge."
+  },
+  "dso:NGC7789": {
+    "about": "NGC 7789, known as Caroline's Rose, is a very rich open cluster about 7,600 light-years away in Cassiopeia. It is around 1.6 billion years old, so many of its stars have swollen into red giants. Caroline Herschel discovered it in 1783, and the swirls of stars and dark lanes that a telescope shows are said to resemble the petals of a rose.",
+    "howToFind": "From [[star:Caph|Caph]], the western end of Cassiopeia's W, go 3° (two finger-widths) southwest. Autumn evenings; it never sets from 40°N.",
+    "whatYouSee": "Binoculars show a round, misty glow about half the Moon's width. A small telescope under a dark sky turns it into a fine dusting of hundreds of faint stars; from the city it is only a dim haze."
+  },
+  "dso:NGC6633": {
+    "about": "NGC 6633 is a bright, loose open cluster about 1,000 light-years away in Ophiuchus, roughly 550 million years old. It is nearly as large in the sky as the full Moon. It forms a pair with [[dso:IC4756|IC 4756]], three degrees to the east-southeast.",
+    "howToFind": "It lies two fists (21°) west of [[star:Altair|Altair]], or one fist (11°) east of [[star:Cebalrai|Cebalrai]] in Ophiuchus. There is no bright star close by, so sweep the area with binoculars. Summer evenings.",
+    "whatYouSee": "Binoculars show an elongated group of about thirty stars, easy under suburban skies and visible from the city. Under a dark sky it can just be glimpsed with the naked eye."
+  },
+  "dso:IC4665": {
+    "about": "IC 4665 is a large, sparse open cluster about 1,100 light-years away in Ophiuchus. At only about 50 million years old it is young, and its brightest members are blue-white stars. It is so spread out that it was missed by the early catalogers who worked with narrow-field telescopes.",
+    "howToFind": "It lies just over 1° northeast of [[star:Cebalrai|Cebalrai]], the shoulder star of Ophiuchus, which is 8° south-southeast of [[star:Rasalhague|Rasalhague]]. Put Cebalrai in binoculars and the cluster is in the same view. Summer evenings.",
+    "whatYouSee": "A binocular object: about a dozen stars of seventh magnitude, spread over an area wider than the full Moon, show even from the city. A telescope magnifies it too much to look like a cluster."
+  },
+  "dso:IC4756": {
+    "about": "IC 4756 is a big, scattered open cluster about 1,300 light-years away in the tail of Serpens, the Serpent. It is sometimes called Graff's Cluster. With [[dso:NGC6633|NGC 6633]] nearby it makes a pleasing pair of contrasting clusters in the same binocular field.",
+    "howToFind": "It lies a little under two fists (18°) west of [[star:Altair|Altair]], and 3° east-southeast of NGC 6633. Summer evenings.",
+    "whatYouSee": "Binoculars under a dark or suburban sky show a large, faint cloud of many dim stars, about twice the Moon's width. Because its stars are faint and spread out, it is hard to see from the city."
+  },
+  "dso:NGC6543": {
+    "about": "The Cat's Eye Nebula is a bright planetary nebula — gas thrown off by a dying Sun-like star — about 3,300 light-years away in Draco. Hubble pictures show it to be one of the most intricate nebulae known, with shells, jets and knots. In 1864 it was the first planetary nebula whose light was analyzed with a spectroscope, which proved that such nebulae are glowing gas and not unresolved stars. It lies almost exactly at the north pole of the ecliptic.",
+    "howToFind": "It sits in the coils of Draco, about a fist and a half (15°) north of the Dragon's head star [[star:Eltanin|Eltanin]], roughly midway between [[star:Altais|Altais]] and [[star:Aldhibah|Aldhibah]]. It never sets from 40°N and is highest on summer evenings; use the sky view for the exact spot.",
+    "whatYouSee": "In a small telescope at low power it looks like a slightly swollen blue-green star of about magnitude 8 or 9; at 100 power or more it becomes a small, bright oval disk. Its high surface brightness lets it punch through city skies."
+  },
+  "dso:NGC6826": {
+    "about": "The Blinking Planetary is a small, bright planetary nebula roughly 2,000 light-years away in Cygnus, with a fairly bright central star. It is named for a trick of the eye: look straight at the star and the nebula fades away; look slightly to one side and the nebula swells back into view, so it seems to blink as your gaze shifts.",
+    "howToFind": "From [[star:δ Cyg|Delta Cygni]], the western wingtip of the Swan, go 5° (three finger-widths) due north. It lies less than a degree east of the pretty double star 16 Cygni. Summer and autumn evenings, very high.",
+    "whatYouSee": "A small telescope at 100 power or more shows a tiny, round, blue-green disk with a star in the middle, and the blinking effect works in almost any telescope. It is bright enough to see from the city."
+  },
+  "dso:NGC2392": {
+    "about": "NGC 2392 is a planetary nebula about 6,500 light-years away in Gemini, discovered by William Herschel in 1787. It has a bright inner shell surrounded by a fainter, fringed outer ring, which in photographs looks like a face inside a fur-lined hood — hence its traditional nickname, the Eskimo Nebula; it is also called the Clown-faced Nebula.",
+    "howToFind": "From [[star:Wasat|Wasat]], the third-magnitude star in the middle of Gemini's lower twin, go 2.4° (a finger-width and a bit) east-southeast. It is about 8° south-southwest of [[star:Pollux|Pollux]]. Winter and spring evenings.",
+    "whatYouSee": "At low power it looks like the southern star of a close pair of 'stars'; raise the power to 100 or more and it becomes a small, round, blue-green fuzzy disk with a star at the center. It is visible in a small telescope from the city."
+  },
+  "dso:NGC3242": {
+    "about": "The Ghost of Jupiter is a bright planetary nebula about 4,800 light-years away in Hydra. It earned its name because in a telescope it shows a pale disk about the same apparent size as the planet Jupiter, though far dimmer. William Herschel discovered it in 1785.",
+    "howToFind": "From [[star:Alphard|Alphard]], the heart of Hydra, go a fist and a half (17°) southeast to the fourth-magnitude star [[star:μ Hya|Mu Hydrae]]; the nebula is 1.8° due south of that star. Late winter and spring evenings, about 30° up from Brooklyn at best.",
+    "whatYouSee": "A small telescope shows a small, round, pale blue-green disk at 50 power or more — one of the easiest planetary nebulae, bright enough for city skies. Larger telescopes show a brighter inner ring shaped like an eye."
+  },
+  "dso:NGC7009": {
+    "about": "The Saturn Nebula is a bright planetary nebula in Aquarius, a few thousand light-years away — its distance is poorly known. It has two faint spikes sticking out on opposite sides, each ending in a small knob, which make it look a little like Saturn with its rings edge-on. William Herschel found it in 1782, one of his earliest discoveries.",
+    "howToFind": "From [[star:Sadalsuud|Sadalsuud]] go 9° (a little under a fist) southwest; it lies 1.3° west of the faint star Nu Aquarii and 4.5° east-southeast of [[star:Albali|Albali]]. Late summer and autumn evenings.",
+    "whatYouSee": "A small telescope at 100 power shows a small, bright, slightly oval blue-green disk, visible from the city. The 'ring' extensions that give it its name need a telescope of about 8 inches or more and a steady night."
+  },
+  "dso:NGC7662": {
+    "about": "The Blue Snowball is a compact planetary nebula in Andromeda, roughly 5,000 to 6,000 light-years away. It is a shell of gas shed by a dying star and lit by the hot core left behind, and it shows one of the strongest blue tints of any nebula in a small telescope.",
+    "howToFind": "It lies in the dim northwestern corner of Andromeda, about a fist and a half (16°) north-northwest of [[star:Alpheratz|Alpheratz]] and 2.4° west-southwest of the fourth-magnitude star [[star:ι And|Iota Andromedae]]. Autumn evenings, nearly overhead.",
+    "whatYouSee": "At low power it looks like a bluish star of about magnitude 8; at 100 power or more it is a small, round, softly glowing blue disk. Its high surface brightness makes it a good target from the city."
+  },
+  "dso:NGC891": {
+    "about": "NGC 891 is a spiral galaxy about 27 million light-years away in Andromeda that we see exactly edge-on, so it appears as a thin streak of light split lengthwise by a dark lane of dust. It is thought to look much as our own Milky Way would if we could view it from the side.",
+    "howToFind": "It lies 3.4° (two finger-widths) due east of [[star:Almach|Almach]], Andromeda's foot, on the way toward [[star:Algol|Algol]]. Autumn and winter evenings, very high.",
+    "whatYouSee": "A dark-sky object with low surface brightness. A small telescope under dark skies shows a faint, thin sliver of light; the dust lane needs a telescope of about 8 inches or more. It is not visible from the city.",
+    "physicalSize": "about 130,000 light-years across"
+  },
+  "dso:NGC4565": {
+    "about": "The Needle Galaxy is the classic edge-on spiral: a razor-thin streak of light with a small central bulge, crossed by a dark dust lane, about 40 million light-years away in Coma Berenices. It is larger than our Milky Way and lies almost at the north pole of our galaxy, where we look straight out of the Milky Way's disk into deep space.",
+    "howToFind": "It is on the eastern edge of the Coma Star Cluster, the faint triangular scatter of stars about a fist and a half (16°) northeast of [[star:Denebola|Denebola]] and 13° south-southwest of [[star:Cor Caroli|Cor Caroli]]. Use the sky view for the exact spot. Spring evenings.",
+    "whatYouSee": "Under a dark sky a small telescope shows a slender, faint needle of light with a slightly brighter middle; the dust lane needs about 8 inches of aperture. It is very difficult from the city."
+  },
+  "dso:NGC4631": {
+    "about": "The Whale Galaxy is a large spiral about 30 million light-years away in Canes Venatici, seen edge-on and distorted into a wedge shape, thick at one end and tapering at the other like a whale or a herring. It is forming stars furiously, probably stirred up by the gravity of neighboring galaxies, including a small companion that sits on its back like a calf.",
+    "howToFind": "From [[star:Cor Caroli|Cor Caroli]], the star below the Big Dipper's handle, go 6.4° (four finger-widths) south-southwest. Spring evenings, nearly overhead.",
+    "whatYouSee": "Under a dark sky a small telescope shows a distinct elongated streak, brighter and fatter than most edge-on galaxies, with a mottled look in larger telescopes. From the city it is at best a very faint smudge."
+  },
+  "dso:NGC2903": {
+    "about": "NGC 2903 is a bright barred spiral galaxy about 30 million light-years away in Leo, roughly the size of the Milky Way. It is as bright as many galaxies on Messier's list, and why he missed it is a small mystery. Its center is a hotbed of star formation.",
+    "howToFind": "From [[star:ε Leo|Epsilon Leonis]], the star at the tip of the Sickle's curve (the Lion's head), go 4° southwest; the galaxy lies 1.5° south of the faint star Lambda Leonis. Late winter and spring evenings.",
+    "whatYouSee": "Under a dark sky a small telescope shows an oval glow with a brighter center, one of the better spring galaxies for small instruments. From the city it is a dim haze at best.",
+    "physicalSize": "about 100,000 light-years across"
+  },
+  "dso:NGC6946": {
+    "about": "The Fireworks Galaxy is a face-on spiral about 25 million light-years away on the border of Cepheus and Cygnus. It gets its name from an extraordinary record: ten supernovae were seen to explode in it between 1917 and 2017, more than in any other galaxy. We see it through the dusty plane of our own Milky Way, which dims it considerably.",
+    "howToFind": "From [[star:Alderamin|Alderamin]], the brightest star of Cepheus, go 6° west-southwest; it lies 2° southwest of the third-magnitude star [[star:η Cep|Eta Cephei]]. The cluster [[dso:NGC6939|NGC 6939]] is in the same low-power field, 40 arcminutes to the northwest. Summer and autumn evenings.",
+    "whatYouSee": "A dark-sky object: a small telescope shows a large, faint, round glow with little detail. From the city it is invisible, though the star cluster beside it may still show."
+  },
+  "dso:NGC7331": {
+    "about": "NGC 7331 is a large spiral galaxy about 45 million light-years away in Pegasus, tilted so that we see it as an elongated oval. It is often compared to the Andromeda Galaxy and to our own Milky Way in size and structure. The famous compact group of galaxies called Stephan's Quintet lies half a degree away.",
+    "howToFind": "From [[star:Scheat|Scheat]], the upper-right corner of the Great Square, go 5° northwest to [[star:Matar|Matar]], then 4.4° north-northwest. Autumn evenings, very high.",
+    "whatYouSee": "Under a dark sky a small telescope shows a small spindle of light with a bright, star-like center. It is the brightest galaxy in Pegasus but still too faint for city skies."
+  },
+  "dso:NGC2403": {
+    "about": "NGC 2403 is a spiral galaxy about 10 million light-years away in the faint northern constellation Camelopardalis, an outlying member of the group of galaxies around M81. It resembles the Triangulum Galaxy, with loose arms dotted with giant glowing gas clouds. It is another bright galaxy that Messier overlooked.",
+    "howToFind": "From [[star:Muscida|Muscida]], the star at the tip of the Great Bear's nose, go 7.7° (three-quarters of a fist) northwest. The region has no bright stars, so use the sky view to home in. It never sets from 40°N and is highest on winter and spring evenings.",
+    "whatYouSee": "Under a dark sky binoculars show a small hazy spot and a small telescope shows a sizable oval glow, a third of the Moon's width, between two faint stars. It is very difficult from the city."
+  },
+  "dso:NGC4449": {
+    "about": "NGC 4449 is a small irregular galaxy about 13 million light-years away in Canes Venatici, similar in size and type to the Large Magellanic Cloud. It is a starburst galaxy: new stars are forming all across it at a furious rate, which makes it unusually bright for its size.",
+    "howToFind": "From [[star:Chara|Chara]], the fainter of the two Hunting Dogs stars (5° northwest of [[star:Cor Caroli|Cor Caroli]]), go 3° north-northwest. Spring evenings, nearly overhead.",
+    "whatYouSee": "Under a dark sky a small telescope shows a small, fairly bright, oddly rectangular patch of light. From the city it is a faint smudge at best."
+  },
+  "dso:NGC6939": {
+    "about": "NGC 6939 is a rich open cluster about 3,900 light-years away in Cepheus. At more than two billion years old it is ancient for an open cluster. It makes a famous odd couple with the galaxy [[dso:NGC6946|NGC 6946]] just 40 arcminutes away — a cluster in our own galaxy beside a galaxy thousands of times farther off.",
+    "howToFind": "From [[star:Alderamin|Alderamin]], the brightest star of Cepheus, go 6° west-southwest; it is 2° southwest of [[star:η Cep|Eta Cephei]]. Summer and autumn evenings.",
+    "whatYouSee": "A small telescope shows a small, grainy patch of haze that begins to break into very faint stars at higher power. It is dim from the city, and much better under dark skies, where the galaxy shares the field."
+  },
+  "dso:NGC1502": {
+    "about": "NGC 1502 is a small, young open cluster a few thousand light-years away in Camelopardalis. It sits at the end of Kemble's Cascade, a wonderfully straight chain of about twenty stars running for 2.5° — five Moon-widths — across an otherwise blank part of the sky. The cascade is a chance alignment; it is named for Lucian Kemble, the Canadian amateur astronomer who drew attention to it.",
+    "howToFind": "It lies in a starless region about two fists (19°) north-northwest of [[star:Capella|Capella]] and a fist and a half (14°) north-northeast of [[star:Mirfak|Mirfak]]. Sweep with binoculars for the line of stars; the cluster is the knot at its southeastern end. Autumn and winter evenings.",
+    "whatYouSee": "Binoculars show Kemble's Cascade as a neat row of faint stars — mostly eighth magnitude, with one brighter star in the middle — ending in a small fuzzy clump. A small telescope shows the clump as a compact group around a bright double star. The cluster shows from the city; the cascade is better from the suburbs."
+  },
+  "dso:NGC2362": {
+    "about": "NGC 2362 is a very young open cluster in Canis Major, only about five million years old, lying several thousand light-years away. Its stars crowd around the brilliant blue supergiant Tau Canis Majoris, a true member of the cluster and one of the most luminous stars known in our part of the galaxy.",
+    "howToFind": "From [[star:Wezen|Wezen]], the top of the triangle in the Great Dog's hindquarters, go 2.7° (a finger-width and a half) east-northeast to the fourth-magnitude star Tau Canis Majoris; the cluster surrounds it. Winter evenings, low in the south.",
+    "whatYouSee": "In a small telescope at moderate power, dozens of faint stars sparkle in a tight triangle around the bright central star, like diamond dust around a jewel. The central star's glare hides the cluster in binoculars; it can be seen from the city if the southern sky is clear."
+  },
+  "dso:NGC2169": {
+    "about": "NGC 2169 is a small, young open cluster about 3,600 light-years away in Orion. Its brightest stars happen to be arranged in two groups that, in a telescope, spell out the number 37 — hence its nickname, the '37' Cluster.",
+    "howToFind": "It lies in Orion's raised arm, 7° (two-thirds of a fist) north-northeast of [[star:Betelgeuse|Betelgeuse]], between the faint stars Nu and Xi Orionis. Winter evenings.",
+    "whatYouSee": "Binoculars show only a tiny knot of light. A small telescope at about 80 power shows roughly twenty stars forming a clear '37' (it may appear upside down or mirror-reversed, depending on your telescope). It is small and bright enough to work from the city."
+  },
+  "dso:NGC253": {
+    "about": "The Sculptor Galaxy is a big, bright spiral about 11 million light-years away, seen nearly edge-on, and the leading member of the nearest group of galaxies beyond our own Local Group. It is a starburst galaxy, forming new stars at an intense rate. Caroline Herschel discovered it in 1783.",
+    "howToFind": "From [[star:Diphda|Diphda]], the brightest star of Cetus, go 7.4° (three-quarters of a fist) due south. Autumn evenings, low: it reaches only about 24° above Brooklyn's southern horizon.",
+    "whatYouSee": "From a dark site with a good southern horizon it is one of the finest galaxies in the sky: binoculars show a long, thin streak nearly as long as the Moon is wide, and a small telescope shows a mottled spindle. From the city, low in the murk, it is very hard to see.",
+    "physicalSize": "about 120,000 light-years across"
+  },
+  "dso:NGC55": {
+    "about": "NGC 55 is an irregular, bar-shaped galaxy about 6.5 million light-years away, seen edge-on — one of the nearest galaxies beyond the Local Group. It resembles the Large Magellanic Cloud viewed from the side, and one end is noticeably brighter than the other.",
+    "howToFind": "It lies 3.8° northwest of [[star:Ankaa|Ankaa]], the brightest star of Phoenix. At declination −39° it rises only about 10° above Brooklyn's southern horizon on autumn evenings, so it is practically out of reach from New York; from the southern United States it is much easier.",
+    "whatYouSee": "From southern latitudes under a dark sky, binoculars and small telescopes show a long, lopsided streak of light. From New York it is lost in the haze near the horizon."
+  },
+  "dso:NGC300": {
+    "about": "NGC 300 is a face-on spiral galaxy about 6 million light-years away in Sculptor, similar in type to the Triangulum Galaxy. Because it is so close, astronomers can study its individual stars, and it has been used to help calibrate the distance scale of the universe.",
+    "howToFind": "It lies 7° northeast of [[star:Ankaa|Ankaa]] in Phoenix and two fists (20°) south of [[star:Diphda|Diphda]]. At declination −38° it climbs only about 12° above Brooklyn's southern horizon on autumn evenings, so it is practically out of reach from New York.",
+    "whatYouSee": "From southern latitudes under a dark sky, a small telescope shows a large, round, very dim glow two-thirds the width of the Moon. Its low surface brightness makes it invisible from New York.",
+    "physicalSize": "about 55,000 light-years across"
+  },
+  "dso:NGC5128": {
+    "about": "Centaurus A is a giant galaxy about 12 million light-years away, a huge ball of old stars wrapped in a dramatic dark band of dust — the remains of a spiral galaxy it swallowed. It is one of the strongest sources of radio waves in the sky: a supermassive black hole at its center fires out jets of particles that stretch far beyond the visible galaxy. It is the fifth-brightest galaxy in the sky.",
+    "howToFind": "It lies one fist (10°) southwest of [[star:Menkent|Menkent]] and 4.5° north of [[dso:NGC5139|Omega Centauri]]. At declination −43° it rises only about 6° above Brooklyn's southern horizon on spring evenings, so it is practically out of reach from New York; from Florida or Texas it is well placed.",
+    "whatYouSee": "From southern latitudes, binoculars show a round glow, and a small telescope under a dark sky shows the dark lane cutting it in two — a remarkable sight. It is not realistically visible from New York."
+  },
+  "dso:NGC5139": {
+    "about": "Omega Centauri is the largest and brightest globular cluster of the Milky Way: a ball of roughly ten million ancient stars about 16,000 light-years away. It is so big, and its stars are of such mixed ages, that many astronomers think it is the leftover core of a small galaxy our Milky Way swallowed long ago. To the naked eye it looks like a fuzzy star, which is why it carries a star's Greek-letter name.",
+    "howToFind": "It lies in Centaurus, about three and a half fists (36°) almost due south of [[star:Spica|Spica]] and a fist and a bit (13°) south-southwest of [[star:Menkent|Menkent]]. At declination −47.5° it technically rises from Brooklyn, but only about 2° above the southern horizon, so for practical purposes it cannot be seen from New York. From the southern United States it clears the horizon on spring evenings.",
+    "whatYouSee": "From southern latitudes it is a naked-eye fuzzy 'star' of fourth magnitude; binoculars show a big, round, glowing ball larger than the full Moon, and a small telescope resolves it into countless tiny stars — many observers call it the finest object in the sky. Effectively not visible from New York.",
+    "physicalSize": "about 170 light-years across"
+  },
+  "dso:NGC104": {
+    "about": "47 Tucanae is the second-brightest globular cluster in the sky after Omega Centauri: a dense ball of at least half a million very old stars — about 13 billion years old — some 14,500 light-years away. Its core is extremely crowded, and astronomers have found more than two dozen fast-spinning pulsars inside it. Like Omega Centauri, it was first cataloged as a star.",
+    "howToFind": "47 Tucanae never rises from Brooklyn (declination −72°). In southern skies it sits 2.5° west of the [[dso:SMC|Small Magellanic Cloud]], though it is a foreground object in our own galaxy, and a fist and a half (17°) south-southwest of [[star:Achernar|Achernar]].",
+    "whatYouSee": "From the Southern Hemisphere it is a hazy fourth-magnitude 'star' to the naked eye, a bright round glow with a blazing center in binoculars, and a spectacular swarm of stars in a small telescope. Not visible from New York.",
+    "physicalSize": "about 120 light-years across"
+  },
+  "dso:NGC6752": {
+    "about": "NGC 6752 is one of the brightest globular clusters in the sky — usually ranked fourth — a ball of well over 100,000 ancient stars about 13,000 light-years away in Pavo, the Peacock. It is one of the closer globular clusters to us.",
+    "howToFind": "NGC 6752 never rises from Brooklyn (declination −60°). In southern skies it lies one fist (10°) west-southwest of [[star:Peacock|Peacock]], the brightest star of Pavo.",
+    "whatYouSee": "From the Southern Hemisphere under a dark sky it is just visible to the naked eye; binoculars show a bright fuzzy ball and a small telescope begins to resolve its outer stars. Not visible from New York."
+  },
+  "dso:NGC362": {
+    "about": "NGC 362 is a compact globular cluster about 29,000 light-years away in Tucana. It appears on the northern edge of the Small Magellanic Cloud but is a member of our own galaxy, far in the foreground. It is somewhat younger than most globular clusters.",
+    "howToFind": "NGC 362 never rises from Brooklyn (declination −71°). In southern skies it lies 2° north of the center of the [[dso:SMC|Small Magellanic Cloud]].",
+    "whatYouSee": "From the Southern Hemisphere, binoculars show a small, bright fuzzy spot, and a small telescope shows a concentrated glow with a grainy edge. Not visible from New York."
+  },
+  "dso:NGC4755": {
+    "about": "The Jewel Box is a young open cluster about 6,500 light-years away in Crux, only some 16 million years old. John Herschel gave it its name, comparing it to a casket of varicolored precious stones: its brightest members are blue-white supergiants, set off by one conspicuous orange-red supergiant near the center.",
+    "howToFind": "The Jewel Box never rises from Brooklyn (declination −60°). In southern skies it is 1° southeast of [[star:Mimosa|Mimosa]], the eastern arm of the Southern Cross, at the edge of the dark [[dso:C99|Coalsack]].",
+    "whatYouSee": "From the Southern Hemisphere it looks like a fuzzy fourth-magnitude star to the naked eye. Binoculars show a tiny knot of stars, and a small telescope shows a sparkling A-shaped group with its orange 'ruby'. Not visible from New York."
+  },
+  "dso:NGC3372": {
+    "about": "The Carina Nebula is one of the largest and brightest nebulae in the sky, a vast star-forming cloud about 8,500 light-years away — several times the apparent size of the Orion Nebula. It contains some of the most massive stars known, above all Eta Carinae, an unstable giant that flared up in the 1840s to become briefly the second-brightest star in the sky and is expected to end as a supernova.",
+    "howToFind": "The Carina Nebula never rises from Brooklyn (declination −60°). In southern skies it is a bright patch of the Milky Way a little over one fist (12°) west of [[star:Acrux|Acrux]], the foot of the Southern Cross.",
+    "whatYouSee": "From the Southern Hemisphere it is an obvious naked-eye glow, brighter than the surrounding Milky Way. Binoculars and small telescopes show bright clouds divided by dark V-shaped lanes, studded with star clusters. Not visible from New York.",
+    "physicalSize": "about 460 light-years across"
+  },
+  "dso:IC2602": {
+    "about": "IC 2602, the Southern Pleiades, is a bright, nearby open cluster about 490 light-years away in Carina. It is a young group of blue-white stars scattered around the third-magnitude star Theta Carinae, and it does resemble a slightly fainter, looser version of the northern Pleiades.",
+    "howToFind": "IC 2602 never rises from Brooklyn (declination −64°). In southern skies it lies 4.5° south of the [[dso:NGC3372|Carina Nebula]] and a little over one fist (11.5°) west-southwest of [[star:Acrux|Acrux]].",
+    "whatYouSee": "From the Southern Hemisphere it is plain to the naked eye as a small group of stars around one bright one. Binoculars give the best view, showing a couple of dozen stars across an area wider than the full Moon. Not visible from New York."
+  },
+  "dso:NGC3532": {
+    "about": "NGC 3532 is a magnificent, rich open cluster about 1,300 light-years away in Carina, containing several hundred stars spread over an area twice the width of the full Moon. It is sometimes called the Wishing Well Cluster, because its stars look like silver coins glinting at the bottom of a well. In 1990 it was the first target ever observed by the Hubble Space Telescope.",
+    "howToFind": "NGC 3532 never rises from Brooklyn (declination −59°). In southern skies it lies 3° east-northeast of the [[dso:NGC3372|Carina Nebula]], about one fist (11°) west-northwest of [[star:Acrux|Acrux]].",
+    "whatYouSee": "From the Southern Hemisphere it is a naked-eye bright spot in the Milky Way. Binoculars show a dense, oval swarm of stars, and a small telescope at low power shows more than a hundred — John Herschel thought it the finest cluster of its kind. Not visible from New York."
+  },
+  "dso:NGC2516": {
+    "about": "NGC 2516 is a bright open cluster about 1,300 light-years away in Carina, sometimes called the Southern Beehive for its resemblance to the Beehive Cluster in Cancer. It contains about a hundred stars, including a few red giants that add spots of color.",
+    "howToFind": "NGC 2516 never rises from Brooklyn (declination −61°). In southern skies it lies 3.3° west-southwest of [[star:Avior|Avior]], the brightest star of the False Cross, and a fist and a half (15°) southeast of [[star:Canopus|Canopus]].",
+    "whatYouSee": "From the Southern Hemisphere it is visible to the naked eye as a hazy patch as big as the full Moon. Binoculars show dozens of stars. Not visible from New York."
+  },
+  "dso:NGC2451": {
+    "about": "NGC 2451 is a bright, scattered group of stars in Puppis that turns out to be two separate open clusters lying in the same direction, one about 600 light-years away and the other about 1,200. The group is centered on a bright orange star. It makes a contrasting pair with the richer, fainter cluster [[dso:NGC2477|NGC 2477]] a degree and a half away.",
+    "howToFind": "It lies 4° west-northwest of [[star:Naos|Naos]], the brightest star of Puppis, which is a fist and a half southeast of [[star:Adhara|Adhara]]. At declination −38° it reaches only about 11° above Brooklyn's southern horizon on late winter evenings, so you need a very clear, flat southern view.",
+    "whatYouSee": "A binocular object: a loose spray of bright stars around an orange one. From the southern United States it is easy; from New York it is possible only on an exceptionally clear night with an open horizon."
+  },
+  "dso:NGC2477": {
+    "about": "NGC 2477 is one of the richest open clusters in the sky, a tight swarm of perhaps 300 or more stars about 3,600 light-years away in Puppis. It is so densely packed that it is often compared to a loose globular cluster.",
+    "howToFind": "It lies 2.7° west-northwest of [[star:Naos|Naos]], the brightest star of Puppis. At declination −38.5° it reaches only about 11° above Brooklyn's southern horizon on late winter evenings, so it is very difficult from New York.",
+    "whatYouSee": "From southern latitudes, binoculars show a round, misty glow almost as big as the full Moon, and a small telescope breaks it into a mass of faint stars. From New York it is usually lost in horizon haze."
+  },
+  "dso:NGC6231": {
+    "about": "NGC 6231 is a brilliant young open cluster about 5,600 light-years away in the tail of Scorpius, only a few million years old and packed with very hot, luminous stars. If it were as close as the Pleiades, its brightest stars would shine like Sirius. It is the sparkling head of a comet-shaped chain of stars and clusters sometimes called the False Comet.",
+    "howToFind": "It lies half a degree north of the naked-eye pair [[star:ζ2 Sco|Zeta Scorpii]], where the Scorpion's tail turns east, about a fist and a half (16°) south-southeast of [[star:Antares|Antares]]. At declination −42° it rises only about 7° above Brooklyn's southern horizon on summer evenings, so it is practically out of reach from New York.",
+    "whatYouSee": "From southern latitudes it is a bright naked-eye knot; binoculars and small telescopes show a tight cluster of diamond-like stars. From New York it would need a perfect horizon and exceptionally clear air."
+  },
+  "dso:NGC2070": {
+    "about": "The Tarantula Nebula is the most active star-forming region in our whole Local Group of galaxies. It lies about 160,000 light-years away in the Large Magellanic Cloud, yet is bright enough to see without a telescope; if it were as close as the Orion Nebula it would cover much of the sky and cast shadows. At its heart is a cluster containing some of the most massive stars known. The supernova of 1987, the nearest seen in centuries, exploded on its outskirts.",
+    "howToFind": "The Tarantula never rises from Brooklyn (declination −69°). In southern skies it is the bright knot at the eastern end of the [[dso:LMC|Large Magellanic Cloud]], about a fist and a half (17°) south-southwest of [[star:Canopus|Canopus]].",
+    "whatYouSee": "From the Southern Hemisphere it is a fuzzy naked-eye 'star' in the Cloud. Binoculars show a bright nebulous patch, and a small telescope shows looping, spidery filaments around a brilliant core. Not visible from New York.",
+    "physicalSize": "well over 1,000 light-years across"
+  },
+  "dso:LMC": {
+    "about": "The Large Magellanic Cloud is a small companion galaxy of the Milky Way, about 160,000 light-years away, containing perhaps 20 billion stars. It is an irregular galaxy with a central bar and one ragged arm, full of star clusters and nebulae. It is named for the expedition of Ferdinand Magellan, whose crew described it on their voyage around the world, though southern peoples have known it for as long as there have been people.",
+    "howToFind": "The Large Magellanic Cloud never rises from Brooklyn (declination −70°); you need to be south of about 20°N. In southern skies it is about two fists (18°) south-southwest of [[star:Canopus|Canopus]], on the border of Dorado and Mensa.",
+    "whatYouSee": "From the Southern Hemisphere under a dark sky it looks like a detached piece of the Milky Way, about 10° across — the width of a fist. Binoculars and small telescopes reveal dozens of clusters and nebulae inside it, above all the [[dso:NGC2070|Tarantula Nebula]]. Not visible from New York.",
+    "physicalSize": "about 32,000 light-years across"
+  },
+  "dso:SMC": {
+    "about": "The Small Magellanic Cloud is a dwarf galaxy about 200,000 light-years away, a companion of both the Milky Way and the Large Magellanic Cloud, holding a few billion stars. In the early 1900s Henrietta Leavitt studied its pulsating Cepheid variable stars and discovered that their periods reveal their true brightness — the key that later allowed astronomers to measure distances to other galaxies.",
+    "howToFind": "The Small Magellanic Cloud never rises from Brooklyn (declination −73°). In southern skies it lies a fist and a half (16°) south-southwest of [[star:Achernar|Achernar]], with the globular cluster [[dso:NGC104|47 Tucanae]] right beside it.",
+    "whatYouSee": "From the Southern Hemisphere under a dark sky it is a faint, wedge-shaped cloud about 4° long, like a small scrap torn from the Milky Way; moonlight or city lights wash it out. Not visible from New York.",
+    "physicalSize": "about 19,000 light-years across"
+  },
+  "dso:C99": {
+    "about": "The Coalsack is the most prominent dark nebula in the sky: a cloud of dust and cold gas about 600 light-years away that blocks the light of the Milky Way behind it, leaving what looks like a hole beside the Southern Cross. In the sky lore of several Aboriginal Australian peoples it is the head of the Emu, a figure made of dark clouds that stretches along the Milky Way.",
+    "howToFind": "The Coalsack never rises from Brooklyn (declination −63°). In southern skies it is the dark patch immediately southeast of [[star:Acrux|Acrux]] and south of [[star:Mimosa|Mimosa]], tucked against the Southern Cross.",
+    "whatYouSee": "From the Southern Hemisphere under a dark sky it is obvious to the naked eye as an inky blot about 7° by 5° against the bright Milky Way. It needs no optical aid — only darkness. Not visible from New York.",
+    "physicalSize": "about 60 to 70 light-years across"
+  },
+  "dso:NGC1365": {
+    "about": "NGC 1365, the Great Barred Spiral Galaxy, is one of the most striking galaxies in the sky: a long straight bar of stars with a graceful spiral arm sweeping from each end, like a letter Z. It lies roughly 60 to 75 million light-years away in the Fornax Cluster of galaxies and is considerably larger than the Milky Way.",
+    "howToFind": "It lies in Fornax, 8° east-northeast of [[star:Acamar|Acamar]] in Eridanus. At declination −36° it reaches only about 13° above Brooklyn's southern horizon on late autumn and early winter evenings, so it is practically out of reach from New York.",
+    "whatYouSee": "From southern latitudes under a dark sky a small telescope shows an elongated glow with a bright center; the bar and arms need a telescope of about 8 inches or more. It is not visible from New York."
+  },
+  "dso:NGC1316": {
+    "about": "NGC 1316 is a giant galaxy about 60 million light-years away, the brightest member of the Fornax Cluster of galaxies. Faint shells and dust lanes show that it has swallowed at least one spiral galaxy. It is also one of the strongest radio sources in the sky, known as Fornax A, with two enormous lobes of radio emission powered by its central black hole.",
+    "howToFind": "It lies in Fornax, 5.7° east-northeast of [[star:Acamar|Acamar]] in Eridanus. At declination −37° it reaches only about 12° above Brooklyn's southern horizon on late autumn and early winter evenings, so it is practically out of reach from New York.",
+    "whatYouSee": "From southern latitudes a small telescope shows a small oval glow with a bright core. It is not visible from New York."
+  },
+  "dso:NGC4945": {
+    "about": "NGC 4945 is a large spiral galaxy about 11 million light-years away in Centaurus, seen almost edge-on, in the same group of galaxies as Centaurus A. Its core, hidden from view by thick dust, is intensely active, with a burst of star formation around a supermassive black hole.",
+    "howToFind": "NGC 4945 never usefully rises from Brooklyn: at declination −49.5° it only grazes the horizon. In southern skies it lies 4° east of [[star:γ Cen|Gamma Centauri]], about 4° southwest of [[dso:NGC5139|Omega Centauri]].",
+    "whatYouSee": "From the Southern Hemisphere under a dark sky a small telescope shows a long, dim streak of light two-thirds as long as the Moon is wide. Not visible from New York."
+  },
+  "dso:NGC6744": {
+    "about": "NGC 6744 is a large spiral galaxy about 25 million light-years away in Pavo, often described as one of the most Milky Way-like galaxies in our neighborhood, with a small bright center, a short bar and fluffy, many-branched arms — though it is rather bigger than our galaxy.",
+    "howToFind": "NGC 6744 never rises from Brooklyn (declination −64°). In southern skies it lies in Pavo, a little over one fist (12°) southwest of [[star:Peacock|Peacock]].",
+    "whatYouSee": "From the Southern Hemisphere under a dark sky a small telescope shows a bright core inside a large, very faint oval halo; the arms need a large telescope. Not visible from New York.",
+    "physicalSize": "about 170,000 light-years across"
+  }
+}

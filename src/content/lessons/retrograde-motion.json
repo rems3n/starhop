@@ -1,0 +1,417 @@
+{
+  "id": "retrograde-motion",
+  "unit": "ecliptic",
+  "order": 4,
+  "title": "Retrograde motion",
+  "subtitle": "Why planets stop, back up and make loops against the stars",
+  "minutes": 6,
+  "sections": [
+    {
+      "heading": "A planet that turns around",
+      "body": [
+        "After this lesson you will be able to explain the strangest thing planets do, predict when in a planet's year it happens, and watch a real loop unfold over a few months.",
+        "Most of the time Mars, Jupiter and Saturn drift slowly eastward through the zodiac. But once in every lap of Earth around the Sun, each of them slows, stops, and moves backward, toward the west, for a few months. Then it stops again and resumes its eastward course. The backward stretch is called retrograde motion, and the two pauses are stationary points. Because the planet is also drifting a little north or south, the path it draws is a loop or a flattened S.",
+        "Ancient astronomers needed elaborate machinery of circles upon circles to reproduce this. The real explanation, given by Copernicus in 1543, is simple: we are watching from a moving planet."
+      ],
+      "demo": {
+        "title": "Mars loops in Leo, 2026–27",
+        "controls": [
+          "date-step",
+          "play"
+        ],
+        "steps": [
+          {
+            "caption": "A star chart of Leo, north up, east to the left. The dots show Mars every ten days from mid-November 2026 to mid-June 2027. In early December Mars is heading east (left), as planets normally do.",
+            "time": "2026-12-02 03:00",
+            "view": {
+              "target": "radec:152,14",
+              "fov": 38,
+              "mount": "equatorial"
+            },
+            "layers": {
+              "atmosphere": false,
+              "ground": false,
+              "horizon": false,
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "trail",
+                "ref": "body:Mars",
+                "from": "2026-11-15 00:00",
+                "to": "2027-06-15 00:00",
+                "stepHours": 240,
+                "frame": "stars",
+                "dateLabels": true
+              },
+              {
+                "type": "object",
+                "ref": "body:Mars",
+                "label": "Mars"
+              },
+              {
+                "type": "object",
+                "ref": "star:Regulus",
+                "label": "Regulus"
+              }
+            ]
+          },
+          {
+            "caption": "January 10, 2027: the first stationary point. For several nights Mars hardly moves against the stars, then it starts to go backward, to the west.",
+            "time": "2027-01-10 23:00",
+            "view": {
+              "target": "radec:152,14",
+              "fov": 38,
+              "mount": "equatorial"
+            },
+            "layers": {
+              "atmosphere": false,
+              "ground": false,
+              "horizon": false,
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "trail",
+                "ref": "body:Mars",
+                "from": "2026-11-15 00:00",
+                "to": "2027-06-15 00:00",
+                "stepHours": 240,
+                "frame": "stars",
+                "dateLabels": true
+              },
+              {
+                "type": "object",
+                "ref": "body:Mars",
+                "label": "Mars"
+              },
+              {
+                "type": "object",
+                "ref": "star:Regulus",
+                "label": "Regulus"
+              }
+            ]
+          },
+          {
+            "caption": "February 19, 2027: opposition, the middle of the backward run. Mars is opposite the Sun, at its closest and brightest, and moving west fastest. It is no coincidence that these happen together.",
+            "time": "2027-02-19 23:00",
+            "view": {
+              "target": "radec:152,14",
+              "fov": 38,
+              "mount": "equatorial"
+            },
+            "layers": {
+              "atmosphere": false,
+              "ground": false,
+              "horizon": false,
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "trail",
+                "ref": "body:Mars",
+                "from": "2026-11-15 00:00",
+                "to": "2027-06-15 00:00",
+                "stepHours": 240,
+                "frame": "stars",
+                "dateLabels": true
+              },
+              {
+                "type": "object",
+                "ref": "body:Mars",
+                "label": "Mars"
+              },
+              {
+                "type": "object",
+                "ref": "star:Regulus",
+                "label": "Regulus"
+              }
+            ]
+          },
+          {
+            "caption": "April 1, 2027: the second stationary point, about 20° west of the first. Mars has been in retrograde for 81 days. Now it turns east again.",
+            "time": "2027-04-01 21:00",
+            "view": {
+              "target": "radec:152,14",
+              "fov": 38,
+              "mount": "equatorial"
+            },
+            "layers": {
+              "atmosphere": false,
+              "ground": false,
+              "horizon": false,
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "trail",
+                "ref": "body:Mars",
+                "from": "2026-11-15 00:00",
+                "to": "2027-06-15 00:00",
+                "stepHours": 240,
+                "frame": "stars",
+                "dateLabels": true
+              },
+              {
+                "type": "object",
+                "ref": "body:Mars",
+                "label": "Mars"
+              },
+              {
+                "type": "object",
+                "ref": "star:Regulus",
+                "label": "Regulus"
+              }
+            ]
+          },
+          {
+            "caption": "By mid-May Mars is back where it was in early December and passing Regulus for the third time. It is already much fainter than in February, because Earth is pulling away.",
+            "time": "2027-05-15 21:30",
+            "view": {
+              "target": "radec:152,14",
+              "fov": 38,
+              "mount": "equatorial"
+            },
+            "layers": {
+              "atmosphere": false,
+              "ground": false,
+              "horizon": false,
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "trail",
+                "ref": "body:Mars",
+                "from": "2026-11-15 00:00",
+                "to": "2027-06-15 00:00",
+                "stepHours": 240,
+                "frame": "stars",
+                "dateLabels": true
+              },
+              {
+                "type": "object",
+                "ref": "body:Mars",
+                "label": "Mars"
+              },
+              {
+                "type": "object",
+                "ref": "star:Regulus",
+                "label": "Regulus"
+              }
+            ]
+          },
+          {
+            "caption": "Watch the whole thing at five days per second. Press play again to repeat, or step a day at a time through the turnarounds.",
+            "time": "2026-11-16 04:00",
+            "view": {
+              "target": "radec:152,14",
+              "fov": 38,
+              "mount": "equatorial"
+            },
+            "layers": {
+              "atmosphere": false,
+              "ground": false,
+              "horizon": false,
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "trail",
+                "ref": "body:Mars",
+                "from": "2026-11-15 00:00",
+                "to": "2027-06-15 00:00",
+                "stepHours": 240,
+                "frame": "stars",
+                "dateLabels": true
+              },
+              {
+                "type": "object",
+                "ref": "body:Mars",
+                "label": "Mars"
+              },
+              {
+                "type": "object",
+                "ref": "star:Regulus",
+                "label": "Regulus"
+              }
+            ],
+            "rate": 430820
+          }
+        ]
+      }
+    },
+    {
+      "heading": "Overtaking on the inside lane",
+      "body": [
+        "Earth is closer to the Sun than Mars is, and moves faster: about 30 kilometers per second against 24 for Mars. Every 26 months we catch up with Mars and pass it on the inside.",
+        "Think of overtaking a slower car on a highway. Both cars are going forward, but as you draw level and pass, the other car seems to slide backward against the distant hills. Our line of sight to Mars does the same thing against the distant stars. Mars never reverses. Only the direction we see it in swings backward for a while.",
+        "We pass a planet when we are between it and the Sun, and that is opposition. So retrograde motion is always centered on opposition, when the planet is up all night and at its best. If you see an outer planet shining high at midnight, it is in retrograde.",
+        "The size of the loop depends on distance. Mars, the nearest, backs up about 10° to 20° over two to three months. Jupiter retreats about 10° in four months, and Saturn about 7° in four and a half months. Since we lap Jupiter and Saturn about once a year, each of them spends about a third of every year in retrograde."
+      ],
+      "demo": {
+        "title": "Jupiter and Saturn do it too",
+        "controls": [
+          "date-step"
+        ],
+        "steps": [
+          {
+            "caption": "The same patch of Leo with Jupiter's loop added (dated dots) beside the loop of Mars. Jupiter is stationary about December 13, 2026, at opposition on February 10, 2027, and stationary again about April 13. Its loop is half the width of Mars's because it is much farther away.",
+            "time": "2027-02-10 23:00",
+            "view": {
+              "target": "radec:150,14",
+              "fov": 40,
+              "mount": "equatorial"
+            },
+            "layers": {
+              "atmosphere": false,
+              "ground": false,
+              "horizon": false,
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "trail",
+                "ref": "body:Jupiter",
+                "from": "2026-10-01 00:00",
+                "to": "2027-07-15 00:00",
+                "stepHours": 240,
+                "frame": "stars",
+                "dateLabels": true
+              },
+              {
+                "type": "trail",
+                "ref": "body:Mars",
+                "from": "2026-11-15 00:00",
+                "to": "2027-06-15 00:00",
+                "stepHours": 240,
+                "frame": "stars"
+              },
+              {
+                "type": "object",
+                "ref": "body:Jupiter",
+                "label": "Jupiter"
+              },
+              {
+                "type": "object",
+                "ref": "body:Mars",
+                "label": "Mars"
+              },
+              {
+                "type": "object",
+                "ref": "star:Regulus",
+                "label": "Regulus"
+              }
+            ]
+          },
+          {
+            "caption": "Saturn in Pisces, May 2027 to March 2028, dots every ten days. It turns back about August 9, 2027, reaches opposition on October 17 and turns forward again about December 24. The whole loop is only 7° long: more distant still, smaller still.",
+            "time": "2027-10-17 23:00",
+            "view": {
+              "target": "radec:23.5,7",
+              "fov": 24,
+              "mount": "equatorial"
+            },
+            "layers": {
+              "atmosphere": false,
+              "ground": false,
+              "horizon": false,
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "trail",
+                "ref": "body:Saturn",
+                "from": "2027-05-01 00:00",
+                "to": "2028-03-15 00:00",
+                "stepHours": 240,
+                "frame": "stars",
+                "dateLabels": true
+              },
+              {
+                "type": "object",
+                "ref": "body:Saturn",
+                "label": "Saturn"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "heading": "The inner planets",
+      "body": [
+        "Mercury and Venus go retrograde too, when they pass between us and the Sun and it is their turn to overtake us. Mercury does this three or four times a year, for about three weeks each time. It happens while the planet is close to the Sun in the sky, so there is little to see, and nothing changes on the planet itself. Like every retrograde, it is a matter of where we are standing."
+      ],
+      "tryIt": "When a bright planet is near opposition, pick two stars close to it and sketch the three as a triangle. Repeat once a week for a month or two. Your sketches will show the planet backing up against the stars, and if you keep going, the turn."
+    }
+  ],
+  "keyPoints": [
+    "Planets normally drift east along the zodiac; retrograde motion is a temporary westward drift between two stationary points.",
+    "It is a line-of-sight effect: faster Earth overtakes a slower outer planet on the inside.",
+    "Retrograde motion is centered on opposition, when the planet is brightest and up all night.",
+    "The farther the planet, the smaller the loop: roughly 10–20° for Mars, 10° for Jupiter, 7° for Saturn."
+  ],
+  "examples": [],
+  "questions": [
+    {
+      "id": "rm-q1",
+      "prompt": "What is really happening when Mars is in retrograde?",
+      "choices": [
+        "Mars reverses direction in its orbit",
+        "Earth is overtaking Mars, so our line of sight to it swings backward against the stars",
+        "Mars is pulled back by Jupiter's gravity",
+        "Earth's rotation briefly slows"
+      ],
+      "answerIndex": 1,
+      "explanation": "Both planets keep moving the same way around the Sun. The backward drift is a change in viewing direction as faster Earth passes slower Mars."
+    },
+    {
+      "id": "rm-q2",
+      "prompt": "When in its cycle is an outer planet in the middle of its retrograde motion?",
+      "choices": [
+        "At conjunction, behind the Sun",
+        "When it is highest above the ecliptic",
+        "At opposition",
+        "At greatest elongation"
+      ],
+      "answerIndex": 2,
+      "explanation": "Earth passes an outer planet when it lies between the planet and the Sun, which is opposition."
+    },
+    {
+      "id": "rm-q3",
+      "prompt": "Saturn's retrograde loop is smaller than Mars's because…",
+      "choices": [
+        "Saturn is much farther away, so Earth's motion shifts its direction less",
+        "Saturn is a larger planet",
+        "Saturn has rings",
+        "Saturn moves faster than Mars"
+      ],
+      "answerIndex": 0,
+      "explanation": "It is the same effect as nearby trees sliding past a car window faster than distant hills."
+    },
+    {
+      "id": "rm-q4",
+      "prompt": "Jupiter is high in the south at midnight. Which way is it moving against the stars?",
+      "choices": [
+        "East, as usual",
+        "It is stationary",
+        "It is impossible to say",
+        "West: it is near opposition and so in retrograde"
+      ],
+      "answerIndex": 3,
+      "explanation": "High at midnight means roughly opposite the Sun. Retrograde motion spans several weeks either side of opposition."
+    },
+    {
+      "id": "rm-q5",
+      "prompt": "What is a stationary point?",
+      "choices": [
+        "The spot where a planet is closest to the Sun",
+        "A place where the planet's eastward or westward drift against the stars pauses before reversing",
+        "The moment a planet stops spinning",
+        "The planet's position at conjunction"
+      ],
+      "answerIndex": 1,
+      "explanation": "Each retrograde spell begins and ends with a few nights when the planet barely moves against the stars."
+    }
+  ]
+}

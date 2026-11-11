@@ -1,0 +1,200 @@
+{
+  "id": "Ari",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); an older Greek figure",
+    "when": "2nd century CE (Almagest); known to Greek astronomers centuries earlier",
+    "history": [
+      "Aries, the Ram, is one of the 48 constellations of Ptolemy's *Almagest* (about 150 CE), where it is called Krios. Greek mythographers agreed that it was the ram with the golden fleece. Oddly, Ptolemy counted its brightest star, Hamal, as lying outside the figure, 'over the head', and noted that the earlier astronomer Hipparchus had put it on the ram's muzzle.",
+      "Aries mattered to astronomers out of all proportion to its brightness. When Hipparchus fixed the starting point of the zodiac around 130 BCE, the place where the Sun crosses the celestial equator each spring lay in Aries, just south of the star Mesarthim. The zodiac was counted from there, and that point is still called the first point of Aries, although the slow wobble of Earth's axis, called precession, has since carried it into Pisces.",
+      "Four faint stars in the north of Aries once formed a separate little constellation, Musca Borealis, the Northern Fly, which is no longer recognized."
+    ]
+  },
+  "overview": "Aries is the Ram whose golden fleece Jason and the Argonauts sailed to find. In the sky it is small and plain: a short, bent line of three stars for the head and horns, with one fairly bright orange star, Hamal, and very little else.",
+  "howToFind": [
+    "Aries sits in the gap between the Pleiades and the Great Square of Pegasus. On a late autumn or winter evening, find the tight little cluster of the [[dso:M45|Pleiades]] and look a bit more than two fists to its right (west). The brightest star there, with a warm orange tint, is [[star:Hamal|Hamal]].",
+    "Just below and to the right of Hamal, less than half a fist away, is [[star:Sheratan|Sheratan]], and a finger-width farther on is fainter [[star:Mesarthim|Mesarthim]]. Those three in a crooked row are the ram's head. Coming from the other side, Hamal is a little under two fists below [[star:Mirach|Mirach]] in Andromeda. From Brooklyn, Aries is an evening constellation from October to March and passes very high in the south in December."
+  ],
+  "shape": "A flattened hook of three stars, only about half a fist long, like a hockey stick or a bent finger. The ram's body is supposed to stretch east toward the Pleiades, but its stars are faint; [[star:Bharani|Bharani]], a fist to the left of Hamal, is the only one most people notice. Hamal and Sheratan show well even from a city.",
+  "mainStars": [
+    {
+      "ref": "star:Hamal",
+      "note": "An orange giant of magnitude 2.0, 66 light-years away, marking the ram's head. Its name comes from the Arabic for 'lamb', which was the Arabic name of the whole constellation."
+    },
+    {
+      "ref": "star:Sheratan",
+      "note": "A white star of magnitude 2.6, 59 light-years away, on one of the horns. The name comes from an Arabic word meaning 'the two', because it originally belonged to this star and its neighbor Mesarthim together."
+    },
+    {
+      "ref": "star:Mesarthim",
+      "note": "The faintest of the three head stars at magnitude 3.9, and a fine double star in a telescope. In Greek times the spring equinox point lay just south of it."
+    },
+    {
+      "ref": "star:Bharani",
+      "note": "Also known as 41 Arietis, a blue-white star of magnitude 3.6 in the ram's hindquarters. It was once the brightest star of the abandoned constellation of the Northern Fly."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "star:Mesarthim",
+      "equip": "small-telescope",
+      "note": "One of the first double stars ever discovered, found by Robert Hooke in 1664. A small telescope shows two almost identical white stars side by side, like a pair of headlights."
+    },
+    {
+      "ref": "star:λ Ari",
+      "equip": "small-telescope",
+      "note": "A wide, easy double star just west of Hamal: a white star with a much fainter companion, a good target for a first telescope."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Ari-phrixus-helle",
+      "title": "The golden ram of Phrixus and Helle",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Apollodorus", "work": "Library 1.9.1", "date": "1st–2nd century CE" },
+        { "author": "Ovid", "work": "Fasti 3.851–876", "date": "c. 8 CE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.20", "date": "1st century BCE – 2nd century CE" },
+        { "author": "Eratosthenes", "work": "Catasterisms (Aries)", "date": "3rd century BCE; surviving summary later" }
+      ],
+      "summary": "A jealous stepmother plotted to have the children Phrixus and Helle sacrificed. Their mother sent a flying ram with a golden fleece to carry them away. Helle fell into the sea on the way, but Phrixus reached Colchis, and the ram was set among the stars while its fleece stayed behind on Earth.",
+      "retelling": [
+        "Athamas, a king in Boeotia, had two children by his first wife, Nephele, whose name means 'cloud': a boy called Phrixus and a girl called Helle. Then the marriage ended, and Athamas took a new wife, Ino, the daughter of King Cadmus of Thebes. Ino had children of her own and could not bear the sight of Nephele's.",
+        "Her plan was patient and cruel. She talked the women of the country into secretly roasting the seed grain before the men sowed it. Nothing came up. With famine threatening, Athamas sent messengers to the oracle at Delphi to ask what he should do, and Ino got to the messengers before they got back to the king. The answer they delivered was a lie of her making: the land would bear again only if Phrixus was sacrificed to Zeus.",
+        "Athamas did not want to do it, but his hungry people forced him. He led his son to the altar. Ovid has both children standing there together, their heads bound with the ribbons of sacrifice, weeping.",
+        "Their mother saw them from the sky. Nephele swept down in a cloud, snatched her children up, and gave them a ram, a wonderful animal with a fleece of gold that she had received from the god Hermes. Brother and sister climbed on its back and it carried them into the air, away from Greece, flying east over land and sea.",
+        "They were crossing the narrow strait that divides Europe from Asia when Helle lost her hold. Ovid says her left hand slipped from the ram's horn. Phrixus reached for her and almost fell himself, but she was gone. The Greeks named that water the Hellespont, the sea of Helle; we call it the Dardanelles. Some said she did not drown, but was taken by the sea god Poseidon as his bride.",
+        "Phrixus flew on alone to Colchis, at the far end of the Black Sea, the kingdom of Aeetes, son of the Sun. The king received him and gave him his daughter Chalciope in marriage. In thanks for his escape Phrixus sacrificed the ram to Zeus and gave its golden fleece to Aeetes, who nailed it to an oak in a grove sacred to Ares. It hung there until a later hero, Jason, came with the Argonauts to carry it off.",
+        "The ram itself was placed among the stars; Hyginus says Nephele put it there. Eratosthenes told the ending differently. The ram was immortal, he said, and could not have been sacrificed. It slipped off its own golden fleece, gave it to Phrixus as a keepsake, and rose into the sky by itself. Both versions agree on one point, which the ancient writers offered with a straight face as the reason Aries is so dim: the ram is up there without its shining coat."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Star Tales – Aries",
+        "url": "http://www.ianridpath.com/startales/aries.html"
+      },
+      "characters": ["Phrixus", "Helle", "Nephele", "Athamas", "Ino", "Aeetes", "Chalciope"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "How did Ino cause the famine that put Phrixus in danger?",
+          "choices": [
+            "She poisoned the wells",
+            "She cursed the fields in Hera's name",
+            "She had the seed grain roasted so it would not sprout",
+            "She drove away the plough oxen"
+          ],
+          "answerIndex": 2,
+          "explanation": "She persuaded the women to parch the seed, then bribed the messengers to say the oracle demanded Phrixus's death."
+        },
+        {
+          "id": "q2",
+          "prompt": "Who sent the golden ram to rescue the children?",
+          "choices": ["Their mother Nephele", "Their father Athamas", "The goddess Athena", "King Aeetes"],
+          "answerIndex": 0,
+          "explanation": "Nephele, whose name means cloud, came down and gave them the ram she had received from Hermes."
+        },
+        {
+          "id": "q3",
+          "prompt": "What is named after Helle?",
+          "choices": ["The land of Hellas", "The city of Helice", "The star Hamal", "The Hellespont, the strait where she fell"],
+          "answerIndex": 3,
+          "explanation": "She fell from the ram into the strait between Europe and Asia, which the Greeks called the Hellespont."
+        },
+        {
+          "id": "q4",
+          "prompt": "How did ancient writers explain the faintness of Aries?",
+          "choices": [
+            "The ram is hiding from Ino",
+            "The ram left its golden fleece behind on Earth",
+            "Zeus dimmed it as a punishment",
+            "It is too close to the Sun"
+          ],
+          "answerIndex": 1,
+          "explanation": "Whether sacrificed or immortal, the ram reached the sky without its shining fleece."
+        },
+        {
+          "id": "q5",
+          "prompt": "In which kingdom did Phrixus land?",
+          "choices": ["Troy", "Egypt", "Colchis", "Crete"],
+          "answerIndex": 2,
+          "explanation": "He reached Colchis on the Black Sea, where King Aeetes received him and later kept the fleece."
+        }
+      ]
+    },
+    {
+      "id": "Ari-ammon",
+      "title": "The ram that led Dionysus to water",
+      "culture": "Greek, set in Libya and Egypt",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.20, citing Hermippus and Leon", "date": "1st century BCE – 2nd century CE" }
+      ],
+      "summary": "Hyginus records a second account from the writer Hermippus. When the army of Dionysus was dying of thirst in the African desert, a stray ram led the soldiers to a spring. Dionysus built the temple of Zeus Ammon on the spot and put the ram in the sky as leader of the zodiac.",
+      "retelling": [
+        "Dionysus, the god of wine, whom the Romans called Liber, did not spend all his time at feasts. The stories say he marched across the world with an army of followers, and that one of his campaigns took him into Africa.",
+        "There he came to a place the Greeks named Ammodes, 'the sandy', because there was nothing else there. The army could not turn back, and it could not find water. Under the heat the men were close to collapse, and they stood about in the sand wondering what to do.",
+        "Then a ram appeared, wandering by itself, not far from the soldiers. When it saw them it took fright and ran. Tired as they were, the soldiers went after it, struggling through the sand and the heat. They followed it a long way, and then they lost it. The ram was nowhere to be seen.",
+        "But where it had vanished they found something better than mutton. There was water, a great deal of it. The men drank and recovered, and hurried back to tell Dionysus.",
+        "The god was overjoyed. He brought the whole army to the spring and founded a temple there to Zeus under the name of Ammon, and in it he set up a statue of the god with the curling horns of a ram. This was the famous oracle of Ammon in the Libyan desert, where Zeus was indeed shown with ram's horns.",
+        "Then he placed the ram itself among the constellations. He arranged matters, Hermippus says, so that when the Sun is in that sign all growing things are refreshed, as his soldiers had been; this happens in spring. And he made the Ram the first of the twelve signs, because it had been the best leader his army ever had.",
+        "Hyginus adds a drier version from a historian named Leon. In this one there is no miracle. While Dionysus ruled Egypt, a man named Hammon came out of Africa with a large flock of sheep and gave it to him. Dionysus rewarded him with land, and statues of Hammon were given horns to recall that he first showed people the use of flocks. Those who preferred to credit Dionysus put the horns on him, and said the ram was set among the stars in memory of the gift."
+      ],
+      "link": {
+        "site": "Theoi",
+        "label": "Hyginus, Astronomica 2.20 (translated by Mary Grant)",
+        "url": "https://www.theoi.com/Text/HyginusAstronomica2.html"
+      },
+      "characters": ["Dionysus (Liber)", "Zeus Ammon", "Hammon"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "What danger faced the army of Dionysus in Africa?",
+          "choices": ["A plague", "A hostile army", "A sandstorm", "Thirst in the desert"],
+          "answerIndex": 3,
+          "explanation": "They were stranded in a sandy waste with almost no water until the ram led them to a spring."
+        },
+        {
+          "id": "q2",
+          "prompt": "What did Dionysus build where the water was found?",
+          "choices": [
+            "A temple of Zeus Ammon with a ram-horned statue",
+            "A city named after himself",
+            "An altar to Poseidon",
+            "A vineyard"
+          ],
+          "answerIndex": 0,
+          "explanation": "He founded the temple of Zeus Ammon and gave the god's statue the horns of a ram."
+        },
+        {
+          "id": "q3",
+          "prompt": "Why, in this story, is the Ram the first sign of the zodiac?",
+          "choices": [
+            "It was the first animal created",
+            "It had been the best leader of Dionysus's army",
+            "It won a race among the animals",
+            "Zeus was born under it"
+          ],
+          "answerIndex": 1,
+          "explanation": "Dionysus made it chief of the twelve signs because it had led his soldiers to safety."
+        },
+        {
+          "id": "q4",
+          "prompt": "In Leon's version, who was Hammon?",
+          "choices": [
+            "A priest who cursed Dionysus",
+            "A giant who guarded the spring",
+            "A man who brought Dionysus a gift of sheep",
+            "The ram's shepherd in Colchis"
+          ],
+          "answerIndex": 2,
+          "explanation": "Hammon came from Africa with a flock for Dionysus, and horned statues recalled that he first showed the use of flocks."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Aries lies on the ecliptic, the path of the Sun, Moon and planets. The Sun passes through it from about April 18 to mid-May.",
+    "Astrology still starts its year with the 'sign' of Aries at the March equinox, but because of precession the Sun is actually in front of the stars of Pisces on that date.",
+    "Hyginus mentions another motive for the children's flight: in some tellings a queen who had been refused by Phrixus falsely accused him, and it was for this that he was to be put to death.",
+    "Some early pictures show the Ram with a hoop around its body, standing for the great circle through the celestial poles and the equinox points. On old maps the ram looks back over its shoulder toward Taurus."
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "Cet",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); an older Greek figure already described by Aratus",
+    "when": "2nd century CE (Almagest); known to the Greeks by the 3rd century BCE",
+    "history": [
+      "Cetus is one of the 48 constellations of Ptolemy's *Almagest* (about 150 CE). Its Greek name, Ketos, meant any huge creature of the sea, and Aratus, in the 3rd century BCE, calls it simply 'the Monster', placed below the Ram and the Fishes and still threatening Andromeda from a distance.",
+      "The Latin word *cetus* came to mean 'whale', and the constellation is often called the Whale today, but that is not what the old pictures show. Ancient and Renaissance artists drew a hybrid: gaping jaws, the forelegs of a land animal and the scaly, coiling body of a sea serpent. Albrecht Dürer's chart of 1515 made it a great fish with a forked tail; Johann Bayer's atlas of 1603 fixed the later image of a beast with a looping tail.",
+      "It lies in a part of the sky the ancients filled with water: the River Eridanus flows beside it, the Fishes swim above it, and the Water Carrier is not far off."
+    ]
+  },
+  "overview": "Cetus is the sea monster sent to devour Andromeda and killed by Perseus. It is the fourth-largest constellation but a dim one, sprawling across the southern sky of late autumn: a ring of stars for the head below Aries, and a long body trailing off toward its one fairly bright star, Diphda.",
+  "howToFind": [
+    "Use the Great Square of Pegasus as a pointer. Follow its eastern side from [[star:Alpheratz|Alpheratz]] down through [[star:Algenib|Algenib]] and keep going a little over three fists toward the horizon (a fist at arm's length is roughly 10 degrees). The lone orange-white star you reach, in an otherwise empty region, is [[star:Diphda|Diphda]], on the monster's tail end.",
+    "The head is at the other end, about four fists to the east and higher up. Look two and a half fists below [[star:Hamal|Hamal]], the brightest star of Aries, for [[star:Menkar|Menkar]]; it forms a rough ring with [[star:γ Cet|Gamma Ceti]] and a few fainter stars. From Brooklyn Cetus is an evening constellation from October to January, crossing the southern sky at a third to halfway up from the horizon; Diphda never climbs higher than about three fists."
+  ],
+  "shape": "A loose pentagon of faint stars for the head, about half a fist across, joined by a long thin neck to a larger, sagging four-sided body, the whole thing some five fists from end to end. From the city only Diphda and Menkar are easy; most of the monster is fourth magnitude (magnitude is the brightness scale, where smaller numbers are brighter) and needs a dark sky to trace.",
+  "mainStars": [
+    {
+      "ref": "star:Diphda",
+      "note": "Beta Ceti, an orange giant 96 light-years away and the brightest star in Cetus. Its name is from the Arabic for 'frog': Arab sky-watchers saw it as the second of two frogs, the first being Fomalhaut."
+    },
+    {
+      "ref": "star:Menkar",
+      "note": "Alpha Ceti, a red giant about 250 light-years away in the monster's head. The name means 'nostrils', although Ptolemy placed this star on the jaw."
+    },
+    {
+      "ref": "star:Mira",
+      "note": "Omicron Ceti, 'the wonderful', at the base of the neck. A pulsating red giant that brightens to easy naked-eye visibility and then fades far out of sight over a cycle of about 332 days."
+    },
+    {
+      "ref": "star:τ Cet",
+      "note": "Tau Ceti, a yellow star in the body. At 11.9 light-years it is one of the nearest Sun-like stars to us."
+    },
+    {
+      "ref": "star:γ Cet",
+      "note": "Gamma Ceti (Kaffaljidhma), a white star about 80 light-years away in the ring of the head, a close double in a telescope."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "star:Mira",
+      "equip": "naked-eye",
+      "note": "For a few weeks around its peak, Mira is a plain orange star about a fist southwest of the head. For most of its 332-day cycle it is missing: at minimum it is around magnitude 10 and needs a telescope. Checking whether Mira is 'there' is one of the oldest games in variable-star watching."
+    },
+    {
+      "ref": "dso:M77",
+      "equip": "small-telescope",
+      "note": "A spiral galaxy with an unusually bright core, less than a finger-width from [[star:δ Cet|Delta Ceti]]. In a small telescope it looks like a slightly fuzzy star with a faint halo."
+    },
+    {
+      "ref": "dso:NGC246",
+      "equip": "telescope",
+      "note": "The Skull Nebula, a large, pale planetary nebula (the cast-off shell of a dying star) in the monster's body. Needs a dark sky."
+    },
+    {
+      "ref": "dso:NGC247",
+      "equip": "small-telescope",
+      "note": "A dim, elongated spiral galaxy a few degrees south of Diphda. Low in the sky from New York and best tried from a dark site."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Cet-monster",
+      "title": "The monster from the sea",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Ovid", "work": "Metamorphoses 4.688–739", "date": "c. 8 CE" },
+        { "author": "Apollodorus", "work": "Library 2.4.3", "date": "1st–2nd century CE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.31", "date": "2nd century CE" },
+        { "author": "Aratus", "work": "Phaenomena 353–358", "date": "3rd century BCE" }
+      ],
+      "summary": "Poseidon sent a monster out of the sea to punish Queen Cassiopeia's boast, and the princess Andromeda was chained on the shore to feed it. Perseus attacked it from the air and killed it after a hard fight. Because of its size and the hero's courage, the creature was set in the sky.",
+      "retelling": [
+        "The monster had no quarrel with anyone. It was a weapon. When Cassiopeia, queen of Ethiopia, claimed to be lovelier than the Nereids, the sea nymphs carried their grievance to Poseidon, and the god answered in two ways. He sent the sea itself over the land in a flood, and he sent this creature, a *ketos*, the Greek word for anything vast and dreadful that lives in deep water.",
+        "It ravaged the coast until the king, Cepheus, learned from the oracle of Ammon what would make it stop: his daughter. Andromeda was fastened to a rock at the edge of the water, and the monster came to collect.",
+        "Ovid describes its approach from the shore. The sea roars; then something is coming with its head held high above the surface and its chest pushing the water aside, covering the width of the bay. It moves, he says, like a fast ship driven by the arms of sweating rowers. It is within a slingshot's range of the rock when a young man on winged sandals springs into the air above it.",
+        "The beast sees a shadow moving on the water and savages the shadow. Then Perseus drops onto its back the way an eagle takes a snake from behind, and drives his curved blade up to the hilt into its right shoulder. The wound sends it wild. It rears up out of the sea, dives, wheels around like a boar ringed by hounds, and snaps at an enemy who is never where the jaws close. He stabs at whatever he can reach: its back crusted with shells, its ribs, the place where the tail thins out like a fish's. The monster vomits water mixed with blood, and the spray soaks the hero's wings until he has to cling to a rock to finish the work. Three and four times more the sword goes in. Then it is over, and the shore erupts in cheering loud enough, Ovid says, to reach the houses of the gods.",
+        "The mythographer Hyginus spends only two sentences on the creature, but they explain why something so hateful has a constellation. It was sent by the god of the sea to kill Andromeda, he says, and Perseus killed it; and on account of its huge size and his valor it was placed among the stars. It is there as a trophy, the proof of what the hero beat.",
+        "In the sky the chase is frozen with a safe gap in it. Aratus points out that Andromeda still seems to shrink from the Monster even though it lies a long way off: she is up in the north wind, and it is driven against her from the south, below the Ram and the two Fishes and just above the starry River. On a November evening you can see the whole arrangement at once, the princess high overhead and the great dim beast wallowing along the southern sky beneath her."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Cetus, the sea monster",
+        "url": "http://www.ianridpath.com/startales/cetus.html"
+      },
+      "characters": ["The sea monster (Cetus)", "Poseidon", "The Nereids", "Cassiopeia", "Andromeda", "Perseus"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Which god sent the sea monster against the land of Cepheus?",
+          "choices": ["Zeus", "Hades", "Poseidon", "Ares"],
+          "answerIndex": 2,
+          "explanation": "Poseidon, lord of the sea, sent the monster (and a flood) after the Nereids complained of Cassiopeia's boast."
+        },
+        {
+          "id": "q2",
+          "prompt": "What did the Greek word ketos mean?",
+          "choices": ["Any huge sea creature or sea monster", "A whale, and only a whale", "A dragon that guards treasure", "A giant fish with wings"],
+          "answerIndex": 0,
+          "explanation": "Ketos covered any large creature of the deep. The idea of Cetus as a whale comes from the later meaning of the Latin word."
+        },
+        {
+          "id": "q3",
+          "prompt": "In Ovid's account, what did the monster attack first when Perseus rose into the air?",
+          "choices": ["Andromeda's chains", "The rock she was bound to", "The king and queen on the shore", "The hero's shadow on the water"],
+          "answerIndex": 3,
+          "explanation": "The creature lunged at Perseus's shadow on the sea, giving him the chance to drop onto its back."
+        },
+        {
+          "id": "q4",
+          "prompt": "According to Hyginus, why was the monster placed among the stars?",
+          "choices": ["Poseidon wanted to honor his servant", "Because of its huge size and the valor of Perseus who killed it", "Andromeda asked for it to be remembered", "To guard the River Eridanus"],
+          "answerIndex": 1,
+          "explanation": "Hyginus says it became a constellation on account of its enormous size and the courage of the hero who slew it."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Mira was the first star recognized as varying in a regular cycle. David Fabricius noticed it in 1596, and Johannes Hevelius gave it the name Mira, 'the wonderful', in 1662.",
+    "Cetus is the fourth-largest of the 88 constellations.",
+    "The Sun's yearly path just misses a corner of Cetus, but the Moon and planets wander a little to either side of that path, so now and then one of them is, strictly speaking, 'in the Sea Monster' rather than in a constellation of the zodiac.",
+    "Chinese astronomers saw granaries here: a round one in the head of Cetus and a square one in its body, fitting for stars that rose on autumn evenings at harvest time."
+  ]
+}

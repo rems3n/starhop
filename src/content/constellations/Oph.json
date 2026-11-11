@@ -1,0 +1,286 @@
+{
+  "id": "Oph",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); an older Greek figure already described by Aratus",
+    "when": "2nd century CE (catalogued); known by the 3rd century BCE",
+    "history": [
+      "Ophiuchus (say off-ee-YOO-kus) is Greek for 'serpent holder'. Aratus, about 275 BCE, described him standing with both feet planted on the Scorpion, his shoulders bright, his hands fainter, gripping a serpent that coils around his waist. Ptolemy listed him among the 48 constellations of the *Almagest* around 150 CE, treating the man and his snake as two separate constellations, which is how they are still counted. The Romans translated the name as Serpentarius, and that alternative appears on many older star atlases.",
+      "The Greeks most often said the figure was Asclepius, the god of medicine, though Hyginus records several other candidates. The star names are Arabic: [[star:Rasalhague|Rasalhague]] is 'the head of the serpent holder', and [[star:Cebalrai|Cebalrai]] is 'the shepherd's dog', from a different Arab picture of a shepherd with his flock in these stars.",
+      "When the official constellation boundaries were drawn in the 1920s, Ophiuchus's body cut the serpent in two, leaving [[con:Ser|Serpens]] as the only constellation in two separate pieces. The boundaries also mean that the Sun passes through the southern part of Ophiuchus in the first half of December, spending more time here than in neighboring Scorpius, although Ophiuchus is not one of the twelve traditional signs of the zodiac."
+    ]
+  },
+  "overview": "Ophiuchus is a giant man holding a huge snake, usually identified as Asclepius, the healer who could raise the dead. It is a very large but rather dim constellation that fills the southern sky on summer evenings, above the bright red star Antares in Scorpius.",
+  "howToFind": [
+    "Begin with [[star:Vega|Vega]] and [[star:Altair|Altair]], two corners of the [[asterism:summer-triangle|Summer Triangle]]. Look to the southwest of them for a lone second-magnitude star that makes a large, nearly equal-sided triangle with those two, about three fists (30 degrees) from each. That is [[star:Rasalhague|Rasalhague]], the head of Ophiuchus. A fist held at arm's length covers about 10 degrees.",
+    "From Rasalhague the body hangs downward toward the southern horizon like a big, lopsided bell or a house with a pointed roof. [[star:Cebalrai|Cebalrai]] is one shoulder, a fist below Rasalhague to the left. Three fists below Rasalhague you come to [[star:Sabik|Sabik]] at the bottom left of the bell and [[star:ζ Oph|Zeta Ophiuchi]] at the bottom right, and above Zeta to the right is the close pair [[star:δ Oph|Yed Prior]] and [[star:ε Oph|Yed Posterior]], the hand that grips the snake. Below everything shines red [[star:Antares|Antares]]. Ophiuchus is best on evenings from June to September, when it stands due south about halfway up the sky as seen from Brooklyn."
+  ],
+  "shape": "A large, empty-looking ring or bell of second- and third-magnitude stars about three fists tall and two and a half wide (magnitude is the brightness scale, where smaller numbers are brighter), with few stars inside it. In a city you can usually pick out Rasalhague, Sabik, Cebalrai, and Zeta, enough to trace the outline, but it takes patience because the stars are so far apart.",
+  "mainStars": [
+    {
+      "ref": "star:Rasalhague",
+      "note": "Alpha Ophiuchi, white, magnitude 2.1, the head of the Serpent Holder. Only five degrees to its west is reddish Rasalgethi, the head of Hercules, so the two giants are head to head."
+    },
+    {
+      "ref": "star:Sabik",
+      "note": "Eta Ophiuchi, magnitude 2.4, the second-brightest star, marking one knee near the bottom of the figure."
+    },
+    {
+      "ref": "star:Cebalrai",
+      "note": "Beta Ophiuchi, an orange giant marking a shoulder. Its name means 'the shepherd's dog'."
+    },
+    {
+      "ref": "star:δ Oph",
+      "note": "Yed Prior, a reddish star which, with Yed Posterior just beside it, marks the left hand, where Ophiuchus grips the head half of the serpent. 'Yed' is from the Arabic for hand."
+    },
+    {
+      "ref": "star:ζ Oph",
+      "note": "A hot blue-white star marking the other knee, at the bottom right of the bell."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "dso:M10",
+      "equip": "binoculars",
+      "note": "A globular cluster (a ball of very old stars) about 20,000 light-years away, in the empty middle of the figure. In binoculars it is a small round glow; its neighbor M12 fits in the same field of view."
+    },
+    {
+      "ref": "dso:M12",
+      "equip": "binoculars",
+      "note": "The twin of M10, three degrees to its northwest and a little looser. The pair lies roughly a fist east of the two Yed stars."
+    },
+    {
+      "ref": "dso:IC4665",
+      "equip": "binoculars",
+      "note": "A big, loose open cluster just north of Cebalrai, the shoulder star. Binoculars show a couple of dozen stars scattered over an area larger than the full Moon; it is too spread out for most telescopes."
+    },
+    {
+      "ref": "dso:M62",
+      "equip": "small-telescope",
+      "note": "One of several more globular clusters in the southern part of the constellation, low in the sky near the border with Scorpius. From Brooklyn's latitude it needs a clear southern horizon."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Oph-asclepius",
+      "title": "Asclepius, the healer who raised the dead",
+      "culture": "Greek and Roman",
+      "ancientSources": [
+        { "author": "Eratosthenes", "work": "Catasterisms (the Serpent Holder), as reported by Hyginus", "date": "3rd century BCE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.14" },
+        { "author": "Apollodorus", "work": "Library 3.10.3" },
+        { "author": "Ovid", "work": "Fasti 6.733-762", "date": "c. 8 CE" }
+      ],
+      "summary": "The usual identification of Ophiuchus is Asclepius, son of Apollo, who learned medicine from the centaur Chiron and became so skilled that he restored the dead to life. Zeus killed him with a thunderbolt for it, and then set him among the stars holding the serpent.",
+      "retelling": [
+        "Asclepius was the son of the god Apollo and a mortal woman, Coronis. While she was carrying the child, Coronis took a mortal lover, Ischys. A raven brought the news to Apollo. The raven had been a white bird until then; Apollo cursed it for its message and turned it black, and black it has stayed.",
+        "Then he killed Coronis. But as her body lay on the funeral pyre, with the fire already burning, Apollo could not bear that his child should die with her. He snatched the baby from the flames and carried him to Chiron, the wise centaur. Chiron raised the boy and taught him the arts of healing.",
+        "The pupil outdid every doctor before him. It was not enough for Asclepius to cure the sick; he found out how to bring back the dead. The storytellers gave different accounts of the secret. One said that he saw a snake revive its dead mate with a certain herb, and used the same herb himself; that tale is told with the Serpent. Apollodorus says that the goddess Athena gave him the blood of the Gorgon Medusa: the blood from the veins of her left side was deadly, but the blood from her right side could raise the dead.",
+        "The lists of those he raised vary too. The most famous was Hippolytus, the son of Theseus. Falsely accused by his stepmother and cursed by his own father, the young man was dragged to death when his chariot horses bolted. Ovid describes Asclepius taking herbs from an ivory box, touching the youth's chest three times and three times speaking healing words, until Hippolytus lifted his head from the ground.",
+        "This was more than the gods could allow. Hades saw that if the dead could be recalled, his kingdom would have no meaning, and the Fates grieved to see a cut thread spun again. Zeus, fearing the example, hurled a thunderbolt and killed the healer who had made too much of his art.",
+        "Apollo raged at the loss of his son, and killed the Cyclopes who had forged the thunderbolt; the arrow he used is said to be the constellation Sagitta. To make peace with him, Zeus did for Asclepius what he had forbidden Asclepius to do for others. He raised him up, made him a god, and placed him among the stars, holding a serpent in his hands. Ovid watches him rise on a June night: the young man blasted by his grandfather's lightning, stretching out his hands entwined with snakes."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Ophiuchus, the serpent holder",
+        "url": "http://www.ianridpath.com/startales/ophiuchus.html"
+      },
+      "characters": ["Asclepius", "Apollo", "Coronis", "Ischys", "Chiron", "Athena", "Hippolytus", "Hades", "Zeus"],
+      "questions": [
+        {
+          "id": "asclepius-q1",
+          "prompt": "Who raised Asclepius and taught him the art of healing?",
+          "choices": ["Hermes", "Athena", "Chiron the centaur", "Prometheus"],
+          "answerIndex": 2,
+          "explanation": "Apollo rescued the infant from his mother's pyre and gave him to the wise centaur Chiron."
+        },
+        {
+          "id": "asclepius-q2",
+          "prompt": "Why did Zeus strike Asclepius with a thunderbolt?",
+          "choices": ["He was bringing the dead back to life", "He had stolen Apollo's cattle", "He refused to treat the gods", "He had killed a sacred snake"],
+          "answerIndex": 0,
+          "explanation": "Raising the dead overturned the natural order and robbed Hades of his subjects."
+        },
+        {
+          "id": "asclepius-q3",
+          "prompt": "Which bird did Apollo turn from white to black for bringing bad news about Coronis?",
+          "choices": ["The swan", "The dove", "The eagle", "The raven"],
+          "answerIndex": 3,
+          "explanation": "The raven (or crow) that told Apollo of Coronis's lover was cursed and turned black."
+        },
+        {
+          "id": "asclepius-q4",
+          "prompt": "According to Apollodorus, what gave Asclepius the power to raise the dead?",
+          "choices": ["Water from the river Styx", "Blood from the right side of the Gorgon Medusa, given by Athena", "A golden apple of the Hesperides", "The lyre of Orpheus"],
+          "answerIndex": 1,
+          "explanation": "Blood from the Gorgon's left side killed; blood from her right side restored life."
+        },
+        {
+          "id": "asclepius-q5",
+          "prompt": "Which young man, killed in a chariot accident, was Asclepius most famous for reviving?",
+          "choices": ["Hippolytus", "Phaethon", "Ganymede", "Adonis"],
+          "answerIndex": 0,
+          "explanation": "Hippolytus, son of Theseus, was restored to life, and that act brought down Zeus's thunderbolt."
+        }
+      ]
+    },
+    {
+      "id": "Oph-carnabon",
+      "title": "Carnabon and the dragon chariot of Triptolemus",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Hegesianax", "work": "as reported by Hyginus, Poetic Astronomy 2.14" }
+      ],
+      "summary": "Many, says Hyginus, called the Serpent Holder Carnabon, a Thracian king who treacherously attacked Triptolemus, the bringer of grain, and killed one of the dragons that drew his chariot. The goddess Demeter set him in the sky holding the dragon, as a lasting example.",
+      "retelling": [
+        "When Demeter, the goddess of the harvest, decided to give grain to mankind, she chose a young man named Triptolemus to carry the gift. She had been his nurse when he was a child. Now she told him to travel to every nation and hand out seed corn, so that people and their descendants could rise above the rough life they had led before.",
+        "To speed him on his way she gave him a chariot drawn by dragons, great winged serpents, that carried him through the air from country to country.",
+        "In time he came to the land of the Getae, in Thrace, where Carnabon was king. At first Carnabon welcomed him warmly as a guest. Then he turned on him. He treated the visitor who had come to do good as if he were the worst of enemies, and seized him by treachery. Triptolemus, who had come to prolong the lives of others, nearly lost his own.",
+        "Carnabon made sure there could be no escape. He ordered one of the dragons to be killed, so that Triptolemus could not hope to be saved by his chariot when he realized he was trapped.",
+        "But Demeter came. She gave the stolen chariot back to the young man and harnessed a new dragon in place of the dead one, and Triptolemus went on with his journey. As for the king, she punished him severely for his treachery; Hyginus says he lived on in such misery that death, when he finally brought it upon himself, was welcome.",
+        "Then, so that people would remember, Demeter drew Carnabon in the stars. That, according to the writer Hegesianax, is the Serpent Holder: the faithless king with the dragon in his hands, forever looking as though he is about to kill it."
+      ],
+      "link": {
+        "site": "ToposText",
+        "label": "Hyginus, Astronomica 2.14 (the Serpent Holder)",
+        "url": "https://topostext.org/work/207"
+      },
+      "characters": ["Carnabon", "Triptolemus", "Demeter (Ceres)"],
+      "questions": [
+        {
+          "id": "carnabon-q1",
+          "prompt": "What gift was Triptolemus carrying to the nations of the world?",
+          "choices": ["Fire", "Grain", "Wine", "Writing"],
+          "answerIndex": 1,
+          "explanation": "Demeter sent him to distribute grain and teach people to farm."
+        },
+        {
+          "id": "carnabon-q2",
+          "prompt": "What drew the chariot of Triptolemus?",
+          "choices": ["Swans", "Winged horses", "Dragons", "Dolphins"],
+          "answerIndex": 2,
+          "explanation": "His chariot was drawn by dragons, and Carnabon killed one of them to prevent his escape."
+        },
+        {
+          "id": "carnabon-q3",
+          "prompt": "Which goddess rescued Triptolemus and placed Carnabon among the stars?",
+          "choices": ["Athena", "Hera", "Artemis", "Demeter"],
+          "answerIndex": 3,
+          "explanation": "Demeter (Ceres to the Romans) restored the chariot, punished the king, and set his image in the sky."
+        },
+        {
+          "id": "carnabon-q4",
+          "prompt": "Carnabon was king of which people?",
+          "choices": ["The Getae of Thrace", "The Ligurians", "The Rhodians", "The Thessalians"],
+          "answerIndex": 0,
+          "explanation": "He ruled the Getae, in Thrace, north of Greece."
+        }
+      ]
+    },
+    {
+      "id": "Oph-phorbas",
+      "title": "Phorbas, who cleared Rhodes of snakes",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Polyzelus of Rhodes", "work": "as reported by Hyginus, Poetic Astronomy 2.14" }
+      ],
+      "summary": "The people of Rhodes claimed the Serpent Holder as their own hero Phorbas. Their island had been overrun by snakes, including one of enormous size, until Phorbas, blown there by a storm, killed them all. Apollo placed him in the sky in the act of killing the serpent.",
+      "retelling": [
+        "The island of Rhodes, according to its own historian Polyzelus, was once not a fit place to live. It swarmed with snakes. There were so many that the inhabitants called the island Ophiussa, 'the snake island'.",
+        "Among that multitude was one serpent of immense size. It had killed a great many of the islanders, and people had begun to abandon the place. The land was emptying of men.",
+        "Help came by accident. Phorbas was a Thessalian, the son of Triopas. He had not set out for Rhodes at all; he was at sea when a storm caught his ship and carried it to the island.",
+        "Finding the people in this state, Phorbas went to work. He killed the snakes, all of them, and he killed the giant serpent too. The island was safe to live on again.",
+        "Phorbas was a particular favorite of Apollo. So that his deed would be praised and remembered, the god placed him among the constellations, and showed him there as he was at his greatest moment, killing the snake.",
+        "The Rhodians did not forget. Hyginus says that whenever their fleet sailed any distance from home, they first made offerings in honor of the coming of Phorbas. Their prayer was a hopeful one: that their own citizens might meet some unexpected chance for courage and glory, as Phorbas did when a storm he never wanted carried him, all unknowing, to the stars."
+      ],
+      "link": {
+        "site": "ToposText",
+        "label": "Hyginus, Astronomica 2.14 (the Serpent Holder)",
+        "url": "https://topostext.org/work/207"
+      },
+      "characters": ["Phorbas", "Triopas", "Apollo"],
+      "questions": [
+        {
+          "id": "phorbas-q1",
+          "prompt": "Which island did Phorbas free from a plague of snakes?",
+          "choices": ["Rhodes", "Crete", "Naxos", "Lesbos"],
+          "answerIndex": 0,
+          "explanation": "Rhodes was said to have been called Ophiussa, 'snake island', before Phorbas cleared it."
+        },
+        {
+          "id": "phorbas-q2",
+          "prompt": "How did Phorbas come to be on the island?",
+          "choices": ["The islanders sent for him", "An oracle ordered him to go", "A storm drove his ship there", "He was exiled there by his father"],
+          "answerIndex": 2,
+          "explanation": "He arrived by chance, carried there by a storm at sea."
+        },
+        {
+          "id": "phorbas-q3",
+          "prompt": "Which god placed Phorbas among the stars?",
+          "choices": ["Zeus", "Apollo", "Poseidon", "Hermes"],
+          "answerIndex": 1,
+          "explanation": "Phorbas was a favorite of Apollo, who set him in the sky killing the serpent."
+        },
+        {
+          "id": "phorbas-q4",
+          "prompt": "What did the Rhodians do before their fleet sailed far from home?",
+          "choices": ["They released a snake into the sea", "They lit a beacon on the harbor", "They fasted for three days", "They made offerings in honor of Phorbas"],
+          "answerIndex": 3,
+          "explanation": "They honored his arrival with offerings, hoping for a similar stroke of unexpected glory."
+        }
+      ]
+    },
+    {
+      "id": "Oph-triopas",
+      "title": "Triopas and the serpent of Demeter",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.14" }
+      ],
+      "summary": "In a darker reading recorded by Hyginus, the figure is Triopas, a Thessalian king who pulled down a temple of Demeter to roof his own house. The goddess cursed him with endless hunger and sent a snake to torment him, and in the sky the snake torments him still.",
+      "retelling": [
+        "Not everyone saw a hero in these stars. Some, Hyginus says, saw a criminal serving his sentence.",
+        "Triopas was a king of the Thessalians. He was building a house for himself and wanted material to roof it. Nearby stood a temple of Demeter, the goddess of grain, built by the men of old. Triopas tore the temple down and used it for his roof.",
+        "Demeter gives food, and she can take it away. For what he had done she sent hunger upon him, a hunger of a special kind: from then on, no amount of food could ever satisfy him. However much he ate, he was starving.",
+        "That was not the end of his punishment. Toward the close of his life a snake was sent to plague him as well, and he suffered many torments from it before death at last released him.",
+        "Then, by the will of Demeter, he was placed among the stars, and the snake with him. It is wound around him there, Hyginus says, and seems to go on inflicting a deserved and everlasting punishment. On this reading the Serpent Holder is not holding the snake at all. He is trying, forever, to get it off."
+      ],
+      "link": {
+        "site": "ToposText",
+        "label": "Hyginus, Astronomica 2.14 (the Serpent Holder)",
+        "url": "https://topostext.org/work/207"
+      },
+      "characters": ["Triopas", "Demeter (Ceres)"],
+      "questions": [
+        {
+          "id": "triopas-q1",
+          "prompt": "What crime did Triopas commit?",
+          "choices": ["He killed a sacred snake", "He tore down a temple of Demeter to roof his own house", "He stole grain from Triptolemus", "He refused hospitality to a god"],
+          "answerIndex": 1,
+          "explanation": "He demolished Demeter's ancient temple for building material."
+        },
+        {
+          "id": "triopas-q2",
+          "prompt": "What was the first punishment Demeter sent upon him?",
+          "choices": ["Blindness", "Exile", "A hunger that no food could satisfy", "Madness"],
+          "answerIndex": 2,
+          "explanation": "The goddess of grain cursed him with insatiable hunger."
+        },
+        {
+          "id": "triopas-q3",
+          "prompt": "In this version, what is the serpent doing in the sky?",
+          "choices": ["Continuing to punish Triopas forever", "Guarding him from the Scorpion", "Bringing him a healing herb", "Pulling his chariot"],
+          "answerIndex": 0,
+          "explanation": "The snake coiled around him is said to inflict a deserved and everlasting punishment."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Hyginus gives one more identification in two sentences: some said the Serpent Holder is Heracles, killing a snake that was destroying people and crops beside the river Sagaris in Lydia. Queen Omphale rewarded him with gifts, and Zeus put him among the stars for his bravery.",
+    "The last supernova (exploding star) seen in our own galaxy appeared in Ophiuchus in 1604. It is called Kepler's Star after Johannes Kepler, who studied it and wrote a book about it.",
+    "Barnard's Star, about six light-years away, lies in Ophiuchus. Only the stars of the Alpha Centauri system are closer to the Sun, but it is far too faint to see without a telescope.",
+    "The Sun is inside the borders of Ophiuchus in the first half of December, which is why it is sometimes called the 13th constellation of the zodiac.",
+    "In China this region, with parts of Hercules and Serpens, was a walled celestial marketplace."
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "id": "CrB",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); an older Greek figure described by Aratus",
+    "when": "2nd century CE (Almagest); described in the 3rd century BCE",
+    "history": [
+      "The Greeks called this little arc Stephanos, 'the crown' or 'the wreath'. Aratus, in the 3rd century BCE, already knows it as the crown that Dionysus set in the sky as a memorial of Ariadne, and Ptolemy listed its eight stars in the *Almagest*. 'Borealis', northern, was added to tell it apart from the Southern Crown, Corona Australis, a similar arc beneath Sagittarius.",
+      "It is one of the few constellations that different peoples drew in almost the same way, because the shape is so definite. Arabic astronomers called it al-Fakka, which gave the brightest star its name Alphecca, and also saw it as a broken dish or a poor man's bowl. In China the same loop was a prison for common criminals."
+    ]
+  },
+  "overview": "A small, neat semicircle of seven stars, like a tiara or a bowl seen from the side, sitting between Boötes and Hercules. One star, Alphecca, is noticeably brighter than the rest, like the central jewel. It is small and fairly faint but so tidy that once seen it is never forgotten.",
+  "howToFind": [
+    "First arc to [[star:Arcturus|Arcturus]]: follow the curve of the Big Dipper's handle three fists to the bright orange star. Then look two fists to the east-northeast of Arcturus (to the left as you face south on a late-spring evening, just beyond the kite shape of Boötes) for a small curve of stars open toward the north. The brightest of them is [[star:Alphecca|Alphecca]]. Another way: the Crown lies about one-third of the way along a line from Arcturus to [[star:Vega|Vega]].",
+    "From Brooklyn the Crown is high in the evening sky from late spring through summer and passes nearly overhead in June and July. It follows Arcturus down into the west on early-autumn evenings."
+  ],
+  "shape": "A half-circle of seven stars less than a fist wide, open side up when it is high in the south. Alphecca, at magnitude 2.2 (magnitude is the brightness scale, where smaller numbers are brighter), is visible from the city; the other six are around fourth magnitude, so from Brooklyn the full arc takes a clear night or a pair of binoculars, in which the whole crown fits in one view.",
+  "mainStars": [
+    {
+      "ref": "star:Alphecca",
+      "note": "The jewel of the crown, a blue-white star about 75 light-years away, also known by the Latin name Gemma, 'gem'. Every 17.4 days a fainter companion passes in front of it and dims it very slightly."
+    },
+    {
+      "ref": "star:Nusakan",
+      "note": "Beta Coronae Borealis, magnitude 3.7, the next star along the arc on the side toward Boötes."
+    },
+    {
+      "ref": "star:γ CrB",
+      "note": "Gamma, on the other side of Alphecca, a white star of magnitude 3.8 that continues the curve toward Hercules."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "con:CrB",
+      "equip": "binoculars",
+      "note": "The crown itself is the sight here. Binoculars take in all seven stars at once and show the arc as a string of jewels with Alphecca blazing at the center."
+    },
+    {
+      "ref": "star:ε CrB",
+      "equip": "binoculars",
+      "note": "Use Epsilon, near the eastern end of the arc, as your marker for the Blaze Star, T Coronae Borealis, which lies just beside it. Normally far too faint for binoculars, this star erupted to naked-eye brightness in 1866 and 1946. If you ever see an extra 'jewel' here, you are watching a nova."
+    }
+  ],
+  "stories": [
+    {
+      "id": "CrB-ariadne-wedding",
+      "title": "Ariadne's wedding crown",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Aratus", "work": "Phaenomena 71–73", "date": "3rd century BCE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.5", "date": "2nd century CE" },
+        { "author": "Ovid", "work": "Fasti 3.459–516", "date": "early 1st century CE" }
+      ],
+      "summary": "The Crown belonged to Ariadne, the Cretan princess who helped Theseus kill the Minotaur and was then abandoned by him on an island. The god Dionysus found her there and married her, and he set her wedding crown among the stars.",
+      "retelling": [
+        "Ariadne was a daughter of Minos, king of Crete, and she grew up in a palace with a terrible secret under it. Her mother Pasiphae had given birth to the Minotaur, a creature with a man's body and a bull's head, and Minos kept it shut in the Labyrinth, a maze built by the craftsman Daedalus and so cunningly made that nobody who went in could find the way out. Athens, defeated in war, was made to send young men and women to be fed to it.",
+        "One year the Athenian prince Theseus came with the victims, meaning to kill the monster. Ariadne saw him and fell in love. On the advice of Daedalus she gave him a ball of thread. Theseus tied one end at the door, unwound it behind him as he went, killed the Minotaur in the heart of the maze, and followed the thread back out. He sailed for home and took Ariadne with him.",
+        "They put in at an island, which the old writers call Dia and most identify with Naxos. There Theseus left her. She found the ship gone and herself alone on a strange beach, having betrayed her father and her country for a man who had not even said goodbye.",
+        "It was there that Dionysus found her. The god of wine was travelling with his noisy company, and the sight of the deserted girl stopped him. He did not offer her a passage home. He asked her to be his wife. Ariadne, who had given up everything for a mortal hero and been thrown away, found herself the bride of a god.",
+        "All the gods came to the wedding and brought presents, and the finest was a crown. Hyginus says it was the gift of Aphrodite and the Seasons; it was the work of Hephaestus, the smith of the gods, made of gold and set with jewels from India. Another account in the same author says Dionysus himself had given it to her as a courting gift.",
+        "Ovid, who loved to complicate a happy ending, adds a later chapter. Dionysus came home from conquering India with a captive princess who pleased him too well, and Ariadne paced the shore again, crying that every man was a Theseus. The god, walking behind her, heard it all. He took her in his arms, kissed away her tears, and promised that she should share his heaven and his name.",
+        "And he took the crown from her head and sent it up into the sky, where its jewels turned into fires. Ovid counts nine of them. Aratus, more soberly, calls the constellation a memorial of Ariadne set there by Dionysus. It still hangs behind the kneeling figure of Hercules, a small bright ring, the one thing in the story that was never taken back."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Corona Borealis, the Northern Crown",
+        "url": "http://www.ianridpath.com/startales/coronaborealis.html"
+      },
+      "characters": ["Ariadne", "Theseus", "Dionysus", "Minos", "the Minotaur", "Daedalus", "Aphrodite", "Hephaestus"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "How did Ariadne help Theseus escape the Labyrinth?",
+          "choices": ["She drew him a map", "She gave him a ball of thread to mark his path", "She bribed the guards", "She led him out herself"],
+          "answerIndex": 1,
+          "explanation": "Theseus tied the thread at the entrance and unwound it as he went, then followed it back after killing the Minotaur."
+        },
+        {
+          "id": "q2",
+          "prompt": "Which god married Ariadne after Theseus abandoned her?",
+          "choices": ["Apollo", "Hermes", "Poseidon", "Dionysus"],
+          "answerIndex": 3,
+          "explanation": "Dionysus (Bacchus or Liber to the Romans) found her on the island and made her his wife. He placed her crown in the sky."
+        },
+        {
+          "id": "q3",
+          "prompt": "Who is said to have made Ariadne's crown?",
+          "choices": ["Hephaestus, the smith god", "Daedalus, the builder of the Labyrinth", "Athena, goddess of crafts", "The Cyclopes"],
+          "answerIndex": 0,
+          "explanation": "The crown was the work of Hephaestus (Vulcan), made of gold and Indian gems. Ovid says Vulcan gave it to Venus, and Venus to Ariadne."
+        },
+        {
+          "id": "q4",
+          "prompt": "Who was Ariadne's father?",
+          "choices": ["Aegeus, king of Athens", "Lycaon, king of Arcadia", "Minos, king of Crete", "Cepheus, king of Ethiopia"],
+          "answerIndex": 2,
+          "explanation": "Ariadne was a princess of Crete, daughter of King Minos and Pasiphae, and so a half-sister of the Minotaur."
+        }
+      ]
+    },
+    {
+      "id": "CrB-theseus-crown",
+      "title": "The crown from the bottom of the sea",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.5", "date": "2nd century CE" }
+      ],
+      "summary": "Another account makes it Theseus's crown first. Challenged by King Minos to prove he was a son of Poseidon, Theseus dived into the sea and came back with a jewelled crown from the sea goddesses. Its glow lit his way through the Labyrinth; he gave it to Ariadne, and after her death Dionysus placed it in the stars.",
+      "retelling": [
+        "When Theseus sailed to Crete with the young Athenians who were to be given to the Minotaur, seven girls and six boys beside himself, King Minos came down to look over the tribute. One of the girls, Eriboea, caught the king's eye, and he made it plain what he intended.",
+        "Theseus stepped between them. He would not allow it, he said, and he was the son of Poseidon, god of the sea. Minos was a son of Zeus and not used to being refused. The quarrel quickly stopped being about the girl and became a contest of fathers.",
+        "Minos went first. He prayed to Zeus for a sign, and at once thunder cracked and lightning flashed from a clear sky. Then he drew a gold ring from his finger and tossed it over the side of the ship. If the sea god is really your father, he told Theseus, bring that back.",
+        "Theseus did not stop to pray or make promises. He dived. Down in the water a school of dolphins closed around him and carried him gently through the swells to the home of the Nereids, the daughters of the sea. They gave him the ring of Minos. And the sea goddess Thetis gave him something more: a crown blazing with gems, which she herself had received from Aphrodite as a wedding present. Others say it came from Poseidon's wife. Theseus rose from the sea with the ring in one hand and the crown in the other, and the question of his birth was settled.",
+        "The crown proved to be more than a trophy. When Theseus went into the Labyrinth to hunt the Minotaur, he walked into total darkness, and it was the crown that saved him. Its gold and jewels gave off a glow of their own, Hyginus says, enough to see by, and by that light he found his way through the passages and back to the day.",
+        "Afterward, when Ariadne was given to him in recognition of his courage, Theseus made her a present of the crown. In this telling it is a love gift from a hero, not a wedding gift from the gods. It stayed with Ariadne for the rest of her life, through her abandonment and her marriage to Dionysus.",
+        "After her death Dionysus set it among the constellations. Hyginus notes how well this suits its place in the sky, for some said that the kneeling figure next to it, the one we call Hercules, was really Theseus. On that reading the hero and his crown are side by side overhead on summer nights."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Corona Borealis, the Northern Crown",
+        "url": "http://www.ianridpath.com/startales/coronaborealis.html"
+      },
+      "characters": ["Theseus", "Minos", "Eriboea", "Thetis", "the Nereids", "Ariadne", "Dionysus", "Poseidon"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "What did Minos throw into the sea as a challenge to Theseus?",
+          "choices": ["A gold ring", "His crown", "A sword", "A golden apple"],
+          "answerIndex": 0,
+          "explanation": "Minos threw his gold ring overboard and told Theseus to fetch it if he was truly a son of Poseidon."
+        },
+        {
+          "id": "q2",
+          "prompt": "Who gave Theseus the jewelled crown under the sea?",
+          "choices": ["Poseidon himself", "Ariadne", "The sea goddess Thetis", "A dolphin"],
+          "answerIndex": 2,
+          "explanation": "Thetis gave him a crown she had received from Aphrodite at her own wedding; another version says it came from Poseidon's wife."
+        },
+        {
+          "id": "q3",
+          "prompt": "How did the crown help Theseus in the Labyrinth?",
+          "choices": ["It made him invisible", "It frightened the Minotaur", "It showed him a map", "Its gold and gems glowed, lighting his way"],
+          "answerIndex": 3,
+          "explanation": "Hyginus says the gold and jewels made a glow in the darkness by which Theseus found his way out. (In the better-known version, a ball of thread does the job.)"
+        },
+        {
+          "id": "q4",
+          "prompt": "What started the quarrel between Theseus and Minos?",
+          "choices": ["Theseus insulted the Minotaur", "Minos wanted one of the Athenian girls, Eriboea, and Theseus defended her", "Theseus refused to bow", "Minos accused Theseus of theft"],
+          "answerIndex": 1,
+          "explanation": "Theseus refused to let Minos take Eriboea. The argument then turned into a dispute about whether Theseus was really Poseidon's son."
+        }
+      ]
+    },
+    {
+      "id": "CrB-dionysus-semele",
+      "title": "The crown Dionysus left at the gate of the dead",
+      "culture": "Greek (Argive tradition)",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.5 (citing the authors of the Argolica)", "date": "2nd century CE" }
+      ],
+      "summary": "A local tradition from Argos leaves Ariadne out entirely. The crown was Dionysus's own, a gift from Aphrodite, which he set down before descending to the Underworld to rescue his mother Semele so that it would not be tainted by contact with the dead. When he returned with her he placed it in the stars.",
+      "retelling": [
+        "Dionysus never knew his mother. Semele, a princess of Thebes, had died before he was born, burned up when she saw Zeus, the child's father, in his full glory; Zeus had saved the unborn baby from the fire. Dionysus grew up, won his place among the gods, and then turned to the one thing he still lacked. He asked his father for leave to go down to the land of the dead and bring Semele back, and Zeus granted it.",
+        "The difficulty was finding a way in. Searching for an entrance to the Underworld, Dionysus came to the country of Argos, and there he met a local man named Hypolipnus, who knew where the way down was.",
+        "Hypolipnus looked at the traveller and saw what seemed to be a boy, and a strikingly beautiful one. He agreed to show the entrance, but he named a price that no honorable man would have asked, and that Hyginus describes only as shameless. Dionysus cared about nothing but his mother. He swore that if he brought her back he would give the man what he wanted, wording the oath, Hyginus says, as a god may when he swears to a scoundrel. Hypolipnus took him to the place.",
+        "Dionysus stood at the mouth of the descent, about to go where no light comes. He was wearing a crown that Aphrodite had given him. He stopped, took it off, and laid it on the ground. It was a gift of the immortal gods, and he would not carry it among the dead, for fear that their touch would defile it. The spot where he left it, the Argives said, was called Stephanos, 'the Crown', ever afterward.",
+        "Then he went down. The storytellers of Argos do not describe what he saw there, only the result: he came back up into the daylight with Semele beside him, unharmed. The crown was lying where he had put it.",
+        "To mark what he had done, Dionysus set the crown among the stars as a memorial that would last forever. So, in this version, the little arc between Boötes and Hercules is not a bride's ornament at all. It is something a son took off at the edge of the world of the dead, before the most dangerous journey he ever made, and found waiting when he returned."
+      ],
+      "link": {
+        "site": "ToposText",
+        "label": "Hyginus, Astronomica 2.5: the Crown",
+        "url": "https://topostext.org/work/207"
+      },
+      "characters": ["Dionysus", "Semele", "Zeus", "Hypolipnus", "Aphrodite"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Why did Dionysus go down to the Underworld in this story?",
+          "choices": ["To capture Cerberus", "To consult a dead prophet", "To bring back his mother Semele", "To rescue Ariadne"],
+          "answerIndex": 2,
+          "explanation": "With Zeus's permission, Dionysus descended to bring his mother Semele back from the dead."
+        },
+        {
+          "id": "q2",
+          "prompt": "Why did Dionysus take off his crown before descending?",
+          "choices": ["So that the immortal gift would not be defiled by contact with the dead", "As payment to his guide", "Because it was too heavy", "To disguise himself as a mortal"],
+          "answerIndex": 0,
+          "explanation": "The crown was a gift of the gods, and he feared it would be contaminated among the dead, so he left it at the entrance."
+        },
+        {
+          "id": "q3",
+          "prompt": "Who had given Dionysus the crown?",
+          "choices": ["Hera", "Ariadne", "Hephaestus", "Aphrodite"],
+          "answerIndex": 3,
+          "explanation": "In the Argive version the crown was a gift to Dionysus from Aphrodite (Venus)."
+        },
+        {
+          "id": "q4",
+          "prompt": "What name was given to the place where the crown was left?",
+          "choices": ["Labyrinthos", "Stephanos", "Dia", "Lerna"],
+          "answerIndex": 1,
+          "explanation": "The place was called Stephanos, the Greek word for crown, which was also the Greek name of the constellation."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Eratosthenes knew a companion piece: he called the faint star-swarm we now know as Coma Berenices the hair of Ariadne.",
+    "T Coronae Borealis, the Blaze Star, is a recurrent nova. It flared from tenth magnitude to second in 1866 and again in 1946, a gap of about 80 years.",
+    "R Coronae Borealis, inside the bowl of the crown, behaves the opposite way: normally just visible in binoculars, it fades drastically at unpredictable intervals when clouds of soot form around it.",
+    "The Shawnee saw these stars as the Heavenly Sisters, who came down from the sky each night to dance, and in Welsh tradition the ring was Caer Arianrhod, the castle of Arianrhod.",
+    "Titian's painting *Bacchus and Ariadne* shows the crown as a ring of stars in the sky above the abandoned princess."
+  ]
+}

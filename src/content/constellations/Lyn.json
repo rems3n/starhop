@@ -1,0 +1,56 @@
+{
+  "id": "Lyn",
+  "kind": "modern",
+  "origin": {
+    "namedBy": "Johannes Hevelius",
+    "when": "1687",
+    "history": [
+      "Lynx was introduced by the Polish astronomer Johannes Hevelius in his star catalogue of 1687 and drawn in his atlas *Firmamentum Sobiescianum*, published in 1690. It fills a large, dim gap between the Great Bear and Auriga, bigger in area than Gemini, that the Greeks had left without a figure. Ptolemy had listed half a dozen of its stars only as 'unformed' stars lying outside the Great Bear.",
+      "The name is a boast and a joke. Hevelius went on measuring star positions with the naked eye long after other astronomers had fitted telescopic sights to their instruments, and a colleague, Pierre Gassendi, had once written that he had the eyes of a lynx. In the introduction to his catalogue Hevelius wrote that anyone who wanted to observe this constellation would need a lynx's eyesight. In the catalogue itself he listed it as 'Lynx, or Tiger', and his drawing does not look much like either animal.",
+      "Earlier in the 17th century Petrus Plancius had used some of the same stars for a constellation of the River Jordan, but Hevelius's creation is the one that lasted. The Greeks did have a famously sharp-sighted hero, Lynceus, who sailed with the Argonauts, but nothing shows that Hevelius had him in mind. There are no myths attached to the constellation."
+    ]
+  },
+  "overview": "Lynx is a long, faint zigzag of stars running between the paws of the Great Bear and the twin stars of Gemini. It was named, tongue in cheek, because you need the eyes of a lynx to see it: only one of its stars reaches third magnitude.",
+  "howToFind": [
+    "Start with the one star that is reasonably easy. Find [[star:Regulus|Regulus]] in Leo and go about two and a half fists straight north (a fist at arm's length is roughly 10 degrees), into the empty space below the Great Bear's hind feet: the orange star there is [[star:α Lyn|Alpha Lyncis]], with fainter [[star:38 Lyn|38 Lyncis]] just above it. From this pair the Lynx stretches northwest in a crooked line for about four fists, passing north of [[star:Castor|Castor]] and [[star:Pollux|Pollux]] by way of [[star:Alsciaukat|Alsciaukat]], and heading off in the direction of [[star:Capella|Capella]].",
+    "From Brooklyn Lynx is highest on evenings from February to April, when it passes almost overhead. That helps, since the stars are faint; even so, plan on a dark sky or binoculars to follow the line."
+  ],
+  "shape": "A straggling chain of seven or eight stars, mostly fourth and fifth magnitude (magnitude is the brightness scale, where smaller numbers are brighter), spread across some four fists of sky. From the city you will probably see Alpha Lyncis and nothing else. Under dark skies the chain can be followed, but it never looks like a cat.",
+  "mainStars": [
+    {
+      "ref": "star:α Lyn",
+      "note": "Alpha Lyncis, an orange giant about 200 light-years away, magnitude 3.1. It is the only star in the constellation with a Greek letter, assigned by Francis Baily in 1845."
+    },
+    {
+      "ref": "star:38 Lyn",
+      "note": "38 Lyncis, the second-brightest star, two finger-widths north of Alpha. A telescope splits it into a close pair, a brighter blue-white star and a fainter companion."
+    },
+    {
+      "ref": "star:Alsciaukat",
+      "note": "31 Lyncis, an orange giant about 380 light-years away in the middle of the chain. Its name, from the Arabic for 'thorn', is the only traditional star name in Lynx."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "dso:NGC2419",
+      "equip": "telescope",
+      "note": "An unusually remote globular cluster, a ball of ancient stars about 300,000 light-years away, far out beyond most of our galaxy. It lies about seven degrees north of Castor and appears as a small, dim, round glow."
+    },
+    {
+      "ref": "dso:NGC2683",
+      "equip": "small-telescope",
+      "note": "A spiral galaxy seen nearly edge-on, half a fist west of Alpha Lyncis. In a small telescope under a dark sky it is a thin sliver of light."
+    },
+    {
+      "ref": "star:12 Lyn",
+      "equip": "small-telescope",
+      "note": "12 Lyncis, near the northern end of the chain: a triple star. A small telescope shows a wide yellowish companion, and a good one at high power splits the main star into a tight pair."
+    }
+  ],
+  "stories": [],
+  "facts": [
+    "Lynx ranks 28th in size among the 88 constellations, larger than many famous ones.",
+    "John Flamsteed, England's first Astronomer Royal, muddled the borders here by cataloguing some stars under the wrong constellation, which is why a star labeled 10 Ursae Majoris sits inside Lynx.",
+    "Chinese astronomers left this region almost empty too; only the stars around Alpha Lyncis were used, as the northern end of a long figure extending up from Leo."
+  ]
+}

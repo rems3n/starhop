@@ -1,0 +1,33 @@
+{
+  "id": "Gru",
+  "kind": "modern",
+  "origin": {
+    "namedBy": "Pieter Dirkszoon Keyser and Frederick de Houtman; first shown by Petrus Plancius",
+    "when": "1595–1598",
+    "history": [
+      "Grus, the Crane, is one of the twelve constellations that came out of the Dutch navigators Pieter Dirkszoon Keyser and Frederick de Houtman's survey of the southern sky in 1595–97. It was first shown in 1598 on a celestial globe by Petrus Plancius and Jodocus Hondius, labeled Krane Grus (the Dutch and Latin words for crane), and Johann Bayer kept the name Grus in his atlas *Uranometria* of 1603.",
+      "The name was not settled at once. De Houtman's own star catalog of 1603 calls the figure Den Reygher, the heron, and a few sources that drew on Plancius call it Phoenicopterus, the flamingo. Bayer's popular atlas tipped the balance toward the crane.",
+      "The stars were taken from the region south of Piscis Austrinus, the Southern Fish. The star at the crane's head, Gamma Gruis, was listed by Ptolemy in the *Almagest* as the tip of the fish's tail; Bayer and others straightened the tail so that fish and bird no longer overlap. The Arabic name of the brightest star, Alnair, remembers the older arrangement: it is short for a phrase meaning the bright one in the fish's tail."
+    ]
+  },
+  "overview": "Grus is a long-necked crane flying south of Fomalhaut. With two 2nd-magnitude stars and a clear line of fainter ones for the neck, it is one of the easier modern southern figures to recognize.",
+  "howToFind": [
+    "From Brooklyn you can see only the top of the crane. The head star [[star:Aldhanab|Gamma Gruis]] gets about a fist above the southern horizon, but the two bright stars, [[star:Alnair|Alnair]] and [[star:Tiaki|Beta Gruis]], pass barely two degrees above a perfectly flat horizon and are in practice lost in haze. The whole bird is visible south of latitude 33°N; from Florida or southern Texas it stands clear of the horizon on October and November evenings.",
+    "Start at [[star:Fomalhaut|Fomalhaut]], the lonely bright star low in the south on autumn evenings. Gamma Gruis is a fist and a half below and slightly right of it. Then drop straight down another fist to the two bright stars side by side: blue-white Alnair on the right and orange Beta on the left, about half a fist apart."
+  ],
+  "shape": "A slanted line about two fists long for the neck and body, crossed near its lower end by a shorter bar for the wings, like a lopsided cross or a bird in flight. Alnair, Beta and Gamma show in suburban skies when the constellation is high; the neck stars need darkness.",
+  "mainStars": [
+    { "ref": "star:Alnair", "note": "Alpha Gruis, magnitude 1.7, a blue-white star about 100 light-years away marking one wing. The name comes from Arabic for the bright one." },
+    { "ref": "star:Tiaki", "note": "Beta Gruis, a red giant about 170 light-years away at the crane's heart. It varies slowly between about magnitude 2.0 and 2.3, and its orange color contrasts nicely with Alnair." },
+    { "ref": "star:Aldhanab", "note": "Gamma Gruis, magnitude 3.0, blue-white, marking the crane's head. Ptolemy counted it as the tail of the Southern Fish." },
+    { "ref": "star:ε Gru", "note": "Magnitude 3.5, a white star about 130 light-years away at the tail end of the bird." }
+  ],
+  "notableObjects": [
+    { "ref": "star:δ Gru", "equip": "naked-eye", "note": "Delta-1 and Delta-2 Gruis are a wide pair you can split without optical aid in a dark sky: a yellow giant beside a redder one, in the crane's neck. The two stars are not really related; they just lie in the same direction." }
+  ],
+  "stories": [],
+  "facts": [
+    "Early sources also called this constellation the Heron (de Houtman's Den Reygher) and the Flamingo (Phoenicopterus).",
+    "In ancient Greece the crane was a bird sacred to Hermes, but no myth was ever attached to these stars; the Greeks could not see most of them."
+  ]
+}

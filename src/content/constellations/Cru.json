@@ -1,0 +1,42 @@
+{
+  "id": "Cru",
+  "kind": "modern",
+  "origin": {
+    "namedBy": "European navigators of the 15th–16th centuries; made a separate constellation by Petrus Plancius and Jodocus Hondius",
+    "when": "about 1500 (named by sailors); 1598–1603 (separated from Centaurus)",
+    "history": [
+      "The stars of the Southern Cross were known in antiquity. Ptolemy listed them in the *Almagest* in the 2nd century CE, but as part of the hind legs of Centaurus, not as a figure of their own. Then precession, the slow wobble of Earth's axis that shifts the celestial poles among the stars, carried them below the horizon of the Mediterranean world, and Europeans forgot them.",
+      "Seafarers found them again as they pushed south. In 1455 the Venetian Alvise Cadamosto, off West Africa, reported six bright stars low over the sea, evidently the Cross and the two Pointers. In 1500 João Faras, an astronomer sailing with the Portuguese fleet of Pedro Álvares Cabral, sketched the stars around the southern pole from the coast of Brazil and already called this group the Cross. By 1514 the navigator João de Lisboa was writing of the Cruzeiro do Sul, the Southern Cross, and explaining how to find latitude from it. In 1516 the Italian Andrea Corsali sent home a sketch and praised it as a marvelous cross more beautiful than any other sign in the sky.",
+      "Astronomers took another century to catch up. The English geographer Robert Hues, who saw the stars himself on voyages in the 1580s and 1590s, pointed out in 1594 that they were simply the bright stars of the Centaur's feet. Petrus Plancius and Jodocus Hondius drew the Cross in its true place on their celestial globes of 1598 and 1600. Johann Bayer drew a cross over the centaur's legs in 1603 but still labeled the stars as Centaurus; Frederick de Houtman's catalog of the same year was the first to list Crux (De Cruzero) as a constellation in its own right, and Jacob Bartsch's chart of 1624 was the first printed chart to do so. Lacaille gave the stars their present Greek letters in the 1750s."
+    ]
+  },
+  "overview": "Crux, the Southern Cross, is the smallest of the 88 constellations and one of the most famous: four bright stars in a compact kite shape, set in the Milky Way beside the inky Coalsack Nebula and followed across the sky by the two bright Pointers.",
+  "howToFind": [
+    "The Southern Cross never rises from Brooklyn; it stays more than six degrees below our southern horizon. The top star, [[star:Gacrux|Gacrux]], first shows south of about latitude 33°N, and the whole cross stands clear only south of about 25°N: the Florida Keys just manage it, and Hawaii and the Caribbean see it low in the south on spring evenings (April to June). From Sydney, Cape Town or Buenos Aires and farther south it never sets.",
+    "In the southern sky look for two very bright stars close together in the Milky Way: [[star:Rigil Kentaurus|Alpha]] and [[star:Hadar|Beta Centauri]], the Pointers. A line from Alpha through Beta, continued a little less than a fist, lands on [[star:Mimosa|Mimosa]], the eastern arm of the Cross. The Pointers are the test that you have the real thing: the larger, dimmer False Cross in Carina and Vela has no such pair beside it and no fifth star.",
+    "Once you have the Cross you have south. Extend the long bar from [[star:Gacrux|Gacrux]] through [[star:Acrux|Acrux]] about four and a half times its own length and you reach the south celestial pole, an otherwise blank spot in [[con:Oct|Octans]]. Drop straight down from there to the horizon and you are facing due south."
+  ],
+  "shape": "A small kite rather than a true cross: the long bar is 6 degrees and the cross bar about 4, so three fingers at arm's length cover it. A fifth, fainter star sits just inside one corner. The four main stars are bright enough for any city in the Southern Hemisphere; the Coalsack beside them needs a dark sky.",
+  "mainStars": [
+    { "ref": "star:Acrux", "note": "Alpha Crucis, the foot of the Cross and the most southerly 1st-magnitude star, at combined magnitude 0.8. It is a blue-white system about 320 light-years away that a small telescope splits into two brilliant stars. The name is a 19th-century contraction of Alpha Crucis." },
+    { "ref": "star:Mimosa", "note": "Beta Crucis, magnitude 1.3, a blue-white giant about 280 light-years away at the eastern arm. It is also informally called Becrux." },
+    { "ref": "star:Gacrux", "note": "Gamma Crucis, magnitude 1.6, the top of the Cross. It is a red giant only about 89 light-years away, and its orange color stands out against the three blue-white stars." },
+    { "ref": "star:Imai", "note": "Delta Crucis, magnitude 2.8, blue-white, the western arm and the faintest of the four." },
+    { "ref": "star:Ginan", "note": "Epsilon Crucis, magnitude 3.6, an orange giant between Acrux and Imai. This fifth star is shown on the flags of Australia, Brazil, Papua New Guinea and Samoa but not on New Zealand's." }
+  ],
+  "notableObjects": [
+    { "ref": "dso:NGC4755", "equip": "binoculars", "note": "The Jewel Box, an open cluster one degree from Mimosa. To the naked eye it is a single hazy star (Kappa Crucis); binoculars show a tight knot, and a small telescope reveals an A-shaped group of blue-white stars with one conspicuously orange one. John Herschel said it looked like a superb piece of fancy jewelry." },
+    { "ref": "dso:C99", "equip": "naked-eye", "note": "The Coalsack Nebula, a cloud of dust that blocks the light of the Milky Way behind it. In a dark sky it is an obvious black patch several degrees wide tucked against Acrux and Mimosa. Amerigo Vespucci described it in 1502." },
+    { "ref": "star:Acrux", "equip": "small-telescope", "note": "A dazzling close double: two blue-white stars of nearly equal brightness, with a third, fainter star wider off. It was one of the first double stars found with a telescope, in 1685." },
+    { "ref": "dso:NGC4609", "equip": "binoculars", "note": "A small open cluster seen through the edge of the Coalsack, about two degrees east of Acrux; it looks like a little clump of faint stars." }
+  ],
+  "stories": [],
+  "facts": [
+    "Crux is the smallest constellation, covering about 68 square degrees, a sixth of one percent of the sky.",
+    "In several Aboriginal Australian traditions the Coalsack is the head of the Emu in the Sky, a figure traced in the dark lanes of the Milky Way rather than in stars. The Boorong people of northwestern Victoria saw the Cross itself as a possum in a tree.",
+    "In Māori tradition the Cross is Māhutonga, and it is also seen as Te Punga, the anchor of the great canoe of Tama-rereti (the Milky Way), with the Pointers as the anchor rope.",
+    "The Tswana of Botswana saw the stars of the Cross as Dithutlwa, two giraffes: Acrux and Mimosa a male, Gacrux and Delta Crucis a female.",
+    "Chinese astronomers, who worked at latitudes similar to Ptolemy's, once included these four stars in a constellation called Kulou before precession hid them from China too.",
+    "Because of precession the Cross will be visible from the continental United States and most of Europe again in roughly twelve thousand years."
+  ]
+}

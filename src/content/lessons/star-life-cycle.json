@@ -1,0 +1,225 @@
+{
+  "id": "star-life-cycle",
+  "unit": "objects",
+  "order": 2,
+  "title": "The life cycle of stars",
+  "subtitle": "Stars are born, shine for millions or billions of years, and die. Every stage is on show in the night sky.",
+  "minutes": 7,
+  "sections": [
+    {
+      "heading": "Born in a cloud",
+      "body": [
+        "By the end of this lesson you will be able to point to a stellar nursery, a middle-aged star, a dying giant and the wreckage of an exploded star, and say how they are connected.",
+        "Stars form inside nebulae, cold clouds of gas and dust. Where a clump of cloud grows dense enough, gravity pulls it together; it heats up as it shrinks, and when the center reaches roughly ten million degrees, hydrogen begins to fuse into helium. A star switches on. The nearest big nursery is [[dso:M42|the Orion Nebula]], about 1,300 light-years away (a light-year is the distance light travels in a year, about six trillion miles). It is the fuzzy middle \"star\" of Orion's Sword, and its glow is powered by hot stars less than a few million years old."
+      ],
+      "demo": {
+        "title": "A stellar nursery",
+        "controls": [],
+        "steps": [
+          {
+            "caption": "Below Orion's Belt hangs the Sword, a short line of three faint points. The middle one is not a star but the Orion Nebula, a cloud where stars are forming right now.",
+            "time": "month:1 21:00",
+            "view": { "target": "dso:M42", "fov": 25 },
+            "layers": { "dsoMarkers": true },
+            "highlights": [
+              { "type": "object", "ref": "dso:M42", "label": "Orion Nebula (M42) — stars being born" },
+              { "type": "polyline", "points": ["star:Alnitak", "star:Alnilam", "star:Mintaka"], "label": "Belt" }
+            ]
+          }
+        ]
+      },
+      "tryIt": "On a winter evening, look at the middle of Orion's Sword. Even from Brooklyn, binoculars show that it is a small misty patch rather than a sharp point."
+    },
+    {
+      "heading": "The long middle age",
+      "body": [
+        "A star spends about nine tenths of its life steadily fusing hydrogen in its core. Astronomers call this stage the main sequence. The Sun is halfway through a main-sequence life of about ten billion years; [[star:Sirius|Sirius]] and [[star:Vega|Vega]] are main-sequence stars too.",
+        "One number decides nearly everything about a star's life: its mass. You might expect a heavier star, with more fuel, to last longer. The opposite is true. Massive stars burn so fiercely that they run through their fuel in a few million years, while the smallest red dwarfs sip theirs for trillions. Live fast, die young."
+      ]
+    },
+    {
+      "heading": "Red giants",
+      "body": [
+        "When the hydrogen in the core runs out, the core shrinks and heats while the outer layers swell and cool. The star becomes a red giant: bigger, brighter and redder than before. Two of the brightest stars in the sky are in this stage: [[star:Aldebaran|Aldebaran]], the orange eye of Taurus, and [[star:Arcturus|Arcturus]], the bright orange star of spring. The Sun will do the same in about five billion years."
+      ],
+      "demo": {
+        "title": "Stars in old age",
+        "controls": [],
+        "steps": [
+          {
+            "caption": "Aldebaran is an orange giant about 44 times wider than the Sun. Its core hydrogen is used up and its outer layers have swollen and cooled.",
+            "time": "month:1 21:00",
+            "view": { "target": "star:Aldebaran", "fov": 40 },
+            "highlights": [{ "type": "object", "ref": "star:Aldebaran", "label": "Aldebaran — red giant" }]
+          },
+          {
+            "caption": "Arcturus, the brightest star of the spring sky, is another giant, with a mass close to the Sun's. It is a preview of the Sun's distant future.",
+            "time": "month:5 22:00",
+            "view": { "target": "star:Arcturus", "fov": 50 },
+            "highlights": [{ "type": "object", "ref": "star:Arcturus", "label": "Arcturus — red giant" }]
+          }
+        ]
+      }
+    },
+    {
+      "heading": "A gentle ending: planetary nebula and white dwarf",
+      "body": [
+        "What happens next depends on mass. A star like the Sun, or anything up to about eight times heavier, ends quietly. The giant puffs its outer layers into space, where they glow for some tens of thousands of years as a planetary nebula (a misleading old name: the little discs reminded early telescope users of planets). [[dso:M57|The Ring Nebula]] in Lyra and [[dso:M27|the Dumbbell Nebula]] in Vulpecula are two you can see in a small telescope.",
+        "The exposed core is left behind as a white dwarf: an object with about the mass of the Sun squeezed into the size of the Earth, no longer fusing anything, slowly cooling. [[star:Sirius|Sirius]] has one for a companion. Sirius B is the nearest white dwarf, though it is lost in the glare of Sirius itself in all but good telescopes."
+      ],
+      "demo": {
+        "title": "Where Sun-like stars end up",
+        "controls": [],
+        "steps": [
+          {
+            "caption": "The Ring Nebula lies midway between the two stars at the bottom of Lyra's little parallelogram, below bright Vega. It is a shell of gas thrown off by a dying star.",
+            "time": "month:8 22:00",
+            "view": { "target": "dso:M57", "fov": 20 },
+            "layers": { "dsoMarkers": true },
+            "highlights": [
+              { "type": "object", "ref": "dso:M57", "label": "Ring Nebula (M57)" },
+              { "type": "polyline", "points": ["star:Sheliak", "star:Sulafat"], "dashed": true },
+              { "type": "object", "ref": "star:Vega", "label": true }
+            ]
+          },
+          {
+            "caption": "The Dumbbell Nebula, a bigger and brighter planetary nebula, sits inside the Summer Triangle, just north of the tip of the little arrow Sagitta.",
+            "time": "month:8 22:00",
+            "view": { "target": "dso:M27", "fov": 45 },
+            "layers": { "dsoMarkers": true },
+            "highlights": [
+              { "type": "object", "ref": "dso:M27", "label": "Dumbbell Nebula (M27)" },
+              { "type": "constellation", "id": "Sge", "lines": true, "label": true }
+            ]
+          },
+          {
+            "caption": "Sirius, the brightest star in the night sky, is orbited every 50 years by a white dwarf, Sirius B: the Earth-sized remains of a star that has already died.",
+            "time": "month:2 21:00",
+            "view": { "target": "star:Sirius", "fov": 40 },
+            "highlights": [{ "type": "object", "ref": "star:Sirius", "label": "Sirius A + white dwarf Sirius B" }]
+          }
+        ]
+      }
+    },
+    {
+      "heading": "A violent ending: supernova",
+      "body": [
+        "Stars born with more than about eight times the Sun's mass swell into supergiants and keep fusing heavier and heavier elements until the core is iron, which gives no energy. The core collapses in under a second and the star blows itself apart as a supernova, for a few weeks outshining billions of ordinary stars. The collapsed core survives as a neutron star, a ball about twelve miles across, or, for the heaviest stars, a black hole.",
+        "[[star:Betelgeuse|Betelgeuse]] and [[star:Antares|Antares]] are red supergiants that will end this way, though \"soon\" for a star means some time in the next hundred thousand years or so. For the aftermath, look near the tip of the southern horn of Taurus: [[dso:M1|the Crab Nebula]] is the expanding debris of a supernova that Chinese astronomers recorded in the year 1054, with a spinning neutron star at its center."
+      ],
+      "demo": {
+        "title": "Before and after",
+        "controls": [],
+        "steps": [
+          {
+            "caption": "Betelgeuse is a red supergiant near the end of its life. One day it will explode as a supernova.",
+            "time": "month:1 21:00",
+            "view": { "target": "con:Ori", "fov": 50 },
+            "highlights": [{ "type": "object", "ref": "star:Betelgeuse", "label": "Betelgeuse — supernova to come" }]
+          },
+          {
+            "caption": "The Crab Nebula, about one degree from the star at the tip of the Bull's southern horn, is what a supernova leaves behind. The explosion was seen in 1054.",
+            "time": "month:1 21:00",
+            "view": { "target": "dso:M1", "fov": 30 },
+            "layers": { "dsoMarkers": true },
+            "highlights": [
+              { "type": "object", "ref": "dso:M1", "label": "Crab Nebula (M1) — supernova remnant" },
+              { "type": "object", "ref": "star:ζ Tau", "label": "Zeta Tauri, the horn tip" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "heading": "Made of star-stuff",
+      "body": [
+        "The universe began with almost nothing but hydrogen and helium. Nearly every heavier atom — the carbon in your cells, the oxygen you breathe, the calcium in your bones, the iron in your blood — was forged inside stars and scattered into space by planetary nebulae and supernovae. That enriched gas gathered into new clouds, new stars and, at least once, a planet with people on it."
+      ]
+    }
+  ],
+  "keyPoints": [
+    "Stars form in nebulae, spend most of their lives fusing hydrogen on the main sequence, then swell into giants.",
+    "Mass decides everything: heavier stars are brighter, hotter and much shorter-lived.",
+    "Sun-like stars end as a planetary nebula around a white dwarf; stars above about eight solar masses explode as supernovae and leave a neutron star or black hole.",
+    "The elements heavier than helium in the Earth and in us were made in stars."
+  ],
+  "examples": [
+    { "ref": "dso:M42", "label": "Orion Nebula (M42)", "note": "Birth: a cloud forming new stars. A fuzzy patch to the naked eye in a dark sky; binoculars show it from the city." },
+    { "ref": "star:Vega", "label": "Vega", "note": "Middle age: a main-sequence star fusing hydrogen, about twice the Sun's mass. Naked eye." },
+    { "ref": "star:Arcturus", "label": "Arcturus", "note": "Old age: a red giant with roughly the Sun's mass, showing the Sun's future. Naked eye." },
+    { "ref": "dso:M57", "label": "Ring Nebula (M57)", "note": "Death of a Sun-like star: a planetary nebula. A tiny gray smoke ring in a small telescope." },
+    { "ref": "dso:M27", "label": "Dumbbell Nebula (M27)", "note": "A larger, brighter planetary nebula. A faint glow in binoculars under a dark sky; easy in a small telescope." },
+    { "ref": "star:Sirius", "label": "Sirius", "note": "Orbited by Sirius B, the nearest white dwarf (the companion itself needs a good telescope). Sirius is naked eye." },
+    { "ref": "star:Betelgeuse", "label": "Betelgeuse", "note": "A red supergiant that will end as a supernova. Naked eye." },
+    { "ref": "dso:M1", "label": "Crab Nebula (M1)", "note": "Remnant of the supernova of 1054 with a neutron star inside. A dim oval smudge in a small telescope under a dark sky." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Star A has 20 times the mass of the Sun; star B has half the mass of the Sun. Which statement is right?",
+      "choices": [
+        "A will live longer because it has more fuel",
+        "They will live equally long",
+        "B will live far longer because it burns its fuel so slowly",
+        "Neither will ever run out of fuel"
+      ],
+      "answerIndex": 2,
+      "explanation": "Massive stars are so luminous that they exhaust their fuel in millions of years; low-mass stars last tens of billions of years or more."
+    },
+    {
+      "id": "q2",
+      "prompt": "What is going on in the Orion Nebula?",
+      "choices": [
+        "A star exploded there in 1054",
+        "New stars are forming out of gas and dust",
+        "A Sun-like star is shedding its outer layers",
+        "Two galaxies are colliding"
+      ],
+      "answerIndex": 1,
+      "explanation": "M42 is a stellar nursery lit by very young, hot stars. The 1054 supernova made the Crab Nebula, in Taurus."
+    },
+    {
+      "id": "q3",
+      "prompt": "Billions of years from now, what will be left of the Sun?",
+      "choices": ["A white dwarf", "A neutron star", "A black hole", "Nothing at all"],
+      "answerIndex": 0,
+      "explanation": "The Sun is far too light to explode. It will become a red giant, shed a planetary nebula and leave a white dwarf."
+    },
+    {
+      "id": "q4",
+      "prompt": "Aldebaran and Arcturus are both orange and very bright. What stage of life are they in?",
+      "choices": [
+        "Still forming inside a nebula",
+        "Main sequence, fusing hydrogen in the core like the Sun",
+        "White dwarfs cooling off",
+        "Red giants that have used up the hydrogen in their cores"
+      ],
+      "answerIndex": 3,
+      "explanation": "Both are giants: their cores ran out of hydrogen and their outer layers swelled and cooled to orange."
+    },
+    {
+      "id": "q5",
+      "prompt": "What is a planetary nebula?",
+      "choices": [
+        "A cloud in which planets are forming",
+        "A shell of gas thrown off by a dying Sun-like star",
+        "The debris of a supernova",
+        "A planet with a very thick atmosphere"
+      ],
+      "answerIndex": 1,
+      "explanation": "The name comes from their small round look in early telescopes. They have nothing to do with planets."
+    },
+    {
+      "id": "q6",
+      "prompt": "Where did the iron in your blood come from?",
+      "choices": [
+        "It was made in the Sun and carried here by the solar wind",
+        "It formed in the Earth's core",
+        "It was forged in earlier generations of stars and scattered when they died",
+        "It has existed unchanged since the beginning of the universe"
+      ],
+      "answerIndex": 2,
+      "explanation": "The early universe held almost only hydrogen and helium. Heavier elements were built in stars and spread by supernovae and dying giants."
+    }
+  ]
+}

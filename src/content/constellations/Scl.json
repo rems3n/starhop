@@ -1,0 +1,62 @@
+{
+  "id": "Scl",
+  "kind": "modern",
+  "origin": {
+    "namedBy": "Nicolas-Louis de Lacaille",
+    "when": "1751–52 (first published 1756)",
+    "history": [
+      "Sculptor is one of the fourteen constellations created by the French astronomer Nicolas-Louis de Lacaille after his survey of the southern sky from the Cape of Good Hope in 1751–52. Like most of his inventions it celebrates a craft rather than a myth. His original name, on his map of 1756, was l'Atelier du Sculpteur, the Sculptor's Studio, and he drew a carved head standing on a three-legged table, with the artist's mallet and chisels lying on a block of marble beside it.",
+      "On his 1763 map the name was put into Latin as Apparatus Sculptoris. Johann Bode redrew the figure in 1801, moving the tools onto the table and using the freed space for a constellation of his own, the Electrical Machine, which did not catch on. In 1844 the English astronomer John Herschel suggested shortening the name to plain Sculptor. Francis Baily adopted the short form in his star catalog of 1845, and it has been Sculptor ever since.",
+      "The ancient Greeks had no figure here. Aratus spoke only of scattered faint stars in this region, part of the area he called the Water."
+    ]
+  },
+  "overview": "Sculptor represents a sculptor's workshop, though nothing in its handful of faint stars suggests one. It is a dim, empty-looking region south of Cetus and east of Fomalhaut, worth knowing because it holds one of the brightest galaxies in the sky.",
+  "howToFind": [
+    "Sculptor fills the dark space to the left (east) of [[star:Fomalhaut|Fomalhaut]], the lone bright star low in the south on autumn evenings. Its western end is easy to place: [[star:γ Scl|Gamma Sculptoris]] is half a fist to the left of Fomalhaut and slightly lower. The constellation then runs on to the left for another two fists.",
+    "For the eastern end, find [[star:Diphda|Diphda]], the brightest star in the tail of Cetus, about two and a half fists to the upper left of Fomalhaut. [[star:α Scl|Alpha Sculptoris]], the constellation's brightest star, is a bit more than a fist straight below Diphda. From Brooklyn, Sculptor is at its best on November and December evenings but stays within about two fists of the southern horizon, so its fourth-magnitude stars are lost in any city haze. Seek it out from a dark site."
+  ],
+  "shape": "A large, vague triangle or kite of four fourth-magnitude stars spread over nearly three fists: Alpha at the eastern end, [[star:β Scl|Beta]], Gamma and [[star:δ Scl|Delta]] toward Fomalhaut. To the eye it is simply a blank area, which is no accident: here we look straight out of the flat disk of the Milky Way, where foreground stars are fewest.",
+  "mainStars": [
+    {
+      "ref": "star:α Scl",
+      "note": "The brightest star at magnitude 4.3, a blue-white giant nearly 800 light-years away."
+    },
+    {
+      "ref": "star:β Scl",
+      "note": "A blue-white star of magnitude 4.4, the southernmost of the main stars and very low from New York."
+    },
+    {
+      "ref": "star:γ Scl",
+      "note": "An orange giant of magnitude 4.4, the easiest to find because it lies just east of Fomalhaut."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "dso:NGC253",
+      "equip": "binoculars",
+      "note": "The Sculptor Galaxy, a big spiral seen nearly edge-on, about three-quarters of a fist south of Diphda. Under a dark sky binoculars show a slim streak of light; a small telescope shows a long, mottled cigar. It is the leading member of the Sculptor Group, one of the nearest groups of galaxies to our own."
+    },
+    {
+      "ref": "dso:NGC288",
+      "equip": "small-telescope",
+      "note": "A loose globular cluster just southeast of NGC 253, a pale round glow in a small telescope."
+    },
+    {
+      "ref": "dso:NGC55",
+      "equip": "small-telescope",
+      "note": "Another edge-on galaxy of the Sculptor Group, long and uneven. It is far to the south, on the border with Phoenix, and from Brooklyn it gets only about a fist above the horizon, so this is one for a trip south."
+    },
+    {
+      "ref": "dso:NGC300",
+      "equip": "telescope",
+      "note": "A face-on spiral galaxy of low surface brightness, large but faint, best seen from southern latitudes."
+    }
+  ],
+  "stories": [],
+  "facts": [
+    "The south galactic pole, the point 90 degrees from the plane of the Milky Way, lies in Sculptor. Looking this way we see few stars of our own Galaxy and a clear view of galaxies beyond.",
+    "Sculptor is the largest of Lacaille's fourteen constellations by area, even though its brightest star is only fourth magnitude.",
+    "The Cartwheel Galaxy, a ring-shaped galaxy about 500 million light-years away made famous by space telescope images, is in Sculptor. Its ring of young blue stars was created when a smaller galaxy plunged through its center.",
+    "The Sculptor Dwarf, a small, faint companion galaxy of the Milky Way, lies here too; it belongs to the Local Group, the small family of galaxies that includes our own."
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "id": "Lep",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ancient Greek tradition; catalogued by Ptolemy",
+    "when": "Described by Aratus in the 3rd century BCE; listed in the Almagest, 2nd century CE",
+    "history": [
+      "The Greeks called this little constellation *Lagoos*, the Hare; Lepus is the Latin word. It belongs to the hunting scene around Orion. Aratus, in the 3rd century BCE, describes the Hare beneath both of Orion's feet, chased for all time by the Dog, and Ptolemy included it among the 48 constellations of his *Almagest*.",
+      "No hero or god is attached to it. The hare is simply a hare, the hunter's everyday quarry, and the ancient writers who tried to explain its presence came up with reasons rather than adventures: Eratosthenes said the god Hermes put it in the sky to honor its speed. The brightest star's name, Arneb, is just the Arabic for 'the hare'."
+    ]
+  },
+  "overview": "Lepus is the Hare, crouching under the feet of Orion with the Great Dog close behind it. It is a compact group of third- and fourth-magnitude stars, with a four-sided body and two faint ears pointing up toward Rigel. It is modest but easy to locate, because Orion stands right on top of it.",
+  "howToFind": [
+    "Find Orion and look directly beneath him. About one fist (10 degrees) below the line joining his two lower stars, [[star:Rigel|Rigel]] and [[star:Saiph|Saiph]], are two stars of similar brightness, one above the other and a couple of finger-widths apart. The upper one is [[star:Arneb|Arneb]] and the lower is [[star:Nihal|Nihal]]. With two fainter stars to their left they make a lopsided box, the hare's body. To the right of the box are [[star:ε Lep|Epsilon]] and [[star:μ Lep|Mu Leporis]], the forequarters, and above Mu, just under Rigel, a little clump of faint stars makes the ears.",
+    "From latitude 40 degrees north the Hare never gets very high, about a third of the way up the southern sky. Look for it on evenings from January through March, when Orion is in the south; [[star:Sirius|Sirius]] will be blazing a fist and a half to its left."
+  ],
+  "shape": "A small, squashed box of four stars about half a fist across, with a couple more stars to the right and a faint pair of 'ears' sticking up toward Orion. The whole thing fits under your fist at arm's length. Arneb and Nihal may show from the city on a clear night; the rest needs a suburban or darker sky.",
+  "mainStars": [
+    {
+      "ref": "star:Arneb",
+      "note": "The brightest star of the Hare, in the middle of its body. It looks ordinary but is a white supergiant thousands of times more luminous than the Sun, shining from roughly 2,000 light-years away."
+    },
+    {
+      "ref": "star:Nihal",
+      "note": "Just below Arneb, a yellow giant about 160 light-years away. Its Arabic name comes from a different picture of these stars, as camels quenching their thirst."
+    },
+    {
+      "ref": "star:ε Lep",
+      "note": "An orange giant at the lower right of the figure, with a tint that shows in binoculars."
+    },
+    {
+      "ref": "star:μ Lep",
+      "note": "A blue-white star at the base of the ears, on the Rigel side of the constellation."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "star:γ Lep",
+      "equip": "binoculars",
+      "note": "A wide and pretty double star at the lower left corner of the box: a yellowish star with a fainter orange companion, easily split in steadily held binoculars. The pair is only 29 light-years away."
+    },
+    {
+      "ref": "dso:M79",
+      "equip": "small-telescope",
+      "note": "A globular cluster, a ball of very old stars about 42,000 light-years away. To find it, draw a line from Arneb through Nihal and continue a little more than the same distance again. A small telescope shows a small, round, grainy glow. Globular clusters are mostly a summer sight, so this is a rare one for winter."
+    },
+    {
+      "ref": "dso:IC418",
+      "equip": "telescope",
+      "note": "A tiny, bright planetary nebula in the north of the constellation, nicknamed the Spirograph Nebula after its appearance in Hubble Space Telescope pictures. In a backyard telescope it is a very small bluish disk that needs high power to tell from a star."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Lep-leros",
+      "title": "The hares that overran Leros",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.33", "date": "1st century BCE – 2nd century CE" }
+      ],
+      "summary": "A young man brings a single pregnant hare to the island of Leros, where there had been none. Soon everyone is breeding hares, the animals multiply out of control and eat the crops, and the starving islanders barely manage to drive them out. The hare in the sky is a reminder that you can have too much of a good thing.",
+      "retelling": [
+        "There was a time, Hyginus says, when there were no hares at all on the island of Leros, in the eastern Aegean. Then a young man of the island, who had taken a liking to the animals, brought one over from another country. She was a female, and she was pregnant.",
+        "He looked after her with great care while she bore her young. The neighbors came to see. The little hares were charming, and soon other people wanted some. A few bought them; others were given them as presents. Before long everybody on Leros was raising hares.",
+        "Hares breed fast. The ancient writers were fascinated by it; they believed a hare could conceive a new litter while still carrying the last. In what seemed no time at all there were so many of them that the whole island was swarming.",
+        "Nobody had planned for feeding such a multitude, and nobody did feed them. So the hares fed themselves. They went into the grain fields and ate everything. The harvest failed, and the people of Leros, who had started the whole business for pleasure, found themselves going hungry.",
+        "In the end the entire community had to act together. With great difficulty, Hyginus says, they managed at last to drive the hares off the island.",
+        "Afterward they set the image of a hare among the stars, so that people would remember the lesson: nothing in life is so desirable that it cannot, in time, bring more grief than pleasure. It is a modest little story for a modest little constellation, and an unusual one. Most star-myths are about gods and heroes. This one is about ordinary people and a farming disaster, and it would not be out of place in a modern textbook on what happens when a species is brought to an island that has never known it."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Lepus: the hare, and the moral tale of Leros",
+        "url": "http://www.ianridpath.com/startales/lepus.html"
+      },
+      "characters": ["the young man of Leros", "the people of Leros", "the hare"],
+      "questions": [
+        {
+          "id": "leros-q1",
+          "prompt": "How did the plague of hares on Leros begin?",
+          "choices": ["A god sent them as a punishment", "A young man brought one pregnant female to the island", "They swam over from the mainland", "Orion released them for his dogs to hunt"],
+          "answerIndex": 1,
+          "explanation": "There had been no hares on Leros until a young man imported a single pregnant female and others began raising her offspring."
+        },
+        {
+          "id": "leros-q2",
+          "prompt": "What harm did the hares do?",
+          "choices": ["They spread a sickness", "They undermined the houses with burrows", "They ate the grain crops and caused famine", "They drove away the islanders' sheep"],
+          "answerIndex": 2,
+          "explanation": "Left unfed, the swarming hares devoured the grain fields, and the islanders were reduced to hunger."
+        },
+        {
+          "id": "leros-q3",
+          "prompt": "What lesson does Hyginus say the hare in the sky is meant to teach?",
+          "choices": ["That something desirable can end up bringing more grief than pleasure", "That speed is the greatest gift", "That hunters should respect their prey", "That islands should not trade with strangers"],
+          "answerIndex": 0,
+          "explanation": "The image was placed among the stars to remind people that nothing is so desirable that it may not later cause more sorrow than joy."
+        }
+      ]
+    },
+    {
+      "id": "Lep-orions-quarry",
+      "title": "The hunter's quarry and the endless chase",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Aratus", "work": "Phaenomena 338–341", "date": "3rd century BCE" },
+        { "author": "Eratosthenes", "work": "Catasterisms (as reported in Ridpath's Star Tales)", "date": "3rd century BCE (surviving summary is later)" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.33", "date": "1st century BCE – 2nd century CE" }
+      ],
+      "summary": "The oldest explanation of the Hare is the plainest: a hunter must have something to hunt, so a hare was set at Orion's feet, with his Dog forever on its trail. Some said the god Hermes placed it there to honor its swiftness. Even in antiquity, others objected that a hare was no fit prey for so great a hunter.",
+      "retelling": [
+        "The people who first drew pictures among the stars had put a hunter in the winter sky, the biggest and brightest figure of all. Having drawn a hunter, Hyginus explains, they wanted to show what he was hunting. So they put a hare at his feet, running.",
+        "It was a sensible choice. The hare was the everyday game of the Greek countryside, and catching one took skill, because nothing on four legs was quicker off the mark. That speed was the creature's glory. Eratosthenes says it was the god Hermes who placed the hare among the stars, and that he did so on account of its swiftness; Hermes was the fleet-footed messenger of the gods, and it makes sense that he should admire a fast runner.",
+        "The hare had a second claim to fame, and the star-writers mention it in the same breath. It was thought to be the most fertile of all four-footed animals, able to be pregnant with a new litter while still giving birth to the last.",
+        "In the sky the hare is not being hunted by Orion so much as by his dog. Aratus describes the scene in four lines. Beneath both feet of Orion is the Hare, pursued continually through all time, while the star Sirius is carried along forever behind it as if in chase. The Dog rises close on the Hare's heels, and as it sets it watches the Hare set before it.",
+        "That is exactly what you see. The Hare lies just west of the Great Dog, so as the sky turns it crosses ahead of him, a short lead that never grows and never shrinks. The hound cannot catch it, and it cannot get away. Meanwhile it has tucked itself into the one place a hunted animal might think of as safe: right under the hunter's boots, where he is not looking.",
+        "Not everyone approved. Hyginus reports that some critics thought the whole idea beneath Orion's dignity. So noble and great a hunter, they said, ought not to be shown chasing hares. They pointed out that the poet Callimachus had been criticized for the same lapse of taste, when he wrote in praise of Artemis that she delighted in hunting hares. Those critics preferred a grander reading of the same stars: Orion is not looking down at the Hare at all. He faces the other way, club raised, to meet the charge of the Bull."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Lepus: the hare beneath Orion's feet",
+        "url": "http://www.ianridpath.com/startales/lepus.html"
+      },
+      "characters": ["Orion", "the Hare", "the Dog (Sirius)", "Hermes"],
+      "questions": [
+        {
+          "id": "quarry-q1",
+          "prompt": "According to Eratosthenes, which god placed the hare among the stars, and why?",
+          "choices": ["Artemis, because it was her favorite prey", "Zeus, because it had fed him as a child", "Apollo, because it warned him of danger", "Hermes, because of its swiftness"],
+          "answerIndex": 3,
+          "explanation": "Eratosthenes says Hermes set the hare in the sky to honor its speed."
+        },
+        {
+          "id": "quarry-q2",
+          "prompt": "In Aratus's description, what pursues the Hare across the sky forever?",
+          "choices": ["The Dog, with its star Sirius", "The Scorpion", "The Bull", "The Twins"],
+          "answerIndex": 0,
+          "explanation": "The Hare lies just west of Canis Major, so the Dog rises right behind it and follows it down to the western horizon."
+        },
+        {
+          "id": "quarry-q3",
+          "prompt": "Why did some ancient critics object to showing Orion with a hare?",
+          "choices": ["Hares were sacred to Hermes", "They thought so great a hunter should not be shown chasing such humble prey", "The hare was a symbol of bad luck", "Orion had sworn never to hunt again"],
+          "answerIndex": 1,
+          "explanation": "Hyginus reports the view that a hare was unworthy quarry for Orion, and that he should be seen instead as fighting the Bull."
+        },
+        {
+          "id": "quarry-q4",
+          "prompt": "What did ancient writers believe was remarkable about hares besides their speed?",
+          "choices": ["They never slept", "They could see in total darkness", "Their extraordinary fertility", "They lived for a hundred years"],
+          "answerIndex": 2,
+          "explanation": "Hares were thought able to conceive again while still pregnant, which Eratosthenes and Hyginus both mention and which drives the story of Leros."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Lepus also holds a famous variable star, R Leporis, known as Hind's Crimson Star after the English astronomer John Russell Hind, who noted its deep red color in 1845. It needs binoculars or a telescope and changes brightness over about 14 months.",
+    "Arabic sky-watchers saw the four stars of the hare's body as a throne or chair belonging to the figure they imagined in place of Orion.",
+    "In Chinese astronomy four stars of Lepus formed Ce, a toilet, with a screen for privacy made from two more."
+  ]
+}

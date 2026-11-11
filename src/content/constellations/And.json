@@ -1,0 +1,140 @@
+{
+  "id": "And",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); an older Greek figure, with a Babylonian goddess earlier in the same place",
+    "when": "2nd century CE (Almagest); described by Aratus in the 3rd century BCE",
+    "history": [
+      "Andromeda is one of the 48 constellations of Ptolemy's *Almagest* (about 150 CE). Aratus described her four centuries earlier as a woman with her arms stretched wide and chained even in the sky, lying below her mother [[con:Cas|Cassiopeia]]. Hyginus notes that the Athenian playwright Euripides wrote a celebrated tragedy named after her; only fragments survive.",
+      "A female figure stood in this part of the sky before the Greeks drew theirs. In Babylonian astronomy the stars of the middle of Andromeda, together with part of Pisces, formed a goddess sometimes named Anunitum, the Lady of the Heavens.",
+      "The star at her head was shared with [[con:Peg|Pegasus]] in antiquity, where it marked the horse's navel. It now belongs to Andromeda alone, though its name, Alpheratz, still comes from the Arabic for 'the horse'."
+    ]
+  },
+  "overview": "Andromeda is the princess chained to a rock for a sea monster and rescued by Perseus. In the sky she is two gently curving lines of stars spreading from one corner of the Great Square of Pegasus, and she holds the most distant thing you can see without a telescope: the Andromeda Galaxy.",
+  "howToFind": [
+    "Find the Great Square of Pegasus, high in the south on autumn evenings. Its northeast corner star, [[star:Alpheratz|Alpheratz]], is Andromeda's head. From it a line of three bright stars runs northeast toward Cassiopeia and Perseus: Alpheratz, then orange [[star:Mirach|Mirach]] about a fist and a half away (a fist at arm's length is roughly 10 degrees), then [[star:Almach|Almach]] a little over a fist farther. Halfway between Alpheratz and Mirach sits fainter [[star:δ And|Delta Andromedae]].",
+    "For the galaxy, stop at Mirach and turn a right angle toward Cassiopeia. Two dimmer stars lead the way: [[star:μ And|Mu]], then [[star:ν And|Nu Andromedae]]. Just beyond Nu, about eight degrees from Mirach in all, is [[dso:M31|the Andromeda Galaxy]]. From Brooklyn Andromeda climbs the eastern sky in early autumn, passes almost overhead in November and December evenings, and is gone into the northwest by early spring."
+  ],
+  "shape": "A long, shallow curve of three second-magnitude stars about two and a half fists long (magnitude is the brightness scale, where smaller numbers are brighter), with a fainter, parallel line of stars above it that is lost in city light. From town expect to see just the three bright stars strung out from the corner of the Square.",
+  "mainStars": [
+    {
+      "ref": "star:Alpheratz",
+      "note": "Alpha Andromedae, a blue-white star 97 light-years away marking the princess's head and the northeast corner of the Great Square. The ancients counted it in both Andromeda and Pegasus."
+    },
+    {
+      "ref": "star:Mirach",
+      "note": "Beta Andromedae, a red giant about 200 light-years away with a clear orange tint. It marks her waist; the name comes from the Arabic for 'the girdle'. It is your turning point for the galaxy."
+    },
+    {
+      "ref": "star:Almach",
+      "note": "Gamma Andromedae, her foot. To the eye it is a single orange star; a small telescope splits it into a golden star with a close blue companion, one of the finest color-contrast doubles in the sky."
+    },
+    {
+      "ref": "star:δ And",
+      "note": "Delta Andromedae, an orange giant about 100 light-years away, the stepping stone between Alpheratz and Mirach."
+    },
+    {
+      "ref": "star:Titawin",
+      "note": "Upsilon Andromedae, a faint Sun-like star 44 light-years away, east of the galaxy. It is known to have a family of several planets."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "dso:M31",
+      "equip": "naked-eye",
+      "note": "The Andromeda Galaxy, a spiral of hundreds of billions of stars about 2.5 million light-years away. Under a dark sky it is a faint elongated smudge to the bare eye; from the city use binoculars, which show an oval glow with a brighter center."
+    },
+    {
+      "ref": "dso:M32",
+      "equip": "small-telescope",
+      "note": "A small, bright companion galaxy of M31, looking like a fuzzy star just south of the big galaxy's center."
+    },
+    {
+      "ref": "dso:M110",
+      "equip": "small-telescope",
+      "note": "A second, larger and dimmer companion galaxy on the opposite side of M31. It needs a dark sky."
+    },
+    {
+      "ref": "dso:NGC752",
+      "equip": "binoculars",
+      "note": "A big, loose open cluster of stars about half a fist south of Almach. Binoculars show a scattered sprinkle of faint stars wider than the full Moon."
+    },
+    {
+      "ref": "dso:NGC7662",
+      "equip": "small-telescope",
+      "note": "The Blue Snowball, a planetary nebula (the glowing shell puffed off by a dying star). At moderate magnification it is a tiny blue-green disk."
+    }
+  ],
+  "stories": [
+    {
+      "id": "And-rock",
+      "title": "Andromeda on the rock",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Ovid", "work": "Metamorphoses 4.663–764", "date": "c. 8 CE" },
+        { "author": "Apollodorus", "work": "Library 2.4.3–5", "date": "1st–2nd century CE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.11", "date": "2nd century CE" },
+        { "author": "Aratus", "work": "Phaenomena 197–204", "date": "3rd century BCE" }
+      ],
+      "summary": "Princess Andromeda was chained to a seaside rock as a sacrifice to a monster, to pay for her mother's boast. The hero Perseus saw her from the air, killed the creature and married her. She chose to leave her homeland with him, and Athena placed her among the stars.",
+      "retelling": [
+        "Andromeda had done nothing. Her mother, Queen Cassiopeia, had bragged of being more beautiful than the sea nymphs; the sea god Poseidon had answered with a flood and a monster; and the oracle of Ammon had told her father, King Cepheus, that the only cure was to give the creature his daughter. So the people of Ethiopia led their princess down to the shore and fastened her arms to the rock.",
+        "That is where Perseus found her. He was flying home on winged sandals with the head of the Gorgon Medusa in a bag, and when he looked down, Ovid says, he would have taken her for a marble statue if the breeze had not stirred her hair and warm tears had not been running down her face. He nearly forgot to keep his wings moving. He landed and asked her name, her country and why she wore chains.",
+        "At first she could not answer a strange man at all. She would have hidden her face in her hands if her hands had been free; all she could do was cry. But he kept asking, and she grew afraid that silence would look like guilt, as if she were being punished for some crime of her own. So she told him who she was and what her mother had said. She had not finished when the sea roared and a huge shape came shouldering through the waves toward the rock. Andromeda screamed.",
+        "Her parents were there, weeping and clinging to her, and no use to anyone. Perseus told them, briskly, that there would be time for tears later. He was a son of Zeus, he said, and the killer of the Gorgon; if he saved their daughter, would they give her to him as his wife? They promised him the girl and the kingdom with her. He kicked off from the ground, dropped onto the monster's back like an eagle onto a snake, and drove his curved sword in again and again until the sea was red and the thing was dead. The shore rang with cheering, and Andromeda, her chains struck off, walked free.",
+        "She married him at once. The wedding feast was broken up by her uncle Phineus, to whom she had earlier been promised and who had done nothing to help her when it counted; he arrived with an armed band to claim her, and Perseus ended the fight by holding up Medusa's head and turning them to stone.",
+        "What Andromeda herself wanted comes through in one line of Hyginus: neither her father nor her mother could persuade her to stay, and she left parents and country to follow Perseus. Apollodorus says she bore him a son, Perses, whom they left to be raised by Cepheus, and later, in Greece, five more sons and a daughter, Gorgophone. Through one of those sons she became the great-grandmother of Heracles.",
+        "Hyginus says Athena set her among the constellations. Aratus looks up at her and sees the rock still: even in heaven, he writes, her arms are stretched wide and chains are her portion. Her mother sits just above her, her rescuer stands at her feet, and the monster is kept at a distance, far down toward the southern horizon."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Andromeda, the chained princess",
+        "url": "http://www.ianridpath.com/startales/andromeda.html"
+      },
+      "characters": ["Andromeda", "Perseus", "Cassiopeia", "Cepheus", "Phineus", "Athena", "The sea monster (Cetus)"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Why was Andromeda chained to the rock?",
+          "choices": ["She had insulted the goddess Athena", "She was paying for her mother Cassiopeia's boast", "She had refused to marry Phineus", "She had stolen from the temple of Ammon"],
+          "answerIndex": 1,
+          "explanation": "The fault was her mother's: Cassiopeia claimed to outshine the Nereids, and the oracle demanded Andromeda as the price."
+        },
+        {
+          "id": "q2",
+          "prompt": "In Ovid's telling, what did Perseus at first take Andromeda to be?",
+          "choices": ["A sea nymph", "A goddess in disguise", "A marble statue", "A trick of the Gorgon"],
+          "answerIndex": 2,
+          "explanation": "She stood so still that only her wind-stirred hair and her tears showed she was alive and not carved from marble."
+        },
+        {
+          "id": "q3",
+          "prompt": "Why did Andromeda finally answer Perseus's questions?",
+          "choices": ["She feared her silence would be taken as a sign of guilt", "Her father ordered her to speak", "He threatened to fly away", "The monster had already been killed"],
+          "answerIndex": 0,
+          "explanation": "Ovid says she spoke so that he would not think she was chained there for some crime of her own."
+        },
+        {
+          "id": "q4",
+          "prompt": "Who interrupted the wedding of Andromeda and Perseus?",
+          "choices": ["Poseidon", "King Polydectes", "The Nereids", "Her uncle Phineus"],
+          "answerIndex": 3,
+          "explanation": "Phineus, brother of Cepheus, had been betrothed to her earlier and came with armed men; Perseus turned them to stone."
+        },
+        {
+          "id": "q5",
+          "prompt": "According to Hyginus, which deity placed Andromeda among the stars?",
+          "choices": ["Zeus", "Athena", "Poseidon", "Artemis"],
+          "answerIndex": 1,
+          "explanation": "Hyginus says she was put among the constellations by the favor of Athena (Minerva to the Romans)."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "The light you see from the Andromeda Galaxy left it about 2.5 million years ago. It is the farthest thing most people will ever see with their own eyes.",
+    "The first known record of the galaxy is by the Persian astronomer al-Sufi, who described it as a 'nebulous smear' in his *Book of the Fixed Stars* in 964 CE. Not until the 1920s did Edwin Hubble show that it is a separate galaxy far outside our own.",
+    "The Roman writer Pliny the Elder reported that at Joppa (modern Jaffa) visitors were shown a rock with the marks of Andromeda's chains.",
+    "Chinese astronomers saw the stars around Almach as the Great General of Heaven with his officers."
+  ]
+}

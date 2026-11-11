@@ -1,0 +1,182 @@
+{
+  "id": "altitude-azimuth",
+  "unit": "skills",
+  "order": 6,
+  "title": "Altitude and azimuth",
+  "subtitle": "Two numbers that say exactly where to look, and why they keep changing",
+  "minutes": 5,
+  "sections": [
+    {
+      "heading": "How high, and which way",
+      "body": [
+        "After this lesson you will be able to read a line like \"Jupiter: altitude 35°, azimuth 120°\" and point straight at it, and you will know why that line is only good for one moment.",
+        "To tell someone where something is in the sky you need two things: how high it is, and in which compass direction. Astronomers call these altitude and azimuth.",
+        "Altitude is the angle up from the horizon. The horizon is 0°. The point straight over your head, called the zenith, is 90°. Halfway up is 45°. You already know how to measure it: stack fists at arm's length, 10° each.",
+        "Azimuth is the compass direction, counted in degrees around the horizon starting from north and turning toward the east. North is 0°, east is 90°, south is 180°, west is 270°, and 360° brings you back to north. Southeast is 135°; northwest is 315°."
+      ],
+      "demo": {
+        "title": "The grid over your head",
+        "controls": [],
+        "steps": [
+          {
+            "caption": "Facing south with the altitude-azimuth grid switched on. The level rings are altitude: 0° at the horizon, climbing to 90° at the zenith. The upright lines are azimuth, with south, 180°, straight ahead.",
+            "time": "month:8 21:00",
+            "view": { "az": 180, "alt": 40, "fov": 140 },
+            "layers": { "azimuthalGrid": true, "constellationNames": false, "milkyWay": false },
+            "highlights": [
+              { "type": "label", "at": "point:south", "text": "South: azimuth 180°" },
+              { "type": "label", "at": "altaz:90,2", "text": "East: 90°" },
+              { "type": "label", "at": "altaz:270,2", "text": "West: 270°" },
+              { "type": "label", "at": "point:zenith", "text": "Zenith: altitude 90°" }
+            ]
+          },
+          {
+            "caption": "Altair at 9 p.m. in mid-August from Brooklyn: azimuth about 129°, a little short of southeast, and altitude about 47°, roughly halfway up. Face southeast and count four and a half fists up from the horizon.",
+            "observer": { "name": "Brooklyn, NY", "lat": 40.6782, "lon": -73.9442, "tz": "America/New_York" },
+            "time": "month:8 21:00",
+            "view": { "az": 150, "alt": 40, "fov": 130 },
+            "layers": { "azimuthalGrid": true, "constellationNames": false, "milkyWay": false },
+            "highlights": [
+              { "type": "object", "ref": "star:Altair", "label": "Altair" },
+              { "type": "angle", "from": "altaz:129,0", "to": "star:Altair", "label": "altitude 47°" },
+              { "type": "angle", "from": "point:south", "to": "altaz:129,0", "label": "51° left of south: azimuth 129°" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "heading": "The meridian: where things are highest",
+      "body": [
+        "One line on this grid matters more than the rest. The meridian runs from due north on the horizon, up through the zenith, and down to due south. It splits your sky into an eastern half, where things are rising, and a western half, where they are sinking. Every star, the Sun, the Moon and the planets reach their highest altitude of the day at the moment they cross the meridian. That is the best time to look at anything, because you are looking through the least air."
+      ],
+      "demo": {
+        "title": "Crossing the meridian",
+        "controls": ["play", "time-scrub"],
+        "steps": [
+          {
+            "caption": "The dashed line is the meridian. Time is running at an hour every two seconds. Watch Altair climb from the southeast, reach its highest point as it crosses the line around 11 p.m., and start down toward the west. Its altitude and azimuth change every minute.",
+            "observer": { "name": "Brooklyn, NY", "lat": 40.6782, "lon": -73.9442, "tz": "America/New_York" },
+            "time": "month:8 21:00",
+            "rate": 1800,
+            "view": { "az": 180, "alt": 45, "fov": 140 },
+            "layers": { "azimuthalGrid": true, "constellationNames": false, "milkyWay": false },
+            "highlights": [
+              { "type": "polyline", "points": ["point:south", "altaz:180,45", "point:zenith", "altaz:0,45", "point:north"], "dashed": true, "label": "Meridian" },
+              { "type": "object", "ref": "star:Altair", "label": "Altair" },
+              { "type": "label", "at": "point:south", "text": "South" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "heading": "Why the numbers will not sit still",
+      "body": [
+        "Altitude and azimuth are measured from your horizon, at your location, at one instant. But the Earth turns, carrying your horizon with it, so the whole sky slides past: about 15° every hour. A star's altitude and azimuth at nine o'clock are wrong by ten. They are also different for someone in another city at the same moment.",
+        "What does not change is the star's place among the other stars. Altair is always between its two small companions, always the southern corner of the [[asterism:summer-triangle|Summer Triangle]], tonight, next year and from any country. That is why this app teaches you patterns first. Constellations are the fixed address; altitude and azimuth are just directions to that address from where you are standing right now. Starhop works them out for your place and time whenever you need them."
+      ],
+      "demo": {
+        "title": "Moving numbers, fixed pattern",
+        "controls": ["time-scrub"],
+        "steps": [
+          {
+            "caption": "9 p.m.: the Summer Triangle is high in the east. Altair is at altitude 47°, azimuth 129°.",
+            "observer": { "name": "Brooklyn, NY", "lat": 40.6782, "lon": -73.9442, "tz": "America/New_York" },
+            "time": "month:8 21:00",
+            "view": { "az": 150, "alt": 55, "fov": 140 },
+            "layers": { "azimuthalGrid": true, "constellationNames": false, "milkyWay": false },
+            "highlights": [
+              { "type": "polyline", "points": ["star:Vega", "star:Deneb", "star:Altair"], "closed": true, "label": "Summer Triangle" },
+              { "type": "object", "ref": "star:Altair", "label": "Altair" }
+            ]
+          },
+          {
+            "caption": "11 p.m., two hours later: Altair is now at altitude 58°, azimuth 175°, almost due south. Every number has changed. The Triangle has not: same shape, same size, same stars at its corners. Slide the time to follow it through the night.",
+            "observer": { "name": "Brooklyn, NY", "lat": 40.6782, "lon": -73.9442, "tz": "America/New_York" },
+            "time": "month:8 23:00",
+            "view": { "az": 150, "alt": 55, "fov": 140 },
+            "layers": { "azimuthalGrid": true, "constellationNames": false, "milkyWay": false },
+            "highlights": [
+              { "type": "polyline", "points": ["star:Vega", "star:Deneb", "star:Altair"], "closed": true, "label": "Summer Triangle" },
+              { "type": "object", "ref": "star:Altair", "label": "Altair" }
+            ]
+          }
+        ]
+      },
+      "tryIt": "Tonight, pick one bright star. Estimate its altitude in fists and its direction (say, \"southeast, four fists up\"). Come back an hour later and do it again: it will have shifted by up to a fist and a half."
+    }
+  ],
+  "keyPoints": [
+    "Altitude is the angle above the horizon: 0° at the horizon, 90° at the zenith overhead.",
+    "Azimuth is the compass bearing from north through east: N 0°, E 90°, S 180°, W 270°.",
+    "The meridian runs north–zenith–south; everything is highest when it crosses it.",
+    "Altitude and azimuth change minute by minute and from place to place as the Earth turns.",
+    "A star's position among the constellations does not change, which is why patterns come first."
+  ],
+  "examples": [],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "An app says the Moon is at altitude 30°, azimuth 270°. Where do you look?",
+      "choices": [
+        "Due east, three fists above the horizon",
+        "Due south, nearly overhead",
+        "Due north, low on the horizon",
+        "Due west, three fists above the horizon"
+      ],
+      "answerIndex": 3,
+      "explanation": "Azimuth 270° is due west (north 0°, east 90°, south 180°, west 270°), and 30° of altitude is three fists up."
+    },
+    {
+      "id": "q2",
+      "prompt": "What is the altitude of the zenith?",
+      "choices": ["0°", "90°", "180°", "360°"],
+      "answerIndex": 1,
+      "explanation": "Altitude runs from 0° at the horizon to 90° at the zenith, the point straight overhead."
+    },
+    {
+      "id": "q3",
+      "prompt": "A friend in Chicago and you in Brooklyn look at Vega at the same instant. Which statement is true?",
+      "choices": [
+        "You both measure a different altitude and azimuth, but see Vega in the same place among the stars",
+        "You both measure the same altitude and azimuth",
+        "Vega is in a different constellation as seen from Chicago",
+        "Only one of you can see Vega at a time"
+      ],
+      "answerIndex": 0,
+      "explanation": "Altitude and azimuth depend on your own horizon, so they differ from city to city. Vega's place in Lyra is the same for everyone."
+    },
+    {
+      "id": "q4",
+      "prompt": "A star is crossing your meridian in the southern sky. What can you say about it?",
+      "choices": [
+        "It is just rising",
+        "It is about to set",
+        "It is at its highest altitude of the night",
+        "It is at azimuth 90°"
+      ],
+      "answerIndex": 2,
+      "explanation": "The meridian is the north–zenith–south line. Objects climb in the east, peak as they cross it, and sink in the west."
+    },
+    {
+      "id": "q5",
+      "prompt": "You note a star's altitude and azimuth at 9 p.m. Why are those numbers wrong at 11 p.m.?",
+      "choices": [
+        "The star has moved through space",
+        "The star has changed constellations",
+        "The atmosphere bends its light differently late at night",
+        "The Earth has turned, carrying your horizon with it"
+      ],
+      "answerIndex": 3,
+      "explanation": "The Earth's rotation makes the whole sky appear to turn about 15° an hour, so every object's altitude and azimuth change continuously."
+    },
+    {
+      "id": "q6",
+      "prompt": "Which azimuth is northeast?",
+      "choices": ["315°", "135°", "45°", "225°"],
+      "answerIndex": 2,
+      "explanation": "Azimuth counts from north (0°) toward east (90°), so northeast is halfway between: 45°."
+    }
+  ]
+}

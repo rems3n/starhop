@@ -1,0 +1,241 @@
+{
+  "id": "nebulae",
+  "unit": "objects",
+  "order": 3,
+  "title": "Nebulae: clouds between the stars",
+  "subtitle": "Five kinds of glowing, shining and dark clouds, and an honest account of what your eye will see.",
+  "minutes": 7,
+  "sections": [
+    {
+      "heading": "Clouds that glow: emission nebulae",
+      "body": [
+        "After this lesson you will be able to name the five kinds of nebula, point to an example of each, and tell a real photograph from a false-color image or an artist's painting.",
+        "Nebula is Latin for cloud. The space between the stars is not empty: it holds thin gas (mostly hydrogen) and fine dust, and here and there this material gathers into clouds. When a cloud lies close to very hot young stars, their ultraviolet light makes the hydrogen glow, much as electricity makes a neon sign glow. Astronomers call such a cloud an emission nebula, or an H II region (\"H two\", meaning hydrogen whose atoms have been stripped of their electrons). Glowing hydrogen gives off a characteristic deep red, which is why these nebulae are red or pink in photographs.",
+        "The showpiece is [[dso:M42|the Orion Nebula]] in Orion's Sword. In summer, [[dso:M8|the Lagoon Nebula]] and [[dso:M16|the Eagle Nebula]] lie in the Milky Way above the spout of the Sagittarius Teapot, and [[dso:C20|the North America Nebula]] sits beside [[star:Deneb|Deneb]]."
+      ],
+      "demo": {
+        "title": "Emission nebulae, winter and summer",
+        "controls": [],
+        "steps": [
+          {
+            "caption": "The Orion Nebula is the middle 'star' of the Sword hanging below Orion's Belt. It is the brightest emission nebula in the sky and the only one easy from a city.",
+            "time": "month:1 21:00",
+            "view": { "target": "dso:M42", "fov": 25 },
+            "layers": { "dsoMarkers": true },
+            "highlights": [{ "type": "object", "ref": "dso:M42", "label": "Orion Nebula (M42)" }]
+          },
+          {
+            "caption": "Summer's emission nebulae line the Milky Way low in the south. The Lagoon sits above the Teapot's spout and the Eagle farther up toward Scutum. From Brooklyn they never climb high, so they need a clear southern horizon.",
+            "time": "month:8 22:00",
+            "view": { "target": "dso:M8", "fov": 45 },
+            "layers": { "dsoMarkers": true },
+            "highlights": [
+              { "type": "object", "ref": "dso:M8", "label": "Lagoon (M8)" },
+              { "type": "object", "ref": "dso:M16", "label": "Eagle (M16)" }
+            ]
+          },
+          {
+            "caption": "The North America Nebula lies about three degrees east of Deneb. It spans about four full Moons, but its light is so spread out that it shows only in a dark sky.",
+            "time": "month:9 21:00",
+            "view": { "target": "star:Deneb", "fov": 25 },
+            "layers": { "dsoMarkers": true },
+            "highlights": [
+              { "type": "object", "ref": "dso:C20", "label": "North America Nebula" },
+              { "type": "object", "ref": "star:Deneb", "label": true }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "heading": "Clouds that shine by borrowed light, and clouds that block it",
+      "body": [
+        "If the nearby stars are not hot enough to make the gas glow, the dust in a cloud can still scatter their light toward us. That is a reflection nebula. Dust scatters blue light best (the same reason the daytime sky is blue), so reflection nebulae are blue in photographs. The faint haze around the stars of [[dso:M45|the Pleiades]] is the famous example; [[dso:M78|M78]], just above Orion's Belt, is another.",
+        "A cloud with no light of its own, seen against something brighter, is a dark nebula: a silhouette. The Horsehead Nebula is a dark notch in front of the glowing strip of gas [[dso:IC434|IC 434]], just south of [[star:Alnitak|Alnitak]] in Orion's Belt. It is a photographer's object, very hard to see by eye even with a large telescope. The easiest dark nebula in the whole sky is [[dso:C99|the Coalsack]], an inky patch beside the Southern Cross, visible to the naked eye from the southern hemisphere but never from New York."
+      ],
+      "demo": {
+        "title": "Reflection and dark nebulae",
+        "controls": [],
+        "steps": [
+          {
+            "caption": "The Pleiades are wrapped in a thin blue reflection nebula: dust lit by the cluster's hot stars. Photographs show it well; by eye it is extremely subtle.",
+            "time": "month:1 21:00",
+            "view": { "target": "dso:M45", "fov": 12 },
+            "layers": { "dsoMarkers": true },
+            "highlights": [{ "type": "object", "ref": "dso:M45", "label": "Pleiades — reflection nebula" }]
+          },
+          {
+            "caption": "Around Orion's Belt: M78, a reflection nebula, sits about two and a half degrees up and to the left of Alnitak. The Horsehead, a dark nebula, lies just below Alnitak.",
+            "time": "month:1 21:00",
+            "view": { "target": "star:Alnitak", "fov": 12 },
+            "layers": { "dsoMarkers": true },
+            "highlights": [
+              { "type": "object", "ref": "dso:M78", "label": "M78 — reflection" },
+              { "type": "object", "ref": "dso:IC434", "label": "IC 434 and the Horsehead — dark" },
+              { "type": "object", "ref": "star:Alnitak", "label": true }
+            ]
+          },
+          {
+            "caption": "From Sydney, the Coalsack is a dark hole in the Milky Way right beside the Southern Cross. It is a cloud of dust blocking the stars behind it.",
+            "observer": { "name": "Sydney, Australia", "lat": -33.87, "lon": 151.21, "tz": "Australia/Sydney" },
+            "time": "month:5 21:00",
+            "bortle": 2,
+            "view": { "target": "dso:C99", "fov": 40 },
+            "layers": { "dsoMarkers": true },
+            "highlights": [
+              { "type": "object", "ref": "dso:C99", "label": "Coalsack — dark nebula" },
+              { "type": "constellation", "id": "Cru", "lines": true, "label": true }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "heading": "Clouds made by dying stars",
+      "body": [
+        "The last two kinds are not places where stars are born but what stars leave behind. A planetary nebula is a shell of gas puffed off by a dying Sun-like star: [[dso:M57|the Ring Nebula]], [[dso:M27|the Dumbbell]], and [[dso:C63|the Helix Nebula]] in Aquarius, one of the nearest at about 650 light-years. A supernova remnant is the shredded, expanding debris of a massive star that exploded: [[dso:M1|the Crab Nebula]] in Taurus, and the delicate arcs of the Veil Nebula ([[dso:C34|western]] and [[dso:C33|eastern]] parts) in Cygnus, left by an explosion between ten and twenty thousand years ago."
+      ],
+      "demo": {
+        "title": "Planetary nebulae and supernova remnants",
+        "controls": [],
+        "steps": [
+          {
+            "caption": "Two planetary nebulae in the summer sky: the Ring in Lyra and the Dumbbell in Vulpecula. Each is the cast-off outer layers of one dying star.",
+            "time": "month:8 22:00",
+            "view": { "target": "star:Albireo", "fov": 45 },
+            "layers": { "dsoMarkers": true },
+            "highlights": [
+              { "type": "object", "ref": "dso:M57", "label": "Ring (M57)" },
+              { "type": "object", "ref": "dso:M27", "label": "Dumbbell (M27)" }
+            ]
+          },
+          {
+            "caption": "The Veil Nebula, a supernova remnant, spans about three degrees off the eastern wing of Cygnus the Swan. Its two brightest arcs are marked.",
+            "time": "month:9 21:00",
+            "view": { "target": "dso:C33", "fov": 30 },
+            "layers": { "dsoMarkers": true },
+            "highlights": [
+              { "type": "object", "ref": "dso:C34", "label": "Western Veil" },
+              { "type": "object", "ref": "dso:C33", "label": "Eastern Veil" },
+              { "type": "constellation", "id": "Cyg", "lines": true }
+            ]
+          },
+          {
+            "caption": "The Helix Nebula in Aquarius is among the closest planetary nebulae. It is large but dim, low in the south on autumn evenings.",
+            "time": "month:10 21:00",
+            "view": { "target": "dso:C63", "fov": 50 },
+            "layers": { "dsoMarkers": true },
+            "highlights": [{ "type": "object", "ref": "dso:C63", "label": "Helix Nebula" }]
+          }
+        ]
+      }
+    },
+    {
+      "heading": "What you will really see",
+      "body": [
+        "Here is the honest part. Through the eyepiece, almost every nebula is a soft gray glow. The color-sensing cells in your eye need bright light; in dim light you see with cells that register only shades of gray. A camera can collect light for minutes or hours and record the reds and blues your eye cannot. Only the brightest nebulae show any tint visually: a hint of green in the Orion Nebula, blue-green in some small planetary nebulae.",
+        "A small telescope still shows real things. The Orion Nebula is a glowing fan with four tiny stars, the Trapezium, at its heart, even from a city. The Ring is a tiny smoke ring; the Dumbbell an apple core. Fainter nebulae need a dark sky more than a big telescope.",
+        "Finally, learn to read the pictures. A natural-color photograph approximates what a much more sensitive eye would see. A false-color image assigns colors to light we cannot see at all (infrared, as in many James Webb images) or to narrow slices of the spectrum (the \"Hubble palette\" maps sulfur, hydrogen and oxygen to red, green and blue): the shapes are real, the colors are a code. An artist's impression is a painting or computer rendering of something no telescope has imaged, such as a planet around another star. Good captions say which is which."
+      ],
+      "demo": {
+        "title": "City sky, country sky",
+        "controls": ["bortle"],
+        "steps": [
+          {
+            "caption": "Markers show where the nebulae of Orion are. Slide the light-pollution control: under a city sky only the Orion Nebula itself survives; the rest need darkness.",
+            "time": "month:1 21:00",
+            "bortle": 3,
+            "view": { "target": "con:Ori", "fov": 40 },
+            "layers": { "dsoMarkers": true }
+          }
+        ]
+      },
+      "tryIt": "Next winter evening, aim binoculars at the middle of Orion's Sword and brace your elbows. The gray mist around the stars is the Orion Nebula, 1,300 light-years away, seen from a Brooklyn sidewalk."
+    }
+  ],
+  "keyPoints": [
+    "Emission nebulae glow (red in photos) because hot stars energize their hydrogen; reflection nebulae shine by scattered blue starlight; dark nebulae are dust in silhouette.",
+    "Planetary nebulae and supernova remnants are gas thrown out by dying stars.",
+    "By eye nearly all nebulae look gray: the eye's color vision does not work in dim light, while cameras add up light over time.",
+    "False-color images map invisible or narrow-band light to colors; artist's impressions are not observations at all."
+  ],
+  "examples": [
+    { "ref": "dso:M42", "label": "Orion Nebula (M42)", "note": "Emission nebula and stellar nursery. Naked eye in a dark sky, binoculars from the city, superb in any telescope." },
+    { "ref": "dso:M8", "label": "Lagoon Nebula (M8)", "note": "Emission nebula in Sagittarius with a star cluster inside. Binoculars in a dark sky; low in the south from New York." },
+    { "ref": "dso:M45", "label": "Pleiades (M45)", "note": "Star cluster wrapped in a blue reflection nebula. The stars are naked eye; the nebula shows in photographs and in telescopes under dark skies." },
+    { "ref": "dso:M78", "label": "M78", "note": "Reflection nebula near Orion's Belt. A small faint patch in a small telescope under a dark sky." },
+    { "ref": "dso:IC434", "label": "IC 434 and the Horsehead", "note": "A dark nebula silhouetted on a strip of glowing gas. Essentially photographic: a large telescope, dark sky and special filter are needed to glimpse it." },
+    { "ref": "dso:M57", "label": "Ring Nebula (M57)", "note": "Planetary nebula in Lyra. A tiny gray ring in a small telescope at about 100×." },
+    { "ref": "dso:M27", "label": "Dumbbell Nebula (M27)", "note": "Planetary nebula in Vulpecula. Visible in binoculars from a dark site, an apple-core shape in a small telescope." },
+    { "ref": "dso:M1", "label": "Crab Nebula (M1)", "note": "Supernova remnant in Taurus. A dim oval glow in a small telescope under a dark sky." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "In a photograph, part of a nebula is deep red and a neighboring part is blue. What is the most likely explanation?",
+      "choices": [
+        "The red part is moving away from us and the blue part toward us",
+        "The red part is cooler dust and the blue part is hotter dust",
+        "The red part is glowing hydrogen; the blue part is dust reflecting starlight",
+        "The red part is older than the blue part"
+      ],
+      "answerIndex": 2,
+      "explanation": "Energized hydrogen emits red light (emission nebula); dust scatters blue starlight (reflection nebula)."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why does the Orion Nebula look gray-green in a telescope but red and pink in photographs?",
+      "choices": [
+        "The eye's color vision needs bright light, while a camera can add up faint light for minutes",
+        "Telescopes filter out red light",
+        "The photographs are always fakes",
+        "The nebula changes color from night to night"
+      ],
+      "answerIndex": 0,
+      "explanation": "In dim light we see with cells that do not register color. A long exposure collects enough light to record the true red glow of hydrogen."
+    },
+    {
+      "id": "q3",
+      "prompt": "How can anyone see a dark nebula such as the Coalsack or the Horsehead?",
+      "choices": [
+        "It glows faintly in red",
+        "It reflects moonlight",
+        "It is only detectable by radio telescopes",
+        "It blocks the light of stars or glowing gas behind it, so it shows as a silhouette"
+      ],
+      "answerIndex": 3,
+      "explanation": "Dark nebulae are dust clouds seen against a brighter background: the Milky Way for the Coalsack, glowing gas for the Horsehead."
+    },
+    {
+      "id": "q4",
+      "prompt": "Which pair are both made by stars at the END of their lives?",
+      "choices": [
+        "The Orion Nebula and the Lagoon Nebula",
+        "The Ring Nebula and the Crab Nebula",
+        "The Pleiades nebula and M78",
+        "The Coalsack and the Horsehead"
+      ],
+      "answerIndex": 1,
+      "explanation": "The Ring is a planetary nebula (a dying Sun-like star); the Crab is a supernova remnant (an exploded massive star). The others are star-forming or dusty clouds."
+    },
+    {
+      "id": "q5",
+      "prompt": "A caption says an image was made in infrared light and shown in false color. What does that tell you?",
+      "choices": [
+        "The shapes in the image are invented",
+        "The image is an artist's painting",
+        "The structures are real, but the colors were assigned to light the eye cannot see",
+        "The object would look exactly like this through a telescope"
+      ],
+      "answerIndex": 2,
+      "explanation": "False color is a translation: real data from invisible wavelengths displayed with chosen colors. The eye could never see it that way."
+    },
+    {
+      "id": "q6",
+      "prompt": "From a Brooklyn rooftop with binoculars, which nebula are you most likely to actually see?",
+      "choices": ["The Horsehead Nebula", "The Veil Nebula", "The Orion Nebula", "The Coalsack"],
+      "answerIndex": 2,
+      "explanation": "M42 is bright enough to beat city lights. The Horsehead and Veil need dark skies and more aperture, and the Coalsack never rises from New York."
+    }
+  ]
+}

@@ -1,0 +1,310 @@
+{
+  "id": "Aql",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); a much older Greek figure with a Mesopotamian forerunner",
+    "when": "2nd century CE (catalogued); known to the Greeks by the 4th century BCE",
+    "history": [
+      "The Eagle is one of the oldest figures in the sky. The Greek astronomer Eudoxus mentioned it in the 4th century BCE, and the poet Aratus, about 275 BCE, called it the 'storm-bird' because its rising before dawn came at a rough season for sailors. The Greek name was Aetos, the eagle, and the Greeks used the same word for its brightest star. The idea is older still: the Babylonians and Sumerians already called [[star:Altair|Altair]] the eagle star, and the Greek constellation was probably borrowed from a Babylonian Eagle.",
+      "Ptolemy listed the Eagle among his 48 constellations in the *Almagest* around 150 CE. He also described a second, smaller group in its southern part called Antinous, named for a youth loved by the Roman emperor Hadrian, in whose reign it was invented. Some old atlases show Antinous as a boy gripped in the eagle's claws. That figure has been dropped and its stars are now simply part of Aquila; in 2024 the star Theta Aquilae was officially named Antinous in its memory.",
+      "The name Altair comes from an Arabic phrase meaning 'the flying eagle'. Arab stargazers saw Altair and the star on each side of it as an eagle soaring with wings spread, the partner of the 'swooping eagle', Vega, across the Milky Way."
+    ]
+  },
+  "overview": "Aquila is the eagle of Zeus, the bird that carried the god's thunderbolts. Its bright star Altair, flanked closely by a fainter star on each side, is the southern corner of the Summer Triangle and one of the easiest stars in the sky to recognize.",
+  "howToFind": [
+    "Find the Summer Triangle, high in the evening sky from June into November. [[star:Vega|Vega]] is the brightest corner, nearly overhead in summer. [[star:Altair|Altair]] is the corner about three and a half fists (34 degrees) to the south of Vega, and the lowest of the three as seen from Brooklyn, about halfway up the southern sky when it is highest on evenings in August and September. A fist held at arm's length covers about 10 degrees.",
+    "You can be sure you have Altair because it is the middle of a short, straight line of three stars. Orange [[star:Tarazed|Tarazed]] sits two finger-widths above it (toward Vega) and fainter [[star:Alshain|Alshain]] slightly farther below. That line is the eagle's head and shoulders. The wings spread to either side, to [[star:ζ Aql|Zeta Aquilae]] a fist to the northwest and [[star:θ Aql|Theta Aquilae]] a fist to the southeast, and the tail trails nearly two fists southwest of Altair to [[star:λ Aql|Lambda Aquilae]], pointing toward the little constellation [[con:Sct|Scutum]]."
+  ],
+  "shape": "A bright star with a close companion on either side, like a bird's head between its shoulders, and behind it a large, faint diamond or kite about two fists long. From a city, Altair and Tarazed are easy and Alshain is usually visible; the third-magnitude wing and tail stars (magnitude is the brightness scale, where smaller numbers are brighter) can be picked out on a clear night, but the full bird needs a darker sky.",
+  "mainStars": [
+    {
+      "ref": "star:Altair",
+      "note": "White, magnitude 0.8, and only 17 light-years away, one of the nearest stars visible to the naked eye. It spins so fast that it is noticeably flattened at its poles."
+    },
+    {
+      "ref": "star:Tarazed",
+      "note": "Gamma Aquilae, an orange giant of magnitude 2.7 just above Altair. It looks like a close companion but is about 460 light-years away, far in the background. Binoculars show its color well."
+    },
+    {
+      "ref": "star:Alshain",
+      "note": "Beta Aquilae, magnitude 3.7 and yellowish, just below Altair. The names Alshain and Tarazed both come from a Persian phrase for 'the balance', because the three stars in a row looked like a weighing beam."
+    },
+    {
+      "ref": "star:ζ Aql",
+      "note": "Okab, magnitude 3.0, a white star marking the tip of one wing on the side toward Vega."
+    },
+    {
+      "ref": "star:η Aql",
+      "note": "A yellow-white supergiant south of Altair that pulses in size, changing from magnitude 3.5 to 4.4 and back every 7.2 days. It is one of the brightest Cepheid variables, the kind of star astronomers use to measure distances."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "star:η Aql",
+      "equip": "naked-eye",
+      "note": "A variable star you can follow without equipment from a reasonably dark site. Over 7.2 days it goes from about as bright as nearby Delta Aquilae to clearly fainter, then brightens again."
+    },
+    {
+      "ref": "star:Tarazed",
+      "equip": "binoculars",
+      "note": "Put Altair and its two companions in one binocular view to compare colors: white Altair, orange Tarazed, yellowish Alshain."
+    },
+    {
+      "ref": "dso:NGC6709",
+      "equip": "small-telescope",
+      "note": "A loose open cluster of a few dozen faint stars in a rich Milky Way field, southwest of Zeta Aquilae. A small telescope shows a scattering of ninth-magnitude and fainter stars."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Aql-ganymede",
+      "title": "The eagle and Ganymede",
+      "culture": "Greek and Roman",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.16" },
+        { "author": "Ovid", "work": "Metamorphoses 10.155-161", "date": "c. 8 CE" },
+        { "author": "Homer", "work": "Iliad (the earliest mention of Ganymede's abduction)" },
+        { "author": "Germanicus", "work": "Aratea (his Latin version of Aratus's Phaenomena)", "date": "early 1st century CE" }
+      ],
+      "summary": "The best-known story makes Aquila the eagle that carried off Ganymede, a beautiful Trojan prince, to be cupbearer to the gods on Olympus. Some said the eagle was sent by Zeus; Ovid says it was Zeus himself. Ganymede is the neighboring constellation Aquarius.",
+      "retelling": [
+        "Ganymede was a prince of Troy, a son of King Tros, from whom the city took its name. Homer says he was the most beautiful of all mortals, so beautiful that the gods wanted him for themselves. Later tellers add that he was still a boy, out on the slopes of Mount Ida near Troy minding the flocks, when it happened.",
+        "Zeus looked down from Olympus, saw him, and fell in love. He decided that the boy should live among the gods and pour their wine. The question was how to bring a mortal up to heaven, and the answer was an eagle.",
+        "The eagle was Zeus's own bird. Hyginus explains why Zeus had singled it out from all the birds: the eagle alone, people said, dares to fly straight into the rays of the rising Sun. It was strong enough to carry the god's thunderbolts, and now it was sent to carry something more delicate. Out of a clear sky it dropped onto the hillside, caught Ganymede up in its talons without harming him, and bore him away into the heights.",
+        "Ovid tells it with one change. In his poem Zeus sent no messenger. The king of the gods, burning with love, looked for a shape worth taking, and would consent to become no bird except the one able to bear his lightning. So he put on eagle's wings himself, beat the air, and stole the Trojan boy. Even now, Ovid adds, Ganymede mixes the nectar and hands Jupiter his cup, much to the annoyance of Juno, Jupiter's wife.",
+        "On Olympus, Ganymede was made immortal and forever young. In the sky he became Aquarius, the Water Carrier, pictured as a youth pouring from a jar; Hyginus notes that the Eagle seems to fly just above him, and old star maps draw Aquila swooping toward Aquarius.",
+        "And the eagle was set among the stars as a reward for its service. The Roman poet Germanicus adds one more touch: the little constellation Sagitta, the Arrow, which lies right beside Aquila, is the arrow of the love god that set Zeus's heart on fire in the first place, and the eagle stands guard over it."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Aquila, the eagle",
+        "url": "http://www.ianridpath.com/startales/aquila.html"
+      },
+      "characters": ["Zeus (Jupiter)", "Ganymede", "Tros", "Hera (Juno)"],
+      "questions": [
+        {
+          "id": "ganymede-q1",
+          "prompt": "What job was Ganymede given on Olympus?",
+          "choices": ["Keeper of the thunderbolts", "Cupbearer to the gods", "Herdsman of the Sun's cattle", "Messenger of Zeus"],
+          "answerIndex": 1,
+          "explanation": "Ganymede became the cupbearer, pouring wine or nectar for Zeus and the other gods."
+        },
+        {
+          "id": "ganymede-q2",
+          "prompt": "Which neighboring constellation is identified with Ganymede?",
+          "choices": ["Aquarius", "Sagittarius", "Delphinus", "Capricornus"],
+          "answerIndex": 0,
+          "explanation": "Aquarius, the Water Carrier, was widely identified as Ganymede, and the Eagle flies just above him."
+        },
+        {
+          "id": "ganymede-q3",
+          "prompt": "How does Ovid's version of the abduction differ from the usual one?",
+          "choices": ["Ganymede goes willingly on a winged horse", "Hermes carries the boy to Olympus", "The eagle is sent by Hera", "Zeus himself takes the form of the eagle"],
+          "answerIndex": 3,
+          "explanation": "In the *Metamorphoses* Zeus does not send his bird; he becomes the eagle and carries Ganymede off himself."
+        },
+        {
+          "id": "ganymede-q4",
+          "prompt": "Ganymede was a prince of which city?",
+          "choices": ["Sparta", "Athens", "Troy", "Thebes"],
+          "answerIndex": 2,
+          "explanation": "He was the son of Tros, the king who gave Troy its name."
+        }
+      ]
+    },
+    {
+      "id": "Aql-omen-of-zeus",
+      "title": "The omen before the war with the Titans",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Aglaosthenes", "work": "Naxica, as reported by Hyginus, Poetic Astronomy 2.16" }
+      ],
+      "summary": "A story from the island of Naxos says that the young Zeus, about to make war on the Titans, saw an eagle appear while he was sacrificing. He took it as a sign of victory and afterwards placed the bird among the stars.",
+      "retelling": [
+        "Before Zeus ruled the sky, the world belonged to the Titans, the older gods. Zeus had to be hidden away as a baby to keep him safe from them. Most Greeks said he grew up in a cave on Crete, but the people of Naxos told it their own way, and a local historian named Aglaosthenes wrote their version down.",
+        "According to Aglaosthenes, the infant Zeus was taken secretly from Crete and brought to Naxos, and it was on that island that he was nursed and grew to manhood.",
+        "When he was grown he resolved to fight the Titans for the rule of the world. Before setting out he made a sacrifice, as any Greek commander would before a battle. While the offering was burning, an eagle came into view.",
+        "Zeus read the bird as an omen: a sign that the war would go his way. It did. In gratitude, and to keep the memory of that moment, he set the eagle among the stars.",
+        "This short tale explains more than the constellation. From then on the eagle was Zeus's own bird, the one that Greek and Roman writers describe carrying his thunderbolts and fetching them back after he had thrown them. When a Greek looked up at Aquila, the first thought was not of any single adventure but simply of the bird of the king of the gods."
+      ],
+      "link": {
+        "site": "ToposText",
+        "label": "Hyginus, Astronomica 2.16 (the Eagle)",
+        "url": "https://topostext.org/work/207"
+      },
+      "characters": ["Zeus", "The Titans"],
+      "questions": [
+        {
+          "id": "omen-q1",
+          "prompt": "According to Aglaosthenes, on which island was Zeus raised?",
+          "choices": ["Naxos", "Rhodes", "Lesbos", "Cos"],
+          "answerIndex": 0,
+          "explanation": "The Naxian tradition said Zeus was brought secretly from Crete and raised on Naxos."
+        },
+        {
+          "id": "omen-q2",
+          "prompt": "What was Zeus doing when the eagle appeared?",
+          "choices": ["Sleeping in a cave", "Forging thunderbolts", "Making a sacrifice before going to war", "Searching for Ganymede"],
+          "answerIndex": 2,
+          "explanation": "He was sacrificing before his attack on the Titans, and took the eagle's appearance as a favorable sign."
+        },
+        {
+          "id": "omen-q3",
+          "prompt": "Against whom was Zeus about to go to war?",
+          "choices": ["The Giants of Thrace", "The Titans", "The Cyclopes", "The Trojans"],
+          "answerIndex": 1,
+          "explanation": "The war was against the Titans, the older gods who ruled before the Olympians."
+        }
+      ]
+    },
+    {
+      "id": "Aql-merops",
+      "title": "Merops, the grieving king of Cos",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.16" }
+      ],
+      "summary": "Hyginus records that some people said the Eagle was once a man: Merops, king of the island of Cos. When he lost his wife, the goddess Hera turned him into an eagle and set him in the sky so that he would no longer suffer from a human memory.",
+      "retelling": [
+        "Merops was king of the island of Cos, off the coast of Asia Minor. Hyginus says he named the island after his daughter and called its people Meropians after himself.",
+        "His wife was Ethemea, who was a nymph by birth. She had been a worshipper of the goddess Artemis, but she gave the worship up. Artemis, the divine archer, did not forgive that kind of neglect, and shot her with her arrows.",
+        "Ethemea did not die in the ordinary way. Persephone, queen of the Underworld, carried her off while she was still alive and took her down to the land of the dead. To Merops it came to the same thing: his wife was gone and there was no following her.",
+        "He was so overcome with longing that he meant to kill himself. The goddess Hera took pity on him. She changed him into an eagle and placed him among the constellations.",
+        "Hyginus is careful to explain why it had to be a bird. If Hera had put Merops in the sky in his human shape, he would still have had a man's memory, and he would have gone on aching for his wife forever. As an eagle he was spared that. So in this version the bird sailing down the summer Milky Way is not a hunter or a servant of Zeus at all, but a widower who has been allowed to forget."
+      ],
+      "link": {
+        "site": "ToposText",
+        "label": "Hyginus, Astronomica 2.16 (the Eagle)",
+        "url": "https://topostext.org/work/207"
+      },
+      "characters": ["Merops", "Ethemea", "Artemis (Diana)", "Persephone (Proserpina)", "Hera (Juno)"],
+      "questions": [
+        {
+          "id": "merops-q1",
+          "prompt": "Merops was king of which island?",
+          "choices": ["Naxos", "Crete", "Lesbos", "Cos"],
+          "answerIndex": 3,
+          "explanation": "He ruled Cos, which Hyginus says he named after his daughter."
+        },
+        {
+          "id": "merops-q2",
+          "prompt": "Which goddess turned Merops into an eagle?",
+          "choices": ["Artemis", "Hera", "Persephone", "Athena"],
+          "answerIndex": 1,
+          "explanation": "Hera (Juno) pitied his grief, transformed him, and placed him among the stars."
+        },
+        {
+          "id": "merops-q3",
+          "prompt": "Why, according to Hyginus, was Merops placed in the sky as a bird rather than as a man?",
+          "choices": ["So that he would not keep a man's memory and go on longing for his wife", "Because eagles were sacred on Cos", "So that he could fly down to the Underworld", "As a punishment for neglecting Artemis"],
+          "answerIndex": 0,
+          "explanation": "In human form he would have remembered Ethemea and grieved forever; as an eagle he was spared."
+        },
+        {
+          "id": "merops-q4",
+          "prompt": "Why was Ethemea struck by the arrows of Artemis?",
+          "choices": ["She boasted of her beauty", "She killed a sacred deer", "She had stopped worshipping the goddess", "She revealed a secret rite"],
+          "answerIndex": 2,
+          "explanation": "Ethemea ceased to worship Artemis, and the goddess punished her."
+        }
+      ]
+    },
+    {
+      "id": "Aql-aphrodites-sandal",
+      "title": "The eagle that stole Aphrodite's sandal",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.16" }
+      ],
+      "summary": "In a lighter tale preserved by Hyginus, Hermes was lovesick for Aphrodite, who would have nothing to do with him. Zeus sent an eagle to snatch her sandal while she bathed, and when she came looking for it Hermes won his chance. He put the eagle in the sky in thanks.",
+      "retelling": [
+        "Even the cleverest of the gods could be made miserable by love. Hermes, the messenger and trickster, was struck by the beauty of Aphrodite, the goddess of love herself. (Hyginus notes in passing that some tellers gave the lover a different name.)",
+        "Aphrodite granted him no favors at all. Hermes, who was used to talking his way into anything, became thoroughly downcast, moping as though he had been disgraced.",
+        "Zeus felt sorry for him and arranged some help. He waited until Aphrodite went to bathe in the river Achelous and had left her things on the bank. Then he sent an eagle, which swooped down, seized one of her sandals, and flew off with it all the way to Egypt, where it delivered the sandal to Hermes.",
+        "Aphrodite went searching for her missing sandal, and the search led her straight to the one god who had it, the one who loved her. So Hermes got what he had wanted.",
+        "He did not forget who had done the work. As a reward he placed the eagle in the sky. It is the least solemn of the explanations for Aquila: not a bearer of thunderbolts this time, just a well-trained bird and a stolen shoe."
+      ],
+      "link": {
+        "site": "ToposText",
+        "label": "Hyginus, Astronomica 2.16 (the Eagle)",
+        "url": "https://topostext.org/work/207"
+      },
+      "characters": ["Hermes (Mercury)", "Aphrodite (Venus)", "Zeus (Jupiter)"],
+      "questions": [
+        {
+          "id": "sandal-q1",
+          "prompt": "What did the eagle steal from Aphrodite?",
+          "choices": ["Her mirror", "Her girdle", "Her sandal", "Her necklace"],
+          "answerIndex": 2,
+          "explanation": "The eagle snatched her sandal from the riverbank while she was bathing."
+        },
+        {
+          "id": "sandal-q2",
+          "prompt": "Which god was in love with Aphrodite in this story?",
+          "choices": ["Hermes", "Ares", "Apollo", "Hephaestus"],
+          "answerIndex": 0,
+          "explanation": "Hermes (Mercury) was the unlucky lover whom Zeus decided to help."
+        },
+        {
+          "id": "sandal-q3",
+          "prompt": "Who sent the eagle?",
+          "choices": ["Hermes himself", "Eros", "Poseidon", "Zeus"],
+          "answerIndex": 3,
+          "explanation": "Zeus pitied Hermes and sent the eagle; Hermes later rewarded the bird with a place among the stars."
+        }
+      ]
+    },
+    {
+      "id": "Aql-swan-chase",
+      "title": "The eagle that chased the swan",
+      "culture": "Greek and Roman",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.8" }
+      ],
+      "summary": "Hyginus links the Eagle with its neighbor the Swan. When Zeus wanted to trick the goddess Nemesis, he became a swan and had Aphrodite, as an eagle, pretend to hunt him. Afterwards he set both birds in the sky, the eagle still in pursuit.",
+      "retelling": [
+        "Look at the summer sky and you will see two great birds flying along the Milky Way, Cygnus the Swan ahead and Aquila the Eagle behind. Hyginus tells a story that puts them there together.",
+        "Zeus desired the goddess Nemesis, and she refused him. Since he could not persuade her, he turned to deceit, and he needed an accomplice. He went to Aphrodite, the goddess of love, and asked her to take the form of an eagle.",
+        "Zeus himself became a swan. Then the two put on a performance: the swan fled across the sky as if in terror, and the eagle came after it as if to make a kill. The swan flew straight to Nemesis and settled in her lap, like a hunted creature begging for shelter.",
+        "Nemesis did not push the bird away. She held it in her arms to protect it, and so holding it she fell into a deep sleep. Zeus took advantage of her while she slept, and then flew off. From this, the story goes on, came the egg from which Helen of Troy was hatched; that part is told with the Swan.",
+        "People had seen a swan flying high in the heavens, and the tale spread that it had been placed among the stars. To make it true, Zeus set both birds there, the swan in flight and the eagle chasing it. In this version, then, Aquila is not really an eagle at all. It is the goddess of love in disguise, forever playing her part in a trick."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Aquila, the eagle",
+        "url": "http://www.ianridpath.com/startales/aquila.html"
+      },
+      "characters": ["Zeus (Jupiter)", "Nemesis", "Aphrodite (Venus)"],
+      "questions": [
+        {
+          "id": "chase-q1",
+          "prompt": "In this story, who was disguised as the eagle?",
+          "choices": ["Zeus", "Aphrodite", "Hera", "Nemesis"],
+          "answerIndex": 1,
+          "explanation": "Aphrodite played the eagle; Zeus was the swan she pretended to hunt."
+        },
+        {
+          "id": "chase-q2",
+          "prompt": "Whom was the false chase meant to deceive?",
+          "choices": ["Leda", "Hera", "Artemis", "Nemesis"],
+          "answerIndex": 3,
+          "explanation": "The swan fled to Nemesis, who sheltered it out of pity."
+        },
+        {
+          "id": "chase-q3",
+          "prompt": "Which constellation represents the swan in this pair?",
+          "choices": ["Cygnus", "Lyra", "Delphinus", "Pegasus"],
+          "answerIndex": 0,
+          "explanation": "Cygnus, the Swan, flies just ahead of Aquila along the Milky Way."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Altair means 'the flying eagle' in Arabic. Vega, across the Milky Way, is 'the swooping eagle'.",
+    "In the Chinese story of the Weaving Girl and the Cowherd, Altair is the Cowherd and the two stars beside him are his sons. The story is told with Lyra.",
+    "In June 1918 a nova (a star that flares up suddenly) appeared in Aquila and for a short time outshone Altair. It was the brightest nova seen since the invention of the telescope.",
+    "The faint star Rho Aquilae has drifted across the official border and has been inside Delphinus since 1992, but it keeps its old name.",
+    "In China, Altair and its two neighbors were also seen as a battle drum."
+  ]
+}

@@ -1,0 +1,265 @@
+{
+  "id": "meteor-showers",
+  "unit": "ecliptic",
+  "order": 7,
+  "title": "Meteor showers",
+  "subtitle": "What shooting stars are, when to expect them, and how to watch",
+  "minutes": 6,
+  "sections": [
+    {
+      "heading": "Comet dust at up to 40 miles a second",
+      "body": [
+        "After this lesson you will be able to plan a meteor watch: which nights, which hours, where to look, and how many to expect realistically.",
+        "A meteor, or shooting star, is a streak of light made when a bit of space debris, usually no bigger than a grain of sand or a pea, hits Earth's upper atmosphere at tens of kilometers per second and burns up about 50 to 60 miles overhead. A few random ones can be seen on any clear night.",
+        "Showers are different. Comets shed dust as they go around the Sun, and the dust spreads along the comet's orbit like gravel along a road. Earth crosses several of these streams each year, each at the same point in its orbit and so on the same dates. For a night or a few nights the number of meteors jumps."
+      ]
+    },
+    {
+      "heading": "The radiant",
+      "body": [
+        "The particles in a stream travel on parallel paths. Like parallel railroad tracks that seem to meet in the distance, their trails all appear to spread out from one point in the sky, called the radiant. A shower is named for the constellation that holds its radiant: the Perseids for Perseus, the Geminids for Gemini.",
+        "The meteors do not appear at the radiant. They can flash anywhere in the sky; only their paths, traced backward, lead to it. The higher the radiant is above your horizon, the more meteors you see, and when it is below the horizon you see essentially none."
+      ],
+      "demo": {
+        "title": "Two radiants",
+        "controls": [
+          "time-scrub"
+        ],
+        "steps": [
+          {
+            "caption": "August 13, 3:30 am, looking northeast: the peak of the Perseids. The radiant is 55° up, near the top of Perseus below the W of Cassiopeia. The dashed lines show how Perseid meteors streak away from it in every direction.",
+            "time": "2027-08-13 03:30",
+            "view": {
+              "target": "radec:48,58",
+              "fov": 110
+            },
+            "highlights": [
+              {
+                "type": "label",
+                "at": "radec:48,58",
+                "text": "Perseid radiant"
+              },
+              {
+                "type": "constellation",
+                "id": "Per",
+                "label": true
+              },
+              {
+                "type": "constellation",
+                "id": "Cas",
+                "label": true
+              },
+              {
+                "type": "polyline",
+                "points": [
+                  "radec:48,58",
+                  "radec:48,22"
+                ],
+                "dashed": true
+              },
+              {
+                "type": "polyline",
+                "points": [
+                  "radec:48,58",
+                  "radec:105,52"
+                ],
+                "dashed": true
+              },
+              {
+                "type": "polyline",
+                "points": [
+                  "radec:48,58",
+                  "radec:350,48"
+                ],
+                "dashed": true
+              },
+              {
+                "type": "polyline",
+                "points": [
+                  "radec:48,58",
+                  "radec:228,85"
+                ],
+                "dashed": true
+              }
+            ]
+          },
+          {
+            "caption": "The same sky with a circle 40° from the radiant. Meteors near the radiant are short and easy to miss; out here their trails are long. Face any dark part of this ring, well up from the horizon.",
+            "time": "2027-08-13 03:30",
+            "view": {
+              "target": "radec:48,58",
+              "fov": 130
+            },
+            "highlights": [
+              {
+                "type": "label",
+                "at": "radec:48,58",
+                "text": "Perseid radiant"
+              },
+              {
+                "type": "circle",
+                "center": "radec:48,58",
+                "radiusDeg": 40,
+                "label": "Look about this far away"
+              }
+            ]
+          },
+          {
+            "caption": "December 13, 2026, 11 pm, looking east: the Geminids. Their radiant sits beside Castor and is already 55° up before midnight, which makes this the best shower for evening watchers. By 2 am it is nearly overhead.",
+            "time": "2026-12-13 23:00",
+            "view": {
+              "target": "radec:112,33",
+              "fov": 110
+            },
+            "highlights": [
+              {
+                "type": "label",
+                "at": "radec:112,33",
+                "text": "Geminid radiant"
+              },
+              {
+                "type": "constellation",
+                "id": "Gem",
+                "label": true
+              },
+              {
+                "type": "object",
+                "ref": "star:Castor",
+                "label": "Castor"
+              },
+              {
+                "type": "polyline",
+                "points": [
+                  "radec:112,33",
+                  "radec:112,0"
+                ],
+                "dashed": true
+              },
+              {
+                "type": "polyline",
+                "points": [
+                  "radec:112,33",
+                  "radec:150,42"
+                ],
+                "dashed": true
+              },
+              {
+                "type": "polyline",
+                "points": [
+                  "radec:112,33",
+                  "radec:75,36"
+                ],
+                "dashed": true
+              },
+              {
+                "type": "polyline",
+                "points": [
+                  "radec:112,33",
+                  "radec:112,68"
+                ],
+                "dashed": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "heading": "The showers worth knowing",
+      "body": [
+        "Seven showers are the main ones. The Quadrantids peak around January 3–4; they are strong but the peak lasts only a few hours, and they are named for a constellation, Quadrans Muralis, that is no longer on the charts. Their radiant is in northern Boötes. The Lyrids come around April 22 and are modest. The Eta Aquariids, around May 5–6, are dust from Halley's Comet and are better from the southern hemisphere. The Perseids, around August 12–13, come from Comet Swift–Tuttle and are the favorite, rich and on warm nights. The Orionids, around October 21, are Halley dust again. The Leonids, around November 17, are usually weak but have produced historic storms. The Geminids, around December 13–14, are the strongest of all, and unusual in coming from an asteroid, 3200 Phaethon.",
+        "Published strengths are given as the zenithal hourly rate, or ZHR: the number one observer would count in an hour with the radiant straight overhead under a perfectly dark sky. It is about 100 for the Perseids and up to 150 for the Geminids. You will see fewer. The radiant is rarely overhead, and city light hides the faint majority. From Brooklyn, a handful to a dozen bright ones in an hour is a good result on a peak night; from a dark site, perhaps 40 to 60."
+      ]
+    },
+    {
+      "heading": "How to watch",
+      "body": [
+        "Use your eyes alone. Binoculars and telescopes show far too little sky. Lie back on a reclining chair so you can take in a wide area, get as far from direct lights as you can, and give your eyes 20 minutes to adapt to the dark. Then keep watching for at least half an hour, because meteors come in clumps and lulls.",
+        "The hours after midnight are usually better. After midnight your side of Earth faces forward along its orbit and runs into the debris head-on, like the front windshield of a car in rain. Finally, check the Moon. A bright Moon in the sky can cut the count by more than half, so a shower that peaks near new Moon is the one to stay up for."
+      ],
+      "tryIt": "Look up the next major shower on the Events page, with its peak night and the Moon's phase. On that night go to the darkest spot you can easily reach, a park or a rooftop, lie back facing away from the brightest lights, and count for 30 minutes."
+    }
+  ],
+  "keyPoints": [
+    "Meteors are small grains of comet (or asteroid) debris burning up in the upper atmosphere; showers recur on the same dates each year as Earth crosses a debris stream.",
+    "Shower meteors appear to spread out from a radiant, and the shower is named for the radiant's constellation.",
+    "ZHR is an ideal figure; expect far fewer, especially in the city.",
+    "Best showers: Perseids (August 12–13) and Geminids (December 13–14).",
+    "Watch with bare eyes, after midnight if you can, dark-adapted, about 40° from the radiant, on a night without a bright Moon."
+  ],
+  "examples": [],
+  "questions": [
+    {
+      "id": "ms-q1",
+      "prompt": "Why does a meteor shower return on the same dates every year?",
+      "choices": [
+        "Comets pass Earth on those dates",
+        "Earth crosses the same stream of debris at the same point in its orbit",
+        "The Moon lines up with the radiant",
+        "The constellation is only visible then"
+      ],
+      "answerIndex": 1,
+      "explanation": "The debris lies along a comet's orbit. Earth reaches the crossing point at the same time each year."
+    },
+    {
+      "id": "ms-q2",
+      "prompt": "What is the radiant of a meteor shower?",
+      "choices": [
+        "The brightest meteor of the night",
+        "The comet that produced the shower",
+        "The place where meteors land",
+        "The point in the sky from which the meteors' paths appear to spread"
+      ],
+      "answerIndex": 3,
+      "explanation": "Parallel paths seem to diverge from one point by perspective, as railroad tracks seem to meet in the distance."
+    },
+    {
+      "id": "ms-q3",
+      "prompt": "The Perseids have a ZHR of about 100. From a city park, how many should you expect to see in an hour?",
+      "choices": [
+        "About 100",
+        "About 200, because the city is warmer",
+        "Perhaps a handful to a dozen",
+        "None at all"
+      ],
+      "answerIndex": 2,
+      "explanation": "ZHR assumes a perfectly dark sky and the radiant overhead. City lights hide all but the brightest meteors."
+    },
+    {
+      "id": "ms-q4",
+      "prompt": "What is the best equipment for watching a meteor shower?",
+      "choices": [
+        "Your eyes alone, from a reclining chair",
+        "A telescope at low power",
+        "Binoculars on a tripod",
+        "A camera flash"
+      ],
+      "answerIndex": 0,
+      "explanation": "Meteors can appear anywhere, so you want the widest possible view. Any optical aid narrows it."
+    },
+    {
+      "id": "ms-q5",
+      "prompt": "Why are there usually more meteors after midnight?",
+      "choices": [
+        "The air is colder",
+        "The radiant sets after midnight",
+        "The Moon is always down by then",
+        "Your side of Earth then faces forward along its orbit and sweeps up more debris"
+      ],
+      "answerIndex": 3,
+      "explanation": "After midnight you are on the leading side of Earth, which meets the particles head-on."
+    },
+    {
+      "id": "ms-q6",
+      "prompt": "Which major shower comes from an asteroid and not a comet?",
+      "choices": [
+        "The Perseids",
+        "The Orionids",
+        "The Geminids",
+        "The Eta Aquariids"
+      ],
+      "answerIndex": 2,
+      "explanation": "The Geminids come from 3200 Phaethon. The Perseids come from Comet Swift–Tuttle, and the Orionids and Eta Aquariids from Halley's Comet."
+    }
+  ]
+}

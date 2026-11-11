@@ -1,0 +1,130 @@
+{
+  "id": "Ser",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); an older Greek figure already described by Aratus",
+    "when": "2nd century CE (catalogued); known by the 3rd century BCE; split in two by the 1920s boundaries",
+    "history": [
+      "The Serpent has always belonged to the man who holds it. Aratus, about 275 BCE, described it wound around the waist of Ophiuchus and gripped in both his hands, with its jaw reaching up toward the Northern Crown. Its Greek name was simply Ophis, the snake. Ptolemy, in the *Almagest* around 150 CE, listed it as a separate constellation from Ophiuchus but called it 'the serpent of the serpent holder', probably to keep it distinct from the sky's other snakes, Draco and Hydra.",
+      "That left a problem for modern astronomers. When Eugene Delporte drew up the official constellation boundaries in the late 1920s, the snake and the man overlapped. He adopted a solution proposed by the American astronomer Benjamin Gould in 1879: cut the serpent in two. The result is the only constellation in two separate pieces. Serpens Caput, the head, lies west of Ophiuchus, and Serpens Cauda, the tail, lies east of him. They still count as a single constellation, and the head is more than twice the size of the tail.",
+      "The star names describe the animal. [[star:Unukalhai|Unukalhai]] is Arabic for 'the serpent's neck'. The tail-tip star, Theta Serpentis, is called Alya."
+    ]
+  },
+  "overview": "Serpens is the great snake held by Ophiuchus, and the only constellation that comes in two parts: the head (Serpens Caput) on the west side of the Serpent Holder and the tail (Serpens Cauda) on the east. Neither half is bright, but the head has a recognizable little triangle and one fairly bright star.",
+  "howToFind": [
+    "For the head, start from [[star:Arcturus|Arcturus]], the bright orange star at the end of the arc of the Big Dipper's handle. Just east of it is the small half-circle of [[con:CrB|Corona Borealis]], the Northern Crown. Drop one fist (10 degrees) south of the Crown and you will find a small triangle of faint stars, [[star:β Ser|Beta]], [[star:γ Ser|Gamma]], and [[star:κ Ser|Kappa Serpentis]]: the snake's head. From there the neck runs another fist southward to the brightest star, [[star:Unukalhai|Unukalhai]], and then the body bends southeast toward the hand of Ophiuchus at the two Yed stars ([[star:δ Oph|Delta]] and [[star:ε Oph|Epsilon Ophiuchi]]).",
+    "For the tail, go to the other side of [[con:Oph|Ophiuchus]]. The tail emerges from behind his eastern side, above [[star:Sabik|Sabik]], and runs northeast through [[star:η Ser|Eta Serpentis]] to end at [[star:θ Ser|Theta Serpentis]], which you can also find a fist and a half west-southwest of [[star:Altair|Altair]]. The head is best seen on evenings from May to August and the tail from July to September; both are in the southern half of the sky from Brooklyn."
+  ],
+  "shape": "The head half is a small triangle with a crooked line of stars trailing two fists south from it; the tail half is a nearly straight, sparse line about two fists long running up through the Milky Way. Only Unukalhai, at magnitude 2.6 (magnitude is the brightness scale, where smaller numbers are brighter), is reasonably easy from a city. The rest are third and fourth magnitude and need a dark sky or binoculars to trace.",
+  "mainStars": [
+    {
+      "ref": "star:Unukalhai",
+      "note": "Alpha Serpentis, an orange giant of magnitude 2.6 about 75 light-years away. It marks the serpent's neck and is the only star in either half that stands out."
+    },
+    {
+      "ref": "star:β Ser",
+      "note": "Magnitude 3.7, the brightest corner of the little triangle that forms the snake's head, a fist south of Corona Borealis."
+    },
+    {
+      "ref": "star:η Ser",
+      "note": "An orange giant of magnitude 3.3, the brightest star of the tail half."
+    },
+    {
+      "ref": "star:θ Ser",
+      "note": "Alya, the tip of the tail. A small telescope shows it as an easy, evenly matched pair of white stars."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "dso:M5",
+      "equip": "binoculars",
+      "note": "One of the finest globular clusters (balls of very old stars) in the sky, in the head half, about eight degrees southwest of Unukalhai. Binoculars show a bright fuzzy star; a small telescope shows a glowing ball with a grainy edge."
+    },
+    {
+      "ref": "dso:M16",
+      "equip": "small-telescope",
+      "note": "The Eagle Nebula, in the tail half near the border with Scutum: a cluster of young stars inside the gas cloud that formed them, made famous by the Hubble photograph of its dark 'Pillars of Creation'. A small telescope shows the star cluster; the nebula's glow needs a dark sky."
+    },
+    {
+      "ref": "dso:IC4756",
+      "equip": "binoculars",
+      "note": "A large, scattered open cluster near the tail tip, west of Theta Serpentis. Binoculars under a dark sky show a broad sprinkling of faint stars."
+    },
+    {
+      "ref": "star:θ Ser",
+      "equip": "small-telescope",
+      "note": "A wide, easy double star: two nearly equal white stars side by side, a good target for a first telescope."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Ser-snake-and-the-herb",
+      "title": "The snake that brought the herb of life",
+      "culture": "Greek and Roman",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.14" },
+        { "author": "Apollodorus", "work": "Library 3.3.1 (the same tale told of the seer Polyidus)" },
+        { "author": "Ovid", "work": "Fasti 6.733-762 (a brief allusion)", "date": "c. 8 CE" }
+      ],
+      "summary": "Why does the healer Asclepius hold a snake? Hyginus says that when he was shut up with the body of the dead boy Glaucus, he killed a snake and then watched a second snake revive it with an herb. He used the same herb on the boy, and the serpent was placed in the sky in his keeping.",
+      "retelling": [
+        "Glaucus was the young son of Minos, king of Crete. One day the child went missing. He had been chasing a mouse, Apollodorus says, and had fallen into a great storage jar full of honey, where he drowned. After a long search the body was found.",
+        "Minos would not accept it. He wanted his son back alive. According to the version Hyginus gives, the task was laid on Asclepius, the most gifted doctor in the world, and to make sure he applied himself, he was locked away in a secret chamber with the dead boy.",
+        "Asclepius sat there with his staff in his hand, with no idea what to do. As he brooded, a snake came gliding in and crept up his staff. Startled and distracted, he struck at it, and kept striking as it tried to get away, until he had killed it.",
+        "A little later a second snake appeared. It was carrying a sprig of some herb in its mouth. It went to the dead snake and laid the herb on its head. And the dead snake stirred, came back to life, and the two slipped away together.",
+        "Asclepius had been shown the answer. He took the same herb and applied it to Glaucus, and the boy lived again.",
+        "For that reason, Hyginus says, the snake was placed under the protection of Asclepius, and among the stars as well, where the healer holds it in both hands. And from his example, he adds, later doctors learned to make use of snakes. The Greeks took the snake as a sign of renewal in any case, because it sheds its old skin and seems to be born again; snakes were kept in the healing temples of Asclepius, and a serpent coiled around a staff is still an emblem of medicine.",
+        "Other writers tell the same tale about a different man. In Apollodorus it is not Asclepius but a seer named Polyidus who is shut in with the body, kills the first snake with a stone, and learns the secret of the herb; Ovid seems to have had that version in mind too, since he speaks of 'the seer' and of a snake helped by a snake. Either way, the snake that carried the herb is the reason a serpent winds across the summer sky."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Serpens, the serpent",
+        "url": "http://www.ianridpath.com/startales/serpens.html"
+      },
+      "characters": ["Asclepius", "Glaucus", "Minos", "Polyidus"],
+      "questions": [
+        {
+          "id": "herb-q1",
+          "prompt": "How did the boy Glaucus die?",
+          "choices": ["He was bitten by a snake", "He drowned in a jar of honey", "He fell from a chariot", "He was struck by lightning"],
+          "answerIndex": 1,
+          "explanation": "Chasing a mouse, he fell into a large jar of honey and drowned."
+        },
+        {
+          "id": "herb-q2",
+          "prompt": "How did Asclepius learn the cure that revived Glaucus?",
+          "choices": ["Athena told him in a dream", "He found it written on a temple wall", "Chiron sent him a message", "He watched a snake bring an herb that revived a dead snake"],
+          "answerIndex": 3,
+          "explanation": "A second snake laid an herb on the one he had killed, and it came back to life; he used the same herb on the boy."
+        },
+        {
+          "id": "herb-q3",
+          "prompt": "Glaucus was the son of which king?",
+          "choices": ["Minos of Crete", "Tyndareus of Sparta", "Aegeus of Athens", "Periander of Corinth"],
+          "answerIndex": 0,
+          "explanation": "He was the young son of King Minos of Crete."
+        },
+        {
+          "id": "herb-q4",
+          "prompt": "In Apollodorus's version of the same story, who is shut in with the body instead of Asclepius?",
+          "choices": ["The centaur Chiron", "The hero Theseus", "The seer Polyidus", "The singer Orpheus"],
+          "answerIndex": 2,
+          "explanation": "Apollodorus tells it of Polyidus, a seer, who kills the first snake with a stone and learns the secret of the herb."
+        },
+        {
+          "id": "herb-q5",
+          "prompt": "Why did the Greeks treat the snake as a symbol of renewal and healing?",
+          "choices": ["Because snakes were thought never to sleep", "Because it sheds its skin and seems to be reborn", "Because snake venom was their main medicine", "Because snakes were sacred to Zeus"],
+          "answerIndex": 1,
+          "explanation": "A snake casting off its old skin looked like a creature renewing itself."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Serpens is the only one of the 88 constellations that is split into two unconnected parts.",
+    "The other identities proposed for Ophiuchus give the serpent other roles: the dragon from the chariot of Triptolemus, the giant snake of Rhodes, or the snake sent to punish Triopas. Those stories are told with Ophiuchus.",
+    "A harmless snake of southern Europe, the Aesculapian snake, is named after Asclepius. It can grow to about six feet long.",
+    "In China the stars of Serpens formed the two side walls of a celestial marketplace centered on Ophiuchus and Hercules."
+  ]
+}

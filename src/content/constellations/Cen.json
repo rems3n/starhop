@@ -1,0 +1,195 @@
+{
+  "id": "Cen",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); an older Greek figure, possibly descended from a Babylonian one",
+    "when": "2nd century CE (catalogued); known to Aratus in the 3rd century BCE",
+    "history": [
+      "Centaurus is one of the 48 constellations in Ptolemy's *Almagest* (about 150 CE), where it has 37 stars. Aratus described it around 275 BCE as a figure half man and half horse lying beneath the Scorpion and the Claws (our Libra), stretching his right hand toward the Altar and gripping the Beast, the constellation we now call [[con:Lup|Lupus]]. Some scholars connect it with a Babylonian figure called the Bison-man.",
+      "It may seem strange that Greek astronomers charted stars that never rise over Greece today. The reason is precession, a slow wobble of the Earth's axis that shifts the whole sky over thousands of years. In Ptolemy's time the stars of Centaurus stood about 10 degrees higher in the Mediterranean sky than they do now. They then sank from view until European sailors met them again in the 1500s. The stars of the Southern Cross, [[con:Cru|Crux]], were at that time simply part of the Centaur's hind legs; five of Ptolemy's Centaurus stars were later given to the Cross.",
+      "The Greek letters used for its stars today are not the ones Johann Bayer gave in 1603. The French astronomer Nicolas-Louis de Lacaille relabeled the constellation in his southern catalog of the 1750s."
+    ]
+  },
+  "overview": "Centaurus is the centaur Chiron, a large and splendid constellation with two of the ten brightest stars in the sky, including Alpha Centauri, the nearest star system to the Sun. Almost all of that splendor is below the horizon from Brooklyn: only the centaur's head and shoulders ever clear the southern skyline.",
+  "howToFind": [
+    "From Brooklyn you can see only the northern part, low in the south on evenings in May and June. Find [[star:Spica|Spica]] (follow the arc of the Big Dipper's handle to Arcturus and on to Spica). From Spica drop two and a half fists straight down and a little to the left. The one fairly bright star there, never more than about a fist and a third above the horizon, is orange [[star:Menkent|Menkent]], the centaur's shoulder. [[star:ι Cen|Iota Centauri]] is a fist to its right, and a small group of fainter stars above them marks the head. You need a flat, clear southern horizon, such as a beach looking out to sea.",
+    "The famous part of Centaurus never rises here. [[star:Rigil Kentaurus|Alpha Centauri]] and [[star:Hadar|Hadar]] lie at declination −60 degrees; anything south of about −49 degrees stays below Brooklyn's horizon all year. To see them you must travel south of about latitude 29°N (for example the Florida Keys or Hawaii, where they skim the horizon in late spring), and they are at their best from the southern hemisphere. There the two shine side by side as the Pointers, half a fist apart, aiming at the Southern Cross just to their west."
+  ],
+  "shape": "In full, a big sprawling figure three to four fists across that wraps around the Southern Cross on three sides, with a brilliant pair of stars for the front feet. From Brooklyn only a thin slice shows: Menkent and a few 3rd-magnitude stars in a loose bunch low in the haze. From a city, expect to see Menkent alone.",
+  "mainStars": [
+    {
+      "ref": "star:Rigil Kentaurus",
+      "note": "Alpha Centauri, the centaur's front foot. To the eye it is the third-brightest star in the sky; a small telescope splits it into two Sun-like yellow stars that orbit each other in about 80 years. At about 4.3 light-years it is the nearest star system to us. Never visible from Brooklyn."
+    },
+    {
+      "ref": "star:Hadar",
+      "note": "Beta Centauri, a blue-white giant of magnitude 0.6 on the other front leg. With Alpha it forms the Pointers to the Southern Cross. Never visible from Brooklyn."
+    },
+    {
+      "ref": "star:Menkent",
+      "note": "Theta Centauri, an orange giant of magnitude 2.1 about 59 light-years away. It marks the shoulder and is the only bright star of Centaurus easily seen from mid-northern latitudes."
+    },
+    {
+      "ref": "star:γ Cen",
+      "note": "A close pair of white stars that together shine at magnitude 2.2. At declination −49 degrees it sits right on Brooklyn's theoretical horizon and is not observable from here."
+    },
+    {
+      "ref": "star:η Cen",
+      "note": "A blue-white star of magnitude 2.3. From Brooklyn it rises to only about 7 degrees, so it is seen, if at all, as a dim spark in the horizon haze below and left of Menkent."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "dso:NGC5139",
+      "equip": "naked-eye",
+      "note": "Omega Centauri, the largest and brightest globular cluster in the sky: several million stars in a ball that looks like a fuzzy 4th-magnitude star to the eye and a glittering snowball as wide as the full Moon in binoculars. Ptolemy catalogued it as a star; Edmond Halley first saw it was not one, in 1677. From Brooklyn it rises less than 2 degrees above a perfect horizon and is effectively invisible; from the southern United States it is a fine binocular sight low in the south in May."
+    },
+    {
+      "ref": "star:Rigil Kentaurus",
+      "equip": "small-telescope",
+      "note": "One of the best double stars in the sky: two bright yellow suns side by side. A third member, the faint red dwarf Proxima Centauri, is the single closest star to the Sun but needs a telescope and a chart. Southern latitudes only."
+    },
+    {
+      "ref": "dso:NGC5128",
+      "equip": "binoculars",
+      "note": "Centaurus A, a giant galaxy crossed by a dark band of dust, and a powerful radio source. Binoculars show a round glow; a telescope shows the dark lane cutting it in two. It lies about four and a half degrees north of Omega Centauri and is far too low from Brooklyn to be seen well."
+    },
+    {
+      "ref": "dso:NGC3766",
+      "equip": "binoculars",
+      "note": "The Pearl Cluster, a rich open cluster of about a hundred stars in the southern Milky Way near the Cross. Southern hemisphere only."
+    },
+    {
+      "ref": "dso:NGC3918",
+      "equip": "small-telescope",
+      "note": "The Blue Planetary, a small, bright planetary nebula that John Herschel discovered and compared to the planet Uranus for its color. Southern hemisphere only."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Cen-chiron",
+      "title": "Chiron, the wise centaur",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Eratosthenes", "work": "Catasterisms (as reported in Star Tales)", "date": "3rd century BCE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.38", "date": "2nd century CE" },
+        { "author": "Apollodorus", "work": "Library 2.5.4", "date": "1st–2nd century CE" },
+        { "author": "Ovid", "work": "Fasti 5.379–414", "date": "early 1st century CE" }
+      ],
+      "summary": "Chiron was unlike the other centaurs: a healer, musician and teacher who raised Asclepius, Jason and Achilles. He was wounded by accident with one of Heracles' poisoned arrows, and because he was immortal he could not die until he gave his immortality away. Zeus then set him among the stars.",
+      "retelling": [
+        "The centaurs of Greek story were a rough crowd, half man and half horse, quick to anger and worse when there was wine about. Chiron looked like them and was nothing like them. He was not even of their family. His father was the Titan Cronus, who had come to the sea nymph Philyra in the shape of a horse, and so their son was born with a horse's body and an immortal's blood.",
+        "Chiron made his home in a cave on Mount Pelion in Thessaly, and it became the best school in Greece. He knew medicine, music, hunting and the reading of signs, and kings sent him their sons. Jason grew up there before he sailed for the Golden Fleece. Achilles learned the lyre from him. When Apollo snatched his unborn son Asclepius from a funeral pyre, it was to Chiron that he carried the child, and Chiron taught the boy so well that he became the greatest healer who ever lived. Hyginus says that Chiron surpassed not only the other centaurs but human beings too in justice.",
+        "His end came through a friend. Heracles, on his way to hunt the Erymanthian boar, was the guest of another centaur, Pholus, and a jar of wine was opened that belonged to all the centaurs in common. The smell brought the herd charging to the cave with rocks and fir trunks. Heracles drove them off with his arrows and chased them all the way to Cape Malea, where they crowded around Chiron for shelter. Heracles shot again. The arrow went through one centaur's arm and lodged in Chiron's knee.",
+        "Heracles ran to him in horror and pulled the arrow out, and Chiron himself named the medicine to put on the wound. But these were the arrows that had been dipped in the gall of the Hydra, and there was no cure for what they carried. The teacher of all healers could not heal himself.",
+        "Any other creature would have died. Chiron could not. He went back into his cave and lay in pain with no end to it, because the son of Cronus had been born unable to die. At last a bargain was made with Zeus: Chiron's immortality passed to the Titan Prometheus, and Chiron was allowed the death he asked for.",
+        "Ovid and Hyginus tell the accident more gently. In their version Heracles was simply visiting Chiron on Pelion, and while the old centaur was handling the hero's arrows one slipped and fell on his foot. Ovid adds the young Achilles weeping beside his teacher and begging him to live, and says that Chiron died on the ninth day.",
+        "All agree on the last part. Zeus, in pity, placed Chiron in the sky. Eratosthenes says he is shown there approaching the Altar, [[con:Ara|Ara]], with an animal to sacrifice, [[con:Lup|Lupus]], as a sign of his piety. The Greeks could see him low in their southern sky; from Brooklyn only his head and shoulders rise, around the star [[star:Menkent|Menkent]]."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Centaurus, the centaur",
+        "url": "http://www.ianridpath.com/startales/centaurus.html"
+      },
+      "characters": ["Chiron", "Cronus", "Philyra", "Heracles", "Pholus", "Prometheus", "Zeus", "Achilles", "Asclepius", "Jason"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Why was Chiron so different from the other centaurs?",
+          "choices": ["He had been raised by Athena", "He had different parents: the Titan Cronus and the nymph Philyra", "He was a man under a curse", "He drank no wine"],
+          "answerIndex": 1,
+          "explanation": "Chiron was the son of Cronus and Philyra, not one of the wild centaur tribe, which is why he was both wise and immortal."
+        },
+        {
+          "id": "q2",
+          "prompt": "Which of these was a pupil of Chiron?",
+          "choices": ["Heracles' nephew Iolaus", "Odysseus", "Perseus", "Achilles"],
+          "answerIndex": 3,
+          "explanation": "Achilles, Jason and the healer Asclepius were all raised or taught by Chiron on Mount Pelion."
+        },
+        {
+          "id": "q3",
+          "prompt": "Why could Chiron's wound not be healed?",
+          "choices": ["The arrow had been dipped in the Hydra's poison", "Zeus forbade it", "The arrow was made of gold", "Chiron refused all medicine"],
+          "answerIndex": 0,
+          "explanation": "Heracles had dipped his arrows in the gall of the Lernaean Hydra, and nothing could cure a wound from them."
+        },
+        {
+          "id": "q4",
+          "prompt": "How was Chiron finally able to die?",
+          "choices": ["Apollo shot him", "He drank from the river Lethe", "His immortality was given to Prometheus", "Heracles carried him to Hades"],
+          "answerIndex": 2,
+          "explanation": "Chiron was immortal and in endless pain; Zeus allowed Prometheus to take on his immortality so that Chiron could die."
+        },
+        {
+          "id": "q5",
+          "prompt": "In the sky, what is the Centaur shown doing?",
+          "choices": ["Shooting an arrow at the Scorpion", "Carrying an animal to the Altar for sacrifice", "Teaching Achilles the lyre", "Fighting Heracles"],
+          "answerIndex": 1,
+          "explanation": "Centaurus holds the Beast (Lupus) out toward the Altar (Ara). The centaur with the bow is a different constellation, Sagittarius."
+        }
+      ]
+    },
+    {
+      "id": "Cen-pholus",
+      "title": "Pholus and the centaurs' wine",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.38", "date": "2nd century CE" },
+        { "author": "Apollodorus", "work": "Library 2.5.4", "date": "1st–2nd century CE" }
+      ],
+      "summary": "Hyginus reports that some people said the Centaur in the sky was not Chiron but Pholus, the hospitable centaur who entertained Heracles and died when a poisoned arrow slipped from his fingers. The two deaths are so alike that ancient writers themselves mixed them up.",
+      "retelling": [
+        "Chiron was not the only decent centaur. On Mount Pholoe in the Peloponnese lived Pholus, whom Apollodorus calls a son of Silenus and an ash-tree nymph. Hyginus says he was more skilled than all the others at reading omens from sacrifices.",
+        "Heracles came by his cave on the way to hunt the Erymanthian boar, and Pholus welcomed him as a host should. He set roasted meat in front of his guest and ate his own share raw. Heracles asked for wine. Pholus hesitated: there was a jar in the cave, but it belonged to all the centaurs together and he was afraid to open it. Heracles told him to take courage and opened it himself.",
+        "The smell of the wine carried across the mountain, and before long the other centaurs arrived at the cave mouth armed with boulders and whole fir trees. The first two who pushed inside Heracles beat back with burning logs from the fire. The rest he shot at and pursued for miles, as far as Cape Malea, and it was in that pursuit that his arrow struck Chiron.",
+        "Pholus had taken no part in the fighting. When it was over he came out among the fallen and pulled an arrow from one of the bodies. He turned it over in his fingers, wondering how so small a thing could bring down such big creatures. It slipped. The point grazed his foot, and the Hydra's poison killed him where he stood.",
+        "Heracles came back to Pholoe to find his host dead. He buried him and went on to his boar hunt.",
+        "Set that beside the gentler account of Chiron's death, in which an arrow drops on Chiron's foot while he is examining it, and the confusion is plain. Hyginus even tells, under Chiron's name, of a centaur who marveled that such slight arrows could kill centaurs. Two good centaurs, one hero, the same poisoned arrows, the same accident: the stories had run together long before anyone wrote them down.",
+        "So Hyginus records the other opinion without deciding. Some say the constellation is Pholus, and that because he was so skilled in augury, Zeus willed that he should be shown in the stars coming to the altar with a victim for sacrifice. Whichever name you prefer, the picture is the same: a centaur who was better than his kind, holding the Beast, [[con:Lup|Lupus]], toward the Altar, [[con:Ara|Ara]]."
+      ],
+      "link": {
+        "site": "Theoi",
+        "label": "Pholus, the centaur (ancient sources)",
+        "url": "https://www.theoi.com/Georgikos/KentaurosPholos.html"
+      },
+      "characters": ["Pholus", "Heracles", "Chiron", "Zeus"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "What started the fight at the cave of Pholus?",
+          "choices": ["Heracles opened the wine jar that belonged to all the centaurs", "Pholus insulted Heracles", "Heracles killed a sacred boar", "The centaurs tried to steal Heracles' arrows"],
+          "answerIndex": 0,
+          "explanation": "The smell of the centaurs' shared wine brought the herd to the cave armed with rocks and fir trees."
+        },
+        {
+          "id": "q2",
+          "prompt": "How did Pholus die?",
+          "choices": ["Heracles shot him by mistake in the battle", "He drank poisoned wine", "A poisoned arrow he was examining slipped and struck his foot", "The other centaurs killed him for opening the jar"],
+          "answerIndex": 2,
+          "explanation": "Pholus drew an arrow from a body, wondered at it, and dropped it on his own foot; the Hydra's poison killed him."
+        },
+        {
+          "id": "q3",
+          "prompt": "According to Hyginus, what skill earned Pholus a place in the stars?",
+          "choices": ["Archery", "Healing", "Music", "Augury, the reading of omens"],
+          "answerIndex": 3,
+          "explanation": "Hyginus says Pholus was more skilled in augury than the rest, so Zeus showed him approaching the altar with a victim."
+        },
+        {
+          "id": "q4",
+          "prompt": "What did Heracles do when he found Pholus dead?",
+          "choices": ["He asked Zeus to revive him", "He buried him and continued to the boar hunt", "He burned the cave", "He gave up his labors"],
+          "answerIndex": 1,
+          "explanation": "Apollodorus says Heracles buried Pholus and then went on to capture the Erymanthian boar."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Alpha Centauri is drifting across the sky toward Hadar. In Ptolemy's day they were over 6 degrees apart; today about four and a half; in roughly 4,000 years they will be only half a degree apart.",
+    "The name Rigil Kentaurus comes from the Arabic for the centaur's foot.",
+    "Do not confuse Centaurus with Sagittarius, the other centaur of the sky, who carries a bow. Ancient writers argued that a real centaur would never use arrows.",
+    "Arab stargazers called the massed stars of Centaurus and Lupus al-shamarikh, the date-palm branches heavy with fruit."
+  ]
+}

@@ -1,0 +1,307 @@
+{
+  "id": "UMa",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); a far older Greek figure, already named by Homer",
+    "when": "2nd century CE (Almagest); known to Homer around the 8th century BCE",
+    "history": [
+      "The Great Bear is one of the oldest named star groups we have. Homer's *Odyssey* speaks of 'the Bear, which men also call the Wagon', that circles in its place and alone never bathes in the Ocean, and has Odysseus keep it on his left hand as he sails east. Aratus, in the 3rd century BCE, called it Helice, 'the twister', for the way it wheels around the pole, and said Greek sailors steered by it while the Phoenicians preferred the Little Bear. Ptolemy listed it in the *Almagest* as Arktos Megale, the Great Bear, with 27 stars; Ursa Major is simply the Latin for the same thing. It is the third-largest of the 88 constellations.",
+      "The seven bright stars have always had a second life as something on wheels or something that ploughs. Greeks called them a wagon; Hyginus says the Romans called them Septentriones, the seven plough oxen, which is why *septentrional* came to mean 'northern'; in Mesopotamia the same stars were the Wagon. Britain still says the Plough, and North America the Big Dipper. Arabic astronomers saw a bier followed by three mourners, which is where the handle star's old name Benetnasch comes from, and in China the seven stars were Beidou, the Northern Dipper.",
+      "Why a bear with a long tail, when real bears have stubs? No ancient writer explains it. One modern suggestion is that the Greek word *arktos* first meant simply 'the north' and was only later read as 'bear'."
+    ]
+  },
+  "overview": "The Great Bear is a big, sprawling animal whose hindquarters and tail are the seven stars of the Big Dipper, the most recognizable pattern in the northern sky. The Dipper is easy even from a city; the rest of the bear, its head and three paws marked by fainter stars, needs a darker sky.",
+  "howToFind": [
+    "Face north and look for seven stars in the shape of a saucepan or ladle: four make the bowl ([[star:Dubhe|Dubhe]], [[star:Merak|Merak]], [[star:Phecda|Phecda]], [[star:Megrez|Megrez]]) and three make the bent handle ([[star:Alioth|Alioth]], [[star:Mizar|Mizar]], [[star:Alkaid|Alkaid]]). The whole Dipper is about two and a half fists long at arm's length, bigger than most beginners expect. From Brooklyn it is in the sky all night, every night, but its position changes with the season: on spring evenings it rides high overhead, upside down, as if emptying itself; in summer it hangs handle-up in the northwest; on autumn evenings it scrapes along the northern horizon, where buildings and haze often hide it; in winter it climbs the northeast standing on its handle.",
+    "Once you have the Dipper, use it. The two bowl stars farthest from the handle, [[star:Merak|Merak]] and [[star:Dubhe|Dubhe]], are the Pointers: extend the line from Merak through Dubhe about five times their separation (nearly three fists) and you land on [[star:Polaris|Polaris]], the North Star. Follow the curve of the handle away from the bowl for three fists and you 'arc to [[star:Arcturus|Arcturus]]'. Go the opposite way from Polaris, down through the bottom of the bowl, and after four to five fists you reach [[con:Leo|Leo]].",
+    "For the rest of the bear, pick a clear night away from bright lights. The nose is [[star:Muscida|Muscida]], nearly two fists beyond the bowl on the side away from the handle. The paws are three close pairs of stars strung out below the bowl, each pair only a finger-width or two apart: [[star:Talitha|Talitha]] and [[star:κ UMa|its partner]] for the front paw, [[star:Tania Borealis|Tania Borealis]] and [[star:Tania Australis|Tania Australis]], and [[star:Alula Borealis|Alula Borealis]] and [[star:Alula Australis|Alula Australis]] for the hind paws."
+  ],
+  "shape": "To the eye this is the Dipper first and a bear second: a four-star bowl about a fist wide joined to a curved three-star handle, some 25 degrees from end to end. Six of the seven stars are second magnitude (magnitude is the brightness scale, where smaller numbers are brighter) and survive even a Brooklyn sky; Megrez, where handle meets bowl, is noticeably the faintest. The bear's head, legs and paws are third- and fourth-magnitude stars spread over a region three fists across, and in the city most of them vanish.",
+  "mainStars": [
+    {
+      "ref": "star:Dubhe",
+      "note": "The lip of the bowl and the Pointer nearer Polaris. It is an orange giant, and its warm tint next to the white of the other Dipper stars shows in binoculars. Its name comes from the Arabic for 'the bear'."
+    },
+    {
+      "ref": "star:Merak",
+      "note": "The other Pointer, at the bottom of the bowl below Dubhe. A white star whose name means 'the flank'. A line from Merak through Dubhe leads to the North Star."
+    },
+    {
+      "ref": "star:Alioth",
+      "note": "The first star of the handle, next to the bowl, and by a hair the brightest star in the constellation at magnitude 1.8, although Bayer gave it the letter Epsilon because he lettered the Dipper in order along the pattern, not by brightness."
+    },
+    {
+      "ref": "star:Mizar",
+      "note": "The middle star of the handle, at the bend. Look closely and you will see a fainter star, Alcor, right beside it: the pair has been a test of eyesight for centuries. A small telescope splits Mizar itself into two."
+    },
+    {
+      "ref": "star:Alkaid",
+      "note": "The tip of the handle (the end of the bear's tail), a hot blue-white star. Its name means 'the leader', from the Arabic picture of mourners leading a funeral procession. It is the starting point for the arc to Arcturus."
+    },
+    {
+      "ref": "star:Phecda",
+      "note": "The bottom corner of the bowl on the handle side; the name means 'the thigh'. Phecda, Merak, Megrez, Alioth and Mizar all drift through space together as members of the Ursa Major Moving Group, while Dubhe and Alkaid at the two ends are going their own ways."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "star:Mizar",
+      "equip": "naked-eye",
+      "note": "Mizar and Alcor, the 'horse and rider'. Good eyes separate them without help (they are about a fifth of a degree apart) and binoculars make it easy. In a small telescope Mizar itself becomes a close pair of white stars."
+    },
+    {
+      "ref": "dso:M81",
+      "equip": "binoculars",
+      "note": "Bode's Galaxy, a large spiral about 12 million light-years away. Draw a line diagonally across the bowl from [[star:Phecda|Phecda]] to [[star:Dubhe|Dubhe]] and continue the same distance again. Under a dark sky binoculars show a small oval glow; from the city you will need a telescope."
+    },
+    {
+      "ref": "dso:M82",
+      "equip": "small-telescope",
+      "note": "The Cigar Galaxy, a thin streak of light just north of M81 and in the same low-power field of view. It is a galaxy seen nearly edge-on that is forming stars at a furious rate."
+    },
+    {
+      "ref": "dso:M101",
+      "equip": "small-telescope",
+      "note": "The Pinwheel Galaxy, a face-on spiral that makes a triangle with [[star:Mizar|Mizar]] and [[star:Alkaid|Alkaid]]. It is big but very dim, a pale round haze that needs a dark, moonless sky."
+    },
+    {
+      "ref": "dso:M97",
+      "equip": "telescope",
+      "note": "The Owl Nebula, the puffed-off shell of a dying star, a little way from [[star:Merak|Merak]] along the bottom of the bowl. A faint gray disk; the two dark 'eyes' need a larger telescope."
+    }
+  ],
+  "stories": [
+    {
+      "id": "UMa-callisto-and-hera",
+      "title": "Callisto and the jealousy of Hera",
+      "culture": "Greek, in its best-known Roman telling",
+      "ancientSources": [
+        { "author": "Ovid", "work": "Metamorphoses 2.401–530", "date": "about 8 CE" },
+        { "author": "Ovid", "work": "Fasti 2.153–192", "date": "early 1st century CE" }
+      ],
+      "summary": "Callisto, a huntress sworn to the goddess Artemis, is assaulted by Zeus and bears his son Arcas. Zeus's wife Hera takes her revenge on the victim, turning Callisto into a bear; years later, when her own son is about to spear her, Zeus sweeps both into the sky. Hera's last word is to forbid the Bear ever to bathe in the sea.",
+      "retelling": [
+        "Callisto came from Arcadia, the mountain country in the middle of the Peloponnese. She had no interest in spinning wool or arranging her hair. She pinned her tunic with a plain brooch, tied her hair back with a white band, took a bow or a javelin, and ran with the hunting party of the goddess Artemis. She had sworn, with her hand on the goddess's own bow, to stay unmarried, and Artemis valued no companion more highly.",
+        "One hot afternoon Callisto slipped into a quiet thicket, unstrung her bow, and lay down with her head on her quiver. Zeus saw her there. Knowing she would run from a man, he took on the form and dress of Artemis and woke her with a friendly question about the day's hunt. Callisto greeted her goddess gladly. By the time she understood who was really holding her, it was too late; she fought him, Ovid says, but no girl could overpower the king of the gods. Zeus went back to Olympus. Callisto walked out of the wood hating the place.",
+        "For months she kept her secret. She no longer walked at the goddess's side, and she stared at the ground. Then, in the ninth month, the hunting party came to a cool stream, and Artemis proposed that they all bathe. Callisto hung back until there was no more hiding it. Artemis, furious at what she took for a broken oath, ordered her out of the company and away from the sacred water.",
+        "Worse followed. Callisto gave birth to a boy, Arcas, and that was the proof Hera had been waiting for. The queen of the gods did not turn on her husband. She seized Callisto by the hair and threw her to the ground, and as the girl stretched out her arms to beg, they bristled with black fur. Her hands curved into claws; the face Zeus had admired became a muzzle; and so that she could not move anyone with her pleading, her voice was taken too, and only a growl came out. Her mind stayed her own. A huntress, she now fled from hunters and their dogs, and, forgetting what she was, hid in terror from other bears.",
+        "Fifteen years passed. Arcas grew up knowing nothing of his mother and became a hunter himself. One day in the forest he came face to face with a bear that did not run or charge but stood strangely still, staring at him as if it knew him. Frightened, he backed away and raised his spear to drive it into her chest.",
+        "Zeus stopped the blow. He caught up mother and son together in a rush of wind and set them in the sky as neighboring constellations: Callisto as the Great Bear, and Arcas, in Ovid's calendar poem the *Fasti*, as the Bear-Keeper who follows close behind her, the figure we call Boötes.",
+        "Hera was not finished. Enraged to see her rival shining near the pole of heaven, she went down to the sea gods Tethys and Oceanus, who had brought her up, and asked one favor: never let that Bear wash in your waters. They agreed. And so, seen from Greece or from Brooklyn, the Great Bear circles the pole night after night and never dips beneath the sea."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Ursa Major, the Great Bear",
+        "url": "http://www.ianridpath.com/startales/ursamajor.html"
+      },
+      "characters": ["Callisto", "Zeus", "Artemis", "Hera", "Arcas", "Tethys", "Oceanus"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "In Ovid's version, who turns Callisto into a bear?",
+          "choices": ["Artemis, for breaking her vow", "Hera, out of jealousy", "Zeus, to hide her", "Arcas, by accident"],
+          "answerIndex": 1,
+          "explanation": "In the Metamorphoses it is Hera (Juno) who transforms Callisto, after the birth of Arcas proves Zeus's infidelity. Other ancient versions give the role to Artemis or to Zeus."
+        },
+        {
+          "id": "q2",
+          "prompt": "How does Zeus manage to approach Callisto?",
+          "choices": ["Disguised as Artemis", "As a shower of gold", "As a white bull", "As a swan"],
+          "answerIndex": 0,
+          "explanation": "Zeus takes the appearance of Artemis, the one person Callisto trusted completely. (The bull, the swan and the golden rain belong to his pursuits of Europa, Leda and Danae.)"
+        },
+        {
+          "id": "q3",
+          "prompt": "What is about to happen when Zeus lifts Callisto and Arcas into the sky?",
+          "choices": ["Hera is about to kill the baby Arcas", "Artemis is about to shoot Callisto", "Callisto is about to attack a village", "Arcas is about to spear the bear, not knowing it is his mother"],
+          "answerIndex": 3,
+          "explanation": "Arcas, now fifteen and a hunter, meets the bear in the forest and raises his spear. Zeus prevents the killing by carrying both of them to the stars."
+        },
+        {
+          "id": "q4",
+          "prompt": "How does the story explain the fact that the Great Bear never sets for northern observers?",
+          "choices": ["Zeus chained the Bear to the pole", "Arcas holds her on a leash", "Hera persuaded Tethys and Oceanus never to let the Bear bathe in the sea", "The Bear is afraid of the scorpion on the horizon"],
+          "answerIndex": 2,
+          "explanation": "Hera asks her foster parents, the sea gods Tethys and Oceanus, to bar the Bear from their waters, so the constellation circles the pole without ever sinking below the horizon."
+        },
+        {
+          "id": "q5",
+          "prompt": "Which constellation does Arcas become in Ovid's Fasti?",
+          "choices": ["Boötes, the Bear-Keeper", "Orion, the Hunter", "Hercules, the Kneeler", "Canis Major, the Great Dog"],
+          "answerIndex": 0,
+          "explanation": "Ovid says the Bear-Keeper (Arctophylax, another name for Boötes) seems to follow at the Bear's back. That is why Boötes sits just off the Dipper's handle."
+        }
+      ]
+    },
+    {
+      "id": "UMa-callisto-and-artemis",
+      "title": "Callisto punished by Artemis",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Eratosthenes", "work": "Catasterisms 1 (reporting Hesiod)", "date": "3rd century BCE; survives in a later summary" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.1", "date": "2nd century CE" }
+      ],
+      "summary": "In what seems to be the older Greek telling, Hera plays no part in the transformation. It is Artemis who turns Callisto into a bear, as punishment for losing her virginity, and the bear and her son are saved by Zeus when they blunder into his forbidden sanctuary.",
+      "retelling": [
+        "Long before Ovid gave the story its famous shape, the Greeks told it with a different goddess holding the whip. Hyginus traces this version back to the poet Hesiod, and Eratosthenes, the Alexandrian scholar who collected the star myths, tells it the same way.",
+        "Callisto was the daughter of Lycaon, king of Arcadia. She loved the hunt so much that she joined the band of Artemis, and the goddess grew fond of her because the two were so alike in temper. Then Zeus made her pregnant. Callisto was afraid to tell Artemis the truth and hid her condition for as long as she could.",
+        "It could not be hidden forever. Near her time, tired from the chase, she went to cool herself in a stream, and Artemis saw at a glance that her companion was no longer a maiden. The goddess demanded no explanation and offered no mercy. She stripped Callisto of her human features and left her a bear, *arktos* in Greek. In that shape she gave birth to her son, Arcas.",
+        "Hyginus adds a livelier variant from the comic playwright Amphis. In it Zeus had disguised himself as Artemis to get close to the girl, so that when the real Artemis later asked how she had come to be pregnant, the bewildered Callisto answered that it was the goddess's own doing. It was that reply, taken as an insult, that cost her her human form.",
+        "The bear wandered the forest like any wild animal until she was caught, together with her child, and brought as a present to King Lycaon, her own father, who had no idea what he was being given. There the bear, knowing nothing of the law, rushed into the sanctuary of Zeus Lycaeus on the mountain. It was holy ground that no one was allowed to enter, and the penalty was death. Her son followed her in, and the Arcadians came after them both, ready to kill.",
+        "Zeus looked down at the trap and remembered that he was the cause of it. He snatched up mother and son before a blow could fall and set them among the constellations. Her he named Arctos, the Bear; her son he named Arctophylax, the Bear-Keeper. Why the Bear never sets is explained here too: Tethys, the sea goddess who nursed Hera, refuses to receive in her waters a rival of her foster child."
+      ],
+      "link": {
+        "site": "Theoi",
+        "label": "Hyginus, Astronomica 2.1: the Great Bear",
+        "url": "https://www.theoi.com/Text/HyginusAstronomica.html"
+      },
+      "characters": ["Callisto", "Artemis", "Zeus", "Lycaon", "Arcas", "Tethys"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "In the version Hyginus credits to Hesiod, who changes Callisto into a bear, and why?",
+          "choices": ["Hera, because Zeus loved her", "Zeus, to hide her from Hera", "Artemis, because she had not kept her virginity", "Lycaon, to test the gods"],
+          "answerIndex": 2,
+          "explanation": "Here the punishment comes from Artemis herself, who discovers the pregnancy when Callisto bathes in a stream. Hera's jealousy is not the motive in this telling."
+        },
+        {
+          "id": "q2",
+          "prompt": "Who was Callisto's father in this version?",
+          "choices": ["Lycaon, king of Arcadia", "Minos, king of Crete", "Atlas the Titan", "Cepheus, king of Ethiopia"],
+          "answerIndex": 0,
+          "explanation": "Callisto is the daughter of Lycaon of Arcadia. The captured bear and her cub are even presented to him as a gift, without his knowing who she is."
+        },
+        {
+          "id": "q3",
+          "prompt": "What danger leads Zeus to place Callisto and her son in the sky?",
+          "choices": ["They are starving in winter", "Hera has sent a gadfly after them", "A flood is drowning Arcadia", "They have entered the forbidden sanctuary of Zeus Lycaeus, where trespass means death"],
+          "answerIndex": 3,
+          "explanation": "The bear strays into the sanctuary of Zeus Lycaeus and her son follows. The Arcadians are about to kill them under their law when Zeus lifts both to the stars."
+        },
+        {
+          "id": "q4",
+          "prompt": "What names does Zeus give the two new constellations?",
+          "choices": ["Helice and Cynosura", "Arctos (the Bear) and Arctophylax (the Bear-Keeper)", "Callisto and Lycaon", "Septentrio and Plaustrum"],
+          "answerIndex": 1,
+          "explanation": "Arctos is the Greek for 'bear' and Arctophylax means 'bear-keeper' or 'bear-watcher', an old name for Boötes. The word Arctic comes from the same root."
+        }
+      ]
+    },
+    {
+      "id": "UMa-callisto-and-zeus",
+      "title": "The bear that Zeus made and Artemis shot",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Apollodorus", "work": "Library 3.8.2", "date": "1st–2nd century CE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.1", "date": "2nd century CE" }
+      ],
+      "summary": "A third version makes Zeus himself the one who turns Callisto into a bear, as a hasty disguise to hide her from Hera. The trick fails: Hera points the bear out to Artemis, who shoots it. Zeus rescues the infant Arcas and sets the dead bear's image in the sky.",
+      "retelling": [
+        "The mythographer Apollodorus, summing up what older writers said, begins by admitting that nobody agreed even about Callisto's family. Some called her a daughter of Lycaon, king of Arcadia. Hesiod, he says, made her one of the nymphs. Others named her father as Nycteus, or as Ceteus. What they did agree on was that she hunted with Artemis, dressed as the goddess dressed, and had sworn to her to remain a maiden.",
+        "Zeus wanted her. He came to her in borrowed form, as Artemis according to some and as Apollo according to others, and took her against her will. Then he thought about his wife. Hera's anger was a thing to be feared, and Zeus's answer was quick and careless: he changed Callisto into a bear, so that when Hera came looking for a girl she would find only an animal in the woods.",
+        "Hyginus tells the moment more sharply. Hera, already suspicious, hurried to the spot hoping to catch her husband in the act. She found no girl there, only a bear. But Hera was not easily fooled, and she saw at once how to use her husband's trick against him. Artemis happened to be hunting nearby. Hera pointed. There, she said, is a fine wild beast for your arrows.",
+        "Artemis drew her bow and shot her own companion dead, not knowing what she was killing. Apollodorus records a harsher opinion as well: that Artemis knew exactly who the bear was and shot her deliberately, because she had not kept her oath. Hyginus knows yet another twist, in which it is Hera who makes the bear and Artemis who kills it, and only afterward recognizes her friend.",
+        "Zeus could not undo the arrow. He could save the child. When Callisto died he snatched up her baby, named him Arcas, and carried him to Maia, one of the Pleiades, to be brought up in Arcadia, the land that would one day take its name from him.",
+        "For Callisto herself there was only a memorial. Grieving, Zeus set the likeness of a bear in the sky, picked out in stars, and called it the Bear. In this telling there is no near-fatal meeting between mother and son and no rescue at the last instant, only a dead huntress and a god's regret, written across the north where it can be seen on every clear night of the year."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Ursa Major, the Great Bear",
+        "url": "http://www.ianridpath.com/startales/ursamajor.html"
+      },
+      "characters": ["Callisto", "Zeus", "Hera", "Artemis", "Arcas", "Maia"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "According to Apollodorus, why does Zeus turn Callisto into a bear?",
+          "choices": ["To hide her from Hera", "To punish her for boasting", "To make her immortal", "Because Artemis asked him to"],
+          "answerIndex": 0,
+          "explanation": "In this version the transformation is a disguise: Zeus hopes Hera will not recognize his lover in animal form."
+        },
+        {
+          "id": "q2",
+          "prompt": "How does Callisto die in this version?",
+          "choices": ["She is speared by her son Arcas", "She is struck by a thunderbolt", "She is shot by Artemis, urged on by Hera", "She drowns in a mountain stream"],
+          "answerIndex": 2,
+          "explanation": "Hera sees through the disguise and persuades Artemis to shoot the bear as a wild animal. Some said Artemis shot her knowingly, for breaking her vow."
+        },
+        {
+          "id": "q3",
+          "prompt": "What happens to the infant Arcas in Apollodorus's account?",
+          "choices": ["He is raised by wolves", "He is left with King Lycaon", "He is placed in the sky at once as the Little Bear", "Zeus gives him to Maia to bring up in Arcadia"],
+          "answerIndex": 3,
+          "explanation": "Zeus rescues the baby, names him Arcas, and hands him to Maia, one of the Pleiades. Arcadia was said to be named after him."
+        },
+        {
+          "id": "q4",
+          "prompt": "Apollodorus lists several different fathers for Callisto. Which of these is NOT one he mentions?",
+          "choices": ["Lycaon", "Minos", "Nycteus", "Ceteus"],
+          "answerIndex": 1,
+          "explanation": "Apollodorus reports Lycaon, Nycteus and Ceteus as her father in different authors, and says Hesiod called her a nymph. Minos of Crete belongs to other stories."
+        }
+      ]
+    },
+    {
+      "id": "UMa-nurse-of-zeus",
+      "title": "Helice, the nurse of Zeus",
+      "culture": "Greek (Cretan tradition)",
+      "ancientSources": [
+        { "author": "Aratus", "work": "Phaenomena 26–44", "date": "3rd century BCE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.2", "date": "2nd century CE" },
+        { "author": "Apollodorus", "work": "Library 1.1.6–7 (the nurses named Adrasteia and Ida)", "date": "1st–2nd century CE" }
+      ],
+      "summary": "A completely different tradition has nothing to do with Callisto. In it the two Bears are the nymphs who nursed the baby Zeus in a cave on Crete while he was hidden from his father Cronus, and whom Zeus rewarded with a place in the sky. The Great Bear is the nurse Helice; other writers call her Adrasteia.",
+      "retelling": [
+        "Cronus, king of the Titans, had been warned that one of his own children would overthrow him. His answer was to swallow each baby as soon as his wife Rhea gave birth. Five went down that way. When Rhea was carrying the sixth she had had enough.",
+        "She went secretly to the island of Crete and gave birth to Zeus in a cave on Mount Dicte. Then she wrapped a stone in baby clothes and handed that to Cronus, who swallowed it without looking. The real child stayed behind on Crete, and somebody had to look after him.",
+        "That work fell to the nymphs of the mountain. Aratus, whose poem about the sky was the most widely read astronomy book of the ancient world, says there were two, and that they kept the child in a cave near Mount Ida and reared him for a year. He names them Helice and Cynosura. Apollodorus, drawing on other authorities, calls the nurses Adrasteia and Ida, daughters of Melisseus, and says they fed the baby on the milk of the she-goat Amalthea.",
+        "A baby cries, and Cronus had sharp ears. So outside the cave stood the Curetes, young Cretan warriors in full armor. Whenever the infant wailed they beat their spears against their shields and raised such a din that no sound of a child could carry to his father. In this way, the poets said, the Curetes deceived Cronus while the nymphs did the quieter work inside.",
+        "Zeus grew up. He forced Cronus to bring his swallowed brothers and sisters back up, and with them he fought and defeated the Titans and became king of the gods. He did not forget the cave. In gratitude, Aratus says, he raised his two nurses from Crete into heaven. Helice became the greater Bear, large and bright and easy to find at nightfall, the one by which the Greeks steered their ships. Cynosura became the lesser, smaller and dimmer but turning in a tighter circle around the pole.",
+        "Aratus himself seems to have had his doubts; he introduces the story with a cautious 'if the tale be true'. And neither he nor anyone else explains the oddest part: why two kindly nymphs should have been turned into bears at all. Hyginus simply reports that both were set in the sky out of gratitude and that both were called Bears. Still, the story has one clear advantage over the tale of Callisto. It accounts for both Bears at once, side by side near the pole, just as they stand in the sky."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Ursa Major, the Great Bear",
+        "url": "http://www.ianridpath.com/startales/ursamajor.html"
+      },
+      "characters": ["Zeus", "Cronus", "Rhea", "Helice", "Cynosura", "Adrasteia", "Ida", "the Curetes", "Amalthea"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "In Aratus's account, who are the two Bears?",
+          "choices": ["Callisto and her son Arcas", "Two hunting dogs of Artemis", "Two nymphs who nursed the infant Zeus on Crete", "Two daughters of Atlas"],
+          "answerIndex": 2,
+          "explanation": "Aratus says the Bears were raised to heaven from Crete because they nurtured Zeus in a cave for a year. He calls them Helice (the Great Bear) and Cynosura (the Little Bear)."
+        },
+        {
+          "id": "q2",
+          "prompt": "Why was the baby Zeus hidden on Crete?",
+          "choices": ["His father Cronus swallowed his children at birth", "Hera wanted to kill him", "A flood had covered the mainland", "The Titans had exiled Rhea"],
+          "answerIndex": 0,
+          "explanation": "Cronus swallowed each child to prevent a prophecy that one would overthrow him. Rhea saved Zeus by giving Cronus a wrapped stone instead."
+        },
+        {
+          "id": "q3",
+          "prompt": "What did the Curetes do?",
+          "choices": ["Fed the baby on goat's milk", "Built the golden cradle", "Carried Zeus to Olympus", "Clashed their weapons to drown out the baby's cries"],
+          "answerIndex": 3,
+          "explanation": "The armed Curetes stood guard at the cave and beat spears on shields so that Cronus would not hear the infant."
+        },
+        {
+          "id": "q4",
+          "prompt": "What names does Apollodorus give to the nymphs who nursed Zeus?",
+          "choices": ["Helice and Cynosura", "Adrasteia and Ida", "Maia and Electra", "Aegle and Hesperia"],
+          "answerIndex": 1,
+          "explanation": "Apollodorus calls them Adrasteia and Ida, daughters of Melisseus; Aratus uses the names Helice and Cynosura. Ancient writers did not agree on the nurses' names."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Dipper, Plough, Wagon, Bier: the same seven stars have been a Mesopotamian wagon, a Roman team of seven oxen (Septentriones), an Arabic funeral procession, the Chinese Northern Dipper (Beidou) and, in Britain, Charles's Wain.",
+    "The five middle stars of the Dipper are a real family, the Ursa Major Moving Group, travelling together through space. Dubhe and Alkaid are not members, so over tens of thousands of years the Dipper will slowly bend out of shape.",
+    "The Arabic names of the three pairs of paw stars (Alula, Tania, Talitha) mean first, second and third: Arab stargazers saw them as the three leaps of a gazelle.",
+    "Haudenosaunee (Iroquois) tradition also sees a bear here, with the three handle stars as hunters chasing it rather than as a tail.",
+    "From Brooklyn's latitude the Dipper is circumpolar, meaning it never sets, though Alkaid only just clears the northern horizon at its lowest."
+  ]
+}

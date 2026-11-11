@@ -1,0 +1,174 @@
+{
+  "id": "Dra",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); an older Greek figure described by Aratus",
+    "when": "2nd century CE (Almagest); described in the 3rd century BCE",
+    "history": [
+      "The Greeks called it Drakon, which meant a huge serpent rather than the winged, fire-breathing dragon of later picture books. Aratus, in the 3rd century BCE, describes it winding between the two Bears like the branch of a river, with its tail reaching toward the Great Bear and a coil wrapped around the Little Bear, and with the kneeling figure we call Hercules planting a foot on its head. Ptolemy catalogued it in the *Almagest*. It is the eighth-largest constellation, though far from the eighth most obvious.",
+      "Draco once held the pole. Because the Earth's axis slowly wobbles (the motion called precession), the sky's pivot point drifts among the stars, and around 2800 BCE, when the pyramids of Egypt were being built, it lay almost exactly at the faint star Thuban in the dragon's tail. Arabic stargazers saw no dragon here at all: for them the four stars of the head were mother camels standing guard around a calf."
+    ]
+  },
+  "overview": "A long serpent that winds halfway around the north pole of the sky, its tail slipping between the two Dippers and its head, a small lopsided quadrilateral of stars, lying close to bright Vega. The head is easy; the body is a chain of faint stars that takes patience and a reasonably dark sky.",
+  "howToFind": [
+    "Start with the head. On a summer evening find [[star:Vega|Vega]], the brilliant blue-white star nearly overhead and the brightest corner of the Summer Triangle. About a fist and a half from Vega toward the north (toward the Little Dipper) is a compact, uneven four-sided figure about half a fist across. Its two brightest stars are orange [[star:Eltanin|Eltanin]] and yellow [[star:Rastaban|Rastaban]], the dragon's eyes; the other corners are [[star:Grumium|Grumium]] and the fainter [[star:ν Dra|Nu Draconis]].",
+    "For the tail, go back to the Dippers. The tail tip, [[star:Giausar|Giausar]], lies between the Pointer stars of the Big Dipper and [[star:Polaris|Polaris]]. From there a line of faint stars runs between the two Dippers through [[star:Thuban|Thuban]], which sits about midway between [[star:Mizar|Mizar]] in the Big Dipper's handle and [[star:Kochab|Kochab]] in the Little Dipper's bowl. The body then loops around the Little Dipper's bowl, swings out toward Cepheus, and doubles back sharply to the head. From Brooklyn, Draco never sets. The head is highest on summer evenings; in winter evenings it hangs low over the northern horizon."
+  ],
+  "shape": "A crooked line of more than a dozen stars about six fists long once all its bends are counted, ending in a small box for the head. From the city you will probably see only Eltanin, Rastaban and one or two body stars; the dragon as a whole is a dark-sky constellation, best traced slowly with a chart in hand.",
+  "mainStars": [
+    {
+      "ref": "star:Eltanin",
+      "note": "The brightest star of Draco at magnitude 2.2 (magnitude is the brightness scale, where smaller numbers are brighter), an orange giant on the top of the dragon's head. Observing it in the 1720s, James Bradley discovered the aberration of starlight, the first direct proof that the Earth moves around the Sun."
+    },
+    {
+      "ref": "star:Rastaban",
+      "note": "The other eye of the dragon, a yellow giant of magnitude 2.8 beside Eltanin. Both names are worn-down forms of the Arabic for 'the serpent's head'."
+    },
+    {
+      "ref": "star:Thuban",
+      "note": "A modest magnitude 3.7 star in the tail, between the two Dippers. Nearly five thousand years ago it was the North Star, closer to the pole than Polaris is now. Bayer labelled it Alpha even though seven stars in Draco outshine it."
+    },
+    {
+      "ref": "star:Athebyne",
+      "note": "Eta Draconis, the second-brightest star in the constellation, a yellow giant in the big loop of the body on the side toward the Little Dipper's bowl."
+    },
+    {
+      "ref": "star:Edasich",
+      "note": "Iota Draconis, an orange giant marking the body just beyond Thuban. Its Arabic name means 'the hyena'."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "star:ν Dra",
+      "equip": "binoculars",
+      "note": "The faintest corner of the dragon's head is a lovely matched pair: two white stars of equal brightness, split by any binoculars held steady."
+    },
+    {
+      "ref": "dso:NGC6543",
+      "equip": "small-telescope",
+      "note": "The Cat's Eye Nebula, the glowing shell thrown off by a dying star about 3,000 light-years away, in the middle of the dragon's long loop. A small telescope shows a tiny blue-green disk, like an out-of-focus star; it is bright enough to survive suburban skies."
+    },
+    {
+      "ref": "star:Thuban",
+      "equip": "naked-eye",
+      "note": "Find it for the history: this faint star was the pole star when the pyramids were built. Look midway between Mizar and Kochab."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Dra-ladon",
+      "title": "Ladon, guardian of the golden apples",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Eratosthenes", "work": "Catasterisms 3", "date": "3rd century BCE; survives in a later summary" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.3 (citing Pherecydes)", "date": "2nd century CE" },
+        { "author": "Apollodorus", "work": "Library 2.5.11", "date": "1st–2nd century CE" },
+        { "author": "Apollonius Rhodius", "work": "Argonautica, Book 4", "date": "3rd century BCE" }
+      ],
+      "summary": "Draco is Ladon, the serpent Hera set to guard the tree of golden apples in the garden of the Hesperides. Heracles killed it to carry off the apples as one of his labors, and Hera placed her dead watchman among the stars, where the hero still stands with a foot on its head.",
+      "retelling": [
+        "When Zeus married Hera, every god brought a gift. Gaia, the Earth, brought the most wonderful of all: branches heavy with apples of gold. Hera was delighted with them and asked Gaia to plant them in her own garden, far away at the western edge of the world near Mount Atlas, where the Titan of that name holds up the sky.",
+        "The garden was tended by the Hesperides, the nymphs of the evening. Most writers say there were three of them; Apollodorus counts four and gives their names as Aegle, Erythia, Hesperia and Arethusa. Hera trusted them to look after her tree. It turned out the girls could not resist picking the apples themselves.",
+        "So Hera installed a guard that had no interest in fruit. It was a huge serpent named Ladon, which she set coiled around the trunk. Apollodorus says it was a child of the monsters Typhon and Echidna, that it had a hundred heads, and that it spoke in many different voices; the poet Hesiod, earlier, calls it the offspring of the sea gods Phorcys and Ceto and does not count its heads. Everyone agreed it never slept.",
+        "Then came Heracles. Bound to serve King Eurystheus, he had already killed the lion of Nemea and the Hydra of Lerna and done much else, and near the end of his labors he was ordered to fetch the golden apples. He wandered across half the world just to learn where the garden was. What happened when he arrived is told in two ways. In one, he persuaded Atlas to fetch the apples for him while he took the weight of the sky on his own shoulders, and then tricked the Titan into taking it back. In the other, the one the star-myth depends on, he went into the garden himself, shot the serpent dead with his arrows, and picked the apples from the tree.",
+        "The poet Apollonius gives a glimpse of the scene a day later, when Jason's Argonauts stumbled on it. Ladon lay against the trunk of the apple tree. Only the tip of his tail still twitched; the rest of the great dark body was lifeless, and flies were dying in the poison of the arrow wounds. Nearby the Hesperides were wailing, their pale arms flung over their golden hair.",
+        "Hera hated Heracles, and it was she who had caused the labors to be laid on him in the first place. She could not save her watchman, but she could honor him. She set the serpent's image in the sky, wound around the pole. The proof, says Eratosthenes, is the constellation next door: the Kneeler, whom we call Hercules, is drawn with one foot pressed on the dragon's head, hero and monster still locked in the moment after the fight."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Draco, the Dragon",
+        "url": "http://www.ianridpath.com/startales/draco.html"
+      },
+      "characters": ["Ladon", "Hera", "Heracles", "the Hesperides", "Atlas", "Gaia", "Eurystheus"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "What did the dragon Ladon guard?",
+          "choices": ["The Golden Fleece", "The entrance to the Underworld", "The tree of golden apples in the garden of the Hesperides", "The cave of the infant Zeus"],
+          "answerIndex": 2,
+          "explanation": "Ladon coiled around Hera's golden apple tree. (A different serpent guarded the Golden Fleece in the story of Jason.)"
+        },
+        {
+          "id": "q2",
+          "prompt": "Why did Hera set a dragon to guard the tree?",
+          "choices": ["The Hesperides kept picking the apples themselves", "Atlas had threatened to cut it down", "Zeus wanted the apples for himself", "Mortals had found the garden"],
+          "answerIndex": 0,
+          "explanation": "The nymphs who were supposed to tend the tree could not keep their hands off the fruit, so Hera added a more reliable guard."
+        },
+        {
+          "id": "q3",
+          "prompt": "Who had given the golden apples to Hera?",
+          "choices": ["Aphrodite, after a beauty contest", "Heracles, as a peace offering", "Atlas, in return for a favor", "Gaia (Earth), as a wedding present"],
+          "answerIndex": 3,
+          "explanation": "Gaia brought the golden apples as a gift when Hera married Zeus, and Hera had them planted in her garden near Mount Atlas."
+        },
+        {
+          "id": "q4",
+          "prompt": "How is the fight remembered in the arrangement of the constellations?",
+          "choices": ["Draco is shown biting the Great Bear", "Hercules is drawn with a foot on the dragon's head", "Draco is coiled around the Northern Crown", "Hercules holds the dragon's tail in his hand"],
+          "answerIndex": 1,
+          "explanation": "The neighboring constellation Hercules, the Kneeler, has one foot on the head of Draco. Eratosthenes pointed to this as proof of which dragon it is."
+        }
+      ]
+    },
+    {
+      "id": "Dra-athena",
+      "title": "The serpent Athena flung into the sky",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.3", "date": "2nd century CE" }
+      ],
+      "summary": "A shorter and wilder explanation comes from the war between the gods and the Giants. The Giants hurled an enormous serpent at Athena; she caught it, whirled it, and threw it into the heavens, where it stuck fast at the pole, still twisted from the throw.",
+      "retelling": [
+        "After the gods of Olympus had overthrown the Titans, they had to fight for their throne a second time. The Giants, huge sons of the Earth, rose against them, and the battle that followed, the Gigantomachy, was one of the favorite subjects of Greek artists. Every god had a part in it. Zeus threw his thunderbolts, and Heracles, though mortal, was brought in to help.",
+        "None of the gods was more at home in a battle than Athena, the armored daughter of Zeus, goddess of war and of clear thinking. Hyginus, after telling the usual story of the dragon of the golden apples, preserves a second explanation of the constellation in a few lines, and it belongs to her.",
+        "In the thick of the fighting, he says, the Giants picked up a dragon, an immense serpent, and threw it at Athena, the way a man might fling a rope or a net at an enemy.",
+        "Athena did not flinch or step aside. She caught the creature as it came, seizing its writhing coils in her hands. Then she swung it and hurled it upward, away from the earth altogether, and it flew all the way to the stars. It came to rest at the very top of the sky, and there the goddess fixed it, right at the pole around which the heavens turn.",
+        "The detail that makes the story is the last one. A snake thrown by its body does not have time to straighten out. The dragon reached the sky still knotted and kinked from Athena's grip, and it has stayed that way. That, says Hyginus, is why the constellation looks as it does to this day, its body bent back and forth as if it had only just arrived among the stars.",
+        "Go outside and trace it and you can see what he means. No other constellation doubles back on itself like Draco. From the tail near the Big Dipper's Pointers it runs between the two Bears, hooks around the Little Dipper, heads off toward Cepheus, and then reverses sharply to bring its head down near Vega. Aratus compared that winding course to a river. The other tale makes it a warning. Either way it never sets from northern lands, so that Athena's trophy stays on display every night of the year."
+      ],
+      "link": {
+        "site": "Theoi",
+        "label": "Hyginus, Astronomica 2.3: the Serpent",
+        "url": "https://www.theoi.com/Text/HyginusAstronomica.html"
+      },
+      "characters": ["Athena", "the Giants", "Zeus"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "In this version, who threw the dragon at Athena?",
+          "choices": ["The Titans", "Hera", "Heracles", "The Giants"],
+          "answerIndex": 3,
+          "explanation": "Hyginus says the dragon was thrown at Athena (Minerva) by the Giants during their battle with the gods."
+        },
+        {
+          "id": "q2",
+          "prompt": "What did Athena do with the dragon?",
+          "choices": ["Caught it and flung it up to the pole of the sky", "Cut off its hundred heads", "Tamed it to guard her temple", "Turned it to stone with the Gorgon's head"],
+          "answerIndex": 0,
+          "explanation": "She snatched the serpent out of the air and threw it to the stars, fixing it at the pole of heaven."
+        },
+        {
+          "id": "q3",
+          "prompt": "How does the story explain Draco's winding shape?",
+          "choices": ["The dragon is coiled around a tree", "It is writhing from arrow wounds", "It was still twisted from being thrown when it stuck in the sky", "It is wrapped around the two Bears to protect them"],
+          "answerIndex": 2,
+          "explanation": "Hyginus says it appears with a twisted body 'as if recently transported to the stars': it never had time to uncoil."
+        },
+        {
+          "id": "q4",
+          "prompt": "During which mythical conflict does this story take place?",
+          "choices": ["The Trojan War", "The battle of the gods and the Giants", "The voyage of the Argonauts", "The war of the Seven against Thebes"],
+          "answerIndex": 1,
+          "explanation": "The setting is the Gigantomachy, the battle in which the Olympian gods defeated the Giants."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Eltanin passes almost exactly overhead as seen from London, which is why James Bradley chose it for the precise measurements that revealed the aberration of starlight in 1728. A later Astronomer Royal called it the birth-star of modern astronomy.",
+    "Thuban will not be the pole star again for about nineteen thousand years; the pole takes about 26,000 years to complete its circle.",
+    "The Draconid meteor shower in early October radiates from near the dragon's head. Usually weak, it produced storms of thousands of meteors an hour in 1933 and 1946.",
+    "In Chinese astronomy much of Draco formed the walls of the Purple Palace, the enclosure around the north pole where the celestial emperor lived."
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "id": "Aqr",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); an older Greek figure with roots in Mesopotamia and Egypt",
+    "when": "2nd century CE (Almagest); known to Greek writers by the 3rd century BCE",
+    "history": [
+      "Aquarius, the Water Carrier, is one of the 48 constellations of Ptolemy's *Almagest* (about 150 CE), where it appears under the Greek name Hydrochoos, 'water pourer'. Earlier Greek writers such as Aratus and Eratosthenes treated the stream of water falling from his jar as a figure in its own right, called simply the Water.",
+      "The Greeks seem to have taken the water pourer over from older skies rather than inventing him; he may originally have stood for the god of the Nile, whose flood watered Egypt. That would explain why the Greek stories attached to him are brief and why there are several of them. He sits in a part of the sky the ancients filled with watery figures: the Sea Goat, the Fishes, the Sea Monster and the Southern Fish, which drinks the stream he pours.",
+      "Ptolemy counted the bright star Fomalhaut as both the end of Aquarius's stream and the mouth of the Southern Fish. Modern boundaries give it to Piscis Austrinus alone."
+    ]
+  },
+  "overview": "Aquarius is the Water Carrier, a young man tipping a jar from which a stream of faint stars runs down to the bright star Fomalhaut. It is a large zodiac constellation with no bright stars; its one easy landmark is the Water Jar, a tiny Y of four stars.",
+  "howToFind": [
+    "Find the Great Square of Pegasus, high in the south on autumn evenings. From [[star:Markab|Markab]], the Square's lower right corner, drop a little less than two fists down and to the right. You are looking for a small, neat Y of four faint stars, less than half a fist across, with [[star:ζ1 Aqr|Zeta Aquarii]] at its center. This is the Water Jar.",
+    "Just to the right of the Jar is [[star:Sadalmelik|Sadalmelik]], and one fist farther to the lower right is [[star:Sadalsuud|Sadalsuud]]; these two third-magnitude stars are the Water Carrier's shoulders. The rest of the constellation spills down and to the left from the Jar toward [[star:Skat|Skat]] and on to bright [[star:Fomalhaut|Fomalhaut]], low in the south. From Brooklyn, Aquarius is in the evening sky from September through December, about halfway up in the south at its best in October and November."
+  ],
+  "shape": "There is no obvious figure. What the eye picks up is the little Y of the Water Jar, the two shoulder stars strung out to its right, and then, under a dark sky, loose trickles of fourth- and fifth-magnitude stars running three fists down toward Fomalhaut. In a city you will be doing well to see Sadalmelik, Sadalsuud and Skat.",
+  "mainStars": [
+    {
+      "ref": "star:Sadalsuud",
+      "note": "The brightest star in Aquarius, though only magnitude 2.9: a yellow supergiant about 540 light-years away. Its Arabic name is usually translated 'luckiest of the lucky'."
+    },
+    {
+      "ref": "star:Sadalmelik",
+      "note": "Almost a twin of Sadalsuud, a yellow supergiant of magnitude 3.0 marking the right shoulder. The name means something like 'the lucky star of the king'. It sits almost exactly on the celestial equator."
+    },
+    {
+      "ref": "star:Sadachbia",
+      "note": "The brightest star of the Water Jar at magnitude 3.9, a white star whose name comes from the Arabic title of the whole Y-shaped group."
+    },
+    {
+      "ref": "star:Skat",
+      "note": "A white star of magnitude 3.3 lower down in the figure, on the way to Fomalhaut."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "dso:M2",
+      "equip": "binoculars",
+      "note": "A rich globular cluster about 37,000 light-years away, half a fist straight above Sadalsuud. In binoculars it is a small fuzzy star; a telescope shows a bright, grainy ball."
+    },
+    {
+      "ref": "dso:NGC7293",
+      "equip": "binoculars",
+      "note": "The Helix Nebula, the shell of gas thrown off by a dying star and, at about 650 light-years, the nearest bright nebula of its kind. It is big, nearly half the width of the Moon, but so pale that it needs a truly dark sky; from a city it is invisible."
+    },
+    {
+      "ref": "dso:NGC7009",
+      "equip": "small-telescope",
+      "note": "The Saturn Nebula, another dying star's shell, small and bright. A small telescope shows a blue-green oval; large ones show the faint side extensions that reminded early observers of Saturn's rings."
+    },
+    {
+      "ref": "star:ζ1 Aqr",
+      "equip": "telescope",
+      "note": "The center star of the Water Jar is a close pair of nearly equal white stars that takes a good telescope and high power to separate."
+    },
+    {
+      "ref": "dso:M72",
+      "equip": "telescope",
+      "note": "A small, faint globular cluster in the western part of the constellation, about 56,000 light-years away."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Aqr-ganymede",
+      "title": "Ganymede, cupbearer of the gods",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.29", "date": "1st century BCE – 2nd century CE" },
+        { "author": "Apollodorus", "work": "Library 3.12.2", "date": "1st–2nd century CE" },
+        { "author": "Ovid", "work": "Metamorphoses 10.155–161; Fasti 2.145", "date": "c. 8 CE" }
+      ],
+      "summary": "The best-known story makes the Water Carrier Ganymede, a Trojan prince so beautiful that Zeus carried him off to Olympus, in the form of an eagle or by sending one, to pour the gods' drink forever. The eagle flies beside him in the sky as the constellation Aquila.",
+      "retelling": [
+        "Tros was the king who gave his name to Troy, and he had three sons. The youngest, Ganymede, was said to be the most beautiful boy in the world. Like many a king's son in those stories, he did ordinary work, and he was out on the plain below the city watching his father's sheep on the day his life changed.",
+        "Zeus, looking down from Olympus, saw him and wanted him. Ovid says that the king of the gods burned with love and for once found something he would rather be than himself. But he would not stoop to become just any bird. He chose the eagle, the only one strong enough to carry his thunderbolts. On those borrowed wings he dropped out of the sky, seized the boy, and carried him up and away. Other tellers say Zeus stayed where he was and sent his eagle to do the work. Either way the bird has its own place among the stars as Aquila, the Eagle, just to the north of Aquarius.",
+        "There was another version in which Zeus was not even the first. Eos, the goddess of the dawn, had a weakness for handsome young men, and she is said to have carried Ganymede off before Zeus took him from her.",
+        "For the father left behind, the gods offered payment. Zeus sent King Tros a team of magnificent horses, or, as some said, a vine made of gold, to make up for the loss of his son.",
+        "On Olympus, Ganymede was given a task. He became the cupbearer of the gods, the one who mixes and pours the nectar at their feasts. Not everyone was pleased. Hera, the wife of Zeus, resented the boy, and Ovid notes that he fills his master's cup to this day against her will.",
+        "That is the figure the Greeks saw in the Water Carrier: a youth forever tilting a jar. Hyginus says simply that many call him Ganymede, shown as if pouring water from an urn. Ovid, who calls him the boy from Mount Ida, says the stream is not plain water at all but water mixed with nectar, the drink of the gods, running down the sky.",
+        "The story was told everywhere in the Greek and Roman world. The Latin form of the boy's name, Catamitus, even passed into English as a word. And when Galileo's moons of Jupiter were named centuries later after the god's companions, the largest of them was called Ganymede."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Star Tales – Aquarius",
+        "url": "http://www.ianridpath.com/startales/aquarius.html"
+      },
+      "characters": ["Ganymede", "Zeus", "Tros", "Hera", "Eos"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Who was Ganymede's father?",
+          "choices": ["Priam, king of Troy", "Tros, who gave Troy its name", "Minos of Crete", "Prometheus"],
+          "answerIndex": 1,
+          "explanation": "Ganymede was a son of King Tros, after whom Troy was named."
+        },
+        {
+          "id": "q2",
+          "prompt": "In what form did Zeus carry Ganymede away, according to Ovid?",
+          "choices": ["A swan", "A bull", "A shower of gold", "An eagle"],
+          "answerIndex": 3,
+          "explanation": "Zeus chose the eagle, the bird that carries his thunderbolts; it is remembered in the constellation Aquila."
+        },
+        {
+          "id": "q3",
+          "prompt": "What was Ganymede's task on Olympus?",
+          "choices": ["Cupbearer to the gods", "Keeper of the thunderbolts", "Charioteer of the Sun", "Guardian of the gates"],
+          "answerIndex": 0,
+          "explanation": "He pours nectar for the gods, which is why the constellation shows a youth tipping a jar."
+        },
+        {
+          "id": "q4",
+          "prompt": "Which goddess resented Ganymede's place among the gods?",
+          "choices": ["Athena", "Aphrodite", "Hera", "Demeter"],
+          "answerIndex": 2,
+          "explanation": "Ovid says he mixes Jupiter's nectar against the will of Juno, the Roman Hera."
+        }
+      ]
+    },
+    {
+      "id": "Aqr-deucalion",
+      "title": "Deucalion and the great flood",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.29, citing Hegesianax", "date": "1st century BCE – 2nd century CE" },
+        { "author": "Germanicus Caesar", "work": "Aratea", "date": "early 1st century CE" },
+        { "author": "Apollodorus", "work": "Library 1.7.2", "date": "1st–2nd century CE" }
+      ],
+      "summary": "A rival tradition says the Water Carrier is Deucalion, the Greek survivor of the great flood. Warned by his father Prometheus, he and his wife Pyrrha rode out the deluge in a chest and afterward repopulated the world by throwing stones over their shoulders.",
+      "retelling": [
+        "Not everyone agreed that the youth with the jar was Ganymede. The writer Hegesianax, Hyginus tells us, said he was Deucalion, because in Deucalion's reign so much water poured out of the sky that it caused the great Flood. The Roman prince Germanicus liked the idea too. Deucalion, he wrote, pours out water, the very element he once fled, and in doing so draws our eyes to his little pitcher.",
+        "Deucalion was the son of Prometheus, the Titan who made human beings out of clay and stole fire for them. He ruled the country around Phthia in northern Greece, and his wife was Pyrrha, daughter of Pandora, the first woman.",
+        "They lived in a bad time. The people of the Bronze Age had become so wicked that Zeus decided to wipe them out and begin again. Prometheus, who could see what was coming, warned his son. On his father's advice Deucalion built a great wooden chest, stocked it with food, and climbed inside with Pyrrha.",
+        "Then Zeus opened the sky. Rain fell until most of Greece was under water. The mountains of Thessaly split apart, and everyone drowned except a few who had fled to the highest peaks. For nine days and nine nights the chest drifted on the flood with the two of them shut inside.",
+        "At last it ran aground on Mount Parnassus. The rain stopped. Deucalion stepped out and at once made a sacrifice of thanks to Zeus, the god of escape. Zeus was moved, and sent Hermes to tell Deucalion that he could have whatever he wished for. Deucalion looked at the empty world and asked for people.",
+        "Zeus told him and Pyrrha to pick up stones and throw them over their heads. They did. Every stone that Deucalion threw became a man when it struck the ground, and every stone that Pyrrha threw became a woman. The Greeks said this was why their word for a people, *laos*, sounds like *laas*, a stone.",
+        "No ancient writer gives the scene of Deucalion's rising to heaven. The tradition simply names him as the man in the stars, placed there as a memorial of the deluge: the one who lived through the water now pours it."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Star Tales – Aquarius",
+        "url": "http://www.ianridpath.com/startales/aquarius.html"
+      },
+      "characters": ["Deucalion", "Pyrrha", "Prometheus", "Zeus", "Hermes"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Who warned Deucalion that the flood was coming?",
+          "choices": ["His father Prometheus", "The oracle at Delphi", "Hermes", "His wife Pyrrha"],
+          "answerIndex": 0,
+          "explanation": "Prometheus advised his son to build a chest and stock it with provisions."
+        },
+        {
+          "id": "q2",
+          "prompt": "Where did Deucalion's chest come to rest?",
+          "choices": ["Mount Olympus", "Mount Etna", "Mount Parnassus", "Mount Ida"],
+          "answerIndex": 2,
+          "explanation": "After nine days and nights afloat, the chest landed on Parnassus."
+        },
+        {
+          "id": "q3",
+          "prompt": "How did Deucalion and Pyrrha repopulate the world?",
+          "choices": [
+            "They planted dragon's teeth",
+            "They shaped figures from clay",
+            "They prayed and people rose from the sea",
+            "They threw stones over their heads"
+          ],
+          "answerIndex": 3,
+          "explanation": "Deucalion's stones became men and Pyrrha's became women."
+        },
+        {
+          "id": "q4",
+          "prompt": "Why did some ancient writers think the Water Carrier was Deucalion?",
+          "choices": [
+            "He was a famous well-digger",
+            "The great flood happened in his reign",
+            "He was cupbearer to Poseidon",
+            "He discovered the source of the Nile"
+          ],
+          "answerIndex": 1,
+          "explanation": "Hegesianax linked the figure pouring water with the king in whose time the sky poured down the deluge."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Aquarius lies on the ecliptic, the path of the Sun, Moon and planets. The Sun passes through it from mid-February to mid-March.",
+    "A third ancient suggestion, reported by Hyginus from the writer Eubulus, is that the figure is Cecrops, an early king of Athens, pouring water in sacrifice to the gods because he reigned before wine had been discovered.",
+    "Several stars of Aquarius have names beginning with 'Sad', from an Arabic word meaning luck or good omen. The original meaning of these names had been forgotten even by medieval Arab astronomers.",
+    "Two meteor showers appear to radiate from Aquarius: the Eta Aquariids in early May, which are dust from Halley's Comet, and the Delta Aquariids in late July.",
+    "The March equinox point, where the Sun crosses the celestial equator heading north, is slowly drifting toward Aquarius and will cross into it around the year 2600. That coming change is the 'Age of Aquarius' of popular song."
+  ]
+}

@@ -1,0 +1,365 @@
+{
+  "id": "latitude",
+  "unit": "motion",
+  "order": 4,
+  "title": "How latitude changes your sky",
+  "subtitle": "Why travelers see different stars, and why Orion stands on his head in Sydney",
+  "minutes": 7,
+  "sections": [
+    {
+      "heading": "Polaris measures your latitude",
+      "body": [
+        "After this lesson you will be able to work out what the sky does anywhere on Earth from one number, the latitude, and you will know what to expect on your first night under a southern sky.",
+        "The height of the north celestial pole above your horizon equals your latitude. In Brooklyn it is 40.7° up, about four fists. [[star:Polaris|Polaris]] is within 1° of the pole, so measuring its height tells you how far north you are. Sailors used exactly this for centuries.",
+        "Travel north and Polaris climbs. In Tromsø, in Arctic Norway, it is 70° up and most of the sky you can see is circumpolar: it circles without setting. Travel south and Polaris sinks. Each degree of latitude you go south lowers it by one degree, and uncovers one more degree of sky along your southern horizon."
+      ],
+      "demo": {
+        "title": "North to south",
+        "controls": [
+          "latitude",
+          "play"
+        ],
+        "steps": [
+          {
+            "caption": "Brooklyn, facing north. Polaris is 41° above the horizon: your latitude.",
+            "time": "month:1 21:00",
+            "view": {
+              "az": 0,
+              "alt": 35,
+              "fov": 110
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "star:Polaris",
+                "label": "Polaris"
+              },
+              {
+                "type": "angle",
+                "from": "point:north",
+                "to": "star:Polaris"
+              },
+              {
+                "type": "polyline",
+                "points": [
+                  "star:Alkaid",
+                  "star:Mizar",
+                  "star:Alioth",
+                  "star:Megrez",
+                  "star:Dubhe",
+                  "star:Merak",
+                  "star:Phecda",
+                  "star:Megrez"
+                ]
+              }
+            ]
+          },
+          {
+            "caption": "Tromsø, Norway, latitude 69.6° north, the same evening. Polaris is 70° up, nearly overhead, and the sky wheels around it almost level with the horizon. Capella and Vega never set here.",
+            "observer": {
+              "name": "Tromsø, Norway",
+              "lat": 69.6492,
+              "lon": 18.9553,
+              "tz": "Europe/Oslo"
+            },
+            "time": "month:1 21:00",
+            "rate": 1800,
+            "view": {
+              "az": 0,
+              "alt": 55,
+              "fov": 130
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "star:Polaris",
+                "label": "Polaris"
+              },
+              {
+                "type": "angle",
+                "from": "point:north",
+                "to": "star:Polaris"
+              },
+              {
+                "type": "polyline",
+                "points": [
+                  "star:Alkaid",
+                  "star:Mizar",
+                  "star:Alioth",
+                  "star:Megrez",
+                  "star:Dubhe",
+                  "star:Merak",
+                  "star:Phecda",
+                  "star:Megrez"
+                ]
+              }
+            ]
+          },
+          {
+            "caption": "Sydney, Australia, latitude 33.9° south, facing north on a February evening. Orion is high in the north and upside down: blue Rigel on top, red Betelgeuse underneath. The line is the ecliptic, the track of the Sun, Moon and planets, which crosses the northern sky here.",
+            "observer": {
+              "name": "Sydney, Australia",
+              "lat": -33.8688,
+              "lon": 151.2093,
+              "tz": "Australia/Sydney"
+            },
+            "time": "month:2 21:30",
+            "view": {
+              "az": 0,
+              "alt": 45,
+              "fov": 120
+            },
+            "layers": {
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "constellation",
+                "id": "Ori",
+                "label": true
+              },
+              {
+                "type": "object",
+                "ref": "star:Rigel",
+                "label": "Rigel"
+              },
+              {
+                "type": "object",
+                "ref": "star:Betelgeuse",
+                "label": "Betelgeuse"
+              }
+            ]
+          },
+          {
+            "caption": "Sydney, facing south. The sky turns clockwise around the south celestial pole, 34° up, which has no bright star to mark it. The Southern Cross is climbing in the southeast and Canopus is almost overhead. None of this ever rises in Brooklyn.",
+            "observer": {
+              "name": "Sydney, Australia",
+              "lat": -33.8688,
+              "lon": 151.2093,
+              "tz": "Australia/Sydney"
+            },
+            "time": "month:2 21:30",
+            "rate": 1800,
+            "view": {
+              "az": 180,
+              "alt": 40,
+              "fov": 120
+            },
+            "highlights": [
+              {
+                "type": "label",
+                "at": "point:scp",
+                "text": "South celestial pole"
+              },
+              {
+                "type": "angle",
+                "from": "point:south",
+                "to": "point:scp"
+              },
+              {
+                "type": "constellation",
+                "id": "Cru",
+                "label": true
+              },
+              {
+                "type": "object",
+                "ref": "star:Canopus",
+                "label": "Canopus"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "heading": "The two extremes",
+      "body": [
+        "At the North Pole the celestial pole is straight overhead. Stars neither rise nor set: they slide around the sky parallel to the horizon, each keeping its height. You see the northern half of the sky all the time and the southern half never.",
+        "At the equator the opposite holds. Both celestial poles lie on the horizon, Polaris just at the northern one. Stars rise straight up out of the east and drop straight down in the west, and every star is above the horizon for 12 hours a day. Over a year an observer on the equator can see the entire sky. Twilight is short there for the same reason: the Sun goes down vertically too.",
+        "Brooklyn is in between, so its sky is a blend: a circumpolar cap in the north, slanting rising and setting everywhere else, and a zone below the southern horizon that never appears."
+      ],
+      "demo": {
+        "title": "Pole and equator",
+        "controls": [
+          "latitude",
+          "play"
+        ],
+        "steps": [
+          {
+            "caption": "The North Pole in January, an hour per second. Polaris is at the zenith and every star travels level with the horizon. Orion's upper half pokes above the horizon and stays exactly that high all winter.",
+            "observer": {
+              "name": "North Pole",
+              "lat": 89.99,
+              "lon": 0,
+              "tz": "UTC"
+            },
+            "time": "month:1 21:00",
+            "rate": 3600,
+            "view": {
+              "az": 180,
+              "alt": 30,
+              "fov": 130
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "star:Capella",
+                "label": "Capella"
+              },
+              {
+                "type": "object",
+                "ref": "star:Betelgeuse",
+                "label": "Betelgeuse"
+              }
+            ]
+          },
+          {
+            "caption": "Quito, Ecuador, on the equator, facing east. Stars rise straight up, with no slant. Orion lies on his side as he climbs toward the zenith.",
+            "observer": {
+              "name": "Quito, Ecuador",
+              "lat": -0.1807,
+              "lon": -78.4678,
+              "tz": "America/Guayaquil"
+            },
+            "time": "month:1 21:00",
+            "rate": 1800,
+            "view": {
+              "az": 90,
+              "alt": 35,
+              "fov": 110
+            },
+            "highlights": [
+              {
+                "type": "constellation",
+                "id": "Ori",
+                "label": true
+              },
+              {
+                "type": "object",
+                "ref": "star:Procyon",
+                "label": "Procyon"
+              }
+            ]
+          },
+          {
+            "caption": "Quito, facing north. Polaris sits on the horizon, less than 1° up, and stars swing over it in half-circles. Now drag the latitude slider slowly from the equator to the pole and watch Polaris rise.",
+            "observer": {
+              "name": "Quito, Ecuador",
+              "lat": -0.1807,
+              "lon": -78.4678,
+              "tz": "America/Guayaquil"
+            },
+            "time": "month:1 21:00",
+            "rate": 1800,
+            "view": {
+              "az": 0,
+              "alt": 30,
+              "fov": 120
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "star:Polaris",
+                "label": "Polaris"
+              },
+              {
+                "type": "object",
+                "ref": "star:Capella",
+                "label": "Capella"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "heading": "South of the equator",
+      "body": [
+        "In the southern hemisphere the picture is mirrored. The south celestial pole is above the horizon, and the stars circle it clockwise. The Sun, the Moon and the planets cross the northern part of the sky instead of the southern, and they move from right to left as you face them.",
+        "Familiar constellations appear flipped. You are standing on the other side of the globe, upside down compared with Brooklyn, so when you face north to look at Orion his feet point up and his head points down. The crescent Moon looks flipped as well. Nothing has changed in the sky; only your footing has."
+      ],
+      "tryIt": "Measure your own latitude tonight. Find Polaris, hold a fist at arm's length with the bottom resting on the horizon, and stack fists upward. In Brooklyn Polaris should be about four fists up."
+    }
+  ],
+  "keyPoints": [
+    "The altitude of the celestial pole (and so of Polaris) equals your latitude.",
+    "Going south one degree lowers Polaris one degree and reveals one more degree of southern sky.",
+    "At the pole stars circle level with the horizon; at the equator they rise and set vertically and the whole sky is visible over a year.",
+    "From the southern hemisphere northern constellations look upside down, and the Sun, Moon and planets pass through the northern sky."
+  ],
+  "examples": [],
+  "questions": [
+    {
+      "id": "lat-q1",
+      "prompt": "You measure Polaris 25° above the horizon. Where are you?",
+      "choices": [
+        "Latitude 65° north",
+        "Latitude 25° south",
+        "Latitude 25° north",
+        "On the equator"
+      ],
+      "answerIndex": 2,
+      "explanation": "The altitude of Polaris equals your northern latitude, to within a degree. 25° north is about the latitude of Miami or the Florida Keys."
+    },
+    {
+      "id": "lat-q2",
+      "prompt": "How do stars move when seen from the North Pole?",
+      "choices": [
+        "They circle level with the horizon, never rising or setting",
+        "They rise straight up in the east",
+        "They all set for six months at a time",
+        "They do not move at all"
+      ],
+      "answerIndex": 0,
+      "explanation": "With the celestial pole overhead, the turning sky carries every star around at a constant height."
+    },
+    {
+      "id": "lat-q3",
+      "prompt": "Where on Earth can you see every star in the sky over the course of a year?",
+      "choices": [
+        "At the North Pole",
+        "At latitude 45°",
+        "Nowhere",
+        "At the equator"
+      ],
+      "answerIndex": 3,
+      "explanation": "At the equator both celestial poles lie on the horizon, so no part of the sky stays permanently hidden."
+    },
+    {
+      "id": "lat-q4",
+      "prompt": "Why does Orion look upside down from Sydney?",
+      "choices": [
+        "Orion's stars are arranged differently in the south",
+        "You are standing the other way up on the globe and face north to see him",
+        "The atmosphere inverts images near the horizon",
+        "Australia is in a different time zone"
+      ],
+      "answerIndex": 1,
+      "explanation": "The stars are the same. A southern observer's “up” points the opposite way from a northern observer's, so the figure appears flipped."
+    },
+    {
+      "id": "lat-q5",
+      "prompt": "You fly from Brooklyn (40.7° N) to Miami (25.8° N). How does your southern horizon change?",
+      "choices": [
+        "Nothing changes",
+        "You lose 15° of sky in the south",
+        "You gain about 15° of sky that never rises in Brooklyn",
+        "You gain 15° of sky in the north"
+      ],
+      "answerIndex": 2,
+      "explanation": "Each degree south uncovers a degree of sky. From Miami Canopus clears the horizon and the top of the Southern Cross can be glimpsed in spring."
+    },
+    {
+      "id": "lat-q6",
+      "prompt": "In Sydney, in which part of the sky do the Sun and planets pass at their highest?",
+      "choices": [
+        "The north",
+        "The south",
+        "Directly along the eastern horizon",
+        "They do not rise there"
+      ],
+      "answerIndex": 0,
+      "explanation": "South of the tropics the ecliptic arcs across the northern sky, the mirror image of what Brooklyn sees in the south."
+    }
+  ]
+}

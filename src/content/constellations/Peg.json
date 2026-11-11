@@ -1,0 +1,242 @@
+{
+  "id": "Peg",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); an older Greek figure known simply as 'the Horse'",
+    "when": "2nd century CE (Almagest); described by Aratus in the 3rd century BCE",
+    "history": [
+      "Pegasus is one of the 48 constellations in Ptolemy's *Almagest* of about 150 CE. The Greeks from Aratus to Ptolemy called it only Hippos, 'the Horse'. Aratus, writing in the 3rd century BCE, already described its square of stars, its half body 'parted at the navel', and the tale that this was the horse whose hoof opened the spring Hippocrene; the name Pegasus became the usual label for the constellation only later.",
+      "Not everyone agreed about wings. Eratosthenes is reported to have doubted that the star-horse was Pegasus because he saw no wings on it, but Ptolemy's catalogue places stars on the wings and the Roman prince Germanicus, translating Aratus, has the horse beating them at the top of the sky. Some ancient writers named a different horse altogether, the transformed girl Hippe or Melanippe; her story is told under [[con:Equ|Equuleus]].",
+      "The star at the corner shared with [[con:And|Andromeda]] was counted in both figures in antiquity, as the horse's navel and the princess's head. Modern boundaries give it to Andromeda alone, so the Great Square of Pegasus strictly has only three Pegasus stars. Arabic astronomers called the figure the Larger Horse, and an older Arab tradition saw the Square as a leather well-bucket."
+    ]
+  },
+  "overview": "Pegasus is the winged horse of Greek myth, shown as the front half of a horse flying upside down. What you actually see is the Great Square: four medium-bright stars marking a big empty box that dominates the autumn evening sky and serves as the signpost to everything around it.",
+  "howToFind": [
+    "On an autumn evening face south and look high up for a large, nearly empty square of four stars, each side about a fist and a half long (a fist at arm's length is roughly 10 degrees). Nothing else in that part of the sky looks like it. If you know Cassiopeia's W, you can check your find: run a line from [[star:Polaris|Polaris]] through [[star:Caph|Caph]], the end star of the W, and continue three fists to [[star:Alpheratz|Alpheratz]], the Square's northeast corner. Going around the Square from there you meet [[star:Scheat|Scheat]], [[star:Markab|Markab]] and [[star:Algenib|Algenib]].",
+    "The horse hangs upside down from the Square. From Markab, the southwest corner, a bent line of fainter stars runs west through [[star:Homam|Homam]] and [[star:Biham|Biham]] to bright orange [[star:Enif|Enif]], the horse's nose, about two fists from the Square. The front legs kick out to the northwest from Scheat by way of [[star:Matar|Matar]]. From Brooklyn the Square rises in the east on late-summer evenings, stands high in the south in October and November, and sinks into the west in midwinter."
+  ],
+  "shape": "A big, slightly lopsided square roughly 15 degrees on a side, larger than your fist held at arm's length, with a crooked neck and two spindly legs trailing off its western edge. The four corner stars shine through city light without trouble. The inside of the Square is strikingly blank: from a city you may see no stars in it at all, and counting how many you can see there is a classic test of how dark your sky is.",
+  "mainStars": [
+    {
+      "ref": "star:Markab",
+      "note": "Alpha Pegasi, the southwest corner of the Square, a blue-white star about 130 light-years away. Its name comes from an Arabic word for 'shoulder'; Ptolemy put it at the base of the wing."
+    },
+    {
+      "ref": "star:Scheat",
+      "note": "Beta Pegasi, the northwest corner, a red giant about 200 light-years away. Its orange tint is plain next to the other corners, and it is where the front legs join the body."
+    },
+    {
+      "ref": "star:Algenib",
+      "note": "Gamma Pegasi, the southeast corner and the faintest of the four, a hot blue-white star nearly 400 light-years away. The name is from the Arabic for 'the side' or 'flank'."
+    },
+    {
+      "ref": "star:Enif",
+      "note": "Epsilon Pegasi, the horse's nose (the name is Arabic for 'nose') and, narrowly, the brightest star in Pegasus. It is an orange supergiant about 690 light-years away, far larger and more luminous than the Sun."
+    },
+    {
+      "ref": "star:Matar",
+      "note": "Eta Pegasi, a yellowish star about half a fist northwest of Scheat, marking the start of the forelegs."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "dso:M15",
+      "equip": "binoculars",
+      "note": "A globular cluster, a tight ball of hundreds of thousands of old stars about 34,000 light-years away. Follow the line from Biham to Enif and continue about half as far again: binoculars show a small fuzzy 'star', a telescope a bright grainy ball."
+    },
+    {
+      "ref": "star:51 Peg",
+      "equip": "binoculars",
+      "note": "A faint Sun-like star just over 50 light-years away, about halfway along the Square's western side and slightly outside it. In 1995 it became the first Sun-like star found to have a planet, a giant world that circles it every four days."
+    },
+    {
+      "ref": "dso:NGC7331",
+      "equip": "small-telescope",
+      "note": "A spiral galaxy about half a fist north of Matar. In a small telescope under a dark sky it is a faint elongated smudge; from the city it needs a larger instrument."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Peg-birth",
+      "title": "The horse born from Medusa",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Hesiod", "work": "Theogony 278–286", "date": "8th–7th century BCE" },
+        { "author": "Ovid", "work": "Metamorphoses 4.772–803", "date": "c. 8 CE" },
+        { "author": "Apollodorus", "work": "Library 2.4.2", "date": "1st–2nd century CE" },
+        { "author": "Ovid", "work": "Fasti 3.449–458", "date": "early 1st century CE" }
+      ],
+      "summary": "Pegasus was the child of the sea god Poseidon and the Gorgon Medusa, and he came into the world in the strangest way possible: he sprang from his mother's neck when the hero Perseus cut off her head. He flew straight up to the gods, where Zeus made him the bearer of thunder and lightning.",
+      "retelling": [
+        "Before she was a monster, Medusa was a young woman whose beauty drew suitors from everywhere, and her hair was the loveliest thing about her. Ovid has Perseus tell what happened next. Poseidon, god of the sea and of horses, forced himself on her inside a temple of Athena. The goddess turned her face away behind her shield, and then punished not the god but the girl: the famous hair became a mass of living snakes. From then on Medusa was one of the three Gorgons, and anyone who looked straight at her turned to stone.",
+        "She was carrying Poseidon's children when Perseus came for her head. He had been sent on that errand by a king who wanted him dead, and he arrived with help from the gods: winged sandals, a cap that made him invisible, a blade of adamant. He found the Gorgons asleep. Watching only Medusa's reflection in his bronze shield, with Athena guiding his hand, he struck once.",
+        "What came out of the wound was not only blood. Two full-grown beings leapt from Medusa's severed neck. One was Chrysaor, whose name means 'golden sword' and who would become the father of the three-bodied giant Geryon. The other was a horse. Hesiod, the earliest poet to tell it, says he was called Pegasus because he was born beside the *pegai*, the springs, of Ocean, the great river that the Greeks imagined circling the world.",
+        "Pegasus did not wait to be caught. Ovid, in his poem on the Roman calendar, pictures him with his mane still spattered with his mother's blood, gliding above the clouds and beneath the stars, with the sky for his ground and wings for feet. Hesiod says simply that he soared away from the earth and came to the immortals.",
+        "There he was given work fit for the son of a god. He lives, Hesiod says, in the house of Zeus, and carries the thunder and the lightning for him. The poet Pindar adds that he is kept in the ancient stables of Zeus on Olympus.",
+        "And from there it was a short step into the stars. The Horse, says Aratus, circles in the heaven of Zeus for anyone to see. Only his front half is drawn, cut off at the navel, and he flies on his back with his legs toward the north. The whole story hangs together overhead: Perseus stands a little to the east, beyond Andromeda, with the Gorgon's head in his hand, and the horse that sprang from her flies just ahead of him."
+      ],
+      "link": {
+        "site": "Theoi",
+        "label": "Pegasus in the ancient sources",
+        "url": "https://www.theoi.com/Ther/HipposPegasos.html"
+      },
+      "characters": ["Pegasus", "Medusa", "Poseidon", "Athena", "Perseus", "Chrysaor", "Zeus"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Who were the parents of Pegasus?",
+          "choices": ["Zeus and Danaë", "Poseidon and Medusa", "Chiron and Hippe", "Helios and a Nereid"],
+          "answerIndex": 1,
+          "explanation": "Pegasus was the son of Poseidon, god of the sea and of horses, and the Gorgon Medusa."
+        },
+        {
+          "id": "q2",
+          "prompt": "How was Pegasus born?",
+          "choices": ["He rose from the foam of the sea", "He hatched from a golden egg", "He sprang from Medusa's neck when Perseus beheaded her", "Athena shaped him from a cloud"],
+          "answerIndex": 2,
+          "explanation": "When Perseus cut off Medusa's head, Pegasus and his brother Chrysaor leapt fully grown from her body."
+        },
+        {
+          "id": "q3",
+          "prompt": "According to Hesiod, where does the name Pegasus come from?",
+          "choices": ["From the Greek word for 'wing'", "From the Greek word for 'thunder'", "From the name of the mountain where he landed", "From *pegai*, the springs of Ocean, beside which he was born"],
+          "answerIndex": 3,
+          "explanation": "Hesiod derives the name from *pegai*, 'springs', because Pegasus was born near the springs of the river Ocean."
+        },
+        {
+          "id": "q4",
+          "prompt": "What job did Zeus give Pegasus among the gods?",
+          "choices": ["Carrying his thunder and lightning", "Pulling the chariot of the Sun", "Guarding the gates of Olympus", "Bringing souls to the underworld"],
+          "answerIndex": 0,
+          "explanation": "Hesiod says Pegasus lives in the house of Zeus and brings him the thunder and lightning."
+        }
+      ]
+    },
+    {
+      "id": "Peg-hippocrene",
+      "title": "The Horse's Fountain",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Aratus", "work": "Phaenomena 205–224", "date": "3rd century BCE" },
+        { "author": "Ovid", "work": "Metamorphoses 5.250–268", "date": "c. 8 CE" },
+        { "author": "Antoninus Liberalis", "work": "Metamorphoses 9", "date": "2nd century CE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.18", "date": "2nd century CE" }
+      ],
+      "summary": "On Mount Helicon, home of the Muses, Pegasus struck the rock with his hoof and a spring gushed out. It was named Hippocrene, 'the Horse's Fountain', and became the source poets claimed to drink from. This is the oldest story attached to the constellation itself.",
+      "retelling": [
+        "Mount Helicon rises in Boeotia, in central Greece, and it belonged to the nine Muses, the goddesses of song, poetry and learning. Near its summit, in the old days, the rock was dry. That changed when the winged horse came down on it.",
+        "Aratus, the first writer to connect the story with the stars, tells it in a few lines. No spring yet trickled on the top of Helicon; the Horse struck the place with his forefoot, and water burst out at the blow. Herdsmen grazing their animals on the mountain were the first to give it a name. They called it Hippocrene, from the Greek words for 'horse' and 'fountain', and Aratus adds that the water still wells from the rock there, never far from the people of the nearby town of Thespiae.",
+        "A later writer, Antoninus Liberalis, explains why Pegasus kicked the mountain in the first place. The nine daughters of a man named Pierus challenged the Muses to a singing contest on Helicon. When the mortal sisters sang, the sky went dark and nothing listened. When the Muses sang, the heavens, the stars, the sea and the rivers all stood still, and Helicon itself, swelling with pleasure, began to rise toward the sky. Poseidon ordered Pegasus to stop it, and the horse did so with one stamp of his hoof on the summit.",
+        "News of the new spring traveled. Ovid describes the goddess Athena flying to Helicon just to see it. She tells the Muses she has heard of a fountain opened by the hoof of Medusa's winged child, and that she has a special interest, because she watched that horse being born from his mother's blood. The Muse Urania assures her the tale is true and leads her to the water. Athena stands a long while admiring it, then looks around at the woods, the caves and the meadows full of flowers, and calls the Muses lucky in their home.",
+        "Ovid elsewhere says the horse made the spring when he had only just felt a bridle for the first time, which ties this tale to the hero Bellerophon. And Helicon did not keep the honor to itself: the travel writer Pausanias reports that the people of Troezen showed visitors their own Horse's Fountain and told the same story about it.",
+        "For Aratus the two halves of the tale face each other across the sky and the earth. The water, he says, stays on the mountain, but the Horse himself wheels in the heaven of Zeus, there for you to look at. Hyginus, cataloguing the star myths centuries later, opens his account of the constellation the same way: this is Pegasus, who opened a spring on Helicon by striking the rock with his hoof."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Pegasus, the winged horse",
+        "url": "http://www.ianridpath.com/startales/pegasus.html"
+      },
+      "characters": ["Pegasus", "The Muses", "Athena", "Urania", "Poseidon", "The daughters of Pierus"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "What does the name Hippocrene mean?",
+          "choices": ["Wing of the Muses", "The Horse's Fountain", "Water of memory", "The poet's mountain"],
+          "answerIndex": 1,
+          "explanation": "Hippocrene joins the Greek words for 'horse' and 'fountain'. Aratus says herdsmen were the first to call it that."
+        },
+        {
+          "id": "q2",
+          "prompt": "On which mountain did Pegasus create the spring?",
+          "choices": ["Mount Olympus", "Mount Atlas", "Mount Helicon", "Mount Parnassus"],
+          "answerIndex": 2,
+          "explanation": "Hippocrene is on Mount Helicon in Boeotia, the home of the nine Muses."
+        },
+        {
+          "id": "q3",
+          "prompt": "In the version told by Antoninus Liberalis, why did Pegasus strike the mountain?",
+          "choices": ["To stop Helicon swelling toward the sky as the Muses sang", "To crush a serpent hiding in the rock", "To punish the herdsmen who chased him", "To dig a grave for Bellerophon"],
+          "answerIndex": 0,
+          "explanation": "The mountain was rising with delight at the Muses' song, and Poseidon had Pegasus halt it with a blow of his hoof."
+        },
+        {
+          "id": "q4",
+          "prompt": "Which goddess, in Ovid's telling, came to Helicon to see the new spring?",
+          "choices": ["Hera", "Artemis", "Aphrodite", "Athena"],
+          "answerIndex": 3,
+          "explanation": "Athena visits the Muses to see the fountain, saying she had watched Pegasus being born from Medusa's blood."
+        }
+      ]
+    },
+    {
+      "id": "Peg-bellerophon",
+      "title": "Bellerophon, the Chimera and the fall",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Homer", "work": "Iliad 6.155–202", "date": "8th century BCE" },
+        { "author": "Pindar", "work": "Olympian 13.63–92 and Isthmian 7.44–47", "date": "5th century BCE" },
+        { "author": "Apollodorus", "work": "Library 2.3.1–2", "date": "1st–2nd century CE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.18", "date": "2nd century CE" }
+      ],
+      "summary": "The hero Bellerophon tamed Pegasus with a golden bridle from Athena and, riding him, killed the fire-breathing Chimera. Then he tried to fly up to the gods and fell back to earth. Pegasus completed the journey alone, and Zeus set him among the constellations.",
+      "retelling": [
+        "Bellerophon came from Corinth, a grandson of the trickster Sisyphus, and Homer says the gods had given him beauty and every manly grace. While he was a guest of King Proetus, the queen (Homer calls her Anteia, others Stheneboea) wanted him for a lover. He refused. Humiliated, she went to her husband and accused Bellerophon of trying to force her.",
+        "Proetus believed her but shrank from killing a guest. Instead he sent the young man to his wife's father, King Iobates of Lycia, carrying a sealed, folded tablet. Iobates feasted the visitor for nine days before he asked to see the message. It said: kill the bearer. Iobates did not care to murder a guest either, so he set a task he thought would do it for him. A creature called the Chimera was burning the Lycian countryside. It was a lion in front, a serpent behind and a goat in the middle, and it breathed fire.",
+        "No one on foot could get near such a thing, and Bellerophon knew of a horse that flew. Pegasus came to drink at the spring of Peirene in Corinth, and Pindar says Bellerophon wore himself out there trying to catch him. At last a seer told him to spend a night sleeping on the altar of Athena. In a dream the goddess stood over him holding a bridle with a golden band, and told him to show it to Poseidon, the Horse-Tamer, and sacrifice a white bull. He leapt up, and the bridle was lying on the ground beside him. With that bit between his jaws the winged horse let himself be mounted, and Bellerophon, in full bronze armor, put him through his paces.",
+        "From the air the Chimera was only a target. Bellerophon soared above its flames and shot it down. Iobates sent him next against a warrior people, the Solymi, then against the Amazons, and finally laid an ambush of his own best men. Bellerophon won every time, and no one came back from the ambush. The king gave up, showed him the tablet, and gave him his daughter and half the kingdom.",
+        "That should have been the end. But success went to his head, and he turned Pegasus upward, meaning to ride to the home of the gods and sit in the company of Zeus. Pindar says Pegasus threw his master down, and draws the moral that pleasures seized against what is right end bitterly. Hyginus says Bellerophon had nearly reached the sky when he looked down, was seized with terror, and fell to his death. In Homer, who never mentions the horse, he survives only to wander the Aleian plain alone, hated by the gods and avoiding the paths of men.",
+        "Pegasus kept climbing. He reached Olympus without a rider, and Zeus stabled him there. The horse, Hyginus concludes, flew on up and was placed among the constellations by Zeus. One correction is worth carrying outside with you: painters love to put Perseus on Pegasus, but in the ancient stories Perseus flew on winged sandals. The only mortal who ever rode this horse was Bellerophon."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Pegasus and Bellerophon",
+        "url": "http://www.ianridpath.com/startales/pegasus.html"
+      },
+      "characters": ["Bellerophon", "Pegasus", "Proetus", "Anteia (Stheneboea)", "Iobates", "Athena", "The Chimera", "Zeus"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "What did Athena give Bellerophon so that he could tame Pegasus?",
+          "choices": ["A golden bridle", "A pair of winged sandals", "A polished bronze shield", "A cap of invisibility"],
+          "answerIndex": 0,
+          "explanation": "In Pindar's telling Athena appeared in a dream and left him a bridle with a golden band, the charm that calmed the horse."
+        },
+        {
+          "id": "q2",
+          "prompt": "What kind of monster was the Chimera?",
+          "choices": ["A sea serpent with a whale's jaws", "A snake-haired woman whose gaze turned men to stone", "A fire-breathing mix of lion, goat and serpent", "A three-bodied giant"],
+          "answerIndex": 2,
+          "explanation": "Homer describes it as a lion in front, a serpent behind and a goat in the middle, breathing fire."
+        },
+        {
+          "id": "q3",
+          "prompt": "Why was Bellerophon sent to King Iobates of Lycia?",
+          "choices": ["To ask for Pegasus as a gift", "To carry a sealed message ordering his own death", "To marry the king's daughter", "To consult an oracle about the Chimera"],
+          "answerIndex": 1,
+          "explanation": "After the queen's false accusation, Proetus sent him with a folded tablet telling Iobates to kill the bearer."
+        },
+        {
+          "id": "q4",
+          "prompt": "How did Bellerophon's adventures with Pegasus end?",
+          "choices": ["He was made a god on Olympus", "He was turned to stone by Medusa's head", "He gave Pegasus to the Muses and retired", "He tried to fly to the gods and fell back to earth"],
+          "answerIndex": 3,
+          "explanation": "He tried to ride up to heaven and fell; Pegasus went on alone and Zeus placed him among the stars."
+        },
+        {
+          "id": "q5",
+          "prompt": "Which hero is often wrongly shown riding Pegasus?",
+          "choices": ["Heracles", "Jason", "Perseus", "Theseus"],
+          "answerIndex": 2,
+          "explanation": "Perseus was present at Pegasus's birth but flew on winged sandals. In the ancient sources the rider of Pegasus is Bellerophon."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Pegasus is the seventh-largest constellation, even though only half a horse is drawn.",
+    "There is no star called Delta Pegasi. Johann Bayer gave that letter to the shared corner star in 1603, but it is now counted only as Alpha Andromedae, [[star:Alpheratz|Alpheratz]], a name that itself comes from the Arabic for 'the horse'.",
+    "The Great Square is the autumn sky's main signpost: its eastern side points down toward the spot where the Sun stands at the March equinox, and its northeast corner is the starting point for the hop to the [[dso:M31|Andromeda Galaxy]].",
+    "Some Greek writers said the star-horse was not Pegasus but Hippe (also called Melanippe), a centaur's daughter changed into a mare. See [[con:Equ|Equuleus]] for her story.",
+    "Chinese astronomers did not see a square here. They joined the two western stars as a palace called the Encampment and the two eastern stars as a Wall."
+  ]
+}

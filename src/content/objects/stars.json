@@ -1,0 +1,462 @@
+{
+  "star:Sirius": {
+    "about": "Sirius, the Dog Star, is the brightest star in the night sky. It is a white star of spectral class A about 8.6 light-years away — one of our nearest neighbors — roughly twice the Sun's mass and about 25 times as luminous. It marks the neck of Canis Major, the Great Dog, and its name comes from a Greek word meaning 'glowing' or 'scorcher'. A tiny, dense white dwarf, Sirius B, circles it every 50 years.",
+    "howToFind": "Follow the line of Orion's Belt down and to the left (southeast) from [[star:Alnitak|Alnitak]] for about two fists at arm's length (20°) and you run straight into it. It is a winter evening star from 40°N, never very high in the south.",
+    "whatYouSee": "A brilliant blue-white point, obvious to the naked eye even from the middle of the city. Because it is so bright and fairly low, it often flashes red, green and blue as it twinkles; the white dwarf companion needs a good telescope and steady air."
+  },
+  "star:Canopus": {
+    "about": "Canopus is the second-brightest star in the night sky, a white bright giant of spectral class A9 about 310 light-years away. It is roughly 70 times the Sun's width and more than 10,000 times as luminous. It is the brightest star of Carina, the Keel of the old ship Argo, and its brightness and position far from the Sun's path have made it a favorite guide star for spacecraft.",
+    "howToFind": "Canopus never rises from Brooklyn: it lies at declination −53°, too far south for anyone north of about 37°N. From the southern United States in winter it skims the southern horizon about 36° (three and a half fists) almost due south of [[star:Sirius|Sirius]].",
+    "whatYouSee": "From southern latitudes it is a brilliant white star, second only to Sirius. From New York it cannot be seen at all."
+  },
+  "star:Rigil Kentaurus": {
+    "about": "Rigil Kentaurus is the brighter star of Alpha Centauri, the nearest star system to the Sun at about 4.4 light-years. It is a yellow star of class G2, a near twin of the Sun and about one and a half times as luminous; its orange companion (Toliman) circles it every 80 years, and the faint red dwarf Proxima, the closest star of all at 4.25 light-years, belongs to the same system. The name is from Arabic for 'foot of the Centaur'.",
+    "howToFind": "It never rises from Brooklyn (declination −61°); you need to be south of about 29°N to see it at all. In southern skies it is the outer of the two bright 'Pointers', with [[star:Hadar|Hadar]] 4.4° to its west, which aim at the Southern Cross.",
+    "whatYouSee": "To the naked eye the pair merges into one golden-white star, the third brightest in the sky. A small telescope splits it into two bright yellow and orange stars. Not visible from New York."
+  },
+  "star:Arcturus": {
+    "about": "Arcturus is the brightest star in the northern half of the sky and the fourth brightest overall. It is an orange giant of spectral class K, about 37 light-years away, 25 times the Sun's width and around 170 times as luminous — an aging star that has used up the hydrogen in its core. It sits at the foot of the kite-shaped figure of Boötes, the Herdsman, and its Greek name means 'guardian of the bear'.",
+    "howToFind": "'Arc to Arcturus': follow the curve of the Big Dipper's handle onward from [[star:Alkaid|Alkaid]] for about three fists (31°) to the first bright star. It is up on spring and summer evenings.",
+    "whatYouSee": "A bright, clearly orange-tinted star, easy from the city. The color is plain to the naked eye and richer in binoculars."
+  },
+  "star:Vega": {
+    "about": "Vega is a blue-white star of spectral class A0, just 25 light-years away, about twice the Sun's mass and nearly 50 times as luminous. It is the brightest star of the small constellation Lyra, the Lyre, and the brightest corner of the Summer Triangle. Because Earth's axis slowly wobbles, Vega was the north pole star around 12,000 BCE and will be again in about 12,000 years. The name comes from an Arabic phrase meaning 'the falling eagle'.",
+    "howToFind": "On summer evenings it is the brilliant star almost straight overhead from 40°N. It forms the Summer Triangle with [[star:Deneb|Deneb]], about two and a half fists (24°) to its east-northeast, and [[star:Altair|Altair]], three and a half fists (34°) to its south-southeast.",
+    "whatYouSee": "A dazzling blue-white point, the fifth-brightest star in the sky and easy from any city. Binoculars show the little parallelogram of Lyra hanging just below it."
+  },
+  "star:Capella": {
+    "about": "Capella, the sixth-brightest star in the sky, looks like a single golden-yellow star but is really two yellow giants of spectral class G, each roughly ten times the Sun's width, circling each other every 104 days. The system is about 43 light-years away. It is the brightest star of Auriga, the Charioteer, and its Latin name means 'little she-goat' — the goat the charioteer carries.",
+    "howToFind": "On winter evenings look high overhead, north of Orion, for a bright yellow star: it is about three fists (31°) north-northeast of [[star:Aldebaran|Aldebaran]]. From 40°N it is so far north that it is in view for part of almost every night of the year. A thin triangle of three faint stars, the Kids, sits just to its southwest.",
+    "whatYouSee": "A bright, distinctly yellowish point, easy from the city. No ordinary telescope can separate the two giants."
+  },
+  "star:Rigel": {
+    "about": "Rigel is a blue-white supergiant of spectral class B8, about 850 light-years away, more than 70 times the Sun's width and on the order of 100,000 times as luminous. It marks Orion's left foot (on our right as we look), and the name comes from the Arabic for 'the left leg of the giant'. Although Bayer labeled it Beta, it normally outshines Betelgeuse.",
+    "howToFind": "It is the bright bluish star at the lower right of Orion, about one fist (9°) southwest of the Belt star [[star:Alnilam|Alnilam]] and diagonally opposite orange [[star:Betelgeuse|Betelgeuse]]. Orion is a winter evening constellation.",
+    "whatYouSee": "A brilliant blue-white point to the naked eye, even from the city — compare its color with Betelgeuse. A small telescope at high power can show a faint companion star close beside it, though the glare makes it a test."
+  },
+  "star:Procyon": {
+    "about": "Procyon is a yellowish-white star of spectral class F5 only 11.5 light-years away, about twice the Sun's width and seven times as luminous. It is the brighter of the two stars that make up Canis Minor, the Little Dog, and like Sirius it has a white dwarf companion. Its Greek name means 'before the dog', because from mid-northern latitudes it rises shortly before Sirius.",
+    "howToFind": "It is the eastern corner of the Winter Triangle: about two and a half fists (26°) due east of [[star:Betelgeuse|Betelgeuse]] and the same distance north-northeast of [[star:Sirius|Sirius]]. Look on winter and early spring evenings.",
+    "whatYouSee": "A bright, slightly creamy-white star, easy from the city, with fainter [[star:Gomeisa|Gomeisa]] about 4° to its northwest."
+  },
+  "star:Achernar": {
+    "about": "Achernar is a hot blue-white star of spectral class B about 140 light-years away, several times the Sun's width and around 3,500 times as luminous. It spins so fast that it bulges at the equator, making it one of the most flattened stars known. It marks the southern end of Eridanus, the River, and its Arabic name means 'the end of the river'.",
+    "howToFind": "Achernar never rises from Brooklyn (declination −57°); you must be south of about 33°N. In southern skies it shines alone in a dull region, roughly four fists (39°) from both [[star:Fomalhaut|Fomalhaut]] and [[star:Canopus|Canopus]].",
+    "whatYouSee": "From the Southern Hemisphere, a bright bluish-white star, the ninth brightest in the sky. Not visible from New York."
+  },
+  "star:Betelgeuse": {
+    "about": "Betelgeuse is a red supergiant of spectral class M, one of the largest stars visible to the naked eye: roughly 700 times the Sun's width, so that in the Sun's place it would swallow the orbits out to Mars and beyond. It lies somewhere around 400 to 600 light-years away and is nearing the end of its life; one day it will explode as a supernova. It marks Orion's right shoulder (upper left as we see it), and the name comes from the Arabic for 'the hand of the giant'.",
+    "howToFind": "It is the bright orange star at the upper left of Orion, one fist (10°) north-northeast of the Belt star [[star:Alnitak|Alnitak]]. Orion dominates the south on winter evenings.",
+    "whatYouSee": "A bright star with an obvious orange-red tint, easy from the city. It is a semiregular variable: its brightness wanders between about magnitude 0.0 and 1.6 (smaller numbers are brighter) with a main period near 400 days, so compare it now and then with Rigel and Aldebaran — in early 2020 it faded dramatically for a few months."
+  },
+  "star:Hadar": {
+    "about": "Hadar, also called Beta Centauri, is a system of three stars about 360 light-years away. The two main stars are blue-white giants of spectral class B1, each more than ten times the Sun's mass and tens of thousands of times as luminous. It marks one of the Centaur's front legs and is the eleventh-brightest star in the sky.",
+    "howToFind": "Hadar never rises from Brooklyn (declination −60°). In southern skies it is the inner of the two bright 'Pointers': it lies 4.4° west of [[star:Rigil Kentaurus|Rigil Kentaurus]], and the line through the pair continues about a fist (10°) west to the Southern Cross.",
+    "whatYouSee": "From southern latitudes, a brilliant blue-white star. Not visible from New York."
+  },
+  "star:Altair": {
+    "about": "Altair is a white star of spectral class A7 just 16.7 light-years away, less than twice the Sun's mass and about 11 times as luminous. It spins once in under eight hours — the Sun takes almost a month — which flattens it noticeably. It marks the neck of Aquila, the Eagle, and its Arabic name means 'the flying eagle'.",
+    "howToFind": "It is the southern corner of the Summer Triangle, three and a half fists (34°) south-southeast of [[star:Vega|Vega]]. You can confirm it by its two flanking stars, which make a short straight line: orange [[star:Tarazed|Tarazed]] 2° to the north-northwest and fainter [[star:Alshain|Alshain]] under 3° to the south-southeast. Best on summer and early autumn evenings.",
+    "whatYouSee": "A bright white star, easy from the city; under urban skies Alshain may need binoculars."
+  },
+  "star:Acrux": {
+    "about": "Acrux is the brightest star of Crux, the Southern Cross, marking the foot of the cross. It is a multiple system about 320 to 350 light-years away whose main stars are very hot blue-white stars of spectral class B, thousands of times as luminous as the Sun. The name is simply a contraction of 'Alpha Crucis'. It is the southernmost first-magnitude star.",
+    "howToFind": "Acrux never rises from Brooklyn (declination −63°); it needs a latitude south of about 27°N. In southern skies it is the bottom star of the Cross, 6° (a little over half a fist) south of red [[star:Gacrux|Gacrux]] at the top.",
+    "whatYouSee": "To the naked eye a single bright blue-white star; a small telescope splits it into two close, brilliant blue-white stars about 4 arcseconds apart. Not visible from New York."
+  },
+  "star:Aldebaran": {
+    "about": "Aldebaran is an orange giant of spectral class K5 about 67 light-years away, around 45 times the Sun's width and over 400 times as luminous. It is the fiery eye of Taurus, the Bull. It appears to belong to the V-shaped Hyades cluster but is only half as far away, a foreground star in the same line of sight. The name is Arabic for 'the follower', because it follows the Pleiades across the sky.",
+    "howToFind": "Follow Orion's Belt up and to the right (northwest) for about two fists (20°) to the first bright star. It sits at the tip of one arm of the V of the [[dso:Mel25|Hyades]]. Best on late autumn and winter evenings.",
+    "whatYouSee": "A bright orange star, easy from the city. Binoculars show it in the same field as the bright stars of the Hyades."
+  },
+  "star:Antares": {
+    "about": "Antares is a red supergiant of spectral class M about 550 light-years away. It is enormous — nearly 700 times the Sun's width — and tens of thousands of times as luminous. It is the heart of Scorpius, the Scorpion, and its Greek name means 'rival of Ares' (Mars), because the planet often passes nearby and matches its color.",
+    "howToFind": "On summer evenings look low in the south for a bright orange-red star with a fainter star close on either side, about 2° away. Three stars in a north–south row, including [[star:Dschubba|Dschubba]], stand about 7° to its west-northwest as the Scorpion's head. From 40°N it never climbs higher than about two fists above the horizon.",
+    "whatYouSee": "A bright star with a strong reddish-orange tint, visible from the city if your southern view is clear; it twinkles fiercely because it is low. It has a faint greenish-looking companion that needs a good telescope and steady air."
+  },
+  "star:Spica": {
+    "about": "Spica is a pair of hot blue-white stars of spectral class B, about 250 light-years away, circling each other every four days — so close together that no telescope shows them separately. The larger is about ten times the Sun's mass and some 20,000 times as luminous. Spica is the ear of wheat held by Virgo, the Maiden; the name is Latin for 'ear of grain'. It is thought to be the star whose changing position led Hipparchus to discover the slow wobble of Earth's axis.",
+    "howToFind": "'Arc to Arcturus, then speed on to Spica': follow the curve of the Big Dipper's handle to [[star:Arcturus|Arcturus]], then continue the same curve another three fists (33°) south. Spring and early summer evenings.",
+    "whatYouSee": "A bright blue-white star, easy from the city, standing fairly alone. It lies close to the Sun's path, so the Moon and planets often pass near it."
+  },
+  "star:Pollux": {
+    "about": "Pollux is an orange giant of spectral class K0 about 34 light-years away — the nearest giant star to the Sun. It is about nine times the Sun's width and nearly 40 times as luminous, and it has at least one known planet. It marks the head of one of the twins of Gemini and is slightly brighter than its 'twin' Castor, even though Bayer labeled it Beta.",
+    "howToFind": "Look for two bright stars side by side 4.5° apart (about three finger-widths); Pollux is the south-southeastern, yellower one and [[star:Castor|Castor]] the other. It is about two fists (23°) north of [[star:Procyon|Procyon]]. Winter and spring evenings.",
+    "whatYouSee": "A bright pale-orange star, easy from the city. Comparing its warm tint with white Castor next door is a good first lesson in star colors."
+  },
+  "star:Fomalhaut": {
+    "about": "Fomalhaut is a white star of spectral class A about 25 light-years away, nearly twice the Sun's mass and about 17 times as luminous. It is surrounded by a huge ring of dusty debris that has been photographed by space telescopes. It is the mouth of Piscis Austrinus, the Southern Fish — which is just what the Arabic name means.",
+    "howToFind": "On autumn evenings look low in the south for a single bright star in an otherwise empty region. To be sure, follow the western side of the Great Square of Pegasus — from [[star:Scheat|Scheat]] through [[star:Markab|Markab]] — straight down for about four and a half fists (45°). From 40°N it is at most two fists above the horizon.",
+    "whatYouSee": "A bright white star, visible from the city because nothing nearby competes with it; the rest of its constellation is too faint for urban skies."
+  },
+  "star:Deneb": {
+    "about": "Deneb is a blue-white supergiant of spectral class A2, one of the most luminous stars you can see with the naked eye — on the order of 100,000 times the Sun's output. Its distance is hard to measure but is roughly 2,000 light-years, far more than any other first-magnitude star. It is the tail of Cygnus, the Swan, and the Arabic name means 'tail'; it is also the top of the Northern Cross.",
+    "howToFind": "It is the faintest and most northerly corner of the Summer Triangle, about two and a half fists (24°) east-northeast of [[star:Vega|Vega]]. The long arm of the Northern Cross runs from it down through [[star:Sadr|Sadr]] to [[star:Albireo|Albireo]]. High overhead on summer and autumn evenings.",
+    "whatYouSee": "A bright white star, easy from the city. Under a dark sky it sits right in the Milky Way."
+  },
+  "star:Mimosa": {
+    "about": "Mimosa, or Beta Crucis, is a hot blue-white giant of spectral class B0.5 about 280 light-years away, roughly 15 times the Sun's mass and some 25,000 times as luminous. It is the second-brightest star of Crux and marks the eastern arm of the Southern Cross. It appears, with the rest of the Cross, on the flags of Australia, New Zealand, Samoa and Papua New Guinea.",
+    "howToFind": "Mimosa never rises from Brooklyn (declination −60°). In southern skies it is the left-hand (eastern) arm of the Cross, about 4° northeast of [[star:Acrux|Acrux]], with the [[dso:NGC4755|Jewel Box]] cluster just 1° to its southeast.",
+    "whatYouSee": "From southern latitudes, a brilliant blue-white star. Not visible from New York."
+  },
+  "star:Regulus": {
+    "about": "Regulus is a blue-white star of spectral class B about 79 light-years away, some four times the Sun's mass and over 300 times as luminous. It spins so quickly that it is distinctly flattened. It is the heart of Leo, the Lion, and its Latin name means 'little king'. It lies almost exactly on the Sun's path, so the Moon regularly passes in front of it.",
+    "howToFind": "It is the dot at the bottom of the Sickle, the backward question mark that forms Leo's head, with [[star:Algieba|Algieba]] 8° to its north-northeast. You can also follow the Big Dipper's Pointer stars backward — from [[star:Dubhe|Dubhe]] through [[star:Merak|Merak]], away from the North Star — for about four and a half fists (45°). Spring evenings.",
+    "whatYouSee": "A bright blue-white star, easy from the city. A small telescope shows a faint companion star well separated from it."
+  },
+  "star:Polaris": {
+    "about": "Polaris, the North Star, is a yellow-white supergiant of spectral class F about 430 to 450 light-years away, some 46 times the Sun's width. It is famous not for brightness — it ranks only about 48th — but for position: it sits less than 1° from the north celestial pole, so it stays almost fixed while the whole sky wheels around it. It is the end of the Little Dipper's handle, the tail of Ursa Minor. It is also a Cepheid variable, pulsing very slightly every four days.",
+    "howToFind": "Find the Big Dipper and take the two stars at the front of its bowl, the Pointers. Extend the line from [[star:Merak|Merak]] through [[star:Dubhe|Dubhe]] about five times the distance between them — nearly three fists (29°) — to a moderately bright star standing alone. It is there every clear night of the year, due north and about 41° up from Brooklyn (your latitude).",
+    "whatYouSee": "A steady, medium-bright star of magnitude 2.0, visible from the city. A small telescope shows a faint companion star close beside it."
+  },
+  "star:Dubhe": {
+    "about": "Dubhe is an orange giant of spectral class K0 about 123 light-years away, some 27 times the Sun's width and over 300 times as luminous. It marks the upper front lip of the Big Dipper's bowl — the back of Ursa Major, the Great Bear — and its name comes from the Arabic for 'bear'. Unlike the five middle stars of the Dipper, it is not part of their family and is drifting in a different direction, so the Dipper will slowly bend out of shape.",
+    "howToFind": "It is the top star at the front of the Big Dipper's bowl, the one farthest from the handle, with [[star:Merak|Merak]] 5.4° below it. These two are the Pointers: a line from Merak through Dubhe leads to [[star:Polaris|Polaris]]. From 40°N the Dipper never sets; it is highest on spring evenings.",
+    "whatYouSee": "A second-magnitude star with a faint yellow-orange tint that sets it apart from the other, white Dipper stars. Easy from the city."
+  },
+  "star:Merak": {
+    "about": "Merak is a white star of spectral class A1 about 80 light-years away, nearly three times the Sun's width. It marks the lower front corner of the Big Dipper's bowl, and its name comes from the Arabic for 'the loins' of the bear. Like the Dipper's other middle stars it belongs to the Ursa Major Moving Group, a loose family of stars born together and traveling through space side by side.",
+    "howToFind": "It is the bottom star at the front of the Dipper's bowl, 5.4° from [[star:Dubhe|Dubhe]] (about three finger-widths). The two together are the Pointers to [[star:Polaris|Polaris]]; going the other way, the same line leads toward Leo.",
+    "whatYouSee": "A plain white star of magnitude 2.4, easy to the naked eye from the city."
+  },
+  "star:Phecda": {
+    "about": "Phecda is a white star of spectral class A0 about 83 light-years away, around 45 times as luminous as the Sun and a member of the Ursa Major Moving Group. It marks the lower back corner of the Big Dipper's bowl; the name comes from the Arabic for 'thigh of the bear'.",
+    "howToFind": "It is the bottom star of the Dipper's bowl on the handle side, 8° (a little under a fist) from [[star:Merak|Merak]] along the bottom of the bowl and 4.5° below [[star:Megrez|Megrez]].",
+    "whatYouSee": "A white star of magnitude 2.4, easy from the city."
+  },
+  "star:Megrez": {
+    "about": "Megrez is a white star of spectral class A3 about 80 light-years away, roughly twice the Sun's mass and 23 times as luminous. It is the faintest of the seven Dipper stars and marks the spot where the handle joins the bowl; the name comes from the Arabic for 'base' of the bear's tail. It belongs to the Ursa Major Moving Group.",
+    "howToFind": "It is the upper back corner of the Dipper's bowl, where the handle attaches, 5.4° from [[star:Alioth|Alioth]], the first handle star. A line from [[star:Phecda|Phecda]] through Megrez, extended a fist and a half, points to [[star:Thuban|Thuban]], the ancient pole star.",
+    "whatYouSee": "At magnitude 3.3 it is clearly dimmer than its six companions. It is visible from the city on a clear night, but it is the Dipper star most likely to fade out in haze."
+  },
+  "star:Alioth": {
+    "about": "Alioth is a white star of spectral class A about 83 light-years away, about four times the Sun's width and 100 times as luminous. Though labeled Epsilon, it is the brightest star in Ursa Major. It is the first star of the Dipper's handle (the Bear's tail) and one of the 57 stars traditionally used for celestial navigation. It belongs to the Ursa Major Moving Group.",
+    "howToFind": "It is the handle star nearest the bowl of the Big Dipper, 5.4° from [[star:Megrez|Megrez]] and 4.4° from [[star:Mizar|Mizar]], the middle of the handle.",
+    "whatYouSee": "A white star of magnitude 1.8, easy from the city."
+  },
+  "star:Mizar": {
+    "about": "Mizar is the middle star of the Big Dipper's handle, about 83 light-years away, and the most famous double star in the sky. With its fainter neighbor Alcor it makes a naked-eye pair, and Mizar itself is two white class A stars — each of which is in turn a close pair, making four stars in all. It may have been the first double star seen through a telescope, in 1617, and one of its components was the first double discovered by its spectrum. It belongs to the Ursa Major Moving Group.",
+    "howToFind": "It is the star at the bend of the Dipper's handle, between [[star:Alioth|Alioth]] (4.4° toward the bowl) and [[star:Alkaid|Alkaid]] (6.7° toward the tip).",
+    "whatYouSee": "Naked eye: magnitude 2.2 Mizar with fourth-magnitude [[star:Alcor|Alcor]] just beside it, about 12 arcminutes away (a third of the Moon's width) — an old eyesight test, and harder from the city, where binoculars make it easy. A small telescope at 50 power or so splits Mizar itself into two white stars 14 arcseconds apart."
+  },
+  "star:Alcor": {
+    "about": "Alcor is the faint companion of Mizar in the Big Dipper's handle, a white star of spectral class A5 about 83 light-years away and some 14 times as luminous as the Sun. It travels through space with Mizar as part of the Ursa Major Moving Group, and the two are probably loosely bound by gravity. The pair is sometimes called the Horse and Rider; the name Alcor comes from an Arabic word meaning 'the faint one'.",
+    "howToFind": "Look at [[star:Mizar|Mizar]], the middle star of the Dipper's handle. Alcor is the dim star right next to it, about 12 arcminutes (0.2°) away on the side toward the east-northeast.",
+    "whatYouSee": "A magnitude 4.0 star that people with good eyesight can separate from Mizar under a reasonably dark sky. From the city, use binoculars, which show the pair easily along with a fainter star between and to one side."
+  },
+  "star:Alkaid": {
+    "about": "Alkaid is a hot blue-white star of spectral class B3 about 104 light-years away, around six times the Sun's mass and several hundred times as luminous. It is the tip of the Big Dipper's handle — the end of the Great Bear's tail. The name comes from an Arabic phrase meaning 'leader of the daughters of the bier', from an old picture of the Dipper's bowl as a coffin followed by mourners. Like Dubhe at the other end, it is not part of the Ursa Major Moving Group.",
+    "howToFind": "It is the last star of the Dipper's handle, 6.7° beyond [[star:Mizar|Mizar]]. Continuing the handle's curve past it for three fists (31°) brings you to [[star:Arcturus|Arcturus]].",
+    "whatYouSee": "A blue-white star of magnitude 1.9, easy from the city."
+  },
+  "star:Bellatrix": {
+    "about": "Bellatrix is a hot blue-white giant of spectral class B2 about 245 light-years away — the nearest of Orion's bright stars — and several thousand times as luminous as the Sun. It marks Orion's left shoulder (upper right as we see him). The name is Latin for 'female warrior'.",
+    "howToFind": "It is the upper-right star of Orion's main rectangle, 7.5° (a little under a fist) west of orange [[star:Betelgeuse|Betelgeuse]] and about 7° north-northwest of the Belt star [[star:Mintaka|Mintaka]]. Winter evenings.",
+    "whatYouSee": "A blue-white star of magnitude 1.6, easy from the city, in clear color contrast to Betelgeuse."
+  },
+  "star:Saiph": {
+    "about": "Saiph is a blue-white supergiant of spectral class B0.5 about 650 light-years away, some 60,000 times as luminous as the Sun. It is nearly as powerful as Rigel but looks fainter because it is hotter and pours out much of its light in the ultraviolet, which our eyes cannot see. It marks Orion's right knee (lower left as we see him); the name comes from the Arabic for 'sword of the giant'.",
+    "howToFind": "It is the lower-left star of Orion's rectangle, about 8° east of [[star:Rigel|Rigel]] and 8° south-southeast of the Belt star [[star:Alnitak|Alnitak]]. Winter evenings.",
+    "whatYouSee": "A blue-white star of magnitude 2.1 — the faintest of Orion's four corner stars, but still easy from the city."
+  },
+  "star:Alnitak": {
+    "about": "Alnitak is the eastern star of Orion's Belt, a system of three hot stars roughly 1,200 light-years away. Its main star is a blue supergiant of spectral class O, one of the hottest stars visible to the naked eye and a couple of hundred thousand times as luminous as the Sun. Its ultraviolet light makes the nearby Flame Nebula glow. The name comes from the Arabic for 'the girdle'.",
+    "howToFind": "Orion's Belt is the unmistakable row of three evenly spaced stars in the middle of Orion, about 3° long. Alnitak is the left-hand (eastern) one, 1.4° from [[star:Alnilam|Alnilam]] in the middle. Winter evenings.",
+    "whatYouSee": "A blue-white star of magnitude 1.7, easy from the city. A good small telescope at high power shows a close companion about 2 arcseconds away. The [[dso:NGC2024|Flame Nebula]] and [[dso:B33|Horsehead Nebula]] lie beside it but are far too faint for city skies."
+  },
+  "star:Alnilam": {
+    "about": "Alnilam is the middle star of Orion's Belt and the brightest of the three, a blue supergiant of spectral class B0 somewhere between about 1,200 and 2,000 light-years away — estimates differ. It shines with hundreds of thousands of times the Sun's light and is one of the stars used in celestial navigation. The name comes from the Arabic for 'string of pearls', originally a name for the whole Belt.",
+    "howToFind": "It is the center star of the three in Orion's Belt, with [[star:Alnitak|Alnitak]] 1.4° to the east and [[star:Mintaka|Mintaka]] 1.4° to the west. Winter evenings.",
+    "whatYouSee": "A blue-white star of magnitude 1.7, easy from the city. Binoculars show the Belt set in a rich scatter of fainter stars."
+  },
+  "star:Mintaka": {
+    "about": "Mintaka is the western star of Orion's Belt, a complex system of hot stars about 1,200 light-years away led by a blue-white giant of spectral class O9.5 that outshines the Sun nearly 200,000 times. It lies almost exactly on the celestial equator, so it rises due east and sets due west from anywhere on Earth. The name comes from the Arabic for 'belt'.",
+    "howToFind": "It is the right-hand (western) star of the three in Orion's Belt, 1.4° from [[star:Alnilam|Alnilam]], and the first of the three to rise. Winter evenings.",
+    "whatYouSee": "A blue-white star of magnitude 2.2, slightly the faintest of the Belt, easy from the city. Binoculars or a small telescope show a seventh-magnitude companion just under an arcminute to its north."
+  },
+  "star:Castor": {
+    "about": "Castor looks like one white star but is a family of six, about 50 light-years away. A telescope shows two white class A stars circling each other every 460 years or so; each is itself a close pair, and a faint pair of red dwarfs orbits far outside them. Castor marks the head of one of the twins of Gemini — the mortal twin in Greek myth — and is a little fainter than Pollux despite being labeled Alpha.",
+    "howToFind": "It is the north-northwestern and whiter star of the bright pair that marks the Twins' heads, 4.5° from [[star:Pollux|Pollux]]. Winter and spring evenings, high in the sky.",
+    "whatYouSee": "Naked eye: a white star of magnitude 1.6, easy from the city. A small telescope at 100 power or more splits it into two brilliant white stars of magnitudes 1.9 and 3.0, currently about 6 arcseconds apart and slowly widening; the red dwarf pair is a ninth-magnitude star about 70 arcseconds away."
+  },
+  "star:Adhara": {
+    "about": "Adhara is a hot blue-white giant of spectral class B2 a little over 400 light-years away, about 20,000 times as luminous as the Sun. It is the second-brightest star of Canis Major, in the Dog's hindquarters, and just misses being counted as first magnitude. About 4.7 million years ago it was much closer to us and was by far the brightest star in the sky. The name comes from the Arabic for 'the virgins'.",
+    "howToFind": "From [[star:Sirius|Sirius]] drop a little more than one fist (12.6°) to the south-southeast. Adhara is the brightest of a triangle of stars there, with [[star:Wezen|Wezen]] 3.4° to its northeast. Winter evenings, low in the south — never more than two fists above Brooklyn's horizon.",
+    "whatYouSee": "A blue-white star of magnitude 1.5, visible from the city if the southern horizon is clear."
+  },
+  "star:Elnath": {
+    "about": "Elnath is a blue-white giant of spectral class B7 about 134 light-years away, several hundred times as luminous as the Sun. It is the tip of the northern horn of Taurus, the Bull, and the name comes from the Arabic for 'the butting'. It sits right on the border with Auriga and was once counted in both constellations, completing the Charioteer's pentagon.",
+    "howToFind": "From [[star:Aldebaran|Aldebaran]] go about a fist and a half (17°) to the northeast, along the Bull's upper horn; or drop the same distance due south from [[star:Capella|Capella]]. Winter evenings, high up.",
+    "whatYouSee": "A blue-white star of magnitude 1.7, easy from the city."
+  },
+  "star:Alhena": {
+    "about": "Alhena is a white star of spectral class A about 109 light-years away, around six times the Sun's width and well over 100 times as luminous. It marks a foot of Pollux, one of the twins of Gemini. The name comes from an Arabic word for a brand mark on a camel's neck.",
+    "howToFind": "It lies a little under a fist and a half (14°) northeast of [[star:Betelgeuse|Betelgeuse]], at the Orion end of Gemini — far from the Twins' heads, [[star:Castor|Castor]] and [[star:Pollux|Pollux]], which are two fists farther to the northeast. Winter evenings.",
+    "whatYouSee": "A white star of magnitude 1.9, easy from the city."
+  },
+  "star:Denebola": {
+    "about": "Denebola is a white star of spectral class A3 just 36 light-years away, about 13 times as luminous as the Sun. It is the tuft of the tail of Leo, the Lion — the name is shortened from the Arabic for 'tail of the lion'.",
+    "howToFind": "From [[star:Regulus|Regulus]] go two and a half fists (25°) due east to the other end of Leo. Denebola is the tip of a right triangle of stars that forms the Lion's hindquarters. Spring evenings.",
+    "whatYouSee": "A white star of magnitude 2.1, easy from the city."
+  },
+  "star:Algieba": {
+    "about": "Algieba is a pair of giant stars about 130 light-years away that circle each other in roughly five centuries. The brighter is an orange giant of class K, more than 25 times the Sun's width, and it has at least one known planet. It lies in the Lion's mane, in the curve of the Sickle, although the name comes from the Arabic for 'the forehead'.",
+    "howToFind": "It is the second-brightest star of the Sickle of Leo, 8° (a little under a fist) north-northeast of [[star:Regulus|Regulus]]. Spring evenings.",
+    "whatYouSee": "Naked eye: a golden star of magnitude 2.0, easy from the city. A small telescope at about 100 power or more splits it into two golden-yellow stars of magnitudes 2.4 and 3.6 under 5 arcseconds apart — one of the finest doubles in the spring sky."
+  },
+  "star:Cor Caroli": {
+    "about": "Cor Caroli is the brightest star of the small constellation Canes Venatici, the Hunting Dogs, about 110 light-years away. Its main star is a white class A star with an unusually strong magnetic field, and its slight variations in brightness make it the model for a whole class of variable stars. The name is Latin for 'Charles's Heart'; it was given in 17th-century England in honor of the royal house of Stuart — which King Charles was meant has been argued over ever since.",
+    "howToFind": "It sits beneath the curve of the Big Dipper's handle: about a fist and a half (14°) southwest of [[star:Alkaid|Alkaid]], the handle's tip. It is the only fairly bright star in that area. Spring and early summer evenings.",
+    "whatYouSee": "Naked eye: a single white star of magnitude 2.9, visible from the city. Any small telescope at low power splits it into a wide, easy pair of magnitudes 2.9 and 5.6, about 19 arcseconds apart; most people see white and pale yellow, though the tints are subtle."
+  },
+  "star:Alphecca": {
+    "about": "Alphecca is a white star of spectral class A0 about 75 light-years away, roughly 70 times as luminous as the Sun. A fainter Sun-like companion circles it every 17.4 days and partly eclipses it, dimming it very slightly. It is the jewel in Corona Borealis, the Northern Crown — it is also called Gemma — and its Arabic name refers to the 'broken' ring of stars.",
+    "howToFind": "From [[star:Arcturus|Arcturus]] go two fists (20°) to the east-northeast. Alphecca is the brightest star in a neat half-circle of stars about 7° wide, open toward the north. Late spring and summer evenings.",
+    "whatYouSee": "A white star of magnitude 2.2, easy from the city, though the rest of the Crown's arc may need a darker sky or binoculars."
+  },
+  "star:Rasalhague": {
+    "about": "Rasalhague is a white star of spectral class A5 about 49 light-years away, around 30 times as luminous as the Sun and spinning fast enough to be flattened. It is the head of Ophiuchus, the Serpent Bearer — the name comes from the Arabic for 'head of the serpent collector'.",
+    "howToFind": "It lies three fists (30°) south-southwest of [[star:Vega|Vega]] and about the same distance west of [[star:Altair|Altair]], forming a large triangle with them. Fainter, orange [[star:Rasalgethi|Rasalgethi]], the head of Hercules, is 5° to its west-northwest. Summer evenings.",
+    "whatYouSee": "A white star of magnitude 2.1, easy from the city; it is the top of the big, dim house-shaped outline of Ophiuchus."
+  },
+  "star:Rasalgethi": {
+    "about": "Rasalgethi is a huge, cool red giant of spectral class M5 about 360 light-years away, a few hundred times the Sun's width. It is an irregular variable, usually wandering by about half a magnitude and at the extreme between magnitudes 2.7 and 4.0. It is the head of Hercules, who is pictured upside down in the sky; the name is Arabic for 'head of the kneeler'.",
+    "howToFind": "Find [[star:Rasalhague|Rasalhague]], the head of Ophiuchus, then look 5° (three finger-widths) to its west-northwest for a dimmer, orange star. The two heads sit side by side. Summer evenings.",
+    "whatYouSee": "Naked eye: an orange-red star of about third magnitude, visible from the city. A small telescope at 100 power or more shows a close double, about 4.7 arcseconds apart: an orange-red star with a fifth-magnitude companion that looks greenish by contrast."
+  },
+  "star:Kochab": {
+    "about": "Kochab is an orange giant of spectral class K4 about 131 light-years away, more than 40 times the Sun's width and several hundred times as luminous. It is the brightest star in the bowl of the Little Dipper and almost equal to Polaris. With its neighbor Pherkad it is called the Guardians of the Pole, because the pair circles endlessly around Polaris; some 3,000 years ago Kochab itself was the bright star nearest the pole. The origin of the name is uncertain.",
+    "howToFind": "From [[star:Polaris|Polaris]] look about a fist and a half (17°) toward the handle of the Big Dipper. Kochab and [[star:Pherkad|Pherkad]], 3° apart, form the outer end of the Little Dipper's bowl. It is visible on any clear night from 40°N.",
+    "whatYouSee": "An orange-tinted star of magnitude 2.1. From the city, Kochab, Pherkad and Polaris are usually the only Little Dipper stars you can see."
+  },
+  "star:Thuban": {
+    "about": "Thuban is a white giant of spectral class A0 about 300 light-years away, roughly 240 times as luminous as the Sun. It is an unremarkable star in the tail of Draco, the Dragon, with a remarkable past: because Earth's axis slowly wobbles, Thuban was the north pole star in the era when the Egyptian pyramids were built, closest to the pole around 2800 BCE. The name comes from an Arabic word for a large snake.",
+    "howToFind": "It lies about halfway between [[star:Mizar|Mizar]], at the bend of the Big Dipper's handle, and [[star:Kochab|Kochab]] in the Little Dipper's bowl — about one fist (11°) from each. The line from [[star:Phecda|Phecda]] through [[star:Megrez|Megrez]] also points to it. It never sets from 40°N.",
+    "whatYouSee": "A faint star of magnitude 3.7: a naked-eye star under suburban or darker skies, but from the city you will probably need binoculars."
+  },
+  "star:Eltanin": {
+    "about": "Eltanin is an orange giant of spectral class K5 about 154 light-years away, around 50 times the Sun's width and several hundred times as luminous. It is the brightest star of Draco and one of the four that form the Dragon's head. In 1728 James Bradley, trying to measure its distance, instead discovered the aberration of starlight — the first direct proof that Earth moves around the Sun. The name comes from the Arabic for 'the great serpent'.",
+    "howToFind": "From [[star:Vega|Vega]] go about a fist and a half (14°) to the north-northwest. Eltanin is the brightest star in a small lopsided quadrilateral, the Dragon's head, with [[star:Rastaban|Rastaban]] 4° to its west. High on summer evenings; it never sets from 40°N.",
+    "whatYouSee": "An orange-tinted star of magnitude 2.2, easy from the city."
+  },
+  "star:Schedar": {
+    "about": "Schedar is an orange giant of spectral class K0 about 230 light-years away, more than 40 times the Sun's width and around 700 times as luminous. It marks the breast of Cassiopeia, the seated queen — the name comes from the Arabic for 'breast'.",
+    "howToFind": "Cassiopeia is the W (or M) of five stars on the opposite side of [[star:Polaris|Polaris]] from the Big Dipper. Schedar is the second star from the western end, at the bottom of the W's first stroke, 5° from [[star:Caph|Caph]]. It never sets from 40°N and is highest on autumn evenings.",
+    "whatYouSee": "A star of magnitude 2.2 with a noticeable orange tint beside its white neighbors; easy from the city."
+  },
+  "star:Caph": {
+    "about": "Caph is a yellow-white giant of spectral class F2 about 55 light-years away, nearly four times the Sun's width and around 20 times as luminous. It is the western end of Cassiopeia's W, and its name comes from the Arabic for 'palm', from an old picture of the W as a henna-stained hand. It lies almost on the zero line of right ascension, the sky's version of the Greenwich meridian.",
+    "howToFind": "It is the star at the western tip of Cassiopeia's W, 5° from orange [[star:Schedar|Schedar]]. A line from [[star:Polaris|Polaris]] through Caph, continued three fists farther, reaches [[star:Alpheratz|Alpheratz]] at the corner of the Great Square. It never sets from 40°N.",
+    "whatYouSee": "A white star of magnitude 2.3, easy from the city."
+  },
+  "star:Mirfak": {
+    "about": "Mirfak is a yellow-white supergiant of spectral class F5 about 510 light-years away, more than 50 times the Sun's width and several thousand times as luminous. It is the brightest star of Perseus and sits in the middle of a loose family of young stars called the Alpha Persei Cluster. The name comes from the Arabic for 'elbow'.",
+    "howToFind": "From Cassiopeia's W, head toward [[star:Capella|Capella]]: Mirfak is the brightest star along the way, about two fists (19°) west-northwest of Capella. [[star:Algol|Algol]] lies 9° to its south-southwest. Autumn and winter evenings, high up.",
+    "whatYouSee": "A star of magnitude 1.8, easy from the city. Binoculars show it surrounded by a sprawling, curving stream of fainter blue-white stars about 3° long — the Alpha Persei Cluster, a fine sight even under suburban skies."
+  },
+  "star:Algol": {
+    "about": "Algol, the 'Demon Star', is the most famous eclipsing variable in the sky. About 90 light-years away, it is a hot blue-white class B star circled by a larger but dimmer orange star; every 2.87 days the dim star passes in front of the bright one and Algol fades from magnitude 2.1 to 3.4 for a few hours. It marks the severed head of Medusa carried by Perseus, and the name comes from the Arabic for 'the ghoul's head'.",
+    "howToFind": "It lies 9° (about one fist) south-southwest of [[star:Mirfak|Mirfak]], the brightest star of Perseus, and about 12° east of [[star:Almach|Almach]] in Andromeda. Autumn and winter evenings.",
+    "whatYouSee": "Most nights it is a white star as bright as Almach. During an eclipse, which lasts about 10 hours from start to finish, it drops to less than a third of that brightness and looks no brighter than its dim neighbors — a change you can follow with the naked eye even from the city."
+  },
+  "star:Alpheratz": {
+    "about": "Alpheratz is a hot blue-white star of spectral class B8 about 97 light-years away, well over 100 times as luminous as the Sun and unusually rich in mercury and manganese at its surface. It marks the head of Andromeda and is also the northeastern corner of the Great Square of Pegasus; for centuries it was counted in both constellations. The name comes from the Arabic for 'navel of the horse'.",
+    "howToFind": "Find the Great Square of Pegasus, the big empty box high in the south on autumn evenings. Alpheratz is its upper-left (northeastern) corner, about a fist and a half (14°) from each neighbor, [[star:Scheat|Scheat]] to the west and [[star:Algenib|Algenib]] to the south.",
+    "whatYouSee": "A white star of magnitude 2.1, easy from the city, and the starting point for the two-hop star trail to the Andromeda Galaxy."
+  },
+  "star:Mirach": {
+    "about": "Mirach is a red giant of spectral class M0 about 200 light-years away, nearly 90 times the Sun's width and close to 2,000 times as luminous. It marks the waist of Andromeda; the name is a corruption of the Arabic word for 'girdle'. A small galaxy, NGC 404, lies almost hidden in its glare and is nicknamed Mirach's Ghost.",
+    "howToFind": "From [[star:Alpheratz|Alpheratz]], the corner of the Great Square, go a fist and a half (14.5°) to the northeast along Andromeda's gentle line of stars; Mirach is the next bright one. Turning a right angle there and going 8° northwest past two fainter stars brings you to [[dso:M31|the Andromeda Galaxy]]. Autumn evenings.",
+    "whatYouSee": "A star of magnitude 2.1 with a warm orange tint, easy from the city."
+  },
+  "star:Almach": {
+    "about": "Almach is one of the most beautiful double stars in the sky, about 390 light-years away. The brighter star is an orange giant of spectral class K, around 100 times the Sun's width; its blue companion is itself a tight family of three hot stars. Almach marks Andromeda's foot. The name comes from the Arabic for a caracal, the desert lynx.",
+    "howToFind": "Continue Andromeda's line: from [[star:Alpheratz|Alpheratz]] to [[star:Mirach|Mirach]], then another fist and a bit (12.5°) northeast to the third bright star. Autumn and early winter evenings, very high.",
+    "whatYouSee": "Naked eye: one star of magnitude 2.1, easy from the city. A small telescope at about 50 power or more shows a golden-orange star of magnitude 2.3 with a fifth-magnitude blue companion 10 arcseconds away — a color contrast to rival Albireo."
+  },
+  "star:Hamal": {
+    "about": "Hamal is an orange giant of spectral class K2 about 66 light-years away, 15 times the Sun's width and around 80 times as luminous. It is the brightest star of Aries, the Ram, and its name comes from the Arabic for 'head of the ram'. Some two thousand years ago the Sun stood near here at the March equinox, which is why Aries is counted as the first sign of the zodiac.",
+    "howToFind": "From [[star:Mirach|Mirach]] in Andromeda go a fist and a half (17°) to the southeast. Hamal is the brightest of a short, bent line of three stars, with [[star:Sheratan|Sheratan]] 4° to its southwest. Autumn and winter evenings.",
+    "whatYouSee": "A star of magnitude 2.0 with a soft orange tint, easy from the city; Aries has little else to show."
+  },
+  "star:Markab": {
+    "about": "Markab is a blue-white star of spectral class B9 about 133 light-years away, between four and five times the Sun's width and around 165 times as luminous. It is the southwestern corner of the Great Square of Pegasus, the Winged Horse. The name comes from an Arabic word usually explained as 'the saddle of the horse'.",
+    "howToFind": "It is the lower-right (southwestern) corner of the Great Square, 13° due south of [[star:Scheat|Scheat]] and 16.5° west of [[star:Algenib|Algenib]]. Following the line from Scheat through Markab on down leads to [[star:Fomalhaut|Fomalhaut]]. Autumn evenings.",
+    "whatYouSee": "A white star of magnitude 2.5, visible from the city."
+  },
+  "star:Scheat": {
+    "about": "Scheat is a red giant of spectral class M2 about 200 light-years away, more than 100 times the Sun's width and over 1,500 times as luminous. Like many such swollen stars it is unsteady, varying slowly and irregularly between about magnitude 2.3 and 2.7. It is the northwestern corner of the Great Square of Pegasus, at the top of the Horse's front leg.",
+    "howToFind": "It is the upper-right (northwestern) corner of the Great Square, 13° due north of [[star:Markab|Markab]] and 14° west of [[star:Alpheratz|Alpheratz]]. Autumn evenings, high in the south.",
+    "whatYouSee": "A star of about magnitude 2.4 with a distinct orange tint — the only colored corner of the Square. Visible from the city."
+  },
+  "star:Algenib": {
+    "about": "Algenib is a hot blue-white star of spectral class B2 roughly 400 to 470 light-years away and thousands of times as luminous as the Sun; it pulses very slightly every few hours. It is the southeastern corner of the Great Square of Pegasus, at the tip of the Horse's wing. The name comes from the Arabic for 'the side' or 'the flank'.",
+    "howToFind": "It is the lower-left (southeastern) corner of the Great Square, 14° due south of [[star:Alpheratz|Alpheratz]] and 16.5° east of [[star:Markab|Markab]]. Autumn evenings.",
+    "whatYouSee": "At magnitude 2.8 it is the faintest corner of the Square, but still visible from the city on a clear night."
+  },
+  "star:Enif": {
+    "about": "Enif is an orange supergiant of spectral class K2 about 690 light-years away, roughly 180 times the Sun's width and thousands of times as luminous. It is the brightest star of Pegasus and marks the Horse's nose — which is what its Arabic name means.",
+    "howToFind": "From [[star:Markab|Markab]], the lower-right corner of the Great Square, go two fists (20°) to the west-southwest along the Horse's neck and head; Enif is the lone bright star at the end. Late summer and autumn evenings.",
+    "whatYouSee": "An orange-tinted star of magnitude 2.4, easy from the city. The globular cluster [[dso:M15|M15]] lies 4° to its northwest."
+  },
+  "star:Diphda": {
+    "about": "Diphda is an orange giant of spectral class K0 about 96 light-years away, 17 times the Sun's width and about 150 times as luminous. Though labeled Beta, it is the brightest star of Cetus, the Sea Monster, and sits in the creature's tail. The name comes from the Arabic for 'frog' — it was 'the second frog', the first being Fomalhaut.",
+    "howToFind": "Follow the eastern side of the Great Square, from [[star:Alpheratz|Alpheratz]] down through [[star:Algenib|Algenib]], and continue about three and a half fists (34°) south: Diphda is the only fairly bright star in that region. It is also about two and a half fists (27°) east-northeast of [[star:Fomalhaut|Fomalhaut]]. Autumn evenings, low in the south.",
+    "whatYouSee": "A star of magnitude 2.0 with a pale orange tint, visible from the city."
+  },
+  "star:Mira": {
+    "about": "Mira is the original long-period variable star: a bloated, pulsating red giant of spectral class M about 300 light-years away, hundreds of times the Sun's width. Over a cycle of about 332 days it swells and shrinks, brightening on average to around magnitude 3 and then fading to about magnitude 9, far below naked-eye visibility; the extremes on record run from magnitude 2.0 to 10.1. David Fabricius noticed it in 1596, and Johannes Hevelius named it Mira, Latin for 'wonderful'. It lies in the neck of Cetus.",
+    "howToFind": "It is about 13° (a fist and a bit) west-southwest of [[star:Menkar|Menkar]], the brightest star in the head of Cetus, in a region with no bright stars. Autumn and winter evenings. Because it spends most of each cycle too faint to see, use the sky view to mark the spot and check whether a star is there.",
+    "whatYouSee": "For a few weeks around maximum it is an orange-red naked-eye star, sometimes visible even from the city. For most of the year it needs binoculars or a small telescope, and at minimum it is a faint red point."
+  },
+  "star:Albireo": {
+    "about": "Albireo is the showpiece double star of the summer sky, roughly 400 light-years away. It pairs a golden-orange giant of spectral class K with a hot blue-white class B star; whether the two truly orbit each other or just lie in the same direction is still not settled. Albireo marks the head of Cygnus, the Swan, and the foot of the Northern Cross. Its name is the result of a chain of medieval mistranslations and has no real meaning.",
+    "howToFind": "It is the star at the bottom of the Northern Cross, the opposite end from [[star:Deneb|Deneb]], about two fists (22°) away through [[star:Sadr|Sadr]]. It lies roughly midway between [[star:Vega|Vega]] and [[star:Altair|Altair]], a little nearer Vega. Summer and autumn evenings.",
+    "whatYouSee": "Naked eye: a single third-magnitude star, visible from the city. Any small telescope at 30 power or so shows a gold star of magnitude 3.1 and a blue one of magnitude 5.1, a generous 35 arcseconds apart; steadily mounted binoculars can just split them."
+  },
+  "star:Sadr": {
+    "about": "Sadr is a yellow-white supergiant of spectral class F8 about 1,800 light-years away, roughly 180 times the Sun's width and tens of thousands of times as luminous. It is the heart of Cygnus, the Swan, where the two beams of the Northern Cross meet; the name comes from the Arabic for 'chest'. It lies in one of the richest parts of the Milky Way.",
+    "howToFind": "It is the center star of the Northern Cross, 6° (three to four finger-widths) southwest of [[star:Deneb|Deneb]] along the Cross's long axis. Summer and autumn evenings, overhead.",
+    "whatYouSee": "A star of magnitude 2.2, easy from the city. Under a dark sky binoculars show it embedded in dense Milky Way star fields; the glowing gas clouds around it show only in photographs."
+  },
+  "star:Tarazed": {
+    "about": "Tarazed is an orange bright giant of spectral class K3 about 395 light-years away, around 90 times the Sun's width and over 2,000 times as luminous. It sits beside Altair in Aquila, the Eagle, though it is more than 20 times farther away. The name comes from a Persian phrase meaning 'the beam of the scale', which described the line of three stars centered on Altair.",
+    "howToFind": "It is the star 2° (one finger-width at arm's length) north-northwest of [[star:Altair|Altair]]. With fainter [[star:Alshain|Alshain]] on Altair's other side it makes a short, straight row of three. Summer and early autumn evenings.",
+    "whatYouSee": "An orange-tinted star of magnitude 2.7, visible from the city; binoculars bring out the color contrast with white Altair."
+  },
+  "star:Sheliak": {
+    "about": "Sheliak, or Beta Lyrae, is a pair of stars about 960 light-years away, so close together that they are pulled into egg shapes and gas streams from one to the other. As they circle every 12.9 days they eclipse each other, and the brightness changes continuously between magnitude 3.3 and 4.4. It is the model for a whole class of eclipsing variables. It forms one of the lower corners of the Lyre, and the name is from an Arabic name for the constellation Lyra.",
+    "howToFind": "From [[star:Vega|Vega]] look 6° (about three finger-widths) to the south-southeast for a pair of third-magnitude stars 2° apart, the bottom of Lyra's small parallelogram. Sheliak is the western one, nearer Vega's side; [[star:Sulafat|Sulafat]] is the other. Summer evenings.",
+    "whatYouSee": "A naked-eye star under suburban skies; from the city you may want binoculars. Compare it with Sulafat beside it: at maximum the two are nearly equal, and at minimum Sheliak is clearly the fainter. The [[dso:M57|Ring Nebula]] lies between them."
+  },
+  "star:Sulafat": {
+    "about": "Sulafat is a blue-white giant of spectral class B9 about 620 light-years away, some 15 times the Sun's width and over 2,000 times as luminous. It is one of the lower corners of the Lyre, and its name comes from the Arabic for 'turtle' — in myth the first lyre was made from a tortoise shell.",
+    "howToFind": "From [[star:Vega|Vega]] go 7.5° (a little under a fist) to the southeast. Sulafat is the eastern of the two stars at the bottom of Lyra's parallelogram, 2° from [[star:Sheliak|Sheliak]]. Summer evenings.",
+    "whatYouSee": "A steady white star of magnitude 3.2, visible from the city on a clear night. It is the standard comparison star for the variable Sheliak, and the [[dso:M57|Ring Nebula]] lies between the two."
+  },
+  "star:Shaula": {
+    "about": "Shaula is a system of three stars about 570 light-years away, dominated by a hot blue-white class B star tens of thousands of times as luminous as the Sun. It is the second-brightest star of Scorpius and marks the Scorpion's stinger; the name comes from the Arabic for 'the raised tail'.",
+    "howToFind": "From [[star:Antares|Antares]] follow the Scorpion's curving tail down and to the left for about a fist and a half (17°) to its upturned tip. Shaula and fainter [[star:Lesath|Lesath]], half a degree apart, form a close pair there. Summer evenings, very low: from Brooklyn it climbs only about 12° above the southern horizon.",
+    "whatYouSee": "A blue-white star of magnitude 1.6. From the city you need a clear view right down to the southern horizon; the pair with Lesath is sometimes called the Cat's Eyes."
+  },
+  "star:Sargas": {
+    "about": "Sargas is a yellow-white giant of spectral class F1 roughly 300 light-years away, about 30 times the Sun's width and well over 1,000 times as luminous. It marks the lowest part of the Scorpion's curving tail. The name is said to be of Sumerian origin; its meaning is not known.",
+    "howToFind": "It is 6° due south of [[star:Shaula|Shaula]], the stinger, at the bottom of the tail's hook, and about two fists (22°) southeast of [[star:Antares|Antares]]. From Brooklyn it barely rises: at best it stands only about 6° above the southern horizon on summer evenings.",
+    "whatYouSee": "A magnitude 1.9 star in principle, but from New York it is usually lost in horizon haze and buildings; it is an easy naked-eye star from the southern United States and beyond."
+  },
+  "star:Nunki": {
+    "about": "Nunki is a hot blue-white star of spectral class B2.5 about 225 light-years away, the second-brightest star of Sagittarius, the Archer. Recent measurements show it is really a close pair of nearly equal stars, each several times the Sun's mass. It lies near the Sun's path, so the Moon and occasionally planets pass very close to it.",
+    "howToFind": "Look for the Teapot, the eight-star outline of Sagittarius, low in the south on summer evenings, about three fists east of [[star:Antares|Antares]]. Nunki is the top of the Teapot's handle on its left (eastern) side, 4° north-northwest of [[star:Ascella|Ascella]] at the handle's base.",
+    "whatYouSee": "A white star of magnitude 2.1, visible from the city with a clear southern view; from 40°N it stands about two fists above the horizon at best."
+  },
+  "star:Kaus Australis": {
+    "about": "Kaus Australis is a blue-white giant of spectral class B9 about 143 light-years away, several times the Sun's width and hundreds of times as luminous. Though labeled Epsilon, it is the brightest star of Sagittarius. It marks the southern end of the Archer's bow — the name joins the Arabic word for 'bow' with the Latin for 'southern'.",
+    "howToFind": "It is the lower-right corner of the Teapot's body, at the base of the spout, about two and a half fists (26°) east-southeast of [[star:Antares|Antares]]. [[star:Kaus Media|Kaus Media]] is 4.6° to its north. Summer evenings, low: about 15° above Brooklyn's southern horizon at best.",
+    "whatYouSee": "A white star of magnitude 1.8, visible from the city if you have a clear, low southern horizon."
+  },
+  "star:Alphard": {
+    "about": "Alphard is an orange giant of spectral class K3 about 177 light-years away, nearly 60 times the Sun's width and close to 1,000 times as luminous. It is the heart of Hydra, the Water Snake, the largest constellation in the sky. The name is Arabic for 'the solitary one', and it fits: there is no other bright star anywhere near it.",
+    "howToFind": "From [[star:Regulus|Regulus]] go a little over two fists (23°) to the south-southwest, into a large blank area; Alphard is the one fairly bright star there. Late winter and spring evenings.",
+    "whatYouSee": "An orange-tinted star of magnitude 2.0, easy from the city and conspicuous because it is so alone."
+  },
+  "star:Gacrux": {
+    "about": "Gacrux is a red giant of spectral class M about 89 light-years away — the nearest red giant of its type — more than 70 times the Sun's width and several hundred times as luminous. It marks the top of the Southern Cross, and its ruddy color stands out against the blue-white of the other three main stars. The name is a navigators' contraction of 'Gamma Crucis'.",
+    "howToFind": "Gacrux never rises from Brooklyn (declination −57°); it needs a latitude south of about 33°N. In southern skies it is the top of the Cross, and the line from Gacrux through [[star:Acrux|Acrux]], 6° away at the foot, extended about four and a half times, points to the south celestial pole.",
+    "whatYouSee": "From southern latitudes, an orange-red star of magnitude 1.6. Not visible from New York."
+  },
+  "star:Menkalinan": {
+    "about": "Menkalinan is a pair of nearly identical white stars of spectral class A about 80 light-years away, each close to three times the Sun's width. They circle each other every 3.96 days and partly eclipse each other, dimming the light by an amount too small for the eye to notice. It is the second-brightest star of Auriga; the name comes from the Arabic for 'shoulder of the rein-holder'.",
+    "howToFind": "It is the star 7.6° (a little under a fist) due east of [[star:Capella|Capella]], the next corner of the Charioteer's pentagon. Winter evenings, nearly overhead.",
+    "whatYouSee": "A white star of magnitude 1.9, easy from the city."
+  },
+  "star:Mirzam": {
+    "about": "Mirzam is a hot blue-white giant of spectral class B1 roughly 500 light-years away, more than ten times the Sun's mass and tens of thousands of times as luminous. It pulses slightly every six hours. It marks a front paw of Canis Major, and its Arabic name means 'the herald', because it rises just before Sirius.",
+    "howToFind": "It is the star 5.5° (three finger-widths) west of [[star:Sirius|Sirius]], slightly to the south. Winter evenings.",
+    "whatYouSee": "A blue-white star of magnitude 2.0, easy from the city, though it is naturally overshadowed by Sirius."
+  },
+  "star:Wezen": {
+    "about": "Wezen is a yellow-white supergiant of spectral class F8 about 1,600 light-years away — some 200 times farther than Sirius, yet still a bright star, because it is nearly 200 times the Sun's width and tens of thousands of times as luminous. It marks the hindquarters of Canis Major. The name comes from the Arabic for 'weight'.",
+    "howToFind": "From [[star:Sirius|Sirius]] drop one fist (11°) to the south-southeast. Wezen is the top of the triangle of bright stars in the Dog's rear, with [[star:Adhara|Adhara]] 3.4° to its southwest. Winter evenings, low in the south.",
+    "whatYouSee": "A star of magnitude 1.8, visible from the city with a clear southern view."
+  },
+  "star:Alcyone": {
+    "about": "Alcyone is the brightest star of the Pleiades, the Seven Sisters cluster in Taurus, about 440 light-years away. It is a blue-white giant of spectral class B7, roughly ten times the Sun's width and around 2,000 times as luminous, spinning so fast that it has flung out a disk of gas. In Greek myth Alcyone was one of the seven daughters of Atlas and Pleione.",
+    "howToFind": "Find the [[dso:M45|Pleiades]], the tiny dipper-shaped knot of stars about a fist and a half (14°) northwest of [[star:Aldebaran|Aldebaran]]. Alcyone is the brightest star, near the middle of the group where the little 'bowl' meets its 'handle'. Autumn and winter evenings.",
+    "whatYouSee": "A star of magnitude 2.9, the leader of the cluster. From the city the naked eye may show only Alcyone and a few companions as a small misty patch; binoculars show dozens of blue-white stars."
+  },
+  "star:Zubenelgenubi": {
+    "about": "Zubenelgenubi is a wide double star about 76 light-years away: a white class A star with a fainter yellow-white class F companion, and each of those is itself a close pair. It is one of the two pans of Libra, the Scales, but its name is Arabic for 'the southern claw', a relic of the time when these stars were the claws of the Scorpion. It lies almost exactly on the Sun's path.",
+    "howToFind": "It lies two fists (21°) east-southeast of [[star:Spica|Spica]], on the way to [[star:Antares|Antares]], which is two and a half fists farther on. [[star:Zubeneschamali|Zubeneschamali]] is 9° to its northeast. Late spring and early summer evenings.",
+    "whatYouSee": "Naked eye: a star of magnitude 2.8, visible from the city. Binoculars easily show it as a pair — a white star and a fifth-magnitude pale-yellow one nearly 4 arcminutes apart — and very sharp eyes can split it unaided under a dark sky."
+  },
+  "star:Zubeneschamali": {
+    "about": "Zubeneschamali is a blue-white star of spectral class B8 about 185 light-years away, nearly five times the Sun's width and around 400 times as luminous. It is the brightest star of Libra, the Scales; its Arabic name means 'the northern claw' (of the Scorpion). It has a curious reputation as the one naked-eye star that looks green — some observers see a pale green tint, most see white, and no one has a good explanation.",
+    "howToFind": "It is 9° (a little under a fist) northeast of [[star:Zubenelgenubi|Zubenelgenubi]], and about two and a half fists (24°) northwest of [[star:Antares|Antares]]. Late spring and early summer evenings.",
+    "whatYouSee": "A star of magnitude 2.6, visible from the city. Look at it in binoculars and decide for yourself whether it is white or faintly green."
+  },
+  "star:Dschubba": {
+    "about": "Dschubba is a hot blue-white star of spectral class B0 about 440 light-years away, some 15 times the Sun's mass and tens of thousands of times as luminous. In 2000 it unexpectedly began to brighten as it threw off a disk of gas, and it has varied irregularly ever since, at times nearly doubling its usual brightness. It is the middle star of the Scorpion's head; the name comes from the Arabic for 'the forehead'.",
+    "howToFind": "Three stars in a north–south row, about 7° long, form the head of Scorpius, 7° to 8° west-northwest of [[star:Antares|Antares]]. Dschubba is the middle and brightest one, with [[star:Acrab|Acrab]] 3° to its north. Summer evenings, low in the south.",
+    "whatYouSee": "A blue-white star normally around magnitude 2.3 but sometimes brighter, visible from the city. Comparing it with Acrab from year to year shows its changes."
+  },
+  "star:Sadalsuud": {
+    "about": "Sadalsuud is a rare yellow supergiant of spectral class G0 about 540 light-years away, nearly 50 times the Sun's width and around 2,000 times as luminous. Though labeled Beta, it is the brightest star of Aquarius, the Water Bearer, marking one shoulder. Its Arabic name means 'luck of lucks'.",
+    "howToFind": "From [[star:Enif|Enif]], the nose of Pegasus, go a fist and a half (16°) to the south-southwest; or start at [[star:Sadalmelik|Sadalmelik]] and go one fist (10°) west-southwest. Autumn evenings.",
+    "whatYouSee": "A pale yellow star of magnitude 2.9, visible from the city on a clear night. The rest of Aquarius is too faint for urban skies."
+  },
+  "star:Sadalmelik": {
+    "about": "Sadalmelik is a yellow supergiant of spectral class G2 — the same color as the Sun but thousands of times as luminous — about 690 light-years away. It marks a shoulder of Aquarius, the Water Bearer, and its Arabic name means 'the lucky star of the king'. It lies within half a degree of the celestial equator.",
+    "howToFind": "From [[star:Enif|Enif]], the nose of Pegasus, go about one fist (11.5°) to the south-southeast. A small Y-shaped group of fainter stars, the Water Jar, lies 4° to 6° to its east. Autumn evenings.",
+    "whatYouSee": "A pale yellow star of magnitude 3.0, visible from the city on a clear night; the Water Jar needs a darker sky or binoculars."
+  },
+  "star:Deneb Algedi": {
+    "about": "Deneb Algedi is a white star about 39 light-years away with a small companion that passes in front of it every 1.02 days, dimming it by a barely noticeable two-tenths of a magnitude. It is the brightest star of Capricornus, marking the Sea-Goat's tail — the name is Arabic for 'tail of the goat'. Neptune was discovered in 1846 only a few degrees from this star.",
+    "howToFind": "Capricornus is a large, dim, arrowhead-shaped triangle; Deneb Algedi is its eastern tip. It lies two fists (21°) northwest of [[star:Fomalhaut|Fomalhaut]] and one fist (11°) south-southeast of [[star:Sadalsuud|Sadalsuud]]. Late summer and autumn evenings, fairly low in the south.",
+    "whatYouSee": "A white star of magnitude 2.9, visible from the city on a clear night with fainter [[star:Nashira|Nashira]] 2° to its west."
+  },
+  "star:Ankaa": {
+    "about": "Ankaa is an orange giant of spectral class K0 about 85 light-years away, 13 times the Sun's width and around 80 times as luminous. It is the brightest star of Phoenix, a southern constellation introduced in the 1590s; the name, given in modern times, is from the Arabic word for the phoenix.",
+    "howToFind": "It lies about two fists (22°) southeast of [[star:Fomalhaut|Fomalhaut]]. From Brooklyn it only just clears the horizon: at declination −42° it stands about 7° up, due south, at best on autumn evenings.",
+    "whatYouSee": "A magnitude 2.4 star with an orange tint from southern latitudes. From New York it is technically above the horizon but almost always hidden by haze and buildings; binoculars and a sea horizon give you a chance."
+  },
+  "star:Alnair": {
+    "about": "Alnair is a blue-white star of spectral class B about 100 light-years away, several times the Sun's width and hundreds of times as luminous. It is the brightest star of Grus, the Crane, and one of the stars used in celestial navigation. Its Arabic name means 'the bright one' — it was originally the bright one in the tail of the Southern Fish, before Grus was invented.",
+    "howToFind": "It lies two fists (20°) south-southwest of [[star:Fomalhaut|Fomalhaut]]. At declination −47° it rises only about 2° above Brooklyn's southern horizon, so for practical purposes it cannot be seen from New York; from Florida or farther south it is an easy autumn star.",
+    "whatYouSee": "From southern latitudes, a blue-white star of magnitude 1.7. Effectively not visible from New York."
+  },
+  "star:Peacock": {
+    "about": "Peacock is a hot blue-white star of spectral class B about 180 light-years away, roughly six times the Sun's mass and a couple of thousand times as luminous. It is the brightest star of Pavo, the Peacock. Its English name is modern: Britain's Nautical Almanac Office assigned it in the late 1930s because the Royal Air Force wanted a name for every navigation star.",
+    "howToFind": "Peacock never rises from Brooklyn (declination −57°). In southern skies it stands alone about two fists (18°) west-southwest of [[star:Alnair|Alnair]].",
+    "whatYouSee": "From the Southern Hemisphere, a blue-white star of magnitude 1.9. Not visible from New York."
+  },
+  "star:Atria": {
+    "about": "Atria is an orange giant of spectral class K2 about 390 light-years away, well over 100 times the Sun's width and thousands of times as luminous. It is the brightest corner of Triangulum Australe, the Southern Triangle, and its name is simply a contraction of 'Alpha Trianguli Australis'.",
+    "howToFind": "Atria never rises from Brooklyn (declination −69°). In southern skies it is the brightest of a neat triangle of stars about a fist and a half (16°) southeast of [[star:Rigil Kentaurus|Rigil Kentaurus]].",
+    "whatYouSee": "From the Southern Hemisphere, an orange star of magnitude 1.9. Not visible from New York."
+  },
+  "star:Miaplacidus": {
+    "about": "Miaplacidus is a white giant of spectral class A1 about 113 light-years away, around six times the Sun's width and over 200 times as luminous. It is the second-brightest star of Carina, the Keel, and lies only 20° from the south celestial pole. The origin of the name is uncertain.",
+    "howToFind": "Miaplacidus never rises from Brooklyn (declination −70°). In southern skies it lies two fists (20°) southwest of [[star:Acrux|Acrux]], the foot of the Southern Cross, and circles the pole without setting from most of the Southern Hemisphere.",
+    "whatYouSee": "From the Southern Hemisphere, a white star of magnitude 1.7. Not visible from New York."
+  },
+  "star:Avior": {
+    "about": "Avior is a double star about 600 light-years away made up of an orange giant of spectral class K and a hot blue companion, too close together to separate in a telescope. It lies in Carina, the Keel, and is one corner of the False Cross, a larger, dimmer look-alike that travelers sometimes mistake for the Southern Cross. Like Peacock, its name was invented by Britain's Nautical Almanac Office in the late 1930s for air navigators.",
+    "howToFind": "Avior never rises from Brooklyn (declination −60°). In southern skies it lies a fist and a half (18°) southeast of [[star:Canopus|Canopus]] and is the brightest star of the False Cross.",
+    "whatYouSee": "From the Southern Hemisphere, an orange-tinted star of magnitude 1.9. Not visible from New York."
+  },
+  "star:Naos": {
+    "about": "Naos is a blue supergiant of spectral class O4, one of the hottest stars visible to the naked eye, with a surface around 40,000 degrees. It is roughly 1,100 light-years away, and counting its ultraviolet output it shines with hundreds of thousands of times the Sun's power. It is a runaway star moving unusually fast through space. It is the brightest star of Puppis, the Stern of the old ship Argo, and its name comes from the Greek for 'ship'.",
+    "howToFind": "It lies about a fist and a half (17°) southeast of [[star:Adhara|Adhara]] in Canis Major. From Brooklyn it is very low — at declination −40° it reaches only about 9° above the southern horizon on late winter evenings.",
+    "whatYouSee": "A blue-white star of magnitude 2.2, visible from New York only with a clear, unobstructed southern horizon; it is easy from the southern United States."
+  },
+  "star:γ2 Vel": {
+    "about": "Gamma Velorum, informally called Regor, is the brightest star of Vela, the Sails, about 1,100 light-years away. Its main component is a pair: a blue supergiant and the nearest and brightest Wolf–Rayet star in the sky — a very hot, massive star blowing its outer layers into space. 'Regor' is 'Roger' spelled backward, a name said to have been coined as a joke by the Apollo 1 astronauts for their crewmate Roger Chaffee; it is not an official name.",
+    "howToFind": "It lies 7° south of [[star:Naos|Naos]] and a fist and a half (18°) east of [[star:Canopus|Canopus]]. At declination −47° it rises only about 2° above Brooklyn's southern horizon, so for practical purposes it cannot be seen from New York.",
+    "whatYouSee": "From southern latitudes, a blue-white star of magnitude 1.8; binoculars or a small telescope show a fourth-magnitude blue-white companion 41 arcseconds away. Effectively not visible from New York."
+  },
+  "star:Menkent": {
+    "about": "Menkent is an orange giant of spectral class K0 about 59 light-years away, 11 times the Sun's width and more than 50 times as luminous. It marks a shoulder of Centaurus, the Centaur, and the name comes from the Arabic for 'shoulder' joined to a shortened 'centaur'. It is the brightest star of Centaurus that New Yorkers can actually see.",
+    "howToFind": "From [[star:Spica|Spica]] go about two and a half fists (27°) to the south-southeast. Menkent is the brightest star low in that part of the sky; at declination −36° it reaches about 13° above Brooklyn's southern horizon on late spring evenings.",
+    "whatYouSee": "An orange-tinted star of magnitude 2.1, visible from the city if you have a clear view low to the south."
+  }
+}

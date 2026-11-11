@@ -1,0 +1,34 @@
+{
+  "id": "Vol",
+  "kind": "modern",
+  "origin": {
+    "namedBy": "Pieter Dirkszoon Keyser and Frederick de Houtman; first shown by Petrus Plancius",
+    "when": "1595–1598",
+    "history": [
+      "Volans, the Flying Fish, is one of the twelve constellations introduced from the observations of the Dutch navigators Pieter Dirkszoon Keyser and Frederick de Houtman on their voyage of 1595–97. It shows a real animal of tropical seas, a fish that leaps from the water and glides on wing-like fins. Flying fish sometimes landed on the decks of ships and were eaten by the crews.",
+      "In the sea, flying fish are hunted by dolphinfish, and the navigators kept the chase going overhead: Volans is placed just ahead of Dorado, the dolphinfish. On old charts it is shown leaping beside the hull of the great ship Argo.",
+      "Petrus Plancius first drew it on his globe of 1598 under the Dutch name Vliegendenvis. Johann Bayer called it Piscis Volans, the flying fish, in 1603, and that two-word name was used until the 19th century. In 1844 John Herschel proposed shortening it to Volans; Francis Baily adopted the short form in the British Association's star catalog of 1845."
+    ]
+  },
+  "overview": "Volans is a flying fish leaping ahead of the dolphinfish Dorado. It is a small, faint group of 4th-magnitude stars tucked under the keel of the old ship Argo, between Canopus and the south celestial pole.",
+  "howToFind": [
+    "Volans never rises from Brooklyn; its stars only come above the horizon south of about latitude 20°N. From the Southern Hemisphere it circles the pole and is best on evenings from January to April.",
+    "Find [[star:Miaplacidus|Miaplacidus]], the bright star at the southern end of Carina. [[star:α Vol|Alpha]] and [[star:β Vol|Beta Volantis]] sit a few degrees from it, less than half a fist, on the side toward [[star:Canopus|Canopus]]. The rest of the fish runs from there toward the [[dso:LMC|Large Magellanic Cloud]], ending at [[star:γ Vol|Gamma Volantis]] about two fists from Canopus."
+  ],
+  "shape": "An irregular ring or squashed hexagon of six stars about a fist across, all close to magnitude 4. Nothing here survives city light, and even in the country it is a pattern you confirm with a chart.",
+  "mainStars": [
+    { "ref": "star:β Vol", "note": "Magnitude 3.8, an orange giant about 108 light-years away; by a hair the brightest star in the constellation." },
+    { "ref": "star:γ Vol", "note": "Magnitude 3.8 to the eye, but a small telescope splits it into a golden star and a paler companion, the best double in the constellation." },
+    { "ref": "star:ζ Vol", "note": "Magnitude 3.9, an orange giant about 140 light-years away at the end of the fish nearest the pole." },
+    { "ref": "star:α Vol", "note": "Magnitude 4.0, a white star about 125 light-years away. Despite the letter Alpha it is only the fifth brightest." }
+  ],
+  "notableObjects": [
+    { "ref": "star:γ Vol", "equip": "small-telescope", "note": "A fine double star: components of magnitude 3.8 and 5.6, easily separated at low power." },
+    { "ref": "star:ε Vol", "equip": "small-telescope", "note": "Another double, a blue-white star of magnitude 4.4 with a 7th-magnitude companion." }
+  ],
+  "stories": [],
+  "facts": [
+    "Volans is one of six southern constellations whose two-word names John Herschel suggested shortening in 1844; the others are Antlia, Caelum, Mensa, Pictor and Sculptor.",
+    "On Plancius's globe of 1598 the constellation carries the Dutch label Vliegendenvis, flying fish."
+  ]
+}

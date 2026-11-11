@@ -1,0 +1,56 @@
+{
+  "body:Sun": {
+    "about": "The Sun is our star: a ball of hot hydrogen and helium about 109 times as wide as Earth, shining by nuclear fusion in its core. It holds more than 99.8 percent of the solar system's mass, and its light takes about 8 minutes 20 seconds to reach us. Seen from here it drifts once around the sky each year along a path called the ecliptic, which is why different constellations own the evening sky in different seasons.",
+    "howToFind": "SAFETY FIRST: never look at the Sun directly, and never point binoculars, a telescope or a camera at it without a certified solar filter fitted over the front of the instrument — permanent eye damage happens in an instant and without pain. Use eclipse glasses that meet the ISO 12312-2 standard, or project the Sun's image onto a card. The Sun always sits on the ecliptic; the Tonight panel shows which constellation it is in today, and that part of the sky is hidden in daylight.",
+    "whatYouSee": "Through certified eclipse glasses the Sun is a small, plain disk half a degree across, about the same apparent size as the Moon; large sunspots sometimes show as tiny dark dots. A small telescope with a proper full-aperture solar filter shows sunspots with dark centers and lighter fringes, changing from day to day.",
+    "physicalSize": "about 1.39 million kilometers (865,000 miles) across"
+  },
+  "body:Moon": {
+    "about": "The Moon is Earth's only natural satellite, a rocky, airless world a little over a quarter of Earth's width, about 384,000 kilometers (239,000 miles) away on average. It circles Earth in about 27.3 days, but its phases repeat every 29.5 days because Earth is moving around the Sun at the same time. It always keeps the same face toward us, so the pattern of dark lava plains — the 'seas' — never changes.",
+    "howToFind": "The Moon stays within about 5° of the ecliptic and moves eastward against the stars by roughly its own width every hour, about 13° (a fist and a bit) per day. A thin crescent in the west after sunset is a young Moon; a full Moon rises around sunset opposite the Sun; a crescent in the east before dawn is an old Moon. The Tonight panel gives its current phase and position.",
+    "whatYouSee": "To the naked eye, even from the city, the gray seas and bright highlands are plain. Binoculars show the largest craters, and a small telescope shows hundreds of craters and mountain shadows — best along the line between light and dark, and far more dramatic at a partial phase than at full Moon.",
+    "physicalSize": "about 3,475 kilometers (2,159 miles) across"
+  },
+  "body:Mercury": {
+    "about": "Mercury is the smallest planet and the closest to the Sun, a cratered ball of rock and iron not much bigger than our Moon. It races around the Sun in just 88 days, and with almost no air to hold heat its surface swings from far hotter than an oven by day to bitterly cold at night.",
+    "howToFind": "Mercury never strays more than about 28° from the Sun (under three fists at arm's length), so it only ever appears low in the west shortly after sunset or low in the east shortly before sunrise, for a couple of weeks at a time. Look for a fairly bright, steady point in the twilight glow near the horizon; the Tonight panel says whether it is currently on view. Never sweep for it with binoculars while any part of the Sun is above the horizon.",
+    "whatYouSee": "To the naked eye it is a star-like point, often pinkish from the thick air near the horizon, and it is easy to see from the city if you have a clear, low horizon. A small telescope shows a tiny disk with phases like the Moon's but no surface detail.",
+    "physicalSize": "about 4,880 kilometers (3,030 miles) across"
+  },
+  "body:Venus": {
+    "about": "Venus is almost Earth's twin in size, but it is wrapped in a crushing carbon-dioxide atmosphere with clouds of sulfuric acid, and its surface is hot enough to melt lead. Those bright clouds reflect most of the sunlight that hits them, which makes Venus the brightest thing in the sky after the Sun and Moon — bright enough to cast faint shadows from a dark site.",
+    "howToFind": "Venus is always within about 47° of the Sun (roughly four and a half fists), so it is only seen in the west after sunset — the 'evening star' — or in the east before sunrise — the 'morning star' — never in the middle of the night. It is unmistakable: a brilliant, steady white light far brighter than any star. The Tonight panel shows whether it is currently an evening or morning object.",
+    "whatYouSee": "Naked eye, even through city lights, it is a dazzling white point. A small telescope shows phases like the Moon's: a small nearly full disk when Venus is on the far side of the Sun, growing into a large thin crescent as it swings between us and the Sun; steadily held binoculars can just show the crescent.",
+    "physicalSize": "about 12,100 kilometers (7,520 miles) across, 95 percent of Earth's width"
+  },
+  "body:Mars": {
+    "about": "Mars is a cold desert world about half as wide as Earth, colored rusty orange by iron oxide in its dust. It has polar ice caps, the largest volcano known in the solar system (Olympus Mons) and dry river valleys that show water once flowed there. A Martian day is only about 40 minutes longer than ours, and its year lasts 687 Earth days.",
+    "howToFind": "Mars stays close to the ecliptic, so it always appears somewhere along the band of zodiac constellations. Recognize it by its steady orange-red light — planets generally twinkle less than stars. Its brightness changes enormously: for a few months around opposition, roughly every 26 months, it can outshine every star, and the rest of the time it is a modest orange point. The Tonight panel shows where it is now.",
+    "whatYouSee": "To the naked eye it is an orange 'star', obvious even from the city when it is near Earth. A small telescope shows a tiny salmon-colored disk; only in the weeks around opposition is it big enough to show a white polar cap and dusky markings.",
+    "physicalSize": "about 6,780 kilometers (4,210 miles) across"
+  },
+  "body:Jupiter": {
+    "about": "Jupiter is the giant of the solar system: a ball of mostly hydrogen and helium about 11 times as wide as Earth and more massive than all the other planets put together. It spins once in under 10 hours, which stretches its clouds into dark belts and bright zones, and its Great Red Spot is a storm larger than Earth that has been watched for well over a century. Its four big moons — Io, Europa, Ganymede and Callisto — were discovered by Galileo in 1610.",
+    "howToFind": "Jupiter keeps close to the ecliptic and takes about 12 years to circle the sky, spending roughly a year in each zodiac constellation. It is a very bright, steady, cream-white light, outshone among the planets only by Venus (and occasionally Mars), and unlike Venus it can be up all night long. The Tonight panel shows its current position.",
+    "whatYouSee": "Naked eye it is a brilliant point, easy from the city. Steadily held binoculars show up to four moons as tiny stars in a line that changes from night to night, and a small telescope adds the two main dark cloud belts and the slightly flattened disk.",
+    "physicalSize": "about 140,000 kilometers (87,000 miles) across at the equator"
+  },
+  "body:Saturn": {
+    "about": "Saturn is the second-largest planet, a gas giant about nine times as wide as Earth and so light for its size that its average density is less than that of water. Its famous rings are countless pieces of ice and rock, from dust grains to boulders, spread in a sheet hundreds of thousands of kilometers wide but remarkably thin. Its largest moon, Titan, is bigger than Mercury and has a thick atmosphere.",
+    "howToFind": "Saturn stays near the ecliptic and moves slowly, taking about 29.5 years to go around the sky, so it lingers in one zodiac constellation for two years or more. Look for a steady, pale-yellow 'star' about as bright as the brighter stars but without their twinkle. The Tonight panel shows where it is now.",
+    "whatYouSee": "To the naked eye it is a steady yellowish point, visible from the city. Binoculars show only a slightly oval dot; a small telescope at about 30 power or more shows the rings — one of the great sights of the sky — and Titan as a nearby star. The rings' tilt changes over the years, and about every 15 years they turn edge-on and nearly vanish.",
+    "physicalSize": "about 116,500 kilometers (72,400 miles) across; the main rings span about 270,000 kilometers"
+  },
+  "body:Uranus": {
+    "about": "Uranus is an ice giant about four times as wide as Earth, colored pale blue-green by methane in its atmosphere. It is tipped right over on its side, so it rolls around the Sun once every 84 years with each pole getting decades of sunlight and then decades of darkness. William Herschel discovered it with a telescope in 1781 — the first planet found in recorded history.",
+    "howToFind": "Uranus creeps along the ecliptic, spending about seven years in each zodiac constellation. At around magnitude 5.7 (magnitude is the brightness scale, where larger numbers are fainter) it is at the very limit of naked-eye vision under a dark sky and invisible to the eye from the city, so you need binoculars and its exact position: use the Tonight panel and the sky view to pick out which 'star' it is.",
+    "whatYouSee": "In binoculars it is a faint star-like point, reachable even from the city once you know exactly where to look. A small telescope at high power shows a tiny, featureless blue-green disk.",
+    "physicalSize": "about 50,700 kilometers (31,500 miles) across"
+  },
+  "body:Neptune": {
+    "about": "Neptune is the most distant planet, a deep-blue ice giant slightly smaller than Uranus, about 30 times farther from the Sun than Earth is. It was found in 1846 after mathematicians predicted its position from its gravitational pull on Uranus. It takes about 165 years to circle the Sun, and its winds are the fastest measured on any planet.",
+    "howToFind": "Neptune stays close to the ecliptic and moves so slowly that it spends more than a decade in each zodiac constellation. At about magnitude 7.8 it is never visible to the naked eye, so you need binoculars or a telescope and a precise position: use the Tonight panel and the sky view to identify it among the faint stars.",
+    "whatYouSee": "In binoculars under a reasonably dark sky it is a dim star-like point, hard to pick out from the city. A small telescope at high power shows a very small bluish disk with no detail.",
+    "physicalSize": "about 49,200 kilometers (30,600 miles) across"
+  }
+}

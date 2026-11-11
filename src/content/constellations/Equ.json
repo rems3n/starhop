@@ -1,0 +1,107 @@
+{
+  "id": "Equ",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); probably introduced by Hipparchus",
+    "when": "2nd century CE (Almagest); perhaps 2nd century BCE",
+    "history": [
+      "Equuleus is one of the 48 constellations in Ptolemy's *Almagest* (about 150 CE), where it is called Hippou Protome, 'the forepart of a horse', and given just four stars described only as faint. Aratus, four centuries earlier, does not mention it. The Greek writer Geminus, however, says that the astronomer Hipparchus introduced a constellation of this name in the 2nd century BCE, so Hipparchus rather than Ptolemy seems to have been its inventor.",
+      "The Latin name Equuleus, 'little horse' or 'foal', came later. Johann Bayer's atlas of 1603 called it Equus Minor and drew just a horse's head poking out of clouds beside the head of [[con:Peg|Pegasus]]. Arabic astronomers called it 'part of the horse', and the name of its brightest star, Kitalpha, is a worn-down form of that phrase.",
+      "The early collectors of star myths say nothing at all about this figure, which was too new or too obscure for them. The one story usually attached to it today was told by ancient writers about the larger Horse next door; modern authors have suggested that it suits the little half-hidden horse even better."
+    ]
+  },
+  "overview": "Equuleus is the Little Horse, or Foal: only a horse's head, tucked beside the nose of Pegasus. It is the second-smallest constellation in the whole sky and has no star brighter than fourth magnitude, so finding it is a small trophy for a patient observer.",
+  "howToFind": [
+    "Start from [[star:Enif|Enif]], the orange star at the nose of Pegasus, which you reach from the Great Square by following the horse's neck westward. Equuleus lies a little under a fist to the west of Enif (a fist at arm's length is roughly 10 degrees), in the gap between Enif and the small diamond of Delphinus, the Dolphin. Its brightest star, [[star:Kitalpha|Kitalpha]], is the southern point of a slim triangle completed by [[star:δ Equ|Delta]] and [[star:γ Equ|Gamma Equulei]] half a fist to its north.",
+    "From Brooklyn the Little Horse is in the evening sky from late summer through autumn, standing about halfway up in the south in September and October. You will need a reasonably dark, haze-free sky, or binoculars, to see more than Kitalpha."
+  ],
+  "shape": "A narrow triangle or bent line of three or four faint stars, small enough to hide behind two fingers held at arm's length. From the city it is effectively invisible to the naked eye; binoculars aimed just west of Enif will show the little group in a single field or two.",
+  "mainStars": [
+    {
+      "ref": "star:Kitalpha",
+      "note": "Alpha Equulei, a yellowish star of magnitude 3.9 (magnitude is the brightness scale, where smaller numbers are brighter) about 190 light-years away. Its name comes from the Arabic for 'part of the horse'."
+    },
+    {
+      "ref": "star:δ Equ",
+      "note": "Delta Equulei, a nearby star 60 light-years away. It is really a pair of stars that circle each other in less than six years, far too close together to split in a small telescope."
+    },
+    {
+      "ref": "star:γ Equ",
+      "note": "Gamma Equulei, a white star at the northern tip of the triangle. Binoculars show a fainter star, 6 Equulei, right beside it."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "star:γ Equ",
+      "equip": "binoculars",
+      "note": "Gamma and 6 Equulei make an easy wide pair in binoculars. They are not truly connected; they simply lie in the same direction."
+    },
+    {
+      "ref": "star:ε Equ",
+      "equip": "small-telescope",
+      "note": "Epsilon Equulei, a faint star west of Kitalpha, shows a dimmer companion in a small telescope. The brighter star is itself a very close pair."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Equ-hippe",
+      "title": "Hippe, the girl who became a mare",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.18 (citing Euripides' lost play Melanippe, and Callimachus)", "date": "2nd century CE" },
+        { "author": "Eratosthenes", "work": "Catasterisms (the Horse)", "date": "3rd century BCE, surviving in a later summary" }
+      ],
+      "summary": "A daughter of the wise centaur Chiron became pregnant and fled into the wild so that her father would not find out. The gods changed her into a mare and set her among the stars, where she shows only her head and still keeps out of the Centaur's sight. Ancient writers told this about the large Horse; it is now usually attached to the Little Horse.",
+      "retelling": [
+        "Chiron was the best of the centaurs, half man and half horse, a healer and the teacher of heroes. He had a daughter. Hyginus, who takes the story from a lost play by Euripides, calls her Melanippe, 'black mare'; other tellings call her Hippe, which simply means 'mare', and give the name Melanippe to her child. She grew up on Mount Helicon and loved hunting more than anything.",
+        "A young man named Aeolus courted her. He was the son of Hellen and a grandson of Zeus, and she conceived a child by him. Her father believed she was still a maiden, and she could not bear for him to learn otherwise. When her time came near she slipped away into the forest to give birth where no one would see.",
+        "Chiron went looking for her. She prayed to the gods for one thing only: that her father should not find her in childbirth. The gods heard her. Once the baby was born they changed the mother into a mare, and that mare was set among the stars.",
+        "Hyginus knew other explanations, and sets them side by side without choosing. Some people, he writes, said she was a prophetess, and was turned into a mare because she kept revealing the plans of the gods to mortals. The poet Callimachus said the goddess Artemis did it, to punish a girl who had stopped hunting and stopped honoring her. In every version the end is the same: the young woman is gone and there is a horse in the sky.",
+        "The star-horse behaves the way the story needs it to. It shows only the front half of its body, so that, Hyginus says, no one can tell that it is female. And it keeps away from the constellation of the Centaur, which some identify as Chiron himself: it stays, he says, out of the Centaur's sight, so the daughter is still hiding from her father.",
+        "Hyginus and Eratosthenes tell all this as an alternative identity for the big Horse, the one most people called Pegasus. Nobody in antiquity recorded a myth for the little horse's head that Hipparchus and Ptolemy added beside it. But a shy horse that shows only its head and tucks itself behind a larger one fits Hippe's story so neatly that modern writers have handed the tale on to Equuleus, and the foal next to the winged horse is now where she is usually pointed out."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Equuleus, the little horse",
+        "url": "http://www.ianridpath.com/startales/equuleus.html"
+      },
+      "characters": ["Hippe (Melanippe)", "Chiron", "Aeolus", "Artemis"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Who was the father of Hippe (or Melanippe)?",
+          "choices": ["Poseidon, god of horses", "Chiron the centaur", "Aeolus, grandson of Zeus", "King Cepheus"],
+          "answerIndex": 1,
+          "explanation": "She was the daughter of Chiron, the wise centaur. Aeolus was the young man who courted her."
+        },
+        {
+          "id": "q2",
+          "prompt": "Why did she flee into the forest?",
+          "choices": ["To hide her pregnancy from her father", "To escape a sea monster", "To hunt a sacred deer", "To search for the spring Hippocrene"],
+          "answerIndex": 0,
+          "explanation": "Chiron believed she was a maiden, so she went into the wild to give birth where he would not see."
+        },
+        {
+          "id": "q3",
+          "prompt": "According to Callimachus, as reported by Hyginus, who changed her into a mare and why?",
+          "choices": ["Zeus, because she rode Pegasus", "Athena, because she boasted of her beauty", "Artemis, because she gave up hunting and the goddess's worship", "Hera, because Aeolus was a grandson of Zeus"],
+          "answerIndex": 2,
+          "explanation": "In Callimachus's version Artemis (Diana to the Romans) punished her for abandoning the hunt and the goddess."
+        },
+        {
+          "id": "q4",
+          "prompt": "How does the myth explain that only part of the horse is shown in the stars?",
+          "choices": ["The rest was eaten by the Chimera", "She is rising out of the sea", "The other half belongs to Pegasus", "She shows only her front half so her sex cannot be known, and stays hidden from the Centaur"],
+          "answerIndex": 3,
+          "explanation": "Hyginus says she shows half her body so that no one can tell she is female, and that she stays out of sight of the Centaur."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Only Crux, the Southern Cross, covers less sky than Equuleus.",
+    "Equuleus rises just before Pegasus, which earned it the old Latin nickname Equus Primus, 'the first horse'.",
+    "Ptolemy gave no brightness figures for its four stars in the *Almagest*; he just called them faint.",
+    "You may read that Equuleus is Celeris, a brother of Pegasus given to the hero Castor. That identification appears in modern books, but we could not trace it to an ancient source, so it is not told as a story here."
+  ]
+}

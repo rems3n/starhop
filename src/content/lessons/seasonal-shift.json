@@ -1,0 +1,268 @@
+{
+  "id": "seasonal-shift",
+  "unit": "motion",
+  "order": 3,
+  "title": "Why the constellations change with the seasons",
+  "subtitle": "Four minutes a day, two hours a month, one full lap a year",
+  "minutes": 6,
+  "sections": [
+    {
+      "heading": "The stars keep a slightly faster clock",
+      "body": [
+        "After this lesson you will be able to predict the sky for any date: if you know what is up at 9 pm tonight, you will know what is up at 9 pm next month, and when to look to see tonight's sky again.",
+        "Earth turns once relative to the stars in 23 hours 56 minutes. That is called a sidereal day. Our clocks follow the Sun, and a solar day is 24 hours, four minutes longer. The difference comes from Earth's orbit. In one day Earth moves about 1° along its path around the Sun, so it has to turn that extra degree before the Sun is back in the same direction.",
+        "The result is that every star rises about four minutes earlier each day by the clock. Four minutes is hard to notice. But it adds up to half an hour in a week, two hours in a month, and a full 24 hours in a year, which brings the sky back to where it started."
+      ],
+      "demo": {
+        "title": "Same clock time, different month",
+        "controls": [
+          "date-step",
+          "month-step"
+        ],
+        "steps": [
+          {
+            "caption": "9 pm in mid-January, facing south. Orion stands high, a little left of due south.",
+            "time": "month:1 21:00",
+            "view": {
+              "az": 190,
+              "alt": 40,
+              "fov": 130
+            },
+            "highlights": [
+              {
+                "type": "constellation",
+                "id": "Ori",
+                "label": true
+              }
+            ]
+          },
+          {
+            "caption": "One month later but two hours earlier: 7 pm in mid-February. The sky is exactly the same. A month forward and two hours back always cancel out.",
+            "time": "month:2 19:00",
+            "view": {
+              "az": 190,
+              "alt": 40,
+              "fov": 130
+            },
+            "highlights": [
+              {
+                "type": "constellation",
+                "id": "Ori",
+                "label": true
+              }
+            ]
+          },
+          {
+            "caption": "Mid-February at 9 pm, the same clock time as the first step. Orion has shifted 30° to the west and is now past due south.",
+            "time": "month:2 21:00",
+            "view": {
+              "az": 190,
+              "alt": 40,
+              "fov": 130
+            },
+            "highlights": [
+              {
+                "type": "constellation",
+                "id": "Ori",
+                "label": true
+              }
+            ]
+          },
+          {
+            "caption": "Mid-April at 9 pm. Orion is tipping over toward the western horizon. (Clocks jumped forward an hour in March, which makes 9 pm an hour earlier by the Sun and slows the slide a little.) Use the month buttons to keep going.",
+            "time": "month:4 21:00",
+            "view": {
+              "az": 190,
+              "alt": 40,
+              "fov": 130
+            },
+            "highlights": [
+              {
+                "type": "constellation",
+                "id": "Ori",
+                "label": true
+              }
+            ]
+          },
+          {
+            "caption": "Mid-June at 10 pm. Orion is gone: it is up in the daytime now, lost behind the Sun. Arcturus and the summer stars have taken its place, with red Antares low in the south.",
+            "time": "month:6 22:00",
+            "view": {
+              "az": 190,
+              "alt": 40,
+              "fov": 130
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "star:Antares",
+                "label": "Antares"
+              },
+              {
+                "type": "object",
+                "ref": "star:Arcturus",
+                "label": "Arcturus"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "heading": "The Sun hides its own side of the sky",
+      "body": [
+        "Here is another way to see the same thing. As Earth goes around the Sun, the Sun appears from our moving viewpoint to slide slowly eastward in front of the background stars, about 1° a day, one lap a year. The stars near the Sun are up in the daytime and cannot be seen. The stars on the opposite side of the sky are up all night.",
+        "In June the Sun sits in front of Taurus and Gemini, so Orion and its neighbors cross the sky in daylight. Six months later the Sun is on the far side of the sky, around Sagittarius, and Orion rules the night. No constellation is ever switched off. It only takes its turn behind the Sun."
+      ],
+      "demo": {
+        "title": "Daylight switched off",
+        "controls": [
+          "play"
+        ],
+        "steps": [
+          {
+            "caption": "1 pm in mid-May with the blue sky removed. The Sun is just entering Taurus and Orion is to its lower left, invisible in real life. Each second here is one sidereal day: the stars hold still and the Sun creeps about 1° east (left) per day, reaching Gemini in late June.",
+            "time": "month:5 13:00",
+            "rate": 86164,
+            "view": {
+              "target": "radec:75,18",
+              "fov": 100,
+              "mount": "equatorial"
+            },
+            "layers": {
+              "atmosphere": false,
+              "ground": false,
+              "horizon": false,
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "body:Sun",
+                "label": "Sun"
+              },
+              {
+                "type": "constellation",
+                "id": "Tau",
+                "label": true
+              },
+              {
+                "type": "constellation",
+                "id": "Gem",
+                "label": true
+              },
+              {
+                "type": "constellation",
+                "id": "Ori",
+                "label": true
+              }
+            ]
+          },
+          {
+            "caption": "Half a year of the Sun's travel, marked every 15 days from the March equinox to the September equinox. Whatever constellation the Sun is passing is out of sight for a month or two on either side.",
+            "time": "2027-06-21 13:00",
+            "view": {
+              "target": "radec:90,15",
+              "fov": 150,
+              "mount": "equatorial"
+            },
+            "layers": {
+              "atmosphere": false,
+              "ground": false,
+              "horizon": false,
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "trail",
+                "ref": "body:Sun",
+                "from": "2027-03-20 12:00",
+                "to": "2027-09-23 12:00",
+                "stepHours": 360,
+                "frame": "stars",
+                "dateLabels": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "heading": "Using the rule",
+      "body": [
+        "Two hours per month is the number to keep. The sky at 9 pm in January is the sky at 7 pm in February, at 11 pm in December and at 1 am in November. So if you want a preview of next season's evening constellations, stay up late or get up before dawn: the sky before sunrise tonight is the evening sky about four or five months from now.",
+        "The rule also explains the names. A “winter constellation” is one that is well placed in the evening during winter. Orion can be seen at dawn in August and at midnight in December; it is called a winter constellation because January and February are when it is high at a convenient hour."
+      ],
+      "tryIt": "Pick a bright star and a landmark, say Sirius over a particular chimney, and note the clock time when they line up. Check again a week later from the same spot. The star will reach the chimney about 28 minutes earlier."
+    }
+  ],
+  "keyPoints": [
+    "A sidereal day (one turn relative to the stars) is 23 h 56 min, four minutes shorter than a solar day.",
+    "Each star rises about 4 minutes earlier per day: 2 hours per month, a full lap in a year.",
+    "One month later and two hours earlier gives the same sky.",
+    "The constellations around the Sun are in the daytime sky and hidden; they return to the dawn sky a couple of months later."
+  ],
+  "examples": [],
+  "questions": [
+    {
+      "id": "ss-q1",
+      "prompt": "A star rises at 10 pm tonight. About when will it rise one month from now?",
+      "choices": [
+        "10 pm",
+        "Midnight",
+        "8 pm",
+        "9:30 pm"
+      ],
+      "answerIndex": 2,
+      "explanation": "Stars rise about four minutes earlier each day, which adds up to two hours earlier in a month."
+    },
+    {
+      "id": "ss-q2",
+      "prompt": "Why is a sidereal day four minutes shorter than a solar day?",
+      "choices": [
+        "Earth's spin is gradually speeding up",
+        "Earth moves along its orbit each day, so it must turn a little extra to face the Sun again",
+        "The Moon slows the Sun down",
+        "The stars drift westward on their own"
+      ],
+      "answerIndex": 1,
+      "explanation": "In one day Earth travels about 1° around the Sun. It has to rotate that extra degree, which takes about four minutes, before the Sun returns to the same direction."
+    },
+    {
+      "id": "ss-q3",
+      "prompt": "You like the sky as it looks at 9 pm in mid-January. When can you see the same sky in mid-March?",
+      "choices": [
+        "At 5 pm standard time, in daylight, so you cannot",
+        "At 9 pm again",
+        "At 1 am",
+        "At 11 pm"
+      ],
+      "answerIndex": 0,
+      "explanation": "Two months later the same sky comes four hours earlier: 5 pm standard time, before dark in March. That is why the winter stars are already well to the west when March evenings get dark."
+    },
+    {
+      "id": "ss-q4",
+      "prompt": "Why can't you see Orion on a June night?",
+      "choices": [
+        "It is below the horizon all summer because Earth tilts away",
+        "It is too faint in warm, hazy air",
+        "It only exists in the winter sky",
+        "The Sun lies in that direction, so Orion is up during the day"
+      ],
+      "answerIndex": 3,
+      "explanation": "In June the Sun is in front of Taurus and Gemini, next to Orion. Orion rises and sets with the Sun and is lost in daylight."
+    },
+    {
+      "id": "ss-q5",
+      "prompt": "How can you preview the evening sky of four months from now?",
+      "choices": [
+        "Look at the same time tomorrow",
+        "Travel four time zones east",
+        "Look tonight about eight hours later, before dawn",
+        "It cannot be done"
+      ],
+      "answerIndex": 2,
+      "explanation": "Two hours per month for four months is eight hours. The sky before dawn tonight matches the evening sky four months on."
+    }
+  ]
+}

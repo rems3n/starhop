@@ -1,0 +1,232 @@
+{
+  "id": "Cnc",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); an older Greek and Mesopotamian zodiac figure",
+    "when": "2nd century CE (Almagest); far older as a sign of the zodiac",
+    "history": [
+      "Cancer is the faintest of the twelve constellations of the zodiac, the band of sky the Sun, Moon and planets move through, and it owes its place there to position rather than brilliance. The Greeks called it Karkinos, the Crab; in Babylonia the same stars had a name that could mean a crab or a snapping turtle. Ptolemy listed it in the *Almagest*, describing the misty spot at its center as 'the nebulous mass in the chest'.",
+      "Two thousand years ago the Sun stood among the stars of Cancer on the longest day of the year, when it is overhead at noon at its farthest point north of the equator. That line of latitude is still called the Tropic of Cancer, although the slow wobble of the Earth's axis (precession) has since carried the solstice point through Gemini and into Taurus.",
+      "The little cloud in the crab's body was famous in its own right. The Greeks called it Phatne, the Manger, with a donkey feeding on either side, and Aratus used it to forecast the weather. It kept its secret until 1609, when Galileo turned his new telescope on it and found it was a swarm of stars."
+    ]
+  },
+  "overview": "A crab, and a very dim one: a faint upside-down Y of stars in the gap between the bright twins of Gemini and the Sickle of Leo. Its real attraction is at its heart, the Beehive Cluster, a hazy patch to the naked eye under dark skies and a splendid swarm of stars in binoculars.",
+  "howToFind": [
+    "Do not look for the crab; look for the empty space. Find [[star:Regulus|Regulus]] at the foot of Leo's Sickle, and [[star:Pollux|Pollux]], the brighter of the two Gemini twins. Cancer is the dark gap between them. The Beehive Cluster, [[dso:M44|M44]], lies a little less than halfway from Pollux to Regulus, a fist and a half from Pollux. From Brooklyn you will almost certainly need binoculars: aim at that spot and a loose swarm of stars will fill the view.",
+    "With the Beehive found, the crab's body falls into place. Two faint stars bracket the cluster, [[star:Asellus Borealis|Asellus Borealis]] just to its north and [[star:Asellus Australis|Asellus Australis]] to its southeast. From there one leg runs north to [[star:ι Cnc|Iota Cancri]], and two run south: to [[star:Acubens|Acubens]], a claw, and to [[star:Tarf|Tarf]], a foot. Cancer is best on evenings from February to May, high in the south in March."
+  ],
+  "shape": "A faint, spidery Y about two fists tall with the Beehive at the fork. None of its stars is brighter than magnitude 3.5 (magnitude is the brightness scale, where smaller numbers are brighter), so from the city the constellation is effectively invisible without binoculars. From a dark site the Beehive shows as a soft glow bigger than the full Moon.",
+  "mainStars": [
+    {
+      "ref": "star:Tarf",
+      "note": "Beta Cancri, an orange giant and the brightest star in the constellation, though only magnitude 3.5. It marks the tip of the southwestern leg."
+    },
+    {
+      "ref": "star:Asellus Australis",
+      "note": "Delta Cancri, the Southern Donkey, magnitude 3.9, just southeast of the Beehive. It lies almost exactly on the ecliptic, the Sun's path, so the Moon and planets pass close by."
+    },
+    {
+      "ref": "star:Asellus Borealis",
+      "note": "Gamma Cancri, the Northern Donkey, a white star of magnitude 4.7 just north of the Beehive. With its partner it stands at the Manger."
+    },
+    {
+      "ref": "star:Acubens",
+      "note": "Alpha Cancri, magnitude 4.3, the southern claw; the name comes from the Arabic for 'claw'. Despite the letter Alpha it is only the fourth-brightest star here."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "dso:M44",
+      "equip": "binoculars",
+      "note": "The Beehive Cluster, or Praesepe (Latin for 'manger'), about 600 light-years away. Binoculars show dozens of stars scattered across a field three Moon-widths wide, many of them in pairs and triangles. Use low power in a telescope, or it will not fit in the view."
+    },
+    {
+      "ref": "dso:M67",
+      "equip": "binoculars",
+      "note": "A second, more distant star cluster, less than two finger-widths west of [[star:Acubens|Acubens]]. Binoculars show a small dim patch; a telescope turns it into a rich sprinkle of faint stars. At around four billion years it is one of the oldest clusters of its kind known."
+    },
+    {
+      "ref": "star:ι Cnc",
+      "equip": "small-telescope",
+      "note": "Iota Cancri, at the top of the crab, is an easy and pretty double star: a yellow primary with a fainter bluish companion well separated from it."
+    },
+    {
+      "ref": "star:Tegmine",
+      "equip": "telescope",
+      "note": "Zeta Cancri looks single to the eye, double in a small telescope, and triple at high power on a steady night, a system of stars slowly orbiting one another."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Cnc-crab-and-hydra",
+      "title": "The crab that bit Heracles",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Eratosthenes", "work": "Catasterisms 11", "date": "3rd century BCE; survives in a later summary" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.23", "date": "2nd century CE" },
+        { "author": "Apollodorus", "work": "Library 2.5.2", "date": "1st–2nd century CE" }
+      ],
+      "summary": "While Heracles was fighting the many-headed Hydra in the swamp of Lerna, a crab came out of the marsh and bit him on the foot. He crushed it at once. Hera, who hated Heracles, rewarded the crab for its loyalty to her cause with a place in the zodiac.",
+      "retelling": [
+        "The second labor that King Eurystheus set Heracles was to kill the Hydra of Lerna. This was a water serpent with an enormous body and nine heads, eight of them mortal and the one in the middle immortal, that lived in the marshes of Lerna and came out to ravage the cattle and the farms round about.",
+        "Heracles drove to Lerna in a chariot with his nephew Iolaus at the reins. He found the Hydra's den on a rise beside a spring, and forced the creature out by shooting burning arrows into it. As it emerged he seized it and held on. The Hydra wrapped itself around one of his legs and clung.",
+        "He set to work with his club, smashing the heads one after another. It did no good at all. For every head he crushed, two new ones grew in its place, and the monster was soon better armed than when he started. Heracles, with a serpent coiled around one leg, was losing a fight for perhaps the first time in his life.",
+        "It was at this moment that the crab arrived. A huge one came scuttling out of the swamp to help the Hydra and did the one thing a crab can do: it fastened its claws on Heracles' foot. Against the strongest man in the world, in the middle of a battle with a nine-headed monster, it was a gesture more than an attack.",
+        "Heracles looked down, furious, and killed it. The usual telling is that he simply stamped on it. Then he went back to the real problem. He shouted to Iolaus, who set fire to a stand of trees nearby and brought burning brands; each time Heracles struck off a head, Iolaus seared the stump so that nothing could sprout from it. When only the immortal head was left, Heracles cut that off too and buried it under a heavy rock beside the road. He dipped his arrows in the Hydra's poisonous gall, which is why his arrows were deadly ever after. Eurystheus, typically, refused to count the labor, because Heracles had needed help.",
+        "The crab, however, got its reward. Hera had been the enemy of Heracles since before he was born, and she noticed any creature that took her side. She lifted the crushed crab into the sky and made it one of the twelve signs through which the Sun passes on its yearly round. It is a small honor for a small deed: the Crab is the dimmest constellation of the zodiac, with not a single bright star. But it is there, and the Sun visits it every summer, which is more than can be said for most who tried to stop Heracles."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Cancer, the Crab",
+        "url": "http://www.ianridpath.com/startales/cancer.html"
+      },
+      "characters": ["Heracles", "the Hydra", "the crab", "Hera", "Iolaus", "Eurystheus"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "What was Heracles doing when the crab attacked him?",
+          "choices": ["Wrestling the Nemean lion", "Stealing the golden apples", "Cleaning the Augean stables", "Fighting the Hydra in the swamp of Lerna"],
+          "answerIndex": 3,
+          "explanation": "The crab came out of the marsh to help the Hydra during Heracles' second labor and bit him on the foot."
+        },
+        {
+          "id": "q2",
+          "prompt": "Who placed the crab among the stars, and why?",
+          "choices": ["Zeus, to honor his son's victory", "Hera, because it had fought against Heracles, whom she hated", "Heracles, out of remorse", "Poseidon, because it was a sea creature"],
+          "answerIndex": 1,
+          "explanation": "Hera was Heracles' lifelong enemy. She rewarded the crab for attacking him by making it a constellation of the zodiac."
+        },
+        {
+          "id": "q3",
+          "prompt": "What happened when Heracles crushed one of the Hydra's heads with his club?",
+          "choices": ["Two new heads grew in its place", "The Hydra shrank", "Poison sprayed from the wound", "The crab grew larger"],
+          "answerIndex": 0,
+          "explanation": "Each smashed head was replaced by two, so the club was useless. Only burning the stumps stopped the heads regrowing."
+        },
+        {
+          "id": "q4",
+          "prompt": "Who helped Heracles defeat the Hydra by burning the stumps of its necks?",
+          "choices": ["Eurystheus", "Theseus", "His nephew Iolaus", "Athena"],
+          "answerIndex": 2,
+          "explanation": "Iolaus, his charioteer, cauterized each neck with burning brands. Because of this help, Eurystheus refused to count the labor."
+        }
+      ]
+    },
+    {
+      "id": "Cnc-asses-and-giants",
+      "title": "The donkeys that routed the Giants",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Eratosthenes", "work": "Catasterisms 11 (as reported by Hyginus)", "date": "3rd century BCE; survives in a later summary" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.23", "date": "2nd century CE" },
+        { "author": "Aratus", "work": "Phaenomena 892–908 (the Manger and Asses as weather signs)", "date": "3rd century BCE" }
+      ],
+      "summary": "The two stars either side of the Beehive are the Asses, and the cluster is their Manger. According to Eratosthenes these are the donkeys ridden into battle by Dionysus, Hephaestus and the satyrs when the gods fought the Giants: their braying, a sound the Giants had never heard, sent the enemy running.",
+      "retelling": [
+        "In the middle of the Crab, where its heart would be, there is a small cloud. On either side of it sits a faint star. The Greeks did not think of these as part of the crab at all. The cloud was Phatne, the Manger, a feeding trough, and the two stars were Onoi, the Asses, standing at it with their noses down. The Romans translated the names, and we still call the stars Asellus Borealis and Asellus Australis, the northern and southern donkey.",
+        "How did two donkeys come to be in heaven? Eratosthenes told the following story, which Hyginus passes on.",
+        "After the gods had overthrown the Titans, a new enemy rose against them: the Giants. Zeus declared war and summoned every god to the fight. They came as they were able. Dionysus, god of wine, arrived with his usual following, the satyrs and the Sileni, and with them came Hephaestus, the lame smith. None of this party was built for marching. They rode to the war on donkeys.",
+        "As the riders drew near the enemy lines, the donkeys caught the scent or the sight of the Giants and were terrified. And a frightened donkey does not keep quiet. One after another they threw back their heads and brayed.",
+        "Anyone who has heard a donkey at close range knows it is not a small sound. The Giants had never heard it at all. Out of sight, somewhere behind the lines of the gods, an unearthly bellowing had started up, and it seemed to them that the Olympians must be about to loose some dreadful monster. Their nerve broke. They turned and fled, and in their flight they were beaten.",
+        "Hyginus mentions a similar tale told of Triton, who was said to have terrified the same enemy by blowing blasts on a trumpet he had made from a shell. But it was the donkeys that were honored. Dionysus set them in the sky, with a manger between them so that they would never go hungry.",
+        "They went on being useful. Aratus tells farmers and sailors to watch the Manger closely. If, on a night that seems clear, the little cloud fades from sight while the two Asses still shine, then thin haze is gathering and a storm is on the way. If one donkey dims and the other stays bright, expect the wind from the bright one's side. It is honest advice, and it works for the same reason the Giants ran: a small thing, noticed in time, tells you that something large is coming."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Cancer, the Crab",
+        "url": "http://www.ianridpath.com/startales/cancer.html"
+      },
+      "characters": ["Dionysus", "Hephaestus", "the satyrs", "the Giants", "Zeus", "Triton"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "How did the donkeys help the gods defeat the Giants?",
+          "choices": ["They carried thunderbolts to Zeus", "Their braying terrified the Giants into fleeing", "They kicked down the Giants' walls", "They led the gods through a swamp"],
+          "answerIndex": 1,
+          "explanation": "The Giants had never heard braying and thought a monster was about to be released, so they ran."
+        },
+        {
+          "id": "q2",
+          "prompt": "Which gods rode to the battle on donkeys?",
+          "choices": ["Zeus and Poseidon", "Apollo and Artemis", "Dionysus and Hephaestus, with the satyrs", "Ares and Athena"],
+          "answerIndex": 2,
+          "explanation": "Eratosthenes says Dionysus, Hephaestus, the satyrs and the Sileni came riding on asses."
+        },
+        {
+          "id": "q3",
+          "prompt": "What did the Greeks call the hazy patch between the two Ass stars?",
+          "choices": ["The Manger (Phatne)", "The Cradle", "The Crab's Eye", "The Wine Cup"],
+          "answerIndex": 0,
+          "explanation": "Phatne means manger, a feeding trough. Its Latin name is Praesepe; today it is also called the Beehive Cluster, M44."
+        },
+        {
+          "id": "q4",
+          "prompt": "According to Aratus, what does it mean if the Manger disappears on an otherwise clear night?",
+          "choices": ["A good harvest", "An eclipse is due", "The Sun is entering Cancer", "A storm is coming"],
+          "answerIndex": 3,
+          "explanation": "The faint cluster is the first thing hidden by thin high haze, so its vanishing warned of bad weather before the brighter stars were affected."
+        }
+      ]
+    },
+    {
+      "id": "Cnc-asses-of-dionysus",
+      "title": "The donkey that carried Dionysus to Dodona",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.23", "date": "2nd century CE" }
+      ],
+      "summary": "A different explanation of the Asses: when Hera drove Dionysus mad, he fled toward the oracle of Zeus at Dodona to be cured, and a donkey carried him dry across a great marsh that blocked his way. Restored to his senses, he thanked the animals by placing them among the stars, on the back of Hera's own Crab.",
+      "retelling": [
+        "Hera never forgave the children her husband had by other women, and Dionysus, son of Zeus and the mortal princess Semele, felt her anger as Heracles did. On him she sent madness.",
+        "Out of his mind, the young god ran. He fled wildly through Thesprotia, in the far northwest of Greece, with one clear idea left in his head: to reach Dodona. At Dodona stood what was reputed to be the oldest oracle in the Greek world, a sanctuary of Zeus, and there, if anywhere, his father could tell him how to get his sanity back.",
+        "On the way he came to a great marsh. It stretched across his path, too wide and too deep to wade, and there was no way around. He stood at the edge, unable to go on.",
+        "Then two donkeys came toward him. Dionysus caught one of them, climbed on its back, and the animal carried him over, so surely that he reached the far side without the water touching him at all. He went on to the temple of Zeus at Dodona, and there the madness left him at once.",
+        "A god in his right mind remembers his debts. Dionysus gave thanks to the donkeys in the grandest way he could and set them among the constellations.",
+        "Hyginus knows an odder sequel. Some say that Dionysus gave the donkey that had carried him a human voice as a reward. The gift did it little good. The talking donkey later got into a contest with the god Priapus, lost, and was killed by him. Dionysus, pitying the animal, then placed it among the stars.",
+        "And he chose the spot with care. The Asses stand on the shell of the Crab, the very creature that Hera had raised to heaven for biting Heracles. Dionysus put his donkey there, above her favorite, so that everyone would understand he had acted as a god in his own right and not as a frightened fugitive running from Hera. Seen that way, the faint middle of Cancer records a quiet piece of defiance: Hera's Crab is in the zodiac, and the donkeys of her stepson are standing on its back."
+      ],
+      "link": {
+        "site": "ToposText",
+        "label": "Hyginus, Astronomica 2.23: the Crab",
+        "url": "https://topostext.org/work/207"
+      },
+      "characters": ["Dionysus", "Hera", "Zeus", "Priapus", "Semele"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Why was Dionysus travelling to Dodona?",
+          "choices": ["To ask the oracle of Zeus how to be cured of the madness Hera had sent", "To fight the Giants", "To find his mother Semele", "To plant the first vineyard"],
+          "answerIndex": 0,
+          "explanation": "Hera had driven him mad, and he sought the oracle of Zeus at Dodona to learn how to recover his sanity."
+        },
+        {
+          "id": "q2",
+          "prompt": "How did the donkey help Dionysus?",
+          "choices": ["It frightened away his pursuers", "It showed him a hidden path", "It carried him across a great marsh without his touching the water", "It carried his wine"],
+          "answerIndex": 2,
+          "explanation": "A large swamp blocked the way; Dionysus mounted one of two donkeys he met and was carried over dry."
+        },
+        {
+          "id": "q3",
+          "prompt": "In the variant Hyginus reports, what gift did Dionysus give the donkey?",
+          "choices": ["Wings", "Immortality", "A golden bridle", "A human voice"],
+          "answerIndex": 3,
+          "explanation": "Some said he gave it a human voice. The donkey later lost a contest with Priapus and was killed, after which Dionysus placed it in the sky."
+        },
+        {
+          "id": "q4",
+          "prompt": "Why, according to Hyginus, did Dionysus place the donkey above the Crab in particular?",
+          "choices": ["Because donkeys eat crabs", "To show he acted as a god, not as a fugitive afraid of Hera, who had put the Crab there", "Because the marsh was full of crabs", "Because Zeus ordered it"],
+          "answerIndex": 1,
+          "explanation": "The Crab was Hera's creature. Setting his donkeys on its shell was Dionysus's way of showing he did not fear her."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Astronomers call the Beehive by its old Latin name, Praesepe, which can mean both 'manger' and 'hive'. Messier listed it as number 44 in his catalogue.",
+    "The Tropic of Cancer is named for this constellation, where the Sun stood at the June solstice in Greek times. Today the Sun passes through Cancer from late July to about August 10.",
+    "In China the stars around the Beehive were Gui, the Ghosts, and the cluster itself was a heap of corpses, or a ghost riding in a sedan chair.",
+    "Some old star atlases, including that of Hevelius, drew Cancer as a lobster rather than a crab."
+  ]
+}

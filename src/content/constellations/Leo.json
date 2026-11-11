@@ -1,0 +1,139 @@
+{
+  "id": "Leo",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); a much older Mesopotamian and Greek figure",
+    "when": "2nd century CE (Almagest); a lion in Babylonian star lists a thousand years earlier",
+    "history": [
+      "Leo is one of the very few constellations that looks like its name, and people saw a lion here long before the Greeks. Babylonian astronomers called these stars UR.GU.LA, the Great Lion, and knew its brightest star as LUGAL, 'the king'. The Greeks called the figure simply Leon, the lion; Eratosthenes and Hyginus both say it was honored with a place in the sky because the lion is king of the beasts, and add that it is the lion of Nemea killed by Heracles.",
+      "Ptolemy catalogued it in the *Almagest* and placed its brightest star at the lion's heart, calling it Basiliskos, 'little king'. The Latin form, Regulus, first appeared in print in 1522. Leo is one of the twelve constellations of the zodiac, the band of sky the Sun, Moon and planets travel through. The faint haze of stars Ptolemy listed above the lion's tail was later split off as Coma Berenices."
+    ]
+  },
+  "overview": "A crouching lion in profile, facing west. His head and mane are the Sickle, a backward question mark of six stars with bright Regulus as the dot; his hindquarters are a triangle of stars ending in Denebola, the tail. It is the landmark of the spring evening sky and easy to pick out even from a city.",
+  "howToFind": [
+    "Find the Big Dipper high in the north. Earlier you used the bowl's end stars to point north to Polaris; now go the other way. Imagine the bowl has sprung a leak: the water falls out of the bottom, away from Polaris, and after four to five fists it lands on the lion's back. Look there for a bright blue-white star, [[star:Regulus|Regulus]], with a hook of stars curving up from it like a backward question mark. That hook is the Sickle: from Regulus up through [[star:η Leo|Eta Leonis]] and golden [[star:Algieba|Algieba]], then over the top through [[star:Adhafera|Adhafera]], [[star:Rasalas|Rasalas]] and [[star:ε Leo|Epsilon Leonis]].",
+    "About two and a half fists east (left, when Leo is in the south) of Regulus is [[star:Denebola|Denebola]], the tail. Between them, [[star:Zosma|Zosma]] and [[star:Chertan|Chertan]] make a right-angled triangle with Denebola that forms the lion's haunches. From Brooklyn, Leo rises in the east on late-winter evenings, stands high in the south in April and May, and sinks head-first into the western twilight in early summer. Because Regulus lies almost exactly on the Sun's path, the Moon and planets often pass close to it."
+  ],
+  "shape": "Two clear pieces: the Sickle, about a fist and a half tall, on the west side, and a right-angled triangle a fist across on the east, the whole lion spanning two and a half fists. Regulus, Denebola and Algieba are bright enough for any city sky, and on a decent night the whole Sickle and triangle show from Brooklyn. It really does look like a lion lying down with its head raised, or, less romantically, like a clothes iron or a mouse.",
+  "mainStars": [
+    {
+      "ref": "star:Regulus",
+      "note": "The lion's heart and the foot of the Sickle, a blue-white star of magnitude 1.4 (magnitude is the brightness scale, where smaller numbers are brighter), about 79 light-years away. The name is Latin for 'little king'. It spins so fast that it is noticeably flattened."
+    },
+    {
+      "ref": "star:Denebola",
+      "note": "The tip of the tail, a white star of magnitude 2.1 only about 36 light-years away. Its name is shortened from the Arabic for 'the lion's tail'."
+    },
+    {
+      "ref": "star:Algieba",
+      "note": "The brightest star in the curve of the Sickle, in the lion's neck or mane, with a golden tint. A telescope shows it is two giant stars orbiting each other. The Leonid meteors of mid-November appear to stream from a point near it."
+    },
+    {
+      "ref": "star:Zosma",
+      "note": "The top of the triangle, on the lion's back above the hips. A white star of magnitude 2.6."
+    },
+    {
+      "ref": "star:Chertan",
+      "note": "The lower corner of the triangle, in the hind leg, directly below Zosma. Useful as the jumping-off point for the Leo Triplet of galaxies."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "star:Algieba",
+      "equip": "small-telescope",
+      "note": "One of the best double stars in the sky: at moderate magnification the single golden star becomes a tight pair of yellow-orange giants."
+    },
+    {
+      "ref": "dso:M66",
+      "equip": "small-telescope",
+      "note": "With its neighbor [[dso:M65|M65]] in the same field, half of the Leo Triplet of spiral galaxies, roughly 35 million light-years away. Look a short way below [[star:Chertan|Chertan]], toward the star Iota Leonis. Two small elongated smudges; they need a dark sky."
+    },
+    {
+      "ref": "dso:M96",
+      "equip": "small-telescope",
+      "note": "The brightest of a second group of galaxies, with [[dso:M95|M95]] and [[dso:M105|M105]] close by, under the lion's belly about halfway between Regulus and Chertan. Dim round glows, a challenge from anywhere near a city."
+    },
+    {
+      "ref": "dso:NGC2903",
+      "equip": "small-telescope",
+      "note": "A bright spiral galaxy that Messier missed, just in front of the lion's nose, a finger-width and a half south of [[star:Alterf|Alterf]], the faint star beyond the tip of the Sickle. An oval haze with a brighter middle."
+    },
+    {
+      "ref": "star:Regulus",
+      "equip": "binoculars",
+      "note": "Watch for nights when the Moon or a planet passes Regulus; because the star lies on the ecliptic, the Moon sometimes covers it completely. Steady binoculars may also show its faint, wide companion star."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Leo-nemean-lion",
+      "title": "Heracles and the lion of Nemea",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Apollodorus", "work": "Library 2.5.1", "date": "1st–2nd century CE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.24", "date": "2nd century CE" },
+        { "author": "Eratosthenes", "work": "Catasterisms 12", "date": "3rd century BCE; survives in a later summary" }
+      ],
+      "summary": "The lion in the sky is the monstrous lion of Nemea, whose hide no weapon could pierce. Killing it was the first of the twelve labors of Heracles: when arrows and club failed, he trapped the beast in its two-mouthed cave and choked it with his bare arms, and ever afterward wore its skin.",
+      "retelling": [
+        "Heracles, the strongest man who ever lived, was a son of Zeus, and for that the goddess Hera hated him. In a fit of madness she sent upon him he killed his own children. To be cleansed of the crime he was told to serve his cousin Eurystheus, king of Mycenae, and to carry out whatever tasks the king set. Eurystheus was a timid man with a talent for choosing jobs that ought to be fatal. The first was this: bring me the skin of the Nemean lion.",
+        "Nemea lies in the hills southwest of Corinth, and the country people there were being eaten. The lion that hunted them was no ordinary animal. Some said the monster Typhon was its father; others gave it stranger parents still, even the Moon. What everyone agreed on was that its hide could not be cut. Bronze, iron and stone all slid off it.",
+        "On his way Heracles lodged at Cleonae with a poor laborer named Molorchus, who wanted to sacrifice an animal in his guest's honor. Heracles told him to wait thirty days. If I come back, he said, sacrifice to Zeus the Savior. If I do not, make the offering to me, as to a dead hero.",
+        "He tracked the lion through the hills and, when he found it, did the obvious thing and shot it. The arrow struck and bounced away. Heracles understood what he was dealing with. He hauled up his great club and ran at the lion instead, and the lion, not used to prey that charged, retreated to its den.",
+        "The den was a cave with two mouths, so that an animal cornered at one could always leave by the other. Heracles piled rocks into one entrance until it was sealed. Then he walked in through the other, into the dark, with no weapon that could do him any good. There was nothing left but strength against strength. He got an arm around the lion's neck, locked it, and held on while the beast thrashed, until it stopped breathing.",
+        "He slung the body over his shoulders and carried it back to Cleonae, arriving on the thirtieth day to find Molorchus about to make the offering for the dead. They sacrificed to Zeus instead. Then Heracles went on to Mycenae, and the sight of him with the lion on his back so terrified Eurystheus that the king forbade him ever to enter the city again and, it was said, had a bronze jar sunk in the ground to hide in. From then on Heracles left his trophies outside the gates. The pelt he kept. Since no blade could cut it, the story goes that he flayed it with the lion's own claws, and he wore it for the rest of his life as armor, with the jaws gaping over his head like a helmet.",
+        "As for the lion, it was raised to the stars. The astronomers of Alexandria said it was put there because the lion is king of the beasts, and added that this particular lion was the one Heracles met at Nemea, the first labor of the greatest hero, remembered in one of the brightest patterns of the zodiac."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Leo, the Lion",
+        "url": "http://www.ianridpath.com/startales/leo.html"
+      },
+      "characters": ["Heracles", "the Nemean lion", "Eurystheus", "Molorchus", "Hera", "Typhon"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Why could Heracles not kill the Nemean lion with his arrows?",
+          "choices": ["The lion was too fast to hit", "Its hide could not be pierced by any weapon", "Hera turned the arrows aside", "He had left his bow at Cleonae"],
+          "answerIndex": 1,
+          "explanation": "The lion was invulnerable: arrows simply bounced off its skin. That is why Heracles had to fight it with his bare hands."
+        },
+        {
+          "id": "q2",
+          "prompt": "How did Heracles finally kill the lion?",
+          "choices": ["He choked it with his arm inside its cave", "He burned it with torches", "He drowned it in a river", "He poisoned its food"],
+          "answerIndex": 0,
+          "explanation": "He blocked one of the cave's two entrances, went in by the other, and held the lion by the neck until it suffocated."
+        },
+        {
+          "id": "q3",
+          "prompt": "Which of the twelve labors of Heracles was the killing of the Nemean lion?",
+          "choices": ["The last", "The second, after the Hydra", "The sixth", "The first"],
+          "answerIndex": 3,
+          "explanation": "The lion was the first labor set by King Eurystheus. The Hydra of Lerna, whose story involves the crab of Cancer, was the second."
+        },
+        {
+          "id": "q4",
+          "prompt": "What did Heracles tell his host Molorchus to do if he had not returned in thirty days?",
+          "choices": ["Send for Eurystheus", "Burn the house and flee", "Sacrifice to him as to a dead hero", "Hunt the lion himself"],
+          "answerIndex": 2,
+          "explanation": "Heracles asked Molorchus to wait thirty days: a sacrifice to Zeus the Savior if he came back alive, an offering to Heracles as a dead hero if he did not. He returned on the last day."
+        },
+        {
+          "id": "q5",
+          "prompt": "What did Heracles do with the lion's skin?",
+          "choices": ["Gave it to Eurystheus as a rug", "Wore it as a cloak and armor", "Hung it in the temple of Hera", "Threw it into the sky himself"],
+          "answerIndex": 1,
+          "explanation": "The lion skin, with the head worn like a hood, became Heracles' trademark; in ancient art it is how you recognize him."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Regulus was 'the king' to the Babylonians, 'the little king' to the Greeks and Romans, and 'the heart of the lion' or 'the kingly one' to Arabic astronomers.",
+    "Arab stargazers imagined a far larger lion here, stretching from Gemini to Virgo, which is why Algieba, in the Greek lion's neck, has a name meaning 'the forehead'.",
+    "The Leonid meteor shower, in mid-November, radiates from the Sickle. Roughly every 33 years it has produced spectacular storms.",
+    "In China the Sickle and stars running north from it formed Xuanyuan, a dragon linked with the legendary Yellow Emperor.",
+    "The Sun passes through Leo from about August 10 to September 16, which is why the constellation is an evening sight in spring, half a year away."
+  ]
+}

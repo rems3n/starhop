@@ -1,0 +1,45 @@
+{
+  "id": "LMi",
+  "kind": "modern",
+  "origin": {
+    "namedBy": "Johannes Hevelius",
+    "when": "1687",
+    "history": [
+      "Leo Minor, the Lesser Lion or lion cub, was introduced by the Polish astronomer Johannes Hevelius of Danzig (Gdańsk) in his star catalogue of 1687 and drawn in his atlas, published after his death in 1690. He formed it from 18 faint stars in the gap between Leo and the hind paws of the Great Bear, a region the ancient Greeks had left without a figure. An earlier attempt to fill the same space, the river Jordan drawn by the Dutch mapmaker Petrus Plancius, had not caught on, and Hevelius replaced it with three inventions of his own: Leo Minor, Lynx and Canes Venatici. There is no myth attached to it; it is simply a small lion placed beside the large one.",
+      "The constellation is best known for a clerical slip. Hevelius did not letter his new stars, so in 1845 the English astronomer Francis Baily did it for him. Baily gave the letter Beta to the second-brightest star but forgot to give Alpha to the brightest, and so Leo Minor has a Beta and no Alpha. Its brightest star is known by its Flamsteed number, 46 Leonis Minoris, or by the name Praecipua, Latin for 'chief'. Even the name has a muddle behind it: the astronomer Piazzi first applied it, in 1814, to a different and fainter star that he wrongly judged the brightest."
+    ]
+  },
+  "overview": "A lion cub riding on the back of Leo: three or four faint stars in a flattened triangle between the Sickle of Leo and the Great Bear's hind paws. It has no bright star and no obvious shape, and from a city it is effectively a blank; finding it is a matter of knowing where the gap is.",
+  "howToFind": [
+    "Use the two constellations on either side. Find the Sickle of [[con:Leo|Leo]], the backward question mark rising from [[star:Regulus|Regulus]]. Then find the Great Bear's hind paw: the close pair [[star:Tania Borealis|Tania Borealis]] and [[star:Tania Australis|Tania Australis]], about a fist and a half above the top of the Sickle, on the way to the Big Dipper's bowl. Leo Minor fills the space between. Its brightest star, [[star:Praecipua|Praecipua]], is a fist below and a little left (east) of the Tania pair, and about a fist and a half above [[star:Zosma|Zosma]] on the lion's back.",
+    "From Praecipua the cub stretches west: [[star:β LMi|Beta Leonis Minoris]] is half a fist away, and [[star:21 LMi|21 Leonis Minoris]] half a fist farther on, above the curve of the Sickle. Leo Minor is in the evening sky with Leo, best from Brooklyn between February and May, when it passes nearly overhead."
+  ],
+  "shape": "A shallow, lopsided triangle of fourth-magnitude stars about a fist long (magnitude is the brightness scale, where smaller numbers are brighter). All of them are too faint for a typical Brooklyn sky. Under dark skies they are easy enough to see but hard to tell apart from the general background.",
+  "mainStars": [
+    {
+      "ref": "star:Praecipua",
+      "note": "46 Leonis Minoris, an orange star of magnitude 3.8 and the brightest in the constellation, on the cub's rump. It is the star that should have been called Alpha and never was."
+    },
+    {
+      "ref": "star:β LMi",
+      "note": "Magnitude 4.2, the middle of the cub's body, and the only star in Leo Minor with a Greek letter."
+    },
+    {
+      "ref": "star:21 LMi",
+      "note": "A white star of magnitude 4.5 marking the western end of the figure, the cub's head."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "dso:NGC3344",
+      "equip": "telescope",
+      "note": "A small face-on spiral galaxy about a fist south of Praecipua, near the border with Leo. In a telescope under dark skies it is a faint round glow of about tenth magnitude; it is the brightest galaxy in a constellation with no showpieces."
+    }
+  ],
+  "stories": [],
+  "facts": [
+    "Leo Minor is one of seven constellations invented by Hevelius that are still in use; the others are Canes Venatici, Lacerta, Lynx, Scutum, Sextans and Vulpecula.",
+    "One of Ptolemy's 'unformed' stars outside Leo was absorbed into the new figure; it is now 41 Leonis Minoris.",
+    "In Chinese astronomy four of these stars formed Neiping, the court of a judge or mediator."
+  ]
+}

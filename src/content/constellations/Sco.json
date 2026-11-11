@@ -1,0 +1,285 @@
+{
+  "id": "Sco",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); a far older Greek figure inherited from Mesopotamia",
+    "when": "2nd century CE (Almagest); a scorpion was seen here in Mesopotamia thousands of years earlier",
+    "history": [
+      "Scorpius is one of the oldest constellations we know. The Sumerians called these stars GIR-TAB, the scorpion, and the Greeks took the figure over under the name Skorpios. It is one of the 48 constellations in Ptolemy's *Almagest* of about 150 CE, where its red heart is one of the very few stars Ptolemy mentions by name: Antares.",
+      "The Greek scorpion was much larger than ours. Its body and sting lay where Scorpius is now, but its claws reached west into what the Greeks called the Chelae. In the 1st century BCE the Romans made those claws into a separate constellation, Libra, the Scales, and the Scorpion has been short-armed ever since.",
+      "Scorpius is the modern astronomical name. Scorpio is the older form, now used mainly for the astrological sign."
+    ]
+  },
+  "overview": "Scorpius is the Scorpion, and it is one of the few constellations that really looks like its name: a row of stars for the head, the fiery red star Antares for the heart, and a long line of bright stars curling down and around into a raised sting. It lies in the Milky Way and is the showpiece of the southern sky on summer evenings.",
+  "howToFind": [
+    "On a July or August evening, face due south. The brightest star low in that direction, distinctly orange-red and often twinkling hard, is [[star:Antares|Antares]], about two and a half fists above the horizon from Brooklyn. If you want a signpost, follow the arc of the Big Dipper's handle to [[star:Arcturus|Arcturus]] and on to [[star:Spica|Spica]], then keep going left and down for four and a half fists, past the faint stars of [[con:Lib|Libra]].",
+    "From Antares, look less than a fist to the right for an upright row of three stars: [[star:Acrab|Acrab]] at the top, [[star:Dschubba|Dschubba]] in the middle and [[star:Fang|Fang]] below. That is the Scorpion's head. Then return to Antares and follow the body down and to the left as it sinks toward the horizon, curves along the bottom through [[star:Sargas|Sargas]], and hooks back up to a close pair of stars, [[star:Shaula|Shaula]] and [[star:Lesath|Lesath]], which mark the sting.",
+    "The tail is the hard part from New York. Shaula climbs only about 12 degrees above the horizon, a little more than a fist, and Sargas barely 6, so you need a clear view to the south with no buildings or haze. Scorpius is highest around nightfall in late July; by October it has slipped into the sunset."
+  ],
+  "shape": "A long letter J, or a fishhook, about three fists from the head to the sting. The top is a short upright bar of three stars; the shank runs through red Antares, flanked by a fainter star on each side; the hook curls along the horizon and ends in a tight pair. In a city sky the head, Antares and the sting usually show, but the bottom of the hook is often lost in the murk near the horizon.",
+  "mainStars": [
+    {
+      "ref": "star:Antares",
+      "note": "The heart of the Scorpion, a red supergiant of magnitude 1.1 (magnitude is the brightness scale, where smaller numbers are brighter), about 550 light-years away. It is hundreds of times wider than the Sun. The name is Greek for 'like Mars' or 'rival of Mars', because the planet, which passes nearby every couple of years, has the same color."
+    },
+    {
+      "ref": "star:Shaula",
+      "note": "The sting, at the tip of the tail: a hot blue-white star of magnitude 1.6, the second brightest in the constellation. Its name is Arabic for 'the sting'. With its close neighbor Lesath it makes a pair sometimes called the Cat's Eyes."
+    },
+    {
+      "ref": "star:Sargas",
+      "note": "A yellow-white giant of magnitude 1.9 at the bottom of the tail's curve. It would be a famous star if it were not so far south; from Brooklyn it only just clears the horizon."
+    },
+    {
+      "ref": "star:Dschubba",
+      "note": "The middle star of the head; the name comes from the Arabic for 'forehead'. A blue-white star normally of magnitude 2.3, it surprised observers in 2000 by brightening, and it has varied unpredictably ever since."
+    },
+    {
+      "ref": "star:Acrab",
+      "note": "The top star of the head, magnitude 2.6, with a name that simply means 'the scorpion'. A small telescope splits it into a bright and a fainter blue-white star."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "dso:M4",
+      "equip": "binoculars",
+      "note": "A globular cluster, a ball of very old stars, just over one degree to the right of Antares, in the same binocular view. It looks like a small round smudge; a telescope begins to break it into stars. At roughly 7,000 light-years it is one of the nearest globulars to us."
+    },
+    {
+      "ref": "dso:M7",
+      "equip": "naked-eye",
+      "note": "Ptolemy's Cluster, a big, bright open cluster just above and left of the sting. Ptolemy recorded it around 150 CE as a 'nebulous star'. Under a dark sky it is a misty patch to the eye; binoculars show dozens of stars. From Brooklyn it is very low."
+    },
+    {
+      "ref": "dso:M6",
+      "equip": "binoculars",
+      "note": "The Butterfly Cluster, a smaller open cluster a few degrees above and right of M7. Binoculars show a sprinkle of stars whose outline suggests open wings."
+    },
+    {
+      "ref": "dso:NGC6231",
+      "equip": "binoculars",
+      "note": "A compact knot of hot young stars in the tail, beside [[star:ζ2 Sco|Zeta Scorpii]], bright enough to see without optical aid from the south. It never rises far above the New York horizon."
+    },
+    {
+      "ref": "dso:M80",
+      "equip": "small-telescope",
+      "note": "A small, dense globular cluster halfway between Antares and Acrab, about 33,000 light-years away. It shows as a bright, fuzzy ball like the head of a tailless comet."
+    },
+    {
+      "ref": "star:Acrab",
+      "equip": "small-telescope",
+      "note": "An easy double star for a small telescope: a magnitude 2.6 star with a magnitude 4.9 companion close beside it."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Sco-gaia",
+      "title": "Orion's boast and the scorpion sent by the Earth",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Eratosthenes", "work": "Catasterisms (Orion)", "date": "3rd century BCE; surviving summary later" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.26 and 2.34", "date": "1st century BCE – 2nd century CE" }
+      ],
+      "summary": "The hunter Orion bragged that he could kill every animal the Earth produced. Gaia, the Earth, answered by sending a scorpion, which stung him to death. Zeus placed the scorpion in the sky, and Orion opposite it, so that the hunter sets whenever his killer rises.",
+      "retelling": [
+        "Orion was the greatest hunter the world had seen. He was a giant, handsome and tireless, and some said his father Poseidon had given him the power to stride across the sea as if it were dry land. After many adventures he came to the island of Crete, and there he hunted in the company of the goddess Artemis and her mother Leto.",
+        "Success made him careless with his tongue. One day, pleased with himself and wanting to impress the goddesses, he announced that there was no creature he could not kill. He would hunt down every wild beast that the Earth brought forth.",
+        "The Earth heard him. Gaia was the mother of all living things, and the animals were her children. She was angry at the threat and angrier at the arrogance, and she chose her champion with care. She did not send a lion or a boar, the sort of beast a hunter expects and knows how to fight. Out of the ground she sent a scorpion.",
+        "The story does not describe the fight. It says only that the scorpion stung Orion and that the mightiest of hunters died of it, brought down by a creature he could have crushed underfoot.",
+        "Zeus had watched, and according to Hyginus he admired the courage of both. He set the scorpion among the stars, where it would serve as a lesson to human beings not to think too much of themselves. Artemis, who had been fond of her hunting companion, then asked Zeus to do for her what he had done unasked for the Earth, and so Orion too was raised to the sky.",
+        "But Zeus arranged the two with care. He put them on opposite sides of the heavens, as far apart as they could be. You can check his work on any clear night of the year: Orion rules the winter sky and the Scorpion the summer, and you will never see both at once. As the Scorpion's stars climb over the eastern horizon, Orion is slipping out of sight in the west, still running from the sting."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Star Tales – Scorpius",
+        "url": "http://www.ianridpath.com/startales/scorpius.html"
+      },
+      "characters": ["Orion", "Gaia (the Earth)", "Artemis", "Leto", "Zeus"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "What boast of Orion's angered the Earth?",
+          "choices": [
+            "That he was more handsome than Apollo",
+            "That he could kill every beast the Earth produced",
+            "That he could outrun the Sun",
+            "That he would marry Artemis"
+          ],
+          "answerIndex": 1,
+          "explanation": "Orion claimed there was no wild animal he could not kill, a threat to all of Gaia's creatures."
+        },
+        {
+          "id": "q2",
+          "prompt": "In this version, who sent the scorpion against Orion?",
+          "choices": ["Apollo", "Hera", "Artemis", "Gaia, the Earth"],
+          "answerIndex": 3,
+          "explanation": "Gaia, mother of all animals, sent the scorpion to punish his boast."
+        },
+        {
+          "id": "q3",
+          "prompt": "On which island does this version place Orion's death?",
+          "choices": ["Crete", "Chios", "Delos", "Sicily"],
+          "answerIndex": 0,
+          "explanation": "Eratosthenes and Hyginus set the story on Crete, where Orion hunted with Artemis and Leto."
+        },
+        {
+          "id": "q4",
+          "prompt": "How does the sky itself act out the end of the story?",
+          "choices": [
+            "The Scorpion's sting points at Orion's heel",
+            "Orion and the Scorpion rise together",
+            "Orion sets as the Scorpion rises",
+            "The Scorpion circles the pole and never sets"
+          ],
+          "answerIndex": 2,
+          "explanation": "The two constellations are on opposite sides of the sky, so they are never seen above the horizon together."
+        }
+      ]
+    },
+    {
+      "id": "Sco-artemis",
+      "title": "The scorpion of Artemis",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Aratus", "work": "Phaenomena 634–646", "date": "3rd century BCE" },
+        { "author": "Eratosthenes", "work": "Catasterisms (Scorpius)", "date": "3rd century BCE; surviving summary later" }
+      ],
+      "summary": "In the version told by the poet Aratus, Orion was hunting on the island of Chios when he laid hands on the goddess Artemis. She split the hills and raised a scorpion against him, and it killed him. Here the scorpion is the goddess's avenger rather than the Earth's.",
+      "retelling": [
+        "Aratus tells this story with an apology. Before he begins he asks Artemis for her pardon, because the tale he has from the men of old does not flatter anyone, and a poet should be careful what he says about a goddess.",
+        "It happened on Chios, a rocky island off the coast of Asia Minor. Its king, Oenopion, had a problem with wild animals, and the giant hunter Orion had come to deal with it. He went through the island with his heavy club, striking down beasts of every kind as a service to the king. Artemis, the goddess of the hunt, was there as well, for wherever there was great hunting she was never far away.",
+        "Orion was strong, and he was used to taking what he wanted. In the middle of the hunt he seized the goddess by her robe. Eratosthenes says plainly that he meant to rape her. Artemis was a virgin goddess, sworn never to be touched by god or man, and no insult could have been worse.",
+        "She did not reach for her bow. Instead, Aratus says, she tore apart the hills of the island, and from the broken ground she called up a different kind of beast from the ones Orion had been killing: a scorpion. It attacked him, and for all his size and strength it proved the stronger. It wounded him and he died.",
+        "That, the poet says, is why the sky looks the way it does. The Scorpion was set among the stars, and so was the hunter, but they were not allowed to share the heavens. When the Scorpion comes up in the east, Orion flees over the western edge of the world, and the constellations near him hurry down after him.",
+        "The two versions disagree about nearly everything except the ending. In one the island is Crete, in the other Chios; in one the offended power is the Earth, in the other Artemis; in one Orion's crime is a boast, in the other an assault. What they share is the moral, and the astronomy. A man who believed nothing could stop him was stopped by something small, and the proof is overhead: the brightest hunter in the sky still will not stay above the horizon once the red heart of the Scorpion has risen."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Star Tales – Scorpius",
+        "url": "http://www.ianridpath.com/startales/scorpius.html"
+      },
+      "characters": ["Orion", "Artemis", "Oenopion"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Where does Aratus set the death of Orion?",
+          "choices": ["On Crete", "On Mount Olympus", "On the island of Chios", "In Egypt"],
+          "answerIndex": 2,
+          "explanation": "Aratus says Orion was hunting on Chios for King Oenopion; other writers place the story on Crete."
+        },
+        {
+          "id": "q2",
+          "prompt": "What did Orion do to provoke Artemis in this version?",
+          "choices": [
+            "He laid hands on her",
+            "He killed her sacred deer",
+            "He claimed to be a better archer",
+            "He burned her temple"
+          ],
+          "answerIndex": 0,
+          "explanation": "Aratus says he seized her robe, and Eratosthenes says he tried to assault her."
+        },
+        {
+          "id": "q3",
+          "prompt": "How did Artemis produce the scorpion, according to Aratus?",
+          "choices": [
+            "She transformed one of her hounds",
+            "She borrowed it from Hades",
+            "She shaped it from sea foam",
+            "She split the hills and raised it from the ground"
+          ],
+          "answerIndex": 3,
+          "explanation": "She tore apart the island's hills and roused the scorpion against him."
+        },
+        {
+          "id": "q4",
+          "prompt": "Why was Orion on the island in the first place?",
+          "choices": [
+            "He was shipwrecked there",
+            "He was clearing it of wild beasts for its king",
+            "He was hiding from Zeus",
+            "He was searching for his lost sight"
+          ],
+          "answerIndex": 1,
+          "explanation": "He was killing the island's wild animals with his club as a service to King Oenopion."
+        }
+      ]
+    },
+    {
+      "id": "Sco-leto",
+      "title": "Orion shields Leto from the scorpion",
+      "culture": "Roman",
+      "ancientSources": [
+        { "author": "Ovid", "work": "Fasti 5.493–544", "date": "c. 8 CE" }
+      ],
+      "summary": "The Roman poet Ovid gives the story a kinder ending for Orion. The Earth still sends a scorpion because of his boast, but it attacks the goddess Leto, and Orion dies throwing himself in its way. Leto rewards him with a place among the stars.",
+      "retelling": [
+        "Ovid begins far from any scorpion, at the door of a poor man's cottage. Three travelers came down the road one evening: Jupiter, his brother Neptune, and Mercury, all disguised. An old farmer named Hyrieus saw them and offered a bed for the night, since the road was long and the daylight short. He blew up his small fire, set beans and greens to boil, and poured wine with a shaking hand. When one guest let slip the name of Jupiter, the old man turned pale, and then killed the one ox that ploughed his field and roasted it for them.",
+        "The gods offered him any wish. Hyrieus said that he had promised his dead wife never to marry again, and he would keep his word, but he longed to be a father. The gods granted it in a strange fashion of their own, using the hide of the ox, which they buried in the earth. Ten months later a boy was born from the ground, and he grew up to be the giant Orion.",
+        "Orion became the companion of the goddess Diana, the Roman Artemis, as her guard and attendant on the hunt. And then, Ovid says, careless words stirred up the anger of the gods. Orion declared that there was no wild beast he could not master.",
+        "The Earth sent a scorpion. In this telling, though, the creature did not go for the boaster. It made for Latona, whom the Greeks called Leto, the mother of the twin gods Diana and Apollo, and raised its curved sting against her.",
+        "Orion stepped between them. Ovid gives it only a few words: he threw himself in the way. The sting meant for the goddess struck him instead.",
+        "Latona did not forget it. She set Orion among the shining stars and told him to take the reward he had earned. So in Ovid's version the hunter reaches the sky not as a warning against pride but as a guardian honored for his last act, and the fault of his boast is paid for by his courage.",
+        "Ovid does not stop to say how the scorpion came to be a constellation, but his readers knew the rest of the tradition: the creature already had its place on the far side of the sky, and the hunter it killed still sinks in the west whenever it rises."
+      ],
+      "link": {
+        "site": "Theoi",
+        "label": "Ovid, Fasti Book 5 (translated by J. G. Frazer)",
+        "url": "https://www.theoi.com/Text/OvidFasti5.html"
+      },
+      "characters": ["Orion", "Hyrieus", "Latona (Leto)", "Diana (Artemis)", "Jupiter", "Neptune", "Mercury"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "In Ovid's version, whom did the scorpion attack?",
+          "choices": ["Diana", "Hyrieus", "Jupiter", "Latona (Leto)"],
+          "answerIndex": 3,
+          "explanation": "The scorpion went for Latona, mother of Diana and Apollo, and Orion put himself in its path."
+        },
+        {
+          "id": "q2",
+          "prompt": "Who was Hyrieus?",
+          "choices": [
+            "The old farmer who became Orion's father",
+            "The king of Chios",
+            "A priest of Apollo",
+            "The scorpion's keeper"
+          ],
+          "answerIndex": 0,
+          "explanation": "Hyrieus entertained three disguised gods and asked them for a son, who was Orion."
+        },
+        {
+          "id": "q3",
+          "prompt": "Why did Latona place Orion among the stars?",
+          "choices": [
+            "To punish his boasting",
+            "Because Jupiter ordered it",
+            "As a reward for defending her",
+            "To keep him away from Diana"
+          ],
+          "answerIndex": 2,
+          "explanation": "She told him to take his well-earned reward after he died shielding her from the scorpion."
+        },
+        {
+          "id": "q4",
+          "prompt": "What did Orion say that provoked the Earth?",
+          "choices": [
+            "That the Earth was barren",
+            "That there was no beast he could not master",
+            "That he was the son of three gods",
+            "That scorpions were harmless"
+          ],
+          "answerIndex": 1,
+          "explanation": "As in the Greek versions, his claim to be able to overcome any wild animal brought the scorpion against him."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Scorpius lies on the ecliptic, the path of the Sun, Moon and planets, but the Sun crosses only its narrow northern end, spending about a week there in late November before moving into Ophiuchus. The Moon and planets regularly pass close to Antares.",
+    "Because Antares and Mars are the same color and Mars passes through this part of the sky about every two years, the two can sometimes be compared side by side; that is the point of the star's name.",
+    "In Ovid's *Metamorphoses* it is the sight of the Scorpion, sprawling across two signs of the zodiac with its sting raised, that makes young Phaethon drop the reins of the Sun's chariot in terror.",
+    "Ancient writers also told a version in which no scorpion appears: Apollo, jealous of his sister's love for Orion, tricked Artemis into shooting the hunter as he swam far out at sea. Hyginus reports it from the historian Istros.",
+    "In ancient China Antares was Huo, the Fire Star, and with the star on either side of it formed the heart of the Blue Dragon."
+  ]
+}

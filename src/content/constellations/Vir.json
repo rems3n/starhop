@@ -1,0 +1,381 @@
+{
+  "id": "Vir",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ptolemy (catalogued); a much older Greek figure with Babylonian forerunners",
+    "when": "2nd century CE (Almagest); known to the Greeks by the 3rd century BCE",
+    "history": [
+      "Virgo is one of the 48 constellations listed by Ptolemy in his *Almagest* around 150 CE, under the Greek name Parthenos, 'the Maiden'. She was already an old figure by then: the poet Aratus described her in the *Phaenomena* in the 3rd century BCE, holding a gleaming ear of grain, and told her story at greater length than almost any other constellation's.",
+      "The grain is older still. Babylonian star lists of around 1000 BCE placed a constellation called the Furrow in this part of the sky, linked with the goddess Shala and her ear of barley, and the western part of the figure was a goddess holding a palm frond. Both attributes survived: Virgo's brightest star is still called Spica, Latin for 'ear of grain', and old atlases often put a palm frond in her other hand.",
+      "The Greeks never settled on who the Maiden was. Aratus made her Dike, the goddess of justice; other writers said Demeter the grain goddess, the Athenian girl Erigone, Tyche the goddess of fortune, or the Syrian goddess Atargatis. Each identity has its own story below."
+    ]
+  },
+  "overview": "Virgo is the Maiden, a winged goddess holding an ear of wheat marked by the bright star Spica. She is the second-largest constellation in the sky and the largest of the zodiac, but apart from Spica her stars are modest, so in practice you find one brilliant blue-white star and then trace a big, faint, sprawling figure around it.",
+  "howToFind": [
+    "Start at the Big Dipper and follow the curve of its handle away from the bowl. About three fists on, the arc lands on bright orange [[star:Arcturus|Arcturus]]. Keep the same curve going for another three fists and you reach a lone blue-white star lower in the south: that is [[star:Spica|Spica]]. Stargazers remember it as 'arc to Arcturus, then speed on to Spica'. From Brooklyn Spica is an evening star from April through July, highest in the south on May and June evenings.",
+    "Once you have Spica, look a fist and a half up and to the right for [[star:Porrima|Porrima]], the next brightest star. Porrima sits at the bottom of a wide bowl of third- and fourth-magnitude stars that opens toward [[star:Denebola|Denebola]], the tail of Leo: [[star:Zavijava|Zavijava]] and [[star:Zaniah|Zaniah]] on the right side, [[star:Minelauva|Minelauva]] and [[star:Vindemiatrix|Vindemiatrix]] on the left. Spica, Arcturus and Denebola form a huge, nearly equal-sided triangle that frames the whole area."
+  ],
+  "shape": "To the eye Virgo is a lopsided letter Y lying on its side: Spica at the foot, Porrima at the fork, and two arms reaching up toward Leo, the whole thing more than four fists long. In a city sky you will see Spica easily, Porrima and Vindemiatrix with a little patience, and not much else; the bowl of fainter stars needs a darker site.",
+  "mainStars": [
+    {
+      "ref": "star:Spica",
+      "note": "The ear of wheat in the Maiden's hand. A blue-white star of magnitude 1.0 (magnitude is the brightness scale, where smaller numbers are brighter), about 250 light-years away. It is really two hot stars circling each other so closely that no telescope shows them apart."
+    },
+    {
+      "ref": "star:Porrima",
+      "note": "Marks the fork of the Y. To the eye it is one white star of magnitude 2.7; a telescope shows two almost identical stars that orbit each other every 169 years. It is named after a Roman goddess of prophecy."
+    },
+    {
+      "ref": "star:Vindemiatrix",
+      "note": "A yellow giant of magnitude 2.9 at the tip of the upper arm, in Virgo's right wing. The name is Latin for 'grape-gatherer', because its first appearance before dawn each year told ancient farmers the vintage was near."
+    },
+    {
+      "ref": "star:Zavijava",
+      "note": "A pale yellow, Sun-like star of magnitude 3.6 at the western end of the figure, only 36 light-years away. The point where the Sun crosses the celestial equator each September lies close by."
+    },
+    {
+      "ref": "star:Minelauva",
+      "note": "A red giant of magnitude 3.4 between Porrima and Vindemiatrix; binoculars bring out its orange tint."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "dso:M104",
+      "equip": "small-telescope",
+      "note": "The Sombrero Galaxy, about a fist west of Spica: a spiral seen almost edge-on, around 30 million light-years away. A small telescope shows a bright spindle; larger ones show the dark dust lane that makes the hat brim."
+    },
+    {
+      "ref": "dso:M87",
+      "equip": "small-telescope",
+      "note": "The giant elliptical galaxy at the heart of the Virgo Cluster, some 55 to 60 million light-years off. It looks like a round, soft glow, but it is the galaxy whose central black hole was the first ever imaged, in 2019."
+    },
+    {
+      "ref": "dso:M49",
+      "equip": "small-telescope",
+      "note": "The brightest galaxy of the Virgo Cluster, a magnitude 8 elliptical that shows as a small round haze with a brighter middle."
+    },
+    {
+      "ref": "dso:M84",
+      "equip": "small-telescope",
+      "note": "With its neighbor [[dso:M86|M86]] it forms a pair of fuzzy spots in the same low-power view, the gateway to the densest part of the Virgo Cluster. Sweep slowly here under a dark sky and galaxies keep drifting into view."
+    },
+    {
+      "ref": "dso:M60",
+      "equip": "small-telescope",
+      "note": "A bright elliptical galaxy at the eastern edge of the cluster, with fainter [[dso:M59|M59]] in the same field."
+    },
+    {
+      "ref": "star:Porrima",
+      "equip": "small-telescope",
+      "note": "One of the sky's best-known double stars: two equal white stars that were too close to separate around 2005 and have been slowly widening since. Use high magnification on a steady night."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Vir-dike",
+      "title": "Dike, the goddess who left the Earth",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Aratus", "work": "Phaenomena 96–136", "date": "3rd century BCE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.25", "date": "1st century BCE – 2nd century CE" },
+        { "author": "Ovid", "work": "Metamorphoses 1.89–150", "date": "c. 8 CE" }
+      ],
+      "summary": "Dike, the goddess of justice, once lived openly among human beings during the Golden Age. As each generation grew greedier and more violent she withdrew, first to the hills and finally to the sky, where she became the Maiden. This is the version told by the poet Aratus and the one most Greeks and Romans knew.",
+      "retelling": [
+        "There was a time, the old poets said, when a goddess lived on Earth as a neighbor. Her name was Dike, which means Justice. Some called her the daughter of Zeus and Themis; Aratus had heard she was the child of Astraeus, the ancient father of the stars, and so later writers also knew her as Astraea, the star-maiden. Whoever her parents were, she did not keep to a temple. She sat down with men and women in the marketplace and in the wide streets, gathered the elders around her, and urged them toward judgments that were fair and kind.",
+        "This was the Golden Age. Nobody had yet learned to quarrel, and nobody had heard the noise of a battle. No ships crossed the dangerous sea to fetch goods from far away, because nobody needed them: oxen, the plough, and Justice herself supplied everything people wanted. For as long as that golden race lasted, Dike stayed.",
+        "The people of the Silver Age were a poorer sort, and with them she was less at ease. She still lived on Earth, but she no longer mixed freely with them. She missed the people she had known. At evening she would come down alone from the echoing hills, and she had no gentle words left. When a crowd had gathered on the slopes she scolded them. Look what the golden fathers left behind, she said: children worse than themselves. And your own children will be worse again. There will be wars and bloodshed, and grief laid on you all. Then she turned back to the hills and left them staring after her.",
+        "When those people too had died, the race of Bronze was born, and they were the worst so far. They were the first to forge a robber's sword and the first to slaughter and eat the oxen that pulled their ploughs. Ovid, telling the same story in Rome, adds a fourth age of Iron, in which guest was not safe from host nor brother from brother. Either way, the ending is the same. Dike could not bear to look at human beings any longer.",
+        "She was the last of the immortals to go. She spread her wings, left the blood-soaked ground, and flew up to heaven. There she took her place near Boötes, the Herdsman, still holding the ear of grain that recalls the simple farming life she loved. That is why, the poets say, a maiden shines among the stars on spring nights: Justice has not vanished, but she now watches us from a distance.",
+        "Later, when the Romans turned the neighboring stars into Libra, the Scales, it was natural to see them as the balance of Justice lying at her feet."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Star Tales – Virgo",
+        "url": "http://www.ianridpath.com/startales/virgo.html"
+      },
+      "characters": ["Dike", "Astraea", "Astraeus", "Zeus", "Themis"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "In Aratus's story, what was Dike the goddess of?",
+          "choices": ["The harvest", "Justice", "The dawn", "Good fortune"],
+          "answerIndex": 1,
+          "explanation": "Dike means Justice. She lived among people in the Golden Age, urging them toward fair judgments."
+        },
+        {
+          "id": "q2",
+          "prompt": "How did Dike behave toward the people of the Silver Age?",
+          "choices": [
+            "She came down from the hills at evening and rebuked them",
+            "She lived among them exactly as before",
+            "She sent a flood to destroy them",
+            "She gave them the gift of wine"
+          ],
+          "answerIndex": 0,
+          "explanation": "She had withdrawn to the hills and came down only to warn them that their children would be worse still."
+        },
+        {
+          "id": "q3",
+          "prompt": "According to Aratus, which crime of the Bronze race finally drove Dike from the Earth?",
+          "choices": [
+            "They stole fire from the gods",
+            "They refused to plant grain",
+            "They forged swords and ate their plough-oxen",
+            "They built a tower to reach the sky"
+          ],
+          "answerIndex": 2,
+          "explanation": "The Bronze race were the first to make the robber's sword and to eat the oxen that worked their fields, and Dike could not endure them."
+        },
+        {
+          "id": "q4",
+          "prompt": "Dike is also known by another name that means 'star-maiden'. What is it?",
+          "choices": ["Erigone", "Tyche", "Persephone", "Astraea"],
+          "answerIndex": 3,
+          "explanation": "Aratus says she may be the daughter of Astraeus, father of the stars, and Ovid calls her Astraea, the last immortal to leave the Earth."
+        }
+      ]
+    },
+    {
+      "id": "Vir-demeter-persephone",
+      "title": "Demeter and the lost Persephone",
+      "culture": "Greek and Roman",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.25 (names Ceres, the Roman Demeter, as one identity of the Maiden)", "date": "1st century BCE – 2nd century CE" },
+        { "author": "Ovid", "work": "Fasti 4.417–620", "date": "c. 8 CE" }
+      ],
+      "summary": "Some ancient writers said the Maiden with her ear of wheat was Demeter, the goddess of grain, whom the Romans called Ceres; others thought of her daughter Persephone, 'the Maiden' herself. Their story, in which Persephone is carried off to the Underworld and her mother's grief stops the crops, explains why the year has a barren season.",
+      "retelling": [
+        "Demeter was the goddess who made the grain grow, and she had one daughter, Persephone, whom the Greeks often simply called Kore, the Maiden. Because the figure in the sky is a maiden who carries an ear of wheat, some ancient writers said the constellation was Demeter, and it was easy to think of her daughter too. The story that binds them is one of the best known in Greek myth. Ovid tells it in his poem on the Roman calendar, using the Roman name Ceres for the mother.",
+        "It began in Sicily, near the town of Henna, on a day when Persephone and her companions were picking flowers in a meadow. The girls scattered, filling baskets and the folds of their dresses. Persephone, gathering crocuses and white lilies, wandered a little too far. Hades, lord of the Underworld and her own father's brother, saw her alone. He seized her, and his dark horses carried her down into his kingdom. She cried out for her mother, but no one was near enough to help.",
+        "Demeter searched the whole world. Ovid has her wander from land to land and river to river, and finally up into the sky itself, where she asked the stars that never set. The Great Bear answered that night was not to blame, for the thing had been done by day; she should ask the Sun. And the Sun, who sees everything, told her the truth: her daughter was now the wife of Zeus's brother and queen of the third realm.",
+        "Demeter went to Zeus in fury and grief and demanded her daughter back. Zeus agreed on one condition: that Persephone had eaten nothing in the world below. Hermes was sent down to find out, and came back with bad news. She had broken her fast on a few seeds of a pomegranate, and whoever eats the food of the dead belongs to the dead.",
+        "Demeter declared that if her daughter could not return, she herself would leave heaven and live in the Underworld too. So a bargain was struck. Persephone would spend part of every year below with her husband and the rest above with her mother. Ovid says six months each; other tellers make it a third of the year below.",
+        "Only then did Demeter recover. She set a wreath of wheat ears on her hair, and the fields that had lain idle gave a harvest too large for the threshing floors. The Greeks understood the story as the turning of the seasons: when the daughter goes down, the earth lies bare, and when she comes back, the grain rises.",
+        "Those who saw Demeter or her daughter in the constellation pointed to the bright ear of wheat, Spica, in the Maiden's hand. The ancient handbooks do not say which god set her there; they simply list the grain goddess among the Maiden's names, as if a woman holding wheat in the sky needed no further explanation."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Star Tales – Virgo",
+        "url": "http://www.ianridpath.com/startales/virgo.html"
+      },
+      "characters": ["Demeter (Ceres)", "Persephone (Kore)", "Hades", "Zeus", "Hermes", "the Sun"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "What was Persephone doing when Hades carried her off?",
+          "choices": ["Weaving at a loom", "Bathing in a river", "Picking flowers in a meadow", "Guarding her mother's grain"],
+          "answerIndex": 2,
+          "explanation": "She was gathering flowers with her companions near Henna in Sicily and strayed away from them."
+        },
+        {
+          "id": "q2",
+          "prompt": "In Ovid's telling, who finally told Demeter where her daughter was?",
+          "choices": ["The Sun", "The Great Bear", "Hermes", "A shepherd"],
+          "answerIndex": 0,
+          "explanation": "The Great Bear said the deed was done by day and sent her to the Sun, who sees everything and told her the truth."
+        },
+        {
+          "id": "q3",
+          "prompt": "Why could Persephone not return to her mother for good?",
+          "choices": [
+            "She had fallen in love with Hades",
+            "Zeus had sworn an oath to his brother",
+            "She had drunk from the river of forgetfulness",
+            "She had eaten pomegranate seeds in the Underworld"
+          ],
+          "answerIndex": 3,
+          "explanation": "Anyone who eats the food of the dead must stay among them, so she could only return for part of each year."
+        },
+        {
+          "id": "q4",
+          "prompt": "Which feature of the constellation fits Demeter especially well?",
+          "choices": ["The scales at her feet", "The ear of wheat marked by Spica", "The wings on her shoulders", "The palm frond in her hand"],
+          "answerIndex": 1,
+          "explanation": "Demeter was the goddess of grain, and Spica, 'ear of grain', is the wheat in the Maiden's hand."
+        }
+      ]
+    },
+    {
+      "id": "Vir-erigone",
+      "title": "Erigone and her father Icarius",
+      "culture": "Greek (Athenian)",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.4 and 2.25", "date": "1st century BCE – 2nd century CE" },
+        { "author": "Hyginus", "work": "Fabulae 130", "date": "1st century BCE – 2nd century CE" }
+      ],
+      "summary": "In an Athenian story the Maiden is Erigone, whose father Icarius was the first man to receive wine from Dionysus and was murdered by shepherds who thought he had poisoned them. Led to his body by the family dog, Erigone took her own life, and the gods set father, daughter and dog among the stars as Boötes, Virgo and Procyon.",
+      "retelling": [
+        "Icarius was a farmer in the countryside near Athens, a just and god-fearing man, and so the god Dionysus chose him for a gift. He gave Icarius the vine, showed him how to plant and prune it, and taught him what could be made from its fruit. Icarius was the first mortal to make wine, and the god told him to share it.",
+        "Icarius loaded full wineskins onto a wagon and set off through the hills of Attica with his dog Maera trotting beside him. He came upon a group of shepherds and poured for them. They had never tasted anything like it, and they drank it greedily. Soon some of them were sprawled on the ground, mumbling nonsense. Their friends, who had never seen drunkenness, drew the only conclusion they could: the stranger had poisoned the men to steal their flocks. They beat Icarius to death. Some say they threw his body into a well, others that they buried it beneath a tree.",
+        "In the morning the sleepers woke, said they had never rested so well, and asked where the generous stranger was so that they could thank him. The killers understood what they had done and fled across the sea to the island of Ceos.",
+        "At home, Icarius's daughter Erigone waited. Days passed, and then months, and she was about to go out searching when Maera came back alone, howling. The dog caught her dress in its teeth and pulled until she followed. It led her across the hills to the tree where her father lay. Erigone had no one left and nothing to live on. In her grief she hanged herself from the same tree. The dog would not leave the place and died there too; one version says it threw itself into a well.",
+        "Zeus pitied all three, or, as others tell it, Dionysus did, since the trouble had begun with his gift. Icarius was placed in the sky as Boötes, the Herdsman, Erigone as the Maiden beside him, and Maera as the little dog star the Greeks called Procyon.",
+        "The story did not end there for the people on the ground. Erigone had prayed as she died that the daughters of Athens would suffer her fate until her father's murder was avenged, and a wave of suicides followed. The oracle of Apollo told the Athenians to honor her. They founded a festival at which they hung swings from trees and let them sway in the wind in her memory. And on Ceos, where the murderers had been sheltered, the Dog Star scorched the fields until King Aristaeus prayed to Zeus, who sent the cooling winds that still blow across the Aegean every summer."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Star Tales – Virgo",
+        "url": "http://www.ianridpath.com/startales/virgo.html"
+      },
+      "characters": ["Erigone", "Icarius", "Maera (the dog)", "Dionysus", "Zeus", "Aristaeus"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "What gift did Dionysus give Icarius?",
+          "choices": ["A golden plough", "The vine and the knowledge of wine", "A hunting dog", "A flock of sheep"],
+          "answerIndex": 1,
+          "explanation": "Icarius was the first mortal taught to grow vines and make wine, and he set out to share it."
+        },
+        {
+          "id": "q2",
+          "prompt": "Why did the shepherds kill Icarius?",
+          "choices": [
+            "He had stolen their flocks",
+            "He refused to share his wine",
+            "A god ordered them to",
+            "They thought he had poisoned their friends"
+          ],
+          "answerIndex": 3,
+          "explanation": "They had never seen drunkenness, so when their companions collapsed they assumed the wine was poison."
+        },
+        {
+          "id": "q3",
+          "prompt": "How did Erigone find her father's body?",
+          "choices": [
+            "The family dog Maera led her to it",
+            "An oracle told her where to look",
+            "The shepherds confessed to her",
+            "She saw it in a dream"
+          ],
+          "answerIndex": 0,
+          "explanation": "Maera came home howling, took hold of her dress and pulled her to the tree where Icarius was buried."
+        },
+        {
+          "id": "q4",
+          "prompt": "In this story, which constellation did Icarius become?",
+          "choices": ["Orion", "Hercules", "Boötes", "Auriga"],
+          "answerIndex": 2,
+          "explanation": "Icarius became Boötes, next to his daughter in Virgo, while the dog Maera became Procyon."
+        }
+      ]
+    },
+    {
+      "id": "Vir-ampelus",
+      "title": "Ampelus and the Grape-Gatherer star",
+      "culture": "Roman",
+      "ancientSources": [
+        { "author": "Ovid", "work": "Fasti 3.407–414", "date": "c. 8 CE" },
+        { "author": "Aratus", "work": "Phaenomena 137–138 (names the star)", "date": "3rd century BCE" }
+      ],
+      "summary": "One star of Virgo has a myth of its own. Vindemiatrix, the 'Grape-Gatherer', was said by Ovid to be Ampelus, a boy loved by the wine god Bacchus, who fell to his death while picking grapes and was lifted to the sky.",
+      "retelling": [
+        "High on the Maiden's right wing shines a star that mattered to ancient farmers far more than its modest brightness would suggest. The Greeks called it Protrygeter and the Romans Vindemiatrix, and both names mean the same thing: the Grape-Gatherer. Each year, after weeks hidden in the Sun's glare, it reappeared low in the east just before sunrise in late summer, and when it did, vine growers knew the harvest was close. Aratus singled it out by name in a poem that names very few stars.",
+        "Ovid, working through the Roman calendar night by night, stops at this star and says its origin can be told briefly. There was a boy named Ampelus, the son of a nymph and a satyr, who lived on the Ismarian hills of Thrace. Ovid calls him unshorn, a boy still wearing the long hair of youth, and the god Bacchus, whom the Greeks called Dionysus, loved him.",
+        "As a token of that love the god gave the boy a present no one had owned before: a vine. It grew up the trunk of an elm and trailed from the leafy branches, heavy with bright clusters. The plant took its name from the boy, Ovid says, and indeed *ampelos* is simply the Greek word for a vine.",
+        "Ampelus could not leave the grapes alone. One day he climbed out along a branch to reach the ripest bunches, stretched too far, and fell. The fall killed him.",
+        "Bacchus, who is called Liber in Rome, did not leave the boy he had lost in the ground. He carried him up to the stars and set him where his rising would forever announce the vintage. So each year the Grape-Gatherer came back to the dawn sky just as the grapes ripened, and the first cutting of the clusters began under the sign of the boy who reached for them.",
+        "The story is short, and Ovid is our only source for it in this form. But it shows how the ancients read their sky: a star was useful first, as a date in the farming year, and the tale was fitted to its work afterward."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Star Tales – Virgo",
+        "url": "http://www.ianridpath.com/startales/virgo.html"
+      },
+      "characters": ["Ampelus", "Bacchus (Dionysus, Liber)"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "What does the star name Vindemiatrix mean?",
+          "choices": ["Ear of grain", "The maiden", "Grape-gatherer", "The wing"],
+          "answerIndex": 2,
+          "explanation": "It is Latin for grape-gatherer; its first dawn appearance in late summer signaled the coming vintage."
+        },
+        {
+          "id": "q2",
+          "prompt": "What gift did Bacchus give Ampelus?",
+          "choices": ["A vine growing on an elm", "A cup that never emptied", "A leopard to ride", "A crown of ivy"],
+          "answerIndex": 0,
+          "explanation": "The god gave him a vine trailing from an elm tree, and the plant took the boy's name."
+        },
+        {
+          "id": "q3",
+          "prompt": "How did Ampelus die in Ovid's telling?",
+          "choices": [
+            "He was gored by a bull",
+            "He drowned in a river",
+            "He was struck by lightning",
+            "He fell from a branch while picking grapes"
+          ],
+          "answerIndex": 3,
+          "explanation": "Reaching for the grapes, he tumbled from the branch; Bacchus then carried him to the stars."
+        }
+      ]
+    },
+    {
+      "id": "Vir-other-maidens",
+      "title": "Fortune, the Syrian goddess, and the girl called Parthenos",
+      "culture": "Greek and Roman",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.25", "date": "1st century BCE – 2nd century CE" },
+        { "author": "Eratosthenes", "work": "Catasterisms (Virgo)", "date": "3rd century BCE; surviving summary later" }
+      ],
+      "summary": "Ancient writers admitted they did not know who the Maiden was and collected rival candidates. Besides Dike, Demeter and Erigone they proposed Tyche, the goddess of fortune; Atargatis, the great goddess of Syria; and a child named Parthenos, daughter of Apollo, who died young.",
+      "retelling": [
+        "The Greeks had a name for the constellation long before they agreed on a story for it. They called it simply Parthenos, the Maiden, and that left the question wide open. The ancient handbooks on the constellations, when they reach this figure, read like a list of guesses, and their authors say so. Hyginus remarks that people argue about her all the more because her head is so dim: with no bright star for a face, the Maiden could be anyone.",
+        "One guess was Tyche, whom the Romans called Fortuna, the goddess of luck. Both Eratosthenes and Hyginus record this idea. A faceless goddess suits the blind chance that Tyche stood for, but the fit is poor in one respect: artists usually showed Tyche carrying a horn of plenty, not the single ear of wheat that the Maiden holds.",
+        "Eratosthenes offers another candidate from far to the east: Atargatis, the great goddess of Syria, a giver of fertility who was sometimes pictured holding grain. Here the handbooks seem to have crossed their wires, because Atargatis, under her Greek name Derceto, has a much stronger claim on a different constellation, the Southern Fish, where the story of her rescue by a fish belongs.",
+        "The last suggestion is the simplest and the saddest. Hyginus reports that some people said the Maiden was exactly what her name says: a girl called Parthenos. She was the daughter of the god Apollo and a woman named Chrysothemis, and she died while still an infant. Her father, unwilling to lose her altogether, placed her among the constellations.",
+        "None of these three has a long tale attached, and none ever displaced Dike in the poets' affections. But they are a useful reminder that the figure is older than any of its Greek explanations. The Babylonians saw a goddess with an ear of barley here centuries earlier. The Greeks inherited the picture of a woman holding grain and spent the next few hundred years asking who she might be. Whichever answer you prefer, she reached the sky the same way in every version: a god or goddess, moved by pity or by pride in her, set the Maiden among the stars."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Star Tales – Virgo",
+        "url": "http://www.ianridpath.com/startales/virgo.html"
+      },
+      "characters": ["Tyche (Fortuna)", "Atargatis (Derceto)", "Parthenos", "Apollo", "Chrysothemis"],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Why, according to Hyginus, did people argue so much about the Maiden's identity?",
+          "choices": [
+            "Her constellation had only recently been invented",
+            "Her head is dim and hard to see",
+            "The priests kept her name secret",
+            "She changes position from year to year"
+          ],
+          "answerIndex": 1,
+          "explanation": "Hyginus says the dispute is greater because her head is only dimly seen, leaving her identity open."
+        },
+        {
+          "id": "q2",
+          "prompt": "Tyche, one proposed identity of Virgo, was the goddess of what?",
+          "choices": ["Fortune", "Wisdom", "The hunt", "The hearth"],
+          "answerIndex": 0,
+          "explanation": "Tyche (Roman Fortuna) was the goddess of luck, usually shown with a horn of plenty rather than an ear of wheat."
+        },
+        {
+          "id": "q3",
+          "prompt": "In the version Hyginus reports, who was the father of the girl Parthenos?",
+          "choices": ["Zeus", "Dionysus", "Astraeus", "Apollo"],
+          "answerIndex": 3,
+          "explanation": "Parthenos was the daughter of Apollo and Chrysothemis; she died in infancy and Apollo placed her among the stars."
+        },
+        {
+          "id": "q4",
+          "prompt": "The Syrian goddess Atargatis was suggested for Virgo, but she is more strongly linked with which constellation?",
+          "choices": ["Libra", "Aquarius", "Piscis Austrinus", "Cassiopeia"],
+          "answerIndex": 2,
+          "explanation": "As Derceto she is the goddess saved by the great fish that became Piscis Austrinus, the Southern Fish."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Virgo lies on the ecliptic, the path the Sun, Moon and planets follow around the sky. The Sun spends longer in Virgo than in any other constellation, from mid-September to the end of October, and a bright 'extra star' near Spica is usually a planet.",
+    "The September equinox point, where the Sun crosses the celestial equator heading south, lies in Virgo near Zavijava. In early Greek times it lay in Libra, which is why it is still sometimes called the first point of Libra.",
+    "Between the bowl of Virgo and the tail of Leo lies the Virgo Cluster, the nearest big cluster of galaxies, with well over a thousand members. Sixteen of the galaxies in Charles Messier's famous list belong to it, ten of them inside Virgo's borders; the Sombrero, farther south, gives Virgo an eleventh Messier galaxy.",
+    "Spica comes from the Latin for 'ear of grain'. Arab astronomers knew Spica and Arcturus as a pair, the two Simak: Spica was the unarmed Simak, in contrast to Arcturus, the Simak with the lance.",
+    "In Chinese star lore Spica was Jiao, the horn of the great Blue Dragon of spring, and the first of the 28 lunar mansions that mark the Moon's monthly journey."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "Dor",
+  "kind": "modern",
+  "origin": {
+    "namedBy": "Pieter Dirkszoon Keyser and Frederick de Houtman; first shown by Petrus Plancius",
+    "when": "1595–1598",
+    "history": [
+      "Dorado was introduced at the end of the 16th century from the southern star observations of the Dutch navigators Pieter Dirkszoon Keyser and Frederick de Houtman. It first appeared on Petrus Plancius's celestial globe of 1598 and first in print in Johann Bayer's atlas *Uranometria* in 1603.",
+      "The name is easy to misread. This is not a goldfish but the dolphinfish, or mahi-mahi, a large, brilliantly colored predator of tropical seas. Sailors watched dolphinfish chase flying fish, and the sky repeats the scene: Dorado swims right behind Volans, the Flying Fish.",
+      "For two centuries the constellation had a rival name, Xiphias, the Swordfish. It appeared as an alternative in Kepler's *Rudolphine Tables* of 1627 and was used by Edmond Halley, Johannes Hevelius and, as late as 1801, Johann Bode. Lacaille kept the original Dorado on his southern chart of 1756, and that is the name that survived."
+    ]
+  },
+  "overview": "Dorado is the dolphinfish (mahi-mahi), a thin line of modest stars. It matters because it holds most of the Large Magellanic Cloud, a neighboring galaxy plain to the naked eye, and the Tarantula Nebula inside it.",
+  "howToFind": [
+    "From Brooklyn only the northern tip of Dorado technically clears the horizon and nothing useful can be seen. Its brightest star needs a latitude south of about 35°N, and the Large Magellanic Cloud does not rise until you are south of about 20°N; it is properly seen only from the Southern Hemisphere, where it is high on evenings from December to March.",
+    "Find [[star:Canopus|Canopus]], the second-brightest star in the sky. [[star:α Dor|Alpha Doradus]] lies about a fist and a half from Canopus along the line toward [[star:Achernar|Achernar]]. For the [[dso:LMC|Large Magellanic Cloud]], go from Canopus almost two fists toward the south celestial pole: on a dark night you cannot miss a glowing patch that looks like a torn-off piece of the Milky Way."
+  ],
+  "shape": "A slightly bent line of four faint stars running about a fist and a half from Gamma and Alpha in the north to Beta and Delta in the south, ending at the Large Magellanic Cloud. The stars are lost in city light; the Cloud itself needs a dark, moonless sky to look impressive.",
+  "mainStars": [
+    { "ref": "star:α Dor", "note": "Magnitude 3.3, a blue-white star about 170 light-years away and the brightest in the constellation, near the fish's head." },
+    { "ref": "star:β Dor", "note": "A yellow supergiant about 1,000 light-years away and one of the brightest Cepheid variables: it swells and shrinks, changing between magnitude 3.5 and 4.1 every 9.8 days." },
+    { "ref": "star:γ Dor", "note": "Magnitude 4.3, a yellow-white star about 67 light-years away that pulsates very slightly; it gave its name to a whole class of variable stars." },
+    { "ref": "star:δ Dor", "note": "Magnitude 4.3, a white star at the southern end of the line, close to the edge of the Large Magellanic Cloud." }
+  ],
+  "notableObjects": [
+    { "ref": "dso:LMC", "equip": "naked-eye", "note": "The Large Magellanic Cloud, a small galaxy that orbits the Milky Way about 170,000 light-years away. To the eye it is a bright cloud several degrees wide; binoculars and telescopes show it crowded with clusters and nebulae." },
+    { "ref": "dso:NGC2070", "equip": "binoculars", "note": "The Tarantula Nebula, an enormous star-forming cloud inside the Large Magellanic Cloud. It is visible to the naked eye as a fuzzy star; a telescope shows the spidery loops that give it its name." },
+    { "ref": "star:β Dor", "equip": "naked-eye", "note": "Watch this Cepheid change brightness over ten nights by comparing it with nearby Alpha and Delta." },
+    { "ref": "dso:NGC1566", "equip": "small-telescope", "note": "A face-on spiral galaxy in the northern part of Dorado, far beyond the Magellanic Cloud. A small telescope shows a hazy spot with a brighter center." }
+  ],
+  "stories": [],
+  "facts": [
+    "The Magellanic Clouds were described by Amerigo Vespucci in 1502 and by Antonio Pigafetta on Magellan's voyage of 1519–22. English sailors were already calling them Magellan's Clouds by the 1590s.",
+    "The Tarantula Nebula is also called 30 Doradus: it is bright enough that Bayer plotted it as a star in 1603, and it later received a star-style number in Bode's catalog.",
+    "Supernova 1987A, the nearest exploding star seen since the telescope was invented, appeared in the Large Magellanic Cloud in 1987.",
+    "The south ecliptic pole, the point directly below the plane of Earth's orbit, lies in Dorado near the fish's head."
+  ]
+}

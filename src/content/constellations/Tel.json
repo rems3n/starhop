@@ -1,0 +1,33 @@
+{
+  "id": "Tel",
+  "kind": "modern",
+  "origin": {
+    "namedBy": "Nicolas-Louis de Lacaille",
+    "when": "1756",
+    "history": [
+      "Telescopium is one of the fourteen constellations that Nicolas-Louis de Lacaille introduced after his star-mapping expedition to the Cape of Good Hope in 1751–52, part of his set honoring the tools of science. It appeared as le Télescope on his chart of 1756 and as Telescopium in the Latin edition of 1763.",
+      "The telescope he had in mind was not his own small one but a giant of the previous century: an aerial telescope, a very long refractor slung from a tall mast and aimed with ropes and pulleys, of the kind used by J. D. Cassini at the Paris Observatory. Lens makers of that era could reduce the false color of their simple lenses only by making telescopes enormously long.",
+      "Lacaille's telescope was long in the sky too, reaching north between Sagittarius and Scorpius. Later astronomers cut it back. Francis Baily returned its upper stars to their neighbors in 1845, and Benjamin Gould drew the present plain rectangle in the 1870s. As a result, the stars Lacaille named Beta, Gamma and Theta Telescopii now belong to Sagittarius, Scorpius and Ophiuchus. To make room for the telescope in the first place, Lacaille had trimmed the tail of Pavo, the Peacock."
+    ]
+  },
+  "overview": "Telescopium honors the telescope, in the form of a long 17th-century refractor hung from a mast. What remains of it is a dim rectangle of sky south of the Teapot of Sagittarius with one 3.5-magnitude star.",
+  "howToFind": [
+    "From Brooklyn only the top edge of Telescopium rises. Its brightest star, [[star:α Tel|Alpha Telescopii]], reaches barely 3 degrees above a perfect southern horizon on August evenings, so it is not realistically visible. The whole constellation can be seen south of latitude 33°N, and it passes high overhead in the southern winter (July to September).",
+    "Start at the [[asterism:teapot|Teapot]] of Sagittarius. From [[star:Kaus Australis|Kaus Australis]], the star at the bottom right of the Teapot's body, drop a little more than a fist straight down, passing the faint arc of Corona Australis. Alpha Telescopii is the first 3rd-magnitude star you meet, with fainter [[star:ζ Tel|Zeta]] three degrees below it. Coming from the other direction, it is a fist and a bit below and left of [[star:Shaula|Shaula]], the Scorpion's sting."
+  ],
+  "shape": "A small group of three stars, Alpha, Zeta and Epsilon, in the northwest corner of an otherwise almost empty rectangle about two fists wide. Only Alpha is likely to show from the suburbs.",
+  "mainStars": [
+    { "ref": "star:α Tel", "note": "Magnitude 3.5, a hot blue-white star roughly 250 to 280 light-years away, giving off hundreds of times the Sun's light." },
+    { "ref": "star:ζ Tel", "note": "Magnitude 4.1, an orange giant about 126 light-years away just south of Alpha." },
+    { "ref": "star:ε Tel", "note": "Magnitude 4.5, an orange giant about 420 light-years away, to the west of Alpha." }
+  ],
+  "notableObjects": [
+    { "ref": "star:δ Tel", "equip": "binoculars", "note": "Delta-1 and Delta-2 Telescopii, close beside Alpha, are two blue-white stars that binoculars show as a pair. They are a chance alignment: one is hundreds of light-years farther away than the other." },
+    { "ref": "dso:NGC6584", "equip": "small-telescope", "note": "A small globular cluster about six degrees south of Alpha, visible in a small telescope as a dim round haze of 8th magnitude." }
+  ],
+  "stories": [],
+  "facts": [
+    "The original Telescopium was so long that its lens end poked up between Scorpius and Sagittarius into what is now Ophiuchus.",
+    "Old atlases such as Bode's label it Tubus Astronomicus, the astronomical tube."
+  ]
+}

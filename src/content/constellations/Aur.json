@@ -1,0 +1,295 @@
+{
+  "id": "Aur",
+  "kind": "ancient",
+  "origin": {
+    "namedBy": "Ancient Greek tradition; catalogued by Ptolemy",
+    "when": "Described by Aratus in the 3rd century BCE; listed in the Almagest, 2nd century CE",
+    "history": [
+      "The Greeks called this figure *Heniochos*, 'the one who holds the reins'; Auriga is the Latin for charioteer. The poet Aratus describes him in the 3rd century BCE without saying who he is, and Ptolemy lists him in the *Almagest* the same way. He is an odd sort of charioteer: he has reins and a whip but no chariot and no horses, and he carries a she-goat on his shoulder and two kids on his arm.",
+      "The explanation is probably that two older star groups were merged. The bright star Capella was 'the Goat' in its own right, with the two little stars beside it as her Kids, and Hyginus says the Greek astronomer Cleostratus of Tenedos was the first to point out the Kids, around the 5th century BCE. Some early writers treated the Goat and Kids as a separate constellation. By Ptolemy's time they had been folded into the Charioteer, and no ancient story explains why a driver should be loaded down with livestock. Babylonian star lists also have a figure here, a crook or curved staff.",
+      "Ptolemy described one star as both the Charioteer's right foot and the tip of the Bull's horn. Since official constellation borders were drawn in 1930 that star, Elnath, has belonged to Taurus, though it still completes Auriga's outline."
+    ]
+  },
+  "overview": "Auriga is the Charioteer, a large five-sided ring of stars high in the winter sky, dominated by golden Capella, the sixth-brightest star in the night. Old atlases show a man holding reins with a goat on his shoulder. In the sky the pentagon is easy to pick out once you have found Capella.",
+  "howToFind": [
+    "Capella is hard to miss: a brilliant yellowish star high in the northeast on autumn evenings and almost overhead in midwinter. To be sure of it, use the Big Dipper. Follow the two stars across the top of the Dipper's bowl, from the handle side outward, and keep going for about five fists; the first really bright star you meet is [[star:Capella|Capella]]. From Orion, go straight up from the Hunter's head, past the tip of the Bull's horn, for about four fists.",
+    "Capella is the top corner of a lopsided pentagon about a fist and a half across. Going around from Capella: [[star:Menkalinan|Menkalinan]], a fist to its left; then down to [[star:Mahasim|Mahasim]]; then [[star:Elnath|Elnath]] at the bottom, which officially belongs to [[con:Tau|Taurus]]; then up to orange [[star:Hassaleh|Hassaleh]]; and back to Capella. Just below and to the right of Capella look for a small, thin triangle of three fainter stars. The two at its lower end are the Kids.",
+    "From latitude 40 degrees north Capella is above the horizon almost all the time, dipping out of sight in the north for only a few hours a day. Auriga is best in the evening from November through March, passing nearly overhead in January and February."
+  ],
+  "shape": "A big, uneven pentagon, like a child's drawing of a house, about a fist and a half wide, with one corner far brighter than the others and a tiny triangle of faint stars tucked beside that bright corner. Capella, Menkalinan and Elnath show from the city; the other two corners and the Kids need a suburban sky.",
+  "mainStars": [
+    {
+      "ref": "star:Capella",
+      "note": "The she-goat, carried on the Charioteer's shoulder. The name is Latin for 'little she-goat'. It is the sixth-brightest star in the night sky, 43 light-years away, with a warm golden-yellow color much like the Sun's. It is really two yellow giant stars circling each other every 104 days, far too close together to separate in a telescope."
+    },
+    {
+      "ref": "star:Menkalinan",
+      "note": "The Charioteer's right shoulder; the Arabic name means 'shoulder of the rein-holder'. A white star 81 light-years away, and another close pair: the two stars eclipse each other every four days, though the dip in brightness is too slight to notice by eye."
+    },
+    {
+      "ref": "star:Almaaz",
+      "note": "The top of the little triangle beside Capella, and one of the strangest stars known. Every 27 years it fades to about half its usual brightness and stays dim for well over a year, because something huge and dark passes in front of it. The best explanation is a companion star wrapped in a vast disk of dust. The last eclipse ran from 2009 to 2011."
+    },
+    {
+      "ref": "star:Haedus",
+      "note": "One of the two Kids, with its neighbor [[star:Saclateni|Saclateni]]. They are faint, but they were well known to ancient sailors: Aratus says the Goat and Kids have often looked down on men tossed by storms at sea."
+    },
+    {
+      "ref": "star:Hassaleh",
+      "note": "The corner of the pentagon nearest the Pleiades, low on the Charioteer's leg. An orange giant about 500 light-years away; its color shows in binoculars."
+    }
+  ],
+  "notableObjects": [
+    {
+      "ref": "dso:M37",
+      "equip": "binoculars",
+      "note": "The richest of Auriga's three Messier star clusters, lying just outside the pentagon, east of the line from Mahasim to Elnath. Binoculars show a small round haze; a telescope turns it into a dense swarm of faint stars with an orange one at the center. About 4,000 light-years away."
+    },
+    {
+      "ref": "dso:M36",
+      "equip": "binoculars",
+      "note": "A small, bright knot of young blue-white stars inside the pentagon, between Mahasim and Elnath but a little to the Hassaleh side. It is the easiest of the three to resolve into stars in a small telescope."
+    },
+    {
+      "ref": "dso:M38",
+      "equip": "binoculars",
+      "note": "A larger, looser cluster about two degrees northwest of M36, near the middle of the pentagon. In binoculars M36 and M38 fit in one view as two faint puffs; in a telescope the stars of M38 are often said to form a cross."
+    },
+    {
+      "ref": "dso:NGC2281",
+      "equip": "binoculars",
+      "note": "A bright, coarse cluster well to the east of the pentagon, on the way toward Gemini. It is less visited than the Messier trio but easy in binoculars under a dark sky."
+    },
+    {
+      "ref": "dso:IC405",
+      "equip": "telescope",
+      "note": "The Flaming Star Nebula, a cloud of gas and dust lit by a hot star that is only passing through: the star was flung out of the Orion region a couple of million years ago. The star is visible in binoculars; the nebula itself is faint and is mainly a target for cameras."
+    }
+  ],
+  "stories": [
+    {
+      "id": "Aur-erichthonius",
+      "title": "Erichthonius, inventor of the four-horse chariot",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.13 (citing Eratosthenes and Euripides)", "date": "1st century BCE – 2nd century CE" },
+        { "author": "Eratosthenes", "work": "Catasterisms (as cited by Hyginus)", "date": "3rd century BCE (surviving summary is later)" }
+      ],
+      "summary": "The most common identification makes the Charioteer Erichthonius, an early king of Athens who was born from the Earth and raised by Athena. He was the first man to harness four horses to a chariot, in imitation of the Sun, and Zeus admired the feat so much that he placed him among the stars.",
+      "retelling": [
+        "Erichthonius had a strange beginning. The smith-god Hephaestus was taken with the beauty of Athena and asked her to marry him, and she refused. She was a goddess who meant to stay unmarried. Hephaestus followed her and tried to take her by force. She fought him off, and his seed fell on the ground. Athena, ashamed, scuffed dust over it with her foot.",
+        "The Earth did the rest. From that spot a child was born, part serpent: some said he was a snake outright, and others that he was a boy with snakes for legs. He was named Erichthonius, and Hyginus says the name recalls both the earth and the struggle.",
+        "Athena took the earth-born child as her own charge. She hid him in a chest, like a holy object, and gave the chest to the daughters of the king of Athens with one instruction: do not open it. Hyginus stops to remark that people are made so that the more often they are forbidden a thing, the more they want it. The girls opened the chest. They saw the snake inside, and Athena drove them mad for their disobedience, so that they threw themselves from the Acropolis. The creature fled to the shelter of the goddess's shield, and she raised him herself.",
+        "He grew up to be king of Athens, and he repaid her. He built her a temple on the citadel and set up her sacrifices, and in his youth he founded the Panathenaic Games in her honor, the great Athenian festival.",
+        "Then he did the thing he is remembered for among the stars. Until then, only the Sun drove a team of four horses abreast: the chariot that carries the daylight across the sky. Erichthonius worked out how to yoke four horses to a chariot on Earth, and he drove it himself in the races at his own games.",
+        "Zeus watched this and was impressed. Here was a mortal who had matched an invention of the gods. As Eratosthenes told it, Zeus admired the man's ingenuity and set him in the sky as the Charioteer. Hyginus adds that some people gave the same honor, for the same invention, to an Argive named Orsilochus. In the stars the driver has kept his reins and lost his chariot, and no storyteller explains where it went."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Auriga: is it Erichthonius?",
+        "url": "http://www.ianridpath.com/startales/auriga.html"
+      },
+      "characters": ["Erichthonius", "Hephaestus", "Athena", "Zeus"],
+      "questions": [
+        {
+          "id": "erich-q1",
+          "prompt": "What invention earned Erichthonius a place among the stars?",
+          "choices": ["The plow", "The four-horse chariot", "The sailing ship", "The bridle and bit"],
+          "answerIndex": 1,
+          "explanation": "He was the first man to yoke four horses to a chariot, rivaling the Sun's own team, and Zeus admired his ingenuity."
+        },
+        {
+          "id": "erich-q2",
+          "prompt": "Which goddess raised Erichthonius?",
+          "choices": ["Artemis", "Hera", "Demeter", "Athena"],
+          "answerIndex": 3,
+          "explanation": "Athena hid the earth-born child in a chest and later reared him herself. As king he founded her temple and the Panathenaic Games."
+        },
+        {
+          "id": "erich-q3",
+          "prompt": "What happened to the girls who opened the chest Athena had entrusted to them?",
+          "choices": ["They were driven mad and threw themselves from the Acropolis", "They were turned into owls", "They became the Pleiades", "They were made priestesses of Athena"],
+          "answerIndex": 0,
+          "explanation": "They disobeyed, saw the snake-child inside, and were driven mad by Athena."
+        },
+        {
+          "id": "erich-q4",
+          "prompt": "Who was Erichthonius's father?",
+          "choices": ["Zeus", "Poseidon", "Hephaestus", "Hermes"],
+          "answerIndex": 2,
+          "explanation": "He sprang from the Earth after Hephaestus's failed attempt on Athena, so Hephaestus was his father and the Earth, in a sense, his mother."
+        }
+      ]
+    },
+    {
+      "id": "Aur-myrtilus",
+      "title": "Myrtilus, the charioteer who betrayed his king",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.13", "date": "1st century BCE – 2nd century CE" },
+        { "author": "Apollodorus", "work": "Library, Epitome 2.4–9", "date": "1st–2nd century CE" },
+        { "author": "Germanicus Caesar", "work": "Aratea (as quoted in Ridpath's Star Tales)", "date": "early 1st century CE" }
+      ],
+      "summary": "Others said the Charioteer is Myrtilus, son of Hermes and driver to King Oenomaus, who raced his daughter's suitors and killed the losers. Myrtilus sabotaged the king's chariot so that Pelops could win, and Pelops repaid him by throwing him into the sea. Hermes set his son among the stars.",
+      "retelling": [
+        "Oenomaus, king of Pisa in the western Peloponnese, had a daughter named Hippodamia and no intention of letting anyone marry her. Some said he loved her himself. Others said an oracle had warned him that he would die at the hands of his son-in-law.",
+        "So he set a contest. Any suitor could have Hippodamia if he could carry her off in his chariot and reach the Isthmus of Corinth before the king caught him. Oenomaus would give the young man a head start and then follow in full armor. If he caught up, he killed him. And he always caught up, because his horses were a gift from the war-god Ares and his driver was Myrtilus, a son of Hermes and the best charioteer alive. A dozen suitors had tried, people said, and their heads were nailed up on the palace.",
+        "Then Pelops came. He was the handsomest man of his day, and when Hippodamia saw him she made up her mind that this one was not going to die. She went to Myrtilus and asked him to help.",
+        "Myrtilus was in love with her himself and would do what she asked. On the morning of the race he left the linchpins out of the hubs of the king's chariot. Pelops drove off with the girl. Oenomaus thundered after them, and at full speed the wheels came away. The king was tangled in the reins and dragged to his death. With his last breath, knowing who had done it, he cursed Myrtilus: might he die by the hand of Pelops.",
+        "The curse did not take long. Pelops left for home with his bride, and Myrtilus traveled with them. At a stop along the way Pelops went to fetch water for his wife, and while he was gone Myrtilus tried to force himself on her. When Pelops learned of it he threw the charioteer off a headland into the sea. As Myrtilus fell he shouted curses of his own on Pelops and all his descendants, and Greek tragedy is full of what came of them. The water where he drowned was called the Myrtoan Sea.",
+        "Hermes could not save his son, but he could remember him. Hyginus says the god put Myrtilus's form in the sky as the Charioteer. The Roman prince Germanicus, who translated Aratus, liked this identification best, and for a reason you can check against any old star map: look, he says, and you will see that this driver has no chariot, and holds only broken reins, and grieves."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Auriga: …or Myrtilus?",
+        "url": "http://www.ianridpath.com/startales/auriga.html"
+      },
+      "characters": ["Myrtilus", "Oenomaus", "Hippodamia", "Pelops", "Hermes"],
+      "questions": [
+        {
+          "id": "myrt-q1",
+          "prompt": "How did Myrtilus make King Oenomaus lose the race?",
+          "choices": ["He lamed the king's horses", "He left the linchpins out of the chariot wheels", "He gave Pelops winged horses", "He drove the chariot off the road"],
+          "answerIndex": 1,
+          "explanation": "Myrtilus did not fit the pins that held the wheels on. At speed the wheels came off and the king was dragged to his death."
+        },
+        {
+          "id": "myrt-q2",
+          "prompt": "What happened to suitors who lost the chariot race against Oenomaus?",
+          "choices": ["They were killed and their heads displayed", "They became his slaves", "They were exiled from Greece", "They had to give up their horses"],
+          "answerIndex": 0,
+          "explanation": "Oenomaus killed every suitor he overtook, a dozen by some counts, and nailed their heads to his house."
+        },
+        {
+          "id": "myrt-q3",
+          "prompt": "How did Myrtilus die?",
+          "choices": ["Oenomaus speared him during the race", "Zeus struck him with a thunderbolt", "He was trampled by his own horses", "Pelops threw him into the sea"],
+          "answerIndex": 3,
+          "explanation": "After Myrtilus tried to assault Hippodamia, Pelops cast him into the sea, and Myrtilus cursed the house of Pelops as he fell."
+        },
+        {
+          "id": "myrt-q4",
+          "prompt": "Which god was the father of Myrtilus and placed him in the sky?",
+          "choices": ["Ares", "Poseidon", "Hermes", "Apollo"],
+          "answerIndex": 2,
+          "explanation": "Myrtilus was a son of Hermes (Mercury), who set his image among the stars after his death."
+        }
+      ]
+    },
+    {
+      "id": "Aur-hippolytus",
+      "title": "Hippolytus, wrecked on the shore road",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Pausanias", "work": "Description of Greece 2.32.1", "date": "2nd century CE" },
+        { "author": "Apollodorus", "work": "Library, Epitome 1.18–19", "date": "1st–2nd century CE" }
+      ],
+      "summary": "The people of Troezen believed the Charioteer was their local hero Hippolytus, son of Theseus. Falsely accused by his stepmother Phaedra and cursed by his father, he was killed when a bull from the sea panicked his chariot horses.",
+      "retelling": [
+        "Hippolytus was the son of Theseus, king of Athens, and an Amazon queen. He grew into a young man who wanted nothing to do with women or with love.",
+        "Theseus later married Phaedra, and she bore him two sons. Then she fell in love with her stepson. She told Hippolytus so and begged him to be her lover. He was horrified and fled from her.",
+        "Phaedra was now afraid. If the young man told his father, she was ruined. So she accused him first. She broke open the doors of her bedroom and tore her own clothes, and when Theseus came she told him that Hippolytus had attacked her.",
+        "Theseus believed his wife. He did not kill his son with his own hand; he did something worse. The sea-god Poseidon was his protector, and Theseus prayed to him that Hippolytus might die.",
+        "Hippolytus, banished, drove his chariot away along the road beside the sea. As he went, the water heaved and a bull came up out of the surf. The horses went mad with fear. They bolted, the chariot was smashed to pieces, and Hippolytus, caught in the reins, was dragged behind his own team until he was dead. When the truth of her passion came out, Phaedra hanged herself. That is the order of events in Apollodorus; in the version Ian Ridpath summarizes, Phaedra hangs herself as soon as she is rejected. Ridpath adds the sequel that the healer Asclepius brought the innocent young man back to life, and was himself struck down by Zeus's thunderbolt for robbing the god of the dead.",
+        "In the town of Troezen, across the gulf from Athens, Hippolytus was honored as something close to a god. The traveler Pausanias visited in the 2nd century CE and found a precinct and temple there, a priest who served him for life, and a custom that every girl before her wedding cut off a lock of her hair and dedicated it to him. The Troezenians, he reports, would not hear of the story that Hippolytus was dragged to death by his horses, and they would not show his grave. They believed instead that the constellation called the Charioteer is Hippolytus, raised to the sky by the gods who honored him."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Auriga: …or Hippolytus?",
+        "url": "http://www.ianridpath.com/startales/auriga.html"
+      },
+      "characters": ["Hippolytus", "Theseus", "Phaedra", "Poseidon", "Asclepius"],
+      "questions": [
+        {
+          "id": "hipp-q1",
+          "prompt": "Who falsely accused Hippolytus?",
+          "choices": ["His stepmother Phaedra", "His father Theseus", "The goddess Artemis", "King Oenomaus"],
+          "answerIndex": 0,
+          "explanation": "Phaedra, wife of Theseus, fell in love with her stepson. When he rejected her she accused him of assaulting her."
+        },
+        {
+          "id": "hipp-q2",
+          "prompt": "What frightened Hippolytus's horses and wrecked his chariot?",
+          "choices": ["A thunderbolt from Zeus", "A giant scorpion", "A bull sent out of the sea by Poseidon", "A lioness guarding her cubs"],
+          "answerIndex": 2,
+          "explanation": "Theseus prayed to Poseidon for his son's death, and the god sent a bull from the surf that panicked the team."
+        },
+        {
+          "id": "hipp-q3",
+          "prompt": "Which town believed the Charioteer in the sky was Hippolytus?",
+          "choices": ["Sparta", "Troezen", "Thebes", "Corinth"],
+          "answerIndex": 1,
+          "explanation": "Pausanias reports that the people of Troezen worshipped Hippolytus and identified him with the constellation Auriga."
+        },
+        {
+          "id": "hipp-q4",
+          "prompt": "Who was the father of Hippolytus?",
+          "choices": ["Pelops", "Hermes", "Minos", "Theseus"],
+          "answerIndex": 3,
+          "explanation": "Hippolytus was the son of Theseus, king of Athens, by an Amazon."
+        }
+      ]
+    },
+    {
+      "id": "Aur-amalthea",
+      "title": "Capella: the goat that nursed Zeus",
+      "culture": "Greek",
+      "ancientSources": [
+        { "author": "Aratus", "work": "Phaenomena 156–166", "date": "3rd century BCE" },
+        { "author": "Hyginus", "work": "Poetic Astronomy 2.13 (citing Parmeniscus and Musaeus)", "date": "1st century BCE – 2nd century CE" },
+        { "author": "Eratosthenes", "work": "Catasterisms (as reported in Ridpath's Star Tales)", "date": "3rd century BCE (surviving summary is later)" }
+      ],
+      "summary": "The bright star Capella has a story of its own, separate from the Charioteer. It is the she-goat, often called Amalthea, whose milk fed the infant Zeus while he was hidden on Crete. In gratitude Zeus placed her in the sky with her two kids, and in one version he made her hide into his shield, the aegis.",
+      "retelling": [
+        "Zeus began life in hiding. His father Cronus, ruler of the Titans, swallowed his children as they were born, and so the baby's mother had him carried away in secret to the island of Crete.",
+        "There the child was given to the daughters of a Cretan king named Melisseus to nurse. They had no milk to give him. What they had was a she-goat, and her name, in the account Hyginus takes from the scholar Parmeniscus, was Amalthea. She suckled the future king of the gods along with her own young. She had a habit of bearing twins, and it so happened that she had dropped a pair of kids just at the time the baby was brought to her.",
+        "Other writers shuffled the names. The old poet Musaeus said Amalthea was not the goat but a nymph, and the goat was her pet. Either way it was goat's milk that raised Zeus, and he did not forget it. Aratus calls Capella the holy Goat who, as the story goes, gave the breast to Zeus, and says she shines large and bright on the Charioteer's left shoulder while her Kids glimmer faintly at his wrist. Because of the mother's kindness, Hyginus adds, the kids were placed among the stars as well.",
+        "There is a rougher version, which Ian Ridpath traces to Eratosthenes and which Hyginus also tells. In it the goat was a creature so frightful to look at that the Titans themselves could not bear the sight, and they begged the Earth to hide her in a cave on Crete. That was where she nursed the child.",
+        "When Zeus was grown and preparing to make war on the Titans for the rule of the world, an oracle told him how to win: he must go into battle protected by the skin of the goat. He did. The hide became the aegis, the terrible goatskin shield or cloak that Zeus, and later his daughter Athena, carried into battle with a Gorgon's head upon it. The Greek word *aigis* was understood to mean just that, 'goatskin'.",
+        "Zeus won his war and became king of the gods. Afterward he did right by his old nurse. He covered her bones with a new skin, gave her life again, and set her image among the stars. She is the star we call Capella, the 'little she-goat', and the two faint Kids are still beside her."
+      ],
+      "link": {
+        "site": "Ian Ridpath's Star Tales",
+        "label": "Auriga: the she-goat and kids, and the aegis of Zeus",
+        "url": "http://www.ianridpath.com/startales/auriga.html"
+      },
+      "characters": ["Amalthea", "Zeus", "Cronus", "Melisseus", "the Titans", "Athena"],
+      "questions": [
+        {
+          "id": "goat-q1",
+          "prompt": "Whom did the goat Amalthea nurse?",
+          "choices": ["The infant Dionysus", "The infant Hermes", "The infant Zeus", "The infant Heracles"],
+          "answerIndex": 2,
+          "explanation": "Zeus was hidden on Crete as a baby and fed on the milk of the she-goat, who was rewarded with a place in the sky as the star Capella."
+        },
+        {
+          "id": "goat-q2",
+          "prompt": "What did Zeus make from the goat's hide?",
+          "choices": ["The aegis, his protective goatskin", "The Golden Fleece", "A wineskin for Dionysus", "The sail of the Argo"],
+          "answerIndex": 0,
+          "explanation": "An oracle told him to fight the Titans protected by the goat's skin. That skin became the aegis, later carried by Athena."
+        },
+        {
+          "id": "goat-q3",
+          "prompt": "What do the two faint stars beside Capella represent?",
+          "choices": ["The reins of the chariot", "Two of the Pleiades", "The horns of the Bull", "The goat's two kids"],
+          "answerIndex": 3,
+          "explanation": "They are the Kids (Haedi in Latin), the twin young the goat had borne when Zeus was brought to her. They were put in the sky along with their mother."
+        },
+        {
+          "id": "goat-q4",
+          "prompt": "On which island was the infant Zeus hidden and nursed?",
+          "choices": ["Chios", "Crete", "Lemnos", "Delos"],
+          "answerIndex": 1,
+          "explanation": "The stories place the nursing of Zeus on Crete, in the care of the daughters of King Melisseus or of nymphs."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "The three identifications of the Charioteer (Erichthonius, Myrtilus and Hippolytus) are rival answers to one question. None of them explains the goat, which had its own separate story.",
+    "The star that drives the Flaming Star Nebula, AE Aurigae, is a runaway. It and a star in [[con:Col|Columba]] are racing away from Orion in opposite directions.",
+    "The point in the sky exactly opposite the center of our galaxy lies in Auriga, a few degrees east of Menkalinan. When you look at the Charioteer you are looking straight out through the thin outer edge of the Milky Way.",
+    "Chinese astronomers joined Capella, three other stars of the pentagon and Elnath into Wuche, the Five Chariots, so this part of the sky meant chariots in China as well as in Greece."
+  ]
+}
