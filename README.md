@@ -1,17 +1,24 @@
 # Starhop — learn the night sky
 
-A browser planetarium with a built-in study and quiz system, made for a beginner who wants to walk outside,
-recognise every constellation they can see, know its stories and notable objects, and understand why the sky
-looks the way it does on any night. Default location: Brooklyn, NY.
+A browser planetarium with a built-in course, reference library and practice system, for anyone who wants to walk
+outside, recognise every constellation they can see, know its stories and notable objects, and understand why the
+sky looks the way it does on any night — wherever they are on Earth.
 
-- **Explore** — a smooth, Stellarium-style sky: drag, zoom, search and fly to anything, set place and time,
-  run the clock, toggle 13 layers, and compare a city sky with a dark site using the Bortle 1–9 slider.
-  Click anything for what it is, how to find it, when it is up, what you need to see it, and photos.
-- **Learn** — a guided path (15 anchor constellations, then season by season, then the far south), 24 short
-  lessons with live sky demos, Tonight, monthly guides, a visibility calendar, seasonal signposts,
-  year-ahead events, and a page for every one of the 88 constellations with its stories.
-- **Quiz** — find-it (draw a loop around the constellation), name-it, objects, stories, sky knowledge,
-  adjustable difficulty with presets, spaced repetition, and a mastery dashboard.
+- **Sky** — a smooth, Stellarium-style sky map: drag, zoom, search and fly to anything, set place and time, run the
+  clock, toggle 14 layers (including illustrated constellation figures), and compare a city sky with a dark site using
+  the Bortle 1–9 slider. Click anything for what it is, how to find it, when it is up, what you need to see it, and photos.
+- **Tonight** — what is up tonight from your location, monthly sky guides, a visibility calendar and year-ahead events.
+- **Learn** — a course in 8 modules (how to look · how the sky moves · finding your way · your first constellations ·
+  season by season · Sun, Moon and planets · what's out there · beyond your horizon). Each module states what you will
+  be able to do, and ends with a quiz. 24 lessons with live sky demos, interactive diagrams, photos, "think about it",
+  misconception and quick-check boxes. The constellation modules are computed for your latitude, so a learner in Sydney
+  gets the Southern Cross where one in London gets the Plough.
+- **Library** — searchable, filterable lists: all 88 constellations, all 120 myths (each with its own page and quiz),
+  27 ranked star-hops, asterisms, 450 named stars, ~600 deep-sky objects, the Sun, Moon and planets.
+- **Practice** — find-it (draw a loop around the constellation), name-it, objects, stories, star-hops, sky knowledge,
+  module quizzes, adjustable difficulty with presets, spaced repetition, and a progress dashboard.
+
+Every embedded sky view has the same layer and light-pollution filters as the full map.
 
 Everything runs in the browser. There is no backend: the catalog ships as static files and progress is saved
 in the browser (localStorage).
@@ -31,7 +38,8 @@ Other commands:
 | --- | --- |
 | `npm run build` | Type-check and build the static site into `dist/` |
 | `npm start` | Serve `dist/` (zero-dependency Node server, honours `$PORT`) |
-| `npm test` | Unit tests: astronomy (incl. checks against JPL Horizons and astropy), lasso scoring, visibility, data, sky camera, Explore/Learn/Quiz logic |
+| `npm test` | Unit tests: astronomy (incl. checks against JPL Horizons and astropy), lasso scoring, visibility, data, sky camera and art mapping, course resolution, library, quiz logic |
+| `node scripts/final/smoke.mjs` | Browser smoke test of every section (desktop + phone, northern + southern learner) against a running build |
 | `npm run validate` | Check every content file against its schema and the catalog; add `-- --links` to re-check every story link |
 | `npm run data` | Rebuild `public/data/*.json` from the source catalogs (downloads on first run) |
 
@@ -61,7 +69,7 @@ With the Railway CLI instead: `railway init`, then `railway up` from this folder
 | State | zustand + localStorage | Small; settings and progress persist with no backend |
 | Content | JSON files checked by zod schemas | Writers and code share one contract; `npm run validate` catches broken references |
 
-More detail: `docs/ARCHITECTURE.md`, `docs/SKY.md`, `docs/ASTRO.md`, `docs/DATA.md`, `docs/EXPLORE.md`,
+More detail: `docs/ARCHITECTURE.md`, `docs/briefs/v2.md` (sections and routes), `docs/FIGURES.md` (lesson figures), `docs/SKY.md`, `docs/ASTRO.md`, `docs/DATA.md`, `docs/EXPLORE.md`,
 `docs/LEARN.md`, `docs/QUIZ.md`, `docs/IMAGES.md`.
 
 ## Data
@@ -74,6 +82,9 @@ More detail: `docs/ARCHITECTURE.md`, `docs/SKY.md`, `docs/ASTRO.md`, `docs/DATA.
 | `dsos.json` | 599 deep-sky objects: all Messier and Caldwell, NGC/IC to magnitude 10, famous extras | OpenNGC, Wikipedia |
 | `milkyway.json` | Milky Way brightness contours | d3-celestial |
 | `images.json` + `public/img/` | 210 images of 167 objects, each labelled photograph or false colour, with telescope, credit and licence | Wikimedia Commons (public domain, CC0, CC BY, CC BY-SA) |
+| `public/img/lessons/` | Photos used in lesson figures | Wikimedia Commons, NASA, ESO, NOIRLab (open licences) |
+| `constellation-art.json` + `public/art/` | 85 constellation illustrations pinned to their stars | Johan Meuris / Stellarium (Free Art License) |
+| `src/content/starhops.json` | 27 ranked star-hops with computed distances and months, both hemispheres | Written for this app |
 
 Sources and licences for everything are in `CREDITS.md`.
 
