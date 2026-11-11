@@ -22,8 +22,18 @@ export function readBaseline(c: Pick<SkyController, 'getLayers' | 'getLimitingMa
   return { layers: { ...c.getLayers() }, limitingMag: c.getLimitingMag(), view: { ...c.getView() } };
 }
 
+/** A setting the page may control: a layer, or the faintest star shown */
+export type FilterKey = keyof LayerState | 'limitingMag';
+
 export interface PageTracker {
   baseline: Baseline;
+  /**
+   * What the learner changed through the embed's controls. It survives the page applying a new scene (e.g. clicking
+   * another object on Tonight) and is cleared by Reset. Keys in `pinned` are the page's to set: a page change to a
+   * pinned key wins and drops the learner's override for it (lesson steps pin what they explicitly set).
+   */
+  user: { layers: Partial<LayerState>; limitingMag?: number };
+  pinned: Set<FilterKey>;
   /** Called after the page changed layers or limiting magnitude */
   onPageChange?: () => void;
 }
@@ -32,12 +42,18 @@ export interface PageTracker {
 export function trackPageController(c: SkyController, tracker: PageTracker): SkyController {
   const overrides: Partial<SkyController> = {
     setLayers(patch) {
-      c.setLayers(patch);
+      const effective: Partial<LayerState> = { ...patch };
+      for (const k of Object.keys(patch) as (keyof LayerState)[]) {
+        if (tracker.pinned.has(k)) delete tracker.user.layers[k];
+        else if (k in tracker.user.layers) effective[k] = tracker.user.layers[k] as boolean;
+      }
+      c.setLayers(effective);
       tracker.baseline = { ...tracker.baseline, layers: { ...tracker.baseline.layers, ...patch } };
       tracker.onPageChange?.();
     },
     setLimitingMag(mag) {
-      c.setLimitingMag(mag);
+      if (tracker.pinned.has('limitingMag')) delete tracker.user.limitingMag;
+      c.setLimitingMag(tracker.user.limitingMag ?? mag);
       tracker.baseline = { ...tracker.baseline, limitingMag: mag };
       tracker.onPageChange?.();
     },

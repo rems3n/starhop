@@ -94,7 +94,7 @@ describe('page controller tracking', () => {
   it('records what the page sets as the reset baseline, and not what the embed sets', () => {
     const raw = fakeController();
     let changes = 0;
-    const t = { baseline: readBaseline(raw), onPageChange: () => changes++ };
+    const t = { baseline: readBaseline(raw), user: { layers: {} }, pinned: new Set<never>(), onPageChange: () => changes++ };
     const page = trackPageController(raw, t);
     page.setLayers({ constellationBoundaries: true });
     page.setLimitingMag(4.3);
@@ -117,9 +117,34 @@ describe('page controller tracking', () => {
   });
   it('passes every other method through, bound to the real controller', () => {
     const raw = fakeController();
-    const page = trackPageController(raw, { baseline: readBaseline(raw) });
+    const page = trackPageController(raw, { baseline: readBaseline(raw), user: { layers: {} }, pinned: new Set() });
     const { getFps } = page;
     expect(getFps()).toBe(60);
     expect(page.getLimitingMag()).toBe(5);
   });
+
+  it("keeps the learner's filters when the page shows something new, unless the page pins them", () => {
+    const raw = fakeController();
+    const t = { baseline: readBaseline(raw), user: { layers: { constellationLines: false } }, pinned: new Set<'limitingMag' | 'equatorialGrid'>(), limiting: 0 } as unknown as Parameters<typeof trackPageController>[1];
+    t.user.limitingMag = 3.8;
+    const page = trackPageController(raw, t);
+    // the page applies a new scene with lines on and a 5.3 limit: the learner's choices win
+    page.setLayers({ constellationLines: true, starNames: true });
+    page.setLimitingMag(5.3);
+    expect(raw.getLayers().constellationLines).toBe(false);
+    expect(raw.getLayers().starNames).toBe(true);
+    expect(raw.getLimitingMag()).toBe(3.8);
+    // the baseline (what Reset returns to) is still the page's own setting
+    expect(t.baseline.layers.constellationLines).toBe(true);
+    expect(t.baseline.limitingMag).toBe(5.3);
+    // a pinned key: the page wins and the learner's override for it is dropped
+    t.pinned = new Set(['limitingMag', 'constellationLines']);
+    page.setLayers({ constellationLines: true });
+    page.setLimitingMag(6.5);
+    expect(raw.getLayers().constellationLines).toBe(true);
+    expect(raw.getLimitingMag()).toBe(6.5);
+    expect(t.user.limitingMag).toBeUndefined();
+    expect('constellationLines' in t.user.layers).toBe(false);
+  });
 });
+

@@ -18,7 +18,7 @@ import { aboutCount, countStarsUp, skyBrightness } from '@/modes/explore/skyCoun
 import { SkyView } from '@/sky';
 import { BORTLE, type FaintStars, type LayerState, type SkyController, type SkyEngineOptions, type TargetRef } from '@/types';
 import { Slider, Switch } from '@/ui';
-import { applyBaseline, readBaseline, trackPageController, type PageTracker } from './controller';
+import { applyBaseline, readBaseline, trackPageController, type FilterKey, type PageTracker } from './controller';
 import { bortleForMag, filterPatch, magForBortle, radecRef, visibleLayerGroups, zoomFov } from './layers';
 import './sky-embed.css';
 
@@ -38,20 +38,29 @@ export interface SkyEmbedProps {
   openTarget?: TargetRef;
   /** Called after the user changes a layer/limiting magnitude through the embed controls */
   onUserChange?: (change: { layers?: Partial<LayerState>; limitingMag?: number }) => void;
+  /**
+   * Settings the page controls even after the learner changed them (e.g. the layers a lesson step explicitly sets).
+   * Everything else the learner changes in the embed stays put when the page shows something new, until Reset.
+   */
+  pagePins?: FilterKey[];
 }
 
 /** Dispatched (bubbling) on the embed's root element after the learner presses Reset. */
 export const SKY_EMBED_RESET_EVENT = 'skyembed:reset';
 
-export function SkyEmbed({ options, onReady, className, style, controls = 'full', allowedLayers, openTarget, onUserChange }: SkyEmbedProps) {
+export function SkyEmbed({ options, onReady, className, style, controls = 'full', allowedLayers, openTarget, onUserChange, pagePins }: SkyEmbedProps) {
   const [ctl, setCtl] = useState<SkyController | null>(null);
   const [pageRev, setPageRev] = useState(0);
   const tracker = useRef<PageTracker | null>(null);
   const onReadyRef = useRef(onReady);
   onReadyRef.current = onReady;
+  const pinsRef = useRef(pagePins);
+  pinsRef.current = pagePins;
+  // keep the tracker's pins in step with the prop (set during render so the page's next scene sees them)
+  if (tracker.current) tracker.current.pinned = new Set(pagePins ?? []);
 
   const handleReady = useCallback((c: SkyController) => {
-    const t: PageTracker = { baseline: readBaseline(c), onPageChange: () => setPageRev((r) => r + 1) };
+    const t: PageTracker = { baseline: readBaseline(c), user: { layers: {} }, pinned: new Set(pinsRef.current ?? []), onPageChange: () => setPageRev((r) => r + 1) };
     tracker.current = t;
     setCtl(c);
     onReadyRef.current?.(trackPageController(c, t));
@@ -120,12 +129,14 @@ function EmbedControls({ ctl, tracker, pageRev, controls, allowedLayers, openTar
     const patch = filterPatch({ [key]: v }, controls, allowedLayers);
     if (!Object.keys(patch).length) return;
     ctl.setLayers(patch);
+    if (tracker.current) tracker.current.user.layers = { ...tracker.current.user.layers, ...patch };
     setLayers((l) => ({ ...l, ...patch }));
     onUserChange?.({ layers: patch });
   };
   const setBortle = (n: number) => {
     const m = magForBortle(n);
     ctl.setLimitingMag(m);
+    if (tracker.current) tracker.current.user.limitingMag = m;
     setMag(m);
     onUserChange?.({ limitingMag: m });
   };
@@ -134,6 +145,7 @@ function EmbedControls({ ctl, tracker, pageRev, controls, allowedLayers, openTar
     const b = tracker.current?.baseline;
     if (!b) return;
     const root = e.currentTarget.closest('.sky-embed');
+    if (tracker.current) tracker.current.user = { layers: {} };
     if (controls === 'full') applyBaseline(ctl, b);
     else {
       // limited: only touch what the learner could change, plus the camera

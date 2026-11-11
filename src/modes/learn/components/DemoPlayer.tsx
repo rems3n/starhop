@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import type { Demo } from '@/content/schema';
 import { Button, RichText, Slider } from '@/ui';
-import { BORTLE, type SkyController } from '@/types';
+import { BORTLE, type LayerState, type SkyController } from '@/types';
 import { DEFAULT_PLAY_RATE, bortleLabel, latitudeLabel, observerAtLatitude, scrubRange, scrubTime, scrubValue, shiftLocalDays, shiftLocalMonths, SCRUB_STEP_MIN } from '../logic/controls';
 import { bortleLimitingMag, placeDemoStep, resolveDemoStep, type SceneContext } from '../logic/scene';
 import { SkyStage } from './SkyStage';
@@ -64,6 +64,7 @@ export function DemoPlayer({ demo, ctx, initialStep = 0, onController, onTarget,
         label={demo.title}
         note={note ?? placementNote ?? (scene.target && scene.layers.ground && scene.view.mount === 'altaz' && scene.target.alt < 0 ? `${scene.target.name} is below the horizon at this moment, so the view is aimed at the ground. Try the step again at another time.` : null)}
         onReset={resetLocal}
+        pagePins={[...(Object.keys(step.layers ?? {}) as (keyof LayerState)[]), ...(step.bortle != null ? (['limitingMag'] as const) : [])]}
         onController={(c) => {
           setCtl(c);
           onController?.(c);

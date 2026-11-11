@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { SkyEmbed, SKY_EMBED_RESET_EVENT } from '@/components/sky-embed';
+import type { FilterKey } from '@/components/sky-embed/controller';
 import { formatDate, formatTime } from '@/lib/time';
 import type { SkyController } from '@/types';
 import { applyScene, type SkyScene } from '../logic/scene';
@@ -24,10 +25,12 @@ export interface SkyStageProps {
   children?: ReactNode;
   exploreTarget?: string;
   label?: string;
+  /** Settings the page keeps control of even after the learner changes them (see SkyEmbed `pagePins`) */
+  pagePins?: FilterKey[];
 }
 
 /** One sky view driven by a scene, with the clock readout. Layers, Reset and "Open in sky map" come from <SkyEmbed>. */
-export function SkyStage({ scene, onController, onReset, note, children, exploreTarget, label }: SkyStageProps) {
+export function SkyStage({ scene, onController, onReset, note, children, exploreTarget, label, pagePins }: SkyStageProps) {
   const [ctl, setCtl] = useState<SkyController | null>(null);
   const [time, setTime] = useState(scene.time);
   const first = useRef(scene);
@@ -81,6 +84,7 @@ export function SkyStage({ scene, onController, onReset, note, children, explore
           options={{ observer: s0.observer, time: s0.time, timeRate: 0, layers: s0.layers, limitingMag: s0.limitingMag, view: s0.view, inputMode: 'navigate' }}
           onReady={setCtl}
           openTarget={exploreTarget ?? scene.target?.ref}
+          pagePins={pagePins}
         />
         <div className="ln-stage-clock">
           <span>{formatDate(time, tz, { month: 'short', day: 'numeric', year: 'numeric' })}</span>
