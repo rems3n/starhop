@@ -3,7 +3,7 @@
 .app-nav { height: var(--nav-h); flex: none; display: flex; align-items: center; gap: var(--sp-5); padding: 0 var(--sp-4); background: var(--night-950); border-bottom: 1px solid var(--line); z-index: 50; }
 .app-brand { font-family: var(--font-display); font-weight: 700; font-size: 1.35rem; text-transform: uppercase; color: var(--text); text-decoration: none; letter-spacing: 0.32em; }
 .app-tabs { display: flex; gap: var(--sp-1); height: 100%; }
-.app-tab { display: flex; align-items: center; padding: 0 var(--sp-3); color: var(--text-dim); text-decoration: none; font-family: var(--font-display); font-weight: 500; font-size: 1rem; letter-spacing: 0.16em; text-transform: uppercase; border-bottom: 2px solid transparent; margin-bottom: -1px; }
+.app-tab { display: flex; align-items: center; padding: 0 var(--sp-3); color: var(--text-dim); text-decoration: none; font-family: var(--font-ui); font-weight: 500; font-size: 0.95rem; border-bottom: 2px solid transparent; margin-bottom: -1px; }
 .app-tab:hover { color: var(--text); }
 .app-tab[aria-current='page'] { color: var(--amber); border-bottom-color: var(--amber); }
 .app-nav-right { margin-left: auto; display: flex; align-items: center; gap: var(--sp-2); }
@@ -25,7 +25,7 @@
   .app:not(.app--sky) .app-brand { display: block; position: fixed; top: calc(10px + env(safe-area-inset-top)); left: var(--sp-4); }
 }
 
-.btn { display: inline-flex; align-items: center; justify-content: center; gap: var(--sp-2); min-height: 38px; padding: 0 var(--sp-4); border-radius: var(--r-md); border: 1px solid var(--line-strong); background: transparent; color: var(--text); font-family: var(--font-display); font-weight: 500; font-size: 0.98rem; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; text-decoration: none; white-space: nowrap; transition: background 0.12s, border-color 0.12s, color 0.12s; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: var(--sp-2); min-height: 38px; padding: 0 var(--sp-4); border-radius: var(--r-md); border: 1px solid var(--line-strong); background: transparent; color: var(--text); font-family: var(--font-ui); font-weight: 600; font-size: 0.92rem; cursor: pointer; text-decoration: none; white-space: nowrap; transition: background 0.12s, border-color 0.12s, color 0.12s; }
 .btn:hover { background: rgba(255, 255, 255, 0.1); }
 .btn:disabled { opacity: 0.45; cursor: not-allowed; }
 .btn--primary { background: var(--amber); border-color: var(--amber); color: var(--amber-ink); }
@@ -101,12 +101,20 @@ a.card:hover { border-color: var(--line-strong); background: var(--night-700); }
 .mcq-feedback.is-correct { border-left-color: var(--good); }
 .mcq-feedback.is-wrong { border-left-color: var(--bad); }
 
-/* Theme "Trajectory" */
+/* Theme "Trajectory": sentence case, layered surfaces so controls stand off the page */
+.app-nav { background: var(--night-950); border-bottom-color: var(--line-strong); }
+.btn { background: var(--night-700); border-color: rgba(255, 255, 255, 0.28); }
+.btn:hover { background: var(--night-600); border-color: rgba(255, 255, 255, 0.5); }
+.btn--quiet { background: transparent; border-color: transparent; }
+.btn--quiet:hover { background: var(--night-700); }
 .btn--primary { background: var(--text); border-color: var(--text); color: #000; }
 .btn--primary:hover { background: var(--amber); border-color: var(--amber); }
-.btn--sm { font-size: 0.86rem; letter-spacing: 0.1em; }
-.chip { font-family: var(--font-mono); border-radius: 0; text-transform: uppercase; letter-spacing: 0.04em; font-size: 0.68rem; }
-.segmented button { font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.74rem; }
+.btn[aria-pressed='true'] { background: rgba(56, 225, 255, 0.16); border-color: var(--amber); color: var(--amber); }
+.input, .select, input[type='date'], input[type='datetime-local'], input[type='time'], input[type='text'], input[type='search'], input[type='number'], select { background: var(--night-700); border: 1px solid rgba(255, 255, 255, 0.3); color: var(--text); }
+.input:focus, .select:focus, input:focus, select:focus { border-color: var(--amber); }
+.card { background: var(--night-800); }
+.chip { font-family: var(--font-mono); border-radius: 0; font-size: 0.7rem; background: var(--night-700); }
+.segmented { background: var(--night-900); border-color: var(--line-strong); }
+.segmented button { font-size: 0.8rem; }
 .segmented button[aria-pressed='true'] { background: var(--amber); color: var(--amber-ink); }
-.dim, .faint { font-feature-settings: 'tnum'; }
-@media (max-width: 720px) { .app-tab { letter-spacing: 0.08em; font-size: 0.8rem; } .app-brand { font-size: 1.1rem; } }
+@media (max-width: 720px) { .app-tab { font-size: 0.72rem; } .app-brand { font-size: 1.1rem; } .app-nav { border-top-color: var(--line-strong); } }

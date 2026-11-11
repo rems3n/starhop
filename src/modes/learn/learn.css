@@ -1,6 +1,6 @@
 /* Learn mode. Prefix .ln- */
 .ln-root { min-height: 100%; display: flex; flex-direction: column; }
-.ln-nav { position: sticky; top: 0; z-index: 20; display: flex; gap: 2px; padding: 0 var(--sp-4); background: var(--night-900); border-bottom: 1px solid var(--line); overflow-x: auto; scrollbar-width: none; flex: none; }
+.ln-nav { position: sticky; top: 0; z-index: 20; display: flex; gap: 2px; padding: 0 var(--sp-4); background: var(--night-800); border-bottom: 1px solid var(--line); overflow-x: auto; scrollbar-width: none; flex: none; }
 .ln-nav::-webkit-scrollbar { display: none; }
 .ln-nav-link { flex: none; padding: 10px 12px; color: var(--text-dim); text-decoration: none; font-size: var(--fs-sm); font-weight: 500; border-bottom: 2px solid transparent; white-space: nowrap; }
 .ln-nav-link:hover { color: var(--text); }

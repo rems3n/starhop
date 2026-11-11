@@ -2,12 +2,12 @@
    warm starlight for text, Arcturus amber for actions, Vega blue for sky links. */
 :root {
   /* Theme "Trajectory": mission-control black, condensed capitals, mono telemetry, one ion-cyan accent. */
-  --night-950: #000000;
-  --night-900: #000000;
-  --night-800: #080a0e;
-  --night-700: #0e1319;
-  --night-600: #1b232d;
-  --line: rgba(255, 255, 255, 0.14);
+  --night-950: #141a22;
+  --night-900: #06080b;
+  --night-800: #10151c;
+  --night-700: #1a222c;
+  --night-600: #2a3644;
+  --line: rgba(255, 255, 255, 0.16);
   --line-strong: rgba(255, 255, 255, 0.34);
   --text: #f2f5f7;
   --text-dim: #a7b0b9;
@@ -19,8 +19,8 @@
   --sun: #ffc857;
   --good: #6fe3a5;
   --bad: #ff7a6b;
-  --panel: rgba(0, 0, 0, 0.74);
-  --panel-solid: #080a0e;
+  --panel: rgba(16, 21, 28, 0.9);
+  --panel-solid: #10151c;
 
   /* Sky drawing colours (read by the sky engine) */
   --sky-lines: rgba(120, 200, 255, 0.5);
@@ -70,8 +70,8 @@ body {
   -webkit-font-smoothing: antialiased;
   overscroll-behavior: none;
 }
-h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height: 1; margin: 0; letter-spacing: 0.02em; text-transform: uppercase; text-wrap: balance; }
-h3, h4 { font-weight: 500; letter-spacing: 0.05em; line-height: 1.1; }
+h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height: 1.05; margin: 0; letter-spacing: 0.005em; text-wrap: balance; }
+h3, h4 { font-weight: 500; letter-spacing: 0.01em; line-height: 1.15; }
 h1 { font-size: var(--fs-3xl); }
 h2 { font-size: var(--fs-2xl); }
 h3 { font-size: var(--fs-xl); }
