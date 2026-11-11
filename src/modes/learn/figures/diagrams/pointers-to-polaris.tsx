@@ -193,6 +193,20 @@ export default function PointersToPolaris({ params }: DiagramProps) {
     );
   };
 
+  /** Label a group of stars just beyond it, on the side away from the pole. */
+  const radialLabel = (group: string[], text: string, dist: number) => {
+    const gx = group.reduce((a, k) => a + sky.stars[k].x, 0) / group.length;
+    const gy = group.reduce((a, k) => a + sky.stars[k].y, 0) / group.length;
+    const dx = gx - P.x, dy = gy - P.y;
+    const l = Math.hypot(dx, dy) || 1;
+    const x = gx + (dx / l) * dist, y = gy + (dy / l) * dist + 4;
+    return (
+      <Label x={x} y={y} anchor={dx / l > 0.4 ? 'start' : dx / l < -0.4 ? 'end' : 'middle'} size="s" color={C.dim}>
+        {text}
+      </Label>
+    );
+  };
+
   return (
     <div>
       <Svg
@@ -258,9 +272,8 @@ export default function PointersToPolaris({ params }: DiagramProps) {
           {south ? (
             <>
               {nameStar('Acrux', ['Acrux', 'Mimosa', 'Gacrux', 'Imai'])}
-              {nameStar('Gacrux', ['Acrux', 'Mimosa', 'Gacrux', 'Imai'])}
-              {groupLabel('Imai', 'Southern Cross')}
-              {groupLabel('Hadar', 'Pointers')}
+              {radialLabel(['Acrux', 'Mimosa', 'Gacrux', 'Imai'], 'Southern Cross', 34)}
+              {radialLabel(['Hadar', 'Rigil'], 'Pointers', 24)}
             </>
           ) : (
             <>

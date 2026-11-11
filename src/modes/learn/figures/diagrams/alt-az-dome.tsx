@@ -19,7 +19,7 @@ export const meta: DiagramMeta = {
 type V3 = [number, number, number]; // x = east, y = north, z = up
 const dot = (a: V3, b: V3) => a[0] * b[0] + a[1] * b[1] + a[2] * b[2];
 const W = 720, H = 400, CX = 360, CY = 268, R = 210;
-const VIEW_AZ = 200, VIEW_EL = 22;
+const VIEW_AZ = 200, VIEW_EL = 15;
 const cam: V3 = [Math.cos(rad(VIEW_EL)) * Math.sin(rad(VIEW_AZ)), Math.cos(rad(VIEW_EL)) * Math.cos(rad(VIEW_AZ)), Math.sin(rad(VIEW_EL))];
 const rx: V3 = (() => {
   const v: V3 = [-cam[1], cam[0], 0];

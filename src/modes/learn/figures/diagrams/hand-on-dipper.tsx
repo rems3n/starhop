@@ -51,7 +51,7 @@ const M: Record<Measure, { a: string; b: string; hand: 'three' | 'fist' | 'span'
 
 /** Hand outline in local units: x across the measured width (−0.5…0.5), y along the fingers (negative = fingertips). */
 function HandShape({ kind }: { kind: 'three' | 'fist' | 'span' }) {
-  const common = { fill: C.amber, fillOpacity: 0.12, stroke: C.amber, strokeWidth: 1.5, vectorEffect: 'non-scaling-stroke' as const };
+  const common = { fill: C.amber, fillOpacity: kind === 'span' ? 0.06 : 0.12, stroke: C.amber, strokeWidth: 1.5, vectorEffect: 'non-scaling-stroke' as const };
   if (kind === 'three')
     return (
       <g>

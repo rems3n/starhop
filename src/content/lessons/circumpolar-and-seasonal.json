@@ -9,9 +9,9 @@
     {
       "heading": "Three kinds of star",
       "body": [
-        "After this lesson you will be able to say, for any star, whether it is always up from Brooklyn, sometimes up, or never up, using nothing but its distance from the pole.",
-        "The sky turns around the north celestial pole, and from Brooklyn that pole stands 40.7° above the northern horizon, the same number as your latitude. Picture a circle around the pole that just touches the horizon due north. Its radius is 40.7°. Any star inside that circle turns around the pole without ever reaching the horizon. Such stars are called circumpolar: they are up all night, every night of the year, and in the daytime too, hidden by the bright sky.",
-        "There is a matching circle around the south celestial pole, which lies 40.7° below your southern horizon. Stars inside it never climb above the horizon at all. Everything in between rises and sets."
+        "After this lesson you will be able to say, for any star, whether it is always up from where you live, sometimes up, or never up, using nothing but your latitude and the star's distance from the pole.",
+        "The sky turns around the celestial pole that is above your horizon. From {{place}} that is the {{pole}}, and it stands {{poleAltitude}} above the horizon, the same number as your latitude. Picture a circle around that pole that just touches the horizon below it. Its radius equals your latitude. Any star inside that circle turns around the pole without ever reaching the horizon. Such stars are called circumpolar: they are up all night, every night of the year, and in the daytime too, hidden by the bright sky.",
+        "There is a matching circle around the opposite pole, which lies the same number of degrees below your horizon on the other side. Stars inside it never climb above the horizon at all. Everything in between rises and sets. (On the equator both circles shrink to nothing, so every star rises and sets.)"
       ],
       "demo": {
         "title": "The never-set circle",
@@ -21,7 +21,7 @@
         ],
         "steps": [
           {
-            "caption": "Facing north on an October evening. The circle is 40.7° around the pole and just touches the horizon. The Little Dipper, Cassiopeia, Cepheus and Draco are inside it. The Big Dipper is at its lowest, skimming the rooftops.",
+            "caption": "Facing north on an October evening from mid-northern latitudes (41°N, the latitude of Chicago, Madrid or Beijing). The circle is 41° around the pole and just touches the horizon. The Little Dipper, Cassiopeia, Cepheus and Draco are inside it. The Big Dipper is at its lowest, skimming the rooftops.",
             "time": "month:10 21:00",
             "view": {
               "az": 0,
@@ -32,8 +32,8 @@
               {
                 "type": "circle",
                 "center": "point:ncp",
-                "radiusDeg": 40.7,
-                "label": "Never sets from Brooklyn"
+                "radiusDeg": 41,
+                "label": "Never sets from 41°N"
               },
               {
                 "type": "constellation",
@@ -69,10 +69,16 @@
                 ],
                 "label": "Big Dipper"
               }
-            ]
+            ],
+            "observer": {
+              "name": "Mid-northern latitudes (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
           },
           {
-            "caption": "Half an hour per second. Watch the end of the Dipper's handle: Alkaid slides along the horizon around midnight and comes back up without quite setting. It sits right on the edge of the circle.",
+            "caption": "Half an hour per second. Watch the end of the Dipper's handle: Alkaid slides along the horizon around midnight and comes back up without quite setting. From 41°N it sits right on the edge of the circle; from farther south it would dip below.",
             "time": "month:10 21:00",
             "rate": 1800,
             "view": {
@@ -84,7 +90,7 @@
               {
                 "type": "circle",
                 "center": "point:ncp",
-                "radiusDeg": 40.7
+                "radiusDeg": 41
               },
               {
                 "type": "polyline",
@@ -104,10 +110,16 @@
                 "ref": "star:Alkaid",
                 "label": "Alkaid"
               }
-            ]
+            ],
+            "observer": {
+              "name": "Mid-northern latitudes (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
           },
           {
-            "caption": "Capella, low in the northeast, is 44° from the pole: just outside the circle. It does set, but for less than four hours out of every 24. Stars farther from the pole spend longer below the horizon.",
+            "caption": "Capella, low in the northeast, is 44° from the pole: just outside the 41° circle. It does set, but for less than four hours out of every 24. Stars farther from the pole spend longer below the horizon.",
             "time": "month:10 21:00",
             "view": {
               "az": 20,
@@ -118,7 +130,7 @@
               {
                 "type": "circle",
                 "center": "point:ncp",
-                "radiusDeg": 40.7,
+                "radiusDeg": 41,
                 "label": "Never sets"
               },
               {
@@ -131,10 +143,16 @@
                 "from": "point:ncp",
                 "to": "star:Capella"
               }
-            ]
+            ],
+            "observer": {
+              "name": "Mid-northern latitudes (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
           },
           {
-            "caption": "Facing south in February with the ground switched off, so you can see below the horizon. This circle is the zone that never rises from Brooklyn. Canopus, the second-brightest star in the sky, passes 3° under your horizon, straight below Sirius.",
+            "caption": "Facing south in February with the ground switched off, so you can see below the horizon. This circle is the zone that never rises from 41°N. Canopus, the second-brightest star in the sky, passes about 4° under the horizon, straight below Sirius.",
             "time": "month:2 21:00",
             "view": {
               "az": 180,
@@ -148,8 +166,8 @@
               {
                 "type": "circle",
                 "center": "point:scp",
-                "radiusDeg": 40.7,
-                "label": "Never rises from Brooklyn"
+                "radiusDeg": 41,
+                "label": "Never rises from 41°N"
               },
               {
                 "type": "object",
@@ -160,6 +178,60 @@
                 "type": "object",
                 "ref": "star:Sirius",
                 "label": "Sirius"
+              }
+            ],
+            "observer": {
+              "name": "Mid-northern latitudes (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
+          },
+          {
+            "caption": "Now the southern version, from mid-southern latitudes (34°S, the latitude of Sydney, Cape Town or Santiago), facing south on a June evening. There is no bright pole star, but the 34° circle around the south celestial pole holds the Southern Cross, Alpha and Beta Centauri and both Magellanic Clouds: they never set there. The Big Dipper, in turn, never rises.",
+            "observer": {
+              "name": "Mid-southern latitudes (34°S)",
+              "lat": -34,
+              "lon": 151.2,
+              "tz": "Australia/Sydney"
+            },
+            "time": "month:6 21:00",
+            "view": {
+              "az": 180,
+              "alt": 35,
+              "fov": 120
+            },
+            "highlights": [
+              {
+                "type": "circle",
+                "center": "point:scp",
+                "radiusDeg": 34,
+                "label": "Never sets from 34°S"
+              },
+              {
+                "type": "constellation",
+                "id": "Cru",
+                "label": true
+              },
+              {
+                "type": "object",
+                "ref": "star:Rigil Kentaurus",
+                "label": "Alpha Centauri"
+              },
+              {
+                "type": "object",
+                "ref": "star:Hadar",
+                "label": "Beta Centauri"
+              },
+              {
+                "type": "object",
+                "ref": "dso:LMC",
+                "label": true
+              },
+              {
+                "type": "object",
+                "ref": "dso:SMC",
+                "label": true
               }
             ]
           }
@@ -185,11 +257,11 @@
       }
     },
     {
-      "heading": "What is circumpolar from Brooklyn",
+      "heading": "What is circumpolar where you are",
       "body": [
-        "A star's distance from the pole is fixed, so you can sort stars by declination, the sky's version of latitude, measured in degrees north or south of the celestial equator. From latitude 40.7° north, stars with a declination above +49.3° (that is, 90 minus 40.7) never set. Stars below −49.3° never rise.",
-        "The never-set group includes the Little Dipper ([[con:UMi|Ursa Minor]]), the W of [[con:Cas|Cassiopeia]], [[con:Cep|Cepheus]], [[con:Cam|Camelopardalis]] and nearly all of [[con:Dra|Draco]]. The Big Dipper only just qualifies. Its bowl is safely inside, but [[star:Alkaid|Alkaid]], the star at the tip of the handle, grazes the horizon at its lowest. In practice, when the Dipper is at the bottom of its circle on autumn evenings, city buildings and haze hide it.",
-        "The never-rise group includes the Southern Cross, the bright stars Alpha and Beta Centauri, [[star:Canopus|Canopus]] and the Magellanic Clouds. To see those you have to travel south."
+        "A star's distance from the pole is fixed, so you can sort stars by declination, the sky's version of latitude, measured in degrees north or south of the celestial equator. The rule is one subtraction: from latitude L, stars within 90° − L of the celestial equator rise and set; the rest never set (on your pole's side) or never rise (on the other side). From {{lat}} the never-set limit is a declination of {{circumpolarLimit}}. From 41°N it is +49°; from 34°S it is −56°.",
+        "From mid-northern latitudes (the US, Europe, Japan) the never-set group includes the Little Dipper ([[con:UMi|Ursa Minor]]), the W of [[con:Cas|Cassiopeia]], [[con:Cep|Cepheus]], [[con:Cam|Camelopardalis]] and nearly all of [[con:Dra|Draco]]. The Big Dipper qualifies from about 41°N and farther north. Its bowl is safely inside, but [[star:Alkaid|Alkaid]], the star at the tip of the handle, grazes the horizon at its lowest; in practice, when the Dipper is at the bottom of its circle (on October–November evenings), buildings and haze hide it. From mid-southern latitudes (Australia, South Africa, Argentina) the never-set group is the [[con:Cru|Southern Cross]], [[star:Rigil Kentaurus|Alpha]] and [[star:Hadar|Beta Centauri]] and the Magellanic Clouds.",
+        "Each group is the other hemisphere's never-rise group. The Southern Cross, Alpha Centauri, [[star:Canopus|Canopus]] and the Magellanic Clouds never rise from most of Europe and the northern US; the Little Dipper and most of the Big Dipper never rise from southern Australia. To see the other pole's stars you have to travel toward the equator or beyond it."
       ],
       "figures": [
         {
@@ -217,8 +289,8 @@
     {
       "heading": "The in-between stars are the seasonal ones",
       "body": [
-        "Most of the sky lies between the two circles. These stars rise and set, and the farther south a star is, the lower and shorter its arc. [[star:Vega|Vega]], well to the north, is above the horizon for about 18 hours out of 24. [[star:Antares|Antares]], far to the south, manages only about 9, and never gets higher than two and a half fists.",
-        "Because these stars spend part of each day below the horizon, whether you can see one depends on whether its time above the horizon falls at night. That changes through the year, which is why Orion is a winter constellation and Scorpius a summer one. The circumpolar stars have no season. They only change position: the Dipper is high on spring evenings and low on autumn ones."
+        "Most of the sky lies between the two circles. These stars rise and set, and the farther a star is from your visible pole, the lower and shorter its arc. From mid-northern latitudes, [[star:Vega|Vega]], well to the north, is above the horizon for about 18 hours out of 24, while [[star:Antares|Antares]], far to the south, manages only about 9 and never gets higher than two and a half fists. From mid-southern latitudes the roles swap: Antares passes almost overhead and Vega skims the northern horizon.",
+        "Because these stars spend part of each day below the horizon, whether you can see one depends on whether its time above the horizon falls at night. That changes through the year, which is why Orion is an evening sight in December–February and Scorpius in June–August, in both hemispheres. The circumpolar stars have no season. They only change position: from mid-northern latitudes the Dipper is high on March–May evenings and low on September–November ones."
       ],
       "demo": {
         "title": "Slide your latitude",
@@ -259,7 +331,7 @@
           }
         ]
       },
-      "tryIt": "Find Cassiopeia's W tonight, then find it again at the same time in three months. It will be in a different part of its circle around Polaris, but it will be there. Try the same with Orion and one of those two nights it will be missing.",
+      "tryIt": "Find a circumpolar pattern tonight (Cassiopeia's W from mid-northern latitudes, the Southern Cross from mid-southern ones), then find it again at the same time in three months. It will be in a different part of its circle around the pole, but it will be there. Try the same with Orion and one of those two nights it will be missing.",
       "figures": [
         {
           "type": "diagram",
@@ -285,20 +357,20 @@
     }
   ],
   "keyPoints": [
-    "The pole's height above the horizon equals your latitude: 40.7° in Brooklyn.",
-    "Stars within 40.7° of the north celestial pole never set from Brooklyn; stars within 40.7° of the south celestial pole never rise.",
-    "Circumpolar from Brooklyn: the Little Dipper, Cassiopeia, Cepheus, Draco, Camelopardalis, and (barely) the Big Dipper.",
+    "The pole's height above the horizon equals your latitude: {{poleAltitude}} from {{place}}.",
+    "Stars closer to your visible pole than your latitude never set; stars that close to the other pole never rise.",
+    "Circumpolar from mid-northern latitudes: the Little Dipper, Cassiopeia, Cepheus, Draco, Camelopardalis and (barely) the Big Dipper. From mid-southern latitudes: the Southern Cross, Alpha and Beta Centauri and the Magellanic Clouds.",
     "Everything in between rises and sets, and is seen at night only in its season."
   ],
   "examples": [],
   "questions": [
     {
       "id": "cs-q1",
-      "prompt": "From latitude 40.7° north, which stars never set?",
+      "prompt": "From latitude 40°N, which stars never set?",
       "choices": [
-        "Those within 40.7° of the north celestial pole",
-        "Those within 49.3° of the north celestial pole",
-        "Those within 40.7° of the celestial equator",
+        "Those within 40° of the north celestial pole",
+        "Those within 50° of the north celestial pole",
+        "Those within 40° of the celestial equator",
         "Only Polaris"
       ],
       "answerIndex": 0,
@@ -306,19 +378,19 @@
     },
     {
       "id": "cs-q2",
-      "prompt": "Why can you never see the Southern Cross from Brooklyn?",
+      "prompt": "Why can you never see the Southern Cross from mid-northern latitudes such as Chicago, Rome or Beijing (about 42°N)?",
       "choices": [
         "It is too faint for city skies",
         "It is only up during the daytime",
         "It is hidden behind the Milky Way",
-        "It lies within 40.7° of the south celestial pole, so it never rises"
+        "It lies within 42° of the south celestial pole, so it never rises"
       ],
       "answerIndex": 3,
       "explanation": "Stars closer than your latitude to the opposite pole stay below the horizon all day and all year. The Cross is about 30° from the south celestial pole."
     },
     {
       "id": "cs-q3",
-      "prompt": "You move from Brooklyn to Anchorage, Alaska (latitude 61° north). What happens to the circumpolar region?",
+      "prompt": "You move from latitude 40°N to Anchorage, Alaska (latitude 61° north). What happens to the circumpolar region?",
       "choices": [
         "It shrinks, because the pole is lower",
         "It grows, because the pole is higher",
@@ -330,7 +402,7 @@
     },
     {
       "id": "cs-q4",
-      "prompt": "Cassiopeia is circumpolar from Brooklyn. What does that tell you about seeing it in July?",
+      "prompt": "Cassiopeia is circumpolar from London (51°N). What does that tell you about seeing it from London in July?",
       "choices": [
         "It is below the horizon in July",
         "It is visible only before dawn",

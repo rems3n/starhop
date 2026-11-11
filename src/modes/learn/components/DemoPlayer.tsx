@@ -3,7 +3,7 @@ import type { Demo } from '@/content/schema';
 import { Button, RichText, Slider } from '@/ui';
 import { BORTLE, type SkyController } from '@/types';
 import { DEFAULT_PLAY_RATE, bortleLabel, latitudeLabel, observerAtLatitude, scrubRange, scrubTime, scrubValue, shiftLocalDays, shiftLocalMonths, SCRUB_STEP_MIN } from '../logic/controls';
-import { bortleLimitingMag, resolveDemoStep, type SceneContext } from '../logic/scene';
+import { bortleLimitingMag, placeDemoStep, resolveDemoStep, type SceneContext } from '../logic/scene';
 import { SkyStage } from './SkyStage';
 
 export interface DemoPlayerProps {
@@ -21,7 +21,10 @@ export function DemoPlayer({ demo, ctx, initialStep = 0, onController, onTarget,
   const [i, setI] = useState(Math.min(Math.max(0, initialStep), demo.steps.length - 1));
   const [ctl, setCtl] = useState<SkyController | null>(null);
   const step = demo.steps[i];
-  const scene = useMemo(() => resolveDemoStep(step, ctx), [step, ctx]);
+  // If the step's subject cannot be seen from the learner's place at that time, show it later that night or from a reference place.
+  const placement = useMemo(() => placeDemoStep(step, ctx), [step, ctx]);
+  const scene = useMemo(() => resolveDemoStep(placement.step, ctx), [placement, ctx]);
+  const placementNote = placement.kind === 'as-authored' ? null : placement.note;
 
   // What the learner has changed with the widgets since the step began. Cleared on every step and on Reset.
   const [time, setTime] = useState(scene.time);
@@ -59,7 +62,7 @@ export function DemoPlayer({ demo, ctx, initialStep = 0, onController, onTarget,
       <SkyStage
         scene={scene}
         label={demo.title}
-        note={note ?? (scene.target && scene.layers.ground && scene.view.mount === 'altaz' && scene.target.alt < 0 ? `${scene.target.name} is below the horizon at this moment, so the view is aimed at the ground. Try the step again at another time.` : null)}
+        note={note ?? placementNote ?? (scene.target && scene.layers.ground && scene.view.mount === 'altaz' && scene.target.alt < 0 ? `${scene.target.name} is below the horizon at this moment, so the view is aimed at the ground. Try the step again at another time.` : null)}
         onReset={resetLocal}
         onController={(c) => {
           setCtl(c);
