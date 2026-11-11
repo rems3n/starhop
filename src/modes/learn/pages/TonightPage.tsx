@@ -37,7 +37,7 @@ export default function TonightPage() {
     }
     const nine = eveningOf(date, env.observer.tz, 21);
     const dusk = t.night.nauticalDusk;
-    return makeScene({ time: dusk && dusk > nine ? dusk : nine, az: 180, alt: 40, fov: 120 }, env);
+    return makeScene({ time: dusk && dusk > nine ? dusk : nine, az: env.observer.lat >= 0 ? 180 : 0, alt: 40, fov: 120 }, env);
   }, [env, date, t, sel]);
 
   if (!env || !t || !grouped || !scene || !date) return <Loading />;
@@ -84,7 +84,7 @@ export default function TonightPage() {
                   <Link to={sel.kind === 'constellation' ? routes.constellation(sel.ref.slice(4)) : routes.object(sel.ref)}>Read about {sel.name}</Link>
                 </>
               ) : (
-                'Looking south once it is dark. Choose anything in the list to see where it will be at its best time.'
+                `Looking ${env.observer.lat >= 0 ? 'south' : 'north'} once it is dark. Choose anything in the list to see where it will be at its best time.`
               )}
             </p>
           </SkyStage>

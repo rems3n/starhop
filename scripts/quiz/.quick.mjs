@@ -1,0 +1,14 @@
+import puppeteer from 'puppeteer-core';
+const OUT = process.env.OUT;
+const b = await puppeteer.launch({ executablePath: '/usr/bin/google-chrome', headless: true, args: ['--no-sandbox', '--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] });
+const [w, h, route, name, wait] = process.argv.slice(2);
+const p = await b.newPage();
+const errs = [];
+p.on('console', (m) => m.type() === 'error' && errs.push(m.text()));
+p.on('pageerror', (e) => errs.push(e.message));
+await p.setViewport({ width: +w, height: +h, isMobile: +w < 500, hasTouch: +w < 500, deviceScaleFactor: 1 });
+await p.goto(`http://localhost:5234/?debug=1#${route}`, { waitUntil: 'networkidle0' });
+await new Promise((r) => setTimeout(r, +(wait ?? 2500)));
+await p.screenshot({ path: `${OUT}/${name}.png` });
+console.log('errors:', errs);
+await b.close();

@@ -176,7 +176,7 @@ function GroupList({ m, catalog, progress }: { m: ResolvedModule; catalog: Catal
         <section key={g.id} className="ln-section">
           <div className="ln-section-head">
             <h3>{m.kind === 'beyond' ? `Never above the horizon from ${observer.name}` : g.title}</h3>
-            <span className="dim ln-small">{g.constellations.length} constellations</span>
+            <span className="dim ln-small">{g.constellations.length} constellation{g.constellations.length === 1 ? "" : "s"}</span>
           </div>
           <div className="ln-con-grid">
             {g.constellations.map((id) => {

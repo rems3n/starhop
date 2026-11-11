@@ -273,7 +273,7 @@ button.ln-tn-row:hover { background: var(--night-800); }
 .ln-modules .ln-unit-card { display: flex; flex-direction: column; gap: var(--sp-2); margin-bottom: var(--sp-3); }
 .ln-modules .ln-unit-blurb { margin: 0; color: var(--text); }
 .ln-modules .ln-unit-rail span.ln-mod-num { width: 26px; height: 26px; margin-top: 14px; font-size: var(--fs-xs); font-weight: 700; color: var(--text); }
-.ln-modules .ln-unit.is-current .ln-mod-num { border-color: var(--amber); color: var(--amber); }
+.ln-modules .ln-unit.is-current .ln-mod-num { color: var(--amber-ink); }
 .ln-modules .ln-unit.is-passed .ln-mod-num { background: var(--good); border-color: var(--good); color: var(--amber-ink); }
 .ln-mod-obj { font-size: var(--fs-sm); }
 .ln-mod-obj summary { cursor: pointer; color: var(--text-dim); font-weight: 600; }

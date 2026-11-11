@@ -1,6 +1,6 @@
 /* Embedded sky map + its compact controls. Tokens only, so red night mode applies.
    Placement hooks a page may set through `style`:
-     --se-bar-top (default 10px), --se-bar-shift (translateY, default 0) */
+     --se-bar-top (default 10px), --se-bar-shift (translateY, default 0), --se-panel-top (default 56px) */
 .sky-embed { position: relative; width: 100%; height: 100%; overflow: hidden; container: sky-embed / size; }
 .sky-embed > .sky-view { position: absolute; inset: 0; }
 
@@ -24,16 +24,16 @@
 .se-zoom .se-btn + .se-btn { border-top: 1px solid var(--line); }
 .se-zoom .se-btn:hover { background: rgba(156, 176, 255, 0.1); }
 
-/* Panel: beside the toolbar on roomy embeds, never wider than 60% of the view */
+/* Panel: beside the toolbar (below the Layers button) on roomy embeds, never wider than 60% of the view */
 .se-panel {
-  position: absolute; z-index: 7; top: 10px; right: 58px; width: min(420px, 60%); max-height: calc(100% - 20px);
+  position: absolute; z-index: 7; top: var(--se-panel-top, 56px); right: 58px; width: min(420px, 60%); max-height: calc(100% - var(--se-panel-top, 56px) - 10px);
   display: flex; flex-direction: column; overflow: hidden; border-radius: var(--r-lg); background: var(--panel-solid);
 }
 .se-panel-head { display: flex; align-items: center; justify-content: space-between; gap: var(--sp-2); padding: 4px 4px 4px var(--sp-4); border-bottom: 1px solid var(--line); flex: none; }
 .se-panel-head strong { font-size: var(--fs-sm); }
 .se-close { background: transparent; border-color: transparent; backdrop-filter: none; }
 .se-panel-body { overflow-y: auto; overscroll-behavior: contain; touch-action: pan-y; padding: var(--sp-2) var(--sp-4) var(--sp-3); display: flex; flex-direction: column; gap: var(--sp-3); }
-.se-groups { display: grid; grid-template-columns: repeat(auto-fill, minmax(176px, 1fr)); gap: var(--sp-2) var(--sp-4); }
+.se-groups { display: grid; grid-template-columns: repeat(auto-fill, minmax(164px, 1fr)); gap: var(--sp-2) var(--sp-4); }
 .se-group { border: 0; margin: 0; padding: 0; min-width: 0; }
 .se-group legend { padding: 0; font-size: var(--fs-xs); font-weight: 600; color: var(--text-faint); margin-bottom: 0; }
 .se-group .switch { min-height: 38px; padding: 0; font-size: var(--fs-sm); line-height: 1.25; }

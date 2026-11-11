@@ -20,6 +20,9 @@
   .app-tab { flex: 1 1 0; min-width: 0; flex-direction: column; justify-content: center; gap: 2px; padding: 0 2px; border-bottom: 0; border-top: 2px solid transparent; margin: -1px 0 0; font-size: var(--fs-xs); }
   .app-tab[aria-current='page'] { border-top-color: var(--amber); }
   .app-tab-icon { display: block; }
+  /* Phone header strip: brand top-left, settings top-right (settings.css); the full-bleed sky has no strip */
+  .app:not(.app--sky) .app-main { margin-top: calc(48px + env(safe-area-inset-top)); border-bottom: 0; }
+  .app:not(.app--sky) .app-brand { display: block; position: fixed; top: calc(10px + env(safe-area-inset-top)); left: var(--sp-4); }
 }
 
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: var(--sp-2); min-height: 38px; padding: 0 var(--sp-4); border-radius: var(--r-md); border: 1px solid var(--line-strong); background: transparent; color: var(--text); font-weight: 600; cursor: pointer; text-decoration: none; white-space: nowrap; transition: background 0.12s, border-color 0.12s; }

@@ -133,7 +133,23 @@
           },
           "caption": "Earth spins inside a sphere of stars. Press Spin Earth: the stars never move, but your horizon (green) tips across them, so stars come up over it in the east and drop below it in the west."
         }
-      ]
+      ],
+      "misconception": {
+        "myth": "The stars move across the sky on their own during the night.",
+        "fact": "The stars keep their places, relative to each other and to us. It is Earth that turns, once a day from west to east, so everything in the sky, the Sun and Moon included, appears to drift the other way, east to west, at the same steady rate."
+      },
+      "check": {
+        "id": "check-nr-cause",
+        "prompt": "In the figure the stars stay put while your horizon tips across them. What is actually turning?",
+        "choices": [
+          "The sphere of stars, once a day",
+          "Earth, once a day",
+          "The Sun, carrying the stars with it",
+          "Nothing: each star drifts on its own"
+        ],
+        "answerIndex": 1,
+        "explanation": "Earth spins on its axis once a day. Standing on it, you see the whole sky appear to turn the opposite way."
+      }
     },
     {
       "heading": "The pivot and the speed",
@@ -162,9 +178,17 @@
             "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
             "sourceUrl": "https://commons.wikimedia.org/wiki/File:Star_Trails_Above_Gemini_North_(iotw2506a).jpg"
           },
-          "caption": "A real long exposure over Maunakea, Hawaii. Every trail is part of a circle around the north celestial pole, the still point just right of the dome's top; Polaris made the tiny bright arc nearest the centre."
+          "caption": "A real long exposure over Maunakea, Hawaii. Every trail is part of a circle around one still point, the north celestial pole; the trails near it are short and tight, the ones far from it long and sweeping, yet all span the same angle."
         }
-      ]
+      ],
+      "misconception": {
+        "myth": "Polaris, the North Star, is the brightest star in the sky.",
+        "fact": "Polaris is an ordinary second-magnitude star, roughly the 50th brightest, and city haze can hide it. It is famous for where it is, less than 1° from the north celestial pole, not for how bright it is. The brightest star at night is Sirius."
+      },
+      "thinkAbout": {
+        "question": "In one hour, a star 60° from the pole and a star 10° from the pole both turn with the sky. Which one travels farther across the sky, and which one turns through the bigger angle?",
+        "answer": "The star 60° out sweeps an arc about five times longer across the sky, but both turn through the same 15° around the pole. That is why every trail in a long exposure spans the same angle: short and tight near the pole, long and sweeping far from it."
+      }
     },
     {
       "heading": "Rising in the east, setting in the west",
@@ -259,7 +283,19 @@
           },
           "caption": "Each line is one star's daily path; the dots are an hour apart. Facing east, stars climb out of the horizon on a slant of 90° minus your latitude. Switch to South to see the same paths peak, and try other latitudes to watch the slant change."
         }
-      ]
+      ],
+      "check": {
+        "id": "check-nr-slant",
+        "prompt": "From latitude 35° N you watch a star rise due east. At what angle to the horizon does it climb?",
+        "choices": [
+          "35°",
+          "55°",
+          "90°, straight up",
+          "15°, one hour's turn"
+        ],
+        "answerIndex": 1,
+        "explanation": "Stars rise at 90° minus your latitude: 90 − 35 = 55°. Only on the equator do they rise straight up; try it with the latitude slider in the figure."
+      }
     }
   ],
   "keyPoints": [

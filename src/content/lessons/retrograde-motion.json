@@ -238,6 +238,26 @@
             "rate": 430820
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "mars-loop-sky",
+          "params": {
+            "planet": "mars"
+          },
+          "caption": "Mars's real path against the stars of Leo and Cancer from October 2026 to June 2027, worked out day by day. Press Play: Mars drifts east, stops in January, backs up west through opposition in February, stops again around the start of April and resumes its eastward course. Switch to Jupiter and Saturn to compare their smaller loops at the same scale."
+        },
+        {
+          "type": "diagram",
+          "id": "epicycle-model",
+          "params": {},
+          "caption": "Ancient astronomers kept Earth still and gave Mars a small circle riding on a big one (left), which reproduces the loops. Copernicus put the Sun in the middle (right): Earth and Mars both simply go round, and the arrow from Earth to Mars swings the same way in both pictures. The loop is a sign of our own motion."
+        }
+      ],
+      "misconception": {
+        "myth": "When Mars is in retrograde it actually turns round and moves backward in its orbit.",
+        "fact": "Mars always moves forward round the Sun. Only the direction in which we see it from our moving Earth swings backward for a while, as Earth overtakes it."
       }
     },
     {
@@ -335,6 +355,26 @@
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "retrograde-top-view",
+          "params": {},
+          "caption": "Earth and Mars at seven dates 20 days apart around the 2027 opposition, from their real positions. Each numbered line of sight points to where Mars appears among the far-away stars (top strip). While Earth draws level and passes Mars, the lines swing back, so from point 2 to point 6 Mars slides west: retrograde motion."
+        }
+      ],
+      "check": {
+        "id": "check-retrograde-frequency",
+        "prompt": "Earth laps Jupiter about once every 13 months. How often does Jupiter go retrograde?",
+        "choices": [
+          "About once every 13 months",
+          "Once every 12 years",
+          "Every month",
+          "Only when it is behind the Sun"
+        ],
+        "answerIndex": 0,
+        "explanation": "Retrograde motion happens each time Earth overtakes the planet, which is at each opposition: about every 13 months for Jupiter."
       }
     },
     {
@@ -342,6 +382,22 @@
       "body": [
         "Mercury and Venus go retrograde too, when they pass between us and the Sun and it is their turn to overtake us. Mercury does this three or four times a year, for about three weeks each time. It happens while the planet is close to the Sun in the sky, so there is little to see, and nothing changes on the planet itself. Like every retrograde, it is a matter of where we are standing."
       ],
+      "thinkAbout": {
+        "question": "Seen from Mars, would Earth ever appear to go retrograde? When?",
+        "answer": "Yes. For Mars, Earth is an inner planet, and it goes retrograde when it overtakes Mars on the inside, passing between Mars and the Sun. That is the same moment as Mars's opposition seen from Earth, but from Mars, Earth is then lost close to the Sun."
+      },
+      "check": {
+        "id": "check-mercury-retrograde",
+        "prompt": "A headline says Mercury is in retrograde. What is actually happening?",
+        "choices": [
+          "Mercury is passing between Earth and the Sun, so our view of it swings backward",
+          "Mercury has reversed its direction round the Sun",
+          "Mercury is on the far side of the Sun",
+          "Mercury's spin has slowed down"
+        ],
+        "answerIndex": 0,
+        "explanation": "Like every retrograde, it is a change in our line of sight: faster Mercury is overtaking Earth on the inside. Nothing about Mercury itself changes."
+      },
       "tryIt": "When a bright planet is near opposition, pick two stars close to it and sketch the three as a triangle. Repeat once a week for a month or two. Your sketches will show the planet backing up against the stars, and if you keep going, the turn."
     }
   ],

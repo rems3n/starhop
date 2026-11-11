@@ -43,7 +43,7 @@ export default function App() {
   const fullBleed = pathname.startsWith('/sky');
   const needsLocation = LOCATION_PAGES.some((x) => pathname === x || pathname.startsWith(`${x}/`));
   return (
-    <div className="app">
+    <div className={`app${fullBleed ? ' app--sky' : ''}`}>
       <nav className="app-nav" aria-label="Main">
         <NavLink to={routes.sky()} className="app-brand">
           Starhop

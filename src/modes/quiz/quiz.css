@@ -194,3 +194,7 @@
   .qz-mythlist li, .qz-hoplist li { grid-template-columns: minmax(0, 1fr) 60px 3em auto; gap: var(--sp-2); }
 }
 .qz-good { color: var(--good); }
+@media (max-width: 640px) {
+  /* leave the embedded sky's control column (top right) uncovered */
+  .qz-hop .qz-prompt { left: var(--sp-2); transform: none; width: calc(100% - 64px - var(--sp-2)); }
+}

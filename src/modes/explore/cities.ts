@@ -122,7 +122,7 @@ export function fold(s: string): string {
 /** Cities whose name or country matches; name-prefix matches first. Empty query = the whole list. */
 export function searchCities(query: string, list: City[] = CITIES): City[] {
   const q = fold(query);
-  if (!q) return list;
+  if (!q) return [...list].sort((a, b) => a.name.localeCompare(b.name)); // no home city first: an A–Z world list
   const scored: { city: City; score: number }[] = [];
   for (const city of list) {
     const n = fold(city.name);

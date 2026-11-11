@@ -123,7 +123,7 @@ export default function SkyZonesLatitude({ params }: DiagramProps) {
         {starEl}
         <circle cx={OX} cy={OY} r={4} fill={C.text} />
         <Label x={OX} y={OY + 22} anchor="middle" size="s" color={C.dim}>you</Label>
-        <Label x={OX} y={OY - R - 8} anchor="middle" size="s" color={C.dim}>zenith</Label>
+        {a < 80 && <Label x={OX} y={OY - R - 8} anchor="middle" size="s" color={C.dim}>zenith</Label>}
         {/* Pole labels */}
         {[{ ang: lat, text: north ? 'N celestial pole (Polaris)' : 'N celestial pole', on: north }, { ang: lat + 180, text: 'S celestial pole', on: !north }].map((p) => {
           let [x, y] = pt(p.ang, poleLabelR);
@@ -144,12 +144,12 @@ export default function SkyZonesLatitude({ params }: DiagramProps) {
         {a > 4 && (() => {
           const c = pt(aUp, R * 0.82);
           const right = c[0] >= OX;
-          return <Callout from={c} to={[right ? W - 190 : 16, 44]} label="Never sets" note={`declination ${north ? 'above +' : 'below −'}${limit.toFixed(1)}°`} color={C.blue} />;
+          return <Callout from={c} to={[right ? W - 190 : 16, 44]} label="Never sets" note={`declination ${limit < 0.05 ? (north ? 'above 0°' : 'below 0°') : `${north ? 'above +' : 'below −'}${limit.toFixed(1)}°`}`} color={C.blue} />;
         })()}
         {a > 4 && (() => {
           const c = pt(aUp + 180, R * 0.82);
           const right = c[0] >= OX;
-          return <Callout from={c} to={[right ? W - 190 : 16, H - 40]} label="Never rises" note={`declination ${north ? 'below −' : 'above +'}${limit.toFixed(1)}°`} color={C.bad} />;
+          return <Callout from={c} to={[right ? W - 190 : 16, H - 40]} label="Never rises" note={`declination ${limit < 0.05 ? (north ? 'below 0°' : 'above 0°') : `${north ? 'below −' : 'above +'}${limit.toFixed(1)}°`}`} color={C.bad} />;
         })()}
         {a < 86 && (() => {
           const [p, q] = chord(north ? -10 : 10);

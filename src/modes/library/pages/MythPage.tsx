@@ -50,14 +50,14 @@ export default function MythPage() {
   return (
     <Page wide>
       <Crumbs items={[['Library', routes.library()], ['Myths', routes.myths()], [story.title]]} />
+      <header className="lb-head">
+        <h1>{story.title}</h1>
+        <p className="lb-lede">
+          A {story.culture} story told about <Link to={routes.constellation(con.id)}>{con.name}</Link> ({con.english}).
+        </p>
+      </header>
       <div className="lb-reading">
         <article className="lb-reading-main">
-          <header className="lb-head">
-            <h1>{story.title}</h1>
-            <p className="lb-lede">
-              A {story.culture} story told about <Link to={routes.constellation(con.id)}>{con.name}</Link> ({con.english}).
-            </p>
-          </header>
           <div className="prose lb-summary">
             <p>
               <RichText text={story.summary} onTarget={onTarget} />

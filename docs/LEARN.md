@@ -4,19 +4,19 @@ Default export `LearnRoutes` (`LearnRoutes.tsx`), nested under `/learn/*`. CSS i
 
 ## Routes
 
+Learn is only the course (`src/content/course.json`, resolved per location by `resolveCourse` in `src/content/course.ts`).
+
 | Route | Page | Notes |
 | --- | --- | --- |
-| `/learn` | `pages/Home.tsx` | Guided path (3 stages, unit cards, one "Continue" action), Tonight card, reference links |
-| `/learn/unit/:id` | `UnitPage.tsx` | Checklist: lessons → constellations → star patterns → `/quiz/unit/:id` |
-| `/learn/lessons` | `LessonsIndex.tsx` | Lessons by unit with done marks |
-| `/learn/lesson/:id` | `LessonPage.tsx` | One screen per section (`?s=<n>`), then examples (objects lessons), key points, practice questions |
-| `/learn/tonight` | `TonightPage.tsx` | `tonight()`; date picker; rows open the sky at the row's best time |
-| `/learn/month`, `/learn/month/:m` | `MonthPage.tsx` | Authored guide + live sections for the 15th of that month this year |
-| `/learn/calendar` | `CalendarPage.tsx` | 7 planets + 88 constellations × 12 months |
-| `/learn/signposts`, `/learn/signpost/:id` | `SignpostsPage.tsx`, `SignpostPage.tsx` | Any asterism id works; hops only on the five signposts |
-| `/learn/events` | `EventsPage.tsx` | `yearEvents()`, kind filters, "show the sky then" |
-| `/learn/constellations`, `/learn/constellation/:id` | `ConstellationIndex.tsx`, `ConstellationPage.tsx` | Calls `markSeen(id)`; catalog-only page when the content file is missing |
-| `/learn/objects`, `/learn/object/:ref` | `ObjectsPage.tsx`, `ObjectPage.tsx` | `<ObjectInfo variant="page">` beside a sky view |
+| `/learn` | `pages/Home.tsx` | One "Continue where you left off" action, then the 8 modules as a numbered path (purpose, objectives — collapsed on phones — counts, progress, Start/Continue) |
+| `/learn/module/:id` | `ModulePage.tsx` | Purpose, objectives, lessons / star-hops / constellation groups for the learner's location, progress, "Practice this module" (`routes.moduleQuiz`) |
+| `/learn/lesson/:id` | `LessonPage.tsx` | "Module N · Lesson k of n" with previous/next in the module; after the questions, "Next lesson" follows course order |
+
+`logic/course.ts`: `lessonPlace`, `moduleProgress` (lessons done, constellations seen/mastered — find-it mastery ≥ 0.8 —
+and the module quiz score stored by the practice section with `setUnitScore(moduleId, score)`), `courseOverview`,
+`useCourse`. Tonight / month / calendar / events pages still live in `pages/` and are mounted under `/tonight` by
+`src/modes/tonight/TonightRoutes.tsx`; ConstellationPage / ObjectPage / SignpostPage are reused by the Library.
+Old `/learn/*` routes redirect (see `LearnRoutes.tsx`).
 
 ## How it fits together
 

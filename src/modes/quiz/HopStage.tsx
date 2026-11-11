@@ -8,7 +8,7 @@ import { useSettings } from '@/store/settings';
 import type { Highlight, LayerState, SkyController } from '@/types';
 import { Button } from '@/ui';
 import { liveRng } from './logic/rng';
-import { fitFov, quizLayers } from './logic/sky';
+import { quizLayers } from './logic/sky';
 import { hopFrame, hopTolerancePx, judgeHopClick, type ScreenPoint } from './logic/starhop';
 import type { HopQ, QuizData } from './logic/types';
 import { Feedback, type ViewProps } from './Session';
@@ -49,6 +49,9 @@ export function HopStage({ q, data, result, answer, next }: ViewProps<HopQ> & { 
   const { catalog, observer } = data;
   const [c, setC] = useState<SkyController | null>(null);
   const [stage, setStage] = useState<HTMLDivElement | null>(null);
+  const stageRef = useRef<HTMLDivElement | null>(null);
+  const promptRef = useRef<HTMLDivElement>(null);
+  const actionsRef = useRef<HTMLDivElement>(null);
   const [pick, setPick] = useState<{ ref: string | null; ra: number; dec: number } | null>(null);
   const path = useMemo(() => q.path.map((r) => catalog.resolve(r)!).filter(Boolean), [q, catalog]);
   const target = useMemo(() => catalog.resolve(q.target), [q, catalog]);
@@ -61,8 +64,6 @@ export function HopStage({ q, data, result, answer, next }: ViewProps<HopQ> & { 
   // ── scene: the whole hop in view, start ringed and named, everything else unlabelled
   useEffect(() => {
     if (!c) return;
-    const size = c.getSize();
-    const aspect = size.width / Math.max(1, size.height);
     setPick(null);
     c.setTimeRate(0);
     c.setSelection(null);
@@ -71,12 +72,50 @@ export function HopStage({ q, data, result, answer, next }: ViewProps<HopQ> & { 
     c.setLimitingMag(diff.limitingMag);
     c.setLayers(quizLayers(diff, { labels: false }));
     const roll = diff.randomRotation ? Math.floor(liveRng()() * 360) : 0;
-    // room for the instructions above and the action bar below
-    c.setView({ mount: 'equatorial', lon: frame.ra, lat: frame.dec, roll, fov: fitFov(frame.radius * 2 + 12, aspect, 1.45) });
+    frameHop(c, roll);
     c.setHighlights(startHighlights());
     c.setInputMode('navigate');
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [c, q.key]);
+
+  /**
+   * Fit the whole hop into the open sky between the instructions panel and the action bar. Start from an
+   * estimate, then (once the projection has updated) measure where the path's stars land on screen and
+   * correct zoom and centre a few times. A centre that would sit on a celestial pole turns the chart round.
+   */
+  const frameHop = useCallback(
+    (ctrl: SkyController, roll = ctrl.getView().roll) => {
+      const size = ctrl.getSize();
+      const stageR = stageRef.current?.getBoundingClientRect();
+      const top = stageR && promptRef.current ? promptRef.current.getBoundingClientRect().bottom - stageR.top + 8 : size.height * 0.2;
+      const bottom = stageR && actionsRef.current?.firstElementChild ? actionsRef.current.firstElementChild.getBoundingClientRect().top - stageR.top - 8 : size.height * 0.88;
+      const band = { w: size.width - 24, h: Math.max(80, bottom - top), cy: (top + bottom) / 2 };
+      const r = frame.radius + 2;
+      const pxPerDeg = Math.min(band.h / 2 / r, band.w / 2 / r);
+      ctrl.setView({ mount: 'equatorial', lon: frame.ra, lat: frame.dec, roll, fov: Math.max(15, Math.min(150, size.height / pxPerDeg)) });
+      const step = (left: number) =>
+        requestAnimationFrame(() =>
+          requestAnimationFrame(() => {
+            const pts = path.map((t) => ctrl.project(t.ra, t.dec));
+            if (pts.some((p) => !Number.isFinite(p.x) || !Number.isFinite(p.y))) return;
+            const xs = pts.map((p) => p.x), ys = pts.map((p) => p.y);
+            const [x0, x1, y0, y1] = [Math.min(...xs), Math.max(...xs), Math.min(...ys), Math.max(...ys)];
+            const v = ctrl.getView();
+            const scale = Math.max((x1 - x0 + 40) / band.w, (y1 - y0 + 40) / band.h, 0.4);
+            const c = ctrl.unproject(size.width / 2 + ((x0 + x1) / 2 - size.width / 2), size.height / 2 + ((y0 + y1) / 2 - band.cy));
+            if (!c) return;
+            if (Math.abs(c.dec) > 88) {
+              ctrl.setView({ roll: (v.roll + 180) % 360 });
+            } else {
+              ctrl.setView({ lon: c.ra, lat: c.dec, fov: Math.max(15, Math.min(150, v.fov * scale)) });
+            }
+            if (left > 1) step(left - 1);
+          }),
+        );
+      step(4);
+    },
+    [frame, path],
+  );
 
   // ── the learner's click
   const onClick = useCallback(
@@ -119,6 +158,8 @@ export function HopStage({ q, data, result, answer, next }: ViewProps<HopQ> & { 
       else if (!pick.ref) hl.push({ type: 'circle', center: `radec:${pick.ra.toFixed(3)},${pick.dec.toFixed(3)}`, radiusDeg: 0.6, color: bad });
     }
     c.setHighlights(hl);
+    // the feedback makes the panel taller: keep the whole hop in the open sky
+    requestAnimationFrame(() => frameHop(c));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [c, result]);
 
@@ -128,9 +169,9 @@ export function HopStage({ q, data, result, answer, next }: ViewProps<HopQ> & { 
   }, []);
 
   return (
-    <div ref={setStage} className="qz-stage qz-hop" data-kind="hop">
+    <div ref={(el) => { stageRef.current = el; setStage(el); }} className="qz-stage qz-hop" data-kind="hop">
       <SkyEmbed options={initial.current} onReady={onReady} className="qz-sky" controls="limited" allowedLayers={allowed} />
-      <div className="qz-prompt panel" data-testid="prompt">
+      <div ref={promptRef} className="qz-prompt panel" data-testid="prompt">
         <p className="qz-prompt-main">{result ? q.title : 'Follow the hop'}</p>
         <ol className="qz-hop-steps">
           {q.steps.map((s, i) => (
@@ -145,7 +186,7 @@ export function HopStage({ q, data, result, answer, next }: ViewProps<HopQ> & { 
           </Feedback>
         )}
       </div>
-      <div className="qz-actions" data-testid="actions">
+      <div ref={actionsRef} className="qz-actions" data-testid="actions">
         <div className="qz-find-bar panel">
           {!result && (
             <Button size="sm" onClick={() => answer({ correct: false, skipped: true })} data-testid="show-me">

@@ -53,6 +53,10 @@ interface Hop {
   /** Fist ticks: [from star, toward star, total degrees] */
   fists: [string, string, number][];
   targets: string[];
+  /** One name for a tight group of starting stars (instead of labelling each) */
+  startLabel?: string;
+  /** Turn the chart counterclockwise by this many degrees to fit a tall hop into the wide frame */
+  rotate?: number;
   steps: [string, string, string, string];
 }
 
@@ -85,6 +89,8 @@ const HOPS: Record<string, Hop> = {
       ['Arcturus', 'Spica', sepDeg(V('Arcturus'), V('Spica'))],
     ],
     targets: ['Arcturus', 'Spica'],
+    startLabel: 'the Dipper’s handle',
+    rotate: 90,
     steps: [
       'Start from the three stars of the Big Dipper’s handle: Alioth, Mizar and Alkaid. Notice that they bend.',
       'Keep the same curve going past Alkaid, away from the bowl, as if the handle were longer.',
@@ -103,6 +109,7 @@ const HOPS: Record<string, Hop> = {
       ['Mintaka', 'Aldebaran', sepDeg(V('Mintaka'), V('Aldebaran'))],
     ],
     targets: ['Sirius', 'Aldebaran', 'Pleiades'],
+    startLabel: 'Orion’s Belt',
     steps: [
       'Start from Orion’s Belt: three stars of nearly equal brightness in a short, straight row.',
       'Extend the row both ways: down and to the left, and up and to the right.',
@@ -152,9 +159,11 @@ export default function StarHop({ params }: DiagramProps) {
     const ra0 = Math.atan2(c[1], c[0]);
     const east: V3 = [-Math.sin(ra0), Math.cos(ra0), 0];
     const north: V3 = [-c[2] * Math.cos(ra0), -c[2] * Math.sin(ra0), Math.hypot(c[0], c[1])];
+    const rot = rad(hop.rotate ?? 0);
     const raw = (p: V3): [number, number] => {
       const k = 2 / (1 + dot(p, c));
-      return [-k * dot(p, east), -k * dot(p, north)];
+      const x = -k * dot(p, east), y = -k * dot(p, north);
+      return [x * Math.cos(rot) + y * Math.sin(rot), -x * Math.sin(rot) + y * Math.cos(rot)];
     };
     const pts = hop.frame.map((n) => raw(V(n)));
     const xs = pts.map((p) => p[0]), ys = pts.map((p) => p[1]);
@@ -194,7 +203,7 @@ export default function StarHop({ params }: DiagramProps) {
       : hop.path().map((piece) => `M ${piece.map((v) => proj.p(v).map((q) => q.toFixed(1)).join(' ')).join(' L ')}`);
   const triangle = hopId === 'triangle' ? ['Betelgeuse', 'Procyon', 'Sirius'].map(P) : null;
 
-  const shownNames = new Set([...hop.start, ...(step >= 4 ? hop.targets : [])]);
+  const shownNames = new Set([...(hop.startLabel ? [] : hop.start), ...(step >= 4 ? hop.targets : [])]);
   const labelFor = (n: string) => (n === 'Pleiades' ? 'Pleiades' : n);
 
   return (
@@ -213,7 +222,7 @@ export default function StarHop({ params }: DiagramProps) {
         {/* fist ticks */}
         {step >= 3 &&
           hop.fists.map(([a, b, total], k) => {
-            const n = Math.floor(total / 10 + 0.2);
+            const n = Math.floor(total / 10 - 0.15); // no tick right on top of the target
             return Array.from({ length: n }, (_, i) => {
               const d = Math.min(total, (i + 1) * 10);
               const [x, y] = proj.p(along(V(a), V(b), d));
@@ -260,12 +269,30 @@ export default function StarHop({ params }: DiagramProps) {
             </Label>
           );
         })}
+        {hop.startLabel &&
+          (() => {
+            const mid = P(hop.start[Math.floor(hop.start.length / 2)]);
+            return (
+              <Label x={mid[0] + 18} y={mid[1] + 26} weight={600}>
+                {hop.startLabel}
+              </Label>
+            );
+          })()}
+        {step === 3 &&
+          hop.fists.map(([a, b, total]) => {
+            const [x, y] = P(b);
+            return (
+              <Label key={b} x={x + 14} y={y + 20} size="s" color={C.amber} weight={600}>
+                {`≈${Math.round(total / 10)} fists (${total.toFixed(0)}°)`}
+              </Label>
+            );
+          })}
         <Step x={30} y={30} n={step} />
         <Label x={48} y={35} weight={600}>
           {['Start from what you know', 'Find the direction', 'Measure the distance in fists', 'Arrive and confirm'][step - 1]}
         </Label>
         <Label x={W - 16} y={H - 14} anchor="end" size="s" color={C.dim}>
-          chart: north up, east left; ticks every 10° (one fist)
+          {`${hop.rotate ? 'chart turned: north to the left' : 'chart: north up, east left'}; ticks every 10° (one fist)`}
         </Label>
       </Svg>
       <Controls>

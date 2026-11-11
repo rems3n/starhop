@@ -381,7 +381,7 @@ export function StoryPage() {
 // ───────────── sky knowledge, lesson quiz
 
 /** Lesson groups = the course's lesson modules (any module that lists lessons). */
-const LESSON_GROUPS = [{ value: 'all', label: 'All lessons' }, ...courseModules.filter((m) => m.lessons.length).map((m) => ({ value: m.id, label: m.title }))];
+const LESSON_GROUPS = [{ value: 'all', label: 'All lessons' }, ...courseModules.filter((m) => m.lessons?.length).map((m) => ({ value: m.id, label: m.title }))];
 
 export function KnowledgePage() {
   const data = useQuizData();
@@ -484,8 +484,8 @@ export function ModuleQuizPage() {
   // can a quiz be built at all? (constellation modules need the course resolved for this location)
   const ready = useMemo(() => {
     if (!data || !mod) return false;
-    if (mod.kind === 'lessons') return mod.lessons.some((l) => data.lessons.find((x) => x.id === l)?.questions?.length);
-    if (mod.kind === 'starhops') return moduleHopIds(mod, data.hops ?? [], data).length > 0 || mod.lessons.some((l) => data.lessons.find((x) => x.id === l)?.questions?.length);
+    if (mod.kind === 'lessons') return (mod.lessons ?? []).some((l) => data.lessons.find((x) => x.id === l)?.questions?.length);
+    if (mod.kind === 'starhops') return moduleHopIds(mod, data.hops ?? [], data).length > 0 || (mod.lessons ?? []).some((l) => data.lessons.find((x) => x.id === l)?.questions?.length);
     return moduleConstellations(mod).length > 0;
   }, [data, mod]);
   useStartOnEnter(!run && ready, start);

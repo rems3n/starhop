@@ -27,7 +27,7 @@ describe('calendar rows', () => {
     expect(filterRows(rows, 'anchors').length).toBe(15);
     expect(filterRows(rows, 'planets').length).toBe(7);
     expect(filterRows(rows, 'group:dec-feb').every((r) => r.group === 'dec-feb')).toBe(true);
-    expect(filterRows(rows, 'group:circumpolar').map((r) => r.id)).toEqual(['UMi']);
+    expect(filterRows(rows, 'group:circumpolar').map((r) => r.id)).toEqual(expect.arrayContaining(['UMi', 'Dra', 'Cas']));
     expect(filterRows(rows, 'module:first-constellations').length).toBe(15);
   });
   it('groups with planets first, then evening groups in month order or course modules in course order', () => {

@@ -109,7 +109,7 @@ export default function ZodiacOrbitTop({ params }: DiagramProps) {
           seen from above Earth’s north pole · not to scale
         </Label>
         <Label x={712} y={25} anchor="end" size="s" color={C.dim}>
-          Earth moves anticlockwise ↺
+          Earth moves counterclockwise ↺
         </Label>
       </Svg>
       <Controls>

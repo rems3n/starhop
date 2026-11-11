@@ -64,8 +64,8 @@ export default function LifetimeVsMass({ params }: DiagramProps) {
         {[0, 3, 6, 9].map((k) => (
           <line key={k} x1={420 + (k / 9) * 270} x2={420 + (k / 9) * 270} y1={120} y2={146} stroke={C.lineStrong} strokeOpacity={0.4} />
         ))}
-        <Label x={300} y={208} size="s" color={C.dim}>A star twice the Sun’s mass has twice the fuel</Label>
-        <Label x={300} y={224} size="s" color={C.dim}>but burns it about 16 times faster.</Label>
+        <Label x={300} y={190} size="s" color={C.dim}>A star twice the Sun’s mass has twice the fuel</Label>
+        <Label x={300} y={206} size="s" color={C.dim}>but burns it about 16 times faster.</Label>
 
         {/* timeline */}
         <line x1={TX0} x2={TX1} y1={TY} y2={TY} stroke={C.lineStrong} />
@@ -78,8 +78,9 @@ export default function LifetimeVsMass({ params }: DiagramProps) {
           </g>
         ))}
         <rect x={TX0} y={TY - 14} width={Math.max(3, tx(life) - TX0)} height={10} rx={3} fill={tempColor(T)} />
-        <line x1={tx(universe)} x2={tx(universe)} y1={TY - 40} y2={TY} stroke={C.blue} strokeDasharray="3 3" />
-        <Label x={tx(universe) + 4} y={TY - 30} size="s" color={C.blue}>age of the universe</Label>
+        <Label x={tx(life) > 560 ? tx(life) - 4 : tx(life) + 6} y={TY - 20} anchor={tx(life) > 560 ? 'end' : 'start'} size="s" weight={700}>{years(life)}</Label>
+        <line x1={tx(universe)} x2={tx(universe)} y1={TY - 76} y2={TY} stroke={C.blue} strokeDasharray="3 3" />
+        <Label x={tx(universe) + 4} y={TY - 66} size="s" color={C.blue}>age of the universe</Label>
         <line x1={tx(4.5e9)} x2={tx(4.5e9)} y1={TY - 56} y2={TY} stroke={C.good} strokeDasharray="3 3" />
         <Label x={tx(4.5e9) - 4} y={TY - 46} anchor="end" size="s" color={C.good}>age of the Earth</Label>
         <Label x={TX0} y={TY + 40} size="s" color={C.dim}>
@@ -87,11 +88,11 @@ export default function LifetimeVsMass({ params }: DiagramProps) {
         </Label>
       </Svg>
       <Controls>
-        <RangeControl label="Mass" value={Math.round(toS(M))} min={0} max={1000} onChange={(v) => setM(fromS(v))} format={() => `${fmt(sig(M, 2))} Suns`} />
+        <RangeControl label="Mass" value={Math.round(toS(M))} min={0} max={1000} onChange={(v) => setM(fromS(v))} format={() => `${fmt(sig(M, 2))} Sun${sig(M, 2) === 1 ? '' : 's'}`} />
         <ChoiceControl label="Jump to a star" value={near?.id ?? ''} options={STARS.map((s) => ({ value: s.id, label: s.name }))} onChange={(id) => setM(STARS.find((s) => s.id === id)!.M)} />
       </Controls>
       <Readout>
-        {near ? `${near.name}: ` : ''}A star of {fmt(sig(M, 2))} solar masses shines about {L >= 1 ? `${fmt(sig(L, 2))} times as bright as` : `${fmt(sig(1 / L, 2))} times dimmer than`} the Sun and lives about {years(life)} on the main sequence.
+        {near ? `${near.name}: ` : ''}A star of {fmt(sig(M, 2))} solar mass{sig(M, 2) === 1 ? '' : 'es'} shines {L > 0.9 && L < 1.1 ? 'about as brightly as' : L >= 1 ? `about ${fmt(sig(L, 2))} times as bright as` : `about ${fmt(sig(1 / L, 2))} times dimmer than`} the Sun and lives about {years(life)} on the main sequence.
         {life > universe ? ' That is longer than the universe has existed: no star this small has ever died.' : life < 1e8 ? ' It will be gone before its birth cloud has drifted apart.' : ''}
       </Readout>
     </div>

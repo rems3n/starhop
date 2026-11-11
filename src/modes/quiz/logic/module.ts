@@ -19,13 +19,13 @@ export const MODULE_MIN_LESSON = 4;
 
 /** Constellation ids of a module (anchors / seasons / beyond), most prominent first, no repeats. */
 export function moduleConstellations(m: Pick<ResolvedModule, 'groups'>): string[] {
-  return [...new Set(m.groups.flatMap((g) => g.constellations))];
+  return [...new Set((m.groups ?? []).flatMap((g) => g.constellations))];
 }
 
 /** Star-hop ids of a starhops module: the resolved list, or (course not resolved yet) the top-ranked hops usable here. */
 export function moduleHopIds(m: Pick<ResolvedModule, 'starhopIds' | 'starhopCount'>, hops: readonly Starhop[], data: Pick<QuizData, 'observer' | 'now'>): string[] {
   const known = new Set(hops.map((h) => h.id));
-  const ids = m.starhopIds.filter((id) => known.has(id));
+  const ids = (m.starhopIds ?? []).filter((id) => known.has(id));
   return ids.length ? ids : hopsFor(hops, data.observer, 'any', data.now).slice(0, m.starhopCount ?? 10).map((h) => h.id);
 }
 
@@ -64,7 +64,9 @@ function storyRoundRobin(stories: readonly StoryRef[], max: number, rng: Rng): Q
  * Sky questions come first (shuffled), then the reading questions (shuffled). Empty when there is nothing
  * to ask yet (e.g. the course is not resolved for this location).
  */
-export function composeModuleQuiz(m: ResolvedModule, data: QuizData, hops: readonly Starhop[], rng: Rng, max = MODULE_QUIZ_MAX): Question[] {
+export function composeModuleQuiz(mod: ResolvedModule, data: QuizData, hops: readonly Starhop[], rng: Rng, max = MODULE_QUIZ_MAX): Question[] {
+  // raw course JSON may omit the defaulted fields
+  const m = { ...mod, lessons: mod.lessons ?? [], groups: mod.groups ?? [], starhopIds: mod.starhopIds ?? [] };
   if (m.kind === 'lessons') return uniqueKeys(shuffle(lessonRoundRobin(m.lessons, data, max, rng), rng));
 
   if (m.kind === 'starhops') {

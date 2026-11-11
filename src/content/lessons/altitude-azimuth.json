@@ -43,6 +43,26 @@
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "alt-az-dome",
+          "params": { "mode": "point", "alt": 35, "az": 120 },
+          "caption": "Think of the sky as a dome over you. Altitude (green) is the angle up from the horizon to the star; azimuth (amber) is the compass bearing, counted from north through east along the horizon. Drag the star around the dome and read off the two numbers."
+        }
+      ],
+      "check": {
+        "id": "check-altaz-read",
+        "prompt": "Star A is at altitude 60°, azimuth 90°. Star B is at altitude 30°, azimuth 180°. Which statement is right?",
+        "choices": [
+          "A is higher, in the east; B is lower, in the south",
+          "A is in the south, B in the east",
+          "B is higher because its azimuth is bigger",
+          "Both are at the same height"
+        ],
+        "answerIndex": 0,
+        "explanation": "Altitude says how high: 60° is higher than 30°. Azimuth says which way: 90° is east and 180° is south."
       }
     },
     {
@@ -68,6 +88,18 @@
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "alt-az-dome",
+          "params": { "mode": "daily", "dec": 20 },
+          "caption": "As the Earth turns, each star traces a tilted path across your dome, computed here for the latitude in your settings. Press Turn the Earth: the star climbs in the east, reaches its highest exactly as it crosses the meridian (blue), then sinks in the west. Change the star's declination and the path's height changes, but the peak is always on the meridian."
+        }
+      ],
+      "misconception": {
+        "myth": "The North Star is straight overhead.",
+        "fact": "Polaris is only overhead at the North Pole. Everywhere else it sits on the meridian above the north point of the horizon, at an altitude equal to your latitude: about 40° from mid-northern latitudes, and below the horizon from the southern hemisphere."
       }
     },
     {
@@ -104,7 +136,19 @@
           }
         ]
       },
-      "tryIt": "Tonight, pick one bright star. Estimate its altitude in fists and its direction (say, \"southeast, four fists up\"). Come back an hour later and do it again: it will have shifted by up to a fist and a half."
+      "tryIt": "Tonight, pick one bright star. Estimate its altitude in fists and its direction (say, \"southeast, four fists up\"). Come back an hour later and do it again: it will have shifted by up to a fist and a half.",
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "altaz-time-place",
+          "params": { "month": 8 },
+          "caption": "The Summer Triangle on an all-sky chart for a mid-August night. Slide the clock and Vega's altitude and azimuth change by many degrees; switch to another city at the same moment and they change again. The triangle's sides, 34°, 38° and 24°, never change: that is why you learn the pattern, and let the app work out the directions."
+        }
+      ],
+      "thinkAbout": {
+        "question": "Tonight Vega crosses your meridian at about 9 p.m. Roughly when will it cross a month from now?",
+        "answer": "About two hours earlier, near 7 p.m. Each star crosses the meridian about 4 minutes earlier every night, because Earth also moves along its orbit. Four minutes a night for 30 nights adds up to two hours, which is why the evening sky changes with the seasons."
+      }
     }
   ],
   "keyPoints": [
@@ -119,12 +163,7 @@
     {
       "id": "q1",
       "prompt": "An app says the Moon is at altitude 30°, azimuth 270°. Where do you look?",
-      "choices": [
-        "Due east, three fists above the horizon",
-        "Due south, nearly overhead",
-        "Due north, low on the horizon",
-        "Due west, three fists above the horizon"
-      ],
+      "choices": ["Due east, three fists above the horizon", "Due south, nearly overhead", "Due north, low on the horizon", "Due west, three fists above the horizon"],
       "answerIndex": 3,
       "explanation": "Azimuth 270° is due west (north 0°, east 90°, south 180°, west 270°), and 30° of altitude is three fists up."
     },
@@ -150,12 +189,7 @@
     {
       "id": "q4",
       "prompt": "A star is crossing your meridian in the southern sky. What can you say about it?",
-      "choices": [
-        "It is just rising",
-        "It is about to set",
-        "It is at its highest altitude of the night",
-        "It is at azimuth 90°"
-      ],
+      "choices": ["It is just rising", "It is about to set", "It is at its highest altitude of the night", "It is at azimuth 90°"],
       "answerIndex": 2,
       "explanation": "The meridian is the north–zenith–south line. Objects climb in the east, peak as they cross it, and sink in the west."
     },

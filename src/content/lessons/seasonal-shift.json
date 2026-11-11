@@ -106,6 +106,20 @@
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "sidereal-day",
+          "params": {
+            "turn": 0
+          },
+          "caption": "Earth spins while it travels around the Sun. After one turn relative to the stars (23 h 56 min) a distant star is overhead again, but Earth has moved along its orbit, so it must turn about 1° more, another 4 minutes, before the Sun is overhead."
+        }
+      ],
+      "thinkAbout": {
+        "question": "Suppose Earth spun at the same rate but did not travel around the Sun. How long would a day by the Sun be, and would the night-time constellations change through the year?",
+        "answer": "The Sun would stay in one place among the stars, so a solar day would equal a sidereal day, 23 h 56 min, and the same constellations would fill the night sky all year. Earth's orbit is what makes the night sky change."
       }
     },
     {
@@ -185,6 +199,32 @@
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "night-side-constellations",
+          "params": {
+            "day": 14
+          },
+          "caption": "Looking down on Earth's orbit. Whatever lies beyond the Sun is up in daylight and hidden; whatever lies on the far side from the Sun is up at midnight. Play the year: as Earth goes round, each constellation takes its turn behind the Sun, and Orion's turn comes in May to July."
+        }
+      ],
+      "misconception": {
+        "myth": "Different constellations appear in different months because Earth's tilt points us at different parts of the sky.",
+        "fact": "The tilt points the same way in space all year; it causes the seasons' weather, not the change of constellations. The change comes from Earth's orbit: as we go round the Sun, the night side of Earth faces a different direction in space, and whatever lies behind the Sun is hidden in daylight."
+      },
+      "check": {
+        "id": "check-ss-six-months",
+        "prompt": "Six months from tonight, where will tonight's midnight constellations be?",
+        "choices": [
+          "Behind the Sun, up in the daytime",
+          "In the same place at midnight",
+          "Below the horizon day and night",
+          "Exactly overhead at sunset"
+        ],
+        "answerIndex": 0,
+        "explanation": "In six months Earth is on the other side of its orbit, so the stars that face the night side tonight will lie beyond the Sun."
       }
     },
     {
@@ -193,7 +233,30 @@
         "Two hours per month is the number to keep. The sky at 9 pm in January is the sky at 7 pm in February, at 11 pm in December and at 1 am in November. So if you want a preview of next season's evening constellations, stay up late or get up before dawn: the sky before sunrise tonight is the evening sky about four or five months from now.",
         "The rule also explains the names. A “winter constellation” is one that is well placed in the evening during winter. Orion can be seen at dawn in August and at midnight in December; it is called a winter constellation because January and February are when it is high at a convenient hour."
       ],
-      "tryIt": "Pick a bright star and a landmark, say Sirius over a particular chimney, and note the clock time when they line up. Check again a week later from the same spot. The star will reach the chimney about 28 minutes earlier."
+      "tryIt": "Pick a bright star and a landmark, say Sirius over a particular chimney, and note the clock time when they line up. Check again a week later from the same spot. The star will reach the chimney about 28 minutes earlier.",
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "transit-time-chart",
+          "params": {
+            "star": "Sirius",
+            "day": 14
+          },
+          "caption": "Each day a star is highest about 4 minutes earlier by the clock, so the line slopes by 2 hours a month. Where it runs through the shaded daylight the star is up only by day; drag the date to find the months when it is highest at a convenient evening hour."
+        }
+      ],
+      "check": {
+        "id": "check-ss-rule",
+        "prompt": "A star is highest at 11 pm tonight. About when will it be highest one month from now?",
+        "choices": [
+          "9 pm",
+          "11 pm",
+          "1 am",
+          "10:56 pm"
+        ],
+        "answerIndex": 0,
+        "explanation": "Four minutes earlier each day adds up to about two hours a month."
+      }
     }
   ],
   "keyPoints": [

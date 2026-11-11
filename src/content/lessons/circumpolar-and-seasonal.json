@@ -174,7 +174,15 @@
           },
           "caption": "A side view of the sky along the north–south line. The celestial pole stands as high above the horizon as your latitude, so a cap of sky that size around it never sets, and a matching cap around the other pole never rises. Slide the latitude and watch both caps grow or vanish."
         }
-      ]
+      ],
+      "misconception": {
+        "myth": "The stars are only in the sky at night.",
+        "fact": "Stars are above the horizon by day as often as by night; the bright daytime sky simply hides them. Circumpolar stars are up 24 hours a day, every day of the year."
+      },
+      "thinkAbout": {
+        "question": "Where on Earth would every star you can see be circumpolar?",
+        "answer": "At the North or South Pole. There the celestial pole is straight overhead, so the never-sets cap is the whole visible half of the sky: no star rises or sets, they all circle parallel to the horizon. Drag the figure's latitude slider to 90° to see it."
+      }
     },
     {
       "heading": "What is circumpolar from Brooklyn",
@@ -192,7 +200,19 @@
           },
           "caption": "Everything inside the dashed circle never sets from your latitude; the circle's radius equals your latitude, so it just touches the horizon. Play the year: the figures inside only swing around the pole, while those outside dip below the horizon for part of the night."
         }
-      ]
+      ],
+      "check": {
+        "id": "check-cs-capella",
+        "prompt": "From latitude 35° N, is Capella (declination +46°) circumpolar?",
+        "choices": [
+          "Yes: it is north of the celestial equator",
+          "No: it would need a declination above +55°",
+          "Yes: every star above +35° never sets",
+          "Only in the months when it is up in the evening"
+        ],
+        "answerIndex": 1,
+        "explanation": "The never-sets limit is 90° minus the latitude, +55° here. Capella, at +46°, dips about 9° below the northern horizon once a day."
+      }
     },
     {
       "heading": "The in-between stars are the seasonal ones",
@@ -249,7 +269,19 @@
           },
           "caption": "Follow one star at a time. Each star's daily circle is seen edge-on as a line; the solid part is above the horizon. Compare Vega with Antares: the farther a star is from the visible pole, the shorter and lower its time above the horizon."
         }
-      ]
+      ],
+      "check": {
+        "id": "check-cs-equator-star",
+        "prompt": "How many hours a day is a star on the celestial equator above the horizon, seen from anywhere but the poles?",
+        "choices": [
+          "12 hours, at any latitude",
+          "18 hours",
+          "6 hours",
+          "It depends on the month"
+        ],
+        "answerIndex": 0,
+        "explanation": "Every horizon cuts the celestial equator exactly in half, so a star on it is up for 12 hours and down for 12. Stars on the pole's side of the equator are up longer, the others shorter."
+      }
     }
   ],
   "keyPoints": [

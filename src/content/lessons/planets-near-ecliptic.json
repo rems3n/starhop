@@ -73,6 +73,20 @@
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "solar-system-edge-on",
+          "params": {
+            "view": 0
+          },
+          "caption": "These are the planets' real orbits. Seen from above they are nearly circles; tilt the view down to edge-on and they collapse into almost a single line. We live inside that flat disc, so we see it edge-on as one line around the sky: the ecliptic. Exaggerate the tilts to tell them apart."
+        }
+      ],
+      "thinkAbout": {
+        "question": "The Milky Way is also a band that runs all the way round the sky. Is it the same circle as the ecliptic?",
+        "answer": "No. The Milky Way is the disc of our galaxy seen from inside, and the solar system's disc is tilted about 60° to it. The two bands cross in two places: in Sagittarius and in Taurus–Gemini, where the planets pass across the Milky Way."
       }
     },
     {
@@ -147,6 +161,32 @@
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "twinkle-point-vs-disc",
+          "params": {
+            "alt": 50
+          },
+          "caption": "A star's light reaches your eye along a single thin path, so every moving pocket of air makes it brighten and fade. A planet is a tiny disc, and the light from its many points takes many paths whose flickers cancel out. Press Play the air, then drag the planet low: near the horizon even a planet shimmers."
+        }
+      ],
+      "misconception": {
+        "myth": "Stars twinkle because they flicker or pulse by themselves.",
+        "fact": "The twinkling is made by Earth's turbulent air, not by the stars. Seen from space, stars shine steadily. Their great distance matters only because it makes them true points, so the air can bend all of their light at once."
+      },
+      "check": {
+        "id": "check-planet-clues",
+        "prompt": "Which of these lights is most likely a planet?",
+        "choices": [
+          "A bright, steady point in Taurus that is not on the star chart",
+          "A flickering point low on the horizon near the Big Dipper",
+          "A faint point near Polaris that slowly drifts across the sky in a few minutes",
+          "A bright point in Orion that matches the chart"
+        ],
+        "answerIndex": 0,
+        "explanation": "Taurus is on the ecliptic, the light is steady and it is an extra point not in the pattern: all three clues say planet. The Big Dipper and Polaris are far from the ecliptic, and a point that crosses the sky in minutes is a satellite."
       }
     },
     {
@@ -216,6 +256,66 @@
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "file": "img/Jupiter-2.jpg",
+              "alt": "Jupiter as a small striped disc with four of its moons in a line beside it, photographed through an amateur telescope",
+              "label": "Jupiter and four moons",
+              "kind": "photograph",
+              "kindNote": "Through a Dobsonian telescope (amateur); colour processing not stated at source",
+              "credit": "user:salamander724",
+              "license": "Public domain",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jupiter-and-its-moons-amateur.jpg"
+            },
+            {
+              "file": "img/Saturn-3.jpg",
+              "alt": "Saturn and its rings as a small pale yellow image through an amateur telescope",
+              "label": "Saturn's rings",
+              "kind": "photograph",
+              "kindNote": "Compact camera held to the eyepiece of a 250 mm Dobsonian telescope",
+              "credit": "Lapos71",
+              "license": "CC BY-SA 4.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Planet_Saturn.jpg"
+            },
+            {
+              "file": "img/Mars-2.jpg",
+              "alt": "Mars as an orange disc with a white polar cap and dark markings, photographed through a large amateur telescope",
+              "label": "Mars at opposition",
+              "kind": "photograph",
+              "kindNote": "Through a 16-inch telescope, 2020; colour processing not stated at source",
+              "credit": "User:Brucewaters",
+              "license": "CC BY-SA 4.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mars_-_2020_Opposition_(crop).jpg"
+            }
+          ],
+          "caption": "To the eye a planet is only a steady point, but even a small telescope shows it is a world with a disc: Jupiter's cloud belts and moons, Saturn's rings, the polar cap of Mars near its closest approach. These are amateur photographs, close to what a backyard telescope shows."
+        },
+        {
+          "type": "diagram",
+          "id": "solar-system-scale",
+          "params": {
+            "model": "basketball"
+          },
+          "caption": "Shrink the Sun to a basketball and everything else shrinks with it: Earth becomes a 2 mm speck about a basketball court away, and Neptune is most of a kilometre off. The planets are tiny and far apart, which is why they look like stars to the eye. Try the ping-pong-ball Sun too."
+        }
+      ],
+      "check": {
+        "id": "check-scale-model",
+        "prompt": "In a model where the Sun is a basketball (24 cm across), how far away is Earth?",
+        "choices": [
+          "About 26 metres",
+          "About 2 metres",
+          "About 260 metres",
+          "About 3 kilometres"
+        ],
+        "answerIndex": 0,
+        "explanation": "Earth is about 107 Sun-widths from the Sun, so 107 × 24 cm is about 26 metres, roughly the length of a basketball court. Earth itself would be a 2 mm speck."
       },
       "tryIt": "Open the Events page to see which planets are up this evening, then go out and find one without the app. Check it against the four clues: near the zodiac, not on the chart, steady light, and (next week) moved."
     }

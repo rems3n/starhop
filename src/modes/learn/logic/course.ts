@@ -19,14 +19,16 @@ export interface LessonPlace {
 }
 
 const written = (id: string) => lessonById.has(id);
+/** course.json omits defaulted fields, so read lessons defensively. */
+const lessonsOf = (m: { lessons?: string[] }) => m.lessons ?? [];
 
 /** Where a lesson sits in the course, or null when it is not part of it. Only written lessons are counted. */
 export function lessonPlace(lessonId: string): LessonPlace | null {
-  const module = courseModules.find((m) => m.lessons.includes(lessonId));
+  const module = courseModules.find((m) => lessonsOf(m).includes(lessonId));
   if (!module) return null;
-  const list = module.lessons.filter(written);
+  const list = lessonsOf(module).filter(written);
   const i = list.indexOf(lessonId);
-  const order = courseModules.flatMap((m) => m.lessons.filter(written).map((id) => ({ id, m })));
+  const order = courseModules.flatMap((m) => lessonsOf(m).filter(written).map((id) => ({ id, m })));
   const ci = order.findIndex((x) => x.id === lessonId);
   const nx = ci >= 0 ? order[ci + 1] : undefined;
   return {

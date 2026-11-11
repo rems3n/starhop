@@ -19,7 +19,7 @@ export const LASSO_RULE =
   'Your loop counts when it holds at least 70% of the constellation’s main stars (the ones bright enough to be drawn), takes in no more than a couple of main stars of other constellations, and is not more than about four times the size of the figure.';
 
 /** Embed toolbar on the right edge, vertically centred: clear of the prompt (top) and the answer bar (bottom). */
-const EMBED_PLACEMENT = { '--se-bar-top': '50%', '--se-bar-shift': '-50%' } as CSSProperties;
+const EMBED_PLACEMENT = { '--se-bar-top': '50%', '--se-bar-shift': '-50%', '--se-panel-top': 'calc(50% - 36px)' } as CSSProperties;
 
 export const debugOn = () => typeof window !== 'undefined' && /[?&]debug=1/.test(window.location.search + window.location.hash);
 const coarse = () => typeof window !== 'undefined' && window.matchMedia?.('(pointer: coarse)').matches;

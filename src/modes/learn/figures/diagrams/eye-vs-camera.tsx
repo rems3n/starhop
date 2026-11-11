@@ -29,7 +29,9 @@ export default function EyeVsCamera({ params }: DiagramProps) {
   const [ex, setEx] = useState(typeof params?.exposure === 'number' ? Math.min(5, Math.max(0, params.exposure as number)) : 2);
   const [sky, setSky] = useState<'dark' | 'city'>('dark');
   const e = EXPOSURES[ex];
-  const glow = sky === 'city' ? 0.16 : 0.03; // sky background added before the eye's threshold / camera's stretch
+  const glow = sky === 'city' ? 0.16 : 0.03;
+  // eye: a contrast threshold. Faint parts vanish; under skyglow the background turns grey and swallows more of them.
+  const eyeCurve = sky === 'city' ? '0.13 0.13 0.14 0.22 0.5 0.9' : '0 0 0.05 0.2 0.48 0.85'; // sky background added before the eye's threshold / camera's stretch
   // image boxes (keep the photo's 3:2 aspect)
   const W = 320, H = (W * IMG.h) / IMG.w;
   const L = { x: 24, y: 64 }, Rr = { x: 376, y: 64 };
@@ -41,20 +43,20 @@ export default function EyeVsCamera({ params }: DiagramProps) {
           <filter id={`${id}eye`} colorInterpolationFilters="sRGB">
             <feColorMatrix type="saturate" values="0.06" />
             <feComponentTransfer>
-              <feFuncR type="linear" slope={1.5} intercept={glow - 0.42} />
-              <feFuncG type="linear" slope={1.5} intercept={glow - 0.42} />
-              <feFuncB type="linear" slope={1.5} intercept={glow - 0.42} />
+              <feFuncR type="table" tableValues={eyeCurve} />
+              <feFuncG type="table" tableValues={eyeCurve} />
+              <feFuncB type="table" tableValues={eyeCurve} />
             </feComponentTransfer>
-            <feGaussianBlur stdDeviation="0.8" />
+            <feGaussianBlur stdDeviation="1.1" />
           </filter>
           <filter id={`${id}cam`} colorInterpolationFilters="sRGB">
             <feComponentTransfer>
-              <feFuncR type="linear" slope={e.gain} intercept={glow * e.gain - 0.05} />
-              <feFuncG type="linear" slope={e.gain} intercept={glow * e.gain - 0.05} />
-              <feFuncB type="linear" slope={e.gain} intercept={glow * e.gain * 1.1 - 0.05} />
+              <feFuncR type="linear" slope={e.gain} intercept={glow * 2.2 - 0.05} />
+              <feFuncG type="linear" slope={e.gain} intercept={glow * 2.2 - 0.05} />
+              <feFuncB type="linear" slope={e.gain} intercept={glow * 2.4 - 0.05} />
             </feComponentTransfer>
           </filter>
-          <clipPath id={`${id}ep`}><ellipse cx={L.x + W / 2} cy={L.y + H / 2} rx={W / 2} ry={H / 2 + 6} /></clipPath>
+          <clipPath id={`${id}ep`}><circle cx={L.x + W / 2} cy={L.y + H / 2} r={H / 2 + 6} /></clipPath>
           <clipPath id={`${id}fr`}><rect x={Rr.x} y={Rr.y} width={W} height={H} rx={6} /></clipPath>
         </defs>
         <Label x={L.x + W / 2} y={34} anchor="middle" weight={700}>Your eye at the eyepiece</Label>
@@ -63,7 +65,7 @@ export default function EyeVsCamera({ params }: DiagramProps) {
         <Label x={Rr.x + W / 2} y={52} anchor="middle" size="s" color={C.dim}>collects light the whole time, in colour</Label>
         <rect x={L.x} y={L.y - 6} width={W} height={H + 12} fill="#000" clipPath={`url(#${id}ep)`} />
         <image href={imgUrl(IMG.file)} x={L.x} y={L.y} width={W} height={H} filter={`url(#${id}eye)`} clipPath={`url(#${id}ep)`} />
-        <ellipse cx={L.x + W / 2} cy={L.y + H / 2} rx={W / 2} ry={H / 2 + 6} fill="none" stroke={C.lineStrong} />
+        <circle cx={L.x + W / 2} cy={L.y + H / 2} r={H / 2 + 6} fill="none" stroke={C.lineStrong} />
         <rect x={Rr.x} y={Rr.y} width={W} height={H} rx={6} fill="#000" />
         <image href={imgUrl(IMG.file)} x={Rr.x} y={Rr.y} width={W} height={H} filter={`url(#${id}cam)`} clipPath={`url(#${id}fr)`} />
         <rect x={Rr.x} y={Rr.y} width={W} height={H} rx={6} fill="none" stroke={C.lineStrong} />

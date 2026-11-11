@@ -18,5 +18,10 @@
 
 @media (max-width: 720px) {
   .app-settings { position: fixed; top: calc(8px + env(safe-area-inset-top)); right: 8px; z-index: 55; }
-  .st-trigger { max-width: 150px; min-height: 32px; padding: 0 10px; background: var(--panel); backdrop-filter: blur(8px); }
+  .st-trigger { max-width: 170px; min-height: 32px; padding: 0 10px; background: var(--panel); backdrop-filter: blur(8px); }
+  /* Over the full-bleed sky the trigger is a round icon button beside Explore's own toolbar */
+  .app--sky .st-trigger { width: 44px; height: 44px; padding: 0; justify-content: center; position: relative; }
+  .app--sky .st-trigger-name { display: none; }
+  .app--sky .st-trigger-red { position: absolute; top: 6px; right: 6px; }
+  .app--sky .ex-root .ex-search { width: calc(100% - 52px); }
 }

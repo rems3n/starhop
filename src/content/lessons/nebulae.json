@@ -20,31 +20,129 @@
           {
             "caption": "The Orion Nebula is the middle 'star' of the Sword hanging below Orion's Belt. It is the brightest emission nebula in the sky and the only one easy from a city.",
             "time": "month:1 21:00",
-            "view": { "target": "dso:M42", "fov": 25 },
-            "layers": { "dsoMarkers": true },
-            "highlights": [{ "type": "object", "ref": "dso:M42", "label": "Orion Nebula (M42)" }]
+            "view": {
+              "target": "dso:M42",
+              "fov": 25
+            },
+            "layers": {
+              "dsoMarkers": true
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "dso:M42",
+                "label": "Orion Nebula (M42)"
+              }
+            ]
           },
           {
             "caption": "Summer's emission nebulae line the Milky Way low in the south. The Lagoon sits above the Teapot's spout and the Eagle farther up toward Scutum. From Brooklyn they never climb high, so they need a clear southern horizon.",
             "time": "month:8 22:00",
-            "view": { "target": "dso:M8", "fov": 45 },
-            "layers": { "dsoMarkers": true },
+            "view": {
+              "target": "dso:M8",
+              "fov": 45
+            },
+            "layers": {
+              "dsoMarkers": true
+            },
             "highlights": [
-              { "type": "object", "ref": "dso:M8", "label": "Lagoon (M8)" },
-              { "type": "object", "ref": "dso:M16", "label": "Eagle (M16)" }
+              {
+                "type": "object",
+                "ref": "dso:M8",
+                "label": "Lagoon (M8)"
+              },
+              {
+                "type": "object",
+                "ref": "dso:M16",
+                "label": "Eagle (M16)"
+              }
             ]
           },
           {
             "caption": "The North America Nebula lies about three degrees east of Deneb. It spans about four full Moons, but its light is so spread out that it shows only in a dark sky.",
             "time": "month:9 21:00",
-            "view": { "target": "star:Deneb", "fov": 25 },
-            "layers": { "dsoMarkers": true },
+            "view": {
+              "target": "star:Deneb",
+              "fov": 25
+            },
+            "layers": {
+              "dsoMarkers": true
+            },
             "highlights": [
-              { "type": "object", "ref": "dso:C20", "label": "North America Nebula" },
-              { "type": "object", "ref": "star:Deneb", "label": true }
+              {
+                "type": "object",
+                "ref": "dso:C20",
+                "label": "North America Nebula"
+              },
+              {
+                "type": "object",
+                "ref": "star:Deneb",
+                "label": true
+              }
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "nebula-glow",
+          "params": {
+            "temp": 39000
+          },
+          "caption": "Hydrogen gas glows only when something energises it. A very hot star’s ultraviolet light makes a whole bubble of gas glow red; a cooler star cannot, and its cloud shows only bluish starlight scattered by dust. Slide the temperature, or jump to the star that lights the Orion Nebula and to a Pleiades star."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "file": "img/M8-1.jpg",
+              "alt": "The Lagoon Nebula: a large red-pink glowing cloud crossed by a dark lane, with a cluster of young stars",
+              "label": "Lagoon Nebula",
+              "kind": "photograph",
+              "kindNote": "Colour processing not stated at source",
+              "credit": "ESO/VPHAS+ team",
+              "license": "CC BY 4.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:VST_images_the_Lagoon_Nebula.jpg"
+            },
+            {
+              "file": "img/NGC7000-1.jpg",
+              "alt": "The North America and Pelican nebulae: broad red glowing clouds whose dark lanes outline a shape like North America",
+              "label": "North America Nebula",
+              "kind": "photograph",
+              "kindNote": "Colour processing not stated at source",
+              "credit": "gjdonatiello",
+              "license": "CC0 1.0",
+              "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:NGC_7000_+_IC_5070.jpg"
+            },
+            {
+              "file": "img/M16-1.jpg",
+              "alt": "The Eagle Nebula: a red glowing cloud with dark dusty pillars and a young star cluster",
+              "label": "Eagle Nebula",
+              "kind": "photograph",
+              "kindNote": "Blue, green (V) and red filters in visible light",
+              "credit": "ESO",
+              "license": "CC BY 4.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eagle_Nebula_from_ESO.jpg"
+            }
+          ],
+          "caption": "Emission nebulae are red in photographs for one reason: glowing hydrogen gives off most of its visible light at a single deep-red wavelength. Each of these clouds contains hot young stars doing the energising."
+        }
+      ],
+      "check": {
+        "id": "check-emission-red",
+        "prompt": "What makes an emission nebula glow red?",
+        "choices": [
+          "Hydrogen gas energised by ultraviolet light from very hot stars",
+          "Dust reflecting the light of red stars",
+          "The gas is very hot, like a glowing coal",
+          "Red light from distant galaxies behind it"
+        ],
+        "answerIndex": 0,
+        "explanation": "Ultraviolet from hot young stars strips electrons from hydrogen atoms; when the atoms recapture them they give off light at set wavelengths, the strongest visible one a deep red."
       }
     },
     {
@@ -60,34 +158,125 @@
           {
             "caption": "The Pleiades are wrapped in a thin blue reflection nebula: dust lit by the cluster's hot stars. Photographs show it well; by eye it is extremely subtle.",
             "time": "month:1 21:00",
-            "view": { "target": "dso:M45", "fov": 12 },
-            "layers": { "dsoMarkers": true },
-            "highlights": [{ "type": "object", "ref": "dso:M45", "label": "Pleiades — reflection nebula" }]
+            "view": {
+              "target": "dso:M45",
+              "fov": 12
+            },
+            "layers": {
+              "dsoMarkers": true
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "dso:M45",
+                "label": "Pleiades — reflection nebula"
+              }
+            ]
           },
           {
             "caption": "Around Orion's Belt: M78, a reflection nebula, sits about two and a half degrees up and to the left of Alnitak. The Horsehead, a dark nebula, lies just below Alnitak.",
             "time": "month:1 21:00",
-            "view": { "target": "star:Alnitak", "fov": 12 },
-            "layers": { "dsoMarkers": true },
+            "view": {
+              "target": "star:Alnitak",
+              "fov": 12
+            },
+            "layers": {
+              "dsoMarkers": true
+            },
             "highlights": [
-              { "type": "object", "ref": "dso:M78", "label": "M78 — reflection" },
-              { "type": "object", "ref": "dso:IC434", "label": "IC 434 and the Horsehead — dark" },
-              { "type": "object", "ref": "star:Alnitak", "label": true }
+              {
+                "type": "object",
+                "ref": "dso:M78",
+                "label": "M78 — reflection"
+              },
+              {
+                "type": "object",
+                "ref": "dso:IC434",
+                "label": "IC 434 and the Horsehead — dark"
+              },
+              {
+                "type": "object",
+                "ref": "star:Alnitak",
+                "label": true
+              }
             ]
           },
           {
             "caption": "From Sydney, the Coalsack is a dark hole in the Milky Way right beside the Southern Cross. It is a cloud of dust blocking the stars behind it.",
-            "observer": { "name": "Sydney, Australia", "lat": -33.87, "lon": 151.21, "tz": "Australia/Sydney" },
+            "observer": {
+              "name": "Sydney, Australia",
+              "lat": -33.87,
+              "lon": 151.21,
+              "tz": "Australia/Sydney"
+            },
             "time": "month:5 21:00",
             "bortle": 2,
-            "view": { "target": "dso:C99", "fov": 40 },
-            "layers": { "dsoMarkers": true },
+            "view": {
+              "target": "dso:C99",
+              "fov": 40
+            },
+            "layers": {
+              "dsoMarkers": true
+            },
             "highlights": [
-              { "type": "object", "ref": "dso:C99", "label": "Coalsack — dark nebula" },
-              { "type": "constellation", "id": "Cru", "lines": true, "label": true }
+              {
+                "type": "object",
+                "ref": "dso:C99",
+                "label": "Coalsack — dark nebula"
+              },
+              {
+                "type": "constellation",
+                "id": "Cru",
+                "lines": true,
+                "label": true
+              }
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "file": "img/M45-1.jpg",
+              "alt": "The Pleiades star cluster: bright blue-white stars wrapped in wispy blue nebulosity",
+              "label": "Reflection: Pleiades",
+              "kind": "photograph",
+              "kindNote": "Colour processing not stated at source",
+              "credit": "NASA, ESA, AURA/Caltech, Palomar Observatory The science team consists of: D. Soderblom and E. Nelan (STScI), F. Benedict and B. Arthur (U. Texas), and B. Jones (Lick Obs.)",
+              "license": "Public domain",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pleiades_large.jpg"
+            },
+            {
+              "file": "img/M78-1.jpg",
+              "alt": "The reflection nebula M78: a bluish glowing cloud around two stars, with dark dust lanes",
+              "label": "Reflection: M78",
+              "kind": "photograph",
+              "kindNote": "Blue, yellow/green and red filters plus a hydrogen filter",
+              "credit": "ESO/Igor Chekalin",
+              "license": "CC BY 4.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Messier_78.jpg"
+            },
+            {
+              "file": "img/IC434-1.jpg",
+              "alt": "The Horsehead Nebula: a dark horse-head-shaped cloud silhouetted against a glowing red background",
+              "label": "Dark: Horsehead",
+              "kind": "photograph",
+              "kindNote": "Colour processing not stated at source",
+              "credit": "ESO",
+              "license": "CC BY 4.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nebulosa_testa_di_cavallo_con_SPECULOOS.jpg"
+            }
+          ],
+          "caption": "Two kinds of cloud that make no light of their own. Dust around the Pleiades and in M78 scatters the blue light of nearby stars; the Horsehead is a dense, dusty cloud seen in silhouette against glowing red gas behind it."
+        }
+      ],
+      "thinkAbout": {
+        "question": "The daytime sky is blue for the same reason reflection nebulae are blue. What is the connection?",
+        "answer": "Both are sunlight or starlight scattered by tiny particles: air molecules in our sky, dust grains in a nebula. Small particles scatter blue light much more strongly than red, so the scattered light we see from the side looks blue. Sunsets are red for the matching reason: the light that comes straight through has lost much of its blue."
       }
     },
     {
@@ -102,32 +291,137 @@
           {
             "caption": "Two planetary nebulae in the summer sky: the Ring in Lyra and the Dumbbell in Vulpecula. Each is the cast-off outer layers of one dying star.",
             "time": "month:8 22:00",
-            "view": { "target": "star:Albireo", "fov": 45 },
-            "layers": { "dsoMarkers": true },
+            "view": {
+              "target": "star:Albireo",
+              "fov": 45
+            },
+            "layers": {
+              "dsoMarkers": true
+            },
             "highlights": [
-              { "type": "object", "ref": "dso:M57", "label": "Ring (M57)" },
-              { "type": "object", "ref": "dso:M27", "label": "Dumbbell (M27)" }
+              {
+                "type": "object",
+                "ref": "dso:M57",
+                "label": "Ring (M57)"
+              },
+              {
+                "type": "object",
+                "ref": "dso:M27",
+                "label": "Dumbbell (M27)"
+              }
             ]
           },
           {
             "caption": "The Veil Nebula, a supernova remnant, spans about three degrees off the eastern wing of Cygnus the Swan. Its two brightest arcs are marked.",
             "time": "month:9 21:00",
-            "view": { "target": "dso:C33", "fov": 30 },
-            "layers": { "dsoMarkers": true },
+            "view": {
+              "target": "dso:C33",
+              "fov": 30
+            },
+            "layers": {
+              "dsoMarkers": true
+            },
             "highlights": [
-              { "type": "object", "ref": "dso:C34", "label": "Western Veil" },
-              { "type": "object", "ref": "dso:C33", "label": "Eastern Veil" },
-              { "type": "constellation", "id": "Cyg", "lines": true }
+              {
+                "type": "object",
+                "ref": "dso:C34",
+                "label": "Western Veil"
+              },
+              {
+                "type": "object",
+                "ref": "dso:C33",
+                "label": "Eastern Veil"
+              },
+              {
+                "type": "constellation",
+                "id": "Cyg",
+                "lines": true
+              }
             ]
           },
           {
             "caption": "The Helix Nebula in Aquarius is among the closest planetary nebulae. It is large but dim, low in the south on autumn evenings.",
             "time": "month:10 21:00",
-            "view": { "target": "dso:C63", "fov": 50 },
-            "layers": { "dsoMarkers": true },
-            "highlights": [{ "type": "object", "ref": "dso:C63", "label": "Helix Nebula" }]
+            "view": {
+              "target": "dso:C63",
+              "fov": 50
+            },
+            "layers": {
+              "dsoMarkers": true
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "dso:C63",
+                "label": "Helix Nebula"
+              }
+            ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "file": "img/M57-2.jpg",
+              "alt": "The Ring Nebula: a small oval ring of glowing gas, blue-green inside and red at the edge, with faint outer shells",
+              "label": "Planetary: Ring",
+              "kind": "photograph",
+              "kindNote": "Visible-light colour with extra hydrogen-alpha data blended in (HaRGB)",
+              "credit": "Göran Nilsson & The Liverpool Telescope",
+              "license": "CC BY-SA 4.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Ring_Nebula_M57_Goran_Nilsson_&_The_Liverpool_Telescope.jpg"
+            },
+            {
+              "file": "img/NGC6543-1.jpg",
+              "alt": "The Cat’s Eye Nebula: intricate shells and jets of glowing gas around a central star",
+              "label": "Planetary: Cat’s Eye",
+              "kind": "photograph",
+              "kindNote": "Colour processing not stated at source",
+              "credit": "ESA/Hubble & NASA, Z. Tsvetanov",
+              "license": "CC BY 4.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Looking_at_the_Cat’s_Eye_Nebula_with_Hubble_(potm2602b).jpg"
+            },
+            {
+              "file": "img/M1-2.jpg",
+              "alt": "The Crab Nebula from a ground-based telescope: a tangled oval of red filaments around a bluish glow",
+              "label": "Remnant: Crab",
+              "kind": "photograph",
+              "kindNote": "Red, green and blue filters with added hydrogen-alpha",
+              "credit": "Adam Block/Mount Lemmon SkyCenter/University of Arizona (Wikimedia Commons user Ngc1535)",
+              "license": "CC BY-SA 4.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:M1_Crab_Nebula_Supernova_Remnant_from_the_Mount_Lemmon_SkyCenter_Schulman_Telescope_courtesy_Adam_Block.jpg"
+            },
+            {
+              "file": "img/NGC6992-1.jpg",
+              "alt": "The Eastern Veil Nebula: long, thin, twisting filaments of glowing gas",
+              "label": "Remnant: Veil",
+              "kind": "photograph",
+              "kindNote": "Colour processing not stated at source",
+              "credit": "Carsten Frenzl from Deutschland",
+              "license": "CC BY 2.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:NGC_6992_(50667967031).jpg"
+            }
+          ],
+          "caption": "Planetary nebulae (left) are neat shells puffed off gently by dying Sun-like stars. Supernova remnants (right) are the shredded, fast-moving debris of exploded massive stars, still glowing where they plough into the gas around them."
+        }
+      ],
+      "check": {
+        "id": "check-dying-star-nebula",
+        "prompt": "A nebula is a neat, roughly round shell of glowing gas with a tiny hot star at its centre. What is it most likely to be?",
+        "choices": [
+          "A planetary nebula from a dying Sun-like star",
+          "A supernova remnant",
+          "A reflection nebula",
+          "A star-forming emission nebula"
+        ],
+        "answerIndex": 0,
+        "explanation": "A planetary nebula is the outer layers of a Sun-like star, gently shed; the hot exposed core (a future white dwarf) sits at the centre and makes the shell glow."
       }
     },
     {
@@ -139,16 +433,65 @@
       ],
       "demo": {
         "title": "City sky, country sky",
-        "controls": ["bortle"],
+        "controls": [
+          "bortle"
+        ],
         "steps": [
           {
             "caption": "Markers show where the nebulae of Orion are. Slide the light-pollution control: under a city sky only the Orion Nebula itself survives; the rest need darkness.",
             "time": "month:1 21:00",
             "bortle": 3,
-            "view": { "target": "con:Ori", "fov": 40 },
-            "layers": { "dsoMarkers": true }
+            "view": {
+              "target": "con:Ori",
+              "fov": 40
+            },
+            "layers": {
+              "dsoMarkers": true
+            }
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "eye-vs-camera",
+          "params": {
+            "exposure": 3
+          },
+          "caption": "Your eye and a camera see the same nebula very differently. In dim light only your colour-blind rods work, so the eye shows a grey glow; a camera adds up light for minutes or hours and records the red and blue. Lengthen the exposure, then switch to a city sky."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "file": "img/M27-1.jpg",
+              "alt": "The Dumbbell Nebula in approximately true colour: a reddish and greenish hourglass-shaped cloud",
+              "label": "Natural colour",
+              "kind": "photograph",
+              "kindNote": "Approximately true colour",
+              "credit": "REU program/NOIRLab/NSF/AURA",
+              "license": "CC BY 4.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:M27_-_Noao-m27.jpg"
+            },
+            {
+              "file": "img/M27-2.jpg",
+              "alt": "The Dumbbell Nebula in narrowband false colour: hydrogen light shown red and oxygen light shown blue",
+              "label": "False colour (narrowband)",
+              "kind": "false-color",
+              "kindNote": "Narrowband: hydrogen-alpha as red, oxygen-III as blue",
+              "credit": "Chuck Ayoub",
+              "license": "CC BY-SA 4.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:M27_-_The_Dumbbell_Nebula.jpg"
+            }
+          ],
+          "caption": "One nebula, two colour codes. On the left, colours close to what a far more sensitive eye would see. On the right, light from hydrogen and from oxygen was recorded separately and mapped to red and blue: the shapes are real, the colours are a code that separates the two gases."
+        }
+      ],
+      "misconception": {
+        "myth": "Through a telescope, nebulae look like the colourful photos.",
+        "fact": "Almost every nebula looks like a soft grey glow to the eye, because the eye’s colour-sensing cones do not work in dim light. Long camera exposures, and often false-colour processing, create the colours in photographs."
       },
       "tryIt": "Next winter evening, aim binoculars at the middle of Orion's Sword and brace your elbows. The gray mist around the stars is the Orion Nebula, 1,300 light-years away, seen from a Brooklyn sidewalk."
     }
@@ -160,14 +503,46 @@
     "False-color images map invisible or narrow-band light to colors; artist's impressions are not observations at all."
   ],
   "examples": [
-    { "ref": "dso:M42", "label": "Orion Nebula (M42)", "note": "Emission nebula and stellar nursery. Naked eye in a dark sky, binoculars from the city, superb in any telescope." },
-    { "ref": "dso:M8", "label": "Lagoon Nebula (M8)", "note": "Emission nebula in Sagittarius with a star cluster inside. Binoculars in a dark sky; low in the south from New York." },
-    { "ref": "dso:M45", "label": "Pleiades (M45)", "note": "Star cluster wrapped in a blue reflection nebula. The stars are naked eye; the nebula shows in photographs and in telescopes under dark skies." },
-    { "ref": "dso:M78", "label": "M78", "note": "Reflection nebula near Orion's Belt. A small faint patch in a small telescope under a dark sky." },
-    { "ref": "dso:IC434", "label": "IC 434 and the Horsehead", "note": "A dark nebula silhouetted on a strip of glowing gas. Essentially photographic: a large telescope, dark sky and special filter are needed to glimpse it." },
-    { "ref": "dso:M57", "label": "Ring Nebula (M57)", "note": "Planetary nebula in Lyra. A tiny gray ring in a small telescope at about 100×." },
-    { "ref": "dso:M27", "label": "Dumbbell Nebula (M27)", "note": "Planetary nebula in Vulpecula. Visible in binoculars from a dark site, an apple-core shape in a small telescope." },
-    { "ref": "dso:M1", "label": "Crab Nebula (M1)", "note": "Supernova remnant in Taurus. A dim oval glow in a small telescope under a dark sky." }
+    {
+      "ref": "dso:M42",
+      "label": "Orion Nebula (M42)",
+      "note": "Emission nebula and stellar nursery. Naked eye in a dark sky, binoculars from the city, superb in any telescope."
+    },
+    {
+      "ref": "dso:M8",
+      "label": "Lagoon Nebula (M8)",
+      "note": "Emission nebula in Sagittarius with a star cluster inside. Binoculars in a dark sky; low in the south from New York."
+    },
+    {
+      "ref": "dso:M45",
+      "label": "Pleiades (M45)",
+      "note": "Star cluster wrapped in a blue reflection nebula. The stars are naked eye; the nebula shows in photographs and in telescopes under dark skies."
+    },
+    {
+      "ref": "dso:M78",
+      "label": "M78",
+      "note": "Reflection nebula near Orion's Belt. A small faint patch in a small telescope under a dark sky."
+    },
+    {
+      "ref": "dso:IC434",
+      "label": "IC 434 and the Horsehead",
+      "note": "A dark nebula silhouetted on a strip of glowing gas. Essentially photographic: a large telescope, dark sky and special filter are needed to glimpse it."
+    },
+    {
+      "ref": "dso:M57",
+      "label": "Ring Nebula (M57)",
+      "note": "Planetary nebula in Lyra. A tiny gray ring in a small telescope at about 100×."
+    },
+    {
+      "ref": "dso:M27",
+      "label": "Dumbbell Nebula (M27)",
+      "note": "Planetary nebula in Vulpecula. Visible in binoculars from a dark site, an apple-core shape in a small telescope."
+    },
+    {
+      "ref": "dso:M1",
+      "label": "Crab Nebula (M1)",
+      "note": "Supernova remnant in Taurus. A dim oval glow in a small telescope under a dark sky."
+    }
   ],
   "questions": [
     {
@@ -233,7 +608,12 @@
     {
       "id": "q6",
       "prompt": "From a Brooklyn rooftop with binoculars, which nebula are you most likely to actually see?",
-      "choices": ["The Horsehead Nebula", "The Veil Nebula", "The Orion Nebula", "The Coalsack"],
+      "choices": [
+        "The Horsehead Nebula",
+        "The Veil Nebula",
+        "The Orion Nebula",
+        "The Coalsack"
+      ],
       "answerIndex": 2,
       "explanation": "M42 is bright enough to beat city lights. The Horsehead and Veil need dark skies and more aperture, and the Coalsack never rises from New York."
     }

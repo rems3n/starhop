@@ -18,6 +18,7 @@ const W = 720, H = 420, CX = 360, K = 200;
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 const NORTH = ['UMi', 'UMa', 'Cas', 'Cep', 'Dra', 'Cam', 'Per', 'Aur', 'Lyr', 'Cyg', 'Lyn', 'CVn'];
 const SOUTH = ['Cru', 'Cen', 'Car', 'Oct', 'Hyi', 'Tuc', 'Pav', 'Mus', 'Vol', 'Dor', 'TrA', 'Ara', 'Vel'];
+const DISPLAY: Record<string, string> = { UMa: 'Ursa Major', UMi: 'Little Dipper', Cru: 'Southern Cross' };
 const rOf = (p: number) => 2 * K * tand(Math.min(p, 170) / 2);
 
 export default function CircumpolarCap({ params }: DiagramProps) {
@@ -73,8 +74,8 @@ export default function CircumpolarCap({ params }: DiagramProps) {
   const h = wrap180(ha(ref.ra));
   const sideW = sgn > 0 ? 'left' : 'right'; // west side of the picture
   const pos = Math.abs(h) < 30 ? `high above ${ref.pole}` : Math.abs(h) > 150 ? `low, below ${ref.pole}` : h > 0 ? `to the ${sideW} of ${ref.pole} (west), heading down` : `to the ${sideW === 'left' ? 'right' : 'left'} of ${ref.pole} (east), climbing`;
-  const circ = data?.cons.filter((c) => c.named && c.inside >= 0.999).map((c) => c.name) ?? [];
-  const partly = data?.cons.filter((c) => c.named && c.inside >= 0.5 && c.inside < 0.999).map((c) => c.name) ?? [];
+  const circ = data?.cons.filter((c) => c.named && c.inside >= 0.999).map((c) => DISPLAY[c.id] ?? c.name) ?? [];
+  const partly = data?.cons.filter((c) => c.named && c.inside >= 0.5 && c.inside < 0.999).map((c) => DISPLAY[c.id] ?? c.name) ?? [];
   const alkaid = data?.stars.find((s) => s.name === 'Alkaid');
 
   return (
@@ -93,7 +94,7 @@ export default function CircumpolarCap({ params }: DiagramProps) {
           {data?.cons.filter((c) => c.named).map((c) => {
             const [x, y] = P(c);
             if (x < 40 || x > W - 40 || y < 16 || y > H - 20) return null;
-            return <Label key={c.id} x={x} y={y + 18} anchor="middle" size="s" color={c.inside >= 0.999 ? C.text : C.dim} weight={c.inside >= 0.999 ? 600 : 400}>{c.id === 'UMa' ? 'Ursa Major' : c.id === 'UMi' ? 'Little Dipper' : c.id === 'Cru' ? 'Southern Cross' : c.name}</Label>;
+            return <Label key={c.id} x={x} y={y + 18} anchor="middle" size="s" color={c.inside >= 0.999 ? C.text : C.dim} weight={c.inside >= 0.999 ? 600 : 400}>{DISPLAY[c.id] ?? c.name}</Label>;
           })}
           <path d={`${polyPath(horizon, 999)} L ${W + 20} ${H + 20} L -20 ${H + 20} Z`} fill="#141a2e" fillOpacity={0.94} stroke={C.good} strokeWidth={1.5} />
           {(() => { const [x, y] = horizon[Math.floor(horizon.length / 2)]; return <Label x={x} y={Math.min(H - 10, y + 22)} anchor="middle" weight={700}>{sgn > 0 ? 'N' : 'S'}</Label>; })()}

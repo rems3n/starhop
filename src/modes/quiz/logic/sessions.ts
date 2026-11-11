@@ -142,7 +142,7 @@ export type KnowledgeMode = 'computed' | 'lessons';
 export function lessonsInGroup<L extends { id: string; unit: string }>(lessons: readonly L[], group: string, modules: readonly { id: string; lessons: string[] }[]): L[] {
   if (group === 'all') return [...lessons];
   const mod = modules.find((m) => m.id === group);
-  return mod ? lessons.filter((l) => mod.lessons.includes(l.id)) : lessons.filter((l) => l.unit === group);
+  return mod ? lessons.filter((l) => (mod.lessons ?? []).includes(l.id)) : lessons.filter((l) => l.unit === group);
 }
 
 export function buildKnowledgeSession(a: SessionArgs & { modes: Record<KnowledgeMode, boolean>; lessonUnit: string }): Question[] {

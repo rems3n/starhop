@@ -15,7 +15,7 @@ export const meta: DiagramMeta = {
   params: { day: 'starting day of 2027, 0–364 (default 171, the June solstice)' },
 };
 
-const CX = 220, CY = 196, RO = 150, E = rad(22), TILT = rad(23.44);
+const CX = 232, CY = 196, RO = 150, E = rad(22), TILT = rad(23.44);
 
 function project(x: number, y: number, z: number): [number, number] {
   return [CX + x, CY - y * Math.sin(E) - z * Math.cos(E)];
@@ -71,7 +71,7 @@ export default function SeasonsTilt({ params }: DiagramProps) {
   const mkm = (au: number) => (au * 149.598).toFixed(1);
 
   // Right panel geometry
-  const GX0 = 462, GX1 = 708, GY = 272, OX = 496;
+  const GX0 = 448, GX1 = 708, GY = 272, OX = 496;
   const h = Math.max(0, sd.noonAlt);
   const beamW = 26;
   const foot = h > 1 ? Math.min(GX1 - OX - 30, beamW / Math.sin(rad(h))) : GX1 - OX - 30;
@@ -81,7 +81,7 @@ export default function SeasonsTilt({ params }: DiagramProps) {
   const hemi = towardSun > 0.05 ? 'north' : towardSun < -0.05 ? 'south' : null;
 
   // Day-length bar
-  const BX = 470, BW = 236, BY = 344;
+  const BX = 452, BW = 250, BY = 350;
   const hr = (d?: Date) => (d ? ((d.getTime() - date.getTime()) / 3600000 + 24 * 3) % 24 : 0);
   const riseH = sd.rise ? Number(fmtTime(o.tz, sd.rise).replace(/\D.*$/, '')) : 0; // only for desc
   void riseH;
@@ -115,7 +115,7 @@ export default function SeasonsTilt({ params }: DiagramProps) {
           return (
             <g key={l as string}>
               <circle cx={x} cy={y} r={3} fill={C.lineStrong} />
-              <Label x={x + (side > 0.5 ? 10 : side < -0.5 ? -10 : 0)} y={y + (Math.abs(side) > 0.5 ? 26 : Math.sin(p) > 0 ? -12 : 24)} anchor={side > 0.5 ? 'start' : side < -0.5 ? 'end' : 'middle'} size="s" color={C.faint}>
+              <Label x={x} y={y + (Math.abs(side) > 0.5 ? 38 : Math.sin(p) > 0 ? -12 : 24)} anchor="middle" size="s" color={C.faint}>
                 {l}
               </Label>
             </g>
@@ -155,8 +155,13 @@ export default function SeasonsTilt({ params }: DiagramProps) {
           </g>
         )}
         <Label x={GX0} y={GY + 24} size="s" color={C.dim}>
-          {h > 0 ? `the same beam covers ${(1 / Math.sin(rad(Math.max(h, 1)))).toFixed(1)}× the ground it would overhead` : 'the Sun does not rise today'}
+          {h > 0 ? `a beam of sunlight spreads over ${(1 / Math.sin(rad(Math.max(h, 1)))).toFixed(1)}×` : 'the Sun does not rise today'}
         </Label>
+        {h > 0 && (
+          <Label x={GX0} y={GY + 39} size="s" color={C.dim}>
+            the ground it would light from overhead
+          </Label>
+        )}
         {/* Day length bar */}
         <Label x={BX} y={BY - 10} size="s" color={C.dim}>
           {`daylight: ${fmtHours(sd.hours)}`}

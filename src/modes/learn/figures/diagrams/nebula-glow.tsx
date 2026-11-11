@@ -64,7 +64,7 @@ export default function NebulaGlow({ params }: DiagramProps) {
         </defs>
         <path d={CLOUD} fill="#1b2140" stroke={C.line} />
         <g clipPath="url(#ng-cloud)">
-          <circle cx={STAR[0]} cy={STAR[1]} r={150} fill="url(#ng-blue)" opacity={blue * 0.75} />
+          <circle cx={STAR[0]} cy={STAR[1]} r={150} fill="url(#ng-blue)" opacity={blue} />
           {r > 3 && <circle cx={STAR[0]} cy={STAR[1]} r={r} fill="url(#ng-red)" />}
           {dust.map(([x, y], i) => <circle key={i} cx={x} cy={y} r={1.6} fill="#8a8fa8" />)}
         </g>
@@ -81,12 +81,13 @@ export default function NebulaGlow({ params }: DiagramProps) {
         <circle cx={662} cy={196} r={5} fill={C.text} />
         <Label x={668} y={232} anchor="middle" size="s">you</Label>
         {r > 20 && <line x1={STAR[0] + r * 0.7} y1={STAR[1] - 18} x2={648} y2={188} stroke={C.red} strokeWidth={2.2} markerEnd="url(#fig-arrow)" />}
-        <line x1={dust[3]?.[0] ?? 330} y1={dust[3]?.[1] ?? 240} x2={648} y2={206} stroke={C.blue} strokeWidth={2.2} strokeOpacity={0.4 + 0.6 * blue} markerEnd="url(#fig-arrow)" />
+        <circle cx={402} cy={248} r={2.2} fill="#b9c4e8" />
+        <line x1={406} y1={246} x2={648} y2={206} stroke={C.blue} strokeWidth={2.2} strokeOpacity={0.4 + 0.6 * blue} markerEnd="url(#fig-arrow)" />
 
         <Callout from={[470, 300]} to={[540, 330]} label="Hydrogen gas" note="dark unless energised" />
         <Callout from={[dust[8]?.[0] ?? 200, dust[8]?.[1] ?? 120]} to={[96, 30]} label="Dust grains" note="scatter blue light best" />
         {r > 20 && <Callout from={[STAR[0] - r * 0.55, STAR[1] + r * 0.45]} to={[30, 358]} label="Glowing red hydrogen" note="" color={C.red} />}
-        <Callout from={[STAR[0] + 10, STAR[1] - 10]} to={[350, 30]} label={`Star, ${fmt(Math.round(T / 100) * 100)} K`} note={uv > 0 ? 'ultraviolet light (dashed)' : 'little ultraviolet light'} />
+        <Callout from={[STAR[0] + 10, STAR[1] - 10]} to={[350, 30]} label={`Star, ${fmt(Math.round(T / 50) * 50)} K`} note={uv > 0 ? 'ultraviolet light (dashed)' : 'little ultraviolet light'} />
         <Label x={704} y={372} anchor="end" size="s" color={C.dim}>sizes not to scale</Label>
       </Svg>
       <Controls>

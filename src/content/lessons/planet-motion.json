@@ -70,6 +70,33 @@
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "inner-planet-elongation",
+          "params": {
+            "planet": "venus",
+            "pos": 300
+          },
+          "caption": "Seen from Earth, an inner planet can only swing so far from the Sun before its path turns back: the sight line just grazes its orbit (green lines). East of the Sun it is an evening star, west of it a morning star. The telescope view shows why Galileo's observation of Venus's phases mattered: it goes from a small full disc beyond the Sun to a large thin crescent near us."
+        }
+      ],
+      "misconception": {
+        "myth": "The evening star and the morning star are two different stars.",
+        "fact": "Both are usually Venus, a planet, seen on either side of the Sun at different times of its cycle. The ancient Greeks first gave them two names, Hesperus and Phosphorus, before realising they were the same object."
+      },
+      "check": {
+        "id": "check-western-elongation",
+        "prompt": "Venus is at greatest western elongation, 46° west of the Sun. When and where should you look for it?",
+        "choices": [
+          "In the east before sunrise",
+          "In the west after sunset",
+          "High in the south at midnight",
+          "It cannot be seen until it moves east of the Sun"
+        ],
+        "answerIndex": 0,
+        "explanation": "West of the Sun means it rises before the Sun: a morning star, low in the east in the hours before dawn."
       }
     },
     {
@@ -183,6 +210,32 @@
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "outer-planet-configurations",
+          "params": {
+            "planet": "mars"
+          },
+          "caption": "Earth, on the inside lane, catches up with an outer planet and passes it at opposition, when the planet is opposite the Sun, up all night and closest. Slide through the cycle: the planet falls behind into the evening sky, passes behind the Sun at conjunction, and returns in the morning sky. Compare how long the cycle takes for Mars, Jupiter and Saturn."
+        }
+      ],
+      "thinkAbout": {
+        "question": "Could an astronaut on Mars ever see Earth high in the sky at midnight?",
+        "answer": "No. For Mars, Earth is an inner planet, just as Venus is for us. Earth would only ever appear as an evening or morning star, never more than about 40° from the Sun, and the brilliant blue 'star' of the Martian dawn or dusk sky would be us."
+      },
+      "check": {
+        "id": "check-quadrature",
+        "prompt": "Saturn rises around midnight. About how far from the Sun is it in the sky, and where is it in its cycle?",
+        "choices": [
+          "About 90° west of the Sun, heading toward opposition",
+          "About 90° east of the Sun, just after opposition",
+          "Opposite the Sun, at opposition",
+          "Close to the Sun, near conjunction"
+        ],
+        "answerIndex": 0,
+        "explanation": "An object that rises six hours before the Sun is about 90° west of it: a morning object that will reach opposition in a few months as Earth catches up."
       }
     },
     {
@@ -191,6 +244,20 @@
         "Against the stars, the outer planets usually creep eastward, the same direction as the Sun and Moon. Their speed depends on the size of their orbit. Mars goes around the Sun in just under two years and normally crosses a zodiac constellation in a month or two. Jupiter takes almost 12 years, so it spends about a year in each constellation: learn where it is this year and you know roughly where it will be next year, one constellation to the east. Saturn takes 29 and a half years and lingers in each constellation for two years or more.",
         "Mercury and Venus, tied to the Sun, average the Sun's pace of one lap a year, darting ahead of it and falling behind."
       ],
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "planet-zodiac-clock",
+          "params": {
+            "year": 2027
+          },
+          "caption": "The real positions of the Sun, Mars, Jupiter and Saturn round the zodiac, with Earth in the middle. The coloured arcs show a year's travel: the Sun goes all the way round, Mars covers several constellations, Jupiter about one and Saturn less than half of one. Play the years to watch Jupiter tick round like the hour hand of a slow clock."
+        }
+      ],
+      "thinkAbout": {
+        "question": "Mars normally crosses a zodiac constellation in a month or two. Why does it sometimes stay in the same one for half a year?",
+        "answer": "Around opposition it stops, backs up and turns again: its retrograde loop. In 2026–27 Mars spent months doubling back through Leo and Cancer. The next lesson explains why."
+      },
       "tryIt": "Find Jupiter or Saturn and note which zodiac constellation it is in and what time it rises. If it rises around sunset, it is near opposition and this is the month to look at it. If it is already in the west at dusk, catch it soon: it is heading for conjunction."
     }
   ],

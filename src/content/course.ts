@@ -18,7 +18,8 @@
  *   in at least 2 months.
  * - **Seasons**: every other constellation that rises usefully, grouped by its best evening month
  *   (circular mean of `bestMonths`) into December–February … September–November evenings, plus a
- *   "Circumpolar: visible all year" group (`eveningSeason` = all-year). Most prominent first.
+ *   "Circumpolar: visible all year" group (in the evening sky in all 12 months, or `eveningSeason` = all-year).
+ *   Most prominent first.
  * - **Beyond**: constellations that never rise usefully from this latitude.
  * - **Star-hops**: hops whose hemisphere fits the observer (N above ~15°N, S below ~15°S, both near the equator
  *   or when the hop is marked "both") and that have at least one usable evening month, by rank.
@@ -136,7 +137,7 @@ export function placeConstellations(observer: Observer, catalog: Catalog): Const
       const target = { points: pts };
       eveningMonths = yearVisibility(target, YEAR, observer).filter((v) => v.cls === 'evening' || v.cls === 'all-night').length;
       best = bestMonths(target, observer, { year: YEAR });
-      circumpolar = eveningSeason(target, observer, { year: YEAR }) === 'all-year';
+      circumpolar = eveningMonths === 12 || eveningSeason(target, observer, { year: YEAR }) === 'all-year';
       const m = centreMonth(best);
       group = circumpolar ? CIRCUMPOLAR_GROUP.id : SEASON_GROUPS.find((g) => g.months.includes(m))!.id;
     }
@@ -178,7 +179,9 @@ export function resolveCourse(observer: Observer, catalog: Catalog): ResolvedCou
   const seasons = placed.filter((p) => p.risesUsefully && !anchorIds.has(p.id));
   const beyond = placed.filter((p) => !p.risesUsefully).sort((a, b) => b.prominence - a.prominence);
   const hops = starhopsFor(observer.lat);
-  const modules: ResolvedModule[] = courseModules.map((m) => {
+  const modules: ResolvedModule[] = courseModules.map((raw) => {
+    // course.json omits defaulted fields (zod defaults are not applied to the raw JSON import)
+    const m: CourseModule = { ...raw, lessons: raw.lessons ?? [], optional: raw.optional ?? false };
     if (m.kind === 'anchors') return { ...m, groups: groupsOf(anchors), starhopIds: [] };
     if (m.kind === 'seasons') return { ...m, groups: groupsOf(seasons), starhopIds: [] };
     if (m.kind === 'beyond')

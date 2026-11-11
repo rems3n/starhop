@@ -169,6 +169,30 @@
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "polaris-altitude",
+          "params": {},
+          "caption": "Polaris is so far away that its light reaches every part of Earth in parallel lines along the direction of Earth's axis. Tilt your horizon by moving the observer: the angle between horizon and Polaris always equals the latitude, so Polaris's height in degrees is your latitude."
+        }
+      ],
+      "misconception": {
+        "myth": "The North Star is straight overhead wherever you are.",
+        "fact": "Polaris is overhead only at the North Pole. Its height above the northern horizon equals your latitude: halfway up the sky at 45° N, on the horizon at the equator, and out of sight anywhere in the southern hemisphere."
+      },
+      "check": {
+        "id": "check-lat-london",
+        "prompt": "London is at latitude 51.5° N. How high above the northern horizon does Polaris stand there?",
+        "choices": [
+          "About 51.5°",
+          "About 38.5°",
+          "90°, straight overhead",
+          "About 25°"
+        ],
+        "answerIndex": 0,
+        "explanation": "Polaris's altitude equals the latitude (within the 1° that Polaris sits from the pole)."
       }
     },
     {
@@ -270,6 +294,30 @@
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "horizon-paths",
+          "params": {
+            "face": "east",
+            "lat": 0
+          },
+          "caption": "On the equator stars rise straight up and set straight down. Press North Pole: now nothing rises or sets, and every star circles level with the horizon. Your own latitude, in between, gives the slanted paths you see outside."
+        },
+        {
+          "type": "diagram",
+          "id": "sky-zones-latitude",
+          "params": {
+            "lat": 90,
+            "star": "none"
+          },
+          "caption": "At the pole the never-sets cap is the whole visible sky and the other half never rises. Slide toward the equator and both caps shrink to nothing: there every star spends 12 hours up and 12 down."
+        }
+      ],
+      "thinkAbout": {
+        "question": "On the equator every star is up for 12 hours a day. Why does that let you see the whole sky over a year?",
+        "answer": "No star is permanently below the horizon there, because both celestial poles sit on the horizon. As the Sun moves around the sky through the year, each star's 12 hours above the horizon fall at night in some months, so sooner or later you see them all."
       }
     },
     {
@@ -278,7 +326,57 @@
         "In the southern hemisphere the picture is mirrored. The south celestial pole is above the horizon, and the stars circle it clockwise. The Sun, the Moon and the planets cross the northern part of the sky instead of the southern, and they move from right to left as you face them.",
         "Familiar constellations appear flipped. You are standing on the other side of the globe, upside down compared with Brooklyn, so when you face north to look at Orion his feet point up and his head points down. The crescent Moon looks flipped as well. Nothing has changed in the sky; only your footing has."
       ],
-      "tryIt": "Measure your own latitude tonight. Find Polaris, hold a fist at arm's length with the bottom resting on the horizon, and stack fists upward. In Brooklyn Polaris should be about four fists up."
+      "tryIt": "Measure your own latitude tonight. Find Polaris, hold a fist at arm's length with the bottom resting on the horizon, and stack fists upward. In Brooklyn Polaris should be about four fists up.",
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "orion-orientation",
+          "params": {
+            "hours": 0
+          },
+          "caption": "The same stars from the two hemispheres. To see Orion from the north you face south; from the south you face north, standing the other way up on the globe, so he appears upside down and drifts the other way."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "file": "img/lessons/star-trails-north-maunakea.jpg",
+              "alt": "Star trails circling the north celestial pole above the Gemini North telescope on Maunakea, Hawaii.",
+              "label": "Northern sky, facing north (Hawaii)",
+              "kind": "photograph",
+              "kindNote": "Long exposure: many frames stacked",
+              "credit": "International Gemini Observatory/NOIRLab/NSF/AURA/T. Matsopoulos",
+              "license": "CC BY 4.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Star_Trails_Above_Gemini_North_(iotw2506a).jpg"
+            },
+            {
+              "file": "img/lessons/star-trails-south-atacama.jpg",
+              "alt": "Star trails circling the south celestial pole above the Atacama Desert, Chile, with the Magellanic Clouds smeared into arcs.",
+              "label": "Southern sky, facing south (Chile)",
+              "kind": "photograph",
+              "kindNote": "Long exposure",
+              "credit": "Carlos A. Durán/ESO",
+              "license": "CC BY 4.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Atacama_star_trails_(dsc_46831001-cc).jpg"
+            }
+          ],
+          "caption": "Both hemispheres have a still point that the sky turns around. In the north it is marked by Polaris and the sky turns counter-clockwise as you face it; in the south no bright star marks the pole and the sky turns clockwise."
+        }
+      ],
+      "check": {
+        "id": "check-lat-south-turn",
+        "prompt": "From the southern hemisphere, facing the south celestial pole, which way does the sky turn?",
+        "choices": [
+          "Clockwise",
+          "Counter-clockwise",
+          "It does not turn",
+          "It turns one way before midnight and the other way after"
+        ],
+        "answerIndex": 0,
+        "explanation": "Facing the north celestial pole the sky turns counter-clockwise; facing the south pole, it turns clockwise. Both are the same turn of Earth, seen from opposite sides."
+      }
     }
   ],
   "keyPoints": [

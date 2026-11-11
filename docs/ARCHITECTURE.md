@@ -34,9 +34,12 @@ src/store/              settings.ts (observer, bortle, layers, quiz difficulty),
 src/lib/                time.ts (time zones, demo time specs), format.ts
 src/ui/                 shared primitives (Button, Switch, Segmented, Slider, Chip, Meter, Modal, RichText, Prose)
 src/styles/             tokens.css (design tokens), ui.css (primitives)
-src/modes/explore/      Mode 1
-src/modes/learn/        Mode 2
-src/modes/quiz/         Mode 3 (+ progress dashboard)
+src/modes/explore/      Sky (route /sky)
+src/modes/tonight/      Tonight section shell (pages re-exported from learn/pages)
+src/modes/learn/        Learn: the course (src/content/course.json + course.ts resolveCourse)
+src/modes/library/      Library: reference collections and detail pages
+src/modes/quiz/         Practice (route /practice): quizzes, review, progress
+src/components/settings/ header settings menu + first-run location prompt
 tests/                  vitest tests
 docs/                   ARCHITECTURE.md (this), DATA.md, ASTRO.md, VERIFICATION.md, per-area notes
 CREDITS.md              source + licence for every dataset, image, font and library
@@ -102,15 +105,12 @@ Documented in `docs/ASTRO.md` (signatures, rules, accuracy).
 
 ## Routes
 
-`/explore[?target=<TargetRef>]` · `/learn/*` · `/quiz/*` · `/progress`. Deep links other modes may rely on:
-
-- `/explore?target=<ref>` — open Explore centred on and selecting that object
-- `/learn/constellation/<Abbr>` — constellation page
-- `/learn/lesson/<lessonId>` — lesson
-- `/learn/object/<encodeURIComponent(ref)>` — object page
-- `/learn/signpost/<asterismId>` — signpost guide
-- `/quiz/unit/<pathUnitId>` — end-of-unit quiz (records `setUnitScore`)
-- `/quiz/lesson/<lessonId>` — a lesson's practice questions as a quiz
+Five sections (see `docs/briefs/v2.md`): `/sky` · `/tonight/*` · `/learn/*` · `/library/*` · `/practice/*`.
+**Every link is built with `routes` from `src/lib/routes.ts`** — never hand-write a path. v1 routes (`/explore`,
+`/learn/tonight|month|calendar|events|constellation(s)|object(s)|signpost(s)|lessons|unit`, `/quiz/*`, `/progress`)
+redirect to their new homes with the query string kept (`src/lib/redirect.tsx`, `App.tsx`, `LearnRoutes.tsx`).
+Location and night vision live in the header settings menu (`src/components/settings/`); Sky, Tonight and Learn
+show a first-run location prompt until `useSettings().locationChosen` is true.
 
 ## Design direction
 

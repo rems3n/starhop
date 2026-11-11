@@ -15,26 +15,76 @@
       ],
       "demo": {
         "title": "Inside the disc",
-        "controls": ["bortle"],
+        "controls": [
+          "bortle"
+        ],
         "steps": [
           {
             "caption": "A dark August sky. The Milky Way runs from Cygnus overhead down to Sagittarius in the south. You are looking along the disc of our own galaxy.",
             "time": "month:8 22:00",
             "bortle": 2,
-            "view": { "az": 180, "alt": 45, "fov": 120 },
-            "layers": { "constellationNames": false, "starNames": false }
+            "view": {
+              "az": 180,
+              "alt": 45,
+              "fov": 120
+            },
+            "layers": {
+              "constellationNames": false,
+              "starNames": false
+            }
           },
           {
             "caption": "The center of the galaxy lies just off the spout of the Sagittarius Teapot, 26,000 light-years away and hidden behind dust. Slide the light-pollution control toward 9 to see what Brooklyn does to the band.",
             "time": "month:8 22:00",
             "bortle": 2,
-            "view": { "target": "radec:266.4,-29.0", "fov": 60 },
+            "view": {
+              "target": "radec:266.4,-29.0",
+              "fov": 60
+            },
             "highlights": [
-              { "type": "label", "at": "radec:266.4,-29.0", "text": "Center of the Milky Way" },
-              { "type": "constellation", "id": "Sgr", "lines": true, "label": true }
+              {
+                "type": "label",
+                "at": "radec:266.4,-29.0",
+                "text": "Center of the Milky Way"
+              },
+              {
+                "type": "constellation",
+                "id": "Sgr",
+                "lines": true,
+                "label": true
+              }
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "milky-way-structure",
+          "params": {
+            "l": 0,
+            "b": 0
+          },
+          "caption": "We live inside a thin disc, about halfway out. Aim your line of sight along the disc and it passes through tens of thousands of light-years of stars: that is the band. Tilt it out of the disc and you are into dark intergalactic space after a few hundred light-years."
+        },
+        {
+          "type": "image",
+          "image": {
+            "file": "img/lessons/milky-way-panorama.jpg",
+            "alt": "A panorama of the whole sky with the Milky Way as a bright band running straight across the middle, brightest and dustiest at the centre",
+            "kind": "photograph",
+            "kindNote": "360-degree mosaic of photographs of the whole sky, arranged so the Milky Way runs across the middle",
+            "credit": "ESO/S. Brunier",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:ESO_-_Milky_Way.jpg"
+          },
+          "caption": "The whole sky in one picture, arranged so that the disc of our galaxy runs across the middle. The band is the disc seen edge-on from inside; the bright bulge at the centre lies towards Sagittarius, crossed by dark lanes of dust. The two smudges below right are the Magellanic Clouds."
+        }
+      ],
+      "misconception": {
+        "myth": "Pictures of the Milky Way’s spiral arms are photographs taken from outside it.",
+        "fact": "No spacecraft has ever left the Milky Way, or come anywhere close. Every face-on picture of our galaxy is an illustration, built from measurements of where stars and gas lie. The only real photographs of the Milky Way are taken from inside, and they show the band."
       }
     },
     {
@@ -50,25 +100,109 @@
           {
             "caption": "Two galaxies near the Big Dipper's bowl: M81, a spiral, and M82, a disturbed starburst galaxy, lie side by side about 12 million light-years away. Extend the diagonal of the bowl from Phecda through Dubhe by its own length.",
             "time": "month:4 21:30",
-            "view": { "target": "dso:M81", "fov": 45 },
-            "layers": { "dsoMarkers": true },
+            "view": {
+              "target": "dso:M81",
+              "fov": 45
+            },
+            "layers": {
+              "dsoMarkers": true
+            },
             "highlights": [
-              { "type": "object", "ref": "dso:M81", "label": "M81 — spiral" },
-              { "type": "object", "ref": "dso:M82", "label": "M82 — irregular" },
-              { "type": "polyline", "points": ["star:Phecda", "star:Dubhe", "dso:M81"], "dashed": true }
+              {
+                "type": "object",
+                "ref": "dso:M81",
+                "label": "M81 — spiral"
+              },
+              {
+                "type": "object",
+                "ref": "dso:M82",
+                "label": "M82 — irregular"
+              },
+              {
+                "type": "polyline",
+                "points": [
+                  "star:Phecda",
+                  "star:Dubhe",
+                  "dso:M81"
+                ],
+                "dashed": true
+              }
             ]
           },
           {
             "caption": "The Whirlpool Galaxy, a face-on spiral, sits about three and a half degrees from Alkaid, the star at the end of the Dipper's handle.",
             "time": "month:4 21:30",
-            "view": { "target": "star:Alkaid", "fov": 30 },
-            "layers": { "dsoMarkers": true },
+            "view": {
+              "target": "star:Alkaid",
+              "fov": 30
+            },
+            "layers": {
+              "dsoMarkers": true
+            },
             "highlights": [
-              { "type": "object", "ref": "dso:M51", "label": "Whirlpool (M51) — spiral" },
-              { "type": "object", "ref": "star:Alkaid", "label": true }
+              {
+                "type": "object",
+                "ref": "dso:M51",
+                "label": "Whirlpool (M51) — spiral"
+              },
+              {
+                "type": "object",
+                "ref": "star:Alkaid",
+                "label": true
+              }
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "hubble-sequence",
+          "params": {
+            "type": "S"
+          },
+          "caption": "Hubble sorted galaxies by shape: smooth ellipticals on the handle, spirals and barred spirals on the two prongs, irregulars apart. Choose a type to see a real example. The fork is a filing system, not a life story."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "file": "img/NGC4565-1.jpg",
+              "alt": "The Needle Galaxy, a spiral seen exactly edge-on: a thin bright line of stars with a central bulge and a dark lane of dust along its middle",
+              "label": "Spiral seen edge-on",
+              "kind": "photograph",
+              "kindNote": "Colour processing not stated at source",
+              "credit": "Ken Crawford",
+              "license": "CC BY-SA 3.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Needle_Galaxy_4565.jpeg"
+            },
+            {
+              "file": "img/M101-1.jpg",
+              "alt": "The Pinwheel Galaxy, a spiral seen face-on, with loose blue arms around a yellowish centre",
+              "label": "Spiral seen face-on",
+              "kind": "photograph",
+              "kindNote": "Colour processing not stated at source",
+              "credit": "Image: European Space Agency & NASA Acknowledgements: Project Investigators for the original Hubble data: K.D. Kuntz (GSFC), F. Bresolin (University of Hawaii), J. Trauger (JPL), J. Mould (NOAO), and Y.-H. Chu (University of Illinois, Urbana) Image processing: Davide De Martin (ESA/Hubble) CFHT image: Canada-France-Hawaii Telescope/J.-C. Cuillandre/Coelum NOAO image: George Jacoby, Bruce Bohannan, Mark Hanna/NOAO/AURA/NSF",
+              "license": "CC BY 4.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:M101_hires_STScI-PRC2006-10a.jpg"
+            }
+          ],
+          "caption": "Two spirals of the same kind seen from different angles. Edge-on, a spiral is a thin line with a bulge and a dark dust lane: this is roughly how the Milky Way would look from far away along its plane, and why from inside it we see a band."
+        }
+      ],
+      "check": {
+        "id": "check-milky-way-type",
+        "prompt": "What kind of galaxy is the Milky Way?",
+        "choices": [
+          "A barred spiral",
+          "An elliptical",
+          "An irregular",
+          "A lenticular"
+        ],
+        "answerIndex": 0,
+        "explanation": "The Milky Way is a disc galaxy with spiral arms that start from a bar of stars across its centre: a barred spiral."
       }
     },
     {
@@ -76,7 +210,21 @@
       "body": [
         "Galaxy distances are measured in millions of light-years. Light from the Andromeda Galaxy has traveled about 2.5 million years to reach you: you see it as it was before our species existed. The Virgo galaxies are more than 50 million light-years away. To look far into space is always to look into the past.",
         "Galaxies gather in groups and clusters. The Milky Way and Andromeda are the two heavyweights of the Local Group, a family of several dozen galaxies, most of them small, that also includes the spiral [[dso:M33|M33]] in Triangulum. The nearest big cluster, the Virgo Cluster, holds well over a thousand galaxies."
-      ]
+      ],
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "lookback-time",
+          "params": {
+            "object": "m31"
+          },
+          "caption": "The farther away something is, the older the light you see. Sunlight is 8 minutes old; the Andromeda Galaxy’s light set out 2.5 million years ago, before our species existed. Slide out to the earliest galaxies and you are looking back almost to the beginning."
+        }
+      ],
+      "thinkAbout": {
+        "question": "Suppose astronomers in the Andromeda Galaxy have a telescope powerful enough to see the surface of the Earth. What would they see today?",
+        "answer": "The Earth as it was about 2.5 million years ago, because the light reaching them now left Earth back then: no cities, no farms, no modern humans, only early human relatives in Africa. Looking across space always means looking into the past, in both directions."
+      }
     },
     {
       "heading": "The realm of galaxies",
@@ -90,15 +238,50 @@
           {
             "caption": "Spring evening, looking southeast. The markers crowding the gap between Denebola (Leo's tail) and Vindemiatrix (in Virgo) are galaxies of the Virgo Cluster, over 50 million light-years away.",
             "time": "month:4 21:30",
-            "view": { "target": "dso:M87", "fov": 40 },
-            "layers": { "dsoMarkers": true },
+            "view": {
+              "target": "dso:M87",
+              "fov": 40
+            },
+            "layers": {
+              "dsoMarkers": true
+            },
             "highlights": [
-              { "type": "polyline", "points": ["star:Denebola", "star:Vindemiatrix"], "dashed": true },
-              { "type": "object", "ref": "dso:M87", "label": "M87 — giant elliptical" },
-              { "type": "object", "ref": "dso:M49", "label": "M49 — elliptical" }
+              {
+                "type": "polyline",
+                "points": [
+                  "star:Denebola",
+                  "star:Vindemiatrix"
+                ],
+                "dashed": true
+              },
+              {
+                "type": "object",
+                "ref": "dso:M87",
+                "label": "M87 — giant elliptical"
+              },
+              {
+                "type": "object",
+                "ref": "dso:M49",
+                "label": "M49 — elliptical"
+              }
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "milky-way-structure",
+          "params": {
+            "l": 0,
+            "b": 80
+          },
+          "caption": "Looking straight out of the disc, your line of sight leaves the galaxy after only a few hundred light-years, so little dust or starlight gets in the way. That clear window, towards Virgo and Coma Berenices, is why one part of the spring sky in the northern hemisphere is crowded with galaxies."
+        }
+      ],
+      "thinkAbout": {
+        "question": "Very few galaxies are found in the parts of the sky close to the Milky Way band. Is that because there are fewer galaxies in those directions?",
+        "answer": "No. Galaxies are spread fairly evenly in every direction, but when we look along the disc of our own galaxy its dust clouds block the light from beyond. Astronomers call this strip the zone of avoidance; infrared and radio telescopes, which see through dust, find plenty of galaxies there."
       }
     },
     {
@@ -109,20 +292,84 @@
       ],
       "demo": {
         "title": "Star-hop to the Andromeda Galaxy",
-        "controls": ["bortle"],
+        "controls": [
+          "bortle"
+        ],
         "steps": [
           {
             "caption": "From the corner of the Great Square, follow the chain to Mirach, turn right, and step past Mu Andromedae to the galaxy. Its light left 2.5 million years ago.",
             "time": "month:11 20:00",
-            "view": { "target": "star:Mirach", "fov": 50 },
-            "layers": { "dsoMarkers": true },
+            "view": {
+              "target": "star:Mirach",
+              "fov": 50
+            },
+            "layers": {
+              "dsoMarkers": true
+            },
             "highlights": [
-              { "type": "polyline", "points": ["star:Alpheratz", "star:Mirach", "star:μ And", "dso:M31"] },
-              { "type": "object", "ref": "dso:M31", "label": "Andromeda Galaxy (M31)" },
-              { "type": "object", "ref": "star:Mirach", "label": true }
+              {
+                "type": "polyline",
+                "points": [
+                  "star:Alpheratz",
+                  "star:Mirach",
+                  "star:μ And",
+                  "dso:M31"
+                ]
+              },
+              {
+                "type": "object",
+                "ref": "dso:M31",
+                "label": "Andromeda Galaxy (M31)"
+              },
+              {
+                "type": "object",
+                "ref": "star:Mirach",
+                "label": true
+              }
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "file": "img/M31-2.jpg",
+              "alt": "The Andromeda Galaxy photographed with a 130 mm amateur telescope: a long oval glow with a bright core and dark dust lanes",
+              "label": "Andromeda, amateur telescope",
+              "kind": "photograph",
+              "kindNote": "DSLR colour image, colour enhanced",
+              "credit": "Brucewaters",
+              "license": "CC BY 4.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:M31,_the_Andromeda_Galaxy,_Killarney_Provincial_Park_Observatory.jpg"
+            },
+            {
+              "file": "img/M81-1.jpg",
+              "alt": "Bode’s Galaxy, M81, from the Hubble Space Telescope: a spiral with a bright yellow core and tightly wound arms",
+              "label": "M81, Hubble",
+              "kind": "photograph",
+              "kindNote": "Colour processing not stated at source",
+              "credit": "NASA, ESA and the Hubble Heritage Team (STScI/AURA)",
+              "license": "Public domain",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Messier_81_HST.jpg"
+            }
+          ],
+          "caption": "Even an amateur camera on a small telescope records far more than the eye, which sees the Andromeda Galaxy as a soft grey oval with a brighter core. Spiral arms like those of M81 are visible by eye only in large telescopes under very dark skies."
+        }
+      ],
+      "check": {
+        "id": "check-andromeda-eye",
+        "prompt": "You find the Andromeda Galaxy in binoculars. What are you most likely to see?",
+        "choices": [
+          "A small, soft grey oval with a brighter centre",
+          "A spiral with blue arms",
+          "Thousands of separate stars",
+          "A bright point like a planet"
+        ],
+        "answerIndex": 0,
+        "explanation": "Its light is spread thin and it is millions of light-years away, so by eye and in binoculars it is a faint grey oval glow, brightest at the core."
       },
       "tryIt": "On a moonless autumn evening, get away from direct lights, let your eyes adapt for ten minutes, and sweep binoculars from Mirach past Mu Andromedae. A small gray oval that will not focus to a point is another galaxy."
     }
@@ -135,13 +382,41 @@
     "Only the Andromeda Galaxy is a naked-eye galaxy from mid-northern latitudes; most need a telescope and a dark sky."
   ],
   "examples": [
-    { "ref": "dso:M31", "label": "Andromeda Galaxy (M31)", "note": "Large spiral 2.5 million light-years away. Naked eye from a dark site; binoculars elsewhere." },
-    { "ref": "dso:M33", "label": "Triangulum Galaxy (M33)", "note": "Face-on spiral, third-largest member of the Local Group. Binoculars under a truly dark sky; its glow is very spread out." },
-    { "ref": "dso:M81", "label": "M81", "note": "Bright spiral near the Big Dipper. A small oval glow in binoculars from a dark site or in a small telescope." },
-    { "ref": "dso:M82", "label": "M82", "note": "Irregular starburst galaxy beside M81. A thin gray streak in a small telescope." },
-    { "ref": "dso:M51", "label": "Whirlpool Galaxy (M51)", "note": "Face-on spiral with a small companion. Two fuzzy spots in a small telescope under a dark sky; arms need a larger one." },
-    { "ref": "dso:M87", "label": "M87", "note": "Giant elliptical at the heart of the Virgo Cluster. A round featureless glow in a small telescope under a dark sky." },
-    { "ref": "dso:M83", "label": "M83", "note": "Barred spiral in Hydra. Low in the south from New York; a small telescope and a dark sky are needed." }
+    {
+      "ref": "dso:M31",
+      "label": "Andromeda Galaxy (M31)",
+      "note": "Large spiral 2.5 million light-years away. Naked eye from a dark site; binoculars elsewhere."
+    },
+    {
+      "ref": "dso:M33",
+      "label": "Triangulum Galaxy (M33)",
+      "note": "Face-on spiral, third-largest member of the Local Group. Binoculars under a truly dark sky; its glow is very spread out."
+    },
+    {
+      "ref": "dso:M81",
+      "label": "M81",
+      "note": "Bright spiral near the Big Dipper. A small oval glow in binoculars from a dark site or in a small telescope."
+    },
+    {
+      "ref": "dso:M82",
+      "label": "M82",
+      "note": "Irregular starburst galaxy beside M81. A thin gray streak in a small telescope."
+    },
+    {
+      "ref": "dso:M51",
+      "label": "Whirlpool Galaxy (M51)",
+      "note": "Face-on spiral with a small companion. Two fuzzy spots in a small telescope under a dark sky; arms need a larger one."
+    },
+    {
+      "ref": "dso:M87",
+      "label": "M87",
+      "note": "Giant elliptical at the heart of the Virgo Cluster. A round featureless glow in a small telescope under a dark sky."
+    },
+    {
+      "ref": "dso:M83",
+      "label": "M83",
+      "note": "Barred spiral in Hydra. Low in the south from New York; a small telescope and a dark sky are needed."
+    }
   ],
   "questions": [
     {
@@ -171,7 +446,12 @@
     {
       "id": "q3",
       "prompt": "A galaxy is a smooth oval glow of old stars with no disc, arms or obvious gas clouds. What type is it?",
-      "choices": ["Elliptical", "Spiral", "Barred spiral", "Irregular"],
+      "choices": [
+        "Elliptical",
+        "Spiral",
+        "Barred spiral",
+        "Irregular"
+      ],
       "answerIndex": 0,
       "explanation": "Ellipticals such as M87 are smooth and armless. Spirals have discs with arms; irregulars have no regular shape."
     },

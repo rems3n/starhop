@@ -97,12 +97,6 @@ export default function HandOnDipper({ params }: DiagramProps) {
   return (
     <div>
       <Svg w={720} h={390} title={meta.title} desc="The seven stars of the Big Dipper drawn to scale, with the outline of a hand at arm's length laid over two of its stars to show how many fingers, fists or hand spans they are apart.">
-        <polyline points={LINE.map((n) => P[n].join(',')).join(' ')} fill="none" stroke={C.lineStrong} strokeWidth={1.2} />
-        {Object.entries(STARS).map(([n, [, , mag]]) => (
-          <circle key={n} cx={P[n][0]} cy={P[n][1]} r={Math.max(1.8, 6.4 - mag * 1.1)} fill={C.star} />
-        ))}
-        {/* measured pair */}
-        <line x1={ax} y1={ay} x2={bx} y2={by} stroke={C.amber} strokeWidth={1.5} strokeDasharray="5 4" />
         <defs>
           <clipPath id={clip}>
             <rect x={1} y={1} width={718} height={388} rx={10} />
@@ -113,6 +107,12 @@ export default function HandOnDipper({ params }: DiagramProps) {
             <HandShape kind={cfg.hand} />
           </g>
         </g>
+        <polyline points={LINE.map((n) => P[n].join(',')).join(' ')} fill="none" stroke={C.lineStrong} strokeWidth={1.2} />
+        {Object.entries(STARS).map(([n, [, , mag]]) => (
+          <circle key={n} cx={P[n][0]} cy={P[n][1]} r={Math.max(1.8, 6.4 - mag * 1.1)} fill={C.star} />
+        ))}
+        {/* measured pair */}
+        <line x1={ax} y1={ay} x2={bx} y2={by} stroke={C.amber} strokeWidth={1.5} strokeDasharray="5 4" />
         {Object.keys(STARS)
           .filter((n) => n !== 'Alcor')
           .map((n) => {

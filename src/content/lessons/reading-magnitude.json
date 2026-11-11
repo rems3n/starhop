@@ -12,7 +12,26 @@
         "Every star chart and every object page in Starhop gives a magnitude. After this lesson you will be able to read that number and know at once whether the thing is a showpiece, a challenge, or hopeless from your street.",
         "Magnitude is the astronomer's brightness scale, and it runs backwards: the smaller the number, the brighter the star. The idea is ancient. Greek astronomers sorted the stars into six classes, calling the brightest \"first magnitude\" and the faintest they could see \"sixth magnitude\", the way we might say first class and sixth class.",
         "In 1856 the English astronomer Norman Pogson put numbers on it: a difference of 5 magnitudes is exactly 100 times in brightness. So each single step is about 2.5 times. A magnitude 1 star is 2.5 times brighter than magnitude 2, about 6 times brighter than magnitude 3, and 100 times brighter than magnitude 6."
-      ]
+      ],
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "magnitude-ratio",
+          "params": { "a": 1, "b": 6 },
+          "caption": "Each step of one magnitude is a factor of about 2.5 in brightness, and five steps make exactly 100. Set two magnitudes, or pick an example, and count how many of the fainter star it would take to match the brighter one."
+        }
+      ],
+      "misconception": {
+        "myth": "A star of magnitude 5 is brighter than a star of magnitude 2, because 5 is the bigger number.",
+        "fact": "The scale runs backwards: the smaller the number, the brighter the star. Magnitude 2 is about 16 times brighter than magnitude 5. Think of it as a ranking, like first class and fifth class."
+      },
+      "check": {
+        "id": "check-mag-steps",
+        "prompt": "Star A is magnitude 2 and star B is magnitude 4. Which is brighter, and by roughly how much?",
+        "choices": ["A, about 6 times", "B, about 2 times", "A, about 2 times", "B, about 6 times"],
+        "answerIndex": 0,
+        "explanation": "A has the smaller number, so it is brighter. Two steps of 2.5 times each give 2.5 × 2.5 ≈ 6.3 times."
+      }
     },
     {
       "heading": "The scale from Sirius to the limit of sight",
@@ -48,6 +67,17 @@
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "magnitude-ruler",
+          "caption": "The whole range of the scale, from the Sun at about −27 to the faintest galaxies Hubble has recorded at about +31, and the narrow band your eyes can use. Choose your sky's Bortle class to see where your limit falls and roughly how many stars the whole sky holds down to it."
+        }
+      ],
+      "thinkAbout": {
+        "question": "The Sun is magnitude −26.8 and the full Moon −12.7. Roughly how many times brighter is the Sun?",
+        "answer": "They differ by about 14 magnitudes. Every 5 magnitudes is ×100, so 10 magnitudes is ×10,000 and the remaining 4 are about ×40: some 400,000 times in all."
       }
     },
     {
@@ -67,7 +97,11 @@
             "layers": { "constellationNames": false, "constellationLines": false, "milkyWay": false },
             "bortle": 9,
             "highlights": [
-              { "type": "polyline", "points": ["star:Polaris", "star:Yildun", "star:ε UMi", "star:ζ UMi", "star:η UMi", "star:Pherkad", "star:Kochab", "star:ζ UMi"], "dashed": true },
+              {
+                "type": "polyline",
+                "points": ["star:Polaris", "star:Yildun", "star:ε UMi", "star:ζ UMi", "star:η UMi", "star:Pherkad", "star:Kochab", "star:ζ UMi"],
+                "dashed": true
+              },
               { "type": "object", "ref": "star:Polaris", "label": "Polaris 2.0" },
               { "type": "object", "ref": "star:Kochab", "label": "Kochab 2.1" },
               { "type": "object", "ref": "star:Pherkad", "label": "Pherkad 3.0" }
@@ -80,7 +114,11 @@
             "layers": { "constellationNames": false, "constellationLines": false, "milkyWay": false },
             "bortle": 6,
             "highlights": [
-              { "type": "polyline", "points": ["star:Polaris", "star:Yildun", "star:ε UMi", "star:ζ UMi", "star:η UMi", "star:Pherkad", "star:Kochab", "star:ζ UMi"], "dashed": true },
+              {
+                "type": "polyline",
+                "points": ["star:Polaris", "star:Yildun", "star:ε UMi", "star:ζ UMi", "star:η UMi", "star:Pherkad", "star:Kochab", "star:ζ UMi"],
+                "dashed": true
+              },
               { "type": "object", "ref": "star:Yildun", "label": "4.4" },
               { "type": "object", "ref": "star:ε UMi", "label": "4.2" },
               { "type": "object", "ref": "star:ζ UMi", "label": "4.3" },
@@ -89,13 +127,39 @@
           }
         ]
       },
-      "tryIt": "On the next clear night, find Polaris and count the Little Dipper's stars. Three means a limit near magnitude 3 to 4; five or six means about 4.5; all seven means 5 or better."
+      "tryIt": "On the next clear night, find Polaris and count the Little Dipper's stars. Three means a limit near magnitude 3 to 4; five or six means about 4.5; all seven means 5 or better.",
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "little-dipper-gauge",
+          "caption": "The Little Dipper's seven stars run from magnitude 2 to 5, which makes it a ready-made gauge of your sky. Slide from a dark site to an inner city and watch the faint stars of the bowl and handle drop out until only Polaris, Kochab and Pherkad remain."
+        }
+      ],
+      "check": {
+        "id": "check-limit",
+        "prompt": "Your sky's limiting magnitude tonight is 4.3. Which of these stars can you see without binoculars?",
+        "choices": ["A magnitude 4.8 star", "A magnitude 3.3 star", "A magnitude 5.5 star", "None of them"],
+        "answerIndex": 1,
+        "explanation": "You can see stars brighter than your limit, which means stars with smaller magnitudes: 3.3 is below 4.3, so it shows; 4.8 and 5.5 do not."
+      }
     },
     {
       "heading": "Apparent and absolute",
       "body": [
         "Everything above is apparent magnitude: how bright a star looks from Earth. That depends on two things, how much light the star really gives off and how far away it is. To compare stars fairly, astronomers also use absolute magnitude: how bright the star would look from a standard distance of 10 parsecs, which is 32.6 light-years. Sirius looks brilliant mainly because it is a neighbor, only 8.6 light-years away; its absolute magnitude is a modest 1.4. Our Sun, moved out to that standard distance, would be magnitude 4.8: a faint star you could not see from Brooklyn at all."
-      ]
+      ],
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "apparent-absolute",
+          "params": { "star": "Sirius" },
+          "caption": "The same star looks five magnitudes fainter for every tenfold step farther away. Slide each star along the distance scale: Sirius is brilliant mostly because it is close, while Rigel, about 100 times farther away, is still one of the brightest stars in the sky. Moved to the standard 32.6 light-years, the Sun would be a faint magnitude 4.8."
+        }
+      ],
+      "thinkAbout": {
+        "question": "Rigel looks about a quarter as bright as Sirius, yet it is about 100 times farther away. What does that tell you about Rigel?",
+        "answer": "Light spreads out with distance: 100 times farther means 10,000 times fainter for the same lamp. To look even a quarter as bright from that far, Rigel must give out over 2,000 times more light than Sirius. Their absolute magnitudes, about −7 and +1.4, say the same thing."
+      }
     }
   ],
   "keyPoints": [
@@ -110,12 +174,7 @@
     {
       "id": "q1",
       "prompt": "Star A is magnitude 1.0 and star B is magnitude 4.0. Which statement is right?",
-      "choices": [
-        "B is 4 times brighter than A",
-        "A is 3 times brighter than B",
-        "A is about 16 times brighter than B",
-        "B is about 16 times brighter than A"
-      ],
+      "choices": ["B is 4 times brighter than A", "A is 3 times brighter than B", "A is about 16 times brighter than B", "B is about 16 times brighter than A"],
       "answerIndex": 2,
       "explanation": "Smaller is brighter, and each magnitude is about 2.5 times: 2.5 × 2.5 × 2.5 is about 16."
     },
