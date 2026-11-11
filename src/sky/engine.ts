@@ -2,7 +2,7 @@
  * The sky engine: clock, camera, input, and the frame loop that drives the WebGL renderer and the 2D overlay.
  * `createSkyEngine` returns the `SkyController` contract from src/types.ts.
  */
-import { loadFaintStars, type Catalog } from '@/data/catalog';
+import { loadDeepDsos, loadFaintStars, type Catalog } from '@/data/catalog';
 import {
   DEFAULT_LAYERS,
   type Highlight,
@@ -12,6 +12,7 @@ import {
   type SkyController,
   type SkyEngineOptions,
   type SkyEvents,
+  type Star,
   type TargetRef,
   type ViewState,
 } from '@/types';
@@ -20,7 +21,9 @@ import {
   transpose33, unprojectPx, vecToLat, vecToLon,
 } from './camera';
 import { lightPollution, milkyWayVisibility, parseCssColor, rgbaCss, smoothstep, starZoom, twilightLimit, type RGBA } from './color';
-import { BODY_COLOR, BODY_IDS, computeBodies, eqjToNeu, makeBodies } from './ephemeris';
+import { BODY_COLOR, BODY_IDS, computeBodies, constellationAt, eqjToNeu, makeBodies } from './ephemeris';
+import { DeepStars, deepNet, deepStarVec, loadDeepMeta, type DeepTile, type DeepView } from './deep';
+import { DEEP_FOV_REF, deepLimit } from './deepcore';
 import type { ArtEntry } from './art';
 import { HighlightPreparer, type PreparedHighlight } from './highlights';
 import { Overlay, type Scene } from './overlay';
@@ -34,6 +37,22 @@ export interface SkyStats {
   glErrors: number;
   starsDrawn: number;
   faintLoaded: number;
+  /** Deep-sky tiles resident on the GPU / drawn last frame, their stars, deep stars drawn, tiles queued or loading */
+  deepTiles: number;
+  deepTilesDrawn: number;
+  deepStars: number;
+  deepStarsDrawn: number;
+  deepPending: number;
+  /** Bytes and requests fetched for the deep sky so far (page-wide) */
+  deepBytes: number;
+  deepRequests: number;
+  /** Deep-sky selections and loads so far (this engine) */
+  deepSelects: number;
+  deepLoads: number;
+  /** Milliseconds spent in deep-sky per-frame work in the last frame */
+  deepMs: number;
+  /** Effective limiting magnitude of the last frame */
+  starLimit: number;
   /** Main-thread milliseconds spent inside the last frame callback */
   lastFrameMs: number;
   /** …of which issuing WebGL commands, and drawing the 2D overlay */
@@ -63,7 +82,7 @@ function loadArt(): Promise<{ entries: ArtEntry[]; blobs: (Blob | null)[] }> {
   return artPromise;
 }
 
-const KIND_BODY = 1, KIND_STAR = 2, KIND_DSO = 3, KIND_CON = 4;
+const KIND_BODY = 1, KIND_STAR = 2, KIND_DSO = 3, KIND_CON = 4, KIND_DEEP_STAR = 5, KIND_DEEP_DSO = 6;
 
 function readTokens(el: HTMLElement): SkyTokens {
   const cs = getComputedStyle(el);
@@ -129,6 +148,13 @@ export function createSkyEngine(container: HTMLElement, catalog: Catalog, option
 
   const renderer = new Renderer(glCanvas, catalog, tokens, { checkErrors: debug?.checkGlErrors, onAsync: () => { if (!destroyed) invalidate(); } });
   const overlay = new Overlay(ovCanvas, catalog, tokens, 1);
+  const deep = new DeepStars((t) => renderer.uploadDeep(t), (t) => renderer.freeDeep(t), () => { if (!destroyed) invalidate(); }, () => reduced());
+  renderer.deepTiles = deep.tiles;
+  /** The view as the deep-sky code sees it (filled in fillFrame) */
+  const dv: DeepView = { cx: 0, cy: 0, cz: 1, halfAngle: 1, limit: 0, up: null };
+  const deepUp = new Float64Array(3);
+  let deepSel = { cx: 0, cy: 0, cz: 0, fov: 0, limit: 0, ready: false };
+  let deepSettleTimer = 0, deepSelects = 0, deepMs = 0, deepDrawn = 0, deepTilesDrawn = 0;
   const preparer = new HighlightPreparer();
   let highlightList: Highlight[] = [];
   let highlightsDependOnTime = false;
@@ -138,12 +164,14 @@ export function createSkyEngine(container: HTMLElement, catalog: Catalog, option
 
   const frameP: FrameParams = {
     width: 1, height: 1, dpr: 1, fov: view.fov, eqj, hor, zClip: -0.9, layers, starLimit: limitingMag, starZoom: 1,
-    sun: sunNeu, sunAlt: -90, day: 0, lightPollution: 0, milkyWay: 0, bodies: sprites,
+    sun: sunNeu, sunAlt: -90, day: 0, lightPollution: 0, milkyWay: 0, bodies: sprites, deep: [],
   };
   const scene: Scene = {
     width: 1, height: 1, dpr: 1, fov: view.fov, S: 1, eqj, hor, neu, zClip: -0.9, layers, mount: view.mount, starLimit: limitingMag, starZoom: 1, day: 0,
     bodies, sprites, highlights: [], selection: null, selectionT: 1, showSelection, lasso: new Float32Array(2048), lassoN: 0, lassoClosed: false,
   };
+
+  frameP.deep = deep.tiles;
 
   // ───────────── events
   const listeners: { [K in keyof SkyEvents]: Set<(p: SkyEvents[K]) => void> } = { ready: new Set(), select: new Set(), time: new Set(), view: new Set(), lasso: new Set() };
@@ -361,7 +389,8 @@ export function createSkyEngine(container: HTMLElement, catalog: Catalog, option
     const atmo = layers.atmosphere;
     const day = atmo ? smoothstep(-9, 3, sunAlt) : 0;
     const twLim = atmo ? twilightLimit(sunAlt) : 99;
-    const starLimit = Math.min(limitingMag, twLim);
+    // with the deep-sky layer the limit grows as you zoom in, telescope-like (docs/SKY.md)
+    const starLimit = Math.min(layers.deepSky ? deepLimit(limitingMag, view.fov) : limitingMag, twLim);
     const sz = starZoom(view.fov);
     frameP.width = scene.width = width;
     frameP.height = scene.height = height;
@@ -376,6 +405,14 @@ export function createSkyEngine(container: HTMLElement, catalog: Catalog, option
     frameP.milkyWay = layers.milkyWay && renderer.hasMilkyWay ? 0.62 * milkyWayVisibility(limitingMag) : 0;
     scene.S = S;
     scene.mount = view.mount;
+    // the view cone for deep-sky streaming: centre direction (J2000) and the angle to a screen corner
+    dv.cx = eqj[6]; dv.cy = eqj[7]; dv.cz = eqj[8];
+    dv.halfAngle = Math.min(Math.PI, 2 * Math.atan(Math.hypot(width, height) / 2 / S) * 1.04);
+    dv.limit = starLimit;
+    if (layers.ground) {
+      deepUp[0] = neu[6]; deepUp[1] = neu[7]; deepUp[2] = neu[8];
+      dv.up = deepUp;
+    } else dv.up = null;
     // Sun, Moon, planets
     const cx = width / 2, cy = height / 2;
     const sun = bodies[0];
@@ -428,6 +465,7 @@ export function createSkyEngine(container: HTMLElement, catalog: Catalog, option
     const more = stepAnimations(now, dt);
     updateCamera();
     fillFrame();
+    const deepMore = deepFrame(now);
     const t1 = performance.now();
     renderer.draw(frameP);
     const t2 = performance.now();
@@ -453,7 +491,7 @@ export function createSkyEngine(container: HTMLElement, catalog: Catalog, option
       ready = true;
       emit('ready', undefined);
     }
-    if (more) invalidate();
+    if (more || deepMore) invalidate();
     else {
       scheduleClock();
       if ((viewDirty || timeDirty) && !trailingTimer) {
@@ -464,6 +502,59 @@ export function createSkyEngine(container: HTMLElement, catalog: Catalog, option
       }
     }
     lastFrameMs = performance.now() - t0;
+  }
+
+  /**
+   * Deep sky, per frame: flag the resident tiles on screen (and their fade-in) and decide whether to (re)select tiles.
+   * Selection happens when the view has moved a lot since the last one, or 150 ms after it stops changing.
+   */
+  function deepFrame(now: number): boolean {
+    const t0 = performance.now();
+    let more = false;
+    deepDrawn = deepTilesDrawn = 0;
+    if (scene.starLimit > 6.5) maybeLoadFaint(true);
+    if (layers.deepSky && dv.limit > 7.6) {
+      more = deep.frame(dv, now);
+      for (const t of deep.tiles) if (t.visible) { deepTilesDrawn++; deepDrawn += countBelow(t.mags, dv.limit); }
+      const moved = deepSel.cx * dv.cx + deepSel.cy * dv.cy + deepSel.cz * dv.cz < Math.cos(dv.halfAngle * 0.35);
+      const zoomed = Math.abs(Math.log(view.fov / (deepSel.fov || 1))) > 0.3;
+      const deeper = Math.abs(dv.limit - deepSel.limit) > 0.4;
+      if (moved || zoomed || deeper || (deep.ready && !deepSel.ready)) deepSelect();
+      else if (dv.limit !== deepSel.limit || view.fov !== deepSel.fov || deepSel.cx !== dv.cx || deepSel.cy !== dv.cy) {
+        // settle: select once the view has been still for 150 ms (one timer, re-armed only when it fires early)
+        deepMovedAt = now;
+        if (!deepSettleTimer) deepSettleTimer = window.setTimeout(deepSettle, 150);
+      }
+    }
+    if (layers.deepSky && layers.dsoMarkers && view.fov < DEEP_FOV_REF * 0.6) maybeLoadDeepDsos();
+    deepMs = performance.now() - t0;
+    return more;
+  }
+  let deepMovedAt = 0;
+  function deepSettle(): void {
+    deepSettleTimer = 0;
+    if (destroyed || !layers.deepSky) return;
+    const wait = deepMovedAt + 150 - performance.now();
+    if (wait > 5) deepSettleTimer = window.setTimeout(deepSettle, wait);
+    else deepSelect();
+  }
+  function deepSelect(): void {
+    deepSelects++;
+    deepSel = { cx: dv.cx, cy: dv.cy, cz: dv.cz, fov: view.fov, limit: dv.limit, ready: deep.ready };
+    deep.select(dv, performance.now());
+  }
+  let deepDsoRequested = false;
+  function maybeLoadDeepDsos(): void {
+    if (deepDsoRequested) return;
+    deepDsoRequested = true;
+    loadDeepDsos().then((list) => {
+      if (destroyed) return;
+      overlay.setDeepDsos(list);
+      invalidate();
+    }, (err) => {
+      deepDsoRequested = false;
+      console.warn('[sky] deep-sky objects unavailable', err);
+    });
   }
 
   /** With the clock running, wake up only when the sky has turned by about a third of a pixel. */
@@ -481,6 +572,30 @@ export function createSkyEngine(container: HTMLElement, catalog: Catalog, option
 
   // ───────────── picking
   const acc = new PickAccumulator();
+  /** Set by pick() when the winner is a deep star (its identity is fetched before the select event) */
+  let deepHit: { tile: DeepTile; index: number } | null = null;
+  let deepPickTile: DeepTile | null = null;
+  let clickSeq = 0;
+  /** Register a clicked deep star in the catalog (designation, distance… fetched from its tile's identity file). */
+  async function registerDeepStar(t: DeepTile, i: number): Promise<number> {
+    const id = deep.idOf(t, i);
+    if (catalog.starById.has(id)) return id;
+    const meta = await loadDeepMeta(t.order, t.pix, t.band);
+    const v = deepStarVec(t, i);
+    const ra = ((Math.atan2(v[1], v[0]) * RAD) + 360) % 360;
+    const dec = Math.asin(Math.max(-1, Math.min(1, v[2]))) * RAD;
+    const con = constellationAt(ra, dec);
+    const mag = meta && meta.m[i] != null ? meta.m[i] / 100 : t.mags[i];
+    const desig = meta?.d[i] ?? `Star of magnitude ${mag.toFixed(1)}`;
+    const star: Star = { id, ra: Math.round(ra * 1e5) / 1e5, dec: Math.round(dec * 1e5) / 1e5, mag, con, desig };
+    if (!isNaN(t.bv[i])) star.bv = Math.round(t.bv[i] * 100) / 100;
+    if (meta?.l[i]) star.distLy = meta.l[i];
+    if (meta?.s[i]) star.sp = meta.s[i];
+    if (meta?.d[i] && !/^(HD|HIP|TYC|Gaia DR3|AT-HYG) /.test(desig)) star.name = desig;
+    catalog.registerStar(star);
+    return id;
+  }
+
   function pick(x: number, y: number): PickedObject | null {
     if (width < 2) return null;
     acc.reset();
@@ -511,11 +626,44 @@ export function createSkyEngine(container: HTMLElement, catalog: Catalog, option
       if (ground && neu[6] * vx + neu[7] * vy + neu[8] * vz < 0) continue;
       acc.offer(stars[i].name ? TIER_NAMED : TIER_STAR, Math.hypot(sx - x, sy - y), 0, KIND_STAR, i);
     }
+    // deep stars: only tiles on screen whose bounds come near the pointer
+    deepHit = null;
+    if (layers.deepSky && scene.starLimit > 7.6 && deep.tiles.length) {
+      unprojectPx(eqj, S, cx, cy, x, y, q3);
+      const reachRad = 2 * Math.atan((reach + 2) / S);
+      for (let ti = 0; ti < deep.tiles.length; ti++) {
+        const t = deep.tiles[ti];
+        if (!t.visible || t.alpha < 0.5) continue;
+        if (t.cx * q3[0] + t.cy * q3[1] + t.cz * q3[2] < Math.cos(Math.min(Math.PI, t.radius + reachRad))) continue;
+        const nd = countBelow(t.mags, scene.starLimit - 0.2);
+        const d7 = t.data;
+        for (let i = 0; i < nd; i++) {
+          const o = i * 7;
+          const vx = d7[o], vy = d7[o + 1], vz = d7[o + 2];
+          const z = eqj[6] * vx + eqj[7] * vy + eqj[8] * vz;
+          if (z < scene.zClip) continue;
+          const w = 1 + z;
+          const sx = cx + ((eqj[0] * vx + eqj[1] * vy + eqj[2] * vz) / w) * S;
+          if (sx < x - reach || sx > x + reach) continue;
+          const sy = cy - ((eqj[3] * vx + eqj[4] * vy + eqj[5] * vz) / w) * S;
+          if (sy < y - reach || sy > y + reach) continue;
+          if (ground && neu[6] * vx + neu[7] * vy + neu[8] * vz < 0) continue;
+          const dist = Math.hypot(sx - x, sy - y);
+          acc.offer(TIER_STAR, dist, 0, KIND_DEEP_STAR, i);
+          if (acc.kind === KIND_DEEP_STAR && acc.index === i && acc.dist === dist) deepPickTile = t;
+        }
+      }
+    }
     if (layers.dsoMarkers) {
       const shown = overlay.dsoShown;
       for (let i = 0; i < shown.length; i++) {
         if (!shown[i]) continue;
         acc.offer(TIER_NAMED, Math.hypot(overlay.dsoX[i] - x, overlay.dsoY[i] - y), Math.min(overlay.dsoR[i], 40), KIND_DSO, i);
+      }
+      const dl = overlay.deepList;
+      for (let k = 0; k < overlay.deepShownN; k++) {
+        const i = dl[k];
+        acc.offer(TIER_NAMED, Math.hypot(overlay.deepX[i] - x, overlay.deepY[i] - y), Math.min(overlay.deepR[i], 40), KIND_DEEP_DSO, i);
       }
     }
     if (layers.constellationNames) {
@@ -530,6 +678,13 @@ export function createSkyEngine(container: HTMLElement, catalog: Catalog, option
       case KIND_BODY: return { kind: 'body', ref: `body:${bodies[acc.index].id}`, name: bodies[acc.index].id };
       case KIND_STAR: { const s = stars[acc.index]; return { kind: 'star', ref: `star:${s.id}`, name: s.name ?? s.desig }; }
       case KIND_DSO: { const t = catalog.resolve(`dso:${catalog.dsos[acc.index].id}`); return { kind: 'dso', ref: `dso:${catalog.dsos[acc.index].id}`, name: t?.name ?? catalog.dsos[acc.index].id }; }
+      case KIND_DEEP_DSO: { const d = catalog.deepDsos[acc.index]; const t = catalog.resolve(`dso:${d.id}`); return { kind: 'dso', ref: `dso:${d.id}`, name: t?.name ?? d.id }; }
+      case KIND_DEEP_STAR: {
+        const t = deepPickTile!;
+        deepHit = { tile: t, index: acc.index };
+        const id = deep.idOf(t, acc.index);
+        return { kind: 'star', ref: `star:${id}`, name: catalog.starById.get(id)?.desig ?? 'Star' };
+      }
       default: { const c = catalog.constellations[acc.index]; return { kind: 'constellation', ref: `con:${c.id}`, name: c.name }; }
     }
   }
@@ -704,6 +859,20 @@ export function createSkyEngine(container: HTMLElement, catalog: Catalog, option
       return;
     }
     const hit = pick(p.x, p.y);
+    const seq = ++clickSeq;
+    if (hit && deepHit) {
+      // a deep star: fetch its identity first so `star:<id>` resolves when listeners look it up
+      const { tile, index } = deepHit;
+      registerDeepStar(tile, index).then((id) => {
+        if (destroyed || seq !== clickSeq) return;
+        const s = catalog.starById.get(id);
+        applySelect({ kind: 'star', ref: `star:${id}`, name: s?.name ?? s?.desig ?? hit.name }, performance.now());
+      }, (e) => console.warn('[sky] deep star identity unavailable', e));
+      return;
+    }
+    applySelect(hit, now);
+  }
+  function applySelect(hit: PickedObject | null, now: number): void {
     selectionRef = hit ? hit.ref : null;
     selectionStart = now;
     scene.selectionT = 0;
@@ -785,8 +954,8 @@ export function createSkyEngine(container: HTMLElement, catalog: Catalog, option
     document.fonts.addEventListener?.('loadingdone', onFonts);
   }
   let faintRequested = false;
-  function maybeLoadFaint(): void {
-    if (faintRequested || limitingMag <= 6.5) return;
+  function maybeLoadFaint(zoomedIn = false): void {
+    if (faintRequested || (limitingMag <= 6.5 && !zoomedIn)) return;
     faintRequested = true;
     loadFaintStars().then((f) => {
       if (destroyed || !f) return;
@@ -959,6 +1128,8 @@ export function createSkyEngine(container: HTMLElement, catalog: Catalog, option
       root.removeEventListener('keydown', onKey);
       glCanvas.removeEventListener('webglcontextlost', onLost);
       glCanvas.removeEventListener('webglcontextrestored', onRestored);
+      clearTimeout(deepSettleTimer);
+      deep.destroy();
       renderer.destroy();
       for (const k of Object.keys(listeners) as (keyof SkyEvents)[]) listeners[k].clear();
       ovCanvas.width = ovCanvas.height = 1;
@@ -968,6 +1139,8 @@ export function createSkyEngine(container: HTMLElement, catalog: Catalog, option
   statsOf.set(controller, () => ({
     drawCalls: renderer.drawCalls, vertices: renderer.vertices, frames, glErrors: renderer.glErrors,
     starsDrawn: countBelow(renderer.starMags, scene.starLimit), faintLoaded: renderer.faintCount, lastFrameMs, glMs, overlayMs,
+    deepTiles: deep.tiles.length, deepTilesDrawn, deepStars: deep.starCount, deepStarsDrawn: deepDrawn, deepPending: deep.pendingCount,
+    deepBytes: deepNet.bytes, deepRequests: deepNet.requests, deepSelects, deepLoads: deep.loads, deepMs, starLimit: scene.starLimit,
   }));
   return controller;
 }

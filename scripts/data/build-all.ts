@@ -6,6 +6,7 @@ import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { buildArt, STELLARIUM_MODERN } from './build-art';
 import { buildConstellations, D3C_BASE } from './build-constellations';
+import { buildDeep, ATHYG_URL } from './build-deep';
 import { buildDsos, ONGC_BASE } from './build-dsos';
 import { buildMilkyWay } from './build-milkyway';
 import { buildStars, HYG_URL } from './build-stars';
@@ -34,6 +35,8 @@ async function main() {
     }
   }
 
+  // Optional: deep sky (fainter stars to mag 11 as HEALPix tiles + the full NGC/IC list), public/deep/; --no-deep skips.
+  // Runs after dsos.json is written (it leaves out objects already there), so it is done below.
   const files: WrittenFile[] = [
     writeJson('stars.json', stars),
     writeJson('stars-faint.json', faint),
@@ -42,6 +45,15 @@ async function main() {
     writeJson('milkyway.json', milkyWay),
     ...artFiles,
   ];
+
+  let deep: Awaited<ReturnType<typeof buildDeep>> | null = null;
+  if (!process.argv.includes('--no-deep')) {
+    try {
+      deep = await buildDeep(report);
+    } catch (e) {
+      report.note(`Deep sky skipped: ${(e as Error).message}`);
+    }
+  }
 
   // builtAt = when the newest raw file was downloaded, so a rebuild from the same cache is byte-identical
   const manifest = readManifest();
@@ -59,7 +71,10 @@ async function main() {
       milkyWayLevels: milkyWay.levels.length,
       milkyWayPolygons: milkyWay.levels.reduce((a, l) => a + l.polygons.length, 0),
       constellationArt: artCount,
+      deepStars: deep?.stars ?? 0,
+      deepDsos: deep?.dsos ?? 0,
     },
+    deepBytes: deep ? { starTiles: deep.starBytes, starIdentityGz: deep.metaBytes, dsos: deep.dsoBytes } : null,
     files: Object.fromEntries(files.map((f) => [f.file, { bytes: f.bytes, gzipBytes: f.gzipBytes }])),
     sources: [
       {
@@ -84,7 +99,15 @@ async function main() {
         licence: 'CC BY-SA 4.0',
         version: 'master branch (commit not recorded)',
         sha256: hash('ongc-NGC.csv'),
-        usedFor: 'dsos.json: positions, types, magnitudes, sizes, Hubble types, names, constellations',
+        usedFor: 'dsos.json and public/deep/dsos.json (every other valid NGC/IC/addendum object): positions, types, magnitudes, sizes, Hubble types, names, constellations',
+      },
+      {
+        name: 'AT-HYG v4.0 (David Nash / astronexus), magnitude-11 subset',
+        url: ATHYG_URL,
+        licence: 'CC BY-SA 4.0',
+        version: 'v4.0 (athyg_40_reduced_m11.csv.gz)',
+        sha256: hash('athyg_40_reduced_m11.csv.gz'),
+        usedFor: 'public/deep/stars/: stars fainter than 7.6 down to 11 (Tycho-2 + Gaia DR3 + Hipparcos), designations, Gaia distances, spectral types',
       },
       {
         name: 'Wikipedia — Messier object (list table)',

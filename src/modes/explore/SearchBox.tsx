@@ -1,5 +1,5 @@
 import { forwardRef, useEffect, useId, useImperativeHandle, useMemo, useRef, useState } from 'react';
-import type { Catalog } from '@/data/catalog';
+import { loadDeepDsos, mayNeedDeepDsos, type Catalog } from '@/data/catalog';
 import type { ResolvedTarget } from '@/types';
 import { DSO_KIND } from '@/components/object/describe';
 import { Icon } from './icons';
@@ -28,7 +28,17 @@ export const SearchBox = forwardRef<SearchBoxHandle, { catalog: Catalog | null; 
   const listId = useId();
   useImperativeHandle(ref, () => ({ focus: () => { input.current?.focus(); input.current?.select(); } }), []);
 
-  const results = useMemo(() => (catalog && q.trim() ? catalog.search(q, 10) : []), [catalog, q]);
+  const [deepTick, setDeepTick] = useState(0);
+  const results = useMemo(() => (catalog && q.trim() ? catalog.search(q, 10) : []), [catalog, q, deepTick]); // eslint-disable-line react-hooks/exhaustive-deps
+  // NGC/IC numbers (and anything the curated list does not know) load the full deep-sky catalogue on demand
+  useEffect(() => {
+    const t = q.trim();
+    if (!catalog || !t || catalog.deepDsos.length) return;
+    if (!mayNeedDeepDsos(t) && !(results.length === 0 && t.length >= 3)) return;
+    let live = true;
+    loadDeepDsos().then(() => live && setDeepTick((n) => n + 1), () => undefined);
+    return () => { live = false; };
+  }, [catalog, q, results.length]);
   useEffect(() => setActive(0), [q]);
 
   const choose = (t: ResolvedTarget | undefined) => {

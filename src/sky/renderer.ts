@@ -57,6 +57,8 @@ export interface FrameParams {
   lightPollution: number;
   milkyWay: number;
   bodies: BodySprite[];
+  /** Deep-sky star tiles resident on the GPU (owned by DeepStars); only `visible` ones are drawn, at `alpha`. */
+  deep: readonly DeepGpuTile[];
 }
 
 interface Program {
@@ -69,12 +71,18 @@ interface LineSet {
   vao: WebGLVertexArrayObject | null;
   buf: WebGLBuffer | null;
 }
-interface StarSet {
+export interface StarSet {
   data: Float32Array; // 7 floats per star: x y z mag r g b
   mags: Float32Array;
   count: number;
   vao: WebGLVertexArrayObject | null;
   buf: WebGLBuffer | null;
+}
+/** A streamed tile of deep stars: same vertex layout and shader as the catalog stars, so there is no seam. */
+export interface DeepGpuTile extends StarSet {
+  visible: boolean;
+  /** Fade-in multiplier, 0..1 */
+  alpha: number;
 }
 
 const SEG_DEG = 2.5;
@@ -258,6 +266,20 @@ export class Renderer {
   get starMags(): Float32Array {
     return this.stars.mags;
   }
+  /** Upload a deep star tile (also re-done for every tile after a restored context, via `deepTiles`). */
+  uploadDeep(t: DeepGpuTile): void {
+    if (this.gl && !this.lost) this.uploadStars(t);
+  }
+  freeDeep(t: DeepGpuTile): void {
+    if (this.gl) {
+      this.gl.deleteBuffer(t.buf);
+      this.gl.deleteVertexArray(t.vao);
+    }
+    t.buf = null;
+    t.vao = null;
+  }
+  /** Every resident deep tile (set by the engine), re-uploaded after a context loss. */
+  deepTiles: readonly DeepGpuTile[] = [];
   get faintCount(): number {
     return this.faint?.count ?? 0;
   }
@@ -330,6 +352,7 @@ export class Renderer {
 
     this.uploadStars(this.stars);
     if (this.faint) this.uploadStars(this.faint);
+    for (const t of this.deepTiles) this.uploadStars(t);
     for (const ls of [this.conLines, this.boundaries, this.grid, this.ecliptic]) this.uploadLines(ls);
     this.uploadMilkyWay();
     this.artReady = false;
@@ -619,6 +642,19 @@ export class Renderer {
           this.vertices += nf;
         }
       }
+      if (f.layers.deepSky && f.starLimit > 7.6) {
+        for (let i = 0; i < f.deep.length; i++) {
+          const t = f.deep[i];
+          if (!t.visible || !t.vao || t.alpha <= 0.004) continue;
+          const nd = countBelow(t.mags, f.starLimit);
+          if (nd <= 0) continue;
+          gl.uniform1f(p.u.u_bright, t.alpha);
+          gl.bindVertexArray(t.vao);
+          gl.drawArrays(gl.POINTS, 0, nd);
+          this.drawCalls++;
+          this.vertices += nd;
+        }
+      }
     }
 
     // 4 — Sun, Moon, planets
@@ -677,7 +713,7 @@ export class Renderer {
   destroy(loseContext = true): void {
     const gl = this.gl;
     if (!gl) return;
-    for (const s of [this.stars, this.faint]) {
+    for (const s of [this.stars, this.faint, ...this.deepTiles]) {
       if (!s) continue;
       gl.deleteBuffer(s.buf);
       gl.deleteVertexArray(s.vao);

@@ -4,9 +4,9 @@ import { altAzOf, currentNightDate, getBody, visibilityOn } from '@/astro';
 import { ObjectInfo } from '@/components/object';
 import { asterismIdOf, visTargetOf } from '@/components/object/targets';
 import { asterismById } from '@/content';
-import { useCatalog } from '@/data/catalog';
+import { loadDeepDsos, useCatalog } from '@/data/catalog';
 import { formatTime } from '@/lib/time';
-import { SkyView } from '@/sky';
+import { SkyView, deepLimit, getSkyStats } from '@/sky';
 import { useSettings } from '@/store/settings';
 import { BORTLE, type Highlight, type ResolvedTarget, type SkyController, type SkyEngineOptions, type TargetRef } from '@/types';
 import { Button } from '@/ui';
@@ -70,6 +70,7 @@ export default function ExplorePage() {
   const search = useRef<SearchBoxHandle>(null);
   const timeBar = useRef<TimeBarHandle | null>(null);
   const handledParam = useRef<string | null>(null);
+  const deepTried = useRef(new Set<string>());
 
   // Engine options are read once; later changes go through the controller.
   const options = useRef<SkyEngineOptions>({
@@ -118,7 +119,12 @@ export default function ExplorePage() {
     let last = '';
     const showView = () => {
       const v = ctl.getView();
-      const text = v.mount === 'altaz' ? `${lookingWords(v.lon, v.lat)} · ${fovWords(v.fov)}` : fovWords(v.fov);
+      let text = v.mount === 'altaz' ? `${lookingWords(v.lon, v.lat)} · ${fovWords(v.fov)}` : fovWords(v.fov);
+      // zoomed in with the deep-sky layer: say how faint the stars now go (when that differs from the Bortle limit)
+      const base = ctl.getLimitingMag();
+      const actual = getSkyStats(ctl)?.starLimit;
+      const lim = ctl.getLayers().deepSky ? deepLimit(base, v.fov) : base;
+      if (lim - base >= 0.05 && !(actual !== undefined && actual < base - 0.01)) text += ` · stars to mag ${lim.toFixed(1)}`;
       if (text !== last) {
         last = text;
         setReadout(text);
@@ -126,9 +132,11 @@ export default function ExplorePage() {
     };
     showView();
     const offView = ctl.on('view', showView);
+    const unsubLayers = useSettings.subscribe(() => window.setTimeout(showView, 0));
     return () => {
       offTime();
       offView();
+      unsubLayers();
       window.clearInterval(tick);
     };
   }, [ctl]);
@@ -160,7 +168,14 @@ export default function ExplorePage() {
       return;
     }
     const t = catalog.resolve(ref, { date: c.getTime(), observer: c.getObserver() });
-    if (!t) return;
+    if (!t) {
+      // an NGC/IC object beyond the curated list: load the full deep-sky catalogue once, then try again
+      if (ref.startsWith('dso:') && !deepTried.current.has(ref)) {
+        deepTried.current.add(ref);
+        loadDeepDsos().then(() => select(ref, opts), () => undefined);
+      }
+      return;
+    }
     if (t.kind === 'point') {
       // A bare direction has nothing to describe: just look there.
       void c.flyTo(t.ref);

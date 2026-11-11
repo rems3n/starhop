@@ -125,7 +125,7 @@ export function spectralExplanation(star: Pick<Star, 'sp' | 'bv'>): string | nul
     return `Its colour is ${colourFromBv(star.bv)}. A star's colour shows its surface temperature: blue stars are the hottest, red the coolest.`;
   }
   if (!info.temperature) return info.sizeNote ?? null;
-  const first = `Class ${info.letter} means a ${info.colour} star with a surface at ${info.temperature} — ${info.vsSun}.`;
+  const first = `Class ${info.letter} means ${/^[aeiou]/i.test(info.colour) ? 'an' : 'a'} ${info.colour} star with a surface at ${info.temperature} — ${info.vsSun}.`;
   return info.sizeNote ? `${first} ${info.sizeNote}` : first;
 }
 
@@ -397,7 +397,7 @@ export function fallbackAbout(t: ResolvedTarget, catalog: Pick<Catalog, 'conById
     const info = parseSpectral(s.sp);
     const kind = starKind(s).toLowerCase();
     const dist = s.distLy ? `, about ${formatDistanceLy(s.distLy)} away` : '';
-    const first = `${t.name} is a ${kind} in ${conName(s.con)}${dist}.`;
+    const first = `${t.name} is ${/^[aeiou]/i.test(kind) ? 'an' : 'a'} ${kind} in ${conName(s.con)}${dist}.`;
     return info?.sizeNote ? `${first} ${info.sizeNote}` : first;
   }
   if (t.dso) {

@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState, type ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { BODY_RADIUS_KM, altAzOf, bestMonths, currentNightDate, eveningSeason, getBody, moonPhase, riseSet, visibilityOn, whereWords, type VisTarget } from '@/astro';
 import { asterismById, getBlurb, loadConstellationContent, type ConstellationContent, type ObjectBlurb } from '@/content';
-import { useCatalog, type Catalog } from '@/data/catalog';
+import { loadDeepDsos, onDeepDsos, useCatalog, type Catalog } from '@/data/catalog';
 import { compass, formatAngularSize, formatDec, formatDistanceLy, formatMag, formatRa } from '@/lib/format';
 import { formatDate, formatTime } from '@/lib/time';
 import { useSettings } from '@/store/settings';
@@ -191,7 +191,13 @@ export function ObjectInfo({ targetRef, observer, date, variant = 'panel', onTar
   const bortle = useSettings((s) => s.bortle);
   const isBody = targetRef.startsWith('body:');
   // Fixed objects resolve once; bodies move, so they follow the clock.
-  const t = useMemo(() => (catalog ? catalog.resolve(targetRef, { date, observer }) : null), [catalog, targetRef, isBody ? date : null, isBody ? observer : null]); // eslint-disable-line react-hooks/exhaustive-deps
+  // NGC/IC objects beyond the curated list resolve once the full deep-sky catalogue has loaded
+  const [deepTick, setDeepTick] = useState(0);
+  useEffect(() => onDeepDsos(() => setDeepTick((n) => n + 1)), []);
+  const t = useMemo(() => (catalog ? catalog.resolve(targetRef, { date, observer }) : null), [catalog, targetRef, isBody ? date : null, isBody ? observer : null, deepTick]); // eslint-disable-line react-hooks/exhaustive-deps
+  useEffect(() => {
+    if (catalog && !t && targetRef.startsWith('dso:') && !catalog.deepDsos.length) loadDeepDsos().catch(() => undefined);
+  }, [catalog, t, targetRef]);
   const conId = t?.constellation?.id;
   const [conContent, setConContent] = useState<ConstellationContent | null>(null);
   useEffect(() => {
@@ -231,7 +237,7 @@ export function ObjectInfo({ targetRef, observer, date, variant = 'panel', onTar
     kind = `${(DSO_KIND[d.type] ?? DSO_KIND.other).label} — ${(DSO_KIND[d.type] ?? DSO_KIND.other).gloss}`;
     if (d.messier) desig.push(`Messier ${d.messier} (M${d.messier})`);
     for (const a of d.aka) desig.push(a);
-    if (!d.messier && !d.aka.length) desig.push(d.id.replace(/^(NGC|IC)(\d)/, '$1 $2'));
+    if (!d.messier && !d.aka.length && d.id.replace(/^(NGC|IC)(\d)/, '$1 $2') !== t.name) desig.push(d.id.replace(/^(NGC|IC)(\d)/, '$1 $2'));
     if (d.caldwell) desig.push(`Caldwell ${d.caldwell}`);
   } else if (t.body) kind = BODY_KIND[t.body];
   else if (t.constellation) kind = `Constellation — ${t.constellation.english}`;

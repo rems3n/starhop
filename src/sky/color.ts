@@ -24,6 +24,11 @@ export const STAR = {
   GLOW_FAINT: 2.6,
   GLOW_BRIGHT: -1.0,
   GLOW_SIZE: 2.4,
+  /** Below the shipped catalogue (fainter than DEEP_M, i.e. deep-sky tiles) brightness keeps falling gently:
+   *  × clamp(1 − DEEP_K · (mag − DEEP_M), DEEP_MIN, 1), so a magnitude-11 star is dimmer than a magnitude-8 one. */
+  DEEP_M: 7.6,
+  DEEP_K: 0.13,
+  DEEP_MIN: 0.5,
 } as const;
 
 /** Core radius of a star in CSS pixels (before the zoom factor). Monotonic: brighter is never smaller. */
@@ -32,7 +37,8 @@ export function starRadius(mag: number): number {
 }
 /** Brightness multiplier of a star's core (1 for bright stars, less for faint ones). */
 export function starAlpha(mag: number): number {
-  return Math.min(1, Math.max(STAR.AMIN, STAR.A0 - STAR.A1 * Math.max(0, mag - STAR.AM)));
+  const deep = Math.min(1, Math.max(STAR.DEEP_MIN, 1 - STAR.DEEP_K * Math.max(0, mag - STAR.DEEP_M)));
+  return Math.min(1, Math.max(STAR.AMIN, STAR.A0 - STAR.A1 * Math.max(0, mag - STAR.AM))) * deep;
 }
 /** 0..1 fade for stars close to the limiting magnitude. */
 export function limitFade(mag: number, limitingMag: number): number {

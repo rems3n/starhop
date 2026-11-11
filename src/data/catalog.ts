@@ -8,7 +8,8 @@
 import * as Astronomy from 'astronomy-engine';
 import { useEffect, useState } from 'react';
 import asterismsJson from '@/content/asterisms.json';
-import type { BodyId, Constellation, Dso, FaintStars, MilkyWay, Observer, ResolvedTarget, SkyImage, Star } from '@/types';
+import { DEEP_DSO_TYPES, equipForMag, type DeepDsoFile } from '@/sky/deepcore';
+import type { BodyId, Constellation, Dso, DsoType, FaintStars, MilkyWay, Observer, ResolvedTarget, SkyImage, Star } from '@/types';
 
 export interface RawCatalog {
   stars: Star[];
@@ -31,8 +32,17 @@ export interface Catalog extends RawCatalog {
   aliases(ref: string): string[];
   /** Images for an object (tries every alias). */
   imagesFor(ref: string): SkyImage[];
-  /** Search by name/designation for the search box. */
+  /** Search by name/designation for the search box. Includes the deep-sky catalogue once it is loaded. */
   search(query: string, limit?: number): ResolvedTarget[];
+  /**
+   * The full NGC/IC list beyond `dsos` (public/deep/dsos.json), empty until `loadDeepDsos()` has run. Not part of
+   * `dsos` (which stays the curated ~600), but `resolve`, `search`, `aliases` and `dsoById` find them once registered.
+   */
+  deepDsos: Dso[];
+  /** Add deep-sky objects (ids that already exist are ignored). */
+  registerDsos(list: Dso[]): void;
+  /** Add a star that is not in `stars` (a deep star the learner clicked) so `star:<id>` resolves. */
+  registerStar(star: Star): void;
 }
 
 export const BODIES: BodyId[] = ['Sun', 'Moon', 'Mercury', 'Venus', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'];
@@ -165,6 +175,26 @@ export function buildCatalog(raw: RawCatalog): Catalog {
   const asterismById = new Map(asterisms.map((a) => [a.id, a]));
   const images = raw.images ?? {};
 
+  const deepDsos: Dso[] = [];
+  function indexDso(d: Dso): void {
+    dsoById.set(d.id, d);
+    dsoByKey.set(dkey(d.id), d);
+    if (d.messier) dsoByKey.set(`m${d.messier}`, d);
+    if (d.caldwell) dsoByKey.set(`c${d.caldwell}`, d);
+    for (const a of d.aka) if (!dsoByKey.has(dkey(a))) dsoByKey.set(dkey(a), d);
+    if (d.name && !dsoByKey.has(dkey(d.name))) dsoByKey.set(dkey(d.name), d);
+  }
+  function registerDsos(list: Dso[]): void {
+    for (const d of list) {
+      if (dsoById.has(d.id) || dsoByKey.has(dkey(d.id))) continue;
+      deepDsos.push(d);
+      indexDso(d);
+    }
+  }
+  function registerStar(star: Star): void {
+    if (!starById.has(star.id)) starById.set(star.id, star);
+  }
+
   function findStar(q: string): Star | null {
     const t = q.trim();
     if (/^\d+$/.test(t)) return starById.get(Number(t)) ?? null;
@@ -189,7 +219,8 @@ export function buildCatalog(raw: RawCatalog): Catalog {
   }
   function dsoTarget(d: Dso): ResolvedTarget {
     const size = d.sizeArcmin ? d.sizeArcmin[0] / 60 : 0.2;
-    return { kind: 'dso', ref: `dso:${d.id}`, name: d.name ?? (d.messier ? `M${d.messier}` : d.aka[0] ?? d.id), ra: d.ra, dec: d.dec, fov: Math.min(40, Math.max(8, size * 12)), dso: d };
+    const label = d.name ?? (d.messier ? `M${d.messier}` : /^(NGC|IC)\d/.test(d.id) ? d.id.replace(/^(NGC|IC)(\d)/, '$1 $2') : d.aka[0] ?? d.id);
+    return { kind: 'dso', ref: `dso:${d.id}`, name: label, ra: d.ra, dec: d.dec, fov: Math.min(40, Math.max(8, size * 12)), dso: d };
   }
   function conTarget(c: Constellation): ResolvedTarget {
     return { kind: 'constellation', ref: `con:${c.id}`, name: c.name, ra: c.ra, dec: c.dec, fov: Math.min(110, Math.max(35, Math.sqrt(c.areaSqDeg) * 2.6)), constellation: c };
@@ -320,6 +351,13 @@ export function buildCatalog(raw: RawCatalog): Catalog {
       push(t, d.id, 8);
       for (const a of d.aka) push(t, a, 10), push(t, a.replace(/\s+/g, ''), 10);
     }
+    for (const d of deepDsos) {
+      const t = dsoTarget(d);
+      if (d.name) push(t, d.name, 12);
+      push(t, d.id, 13);
+      push(t, d.id.replace(/^([A-Za-z]+)(\d)/, '$1 $2'), 13);
+      for (const a of d.aka) push(t, a, 14), push(t, a.replace(/\s+/g, ''), 14);
+    }
     const exact = desigKey(query);
     if (exact && starByDesig.has(exact)) out.push({ t: starTarget(starByDesig.get(exact)!), score: -1 });
     const seen = new Set<string>();
@@ -330,7 +368,7 @@ export function buildCatalog(raw: RawCatalog): Catalog {
       .map((o) => o.t);
   }
 
-  return { ...raw, images, starById, starIndex, conById, dsoById, resolve, aliases, imagesFor, search };
+  return { ...raw, images, starById, starIndex, conById, dsoById, resolve, aliases, imagesFor, search, deepDsos, registerDsos, registerStar };
 }
 
 // ───────────── Browser loading ─────────────
@@ -370,6 +408,61 @@ let faintPromise: Promise<FaintStars | undefined> | null = null;
 export function loadFaintStars(): Promise<FaintStars | undefined> {
   faintPromise ??= getJson<FaintStars>('stars-faint.json', true);
   return faintPromise;
+}
+
+/** Rows of public/deep/dsos.json → Dso objects (the shape of dsos.json; `equip` from the documented magnitude rule). */
+export function deepDsosFromFile(file: DeepDsoFile): Dso[] {
+  const col = (name: string) => file.cols.indexOf(name);
+  const [cId, cRa, cDec, cType, cMag, cMaj, cMin, cCon, cName, cHub, cAka] = ['id', 'ra', 'dec', 'type', 'mag', 'maj', 'min', 'con', 'name', 'hubble', 'aka'].map(col);
+  const types = file.types ?? DEEP_DSO_TYPES;
+  return file.rows.map((r) => {
+    const mag = r[cMag] as number | null;
+    const maj = r[cMaj] as number | null, min = r[cMin] as number | null;
+    const d: Dso = {
+      id: r[cId] as string,
+      aka: (r[cAka] as string) ? (r[cAka] as string).split(' · ') : [],
+      type: (types[r[cType] as number] ?? 'other') as DsoType,
+      ra: r[cRa] as number,
+      dec: r[cDec] as number,
+      con: r[cCon] as string,
+      equip: equipForMag(mag ?? undefined),
+    };
+    if (r[cName]) d.name = r[cName] as string;
+    if (r[cHub]) d.typeDetail = r[cHub] as string;
+    if (mag != null) d.mag = mag;
+    if (maj != null) d.sizeArcmin = [maj, min ?? maj];
+    return d;
+  });
+}
+
+let deepDsoPromise: Promise<Dso[]> | null = null;
+/**
+ * The full NGC/IC catalogue (public/deep/dsos.json, ~11,000 objects, ~220 kB gzipped). Fetched once, on demand — by the
+ * sky engine when the deep-sky layer is on and the view is zoomed in, or by search — and registered into the catalog.
+ */
+export function loadDeepDsos(): Promise<Dso[]> {
+  deepDsoPromise ??= (async () => {
+    const res = await fetch(`${base}deep/dsos.json`);
+    if (!res.ok) throw new Error(`Could not load deep/dsos.json (${res.status})`);
+    const list = deepDsosFromFile((await res.json()) as DeepDsoFile);
+    const cat = await loadCatalog();
+    cat.registerDsos(list);
+    for (const cb of deepListeners) cb();
+    return cat.deepDsos;
+  })();
+  deepDsoPromise.catch(() => { deepDsoPromise = null; });
+  return deepDsoPromise;
+}
+const deepListeners = new Set<() => void>();
+/** Called once the deep-sky catalogue has been registered (for components that resolved a ref before it arrived). */
+export function onDeepDsos(cb: () => void): () => void {
+  deepListeners.add(cb);
+  return () => { deepListeners.delete(cb); };
+}
+/** Does a search query or ref look like it may need the deep-sky catalogue? (NGC/IC numbers and other catalogue ids) */
+export function mayNeedDeepDsos(query: string): boolean {
+  const q = query.trim().replace(/^dso:/i, '');
+  return /^(ngc|ic|eso|ugc|pgc|mcg|ced|vdb|pk|h|b|cr|mel|tr|st|sh)\s*-?\d/i.test(q);
 }
 
 /** React hook: the catalog, or null while loading. Throws load errors to the nearest error boundary. */

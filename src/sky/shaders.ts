@@ -149,7 +149,8 @@ void main() {
   v_core = r;
   v_glow = glow;
   v_col = a_col;
-  v_alpha = fade * clamp(${f(STAR.A0)} - ${f(STAR.A1)} * max(0.0, a_mag - ${f(STAR.AM)}), ${f(STAR.AMIN)}, 1.0) * u_bright;
+  v_alpha = fade * clamp(${f(STAR.A0)} - ${f(STAR.A1)} * max(0.0, a_mag - ${f(STAR.AM)}), ${f(STAR.AMIN)}, 1.0) * u_bright
+    * clamp(1.0 - ${f(STAR.DEEP_K)} * max(0.0, a_mag - ${f(STAR.DEEP_M)}), ${f(STAR.DEEP_MIN)}, 1.0);
 }`;
 
 export const STAR_FS = `#version 300 es

@@ -7,7 +7,7 @@ import { aboutCount, countStarsUp, skyBrightness } from './skyCount';
 
 export const LAYER_GROUPS: { title: string; items: { key: keyof LayerState; label: string }[] }[] = [
   { title: 'Constellations', items: [{ key: 'constellationLines', label: 'Lines' }, { key: 'constellationBoundaries', label: 'Boundaries' }, { key: 'constellationNames', label: 'Names' }, { key: 'constellationArt', label: 'Figures (illustrations)' }] },
-  { title: 'Stars and objects', items: [{ key: 'starNames', label: 'Star names' }, { key: 'dsoMarkers', label: 'Deep-sky markers' }, { key: 'planets', label: 'Sun, Moon and planets' }, { key: 'milkyWay', label: 'Milky Way' }] },
+  { title: 'Stars and objects', items: [{ key: 'starNames', label: 'Star names' }, { key: 'dsoMarkers', label: 'Deep-sky markers' }, { key: 'deepSky', label: 'Fainter stars and objects when zoomed in' }, { key: 'planets', label: 'Sun, Moon and planets' }, { key: 'milkyWay', label: 'Milky Way' }] },
   { title: 'Guides', items: [{ key: 'ecliptic', label: 'Ecliptic (path of the Sun)' }, { key: 'equatorialGrid', label: 'Equatorial grid' }, { key: 'azimuthalGrid', label: 'Azimuthal grid' }] },
   { title: 'Ground and air', items: [{ key: 'horizon', label: 'Horizon and compass points' }, { key: 'ground', label: 'Ground' }, { key: 'atmosphere', label: 'Atmosphere (daylight)' }] },
 ];

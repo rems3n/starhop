@@ -3,7 +3,8 @@
  * highlights, the selection marker and the lasso. Per-frame work is limited to things that can be on screen.
  */
 import type { Catalog } from '@/data/catalog';
-import type { DsoType, LayerState } from '@/types';
+import type { Dso, DsoType, LayerState } from '@/types';
+import { DEEP_FOV_REF } from './deepcore';
 import { lonLatToVec, type Mat3 } from './camera';
 import { rgbaCss, smoothstep, starRadius } from './color';
 import type { BodyInfo } from './ephemeris';
@@ -69,6 +70,11 @@ export function bayerLimit(fov: number): number {
 export function dsoLimit(fov: number): number {
   return 4.6 + 1.25 * zoomLevel(fov);
 }
+/** Deep-sky layer: NGC/IC objects beyond the curated list appear down to this magnitude (unknown magnitude counts as 15). */
+export function deepDsoLimit(fov: number): number {
+  return fov >= DEEP_FOV_REF ? -9 : dsoLimit(fov) + 0.75;
+}
+const DEEP_UNKNOWN_MAG = 15;
 
 export class Overlay {
   ctx: CanvasRenderingContext2D;
@@ -107,6 +113,20 @@ export class Overlay {
   dsoY: Float32Array;
   dsoR: Float32Array;
   private dsoList: Int32Array;
+  // the full NGC/IC list (deep-sky layer), set once loaded
+  private deepVec = new Float64Array(0);
+  private deepMag = new Float32Array(0);
+  private deepFam = new Uint8Array(0);
+  private deepHalfDeg = new Float32Array(0);
+  private deepRatio = new Float32Array(0);
+  private deepText: string[] = [];
+  private deepGlyph: (Glyph | null)[] = [];
+  deepX = new Float32Array(0);
+  deepY = new Float32Array(0);
+  deepR = new Float32Array(0);
+  /** Indices (into catalog.deepDsos) of the deep objects drawn last frame; the first `deepShownN` are valid */
+  deepList = new Int32Array(0);
+  deepShownN = 0;
   private bodyGlyph: (Glyph | null)[] = [];
   private cardGlyph: (Glyph | null)[] = [];
   private cardVec = new Float64Array(24);
@@ -199,6 +219,78 @@ export class Overlay {
     for (let i = 0; i < 8; i++) {
       lonLatToVec(i * 45, 0, this.cardVec, i * 3);
       lonLatToVec(i * 45, 3, this.cardUp, i * 3);
+    }
+  }
+
+  /** The full NGC/IC list (catalog.deepDsos, brightest first, unknown magnitude last). */
+  setDeepDsos(list: Dso[]): void {
+    const m = list.length;
+    this.deepVec = new Float64Array(m * 3);
+    this.deepMag = new Float32Array(m);
+    this.deepFam = new Uint8Array(m);
+    this.deepHalfDeg = new Float32Array(m);
+    this.deepRatio = new Float32Array(m);
+    this.deepText = new Array<string>(m);
+    this.deepGlyph = new Array<Glyph | null>(m).fill(null);
+    this.deepX = new Float32Array(m);
+    this.deepY = new Float32Array(m);
+    this.deepR = new Float32Array(m);
+    this.deepList = new Int32Array(Math.min(m, 400));
+    this.deepShownN = 0;
+    list.forEach((d, i) => {
+      lonLatToVec(d.ra, d.dec, this.deepVec, i * 3);
+      this.deepMag[i] = d.mag ?? DEEP_UNKNOWN_MAG;
+      this.deepFam[i] = dsoFamily(d.type);
+      this.deepHalfDeg[i] = d.sizeArcmin ? d.sizeArcmin[0] / 120 : 0;
+      this.deepRatio[i] = d.sizeArcmin && d.sizeArcmin[0] > 0 ? Math.max(0.3, d.sizeArcmin[1] / d.sizeArcmin[0]) : 0.5;
+      this.deepText[i] = d.name ?? d.id.replace(/^(NGC|IC|Mel|Cr|Tr|St|C)(\d)/, '$1 $2');
+    });
+  }
+
+  /** Stroke deep-sky symbols, batched by family. */
+  private drawMarkers(list: Int32Array, n: number, X: Float32Array, Y: Float32Array, R: Float32Array, fams: Uint8Array, ratio: Float32Array): void {
+    const ctx = this.ctx;
+    for (let fam = 0; fam <= FAM_OTHER; fam++) {
+      ctx.beginPath();
+      if (fam === FAM_OPEN) ctx.setLineDash([1.6, 2.6]);
+      for (let k = 0; k < n; k++) {
+        const i = list[k];
+        if (fams[i] !== fam) continue;
+        const x = X[i], y = Y[i], r = R[i];
+        switch (fam) {
+          case FAM_GALAXY:
+            ctx.moveTo(x + r * 1.25, y);
+            ctx.ellipse(x, y, r * 1.25, Math.max(2.2, r * 1.25 * Math.min(0.62, ratio[i])), -0.5, 0, 6.2832);
+            break;
+          case FAM_OPEN:
+            ctx.moveTo(x + r, y);
+            ctx.arc(x, y, r, 0, 6.2832);
+            break;
+          case FAM_GLOB:
+            ctx.moveTo(x + r, y);
+            ctx.arc(x, y, r, 0, 6.2832);
+            ctx.moveTo(x - r, y); ctx.lineTo(x + r, y);
+            ctx.moveTo(x, y - r); ctx.lineTo(x, y + r);
+            break;
+          case FAM_NEB:
+            ctx.rect(x - r * 0.9, y - r * 0.9, r * 1.8, r * 1.8);
+            break;
+          case FAM_PN: {
+            const q = Math.min(r, 7) * 0.72;
+            ctx.moveTo(x + q, y);
+            ctx.arc(x, y, q, 0, 6.2832);
+            ctx.moveTo(x - q, y); ctx.lineTo(x - q - 3.5, y);
+            ctx.moveTo(x + q, y); ctx.lineTo(x + q + 3.5, y);
+            ctx.moveTo(x, y - q); ctx.lineTo(x, y - q - 3.5);
+            ctx.moveTo(x, y + q); ctx.lineTo(x, y + q + 3.5);
+            break;
+          }
+          default:
+            ctx.moveTo(x, y - r); ctx.lineTo(x + r, y); ctx.lineTo(x, y + r); ctx.lineTo(x - r, y); ctx.closePath();
+        }
+      }
+      ctx.stroke();
+      if (fam === FAM_OPEN) ctx.setLineDash([]);
     }
   }
 
@@ -417,6 +509,7 @@ export class Overlay {
     // ── deep-sky markers (symbols now, names after the constellation names)
     let nd = 0;
     this.dsoShown.fill(0);
+    this.deepShownN = 0;
     if (L.dsoMarkers && dsoAlpha > 0.05) {
       const lim = dsoLimit(sc.fov);
       const dm = this.dsoMag, dv = this.dsoVec;
@@ -432,47 +525,31 @@ export class Overlay {
       ctx.strokeStyle = this.markerColor;
       ctx.lineWidth = 1.1;
       ctx.globalAlpha = dsoAlpha;
-      for (let fam = 0; fam <= FAM_OTHER; fam++) {
-        ctx.beginPath();
-        if (fam === FAM_OPEN) ctx.setLineDash([1.6, 2.6]);
-        for (let k = 0; k < nd; k++) {
-          const i = this.dsoList[k];
-          if (this.dsoFam[i] !== fam) continue;
-          const x = this.dsoX[i], y = this.dsoY[i], r = this.dsoR[i];
-          switch (fam) {
-            case FAM_GALAXY:
-              ctx.moveTo(x + r * 1.25, y);
-              ctx.ellipse(x, y, r * 1.25, Math.max(2.2, r * 1.25 * Math.min(0.62, this.dsoRatio[i])), -0.5, 0, 6.2832);
-              break;
-            case FAM_OPEN:
-              ctx.moveTo(x + r, y);
-              ctx.arc(x, y, r, 0, 6.2832);
-              break;
-            case FAM_GLOB:
-              ctx.moveTo(x + r, y);
-              ctx.arc(x, y, r, 0, 6.2832);
-              ctx.moveTo(x - r, y); ctx.lineTo(x + r, y);
-              ctx.moveTo(x, y - r); ctx.lineTo(x, y + r);
-              break;
-            case FAM_NEB:
-              ctx.rect(x - r * 0.9, y - r * 0.9, r * 1.8, r * 1.8);
-              break;
-            case FAM_PN: {
-              const q = Math.min(r, 7) * 0.72;
-              ctx.moveTo(x + q, y);
-              ctx.arc(x, y, q, 0, 6.2832);
-              ctx.moveTo(x - q, y); ctx.lineTo(x - q - 3.5, y);
-              ctx.moveTo(x + q, y); ctx.lineTo(x + q + 3.5, y);
-              ctx.moveTo(x, y - q); ctx.lineTo(x, y - q - 3.5);
-              ctx.moveTo(x, y + q); ctx.lineTo(x, y + q + 3.5);
-              break;
-            }
-            default:
-              ctx.moveTo(x, y - r); ctx.lineTo(x + r, y); ctx.lineTo(x, y + r); ctx.lineTo(x - r, y); ctx.closePath();
+      this.drawMarkers(this.dsoList, nd, this.dsoX, this.dsoY, this.dsoR, this.dsoFam, this.dsoRatio);
+      // the full NGC/IC list, progressively by magnitude as you zoom in (deep-sky layer)
+      const dlim = L.deepSky ? deepDsoLimit(sc.fov) : -9;
+      if (dlim > 0 && this.deepMag.length) {
+        const dmg = this.deepMag, dvv = this.deepVec;
+        const e = sc.eqj;
+        const cosHalf = Math.cos(Math.min(Math.PI, 2 * Math.atan(Math.hypot(W, H) / 2 / sc.S) * 1.05));
+        const cap = this.deepList.length;
+        let n = 0;
+        for (let i = 0; i < dmg.length && n < cap; i++) {
+          if (dmg[i] > dlim) {
+            if (dmg[i] < DEEP_UNKNOWN_MAG) continue;
+            break;
           }
+          const x = dvv[i * 3], y = dvv[i * 3 + 1], z = dvv[i * 3 + 2];
+          if (e[6] * x + e[7] * y + e[8] * z < cosHalf) continue;
+          if (!this.proj(sc, sc.eqj, x, y, z, 12, ground)) continue;
+          this.deepX[i] = o[0];
+          this.deepY[i] = o[1];
+          this.deepR[i] = Math.min(140, Math.max(4, this.deepHalfDeg[i] * pxPerDeg));
+          this.deepList[n++] = i;
         }
-        ctx.stroke();
-        if (fam === FAM_OPEN) ctx.setLineDash([]);
+        this.deepShownN = n;
+        ctx.globalAlpha = dsoAlpha * 0.8;
+        this.drawMarkers(this.deepList, n, this.deepX, this.deepY, this.deepR, this.deepFam, this.deepRatio);
       }
       ctx.globalAlpha = 1;
     }
@@ -530,6 +607,15 @@ export class Overlay {
         const i = this.dsoList[k];
         const g = long ? this.glyph(this.dsoGlyphLong, i, this.stDso, this.dsoLong[i]) : this.glyph(this.dsoGlyph, i, this.stDso, this.dsoText[i]);
         if (this.placeBeside(g, this.dsoX[i], this.dsoY[i], Math.min(this.dsoR[i], 30) + 1, dsoAlpha)) shown++;
+      }
+    }
+    // deep-sky names only where there is room (collision boxes), fewest first: brightest objects win
+    if (L.dsoMarkers && this.deepShownN) {
+      let shown = 0;
+      for (let k = 0; k < this.deepShownN && shown < 30; k++) {
+        const i = this.deepList[k];
+        const g = this.glyph(this.deepGlyph, i, this.stDso, this.deepText[i]);
+        if (this.placeBeside(g, this.deepX[i], this.deepY[i], Math.min(this.deepR[i], 30) + 1, dsoAlpha * 0.85)) shown++;
       }
     }
 

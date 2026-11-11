@@ -113,3 +113,8 @@ export function bodyAltAz(id: BodyId, date: Date, observer: Observer): { alt: nu
 
 /** Mean obliquity of the ecliptic at J2000, degrees — the ecliptic line is drawn in the J2000 frame. */
 export const OBLIQUITY_J2000 = 23.4392911;
+
+/** IAU constellation abbreviation at a J2000 position (astronomy-engine's boundary lookup). */
+export function constellationAt(raDeg: number, decDeg: number): string {
+  return Astronomy.Constellation((((raDeg % 360) + 360) % 360) / 15, decDeg).symbol;
+}

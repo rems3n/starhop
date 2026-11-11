@@ -28,6 +28,8 @@ time the script ran. Wikipedia requests are spaced 1.5 s apart and retried on HT
 | `milkyway.json` | 112 kB / 39 kB | 5 brightness levels, 201 outlines |
 | `constellation-art.json` | 18 kB / 5 kB | 85 illustration anchors (+ `public/art/*.webp`, 323 KiB); optional step, `scripts/data/build-art.ts` (needs ImageMagick; `--no-art` skips) |
 | `meta.json` | 3 kB | build time, counts, sizes, sources |
+| `../deep/stars/` | 5.07 MB render tiles + 5.76 MB identity files (gzip on disk) | 843,128 stars, 7.6 < mag ≤ 11, HEALPix tiles; optional step, `scripts/data/build-deep.ts` (`--no-deep` skips) |
+| `../deep/dsos.json` | 721 kB / 222 kB | 11,202 further NGC/IC/addendum objects |
 
 **stars.json** — `Star[]`, brightest first (ties by id). `id` is the HYG id. Unknown fields are left
 out. Rounding: ra/dec 5 decimals, mag 2, bv 3, absMag 2, distLy 3 significant figures.
@@ -48,6 +50,22 @@ the brightest core. Each polygon is one closed outline (the closing point is not
 **meta.json** — `{ builtAt, counts, files, sources[] }`; each source has name, url, licence, version
 and what it was used for.
 
+**public/deep/** (the "Fainter stars and objects when zoomed in" layer; formats and the shared codec in
+`src/sky/deepcore.ts`, HEALPix maths in `src/sky/healpix.ts`):
+
+- `stars/index.json` — `{ version, idBase, bands: [{ min, max, order, counts[] }], total, source }`. Band 0 is
+  7.6 < mag ≤ 9.5 at HEALPix order 2 (nside 4, 192 tiles); band 1 is 9.5 < mag ≤ 11 at order 3 (nside 8, 768 tiles).
+  `counts[p]` is the number of stars in nested pixel `p` (no file when 0; none are empty).
+- `stars/<order>/<pixel>.bin` — `u32 count · f32 R · u16 ξ[n] · u16 η[n] · u8 mag[n] · i8 bv[n]`, little-endian, 8 + 6
+  bytes per star. ξ/η are gnomonic (tangent-plane) offsets from the pixel centre quantised over [−R, R] (error < 1″;
+  tested); mag = byte/20; B−V = byte/50, −128 = unknown. Brightest first, so a limiting magnitude is a draw count.
+- `stars/<order>/<pixel>.json.gz` — identity of the same stars in the same order: `{ d: designation[], m: mag×100[],
+  l: distance in ly (0 = none)[], s: spectral type[] }`, gzip-compressed on disk (the client checks the gzip magic
+  bytes, so it works whether or not a server adds `Content-Encoding`). Fetched only when a deep star is clicked.
+- `dsos.json` — `{ version, cols, types, rows }`, one row per object: `[id, ra, dec, typeCode, mag|null, majAx|null,
+  minAx|null, con, name, hubbleType, aka]` (`aka` joined with " · "). `deepDsosFromFile()` in `src/data/catalog.ts`
+  turns rows into ordinary `Dso` objects. Brightest first, no magnitude last.
+
 ## Sources
 
 | Source | Licence | Used for |
@@ -57,6 +75,7 @@ and what it was used for.
 | OpenNGC `NGC.csv` + `addendum.csv` (master) | CC BY-SA 4.0 | deep-sky positions, types, magnitudes, sizes, names |
 | Wikipedia "Messier object", "Caldwell catalogue" list tables | CC BY-SA 4.0 | Caldwell → NGC/IC mapping, distances, some names, types and magnitudes |
 | Wikipedia "IAU designated constellations by area" | CC BY-SA 4.0 | cross-check only |
+| AT-HYG v4.0 subset `athyg_40_reduced_m11.csv.gz` (Codeberg, `/media/` path) | CC BY-SA 4.0 | `public/deep/stars/` |
 | astronomy-engine | MIT | constellation lookup, B1875 ↔ J2000 rotation |
 
 The HYG GitHub repository says future updates will be published on Codeberg; v4.1 is the last version
@@ -171,6 +190,41 @@ Known gaps:
   California, both Veil halves, Crescent and Rosette (NGC 2238) come out binoculars.
 - C49: Wikipedia says NGC 2237, OpenNGC tags NGC 2238. We follow Wikipedia; both entries exist.
 - Seven \*Ass entries are typed `asterism`; some are loose star groups in the LMC.
+
+## Rules: deep stars (AT-HYG)
+
+AT-HYG v4.0's magnitude-11 subset has 875,292 rows (Tycho-2 positions and VT magnitudes for most, V for Hipparcos and
+Gliese stars; Gaia DR3 distances for ~99 %). RA is in hours, distance in parsecs (as in HYG). 47 rows contain quoted
+fields and are parsed quote-aware; the rest are split on commas.
+
+- Skipped: the Sun; 2,047 stars fainter than 11 (the subset keeps all stars within 100 ly regardless of magnitude).
+- **Deduplicated against what we already ship** (every HYG v4.1 star with mag ≤ 7.6, i.e. `stars.json` +
+  `stars-faint.json`): same HIP number (28,414), else same HD number (152), else a shipped star within 2″ whose
+  magnitude differs by ≤ 1.0 (178). 1,335 of the stars kept lie within 10″ of a shipped star; these are close pairs
+  (a different magnitude) or, rarely, a duplicate the rules did not catch.
+- **1,372 AT-HYG stars at mag ≤ 7.6 have no HYG match and are left out** (Tycho stars whose VT is a little brighter than
+  HYG's limit, e.g. HD 224862 at 7.23): adding them only to the zoomed-in tiles would make them pop in when zooming.
+- Kept: 843,128 stars, 7.6 < mag ≤ 11.
+- `d` (designation): IAU proper name, else `HD n`, else `HIP n`, else `TYC a-b-c`, else `Gaia DR3 n`.
+  `l`: distance × 3.26156 to 3 significant figures, only when `dist_src` is a Gaia source and 0 < dist < 100,000 pc.
+  `s`: AT-HYG's `spect` when present. B−V is AT-HYG's `ci`.
+- **Why these tile sizes.** 171,216 stars in band 0 over 192 tiles (mean 892, median 741, max 2,414) and 671,912 in
+  band 1 over 768 tiles (mean 875, median 689, max 4,187). That is ~5 kB per render file on average (≤ 25 kB), big
+  enough that a zoomed view needs only a handful of requests (a 4° view: 9–11 files, 24–118 kB) and small enough that
+  little is fetched off screen. The brighter band is needed from ~17° fields inwards (Bortle 6), where coarser tiles
+  (~15° across) fit the view; the faint band only below ~7°, where ~7° tiles fit. A single order-4 split (the lead's
+  first suggestion, ~275 stars per tile) would have meant up to 4× as many requests for the same view.
+- Deep star ids (`star:<id>`) are `10,000,000 + band·2²⁶ + pixel·2¹⁴ + index` (`deepStarId`), so they never collide
+  with HYG ids and are stable for one build of the tiles. The build fails if a tile ever holds ≥ 16,384 stars.
+
+## Rules: deep-sky objects beyond dsos.json
+
+Every OpenNGC `NGC.csv` + `addendum.csv` row except: Dup/NonEx (662), stars, double stars, novae and "Other" (1,213),
+`NED` sub-entries (361), and objects already in `dsos.json` by id or any NGC/IC cross-identifier (596). Result: 11,202
+objects (10,307 galaxies, 373 open clusters, 134 globulars, 103 planetary nebulae, …), 10,534 with a magnitude, 45 with
+a common name. Fields follow the `dsos.json` rules (type map, V else B magnitude, `Se1/Se2` → `Ser`, constellation from
+the position when OpenNGC's is not one of the 88); no Wikipedia data, no distances. `equip` is computed in the client
+by the same magnitude rule (`equipForMag`): mostly `telescope`.
 
 ## Rules: Milky Way
 

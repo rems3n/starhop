@@ -28,6 +28,9 @@ its first frame, so `onReady` fires only for the one that stays (checked headles
 | `overlay.ts` | Everything on the 2D canvas. |
 | `highlights.ts` | `Highlight[]` → ready-to-project geometry. |
 | `pick.ts` | Pure picking priority, lasso helpers. |
+| `healpix.ts` | HEALPix nested scheme: direction → pixel, pixel points/corners, bounding radii, cone selection. Pure; shared with the data pipeline. |
+| `deepcore.ts` | Deep sky, pure: star tile codec, deep star ids, the zoom → limiting magnitude curve, the deep `dsos.json` row format. |
+| `deep.ts` | Deep star streaming for one engine: tile selection, fetch queue, page-wide decoded cache, GPU budget, fade-in. |
 | `engine.ts` | Clock, camera state, input, frame loop, the `SkyController`. |
 | `SkyView.tsx`, `index.ts`, `sky.css` | React wrapper and public exports. |
 | `dev/main.tsx` + `/sky-dev.html` | Dev harness. |
@@ -118,6 +121,49 @@ load once per page (shared by every engine) and the compressed blobs are kept so
   highlight, or a selected constellation, are drawn 2.3× brighter.
 - Puppis, Vela and Serpens have no drawing of their own: Carina's shows the whole ship Argo Navis and Ophiuchus'
   includes the serpent.
+
+## Deep sky: fainter stars and objects when zoomed in (layer `deepSky`)
+
+On by default in the Sky page; off in lesson demos and quizzes (quizzes never offer it). With it off, nothing below
+changes the engine's behaviour.
+
+**Limiting magnitude grows with zoom** (`deepLimit` in `deepcore.ts`), like looking through a telescope:
+
+    limit = min(11, base + 5 · log10(50° / fov))   for fov < 50°,   base otherwise
+
+`base` is the Bortle limit (`limitingMag`); twilight still caps it. Nothing changes at fields of 50° or wider, so the
+Bortle comparison works as before at the default 100° view. Examples (Bortle 6, base 5.3): 30° → 6.4, 20° → 7.3,
+10° → 8.8, 5° → 10.3, ≤ 3.6° → 11. Bortle 1 (7.6): 20° → 9.6, 5° and closer → 11. Bortle 9 (3.8): 5° → 8.8, 2° → 10.8.
+The factor 5 per tenfold zoom echoes the telescope rule (each tenfold aperture gains 5 magnitudes). The 6.5–7.6
+`stars-faint.json` buffer is fetched once this limit passes 6.5, whatever the Bortle class. The Sky page readout adds
+"· stars to mag 10.3" whenever the limit is above the Bortle value.
+
+**Stars** (`public/deep/stars/`, see docs/DATA.md): two bands of HEALPix tiles, 7.6–9.5 (order 2) and 9.5–11 (order 3).
+
+- Selection: the view cone (centre + angle to a screen corner, +4 %) against each tile's centre and bounding radius,
+  for every band whose `min` is below the limit; tiles wholly below the horizon are skipped when the ground is on. This
+  runs when the view has moved by more than a third of its half-width, zoomed by more than 35 %, or the limit changed
+  by 0.4 mag — or 150 ms after it stops changing. Never every frame.
+- Loading: nearest-to-centre and brighter band first, at most 4 fetches at a time; fetches for tiles the view no longer
+  needs are aborted. Decoded tiles go into a page-wide cache (400 tiles) shared by every engine.
+- GPU: one static buffer per tile in the same 7-float layout as the catalog stars, drawn with the same shader and size
+  curve (so there is no seam at 7.6), limiting magnitude = draw count. New tiles fade in over 300 ms (instant with
+  reduced motion). Budget 150 tiles / 200,000 stars; beyond it, tiles not currently wanted are evicted, least recently
+  wanted first. Context loss re-uploads them.
+- Brightness below the catalogue keeps falling gently: × clamp(1 − 0.13·(mag − 7.6), 0.5, 1) (`STAR.DEEP_*`), so a
+  magnitude-11 star is dimmer than a magnitude-8 one; catalog stars (≤ 7.6) are unaffected.
+- Per frame: one dot product per resident tile to flag the ones on screen, their fade, and one draw call each.
+- Picking: tiles near the pointer are scanned (same tier as any other star, nearest within 14 px). A click on a deep
+  star fetches that tile's identity file (~5 kB) first, registers a `Star` with id `deepStarId(band, pixel, index)`
+  (≥ 10,000,000) — designation, exact magnitude, B−V, Gaia distance, spectral type, constellation from
+  astronomy-engine — and then emits `select` with `star:<id>`, so the info panel resolves it like any star.
+
+**Deep-sky objects** (`public/deep/dsos.json`, 11,202 NGC/IC objects): fetched once (`loadDeepDsos()`, 222 kB gzipped)
+when the layer and deep-sky markers are on and the field is below 30°, or when search, `?target=` or an info panel asks
+for an object the curated list lacks; then registered into the catalog (`resolve`, `search`, `[[dso:…]]` links work).
+Markers appear by magnitude as you zoom: `dsoLimit(fov) + 0.75` (≈ 9.1 at 20°, 11.6 at 5°, 13.3 at 2°; no magnitude
+counts as 15), at most 400 a frame, drawn a little dimmer than the curated ones; names only where they do not collide
+(at most 30). They are pickable like the curated objects.
 
 ## Highlights (`setHighlights`, replaces all)
 
@@ -221,6 +267,25 @@ Reading these honestly:
   `asin` per pixel when the Milky Way is on; if that ever proves heavy, turning the Milky Way layer off
   removes them.
 
+### Deep sky (measured)
+
+Same harness (1280×800, DPR 1, SwiftShader), Cygnus (RA 305°, Dec +40°, Milky Way), Bortle 4 (base 6.3), equatorial
+mount, a 5 s scripted pan ± zoom after a warm-up that loaded every tile of the swept area:
+
+| Field | Layer | Limit | Deep stars in drawn tiles | rAF script ms/frame (trace) | Deep-sky work ms/frame (median / max) | Draw calls |
+| --- | --- | --- | --- | --- | --- | --- |
+| 100° | off / on | 6.3 / 6.3 | 0 | 1.89 / 1.56 | 0 / 0 | 7 / 7 |
+| 20° | off / on | 6.3 / 8.1 | 0 / 4,936 | 1.92 / 1.79 | 0 / 0.1 (max 2.3) | 3 / 24 |
+| 5° | off / on | 6.3 / 11.0 | 0 / 29,446 | 2.15 / 1.93 | 0 / 0.1 (max 2.1) | 3 / 20 |
+
+The difference on vs off is inside run-to-run noise (the timer resolution in this browser is 0.1 ms); the occasional
+~2 ms is a re-selection whose tiles come from the page cache and are uploaded in that frame. SwiftShader frame rates
+(~10 fps either way) say nothing about a GPU.
+
+Network (local dev server): a scripted zoom from 90° to 3° on M42 over 3 s fetched 60 kB of star data in 10 requests
+(index + 9 tiles), plus the deep-sky object list once (721 kB raw, 222 kB with the production server's gzip). Jumping to a new place at a 4° field: first deep tile on screen after 0.13–0.33 s, all 9–11 tiles (24–118 kB)
+in 0.5–0.6 s, then the 300 ms fade. Over a real network add one round trip per wave of 4 requests.
+
 ## Known limitations
 
 - No refraction, no extinction near the horizon, no Moon-glow washing out stars.
@@ -229,7 +294,11 @@ Reading these honestly:
 - Uranus and Neptune are always drawn at night, whatever the limiting magnitude.
 - Label collision is greedy and recomputed each frame, so a label can swap sides while panning.
 - Highlight labels dodge each other only vertically; a very crowded set can still overlap.
-- Faint stars (`stars-faint.json`) are render-only: no labels, not pickable.
+- Faint stars (`stars-faint.json`, 6.5–7.6) are render-only: no labels, not pickable. Deep stars (7.6–11) are pickable but
+  never labelled.
+- Deep star ids depend on the tile build; a `star:<deep id>` saved somewhere only resolves after that star was clicked in
+  this page session.
+- 1,372 Tycho stars brighter than 7.6 that HYG lacks are not shown (see docs/DATA.md).
 - Trails are capped at 3,000 samples (the step is widened beyond that).
 - Trail date labels use the observer's time zone, so a trail starting at 00:00 UTC reads as the evening before in New York.
 - `getFps()` reports the last active second; it does not fall to 0 when the view goes idle.
