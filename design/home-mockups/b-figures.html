@@ -1,0 +1,179 @@
+<title>Starhop Home B: Figures</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: lab instrument. Real stars assemble into a constellation, then its drawn figure; aurora gradient light, glass panels, serif-italic accents. */
+:root {
+  color-scheme: dark;
+  --ink: #05061a; --ink2: #0b0d2a; --glass: rgba(255,255,255,.055); --edge: rgba(255,255,255,.13); --text: #f4f3ff; --dim: #a5a7c9;
+  --violet: #8b5cff; --cyan: #29e6ff; --rose: #ff4fa3;
+  --grad: linear-gradient(100deg, var(--cyan), var(--violet) 48%, var(--rose));
+  --display: 'Instrument Serif', Georgia, serif; --body: 'Space Grotesk', system-ui, sans-serif; --mono: 'DM Mono', ui-monospace, monospace;
+}
+* { box-sizing: border-box; }
+body { background: var(--ink); color: var(--text); font-family: var(--body); font-size: 16px; line-height: 1.55; overflow-x: hidden; }
+.wrap { max-width: 1200px; margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+nav .wrap { display: flex; align-items: center; gap: 12px; padding-block: 16px; }
+.brand { font-family: var(--display); font-style: italic; font-size: 1.7rem; text-decoration: none; color: var(--text); margin-right: auto; }
+.pillnav { display: flex; gap: 2px; padding: 4px; border-radius: 999px; background: var(--glass); border: 1px solid var(--edge); }
+.pillnav a { padding: 6px 14px; border-radius: 999px; color: var(--dim); text-decoration: none; font-size: .9rem; }
+.pillnav a:hover { color: var(--text); background: rgba(255,255,255,.08); }
+.btn { display: inline-flex; align-items: center; padding: 11px 22px; border-radius: 999px; font: 500 .95rem var(--body); text-decoration: none; cursor: pointer; border: 1px solid var(--edge); color: var(--text); background: var(--glass); }
+.btn.go { background: var(--grad); border: 0; color: #07051a; font-weight: 600; box-shadow: 0 8px 40px -8px rgba(139,92,255,.8); }
+.btn:focus-visible, .chips button:focus-visible, input:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+.hero { position: relative; overflow: clip; }
+.aurora { position: absolute; inset: -20% -10% auto; height: 110%; pointer-events: none; filter: blur(70px); opacity: .55; background: radial-gradient(40% 50% at 22% 30%, var(--violet), transparent 70%), radial-gradient(35% 45% at 78% 20%, var(--cyan), transparent 70%), radial-gradient(40% 40% at 60% 85%, var(--rose), transparent 70%); animation: drift 18s ease-in-out infinite alternate; }
+@keyframes drift { to { transform: translate3d(3%, -4%, 0) scale(1.08); } }
+.hero .wrap { position: relative; display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 36px; align-items: center; padding-block: 34px 56px; }
+.eyebrow { font-family: var(--mono); font-size: .76rem; color: var(--cyan); }
+h1 { font-family: var(--display); font-weight: 400; font-size: clamp(2.9rem, 6.2vw, 5.4rem); line-height: .98; letter-spacing: -.015em; margin: 14px 0 18px; text-wrap: balance; }
+h1 em { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; padding-right: .08em; }
+.lede { color: var(--dim); max-width: 46ch; margin: 0 0 26px; font-size: 1.06rem; }
+.row { display: flex; gap: 12px; flex-wrap: wrap; }
+.stage { position: relative; border-radius: 26px; border: 1px solid var(--edge); background: linear-gradient(160deg, rgba(11,13,42,.9), rgba(5,6,26,.75)); overflow: hidden; aspect-ratio: 1 / 1; max-width: 100%; box-shadow: 0 30px 120px -30px rgba(41,230,255,.35), inset 0 1px 0 rgba(255,255,255,.12); }
+#sky { position: absolute; inset: 0; width: 100%; height: 100%; }
+.readout { position: absolute; left: 18px; top: 16px; font-family: var(--mono); font-size: .74rem; color: var(--dim); }
+.readout strong { display: block; font: italic 400 2rem var(--display); color: var(--text); }
+.dock { position: absolute; left: 14px; right: 14px; bottom: 14px; display: grid; gap: 10px; padding: 12px; border-radius: 18px; background: rgba(5,6,26,.6); border: 1px solid var(--edge); backdrop-filter: blur(10px); }
+.chips { display: flex; gap: 6px; flex-wrap: wrap; }
+.chips button { font: 500 .8rem var(--body); color: var(--dim); background: transparent; border: 1px solid var(--edge); border-radius: 999px; padding: 5px 12px; cursor: pointer; }
+.chips button[aria-pressed="true"] { color: #07051a; background: var(--grad); border-color: transparent; }
+.scrub { display: grid; grid-template-columns: auto 1fr auto; gap: 10px; align-items: center; font-family: var(--mono); font-size: .7rem; color: var(--dim); }
+.scrub input { width: 100%; accent-color: var(--violet); }
+section.block .wrap { padding-block: 56px; }
+h2 { font-family: var(--display); font-weight: 400; font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.05; margin: 0 0 8px; text-wrap: balance; }
+.sub { color: var(--dim); max-width: 60ch; margin: 0 0 28px; }
+.bento { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 14px; }
+.card { position: relative; grid-column: span 2; min-height: 210px; border-radius: 22px; padding: 22px; background: var(--glass); border: 1px solid var(--edge); overflow: hidden; text-decoration: none; color: var(--text); display: flex; flex-direction: column; justify-content: flex-end; transition: transform .25s, border-color .25s; }
+.card:hover { transform: translateY(-4px); border-color: rgba(41,230,255,.6); }
+.card.wide { grid-column: span 4; min-height: 300px; }
+.card.photo { background-size: cover; background-position: center; }
+.card.photo::before { content: ""; position: absolute; inset: 0; background: linear-gradient(transparent 30%, rgba(5,6,26,.92)); }
+.card > * { position: relative; }
+.card small { font-family: var(--mono); color: var(--cyan); font-size: .72rem; }
+.card h3 { font: 400 1.7rem var(--display); margin: 4px 0 4px; }
+.card p { margin: 0; color: var(--dim); font-size: .92rem; max-width: 44ch; }
+.card .cr { position: absolute; top: 12px; right: 14px; font-family: var(--mono); font-size: .6rem; color: rgba(255,255,255,.6); }
+.num { font: 400 3.4rem/1 var(--display); background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+footer .wrap { padding-block: 24px 36px; font-family: var(--mono); font-size: .68rem; color: var(--dim); }
+@media (max-width: 860px) { .hero .wrap { grid-template-columns: minmax(0, 1fr); } .pillnav { display: none; } .card, .card.wide { grid-column: span 6; } .stage { aspect-ratio: 4 / 5; } }
+@media (prefers-reduced-motion: reduce) { .aurora { animation: none; } .card { transition: none; } }
+</style>
+
+<nav><div class="wrap"><a class="brand" href="#">Starhop</a><div class="pillnav"><a href="#">Sky</a><a href="#">Tonight</a><a href="#">Learn</a><a href="#">Library</a><a href="#">Practice</a></div><a class="btn" href="#">Open sky map</a></div></nav>
+
+<header class="hero">
+  <div class="aurora" aria-hidden="true"></div>
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">8,920 naked-eye stars · 88 figures · 120 stories</span>
+      <h1>Points of light, <em>until you know them.</em></h1>
+      <p class="lede">Watch real stars from the catalogue join into a constellation and then into the figure people drew around it. Starhop teaches you to do the same thing outdoors, from wherever you live.</p>
+      <div class="row"><a class="btn go" href="#">Start the course</a><a class="btn" href="#">Explore tonight's sky</a></div>
+    </div>
+    <div class="stage">
+      <canvas id="sky" aria-label="Star field in which a constellation's lines are drawn and its illustrated figure appears"></canvas>
+      <div class="readout"><span id="rEng">the Hunter</span><strong id="rName">Orion</strong><span id="rPhase">stars</span></div>
+      <div class="dock">
+        <div class="chips" id="chips" role="group" aria-label="Constellation"></div>
+        <div class="scrub"><span>stars</span><input id="scrub" type="range" min="0" max="1" step="0.001" value="0" aria-label="From stars to lines to figure"><span>figure</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="block"><div class="wrap">
+  <h2>One sky, five ways in</h2>
+  <p class="sub">A live map, a nightly briefing, a structured course, a reference library and practice that adapts to what you miss.</p>
+  <div class="bento">
+    <a class="card wide photo" href="#" style="background-image:url('img/M31-1.jpg')"><span class="cr">Lviatour · CC BY-SA 2.5</span><small>Sky</small><h3>A planetarium that goes deep</h3><p>Zoom from the whole dome to the Andromeda Galaxy, 2.5 million light-years out, with 850,000 stars loading as you go.</p></a>
+    <a class="card" href="#"><div class="num">24</div><small>Learn</small><h3>Lessons with live diagrams</h3><p>Eight modules, tuned to your latitude.</p></a>
+    <a class="card" href="#"><small>Tonight</small><h3>What is up, right now</h3><p>Planets, bright stars and constellations with the best time to look.</p></a>
+    <a class="card" href="#"><div class="num">120</div><small>Library</small><h3>Every myth in one place</h3><p>With the ancient source for each version.</p></a>
+    <a class="card photo" href="#" style="background-image:url('img/M45-1.jpg')"><span class="cr">NASA, ESA, AURA/Caltech · public domain</span><small>Practice</small><h3>Circle it. Hop to it.</h3><p>Find-it, star-hop and story quizzes with spaced review.</p></a>
+  </div>
+</div></section>
+<footer><div class="wrap">Starhop · design study B · Figures. Constellation drawings: Johan Meuris / Stellarium, Free Art License.</div></footer>
+
+<script>
+(async () => {
+  const cv = document.getElementById('sky'), g = cv.getContext('2d'), scrub = document.getElementById('scrub');
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches, D = Math.PI / 180;
+  const data = await (await fetch('data.json')).json();
+  let W = 0, H = 0, dpr = 1, cur = 0, phase = 0, auto = !reduce, fade = 1, mx = 0, my = 0, art = null, t0 = performance.now();
+  const size = () => { dpr = Math.min(2, devicePixelRatio || 1); W = cv.clientWidth; H = cv.clientHeight; cv.width = W * dpr; cv.height = H * dpr; };
+  // stereographic projection centred on the constellation, north up, east left (as in the sky)
+  function mk(c) {
+    const r0 = c.ra * D, d0 = c.dec * D;
+    const raw = (ra, dec) => { const a = ra * D - r0, d = dec * D, cc = Math.sin(d0) * Math.sin(d) + Math.cos(d0) * Math.cos(d) * Math.cos(a); if (cc < -.2) return null; const k = 2 / (1 + cc); return [-k * Math.cos(d) * Math.sin(a), -k * (Math.cos(d0) * Math.sin(d) - Math.sin(d0) * Math.cos(d) * Math.cos(a))]; };
+    let ext = 0; for (const l of c.lines) for (const p of l) { const q = raw(p[0], p[1]); ext = Math.max(ext, Math.hypot(q[0], q[1])); }
+    return (ra, dec) => { const q = raw(ra, dec); if (!q) return null; const s = Math.min(W, H) * .3 / ext; return [W / 2 + q[0] * s + mx * 14, H * .44 + q[1] * s + my * 14]; };
+  }
+  function loadArt(c) {
+    art = null; const img = new Image();
+    img.onload = () => { // tint the grey drawing with the aurora gradient once
+      const o = document.createElement('canvas'); o.width = img.width; o.height = img.height; const x = o.getContext('2d');
+      x.drawImage(img, 0, 0); x.globalCompositeOperation = 'multiply';
+      const gr = x.createLinearGradient(0, 0, o.width, o.height); gr.addColorStop(0, '#7df3ff'); gr.addColorStop(.5, '#b79bff'); gr.addColorStop(1, '#ff8cc4'); x.fillStyle = gr; x.fillRect(0, 0, o.width, o.height);
+      if (data.cons[cur] === c) { art = o; if (reduce) draw(); }
+    };
+    img.src = c.art.file;
+  }
+  const bv = b => b < 0 ? '#bcd0ff' : b < .5 ? '#eef2ff' : b < 1 ? '#fff0d0' : '#ffc79a';
+  function draw() {
+    const c = data.cons[cur], P = mk(c);
+    g.setTransform(dpr, 0, 0, dpr, 0, 0); const bg = g.createLinearGradient(0, 0, W, H); bg.addColorStop(0, '#0d0f30'); bg.addColorStop(1, '#06071c'); g.fillStyle = bg; g.fillRect(0, 0, W, H);
+    const pl = Math.max(0, Math.min(1, phase / .5)), pa = Math.max(0, Math.min(1, (phase - .5) / .5));
+    // figure
+    if (art && pa > 0) {
+      const A = c.art.anchors.map(a => [a.x, a.y, ...P(a.ra, a.dec)]);
+      const det = A[0][0] * (A[1][1] - A[2][1]) - A[0][1] * (A[1][0] - A[2][0]) + (A[1][0] * A[2][1] - A[2][0] * A[1][1]);
+      const sol = k => { const v = A.map(r => r[k]); return [(v[0] * (A[1][1] - A[2][1]) - A[0][1] * (v[1] - v[2]) + (v[1] * A[2][1] - v[2] * A[1][1])) / det, (A[0][0] * (v[1] - v[2]) - v[0] * (A[1][0] - A[2][0]) + (A[1][0] * v[2] - A[2][0] * v[1])) / det, (A[0][0] * (A[1][1] * v[2] - A[2][1] * v[1]) - A[0][1] * (A[1][0] * v[2] - A[2][0] * v[1]) + v[0] * (A[1][0] * A[2][1] - A[2][0] * A[1][1])) / det]; };
+      const X = sol(2), Y = sol(3);
+      g.save(); g.globalCompositeOperation = 'screen'; g.globalAlpha = pa * .85 * fade;
+      g.transform(X[0], Y[0], X[1], Y[1], X[2], Y[2]); g.drawImage(art, 0, 0); g.restore();
+    }
+    // stars
+    const tw = (performance.now() - t0) / 1000;
+    for (const s of data.stars) {
+      const q = P(s[0], s[1]); if (!q || q[0] < -5 || q[0] > W + 5 || q[1] < -5 || q[1] > H + 5) continue;
+      const r = Math.max(.5, 3.4 - s[2] * .55), a = Math.min(1, 1.25 - s[2] * .16) * (reduce ? 1 : .86 + .14 * Math.sin(tw * 2 + s[0]));
+      g.globalAlpha = a * fade; g.fillStyle = bv(s[3]); g.beginPath(); g.arc(q[0], q[1], r, 0, 7); g.fill();
+      if (s[2] < 1.6) { g.globalAlpha = .16 * fade; g.beginPath(); g.arc(q[0], q[1], r * 3.2, 0, 7); g.fill(); }
+    }
+    // lines, drawn progressively
+    if (pl > 0) {
+      const segs = []; let total = 0;
+      for (const l of c.lines) for (let i = 1; i < l.length; i++) { const a = P(l[i - 1][0], l[i - 1][1]), b = P(l[i][0], l[i][1]); if (!a || !b) continue; const len = Math.hypot(b[0] - a[0], b[1] - a[1]); segs.push([a, b, len]); total += len; }
+      let left = total * pl; g.globalAlpha = .9 * fade; g.lineWidth = 1.4; g.lineCap = 'round';
+      const gr = g.createLinearGradient(0, 0, W, H); gr.addColorStop(0, '#29e6ff'); gr.addColorStop(.5, '#8b5cff'); gr.addColorStop(1, '#ff4fa3'); g.strokeStyle = gr; g.shadowColor = '#8b5cff'; g.shadowBlur = 8;
+      g.beginPath();
+      for (const [a, b, len] of segs) { if (left <= 0) break; const f = Math.min(1, left / len); g.moveTo(a[0], a[1]); g.lineTo(a[0] + (b[0] - a[0]) * f, a[1] + (b[1] - a[1]) * f); left -= len; }
+      g.stroke(); g.shadowBlur = 0;
+    }
+    // bright star names
+    g.globalAlpha = .75 * fade * pl; g.fillStyle = '#f4f3ff'; g.font = '11px "DM Mono", monospace';
+    for (const n of data.named) { const q = P(n[1], n[2]); if (q && q[0] > 10 && q[0] < W - 60 && q[1] > 70 && q[1] < H - 120) g.fillText(n[0], q[0] + 7, q[1] - 6); }
+    g.globalAlpha = 1;
+    document.getElementById('rPhase').textContent = phase < .08 ? 'stars' : phase < .55 ? 'joining the stars' : 'the figure';
+  }
+  function pick(i, user) {
+    cur = i; const c = data.cons[i]; document.getElementById('rName').textContent = c.name; document.getElementById('rEng').textContent = c.english;
+    [...chips.children].forEach((b, k) => b.setAttribute('aria-pressed', k === i)); loadArt(c);
+    if (reduce) { phase = 1; scrub.value = 1; draw(); } else { phase = 0; auto = true; fade = 0; }
+    if (user) hold = 0;
+  }
+  const chips = document.getElementById('chips'); let hold = 0;
+  data.cons.forEach((c, i) => { const b = document.createElement('button'); b.type = 'button'; b.textContent = c.name; b.onclick = () => pick(i, true); chips.appendChild(b); });
+  scrub.oninput = () => { auto = false; phase = +scrub.value; if (reduce) draw(); };
+  cv.parentElement.addEventListener('pointermove', e => { const r = cv.getBoundingClientRect(); mx = (e.clientX - r.left) / r.width - .5; my = (e.clientY - r.top) / r.height - .5; });
+  let last = performance.now();
+  function tick(now) {
+    const dt = Math.min(.05, (now - last) / 1000); last = now; fade = Math.min(1, fade + dt * 1.6);
+    if (auto) { if (phase < 1) phase = Math.min(1, phase + dt / 6); else if ((hold += dt) > 3.5) { hold = 0; pick((cur + 1) % data.cons.length); } scrub.value = phase; }
+    draw(); requestAnimationFrame(tick);
+  }
+  addEventListener('resize', () => { size(); draw(); });
+  size(); pick(0); if (!reduce) requestAnimationFrame(tick);
+})();
+</script>

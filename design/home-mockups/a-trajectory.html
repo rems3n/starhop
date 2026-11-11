@@ -1,0 +1,184 @@
+<title>Starhop Home A: Trajectory</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: mission-control. Full-bleed black, one live 3-D instrument as the hero, condensed uppercase type, telemetry in mono. */
+:root {
+  color-scheme: dark;
+  --void: #000000; --panel: #07090d; --line: rgba(255,255,255,.14); --text: #f2f5f7; --dim: #8a949e;
+  --ion: #38e1ff; --sun: #ffc857;
+  --display: 'Saira Condensed', 'Arial Narrow', sans-serif; --body: 'Inter', system-ui, sans-serif; --mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+* { box-sizing: border-box; }
+body { background: var(--void); color: var(--text); font-family: var(--body); font-size: 16px; line-height: 1.55; }
+.wrap { max-width: 1240px; margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+a { color: inherit; }
+nav { position: absolute; inset: 0 0 auto; z-index: 5; }
+nav .wrap { display: flex; align-items: center; gap: 28px; padding-block: 18px; }
+.brand { font-family: var(--display); font-weight: 700; font-size: 1.5rem; letter-spacing: .32em; text-transform: uppercase; text-decoration: none; }
+nav ul { display: flex; gap: 22px; list-style: none; margin: 0; padding: 0; flex-wrap: wrap; }
+nav li a { font-family: var(--display); font-weight: 500; letter-spacing: .16em; text-transform: uppercase; font-size: .95rem; text-decoration: none; color: var(--dim); }
+nav li a:hover { color: var(--text); }
+.hero { position: relative; height: clamp(560px, 86vh, 820px); overflow: hidden; border-bottom: 1px solid var(--line); }
+#helix { position: absolute; inset: 0; width: 100%; height: 100%; cursor: grab; touch-action: none; }
+#helix:active { cursor: grabbing; }
+.hero-copy { position: absolute; left: 0; right: 0; bottom: 0; pointer-events: none; padding-block: 0 34px; background: linear-gradient(transparent, rgba(0,0,0,.85)); }
+h1 { font-family: var(--display); font-weight: 700; text-transform: uppercase; font-size: clamp(3rem, 9vw, 7.5rem); line-height: .88; letter-spacing: .01em; margin: 0 0 14px; text-wrap: balance; }
+h1 span { color: transparent; -webkit-text-stroke: 1px var(--text); }
+.lede { max-width: 54ch; color: #c8d0d6; margin: 0 0 22px; }
+.cta { display: flex; gap: 12px; flex-wrap: wrap; pointer-events: auto; }
+.btn { font-family: var(--display); font-weight: 500; letter-spacing: .18em; text-transform: uppercase; font-size: 1rem; padding: 12px 26px; border: 1px solid var(--text); background: transparent; color: var(--text); text-decoration: none; cursor: pointer; transition: background .15s, color .15s; }
+.btn:hover, .btn.solid { background: var(--text); color: var(--void); }
+.btn.solid:hover { background: var(--ion); border-color: var(--ion); }
+.btn:focus-visible, .seg button:focus-visible, input:focus-visible { outline: 2px solid var(--ion); outline-offset: 3px; }
+.hud { position: absolute; top: 84px; right: max(20px, env(safe-area-inset-right, 0px)); z-index: 4; width: min(300px, calc(100% - 40px)); font-family: var(--mono); font-size: .72rem; color: var(--dim); border: 1px solid var(--line); background: rgba(0,0,0,.55); backdrop-filter: blur(6px); padding: 14px; display: grid; gap: 10px; }
+.hud b { color: var(--ion); font-weight: 500; }
+.hud .row { display: flex; justify-content: space-between; gap: 10px; }
+.seg { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--line); }
+.seg button { font: inherit; color: var(--dim); background: none; border: 0; padding: 7px 4px; cursor: pointer; text-transform: uppercase; letter-spacing: .08em; }
+.seg button[aria-pressed="true"] { background: var(--ion); color: #001318; }
+.hud input[type=range] { width: 100%; accent-color: var(--ion); }
+.hint { position: absolute; left: max(20px, env(safe-area-inset-left, 0px)); top: 84px; font-family: var(--mono); font-size: .72rem; color: var(--dim); z-index: 3; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); border-bottom: 1px solid var(--line); }
+.stats div { padding: 26px 20px; border-right: 1px solid var(--line); }
+.stats strong { display: block; font-family: var(--display); font-weight: 300; font-size: 3.2rem; line-height: 1; font-variant-numeric: tabular-nums; }
+.stats span { font-family: var(--mono); font-size: .72rem; color: var(--dim); text-transform: uppercase; letter-spacing: .1em; }
+.band { position: relative; min-height: 440px; display: flex; align-items: flex-end; background-size: cover; background-position: center; border-bottom: 1px solid var(--line); }
+.band::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0,0,0,.88) 0%, rgba(0,0,0,.35) 55%, transparent); }
+.band .wrap { position: relative; width: 100%; padding-block: 48px; }
+.band.right::before { background: linear-gradient(270deg, rgba(0,0,0,.88) 0%, rgba(0,0,0,.35) 55%, transparent); }
+.band.right .inner { margin-left: auto; }
+.inner { max-width: 440px; }
+.kicker { font-family: var(--mono); font-size: .72rem; letter-spacing: .14em; color: var(--ion); text-transform: uppercase; }
+h2 { font-family: var(--display); font-weight: 700; text-transform: uppercase; font-size: clamp(2.2rem, 5vw, 3.8rem); line-height: .95; margin: 8px 0 12px; text-wrap: balance; }
+.band p { color: #d0d6db; margin: 0 0 18px; }
+.credit { position: absolute; right: 12px; bottom: 8px; font-family: var(--mono); font-size: .62rem; color: rgba(255,255,255,.55); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.cell { border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 28px 22px 34px; text-decoration: none; display: block; transition: background .2s; }
+.cell:hover { background: #0b1016; }
+.cell i { font-family: var(--mono); font-style: normal; font-size: .72rem; color: var(--dim); }
+.cell h3 { font-family: var(--display); font-weight: 500; font-size: 1.9rem; text-transform: uppercase; letter-spacing: .06em; margin: 26px 0 6px; }
+.cell p { margin: 0; color: var(--dim); font-size: .92rem; }
+.cell:hover h3 { color: var(--ion); }
+footer .wrap { padding-block: 26px; font-family: var(--mono); font-size: .68rem; color: var(--dim); }
+@media (max-width: 720px) { nav ul { display: none; } .hud { top: 60px; right: 16px; width: 210px; padding: 10px; } .hud > span, .hud .row:nth-child(2) { display: none; } .hint { display: none; } .hero { height: 760px; } }
+</style>
+
+<nav><div class="wrap"><a class="brand" href="#">Starhop</a><ul><li><a href="#">Sky</a></li><li><a href="#">Tonight</a></li><li><a href="#">Learn</a></li><li><a href="#">Library</a></li><li><a href="#">Practice</a></li></ul></div></nav>
+
+<header class="hero">
+  <canvas id="helix" aria-label="Animated model of the Sun travelling through the galaxy while the planets trace spirals around its path. Drag to rotate."></canvas>
+  <div class="hint">DRAG TO ROTATE · SCROLL TO ZOOM</div>
+  <div class="hud" role="group" aria-label="Model controls">
+    <div class="row"><span>SUN VELOCITY</span><b>230 km/s</b></div>
+    <div class="row"><span>ORBIT TILT TO PATH</span><b>60°</b></div>
+    <div class="row"><span>ELAPSED</span><b id="yrs">0.0 yr</b></div>
+    <div class="seg"><button type="button" id="fGal" aria-pressed="true">Galaxy frame</button><button type="button" id="fSun" aria-pressed="false">Sun frame</button></div>
+    <label for="spd">TIME RATE <input id="spd" type="range" min="0" max="3" step="0.05" value="1"></label>
+    <span>Model: orbits in true proportion of periods; sizes and distances compressed.</span>
+  </div>
+  <div class="hero-copy"><div class="wrap">
+    <h1>You are <span>moving.</span><br>Learn where.</h1>
+    <p class="lede">The solar system crosses the galaxy at 230 kilometres a second, and the night sky is the view out of the window. Starhop is a live planetarium and a course that teaches you to read it.</p>
+    <div class="cta"><a class="btn solid" href="#">Open the sky map</a><a class="btn" href="#">Start the course</a></div>
+  </div></div>
+</header>
+
+<section class="stats wrap" aria-label="What is inside">
+  <div><strong>851,948</strong><span>stars to magnitude 11</span></div>
+  <div><strong>88</strong><span>constellations</span></div>
+  <div><strong>120</strong><span>myths retold</span></div>
+  <div><strong>11,798</strong><span>deep-sky objects</span></div>
+  <div><strong>24</strong><span>lessons, 8 modules</span></div>
+</section>
+
+<section class="band" style="background-image:url('img/milky-way-panorama.jpg')">
+  <div class="wrap"><div class="inner"><span class="kicker">Sky / live map</span><h2>The whole sky, from where you stand</h2><p>Set your location and time, drag across the dome and zoom from the full Milky Way down to eleventh-magnitude stars.</p><a class="btn" href="#">Launch sky map</a></div></div>
+  <span class="credit">ESO/S. Brunier · CC BY 4.0</span>
+</section>
+<section class="band right" style="background-image:url('img/M42-1.jpg')">
+  <div class="wrap"><div class="inner"><span class="kicker">Library / 11,798 objects</span><h2>Every nebula has an address</h2><p>The Orion Nebula is 1,340 light-years away and visible without a telescope. The library tells you where to look, when, and what you will really see.</p><a class="btn" href="#">Browse the library</a></div></div>
+  <span class="credit">NASA, ESA, M. Robberto (STScI) · public domain</span>
+</section>
+
+<section class="grid" aria-label="Sections">
+  <a class="cell" href="#"><i>/sky</i><h3>Sky</h3><p>Full planetarium with layers, light-pollution slider and deep zoom.</p></a>
+  <a class="cell" href="#"><i>/tonight</i><h3>Tonight</h3><p>What is up from your location, hour by hour, month by month.</p></a>
+  <a class="cell" href="#"><i>/learn</i><h3>Learn</h3><p>Eight modules from dark adaptation to galaxies, built for your latitude.</p></a>
+  <a class="cell" href="#"><i>/library</i><h3>Library</h3><p>Constellations, myths, star-hops, stars and deep-sky objects.</p></a>
+  <a class="cell" href="#"><i>/practice</i><h3>Practice</h3><p>Circle the constellation, follow the hop, keep what you learn.</p></a>
+</section>
+<footer><div class="wrap">STARHOP · DESIGN STUDY A · TRAJECTORY</div></footer>
+
+<script>
+(() => {
+  const cv = document.getElementById('helix'), g = cv.getContext('2d');
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // name, compressed orbit radius, period (yr), colour, dot size
+  const P = [['Mercury',.55,.241,'#b9b4a8',2],['Venus',.8,.615,'#f1d9a0',3],['Earth',1.05,1,'#5fb4ff',3.2],['Mars',1.35,1.881,'#ff7a52',2.6],['Jupiter',2.0,11.86,'#e8c79a',5.5],['Saturn',2.6,29.46,'#f0dfa6',5]];
+  const TILT = 60 * Math.PI / 180, V = 2.4; // sun speed in model units per year
+  let yaw = -0.62, pitch = 0.2, zoom = 1, t = 0, rate = 1, frame = 1, frameTarget = 1, W = 0, H = 0, dpr = 1;
+  const stars = Array.from({ length: 420 }, () => ({ x: (Math.random() - .5) * 60, y: (Math.random() - .5) * 60, z: Math.random() * 120, s: Math.random() }));
+  function size() { dpr = Math.min(2, devicePixelRatio || 1); W = cv.clientWidth; H = cv.clientHeight; cv.width = W * dpr; cv.height = H * dpr; }
+  // world: sun travels along +z. Orbit plane normal tilted TILT from z.
+  function planet(i, time, sunZ) {
+    const [, r, per] = P[i], a = (time / per) * 2 * Math.PI + i * 1.7;
+    const x = r * Math.cos(a), u = r * Math.sin(a);
+    return [x, u * Math.cos(TILT), sunZ + u * Math.sin(TILT)];
+  }
+  function proj(p) {
+    const cy = Math.cos(yaw), sy = Math.sin(yaw), cp = Math.cos(pitch), sp = Math.sin(pitch);
+    let x = p[0] * cy + p[2] * sy, z = -p[0] * sy + p[2] * cy, y = p[1] * cp - z * sp; z = p[1] * sp + z * cp;
+    const d = 14, k = (Math.min(W, H) * .16 * zoom) * d / (d + z);
+    return [W * .5 + x * k, H * .46 - y * k, k, d + z];
+  }
+  function draw() {
+    g.setTransform(dpr, 0, 0, dpr, 0, 0); g.fillStyle = '#000'; g.fillRect(0, 0, W, H);
+    const sunZ = 0, travel = V * t * frame;
+    // background stars drift backwards as the Sun advances
+    for (const s of stars) {
+      let z = ((s.z - travel * 1.2) % 120 + 120) % 120 - 60;
+      const q = proj([s.x, s.y, z]); if (q[3] < 1) continue;
+      g.fillStyle = `rgba(255,255,255,${.25 + s.s * .5})`; g.fillRect(q[0], q[1], 1 + s.s, 1 + s.s);
+    }
+    // sun's path
+    const a0 = proj([0, 0, -30 * frame]), a1 = proj([0, 0, 6]);
+    g.strokeStyle = 'rgba(255,200,87,.35)'; g.setLineDash([4, 6]); g.beginPath(); g.moveTo(a0[0], a0[1]); g.lineTo(a1[0], a1[1]); g.stroke(); g.setLineDash([]);
+    // trails: analytic, no history buffer
+    for (let i = 0; i < P.length; i++) {
+      const per = P[i][2], span = Math.min(per * 2.2, 14), N = 220;
+      g.beginPath();
+      for (let k = 0; k <= N; k++) {
+        const back = (k / N) * span, p = planet(i, t - back, -V * back * frame), q = proj(p);
+        k ? g.lineTo(q[0], q[1]) : g.moveTo(q[0], q[1]);
+      }
+      g.strokeStyle = P[i][3]; g.globalAlpha = .55; g.lineWidth = 1.2; g.stroke(); g.globalAlpha = 1;
+      const q = proj(planet(i, t, 0));
+      g.fillStyle = P[i][3]; g.beginPath(); g.arc(q[0], q[1], P[i][4] * Math.min(1.4, q[2] / 90), 0, 7); g.fill();
+      g.fillStyle = 'rgba(255,255,255,.75)'; g.font = '11px "JetBrains Mono", monospace'; g.fillText(P[i][0].toUpperCase(), q[0] + 9, q[1] - 7);
+    }
+    const s = proj([0, 0, 0]), glow = g.createRadialGradient(s[0], s[1], 0, s[0], s[1], 70 * zoom);
+    glow.addColorStop(0, 'rgba(255,244,214,1)'); glow.addColorStop(.12, 'rgba(255,200,87,.9)'); glow.addColorStop(1, 'rgba(255,200,87,0)');
+    g.fillStyle = glow; g.beginPath(); g.arc(s[0], s[1], 70 * zoom, 0, 7); g.fill();
+    document.getElementById('yrs').textContent = t.toFixed(1) + ' yr';
+  }
+  let last = performance.now();
+  function tick(now) {
+    const dt = Math.min(.05, (now - last) / 1000); last = now;
+    t += dt * rate * 0.9; frame += (frameTarget - frame) * Math.min(1, dt * 3);
+    if (!drag) yaw += dt * 0.04;
+    draw(); if (!reduce) requestAnimationFrame(tick);
+  }
+  let drag = null;
+  cv.addEventListener('pointerdown', e => { drag = [e.clientX, e.clientY]; cv.setPointerCapture(e.pointerId); });
+  cv.addEventListener('pointermove', e => { if (!drag) return; yaw += (e.clientX - drag[0]) * .006; pitch = Math.max(-1.3, Math.min(1.3, pitch + (e.clientY - drag[1]) * .005)); drag = [e.clientX, e.clientY]; if (reduce) draw(); });
+  addEventListener('pointerup', () => drag = null);
+  cv.addEventListener('wheel', e => { e.preventDefault(); zoom = Math.max(.5, Math.min(2.5, zoom * (e.deltaY < 0 ? 1.08 : .93))); if (reduce) draw(); }, { passive: false });
+  const fG = document.getElementById('fGal'), fS = document.getElementById('fSun');
+  const setF = v => { frameTarget = v; fG.setAttribute('aria-pressed', v === 1); fS.setAttribute('aria-pressed', v === 0); if (reduce) { frame = v; draw(); } };
+  fG.onclick = () => setF(1); fS.onclick = () => setF(0);
+  document.getElementById('spd').oninput = e => rate = +e.target.value;
+  addEventListener('resize', () => { size(); draw(); });
+  size(); t = 6; reduce ? draw() : requestAnimationFrame(tick);
+})();
+</script>
