@@ -60,7 +60,7 @@ const step = async (name, fn) => { if (only && !name.includes(only)) return; con
 await step('desktop', async () => {
   const page = await open();
   check((await text(page, '.ex-time-clock')).includes('9:00 PM'), 'time bar shows 9:00 PM local');
-  check(/Looking S, 32° up/.test(await text(page, '.ex-readout')), 'readout says where the view points');
+  check(/Looking N, 35° up/.test(await text(page, '.ex-readout')), 'readout says where the view points');
   await shot(page, '01-first-load');
 
   await search(page, 'Orion Nebula');

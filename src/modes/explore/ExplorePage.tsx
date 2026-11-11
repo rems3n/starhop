@@ -40,6 +40,9 @@ function flyFov(t: ResolvedTarget, current: number): number {
 
 const isTyping = (el: EventTarget | null) => el instanceof HTMLElement && (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA' || el.tagName === 'SELECT' || el.isContentEditable);
 
+/** Starting view, and where "Reset view" returns: facing north, horizon at the bottom, Polaris and the Dippers in frame. */
+const HOME_VIEW = { mount: 'altaz' as const, lon: 0, lat: 35, fov: 100, roll: 0 };
+
 export default function ExplorePage() {
   const catalog = useCatalog();
   const observer = useSettings((s) => s.observer);
@@ -75,7 +78,7 @@ export default function ExplorePage() {
     timeRate: startTime ? 0 : 1,
     layers,
     limitingMag: limitFor(bortle),
-    view: { mount: 'altaz', lon: 180, lat: 32, fov: 100, roll: 0 },
+    view: { ...HOME_VIEW },
     inputMode: 'navigate',
   }).current;
 
@@ -191,6 +194,9 @@ export default function ExplorePage() {
       if (e.key === '/' && !isTyping(e.target)) {
         e.preventDefault();
         search.current?.focus();
+      } else if ((e.key === 'Home' || e.key === '0') && !isTyping(e.target)) {
+        e.preventDefault();
+        resetRef.current();
       } else if (e.key === ' ' && !isTyping(e.target) && !(e.target instanceof HTMLButtonElement) && !(e.target instanceof HTMLAnchorElement)) {
         e.preventDefault();
         timeBar.current?.togglePlay();
@@ -209,6 +215,14 @@ export default function ExplorePage() {
     const v = c.getView();
     void c.flyTo(`altaz:${az},${Math.min(Math.max(v.mount === 'altaz' ? v.lat : 30, 15), 45)}`);
   };
+  const resetView = () => {
+    const c = ctlRef.current;
+    if (!c) return;
+    if (c.getView().mount !== 'altaz') c.setView({ mount: 'altaz', roll: 0 });
+    void c.flyTo(`altaz:${HOME_VIEW.lon},${HOME_VIEW.lat}`, { fov: HOME_VIEW.fov });
+  };
+  const resetRef = useRef(resetView);
+  resetRef.current = resetView;
   const zoom = (factor: number) => {
     const c = ctlRef.current;
     if (!c) return;
@@ -257,6 +271,7 @@ export default function ExplorePage() {
       <div className="ex-view panel" role="group" aria-label="View controls">
         <Button size="sm" icon variant="quiet" aria-label="Zoom in" title="Zoom in" onClick={() => zoom(0.6)}><Icon name="plus" size={16} /></Button>
         <Button size="sm" icon variant="quiet" aria-label="Zoom out" title="Zoom out" onClick={() => zoom(1 / 0.6)}><Icon name="minus" size={16} /></Button>
+        <Button size="sm" icon variant="quiet" aria-label="Reset view: face north" title="Reset view: face north (Home key)" onClick={resetView}><Icon name="home" size={16} /></Button>
         <span className="ex-view-sep" aria-hidden />
         {([['N', 0, 'north'], ['E', 90, 'east'], ['S', 180, 'south'], ['W', 270, 'west']] as const).map(([letter, az, word]) => (
           <Button key={letter} size="sm" icon variant="quiet" aria-label={`Face ${word}`} title={`Face ${word}`} onClick={() => face(az)}>{letter}</Button>

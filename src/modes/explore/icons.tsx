@@ -6,6 +6,7 @@ const PATHS: Record<string, string> = {
   faster: 'M12 5v14l9.5-7zM2.5 5v14L12 12z',
   stepBack: 'M6 5h2.4v14H6zM19 5v14L9.5 12z',
   stepForward: 'M15.6 5H18v14h-2.4zM5 5v14l9.5-7z',
+  home: 'M12 3 2 11.5l1.3 1.5L5 11.6V21h5.5v-6h3v6H19v-9.4l1.7 1.4L22 11.5z',
   plus: 'M11 5h2v6h6v2h-6v6h-2v-6H5v-2h6z',
   minus: 'M5 11h14v2H5z',
   close: 'M6.4 5 12 10.6 17.6 5 19 6.4 13.4 12 19 17.6 17.6 19 12 13.4 6.4 19 5 17.6 10.6 12 5 6.4z',
