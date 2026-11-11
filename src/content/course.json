@@ -1,0 +1,85 @@
+{
+  "modules": [
+    {
+      "id": "how-to-look", "number": 1, "kind": "lessons", "title": "How to look",
+      "purpose": "The practical skills every observer uses: getting your eyes ready, finding directions, and measuring the sky with your hand.",
+      "objectives": [
+        "Prepare your eyes for the dark and protect your night vision",
+        "Find north, south, east and west from the sky itself",
+        "Measure distances in the sky with your hand at arm's length",
+        "Describe any position by altitude and direction, and read star brightness in magnitudes",
+        "Judge how much light pollution hides at your site"
+      ],
+      "lessons": ["dark-adaptation", "cardinal-directions", "hand-angles", "altitude-azimuth", "reading-magnitude", "light-pollution"]
+    },
+    {
+      "id": "how-the-sky-moves", "number": 2, "kind": "lessons", "title": "How the sky moves",
+      "purpose": "Why the stars turn through the night, change with the seasons, and depend on where on Earth you stand.",
+      "objectives": [
+        "Explain the nightly rotation of the sky around the celestial pole",
+        "Tell which stars never set, which never rise, and which rise and set at your latitude",
+        "Predict how the evening sky shifts from month to month",
+        "Use the altitude of the celestial pole to work out your latitude"
+      ],
+      "lessons": ["nightly-rotation", "circumpolar-and-seasonal", "seasonal-shift", "latitude"]
+    },
+    {
+      "id": "finding-your-way", "number": 3, "kind": "starhops", "title": "Finding your way",
+      "purpose": "Star-hopping: using patterns you know to find the ones you don't. Learn the three methods, then the ten classic hops.",
+      "objectives": [
+        "Use lines, arcs and triangles between bright stars to find new ones",
+        "Perform the ten most widely taught star-hops from memory",
+        "Use a seasonal signpost as a starting point for that part of the sky"
+      ],
+      "lessons": ["star-hopping"],
+      "starhopCount": 10
+    },
+    {
+      "id": "first-constellations", "number": 4, "kind": "anchors", "title": "Your first constellations",
+      "purpose": "The fifteen brightest, most recognizable constellations visible from your location: the framework you hang everything else on.",
+      "objectives": [
+        "Find each anchor constellation in the real sky",
+        "Name its brightest stars and say when in the year it is best placed",
+        "Retell at least one story for each"
+      ]
+    },
+    {
+      "id": "season-by-season", "number": 5, "kind": "seasons", "title": "Season by season",
+      "purpose": "Every other constellation you can see from your location, grouped by the evenings when it is best placed.",
+      "objectives": [
+        "Find the remaining constellations visible from your location, starting from the anchors",
+        "Know which months each group is best seen in the evening",
+        "Recognize the stories and notable objects in each group"
+      ]
+    },
+    {
+      "id": "sun-moon-planets", "number": 6, "kind": "lessons", "title": "Sun, Moon and planets",
+      "purpose": "The bodies that move against the stars: why they follow the ecliptic, how they move, and the events they create.",
+      "objectives": [
+        "Explain the ecliptic and why the Sun, Moon and planets stay near it",
+        "Tell a planet from a star and predict when each planet is well placed",
+        "Explain retrograde motion, the Moon's phases and eclipses",
+        "Plan an evening around a meteor shower"
+      ],
+      "lessons": ["ecliptic-and-zodiac", "planets-near-ecliptic", "planet-motion", "retrograde-motion", "moon-phases", "eclipses", "meteor-showers"]
+    },
+    {
+      "id": "whats-out-there", "number": 7, "kind": "lessons", "title": "What's out there",
+      "purpose": "What the points and smudges really are: stars of every kind, nebulae, clusters, galaxies and planets up close.",
+      "objectives": [
+        "Read a star's temperature from its colour and place it in its life story",
+        "Tell the main kinds of nebula, cluster and galaxy apart",
+        "Choose good targets for your eyes, binoculars or a small telescope"
+      ],
+      "lessons": ["star-colors-and-classes", "star-life-cycle", "nebulae", "star-clusters", "galaxies", "planets-up-close"]
+    },
+    {
+      "id": "beyond-your-horizon", "number": 8, "kind": "beyond", "title": "Beyond your horizon", "optional": true,
+      "purpose": "The constellations that never rise from your location — for travel, or to complete all 88.",
+      "objectives": [
+        "Recognize the constellations of the other hemisphere",
+        "Know how far you would need to travel to see each one"
+      ]
+    }
+  ]
+}

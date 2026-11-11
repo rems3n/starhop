@@ -360,3 +360,59 @@ export const pathUnitSchema = z.object({
   asterisms: z.array(z.string()),
 });
 export type PathUnit = z.infer<typeof pathUnitSchema>;
+
+// ───────────── Star-hops: src/content/starhops.json ─────────────
+export const starhopSchema = z.object({
+  /** kebab-case, e.g. "pointers-to-polaris" */
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  /** e.g. "The Pointers to Polaris" */
+  name: z.string().min(3),
+  /** 1 = the most widely taught; the "top 10" are rank 1–10 */
+  rank: z.number().int().min(1),
+  method: z.enum(['line', 'arc', 'triangle', 'shape']),
+  /** Where you start (a star or asterism the learner can already find) and what you reach */
+  from: ref,
+  to: ref,
+  /** One sentence: what this hop finds and why it is useful */
+  summary: z.string().min(30),
+  /** Ordered instructions, each 1–2 sentences with hand-span distances ("about three fists") and [[ref|label]] links */
+  steps: z.array(z.string().min(15)).min(2).max(6),
+  /** Star refs along the hop in order, drawn as the hop's line/arc in the sky view (first = start, last = target) */
+  path: z.array(ref).min(2),
+  /** Total angular distance from start to target, degrees (computed from the catalog) */
+  distanceDeg: z.number().positive(),
+  /** Hemisphere where it is practical: N = mid-northern, S = mid-southern, both = most of the inhabited world */
+  hemisphere: z.enum(['N', 'S', 'both']),
+  /** Evening months (1–12) when the whole hop is well placed, for mid-northern observers; and for mid-southern ones (empty if not usable there) */
+  monthsNorth: z.array(z.number().int().min(1).max(12)),
+  monthsSouth: z.array(z.number().int().min(1).max(12)),
+  /** Constellations the hop passes through or reaches */
+  constellations: z.array(z.string()),
+  /** Optional extra hop from the target onward (ids of other star-hops) */
+  next: z.array(z.string()).default([]),
+});
+export type Starhop = z.infer<typeof starhopSchema>;
+
+// ───────────── Course: src/content/course.json ─────────────
+/**
+ * The course is a fixed list of modules. Lesson modules list their lessons; the constellation modules
+ * ("anchors", "seasons", "beyond") are filled in for the learner's latitude at run time (src/content/course.ts).
+ */
+export const courseModuleSchema = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  number: z.number().int().min(1),
+  title: z.string(),
+  /** One line: why this module matters */
+  purpose: z.string().min(20),
+  /** 3–5 "You will be able to…" outcomes, each starting with a verb */
+  objectives: z.array(z.string().min(10)).min(3).max(5),
+  kind: z.enum(['lessons', 'starhops', 'anchors', 'seasons', 'beyond']),
+  /** Lesson ids in order (lessons and starhops modules) */
+  lessons: z.array(z.string()).default([]),
+  /** starhops modules: how many of the top-ranked star-hops are part of the module */
+  starhopCount: z.number().int().optional(),
+  /** Optional: a module the learner may skip (e.g. "beyond your horizon") */
+  optional: z.boolean().default(false),
+});
+export const courseSchema = z.object({ modules: z.array(courseModuleSchema).min(1) });
+export type CourseModule = z.infer<typeof courseModuleSchema>;

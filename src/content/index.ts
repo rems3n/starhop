@@ -1,9 +1,11 @@
 /** Access to authored content. Constellation pages are code-split (one chunk each); everything else is small and eager. */
-import type { Asterism, ConstellationContent, Lesson, MeteorShower, MonthlyGuide, ObjectBlurb, PathUnit } from './schema';
+import type { Asterism, ConstellationContent, CourseModule, Lesson, MeteorShower, MonthlyGuide, ObjectBlurb, PathUnit, Starhop } from './schema';
 import pathJson from './path.json';
 import asterismsJson from './asterisms.json';
 import monthlyJson from './monthly.json';
 import showersJson from './showers.json';
+import starhopsJson from './starhops.json';
+import courseJson from './course.json';
 
 const lessonModules = import.meta.glob<{ default: Lesson }>('./lessons/*.json', { eager: true });
 const blurbModules = import.meta.glob<{ default: Record<string, ObjectBlurb> }>('./objects/*.json', { eager: true });
@@ -13,6 +15,11 @@ export const pathUnits = pathJson as PathUnit[];
 export const asterisms = asterismsJson as unknown as Asterism[];
 export const monthlyGuides = monthlyJson as unknown as MonthlyGuide[];
 export const showers = showersJson as unknown as MeteorShower[];
+/** Star-hop library, sorted by rank (1 = most widely taught) */
+export const starhops = (starhopsJson as unknown as Starhop[]).slice().sort((a, b) => a.rank - b.rank);
+export const starhopById = new Map(starhops.map((h) => [h.id, h]));
+/** Course modules in order. Constellation modules are resolved per location by src/content/course.ts */
+export const courseModules = (courseJson as unknown as { modules: CourseModule[] }).modules.slice().sort((a, b) => a.number - b.number);
 
 export const lessons: Lesson[] = Object.values(lessonModules)
   .map((m) => m.default)
@@ -53,4 +60,5 @@ export async function loadAllConstellationContent(): Promise<ConstellationConten
   return all.filter((c): c is ConstellationContent => !!c);
 }
 
+export type { CourseModule, Starhop, Figure, FigureImage } from './schema';
 export type { Asterism, ConstellationContent, Lesson, MeteorShower, MonthlyGuide, ObjectBlurb, PathUnit, Story, Mcq, Demo, DemoStep } from './schema';

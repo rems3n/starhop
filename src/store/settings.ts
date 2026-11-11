@@ -27,6 +27,8 @@ export const DIFFICULTY_PRESETS: Record<'easy' | 'medium' | 'hard' | 'expert', Q
 
 interface SettingsState {
   observer: Observer;
+  /** False until the learner has picked a location (first-run prompt) */
+  locationChosen: boolean;
   /** Bortle class 1–9 used in Explore and as the default in lessons */
   bortle: number;
   layers: LayerState;
@@ -44,11 +46,12 @@ export const useSettings = create<SettingsState>()(
   persist(
     (set) => ({
       observer: DEFAULT_OBSERVER,
+      locationChosen: false,
       bortle: 6,
       layers: DEFAULT_LAYERS,
       redMode: false,
       difficulty: DIFFICULTY_PRESETS.easy,
-      setObserver: (observer) => set({ observer }),
+      setObserver: (observer) => set({ observer, locationChosen: true }),
       setBortle: (bortle) => set({ bortle: Math.min(9, Math.max(1, Math.round(bortle))) }),
       setLayers: (patch) => set((s) => ({ layers: { ...s.layers, ...patch } })),
       setRedMode: (redMode) => set({ redMode }),
