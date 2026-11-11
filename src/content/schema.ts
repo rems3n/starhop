@@ -116,6 +116,7 @@ const layerPatch = z
     constellationArt: z.boolean(),
     starNames: z.boolean(),
     dsoMarkers: z.boolean(),
+    deepSky: z.boolean(),
     planets: z.boolean(),
     ecliptic: z.boolean(),
     equatorialGrid: z.boolean(),

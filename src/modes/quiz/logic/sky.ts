@@ -14,6 +14,7 @@ export function quizLayers(diff: Pick<QuizDifficulty, 'lines' | 'boundaries' | '
     constellationLines: diff.lines,
     constellationBoundaries: diff.boundaries,
     constellationArt: false,
+    deepSky: false,
     constellationNames: labels,
     starNames: labels,
     // the engine always names planets and deep-sky markers, which would give answers away (docs/requests/quiz.md)

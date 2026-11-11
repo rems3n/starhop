@@ -202,6 +202,8 @@ export interface LayerState {
   constellationArt: boolean;
   starNames: boolean;
   dsoMarkers: boolean;
+  /** When zoomed in, load and show fainter stars (to magnitude ~11) and the full deep-sky catalogue, like a telescope */
+  deepSky: boolean;
   planets: boolean;
   ecliptic: boolean;
   equatorialGrid: boolean;
@@ -222,6 +224,7 @@ export const DEFAULT_LAYERS: LayerState = {
   constellationArt: false,
   starNames: true,
   dsoMarkers: true,
+  deepSky: true,
   planets: true,
   ecliptic: false,
   equatorialGrid: false,

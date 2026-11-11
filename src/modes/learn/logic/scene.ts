@@ -13,6 +13,7 @@ export const DEMO_LAYERS: LayerState = {
   constellationLines: true,
   constellationBoundaries: false,
   constellationArt: false,
+  deepSky: false,
   constellationNames: true,
   starNames: true,
   dsoMarkers: false,
