@@ -104,7 +104,9 @@ export function HopStage({ q, data, result, answer, next }: ViewProps<HopQ> & { 
             const scale = Math.max((x1 - x0 + 40) / band.w, (y1 - y0 + 40) / band.h, 0.4);
             const c = ctrl.unproject(size.width / 2 + ((x0 + x1) / 2 - size.width / 2), size.height / 2 + ((y0 + y1) / 2 - band.cy));
             if (!c) return;
-            if (Math.abs(c.dec) > 88) {
+            // a new centre over the pole (right ascension flips) would turn the chart upside down: turn it round instead
+            const dra = Math.abs((((c.ra - v.lon) % 360) + 540) % 360 - 180);
+            if (Math.abs(c.dec) > 88 || (dra > 90 && Math.abs(c.dec) > 30)) {
               ctrl.setView({ roll: (v.roll + 180) % 360 });
             } else {
               ctrl.setView({ lon: c.ra, lat: c.dec, fov: Math.max(15, Math.min(150, v.fov * scale)) });

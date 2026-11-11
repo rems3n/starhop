@@ -20,36 +20,141 @@
           {
             "caption": "Taurus holds the two nearest bright open clusters: the tight knot of the Pleiades and the wide V of the Hyades. Aldebaran only appears to be part of the V.",
             "time": "month:1 21:00",
-            "view": { "target": "con:Tau", "fov": 40 },
-            "layers": { "dsoMarkers": true },
+            "view": {
+              "target": "con:Tau",
+              "fov": 40
+            },
+            "layers": {
+              "dsoMarkers": true
+            },
             "highlights": [
-              { "type": "object", "ref": "dso:M45", "label": "Pleiades (M45)" },
-              { "type": "object", "ref": "dso:C41", "label": "Hyades" },
-              { "type": "object", "ref": "star:Aldebaran", "label": "Aldebaran — foreground star" }
+              {
+                "type": "object",
+                "ref": "dso:M45",
+                "label": "Pleiades (M45)"
+              },
+              {
+                "type": "object",
+                "ref": "dso:C41",
+                "label": "Hyades"
+              },
+              {
+                "type": "object",
+                "ref": "star:Aldebaran",
+                "label": "Aldebaran — foreground star"
+              }
             ]
           },
           {
             "caption": "The Double Cluster lies halfway between the W of Cassiopeia and the top of Perseus: two open clusters side by side, about 7,500 light-years away.",
             "time": "month:11 21:00",
-            "view": { "target": "dso:C14", "fov": 40 },
-            "layers": { "dsoMarkers": true },
+            "view": {
+              "target": "dso:C14",
+              "fov": 40
+            },
+            "layers": {
+              "dsoMarkers": true
+            },
             "highlights": [
-              { "type": "object", "ref": "dso:C14", "label": "Double Cluster" },
-              { "type": "constellation", "id": "Cas", "lines": true, "label": true }
+              {
+                "type": "object",
+                "ref": "dso:C14",
+                "label": "Double Cluster"
+              },
+              {
+                "type": "constellation",
+                "id": "Cas",
+                "lines": true,
+                "label": true
+              }
             ]
           },
           {
             "caption": "The Beehive sits in the middle of dim Cancer, between Pollux and Regulus. The circle shows a typical 5° binocular field; the cluster fits comfortably inside.",
             "time": "month:3 21:00",
-            "view": { "target": "dso:M44", "fov": 50 },
-            "layers": { "dsoMarkers": true },
+            "view": {
+              "target": "dso:M44",
+              "fov": 50
+            },
+            "layers": {
+              "dsoMarkers": true
+            },
             "highlights": [
-              { "type": "object", "ref": "dso:M44", "label": "Beehive (M44)" },
-              { "type": "circle", "center": "dso:M44", "radiusDeg": 2.5, "label": "binocular field" },
-              { "type": "polyline", "points": ["star:Pollux", "star:Regulus"], "dashed": true }
+              {
+                "type": "object",
+                "ref": "dso:M44",
+                "label": "Beehive (M44)"
+              },
+              {
+                "type": "circle",
+                "center": "dso:M44",
+                "radiusDeg": 2.5,
+                "label": "binocular field"
+              },
+              {
+                "type": "polyline",
+                "points": [
+                  "star:Pollux",
+                  "star:Regulus"
+                ],
+                "dashed": true
+              }
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "file": "img/M45-2.jpg",
+              "alt": "The Pleiades through a telephoto lens: a tight group of bright blue-white stars in faint blue haze",
+              "label": "Pleiades",
+              "kind": "photograph",
+              "kindNote": "Luminance camera plus colour (RGB) camera",
+              "credit": "Kevin M. Gill",
+              "license": "CC BY 2.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pleiades_-_February_2022_(51908673789).png"
+            },
+            {
+              "file": "img/M44-1.jpg",
+              "alt": "The Beehive Cluster: a loose scattering of dozens of white and yellowish stars",
+              "label": "Beehive",
+              "kind": "photograph",
+              "kindNote": "Broadband filter and colour camera",
+              "credit": "Chuck Ayoub",
+              "license": "CC0 1.0",
+              "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:M44-Star-Cluster.png"
+            },
+            {
+              "file": "img/NGC869-1.jpg",
+              "alt": "The Double Cluster in Perseus: two rich clumps of stars side by side in a star-filled field",
+              "label": "Double Cluster",
+              "kind": "photograph",
+              "kindNote": "Colour processing not stated at source",
+              "credit": "ESO/S. Brunier",
+              "license": "CC BY 4.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Double_Cluster_in_Perseus.jpg"
+            }
+          ],
+          "caption": "Open clusters are loose families of stars born together. Each looks different because each is a different age: the Pleiades still has hot blue stars, the older Beehive has lost them, and the Double Cluster is a pair of very young clusters."
+        },
+        {
+          "type": "diagram",
+          "id": "cluster-aging",
+          "params": {
+            "age": 10000000.0
+          },
+          "caption": "All the stars in a cluster are the same age, so a cluster ages as a whole. Slide the age: the heaviest, bluest stars die first, so a cluster’s light turns from blue-white to yellow over billions of years. Jump to real clusters to see where they stand."
+        }
+      ],
+      "thinkAbout": {
+        "question": "The Pleiades contains bright blue B stars, but no O stars at all. What does that tell you about its age?",
+        "answer": "It is older than an O star’s whole lifetime of a few million years, yet younger than a bright B star’s lifetime of a few hundred million. Any O stars it was born with have already died; the clock that tells a cluster’s age is which of its heaviest stars are still shining."
       },
       "tryIt": "Count the Pleiades. Most people see six stars by eye; from the city you may get four or five. Then use binoculars: dozens appear, and the whole cluster fits in one view."
     },
@@ -66,36 +171,143 @@
           {
             "caption": "M13 lies on the western side of the Keystone of Hercules, one third of the way from Eta down to Zeta Herculis. In binoculars it is a small round fuzzy 'star'.",
             "time": "month:7 22:00",
-            "view": { "target": "dso:M13", "fov": 35 },
-            "layers": { "dsoMarkers": true },
+            "view": {
+              "target": "dso:M13",
+              "fov": 35
+            },
+            "layers": {
+              "dsoMarkers": true
+            },
             "highlights": [
-              { "type": "object", "ref": "dso:M13", "label": "M13 — globular" },
-              { "type": "polyline", "points": ["star:η Her", "star:ζ Her"], "dashed": true }
+              {
+                "type": "object",
+                "ref": "dso:M13",
+                "label": "M13 — globular"
+              },
+              {
+                "type": "polyline",
+                "points": [
+                  "star:η Her",
+                  "star:ζ Her"
+                ],
+                "dashed": true
+              }
             ]
           },
           {
             "caption": "Low in the summer south, toward the center of the galaxy, globular clusters crowd together. M22 is just up and to the left of the Teapot's lid; M4 sits beside Antares.",
             "time": "month:8 22:00",
-            "view": { "az": 190, "alt": 22, "fov": 60 },
-            "layers": { "dsoMarkers": true },
+            "view": {
+              "az": 190,
+              "alt": 22,
+              "fov": 60
+            },
+            "layers": {
+              "dsoMarkers": true
+            },
             "highlights": [
-              { "type": "object", "ref": "dso:M22", "label": "M22 — globular" },
-              { "type": "object", "ref": "dso:M4", "label": "M4 — globular" },
-              { "type": "object", "ref": "dso:M7", "label": "M7 — open" }
+              {
+                "type": "object",
+                "ref": "dso:M22",
+                "label": "M22 — globular"
+              },
+              {
+                "type": "object",
+                "ref": "dso:M4",
+                "label": "M4 — globular"
+              },
+              {
+                "type": "object",
+                "ref": "dso:M7",
+                "label": "M7 — open"
+              }
             ]
           },
           {
             "caption": "From Sydney, Omega Centauri rides high: the largest globular cluster of the Milky Way, with several million stars.",
-            "observer": { "name": "Sydney, Australia", "lat": -33.87, "lon": 151.21, "tz": "Australia/Sydney" },
+            "observer": {
+              "name": "Sydney, Australia",
+              "lat": -33.87,
+              "lon": 151.21,
+              "tz": "Australia/Sydney"
+            },
             "time": "month:5 21:00",
-            "view": { "target": "dso:C80", "fov": 50 },
-            "layers": { "dsoMarkers": true },
+            "view": {
+              "target": "dso:C80",
+              "fov": 50
+            },
+            "layers": {
+              "dsoMarkers": true
+            },
             "highlights": [
-              { "type": "object", "ref": "dso:C80", "label": "Omega Centauri" },
-              { "type": "constellation", "id": "Cru", "lines": true, "label": true }
+              {
+                "type": "object",
+                "ref": "dso:C80",
+                "label": "Omega Centauri"
+              },
+              {
+                "type": "constellation",
+                "id": "Cru",
+                "lines": true,
+                "label": true
+              }
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "cluster-compare",
+          "params": {
+            "view": "close"
+          },
+          "caption": "Open and globular clusters differ in every way: tens or hundreds versus hundreds of thousands of stars, young versus ancient, blue-white versus yellow. Switch to In the galaxy: they live in different places, too."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "file": "img/M13-1.jpg",
+              "alt": "The Great Hercules Cluster M13: a ball of countless yellowish stars merging into a bright core",
+              "label": "M13 in Hercules",
+              "kind": "photograph",
+              "kindNote": "Broadband filter and colour camera",
+              "credit": "Chuck Ayoub",
+              "license": "CC0 1.0",
+              "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:M13-Globular-Cluster.png"
+            },
+            {
+              "file": "img/NGC5139-1.jpg",
+              "alt": "Omega Centauri: a huge globular cluster of millions of yellowish stars filling the frame",
+              "label": "Omega Centauri",
+              "kind": "photograph",
+              "kindNote": "Colour camera image",
+              "credit": "Chuck Ayoub",
+              "license": "CC0 1.0",
+              "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Omega_Centauri_Stars.png"
+            }
+          ],
+          "caption": "Globular clusters are balls of hundreds of thousands to millions of stars, so crowded at the centre that they merge into one glow. M13 is the finest for northern observers; Omega Centauri, the largest in our galaxy, is best seen from the southern hemisphere."
+        }
+      ],
+      "misconception": {
+        "myth": "A globular cluster is a young cluster that is still collapsing into a tight ball.",
+        "fact": "Globular clusters are among the oldest things in the galaxy, around 11 to 13 billion years old. Their stars are held in a tight ball by their combined gravity, and have been for most of the universe’s history; it is the loose open clusters that are young."
+      },
+      "check": {
+        "id": "check-globular-colour",
+        "prompt": "Why do globular clusters look yellowish while young open clusters look blue-white?",
+        "choices": [
+          "Their hot blue stars died billions of years ago",
+          "Dust in the halo makes them redder",
+          "They are moving away from us very fast",
+          "Their stars are made of different gases"
+        ],
+        "answerIndex": 0,
+        "explanation": "Heavy blue stars live only millions of years. In a cluster 12 billion years old, only stars about as heavy as the Sun or lighter are left on the main sequence, plus orange giants, so the light is yellowish."
       }
     },
     {
@@ -110,21 +322,76 @@
           {
             "caption": "The five middle stars of the Big Dipper were born together and still move together. Dubhe and Alkaid, at the two ends, are not part of the group.",
             "time": "month:4 21:30",
-            "view": { "target": "asterism:big-dipper", "fov": 50 },
-            "layers": { "constellationNames": false },
+            "view": {
+              "target": "asterism:big-dipper",
+              "fov": 50
+            },
+            "layers": {
+              "constellationNames": false
+            },
             "highlights": [
-              { "type": "polyline", "points": ["star:Merak", "star:Phecda", "star:Megrez", "star:Alioth", "star:Mizar"], "label": "Ursa Major moving group" },
-              { "type": "object", "ref": "star:Dubhe", "label": "Dubhe — not a member" },
-              { "type": "object", "ref": "star:Alkaid", "label": "Alkaid — not a member" }
+              {
+                "type": "polyline",
+                "points": [
+                  "star:Merak",
+                  "star:Phecda",
+                  "star:Megrez",
+                  "star:Alioth",
+                  "star:Mizar"
+                ],
+                "label": "Ursa Major moving group"
+              },
+              {
+                "type": "object",
+                "ref": "star:Dubhe",
+                "label": "Dubhe — not a member"
+              },
+              {
+                "type": "object",
+                "ref": "star:Alkaid",
+                "label": "Alkaid — not a member"
+              }
             ]
           }
         ]
+      },
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "dipper-moving-group",
+          "params": {
+            "years": 0
+          },
+          "caption": "Five stars of the Big Dipper travel through space together; the two end stars are unrelated and head the other way. Run time forward or back 100,000 years and the familiar shape bends out of recognition."
+        }
+      ],
+      "check": {
+        "id": "check-dipper-group",
+        "prompt": "Which Big Dipper stars do not belong to the Ursa Major moving group?",
+        "choices": [
+          "Dubhe and Alkaid, the two end stars",
+          "Merak and Phecda, the bottom of the bowl",
+          "Mizar and Alioth, in the handle",
+          "None: all seven travel together"
+        ],
+        "answerIndex": 0,
+        "explanation": "The middle five stars share the same motion through space; Dubhe at the end of the bowl and Alkaid at the end of the handle are moving another way."
       }
     },
     {
       "heading": "Why clusters are the city observer's friend",
       "body": [
         "Nebulae and galaxies are spread-out glows that city skyglow washes away. A cluster is made of stars, and points of light punch through light pollution far better. The Pleiades, the Hyades and the Beehive are large and bright enough that binoculars beat a telescope on them, even from Brooklyn. Globulars need more help: M13 is a fuzzy dot in binoculars, and it takes a telescope of about four inches or more to begin sprinkling it with individual stars."
+      ],
+      "figures": [
+        {
+          "type": "diagram",
+          "id": "cluster-compare",
+          "params": {
+            "view": "galaxy"
+          },
+          "caption": "Where to look: open clusters lie along the Milky Way band, because they live in the galaxy’s disc; globular clusters crowd towards the galaxy’s centre in Sagittarius, Scorpius and Ophiuchus, because they swarm around it in the halo."
+        }
       ],
       "tryIt": "Sweep binoculars slowly along the Milky Way through Cassiopeia and Perseus on an autumn evening. Every little knot of stars you stumble on is an open cluster."
     }
@@ -136,20 +403,57 @@
     "Clusters survive city skies better than nebulae and galaxies; many are at their best in binoculars."
   ],
   "examples": [
-    { "ref": "dso:M45", "label": "Pleiades (M45)", "note": "Young open cluster. Naked eye even from the city; best in binoculars." },
-    { "ref": "dso:C41", "label": "Hyades", "note": "The nearest open cluster, the V of Taurus. Naked eye; binoculars show its many pairs." },
-    { "ref": "dso:M44", "label": "Beehive (M44)", "note": "Open cluster in Cancer. A misty patch to the naked eye in a dark sky; a swarm of stars in binoculars." },
-    { "ref": "dso:C14", "label": "Double Cluster", "note": "Two open clusters side by side in Perseus. A hazy spot to the naked eye in a dark sky; lovely in binoculars or a small telescope at low power." },
-    { "ref": "dso:M7", "label": "M7 (Ptolemy's Cluster)", "note": "Open cluster by the Scorpion's tail. Naked eye in a dark sky but very low from New York; binoculars." },
-    { "ref": "dso:M13", "label": "M13 (Hercules Cluster)", "note": "The north's showpiece globular cluster. A fuzzy star in binoculars; a small telescope starts to resolve its edges." },
-    { "ref": "dso:M22", "label": "M22", "note": "Bright globular cluster in Sagittarius. Binoculars; low in the south from New York." },
-    { "ref": "dso:C80", "label": "Omega Centauri", "note": "The largest globular cluster of the Milky Way. Naked eye from the southern hemisphere; it barely clears the horizon at 40°N." }
+    {
+      "ref": "dso:M45",
+      "label": "Pleiades (M45)",
+      "note": "Young open cluster. Naked eye even from the city; best in binoculars."
+    },
+    {
+      "ref": "dso:C41",
+      "label": "Hyades",
+      "note": "The nearest open cluster, the V of Taurus. Naked eye; binoculars show its many pairs."
+    },
+    {
+      "ref": "dso:M44",
+      "label": "Beehive (M44)",
+      "note": "Open cluster in Cancer. A misty patch to the naked eye in a dark sky; a swarm of stars in binoculars."
+    },
+    {
+      "ref": "dso:C14",
+      "label": "Double Cluster",
+      "note": "Two open clusters side by side in Perseus. A hazy spot to the naked eye in a dark sky; lovely in binoculars or a small telescope at low power."
+    },
+    {
+      "ref": "dso:M7",
+      "label": "M7 (Ptolemy's Cluster)",
+      "note": "Open cluster by the Scorpion's tail. Naked eye in a dark sky but very low from New York; binoculars."
+    },
+    {
+      "ref": "dso:M13",
+      "label": "M13 (Hercules Cluster)",
+      "note": "The north's showpiece globular cluster. A fuzzy star in binoculars; a small telescope starts to resolve its edges."
+    },
+    {
+      "ref": "dso:M22",
+      "label": "M22",
+      "note": "Bright globular cluster in Sagittarius. Binoculars; low in the south from New York."
+    },
+    {
+      "ref": "dso:C80",
+      "label": "Omega Centauri",
+      "note": "The largest globular cluster of the Milky Way. Naked eye from the southern hemisphere; it barely clears the horizon at 40°N."
+    }
   ],
   "questions": [
     {
       "id": "q1",
       "prompt": "In a telescope you find a perfectly round ball of countless faint stars, blurring into a solid glow at the center. What is it most likely to be?",
-      "choices": ["An open cluster", "A globular cluster", "A planetary nebula", "A moving group"],
+      "choices": [
+        "An open cluster",
+        "A globular cluster",
+        "A planetary nebula",
+        "A moving group"
+      ],
       "answerIndex": 1,
       "explanation": "The round shape, huge star count and dense core mark a globular cluster. Open clusters are loose and irregular."
     },

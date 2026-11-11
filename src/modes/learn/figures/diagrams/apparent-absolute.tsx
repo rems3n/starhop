@@ -4,7 +4,7 @@
  * distance from the catalog; the Sun M = 4.83 at 1 AU) and slides it nearer or farther on a log distance scale,
  * reading how bright it would look and whether a city or dark sky would show it.
  */
-import { useState } from 'react';
+import { useId, useState } from 'react';
 import { C, ChoiceControl, Controls, Label, RangeControl, Readout, Svg, type DiagramMeta, type DiagramProps } from '../kit';
 
 export const meta: DiagramMeta = {
@@ -33,7 +33,7 @@ const DX0 = 50, DX1 = 670, DY = 300;
 const dx = (ly: number) => DX0 + ((Math.log10(ly) - L0) / (L1 - L0)) * (DX1 - DX0);
 // magnitude axis (vertical): −27 at top … +12 at bottom
 const MY0 = 46, MY1 = 236;
-const my = (m: number) => MY0 + ((Math.max(-27, Math.min(12, m)) + 27) / 39) * (MY1 - MY0);
+const my = (m: number) => MY0 + ((m + 27) / 39) * (MY1 - MY0);
 
 function fmtDist(ly: number) {
   if (ly < 0.001) return `${(ly / AU_IN_LY).toFixed(ly / AU_IN_LY < 10 ? 1 : 0)} AU (Earth–Sun distances)`;
@@ -44,6 +44,7 @@ const fmtMag = (m: number) => `${m < 0 ? '−' : ''}${Math.abs(m).toFixed(1)}`;
 
 export default function ApparentAbsolute({ params }: DiagramProps) {
   const [star, setStar] = useState<StarId>(typeof params?.star === 'string' && params.star in STARS ? (params.star as StarId) : 'Sirius');
+  const clip = useId().replace(/:/g, '');
   const [M, real] = STARS[star];
   const [logd, setLogd] = useState(Math.log10(real));
   const ly = Math.pow(10, logd);
@@ -82,8 +83,14 @@ export default function ApparentAbsolute({ params }: DiagramProps) {
         <Label x={DX1} y={my(6.5) + 15} anchor="end" size="s" color={C.dim}>
           dark-sky limit ≈ 6.5
         </Label>
+        <defs>
+          <clipPath id={clip}>
+            <rect x={DX0} y={MY0 - 6} width={DX1 - DX0} height={MY1 - MY0 + 12} />
+          </clipPath>
+        </defs>
         {/* apparent magnitude curve for this star */}
         <path
+          clipPath={`url(#${clip})`}
           d={`M ${Array.from({ length: 91 }, (_, i) => {
             const L = L0 + (i / 90) * (L1 - L0);
             return `${dx(Math.pow(10, L)).toFixed(1)},${my(apparent(M, Math.pow(10, L))).toFixed(1)}`;

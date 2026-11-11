@@ -167,3 +167,30 @@ const hFmt = (h: number) => {
   return mm === 60 ? `${hh + 1} h` : `${hh} h ${String(mm).padStart(2, '0')} min`;
 };
 export const fmtHours = hFmt;
+
+export const MOON_PHASES = ['New Moon', 'Waxing crescent', 'First quarter', 'Waxing gibbous', 'Full Moon', 'Waning gibbous', 'Last quarter', 'Waning crescent'];
+/** Phase name from the Moon's elongation east of the Sun (0 = new, 180 = full). */
+export function phaseName(elong: number) {
+  return MOON_PHASES[Math.round((((elong % 360) + 360) % 360) / 45) % 8];
+}
+
+/** Times (as [start, end] Dates) when a body is above the horizon between t0 and t1. */
+export function upIntervals(body: A.Body, o: Observer, t0: Date, t1: Date): [Date, Date][] {
+  const obs = astroObs(o);
+  const eq = A.Equator(body, t0, obs, true, true);
+  let up = A.Horizon(t0, obs, eq.ra, eq.dec, 'normal').altitude > (body === A.Body.Sun ? -0.83 : 0.125);
+  let t = t0;
+  let since = t0; // when the current state began
+  const out: [Date, Date][] = [];
+  for (let guard = 0; guard < 200 && t < t1; guard++) {
+    const span = (t1.getTime() - t.getTime()) / 86400000 + 1;
+    const ev = A.SearchRiseSet(body, obs, up ? -1 : +1, t, span);
+    const next = ev ? ev.date : null;
+    if (up) out.push([since, next && next < t1 ? next : t1]);
+    if (!next || next >= t1) break;
+    since = next;
+    t = new Date(next.getTime() + 60000);
+    up = !up;
+  }
+  return out;
+}

@@ -282,7 +282,7 @@ export default function StarHop({ params }: DiagramProps) {
           hop.fists.map(([a, b, total]) => {
             const [x, y] = P(b);
             return (
-              <Label key={b} x={x + 14} y={y + 20} size="s" color={C.amber} weight={600}>
+              <Label key={b} x={x > W - 170 ? x - 14 : x + 14} y={y + 22} anchor={x > W - 170 ? 'end' : 'start'} size="s" color={C.amber} weight={600}>
                 {`≈${Math.round(total / 10)} fists (${total.toFixed(0)}°)`}
               </Label>
             );

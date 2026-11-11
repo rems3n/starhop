@@ -35,6 +35,7 @@ const SHOTS = [
   ['first-run-phone', '/sky', { chosen: false, phone: true, wait: 2500 }],
   ['sky-phone', '/sky', { phone: true, wait: 3000 }],
   ['sky', '/sky', { wait: 3000 }],
+  ['practice-find-phone', '/practice/find', { phone: true, wait: 4000 }],
 ];
 const REDIRECTS = [
   ['/explore?target=con:Ori&t=2026-01-01T03:00:00.000Z', '/sky?target=con:Ori&t=2026-01-01T03:00:00.000Z'],

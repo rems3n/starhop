@@ -58,6 +58,12 @@ export interface ResolvedCourse {
 export const ANCHOR_COUNT = 15;
 export const ANCHOR_MIN_CULMINATION = 25;
 export const ANCHOR_MIN_EVENING_MONTHS = 2;
+/**
+ * A low but famous figure still qualifies when its centre gets at least 12° up and its brightest star at least
+ * 20° (e.g. Scorpius from 40°N: centre ~16°, Antares ~23°), so the classic low southern summer figures stay in.
+ */
+export const ANCHOR_LOW_CENTRE_MIN = 12;
+export const ANCHOR_LOW_BRIGHTEST_MIN = 20;
 export const RISES_MIN_ALT = 15;
 export const COMPACT_RADIUS_DEG = 10;
 export const COMPACT_MAG = 3.0;
@@ -117,6 +123,8 @@ export interface ConstellationPlacement {
   id: string;
   prominence: number;
   culmination: number;
+  /** Culmination altitude of the constellation's brightest star */
+  brightestCulmination: number;
   risesUsefully: boolean;
   eveningMonths: number;
   bestMonths: number[];
@@ -141,7 +149,9 @@ export function placeConstellations(observer: Observer, catalog: Catalog): Const
       const m = centreMonth(best);
       group = circumpolar ? CIRCUMPOLAR_GROUP.id : SEASON_GROUPS.find((g) => g.months.includes(m))!.id;
     }
-    return { id: con.id, prominence: prominence(con, catalog), culmination: culm, risesUsefully: rises, eveningMonths, bestMonths: best, circumpolar, group };
+    const brightest = catalog.starById.get(con.brightest);
+    const brightestCulm = brightest ? culmination(brightest.dec, observer.lat) : culm;
+    return { id: con.id, prominence: prominence(con, catalog), culmination: culm, brightestCulmination: brightestCulm, risesUsefully: rises, eveningMonths, bestMonths: best, circumpolar, group };
   });
 }
 
@@ -172,7 +182,7 @@ export function resolveCourse(observer: Observer, catalog: Catalog): ResolvedCou
   if (hit) return hit;
   const placed = placeConstellations(observer, catalog);
   const anchors = placed
-    .filter((p) => p.risesUsefully && p.culmination >= ANCHOR_MIN_CULMINATION && p.eveningMonths >= ANCHOR_MIN_EVENING_MONTHS)
+    .filter((p) => p.risesUsefully && p.eveningMonths >= ANCHOR_MIN_EVENING_MONTHS && (p.culmination >= ANCHOR_MIN_CULMINATION || (p.culmination >= ANCHOR_LOW_CENTRE_MIN && p.brightestCulmination >= ANCHOR_LOW_BRIGHTEST_MIN)))
     .sort((a, b) => b.prominence - a.prominence)
     .slice(0, ANCHOR_COUNT);
   const anchorIds = new Set(anchors.map((a) => a.id));

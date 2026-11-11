@@ -89,8 +89,8 @@ export default function MagnitudeRuler({ params }: DiagramProps) {
         <line x1={tx(6.5)} y1={TY + 10} x2={zx(ZMAX)} y2={ZY - 60} stroke={C.line} strokeDasharray="4 4" />
 
         {/* zoomed ruler */}
-        <rect x={zx(limit)} y={ZY - 56} width={zx(ZMAX) - zx(limit)} height={120} fill={C.bg} opacity={0.9} />
-        <rect x={zx(limit)} y={ZY - 56} width={zx(ZMAX) - zx(limit)} height={120} fill={C.bad} opacity={0.08} />
+        <rect x={zx(limit)} y={ZY - 56} width={zx(ZMAX) - zx(limit)} height={112} fill={C.bg} opacity={0.9} />
+        <rect x={zx(limit)} y={ZY - 56} width={zx(ZMAX) - zx(limit)} height={112} fill={C.bad} opacity={0.08} />
         <line x1={ZX0} x2={ZX1} y1={ZY} y2={ZY} stroke={C.lineStrong} strokeWidth={2} />
         {Array.from({ length: ZMAX - ZMIN + 1 }, (_, i) => ZMIN + i).map((m) => (
           <g key={m}>
@@ -109,11 +109,11 @@ export default function MagnitudeRuler({ params }: DiagramProps) {
           </g>
         ))}
         {/* limit marker */}
-        <line x1={zx(limit)} x2={zx(limit)} y1={ZY - 58} y2={ZY + 64} stroke={C.amber} strokeWidth={2} />
+        <line x1={zx(limit)} x2={zx(limit)} y1={ZY - 58} y2={ZY + 58} stroke={C.amber} strokeWidth={2} />
         <Label x={zx(limit) - 6} y={ZY - 40} anchor="end" color={C.amber} weight={700}>
           {`your limit ${limit.toFixed(1)}`}
         </Label>
-        <Label x={Math.min(zx(limit) + 8, ZX1 - 4)} y={ZY + 60} anchor={zx(limit) > ZX1 - 120 ? 'end' : 'start'} size="s" color={C.dim}>
+        <Label x={Math.min(zx(limit) + 8, ZX1 - 4)} y={ZY + 52} anchor={zx(limit) > ZX1 - 120 ? 'end' : 'start'} size="s" color={C.dim}>
           too faint to see
         </Label>
         {/* common limits */}
@@ -123,8 +123,8 @@ export default function MagnitudeRuler({ params }: DiagramProps) {
           [6.5, 'dark site'],
         ].map(([m, t]) => (
           <g key={t as string}>
-            <line x1={zx(m as number)} x2={zx(m as number)} y1={ZY + 70} y2={ZY + 80} stroke={C.dim} />
-            <Label x={zx(m as number)} y={ZY + 96} anchor="middle" size="s" color={C.dim}>
+            <line x1={zx(m as number)} x2={zx(m as number)} y1={ZY + 82} y2={ZY + 92} stroke={C.dim} />
+            <Label x={zx(m as number)} y={ZY + 108} anchor="middle" size="s" color={C.dim}>
               {t as string}
             </Label>
           </g>

@@ -30,7 +30,7 @@ export function localDate(y: number, m: number, d: number, h: number, tz: string
 }
 /** +1 for the northern hemisphere (and the equator), −1 for the southern. */
 export const hemi = (lat: number) => (lat < 0 ? -1 : 1);
-/** Short place name from settings ("Brooklyn, NY" → "Brooklyn, NY"; empty → "your location"). */
+/** Place name from settings, or "your location" when it is empty. */
 export const placeName = (o: Observer) => o.name?.trim() || 'your location';
 
 const D = Math.PI / 180;

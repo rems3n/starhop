@@ -32,13 +32,13 @@ const RA0 = 240, DEC0 = 81;
 const CEN = vec(RA0, DEC0);
 const E: V3 = [-Math.sin(rad(RA0)), Math.cos(rad(RA0)), 0];
 const N: V3 = [-Math.sin(rad(DEC0)) * Math.cos(rad(RA0)), -Math.sin(rad(DEC0)) * Math.sin(rad(RA0)), Math.cos(rad(DEC0))];
-const SC = 1150;
+const SC = 1380;
 function project(ra: number, dec: number): [number, number] {
   const p = vec(ra, dec);
   const k = 2 / (1 + dot(p, CEN));
   // rotate the chart so the Dipper lies across the frame (90° turn, stated in the figure)
   const x = -k * dot(p, E), y = -k * dot(p, N);
-  return [360 + SC * y, 190 - SC * x];
+  return [410 + SC * y, 200 - SC * x];
 }
 
 /** How many Little Dipper stars you count → rough limiting magnitude (matches the lesson's rule of thumb). */
@@ -107,7 +107,7 @@ export default function LittleDipperGauge({ params }: DiagramProps) {
         <RangeControl label="Sky" value={bortle} min={1} max={9} step={1} onChange={setBortle} format={(v) => `Bortle ${v}`} />
       </Controls>
       <Readout>
-        {`Under a ${BORTLE_LABEL[bortle - 1].toLowerCase()} (limit ${limit.toFixed(1)}) you would count ${seen.length} of the seven stars. If that is what you see outside, it means ${verdict(seen.length)}.`}
+        {`Under ${/^[aeiou]/i.test(BORTLE_LABEL[bortle - 1]) ? 'an' : 'a'} ${BORTLE_LABEL[bortle - 1].toLowerCase()} (limit ${limit.toFixed(1)}) you would count ${seen.length} of the seven stars. If that is what you see outside, it means ${verdict(seen.length)}.`}
         {lat < 0 ? ' The Little Dipper never rises from your latitude; the same test works on any pattern whose star magnitudes you know.' : ''}
       </Readout>
     </div>
