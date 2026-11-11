@@ -10,7 +10,7 @@
       "heading": "Inside track: Mercury and Venus",
       "body": [
         "After this lesson you will be able to say when and where to look for each planet from one fact about it: where it is in its orbit relative to the Sun and Earth.",
-        "Mercury and Venus orbit closer to the Sun than we do. Looking in from outside, we see them swing from one side of the Sun to the other and back. They can never be opposite the Sun in our sky, so from Brooklyn they are never up in the middle of the night.",
+        "Mercury and Venus orbit closer to the Sun than we do. Looking in from outside, we see them swing from one side of the Sun to the other and back. They can never be opposite the Sun in our sky, so from anywhere but the polar regions they are never up in the middle of the night.",
         "When one of them is east of the Sun it sets after the Sun and shows in the western sky at dusk: an evening star. When it is west of the Sun it rises first and shows in the east before dawn: a morning star. The widest swing is called greatest elongation. For Venus that is about 46°, which keeps it up for three hours or more after sunset. For Mercury it is between 18° and 28°, never clear of twilight for long. In between, each planet passes behind the Sun or between us and the Sun and is lost in its glare.",
         "Venus takes about 19 months to go through the whole cycle, with roughly eight months as an evening star and eight as a morning star. Mercury does it in under four months, so it has several short appearances a year."
       ],
@@ -22,7 +22,7 @@
         ],
         "steps": [
           {
-            "caption": "March 22, 2028, 7:45 pm, looking west. Venus is at greatest elongation as an evening star, 46° from the Sun, which set half an hour ago. Step forward a month at a time and watch Venus sink back toward the Sun by June.",
+            "caption": "March 22, 2028, 7:45 pm, looking west from mid-northern latitudes. Venus is at greatest elongation as an evening star, 46° from the Sun, which set half an hour ago. Step forward a month at a time and watch Venus sink back toward the Sun by June.",
             "time": "2028-03-22 19:45",
             "view": {
               "az": 265,
@@ -43,10 +43,16 @@
                 "from": "body:Sun",
                 "to": "body:Venus"
               }
-            ]
+            ],
+            "observer": {
+              "name": "Mid-northern latitudes (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
           },
           {
-            "caption": "January 3, 2027, 6:15 am, looking southeast. Here Venus is at greatest elongation on the other side: 47° west of the Sun, rising more than three hours before it as the morning star.",
+            "caption": "January 3, 2027, 6:15 am, looking southeast from mid-northern latitudes. Here Venus is at greatest elongation on the other side: 47° west of the Sun, rising more than three hours before it as the morning star.",
             "time": "2027-01-03 06:15",
             "view": {
               "az": 140,
@@ -67,7 +73,13 @@
                 "from": "body:Sun",
                 "to": "body:Venus"
               }
-            ]
+            ],
+            "observer": {
+              "name": "Mid-northern latitudes (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
           }
         ]
       },
@@ -92,7 +104,7 @@
         "choices": [
           "In the east before sunrise",
           "In the west after sunset",
-          "High in the south at midnight",
+          "High in the sky at midnight",
           "It cannot be seen until it moves east of the Sun"
         ],
         "answerIndex": 0,
@@ -114,7 +126,7 @@
         ],
         "steps": [
           {
-            "caption": "February 19, 2027, 6:30 pm, looking east. The Sun has just set behind you and Mars is coming up directly opposite it, with Jupiter above. The nearly full Moon happens to be right beside them tonight; a full Moon is at opposition too.",
+            "caption": "February 19, 2027, 6:30 pm, looking east from mid-northern latitudes. The Sun has just set behind you and Mars is coming up directly opposite it, with Jupiter above. The nearly full Moon happens to be right beside them tonight; a full Moon is at opposition too.",
             "time": "2027-02-19 18:30",
             "view": {
               "az": 85,
@@ -140,10 +152,16 @@
                 "ref": "star:Regulus",
                 "label": "Regulus"
               }
-            ]
+            ],
+            "observer": {
+              "name": "Mid-northern latitudes (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
           },
           {
-            "caption": "A quarter past midnight. Mars is due south and at its highest, 65° up, at the hour when the Sun is farthest below your feet.",
+            "caption": "A quarter past midnight. Mars is due south (due north, from the southern hemisphere) and at its highest, 64° up, at the hour when the Sun is farthest below your feet.",
             "time": "2027-02-20 00:15",
             "view": {
               "az": 180,
@@ -164,7 +182,13 @@
                 "ref": "body:Jupiter",
                 "label": "Jupiter"
               }
-            ]
+            ],
+            "observer": {
+              "name": "Mid-northern latitudes (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
           },
           {
             "caption": "6 am, looking west. Mars is going down as the eastern sky brightens. It has been up for the whole night.",
@@ -183,7 +207,13 @@
                 "ref": "body:Mars",
                 "label": "Mars"
               }
-            ]
+            ],
+            "observer": {
+              "name": "Mid-northern latitudes (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
           },
           {
             "caption": "The opposite case: Saturn at conjunction, midday on April 7, 2027, with the blue sky removed. Saturn is 2° from the Sun and cannot be seen at all for several weeks around this date.",
@@ -271,7 +301,7 @@
   "questions": [
     {
       "id": "pm-q1",
-      "prompt": "Why is Venus never seen high in the sky at midnight from Brooklyn?",
+      "prompt": "Why is Venus never seen high in the sky at midnight from mid-latitudes?",
       "choices": [
         "It is too faint by then",
         "Its orbit is inside Earth's, so it never gets more than about 47° from the Sun",
@@ -334,7 +364,7 @@
       "prompt": "Venus is 40° east of the Sun. When and where do you look for it?",
       "choices": [
         "In the east before sunrise",
-        "In the south at midnight",
+        "High in the sky at midnight",
         "In the west after sunset",
         "It cannot be seen"
       ],

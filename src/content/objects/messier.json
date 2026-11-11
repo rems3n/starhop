@@ -1,627 +1,627 @@
 {
   "dso:M1": {
     "about": "The Crab Nebula is the expanding wreck of a star that was seen to explode as a supernova in AD 1054, when Chinese astronomers recorded it as a \"guest star\". It lies about 6,500 light-years away and is still spreading outward at roughly 1,500 kilometers per second. At its heart sits the Crab Pulsar, a city-sized neutron star spinning about 30 times a second. John Bevis discovered the nebula in 1731, and it became the first entry in Messier's list.",
-    "howToFind": "A winter object in [[con:Tau|Taurus]]. Find [[star:Tianguan|Zeta Tauri]], the star at the tip of the Bull's southern horn, about 7° (a little less than a fist) southeast of [[star:Elnath|Elnath]]; the Crab is just 1° northwest of it, well inside the same binocular field.",
+    "howToFind": "Best on December to February evenings, in [[con:Tau|Taurus]]. Find [[star:Tianguan|Zeta Tauri]], the star at the tip of the Bull's southern horn, about 7° (a little less than a fist) southeast of [[star:Elnath|Elnath]]; the Crab is just 1° northwest of it, well inside the same binocular field.",
     "whatYouSee": "Invisible to the naked eye and very hard from a city. Under a dark sky binoculars show a tiny dim patch; a small telescope shows a faint grey oval smudge with no sign of the filaments seen in photographs.",
     "physicalSize": "about 11 light-years across"
   },
   "dso:M2": {
     "about": "M2 is a globular cluster — a ball of very old stars orbiting our galaxy — and one of the larger ones known. A recent measurement puts it roughly 38,000 light-years away, and its stars are about 12.5 billion years old. Jean-Dominique Maraldi discovered it in 1746 while he was observing a comet.",
-    "howToFind": "An autumn object in [[con:Aqr|Aquarius]]. It sits about 5° (three fingers, or one binocular field) due north of [[star:Sadalsuud|Sadalsuud]], and about 11° south-southwest of [[star:Enif|Enif]], the nose of Pegasus.",
+    "howToFind": "Best on September to November evenings, in [[con:Aqr|Aquarius]]. It sits about 5° (three fingers, or one binocular field) due north of [[star:Sadalsuud|Sadalsuud]], and about 11° south-southwest of [[star:Enif|Enif]], the nose of Pegasus.",
     "whatYouSee": "In binoculars it is a small, round fuzzy star, visible even from the suburbs. A small telescope shows a bright grainy ball with a concentrated center; resolving individual stars needs a larger telescope and a dark sky.",
     "physicalSize": "about 175 light-years across"
   },
   "dso:M3": {
     "about": "M3 is one of the largest and brightest globular clusters, a swarm of around 500,000 stars about 34,000 light-years away. Its stars are more than 11 billion years old. It was the first object in the catalog that Charles Messier discovered himself.",
-    "howToFind": "A spring object in [[con:CVn|Canes Venatici]], in a rather empty patch of sky. It lies about 12° (a fist and a bit) northwest of [[star:Arcturus|Arcturus]], a little less than halfway along the line from Arcturus to [[star:Cor Caroli|Cor Caroli]].",
+    "howToFind": "Best on March to May evenings, in [[con:CVn|Canes Venatici]], in a rather empty patch of sky. It lies about 12° (a fist and a bit) northwest of [[star:Arcturus|Arcturus]], a little less than halfway along the line from Arcturus to [[star:Cor Caroli|Cor Caroli]].",
     "whatYouSee": "Binoculars show a small round glow like an out-of-focus star, even from a city on a clear night. A small telescope shows a bright ball that starts to look grainy at the edges at about 100×."
   },
   "dso:M4": {
     "about": "M4 is one of the closest globular clusters to us, only about 6,000 light-years away. It was discovered by Philippe Loys de Chéseaux in 1745 and was the first globular cluster in which individual stars were made out. It is a loose, open-looking globular rather than a tight ball.",
-    "howToFind": "A summer object in [[con:Sco|Scorpius]] and one of the easiest globulars to locate: it is 1.3° due west of [[star:Antares|Antares]], in the same binocular field, forming a small triangle with Antares and [[star:Alniyat|Alniyat]].",
-    "whatYouSee": "It has a low surface brightness and rides low in the south from Brooklyn, so city haze hides it easily. From a dark site binoculars show a large dim round glow; a small telescope begins to resolve it into stars, with a distinctive bar of stars across the middle."
+    "howToFind": "Best on June to August evenings, in [[con:Sco|Scorpius]] and one of the easiest globulars to locate: it is 1.3° due west of [[star:Antares|Antares]], in the same binocular field, forming a small triangle with Antares and [[star:Alniyat|Alniyat]].",
+    "whatYouSee": "It has a low surface brightness and rides low in the south from mid-northern latitudes, so city haze hides it easily there. From a dark site binoculars show a large dim round glow; a small telescope begins to resolve it into stars, with a distinctive bar of stars across the middle."
   },
   "dso:M5": {
     "about": "M5 is a rich globular cluster about 24,500 light-years away, with stars some 10 to 11 billion years old. It was discovered by Gottfried Kirch in 1702. Many observers rank it among the finest globulars in the northern sky.",
-    "howToFind": "A late-spring and early-summer object in [[con:Ser|Serpens]]. Start at [[star:Unukalhai|Unukalhai]], the brightest star of the Serpent's neck, and move about 8° (most of a fist) to the southwest; the cluster is also about 11° due north of [[star:Zubeneschamali|Zubeneschamali]] in Libra.",
+    "howToFind": "Best on May and June evenings, in [[con:Ser|Serpens]]. Start at [[star:Unukalhai|Unukalhai]], the brightest star of the Serpent's neck, and move about 8° (most of a fist) to the southwest; the cluster is also about 11° due north of [[star:Zubeneschamali|Zubeneschamali]] in Libra.",
     "whatYouSee": "A small fuzzy star in binoculars, visible from the suburbs. A small telescope shows a bright, slightly oval ball with a blazing core, and the outer parts begin to break into stars at 100× or more.",
     "physicalSize": "about 160 light-years across"
   },
   "dso:M6": {
     "about": "The Butterfly Cluster is an open cluster — a loose family of stars born together — about 1,600 light-years away and roughly 95 million years old. Giovanni Battista Hodierna recorded it in 1654. Its brighter stars sketch the outline of a butterfly with open wings.",
-    "howToFind": "A summer object in [[con:Sco|Scorpius]], just above the Scorpion's stinger: about 5° (one binocular field) north-northeast of [[star:Shaula|Shaula]], and about 4° northwest of its bigger neighbor [[dso:M7|M7]]. At declination −32° it never climbs more than about 17° above the southern horizon from Brooklyn, so you need a clear, unobstructed view south.",
+    "howToFind": "Best on June to August evenings, in [[con:Sco|Scorpius]], just above the Scorpion's stinger: about 5° (one binocular field) north-northeast of [[star:Shaula|Shaula]], and about 4° northwest of its bigger neighbor [[dso:M7|M7]]. At declination −32° its greatest height above the southern horizon is about 58° minus your latitude (about 17° from latitude 40°N, for example), so mid-northern observers need a clear, unobstructed view south; from the southern hemisphere it passes nearly overhead.",
     "whatYouSee": "Binoculars show a small sparkling knot of stars; a small telescope at low power shows the butterfly shape. From the city the low altitude and haze dim it badly, so try on a very transparent night.",
     "physicalSize": "about 12 light-years across"
   },
   "dso:M7": {
     "about": "M7, Ptolemy's Cluster, is a big bright open cluster about 980 light-years away, named for the 2nd-century astronomer Ptolemy. It is easy to see with the naked eye from a dark place. At declination −34.8° it is the southernmost object in Messier's catalog.",
-    "howToFind": "A summer object in [[con:Sco|Scorpius]], close to the Scorpion's stinger: about 5° (one binocular field) east-northeast of [[star:Shaula|Shaula]]. From Brooklyn it stays very low, never more than about 14° above the southern horizon, so it needs a clear southern view at the hour it is highest.",
+    "howToFind": "Best on June to August evenings, in [[con:Sco|Scorpius]], close to the Scorpion's stinger: about 5° (one binocular field) east-northeast of [[star:Shaula|Shaula]]. From mid-northern latitudes it stays very low (never more than about 14° above the southern horizon from latitude 40°N, for example), so it needs a clear southern view at the hour it is highest; from the southern hemisphere it passes overhead.",
     "whatYouSee": "Under a dark sky it is a naked-eye hazy patch brighter than the Milky Way around it. Binoculars are the ideal instrument, showing dozens of stars scattered across more than a full Moon's width; from the city, haze near the horizon usually leaves only the brightest few.",
     "physicalSize": "about 50 light-years across"
   },
   "dso:M8": {
     "about": "The Lagoon Nebula is a giant cloud of glowing hydrogen where new stars are forming, about 4,100 light-years away. Giovanni Hodierna discovered it in 1654. It is one of only two star-forming nebulae faintly visible to the naked eye from mid-northern latitudes, the other being the [[dso:M42|Orion Nebula]]. A dark lane, the \"lagoon\", divides it, and a young star cluster lies in its eastern half.",
-    "howToFind": "A summer object in [[con:Sgr|Sagittarius]]. From [[star:Kaus Borealis|Kaus Borealis]], the top of the Teapot's lid, go about 5.5° (one binocular field) due west; it is also about 6° north of [[star:Alnasl|Alnasl]], the tip of the spout.",
+    "howToFind": "Best on June to August evenings, in [[con:Sgr|Sagittarius]]. From [[star:Kaus Borealis|Kaus Borealis]], the top of the Teapot's lid, go about 5.5° (one binocular field) due west; it is also about 6° north of [[star:Alnasl|Alnasl]], the tip of the spout.",
     "whatYouSee": "From a dark site it is a naked-eye brightening of the Milky Way, and binoculars show a horizontal bar of mist with a cluster beside it. From the city, binoculars or a small telescope show the star cluster and at best a faint haze around it."
   },
   "dso:M9": {
     "about": "M9 is a globular cluster about 25,800 light-years from Earth and one of the nearer ones to the center of our galaxy, only about 5,500 light-years from it. Charles Messier discovered it in 1764 and called it a \"nebula without stars\". It appears against a dark dust cloud, Barnard 64.",
-    "howToFind": "A summer object in southern [[con:Oph|Ophiuchus]]. It lies 3.5° (inside one binocular field) southeast of [[star:Sabik|Sabik]].",
+    "howToFind": "Best on June to August evenings, in southern [[con:Oph|Ophiuchus]]. It lies 3.5° (inside one binocular field) southeast of [[star:Sabik|Sabik]].",
     "whatYouSee": "A faint, small fuzzy spot in binoculars under a dark sky; not a city object. A small telescope shows a little round glow with a brighter middle and no individual stars.",
     "physicalSize": "about 90 light-years across"
   },
   "dso:M10": {
     "about": "M10 is a globular cluster about 14,300 light-years away, with stars more than 11 billion years old. Charles Messier discovered it in 1764 and described it as a \"nebula without stars\"; larger telescopes later showed it to be a great ball of them. It forms a close pair in the sky with [[dso:M12|M12]], about 3° to the northwest.",
-    "howToFind": "A summer object in the middle of [[con:Oph|Ophiuchus]], with no bright star close by. It lies about 8° (most of a fist) northeast of [[star:ζ Oph|Zeta Ophiuchi]] and about 10° east of the pair [[star:Yed Prior|Yed Prior]] and [[star:Yed Posterior|Yed Posterior]].",
+    "howToFind": "Best on June to August evenings, in the middle of [[con:Oph|Ophiuchus]], with no bright star close by. It lies about 8° (most of a fist) northeast of [[star:ζ Oph|Zeta Ophiuchi]] and about 10° east of the pair [[star:Yed Prior|Yed Prior]] and [[star:Yed Posterior|Yed Posterior]].",
     "whatYouSee": "Binoculars show a small round hazy spot, with M12 in the same field; from the city it is faint but possible on a clear night. A small telescope shows a bright core and a grainy halo.",
     "physicalSize": "about 83 light-years across"
   },
   "dso:M11": {
     "about": "The Wild Duck Cluster is one of the richest and most compact open clusters known, about 6,100 light-years away. Gottfried Kirch discovered it in 1681. Its name comes from the triangle formed by its brighter stars, which reminded observers of a flock of ducks in flight.",
-    "howToFind": "A summer object in [[con:Sct|Scutum]]. Follow the tail of [[con:Aql|Aquila]] southwest to [[star:λ Aql|Lambda Aquilae]]; the cluster is 4° (less than one binocular field) west-southwest of it, and just under 2° southeast of the fainter star [[star:β Sct|Beta Scuti]].",
+    "howToFind": "Best on June to August evenings, in [[con:Sct|Scutum]]. Follow the tail of [[con:Aql|Aquila]] southwest to [[star:λ Aql|Lambda Aquilae]]; the cluster is 4° (less than one binocular field) west-southwest of it, and just under 2° southeast of the fainter star [[star:β Sct|Beta Scuti]].",
     "whatYouSee": "In binoculars it is a small, bright, grainy patch on the edge of the Scutum star cloud, visible from the suburbs. A small telescope at 80–100× resolves it into a dense fan of hundreds of faint stars."
   },
   "dso:M12": {
     "about": "M12 is a globular cluster about 16,000 light-years away, discovered by Charles Messier in 1764. It is looser than its neighbor [[dso:M10|M10]], which lies about 3° to the southeast. Its stars are among the oldest known, at something like 13 billion years.",
-    "howToFind": "A summer object in [[con:Oph|Ophiuchus]]. It lies about 8° (most of a fist) east-northeast of [[star:Yed Prior|Yed Prior]] and [[star:Yed Posterior|Yed Posterior]], and about 9° north-northeast of [[star:ζ Oph|Zeta Ophiuchi]].",
+    "howToFind": "Best on June to August evenings, in [[con:Oph|Ophiuchus]]. It lies about 8° (most of a fist) east-northeast of [[star:Yed Prior|Yed Prior]] and [[star:Yed Posterior|Yed Posterior]], and about 9° north-northeast of [[star:ζ Oph|Zeta Ophiuchi]].",
     "whatYouSee": "In dark conditions binoculars show a faint round glow, slightly dimmer and more diffuse than M10 in the same field. A small telescope shows a hazy ball; picking out individual stars takes a telescope of about 8 inches aperture.",
     "physicalSize": "about 75 light-years across"
   },
   "dso:M13": {
     "about": "The Great Globular Cluster in Hercules is the best-known globular in the northern sky: several hundred thousand stars packed into a ball about 22,000 to 25,000 light-years away. Edmond Halley discovered it in 1714. In 1974 the Arecibo radio telescope beamed a coded message about humanity toward it.",
-    "howToFind": "A late-spring and summer object in [[con:Her|Hercules]], on the western side of the four-star Keystone. It lies on the line between [[star:η Her|Eta Herculis]] and [[star:ζ Her|Zeta Herculis]], 2.5° south of Eta — about one third of the way down.",
+    "howToFind": "Best on May to August evenings, in [[con:Her|Hercules]], on the western side of the four-star Keystone. It lies on the line between [[star:η Her|Eta Herculis]] and [[star:ζ Her|Zeta Herculis]], 2.5° south of Eta — about one third of the way down.",
     "whatYouSee": "From a dark site it is just visible to the naked eye as a faint star-like blur. Binoculars show a round fuzzy patch even from the city; a small telescope shows a bright glowing ball whose edges begin to resolve into stars at 100×.",
     "physicalSize": "about 145 light-years across"
   },
   "dso:M14": {
     "about": "M14 is a globular cluster of several hundred thousand stars about 30,000 light-years away. Charles Messier discovered it in 1764.",
-    "howToFind": "A summer object in eastern [[con:Oph|Ophiuchus]], in a region without bright stars. It lies about 8° (most of a fist) due south of [[star:Cebalrai|Cebalrai]].",
+    "howToFind": "Best on June to August evenings, in eastern [[con:Oph|Ophiuchus]], in a region without bright stars. It lies about 8° (most of a fist) due south of [[star:Cebalrai|Cebalrai]].",
     "whatYouSee": "A dim, small round glow in binoculars under a dark sky; difficult from the city. A small telescope shows an evenly lit hazy disc, and medium-sized telescopes only begin to hint at individual stars.",
     "physicalSize": "about 100 light-years across"
   },
   "dso:M15": {
     "about": "M15 is a globular cluster about 36,000 light-years away with one of the most tightly packed cores of any globular. At around 12 billion years old it is among the oldest known. Jean-Dominique Maraldi discovered it in 1746.",
-    "howToFind": "An autumn object in [[con:Peg|Pegasus]]. Find [[star:Enif|Enif]], the horse's nose; the cluster is 4° (inside one binocular field) to the west-northwest, continuing the line of the horse's neck beyond Enif.",
+    "howToFind": "Best on September to November evenings, in [[con:Peg|Pegasus]]. Find [[star:Enif|Enif]], the horse's nose; the cluster is 4° (inside one binocular field) to the west-northwest, continuing the line of the horse's neck beyond Enif.",
     "whatYouSee": "Binoculars show a fuzzy star, visible from the suburbs. A small telescope shows a small bright ball with a strikingly intense, star-like center and a grainy outer halo.",
     "physicalSize": "about 175 light-years across"
   },
   "dso:M16": {
     "about": "The Eagle Nebula is a young star cluster still wrapped in the glowing gas cloud that formed it, about 5,700 light-years away. Jean-Philippe de Chéseaux discovered the cluster in 1745–46. Dark columns of dust near its center are the \"Pillars of Creation\" made famous by the Hubble Space Telescope.",
-    "howToFind": "A summer object in [[con:Ser|Serpens]], near the border with Sagittarius and Scutum. It lies about 2.5° north of [[dso:M17|the Omega Nebula]] and about 12° (a fist and a bit) north of [[star:Kaus Borealis|Kaus Borealis]], the top of the Teapot.",
+    "howToFind": "Best on June to August evenings, in [[con:Ser|Serpens]], near the border with Sagittarius and Scutum. It lies about 2.5° north of [[dso:M17|the Omega Nebula]] and about 12° (a fist and a bit) north of [[star:Kaus Borealis|Kaus Borealis]], the top of the Teapot.",
     "whatYouSee": "Binoculars and small telescopes show the star cluster as a loose sprinkle of stars. The nebula itself is a faint haze that needs a dark sky, and the Pillars are not visible in small instruments.",
     "physicalSize": "about 70 by 55 light-years"
   },
   "dso:M17": {
     "about": "The Omega or Swan Nebula is a cloud of glowing hydrogen lit by young stars hidden inside it, about 5,000 to 6,000 light-years away. Philippe Loys de Chéseaux discovered it in 1745. It is one of the brightest star-forming nebulae in the sky.",
-    "howToFind": "A summer object in northern [[con:Sgr|Sagittarius]]. It lies about 9° (a fist) due north of [[star:Kaus Borealis|Kaus Borealis]], the top of the Teapot, roughly 2.5° north of the bright star cloud [[dso:M24|M24]].",
+    "howToFind": "Best on June to August evenings, in northern [[con:Sgr|Sagittarius]]. It lies about 9° (a fist) due north of [[star:Kaus Borealis|Kaus Borealis]], the top of the Teapot, roughly 2.5° north of the bright star cloud [[dso:M24|M24]].",
     "whatYouSee": "Binoculars show a short bright streak of light under a dark sky. In a small telescope the streak gains a hook at one end, giving the outline of a swan or a check mark; from the city only the brightest bar survives."
   },
   "dso:M18": {
     "about": "M18 is a sparse open cluster about 4,200 light-years away, discovered by Charles Messier in 1764. It sits between two more famous neighbors, the [[dso:M17|Omega Nebula]] and the [[dso:M24|Small Sagittarius Star Cloud]].",
-    "howToFind": "A summer object in [[con:Sgr|Sagittarius]]. It lies about 8.5° (most of a fist) north of [[star:Kaus Borealis|Kaus Borealis]], and 1° south of [[dso:M17|M17]].",
+    "howToFind": "Best on June to August evenings, in [[con:Sgr|Sagittarius]]. It lies about 8.5° (most of a fist) north of [[star:Kaus Borealis|Kaus Borealis]], and 1° south of [[dso:M17|M17]].",
     "whatYouSee": "Binoculars show a small faint knot against the Milky Way; a small telescope shows a dozen or two stars in a loose group. It is easy to pass over.",
     "physicalSize": "about 26 light-years across"
   },
   "dso:M19": {
     "about": "M19 is a globular cluster about 28,700 light-years away, close to the direction of the galaxy's center. Charles Messier discovered it in 1764, and William Herschel first resolved it into stars in 1784. It looks noticeably oval rather than round.",
-    "howToFind": "A summer object in southern [[con:Oph|Ophiuchus]]. It lies about 7° (two thirds of a fist) due east of [[star:Antares|Antares]], and 4.5° west-southwest of [[star:θ Oph|Theta Ophiuchi]]. It is fairly low in the south from Brooklyn.",
+    "howToFind": "Best on June to August evenings, in southern [[con:Oph|Ophiuchus]]. It lies about 7° (two thirds of a fist) due east of [[star:Antares|Antares]], and 4.5° west-southwest of [[star:θ Oph|Theta Ophiuchi]]. It is fairly low in the south from mid-northern latitudes and high overhead from the southern hemisphere.",
     "whatYouSee": "A small hazy spot in binoculars under a dark sky; city haze near the horizon makes it hard. A small telescope shows a slightly elongated glow with a brighter center.",
     "physicalSize": "about 140 light-years across"
   },
   "dso:M20": {
     "about": "The Trifid Nebula is an unusual combination of a glowing red emission nebula, a blue reflection nebula, a star cluster and dark dust lanes that split it into three lobes — its name means \"three-lobed\". It lies about 4,100 light-years away. Charles Messier discovered it in 1764.",
-    "howToFind": "A summer object in [[con:Sgr|Sagittarius]], about 1.5° north-northwest of the [[dso:M8|Lagoon Nebula]] and in the same binocular field. From [[star:Kaus Borealis|Kaus Borealis]], the top of the Teapot, go about 6° west and slightly north.",
+    "howToFind": "Best on June to August evenings, in [[con:Sgr|Sagittarius]], about 1.5° north-northwest of the [[dso:M8|Lagoon Nebula]] and in the same binocular field. From [[star:Kaus Borealis|Kaus Borealis]], the top of the Teapot, go about 6° west and slightly north.",
     "whatYouSee": "Much fainter than the Lagoon. From a dark site a small telescope shows a dim round glow around a double star, and the dark lanes need a larger telescope; from the city you are unlikely to see more than the central star.",
     "physicalSize": "about 40 light-years across"
   },
   "dso:M21": {
     "about": "M21 is a young, tightly packed open cluster about 3,900 light-years away. Charles Messier discovered it in 1764, on the same night as the neighboring [[dso:M20|Trifid Nebula]].",
-    "howToFind": "A summer object in [[con:Sgr|Sagittarius]], less than 1° northeast of the [[dso:M20|Trifid Nebula]]. From [[star:Kaus Borealis|Kaus Borealis]] go about 6° west-northwest.",
+    "howToFind": "Best on June to August evenings, in [[con:Sgr|Sagittarius]], less than 1° northeast of the [[dso:M20|Trifid Nebula]]. From [[star:Kaus Borealis|Kaus Borealis]] go about 6° west-northwest.",
     "whatYouSee": "A small, fairly faint knot of stars in binoculars; a small telescope shows a few dozen stars. It survives suburban skies better than the nebula beside it."
   },
   "dso:M22": {
     "about": "M22 is one of the nearest globular clusters, about 10,600 light-years away, and the brightest one visible from mid-northern latitudes. Its stars are around 12 billion years old. It is one of only four globulars in our galaxy known to contain a planetary nebula.",
-    "howToFind": "A summer object in [[con:Sgr|Sagittarius]]. It lies 2.4° (half a binocular field) northeast of [[star:Kaus Borealis|Kaus Borealis]], the star at the top of the Teapot's lid.",
+    "howToFind": "Best on June to August evenings, in [[con:Sgr|Sagittarius]]. It lies 2.4° (half a binocular field) northeast of [[star:Kaus Borealis|Kaus Borealis]], the star at the top of the Teapot's lid.",
     "whatYouSee": "Binoculars show a large, obvious round glow, visible from the suburbs on a clear night though it is low in the south. A small telescope begins to resolve it into stars at around 100×; it would outshine [[dso:M13|M13]] if it climbed higher in our sky.",
     "physicalSize": "about 100 light-years across"
   },
   "dso:M23": {
     "about": "M23 is an open cluster about 2,000 light-years away and roughly 300 million years old, discovered by Charles Messier in 1764. It is a broad, even scattering of stars lying in front of the dusty Milky Way of Sagittarius.",
-    "howToFind": "A summer object in northwestern [[con:Sgr|Sagittarius]]. From [[star:Kaus Borealis|Kaus Borealis]], the top of the Teapot, go about 10° (a fist) to the northwest; it is 4.4° west-northwest of the fainter star [[star:Polis|Polis]] (Mu Sagittarii).",
+    "howToFind": "Best on June to August evenings, in northwestern [[con:Sgr|Sagittarius]]. From [[star:Kaus Borealis|Kaus Borealis]], the top of the Teapot, go about 10° (a fist) to the northwest; it is 4.4° west-northwest of the fainter star [[star:Polis|Polis]] (Mu Sagittarii).",
     "whatYouSee": "Binoculars show a soft grainy patch nearly the size of the full Moon under a good sky. A small telescope at low power fills the view with a hundred or so faint stars in chains and arcs; from the city it is thin and washed out."
   },
   "dso:M24": {
     "about": "M24, the Small Sagittarius Star Cloud, is not a cluster or nebula at all but a window: a gap in the dark dust of the Milky Way's Great Rift through which we look deep into the galaxy, at stars 10,000 to 15,000 light-years away. Charles Messier cataloged it in 1764 as \"a large nebulosity in which there are many stars\". It should not be confused with the Large Sagittarius Star Cloud about 10° to the south.",
-    "howToFind": "A summer object in [[con:Sgr|Sagittarius]]. It lies about 7.5° (three quarters of a fist) north-northwest of [[star:Kaus Borealis|Kaus Borealis]], the top of the Teapot, and 2.7° north-northeast of [[star:Polis|Polis]].",
+    "howToFind": "Best on June to August evenings, in [[con:Sgr|Sagittarius]]. It lies about 7.5° (three quarters of a fist) north-northwest of [[star:Kaus Borealis|Kaus Borealis]], the top of the Teapot, and 2.7° north-northeast of [[star:Polis|Polis]].",
     "whatYouSee": "From a dark site it is a bright naked-eye knot of Milky Way about 2° long. Binoculars are the best tool, showing a rich oblong field of countless faint stars; from the city its light is too spread out to notice.",
     "physicalSize": "about 600 light-years wide"
   },
   "dso:M25": {
     "about": "M25 is an open cluster about 2,000 light-years away and roughly 70 million years old. Philippe Loys de Chéseaux first recorded it in 1745. Unusually for a Messier object it has no NGC number and is cataloged instead as IC 4725.",
-    "howToFind": "A summer object in [[con:Sgr|Sagittarius]]. It lies about 6.5° (a little more than one binocular field) due north of [[star:Kaus Borealis|Kaus Borealis]], and about 3.5° east of the star cloud [[dso:M24|M24]].",
+    "howToFind": "Best on June to August evenings, in [[con:Sgr|Sagittarius]]. It lies about 6.5° (a little more than one binocular field) due north of [[star:Kaus Borealis|Kaus Borealis]], and about 3.5° east of the star cloud [[dso:M24|M24]].",
     "whatYouSee": "An easy binocular cluster: a coarse, bright group of a few dozen stars, several of which show even from the suburbs. A small telescope at low power frames it well."
   },
   "dso:M26": {
     "about": "M26 is a faint open cluster about 5,200 light-years away and roughly 85 million years old, discovered by Charles Messier in 1764. It lies south-southwest of its far showier neighbor, the [[dso:M11|Wild Duck Cluster]].",
-    "howToFind": "A summer object in [[con:Sct|Scutum]]. From [[star:λ Aql|Lambda Aquilae]] at the tail of Aquila go about 7° southwest; the cluster is 2.7° east-southeast of [[star:α Sct|Alpha Scuti]], the brightest star of Scutum.",
+    "howToFind": "Best on June to August evenings, in [[con:Sct|Scutum]]. From [[star:λ Aql|Lambda Aquilae]] at the tail of Aquila go about 7° southwest; the cluster is 2.7° east-southeast of [[star:α Sct|Alpha Scuti]], the brightest star of Scutum.",
     "whatYouSee": "A challenge in ordinary binoculars even under a good sky. A small telescope shows a small, dim patch with about 25 faint stars; it is not a city object."
   },
   "dso:M27": {
     "about": "The Dumbbell Nebula is a planetary nebula — the glowing shell of gas thrown off by a dying Sun-like star, with the star's exposed core, a white dwarf, at the center. It lies about 1,360 light-years away. Charles Messier found it in 1764, making it the first planetary nebula ever discovered.",
-    "howToFind": "A summer object in [[con:Vul|Vulpecula]], inside the Summer Triangle. Find the little arrow of [[con:Sge|Sagitta]] and its tip star [[star:γ Sge|Gamma Sagittae]]; the nebula is 3.2° (half a binocular field) due north of it, and about 8° southeast of [[star:Albireo|Albireo]].",
+    "howToFind": "Best on June to August evenings, in [[con:Vul|Vulpecula]], inside the Summer Triangle. Find the little arrow of [[con:Sge|Sagitta]] and its tip star [[star:γ Sge|Gamma Sagittae]]; the nebula is 3.2° (half a binocular field) due north of it, and about 8° southeast of [[star:Albireo|Albireo]].",
     "whatYouSee": "Binoculars show a small, slightly out-of-round grey spot, and it is bright enough to find from the suburbs. A small telescope shows a pale apple-core or hourglass shape; it is the easiest planetary nebula for beginners.",
     "physicalSize": "about 3 light-years across"
   },
   "dso:M28": {
     "about": "M28 is a globular cluster roughly 18,000 light-years away, with stars about 12 billion years old. Charles Messier discovered it in 1764 and described it as a round nebula containing no star, seen with difficulty in his small telescope.",
-    "howToFind": "A summer object in [[con:Sgr|Sagittarius]], and very easy to locate: it is just 1° northwest of [[star:Kaus Borealis|Kaus Borealis]], the star at the top of the Teapot's lid.",
+    "howToFind": "Best on June to August evenings, in [[con:Sgr|Sagittarius]], and very easy to locate: it is just 1° northwest of [[star:Kaus Borealis|Kaus Borealis]], the star at the top of the Teapot's lid.",
     "whatYouSee": "A small dim fuzzy star in binoculars, much less impressive than nearby [[dso:M22|M22]]. A small telescope shows a compact round glow with a bright center; resolving stars takes a larger telescope.",
     "physicalSize": "about 60 light-years across"
   },
   "dso:M29": {
     "about": "M29 is a small open cluster in the thick of the Cygnus Milky Way, discovered by Charles Messier in 1764. Its distance is uncertain — estimates run from about 4,000 to 7,000 light-years — because dust in front of it dims its light by an amount that is poorly known. It is very young, about 13 million years old.",
-    "howToFind": "A summer object in [[con:Cyg|Cygnus]]. Find [[star:Sadr|Sadr]], the star at the center of the Northern Cross; the cluster is 1.8° due south of it, in the same binocular field.",
+    "howToFind": "Best on June to August evenings, in [[con:Cyg|Cygnus]]. Find [[star:Sadr|Sadr]], the star at the center of the Northern Cross; the cluster is 1.8° due south of it, in the same binocular field.",
     "whatYouSee": "Binoculars show a tiny hazy knot; a small telescope shows half a dozen to ten stars in a compact boxy pattern that some liken to a miniature dipper. It holds up reasonably from the suburbs because its few stars are fairly bright.",
     "physicalSize": "about 11 light-years across"
   },
   "dso:M30": {
     "about": "M30 is a globular cluster about 27,000 light-years away, with stars nearly 13 billion years old. Charles Messier discovered it in 1764 and described it as a round nebula without a star.",
-    "howToFind": "An autumn object in [[con:Cap|Capricornus]], low in the south from Brooklyn. From [[star:Deneb Algedi|Deneb Algedi]], the tail of the Sea-Goat, go about 7° (two thirds of a fist) south and a little west; it is 3.2° east-southeast of the fainter [[star:ζ Cap|Zeta Capricorni]].",
+    "howToFind": "Best on September to November evenings, in [[con:Cap|Capricornus]], low in the south from mid-northern latitudes and high overhead from the southern hemisphere. From [[star:Deneb Algedi|Deneb Algedi]], the tail of the Sea-Goat, go about 7° (two thirds of a fist) south and a little west; it is 3.2° east-southeast of the fainter [[star:ζ Cap|Zeta Capricorni]].",
     "whatYouSee": "A small faint fuzzy spot in binoculars under a dark sky; hard from the city because it is dim and low. A small telescope shows a small glow with a bright, compact core.",
     "physicalSize": "about 93 light-years across"
   },
   "dso:M31": {
     "about": "The Andromeda Galaxy is the nearest large galaxy to our own: a spiral of hundreds of billions of stars about 2.5 million light-years away. It is the most distant thing most people can see without a telescope — the light you see left it long before humans existed. It was long called the Andromeda Nebula, until astronomers in the 20th century showed it lies far outside the Milky Way.",
-    "howToFind": "An autumn object in [[con:And|Andromeda]]. From [[star:Mirach|Mirach]] hop about 4° northwest to the fainter star [[star:μ And|Mu Andromedae]], then the same distance again in the same direction; the galaxy is about 8° (most of a fist) from Mirach in all.",
+    "howToFind": "Best on September to November evenings, in [[con:And|Andromeda]]. From [[star:Mirach|Mirach]] hop about 4° northwest to the fainter star [[star:μ And|Mu Andromedae]], then the same distance again in the same direction; the galaxy is about 8° (most of a fist) from Mirach in all.",
     "whatYouSee": "From a dark site it is an obvious elongated naked-eye glow; from the city you need binoculars, which show the bright oval core as a soft grey smudge. A small telescope shows the core and little else — the spiral arms are too faint to see directly.",
     "physicalSize": "about 150,000 light-years across"
   },
   "dso:M32": {
     "about": "M32 is a small, dense elliptical galaxy that orbits the [[dso:M31|Andromeda Galaxy]] as a satellite, about 2.5 million light-years away. Guillaume Le Gentil discovered it in 1749. It is the standard example of the rare \"compact elliptical\" type, with half its stars crowded into a tiny central region.",
-    "howToFind": "An autumn object in [[con:And|Andromeda]]. Find the [[dso:M31|Andromeda Galaxy]] first (about 8° northwest of [[star:Mirach|Mirach]]); M32 sits less than half a degree south of its bright core, superimposed on the edge of the larger galaxy's glow.",
+    "howToFind": "Best on September to November evenings, in [[con:And|Andromeda]]. Find the [[dso:M31|Andromeda Galaxy]] first (about 8° northwest of [[star:Mirach|Mirach]]); M32 sits less than half a degree south of its bright core, superimposed on the edge of the larger galaxy's glow.",
     "whatYouSee": "Too small for binoculars to separate from a star. In a small telescope it is a little round fuzzy spot with a bright center, like a star that will not focus, and is visible from the suburbs.",
     "physicalSize": "about 8,000 light-years across"
   },
   "dso:M33": {
     "about": "The Triangulum Galaxy is a spiral galaxy about 2.9 million light-years away and the third-largest member of our Local Group of galaxies, after Andromeda and the Milky Way. We see it nearly face-on. Under exceptionally dark skies some observers can glimpse it without optical aid, which would make it one of the most distant naked-eye objects.",
-    "howToFind": "An autumn object in [[con:Tri|Triangulum]]. It lies about 7° southeast of [[star:Mirach|Mirach]] — the mirror image of the [[dso:M31|Andromeda Galaxy]] on the other side of that star — and 4.3° west-northwest of [[star:Mothallah|Mothallah]], the point of the Triangle.",
+    "howToFind": "Best on September to November evenings, in [[con:Tri|Triangulum]]. It lies about 7° southeast of [[star:Mirach|Mirach]] — the mirror image of the [[dso:M31|Andromeda Galaxy]] on the other side of that star — and 4.3° west-northwest of [[star:Mothallah|Mothallah]], the point of the Triangle.",
     "whatYouSee": "Its light is spread over an area larger than the full Moon, so it vanishes in any light pollution: effectively invisible from the city. From a dark site binoculars show a large, very faint round glow, often easier to see than in a telescope.",
     "physicalSize": "about 61,000 light-years across"
   },
   "dso:M34": {
     "about": "M34 is a large, fairly nearby open cluster about 1,500 light-years away. It was probably first seen by Giovanni Battista Hodierna before 1654, and Charles Messier added it to his list in 1764.",
-    "howToFind": "An autumn object in [[con:Per|Perseus]]. It lies about 5° (one binocular field) west-northwest of [[star:Algol|Algol]], a little off the line from Algol toward [[star:Almach|Almach]] in Andromeda.",
+    "howToFind": "Best on September to November evenings, in [[con:Per|Perseus]]. It lies about 5° (one binocular field) west-northwest of [[star:Algol|Algol]], a little off the line from Algol toward [[star:Almach|Almach]] in Andromeda.",
     "whatYouSee": "Binoculars show a loose sprinkle of stars about the size of the full Moon, visible from the suburbs. A small telescope at low power shows several dozen stars, many arranged in pairs.",
     "physicalSize": "about 14 light-years across"
   },
   "dso:M35": {
     "about": "M35 is a rich open cluster about 3,000 light-years away and roughly 100 million years old, scattered over an area of sky almost as large as the full Moon. Philippe Loys de Chéseaux discovered it around 1745.",
-    "howToFind": "A winter object in [[con:Gem|Gemini]], at the feet of the Twins. It lies 2.3° northwest of [[star:Propus|Propus]] (Eta Geminorum), in the same binocular field as Propus and [[star:Tejat|Tejat]].",
+    "howToFind": "Best on December to February evenings, in [[con:Gem|Gemini]], at the feet of the Twins. It lies 2.3° northwest of [[star:Propus|Propus]] (Eta Geminorum), in the same binocular field as Propus and [[star:Tejat|Tejat]].",
     "whatYouSee": "From a dark site it is faintly visible to the naked eye. Binoculars show a large grainy glow, and it stays visible from the suburbs; a small telescope at low power shows a field crowded with stars in curving chains.",
     "physicalSize": "about 22 light-years across"
   },
   "dso:M36": {
     "about": "M36 is a young open cluster about 4,300 light-years away, only about 25 million years old. Giovanni Battista Hodierna found it before 1654 and Guillaume Le Gentil rediscovered it in 1749. It is the middle one of the three Messier clusters of Auriga, with [[dso:M37|M37]] and [[dso:M38|M38]].",
-    "howToFind": "A winter object in [[con:Aur|Auriga]], inside the charioteer's pentagon. It lies about 6° (one binocular field) north-northeast of [[star:Elnath|Elnath]], and about the same distance west-southwest of [[star:Mahasim|Mahasim]] (Theta Aurigae), making a triangle with the two stars.",
+    "howToFind": "Best on December to February evenings, in [[con:Aur|Auriga]], inside the charioteer's pentagon. It lies about 6° (one binocular field) north-northeast of [[star:Elnath|Elnath]], and about the same distance west-southwest of [[star:Mahasim|Mahasim]] (Theta Aurigae), making a triangle with the two stars.",
     "whatYouSee": "A small, compact misty knot in binoculars, with [[dso:M38|M38]] in the same field. A small telescope resolves it into a bright, tight group of a few dozen stars; it is the most concentrated of the three.",
     "physicalSize": "about 14 light-years across"
   },
   "dso:M37": {
     "about": "M37 is the brightest and richest open cluster in Auriga, about 4,500 light-years away. Giovanni Battista Hodierna discovered it before 1654. Curiously Le Gentil missed it when he rediscovered its two neighbors in 1749, and Messier found it independently in 1764.",
-    "howToFind": "A winter object in [[con:Aur|Auriga]], just outside the pentagon. It lies about 7° northeast of [[star:Elnath|Elnath]] and 5° south-southwest of [[star:Mahasim|Mahasim]] (Theta Aurigae), on the opposite side of the Elnath–Mahasim line from [[dso:M36|M36]].",
+    "howToFind": "Best on December to February evenings, in [[con:Aur|Auriga]], just outside the pentagon. It lies about 7° northeast of [[star:Elnath|Elnath]] and 5° south-southwest of [[star:Mahasim|Mahasim]] (Theta Aurigae), on the opposite side of the Elnath–Mahasim line from [[dso:M36|M36]].",
     "whatYouSee": "In binoculars it is a round, unresolved glow like a faint globular cluster. A small telescope at around 80× turns it into a fine dusting of well over a hundred faint stars with an orange star near the center; from the city it is dim but findable.",
     "physicalSize": "about 20 to 25 light-years across"
   },
   "dso:M38": {
     "about": "M38 is an open cluster about 3,500 light-years away and roughly 250 million years old. Giovanni Battista Hodierna discovered it before 1654, and Guillaume Le Gentil found it independently in 1749. A smaller, fainter cluster, NGC 1907, lies right beside it.",
-    "howToFind": "A winter object in [[con:Aur|Auriga]], inside the pentagon. It lies about 7° due north of [[star:Elnath|Elnath]], and 2.3° northwest of [[dso:M36|M36]], sharing a binocular field with it.",
+    "howToFind": "Best on December to February evenings, in [[con:Aur|Auriga]], inside the pentagon. It lies about 7° due north of [[star:Elnath|Elnath]], and 2.3° northwest of [[dso:M36|M36]], sharing a binocular field with it.",
     "whatYouSee": "A faint hazy patch in binoculars, larger and dimmer than M36. A small telescope shows a loose scattering of stars whose brightest members form a rough cross or the Greek letter pi."
   },
   "dso:M39": {
     "about": "M39 is a loose, nearby open cluster about 1,000 light-years away and roughly 280 million years old. Guillaume Le Gentil discovered it in 1749.",
-    "howToFind": "A summer and autumn object in [[con:Cyg|Cygnus]]. It lies about 9° (a fist) east-northeast of [[star:Deneb|Deneb]], in a rich part of the Milky Way.",
+    "howToFind": "Best on June to November evenings, in [[con:Cyg|Cygnus]]. It lies about 9° (a fist) east-northeast of [[star:Deneb|Deneb]], in a rich part of the Milky Way.",
     "whatYouSee": "Binoculars are ideal: they show a couple of dozen fairly bright stars in a loose triangle about the size of the full Moon, and it holds up from the suburbs. A telescope usually magnifies it too much to look like a cluster."
   },
   "dso:M40": {
     "about": "M40 is the oddity of the catalog: not a cluster, nebula or galaxy but simply two faint stars close together, also known as the double star Winnecke 4. Charles Messier came across the pair in 1764 while searching for a nebula that Johannes Hevelius had reported in the area, found no nebula, and listed the two stars instead. The stars are unrelated and only happen to line up as seen from Earth.",
-    "howToFind": "Visible all year from 40°N in [[con:UMa|Ursa Major]], best on spring evenings. Find [[star:Megrez|Megrez]], the star where the Big Dipper's handle joins the bowl; M40 is 1.4° to its northeast.",
+    "howToFind": "In [[con:UMa|Ursa Major]]; it never sets north of about 32°N and is best on March to May evenings. Find [[star:Megrez|Megrez]], the star where the Big Dipper's handle joins the bowl; M40 is 1.4° to its northeast.",
     "whatYouSee": "Not visible in binoculars as a pair. A small telescope at 50× or more shows two dim 9th–10th-magnitude stars close together, and nothing more; it is worth finding only to complete the list."
   },
   "dso:M41": {
     "about": "M41 is an open cluster of about 100 stars, including several red giants, roughly 2,300 light-years away. It covers an area of sky about the size of the full Moon.",
-    "howToFind": "A winter object in [[con:CMa|Canis Major]] and one of the easiest to find: it is 4° (inside one binocular field) due south of [[star:Sirius|Sirius]], the brightest star in the sky.",
+    "howToFind": "Best on December to February evenings, in [[con:CMa|Canis Major]] and one of the easiest to find: it is 4° (inside one binocular field) due south of [[star:Sirius|Sirius]], the brightest star in the sky.",
     "whatYouSee": "From a dark site it is a faint naked-eye patch. Binoculars show a scattering of stars even from the city, with Sirius blazing at the top of the field; a small telescope at low power shows dozens of stars, a few of them noticeably orange.",
     "physicalSize": "about 25 light-years across"
   },
   "dso:M42": {
     "about": "The Orion Nebula is the closest region to Earth where massive stars are being born, about 1,300 light-years away. It is a vast cloud of gas made to glow by the hot young stars of the Trapezium, a tight group of four at its heart. It is one of the brightest nebulae in the sky and is visible to the naked eye as the fuzzy middle \"star\" of Orion's Sword.",
-    "howToFind": "A winter object in [[con:Ori|Orion]]. Find the three stars of Orion's Belt and look about 4° (two or three fingers) south of [[star:Alnilam|Alnilam]], the middle Belt star, for the short line of the Sword; the nebula surrounds the Sword's middle point, half a degree north of [[star:Hatysa|Hatysa]].",
-    "whatYouSee": "The one nebula that rewards observers even from Brooklyn: binoculars show a distinct grey-green glow, and a small telescope shows a fan-shaped cloud with dark indentations and the four Trapezium stars at 50–100×. Under dark skies it spreads into long curving wings.",
+    "howToFind": "Best on December to February evenings, in [[con:Ori|Orion]]. Find the three stars of Orion's Belt and look about 4° (two or three fingers) south of [[star:Alnilam|Alnilam]], the middle Belt star, for the short line of the Sword; the nebula surrounds the Sword's middle point, half a degree north of [[star:Hatysa|Hatysa]].",
+    "whatYouSee": "The one nebula that rewards observers even from a big city: binoculars show a distinct grey-green glow, and a small telescope shows a fan-shaped cloud with dark indentations and the four Trapezium stars at 50–100×. Under dark skies it spreads into long curving wings.",
     "physicalSize": "about 25 light-years across"
   },
   "dso:M43": {
     "about": "M43, De Mairan's Nebula, is physically part of the [[dso:M42|Orion Nebula]], separated from the main cloud only by a dark lane of dust. It lies about 1,300 light-years away and is lit by a single hot star at its center. Jean-Jacques d'Ortous de Mairan discovered it some time before 1731.",
-    "howToFind": "A winter object in [[con:Ori|Orion]], in the Sword about 4° south of the Belt star [[star:Alnilam|Alnilam]]. It sits immediately north of the brightest part of the [[dso:M42|Orion Nebula]], in the same telescope field.",
+    "howToFind": "Best on December to February evenings, in [[con:Ori|Orion]], in the Sword about 4° south of the Belt star [[star:Alnilam|Alnilam]]. It sits immediately north of the brightest part of the [[dso:M42|Orion Nebula]], in the same telescope field.",
     "whatYouSee": "Not separable in binoculars. A small telescope shows a small comma-shaped puff of light around one star, just across a dark gap from the main nebula; from the city it is faint but usually detectable."
   },
   "dso:M44": {
     "about": "The Beehive Cluster, or Praesepe (Latin for \"manger\"), is one of the nearest open clusters, about 600 light-years away, with around 1,000 stars. It has been known since antiquity as a small cloudy spot in the sky, and it was among the first objects Galileo examined with his telescope, which revealed it to be a mass of stars.",
-    "howToFind": "A late-winter and spring object in the middle of [[con:Cnc|Cancer]]. It lies about 15° (a fist and a half) east-southeast of [[star:Pollux|Pollux]], roughly 40 percent of the way from Pollux to [[star:Regulus|Regulus]], and just under 2° north-northwest of the faint star [[star:Asellus Australis|Asellus Australis]].",
+    "howToFind": "Best on February to May evenings, in the middle of [[con:Cnc|Cancer]]. It lies about 15° (a fist and a half) east-southeast of [[star:Pollux|Pollux]], roughly 40 percent of the way from Pollux to [[star:Regulus|Regulus]], and just under 2° north-northwest of the faint star [[star:Asellus Australis|Asellus Australis]].",
     "whatYouSee": "From a dark site it is a naked-eye misty patch larger than the full Moon; from the city it needs binoculars, which are the ideal instrument and show dozens of stars filling a third of the field. A telescope's field is usually too narrow to hold it.",
     "physicalSize": "bright core about 23 light-years across"
   },
   "dso:M45": {
     "about": "The Pleiades, or Seven Sisters, are the most obvious star cluster in the sky: a group of hot blue stars about 440 light-years away, formed within roughly the last 100 million years. It is the Messier object nearest to Earth. Long-exposure photographs show the stars wrapped in blue haze — a dust cloud the cluster happens to be passing through, reflecting their light.",
-    "howToFind": "An autumn and winter object in [[con:Tau|Taurus]]. Follow Orion's Belt up and to the right to orange [[star:Aldebaran|Aldebaran]], then continue about 14° (a fist and a half) farther northwest to a tiny dipper-shaped knot of stars whose brightest member is [[star:Alcyone|Alcyone]].",
-    "whatYouSee": "Easy with the naked eye even from Brooklyn, where most people count five or six stars in a tight little dipper. Binoculars give the best view, showing dozens of blue-white stars; the surrounding nebulosity is not visible from the city."
+    "howToFind": "Best on September to February evenings, in [[con:Tau|Taurus]]. Follow Orion's Belt up and to the right to orange [[star:Aldebaran|Aldebaran]], then continue about 14° (a fist and a half) farther northwest to a tiny dipper-shaped knot of stars whose brightest member is [[star:Alcyone|Alcyone]].",
+    "whatYouSee": "Easy with the naked eye even from a big city, where most people count five or six stars in a tight little dipper. Binoculars give the best view, showing dozens of blue-white stars; the surrounding nebulosity is not visible from the city."
   },
   "dso:M46": {
     "about": "M46 is a rich open cluster of an estimated 500 stars about 5,000 light-years away and roughly 250 million years old. Charles Messier discovered it in 1771. A small planetary nebula, NGC 2438, appears among its stars, though it is thought to lie in the foreground rather than belong to the cluster.",
-    "howToFind": "A winter object in [[con:Pup|Puppis]], in a sparse region east of Canis Major. It lies about 14° (a fist and a half) due east of [[star:Sirius|Sirius]] and 5° south of the modest star [[star:α Mon|Alpha Monocerotis]]; [[dso:M47|M47]] is just over 1° to its west.",
+    "howToFind": "Best on December to February evenings, in [[con:Pup|Puppis]], in a sparse region east of Canis Major. It lies about 14° (a fist and a half) due east of [[star:Sirius|Sirius]] and 5° south of the modest star [[star:α Mon|Alpha Monocerotis]]; [[dso:M47|M47]] is just over 1° to its west.",
     "whatYouSee": "In binoculars it is a round, even, faint mist beside the sparkling M47 — it needs a dark sky. A small telescope resolves it into a dense field of faint, equally bright stars; the planetary nebula needs a larger telescope."
   },
   "dso:M47": {
     "about": "M47 is a bright, coarse open cluster about 1,600 light-years away and roughly 78 million years old. Giovanni Battista Hodierna found it before 1654 and Charles Messier rediscovered it in 1771, but Messier wrote down the wrong position, so for a long time it was treated as a missing object.",
-    "howToFind": "A winter object in [[con:Pup|Puppis]]. It lies about 12.5° (a fist and a quarter) due east of [[star:Sirius|Sirius]] and 5° south of [[star:α Mon|Alpha Monocerotis]], with [[dso:M46|M46]] just over 1° to its east in the same binocular field.",
+    "howToFind": "Best on December to February evenings, in [[con:Pup|Puppis]]. It lies about 12.5° (a fist and a quarter) due east of [[star:Sirius|Sirius]] and 5° south of [[star:α Mon|Alpha Monocerotis]], with [[dso:M46|M46]] just over 1° to its east in the same binocular field.",
     "whatYouSee": "Faintly visible to the naked eye from a dark site. Binoculars show a loose group of a dozen or so bright stars even from the suburbs, in striking contrast to the smooth glow of M46 next door; a small telescope adds a few dozen fainter members."
   },
   "dso:M48": {
     "about": "M48 is a large open cluster about 2,500 light-years away and around 450 million years old. Charles Messier discovered it in 1771 but, as with [[dso:M47|M47]], recorded the wrong position, so there is no cluster exactly where his catalog says.",
-    "howToFind": "A late-winter object on the western edge of [[con:Hya|Hydra]], in a blank area. It lies about 14° (a fist and a half) southeast of [[star:Procyon|Procyon]], and 3° south-southeast of the faint star [[star:ζ Mon|Zeta Monocerotis]].",
+    "howToFind": "Best on February and March evenings, on the western edge of [[con:Hya|Hydra]], in a blank area. It lies about 14° (a fist and a half) southeast of [[star:Procyon|Procyon]], and 3° south-southeast of the faint star [[star:ζ Mon|Zeta Monocerotis]].",
     "whatYouSee": "From a dark site binoculars show a big, soft, grainy patch about the size of the full Moon. A small telescope at low power shows fifty or more stars; from the city it is thin and easily missed."
   },
   "dso:M49": {
     "about": "M49 is a giant elliptical galaxy — a huge, smooth ball of old stars — about 56 million light-years away in the Virgo Cluster of galaxies. Charles Messier discovered it in 1777, the first member of the Virgo Cluster to be found.",
-    "howToFind": "A spring object in [[con:Vir|Virgo]]. It lies about 8.5° (most of a fist) west-southwest of [[star:Vindemiatrix|Vindemiatrix]], and about 8° northwest of [[star:Minelauva|Minelauva]] (Delta Virginis).",
+    "howToFind": "Best on March to May evenings, in [[con:Vir|Virgo]]. It lies about 8.5° (most of a fist) west-southwest of [[star:Vindemiatrix|Vindemiatrix]], and about 8° northwest of [[star:Minelauva|Minelauva]] (Delta Virginis).",
     "whatYouSee": "Not visible from the city. Under a dark sky a small telescope shows a small, round, grey glow with a brighter center and no detail; it is one of the brighter Virgo galaxies.",
     "physicalSize": "about 160,000 light-years across"
   },
   "dso:M50": {
     "about": "M50 is an open cluster about 2,900 light-years away and roughly 160 million years old, sometimes described as heart-shaped. It was recorded by G. D. Cassini before 1711 and found independently by Charles Messier in 1772.",
-    "howToFind": "A winter object in [[con:Mon|Monoceros]]. It lies on the line from [[star:Sirius|Sirius]] to [[star:Procyon|Procyon]], about 9.5° (a fist) north-northeast of Sirius — a little more than a third of the way.",
+    "howToFind": "Best on December to February evenings, in [[con:Mon|Monoceros]]. It lies on the line from [[star:Sirius|Sirius]] to [[star:Procyon|Procyon]], about 9.5° (a fist) north-northeast of Sirius — a little more than a third of the way.",
     "whatYouSee": "A small hazy spot in binoculars under a reasonably dark sky. A small telescope shows a few dozen stars in a heart or arrowhead outline; from the city it is faint."
   },
   "dso:M51": {
     "about": "The Whirlpool Galaxy is a face-on spiral galaxy caught interacting with a smaller companion, NGC 5195, to which one of its arms seems to reach. It lies very roughly 25 to 30 million light-years away. It was the first galaxy in which spiral structure was recognized, by Lord Rosse with his giant telescope in Ireland in the 1840s.",
-    "howToFind": "A spring object in [[con:CVn|Canes Venatici]], just off the handle of the Big Dipper. From [[star:Alkaid|Alkaid]], the star at the end of the handle, go 3.6° (inside one binocular field) to the southwest.",
+    "howToFind": "Best on March to May evenings, in [[con:CVn|Canes Venatici]], just off the handle of the Big Dipper. From [[star:Alkaid|Alkaid]], the star at the end of the handle, go 3.6° (inside one binocular field) to the southwest.",
     "whatYouSee": "Not visible from the city. From a dark site binoculars show a faint blur, and a small telescope shows two fuzzy spots side by side — the cores of the galaxy and its companion. The spiral arms need a large telescope and a very dark sky.",
     "physicalSize": "about 77,000 light-years across"
   },
   "dso:M52": {
     "about": "M52 is a rich open cluster roughly 4,600 light-years away and about 160 million years old, discovered by Charles Messier in 1774.",
-    "howToFind": "Visible all year from 40°N in [[con:Cas|Cassiopeia]], best on autumn evenings. Draw a line from [[star:Schedar|Schedar]] to [[star:Caph|Caph]], the two stars at the western end of the W, and extend it about 6° (a little more than the gap between them) beyond Caph.",
+    "howToFind": "In [[con:Cas|Cassiopeia]]; it never sets north of about 28°N and is best on September to November evenings. Draw a line from [[star:Schedar|Schedar]] to [[star:Caph|Caph]], the two stars at the western end of the W, and extend it about 6° (a little more than the gap between them) beyond Caph.",
     "whatYouSee": "Binoculars show a small misty patch under a good night sky. A small telescope resolves it into a compact fan of many faint stars with one brighter star at the edge.",
     "physicalSize": "about 19 light-years across"
   },
   "dso:M53": {
     "about": "M53 is a remote globular cluster about 58,000 light-years away — nearly as far from us as it is from the center of the galaxy. Its stars are over 12 billion years old. Johann Elert Bode discovered it in 1775.",
-    "howToFind": "A spring object in [[con:Com|Coma Berenices]]. It lies about 15° (a fist and a half) due west of [[star:Arcturus|Arcturus]], just 1° northeast of the faint star [[star:Diadem|Diadem]] (Alpha Comae Berenices).",
+    "howToFind": "Best on March to May evenings, in [[con:Com|Coma Berenices]]. It lies about 15° (a fist and a half) due west of [[star:Arcturus|Arcturus]], just 1° northeast of the faint star [[star:Diadem|Diadem]] (Alpha Comae Berenices).",
     "whatYouSee": "A small dim fuzzy spot in binoculars under a dark sky. A small telescope shows a round glow with a brighter middle; because it is so distant, its stars need a larger telescope to resolve."
   },
   "dso:M54": {
     "about": "M54 is a globular cluster discovered by Charles Messier in 1778. It is thought not to be native to the Milky Way at all: it belongs to the Sagittarius Dwarf galaxy, a small galaxy our own is in the process of absorbing, and lies somewhere around 80,000 to 90,000 light-years away. In 2009 astronomers reported evidence of an intermediate-mass black hole at its core.",
-    "howToFind": "A summer object in [[con:Sgr|Sagittarius]], along the base of the Teapot: 1.7° west-southwest of [[star:Ascella|Ascella]], the star where the handle meets the base. At declination −30° it never rises more than about 19° above the southern horizon from Brooklyn.",
+    "howToFind": "Best on June to August evenings, in [[con:Sgr|Sagittarius]], along the base of the Teapot: 1.7° west-southwest of [[star:Ascella|Ascella]], the star where the handle meets the base. At declination −30° its greatest height above the southern horizon is about 60° minus your latitude (about 19° from latitude 40°N, for example); from the southern hemisphere it passes overhead.",
     "whatYouSee": "Small and faint: a tiny fuzzy star in binoculars under a dark sky, and lost in city haze. A small telescope shows a compact glow with a bright core; it is not resolved into stars even in fairly large amateur telescopes."
   },
   "dso:M55": {
     "about": "M55 is a large, loose globular cluster about 17,600 light-years away. Nicolas Louis de Lacaille discovered it in 1752 from what is now South Africa. Charles Messier tried repeatedly to find it from Paris from 1754 on, defeated by how low it sits in the sky from there.",
-    "howToFind": "A summer and early-autumn object in [[con:Sgr|Sagittarius]], in an empty area about 8° (three quarters of a fist) due east of [[star:Ascella|Ascella]], at the base of the Teapot's handle. At declination −31° it stays within about 18° of the southern horizon from Brooklyn.",
+    "howToFind": "Best on June to September evenings, in [[con:Sgr|Sagittarius]], in an empty area about 8° (three quarters of a fist) due east of [[star:Ascella|Ascella]], at the base of the Teapot's handle. At declination −31° its greatest height above the southern horizon is about 59° minus your latitude (about 18° from latitude 40°N, for example); from the southern hemisphere it passes overhead.",
     "whatYouSee": "From a dark site with a clear southern horizon, binoculars show a large, pale, round glow. From the city it is usually swallowed by haze; a small telescope under good conditions shows a loose, grainy ball with no strong central condensation.",
     "physicalSize": "about 100 light-years across"
   },
   "dso:M56": {
     "about": "M56 is a globular cluster about 33,000 light-years away, discovered by Charles Messier in 1779. It is fairly small and loose, with no bright central core.",
-    "howToFind": "A summer object in [[con:Lyr|Lyra]]. It lies about midway between [[star:Albireo|Albireo]], the head of the Swan, and [[star:Sulafat|Sulafat]] at the bottom of the Lyre — roughly 4° from each.",
+    "howToFind": "Best on June to August evenings, in [[con:Lyr|Lyra]]. It lies about midway between [[star:Albireo|Albireo]], the head of the Swan, and [[star:Sulafat|Sulafat]] at the bottom of the Lyre — roughly 4° from each.",
     "whatYouSee": "Tricky even in large binoculars, where it looks like a slightly fuzzy star. A small telescope shows a small dim round glow against a rich Milky Way field; resolving its stars takes about 8 inches of aperture.",
     "physicalSize": "about 84 light-years across"
   },
   "dso:M57": {
     "about": "The Ring Nebula is the best-known planetary nebula: a shell of glowing gas puffed off by a dying star, which is now shrinking into a white dwarf at the center. It lies about 2,600 light-years away. Charles Messier discovered it in 1779.",
-    "howToFind": "A summer object in [[con:Lyr|Lyra]], close to [[star:Vega|Vega]]. It lies between the two stars at the bottom of the Lyre's parallelogram, [[star:Sheliak|Sheliak]] and [[star:Sulafat|Sulafat]], about 40 percent of the way from Sheliak.",
+    "howToFind": "Best on June to August evenings, in [[con:Lyr|Lyra]], close to [[star:Vega|Vega]]. It lies between the two stars at the bottom of the Lyre's parallelogram, [[star:Sheliak|Sheliak]] and [[star:Sulafat|Sulafat]], about 40 percent of the way from Sheliak.",
     "whatYouSee": "Too small for binoculars, where it looks like a faint star. A small telescope at 100× shows a tiny grey smoke ring, slightly oval, bright enough to see from the suburbs; the central star is far too faint for small telescopes."
   },
   "dso:M58": {
     "about": "M58 is a barred spiral galaxy about 68 million light-years away, one of the brightest galaxies in the Virgo Cluster. Charles Messier discovered it in 1779. It is one of only four barred spirals in his catalog.",
-    "howToFind": "A spring object in [[con:Vir|Virgo]]. It lies about 6° (one binocular field) due west of [[star:Vindemiatrix|Vindemiatrix]], a little over 1° west of the pair [[dso:M59|M59]] and [[dso:M60|M60]].",
+    "howToFind": "Best on March to May evenings, in [[con:Vir|Virgo]]. It lies about 6° (one binocular field) due west of [[star:Vindemiatrix|Vindemiatrix]], a little over 1° west of the pair [[dso:M59|M59]] and [[dso:M60|M60]].",
     "whatYouSee": "Not visible from the city. Under a dark sky a small telescope shows a dim oval glow with a brighter center; the bar and arms need a large telescope.",
     "physicalSize": "about 130,000 light-years across"
   },
   "dso:M59": {
     "about": "M59 is an elliptical galaxy in the Virgo Cluster, about 50 million light-years away. Johann Gottfried Koehler discovered it in April 1779, together with its neighbor [[dso:M60|M60]], while he was following a comet through the same part of the sky.",
-    "howToFind": "A spring object in [[con:Vir|Virgo]]. It lies 5° (one binocular field) due west of [[star:Vindemiatrix|Vindemiatrix]], less than half a degree west of [[dso:M60|M60]].",
+    "howToFind": "Best on March to May evenings, in [[con:Vir|Virgo]]. It lies 5° (one binocular field) due west of [[star:Vindemiatrix|Vindemiatrix]], less than half a degree west of [[dso:M60|M60]].",
     "whatYouSee": "Not visible from the city. Under a dark sky a small telescope shows a small, faint, slightly oval smudge, with M60 in the same low-power field."
   },
   "dso:M60": {
     "about": "M60 is a large elliptical galaxy in the Virgo Cluster, about 57 million light-years away. A smaller spiral galaxy, NGC 4647, appears right beside it, and the two are listed together as the pair Arp 116. Johann Gottfried Koehler discovered M60 in April 1779 while observing a comet.",
-    "howToFind": "A spring object in [[con:Vir|Virgo]], and the easiest of the Virgo Cluster galaxies to hop to: it lies 4.6° (just under one binocular field) due west of [[star:Vindemiatrix|Vindemiatrix]].",
+    "howToFind": "Best on March to May evenings, in [[con:Vir|Virgo]], and the easiest of the Virgo Cluster galaxies to hop to: it lies 4.6° (just under one binocular field) due west of [[star:Vindemiatrix|Vindemiatrix]].",
     "whatYouSee": "Not visible from the city. Under a dark sky a small telescope shows a round grey glow with a brighter center, a little bigger and brighter than M59 beside it."
   },
   "dso:M61": {
     "about": "M61 is a face-on barred spiral galaxy in the Virgo Cluster, roughly 50 million light-years away. Barnaba Oriani discovered it on May 5, 1779; Charles Messier saw it the same night but mistook it for a comet, and recognized his error six days later.",
-    "howToFind": "A spring object in southern [[con:Vir|Virgo]]. It lies about 8° (most of a fist) northwest of [[star:Porrima|Porrima]], and about 5° north of the fainter star [[star:Zaniah|Zaniah]] (Eta Virginis).",
+    "howToFind": "Best on March to May evenings, in southern [[con:Vir|Virgo]]. It lies about 8° (most of a fist) northwest of [[star:Porrima|Porrima]], and about 5° north of the fainter star [[star:Zaniah|Zaniah]] (Eta Virginis).",
     "whatYouSee": "Not visible from the city. Under a dark sky a small telescope shows a faint round glow with a small bright core; the spiral pattern needs a large telescope.",
     "physicalSize": "roughly 90,000 light-years across"
   },
   "dso:M62": {
     "about": "M62 is one of the more massive and luminous globular clusters of the Milky Way, about 21,500 light-years from Earth and only some 5,500 light-years from the galactic center. Charles Messier discovered it in 1771.",
-    "howToFind": "A summer object on the southern border of [[con:Oph|Ophiuchus]]. It lies about 8° (three quarters of a fist) east-southeast of [[star:Antares|Antares]], and about 5° north-northeast of [[star:Larawag|Larawag]] (Epsilon Scorpii). At declination −30° it stays low — at most about 19° up — from Brooklyn.",
+    "howToFind": "Best on June to August evenings, on the southern border of [[con:Oph|Ophiuchus]]. It lies about 8° (three quarters of a fist) east-southeast of [[star:Antares|Antares]], and about 5° north-northeast of [[star:Larawag|Larawag]] (Epsilon Scorpii). At declination −30° its greatest height above the southern horizon is about 60° minus your latitude (about 19° from latitude 40°N, for example); from the southern hemisphere it passes overhead.",
     "whatYouSee": "A small fuzzy spot in binoculars from a dark site with a clear southern horizon; lost in city haze. A small telescope shows a bright glow that looks lopsided, with the core off-center.",
     "physicalSize": "about 100 light-years across"
   },
   "dso:M63": {
     "about": "The Sunflower Galaxy is a spiral galaxy about 29 million light-years away whose arms are broken into many short, patchy segments, giving photographs the look of a sunflower's seed head. Pierre Méchain discovered it in 1779. In the mid-19th century Lord Rosse identified spiral structure in it, making it one of the first galaxies in which this was seen.",
-    "howToFind": "A spring object in [[con:CVn|Canes Venatici]]. It lies about 5° (one binocular field) northeast of [[star:Cor Caroli|Cor Caroli]], on the way from Cor Caroli toward [[star:Alkaid|Alkaid]] at the end of the Big Dipper's handle.",
+    "howToFind": "Best on March to May evenings, in [[con:CVn|Canes Venatici]]. It lies about 5° (one binocular field) northeast of [[star:Cor Caroli|Cor Caroli]], on the way from Cor Caroli toward [[star:Alkaid|Alkaid]] at the end of the Big Dipper's handle.",
     "whatYouSee": "Not visible from the city. From a dark site a small telescope shows an oval grey glow with a brighter center next to a faint star; the patchy arms do not show in small instruments.",
     "physicalSize": "about 110,000 light-years across"
   },
   "dso:M64": {
     "about": "The Black Eye Galaxy is a spiral galaxy about 17 million light-years away with a dark band of dust arching in front of its bright core, which gives it its name. Edward Pigott discovered it in March 1779, Johann Elert Bode found it independently a month later, and Messier the following year.",
-    "howToFind": "A spring object in [[con:Com|Coma Berenices]]. It lies about 5° (one binocular field) northwest of the faint star [[star:Diadem|Diadem]] (Alpha Comae Berenices), and roughly 11° due north of [[star:Vindemiatrix|Vindemiatrix]].",
+    "howToFind": "Best on March to May evenings, in [[con:Com|Coma Berenices]]. It lies about 5° (one binocular field) northwest of the faint star [[star:Diadem|Diadem]] (Alpha Comae Berenices), and roughly 11° due north of [[star:Vindemiatrix|Vindemiatrix]].",
     "whatYouSee": "Very difficult from the city. Under a dark sky a small telescope shows a bright oval glow; the dark \"black eye\" beside the core needs a telescope of about 6 inches or more and steady air.",
     "physicalSize": "about 54,000 light-years across"
   },
   "dso:M65": {
     "about": "M65 is a spiral galaxy roughly 35 to 40 million light-years away, discovered by Charles Messier in 1780. With [[dso:M66|M66]] and NGC 3628 it forms the Leo Triplet, a small, close group of galaxies that fit together in one low-power telescope field.",
-    "howToFind": "A spring object in [[con:Leo|Leo]], under the Lion's hindquarters. From [[star:Chertan|Chertan]] go 2.6° south-southeast, about halfway toward the fainter star [[star:ι Leo|Iota Leonis]]; M65 is the western galaxy of the pair.",
+    "howToFind": "Best on March to May evenings, in [[con:Leo|Leo]], under the Lion's hindquarters. From [[star:Chertan|Chertan]] go 2.6° south-southeast, about halfway toward the fainter star [[star:ι Leo|Iota Leonis]]; M65 is the western galaxy of the pair.",
     "whatYouSee": "Not visible from the city. Under a dark sky a small telescope shows a slim, faint, elongated glow, with M66 a third of a degree to its east.",
     "physicalSize": "roughly 110,000 light-years across"
   },
   "dso:M66": {
     "about": "M66 is a spiral galaxy about 31 million light-years away with a weak central bar and loosely wound, slightly distorted arms. It is the brightest member of the Leo Triplet, the small group it forms with [[dso:M65|M65]] and NGC 3628.",
-    "howToFind": "A spring object in [[con:Leo|Leo]]. From [[star:Chertan|Chertan]] go 2.8° south-southeast, about halfway toward [[star:ι Leo|Iota Leonis]]; M66 is the eastern galaxy of the close pair with [[dso:M65|M65]].",
+    "howToFind": "Best on March to May evenings, in [[con:Leo|Leo]]. From [[star:Chertan|Chertan]] go 2.8° south-southeast, about halfway toward [[star:ι Leo|Iota Leonis]]; M66 is the eastern galaxy of the close pair with [[dso:M65|M65]].",
     "whatYouSee": "Not visible from the city. Under a dark sky a small telescope shows an oval glow with a bright center, a little brighter and fatter than M65 in the same field.",
     "physicalSize": "about 85,000 light-years across"
   },
   "dso:M67": {
     "about": "M67 is one of the oldest open clusters known: estimates of its age range from about 3.2 to 5 billion years, similar to the Sun, whereas most open clusters drift apart far sooner. It lies about 2,600 to 2,900 light-years away. Johann Gottfried Koehler discovered it in 1779.",
-    "howToFind": "A late-winter and spring object in southern [[con:Cnc|Cancer]]. It lies 1.8° due west of the faint star [[star:Acubens|Acubens]] (Alpha Cancri), and about 6° north of the little ring of stars that forms the head of [[con:Hya|Hydra]].",
+    "howToFind": "Best on February to May evenings, in southern [[con:Cnc|Cancer]]. It lies 1.8° due west of the faint star [[star:Acubens|Acubens]] (Alpha Cancri), and about 6° north of the little ring of stars that forms the head of [[con:Hya|Hydra]].",
     "whatYouSee": "Binoculars show a dim, round, misty patch under a dark sky. A small telescope resolves it into a rich swarm of faint stars about the size of the full Moon; from the city it is hard."
   },
   "dso:M68": {
     "about": "M68 is a globular cluster about 33,600 light-years from Earth, far out in the galaxy's halo. Charles Messier discovered it in 1780. William Herschel later called it \"a beautiful cluster of stars, extremely rich\".",
-    "howToFind": "A spring object in [[con:Hya|Hydra]], just below the kite shape of [[con:Crv|Corvus]]. From [[star:Kraz|Kraz]] (Beta Corvi), the Crow's lower-left corner star, go 3.5° south-southeast. At declination −27° it climbs only about 22° above the southern horizon from Brooklyn.",
+    "howToFind": "Best on March to May evenings, in [[con:Hya|Hydra]], just below the kite shape of [[con:Crv|Corvus]]. From [[star:Kraz|Kraz]] (Beta Corvi), the Crow's lower-left corner star, go 3.5° south-southeast. At declination −27° its greatest height above the southern horizon is about 63° minus your latitude (about 22° from latitude 40°N, for example); from the southern hemisphere it passes nearly overhead.",
     "whatYouSee": "A faint small glow in binoculars from a dark site; not a city object. A small telescope shows a dim round patch with little central brightening.",
     "physicalSize": "about 105 light-years across"
   },
   "dso:M69": {
     "about": "M69 is a globular cluster about 29,000 light-years away, with stars around 13 billion years old. Charles Messier discovered it on August 31, 1780, the same night he found its neighbor [[dso:M70|M70]], while searching for an object Lacaille had described.",
-    "howToFind": "A summer object in [[con:Sgr|Sagittarius]], along the base of the Teapot: 2.5° northeast of [[star:Kaus Australis|Kaus Australis]], the Teapot's bottom-right star. At declination −32° it never rises more than about 17° above the southern horizon from Brooklyn.",
+    "howToFind": "Best on June to August evenings, in [[con:Sgr|Sagittarius]], along the base of the Teapot: 2.5° northeast of [[star:Kaus Australis|Kaus Australis]], the Teapot's bottom-right star. At declination −32° its greatest height above the southern horizon is about 58° minus your latitude (about 17° from latitude 40°N, for example); from the southern hemisphere it passes nearly overhead.",
     "whatYouSee": "Dimly visible in 50 mm binoculars from a dark site with a clear southern horizon; lost in city haze. A small telescope shows a small round fuzzy spot.",
     "physicalSize": "about 90 light-years across"
   },
   "dso:M70": {
     "about": "M70 is a globular cluster about 29,400 light-years from Earth and around 6,500 light-years from the galactic center, similar in size and brightness to its neighbor [[dso:M69|M69]]. Charles Messier discovered it in 1780. Comet Hale–Bopp was discovered near this cluster in 1995, by observers who were looking at it.",
-    "howToFind": "A summer object in [[con:Sgr|Sagittarius]], almost exactly midway along the base of the Teapot between [[star:Kaus Australis|Kaus Australis]] and [[star:Ascella|Ascella]], about 4.5° from each. At declination −32° it stays within about 17° of the southern horizon from Brooklyn.",
+    "howToFind": "Best on June to August evenings, in [[con:Sgr|Sagittarius]], almost exactly midway along the base of the Teapot between [[star:Kaus Australis|Kaus Australis]] and [[star:Ascella|Ascella]], about 4.5° from each. At declination −32° its greatest height above the southern horizon is about 58° minus your latitude (about 17° from latitude 40°N, for example); from the southern hemisphere it passes nearly overhead.",
     "whatYouSee": "A faint, tiny fuzzy spot in binoculars under a dark southern sky; not visible through city haze. A small telescope shows a small glow with a bright, compact center.",
     "physicalSize": "about 70 light-years across"
   },
   "dso:M71": {
     "about": "M71 is a very loose globular cluster about 13,000 light-years away — so loose that for a long time astronomers argued over whether it was a globular or a dense open cluster. Philippe Loys de Chéseaux discovered it in 1745.",
-    "howToFind": "A summer object in [[con:Sge|Sagitta]], the little Arrow inside the Summer Triangle. It lies on the arrow's shaft, midway between [[star:γ Sge|Gamma Sagittae]] and [[star:δ Sge|Delta Sagittae]], about 1.5° from each.",
+    "howToFind": "Best on June to August evenings, in [[con:Sge|Sagitta]], the little Arrow inside the Summer Triangle. It lies on the arrow's shaft, midway between [[star:γ Sge|Gamma Sagittae]] and [[star:δ Sge|Delta Sagittae]], about 1.5° from each.",
     "whatYouSee": "A faint hazy spot in binoculars under a dark sky. A small telescope shows a small grainy patch in a rich Milky Way field, without the bright core of a typical globular; from the city it is difficult.",
     "physicalSize": "about 27 light-years across"
   },
   "dso:M72": {
     "about": "M72 is a faint, distant globular cluster about 54,500 light-years away. Pierre Méchain discovered it on August 29, 1780.",
-    "howToFind": "An autumn object in western [[con:Aqr|Aquarius]]. It lies 3.4° south-southeast of the modest star [[star:Albali|Albali]] (Epsilon Aquarii), and about 8° east-northeast of [[star:Dabih|Dabih]] in Capricornus.",
+    "howToFind": "Best on September to November evenings, in western [[con:Aqr|Aquarius]]. It lies 3.4° south-southeast of the modest star [[star:Albali|Albali]] (Epsilon Aquarii), and about 8° east-northeast of [[star:Dabih|Dabih]] in Capricornus.",
     "whatYouSee": "One of the faintest Messier globulars: not a binocular or city object. A small telescope under a dark sky shows a small, dim, round patch with no stars resolved."
   },
   "dso:M73": {
     "about": "M73 is not a real deep-sky object but an asterism: four faint stars that happen to lie in the same direction. Charles Messier recorded it in 1780 as a cluster of a few stars with some nebulosity, and it was long thought to be a small open cluster. Measurements by the Gaia satellite put the four stars at distances from about 1,000 to 2,300 light-years, so they are unrelated.",
-    "howToFind": "An autumn object in western [[con:Aqr|Aquarius]]. It lies about 1.3° east of the globular cluster [[dso:M72|M72]], and about 4° southeast of [[star:Albali|Albali]] (Epsilon Aquarii).",
+    "howToFind": "Best on September to November evenings, in western [[con:Aqr|Aquarius]]. It lies about 1.3° east of the globular cluster [[dso:M72|M72]], and about 4° southeast of [[star:Albali|Albali]] (Epsilon Aquarii).",
     "whatYouSee": "Invisible in binoculars. A small telescope at 80–100× shows a tiny Y-shaped group of four dim stars, and nothing nebulous; it is observed mainly to complete the list."
   },
   "dso:M74": {
     "about": "M74 is a face-on spiral galaxy about 32 million light-years away with two clearly defined arms, a textbook \"grand design\" spiral. Its light is spread so thinly that it is widely regarded as the most difficult Messier object to see, and it is nicknamed the Phantom Galaxy.",
-    "howToFind": "An autumn object in [[con:Psc|Pisces]]. It lies 1.3° east-northeast of the faint star [[star:Alpherg|Alpherg]] (Eta Piscium), which is about 7° southwest of [[star:Sheratan|Sheratan]] in Aries.",
+    "howToFind": "Best on September to November evenings, in [[con:Psc|Pisces]]. It lies 1.3° east-northeast of the faint star [[star:Alpherg|Alpherg]] (Eta Piscium), which is about 7° southwest of [[star:Sheratan|Sheratan]] in Aries.",
     "whatYouSee": "Invisible from the city and from most suburbs. Even under a dark sky a small telescope shows only a very faint, round, featureless glow that takes patience and averted vision — looking slightly to one side — to detect.",
     "physicalSize": "about 85,000 light-years across"
   },
   "dso:M75": {
     "about": "M75 is a compact globular cluster about 67,500 light-years from Earth, on the far side of the galactic center from us. It is among the most tightly concentrated globulars known. Pierre Méchain discovered it in 1780.",
-    "howToFind": "A late-summer and autumn object on the eastern edge of [[con:Sgr|Sagittarius]], in an empty area. It lies about 8° (most of a fist) south-southwest of [[star:Dabih|Dabih]] (Beta Capricorni).",
+    "howToFind": "Best on August to November evenings, on the eastern edge of [[con:Sgr|Sagittarius]], in an empty area. It lies about 8° (most of a fist) south-southwest of [[star:Dabih|Dabih]] (Beta Capricorni).",
     "whatYouSee": "Small and faint: a dim fuzzy star in a small telescope under a dark sky, with a bright core and no stars resolved. Not a city object.",
     "physicalSize": "about 130 light-years across"
   },
   "dso:M76": {
     "about": "The Little Dumbbell Nebula is a planetary nebula — gas shed by a dying star — about 2,500 light-years away. Pierre Méchain discovered it in 1780, but it was not recognized as a planetary nebula until 1918. It is one of the faintest objects in Messier's catalog.",
-    "howToFind": "An autumn object in northern [[con:Per|Perseus]], near the border with Cassiopeia and Andromeda. It lies just under 1° north-northwest of the faint star [[star:φ Per|Phi Persei]], which is about 9° (a fist) south-southeast of [[star:Ruchbah|Ruchbah]] in the W of Cassiopeia.",
+    "howToFind": "Best on September to November evenings, in northern [[con:Per|Perseus]], near the border with Cassiopeia and Andromeda. It lies just under 1° north-northwest of the faint star [[star:φ Per|Phi Persei]], which is about 9° (a fist) south-southeast of [[star:Ruchbah|Ruchbah]] in the W of Cassiopeia.",
     "whatYouSee": "Not visible in binoculars or from the city. Under a dark sky a small telescope at 100× shows a tiny, dim, rectangular smudge; larger telescopes show its two lobes.",
     "physicalSize": "about 1.2 light-years across"
   },
   "dso:M77": {
     "about": "M77 is a barred spiral galaxy about 35 million light-years away, discovered by Pierre Méchain in 1780. It is one of the brightest Seyfert galaxies in the sky — galaxies whose centers shine intensely because gas is falling toward a central supermassive black hole.",
-    "howToFind": "An autumn object in [[con:Cet|Cetus]]. It lies just under 1° east-southeast of the faint star [[star:δ Cet|Delta Ceti]], and about 3° south of [[star:Kaffaljidhma|Kaffaljidhma]] (Gamma Ceti), below the ring of stars that forms the Sea Monster's head.",
+    "howToFind": "Best on September to November evenings, in [[con:Cet|Cetus]]. It lies just under 1° east-southeast of the faint star [[star:δ Cet|Delta Ceti]], and about 3° south of [[star:Kaffaljidhma|Kaffaljidhma]] (Gamma Ceti), below the ring of stars that forms the Sea Monster's head.",
     "whatYouSee": "Its small, bright core makes it one of the few galaxies a small telescope can pick up from the suburbs, as a fuzzy star. Under a dark sky a faint round halo appears around the core.",
     "physicalSize": "about 90,000 light-years across"
   },
   "dso:M78": {
     "about": "M78 is a reflection nebula: a cloud of dust that shines not by its own light but by reflecting the light of stars embedded in it. It is the brightest nebula of this kind in the sky, part of the Orion B cloud complex about 1,350 light-years away.",
-    "howToFind": "A winter object in [[con:Ori|Orion]]. It lies 2.5° (half a binocular field) northeast of [[star:Alnitak|Alnitak]], the left-hand (eastern) star of Orion's Belt.",
+    "howToFind": "Best on December to February evenings, in [[con:Ori|Orion]]. It lies 2.5° (half a binocular field) northeast of [[star:Alnitak|Alnitak]], the left-hand (eastern) star of Orion's Belt.",
     "whatYouSee": "Not visible from the city. Under a dark sky a small telescope shows a small hazy patch around two 10th-magnitude stars, rather like a faint comet.",
     "physicalSize": "about 10 light-years across"
   },
   "dso:M79": {
-    "about": "M79 is a globular cluster about 42,000 light-years from Earth, discovered by Pierre Méchain in 1780. Unusually it lies in the winter sky, on the opposite side from the galactic center where most globulars gather. Some astronomers think it was not born in the Milky Way but came from a small neighboring galaxy, the proposed Canis Major Dwarf.",
-    "howToFind": "A winter object in [[con:Lep|Lepus]], below Orion. Draw a line from [[star:Arneb|Arneb]] to [[star:Nihal|Nihal]], the Hare's two brightest stars, and extend it about 4° farther south-southwest. At declination −24.5° it is fairly low from Brooklyn.",
+    "about": "M79 is a globular cluster about 42,000 light-years from Earth, discovered by Pierre Méchain in 1780. Unusually it lies in the December to February evening sky, on the opposite side from the galactic center where most globulars gather. Some astronomers think it was not born in the Milky Way but came from a small neighboring galaxy, the proposed Canis Major Dwarf.",
+    "howToFind": "Best on December to February evenings, in [[con:Lep|Lepus]], below Orion. Draw a line from [[star:Arneb|Arneb]] to [[star:Nihal|Nihal]], the Hare's two brightest stars, and extend it about 4° farther south-southwest. At declination −24.5° it is fairly low from mid-northern latitudes and high from the southern hemisphere.",
     "whatYouSee": "A small fuzzy star in binoculars under a dark sky. A small telescope shows a compact round glow with a bright center; from the city it is hard because of its low altitude.",
     "physicalSize": "about 105 light-years across"
   },
   "dso:M80": {
     "about": "M80 is one of the densest globular clusters in the Milky Way, with several hundred thousand stars packed into a ball about 32,600 light-years away. Charles Messier discovered it in 1781.",
-    "howToFind": "A summer object in [[con:Sco|Scorpius]]. It lies almost exactly midway between [[star:Antares|Antares]] and [[star:Acrab|Acrab]] (Beta Scorpii), the top star of the Scorpion's claws — a little over 4° from each.",
+    "howToFind": "Best on June to August evenings, in [[con:Sco|Scorpius]]. It lies almost exactly midway between [[star:Antares|Antares]] and [[star:Acrab|Acrab]] (Beta Scorpii), the top star of the Scorpion's claws — a little over 4° from each.",
     "whatYouSee": "In binoculars it looks like a slightly swollen star. A small telescope shows a small, very bright, round glow rather like the head of a comet; its stars are too crowded to resolve in small instruments.",
     "physicalSize": "about 95 light-years across"
   },
   "dso:M81": {
     "about": "Bode's Galaxy is a large spiral galaxy about 12 million light-years away, one of the nearest and brightest galaxies in the northern sky. It is named for Johann Elert Bode, who found it in 1774. A supermassive black hole of about 70 million solar masses sits at its center.",
-    "howToFind": "Visible all year from 40°N in [[con:UMa|Ursa Major]], best on spring evenings. Draw a diagonal across the Big Dipper's bowl from [[star:Phecda|Phecda]] to [[star:Dubhe|Dubhe]] and extend it about 10° (a fist) beyond Dubhe to the northwest.",
+    "howToFind": "In [[con:UMa|Ursa Major]]; it never sets north of about 21°N and is best on March to May evenings. Draw a diagonal across the Big Dipper's bowl from [[star:Phecda|Phecda]] to [[star:Dubhe|Dubhe]] and extend it about 10° (a fist) beyond Dubhe to the northwest.",
     "whatYouSee": "One of the few galaxies visible in binoculars from a dark site, as a small oval glow with [[dso:M82|M82]] beside it. From the suburbs a small telescope shows its bright core; from the city it is marginal at best.",
     "physicalSize": "about 96,000 light-years across"
   },
   "dso:M82": {
     "about": "The Cigar Galaxy is a starburst galaxy about 12 million light-years away: a close pass by its larger neighbor [[dso:M81|M81]] has stirred it into forming stars at a furious rate. We see it nearly edge-on, as a thin streak. In January 2014 a supernova, SN 2014J, appeared in it and became bright enough for small telescopes.",
-    "howToFind": "Visible all year from 40°N in [[con:UMa|Ursa Major]], best on spring evenings. Find [[dso:M81|M81]] by extending the line from [[star:Phecda|Phecda]] through [[star:Dubhe|Dubhe]] about 10° beyond Dubhe; M82 is just over half a degree north of M81, in the same low-power field.",
+    "howToFind": "In [[con:UMa|Ursa Major]]; it never sets north of about 20°N and is best on March to May evenings. Find [[dso:M81|M81]] by extending the line from [[star:Phecda|Phecda]] through [[star:Dubhe|Dubhe]] about 10° beyond Dubhe; M82 is just over half a degree north of M81, in the same low-power field.",
     "whatYouSee": "From a dark site binoculars show it as a faint sliver beside M81. A small telescope shows a narrow grey streak with a mottled look; its high surface brightness makes it one of the easier galaxies from the suburbs.",
     "physicalSize": "about 41,000 light-years across"
   },
   "dso:M83": {
     "about": "The Southern Pinwheel is a barred spiral galaxy about 15 million light-years away, one of the closest and brightest of its kind. Nicolas-Louis de Lacaille discovered it on February 17, 1752 from the Cape of Good Hope.",
-    "howToFind": "A spring object on the border of [[con:Hya|Hydra]] and Centaurus. It lies about 8° (most of a fist) south-southeast of [[star:γ Hya|Gamma Hydrae]], and about 9° northwest of [[star:Menkent|Menkent]]. At declination −30° it never rises more than about 19° above the southern horizon from Brooklyn.",
-    "whatYouSee": "A fine sight from southern latitudes, but from Brooklyn it is low in the haze and effectively invisible from the city. From a dark site with a clear southern horizon a small telescope shows a large, faint, round glow with a brighter center.",
+    "howToFind": "Best on March to May evenings, on the border of [[con:Hya|Hydra]] and Centaurus. It lies about 8° (most of a fist) south-southeast of [[star:γ Hya|Gamma Hydrae]], and about 9° northwest of [[star:Menkent|Menkent]]. At declination −30° its greatest height above the southern horizon is about 60° minus your latitude (about 19° from latitude 40°N, for example); from the southern hemisphere it passes overhead.",
+    "whatYouSee": "A fine sight from southern latitudes, but from mid-northern latitudes it is low in the haze and effectively invisible from a city. From a dark site with a clear southern horizon a small telescope shows a large, faint, round glow with a brighter center.",
     "physicalSize": "about 118,000 light-years across"
   },
   "dso:M84": {
     "about": "M84 is a giant elliptical or lenticular galaxy about 55 million light-years away, in the crowded core of the Virgo Cluster. Charles Messier discovered it in 1781. With [[dso:M86|M86]] beside it, it marks the western end of a curving line of galaxies known as Markarian's Chain.",
-    "howToFind": "A spring object in [[con:Vir|Virgo]]. It lies almost exactly midway between [[star:Denebola|Denebola]], the Lion's tail, and [[star:Vindemiatrix|Vindemiatrix]] — about 9° (a fist) from each.",
+    "howToFind": "Best on March to May evenings, in [[con:Vir|Virgo]]. It lies almost exactly midway between [[star:Denebola|Denebola]], the Lion's tail, and [[star:Vindemiatrix|Vindemiatrix]] — about 9° (a fist) from each.",
     "whatYouSee": "Not visible from the city. Under a dark sky a small telescope shows a small round fuzzy spot with a bright center, with M86 a third of a degree to its east in the same field."
   },
   "dso:M85": {
     "about": "M85 is a lenticular galaxy — a disc galaxy without spiral arms — or, by some classifications, an elliptical. It lies about 60 million light-years away on the northern outskirts of the Virgo Cluster. Pierre Méchain discovered it in 1781.",
-    "howToFind": "A spring object in [[con:Com|Coma Berenices]]. It lies about 9.5° (a fist) east-northeast of [[star:Denebola|Denebola]], the Lion's tail.",
+    "howToFind": "Best on March to May evenings, in [[con:Com|Coma Berenices]]. It lies about 9.5° (a fist) east-northeast of [[star:Denebola|Denebola]], the Lion's tail.",
     "whatYouSee": "Not visible from the city. Under a dark sky a small telescope shows a small oval glow with a bright core.",
     "physicalSize": "about 120,000 light-years across"
   },
   "dso:M86": {
     "about": "M86 is a bright elliptical or lenticular galaxy about 52 million light-years away, at the heart of the Virgo Cluster. Charles Messier discovered it in 1781. Unlike nearly every other galaxy it is approaching us rather than receding, and it has the largest blueshift of any Messier object, because it is falling through the cluster toward us.",
-    "howToFind": "A spring object in [[con:Vir|Virgo]]. It lies midway between [[star:Denebola|Denebola]] and [[star:Vindemiatrix|Vindemiatrix]], about 9° from each, just a third of a degree east of [[dso:M84|M84]].",
+    "howToFind": "Best on March to May evenings, in [[con:Vir|Virgo]]. It lies midway between [[star:Denebola|Denebola]] and [[star:Vindemiatrix|Vindemiatrix]], about 9° from each, just a third of a degree east of [[dso:M84|M84]].",
     "whatYouSee": "Not visible from the city. Under a dark sky a small telescope shows a round grey smudge, slightly larger and more diffuse than M84 beside it."
   },
   "dso:M87": {
     "about": "M87 is a supergiant elliptical galaxy about 53 million light-years away, one of the largest and most massive galaxies in our part of the universe, with several trillion stars and about 15,000 globular clusters. A jet of plasma thousands of light-years long shoots from its core, powered by a supermassive black hole — the first black hole ever imaged, by the Event Horizon Telescope in 2019.",
-    "howToFind": "A spring object in [[con:Vir|Virgo]]. It lies about 8° (most of a fist) west-northwest of [[star:Vindemiatrix|Vindemiatrix]], about 1.5° east-southeast of the pair [[dso:M84|M84]] and [[dso:M86|M86]].",
+    "howToFind": "Best on March to May evenings, in [[con:Vir|Virgo]]. It lies about 8° (most of a fist) west-northwest of [[star:Vindemiatrix|Vindemiatrix]], about 1.5° east-southeast of the pair [[dso:M84|M84]] and [[dso:M86|M86]].",
     "whatYouSee": "Not visible from the city. Under a dark sky a small telescope shows a bright, round, featureless glow; the jet is beyond small instruments.",
     "physicalSize": "about 130,000 light-years across"
   },
   "dso:M88": {
     "about": "M88 is a spiral galaxy about 50 to 60 million light-years away in the Virgo Cluster, discovered by Charles Messier in 1781. We see it tilted, so it appears as an elongated oval.",
-    "howToFind": "A spring object in [[con:Com|Coma Berenices]], on the northern side of the Virgo Cluster. It lies about 8° (most of a fist) west-northwest of [[star:Vindemiatrix|Vindemiatrix]], about 2° north-northeast of [[dso:M87|M87]].",
+    "howToFind": "Best on March to May evenings, in [[con:Com|Coma Berenices]], on the northern side of the Virgo Cluster. It lies about 8° (most of a fist) west-northwest of [[star:Vindemiatrix|Vindemiatrix]], about 2° north-northeast of [[dso:M87|M87]].",
     "whatYouSee": "Not visible from the city. Under a dark sky a small telescope shows a faint elongated glow with a brighter middle.",
     "physicalSize": "about 130,000 light-years across"
   },
   "dso:M89": {
     "about": "M89 is an elliptical galaxy about 50 million light-years away in the Virgo Cluster, discovered by Charles Messier on March 18, 1781. It appears almost perfectly round.",
-    "howToFind": "A spring object in [[con:Vir|Virgo]]. It lies about 6.7° west-northwest of [[star:Vindemiatrix|Vindemiatrix]], a little over 1° east of [[dso:M87|M87]].",
+    "howToFind": "Best on March to May evenings, in [[con:Vir|Virgo]]. It lies about 6.7° west-northwest of [[star:Vindemiatrix|Vindemiatrix]], a little over 1° east of [[dso:M87|M87]].",
     "whatYouSee": "Not visible from the city. Under a dark sky a small telescope shows a small, round, faint fuzzy spot with a star-like center."
   },
   "dso:M90": {
     "about": "M90 is a large spiral galaxy about 60 million light-years away in the Virgo Cluster, discovered by Charles Messier in 1781.",
-    "howToFind": "A spring object in [[con:Vir|Virgo]]. It lies about 6.6° west-northwest of [[star:Vindemiatrix|Vindemiatrix]], less than 1° north-northeast of [[dso:M89|M89]].",
+    "howToFind": "Best on March to May evenings, in [[con:Vir|Virgo]]. It lies about 6.6° west-northwest of [[star:Vindemiatrix|Vindemiatrix]], less than 1° north-northeast of [[dso:M89|M89]].",
     "whatYouSee": "Not visible from the city. Under a dark sky a small telescope shows a faint, elongated oval with a brighter core.",
     "physicalSize": "about 130,000 light-years across"
   },
   "dso:M91": {
     "about": "M91 is a barred spiral galaxy about 63 million light-years away in the Virgo Cluster. For nearly two centuries it was a \"missing\" Messier object, because there is nothing at the position Messier recorded in 1781; it is now generally identified with the galaxy NGC 4548, on the reasoning that he measured its position from the wrong reference galaxy.",
-    "howToFind": "A spring object in [[con:Com|Coma Berenices]]. It lies about 7.5° west-northwest of [[star:Vindemiatrix|Vindemiatrix]], just under 1° east of [[dso:M88|M88]].",
+    "howToFind": "Best on March to May evenings, in [[con:Com|Coma Berenices]]. It lies about 7.5° west-northwest of [[star:Vindemiatrix|Vindemiatrix]], just under 1° east of [[dso:M88|M88]].",
     "whatYouSee": "Among the faintest Messier galaxies: invisible from the city, and under a dark sky a small telescope shows only a dim, diffuse patch.",
     "physicalSize": "about 105,000 light-years across"
   },
   "dso:M92": {
     "about": "M92 is a bright globular cluster about 26,700 light-years away and one of the oldest in the galaxy. Johann Elert Bode discovered it in 1777, and Charles Messier rediscovered it in 1781. It is a fine object in its own right, overshadowed only by its famous neighbor [[dso:M13|M13]].",
-    "howToFind": "A late-spring and summer object in northern [[con:Her|Hercules]]. From [[star:π Her|Pi Herculis]], the northeastern corner of the Keystone, go about 6° (one binocular field) due north; it is also about 10° southwest of [[star:Eltanin|Eltanin]] in the head of Draco.",
+    "howToFind": "Best on May to August evenings, in northern [[con:Her|Hercules]]. From [[star:π Her|Pi Herculis]], the northeastern corner of the Keystone, go about 6° (one binocular field) due north; it is also about 10° southwest of [[star:Eltanin|Eltanin]] in the head of Draco.",
     "whatYouSee": "A small fuzzy star in binoculars, visible from the suburbs. A small telescope shows a bright, compact ball whose edges begin to resolve at 100× or more.",
     "physicalSize": "about 110 light-years across"
   },
   "dso:M93": {
     "about": "M93 is an open cluster about 3,400 light-years away and roughly 400 million years old. Charles Messier added it to his catalog in 1781, and Caroline Herschel found it independently in 1783.",
-    "howToFind": "A winter object in [[con:Pup|Puppis]], low in the south. It lies 1.5° northwest of [[star:Azmidi|Azmidi]] (Xi Puppis), which is about 9° (a fist) east and slightly north of [[star:Wezen|Wezen]] in Canis Major. At declination −24° it climbs about 25° above the horizon from Brooklyn.",
-    "whatYouSee": "Binoculars show a small bright knot against the winter Milky Way under a decent sky. A small telescope shows a wedge or arrowhead of a few dozen stars.",
+    "howToFind": "Best on December to February evenings, in [[con:Pup|Puppis]], low in the south. It lies 1.5° northwest of [[star:Azmidi|Azmidi]] (Xi Puppis), which is about 9° (a fist) east and slightly north of [[star:Wezen|Wezen]] in Canis Major. At declination −24° its greatest height above the southern horizon is about 66° minus your latitude (about 25° from latitude 40°N, for example), and it passes overhead from the southern hemisphere.",
+    "whatYouSee": "Binoculars show a small bright knot against the Milky Way under a decent sky. A small telescope shows a wedge or arrowhead of a few dozen stars.",
     "physicalSize": "about 20 light-years across"
   },
   "dso:M94": {
     "about": "M94 is a spiral galaxy about 16 million light-years away with a very bright central region surrounded by two rings. Pierre Méchain discovered it in 1781, and Messier cataloged it two days later.",
-    "howToFind": "A spring object in [[con:CVn|Canes Venatici]]. It forms a flat triangle with the constellation's two main stars: 3° north-northwest of [[star:Cor Caroli|Cor Caroli]] and 3° east of [[star:Chara|Chara]].",
+    "howToFind": "Best on March to May evenings, in [[con:CVn|Canes Venatici]]. It forms a flat triangle with the constellation's two main stars: 3° north-northwest of [[star:Cor Caroli|Cor Caroli]] and 3° east of [[star:Chara|Chara]].",
     "whatYouSee": "Its small, intense core makes it one of the easier galaxies: a fuzzy star in a small telescope from the suburbs, though still very hard from the city. A dark sky adds a faint round halo."
   },
   "dso:M95": {
     "about": "M95 is a barred spiral galaxy about 33 million light-years away, with arms that form a ring around the bar. Pierre Méchain discovered it in 1781. It belongs to a small group of galaxies in Leo with [[dso:M96|M96]] and [[dso:M105|M105]].",
-    "howToFind": "A spring object in [[con:Leo|Leo]], under the Lion's belly. It lies about 9° (a fist) due east of [[star:Regulus|Regulus]], roughly midway along the line from Regulus to [[star:Chertan|Chertan]] and a little south of it.",
+    "howToFind": "Best on March to May evenings, in [[con:Leo|Leo]], under the Lion's belly. It lies about 9° (a fist) due east of [[star:Regulus|Regulus]], roughly midway along the line from Regulus to [[star:Chertan|Chertan]] and a little south of it.",
     "whatYouSee": "Not visible from the city. Under a dark sky a small telescope shows a faint round glow with a brighter center, with M96 two thirds of a degree to its east.",
     "physicalSize": "about 80,000 light-years across"
   },
   "dso:M96": {
     "about": "M96 is a spiral galaxy about 31 million light-years away, discovered by Pierre Méchain on March 20, 1781. It is the brightest member of the small Leo group of galaxies that also includes [[dso:M95|M95]] and [[dso:M105|M105]].",
-    "howToFind": "A spring object in [[con:Leo|Leo]]. It lies about 9.5° (a fist) due east of [[star:Regulus|Regulus]], and about 7.5° west-southwest of [[star:Chertan|Chertan]], with [[dso:M95|M95]] less than a degree to its west.",
+    "howToFind": "Best on March to May evenings, in [[con:Leo|Leo]]. It lies about 9.5° (a fist) due east of [[star:Regulus|Regulus]], and about 7.5° west-southwest of [[star:Chertan|Chertan]], with [[dso:M95|M95]] less than a degree to its west.",
     "whatYouSee": "Not visible from the city. Under a dark sky a small telescope shows an oval grey glow with a bright core, slightly easier than M95.",
     "physicalSize": "roughly 78,000 light-years across"
   },
   "dso:M97": {
     "about": "The Owl Nebula is a planetary nebula about 2,000 light-years away, a nearly round shell of gas cast off by a dying star roughly 8,000 years ago. Two darker patches inside the disc look like an owl's eyes in larger telescopes. Pierre Méchain discovered it on February 16, 1781.",
-    "howToFind": "Visible all year from 40°N in [[con:UMa|Ursa Major]], best on spring evenings. It lies 2.3° southeast of [[star:Merak|Merak]], the lower pointer star of the Big Dipper's bowl, just below the line from Merak to [[star:Phecda|Phecda]].",
+    "howToFind": "In [[con:UMa|Ursa Major]]; it never sets north of about 35°N and is best on March to May evenings. It lies 2.3° southeast of [[star:Merak|Merak]], the lower pointer star of the Big Dipper's bowl, just below the line from Merak to [[star:Phecda|Phecda]].",
     "whatYouSee": "Not visible from the city and too faint for binoculars. Under a dark sky a small telescope shows a dim, round, grey disc; the two \"eyes\" need a telescope of about 8 inches or more.",
     "physicalSize": "about 1.8 light-years across"
   },
   "dso:M98": {
     "about": "M98 is a spiral galaxy about 44 million light-years away, seen at a steep angle so that it appears as a thin streak. Pierre Méchain discovered it in 1781 along with nearby [[dso:M99|M99]] and [[dso:M100|M100]].",
-    "howToFind": "A spring object in [[con:Com|Coma Berenices]]. It lies 6° (one binocular field) due east of [[star:Denebola|Denebola]], the Lion's tail.",
+    "howToFind": "Best on March to May evenings, in [[con:Com|Coma Berenices]]. It lies 6° (one binocular field) due east of [[star:Denebola|Denebola]], the Lion's tail.",
     "whatYouSee": "One of the fainter Messier galaxies: invisible from the city, and under a dark sky a small telescope shows only a dim, thin sliver of light."
   },
   "dso:M99": {
     "about": "M99, the Coma Pinwheel, is a face-on spiral galaxy in the Virgo Cluster roughly 45 to 50 million light-years away. Pierre Méchain discovered it on March 17, 1781. Its arms are noticeably lopsided, one more open than the others.",
-    "howToFind": "A spring object in [[con:Com|Coma Berenices]]. It lies about 7° (two thirds of a fist) due east of [[star:Denebola|Denebola]], 1.3° east-southeast of [[dso:M98|M98]].",
+    "howToFind": "Best on March to May evenings, in [[con:Com|Coma Berenices]]. It lies about 7° (two thirds of a fist) due east of [[star:Denebola|Denebola]], 1.3° east-southeast of [[dso:M98|M98]].",
     "whatYouSee": "Not visible from the city. Under a dark sky a small telescope shows a faint round glow; the spiral arms need a large telescope.",
     "physicalSize": "roughly 100,000 light-years across"
   },
   "dso:M100": {
     "about": "M100 is a face-on \"grand design\" spiral galaxy about 55 million light-years away, one of the brightest and largest galaxies in the Virgo Cluster. Pierre Méchain discovered it in 1781.",
-    "howToFind": "A spring object in [[con:Com|Coma Berenices]]. It lies about 8° (most of a fist) east and a little north of [[star:Denebola|Denebola]], 1.7° north-northeast of [[dso:M99|M99]].",
+    "howToFind": "Best on March to May evenings, in [[con:Com|Coma Berenices]]. It lies about 8° (most of a fist) east and a little north of [[star:Denebola|Denebola]], 1.7° north-northeast of [[dso:M99|M99]].",
     "whatYouSee": "Not visible from the city. Under a dark sky a small telescope shows a large, faint, round glow with a small brighter core.",
     "physicalSize": "about 166,000 light-years across"
   },
   "dso:M101": {
     "about": "The Pinwheel Galaxy is a big face-on spiral galaxy about 21 million light-years away, discovered by Pierre Méchain in 1781. In photographs it is one of the grandest spirals in the sky, with long, slightly lopsided arms.",
-    "howToFind": "Visible all year from 40°N in [[con:UMa|Ursa Major]], best on spring evenings. It forms a nearly equal-sided triangle with the last two stars of the Big Dipper's handle, [[star:Alkaid|Alkaid]] and [[star:Mizar|Mizar]], about 5.5° (one binocular field) from each — due east of Mizar and north-northeast of Alkaid.",
+    "howToFind": "In [[con:UMa|Ursa Major]]; it never sets north of about 36°N and is best on March to May evenings. It forms a nearly equal-sided triangle with the last two stars of the Big Dipper's handle, [[star:Alkaid|Alkaid]] and [[star:Mizar|Mizar]], about 5.5° (one binocular field) from each — due east of Mizar and north-northeast of Alkaid.",
     "whatYouSee": "Its light is spread over a large area, so it is invisible from the city and suburbs. From a dark site binoculars or a small telescope at low power show a large, very faint round glow."
   },
   "dso:M102": {
     "about": "M102 is the catalog's disputed entry. Pierre Méchain reported it in 1781 but two years later retracted it, saying it was only a duplicate observation of [[dso:M101|M101]]. Later historical evidence favors the view that it was really the Spindle Galaxy, NGC 5866, an edge-on lens-shaped galaxy in Draco, and that is the identification used here — but the question cannot be settled for certain.",
-    "howToFind": "A late-spring and summer object in [[con:Dra|Draco]]. NGC 5866 lies about 4° (most of a binocular field) southwest of [[star:Edasich|Edasich]] (Iota Draconis), which is about 14° northeast of [[star:Alkaid|Alkaid]] at the end of the Big Dipper's handle.",
+    "howToFind": "Best on May to August evenings, in [[con:Dra|Draco]]. NGC 5866 lies about 4° (most of a binocular field) southwest of [[star:Edasich|Edasich]] (Iota Draconis), which is about 14° northeast of [[star:Alkaid|Alkaid]] at the end of the Big Dipper's handle.",
     "whatYouSee": "Not visible from the city. Under a dark sky a small telescope shows a small, fairly bright spindle of light; the thin dust lane along its length needs a large telescope."
   },
   "dso:M103": {
     "about": "M103 is a small, young open cluster about 9,400 light-years away, one of the more distant open clusters in the catalog, and only about 13 million years old. Pierre Méchain discovered it in 1781.",
-    "howToFind": "Visible all year from 40°N in [[con:Cas|Cassiopeia]], best on autumn evenings. It lies just 1° east-northeast of [[star:Ruchbah|Ruchbah]], the bottom-left point of the W, on the way toward [[star:Segin|Segin]].",
+    "howToFind": "In [[con:Cas|Cassiopeia]]; it never sets north of about 29°N and is best on September to November evenings. It lies just 1° east-northeast of [[star:Ruchbah|Ruchbah]], the bottom-left point of the W, on the way toward [[star:Segin|Segin]].",
     "whatYouSee": "In binoculars it is a tiny hazy knot easily mistaken for a star. A small telescope shows a small fan or arrowhead of a few dozen stars, including one that looks reddish; it is visible from the suburbs.",
     "physicalSize": "about 15 light-years across"
   },
   "dso:M104": {
     "about": "The Sombrero Galaxy is a nearly edge-on galaxy about 31 million light-years away, with an unusually large central bulge and a dark lane of dust around its rim that together give it the look of a broad-brimmed hat. It is slightly larger than the Milky Way and has a supermassive black hole at its center.",
-    "howToFind": "A spring object on the border of [[con:Vir|Virgo]] and Corvus. It lies about 11° (a fist) due west of [[star:Spica|Spica]], and 5.5° north-northeast of [[star:Algorab|Algorab]], the top-left star of the kite of [[con:Crv|Corvus]].",
+    "howToFind": "Best on March to May evenings, on the border of [[con:Vir|Virgo]] and Corvus. It lies about 11° (a fist) due west of [[star:Spica|Spica]], and 5.5° north-northeast of [[star:Algorab|Algorab]], the top-left star of the kite of [[con:Crv|Corvus]].",
     "whatYouSee": "One of the easier galaxies thanks to its high surface brightness: from the suburbs a small telescope shows a small bright lens-shaped glow, though from the city it is very difficult. The dark dust lane begins to show in a 4- to 6-inch telescope under a dark sky.",
     "physicalSize": "about 100,000 light-years across"
   },
   "dso:M105": {
     "about": "M105 is an elliptical galaxy about 37 million light-years away, the largest elliptical in Messier's catalog that is not part of the Virgo Cluster. Pierre Méchain discovered it in 1781, a few days after finding its neighbors [[dso:M95|M95]] and [[dso:M96|M96]]. A supermassive black hole lies at its core.",
-    "howToFind": "A spring object in [[con:Leo|Leo]]. It lies about 10° (a fist) due east of [[star:Regulus|Regulus]] and 7° west-southwest of [[star:Chertan|Chertan]], less than 1° north-northeast of [[dso:M96|M96]].",
+    "howToFind": "Best on March to May evenings, in [[con:Leo|Leo]]. It lies about 10° (a fist) due east of [[star:Regulus|Regulus]] and 7° west-southwest of [[star:Chertan|Chertan]], less than 1° north-northeast of [[dso:M96|M96]].",
     "whatYouSee": "Not visible from the city. Under a dark sky a small telescope shows a small, round, fuzzy spot with a bright center, with a fainter companion galaxy, NGC 3384, right beside it.",
     "physicalSize": "about 67,000 light-years across"
   },
   "dso:M106": {
     "about": "M106 is a large spiral galaxy about 22 to 25 million light-years away, discovered by Pierre Méchain in 1781. Its nucleus is active, and radio observations of gas orbiting there provided some of the first firm evidence for a supermassive black hole at the center of a galaxy.",
-    "howToFind": "A spring object in [[con:CVn|Canes Venatici]]. It lies about 7.5° (three quarters of a fist) southeast of [[star:Phecda|Phecda]], the bottom corner of the Big Dipper's bowl nearest the handle — about 40 percent of the way from Phecda to [[star:Cor Caroli|Cor Caroli]].",
+    "howToFind": "Best on March to May evenings, in [[con:CVn|Canes Venatici]]. It lies about 7.5° (three quarters of a fist) southeast of [[star:Phecda|Phecda]], the bottom corner of the Big Dipper's bowl nearest the handle — about 40 percent of the way from Phecda to [[star:Cor Caroli|Cor Caroli]].",
     "whatYouSee": "Very difficult from the city. From a dark site binoculars show a faint elongated blur, and a small telescope shows a sizeable oval glow with a bright core.",
     "physicalSize": "about 150,000 light-years across"
   },
   "dso:M107": {
     "about": "M107 is a very loose globular cluster about 21,000 light-years away. Pierre Méchain discovered it in April 1782, but it was not part of Messier's published list: Helen Sawyer Hogg added it to the catalog in 1947 together with three other Méchain discoveries.",
-    "howToFind": "A summer object in [[con:Oph|Ophiuchus]]. It lies 2.7° (half a binocular field) south-southwest of [[star:ζ Oph|Zeta Ophiuchi]].",
+    "howToFind": "Best on June to August evenings, in [[con:Oph|Ophiuchus]]. It lies 2.7° (half a binocular field) south-southwest of [[star:ζ Oph|Zeta Ophiuchi]].",
     "whatYouSee": "Faint: a dim small glow in binoculars only under a dark sky, and not a city object. A small telescope shows a pale round patch without a strong core.",
     "physicalSize": "about 60 light-years across"
   },
   "dso:M108": {
     "about": "M108 is a barred spiral galaxy about 46 million light-years away that we see almost edge-on, as a mottled streak. Pierre Méchain discovered it in 1781 or 1782.",
-    "howToFind": "Visible all year from 40°N in [[con:UMa|Ursa Major]], best on spring evenings. It lies 1.5° east-southeast of [[star:Merak|Merak]], the lower pointer star of the Big Dipper, less than 1° northwest of the [[dso:M97|Owl Nebula]].",
+    "howToFind": "In [[con:UMa|Ursa Major]]; it never sets north of about 34°N and is best on March to May evenings. It lies 1.5° east-southeast of [[star:Merak|Merak]], the lower pointer star of the Big Dipper, less than 1° northwest of the [[dso:M97|Owl Nebula]].",
     "whatYouSee": "Not visible from the city. Under a dark sky a small telescope shows a thin, faint streak of light with an uneven, patchy look."
   },
   "dso:M109": {
     "about": "M109 is a barred spiral galaxy in Ursa Major, discovered by Pierre Méchain in 1781. Its distance is poorly known; one estimate is roughly 67 million light-years.",
-    "howToFind": "Visible all year from 40°N in [[con:UMa|Ursa Major]], best on spring evenings. It lies just 0.6° east-southeast of [[star:Phecda|Phecda]], the bottom corner of the Big Dipper's bowl nearest the handle.",
+    "howToFind": "In [[con:UMa|Ursa Major]]; it never sets north of about 37°N and is best on March to May evenings. It lies just 0.6° east-southeast of [[star:Phecda|Phecda]], the bottom corner of the Big Dipper's bowl nearest the handle.",
     "whatYouSee": "Not visible from the city. Under a dark sky a small telescope shows a faint oval haze; put Phecda just outside the field, because its glare easily drowns the galaxy.",
     "physicalSize": "roughly 175,000 light-years across"
   },
   "dso:M110": {
     "about": "M110 is a dwarf elliptical galaxy about 2.7 million light-years away, a satellite of the [[dso:M31|Andromeda Galaxy]] and a member of our Local Group. Caroline Herschel discovered it independently on August 27, 1783. It was not in Messier's published catalog and was added in the 20th century as its final entry.",
-    "howToFind": "An autumn object in [[con:And|Andromeda]]. Find the [[dso:M31|Andromeda Galaxy]] (about 8° northwest of [[star:Mirach|Mirach]]); M110 lies a little over half a degree northwest of its bright core, on the opposite side from [[dso:M32|M32]].",
+    "howToFind": "Best on September to November evenings, in [[con:And|Andromeda]]. Find the [[dso:M31|Andromeda Galaxy]] (about 8° northwest of [[star:Mirach|Mirach]]); M110 lies a little over half a degree northwest of its bright core, on the opposite side from [[dso:M32|M32]].",
     "whatYouSee": "Larger but much more diffuse than M32, so it fades quickly in light pollution: invisible from the city. Under a dark sky a small telescope shows a faint elongated oval glow.",
     "physicalSize": "about 17,000 light-years across"
   }

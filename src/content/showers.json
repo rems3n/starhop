@@ -13,7 +13,7 @@
     },
     "speedKmS": 41,
     "parent": "Asteroid (196256) 2003 EH1 (probable)",
-    "note": "A strong but very brief shower: the peak lasts only about six hours, so some years it falls in daylight for New York. The radiant lies in northern Boötes, near the end of the Big Dipper's handle, and is highest before dawn. The name comes from an obsolete constellation, Quadrans Muralis.",
+    "note": "A strong but very brief shower: the peak lasts only about six hours, so in some years it falls in daylight for any given place. The radiant lies in northern Boötes, near the end of the Big Dipper's handle, and is highest before dawn. It is a northern-hemisphere shower: the radiant barely rises south of the equator. The name comes from an obsolete constellation, Quadrans Muralis.",
     "source": "IMO 2027 Meteor Shower Calendar (ed. J. Rendtel, IMO INFO 3-26), Table 5 'Working List of Visual Meteor Showers', https://www.imo.net/files/data/calendar/cal2027.pdf (fetched 2026-11-10); values cross-checked against English Wikipedia 'List of meteor showers' (parent body from Wikipedia)."
   },
   {
@@ -30,7 +30,7 @@
     },
     "speedKmS": 49,
     "parent": "Comet C/1861 G1 (Thatcher)",
-    "note": "A modest spring shower with occasional bright meteors, best after midnight. Meteors appear to stream from a point near Vega (strictly just over the border in Hercules).",
+    "note": "A modest April shower with occasional bright meteors, best after midnight. Meteors appear to stream from a point near Vega (strictly just over the border in Hercules). Best from the northern hemisphere; from mid-southern latitudes the radiant is low in the north before dawn.",
     "source": "IMO 2027 Meteor Shower Calendar (ed. J. Rendtel, IMO INFO 3-26), Table 5 'Working List of Visual Meteor Showers', https://www.imo.net/files/data/calendar/cal2027.pdf (fetched 2026-11-10); values cross-checked against English Wikipedia 'List of meteor showers' (parent body from Wikipedia)."
   },
   {
@@ -47,7 +47,7 @@
     },
     "speedKmS": 66,
     "parent": "Comet 1P/Halley",
-    "note": "Fast meteors made of dust from Halley's Comet. The shower is rich from the southern hemisphere; from 40°N the radiant rises shortly before dawn, so expect only around 10 an hour in the last dark hour of the night.",
+    "note": "Fast meteors made of dust from Halley's Comet. The shower is rich from the southern hemisphere; from mid-northern latitudes the radiant rises shortly before dawn, so expect only around 10 an hour in the last dark hour of the night.",
     "source": "IMO 2027 Meteor Shower Calendar (ed. J. Rendtel, IMO INFO 3-26), Table 5 'Working List of Visual Meteor Showers', https://www.imo.net/files/data/calendar/cal2027.pdf (fetched 2026-11-10); values cross-checked against English Wikipedia 'List of meteor showers' (parent body from Wikipedia)."
   },
   {
@@ -64,7 +64,7 @@
     },
     "speedKmS": 41,
     "parent": "Uncertain; probably the comet 96P/Machholz complex (Wikipedia's list gives P/2008 Y12 (SOHO))",
-    "note": "Faint meteors over a broad late-July peak, better the farther south you are. From New York the radiant stays low in the south; watch after midnight under a dark sky.",
+    "note": "Faint meteors over a broad late-July peak, better the farther south you are. From mid-northern latitudes the radiant stays low in the south; from the southern hemisphere it climbs high. Watch after midnight under a dark sky.",
     "source": "IMO 2027 Meteor Shower Calendar (ed. J. Rendtel, IMO INFO 3-26), Table 5 'Working List of Visual Meteor Showers', https://www.imo.net/files/data/calendar/cal2027.pdf (fetched 2026-11-10); values cross-checked against English Wikipedia 'List of meteor showers' (parent body from Wikipedia)."
   },
   {
@@ -81,7 +81,7 @@
     },
     "speedKmS": 59,
     "parent": "Comet 109P/Swift–Tuttle",
-    "note": "The favorite shower of the year: fast, bright meteors on warm August nights. Rates climb from late evening until dawn as the radiant in Perseus rises in the northeast.",
+    "note": "The favorite shower of the northern year: fast, bright meteors on August nights. Rates climb from late evening until dawn as the radiant in Perseus rises in the northeast. The radiant is so far north that the shower is poor from the southern hemisphere.",
     "source": "IMO 2027 Meteor Shower Calendar (ed. J. Rendtel, IMO INFO 3-26), Table 5 'Working List of Visual Meteor Showers', https://www.imo.net/files/data/calendar/cal2027.pdf (fetched 2026-11-10); values cross-checked against English Wikipedia 'List of meteor showers' (parent body from Wikipedia)."
   },
   {
@@ -98,7 +98,7 @@
     },
     "speedKmS": 66,
     "parent": "Comet 1P/Halley",
-    "note": "The autumn shower from Halley's Comet dust: swift meteors radiating from near Orion's raised club, north of Betelgeuse. Best after midnight, with a broad peak lasting several nights.",
+    "note": "The October shower from Halley's Comet dust: swift meteors radiating from near Orion's raised club, north of Betelgeuse. Best after midnight, with a broad peak lasting several nights, and visible from both hemispheres.",
     "source": "IMO 2027 Meteor Shower Calendar (ed. J. Rendtel, IMO INFO 3-26), Table 5 'Working List of Visual Meteor Showers', https://www.imo.net/files/data/calendar/cal2027.pdf (fetched 2026-11-10); values cross-checked against English Wikipedia 'List of meteor showers' (parent body from Wikipedia)."
   },
   {
@@ -115,7 +115,7 @@
     },
     "speedKmS": 27,
     "parent": "Comet 2P/Encke",
-    "note": "A weak, long-lasting shower of slow meteors known for occasional bright fireballs. Visible most of the night in autumn, with no sharp peak.",
+    "note": "A weak, long-lasting shower of slow meteors known for occasional bright fireballs. Visible most of the night in October and November, with no sharp peak.",
     "source": "IMO 2027 Meteor Shower Calendar (ed. J. Rendtel, IMO INFO 3-26), Table 5 'Working List of Visual Meteor Showers', https://www.imo.net/files/data/calendar/cal2027.pdf (fetched 2026-11-10); values cross-checked against English Wikipedia 'List of meteor showers' (parent body from Wikipedia)."
   },
   {
@@ -183,7 +183,7 @@
     },
     "speedKmS": 33,
     "parent": "Comet 8P/Tuttle",
-    "note": "A minor shower around the winter solstice radiating from near Kochab in the Little Dipper's bowl. The radiant never sets from New York, but rates are low, with rare outbursts.",
+    "note": "A minor shower around the December solstice radiating from near Kochab in the Little Dipper's bowl. The radiant never sets from mid-northern latitudes and never rises from the southern hemisphere; rates are low, with rare outbursts.",
     "source": "IMO 2027 Meteor Shower Calendar (ed. J. Rendtel, IMO INFO 3-26), Table 5 'Working List of Visual Meteor Showers', https://www.imo.net/files/data/calendar/cal2027.pdf (fetched 2026-11-10); values cross-checked against English Wikipedia 'List of meteor showers' (parent body from Wikipedia)."
   }
 ]

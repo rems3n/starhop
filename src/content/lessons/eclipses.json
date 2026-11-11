@@ -15,14 +15,14 @@
         "A totally eclipsed Moon does not vanish. It turns a dim copper red, because Earth's atmosphere bends a little sunlight into the shadow and filters out the blue on the way. You are seeing the glow of every sunrise and sunset on Earth at once. Totality can last more than an hour, and a lunar eclipse is completely safe to watch with eyes, binoculars or a telescope."
       ],
       "demo": {
-        "title": "A total lunar eclipse over Brooklyn",
+        "title": "A total lunar eclipse over eastern North America",
         "controls": [
           "time-scrub",
           "play"
         ],
         "steps": [
           {
-            "caption": "June 25, 2029, 9:32 pm in Brooklyn. The full Moon is low in the southeast, 10° up, as its edge first touches the umbra. Over the next hour a dark bite spreads across it.",
+            "caption": "June 25, 2029, 9:32 pm local time, seen from eastern North America (41°N). Your own next eclipse is on the Events page. The full Moon is low in the southeast, 10° up, as its edge first touches the umbra. Over the next hour a dark bite spreads across it.",
             "time": "2029-06-25 21:32",
             "view": {
               "target": "body:Moon",
@@ -37,7 +37,13 @@
                 "ref": "body:Moon",
                 "label": "Partial eclipse begins"
               }
-            ]
+            ],
+            "observer": {
+              "name": "Eastern North America (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
           },
           {
             "caption": "10:30 pm: totality begins. The whole Moon is now inside Earth's shadow and glows red, 17° above the horizon in Sagittarius. With the moonlight gone, the stars around it come out.",
@@ -55,10 +61,16 @@
                 "ref": "body:Moon",
                 "label": "Totality begins"
               }
-            ]
+            ],
+            "observer": {
+              "name": "Eastern North America (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
           },
           {
-            "caption": "11:22 pm: mid-eclipse, 21° up in the south-southeast. Totality lasts an unusually long 1 hour 43 minutes or so, until 12:13 am, and the last of the umbra leaves the Moon at 1:12 am. All of it is visible from Brooklyn.",
+            "caption": "11:22 pm: mid-eclipse, 21° up in the south-southeast. Totality lasts an unusually long 1 hour 43 minutes or so, until 12:13 am, and the last of the umbra leaves the Moon at 1:12 am. All of it is visible from here; the whole Americas see at least part of it.",
             "time": "2029-06-25 23:22",
             "view": {
               "target": "body:Moon",
@@ -73,10 +85,16 @@
                 "ref": "body:Moon",
                 "label": "Mid-eclipse"
               }
-            ]
+            ],
+            "observer": {
+              "name": "Eastern North America (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
           },
           {
-            "caption": "Sooner, but slighter: on January 11, 2028 at 11:13 pm the Moon, 69° high in Gemini, just clips the umbra, and a small dark notch shows on its edge for about an hour. This is the first umbral lunar eclipse visible from Brooklyn after 2026.",
+            "caption": "Sooner, but slighter: on January 11, 2028 at 11:13 pm the Moon, 69° high in Gemini, just clips the umbra, and a small dark notch shows on its edge for about an hour. From this part of the world it is the first umbral lunar eclipse after 2026.",
             "time": "2028-01-11 23:13",
             "view": {
               "target": "body:Moon",
@@ -91,7 +109,13 @@
                 "ref": "body:Moon",
                 "label": "Small partial eclipse"
               }
-            ]
+            ],
+            "observer": {
+              "name": "Eastern North America (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
           }
         ]
       },
@@ -205,7 +229,7 @@
         ],
         "steps": [
           {
-            "caption": "Brooklyn, January 14, 2029, 12:50 pm, with the blue sky removed. The new Moon covers about 40% of the Sun's disc, 27° up in the south. This partial eclipse runs from 11:25 am to 2:10 pm and is the next substantial solar eclipse for Brooklyn. Eye protection is needed throughout.",
+            "caption": "Eastern North America (41°N), January 14, 2029, 12:50 pm local time, with the blue sky removed. The new Moon covers about 40% of the Sun's disc, 27° up in the south. This partial eclipse runs from 11:25 am to 2:10 pm and is the next substantial solar eclipse for this spot. Eye protection is needed throughout.",
             "time": "2029-01-14 12:50",
             "view": {
               "target": "body:Sun",
@@ -226,10 +250,16 @@
                 "ref": "body:Moon",
                 "label": "Moon"
               }
-            ]
+            ],
+            "observer": {
+              "name": "Eastern North America (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
           },
           {
-            "caption": "Luxor, Egypt, August 2, 2027, 1:05 pm local time. The Moon covers the Sun completely, 82° up, almost overhead, for about 6 minutes 20 seconds: one of the longest totalities of the century. None of this eclipse can be seen from Brooklyn.",
+            "caption": "Luxor, Egypt, August 2, 2027, 1:05 pm local time. The Moon covers the Sun completely, 82° up, almost overhead, for about 6 minutes 20 seconds: one of the longest totalities of the century. Almost none of this eclipse can be seen from the Americas: a total eclipse is local.",
             "observer": {
               "name": "Luxor, Egypt",
               "lat": 25.6872,
@@ -301,7 +331,7 @@
         "question": "Will total solar eclipses happen forever?",
         "answer": "No. The Moon is slowly moving away from Earth, by about 4 cm a year. Many millions of years from now it will always look smaller than the Sun, and every central eclipse will be annular. We happen to live at a time when the two discs match."
       },
-      "tryIt": "Open the Events page and find the next lunar eclipse visible from your location. Put it in your calendar now. A lunar eclipse needs no equipment and no dark sky: it works perfectly well from a Brooklyn stoop."
+      "tryIt": "Open the Events page and find the next lunar eclipse visible from your location. Put it in your calendar now. A lunar eclipse needs no equipment and no dark sky: it works perfectly well from a city doorstep."
     }
   ],
   "keyPoints": [
@@ -319,7 +349,7 @@
         "Earth's shadow is too faint most months",
         "The Moon's orbit is tilted about 5°, so it usually passes above or below Earth's shadow",
         "The Moon is usually too far away",
-        "Lunar eclipses happen only in winter"
+        "Lunar eclipses happen only in December–February"
       ],
       "answerIndex": 1,
       "explanation": "Only when a full Moon occurs near a node, where the Moon's orbit crosses the ecliptic, does it pass through the shadow."

@@ -260,3 +260,50 @@ void main() {
   }
   o = vec4(rgb * u_alpha, a * u_alpha);
 }`;
+
+/**
+ * Constellation illustrations: one instanced quad per image grid cell (corners are J2000 unit vectors). A cell
+ * with any corner beyond the clip distance is dropped whole, like a line piece. w = 1 + z, so the texture is
+ * interpolated perspective-correctly across the cell. Additive; the texture's red channel is the figure.
+ */
+export const ART_VS = `#version 300 es
+precision highp float;
+layout(location = 0) in vec2 a_corner;  // (0|1, -1|+1) shared with the line quad
+layout(location = 1) in vec3 a_p00;
+layout(location = 2) in vec3 a_p10;
+layout(location = 3) in vec3 a_p01;
+layout(location = 4) in vec3 a_p11;
+layout(location = 5) in vec4 a_uv;      // u0 v0 u1 v1
+layout(location = 6) in vec2 a_fig;     // texture layer, figure index
+uniform mat3 u_m;
+uniform vec2 u_scale;
+uniform float u_zclip;
+uniform float u_alpha;
+uniform float u_emphMul;
+uniform vec4 u_emph[24];                // per-figure emphasis 0..1, four to a vec4
+out vec3 v_uv;
+out float v_a;
+void main() {
+  vec3 q00 = u_m * a_p00, q10 = u_m * a_p10, q01 = u_m * a_p01, q11 = u_m * a_p11;
+  if (min(min(q00.z, q10.z), min(q01.z, q11.z)) < u_zclip) { gl_Position = vec4(2.0, 2.0, 2.0, 1.0); v_uv = vec3(0.0); v_a = 0.0; return; }
+  float sx = a_corner.x;
+  float sy = a_corner.y * 0.5 + 0.5;
+  vec3 q = sy < 0.5 ? (sx < 0.5 ? q00 : q10) : (sx < 0.5 ? q01 : q11);
+  gl_Position = vec4(q.xy * u_scale, 0.0, 1.0 + q.z);
+  v_uv = vec3(mix(a_uv.xy, a_uv.zw, vec2(sx, sy)), a_fig.x);
+  int i = int(a_fig.y + 0.5);
+  v_a = u_alpha * (1.0 + u_emphMul * u_emph[i >> 2][i & 3]);
+}`;
+
+export const ART_FS = `#version 300 es
+precision mediump float;
+precision mediump sampler2DArray;
+in vec3 v_uv;
+in float v_a;
+uniform sampler2DArray u_tex;
+uniform vec3 u_color;
+out vec4 o;
+void main() {
+  float g = texture(u_tex, v_uv).r;
+  o = vec4(u_color * (g * v_a), 0.0);   // additive
+}`;

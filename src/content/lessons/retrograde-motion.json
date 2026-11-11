@@ -447,7 +447,7 @@
     },
     {
       "id": "rm-q4",
-      "prompt": "Jupiter is high in the south at midnight. Which way is it moving against the stars?",
+      "prompt": "Jupiter is at its highest at midnight. Which way is it moving against the stars?",
       "choices": [
         "East, as usual",
         "It is stationary",

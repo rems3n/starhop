@@ -10,10 +10,10 @@
       "A Mesopotamian forerunner has been suggested, a star group called the Bark (a boat) in the MUL.APIN lists, but the identification is uncertain."
     ]
   },
-  "overview": "Corona Australis is a wreath lying at the feet of Sagittarius, the southern counterpart of the Northern Crown. It is a neat, tight curve of faint stars, lovely in a dark sky, but from Brooklyn it is low in the summer haze and has no star brighter than magnitude 4.",
+  "overview": "Corona Australis is a wreath lying at the feet of Sagittarius, the southern counterpart of the Northern Crown. It is a neat, tight curve of faint stars, lovely in a dark sky, but it has no star brighter than magnitude 4, and from mid-northern latitudes it is low in the horizon haze of July and August evenings; from the southern hemisphere it passes high overhead.",
   "howToFind": [
     "Look on evenings in July and August, when [[con:Sgr|Sagittarius]] is due south. Find the Teapot of Sagittarius, to the left of the Scorpion's tail. The Southern Crown lies just under the Teapot's base: from [[star:Ascella|Ascella]], the star at the bottom of the Teapot's handle, drop a little less than one fist straight down to reach [[star:α CrA|Alpha]] and [[star:β CrA|Beta Coronae Australis]], which mark the eastern end of the arc. The curve of fainter stars bends away from them to the right and downward.",
-    "From Brooklyn the Crown reaches only about one fist above the southern horizon, so you need an open view to the south, no Moon, and a transparent night; binoculars swept slowly under the Teapot will show the arc when the eye alone cannot. From the southern United States it is much easier, and from the southern hemisphere it passes nearly overhead."
+    "From latitude 40°N, for example, the Crown reaches only about one fist above the southern horizon, so you need an open view to the south, no Moon, and a transparent night; binoculars swept slowly under the Teapot will show the arc when the eye alone cannot. From the southern United States it is much easier, and from the southern hemisphere it passes nearly overhead."
   ],
   "shape": "A small hook or horseshoe of half a dozen 4th- and 5th-magnitude stars, about four finger-widths across, open toward the Teapot. It looks like a miniature, fainter copy of the Northern Crown. It is invisible from city streets; under a dark sky its tidy curve catches the eye at once.",
   "mainStars": [
@@ -34,12 +34,12 @@
     {
       "ref": "star:γ CrA",
       "equip": "telescope",
-      "note": "A close, evenly matched double star: two yellow-white suns of magnitude 5, 58 light-years away. Their low altitude from Brooklyn makes them hard to separate cleanly."
+      "note": "A close, evenly matched double star: two yellow-white suns of magnitude 5, 58 light-years away. Their low altitude from mid-northern latitudes makes them hard to separate cleanly there."
     },
     {
       "ref": "dso:NGC6541",
       "equip": "binoculars",
-      "note": "A bright, compact globular cluster of magnitude 6.6 in the constellation's southwestern corner. From southern sites it is an easy fuzzy star in binoculars; from Brooklyn it never climbs above about 6 degrees and is usually lost."
+      "note": "A bright, compact globular cluster of magnitude 6.6 in the constellation's southwestern corner. From southern sites it is an easy fuzzy star in binoculars; from latitude 40°N, for example, it never climbs above about 6 degrees and is usually lost."
     },
     {
       "ref": "dso:NGC6729",
@@ -63,7 +63,7 @@
         "Crotus grew up on Mount Helicon in the Muses' company. He was not a god and not quite an ordinary man. He loved hunting, and he was faster through the woods than anyone alive; he was also quick and clever in the arts his foster sisters practiced, and he liked nothing better than to sit and listen to them. The Muses were as fond of him as he was of them.",
         "When the time came they asked Zeus to honor him with a place among the stars, and Zeus agreed. He wanted to show all of Crotus's gifts in one body, so he made the figure a patchwork. He gave it a horse's flanks, because Crotus was so often on horseback. He gave it a bow and arrows, to stand for his sharp mind and his speed. And he added a satyr's tail, because the Muses took as much delight in Crotus as Dionysus did in his satyrs.",
         "One more detail finished the picture. In front of the Archer's feet Zeus left a few stars arranged in a circle. Some people, Hyginus says, called these a wreath, thrown off as by someone at play.",
-        "It is a small, human touch. Wreaths were what Greeks wore at feasts, games and sacrifices, and what a winner was handed at the end of a contest. A wreath lying on the ground is a sign that the festivities are in full swing, or just over: the garland has slipped, or been tossed aside for a moment while its owner takes up his bow. Later ages gave it grander names, the Southern Crown, the Crown of Sagittarius, but in the oldest account it is only a ring of leaves dropped by a hunter who would rather be listening to music. Look just below the Teapot of [[con:Sgr|Sagittarius]] on a clear summer night and you can see where it fell."
+        "It is a small, human touch. Wreaths were what Greeks wore at feasts, games and sacrifices, and what a winner was handed at the end of a contest. A wreath lying on the ground is a sign that the festivities are in full swing, or just over: the garland has slipped, or been tossed aside for a moment while its owner takes up his bow. Later ages gave it grander names, the Southern Crown, the Crown of Sagittarius, but in the oldest account it is only a ring of leaves dropped by a hunter who would rather be listening to music. Look just below the Teapot of [[con:Sgr|Sagittarius]] on a clear July, August or September evening and you can see where it fell."
       ],
       "link": {
         "site": "Ian Ridpath's Star Tales",

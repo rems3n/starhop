@@ -21,6 +21,7 @@ import {
 } from './camera';
 import { lightPollution, milkyWayVisibility, parseCssColor, rgbaCss, smoothstep, starZoom, twilightLimit, type RGBA } from './color';
 import { BODY_COLOR, BODY_IDS, computeBodies, eqjToNeu, makeBodies } from './ephemeris';
+import type { ArtEntry } from './art';
 import { HighlightPreparer, type PreparedHighlight } from './highlights';
 import { Overlay, type Scene } from './overlay';
 import { PickAccumulator, TIER_BODY, TIER_LABEL, TIER_NAMED, TIER_STAR, decimate } from './pick';
@@ -43,6 +44,23 @@ const statsOf = new WeakMap<SkyController, () => SkyStats>();
 /** Dev/perf hook: renderer statistics for a controller created by this module. */
 export function getSkyStats(c: SkyController): SkyStats | null {
   return statsOf.get(c)?.() ?? null;
+}
+
+const BASE_URL: string = (typeof import.meta !== 'undefined' && import.meta.env?.BASE_URL) || './';
+
+/** Constellation illustrations: the index and every image, fetched once per page (shared by all engines). */
+let artPromise: Promise<{ entries: ArtEntry[]; blobs: (Blob | null)[] }> | null = null;
+function loadArt(): Promise<{ entries: ArtEntry[]; blobs: (Blob | null)[] }> {
+  artPromise ??= (async () => {
+    const res = await fetch(`${BASE_URL}data/constellation-art.json`);
+    if (!res.ok) throw new Error(`constellation-art.json: ${res.status}`);
+    const entries = (await res.json()) as ArtEntry[];
+    const blobs = await Promise.all(entries.map((e) =>
+      fetch(`${BASE_URL}${e.file}`).then((r) => (r.ok ? r.blob() : null), () => null)));
+    return { entries, blobs };
+  })();
+  artPromise.catch(() => { artPromise = null; });
+  return artPromise;
 }
 
 const KIND_BODY = 1, KIND_STAR = 2, KIND_DSO = 3, KIND_CON = 4;
@@ -109,7 +127,7 @@ export function createSkyEngine(container: HTMLElement, catalog: Catalog, option
   const sunNeu = new Float32Array([0, 0, -1]);
   let sunAlt = -90;
 
-  const renderer = new Renderer(glCanvas, catalog, tokens, { checkErrors: debug?.checkGlErrors });
+  const renderer = new Renderer(glCanvas, catalog, tokens, { checkErrors: debug?.checkGlErrors, onAsync: () => { if (!destroyed) invalidate(); } });
   const overlay = new Overlay(ovCanvas, catalog, tokens, 1);
   const preparer = new HighlightPreparer();
   let highlightList: Highlight[] = [];
@@ -250,13 +268,17 @@ export function createSkyEngine(container: HTMLElement, catalog: Catalog, option
     scene.highlights = r.items;
     highlightsDependOnTime = r.timeDependent;
     scene.selection = null;
+    const emph: string[] = [];
+    for (const h of highlightList) if (h.type === 'constellation') emph.push(h.id);
     if (selectionRef) {
       const t = catalog.resolve(selectionRef, { date: ctx.date, observer });
+      if (t?.kind === 'constellation' && t.constellation && showSelection) emph.push(t.constellation.id);
       if (t) {
         const h: Highlight = t.kind === 'constellation' && t.constellation ? { type: 'constellation', id: t.constellation.id, lines: true } : { type: 'object', ref: selectionRef };
         scene.selection = preparer.prepare([h], ctx).items[0] ?? null;
       }
     }
+    renderer.setArtEmphasis(emph);
   }
 
   // ───────────── animations
@@ -766,10 +788,27 @@ export function createSkyEngine(container: HTMLElement, catalog: Catalog, option
     }, (err) => console.warn('[sky] faint stars unavailable', err));
   }
 
+  let artRequested = false;
+  function maybeLoadArt(): void {
+    if (artRequested || !layers.constellationArt) return;
+    artRequested = true;
+    loadArt().then(({ entries, blobs }) => {
+      if (destroyed) return;
+      return renderer.setArt(entries, blobs).then(() => {
+        prepareHighlights();
+        invalidate();
+      });
+    }).catch((err) => {
+      artRequested = false;
+      console.warn('[sky] constellation illustrations unavailable', err);
+    });
+  }
+
   resize();
   updateSky(simNow(), true);
   updateCamera();
   maybeLoadFaint();
+  maybeLoadArt();
   invalidate();
 
   // ───────────── controller
@@ -801,6 +840,7 @@ export function createSkyEngine(container: HTMLElement, catalog: Catalog, option
     getLayers: () => ({ ...layers }),
     setLayers(patch) {
       Object.assign(layers, patch);
+      maybeLoadArt();
       invalidate();
     },
     getLimitingMag: () => limitingMag,

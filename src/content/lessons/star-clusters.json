@@ -162,7 +162,7 @@
       "heading": "Globular clusters: ancient swarms",
       "body": [
         "Globular clusters are a different thing altogether: tight balls of hundreds of thousands of stars, packed so densely that the center blurs into a solid glow. They are among the oldest objects known, 11 to 13 billion years old, nearly as old as the universe. Instead of lying in the Milky Way's disc, the galaxy's 150 or so globulars swarm around its center in a great sphere called the halo, which is why so many are found toward Sagittarius, Scorpius and Ophiuchus.",
-        "The best for northern observers is [[dso:M13|M13]] in Hercules, on one side of the Keystone, about 22,000 light-years away. [[dso:M22|M22]] near the lid of the Sagittarius Teapot is brighter but low from New York. The two grandest, [[dso:C80|Omega Centauri]] and [[dso:C106|47 Tucanae]], belong to the southern sky; both look like fuzzy stars to the naked eye."
+        "The best for northern observers is [[dso:M13|M13]] in Hercules, on one side of the Keystone, about 22,000 to 25,000 light-years away. [[dso:M22|M22]] near the lid of the Sagittarius Teapot is brighter but low from mid-northern latitudes; from the southern hemisphere it passes high overhead. The two grandest, [[dso:C80|Omega Centauri]] and [[dso:C106|47 Tucanae]], belong to the southern sky; both look like fuzzy stars to the naked eye."
       ],
       "demo": {
         "title": "Globular clusters",
@@ -195,7 +195,7 @@
             ]
           },
           {
-            "caption": "Low in the summer south, toward the center of the galaxy, globular clusters crowd together. M22 is just up and to the left of the Teapot's lid; M4 sits beside Antares.",
+            "caption": "On an August evening from mid-northern latitudes, low in the south toward the center of the galaxy, globular clusters crowd together. M22 is just up and to the left of the Teapot's lid; M4 sits beside Antares.",
             "time": "month:8 22:00",
             "view": {
               "az": 190,
@@ -221,7 +221,13 @@
                 "ref": "dso:M7",
                 "label": "M7 — open"
               }
-            ]
+            ],
+            "observer": {
+              "name": "Mid-northern latitudes (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
           },
           {
             "caption": "From Sydney, Omega Centauri rides high: the largest globular cluster of the Milky Way, with several million stars.",
@@ -381,7 +387,7 @@
     {
       "heading": "Why clusters are the city observer's friend",
       "body": [
-        "Nebulae and galaxies are spread-out glows that city skyglow washes away. A cluster is made of stars, and points of light punch through light pollution far better. The Pleiades, the Hyades and the Beehive are large and bright enough that binoculars beat a telescope on them, even from Brooklyn. Globulars need more help: M13 is a fuzzy dot in binoculars, and it takes a telescope of about four inches or more to begin sprinkling it with individual stars."
+        "Nebulae and galaxies are spread-out glows that city skyglow washes away. A cluster is made of stars, and points of light punch through light pollution far better. The Pleiades, the Hyades and the Beehive are large and bright enough that binoculars beat a telescope on them, even from a big city. Globulars need more help: M13 is a fuzzy dot in binoculars, and it takes a telescope of about four inches or more to begin sprinkling it with individual stars."
       ],
       "figures": [
         {
@@ -393,7 +399,7 @@
           "caption": "Where to look: open clusters lie along the Milky Way band, because they live in the galaxy’s disc; globular clusters crowd towards the galaxy’s centre in Sagittarius, Scorpius and Ophiuchus, because they swarm around it in the halo."
         }
       ],
-      "tryIt": "Sweep binoculars slowly along the Milky Way through Cassiopeia and Perseus on an autumn evening. Every little knot of stars you stumble on is an open cluster."
+      "tryIt": "Sweep binoculars slowly along the Milky Way: through Cassiopeia and Perseus on an October–December evening from the northern hemisphere, or through Carina and the Southern Cross on a February–May evening from the southern. Every little knot of stars you stumble on is an open cluster."
     }
   ],
   "keyPoints": [
@@ -426,7 +432,7 @@
     {
       "ref": "dso:M7",
       "label": "M7 (Ptolemy's Cluster)",
-      "note": "Open cluster by the Scorpion's tail. Naked eye in a dark sky but very low from New York; binoculars."
+      "note": "Open cluster by the Scorpion's tail. Naked eye in a dark sky but very low from mid-northern latitudes and high from the southern hemisphere; binoculars."
     },
     {
       "ref": "dso:M13",
@@ -436,12 +442,12 @@
     {
       "ref": "dso:M22",
       "label": "M22",
-      "note": "Bright globular cluster in Sagittarius. Binoculars; low in the south from New York."
+      "note": "Bright globular cluster in Sagittarius. Binoculars; low in the south from mid-northern latitudes, overhead from the southern hemisphere."
     },
     {
       "ref": "dso:C80",
       "label": "Omega Centauri",
-      "note": "The largest globular cluster of the Milky Way. Naked eye from the southern hemisphere; it barely clears the horizon at 40°N."
+      "note": "The largest globular cluster of the Milky Way. Naked eye from the southern hemisphere; it never rises north of about 42°N and stays low from the southern US and southern Europe."
     }
   ],
   "questions": [

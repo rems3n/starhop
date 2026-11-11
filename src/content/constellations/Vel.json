@@ -10,28 +10,28 @@
       "Lacaille relettered the stars at the same time, but with one run of Greek letters for the whole ship. Alpha and Beta fell in Carina, so Vela has neither; its lettering starts with Gamma, its brightest star, and Delta. The four stars that Ptolemy had placed in Argo's mast were not given to Vela at all: Lacaille used them for his new constellation [[con:Pyx|Pyxis]], the compass. In 1844 John Herschel proposed turning Pyxis back into a fourth part of the ship called Malus, the Mast, but the idea did not catch on."
     ]
   },
-  "overview": "Vela is the sails of the ship Argo, a wide ring of bright stars in the southern Milky Way between Carina and the faint stars of Antlia. It is a fine sight from the southern hemisphere, but from Brooklyn all of its bright stars except one are below the horizon, and that one barely clears it.",
+  "overview": "Vela is the sails of the ship Argo, a wide ring of bright stars in the southern Milky Way between Carina and the faint stars of Antlia. It is a fine sight from the southern hemisphere, but from latitude 40°N, for example, all of its bright stars except one are below or right on the horizon, and that one barely clears it.",
   "howToFind": [
-    "From Brooklyn, Vela is very nearly a lost cause. Its northern edge rises a little over one fist above the southern horizon on evenings in March, but that part is empty of bright stars. The only prominent star that gets up at all is orange [[star:Suhail|Suhail]] (Lambda Velorum), which reaches about 6 degrees, roughly three finger-widths, above a perfectly flat horizon. To try for it, find [[star:Alphard|Alphard]], the lone bright star of Hydra, and look three and a half fists straight below it when Alphard is due south. Binoculars and a sea horizon are almost essential. The brightest star, [[star:γ2 Vel|Gamma Velorum]], rises only 2 degrees and is not realistically visible; everything south of it never rises.",
+    "From mid-northern latitudes, Vela is very nearly a lost cause. Its northern edge rises a little over one fist above the southern horizon on evenings in March, but that part is empty of bright stars. The only prominent star that gets up at all is orange [[star:Suhail|Suhail]] (Lambda Velorum), which reaches about 6 degrees, roughly three finger-widths, above a perfectly flat horizon. To try for it, find [[star:Alphard|Alphard]], the lone bright star of Hydra, and look three and a half fists straight below it when Alphard is due south. Binoculars and a sea horizon are almost essential. The brightest star, [[star:γ2 Vel|Gamma Velorum]], rises only 2 degrees and is not realistically visible; everything south of it never rises.",
     "From the tropics or the southern hemisphere, Vela is easy. It lies between brilliant [[star:Canopus|Canopus]] and the Southern Cross, [[con:Cru|Crux]]. About halfway along that line look for the False Cross, a large kite of four stars: two of its stars, [[star:Markeb|Markeb]] and [[star:Alsephina|Alsephina]], belong to Vela, and the other two to Carina. Gamma Velorum is about a fist to the northwest of Alsephina, and Suhail a little more than a fist to its north."
   ],
-  "shape": "A rough oval or octagon of 2nd- and 3rd-magnitude stars about two fists across, with the False Cross attached at its southern edge. It does not look much like a sail, but the ring is easy to trace in a dark southern sky. From Brooklyn there is no shape to see, only Suhail on the horizon on the clearest nights.",
+  "shape": "A rough oval or octagon of 2nd- and 3rd-magnitude stars about two fists across, with the False Cross attached at its southern edge. It does not look much like a sail, but the ring is easy to trace in a dark southern sky. From mid-northern latitudes there is no shape to see, only Suhail low on the horizon on the clearest nights (it never rises north of about 47°N).",
   "mainStars": [
     {
       "ref": "star:γ2 Vel",
-      "note": "Gamma Velorum, magnitude 1.8, the brightest star of the Sails. It is a pair of very hot stars, one of them a Wolf-Rayet star, a rare type that is blowing off its outer layers; it is the nearest and brightest of its kind in the sky. Binoculars show a 4th-magnitude companion beside it. Not visible from Brooklyn."
+      "note": "Gamma Velorum, magnitude 1.8, the brightest star of the Sails. It is a pair of very hot stars, one of them a Wolf-Rayet star, a rare type that is blowing off its outer layers; it is the nearest and brightest of its kind in the sky. Binoculars show a 4th-magnitude companion beside it. It never rises north of about 43°N and is lost in the horizon haze from most mid-northern latitudes."
     },
     {
       "ref": "star:Alsephina",
-      "note": "Delta Velorum, a white star of magnitude 1.9 about 80 light-years away and one corner of the False Cross. It is actually several stars, two of which eclipse each other every 45 days. Never rises from Brooklyn."
+      "note": "Delta Velorum, a white star of magnitude 1.9 about 80 light-years away and one corner of the False Cross. It is actually several stars, two of which eclipse each other every 45 days. It never rises north of about 36°N."
     },
     {
       "ref": "star:Suhail",
-      "note": "Lambda Velorum, an orange supergiant of magnitude 2.2 about 550 light-years away, and the only bright star of Vela that rises over New York, just barely."
+      "note": "Lambda Velorum, an orange supergiant of magnitude 2.2 about 550 light-years away, and the only bright star of Vela that rises from latitude 40°N, for example, just barely (it never rises north of about 47°N)."
     },
     {
       "ref": "star:Markeb",
-      "note": "Kappa Velorum, a blue-white star of magnitude 2.5 at the top of the False Cross. Never rises from Brooklyn."
+      "note": "Kappa Velorum, a blue-white star of magnitude 2.5 at the top of the False Cross. It never rises north of about 36°N."
     }
   ],
   "notableObjects": [
@@ -43,7 +43,7 @@
     {
       "ref": "dso:IC2391",
       "equip": "naked-eye",
-      "note": "The Omicron Velorum Cluster, a bright, scattered group of stars near the False Cross, visible to the eye as a small hazy knot and best in binoculars. Never rises from Brooklyn."
+      "note": "The Omicron Velorum Cluster, a bright, scattered group of stars near the False Cross, visible to the eye as a small hazy knot and best in binoculars. It never rises north of about 36°N."
     },
     {
       "ref": "dso:NGC2547",
@@ -53,12 +53,12 @@
     {
       "ref": "dso:NGC3132",
       "equip": "small-telescope",
-      "note": "The Eight-Burst or Southern Ring Nebula, a bright planetary nebula on the border with Antlia: a small oval ring with a star in the middle. It does rise from Brooklyn, but only to about 9 degrees, so it is a target for a trip south."
+      "note": "The Eight-Burst or Southern Ring Nebula, a bright planetary nebula on the border with Antlia: a small oval ring with a star in the middle. It does rise from mid-northern latitudes, but only to about 9 degrees from latitude 40°N, for example, so for northern observers it is a target for a trip south."
     },
     {
       "ref": "dso:NGC3201",
       "equip": "binoculars",
-      "note": "A loose globular cluster of the 7th magnitude, discovered by James Dunlop in 1826. A soft round glow in binoculars from southern sites; only about 3 degrees up at best from Brooklyn."
+      "note": "A loose globular cluster of the 7th magnitude, discovered by James Dunlop in 1826. A soft round glow in binoculars from southern sites; only about 3 degrees up at best from latitude 40°N, for example, and it never rises north of about 44°N."
     }
   ],
   "stories": [

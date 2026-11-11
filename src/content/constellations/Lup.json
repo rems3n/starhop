@@ -10,24 +10,24 @@
       "As with its neighbors, the Greek letters used for its stars today were assigned by Nicolas-Louis de Lacaille in the 1750s, replacing those Johann Bayer had given in 1603."
     ]
   },
-  "overview": "Lupus is the wild animal that the Centaur carries to the Altar, known since the Renaissance as the Wolf. It is a rich knot of 2nd- and 3rd-magnitude stars between Scorpius and Centaurus, but it lies so far south that from Brooklyn only its upper half ever rises, low in the summer haze.",
+  "overview": "Lupus is the wild animal that the Centaur carries to the Altar, known since the Renaissance as the Wolf. It is a rich knot of 2nd- and 3rd-magnitude stars between Scorpius and Centaurus, but it lies so far south that from mid-northern latitudes only its upper half ever rises, low in the horizon haze of June and July evenings; from the southern hemisphere it rides high.",
   "howToFind": [
-    "Look on evenings in June and early July, when Lupus is due south at its highest. Find red [[star:Antares|Antares]], the heart of [[con:Sco|Scorpius]]. Lupus lies to the lower right of Antares, below the faint stars of [[con:Lib|Libra]]: about two fists down and to the right of Antares you come to [[star:γ Lup|Gamma Lupi]] and, just to its right, [[star:δ Lup|Delta Lupi]]. [[star:β Lup|Beta Lupi]] is a little lower and farther right. All of these stand less than one fist above a flat southern horizon from Brooklyn, so you need a truly open view and a clear, dry night.",
+    "Look on evenings in June and early July, when Lupus is due south at its highest. Find red [[star:Antares|Antares]], the heart of [[con:Sco|Scorpius]]. Lupus lies to the lower right of Antares, below the faint stars of [[con:Lib|Libra]]: about two fists down and to the right of Antares you come to [[star:γ Lup|Gamma Lupi]] and, just to its right, [[star:δ Lup|Delta Lupi]]. [[star:β Lup|Beta Lupi]] is a little lower and farther right. From latitude 40°N, for example, all of these stand less than one fist above a flat southern horizon, so from mid-northern latitudes you need a truly open view and a clear, dry night.",
     "The brightest star, [[star:α Lup|Alpha Lupi]], technically rises here but reaches only about 2 degrees of altitude, which in practice means it is never seen. The southern part of the Wolf does not rise at all. The whole figure is easy from the southern United States and splendid from the southern hemisphere, where it stands high between the Scorpion and the Pointers of Centaurus."
   ],
-  "shape": "From a southern site, a crowded, irregular oblong of a dozen moderately bright stars about a fist and a half long, with no obvious animal in it. From Brooklyn, at best three or four dim stars strung along the horizon to the lower right of Scorpius; from a lit city street you should not expect to see it at all.",
+  "shape": "From a southern site, a crowded, irregular oblong of a dozen moderately bright stars about a fist and a half long, with no obvious animal in it. From mid-northern latitudes, at best three or four dim stars strung along the horizon to the lower right of Scorpius; from a lit city street you should not expect to see it at all.",
   "mainStars": [
     {
       "ref": "star:α Lup",
-      "note": "The brightest star of Lupus at magnitude 2.3, a hot blue giant about 460 light-years away. Officially named Uridim in 2024 after the Babylonian constellation. Effectively invisible from Brooklyn."
+      "note": "The brightest star of Lupus at magnitude 2.3, a hot blue giant about 460 light-years away. Officially named Uridim in 2024 after the Babylonian constellation. It never rises north of about 43°N and is effectively invisible from mid-northern latitudes."
     },
     {
       "ref": "star:β Lup",
-      "note": "A blue-white giant of magnitude 2.7. From Brooklyn it climbs to about 6 degrees. The great supernova of the year 1006 appeared not far from it."
+      "note": "A blue-white giant of magnitude 2.7. From latitude 40°N, for example, it climbs to only about 6 degrees. The great supernova of the year 1006 appeared not far from it."
     },
     {
       "ref": "star:γ Lup",
-      "note": "Magnitude 2.8, blue-white, and the easiest of the Wolf's bright stars to catch from Brooklyn, reaching about 8 degrees above the horizon."
+      "note": "Magnitude 2.8, blue-white, and the easiest of the Wolf's bright stars to catch from mid-northern latitudes, reaching about 8 degrees above the horizon from latitude 40°N, for example."
     },
     {
       "ref": "star:δ Lup",
@@ -38,12 +38,12 @@
     {
       "ref": "dso:NGC5986",
       "equip": "small-telescope",
-      "note": "A 7th-magnitude globular cluster in the northern part of Lupus, a small round haze in a telescope. It is the one deep-sky object in the Wolf that gets a little above the murk from Brooklyn, to about 11 degrees."
+      "note": "A 7th-magnitude globular cluster in the northern part of Lupus, a small round haze in a telescope. It is the one deep-sky object in the Wolf that gets a little above the murk from mid-northern latitudes (to about 11 degrees from latitude 40°N, for example)."
     },
     {
       "ref": "dso:NGC5822",
       "equip": "binoculars",
-      "note": "A large, loose open cluster in the far south of the constellation, a pleasant scatter of faint stars in binoculars. It never rises from Brooklyn."
+      "note": "A large, loose open cluster in the far south of the constellation, a pleasant scatter of faint stars in binoculars. It never rises north of about 36°N."
     }
   ],
   "stories": [

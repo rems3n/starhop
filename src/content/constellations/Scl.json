@@ -12,8 +12,8 @@
   },
   "overview": "Sculptor represents a sculptor's workshop, though nothing in its handful of faint stars suggests one. It is a dim, empty-looking region south of Cetus and east of Fomalhaut, worth knowing because it holds one of the brightest galaxies in the sky.",
   "howToFind": [
-    "Sculptor fills the dark space to the left (east) of [[star:Fomalhaut|Fomalhaut]], the lone bright star low in the south on autumn evenings. Its western end is easy to place: [[star:γ Scl|Gamma Sculptoris]] is half a fist to the left of Fomalhaut and slightly lower. The constellation then runs on to the left for another two fists.",
-    "For the eastern end, find [[star:Diphda|Diphda]], the brightest star in the tail of Cetus, about two and a half fists to the upper left of Fomalhaut. [[star:α Scl|Alpha Sculptoris]], the constellation's brightest star, is a bit more than a fist straight below Diphda. From Brooklyn, Sculptor is at its best on November and December evenings but stays within about two fists of the southern horizon, so its fourth-magnitude stars are lost in any city haze. Seek it out from a dark site."
+    "Sculptor fills the dark space to the left (east) of [[star:Fomalhaut|Fomalhaut]], the lone bright star of October and November evenings (low in the south from mid-northern latitudes, nearly overhead from the southern hemisphere). Its western end is easy to place: [[star:γ Scl|Gamma Sculptoris]] is half a fist to the left of Fomalhaut and slightly lower. The constellation then runs on to the left for another two fists.",
+    "For the eastern end, find [[star:Diphda|Diphda]], the brightest star in the tail of Cetus, about two and a half fists to the upper left of Fomalhaut. [[star:α Scl|Alpha Sculptoris]], the constellation's brightest star, is a bit more than a fist straight below Diphda. Sculptor is at its best on November and December evenings. From mid-northern latitudes it stays within about two fists of the southern horizon, so its fourth-magnitude stars are lost in any city haze; from the southern hemisphere it passes overhead. Seek it out from a dark site."
   ],
   "shape": "A large, vague triangle or kite of four fourth-magnitude stars spread over nearly three fists: Alpha at the eastern end, [[star:β Scl|Beta]], Gamma and [[star:δ Scl|Delta]] toward Fomalhaut. To the eye it is simply a blank area, which is no accident: here we look straight out of the flat disk of the Milky Way, where foreground stars are fewest.",
   "mainStars": [
@@ -23,7 +23,7 @@
     },
     {
       "ref": "star:β Scl",
-      "note": "A blue-white star of magnitude 4.4, the southernmost of the main stars and very low from New York."
+      "note": "A blue-white star of magnitude 4.4, the southernmost of the main stars and very low from mid-northern latitudes."
     },
     {
       "ref": "star:γ Scl",
@@ -44,7 +44,7 @@
     {
       "ref": "dso:NGC55",
       "equip": "small-telescope",
-      "note": "Another edge-on galaxy of the Sculptor Group, long and uneven. It is far to the south, on the border with Phoenix, and from Brooklyn it gets only about a fist above the horizon, so this is one for a trip south."
+      "note": "Another edge-on galaxy of the Sculptor Group, long and uneven. It is far to the south, on the border with Phoenix, and from latitude 40°N, for example, it gets only about a fist above the horizon, so for mid-northern observers this is one for a trip south."
     },
     {
       "ref": "dso:NGC300",

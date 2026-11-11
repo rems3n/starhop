@@ -13,7 +13,7 @@
   "overview": "Caelum is the engraver's Chisel, a tiny and very faint southern constellation squeezed between Columba and Eridanus. Its brightest star is only magnitude 4.4. It is the eighth-smallest constellation in the sky and one of the least conspicuous.",
   "howToFind": [
     "Caelum lies below [[con:Lep|Lepus]] and to the right of [[con:Col|Columba]]. From [[star:Phact|Phact]], the brightest star of Columba, look about a fist and a half to the lower right for [[star:α Cae|Alpha Caeli]]. There is no bright star to guide you closer and no pattern to recognize.",
-    "From Brooklyn this is, honestly, a constellation to know about and not one to see. Its northern part does rise, but Alpha Caeli climbs only about seven degrees above the southern horizon, where haze and city glow swallow a star that faint. It is due south around 8 p.m. in late January. To see Caelum properly, travel to the southern United States or, better, the Southern Hemisphere, where it passes high overhead on summer evenings there."
+    "From mid-northern latitudes this is, honestly, a constellation to know about and not one to see. Its northern part does rise, but Alpha Caeli climbs only about seven degrees above the southern horizon, where haze and city glow swallow a star that faint. It is due south around 8 p.m. in late January. To see Caelum properly you want to be south of about 30°N or, better, in the Southern Hemisphere, where it passes high overhead on December to February evenings."
   ],
   "shape": "A short, crooked line of three or four dim stars about a fist long, running north to south. Nothing about it suggests a chisel. It is invisible from a city and from 40 degrees north in almost any conditions.",
   "mainStars": [
@@ -23,7 +23,7 @@
     },
     {
       "ref": "star:γ1 Cae",
-      "note": "An orange giant of magnitude 4.6, about 180 light-years away, in the northern part of the constellation. It is the Caelum star that rises highest from New York."
+      "note": "An orange giant of magnitude 4.6, about 180 light-years away, in the northern part of the constellation. It is the Caelum star that rises highest for northern observers."
     }
   ],
   "notableObjects": [],

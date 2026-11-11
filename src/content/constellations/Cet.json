@@ -10,10 +10,10 @@
       "It lies in a part of the sky the ancients filled with water: the River Eridanus flows beside it, the Fishes swim above it, and the Water Carrier is not far off."
     ]
   },
-  "overview": "Cetus is the sea monster sent to devour Andromeda and killed by Perseus. It is the fourth-largest constellation but a dim one, sprawling across the southern sky of late autumn: a ring of stars for the head below Aries, and a long body trailing off toward its one fairly bright star, Diphda.",
+  "overview": "Cetus is the sea monster sent to devour Andromeda and killed by Perseus. It is the fourth-largest constellation but a dim one, sprawling across the evening sky of November and December: a ring of stars for the head below Aries, and a long body trailing off toward its one fairly bright star, Diphda.",
   "howToFind": [
     "Use the Great Square of Pegasus as a pointer. Follow its eastern side from [[star:Alpheratz|Alpheratz]] down through [[star:Algenib|Algenib]] and keep going a little over three fists toward the horizon (a fist at arm's length is roughly 10 degrees). The lone orange-white star you reach, in an otherwise empty region, is [[star:Diphda|Diphda]], on the monster's tail end.",
-    "The head is at the other end, about four fists to the east and higher up. Look two and a half fists below [[star:Hamal|Hamal]], the brightest star of Aries, for [[star:Menkar|Menkar]]; it forms a rough ring with [[star:γ Cet|Gamma Ceti]] and a few fainter stars. From Brooklyn Cetus is an evening constellation from October to January, crossing the southern sky at a third to halfway up from the horizon; Diphda never climbs higher than about three fists."
+    "The head is at the other end, about four fists to the east and higher up. Look two and a half fists below [[star:Hamal|Hamal]], the brightest star of Aries, for [[star:Menkar|Menkar]]; it forms a rough ring with [[star:γ Cet|Gamma Ceti]] and a few fainter stars. Cetus is an evening constellation from October to January. From mid-northern latitudes it crosses the southern sky a third to halfway up from the horizon and Diphda never climbs higher than about three fists; from the southern hemisphere it passes high in the north, with Diphda nearly overhead."
   ],
   "shape": "A loose pentagon of faint stars for the head, about half a fist across, joined by a long thin neck to a larger, sagging four-sided body, the whole thing some five fists from end to end. From the city only Diphda and Menkar are easy; most of the monster is fourth magnitude (magnitude is the brightness scale, where smaller numbers are brighter) and needs a dark sky to trace.",
   "mainStars": [
@@ -57,7 +57,7 @@
     {
       "ref": "dso:NGC247",
       "equip": "small-telescope",
-      "note": "A dim, elongated spiral galaxy a few degrees south of Diphda. Low in the sky from New York and best tried from a dark site."
+      "note": "A dim, elongated spiral galaxy a few degrees south of Diphda. Low in the sky from mid-northern latitudes and best tried from a dark site; from the southern hemisphere it passes high overhead."
     }
   ],
   "stories": [

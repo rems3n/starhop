@@ -77,7 +77,7 @@
         "question": "If stars are born in clusters inside clouds like the Orion Nebula, why does the Sun have no nearby sister stars today?",
         "answer": "The Sun was very probably born in a cluster too, about 4.6 billion years ago. But clusters like that are only loosely held together; over a few hundred million years its members drifted apart and spread around the galaxy. The Sun has circled the galaxy about twenty times since."
       },
-      "tryIt": "On a winter evening, look at the middle of Orion's Sword. Even from Brooklyn, binoculars show that it is a small misty patch rather than a sharp point."
+      "tryIt": "On a December–February evening, look at the middle of Orion's Sword. Even from a big city, binoculars show that it is a small misty patch rather than a sharp point."
     },
     {
       "heading": "The long middle age",
@@ -115,7 +115,7 @@
     {
       "heading": "Red giants",
       "body": [
-        "When the hydrogen in the core runs out, the core shrinks and heats while the outer layers swell and cool. The star becomes a red giant: bigger, brighter and redder than before. Two of the brightest stars in the sky are in this stage: [[star:Aldebaran|Aldebaran]], the orange eye of Taurus, and [[star:Arcturus|Arcturus]], the bright orange star of spring. The Sun will do the same in about five billion years."
+        "When the hydrogen in the core runs out, the core shrinks and heats while the outer layers swell and cool. The star becomes a red giant: bigger, brighter and redder than before. Two of the brightest stars in the sky are in this stage: [[star:Aldebaran|Aldebaran]], the orange eye of Taurus, and [[star:Arcturus|Arcturus]], the bright orange star of April–July evenings. The Sun will do the same in about five billion years."
       ],
       "demo": {
         "title": "Stars in old age",
@@ -137,7 +137,7 @@
             ]
           },
           {
-            "caption": "Arcturus, the brightest star of the spring sky, is another giant, with a mass close to the Sun's. It is a preview of the Sun's distant future.",
+            "caption": "Arcturus, the brightest star in the northern half of the sky, is another giant, with a mass close to the Sun's. It is a preview of the Sun's distant future.",
             "time": "month:5 22:00",
             "view": {
               "target": "star:Arcturus",

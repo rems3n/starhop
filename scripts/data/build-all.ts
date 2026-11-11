@@ -4,6 +4,7 @@
  */
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
+import { buildArt, STELLARIUM_MODERN } from './build-art';
 import { buildConstellations, D3C_BASE } from './build-constellations';
 import { buildDsos, ONGC_BASE } from './build-dsos';
 import { buildMilkyWay } from './build-milkyway';
@@ -20,12 +21,26 @@ async function main() {
   const milkyWay = await buildMilkyWay(report);
   const { dsos, messierRevid, caldwellRevid } = await buildDsos(report);
 
+  // Optional: constellation illustrations (needs ImageMagick `convert`; skipped with a note if it fails or with --no-art)
+  let artCount = 0;
+  const artFiles: WrittenFile[] = [];
+  if (!process.argv.includes('--no-art')) {
+    try {
+      const r = await buildArt(stars, report);
+      artCount = r.art.length;
+      artFiles.push(...r.files);
+    } catch (e) {
+      report.note(`Constellation illustrations skipped: ${(e as Error).message}`);
+    }
+  }
+
   const files: WrittenFile[] = [
     writeJson('stars.json', stars),
     writeJson('stars-faint.json', faint),
     writeJson('constellations.json', constellations),
     writeJson('dsos.json', dsos),
     writeJson('milkyway.json', milkyWay),
+    ...artFiles,
   ];
 
   // builtAt = when the newest raw file was downloaded, so a rebuild from the same cache is byte-identical
@@ -43,6 +58,7 @@ async function main() {
       caldwell: dsos.filter((d) => d.caldwell).length,
       milkyWayLevels: milkyWay.levels.length,
       milkyWayPolygons: milkyWay.levels.reduce((a, l) => a + l.polygons.length, 0),
+      constellationArt: artCount,
     },
     files: Object.fromEntries(files.map((f) => [f.file, { bytes: f.bytes, gzipBytes: f.gzipBytes }])),
     sources: [
@@ -90,6 +106,14 @@ async function main() {
         licence: 'CC BY-SA 4.0',
         version: wikiAreaRevid ? `revision ${wikiAreaRevid}` : 'not fetched',
         usedFor: 'cross-check of the authored IAU area table (no data copied beyond the check)',
+      },
+      {
+        name: "Stellarium — 'modern' sky culture (constellation illustrations by Johan Meuris)",
+        url: `${STELLARIUM_MODERN}/index.json`,
+        licence: 'Illustrations: Free Art License; sky-culture data: CC BY-SA 4.0',
+        version: 'master branch (commit not recorded)',
+        sha256: hash('stellarium-modern-index.json'),
+        usedFor: 'constellation-art.json (anchor stars) and public/art/*.webp (illustrations, resized and re-encoded)',
       },
       {
         name: 'astronomy-engine (Don Cross)',

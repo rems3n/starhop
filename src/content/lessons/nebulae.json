@@ -11,10 +11,10 @@
       "body": [
         "After this lesson you will be able to name the five kinds of nebula, point to an example of each, and tell a real photograph from a false-color image or an artist's painting.",
         "Nebula is Latin for cloud. The space between the stars is not empty: it holds thin gas (mostly hydrogen) and fine dust, and here and there this material gathers into clouds. When a cloud lies close to very hot young stars, their ultraviolet light makes the hydrogen glow, much as electricity makes a neon sign glow. Astronomers call such a cloud an emission nebula, or an H II region (\"H two\", meaning hydrogen whose atoms have been stripped of their electrons). Glowing hydrogen gives off a characteristic deep red, which is why these nebulae are red or pink in photographs.",
-        "The showpiece is [[dso:M42|the Orion Nebula]] in Orion's Sword. In summer, [[dso:M8|the Lagoon Nebula]] and [[dso:M16|the Eagle Nebula]] lie in the Milky Way above the spout of the Sagittarius Teapot, and [[dso:C20|the North America Nebula]] sits beside [[star:Deneb|Deneb]]."
+        "The showpiece is [[dso:M42|the Orion Nebula]] in Orion's Sword. On June–September evenings, [[dso:M8|the Lagoon Nebula]] and [[dso:M16|the Eagle Nebula]] lie in the Milky Way above the spout of the Sagittarius Teapot, and [[dso:C20|the North America Nebula]] sits beside [[star:Deneb|Deneb]]."
       ],
       "demo": {
-        "title": "Emission nebulae, winter and summer",
+        "title": "Emission nebulae through the year",
         "controls": [],
         "steps": [
           {
@@ -36,7 +36,7 @@
             ]
           },
           {
-            "caption": "Summer's emission nebulae line the Milky Way low in the south. The Lagoon sits above the Teapot's spout and the Eagle farther up toward Scutum. From Brooklyn they never climb high, so they need a clear southern horizon.",
+            "caption": "August's emission nebulae line the Milky Way in Sagittarius. The Lagoon sits above the Teapot's spout and the Eagle farther up toward Scutum. From mid-northern latitudes they never climb high and need a clear southern horizon; from the southern hemisphere they pass almost overhead.",
             "time": "month:8 22:00",
             "view": {
               "target": "dso:M8",
@@ -149,7 +149,7 @@
       "heading": "Clouds that shine by borrowed light, and clouds that block it",
       "body": [
         "If the nearby stars are not hot enough to make the gas glow, the dust in a cloud can still scatter their light toward us. That is a reflection nebula. Dust scatters blue light best (the same reason the daytime sky is blue), so reflection nebulae are blue in photographs. The faint haze around the stars of [[dso:M45|the Pleiades]] is the famous example; [[dso:M78|M78]], just above Orion's Belt, is another.",
-        "A cloud with no light of its own, seen against something brighter, is a dark nebula: a silhouette. The Horsehead Nebula is a dark notch in front of the glowing strip of gas [[dso:IC434|IC 434]], just south of [[star:Alnitak|Alnitak]] in Orion's Belt. It is a photographer's object, very hard to see by eye even with a large telescope. The easiest dark nebula in the whole sky is [[dso:C99|the Coalsack]], an inky patch beside the Southern Cross, visible to the naked eye from the southern hemisphere but never from New York."
+        "A cloud with no light of its own, seen against something brighter, is a dark nebula: a silhouette. The Horsehead Nebula is a dark notch in front of the glowing strip of gas [[dso:IC434|IC 434]], just south of [[star:Alnitak|Alnitak]] in Orion's Belt. It is a photographer's object, very hard to see by eye even with a large telescope. The easiest dark nebula in the whole sky is [[dso:C99|the Coalsack]], an inky patch beside the Southern Cross, visible to the naked eye from the southern hemisphere but never from Europe or most of the United States."
       ],
       "demo": {
         "title": "Reflection and dark nebulae",
@@ -297,7 +297,7 @@
         "controls": [],
         "steps": [
           {
-            "caption": "Two planetary nebulae in the summer sky: the Ring in Lyra and the Dumbbell in Vulpecula. Each is the cast-off outer layers of one dying star.",
+            "caption": "Two planetary nebulae of July–September evenings: the Ring in Lyra and the Dumbbell in Vulpecula. Each is the cast-off outer layers of one dying star.",
             "time": "month:8 22:00",
             "view": {
               "target": "star:Albireo",
@@ -348,7 +348,7 @@
             ]
           },
           {
-            "caption": "The Helix Nebula in Aquarius is among the closest planetary nebulae. It is large but dim, low in the south on autumn evenings.",
+            "caption": "The Helix Nebula in Aquarius is among the closest planetary nebulae. It is large but dim. On September–November evenings it is low in the south from mid-northern latitudes and high overhead from the southern hemisphere.",
             "time": "month:10 21:00",
             "view": {
               "target": "dso:C63",
@@ -501,7 +501,7 @@
         "myth": "Through a telescope, nebulae look like the colourful photos.",
         "fact": "Almost every nebula looks like a soft grey glow to the eye, because the eye’s colour-sensing cones do not work in dim light. Long camera exposures, and often false-colour processing, create the colours in photographs."
       },
-      "tryIt": "Next winter evening, aim binoculars at the middle of Orion's Sword and brace your elbows. The gray mist around the stars is the Orion Nebula, 1,300 light-years away, seen from a Brooklyn sidewalk."
+      "tryIt": "On a December–February evening, aim binoculars at the middle of Orion's Sword and brace your elbows. The gray mist around the stars is the Orion Nebula, 1,300 light-years away, and you can see it from a city sidewalk."
     }
   ],
   "keyPoints": [
@@ -519,7 +519,7 @@
     {
       "ref": "dso:M8",
       "label": "Lagoon Nebula (M8)",
-      "note": "Emission nebula in Sagittarius with a star cluster inside. Binoculars in a dark sky; low in the south from New York."
+      "note": "Emission nebula in Sagittarius with a star cluster inside. Binoculars in a dark sky; low in the south from mid-northern latitudes, almost overhead from the southern hemisphere."
     },
     {
       "ref": "dso:M45",
@@ -615,7 +615,7 @@
     },
     {
       "id": "q6",
-      "prompt": "From a Brooklyn rooftop with binoculars, which nebula are you most likely to actually see?",
+      "prompt": "From a city rooftop with binoculars, which nebula are you most likely to actually see?",
       "choices": [
         "The Horsehead Nebula",
         "The Veil Nebula",
@@ -623,7 +623,7 @@
         "The Coalsack"
       ],
       "answerIndex": 2,
-      "explanation": "M42 is bright enough to beat city lights. The Horsehead and Veil need dark skies and more aperture, and the Coalsack never rises from New York."
+      "explanation": "M42 is bright enough to beat city lights. The Horsehead and Veil need dark skies and more aperture, and the Coalsack is a dark cloud that only stands out under a dark southern-hemisphere sky; it never rises from mid-northern latitudes."
     }
   ]
 }

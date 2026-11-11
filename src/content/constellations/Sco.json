@@ -10,11 +10,11 @@
       "Scorpius is the modern astronomical name. Scorpio is the older form, now used mainly for the astrological sign."
     ]
   },
-  "overview": "Scorpius is the Scorpion, and it is one of the few constellations that really looks like its name: a row of stars for the head, the fiery red star Antares for the heart, and a long line of bright stars curling down and around into a raised sting. It lies in the Milky Way and is the showpiece of the southern sky on summer evenings.",
+  "overview": "Scorpius is the Scorpion, and it is one of the few constellations that really looks like its name: a row of stars for the head, the fiery red star Antares for the heart, and a long line of bright stars curling down and around into a raised sting. It lies in the Milky Way and is the showpiece of June to August evenings: low in the south for mid-northern observers, high overhead in the southern hemisphere's winter.",
   "howToFind": [
-    "On a July or August evening, face due south. The brightest star low in that direction, distinctly orange-red and often twinkling hard, is [[star:Antares|Antares]], about two and a half fists above the horizon from Brooklyn. If you want a signpost, follow the arc of the Big Dipper's handle to [[star:Arcturus|Arcturus]] and on to [[star:Spica|Spica]], then keep going left and down for four and a half fists, past the faint stars of [[con:Lib|Libra]].",
+    "On a July or August evening, face due south. The brightest star low in that direction, distinctly orange-red and often twinkling hard, is [[star:Antares|Antares]], about two and a half fists above the horizon from latitude 40°N, for example (higher the farther south you are). If you want a signpost, follow the arc of the Big Dipper's handle to [[star:Arcturus|Arcturus]] and on to [[star:Spica|Spica]], then keep going left and down for four and a half fists, past the faint stars of [[con:Lib|Libra]].",
     "From Antares, look less than a fist to the right for an upright row of three stars: [[star:Acrab|Acrab]] at the top, [[star:Dschubba|Dschubba]] in the middle and [[star:Fang|Fang]] below. That is the Scorpion's head. Then return to Antares and follow the body down and to the left as it sinks toward the horizon, curves along the bottom through [[star:Sargas|Sargas]], and hooks back up to a close pair of stars, [[star:Shaula|Shaula]] and [[star:Lesath|Lesath]], which mark the sting.",
-    "The tail is the hard part from New York. Shaula climbs only about 12 degrees above the horizon, a little more than a fist, and Sargas barely 6, so you need a clear view to the south with no buildings or haze. Scorpius is highest around nightfall in late July; by October it has slipped into the sunset."
+    "The tail is the hard part from mid-northern latitudes. Shaula climbs only about 12 degrees above the horizon, a little more than a fist, and Sargas barely 6, so you need a clear view to the south with no buildings or haze. Scorpius is highest around nightfall in late July; by October it has slipped into the sunset."
   ],
   "shape": "A long letter J, or a fishhook, about three fists from the head to the sting. The top is a short upright bar of three stars; the shank runs through red Antares, flanked by a fainter star on each side; the hook curls along the horizon and ends in a tight pair. In a city sky the head, Antares and the sting usually show, but the bottom of the hook is often lost in the murk near the horizon.",
   "mainStars": [
@@ -28,7 +28,7 @@
     },
     {
       "ref": "star:Sargas",
-      "note": "A yellow-white giant of magnitude 1.9 at the bottom of the tail's curve. It would be a famous star if it were not so far south; from Brooklyn it only just clears the horizon."
+      "note": "A yellow-white giant of magnitude 1.9 at the bottom of the tail's curve. It would be a famous star if it were not so far south; from latitude 40°N, for example, it only just clears the horizon, and it never rises north of about 47°N."
     },
     {
       "ref": "star:Dschubba",
@@ -48,7 +48,7 @@
     {
       "ref": "dso:M7",
       "equip": "naked-eye",
-      "note": "Ptolemy's Cluster, a big, bright open cluster just above and left of the sting. Ptolemy recorded it around 150 CE as a 'nebulous star'. Under a dark sky it is a misty patch to the eye; binoculars show dozens of stars. From Brooklyn it is very low."
+      "note": "Ptolemy's Cluster, a big, bright open cluster just above and left of the sting. Ptolemy recorded it around 150 CE as a 'nebulous star'. Under a dark sky it is a misty patch to the eye; binoculars show dozens of stars. From mid-northern latitudes it is very low; from the southern hemisphere it passes overhead."
     },
     {
       "ref": "dso:M6",
@@ -58,7 +58,7 @@
     {
       "ref": "dso:NGC6231",
       "equip": "binoculars",
-      "note": "A compact knot of hot young stars in the tail, beside [[star:ζ2 Sco|Zeta Scorpii]], bright enough to see without optical aid from the south. It never rises far above the New York horizon."
+      "note": "A compact knot of hot young stars in the tail, beside [[star:ζ2 Sco|Zeta Scorpii]], bright enough to see without optical aid from the south. It never rises far above the horizon from mid-northern latitudes (and not at all north of about 48°N)."
     },
     {
       "ref": "dso:M80",
@@ -87,7 +87,7 @@
         "The Earth heard him. Gaia was the mother of all living things, and the animals were her children. She was angry at the threat and angrier at the arrogance, and she chose her champion with care. She did not send a lion or a boar, the sort of beast a hunter expects and knows how to fight. Out of the ground she sent a scorpion.",
         "The story does not describe the fight. It says only that the scorpion stung Orion and that the mightiest of hunters died of it, brought down by a creature he could have crushed underfoot.",
         "Zeus had watched, and according to Hyginus he admired the courage of both. He set the scorpion among the stars, where it would serve as a lesson to human beings not to think too much of themselves. Artemis, who had been fond of her hunting companion, then asked Zeus to do for her what he had done unasked for the Earth, and so Orion too was raised to the sky.",
-        "But Zeus arranged the two with care. He put them on opposite sides of the heavens, as far apart as they could be. You can check his work on any clear night of the year: Orion rules the winter sky and the Scorpion the summer, and you will never see both at once. As the Scorpion's stars climb over the eastern horizon, Orion is slipping out of sight in the west, still running from the sting."
+        "But Zeus arranged the two with care. He put them on opposite sides of the heavens, as far apart as they could be. You can check his work on any clear night of the year: Orion rules the evenings of December to March and the Scorpion those of June to August, and you will never see both at once. As the Scorpion's stars climb over the eastern horizon, Orion is slipping out of sight in the west, still running from the sting."
       ],
       "link": {
         "site": "Ian Ridpath's Star Tales",

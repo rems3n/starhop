@@ -9,21 +9,21 @@
       "Ptolemy's river ended at the star we now call Acamar, about as far south as could be seen from Alexandria. When Dutch ships began sailing to the East Indies in the 1590s, the navigator Pieter Dirkszoon Keyser recorded the far southern stars, and on a celestial globe of 1598 the mapmaker Petrus Plancius showed the river flowing on south to a brilliant star that no Greek astronomer had catalogued. That star inherited the Arabic name meaning 'the river's end': Achernar. The old end-point kept a variant of the same name, Acamar."
     ]
   },
-  "overview": "Eridanus is the River, a long, faint, meandering line of stars that begins next to Rigel in Orion and wanders far down into the southern sky. It is the sixth-largest constellation and stretches farther from north to south than any other, but it has only one bright star, and that one never rises over Brooklyn.",
+  "overview": "Eridanus is the River, a long, faint, meandering line of stars that begins next to Rigel in Orion and wanders far down into the southern sky. It is the sixth-largest constellation and stretches farther from north to south than any other, but it has only one bright star, and that one, Achernar, never rises north of about 33°N.",
   "howToFind": [
     "Begin at [[star:Rigel|Rigel]], Orion's bright blue-white foot. Just up and to the right of it, about three finger-widths away, is a third-magnitude star: [[star:Cursa|Cursa]], the source of the river. From there the stream runs to the right (west) for about three fists in a ragged line of faint stars, passing [[star:Zaurak|Zaurak]], toward the dim stars of Cetus. Then it doubles back to the left, lower down, and finally turns south and drops toward the horizon.",
     "You need a dark sky and some patience; there is no shape to recognize, only a trail to follow star by star, and from the city only Cursa and Zaurak are likely to show. The northern loop is best on evenings from December through February, when Orion is high in the south and the river runs to his right and below.",
-    "From latitude 40 degrees north the southern third of the river is hidden. [[star:Acamar|Acamar]], the ancient end of the river, scrapes only about nine degrees above the southern horizon at best. [[star:Achernar|Achernar]], the brilliant modern end, never rises at all from Brooklyn: you must be south of about latitude 32 degrees north, roughly the far south of Texas or Florida, even to glimpse it on the horizon, and it is properly a Southern Hemisphere star."
+    "From latitude 40 degrees north the southern third of the river is hidden. [[star:Acamar|Acamar]], the ancient end of the river, scrapes only about nine degrees above the southern horizon at best. [[star:Achernar|Achernar]], the brilliant modern end, never rises at all from mid-northern latitudes: you must be south of about latitude 32 degrees north, roughly the far south of Texas or Florida, even to glimpse it on the horizon, and it is properly a Southern Hemisphere star."
   ],
-  "shape": "A long, loose, winding chain of mostly fourth-magnitude stars, about six fists from top to bottom, with no bright pattern anywhere in the part visible from New York. Think of it as a path to trace rather than a picture to see. Almost none of it survives city lights.",
+  "shape": "A long, loose, winding chain of mostly fourth-magnitude stars, about six fists from top to bottom, with no bright pattern anywhere in the part visible from mid-northern latitudes. Think of it as a path to trace rather than a picture to see. Almost none of it survives city lights.",
   "mainStars": [
     {
       "ref": "star:Achernar",
-      "note": "The river's end, and the ninth-brightest star in the sky, a hot blue-white star about 140 light-years away. It spins so fast that it bulges at the equator, making it one of the least round stars known. It cannot be seen from Brooklyn."
+      "note": "The river's end, and the ninth-brightest star in the sky, a hot blue-white star about 140 light-years away. It spins so fast that it bulges at the equator, making it one of the least round stars known. It never rises north of about 33°N."
     },
     {
       "ref": "star:Cursa",
-      "note": "The river's source, a white star beside Rigel and the brightest part of Eridanus visible from New York. About 90 light-years away."
+      "note": "The river's source, a white star beside Rigel and the brightest part of Eridanus visible from mid-northern latitudes. About 90 light-years away."
     },
     {
       "ref": "star:Zaurak",
@@ -31,7 +31,7 @@
     },
     {
       "ref": "star:Acamar",
-      "note": "Where the river ended for the ancient Greeks. A small telescope shows it as a fine pair of white stars. From Brooklyn it is very low, visible only with a perfectly clear southern horizon."
+      "note": "Where the river ended for the ancient Greeks. A small telescope shows it as a fine pair of white stars. From mid-northern latitudes it is very low (it never rises north of about 50°N), visible only with a perfectly clear southern horizon."
     },
     {
       "ref": "star:Ran",
@@ -52,7 +52,7 @@
     {
       "ref": "star:Acamar",
       "equip": "small-telescope",
-      "note": "A handsome double star with components of magnitude 3.2 and 4.3. It is a showpiece from farther south; from New York the thick air near the horizon blurs it."
+      "note": "A handsome double star with components of magnitude 3.2 and 4.3. It is a showpiece from farther south; from mid-northern latitudes the thick air near the horizon blurs it."
     }
   ],
   "stories": [
@@ -73,7 +73,7 @@
         "The four horses knew at once that the hand on the reins was not their master's. The chariot was too light and bucked like a ship without ballast. They left the road. They swung north, and the cold stars of the Bears felt heat for the first time; the boy looked down from the top of the sky and went weak at the knees. Then he saw the Scorpion ahead, its claws spread and its tail curved to strike, and in terror he dropped the reins.",
         "After that nobody was driving. The horses ran where they liked, and when they plunged low the Earth caught fire. Mountains burned, forests burned, cities turned to ash. Ovid says that was the day Libya became a desert, and that springs and rivers boiled away, and the Nile fled to the ends of the earth and hid its head. The Earth herself cried out to Zeus that she could not bear it. There was only one way to stop it. Zeus climbed to the top of heaven and threw a thunderbolt, and it knocked the driver out of the chariot and out of his life together.",
         "Phaethon fell a long way, with his hair on fire, like a shooting star. Far from home, the river Eridanus received him and washed his scorched face. The nymphs of the western land buried what was left and carved a line on the stone: here lies Phaethon, who drove his father's chariot, and though he could not hold it, he fell daring a great thing. His sisters, the daughters of the Sun, came and wept at the grave until they took root and became poplar trees, and their tears hardened into amber. When the Argonauts later sailed up the Eridanus, Apollonius says, the water was still steaming from the wound.",
-        "The Greeks found that river in the sky, winding away from Orion's foot. Aratus calls it the poor remains of Eridanus, river of many tears, as though the heat of that day had dried up most of it. On a winter night you can follow it yourself, a thin, broken stream of faint stars running down toward the southern horizon."
+        "The Greeks found that river in the sky, winding away from Orion's foot. Aratus calls it the poor remains of Eridanus, river of many tears, as though the heat of that day had dried up most of it. On a December or January evening you can follow it yourself, a thin, broken stream of faint stars running down toward the southern horizon."
       ],
       "link": {
         "site": "Ian Ridpath's Star Tales",

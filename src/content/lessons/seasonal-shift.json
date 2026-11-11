@@ -21,7 +21,7 @@
         ],
         "steps": [
           {
-            "caption": "9 pm in mid-January, facing south. Orion stands high, a little left of due south.",
+            "caption": "9 pm in mid-January from mid-northern latitudes, facing south. Orion stands high, a little left of due south. (From the southern hemisphere it is high in the north at this hour, upside down, and the slide below works the same way.)",
             "time": "month:1 21:00",
             "view": {
               "az": 190,
@@ -34,7 +34,13 @@
                 "id": "Ori",
                 "label": true
               }
-            ]
+            ],
+            "observer": {
+              "name": "Mid-northern latitudes (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
           },
           {
             "caption": "One month later but two hours earlier: 7 pm in mid-February. The sky is exactly the same. A month forward and two hours back always cancel out.",
@@ -50,7 +56,13 @@
                 "id": "Ori",
                 "label": true
               }
-            ]
+            ],
+            "observer": {
+              "name": "Mid-northern latitudes (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
           },
           {
             "caption": "Mid-February at 9 pm, the same clock time as the first step. Orion has shifted 30° to the west and is now past due south.",
@@ -66,10 +78,16 @@
                 "id": "Ori",
                 "label": true
               }
-            ]
+            ],
+            "observer": {
+              "name": "Mid-northern latitudes (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
           },
           {
-            "caption": "Mid-April at 9 pm. Orion is tipping over toward the western horizon. (Clocks jumped forward an hour in March, which makes 9 pm an hour earlier by the Sun and slows the slide a little.) Use the month buttons to keep going.",
+            "caption": "Mid-April at 9 pm. Orion is tipping over toward the western horizon. (Clocks here jumped forward an hour in March for daylight saving, which makes 9 pm an hour earlier by the Sun and slows the slide a little.) Use the month buttons to keep going.",
             "time": "month:4 21:00",
             "view": {
               "az": 190,
@@ -82,10 +100,16 @@
                 "id": "Ori",
                 "label": true
               }
-            ]
+            ],
+            "observer": {
+              "name": "Mid-northern latitudes (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
           },
           {
-            "caption": "Mid-June at 10 pm. Orion is gone: it is up in the daytime now, lost behind the Sun. Arcturus and the summer stars have taken its place, with red Antares low in the south.",
+            "caption": "Mid-June at 10 pm. Orion is gone: it is up in the daytime now, lost behind the Sun. Arcturus and the June stars have taken its place, with red Antares low in the south. (From the southern hemisphere Antares and Scorpius are high overhead at this hour.)",
             "time": "month:6 22:00",
             "view": {
               "az": 190,
@@ -103,7 +127,13 @@
                 "ref": "star:Arcturus",
                 "label": "Arcturus"
               }
-            ]
+            ],
+            "observer": {
+              "name": "Mid-northern latitudes (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
           }
         ]
       },
@@ -231,7 +261,7 @@
       "heading": "Using the rule",
       "body": [
         "Two hours per month is the number to keep. The sky at 9 pm in January is the sky at 7 pm in February, at 11 pm in December and at 1 am in November. So if you want a preview of next season's evening constellations, stay up late or get up before dawn: the sky before sunrise tonight is the evening sky about four or five months from now.",
-        "The rule also explains the names. A “winter constellation” is one that is well placed in the evening during winter. Orion can be seen at dawn in August and at midnight in December; it is called a winter constellation because January and February are when it is high at a convenient hour."
+        "The rule also explains why constellations are linked to seasons. Orion is called a winter constellation in the north and a summer one in the south because December–February are the months when it is high at a convenient evening hour. It can be seen at dawn in August and at midnight in December. Seasons flip between hemispheres, but the months do not: Orion's evening months are the same everywhere."
       ],
       "tryIt": "Pick a bright star and a landmark, say Sirius over a particular chimney, and note the clock time when they line up. Check again a week later from the same spot. The star will reach the chimney about 28 minutes earlier.",
       "figures": [
@@ -295,21 +325,21 @@
       "id": "ss-q3",
       "prompt": "You like the sky as it looks at 9 pm in mid-January. When can you see the same sky in mid-March?",
       "choices": [
-        "At 5 pm standard time, in daylight, so you cannot",
+        "At 5 pm, still in daylight, so you cannot",
         "At 9 pm again",
         "At 1 am",
         "At 11 pm"
       ],
       "answerIndex": 0,
-      "explanation": "Two months later the same sky comes four hours earlier: 5 pm standard time, before dark in March. That is why the winter stars are already well to the west when March evenings get dark."
+      "explanation": "Two months later the same sky comes four hours earlier: 5 pm (leaving aside any daylight-saving change), before dark in March at mid-latitudes. That is why the January stars are already well to the west when March evenings get dark."
     },
     {
       "id": "ss-q4",
       "prompt": "Why can't you see Orion on a June night?",
       "choices": [
-        "It is below the horizon all summer because Earth tilts away",
+        "It is below the horizon all June because Earth tilts away",
         "It is too faint in warm, hazy air",
-        "It only exists in the winter sky",
+        "It only exists in the December–February sky",
         "The Sun lies in that direction, so Orion is up during the day"
       ],
       "answerIndex": 3,

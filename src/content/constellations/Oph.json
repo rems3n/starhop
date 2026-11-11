@@ -10,10 +10,10 @@
       "When the official constellation boundaries were drawn in the 1920s, Ophiuchus's body cut the serpent in two, leaving [[con:Ser|Serpens]] as the only constellation in two separate pieces. The boundaries also mean that the Sun passes through the southern part of Ophiuchus in the first half of December, spending more time here than in neighboring Scorpius, although Ophiuchus is not one of the twelve traditional signs of the zodiac."
     ]
   },
-  "overview": "Ophiuchus is a giant man holding a huge snake, usually identified as Asclepius, the healer who could raise the dead. It is a very large but rather dim constellation that fills the southern sky on summer evenings, above the bright red star Antares in Scorpius.",
+  "overview": "Ophiuchus is a giant man holding a huge snake, usually identified as Asclepius, the healer who could raise the dead. It is a very large but rather dim constellation that fills the evening sky from June to August, just north of the bright red star Antares in Scorpius.",
   "howToFind": [
     "Begin with [[star:Vega|Vega]] and [[star:Altair|Altair]], two corners of the [[asterism:summer-triangle|Summer Triangle]]. Look to the southwest of them for a lone second-magnitude star that makes a large, nearly equal-sided triangle with those two, about three fists (30 degrees) from each. That is [[star:Rasalhague|Rasalhague]], the head of Ophiuchus. A fist held at arm's length covers about 10 degrees.",
-    "From Rasalhague the body hangs downward toward the southern horizon like a big, lopsided bell or a house with a pointed roof. [[star:Cebalrai|Cebalrai]] is one shoulder, a fist below Rasalhague to the left. Three fists below Rasalhague you come to [[star:Sabik|Sabik]] at the bottom left of the bell and [[star:ζ Oph|Zeta Ophiuchi]] at the bottom right, and above Zeta to the right is the close pair [[star:δ Oph|Yed Prior]] and [[star:ε Oph|Yed Posterior]], the hand that grips the snake. Below everything shines red [[star:Antares|Antares]]. Ophiuchus is best on evenings from June to September, when it stands due south about halfway up the sky as seen from Brooklyn."
+    "From Rasalhague the body hangs downward toward the southern horizon like a big, lopsided bell or a house with a pointed roof. [[star:Cebalrai|Cebalrai]] is one shoulder, a fist below Rasalhague to the left. Three fists below Rasalhague you come to [[star:Sabik|Sabik]] at the bottom left of the bell and [[star:ζ Oph|Zeta Ophiuchi]] at the bottom right, and above Zeta to the right is the close pair [[star:δ Oph|Yed Prior]] and [[star:ε Oph|Yed Posterior]], the hand that grips the snake. Below everything shines red [[star:Antares|Antares]]. Ophiuchus is best on evenings from June to September, when it stands about halfway up the southern sky from mid-northern latitudes and high in the north from the southern hemisphere."
   ],
   "shape": "A large, empty-looking ring or bell of second- and third-magnitude stars about three fists tall and two and a half wide (magnitude is the brightness scale, where smaller numbers are brighter), with few stars inside it. In a city you can usually pick out Rasalhague, Sabik, Cebalrai, and Zeta, enough to trace the outline, but it takes patience because the stars are so far apart.",
   "mainStars": [
@@ -57,7 +57,7 @@
     {
       "ref": "dso:M62",
       "equip": "small-telescope",
-      "note": "One of several more globular clusters in the southern part of the constellation, low in the sky near the border with Scorpius. From Brooklyn's latitude it needs a clear southern horizon."
+      "note": "One of several more globular clusters in the southern part of the constellation, low in the sky near the border with Scorpius. From mid-northern latitudes it is low and needs a clear southern horizon; from the southern hemisphere it passes overhead."
     }
   ],
   "stories": [

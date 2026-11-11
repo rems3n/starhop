@@ -20,7 +20,7 @@
         ],
         "steps": [
           {
-            "caption": "A dark August sky. The Milky Way runs from Cygnus overhead down to Sagittarius in the south. You are looking along the disc of our own galaxy.",
+            "caption": "A dark August sky from mid-northern latitudes. The Milky Way runs from Cygnus overhead down to Sagittarius in the south. You are looking along the disc of our own galaxy.",
             "time": "month:8 22:00",
             "bortle": 2,
             "view": {
@@ -31,10 +31,35 @@
             "layers": {
               "constellationNames": false,
               "starNames": false
+            },
+            "observer": {
+              "name": "Mid-northern latitudes (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
             }
           },
           {
-            "caption": "The center of the galaxy lies just off the spout of the Sagittarius Teapot, 26,000 light-years away and hidden behind dust. Slide the light-pollution control toward 9 to see what Brooklyn does to the band.",
+            "caption": "The same August evening from mid-southern latitudes (34°S): the brightest part of the band, around Sagittarius and Scorpius, passes almost overhead. The southern hemisphere has the finest view of the galaxy's center.",
+            "observer": {
+              "name": "Mid-southern latitudes (34°S)",
+              "lat": -34,
+              "lon": 151.2,
+              "tz": "Australia/Sydney"
+            },
+            "time": "month:8 21:00",
+            "bortle": 2,
+            "view": {
+              "target": "radec:266.4,-29.0",
+              "fov": 120
+            },
+            "layers": {
+              "constellationNames": false,
+              "starNames": false
+            }
+          },
+          {
+            "caption": "The center of the galaxy lies just off the spout of the Sagittarius Teapot, 26,000 light-years away and hidden behind dust. Slide the light-pollution control toward 9 to see what a big city does to the band.",
             "time": "month:8 22:00",
             "bortle": 2,
             "view": {
@@ -229,14 +254,14 @@
     {
       "heading": "The realm of galaxies",
       "body": [
-        "On spring evenings the Milky Way band lies low around the horizon and we look straight up out of the disc, away from its dust. That window, between the tail of Leo and the stars of Virgo and Coma Berenices, is crowded with galaxies; observers call it the realm of galaxies. The heart of the Virgo Cluster lies about halfway between [[star:Denebola|Denebola]] and [[star:Vindemiatrix|Vindemiatrix]]."
+        "Seen from mid-northern latitudes on March–May evenings, the Milky Way band lies low around the horizon and we look straight up out of the disc, away from its dust. That window, between the tail of Leo and the stars of Virgo and Coma Berenices, is crowded with galaxies; observers call it the realm of galaxies. The heart of the Virgo Cluster lies about halfway between [[star:Denebola|Denebola]] and [[star:Vindemiatrix|Vindemiatrix]]. From the southern hemisphere the same window is up in the north on April–June evenings, lower but still well placed."
       ],
       "demo": {
         "title": "The Virgo Cluster",
         "controls": [],
         "steps": [
           {
-            "caption": "Spring evening, looking southeast. The markers crowding the gap between Denebola (Leo's tail) and Vindemiatrix (in Virgo) are galaxies of the Virgo Cluster, over 50 million light-years away.",
+            "caption": "An April evening. The markers crowding the gap between Denebola (Leo's tail) and Vindemiatrix (in Virgo) are galaxies of the Virgo Cluster, over 50 million light-years away.",
             "time": "month:4 21:30",
             "view": {
               "target": "dso:M87",
@@ -287,7 +312,7 @@
     {
       "heading": "What you can actually see",
       "body": [
-        "Galaxies are the hardest common targets, because their light is spread thin and city skyglow swamps it. One is within reach of the naked eye from the north: [[dso:M31|the Andromeda Galaxy]], a faint elongated smudge under a dark sky and a binocular object from the suburbs. From Brooklyn, binoculars may just show its bright core on a clear moonless night. Everything else wants a telescope and, above all, a dark sky, and even then you see a soft gray glow, not the spiral arms of the photographs.",
+        "Galaxies are the hardest common targets, because their light is spread thin and city skyglow swamps it. One is within reach of the naked eye from the north: [[dso:M31|the Andromeda Galaxy]], a faint elongated smudge under a dark sky and a binocular object from the suburbs. From a big city, binoculars may just show its bright core on a clear moonless night. From mid-southern latitudes Andromeda stays low in the north, and the two Magellanic Clouds are the naked-eye galaxies instead. Everything else wants a telescope and, above all, a dark sky, and even then you see a soft gray glow, not the spiral arms of the photographs.",
         "To find Andromeda, start at [[star:Alpheratz|Alpheratz]], the corner star of the Great Square of Pegasus. Hop two stars along Andromeda's chain to [[star:Mirach|Mirach]], turn a right angle, and go past the fainter star [[star:μ And|Mu Andromedae]] the same distance again."
       ],
       "demo": {
@@ -371,15 +396,15 @@
         "answerIndex": 0,
         "explanation": "Its light is spread thin and it is millions of light-years away, so by eye and in binoculars it is a faint grey oval glow, brightest at the core."
       },
-      "tryIt": "On a moonless autumn evening, get away from direct lights, let your eyes adapt for ten minutes, and sweep binoculars from Mirach past Mu Andromedae. A small gray oval that will not focus to a point is another galaxy."
+      "tryIt": "On a moonless October–December evening (it is low in the north from the southern hemisphere), get away from direct lights, let your eyes adapt for ten minutes, and sweep binoculars from Mirach past Mu Andromedae. A small gray oval that will not focus to a point is another galaxy."
     }
   ],
   "keyPoints": [
     "The Milky Way band is our own galaxy's disc seen from inside; its center is toward Sagittarius.",
     "Galaxies come as spirals, barred spirals, ellipticals, lenticulars and irregulars.",
     "Galaxies are millions of light-years away, so we see them as they were millions of years ago.",
-    "Spring evenings face out of the Milky Way's disc toward the Virgo Cluster, the realm of galaxies.",
-    "Only the Andromeda Galaxy is a naked-eye galaxy from mid-northern latitudes; most need a telescope and a dark sky."
+    "From the northern hemisphere, March–May evenings face out of the Milky Way's disc toward the Virgo Cluster, the realm of galaxies.",
+    "Only the Andromeda Galaxy is a naked-eye galaxy from mid-northern latitudes; from the southern hemisphere the Magellanic Clouds are too. Most galaxies need a telescope and a dark sky."
   ],
   "examples": [
     {
@@ -415,7 +440,7 @@
     {
       "ref": "dso:M83",
       "label": "M83",
-      "note": "Barred spiral in Hydra. Low in the south from New York; a small telescope and a dark sky are needed."
+      "note": "Barred spiral in Hydra. Low in the south from mid-northern latitudes, high from the southern hemisphere; a small telescope and a dark sky are needed."
     }
   ],
   "questions": [

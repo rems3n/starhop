@@ -20,7 +20,7 @@
         ],
         "steps": [
           {
-            "caption": "Facing north at 8 pm in mid-January. Polaris is four fists above the horizon. The Big Dipper stands on its handle, low in the north-northeast.",
+            "caption": "Facing north at 8 pm in mid-January. Polaris stands as many degrees above the horizon as the latitude you are watching from. The Big Dipper stands on its handle, low in the north-northeast.",
             "time": "2027-01-15 20:00",
             "view": {
               "az": 0,
@@ -121,6 +121,44 @@
                 "label": "Dubhe's daily circle"
               }
             ]
+          },
+          {
+            "caption": "The southern hemisphere's version: facing south from mid-southern latitudes (34°S) on the same evening, an hour per second. Here the sky wheels clockwise around the south celestial pole, an empty-looking spot 34° up. The Southern Cross and the two Pointers swing around it and never set.",
+            "observer": {
+              "name": "Mid-southern latitudes (34°S)",
+              "lat": -34,
+              "lon": 151.2,
+              "tz": "Australia/Sydney"
+            },
+            "time": "2027-01-15 20:00",
+            "rate": 3600,
+            "view": {
+              "az": 180,
+              "alt": 35,
+              "fov": 120
+            },
+            "highlights": [
+              {
+                "type": "label",
+                "at": "point:scp",
+                "text": "South celestial pole"
+              },
+              {
+                "type": "constellation",
+                "id": "Cru",
+                "label": true
+              },
+              {
+                "type": "object",
+                "ref": "star:Rigil Kentaurus",
+                "label": "Alpha Centauri"
+              },
+              {
+                "type": "object",
+                "ref": "star:Hadar",
+                "label": "Beta Centauri"
+              }
+            ]
           }
         ]
       },
@@ -154,7 +192,7 @@
     {
       "heading": "The pivot and the speed",
       "body": [
-        "The still point of the turning sky is the north celestial pole, the spot directly above Earth's North Pole. [[star:Polaris|Polaris]] happens to sit less than 1° from it, which is why it stays put while everything else circles. Facing north, the motion is counter-clockwise.",
+        "The still point of the turning sky is a celestial pole, the spot directly above one of Earth's poles. In the northern hemisphere it is the north celestial pole, and [[star:Polaris|Polaris]] happens to sit less than 1° from it, which is why it stays put while everything else circles; facing north, the motion is counter-clockwise. In the southern hemisphere the pivot is the south celestial pole, which has no bright star to mark it; facing south, the motion is clockwise. From {{place}} your pivot is the {{pole}}.",
         "The speed is easy to remember: a full turn of 360° in 24 hours is 15° per hour. A fist held at arm's length covers about 10°, so in one hour a star moves a fist and a half along its circle. Stars close to the pole trace small circles and seem to crawl; stars far from it sweep long arcs across the sky, but all of them turn through the same 15° each hour."
       ],
       "figures": [
@@ -193,19 +231,19 @@
     {
       "heading": "Rising in the east, setting in the west",
       "body": [
-        "Turn around and face south and the same rotation looks different. Now the circles are so large that you only see their upper parts: stars come up along the eastern horizon on your left, climb to their highest point when they are due south, and go down in the west on your right. Facing south, the sky moves left to right, clockwise.",
-        "From Brooklyn stars do not rise straight up. They climb on a slant, leaning to the right at about 49° to the horizon, which is 90° minus your latitude. They set on the same slant in the west.",
+        "Turn around to face the equator side of the sky (south from the northern hemisphere, north from the southern) and the same rotation looks different. Now the circles are so large that you only see their upper parts: stars come up along the eastern horizon, climb to their highest point as they cross the north–south line, and go down in the west. Facing south from the northern hemisphere that is left to right, clockwise; facing north from the southern hemisphere it is right to left.",
+        "Except on the equator, stars do not rise straight up. They climb on a slant, at 90° minus your latitude to the horizon (about 50° from mid-northern or mid-southern latitudes), leaning toward the equator side of the sky: to the right in the northern hemisphere, to the left in the southern. They set on the same slant in the west.",
         "The Sun, the Moon and the planets share this daily turn. Their own slower movements against the stars come later in the course."
       ],
       "demo": {
-        "title": "Facing south, east and west",
+        "title": "Facing the equator side, east and west",
         "controls": [
           "play",
           "time-scrub"
         ],
         "steps": [
           {
-            "caption": "Facing south at 8 pm in January, half an hour per second. Stars move left to right. The dotted arc is the whole night of Sirius: up in the southeast, highest due south around 11 pm, down in the southwest before dawn.",
+            "caption": "From mid-northern latitudes (41°N), facing south at 8 pm in January, half an hour per second. Stars move left to right. The dotted arc is the whole night of Sirius: up in the southeast, highest due south around 11 pm, down in the southwest before dawn.",
             "time": "2027-01-15 20:00",
             "rate": 1800,
             "view": {
@@ -227,10 +265,47 @@
                 "stepHours": 1,
                 "frame": "horizon"
               }
-            ]
+            ],
+            "observer": {
+              "name": "Mid-northern latitudes (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
           },
           {
-            "caption": "Facing east. Stars come up slanting to the right; the dots follow Regulus for five hours after it rises. On this date in 2027 the two bright extra lights rising with Regulus are Jupiter and Mars: planets ride the daily turn too.",
+            "caption": "The same evening from mid-southern latitudes (34°S), facing north. Now the stars move right to left, and Sirius climbs almost overhead as it crosses due north around midnight (summer time there).",
+            "time": "2027-01-15 20:00",
+            "rate": 1800,
+            "view": {
+              "az": 0,
+              "alt": 45,
+              "fov": 130
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "star:Sirius",
+                "label": "Sirius"
+              },
+              {
+                "type": "trail",
+                "ref": "star:Sirius",
+                "from": "2027-01-15 19:00",
+                "to": "2027-01-16 04:00",
+                "stepHours": 1,
+                "frame": "horizon"
+              }
+            ],
+            "observer": {
+              "name": "Mid-southern latitudes (34°S)",
+              "lat": -34,
+              "lon": 151.2,
+              "tz": "Australia/Sydney"
+            }
+          },
+          {
+            "caption": "Facing east from mid-northern latitudes. Stars come up slanting to the right; the dots follow Regulus for five hours after it rises. On this date in 2027 the two bright extra lights rising with Regulus are Jupiter and Mars: planets ride the daily turn too.",
             "time": "2027-01-15 20:00",
             "rate": 1800,
             "view": {
@@ -252,10 +327,16 @@
                 "stepHours": 1,
                 "frame": "horizon"
               }
-            ]
+            ],
+            "observer": {
+              "name": "Mid-northern latitudes (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
           },
           {
-            "caption": "Facing west at 9 pm. Everything sinks down and to the right. The half-lit Moon is going down with the stars: it shares the same daily motion.",
+            "caption": "Facing west at 9 pm. Everything sinks toward the horizon on a slant: down and to the right from the northern hemisphere, down and to the left from the southern. The half-lit Moon is going down with the stars: it shares the same daily motion.",
             "time": "2027-01-15 21:00",
             "rate": 1800,
             "view": {
@@ -273,7 +354,7 @@
           }
         ]
       },
-      "tryIt": "Tonight, line up a bright star with the edge of a building or a rooftop antenna, standing in a spot you can find again. Come back to exactly that spot 20 minutes later. The star will have moved 5°, about three finger-widths at arm's length, and the direction it moved tells you whether you are looking east (up), south (rightward) or west (down).",
+      "tryIt": "Tonight, line up a bright star with the edge of a building or a rooftop antenna, standing in a spot you can find again. Come back to exactly that spot 20 minutes later. The star will have moved 5°, about three finger-widths at arm's length, and the direction it moved tells you where you are looking: up in the east, sideways toward the equator side of the sky (rightward facing south in the northern hemisphere, leftward facing north in the southern), down in the west.",
       "figures": [
         {
           "type": "diagram",
@@ -301,14 +382,14 @@
   "keyPoints": [
     "The whole sky turns as one piece because Earth spins; the constellations keep their shapes.",
     "The turn is 15° per hour: about a fist and a half at arm's length.",
-    "Facing north, stars circle Polaris counter-clockwise; facing south, they move left to right.",
-    "Stars rise in the east, are highest when due south, and set in the west, on a slant set by your latitude."
+    "Stars circle the visible celestial pole: counter-clockwise around Polaris facing north in the northern hemisphere, clockwise around the south celestial pole facing south in the southern.",
+    "Stars rise in the east, are highest when they cross the north–south line, and set in the west, on a slant set by your latitude."
   ],
   "examples": [],
   "questions": [
     {
       "id": "nr-q1",
-      "prompt": "At 9 pm a star is due south. Roughly where will it be at 11 pm?",
+      "prompt": "Seen from the northern hemisphere, a star is due south at 9 pm. Roughly where will it be at 11 pm?",
       "choices": [
         "About 30° farther west (to the right), a little lower",
         "About 30° farther east (to the left), a little lower",
@@ -332,7 +413,7 @@
     },
     {
       "id": "nr-q3",
-      "prompt": "You face north and watch the Big Dipper for several hours. Which way does it move?",
+      "prompt": "From the northern hemisphere you face north and watch the Big Dipper for several hours. Which way does it move?",
       "choices": [
         "Clockwise around Polaris",
         "Counter-clockwise around Polaris",
@@ -340,7 +421,7 @@
         "Left to right in a straight line"
       ],
       "answerIndex": 1,
-      "explanation": "Facing north, the sky turns counter-clockwise around the pole. Facing south, the same rotation looks like left-to-right motion."
+      "explanation": "Facing north, the sky turns counter-clockwise around the pole. Facing south, the same rotation looks like left-to-right motion. (From the southern hemisphere, facing south, the sky turns clockwise around the south celestial pole.)"
     },
     {
       "id": "nr-q4",

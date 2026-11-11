@@ -15,7 +15,7 @@
     "Start from [[star:Altair|Altair]], the southern corner of the [[asterism:summer-triangle|Summer Triangle]], easy to recognize by the fainter star close on either side of it. Look about a fist and a half (14 degrees) to the left of Altair, toward the east-northeast, just outside the triangle. A fist held at arm's length covers about 10 degrees.",
     "There you will find a small kite or diamond of four stars, hardly bigger than the tip of your thumb at arm's length: [[star:Sualocin|Sualocin]], [[star:Rotanev|Rotanev]], [[star:γ Del|Gamma]], and [[star:δ Del|Delta Delphini]]. A fifth star, [[star:ε Del|Epsilon Delphini]], hangs off the diamond to the southwest as the tail. Delphinus is in the evening sky from July into December and is highest in the south on evenings in September."
   ],
-  "shape": "A neat diamond about two finger-widths across with a short tail, the whole dolphin no more than half a fist long. Its stars are around fourth magnitude (magnitude is the brightness scale, where smaller numbers are brighter), so in Brooklyn you will most likely need binoculars, which frame the whole figure beautifully. Under a suburban or country sky it is an easy and memorable naked-eye pattern.",
+  "shape": "A neat diamond about two finger-widths across with a short tail, the whole dolphin no more than half a fist long. Its stars are around fourth magnitude (magnitude is the brightness scale, where smaller numbers are brighter), so from a city you will most likely need binoculars, which frame the whole figure beautifully. Under a suburban or country sky it is an easy and memorable naked-eye pattern.",
   "mainStars": [
     {
       "ref": "star:Rotanev",
@@ -38,7 +38,7 @@
     {
       "ref": "star:γ Del",
       "equip": "small-telescope",
-      "note": "One of the prettiest double stars of late summer: a golden-orange star of magnitude 4.3 with a yellowish companion of magnitude 5.1, comfortably separated in any small telescope."
+      "note": "One of the prettiest double stars of the August to October evening sky: a golden-orange star of magnitude 4.3 with a yellowish companion of magnitude 5.1, comfortably separated in any small telescope."
     },
     {
       "ref": "dso:NGC6934",

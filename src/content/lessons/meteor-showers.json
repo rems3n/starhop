@@ -41,7 +41,7 @@
         ],
         "steps": [
           {
-            "caption": "August 13, 3:30 am, looking northeast: the peak of the Perseids. The radiant is 55° up, near the top of Perseus below the W of Cassiopeia. The dashed lines show how Perseid meteors streak away from it in every direction.",
+            "caption": "August 13, 3:30 am, looking northeast from mid-northern latitudes: the peak of the Perseids. The radiant is 55° up, near the top of Perseus below the W of Cassiopeia. The dashed lines show how Perseid meteors streak away from it in every direction.",
             "time": "2027-08-13 03:30",
             "view": {
               "target": "radec:48,58",
@@ -95,7 +95,13 @@
                 ],
                 "dashed": true
               }
-            ]
+            ],
+            "observer": {
+              "name": "Mid-northern latitudes (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
           },
           {
             "caption": "The same sky with a circle 40° from the radiant. Meteors near the radiant are short and easy to miss; out here their trails are long. Face any dark part of this ring, well up from the horizon.",
@@ -116,10 +122,16 @@
                 "radiusDeg": 40,
                 "label": "Look about this far away"
               }
-            ]
+            ],
+            "observer": {
+              "name": "Mid-northern latitudes (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
           },
           {
-            "caption": "December 13, 2026, 11 pm, looking east: the Geminids. Their radiant sits beside Castor and is already 55° up before midnight, which makes this the best shower for evening watchers. By 2 am it is nearly overhead.",
+            "caption": "December 13, 2026, 11 pm, looking east from mid-northern latitudes: the Geminids. Their radiant sits beside Castor and is already 55° up before midnight, which makes this the best shower for evening watchers. By 2 am it is nearly overhead. From mid-southern latitudes it climbs only about 23°, low in the north, so fewer meteors show.",
             "time": "2026-12-13 23:00",
             "view": {
               "target": "radec:112,33",
@@ -173,7 +185,13 @@
                 ],
                 "dashed": true
               }
-            ]
+            ],
+            "observer": {
+              "name": "Mid-northern latitudes (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
           }
         ]
       },
@@ -203,7 +221,7 @@
       ],
       "check": {
         "id": "check-radiant-trace",
-        "prompt": "On the Perseid peak night a meteor flashes low in the south, far from Perseus. How can you tell whether it is a Perseid?",
+        "prompt": "On the Perseid peak night a meteor flashes low in the sky, far from Perseus. How can you tell whether it is a Perseid?",
         "choices": [
           "Trace its trail backward: a Perseid's path leads back to Perseus",
           "Only meteors right next to Perseus can be Perseids",
@@ -217,8 +235,8 @@
     {
       "heading": "The showers worth knowing",
       "body": [
-        "Seven showers are the main ones. The Quadrantids peak around January 3–4; they are strong but the peak lasts only a few hours, and they are named for a constellation, Quadrans Muralis, that is no longer on the charts. Their radiant is in northern Boötes. The Lyrids come around April 22 and are modest. The Eta Aquariids, around May 5–6, are dust from Halley's Comet and are better from the southern hemisphere. The Perseids, around August 12–13, come from Comet Swift–Tuttle and are the favorite, rich and on warm nights. The Orionids, around October 21, are Halley dust again. The Leonids, around November 17, are usually weak but have produced historic storms. The Geminids, around December 13–14, are the strongest of all, and unusual in coming from an asteroid, 3200 Phaethon.",
-        "Published strengths are given as the zenithal hourly rate, or ZHR: the number one observer would count in an hour with the radiant straight overhead under a perfectly dark sky. It is about 100 for the Perseids and up to 150 for the Geminids. You will see fewer. The radiant is rarely overhead, and city light hides the faint majority. From Brooklyn, a handful to a dozen bright ones in an hour is a good result on a peak night; from a dark site, perhaps 40 to 60."
+        "Seven showers are the main ones. The Quadrantids peak around January 3–4; they are strong but the peak lasts only a few hours, and they are named for a constellation, Quadrans Muralis, that is no longer on the charts. Their radiant is in northern Boötes. The Lyrids come around April 22 and are modest. The Eta Aquariids, around May 5–6, are dust from Halley's Comet and are better from the southern hemisphere. The Perseids, around August 12–13, come from Comet Swift–Tuttle and are the northern favorite, rich and on warm nights; their radiant is so far north that they are poor or invisible from the southern hemisphere. The Orionids, around October 21, are Halley dust again. The Leonids, around November 17, are usually weak but have produced historic storms. The Geminids, around December 13–14, are the strongest of all, best from the northern hemisphere but worth watching from the southern too, and unusual in coming from an asteroid, 3200 Phaethon.",
+        "Published strengths are given as the zenithal hourly rate, or ZHR: the number one observer would count in an hour with the radiant straight overhead under a perfectly dark sky. It is about 100 for the Perseids and up to 150 for the Geminids. You will see fewer. The radiant is rarely overhead, and city light hides the faint majority. From a big city, a handful to a dozen bright ones in an hour is a good result on a peak night; from a dark site, perhaps 40 to 60."
       ],
       "figures": [
         {

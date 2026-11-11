@@ -1,6 +1,6 @@
 # Content brief (all writers)
 
-Reader: an intelligent adult beginner in Brooklyn, NY (latitude 40.7°N) who wants to walk outside and
+Reader: an intelligent adult beginner anywhere in the world who wants to walk outside and
 recognise every constellation, know its stories and its notable objects. Write like a good planetarium
 guide: concrete, warm, plain words, British/American spelling consistent (use American). Explain any
 term the first time ("magnitude — the brightness scale, where smaller numbers are brighter").

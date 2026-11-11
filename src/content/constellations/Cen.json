@@ -10,20 +10,20 @@
       "The Greek letters used for its stars today are not the ones Johann Bayer gave in 1603. The French astronomer Nicolas-Louis de Lacaille relabeled the constellation in his southern catalog of the 1750s."
     ]
   },
-  "overview": "Centaurus is the centaur Chiron, a large and splendid constellation with two of the ten brightest stars in the sky, including Alpha Centauri, the nearest star system to the Sun. Almost all of that splendor is below the horizon from Brooklyn: only the centaur's head and shoulders ever clear the southern skyline.",
+  "overview": "Centaurus is the centaur Chiron, a large and splendid constellation with two of the ten brightest stars in the sky, including Alpha Centauri, the nearest star system to the Sun. Almost all of that splendor is below the horizon from mid-northern latitudes, where only the centaur's head and shoulders clear the southern skyline; from the southern hemisphere the whole figure rides high.",
   "howToFind": [
-    "From Brooklyn you can see only the northern part, low in the south on evenings in May and June. Find [[star:Spica|Spica]] (follow the arc of the Big Dipper's handle to Arcturus and on to Spica). From Spica drop two and a half fists straight down and a little to the left. The one fairly bright star there, never more than about a fist and a third above the horizon, is orange [[star:Menkent|Menkent]], the centaur's shoulder. [[star:ι Cen|Iota Centauri]] is a fist to its right, and a small group of fainter stars above them marks the head. You need a flat, clear southern horizon, such as a beach looking out to sea.",
-    "The famous part of Centaurus never rises here. [[star:Rigil Kentaurus|Alpha Centauri]] and [[star:Hadar|Hadar]] lie at declination −60 degrees; anything south of about −49 degrees stays below Brooklyn's horizon all year. To see them you must travel south of about latitude 29°N (for example the Florida Keys or Hawaii, where they skim the horizon in late spring), and they are at their best from the southern hemisphere. There the two shine side by side as the Pointers, half a fist apart, aiming at the Southern Cross just to their west."
+    "From mid-northern latitudes you can see only the northern part, low in the south on evenings in May and June. Find [[star:Spica|Spica]] (follow the arc of the Big Dipper's handle to Arcturus and on to Spica). From Spica drop two and a half fists straight down and a little to the left. The one fairly bright star there, never more than about a fist and a third above the horizon, is orange [[star:Menkent|Menkent]], the centaur's shoulder. [[star:ι Cen|Iota Centauri]] is a fist to its right, and a small group of fainter stars above them marks the head. You need a flat, clear southern horizon, such as a beach looking out to sea.",
+    "The famous part of Centaurus never rises here. [[star:Rigil Kentaurus|Alpha Centauri]] and [[star:Hadar|Hadar]] lie at declination −60 degrees; a star that far south stays below the horizon all year for anyone north of latitude 30°N (90 minus 60). To see them you must travel south of about latitude 29°N (for example the Florida Keys or Hawaii, where they skim the horizon on May and June evenings), and they are at their best from the southern hemisphere. There the two shine side by side as the Pointers, half a fist apart, aiming at the Southern Cross just to their west."
   ],
-  "shape": "In full, a big sprawling figure three to four fists across that wraps around the Southern Cross on three sides, with a brilliant pair of stars for the front feet. From Brooklyn only a thin slice shows: Menkent and a few 3rd-magnitude stars in a loose bunch low in the haze. From a city, expect to see Menkent alone.",
+  "shape": "In full, a big sprawling figure three to four fists across that wraps around the Southern Cross on three sides, with a brilliant pair of stars for the front feet. From mid-northern latitudes only a thin slice shows: Menkent and a few 3rd-magnitude stars in a loose bunch low in the haze. From a city, expect to see Menkent alone.",
   "mainStars": [
     {
       "ref": "star:Rigil Kentaurus",
-      "note": "Alpha Centauri, the centaur's front foot. To the eye it is the third-brightest star in the sky; a small telescope splits it into two Sun-like yellow stars that orbit each other in about 80 years. At about 4.3 light-years it is the nearest star system to us. Never visible from Brooklyn."
+      "note": "Alpha Centauri, the centaur's front foot. To the eye it is the third-brightest star in the sky; a small telescope splits it into two Sun-like yellow stars that orbit each other in about 80 years. At about 4.3 light-years it is the nearest star system to us. It never rises north of about 30°N."
     },
     {
       "ref": "star:Hadar",
-      "note": "Beta Centauri, a blue-white giant of magnitude 0.6 on the other front leg. With Alpha it forms the Pointers to the Southern Cross. Never visible from Brooklyn."
+      "note": "Beta Centauri, a blue-white giant of magnitude 0.6 on the other front leg. With Alpha it forms the Pointers to the Southern Cross. It never rises north of about 30°N."
     },
     {
       "ref": "star:Menkent",
@@ -31,18 +31,18 @@
     },
     {
       "ref": "star:γ Cen",
-      "note": "A close pair of white stars that together shine at magnitude 2.2. At declination −49 degrees it sits right on Brooklyn's theoretical horizon and is not observable from here."
+      "note": "A close pair of white stars that together shine at magnitude 2.2. At declination −49 degrees it never rises north of about 41°N, and from a little south of that it only grazes the horizon."
     },
     {
       "ref": "star:η Cen",
-      "note": "A blue-white star of magnitude 2.3. From Brooklyn it rises to only about 7 degrees, so it is seen, if at all, as a dim spark in the horizon haze below and left of Menkent."
+      "note": "A blue-white star of magnitude 2.3. From latitude 40°N, for example, it rises to only about 7 degrees, so from mid-northern latitudes it is seen, if at all, as a dim spark in the horizon haze below and left of Menkent."
     }
   ],
   "notableObjects": [
     {
       "ref": "dso:NGC5139",
       "equip": "naked-eye",
-      "note": "Omega Centauri, the largest and brightest globular cluster in the sky: several million stars in a ball that looks like a fuzzy 4th-magnitude star to the eye and a glittering snowball as wide as the full Moon in binoculars. Ptolemy catalogued it as a star; Edmond Halley first saw it was not one, in 1677. From Brooklyn it rises less than 2 degrees above a perfect horizon and is effectively invisible; from the southern United States it is a fine binocular sight low in the south in May."
+      "note": "Omega Centauri, the largest and brightest globular cluster in the sky: several million stars in a ball that looks like a fuzzy 4th-magnitude star to the eye and a glittering snowball as wide as the full Moon in binoculars. Ptolemy catalogued it as a star; Edmond Halley first saw it was not one, in 1677. It never rises north of about 43°N and only grazes the horizon a little south of that; from latitudes around 30°N (the southern United States, North Africa, northern India) it is a fine binocular sight low in the south in May, and from the southern hemisphere it passes high overhead."
     },
     {
       "ref": "star:Rigil Kentaurus",
@@ -52,7 +52,7 @@
     {
       "ref": "dso:NGC5128",
       "equip": "binoculars",
-      "note": "Centaurus A, a giant galaxy crossed by a dark band of dust, and a powerful radio source. Binoculars show a round glow; a telescope shows the dark lane cutting it in two. It lies about four and a half degrees north of Omega Centauri and is far too low from Brooklyn to be seen well."
+      "note": "Centaurus A, a giant galaxy crossed by a dark band of dust, and a powerful radio source. Binoculars show a round glow; a telescope shows the dark lane cutting it in two. It lies about four and a half degrees north of Omega Centauri and is far too low from mid-northern latitudes to be seen well (it never rises north of about 47°N)."
     },
     {
       "ref": "dso:NGC3766",
@@ -84,7 +84,7 @@
         "Heracles ran to him in horror and pulled the arrow out, and Chiron himself named the medicine to put on the wound. But these were the arrows that had been dipped in the gall of the Hydra, and there was no cure for what they carried. The teacher of all healers could not heal himself.",
         "Any other creature would have died. Chiron could not. He went back into his cave and lay in pain with no end to it, because the son of Cronus had been born unable to die. At last a bargain was made with Zeus: Chiron's immortality passed to the Titan Prometheus, and Chiron was allowed the death he asked for.",
         "Ovid and Hyginus tell the accident more gently. In their version Heracles was simply visiting Chiron on Pelion, and while the old centaur was handling the hero's arrows one slipped and fell on his foot. Ovid adds the young Achilles weeping beside his teacher and begging him to live, and says that Chiron died on the ninth day.",
-        "All agree on the last part. Zeus, in pity, placed Chiron in the sky. Eratosthenes says he is shown there approaching the Altar, [[con:Ara|Ara]], with an animal to sacrifice, [[con:Lup|Lupus]], as a sign of his piety. The Greeks could see him low in their southern sky; from Brooklyn only his head and shoulders rise, around the star [[star:Menkent|Menkent]]."
+        "All agree on the last part. Zeus, in pity, placed Chiron in the sky. Eratosthenes says he is shown there approaching the Altar, [[con:Ara|Ara]], with an animal to sacrifice, [[con:Lup|Lupus]], as a sign of his piety. The Greeks could see him low in their southern sky; from farther north only his head and shoulders rise, around the star [[star:Menkent|Menkent]]."
       ],
       "link": {
         "site": "Ian Ridpath's Star Tales",

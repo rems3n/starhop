@@ -2,16 +2,17 @@
  * WebGL2 renderer. Owns every GPU resource. All geometry is static (J2000 unit vectors uploaded once);
  * a frame is a handful of uniforms and ~10–20 draw calls.
  *
- * Pass order: sky background (+ Milky Way) → grids → ecliptic → boundaries → constellation lines → stars
+ * Pass order: sky background (+ Milky Way) → constellation illustrations (optional, lazy) → grids → ecliptic → boundaries → constellation lines → stars
  *             → Sun/Moon/planets → ground + horizon line.
  */
 import type { Catalog } from '@/data/catalog';
 import type { FaintStars, LayerState, MilkyWay } from '@/types';
+import { ART_ATLAS, ART_STRIDE, artAlpha, buildArtInstances, packArt, type ArtEntry } from './art';
 import { DEG, lonLatToVec, slerpAppend, transpose33, type Mat3 } from './camera';
 import { bvToRgb, type RGBA } from './color';
 import { OBLIQUITY_J2000 } from './ephemeris';
 import { rasteriseMilkyWay } from './milkyway';
-import { BODY_FS, BODY_VS, FULLSCREEN_VS, GROUND_FS, LINE_FS, LINE_VS, SKY_FS, STAR_FS, STAR_VS } from './shaders';
+import { ART_FS, ART_VS, BODY_FS, BODY_VS, FULLSCREEN_VS, GROUND_FS, LINE_FS, LINE_VS, SKY_FS, STAR_FS, STAR_VS } from './shaders';
 
 export interface SkyTokens {
   lines: RGBA;
@@ -208,6 +209,17 @@ export class Renderer {
   private pStar!: Program;
   private pLine!: Program;
   private pBody!: Program;
+  private pArt!: Program;
+  /** Constellation illustrations: source (kept compressed so a lost context can re-upload), GL objects */
+  private art: { entries: ArtEntry[]; blobs: (Blob | null)[]; inst: Float32Array; count: number; layers: number; slots: { layer: number; x: number; y: number }[] } | null = null;
+  private artVao: WebGLVertexArrayObject | null = null;
+  private artBuf: WebGLBuffer | null = null;
+  private artTex: WebGLTexture | null = null;
+  private artReady = false;
+  private artGen = 0;
+  private artEmph = new Float32Array(96);
+  private artIndex = new Map<string, number>();
+  private artColor: [number, number, number];
   private quadBuf: WebGLBuffer | null = null;
   private quadVao: WebGLVertexArrayObject | null = null;
   private emptyVao: WebGLVertexArrayObject | null = null;
@@ -218,8 +230,13 @@ export class Renderer {
   private t64 = new Float64Array(9);
   private checkErrors: boolean;
 
-  constructor(private canvas: HTMLCanvasElement, catalog: Catalog, private tokens: SkyTokens, opts?: { checkErrors?: boolean }) {
+  private onAsync: () => void;
+
+  constructor(private canvas: HTMLCanvasElement, catalog: Catalog, private tokens: SkyTokens, opts?: { checkErrors?: boolean; onAsync?: () => void }) {
     this.checkErrors = !!opts?.checkErrors;
+    this.onAsync = opts?.onAsync ?? (() => undefined);
+    // pale blue-white: the figure-line hue, lifted towards white
+    this.artColor = [0, 1, 2].map((i) => tokens.lines[i] + (1 - tokens.lines[i]) * 0.45) as [number, number, number];
     const s = catalog.stars;
     const sd = buildStarData(s.length, (i) => s[i].ra, (i) => s[i].dec, (i) => s[i].mag, (i) => s[i].bv);
     this.stars = { ...sd, count: s.length, vao: null, buf: null };
@@ -243,6 +260,33 @@ export class Renderer {
   }
   get faintCount(): number {
     return this.faint?.count ?? 0;
+  }
+  get hasArt(): boolean {
+    return this.artReady;
+  }
+
+  /**
+   * Constellation illustrations (loaded lazily by the engine the first time the layer is on). `blobs[i]` is the
+   * encoded image for `entries[i]` (null if it failed to load: that figure stays blank). Resolves once drawable.
+   */
+  setArt(entries: ArtEntry[], blobs: (Blob | null)[]): Promise<void> {
+    const { slots, layers } = packArt(entries.map((e) => e.size));
+    const { data, count } = buildArtInstances(entries, slots);
+    this.art = { entries, blobs, inst: data, count, layers, slots };
+    this.artIndex.clear();
+    entries.forEach((e, i) => this.artIndex.set(e.con, i));
+    if (!this.gl || this.lost) return Promise.resolve();
+    this.uploadArtGeometry();
+    return this.uploadArtTextures();
+  }
+
+  /** Constellations whose illustration is drawn brighter (constellation highlights, a selected constellation). */
+  setArtEmphasis(ids: Iterable<string>): void {
+    this.artEmph.fill(0);
+    for (const id of ids) {
+      const i = this.artIndex.get(id);
+      if (i !== undefined && i < this.artEmph.length) this.artEmph[i] = 1;
+    }
   }
 
   setMilkyWay(mw: MilkyWay): void {
@@ -271,6 +315,7 @@ export class Renderer {
     this.pStar = this.program(STAR_VS, STAR_FS, ['u_m', 'u_scale', 'u_dpr', 'u_lim', 'u_zoom', 'u_maxPt', 'u_bright']);
     this.pLine = this.program(LINE_VS, LINE_FS, ['u_m', 'u_scale', 'u_viewport', 'u_width', 'u_zclip', 'u_color', 'u_half']);
     this.pBody = this.program(BODY_VS, BODY_FS, ['u_center', 'u_halfSize', 'u_type', 'u_extent', 'u_px', 'u_color', 'u_alpha', 'u_light', 'u_day']);
+    this.pArt = this.program(ART_VS, ART_FS, ['u_m', 'u_scale', 'u_zclip', 'u_alpha', 'u_emphMul', 'u_emph', 'u_tex', 'u_color']);
     const range = gl.getParameter(gl.ALIASED_POINT_SIZE_RANGE) as Float32Array;
     this.maxPoint = Math.min(256, range[1]);
 
@@ -287,6 +332,12 @@ export class Renderer {
     if (this.faint) this.uploadStars(this.faint);
     for (const ls of [this.conLines, this.boundaries, this.grid, this.ecliptic]) this.uploadLines(ls);
     this.uploadMilkyWay();
+    this.artReady = false;
+    this.artVao = this.artBuf = this.artTex = null;
+    if (this.art) {
+      this.uploadArtGeometry();
+      this.uploadArtTextures().then(this.onAsync, (e) => console.warn('[sky] illustrations unavailable', e));
+    }
     gl.bindVertexArray(null);
     gl.disable(gl.DEPTH_TEST);
     gl.enable(gl.BLEND);
@@ -372,6 +423,69 @@ export class Renderer {
     gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
   }
 
+  private uploadArtGeometry(): void {
+    const gl = this.gl!;
+    const a = this.art!;
+    if (this.artBuf) gl.deleteBuffer(this.artBuf);
+    if (this.artVao) gl.deleteVertexArray(this.artVao);
+    this.artBuf = gl.createBuffer();
+    this.artVao = gl.createVertexArray();
+    gl.bindVertexArray(this.artVao);
+    gl.bindBuffer(gl.ARRAY_BUFFER, this.quadBuf);
+    gl.enableVertexAttribArray(0);
+    gl.vertexAttribPointer(0, 2, gl.FLOAT, false, 0, 0);
+    gl.bindBuffer(gl.ARRAY_BUFFER, this.artBuf);
+    gl.bufferData(gl.ARRAY_BUFFER, a.inst, gl.STATIC_DRAW);
+    const st = ART_STRIDE * 4;
+    const attr = (loc: number, n: number, off: number) => {
+      gl.enableVertexAttribArray(loc);
+      gl.vertexAttribPointer(loc, n, gl.FLOAT, false, st, off * 4);
+      gl.vertexAttribDivisor(loc, 1);
+    };
+    attr(1, 3, 0); attr(2, 3, 3); attr(3, 3, 6); attr(4, 3, 9); attr(5, 4, 12); attr(6, 2, 16);
+    gl.bindVertexArray(null);
+  }
+
+  /** Decode every image and copy it into its slot of one R8 texture array, then build mipmaps once. */
+  private async uploadArtTextures(): Promise<void> {
+    const a = this.art!;
+    const gen = ++this.artGen;
+    this.artReady = false;
+    const bitmaps = await Promise.all(a.blobs.map((b) =>
+      b ? createImageBitmap(b, { premultiplyAlpha: 'none', colorSpaceConversion: 'none' }).catch(() => null) : Promise.resolve(null)));
+    const gl = this.gl;
+    if (gen !== this.artGen || !gl || this.lost) {
+      for (const bm of bitmaps) bm?.close();
+      return;
+    }
+    if (this.artTex) gl.deleteTexture(this.artTex);
+    const tex = gl.createTexture();
+    this.artTex = tex;
+    gl.activeTexture(gl.TEXTURE1);
+    gl.bindTexture(gl.TEXTURE_2D_ARRAY, tex);
+    gl.texStorage3D(gl.TEXTURE_2D_ARRAY, Math.log2(ART_ATLAS) + 1, gl.R8, ART_ATLAS, ART_ATLAS, Math.max(1, a.layers));
+    gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, false);
+    gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL, false);
+    bitmaps.forEach((bm, i) => {
+      if (!bm) return;
+      const s = a.slots[i];
+      const w = Math.min(bm.width, ART_ATLAS - s.x), h = Math.min(bm.height, ART_ATLAS - s.y);
+      if (w === a.entries[i].size[0] && h === a.entries[i].size[1]) {
+        gl.texSubImage3D(gl.TEXTURE_2D_ARRAY, 0, s.x, s.y, s.layer, w, h, 1, gl.RED, gl.UNSIGNED_BYTE, bm);
+      } else {
+        console.warn(`[sky] illustration ${a.entries[i].con} has an unexpected size`);
+      }
+      bm.close();
+    });
+    gl.texParameteri(gl.TEXTURE_2D_ARRAY, gl.TEXTURE_MIN_FILTER, gl.LINEAR_MIPMAP_LINEAR);
+    gl.texParameteri(gl.TEXTURE_2D_ARRAY, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+    gl.texParameteri(gl.TEXTURE_2D_ARRAY, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+    gl.texParameteri(gl.TEXTURE_2D_ARRAY, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+    gl.generateMipmap(gl.TEXTURE_2D_ARRAY);
+    gl.activeTexture(gl.TEXTURE0);
+    this.artReady = true;
+  }
+
   resize(cssW: number, cssH: number, dpr: number): void {
     const w = Math.max(1, Math.round(cssW * dpr));
     const h = Math.max(1, Math.round(cssH * dpr));
@@ -438,8 +552,34 @@ export class Renderer {
     this.drawCalls++;
     this.vertices += 3;
 
-    // 2 — lines (premultiplied alpha)
     gl.enable(gl.BLEND);
+
+    // 1b — constellation illustrations (additive, behind lines and stars)
+    if (L.constellationArt && this.artReady && this.art && this.art.count > 0) {
+      const alpha = artAlpha(f.fov, f.day);
+      if (alpha > 0.002) {
+        gl.blendFunc(gl.ONE, gl.ONE);
+        const p = this.pArt;
+        gl.useProgram(p.prog);
+        this.mat(p.u.u_m, f.eqj);
+        gl.uniform2f(p.u.u_scale, sx, sy);
+        gl.uniform1f(p.u.u_zclip, f.zClip);
+        gl.uniform1f(p.u.u_alpha, alpha);
+        gl.uniform1f(p.u.u_emphMul, 1.3);
+        gl.uniform4fv(p.u.u_emph, this.artEmph);
+        gl.uniform3f(p.u.u_color, this.artColor[0], this.artColor[1], this.artColor[2]);
+        gl.activeTexture(gl.TEXTURE1);
+        gl.bindTexture(gl.TEXTURE_2D_ARRAY, this.artTex);
+        gl.uniform1i(p.u.u_tex, 1);
+        gl.activeTexture(gl.TEXTURE0);
+        gl.bindVertexArray(this.artVao);
+        gl.drawArraysInstanced(gl.TRIANGLE_STRIP, 0, 4, this.art.count);
+        this.drawCalls++;
+        this.vertices += this.art.count * 4;
+      }
+    }
+
+    // 2 — lines (premultiplied alpha)
     gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
     const lineFade = 1 - 0.85 * f.day; // lines stay readable but quieter against a daytime sky
     if (L.equatorialGrid || L.azimuthalGrid || L.ecliptic || L.constellationBoundaries || L.constellationLines) {
@@ -554,7 +694,13 @@ export class Renderer {
     gl.deleteVertexArray(this.quadVao);
     gl.deleteVertexArray(this.emptyVao);
     gl.deleteTexture(this.mwTex);
-    for (const p of [this.pSky, this.pGround, this.pStar, this.pLine, this.pBody]) if (p) gl.deleteProgram(p.prog);
+    gl.deleteBuffer(this.artBuf);
+    gl.deleteVertexArray(this.artVao);
+    gl.deleteTexture(this.artTex);
+    this.artBuf = this.artVao = this.artTex = null;
+    this.artReady = false;
+    this.artGen++;
+    for (const p of [this.pSky, this.pGround, this.pStar, this.pLine, this.pBody, this.pArt]) if (p) gl.deleteProgram(p.prog);
     if (loseContext) gl.getExtension('WEBGL_lose_context')?.loseContext();
     this.gl = null;
   }

@@ -137,7 +137,7 @@
     {
       "heading": "Mars",
       "body": [
-        "[[body:Mars|Mars]] is a cold desert world half the width of the Earth, and its rusty surface gives it an unmistakable orange-red color. No planet changes brightness as much. About every 26 months Earth overtakes Mars and the two are close together, with Mars opposite the Sun in our sky (an arrangement called opposition); for a few weeks it can rival Jupiter. In between, it recedes to the far side of the Sun and fades to an ordinary-looking star, more than fifty times fainter. A small telescope shows surface markings and a white polar cap only in the months around opposition. The rest of the time Mars is a tiny featureless orange dot."
+        "[[body:Mars|Mars]] is a cold desert world half the width of the Earth, and its rusty surface gives it an unmistakable orange-red color. No planet changes brightness as much. About every 26 months Earth overtakes Mars and the two are close together, with Mars opposite the Sun in our sky (an arrangement called opposition); for a few weeks it can rival Jupiter. In between, it recedes to the far side of the Sun and fades to an ordinary-looking star: up to about seventy times fainter after the closest oppositions, and ten to thirty times in a typical cycle. A small telescope shows surface markings and a white polar cap only in the months around opposition. The rest of the time Mars is a tiny featureless orange dot."
       ],
       "figures": [
         {
@@ -426,15 +426,15 @@
   "questions": [
     {
       "id": "q1",
-      "prompt": "A friend says they saw Venus high in the south at midnight. Why must they be mistaken?",
+      "prompt": "A friend says they saw Venus high in the sky at midnight. Why must they be mistaken?",
       "choices": [
         "Venus is too faint to see at midnight",
         "Venus orbits inside Earth's orbit, so it always appears fairly near the Sun and is never up in the middle of the night",
         "Venus is only visible from the southern hemisphere",
-        "Venus is only visible in winter"
+        "Venus is only visible in December–February"
       ],
       "answerIndex": 1,
-      "explanation": "An inner planet never gets far from the Sun in our sky, so it is seen only after sunset or before sunrise. A bright midnight 'star' in the south is more likely Jupiter."
+      "explanation": "An inner planet never gets far from the Sun in our sky, so it is seen only after sunset or before sunrise. A bright 'star' high at midnight is more likely Jupiter."
     },
     {
       "id": "q2",
@@ -455,7 +455,7 @@
         "The rings are tilted, and we view them from a changing angle as Saturn orbits the Sun",
         "The rings grow and shrink",
         "Saturn's clouds cover them",
-        "The rings only reflect light in summer"
+        "The rings only reflect light at certain times of year"
       ],
       "answerIndex": 0,
       "explanation": "Over Saturn's 29-year orbit we see the rings from above, edge-on, then from below. Edge-on, they are too thin to see in small telescopes."

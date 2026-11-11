@@ -10,12 +10,12 @@
       "Johann Bayer lettered eight stars here in 1603 without ever having seen the constellation, and his chart was badly out of place. Nicolas-Louis de Lacaille re-observed Ara from the Cape of Good Hope in the 1750s and relabeled it; his Greek letters are the ones used today."
     ]
   },
-  "overview": "Ara is the altar on which the Olympian gods swore their alliance before the war with the Titans. It is a compact group of 3rd-magnitude stars in the Milky Way directly beneath the tail of Scorpius, and for practical purposes it cannot be seen from Brooklyn.",
+  "overview": "Ara is the altar on which the Olympian gods swore their alliance before the war with the Titans. It is a compact group of 3rd-magnitude stars in the Milky Way directly beneath the tail of Scorpius, and for practical purposes it cannot be seen from north of about 35°N.",
   "howToFind": [
-    "From Brooklyn, Ara stays out of sight. Anything south of about declination −49 degrees never rises here, and Ara's main stars lie between −50 and −61. Only an empty northern strip of the constellation creeps a degree or two above a perfect horizon in July, with nothing in it the eye can see. Its place is straight below [[star:Shaula|Shaula]], the sting at the end of the Scorpion's tail, which itself only clears Brooklyn's horizon by about a fist.",
-    "To see the Altar, travel south. From the Florida Keys or Hawaii it stands a fist or so above the southern horizon on summer evenings, and from the southern hemisphere it rides high in winter (June to August). Find the curved tail of [[con:Sco|Scorpius]] and go a fist and a half south from Shaula: [[star:α Ara|Alpha Arae]] and [[star:β Ara|Beta Arae]] lead two short, roughly parallel chains of stars running north to south."
+    "From mid-northern latitudes, Ara stays out of sight. Anything south of about declination −49 degrees never rises here, and Ara's main stars lie between −50 and −61. Only an empty northern strip of the constellation creeps a degree or two above a perfect horizon in July, with nothing in it the eye can see. Its place is straight below [[star:Shaula|Shaula]], the sting at the end of the Scorpion's tail, which itself only just clears the horizon from mid-northern latitudes.",
+    "To see the Altar, travel south. From the Florida Keys or Hawaii it stands a fist or so above the southern horizon on June to August evenings, and from the southern hemisphere it rides high on the same evenings (the southern winter). Find the curved tail of [[con:Sco|Scorpius]] and go a fist and a half south from Shaula: [[star:α Ara|Alpha Arae]] and [[star:β Ara|Beta Arae]] lead two short, roughly parallel chains of stars running north to south."
   ],
-  "shape": "Two short, nearly parallel lines of three or four stars each, about a fist long and half a fist apart, like the two sides of a small table seen end on. The stars are all magnitude 3 or fainter, but the pattern is tidy and shows well under a dark southern sky. None of it survives from Brooklyn.",
+  "shape": "Two short, nearly parallel lines of three or four stars each, about a fist long and half a fist apart, like the two sides of a small table seen end on. The stars are all magnitude 3 or fainter, but the pattern is tidy and shows well under a dark southern sky. None of it is seen from mid-northern latitudes.",
   "mainStars": [
     {
       "ref": "star:β Ara",
@@ -38,12 +38,12 @@
     {
       "ref": "dso:NGC6397",
       "equip": "binoculars",
-      "note": "One of the nearest globular clusters to the Sun and a showpiece of the southern sky: a 6th-magnitude fuzzy ball in binoculars, loosely sprinkled with stars in a small telescope. Never rises from Brooklyn."
+      "note": "One of the nearest globular clusters to the Sun and a showpiece of the southern sky: a 6th-magnitude fuzzy ball in binoculars, loosely sprinkled with stars in a small telescope. It never rises north of about 36°N."
     },
     {
       "ref": "dso:NGC6193",
       "equip": "binoculars",
-      "note": "A bright open cluster of about 30 stars in the Milky Way at the Altar's northwestern corner, wrapped in faint nebulosity that shows only in photographs. It lies just below Brooklyn's horizon."
+      "note": "A bright open cluster of about 30 stars in the Milky Way at the Altar's northwestern corner, wrapped in faint nebulosity that shows only in photographs. It never rises north of about 41°N, and only grazes the horizon a little south of that."
     }
   ],
   "stories": [

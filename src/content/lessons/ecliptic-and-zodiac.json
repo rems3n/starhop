@@ -164,8 +164,8 @@
     {
       "heading": "A tilted path",
       "body": [
-        "Earth's axis is tilted 23.4° to its orbit, so the ecliptic is tilted 23.4° to the celestial equator. For half the year the Sun is north of the equator and for half it is south. Around June 21 it is at its farthest north: from Brooklyn it climbs 73° high at midday and stays up for 15 hours. Around December 21 it is at its farthest south, only 26° up at noon, and the day lasts barely 9 hours. That difference in the height of the Sun and the length of the day, and not any change in distance, is what makes the seasons.",
-        "At night the picture reverses. The part of the ecliptic that is up at midnight is the part opposite the Sun. A full Moon is opposite the Sun too, so the full Moons of winter ride high overhead, where the summer Sun was, and the full Moons of summer skim low across the south. Planets follow the same rule: one that is opposite the Sun in winter is high, in summer low."
+        "Earth's axis is tilted 23.4° to its orbit, so the ecliptic is tilted 23.4° to the celestial equator. For half the year the Sun is north of the equator and for half it is south. Around June 21 it is at its farthest north: from 41°N (Chicago, Madrid, Beijing) it climbs 72° high at midday and stays up for 15 hours, while around December 21 it is only 26° up at noon and the day lasts about 9 hours. In the southern hemisphere the dates swap: from 34°S (Sydney, Cape Town, Santiago) the Sun is 79° high on December 21 and 33° on June 21. That difference in the height of the Sun and the length of the day, and not any change in distance, is what makes the seasons.",
+        "At night the picture reverses. The part of the ecliptic that is up at midnight is the part opposite the Sun. A full Moon is opposite the Sun too, so the full Moons of winter ride high overhead, where the summer Sun was, and the full Moons of summer skim low across the sky on the equator side. In the northern hemisphere that means high full Moons in December and low ones in June; in the southern hemisphere it is the reverse. Planets follow the same rule: one opposite the Sun in your winter is high, in your summer low."
       ],
       "demo": {
         "title": "High path, low path",
@@ -174,7 +174,7 @@
         ],
         "steps": [
           {
-            "caption": "Facing south at midday on June 21. Three daily arcs of the Sun, marked every hour: the top one is today, the middle one the March equinox, the bottom one December 21. At noon the Sun stands 73°, 49° and 26° high.",
+            "caption": "From mid-northern latitudes (41°N), facing south at midday on June 21. Three daily arcs of the Sun, marked every hour: the top one is today, the middle one the March equinox, the bottom one December 21. At noon the Sun stands 72°, 49° and 26° high.",
             "time": "2027-06-21 13:00",
             "view": {
               "az": 180,
@@ -208,7 +208,7 @@
               },
               {
                 "type": "label",
-                "at": "altaz:180,76",
+                "at": "altaz:180,75",
                 "text": "June 21"
               },
               {
@@ -221,10 +221,72 @@
                 "at": "altaz:180,29",
                 "text": "December 21"
               }
+            ],
+            "observer": {
+              "name": "Mid-northern latitudes (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
+          },
+          {
+            "caption": "The same three days from mid-southern latitudes (34°S), facing north at midday on December 21. Here the December arc is the high one: at noon the Sun stands 79° high on December 21, 56° at the March equinox and only 33° on June 21.",
+            "observer": {
+              "name": "Mid-southern latitudes (34°S)",
+              "lat": -34,
+              "lon": 151.2,
+              "tz": "Australia/Sydney"
+            },
+            "time": "2027-12-21 13:00",
+            "view": {
+              "az": 0,
+              "alt": 40,
+              "fov": 150
+            },
+            "highlights": [
+              {
+                "type": "trail",
+                "ref": "body:Sun",
+                "from": "2027-12-21 05:30",
+                "to": "2027-12-21 20:30",
+                "stepHours": 1,
+                "frame": "horizon"
+              },
+              {
+                "type": "trail",
+                "ref": "body:Sun",
+                "from": "2027-03-20 07:00",
+                "to": "2027-03-20 19:00",
+                "stepHours": 1,
+                "frame": "horizon"
+              },
+              {
+                "type": "trail",
+                "ref": "body:Sun",
+                "from": "2027-06-21 07:00",
+                "to": "2027-06-21 17:00",
+                "stepHours": 1,
+                "frame": "horizon"
+              },
+              {
+                "type": "label",
+                "at": "altaz:0,82",
+                "text": "December 21"
+              },
+              {
+                "type": "label",
+                "at": "altaz:0,59",
+                "text": "March 20"
+              },
+              {
+                "type": "label",
+                "at": "altaz:0,36",
+                "text": "June 21"
+              }
             ]
           },
           {
-            "caption": "Midnight under the full Moon of December 13, 2027. The Moon is 75° up, almost overhead, on the stretch of the ecliptic where the June Sun stands.",
+            "caption": "Midnight under the full Moon of December 13, 2027, from mid-northern latitudes. The Moon is 74° up, almost overhead, on the stretch of the ecliptic where the June Sun stands.",
             "time": "2027-12-13 23:59",
             "view": {
               "az": 180,
@@ -238,12 +300,18 @@
               {
                 "type": "object",
                 "ref": "body:Moon",
-                "label": "Full Moon, December: 75° high"
+                "label": "Full Moon, December: 74° high"
               }
-            ]
+            ],
+            "observer": {
+              "name": "Mid-northern latitudes (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
           },
           {
-            "caption": "The full Moon of June 18–19, 2027 at 1 am, as high as it gets: 22°, about two fists. It follows the low path of the winter Sun.",
+            "caption": "The full Moon of June 18–19, 2027 at 1 am, from mid-northern latitudes, as high as it gets: 21°, about two fists. It follows the low path of the December Sun.",
             "time": "2027-06-19 01:00",
             "view": {
               "az": 180,
@@ -257,7 +325,38 @@
               {
                 "type": "object",
                 "ref": "body:Moon",
-                "label": "Full Moon, June: 22° high"
+                "label": "Full Moon, June: 21° high"
+              }
+            ],
+            "observer": {
+              "name": "Mid-northern latitudes (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
+          },
+          {
+            "caption": "Midnight on June 18–19, 2027 from mid-southern latitudes, facing north. The same full Moon that hugs the horizon in the north is 81° up here, nearly overhead: in the southern hemisphere it is the June Sun that runs low, so the June full Moon rides high.",
+            "observer": {
+              "name": "Mid-southern latitudes (34°S)",
+              "lat": -34,
+              "lon": 151.2,
+              "tz": "Australia/Sydney"
+            },
+            "time": "2027-06-19 00:00",
+            "view": {
+              "az": 0,
+              "alt": 50,
+              "fov": 140
+            },
+            "layers": {
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "body:Moon",
+                "label": "Full Moon, June: 81° high"
               }
             ]
           }
@@ -318,15 +417,15 @@
     },
     {
       "id": "ez-q3",
-      "prompt": "Why is the full Moon so high in the sky in December?",
+      "prompt": "Seen from the northern hemisphere, why is the full Moon so high in the sky in December?",
       "choices": [
-        "The Moon is closer to Earth in winter",
+        "The Moon is closer to Earth in December",
         "Cold air bends its light upward",
-        "The Moon's orbit tilts by 23° in winter",
-        "A full Moon is opposite the Sun, so it sits on the part of the ecliptic where the summer Sun stands"
+        "The Moon's orbit tilts by 23° in December",
+        "A full Moon is opposite the Sun, so it sits on the part of the ecliptic where the June Sun stands"
       ],
       "answerIndex": 3,
-      "explanation": "When the Sun is at the low, southern end of the ecliptic, the point opposite it, where a full Moon must be, is at the high, northern end."
+      "explanation": "In December the Sun is at the southern end of the ecliptic, so the point opposite it, where a full Moon must be, is at the northern end: high for northern observers. From the southern hemisphere the December full Moon is low and the June one high."
     },
     {
       "id": "ez-q4",
@@ -335,7 +434,7 @@
         "A sign is an equal 30° slice of the ecliptic measured from the equinox; a constellation is a patch of stars of irregular size",
         "They are two names for the same thing",
         "A sign is larger than a constellation",
-        "Signs are in the northern sky, constellations in the southern"
+        "Signs are north of the celestial equator, constellations south of it"
       ],
       "answerIndex": 0,
       "explanation": "Precession has slid the equal signs about one constellation west of the star patterns they were named for."
@@ -350,7 +449,7 @@
         "The Moon blocks sunlight in winter"
       ],
       "answerIndex": 2,
-      "explanation": "The tilt puts the Sun high and the days long in summer, low and short in winter. Earth is in fact closest to the Sun in early January."
+      "explanation": "The tilt puts the Sun high and the days long in summer, low and short in winter; that is why the two hemispheres have opposite seasons. Earth is in fact closest to the Sun in early January, during the northern winter."
     }
   ]
 }

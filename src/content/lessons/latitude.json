@@ -7,11 +7,11 @@
   "minutes": 7,
   "sections": [
     {
-      "heading": "Polaris measures your latitude",
+      "heading": "The pole's height is your latitude",
       "body": [
-        "After this lesson you will be able to work out what the sky does anywhere on Earth from one number, the latitude, and you will know what to expect on your first night under a southern sky.",
-        "The height of the north celestial pole above your horizon equals your latitude. In Brooklyn it is 40.7° up, about four fists. [[star:Polaris|Polaris]] is within 1° of the pole, so measuring its height tells you how far north you are. Sailors used exactly this for centuries.",
-        "Travel north and Polaris climbs. In Tromsø, in Arctic Norway, it is 70° up and most of the sky you can see is circumpolar: it circles without setting. Travel south and Polaris sinks. Each degree of latitude you go south lowers it by one degree, and uncovers one more degree of sky along your southern horizon."
+        "After this lesson you will be able to work out what the sky does anywhere on Earth from one number, the latitude, and you will know what to expect on your first night under the other hemisphere's sky.",
+        "The height of the celestial pole above your horizon equals your latitude: from {{place}} the {{pole}} is {{poleAltitude}} up. In the northern hemisphere [[star:Polaris|Polaris]] is within 1° of the pole, so measuring its height tells you how far north you are; from 35°N it is three and a half fists up. Sailors used exactly this for centuries. The south celestial pole has no bright star to mark it, so southern navigators found it from the Southern Cross instead.",
+        "Travel toward a pole and that pole climbs. In Tromsø, in Arctic Norway, Polaris is 70° up and most of the sky you can see is circumpolar: it circles without setting. Travel toward the equator and the pole sinks. Each degree of latitude you go south lowers Polaris by one degree and uncovers one more degree of sky along your southern horizon; each degree north does the same for the south celestial pole and the northern horizon."
       ],
       "demo": {
         "title": "North to south",
@@ -21,7 +21,7 @@
         ],
         "steps": [
           {
-            "caption": "Brooklyn, facing north. Polaris is 41° above the horizon: your latitude.",
+            "caption": "Facing north. The arc measures Polaris's height above the horizon, and it equals the latitude of the place you are seeing it from.",
             "time": "month:1 21:00",
             "view": {
               "az": 0,
@@ -131,7 +131,7 @@
             ]
           },
           {
-            "caption": "Sydney, facing south. The sky turns clockwise around the south celestial pole, 34° up, which has no bright star to mark it. The Southern Cross is climbing in the southeast and Canopus is almost overhead. None of this ever rises in Brooklyn.",
+            "caption": "Sydney, facing south. The sky turns clockwise around the south celestial pole, 34° up, which has no bright star to mark it. The Southern Cross is climbing in the southeast and Canopus is almost overhead. None of this ever rises from most of Europe or the northern US.",
             "observer": {
               "name": "Sydney, Australia",
               "lat": -33.8688,
@@ -200,7 +200,7 @@
       "body": [
         "At the North Pole the celestial pole is straight overhead. Stars neither rise nor set: they slide around the sky parallel to the horizon, each keeping its height. You see the northern half of the sky all the time and the southern half never.",
         "At the equator the opposite holds. Both celestial poles lie on the horizon, Polaris just at the northern one. Stars rise straight up out of the east and drop straight down in the west, and every star is above the horizon for 12 hours a day. Over a year an observer on the equator can see the entire sky. Twilight is short there for the same reason: the Sun goes down vertically too.",
-        "Brooklyn is in between, so its sky is a blend: a circumpolar cap in the north, slanting rising and setting everywhere else, and a zone below the southern horizon that never appears."
+        "Most people live in between, so their sky is a blend: a circumpolar cap around the visible pole, slanting rising and setting everywhere else, and a zone around the other pole that never appears."
       ],
       "demo": {
         "title": "Pole and equator",
@@ -321,12 +321,12 @@
       }
     },
     {
-      "heading": "South of the equator",
+      "heading": "Crossing the equator",
       "body": [
-        "In the southern hemisphere the picture is mirrored. The south celestial pole is above the horizon, and the stars circle it clockwise. The Sun, the Moon and the planets cross the northern part of the sky instead of the southern, and they move from right to left as you face them.",
-        "Familiar constellations appear flipped. You are standing on the other side of the globe, upside down compared with Brooklyn, so when you face north to look at Orion his feet point up and his head points down. The crescent Moon looks flipped as well. Nothing has changed in the sky; only your footing has."
+        "On the other side of the equator the picture is mirrored. In the southern hemisphere the south celestial pole is above the horizon, and the stars circle it clockwise. The Sun, the Moon and the planets cross the northern part of the sky instead of the southern, and they move from right to left as you face them. A southern traveller going north sees the same change in reverse.",
+        "Familiar constellations appear flipped. Someone in Sydney is standing upside down compared with someone in London, so when an Australian faces north to look at Orion, his feet point up and his head points down, and a visitor from the south sees the familiar southern constellations flipped the same way in Europe. The crescent Moon looks flipped as well. Nothing has changed in the sky; only your footing has."
       ],
-      "tryIt": "Measure your own latitude tonight. Find Polaris, hold a fist at arm's length with the bottom resting on the horizon, and stack fists upward. In Brooklyn Polaris should be about four fists up.",
+      "tryIt": "Measure your own latitude tonight. In the northern hemisphere, find Polaris, hold a fist at arm's length with the bottom resting on the horizon, and stack fists upward: each fist is about 10°. In the southern hemisphere, find the south celestial pole by extending the long bar of the Southern Cross about four and a half times its length, and measure its height the same way. From {{place}} you should count about {{poleAltitude}}.",
       "figures": [
         {
           "type": "diagram",
@@ -437,15 +437,15 @@
     },
     {
       "id": "lat-q5",
-      "prompt": "You fly from Brooklyn (40.7° N) to Miami (25.8° N). How does your southern horizon change?",
+      "prompt": "You fly from Philadelphia (40° N) to Miami (26° N). How does your southern horizon change?",
       "choices": [
         "Nothing changes",
-        "You lose 15° of sky in the south",
-        "You gain about 15° of sky that never rises in Brooklyn",
-        "You gain 15° of sky in the north"
+        "You lose 14° of sky in the south",
+        "You gain about 14° of sky that never rises from Philadelphia",
+        "You gain 14° of sky in the north"
       ],
       "answerIndex": 2,
-      "explanation": "Each degree south uncovers a degree of sky. From Miami Canopus clears the horizon and the top of the Southern Cross can be glimpsed in spring."
+      "explanation": "Each degree south uncovers a degree of sky. From Miami Canopus clears the horizon and the top of the Southern Cross can be glimpsed on April–May evenings."
     },
     {
       "id": "lat-q6",
@@ -457,7 +457,7 @@
         "They do not rise there"
       ],
       "answerIndex": 0,
-      "explanation": "South of the tropics the ecliptic arcs across the northern sky, the mirror image of what Brooklyn sees in the south."
+      "explanation": "South of the tropics the ecliptic arcs across the northern sky, the mirror image of what mid-northern observers see in the south."
     }
   ]
 }

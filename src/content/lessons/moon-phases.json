@@ -12,7 +12,7 @@
         "After this lesson you will be able to look at the Moon, name its phase, say roughly what time it rose and will set, and judge whether tonight is a good night for faint objects.",
         "The Moon is a ball lit by the Sun, so half of it is always in sunlight. The phases are how much of that sunlit half is turned toward us as the Moon circles Earth. They have nothing to do with Earth's shadow, which touches the Moon only during a lunar eclipse.",
         "When the Moon is in the same direction as the Sun we face its dark side: new Moon. As it moves away from the Sun we see a thin sliver of the lit half, a crescent, which grows night by night. A quarter of the way round it looks half lit; this is called first quarter. Then it is gibbous, more than half lit, and when it is opposite the Sun we see the whole sunlit face: full Moon. The second half of the cycle runs the same shapes in reverse: gibbous, last quarter, crescent, new. One cycle takes 29.5 days. A growing Moon is called waxing and a shrinking one waning.",
-        "The lit edge always points to the Sun. From Brooklyn, an evening Moon lit on the right is waxing; a morning Moon lit on the left is waning."
+        "The lit edge always points to the Sun. From the northern hemisphere, an evening Moon lit on the right is waxing and a morning Moon lit on the left is waning. From the southern hemisphere the view is mirrored: the waxing evening Moon is lit on the left, the waning morning Moon on the right."
       ],
       "demo": {
         "title": "Two weeks of evenings",
@@ -21,7 +21,7 @@
         ],
         "steps": [
           {
-            "caption": "April 9, 2027, 8:30 pm, an hour after sunset, looking west. The Moon is three days past new: a thin crescent, 11% lit, two and a half fists up and following the Sun down.",
+            "caption": "April 9, 2027, 8:30 pm, an hour after sunset, looking west from mid-northern latitudes. The Moon is three days past new: a thin crescent, 11% lit, two and a half fists up and following the Sun down.",
             "time": "2027-04-09 20:30",
             "view": {
               "az": 275,
@@ -37,7 +37,13 @@
                 "ref": "body:Moon",
                 "label": "Crescent, 3 days old"
               }
-            ]
+            ],
+            "observer": {
+              "name": "Mid-northern latitudes (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
           },
           {
             "caption": "Four evenings later at the same time: first quarter. The Moon is half lit and 66° high in the south-southwest, a quarter of the sky away from the Sun.",
@@ -55,6 +61,37 @@
                 "type": "object",
                 "ref": "body:Moon",
                 "label": "First quarter"
+              }
+            ],
+            "observer": {
+              "name": "Mid-northern latitudes (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
+          },
+          {
+            "caption": "First quarter from mid-southern latitudes (34°S), on April 14 at 7 pm. Facing north, the half-lit Moon is a third of the way up the sky and lit on its left side: the side toward the Sun, which has set in the west, on your left.",
+            "observer": {
+              "name": "Mid-southern latitudes (34°S)",
+              "lat": -34,
+              "lon": 151.2,
+              "tz": "Australia/Sydney"
+            },
+            "time": "2027-04-14 19:00",
+            "view": {
+              "az": 355,
+              "alt": 35,
+              "fov": 90
+            },
+            "layers": {
+              "ecliptic": true
+            },
+            "highlights": [
+              {
+                "type": "object",
+                "ref": "body:Moon",
+                "label": "First quarter, seen from the south"
               }
             ]
           },
@@ -75,10 +112,16 @@
                 "ref": "body:Moon",
                 "label": "Waxing gibbous"
               }
-            ]
+            ],
+            "observer": {
+              "name": "Mid-northern latitudes (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
           },
           {
-            "caption": "April 20: full Moon, only just risen in the east-southeast. It came up at 7:49 pm, nine minutes after the Sun went down on the opposite side of the sky.",
+            "caption": "April 20: full Moon, only just risen in the east-southeast. It came up at 7:50 pm, ten minutes after the Sun went down on the opposite side of the sky.",
             "time": "2027-04-20 20:30",
             "view": {
               "az": 110,
@@ -94,7 +137,13 @@
                 "ref": "body:Moon",
                 "label": "Full Moon, just risen"
               }
-            ]
+            ],
+            "observer": {
+              "name": "Mid-northern latitudes (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
           },
           {
             "caption": "April 23, same time, facing east: no Moon. It will not rise until after 11 pm. The evening sky is dark again, and the waning Moon belongs to the late night and morning.",
@@ -106,6 +155,12 @@
             },
             "layers": {
               "ecliptic": true
+            },
+            "observer": {
+              "name": "Mid-northern latitudes (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
             }
           }
         ]
@@ -191,7 +246,7 @@
         "choices": [
           "Low in the east shortly before sunrise",
           "Low in the west shortly after sunset",
-          "High in the south at midnight",
+          "High in the sky at midnight",
           "Low in the east at sunset"
         ],
         "answerIndex": 0,
@@ -277,7 +332,7 @@
     },
     {
       "id": "mp-q2",
-      "prompt": "You see a half-lit Moon high in the south at sunset. Which phase is it, and when will it set?",
+      "prompt": "You see a half-lit Moon high in the sky at sunset. Which phase is it, and when will it set?",
       "choices": [
         "First quarter; around midnight",
         "Last quarter; around noon",

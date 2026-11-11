@@ -76,7 +76,8 @@ async function loopFor(page, conId, decoy) {
     const page = loop.map((p) => ({ x: Math.max(rect.left + 2, Math.min(rect.right - 2, p.x + rect.left)), y: Math.max(rect.top + 2, Math.min(rect.bottom - 2, p.y + rect.top)) }));
     // a stroke must begin on the sky itself, not on a floating panel
     const start = page.findIndex((p) => document.elementFromPoint(p.x, p.y) === canvas);
-    return { loop: start > 0 ? page.slice(start).concat(page.slice(0, start)) : page, startsOnSky: start >= 0, liveBefore: null };
+    const blocked = [...new Set(page.map((p) => document.elementFromPoint(p.x, p.y)).filter((el) => el !== canvas).map((el) => `${el?.tagName}.${el?.className}`))];
+    return { loop: start > 0 ? page.slice(start).concat(page.slice(0, start)) : page, startsOnSky: start >= 0, blocked };
   }, conId, decoy);
 }
 async function draw(page, loop, midShot) {
@@ -92,19 +93,21 @@ async function draw(page, loop, midShot) {
 }
 async function answerFind(page, correct, midShot) {
   const cur = await q(page);
-  const { loop, startsOnSky } = await loopFor(page, cur.conId, !correct);
+  const { loop, startsOnSky, blocked } = await loopFor(page, cur.conId, !correct);
   expect(startsOnSky, `find ${cur.conId}: loop can start on open sky`);
   await draw(page, loop, midShot);
   const fb = await feedback(page);
-  if (fb == null) console.log('   no result:', await text(page, '[data-testid="prompt"]'), JSON.stringify(await page.evaluate(() => [window.__quizSky.getView(), window.__quizSky.getSize()])), JSON.stringify(loop.slice(0, 3)));
+  if (fb == null) console.log('   no result (loop crosses: ' + blocked.join(', ') + '):', await text(page, '[data-testid="prompt"]'), JSON.stringify(await page.evaluate(() => [window.__quizSky.getView(), window.__quizSky.getSize()])), JSON.stringify(loop.slice(0, 3)));
   return fb;
 }
 /** Star-hop: click the target star (or, for a wrong answer, a spot well away from it). */
 async function clickHop(page, cur, wrong) {
   const at = await page.evaluate(async (ref, wrong) => {
     const [scheme, id] = ref.split(':');
-    const list = await fetch(scheme === 'star' ? 'data/stars.json' : 'data/dsos.json').then((r) => r.json());
-    const t = list.find((x) => String(x.id) === id);
+    let t;
+    if (scheme === 'radec') { const [ra, dec] = id.split(',').map(Number); t = { ra, dec }; }
+    else if (scheme === 'point') t = { ra: 0, dec: id === 'scp' ? -90 : 90 };
+    else t = (await fetch(scheme === 'star' ? 'data/stars.json' : 'data/dsos.json').then((r) => r.json())).find((x) => String(x.id) === id);
     const c = window.__quizSky;
     const canvas = [...document.querySelectorAll('.qz-sky canvas')].pop();
     const rect = canvas.getBoundingClientRect();

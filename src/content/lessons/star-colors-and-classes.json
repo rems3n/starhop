@@ -9,7 +9,7 @@
     {
       "heading": "Color is a thermometer",
       "body": [
-        "After this lesson you will be able to look at a bright star, notice its tint, and say roughly how hot its surface is. Stars are not all white. Look at Orion on a winter evening: [[star:Betelgeuse|Betelgeuse]] at his shoulder is plainly orange, while [[star:Rigel|Rigel]] at his foot is an icy blue-white.",
+        "After this lesson you will be able to look at a bright star, notice its tint, and say roughly how hot its surface is. Stars are not all white. Look at Orion on a December–February evening: [[star:Betelgeuse|Betelgeuse]] at his shoulder is plainly orange, while [[star:Rigel|Rigel]] at his foot is an icy blue-white.",
         "The reason is the same one that makes a stove element glow dull red and a welding arc glow blue-white: the hotter a glowing object is, the bluer its light. Betelgeuse has a surface near 3,600 kelvin (K, the scientist's temperature scale; the Sun's surface is about 5,800 K). Rigel is about 12,000 K. Red means cool, blue means hot — the opposite of the colors on a faucet."
       ],
       "demo": {
@@ -121,11 +121,10 @@
         ],
         "steps": [
           {
-            "caption": "The winter sky holds almost the whole sequence at once: Rigel (B), Sirius (A), Procyon (F), Capella (G), Aldebaran and Pollux (K), Betelgeuse (M).",
+            "caption": "The January evening sky holds almost the whole sequence at once: Rigel (B), Sirius (A), Procyon (F), Capella (G), Aldebaran and Pollux (K), Betelgeuse (M). (Capella sits low or below the horizon from mid-southern latitudes.)",
             "time": "month:1 21:00",
             "view": {
-              "az": 150,
-              "alt": 50,
+              "target": "star:Betelgeuse",
               "fov": 110
             },
             "layers": {
@@ -170,11 +169,10 @@
             ]
           },
           {
-            "caption": "Summer has its own pair of extremes. White Vega (class A) shines high overhead, while red Antares (class M) smolders low in the south. Orange Arcturus (K) is sinking in the west.",
+            "caption": "July evenings have their own pair of extremes: white Vega (class A) and red Antares (class M), with orange Arcturus (K) sinking in the west. From mid-northern latitudes Vega shines high overhead and Antares smolders low in the south; from the southern hemisphere it is the other way round.",
             "time": "month:7 22:00",
             "view": {
-              "az": 180,
-              "alt": 50,
+              "target": "star:Rasalhague",
               "fov": 130
             },
             "layers": {
@@ -318,7 +316,7 @@
         "answerIndex": 0,
         "explanation": "Red dwarfs are cool (right side) and give off very little light (bottom). Upper right is where red giants and supergiants such as Betelgeuse sit; lower left is the white dwarfs."
       },
-      "tryIt": "Tonight, find one star of each color you can: a blue-white one, a pure white one, a yellow one and an orange one. From Brooklyn the brightest dozen stars are enough, and star colors survive city lights well."
+      "tryIt": "Tonight, find one star of each color you can: a blue-white one, a pure white one, a yellow one and an orange one. Even from a big city the brightest dozen stars are enough, and star colors survive city lights well."
     }
   ],
   "keyPoints": [
@@ -366,7 +364,7 @@
     {
       "ref": "star:Antares",
       "label": "Antares",
-      "note": "Class M red supergiant, the heart of Scorpius, low in the south on summer evenings. Naked eye."
+      "note": "Class M red supergiant, the heart of Scorpius, best on June–August evenings: low in the south from mid-northern latitudes, high overhead from the southern hemisphere. Naked eye."
     }
   ],
   "questions": [
@@ -437,7 +435,7 @@
         "No star is the right temperature to emit green light",
         "A star that peaks in green also emits plenty of red and blue, so the mix looks white",
         "Green light cannot travel through space",
-        "Green stars exist but are always below the horizon from New York"
+        "Green stars exist but only in the southern sky"
       ],
       "answerIndex": 1,
       "explanation": "Stars emit a broad spread of colors. When the peak is in the green, the blend of all colors appears white to the eye."

@@ -279,7 +279,9 @@ export function placeDemoStep(step: DemoStep, ctx: SceneContext): DemoPlacement 
   if (!t) return asIs;
   if (altAzOf(t.ra, t.dec, t0, home).alt >= 0) return asIs;
   // "the Big Dipper", but "Orion's Belt" and "Orion"
-  const name = ref.startsWith('asterism:') && !t.name.includes("'") ? `the ${t.name}` : t.name;
+  const labelled = step.highlights?.find((h) => h.type === 'label' && h.at === ref);
+  const name =
+    labelled && labelled.type === 'label' ? `the ${labelled.text.replace(/^the /i, '')}` : t.kind === 'point' && t.name === 'Point' ? "this step's target" : ref.startsWith('asterism:') && !t.name.includes("'") ? `the ${t.name}` : t.name;
 
   // 1. Later the same night, from the learner's own place.
   const sunAlt = (d: Date) => {

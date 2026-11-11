@@ -10,7 +10,7 @@
       "There is no myth here and none should be looked for. The stars of Antlia were above the horizon for the ancient Greeks, but they are so faint that no Greek figure used them. Chinese astronomers did: some belonged to Dong'ou, named for a region on China's southeastern coast, and others to Tianmiao, the Celestial Temple."
     ]
   },
-  "overview": "Antlia is a laboratory air pump, one of Lacaille's 18th-century tributes to science. It is a faint, shapeless patch of sky under the body of Hydra, with no star brighter than magnitude 4.3, low in the south on spring evenings from Brooklyn.",
+  "overview": "Antlia is a laboratory air pump, one of Lacaille's 18th-century tributes to science. It is a faint, shapeless patch of sky under the body of Hydra, with no star brighter than magnitude 4.3, best on March to May evenings: low in the south from mid-northern latitudes, high overhead from the southern hemisphere.",
   "howToFind": [
     "Look on evenings in March and April, when Antlia is due south and a little under two fists above the horizon. Find [[star:Alphard|Alphard]], the lone orange star of Hydra (a bit more than two fists below and to the right of [[star:Regulus|Regulus]]). From Alphard go about two and a half fists down and to the left. The dim orange star there is [[star:α Ant|Alpha Antliae]]. It lies under the long faint body of [[con:Hya|Hydra]] and above the northern edge of [[con:Vel|Vela]], with [[con:Pyx|Pyxis]] to its right.",
     "The other stars, such as [[star:ε Ant|Epsilon]] and [[star:ι Ant|Iota Antliae]], are fainter still and scattered about a fist to either side. From the city you will need binoculars even for Alpha; treat finding Antlia as a test of your sky and your star-hopping rather than a sight in itself."
@@ -34,7 +34,7 @@
     {
       "ref": "dso:NGC2997",
       "equip": "telescope",
-      "note": "A face-on spiral galaxy, the brightest of many faint galaxies in Antlia. In a telescope under a dark sky it is a dim oval glow; its loose spiral arms appear only in photographs. At 18 degrees maximum altitude it is a difficult object from the New York area."
+      "note": "A face-on spiral galaxy, the brightest of many faint galaxies in Antlia. In a telescope under a dark sky it is a dim oval glow; its loose spiral arms appear only in photographs. From latitude 40°N, for example, it never climbs above about 18 degrees, which makes it difficult from mid-northern latitudes; from the southern hemisphere it passes high overhead."
     }
   ],
   "stories": [],

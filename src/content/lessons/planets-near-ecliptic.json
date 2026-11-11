@@ -20,7 +20,7 @@
         ],
         "steps": [
           {
-            "caption": "February 12, 2027, 8 pm, looking west. Saturn is a fist and a half above the horizon and the Moon is higher up. Both sit on the ecliptic line.",
+            "caption": "February 12, 2027, 8 pm, looking west from mid-northern latitudes. Saturn is a fist and a half above the horizon and the Moon is higher up. Both sit on the ecliptic line.",
             "time": "2027-02-12 20:00",
             "view": {
               "az": 250,
@@ -41,7 +41,13 @@
                 "ref": "body:Moon",
                 "label": "Moon"
               }
-            ]
+            ],
+            "observer": {
+              "name": "Mid-northern latitudes (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
           },
           {
             "caption": "Same moment, turned to face east. The ecliptic comes down to the opposite horizon, and on it are Jupiter, the brightest point in this part of the sky, and orange Mars below it, either side of the star Regulus.",
@@ -70,7 +76,13 @@
                 "ref": "star:Regulus",
                 "label": "Regulus (a star)"
               }
-            ]
+            ],
+            "observer": {
+              "name": "Mid-northern latitudes (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
           }
         ]
       },
@@ -203,7 +215,7 @@
         ],
         "steps": [
           {
-            "caption": "January 3, 2027, 6:15 am, looking southeast before sunrise. Venus blazes two fists up as the morning star, with a thin crescent Moon below it and the star Spica off to the upper right. All three are close to the ecliptic.",
+            "caption": "January 3, 2027, 6:15 am, looking southeast before sunrise from mid-northern latitudes. Venus blazes two fists up as the morning star, with a thin crescent Moon below it and the star Spica off to the upper right. All three are close to the ecliptic.",
             "time": "2027-01-03 06:15",
             "view": {
               "az": 150,
@@ -229,10 +241,16 @@
                 "ref": "star:Spica",
                 "label": "Spica"
               }
-            ]
+            ],
+            "observer": {
+              "name": "Mid-northern latitudes (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
           },
           {
-            "caption": "February 3, 2027, 6 pm, looking west-southwest 45 minutes after sunset. Mercury at its best is still only 8° above the horizon in bright twilight. You need a clear, low horizon and good timing. Saturn is much higher up the same line.",
+            "caption": "February 3, 2027, 6 pm, looking west-southwest 45 minutes after sunset from mid-northern latitudes. Mercury at its best is still only 8° above the horizon in bright twilight. You need a clear, low horizon and good timing. Saturn is much higher up the same line.",
             "time": "2027-02-03 18:00",
             "view": {
               "az": 240,
@@ -253,7 +271,13 @@
                 "ref": "body:Saturn",
                 "label": "Saturn"
               }
-            ]
+            ],
+            "observer": {
+              "name": "Mid-northern latitudes (41°N)",
+              "lat": 41,
+              "lon": -74,
+              "tz": "America/New_York"
+            }
           }
         ]
       },
@@ -345,7 +369,7 @@
       "choices": [
         "Yes, probably Jupiter",
         "Yes, probably Venus",
-        "Only in winter",
+        "Only in December–February",
         "No: the Big Dipper is far from the ecliptic"
       ],
       "answerIndex": 3,
@@ -365,7 +389,7 @@
     },
     {
       "id": "pe-q4",
-      "prompt": "It is midnight and a brilliant white point is high in the south, brighter than any star. Which planet is it most likely to be?",
+      "prompt": "It is midnight and a brilliant white point is high in the sky, brighter than any star. Which planet is it most likely to be?",
       "choices": [
         "Venus",
         "Mercury",
@@ -373,7 +397,7 @@
         "Saturn"
       ],
       "answerIndex": 2,
-      "explanation": "Venus and Mercury stay near the Sun and are never high at midnight from Brooklyn. Saturn is never that bright. Jupiter outshines every star and can be up all night."
+      "explanation": "Venus and Mercury stay near the Sun and are never high at midnight from mid-latitudes. Saturn is never that bright. Jupiter outshines every star and can be up all night."
     },
     {
       "id": "pe-q5",
