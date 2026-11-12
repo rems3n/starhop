@@ -7,6 +7,7 @@ import { extname, join, normalize, resolve } from 'node:path';
 import { gzipSync } from 'node:zlib';
 import { handleApi } from './ai.mjs';
 import { handleAccount } from './account.mjs';
+import { handleShare } from './share.mjs';
 
 const root = resolve(process.argv[2] ?? 'dist');
 const port = Number(process.env.PORT) || 4173;
@@ -32,6 +33,11 @@ async function fileFor(urlPath) {
 
 createServer(async (req, res) => {
   try {
+    if ((req.url ?? '').startsWith('/v/')) {
+      const host = String(req.headers['x-forwarded-host'] ?? req.headers.host ?? 'localhost');
+      const proto = String(req.headers['x-forwarded-proto'] ?? 'http').split(',')[0].trim();
+      if (await handleShare(req, res, process.env.STARHOP_PUBLIC_URL || `${proto}://${host}`)) return;
+    }
     if (await handleAccount(req, res)) return;
     if (await handleApi(req, res)) return;
     let p = await fileFor(req.url ?? '/');
