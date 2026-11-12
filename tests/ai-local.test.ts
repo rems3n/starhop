@@ -44,6 +44,8 @@ describe('local command matcher', () => {
     expect(one('look north east')).toEqual({ name: 'sky_set_view', input: { face: 'northeast' } });
     expect(one('look up')).toEqual({ name: 'sky_set_view', input: { face: 'zenith' } });
     expect(one('reset view')).toEqual({ name: 'sky_set_view', input: { reset: true } });
+    expect(one('atlas mode')).toEqual({ name: 'sky_set_view', input: { mode: 'atlas' } });
+    expect(one('back to live sky')).toEqual({ name: 'sky_set_view', input: { mode: 'live' } });
     expect(one('pause')).toEqual({ name: 'sky_set_time', input: { speed: 'paused' } });
     expect(one('back to now')).toEqual({ name: 'sky_set_time', input: { time: 'now', speed: 'real_time' } });
     expect(one('open tonight')).toEqual({ name: 'app_open', input: { path: 'tonight' } });

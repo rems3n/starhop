@@ -10,17 +10,21 @@ import { SkyView, deepLimit, getSkyStats } from '@/sky';
 import { registerSky } from '@/ai/bridge';
 import { useSettings } from '@/store/settings';
 import { BORTLE, type Highlight, type ResolvedTarget, type SkyController, type SkyEngineOptions, type TargetRef } from '@/types';
-import { Button } from '@/ui';
+import { Button, Segmented } from '@/ui';
 import { HelpPanel } from './HelpPanel';
 import { Icon } from './icons';
 import { LocationDialog } from './LocationDialog';
 import { SearchBox, type SearchBoxHandle } from './SearchBox';
+import { choosePresentation } from './present';
 import { LayersPanel, LightPollutionPanel } from './SkyPanels';
 import { TimeBar, type TimeBarHandle } from './TimeBar';
 import { fovWords, lookingWords } from './timeRates';
 import './explore.css';
 
 type Popover = 'layers' | 'light' | 'help' | null;
+/** 'live' = the sky from your location at the map's time; 'atlas' = the whole sky as a chart, no horizon or time of day */
+export type SkyMode = 'live' | 'atlas';
+interface Notice { text: string; action: 'now' | 'live' }
 
 const limitFor = (bortle: number) => BORTLE[Math.min(9, Math.max(1, bortle)) - 1].limitingMag;
 
@@ -68,6 +72,9 @@ export default function ExplorePage() {
   const [popover, setPopover] = useState<Popover>(null);
   const [locationOpen, setLocationOpen] = useState(false);
   const [sheetOpen, setSheetOpen] = useState(false);
+  const [mode, setModeState] = useState<SkyMode>('live');
+  const modeRef = useRef<SkyMode>('live');
+  const [notice, setNotice] = useState<Notice | null>(null);
   const search = useRef<SearchBoxHandle>(null);
   const timeBar = useRef<TimeBarHandle | null>(null);
   const handledParam = useRef<string | null>(null);
@@ -93,7 +100,8 @@ export default function ExplorePage() {
   // Settings → engine
   useEffect(() => { ctl?.setObserver(observer); }, [ctl, observer]);
   useEffect(() => { ctl?.setLimitingMag(limitFor(bortle)); }, [ctl, bortle]);
-  useEffect(() => { ctl?.setLayers(layers); }, [ctl, layers]);
+  // The atlas is a chart of the whole sky: nothing hides below a horizon and there is no daylight.
+  useEffect(() => { ctl?.setLayers(mode === 'atlas' ? { ...layers, ground: false, atmosphere: false, horizon: false, azimuthalGrid: false } : layers); }, [ctl, layers, mode]);
 
   // Engine → React, coarsely: the panels only need the time to the minute, and the readout only when its words change.
   useEffect(() => {
@@ -166,6 +174,7 @@ export default function ExplorePage() {
       c.setSelection(null);
       c.setHighlights([]);
       writeParam(null);
+      setNotice(null);
       return;
     }
     const t = catalog.resolve(ref, { date: c.getTime(), observer: c.getObserver() });
@@ -190,6 +199,69 @@ export default function ExplorePage() {
     if (opts.fly) void c.flyTo(t.ref, { fov: opts.fov ?? flyFov(t, c.getView().fov) });
   }, [catalog, writeParam]);
 
+  const setMode = useCallback((next: SkyMode, opts: { keepView?: boolean } = {}) => {
+    const c = ctlRef.current;
+    if (!c || modeRef.current === next) return;
+    const size = c.getSize();
+    const centre = c.unproject(size.width / 2, size.height / 2);
+    modeRef.current = next;
+    setModeState(next);
+    setPopover(null);
+    if (next === 'atlas') {
+      c.setView({ mount: 'equatorial', roll: 0, ...(centre ? { lon: centre.ra, lat: centre.dec } : {}) });
+      return;
+    }
+    setNotice(null);
+    c.setView({ mount: 'altaz', roll: 0 });
+    if (opts.keepView) return;
+    // back under a real horizon: stay on the selection if it is up, otherwise face north
+    const sel = selectedRef.current && catalog ? catalog.resolve(selectedRef.current, { date: c.getTime(), observer: c.getObserver() }) : null;
+    const alt = sel ? (sel.body ? getBody(sel.body, c.getTime(), c.getObserver()).alt : altAzOf(sel.ra, sel.dec, c.getTime(), c.getObserver()).alt) : -90;
+    if (sel && alt > 5) void c.flyTo(sel.ref, { durationMs: 0 });
+    else void c.flyTo(`altaz:${HOME_VIEW.lon},${HOME_VIEW.lat}`, { fov: HOME_VIEW.fov, durationMs: 0 });
+  }, [catalog]);
+
+  /**
+   * Show an object the learner asked for by name so that it is actually in view: the live sky if it is up in the
+   * dark now, otherwise tonight at its best time, otherwise the atlas. Returns what was done.
+   */
+  const present = useCallback((ref: TargetRef, opts: { fov?: number } = {}): { mode: 'live' | 'time' | 'atlas'; time?: Date } => {
+    const c = ctlRef.current;
+    if (!c || !catalog) return { mode: 'live' };
+    const t = catalog.resolve(ref, { date: c.getTime(), observer: c.getObserver() });
+    if (!t || modeRef.current === 'atlas') {
+      // already on the atlas (everything is visible there), or not resolvable yet: plain select
+      select(ref, { fly: true, fov: opts.fov });
+      return { mode: modeRef.current === 'atlas' ? 'atlas' : 'live' };
+    }
+    const p = choosePresentation(t, c.getTime(), c.getObserver(), catalog);
+    if (p.mode === 'time') {
+      c.setTime(p.time);
+      setNotice({ text: p.message, action: 'now' });
+      // the engine needs a frame at the new time before a glide lands in the right place
+      window.setTimeout(() => select(ref, { fly: true, fov: opts.fov }), 60);
+      return { mode: 'time', time: p.time };
+    }
+    if (p.mode === 'atlas') {
+      setMode('atlas');
+      setNotice({ text: p.message, action: 'live' });
+      window.setTimeout(() => select(ref, { fly: true, fov: opts.fov }), 30);
+      return { mode: 'atlas' };
+    }
+    setNotice(null);
+    select(ref, { fly: true, fov: opts.fov });
+    return { mode: 'live' };
+  }, [catalog, select, setMode]);
+
+  const backToNow = () => {
+    const c = ctlRef.current;
+    if (!c) return;
+    c.setTime(new Date());
+    c.setTimeRate(1);
+    setNotice(null);
+    resetRef.current();
+  };
+
   // Clicks in the sky
   useEffect(() => {
     if (!ctl) return;
@@ -200,8 +272,9 @@ export default function ExplorePage() {
   useEffect(() => {
     if (!ctl || !catalog || !targetParam || targetParam === handledParam.current) return;
     handledParam.current = targetParam;
-    select(targetParam, { fly: true });
-  }, [ctl, catalog, targetParam, select]);
+    if (timeParam) select(targetParam, { fly: true });
+    else present(targetParam);
+  }, [ctl, catalog, targetParam, select, present, timeParam]);
 
   // Page-level keys
   useEffect(() => {
@@ -234,6 +307,11 @@ export default function ExplorePage() {
   const resetView = () => {
     const c = ctlRef.current;
     if (!c) return;
+    if (modeRef.current === 'atlas') {
+      // atlas home: the north celestial pole region the live home view also frames
+      void c.flyTo('point:ncp', { fov: HOME_VIEW.fov });
+      return;
+    }
     if (c.getView().mount !== 'altaz') c.setView({ mount: 'altaz', roll: 0 });
     void c.flyTo(`altaz:${HOME_VIEW.lon},${HOME_VIEW.lat}`, { fov: HOME_VIEW.fov });
   };
@@ -255,8 +333,8 @@ export default function ExplorePage() {
   // The assistant drives this page through the same functions as the buttons above.
   useEffect(() => {
     if (!ctl || !catalog) return;
-    return registerSky({ ctl, select, selected: () => selectedRef.current, resetView: () => resetRef.current(), zoom: (f) => zoomRef.current(f) });
-  }, [ctl, catalog, select]);
+    return registerSky({ ctl, select, present, selected: () => selectedRef.current, resetView: () => resetRef.current(), zoom: (f) => zoomRef.current(f), mode: () => modeRef.current, setMode });
+  }, [ctl, catalog, select, present, setMode]);
   const toggle = (p: Exclude<Popover, null>) => setPopover((cur) => (cur === p ? null : p));
 
   const b = BORTLE[bortle - 1];
@@ -265,7 +343,7 @@ export default function ExplorePage() {
       <SkyView options={options} onReady={onReady} className="ex-sky" />
 
       <div className="ex-top">
-        <SearchBox ref={search} catalog={catalog} onChoose={(t) => select(t.ref, { fly: true })} />
+        <SearchBox ref={search} catalog={catalog} onChoose={(t) => present(t.ref)} />
         <div className="ex-tools">
           <Button className="ex-tool panel" onClick={() => setLocationOpen(true)} title="Change where you are observing from" aria-label={`Location: ${observer.name}. Change`}>
             <Icon name="pin" size={16} />
@@ -297,8 +375,8 @@ export default function ExplorePage() {
         <Button size="sm" icon variant="quiet" aria-label="Zoom in" title="Zoom in" onClick={() => zoom(0.6)}><Icon name="plus" size={16} /></Button>
         <Button size="sm" icon variant="quiet" aria-label="Zoom out" title="Zoom out" onClick={() => zoom(1 / 0.6)}><Icon name="minus" size={16} /></Button>
         <Button size="sm" icon variant="quiet" aria-label="Reset view: face north" title="Reset view: face north (Home key)" onClick={resetView}><Icon name="home" size={16} /></Button>
-        <span className="ex-view-sep" aria-hidden />
-        {([['N', 0, 'north'], ['E', 90, 'east'], ['S', 180, 'south'], ['W', 270, 'west']] as const).map(([letter, az, word]) => (
+        {mode === 'live' && <span className="ex-view-sep" aria-hidden />}
+        {mode === 'live' && ([['N', 0, 'north'], ['E', 90, 'east'], ['S', 180, 'south'], ['W', 270, 'west']] as const).map(([letter, az, word]) => (
           <Button key={letter} size="sm" icon variant="quiet" aria-label={`Face ${word}`} title={`Face ${word}`} onClick={() => face(az)}>{letter}</Button>
         ))}
         <span className="ex-view-sep" aria-hidden />
@@ -325,18 +403,29 @@ export default function ExplorePage() {
             <Button variant="quiet" size="sm" icon aria-label="Close" title="Close (Esc)" onClick={() => select(null)}><Icon name="close" size={16} /></Button>
           </div>
           <div className="ex-info-body">
-            <BestTimeHint targetRef={selected} date={date} ctl={ctl} onShow={() => select(selected, { fly: true })} />
+            {mode === 'live' && <BestTimeHint targetRef={selected} date={date} ctl={ctl} onShow={() => select(selected, { fly: true })} />}
             <ObjectInfo targetRef={selected} observer={observer} date={date} variant="panel" onTarget={(ref) => select(ref, { fly: true })} />
           </div>
         </aside>
       )}
 
+      {notice && (
+        <div className="ex-notice panel" role="status">
+          <span>{notice.text}</span>
+          <Button size="sm" variant="primary" onClick={notice.action === 'now' ? backToNow : () => setMode('live')}>{notice.action === 'now' ? 'Back to now' : 'Back to live sky'}</Button>
+          <Button size="sm" variant="quiet" icon aria-label="Dismiss" onClick={() => setNotice(null)}><Icon name="close" size={14} /></Button>
+        </div>
+      )}
+
       <div className="ex-bottom">
+        <div className="ex-mode">
+          <Segmented<SkyMode> label="Sky map mode" value={mode} onChange={(m) => setMode(m)} options={[{ value: 'live', label: 'Live sky' }, { value: 'atlas', label: 'Atlas' }]} />
+        </div>
         <p className="ex-readout" aria-live="off">
           {readout}
           {showFps && <span className="ex-fps"> · {fps.toFixed(0)} fps</span>}
         </p>
-        <TimeBar ctl={ctl} observer={observer} handle={timeBar} />
+        {mode === 'live' ? <TimeBar ctl={ctl} observer={observer} handle={timeBar} /> : <p className="ex-atlas-note panel">Atlas: the whole sky as a chart. No horizon and no time of day, so everything can be found.</p>}
       </div>
 
       {locationOpen && <LocationDialog observer={observer} onSave={setObserver} onClose={() => setLocationOpen(false)} />}

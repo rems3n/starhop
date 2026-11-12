@@ -81,6 +81,9 @@ export function matchLocal(raw: string, isObject: (phrase: string) => boolean): 
   if (DIRECTIONS.includes(t)) return [{ name: 'sky_set_view', input: { face: t } }];
   if (/^(?:look (?:straight )?up|zenith|overhead|look overhead|show (?:me )?the zenith)$/.test(t)) return [{ name: 'sky_set_view', input: { face: 'zenith' } }];
 
+  if (/^(?:atlas|atlas mode|atlas view|show (?:the )?atlas|switch to (?:the )?atlas|star chart|chart mode)$/.test(t)) return [{ name: 'sky_set_view', input: { mode: 'atlas' } }];
+  if (/^(?:live|live sky|live mode|live view|switch to (?:the )?live sky|back to (?:the )?live sky|my sky)$/.test(t)) return [{ name: 'sky_set_view', input: { mode: 'live' } }];
+
   // clock
   if (/^(?:now|go to now|back to now|current time|right now|reset (?:the )?time|real time)$/.test(t)) return [{ name: 'sky_set_time', input: { time: 'now', speed: 'real_time' } }];
   if (/^(?:pause|stop|freeze|pause time|stop time|freeze time|pause the clock|stop the clock)$/.test(t)) return [{ name: 'sky_set_time', input: { speed: 'paused' } }];

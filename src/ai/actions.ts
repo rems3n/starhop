@@ -153,26 +153,24 @@ async function skyShow(input: ToolInput, env: ActionEnv): Promise<ToolResult> {
   if (!t) return { ok: false, error: `Nothing in the catalogue matches "${target}". Try sky_find with a different spelling.` };
   const sky = await openSky(env);
   const observer = sky.ctl.getObserver();
-  let date = sky.ctl.getTime();
   const out: ToolResult = { ok: true, shown: t.name, ref: t.ref, kind: kindWords(t, catalog) };
-  if (t.kind !== 'point' && t.body !== 'Sun') {
-    const v = visibilityOn(visTargetOf(t, catalog), currentNightDate(date, observer), observer);
-    out.tonight = VISIBILITY_WORDS[v.cls];
-    if (v.bestTime) out.best_time_tonight = formatTime(v.bestTime, observer.tz);
-    if (input.at_best_time === true && v.bestTime) {
-      sky.ctl.setTime(v.bestTime);
-      date = v.bestTime;
-      out.clock_set_to = formatDateTime(v.bestTime, observer.tz);
-      // the engine needs a frame at the new time before a glide to a body lands in the right place
-      await new Promise((r) => window.setTimeout(r, 60));
-    }
-  }
-  const fresh = catalog.resolve(t.ref, { date, observer }) ?? t;
-  const p = altAz(fresh, date, observer);
-  out.above_horizon = p.alt > 0;
-  out.where = p.alt > 0 ? whereWords(p.alt, p.az) : 'below the horizon at the time shown on the map';
   const fov = num(input.field_of_view_deg);
-  sky.select(t.ref, { fly: true, fov: fov === undefined ? undefined : clamp(fov, 1, 150) });
+  const how = sky.present(t.ref, { fov: fov === undefined ? undefined : clamp(fov, 1, 150) });
+  out.presented = how.mode;
+  const date = how.time ?? sky.ctl.getTime();
+  if (how.mode === 'time' && how.time) out.clock_set_to = formatDateTime(how.time, observer.tz);
+  if (how.mode === 'atlas') {
+    out.note = `Not visible tonight from ${observer.name}; shown on the atlas (no horizon or time of day).`;
+    if (!t.body) {
+      try {
+        const months = bestMonths(visTargetOf(t, catalog), observer);
+        out.best_evening_months = months.length ? monthRanges(months) : `never well placed from ${observer.name}`;
+      } catch { /* optional */ }
+    }
+  } else {
+    const p = altAz(catalog.resolve(t.ref, { date, observer }) ?? t, date, observer);
+    out.where = whereWords(p.alt, p.az);
+  }
   return out;
 }
 
@@ -246,6 +244,11 @@ async function skySetView(input: ToolInput, env: ActionEnv): Promise<ToolResult>
   const sky = await openSky(env);
   const c = sky.ctl;
   const done: string[] = [];
+  const mode = text(input.mode).toLowerCase();
+  if (mode === 'live' || mode === 'atlas') {
+    sky.setMode(mode);
+    done.push(mode === 'atlas' ? 'Switched to the atlas' : 'Switched to the live sky');
+  }
   if (input.reset === true) {
     sky.resetView();
     done.push('Reset the view to face north');
@@ -274,7 +277,7 @@ async function skySetView(input: ToolInput, env: ActionEnv): Promise<ToolResult>
     sky.zoom(ZOOM[zoom]);
     done.push(zoom.endsWith('in') ? 'Zoomed in' : 'Zoomed out');
   }
-  return done.length ? { ok: true, done } : { ok: false, error: 'Give face, zoom, field_of_view_deg or reset.' };
+  return done.length ? { ok: true, done } : { ok: false, error: 'Give face, zoom, field_of_view_deg, mode or reset.' };
 }
 
 async function skySetTime(input: ToolInput, env: ActionEnv): Promise<ToolResult> {
@@ -418,7 +421,7 @@ export const CHANGES_STATE = new Set(['sky_show', 'sky_set_layers', 'sky_set_vie
 export function actionLabel(name: string, result: ToolResult): string | null {
   if (!result.ok || !CHANGES_STATE.has(name)) return null;
   switch (name) {
-    case 'sky_show': return result.cleared ? 'Cleared the selection' : `Showing ${String(result.shown)}${result.clock_set_to ? ` at ${String(result.clock_set_to)}` : ''}`;
+    case 'sky_show': return result.cleared ? 'Cleared the selection' : `Showing ${String(result.shown)}${result.clock_set_to ? ` at ${String(result.clock_set_to)}` : result.presented === 'atlas' ? ' on the atlas' : ''}`;
     case 'sky_set_layers': return (result.changed as string[]).join(', ') || null;
     case 'sky_set_view': return (result.done as string[]).join(', ');
     case 'sky_set_time': return `Map time ${String(result.map_time)} · ${String(result.clock).toLowerCase()}`;
@@ -435,8 +438,9 @@ export function resultSentence(name: string, result: ToolResult): string {
   if (name === 'sky_show') {
     if (result.cleared) return 'Cleared the selection.';
     const what = `${String(result.shown)} (${String(result.kind)})`;
-    if (result.above_horizon) return `Here is ${what}, ${String(result.where)}.`;
-    return result.best_time_tonight ? `${what} is below the horizon at the time on the map. It is best tonight around ${String(result.best_time_tonight)}.` : `${what} is below the horizon at the time on the map and is not visible tonight from here.`;
+    if (result.presented === 'time') return `${what} is not up in a dark sky right now, so I moved the clock to ${String(result.clock_set_to)}, when it is highest tonight: ${String(result.where)}.`;
+    if (result.presented === 'atlas') return `${what} is not visible from here tonight${!result.best_evening_months ? '' : String(result.best_evening_months).startsWith('never') ? ' (it never rises high enough from here)' : ` (best in the evening: ${String(result.best_evening_months)})`}, so I am showing it on the atlas, which has no horizon.`;
+    return `Here is ${what}, ${String(result.where)}.`;
   }
   if (name === 'sky_set_layers') return (result.changed as string[]).length ? `${(result.changed as string[]).join(', ')}.` : 'Those were already set that way.';
   return `${actionLabel(name, result) ?? 'Done'}.`;
@@ -464,6 +468,7 @@ export function describeState(env: ActionEnv): Record<string, unknown> {
       looking: v.mount === 'altaz' ? { azimuth_deg: Math.round(v.lon), altitude_deg: Math.round(v.lat) } : { ra_deg: Math.round(v.lon), dec_deg: Math.round(v.lat) },
       field_of_view_deg: Math.round(v.fov),
       selected: sky.selected(),
+      mode: sky.mode(),
     };
   } else out.sky_map = 'not open (sky tools open it automatically)';
   return out;
@@ -474,7 +479,7 @@ export interface Snapshot {
   layers: LayerState;
   bortle: number;
   observer: Observer;
-  sky: { view: ReturnType<SkyBridge['ctl']['getView']>; rate: number; time: number; offset: number; selected: TargetRef | null } | null;
+  sky: { view: ReturnType<SkyBridge['ctl']['getView']>; rate: number; time: number; offset: number; selected: TargetRef | null; mode: 'live' | 'atlas' } | null;
 }
 
 export function takeSnapshot(env: ActionEnv): Snapshot {
@@ -485,7 +490,7 @@ export function takeSnapshot(env: ActionEnv): Snapshot {
     layers: { ...s.layers },
     bortle: s.bortle,
     observer: { ...s.observer },
-    sky: sky ? { view: { ...sky.ctl.getView() }, rate: sky.ctl.getTimeRate(), time: sky.ctl.getTime().getTime(), offset: sky.ctl.getTime().getTime() - Date.now(), selected: sky.selected() } : null,
+    sky: sky ? { view: { ...sky.ctl.getView() }, rate: sky.ctl.getTimeRate(), time: sky.ctl.getTime().getTime(), offset: sky.ctl.getTime().getTime() - Date.now(), selected: sky.selected(), mode: sky.mode() } : null,
   };
 }
 
@@ -502,6 +507,7 @@ export async function restoreSnapshot(snap: Snapshot, env: ActionEnv): Promise<v
   // a clock that was running in real time resumes from where it would be now, not from the stale instant
   sky.ctl.setTime(new Date(snap.sky.rate === 1 ? Date.now() + snap.sky.offset : snap.sky.time));
   sky.ctl.setTimeRate(snap.sky.rate);
+  sky.setMode(snap.sky.mode, { keepView: true });
   sky.select(snap.sky.selected);
   sky.ctl.setView(snap.sky.view);
 }

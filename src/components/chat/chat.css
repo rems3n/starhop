@@ -3,6 +3,8 @@
 .ch-root > * { pointer-events: auto; }
 /* on the sky map, sit above the time bar */
 .ch-root--sky { bottom: 92px; }
+/* leave the top of the map free for its search row and notices */
+.ch-root--sky .ch-panel { max-height: calc(100vh - var(--nav-h) - 92px - 150px); }
 .ch-launch { display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 16px 0 14px; background: var(--amber); color: var(--amber-ink); border: 0; font: 600 0.92rem var(--font-ui); cursor: pointer; box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.4); }
 .ch-launch:hover { background: var(--vega); }
 .ch-launch:focus-visible, .ch-send:focus-visible, .ch-x:focus-visible, .ch-starter:focus-visible, .ch-undo:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }

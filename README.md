@@ -140,3 +140,11 @@ A chat panel (button at the bottom left of every app page) that acts on the app:
 - **Tests.** `tests/ai-local.test.ts` (matcher, schema, validation) and `node scripts/final/assistant-e2e.mjs`
   (browser run against a scripted stand-in for the model). The static site alone (`vite preview`, any static host)
   has no `/api`, so only plain commands work there.
+
+## Live sky and Atlas
+
+The sky map has two modes (switch above the time bar). **Live sky** is the sky from your location at the map's time,
+with a real horizon. **Atlas** is a chart of the whole sky with no horizon and no time of day. Anything asked for by
+name (search box, assistant, links from other pages) is shown so that it is actually in view
+(`src/modes/explore/present.ts`): in the live sky if it is up in the dark now; otherwise the clock moves to its best
+time tonight; otherwise the map switches to the atlas. A notice at the top says what happened and offers the way back.

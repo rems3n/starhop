@@ -134,9 +134,6 @@ export const useChat = create<ChatState>()((set, get) => {
           for (const call of local) {
             const result = await run(call.name, call.input);
             sentences.push(resultSentence(call.name, result));
-            // shown but under the horizon: offer the moment tonight when it is best placed
-            if (call.name === 'sky_show' && result.ok && result.above_horizon === false && result.best_time_tonight && !call.input.at_best_time)
-              chips = [{ label: `Show it at ${String(result.best_time_tonight)}`, calls: [{ name: 'sky_show', input: { target: String(result.ref), at_best_time: true } }] }];
             const id = `local_${++localSeq}`;
             blocks.push({ type: 'tool_use', id, name: call.name, input: call.input });
             results.push({ type: 'tool_result', tool_use_id: id, content: JSON.stringify(result) });

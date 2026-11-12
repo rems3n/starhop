@@ -8,7 +8,14 @@ export interface SkyBridge {
   ctl: SkyController;
   /** Select (and optionally glide to) an object; null clears. Same as clicking it or picking it in search. */
   select(ref: TargetRef | null, opts?: { fly?: boolean; fov?: number }): void;
+  /**
+   * Show an object so it is actually in view: live sky if it is up in the dark now, otherwise the clock moves to its
+   * best time tonight, otherwise the map switches to the atlas. Same as picking it in the search box.
+   */
+  present(ref: TargetRef, opts?: { fov?: number }): { mode: 'live' | 'time' | 'atlas'; time?: Date };
   selected(): TargetRef | null;
+  mode(): 'live' | 'atlas';
+  setMode(mode: 'live' | 'atlas', opts?: { keepView?: boolean }): void;
   resetView(): void;
   /** Multiply the field of view: < 1 zooms in */
   zoom(factor: number): void;

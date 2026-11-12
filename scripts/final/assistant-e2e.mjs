@@ -76,21 +76,28 @@ async function run(viewport, tag) {
   const centre = () => page.evaluate(() => { const c = window.__explore; const s = c.getSize(); return c.unproject(s.width / 2, s.height / 2); });
   const calls0 = seen.length;
 
-  // instant path, from a non-sky page
+  // instant path, from a non-sky page. Pin the map clock (7 pm on 11 Nov in Brooklyn) so the run is repeatable.
+  await page.goto('http://localhost:4995/#/sky', { waitUntil: 'domcontentloaded' });
+  await page.waitForFunction(() => window.__explore);
+  await page.evaluate(() => { window.__explore.setTime(new Date('2026-11-12T00:00:00Z')); });
   let r = await ask('show me orion');
-  check(`${tag}: "show me orion" opens the sky on Orion`, (await hash()).startsWith('/sky') && (await hash()).includes('target=con:Ori'), await hash());
+  check(`${tag}: "show me orion" selects Orion`, (await hash()).includes('target=con:Ori'), await hash());
   const c = await centre();
   check(`${tag}: view is centred on Orion`, c && Math.abs(c.ra - 83) < 12 && Math.abs(c.dec - 2) < 12, JSON.stringify(c));
   check(`${tag}: reply names Orion`, /Orion/.test(r.text) && r.actions.some((a) => a.includes('Orion')), r.text);
-  await page.screenshot({ path: `${out}/assistant-${tag}-orion.png` });
 
-  if (/below the horizon/.test(r.text)) {
-    await page.click('.ch-chip');
-    await sleep(2500);
-    const alt = await page.evaluate(() => { const c = window.__explore; const s = c.getSize(); const v = c.getView(); return v.lat; });
-    check(`${tag}: best-time chip brings Orion above the horizon`, alt > 5, `alt ${alt}`);
-    await page.screenshot({ path: `${out}/assistant-${tag}-orion.png` });
-  }
+  check(`${tag}: Orion was below the horizon, so the clock moved and a notice says so`, /moved the clock/.test(r.text) && (await page.$eval('.ex-notice', (e) => e.textContent)).includes('Showing tonight at'), r.text);
+  const alt = await page.evaluate(() => window.__explore.getView().lat);
+  check(`${tag}: Orion is now above the horizon`, alt > 20, `alt ${alt}`);
+  await page.screenshot({ path: `${out}/assistant-${tag}-orion.png` });
+  r = await ask('show me crux');
+  const atlas = await page.evaluate(() => ({ v: window.__explore.getView().mount, ground: window.__explore.getLayers().ground, notice: document.querySelector('.ex-notice')?.textContent, bar: !!document.querySelector('.ex-atlas-note'), pressed: document.querySelector('.ex-mode [aria-pressed=true]')?.textContent }));
+  check(`${tag}: Crux never rises here, so the map switches to the atlas`, atlas.v === 'equatorial' && atlas.ground === false && atlas.bar && atlas.pressed === 'Atlas' && /never rises/.test(atlas.notice ?? ''), JSON.stringify(atlas));
+  await page.screenshot({ path: `${out}/assistant-${tag}-atlas.png` });
+  await page.click('.ch-undo');
+  await sleep(700);
+  const back = await page.evaluate(() => ({ v: window.__explore.getView().mount, ground: window.__explore.getLayers().ground, pressed: document.querySelector('.ex-mode [aria-pressed=true]')?.textContent }));
+  check(`${tag}: Undo returns to the live sky`, back.v === 'altaz' && back.ground === true && back.pressed === 'Live sky', JSON.stringify(back));
   r = await ask('turn off lines');
   check(`${tag}: "turn off lines" turns the layer off`, (await layers()).constellationLines === false, r.text);
   check(`${tag}: no model call for plain commands`, seen.length === calls0);

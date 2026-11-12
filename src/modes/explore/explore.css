@@ -149,3 +149,17 @@
   .ex-root.sheet-open .ex-view, .ex-root.sheet-open .ex-helpbox { display: none; }
   .ex-loc-grid { grid-template-columns: 1fr; }
 }
+
+/* Live/Atlas switch and the notice shown when the map changed time or mode to bring an object into view */
+.ex-mode .segmented button { padding: 4px 12px; font-size: 0.8rem; }
+.ex-notice { position: absolute; z-index: 12; top: calc(var(--ex-gap) + 54px); left: var(--ex-gap); display: flex; align-items: center; gap: var(--sp-3); max-width: min(640px, calc(100% - 2 * var(--ex-gap))); padding: 8px 8px 8px 14px; border: 1px solid var(--sun); font-size: var(--fs-sm); line-height: 1.4; }
+.ex-notice > span { flex: 1; }
+.ex-notice .btn { flex: none; }
+.ex-atlas-note { margin: 0; padding: 10px 16px; font-size: var(--fs-sm); color: var(--text-dim); text-align: center; }
+.ex-root.has-info .ex-notice { max-width: min(640px, calc(100% - var(--ex-info-w) - 4 * var(--ex-gap))); }
+@media (max-width: 720px) {
+  .ex-root.has-info .ex-notice { max-width: none; }
+  .ex-notice { top: 104px; right: 56px; max-width: none; flex-wrap: wrap; font-size: var(--fs-xs); padding: 8px 10px; }
+  .ex-notice > span { flex: 1 1 100%; }
+  .ex-root.has-info .ex-mode { display: none; }
+}
