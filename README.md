@@ -120,3 +120,23 @@ itself ("You got 5 of 7 main stars, but the loop also took in most of Taurus"). 
 
 No accounts, no analytics, no network calls after the page loads. "Use my location" asks the browser for your
 position once and stores only the latitude, longitude and time zone in your browser.
+
+## Assistant ("Ask Starhop")
+
+A chat panel (button at the bottom left of every app page) that acts on the app: "show me Orion", "turn off lines",
+"show the sky from Sydney tonight at 10", "is there a lesson on moon phases?". Corrections work as follow-ups
+("no, the star"), and every change has an Undo.
+
+- **How it works.** Every action is a tool defined once in `shared/ai-tools.json` and implemented in `src/ai/actions.ts`
+  using the same stores and sky controller as the buttons. Plain commands are matched in the browser
+  (`src/ai/local.ts`) and run instantly with no network call. Everything else goes to `POST /api/chat`
+  (`scripts/ai.mjs`), which calls the Anthropic Messages API with the tool list; the browser runs the returned tool
+  calls and reports the results until the model replies (`src/ai/chat.ts`).
+- **Setup.** Set `ANTHROPIC_API_KEY` on the server (Railway: service → Variables). Without it the panel still handles
+  plain commands and says the full assistant is unavailable. Optional: `STARHOP_AI_MODEL` (default
+  `claude-haiku-5-5`), `STARHOP_AI_DAILY_LIMIT` (default 3000 requests a day across all visitors).
+- **Guards.** The server owns the system prompt and tools, validates every message, limits each visitor to 20 requests
+  a minute and 300 a day, and caps replies at 700 tokens. Set a spend limit on the API key as well.
+- **Tests.** `tests/ai-local.test.ts` (matcher, schema, validation) and `node scripts/final/assistant-e2e.mjs`
+  (browser run against a scripted stand-in for the model). The static site alone (`vite preview`, any static host)
+  has no `/api`, so only plain commands work there.

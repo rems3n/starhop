@@ -7,6 +7,7 @@ import { asterismById } from '@/content';
 import { loadDeepDsos, useCatalog } from '@/data/catalog';
 import { formatTime } from '@/lib/time';
 import { SkyView, deepLimit, getSkyStats } from '@/sky';
+import { registerSky } from '@/ai/bridge';
 import { useSettings } from '@/store/settings';
 import { BORTLE, type Highlight, type ResolvedTarget, type SkyController, type SkyEngineOptions, type TargetRef } from '@/types';
 import { Button } from '@/ui';
@@ -157,7 +158,7 @@ export default function ExplorePage() {
     }, { replace: true });
   }, [setParams]);
 
-  const select = useCallback((ref: TargetRef | null, opts: { fly?: boolean } = {}) => {
+  const select = useCallback((ref: TargetRef | null, opts: { fly?: boolean; fov?: number } = {}) => {
     const c = ctlRef.current;
     if (!c || !catalog) return;
     if (!ref) {
@@ -186,7 +187,7 @@ export default function ExplorePage() {
     c.setSelection(t.ref);
     c.setHighlights(highlightsFor(t));
     writeParam(t.ref);
-    if (opts.fly) void c.flyTo(t.ref, { fov: flyFov(t, c.getView().fov) });
+    if (opts.fly) void c.flyTo(t.ref, { fov: opts.fov ?? flyFov(t, c.getView().fov) });
   }, [catalog, writeParam]);
 
   // Clicks in the sky
@@ -247,6 +248,15 @@ export default function ExplorePage() {
     if (centre) void c.flyTo(`radec:${centre.ra},${centre.dec}`, { fov, durationMs: 250 });
     else c.setView({ fov });
   };
+  const zoomRef = useRef(zoom);
+  zoomRef.current = zoom;
+  const selectedRef = useRef(selected);
+  selectedRef.current = selected;
+  // The assistant drives this page through the same functions as the buttons above.
+  useEffect(() => {
+    if (!ctl || !catalog) return;
+    return registerSky({ ctl, select, selected: () => selectedRef.current, resetView: () => resetRef.current(), zoom: (f) => zoomRef.current(f) });
+  }, [ctl, catalog, select]);
   const toggle = (p: Exclude<Popover, null>) => setPopover((cur) => (cur === p ? null : p));
 
   const b = BORTLE[bortle - 1];

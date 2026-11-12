@@ -1,0 +1,124 @@
+[
+  {
+    "name": "sky_find",
+    "description": "Search Starhop's catalogue for stars, constellations, planets, the Sun and Moon, deep-sky objects (Messier, Caldwell, NGC, IC) and named star patterns (asterisms). Use this whenever the learner's wording is ambiguous, misspelled, descriptive ('the seven sisters') or could match more than one thing, and before telling the learner that something does not exist. Returns up to 6 matches, each with a stable `ref` (for example con:Ori, star:27989, dso:M42, body:Mars, asterism:big-dipper) that the other tools accept, the kind of object, and whether it is above the horizon at the sky map's current time and place. It does not move the map.",
+    "input_schema": {
+      "type": "object",
+      "properties": { "query": { "type": "string", "description": "Name or designation to look for, e.g. 'Orion', 'Betelgeuse', 'M42', 'andromeda galaxy', 'alpha Centauri', 'NGC 7000'." } },
+      "required": ["query"]
+    }
+  },
+  {
+    "name": "sky_show",
+    "description": "Open the sky map, select an object and glide the view so it is centred and framed, with its information panel open. This is the tool for 'show me', 'go to', 'find', 'where is', 'point at' and 'take me to' requests. `target` may be a ref from sky_find or a plain name; a plain name is resolved to the best catalogue match and the result says which object was chosen so you can tell the learner. The result also reports whether the object is above the horizon at the map's current time and, if not, the best time to see it tonight. Set `at_best_time` to true to also move the map's clock to that best time so the object is actually in view. Pass target 'none' to clear the current selection.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "target": { "type": "string", "description": "A ref such as con:Ori, star:Vega, dso:M31, body:Jupiter, asterism:big-dipper, or a plain name such as 'Orion'. 'none' clears the selection." },
+        "at_best_time": { "type": "boolean", "description": "Also set the clock to the time tonight when the object is highest in a dark sky. Use when the learner wants to see it and it is below the horizon, or asks when or where to look." },
+        "field_of_view_deg": { "type": "number", "description": "Optional width of the view in degrees (1 to 150). Leave out to frame the object automatically." }
+      },
+      "required": ["target"]
+    }
+  },
+  {
+    "name": "sky_describe",
+    "description": "Get Starhop's own facts about one object so you can answer questions accurately instead of from memory: what kind of object it is, brightness, distance, constellation, whether and when it is visible tonight from the learner's location, the months it is best seen, how to find it, what you will see, and for constellations the titles of the myths in the library. Use it before answering 'what is', 'how far', 'how bright', 'when can I see' and 'tell me about' questions. It does not move the map; call sky_show as well if the learner should see the object.",
+    "input_schema": {
+      "type": "object",
+      "properties": { "target": { "type": "string", "description": "A ref from sky_find or a plain name. Use 'selected' for the object currently selected on the sky map." } },
+      "required": ["target"]
+    }
+  },
+  {
+    "name": "sky_set_layers",
+    "description": "Turn drawing layers of the sky map on or off. Only include the layers you want to change; everything else stays as it is. The change applies to the main sky map and is remembered. Use this for requests such as 'turn off lines', 'hide the labels', 'show the constellation pictures', 'show the grid', 'remove the ground' or 'just the stars' (turn everything except the horizon off).",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "constellation_lines": { "type": "boolean", "description": "Stick-figure lines joining the stars of each constellation." },
+        "constellation_names": { "type": "boolean", "description": "Constellation name labels." },
+        "constellation_boundaries": { "type": "boolean", "description": "Official IAU constellation borders." },
+        "constellation_figures": { "type": "boolean", "description": "Illustrated figures (the hunter, the bear) drawn behind the stars." },
+        "star_names": { "type": "boolean", "description": "Names of bright stars." },
+        "deep_sky_markers": { "type": "boolean", "description": "Symbols for galaxies, clusters and nebulae." },
+        "deep_zoom": { "type": "boolean", "description": "Load fainter stars and the full NGC/IC catalogue when zoomed in, like a telescope." },
+        "planets": { "type": "boolean", "description": "Sun, Moon and planets." },
+        "ecliptic": { "type": "boolean", "description": "The ecliptic, the Sun's yearly path." },
+        "equatorial_grid": { "type": "boolean", "description": "Right ascension and declination grid." },
+        "altaz_grid": { "type": "boolean", "description": "Altitude and azimuth grid." },
+        "horizon": { "type": "boolean", "description": "Horizon line and compass letters." },
+        "ground": { "type": "boolean", "description": "Opaque ground below the horizon. Off lets the learner see the sky under their feet." },
+        "atmosphere": { "type": "boolean", "description": "Daylight and twilight glow. Off shows the stars even in daytime." },
+        "milky_way": { "type": "boolean", "description": "The band of the Milky Way." }
+      }
+    }
+  },
+  {
+    "name": "sky_set_view",
+    "description": "Move or zoom the sky map without selecting an object. Use `face` to look toward a compass direction or straight up, `zoom` to step in or out, `field_of_view_deg` for an exact width, and `reset` to return to the default view facing north. For looking at a named object use sky_show instead.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "face": { "type": "string", "enum": ["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest", "zenith"], "description": "Direction to look. 'zenith' is straight up." },
+        "zoom": { "type": "string", "enum": ["in", "out", "far_in", "far_out"], "description": "Zoom one step, or several steps for far_in / far_out." },
+        "field_of_view_deg": { "type": "number", "description": "Exact width of the view in degrees, 1 (telescope) to 150 (whole sky)." },
+        "reset": { "type": "boolean", "description": "Return to the home view: facing north, wide field." }
+      }
+    }
+  },
+  {
+    "name": "sky_set_time",
+    "description": "Change the sky map's clock. Use `time` to jump to a moment, `shift_hours` or `shift_days` to move relative to the map's current time, and `speed` to pause or run the clock. Local times are in the learner's observing time zone, which is given in the context. Examples: 'tonight at 10' gives time '2026-11-11T22:00'; 'go back to now' gives time 'now'; 'six months from now' gives shift_days 182; 'speed up time' gives speed 'fast'. Jumping to a time pauses the clock unless you also set a speed.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "time": { "type": "string", "description": "'now', or a local date and time as YYYY-MM-DDTHH:MM in the learner's time zone." },
+        "shift_hours": { "type": "number", "description": "Hours to move forward (positive) or back (negative) from the map's current time." },
+        "shift_days": { "type": "number", "description": "Days to move forward or back from the map's current time." },
+        "speed": { "type": "string", "enum": ["paused", "real_time", "fast", "faster", "day_per_second", "rewind"], "description": "paused = frozen; real_time = 1 second per second; fast = 1 minute per second; faster = 1 hour per second; day_per_second shows the seasons; rewind = 1 hour per second backwards." }
+      }
+    }
+  },
+  {
+    "name": "sky_set_location",
+    "description": "Change where on Earth the learner is observing from. This changes which stars are visible, and it also changes Tonight and the course, so only use it when the learner asks to change or try a location ('show me the sky from Sydney', 'I am in Denver'). Give `city` to pick from Starhop's built-in list of about 90 cities, or give latitude, longitude and an IANA time zone for anywhere else. If the city is not in the list the result says so and suggests near matches.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "city": { "type": "string", "description": "City name, e.g. 'Sydney', 'Reykjavik', 'Cape Town'." },
+        "latitude": { "type": "number", "description": "Degrees, north positive." },
+        "longitude": { "type": "number", "description": "Degrees, east positive." },
+        "time_zone": { "type": "string", "description": "IANA time zone, e.g. 'America/Denver'. Required with latitude and longitude." },
+        "name": { "type": "string", "description": "Label for a custom place, e.g. 'Denver, CO'." }
+      }
+    }
+  },
+  {
+    "name": "sky_set_darkness",
+    "description": "Set how dark the simulated sky is using the Bortle scale, which controls how many faint stars are drawn. 1 is a pristine dark site, 4 is rural, 6 is bright suburban, 8 to 9 is a city centre. Use for 'show me a dark sky', 'what would I see from the city' or 'show fewer stars'.",
+    "input_schema": {
+      "type": "object",
+      "properties": { "bortle": { "type": "integer", "minimum": 1, "maximum": 9, "description": "Bortle class, 1 (darkest) to 9 (brightest)." } },
+      "required": ["bortle"]
+    }
+  },
+  {
+    "name": "app_search",
+    "description": "Search Starhop's learning content: course modules and lessons, star-hops (step-by-step routes between stars), asterisms, constellation pages and myths. Returns titles with a `path` you can pass to app_open. Use it for 'teach me about', 'is there a lesson on', 'how do I star-hop to' and 'what is the myth of' requests.",
+    "input_schema": {
+      "type": "object",
+      "properties": { "query": { "type": "string", "description": "Topic or name, e.g. 'moon phases', 'Andromeda myth', 'Polaris', 'light pollution'." } },
+      "required": ["query"]
+    }
+  },
+  {
+    "name": "app_open",
+    "description": "Go to a page of the app. Use a `path` returned by app_search, or one of the section names: sky (the map), tonight (what is up tonight), month (this month's guide), calendar (visibility calendar), events (eclipses, meteor showers), learn (the course), library, constellations, myths, starhops, asterisms, stars, objects (deep-sky list), planets, practice (quizzes), review (items due), progress.",
+    "input_schema": {
+      "type": "object",
+      "properties": { "path": { "type": "string", "description": "A section name from the list, or a path from app_search such as /learn/lesson/moon-phases." } },
+      "required": ["path"]
+    }
+  }
+]

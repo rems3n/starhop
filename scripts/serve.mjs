@@ -1,9 +1,11 @@
 // Minimal zero-dependency static server for the built site (used by `npm start`, e.g. on Railway).
 // Serves ./dist, gzips text responses, caches hashed assets for a year, falls back to index.html.
+// /api/* is the assistant endpoint (scripts/ai.mjs).
 import { createServer } from 'node:http';
 import { readFile, stat } from 'node:fs/promises';
 import { extname, join, normalize, resolve } from 'node:path';
 import { gzipSync } from 'node:zlib';
+import { handleApi } from './ai.mjs';
 
 const root = resolve(process.argv[2] ?? 'dist');
 const port = Number(process.env.PORT) || 4173;
@@ -29,6 +31,7 @@ async function fileFor(urlPath) {
 
 createServer(async (req, res) => {
   try {
+    if (await handleApi(req, res)) return;
     let p = await fileFor(req.url ?? '/');
     if (!p) p = join(root, 'index.html');
     const ext = extname(p).toLowerCase();

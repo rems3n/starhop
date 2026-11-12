@@ -6,6 +6,7 @@ import { routes } from '@/lib/routes';
 import { Loading } from '@/ui';
 import { SettingsMenu } from '@/components/settings/SettingsMenu';
 import { FirstRunLocation } from '@/components/settings/FirstRunLocation';
+import { ChatLauncher } from '@/components/chat/ChatLauncher';
 
 const HomePage = lazy(() => import('@/modes/home/HomePage'));
 const ExplorePage = lazy(() => import('@/modes/explore/ExplorePage'));
@@ -85,6 +86,7 @@ export default function App() {
           </Routes>
         </Suspense>
       </main>
+      <ChatLauncher sky={fullBleed} />
       {needsLocation && <FirstRunLocation />}
     </div>
   );
