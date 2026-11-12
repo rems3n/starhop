@@ -5,6 +5,9 @@
 import { LAYER_PARAMS, SECTIONS, type ToolInput } from './actions';
 
 export interface LocalCall { name: string; input: ToolInput }
+/** What kind of sentence to build from the results when a question was answered without the model */
+export type AnswerKind = 'about' | 'when' | 'distance' | 'brightness' | 'find' | 'photo' | 'content' | 'tonight';
+export interface LocalPlan { calls: LocalCall[]; answer?: AnswerKind }
 
 /** Words people use for each layer (matched against the whole remaining phrase). */
 const LAYER_WORDS: Record<string, string[]> = {
@@ -37,7 +40,6 @@ for (const [w, params] of Object.entries(LAYER_GROUPS)) LAYER_LOOKUP.set(w, para
 const ON = /^(?:turn on|switch on|enable|show me|show|display|add|draw)$/;
 const OFF = /^(?:turn off|switch off|disable|hide|remove|no|kill|lose|get rid of)$/;
 const DIRECTIONS = ['north', 'northeast', 'east', 'southeast', 'south', 'southwest', 'west', 'northwest'];
-const SHOW = /^(?:show me|show|go to|goto|find|where is|where's|wheres|take me to|point at|point to|look at|center on|centre on|center|centre|fly to|jump to|locate)\s+(.+)$/;
 
 const clean = (s: string) => s.toLowerCase().replace(/[.!?]+$/g, '').replace(/\bplease\b/g, '').replace(/^(?:can|could|would) you\s+/, '').replace(/\s+/g, ' ').trim();
 const noThe = (s: string) => s.replace(/^the\s+/, '');
@@ -50,12 +52,8 @@ function layerCall(params: string[], on: boolean): LocalCall {
   return { name: 'sky_set_layers', input: Object.fromEntries(params.map((p) => [p, on])) };
 }
 
-/**
- * @param isObject  true when the phrase is exactly the name or designation of something in the catalogue
- */
-export function matchLocal(raw: string, isObject: (phrase: string) => boolean): LocalCall[] | null {
-  const t = clean(raw);
-  if (!t || t.length > 60) return null;
+function matchCommands(t: string, lookup: Lookup): LocalCall[] | null {
+  const isObject = (p: string) => lookup(p) !== null;
 
   // layers: "<verb> <layer>", "<layer> on|off", "turn <layer> on|off", "turn the lines back on"
   let m = /^(turn on|turn off|switch on|switch off|enable|disable|show me|show|hide|display|remove|add|draw|no|kill|lose|get rid of)\s+(.+)$/.exec(t);
@@ -99,9 +97,56 @@ export function matchLocal(raw: string, isObject: (phrase: string) => boolean): 
     if (key in SECTIONS && (!isObject(key) || /^open\b/.test(t)) && !(LAYER_LOOKUP.has(key) && !/^(?:open|go to|goto|take me to)\b/.test(t))) return [{ name: 'app_open', input: { path: key } }];
   }
 
-  // objects: only when the phrase is exactly something in the catalogue; descriptions go to the model
-  m = SHOW.exec(t);
-  const phrase = noThe(m ? m[1] : t);
-  if (isObject(phrase)) return [{ name: 'sky_show', input: { target: phrase } }];
+  return null;
+}
+
+const OBJ = '(.+?)';
+const end = '(?: (?:tonight|right now|now|from here|today|this evening))?$';
+/** Question shapes that Starhop's own data can answer: [pattern, kind]. The object phrase is capture group 1. */
+const QUESTIONS: [RegExp, AnswerKind][] = [
+  [new RegExp(`^(?:show me|show|open|get me|give me|display|see|let me see|i want to see|can i see)? ?(?:a |an |the |some )?(?:photos?|pictures?|pics?|images?|photographs?) of ${OBJ}$`), 'photo'],
+  [new RegExp(`^(?:what does|how does) ${OBJ} look like$`), 'photo'],
+  [new RegExp(`^(?:when can i see|when is the best time to see|when is|when does|whens|when will i see|what time (?:can i see|is|does)) ${OBJ}(?: visible| up| rise| rising| out| best| best seen)?${end}`), 'when'],
+  [new RegExp(`^(?:can i see|is) ${OBJ}(?: visible| up| out)?${end}`), 'when'],
+  [new RegExp(`^how (?:far|far away|distant) is ${OBJ}(?: from (?:earth|us|here))?$`), 'distance'],
+  [new RegExp(`^(?:how bright is|what magnitude is|what is the magnitude of|whats the magnitude of) ${OBJ}$`), 'brightness'],
+  [new RegExp(`^(?:how do i find|how can i find|how to find|how do i spot|how do i locate|how do you find) ${OBJ}$`), 'find'],
+  [new RegExp(`^(?:what is|whats|what are|who is|tell me about|tell me more about|describe|explain|info on|information on|information about|about|facts about|more about) ${OBJ}$`), 'about'],
+];
+const SHOW_RE = /^(?:show me|show|go to|goto|find|where is|wheres|where are|take me to|point at|point to|look at|center on|centre on|center|centre|fly to|jump to|locate|i want to see|let me see|see|search for|search|select)\s+(.+)$/;
+
+export type Lookup = (phrase: string) => string | null;
+
+/**
+ * @param lookup  the catalogue ref for a phrase that names an object (forgiving of spelling), or null
+ */
+export function matchLocal(raw: string, lookup: Lookup): LocalPlan | null {
+  const t = clean(raw).replace(/['’`]/g, '');
+  if (!t || t.length > 90) return null;
+  const cmd = matchCommands(t, lookup);
+  if (cmd) return { calls: cmd };
+
+  if (/^(?:whats up(?: tonight)?|what is up(?: tonight)?|what can i see(?: tonight| now| right now)?|whats visible(?: tonight)?|what is visible(?: tonight)?|whats in the sky(?: tonight)?|what should i look (?:at|for)(?: tonight)?)$/.test(t)) return { calls: [{ name: 'app_open', input: { path: 'tonight' } }], answer: 'tonight' };
+
+  for (const [re, kind] of QUESTIONS) {
+    const m = re.exec(t);
+    const ref = m && lookup(m[1]);
+    if (!ref) continue;
+    if (kind === 'photo') return { calls: [{ name: 'sky_show', input: { target: ref, open_photo: true } }], answer: 'photo' };
+    return { calls: [{ name: 'sky_describe', input: { target: ref } }], answer: kind };
+  }
+
+  // lessons, star-hops and myths
+  let m = /^(?:is there |are there |do you have |find |show me |open |any )?(?:a |an |the |any )?(?:lessons?|course|class|tutorial|guide) (?:on|about|for|covering) (.+)$/.exec(t) ?? /^(?:teach me|teach me about|i want to learn|i want to learn about|learn about|help me learn) (?:about )?(.+)$/.exec(t);
+  if (m) return { calls: [{ name: 'app_search', input: { query: m[1], prefer: 'lesson', open: true } }], answer: 'content' };
+  m = /^(?:what is |whats |tell me |show me |open |read me )?(?:the )?(?:myths?|story|stories|legend|mythology) (?:of|about|behind|for) (.+)$/.exec(t);
+  if (m) return { calls: [{ name: 'app_search', input: { query: m[1], prefer: 'myth', open: true } }], answer: 'content' };
+  m = /^(?:how do i |how to |show me how to )?(?:star ?hop|hop) to (.+)$/.exec(t);
+  if (m) return { calls: [{ name: 'app_search', input: { query: m[1], prefer: 'star-hop', open: true } }], answer: 'content' };
+
+  // objects: "show me X", or just "X"
+  const s = SHOW_RE.exec(t);
+  const ref = lookup(s ? s[1] : t);
+  if (ref) return { calls: [{ name: 'sky_show', input: { target: ref } }] };
   return null;
 }

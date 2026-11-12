@@ -157,6 +157,11 @@ async function skyShow(input: ToolInput, env: ActionEnv): Promise<ToolResult> {
   const fov = num(input.field_of_view_deg);
   const how = sky.present(t.ref, { fov: fov === undefined ? undefined : clamp(fov, 1, 150) });
   out.presented = how.mode;
+  out.photos = catalog.imagesFor(t.ref).length;
+  if (input.open_photo === true && (out.photos as number) > 0) {
+    sky.openPhoto();
+    out.photo_opened = true;
+  }
   const date = how.time ?? sky.ctl.getTime();
   if (how.mode === 'time' && how.time) out.clock_set_to = formatDateTime(how.time, observer.tz);
   if (how.mode === 'atlas') {
@@ -364,8 +369,9 @@ function buildContentIndex(): Promise<(ContentHit & { hay: string })[]> {
 
 const STOP = new Set(['the', 'a', 'an', 'of', 'and', 'to', 'for', 'about', 'on', 'in', 'is', 'how', 'do', 'i', 'me', 'what', 'lesson', 'lessons']);
 
-async function appSearch(input: ToolInput): Promise<ToolResult> {
+async function appSearch(input: ToolInput, env: ActionEnv): Promise<ToolResult> {
   const q = text(input.query).toLowerCase();
+  const prefer = text(input.prefer);
   const words = q.split(/[^a-z0-9']+/).filter((w) => w.length > 1 && !STOP.has(w));
   if (!words.length) return { ok: false, error: 'Empty query.' };
   const index = await buildContentIndex();
@@ -378,9 +384,14 @@ async function appSearch(input: ToolInput): Promise<ToolResult> {
       return { h, score };
     })
     .filter((x) => x.score > 0)
+    .map((x) => (prefer && x.h.type === prefer ? { ...x, score: x.score + 2 } : x))
     .sort((a, b) => b.score - a.score)
     .slice(0, 8);
   if (!scored.length) return { ok: false, error: `No lesson, star-hop, myth or page matches "${q}".` };
+  if (input.open === true) {
+    env.navigate(scored[0].h.path);
+    return { ok: true, opened: `${scored[0].h.type}: ${scored[0].h.title}`, results: scored.map(({ h }) => ({ type: h.type, title: h.title, path: h.path })) };
+  }
   return { ok: true, results: scored.map(({ h }) => ({ type: h.type, title: h.title, path: h.path, ...(h.detail ? { detail: h.detail } : {}) })) };
 }
 
@@ -405,7 +416,7 @@ export async function runTool(name: string, input: ToolInput, env: ActionEnv): P
       case 'sky_set_time': return await skySetTime(input, env);
       case 'sky_set_location': return skySetLocation(input);
       case 'sky_set_darkness': return skySetDarkness(input);
-      case 'app_search': return await appSearch(input);
+      case 'app_search': return await appSearch(input, env);
       case 'app_open': return await appOpen(input, env);
       default: return { ok: false, error: `Unknown tool ${name}.` };
     }
@@ -419,7 +430,7 @@ export const CHANGES_STATE = new Set(['sky_show', 'sky_set_layers', 'sky_set_vie
 
 /** One short line for the "what I did" list under a reply, or null for look-ups and failures. */
 export function actionLabel(name: string, result: ToolResult): string | null {
-  if (!result.ok || !CHANGES_STATE.has(name)) return null;
+  if (!result.ok || !(CHANGES_STATE.has(name) || (name === 'app_search' && result.opened))) return null;
   switch (name) {
     case 'sky_show': return result.cleared ? 'Cleared the selection' : `Showing ${String(result.shown)}${result.clock_set_to ? ` at ${String(result.clock_set_to)}` : result.presented === 'atlas' ? ' on the atlas' : ''}`;
     case 'sky_set_layers': return (result.changed as string[]).join(', ') || null;
@@ -428,12 +439,46 @@ export function actionLabel(name: string, result: ToolResult): string | null {
     case 'sky_set_location': return `Observing from ${String(result.observing_from)}`;
     case 'sky_set_darkness': return `Bortle ${String(result.bortle)} · ${String(result.sky)}`;
     case 'app_open': return `Opened ${String(result.opened)}`;
+    case 'app_search': return result.opened ? `Opened ${String(result.opened)}` : null;
     default: return null;
   }
 }
 
 /** A plain sentence for a result, used when a command was handled without the model. */
 export function resultSentence(name: string, result: ToolResult): string {
+  const base = baseSentence(name, result);
+  if (name !== 'sky_show' || !result.ok || result.cleared) return base;
+  if (result.photo_opened) return `${base} I opened its photo; there ${result.photos === 1 ? 'is 1 photo' : `are ${String(result.photos)} photos`} in the panel.`;
+  return base;
+}
+
+/** Content text uses [[ref]] and [[ref|label]] links: keep the words, drop the markup. */
+const plain = (s: string) => s.replace(/\[\[([^\]|]+)(?:\|([^\]]*))?\]\]/g, (_m, ref: string, label?: string) => label ?? ref.replace(/^[a-z]+:/, '').replace(/-/g, ' '));
+
+/** Answer a question from a sky_describe result, using only Starhop's own data. */
+export function describeSentence(kind: 'about' | 'when' | 'distance' | 'brightness' | 'find', r: ToolResult): string {
+  if (!r.ok) return String(r.error ?? 'I could not find that.');
+  const name = String(r.name);
+  const tonight = () => {
+    const t = String(r.tonight ?? '').replace(/\.$/, '');
+    const best = r.best_time_tonight ? `, best around ${String(r.best_time_tonight)}` : '';
+    const months = r.best_evening_months ? ` Best evening months from ${String(r.observing_from)}: ${String(r.best_evening_months)}.` : '';
+    return `${name} tonight from ${String(r.observing_from)}: ${t.charAt(0).toLowerCase()}${t.slice(1)}${best}.${months}`;
+  };
+  switch (kind) {
+    case 'when': return tonight();
+    case 'distance': return r.distance ? `${name} is ${String(r.distance)} away.` : `Starhop does not have a distance for ${name}.`;
+    case 'brightness': return r.magnitude ? `${name} is magnitude ${String(r.magnitude)}${r.equipment_needed ? ` (${String(r.equipment_needed).replace(/-/g, ' ')})` : ''}. Lower numbers are brighter.` : `Starhop does not have a brightness for ${name}.`;
+    case 'find': return r.how_to_find ? plain(String(r.how_to_find)) : `Starhop has no directions for ${name} yet. ${tonight()}`;
+    default: {
+      const about = plain(String(r.about ?? r.overview ?? ''));
+      const facts = [r.magnitude ? `magnitude ${String(r.magnitude)}` : '', r.distance ? `${String(r.distance)} away` : ''].filter(Boolean).join(', ');
+      return `${name}: ${String(r.kind)}${facts ? `, ${facts}` : ''}. ${about ? `${about} ` : ''}${tonight()}`.trim();
+    }
+  }
+}
+
+function baseSentence(name: string, result: ToolResult): string {
   if (!result.ok) return String(result.error ?? 'That did not work.');
   if (name === 'sky_show') {
     if (result.cleared) return 'Cleared the selection.';
@@ -442,6 +487,7 @@ export function resultSentence(name: string, result: ToolResult): string {
     if (result.presented === 'atlas') return `${what} is not visible from here tonight${!result.best_evening_months ? '' : String(result.best_evening_months).startsWith('never') ? ' (it never rises high enough from here)' : ` (best in the evening: ${String(result.best_evening_months)})`}, so I am showing it on the atlas, which has no horizon.`;
     return `Here is ${what}, ${String(result.where)}.`;
   }
+  if (name === 'app_search' && result.opened) return `I opened the ${String(result.opened)}.`;
   if (name === 'sky_set_layers') return (result.changed as string[]).length ? `${(result.changed as string[]).join(', ')}.` : 'Those were already set that way.';
   return `${actionLabel(name, result) ?? 'Done'}.`;
 }

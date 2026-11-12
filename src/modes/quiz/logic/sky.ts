@@ -78,6 +78,14 @@ export function constellationUpAt(c: Constellation, starById: Map<number, Star>,
   return n > 0 && up / n >= 0.6;
 }
 
+/** "Near the target" start: view = fit × this (clamped), so there is sky around the target to search */
+export const NEAR_WIDEN = 1.9;
+export const NEAR_MIN_FOV = 70;
+export const NEAR_MAX_FOV = 120;
+/** Fraction of the free space the target's centre may use, and the least offset (as a fraction) from the middle */
+export const NEAR_FILL = 0.8;
+export const NEAR_MIN_OFFSET = 0.4;
+
 export interface SceneArgs {
   target: { ra: number; dec: number; fov: number };
   diff: Pick<QuizDifficulty, 'randomRotation' | 'startNearTarget'>;
@@ -92,21 +100,42 @@ export interface SceneArgs {
 
 /**
  * Starting camera.
- * Star-chart mode (equatorial mount): centred within 15° of the target at a field that fits it — or, for
- * "anywhere", a random direction at least 50° away with a wide 100° view. Roll is random when the
- * difficulty asks for a rotated sky. Real-sky mode (alt-az): upright, centred near the target's place in
- * the sky, or looking south at a wide view for "anywhere".
+ * Star-chart mode (equatorial mount): for "near the target" the view is wide enough to hold the target with room
+ * to spare and the target sits anywhere in the frame except the middle, so its position gives nothing away. For
+ * "anywhere" it is a random direction at least 50° away with a wide 100° view. `centred` (name-it, ringed objects)
+ * puts the target in the middle at a field that fits it. Roll is random when the difficulty asks for a rotated
+ * sky. Real-sky mode (alt-az): upright, same placement rule, or looking south at a wide view for "anywhere".
  */
 export function startView(a: SceneArgs): ViewState {
   const fit = fitFov(a.target.fov, a.aspect);
   const near = a.centred || a.diff.startNearTarget;
-  const off = a.centred ? 0 : Math.min(15, fit * 0.18) * Math.sqrt(a.rng());
-  const bearing = a.rng() * 360;
+  let fov = fit;
+  let off = 0;
+  let bearing = 0;
+  if (near && !a.centred) {
+    fov = Math.min(NEAR_MAX_FOV, Math.max(NEAR_MIN_FOV, fit * NEAR_WIDEN));
+    // how far the target's centre can sit from the middle and still be wholly in frame (with a margin for the
+    // prompt at the top and the answer bar at the bottom)
+    const maxY = Math.max(0, (fov - a.target.fov) / 2) * NEAR_FILL;
+    const maxX = Math.max(0, (fov * Math.min(a.aspect, 1.8) - a.target.fov) / 2) * NEAR_FILL;
+    let u = 0, v = 0;
+    for (let i = 0; i < 8; i++) {
+      u = a.rng() * 2 - 1;
+      v = a.rng() * 2 - 1;
+      if (Math.max(Math.abs(u), Math.abs(v)) >= NEAR_MIN_OFFSET) break;
+    }
+    // the camera moves opposite to where the target should appear; either sign is equally random
+    off = Math.hypot(u * maxX, v * maxY);
+    bearing = (Math.atan2(u * maxX, v * maxY) * 180) / Math.PI;
+  } else {
+    a.rng();
+    a.rng();
+  }
   if (a.real) {
     if (!near) return { mount: 'altaz', lon: 180, lat: 40, roll: 0, fov: 110 };
     const p = offsetDirection(a.target.ra, a.target.dec, off, bearing);
     const h = altAzOf(p.ra, p.dec, a.real.date, a.real.observer);
-    return { mount: 'altaz', lon: h.az, lat: Math.max(8, Math.min(85, h.alt)), roll: 0, fov: fit };
+    return { mount: 'altaz', lon: h.az, lat: Math.max(8, Math.min(85, h.alt)), roll: 0, fov };
   }
   const roll = a.diff.randomRotation ? Math.floor(a.rng() * 360) : 0;
   if (!near) {
@@ -114,5 +143,5 @@ export function startView(a: SceneArgs): ViewState {
     return { mount: 'equatorial', lon: p.ra, lat: p.dec, roll, fov: 100 };
   }
   const p = offsetDirection(a.target.ra, a.target.dec, off, bearing);
-  return { mount: 'equatorial', lon: p.ra, lat: p.dec, roll, fov: fit };
+  return { mount: 'equatorial', lon: p.ra, lat: p.dec, roll, fov };
 }

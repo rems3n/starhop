@@ -4,9 +4,10 @@
  * calls that are executed here in the browser and reported back until the model has a final reply.
  */
 import { create } from 'zustand';
-import { loadCatalog } from '@/data/catalog';
-import { actionLabel, CHANGES_STATE, describeState, restoreSnapshot, resultSentence, runTool, takeSnapshot, type ActionEnv, type Snapshot, type ToolInput, type ToolResult } from './actions';
-import { matchLocal, type LocalCall } from './local';
+import { loadCatalog, loadDeepDsos } from '@/data/catalog';
+import { actionLabel, CHANGES_STATE, describeSentence, describeState, restoreSnapshot, resultSentence, runTool, takeSnapshot, type ActionEnv, type Snapshot, type ToolInput, type ToolResult } from './actions';
+import { matchLocal, type LocalCall, type LocalPlan } from './local';
+import { buildNameIndex, type NameIndex } from './names';
 
 export interface ChatItem {
   id: number;
@@ -40,7 +41,7 @@ interface ChatState {
 
 const MAX_STEPS = 6;
 const MAX_HISTORY = 24;
-const OFFLINE = 'I can only follow simple commands right now: show an object by name, turn layers on or off, zoom, face a direction, change the time, or open a section. The full assistant is not available on this server.';
+const OFFLINE = 'I did not catch an object or command in that. Without the full assistant (not set up on this server) I can show any object by name, show its photo, answer what, when, how far and how to find it, switch layers, change the view or time, and open lessons, myths and star-hops.';
 
 let nextId = 1;
 let history: ApiMessage[] = [];
@@ -54,18 +55,13 @@ export function trimHistory(messages: ApiMessage[], max = MAX_HISTORY): ApiMessa
   return messages.slice(start);
 }
 
-const norm = (s: string) => s.toLowerCase().replace(/\s+/g, ' ').trim();
-
-async function objectTest(): Promise<(phrase: string) => boolean> {
+let nameIndex: { index: NameIndex; deep: number } | null = null;
+/** Name lookup over the catalogue; rebuilt when the full NGC/IC list arrives (fetched in the background). */
+async function names(): Promise<NameIndex> {
   const catalog = await loadCatalog();
-  return (phrase) => {
-    const q = norm(phrase);
-    if (q.length < 2) return false;
-    return catalog.search(q, 4).some((t) => {
-      const names = [t.name, t.constellation?.english, t.constellation?.id, t.dso?.id, t.dso?.messier ? `m${t.dso.messier}` : '', t.dso?.messier ? `messier ${t.dso.messier}` : '', t.star?.desig, ...(t.dso?.aka ?? [])];
-      return names.some((n) => n && (norm(n) === q || norm(n).replace(/^the /, '') === q || norm(n).replace(/\s/g, '') === q.replace(/\s/g, '')));
-    });
-  };
+  if (!catalog.deepDsos.length) void loadDeepDsos().catch(() => undefined);
+  if (!nameIndex || nameIndex.deep !== catalog.deepDsos.length) nameIndex = { index: buildNameIndex(catalog), deep: catalog.deepDsos.length };
+  return nameIndex.index;
 }
 
 async function callModel(messages: ApiMessage[], context: unknown): Promise<{ content: Block[]; stop_reason?: string } | { unavailable: true } | { error: string }> {
@@ -126,22 +122,34 @@ export const useChat = create<ChatState>()((set, get) => {
       };
       try {
         // 1. instant path
-        const local = preset ?? matchLocal(text, await objectTest());
-        if (local) {
+        const index = await names();
+        const runLocal = async (plan: LocalPlan, note = '') => {
           const sentences: string[] = [];
           const blocks: Block[] = [];
           const results: Block[] = [];
-          for (const call of local) {
+          for (const call of plan.calls) {
             const result = await run(call.name, call.input);
-            sentences.push(resultSentence(call.name, result));
+            const kind = plan.answer;
+            sentences.push(
+              call.name === 'sky_describe' && kind && kind !== 'photo' && kind !== 'content' && kind !== 'tonight' ? describeSentence(kind, result)
+              : kind === 'photo' && result.ok && !result.photo_opened ? `${resultSentence(call.name, result)} Starhop has no photo of it yet.`
+              : kind === 'tonight' && result.ok ? 'I opened Tonight: what is up this evening from your location, in the order it is best seen.'
+              : kind === 'content' && !result.ok ? `${String(result.error)} Try the Library or the course list.`
+              : resultSentence(call.name, result),
+            );
             const id = `local_${++localSeq}`;
             blocks.push({ type: 'tool_use', id, name: call.name, input: call.input });
-            results.push({ type: 'tool_result', tool_use_id: id, content: JSON.stringify(result) });
+            results.push({ type: 'tool_result', tool_use_id: id, content: JSON.stringify(result).slice(0, 5000) });
           }
-          const reply = sentences.join(' ');
+          const reply = note + sentences.join(' ');
           // recorded in the same shape as a model turn, so a later correction ("no, the star") has the context
           history.push({ role: 'user', content: [{ type: 'text', text }] }, { role: 'assistant', content: blocks }, { role: 'user', content: results }, { role: 'assistant', content: [{ type: 'text', text: reply }] });
           finish(reply);
+        };
+        // 1. instant path
+        const local: LocalPlan | null = preset ? { calls: preset } : matchLocal(text, index.lookup);
+        if (local) {
+          await runLocal(local);
           return;
         }
         // 2. the model
@@ -154,7 +162,16 @@ export const useChat = create<ChatState>()((set, get) => {
             // drop the unanswered turn so the next request starts from a consistent conversation
             const at = history.indexOf(userMsg);
             if (at >= 0) history.length = at;
-            if ('unavailable' in res) set({ aiEnabled: false });
+            if ('unavailable' in res) {
+              set({ aiEnabled: false });
+              // no model: if the request names an object anywhere, showing it is the most useful reading
+              const ref = step === 0 ? index.scan(text) : null;
+              if (ref) {
+                const photo = /\b(?:photos?|pictures?|pics?|images?|look like)\b/i.test(text);
+                await runLocal({ calls: [{ name: 'sky_show', input: { target: ref, ...(photo ? { open_photo: true } : {}) } }], answer: photo ? 'photo' : undefined }, 'I took that as a request to show it. ');
+                return;
+              }
+            }
             finish('unavailable' in res ? OFFLINE : res.error, true);
             return;
           }

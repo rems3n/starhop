@@ -333,7 +333,8 @@ export default function ExplorePage() {
   // The assistant drives this page through the same functions as the buttons above.
   useEffect(() => {
     if (!ctl || !catalog) return;
-    return registerSky({ ctl, select, present, selected: () => selectedRef.current, resetView: () => resetRef.current(), zoom: (f) => zoomRef.current(f), mode: () => modeRef.current, setMode });
+    const openPhoto = () => { window.setTimeout(() => document.querySelector<HTMLElement>('.ex-info .obj-thumb-btn')?.click(), 700); };
+    return registerSky({ ctl, select, present, openPhoto, selected: () => selectedRef.current, resetView: () => resetRef.current(), zoom: (f) => zoomRef.current(f), mode: () => modeRef.current, setMode });
   }, [ctl, catalog, select, present, setMode]);
   const toggle = (p: Exclude<Popover, null>) => setPopover((cur) => (cur === p ? null : p));
 

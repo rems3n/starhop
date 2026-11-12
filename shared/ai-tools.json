@@ -17,7 +17,7 @@
   },
   {
     "name": "sky_show",
-    "description": "Open the sky map, select an object and glide the view so it is centred and framed, with its information panel open. This is the tool for 'show me', 'go to', 'find', 'where is', 'point at' and 'take me to' requests. `target` may be a ref from sky_find or a plain name; a plain name is resolved to the best catalogue match and the result says which object was chosen so you can tell the learner. The map makes sure the object is actually in view and the result's `presented` field says how: 'live' means it is up in the dark sky at the map's current time; 'time' means it was below the horizon or in daylight, so the map's clock was moved to its best time tonight (given in `clock_set_to`); 'atlas' means it is not visible tonight from the learner's location, so the map switched to the atlas, a chart of the whole sky with no horizon or time of day. Tell the learner in a few words when the clock moved or the atlas was used. Pass target 'none' to clear the current selection.",
+    "description": "Open the sky map, select an object and glide the view so it is centred and framed, with its information panel open. This is the tool for 'show me', 'go to', 'find', 'where is', 'point at' and 'take me to' requests. `target` may be a ref from sky_find or a plain name; a plain name is resolved to the best catalogue match and the result says which object was chosen so you can tell the learner. The map makes sure the object is actually in view and the result's `presented` field says how: 'live' means it is up in the dark sky at the map's current time; 'time' means it was below the horizon or in daylight, so the map's clock was moved to its best time tonight (given in `clock_set_to`); 'atlas' means it is not visible tonight from the learner's location, so the map switched to the atlas, a chart of the whole sky with no horizon or time of day. Tell the learner in a few words when the clock moved or the atlas was used. The result's `photos` field is the number of photographs Starhop has of the object; set `open_photo` to true to open the first one full-size when the learner asks for a photo, picture or image, or what something looks like. If `photos` is 0, say Starhop has no photo of it. Pass target 'none' to clear the current selection.",
     "input_schema": {
       "type": "object",
       "properties": {
@@ -28,6 +28,10 @@
         "field_of_view_deg": {
           "type": "number",
           "description": "Optional width of the view in degrees (1 to 150). Leave out to frame the object automatically."
+        },
+        "open_photo": {
+          "type": "boolean",
+          "description": "Also open the object's first photograph full-size. Use for 'show me a photo of' requests."
         }
       },
       "required": [

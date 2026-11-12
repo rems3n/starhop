@@ -13,6 +13,8 @@ export interface SkyBridge {
    * best time tonight, otherwise the map switches to the atlas. Same as picking it in the search box.
    */
   present(ref: TargetRef, opts?: { fov?: number }): { mode: 'live' | 'time' | 'atlas'; time?: Date };
+  /** Open the selected object's first photograph full-size (once its panel has rendered) */
+  openPhoto(): void;
   selected(): TargetRef | null;
   mode(): 'live' | 'atlas';
   setMode(mode: 'live' | 'atlas', opts?: { keepView?: boolean }): void;
