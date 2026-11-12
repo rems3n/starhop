@@ -11,6 +11,7 @@
 .app-main--sky { overflow: hidden; }
 .app-tab-icon { display: none; flex: none; }
 .app-settings { margin-left: auto; }
+.app-toast { position: fixed; left: 50%; top: calc(var(--nav-h) + 12px); translate: -50% 0; z-index: 80; display: flex; align-items: center; gap: var(--sp-3); padding: var(--sp-2) var(--sp-2) var(--sp-2) var(--sp-4); background: var(--panel-solid); font-size: var(--fs-sm); max-width: calc(100vw - 24px); }
 
 @media (max-width: 720px) {
   .app { flex-direction: column-reverse; }

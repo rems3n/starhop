@@ -48,6 +48,17 @@ const isTyping = (el: EventTarget | null) => el instanceof HTMLElement && (el.ta
 /** Starting view, and where "Reset view" returns: facing north, horizon at the bottom, Polaris and the Dippers in frame. */
 const HOME_VIEW = { mount: 'altaz' as const, lon: 0, lat: 35, fov: 100, roll: 0 };
 
+/** Under the Layers panel: make this visit's layers and light pollution the ones the map opens with. */
+function SaveDefault() {
+  const same = useSettings((s) => s.bortle === s.defaultBortle && JSON.stringify(s.layers) === JSON.stringify(s.defaultLayers));
+  const save = useSettings((s) => s.saveSkyAsDefault);
+  return (
+    <div className="ex-save-default">
+      {same ? <span className="faint">These are your defaults.</span> : <Button size="sm" onClick={save}>Save as my default</Button>}
+    </div>
+  );
+}
+
 export default function ExplorePage() {
   const catalog = useCatalog();
   const observer = useSettings((s) => s.observer);
@@ -380,7 +391,7 @@ export default function ExplorePage() {
               <Button variant="quiet" size="sm" icon aria-label="Close" onClick={() => setPopover(null)}><Icon name="close" size={16} /></Button>
             </div>
             <div className="panel-body ex-popover-body">
-              {popover === 'layers' ? <LayersPanel layers={layers} onChange={setLayers} /> : <LightPollutionPanel bortle={bortle} onBortle={setBortle} catalog={catalog} observer={observer} date={date} />}
+              {popover === 'layers' ? <><LayersPanel layers={layers} onChange={setLayers} /><SaveDefault /></> : <LightPollutionPanel bortle={bortle} onBortle={setBortle} catalog={catalog} observer={observer} date={date} />}
             </div>
           </section>
         )}

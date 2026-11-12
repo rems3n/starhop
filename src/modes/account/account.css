@@ -1,0 +1,26 @@
+/* Profile and Settings pages — prefix .pf- */
+.pf-page { max-width: 760px; display: flex; flex-direction: column; gap: var(--sp-4); }
+.pf-title { margin: 0; font-family: var(--font-display); font-weight: 700; font-size: var(--fs-2xl); }
+.pf-lead { margin: 0 0 var(--sp-2); }
+.pf-card { display: flex; flex-direction: column; gap: var(--sp-3); padding: var(--sp-5); }
+.pf-h { margin: 0; font-size: var(--fs-lg); font-weight: 600; }
+.pf-sub { font-size: var(--fs-sm); color: var(--text-dim); margin-bottom: var(--sp-2); }
+.pf-row { display: flex; align-items: center; justify-content: space-between; gap: var(--sp-4); flex-wrap: wrap; }
+.pf-row--top { align-items: center; justify-content: flex-start; }
+.pf-row + .pf-row { border-top: 1px solid var(--line); padding-top: var(--sp-3); }
+.pf-value, .pf-name { font-weight: 600; }
+.pf-name { font-size: var(--fs-lg); }
+.pf-small { font-size: var(--fs-xs); margin-top: 2px; }
+.pf-help { margin: 4px 0 0; font-size: var(--fs-sm); max-width: 60ch; }
+.pf-help--top { margin-top: 0; }
+.pf-who { display: flex; align-items: center; gap: var(--sp-4); }
+.pf-guest { display: flex; flex-direction: column; gap: var(--sp-3); }
+.pf-guest-lead { margin: 0; }
+.pf-field { max-width: 420px; }
+.pf-layers .ex-layers { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: var(--sp-3) var(--sp-5); }
+.pf-confirm { display: inline-flex; gap: var(--sp-2); align-items: center; flex-wrap: wrap; }
+.pf-danger { border-color: var(--bad); color: var(--bad); }
+.pf-danger:hover { background: rgba(255, 122, 107, 0.12); }
+.pf-warn { color: var(--sun); }
+.pf-ok { margin: 0; color: var(--good); font-size: var(--fs-sm); }
+.pf-page .qz-diff { background: transparent; border: 0; padding: 0; }

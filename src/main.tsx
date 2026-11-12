@@ -9,6 +9,9 @@ import '@fontsource/saira-condensed/700.css';
 import './styles/tokens.css';
 import './styles/ui.css';
 import App from './App';
+import { initAccount } from './lib/account';
+
+void initAccount();
 
 createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

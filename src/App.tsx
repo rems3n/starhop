@@ -1,5 +1,5 @@
-import { lazy, Suspense, useEffect, type ReactNode } from 'react';
-import { NavLink, Navigate, Route, Routes, useLocation } from 'react-router-dom';
+import { lazy, Suspense, useEffect, useState, type ReactNode } from 'react';
+import { NavLink, Navigate, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import { Redirect } from '@/lib/redirect';
 import { useSettings } from '@/store/settings';
 import { routes } from '@/lib/routes';
@@ -7,6 +7,7 @@ import { Loading } from '@/ui';
 import { SettingsMenu } from '@/components/settings/SettingsMenu';
 import { FirstRunLocation } from '@/components/settings/FirstRunLocation';
 import { ChatLauncher } from '@/components/chat/ChatLauncher';
+import { AccountMenu } from '@/components/account/AccountMenu';
 
 const HomePage = lazy(() => import('@/modes/home/HomePage'));
 const ExplorePage = lazy(() => import('@/modes/explore/ExplorePage'));
@@ -14,6 +15,8 @@ const TonightRoutes = lazy(() => import('@/modes/tonight/TonightRoutes'));
 const LearnRoutes = lazy(() => import('@/modes/learn/LearnRoutes'));
 const LibraryRoutes = lazy(() => import('@/modes/library/LibraryRoutes'));
 const QuizRoutes = lazy(() => import('@/modes/quiz/QuizRoutes'));
+const ProfilePage = lazy(() => import('@/modes/account/ProfilePage'));
+const SettingsPage = lazy(() => import('@/modes/account/SettingsPage'));
 
 const p = (s: string | undefined) => s ?? '';
 const quizRedirect = (splat: string) => (splat.startsWith('unit/') ? routes.practice() : `${routes.practice()}${splat ? `/${splat}` : ''}`);
@@ -38,7 +41,18 @@ const LOCATION_PAGES = ['/sky', '/tonight', '/learn'];
 
 export default function App() {
   const redMode = useSettings((s) => s.redMode);
-  const { pathname } = useLocation();
+  const { pathname, search } = useLocation();
+  const navigate = useNavigate();
+  const [signinNotice, setSigninNotice] = useState('');
+  // The server sends a failed or unavailable sign-in back as ?signin=…: say so once, then tidy the address.
+  useEffect(() => {
+    const q = new URLSearchParams(search);
+    const r = q.get('signin');
+    if (!r) return;
+    setSigninNotice(r === 'unavailable' ? 'Signing in is not available on this site yet.' : 'Sign-in did not finish. Please try again.');
+    q.delete('signin');
+    navigate({ pathname, search: q.toString() ? `?${q}` : '' }, { replace: true });
+  }, [search, pathname, navigate]);
   useEffect(() => {
     document.documentElement.dataset.red = String(redMode);
   }, [redMode]);
@@ -53,7 +67,7 @@ export default function App() {
   return (
     <div className={`app${fullBleed ? ' app--sky' : ''}`}>
       <nav className="app-nav" aria-label="Main">
-        <NavLink to="/" className="app-brand" title="Starhop home">
+        <NavLink to={routes.sky()} className="app-brand" title="Starhop sky map">
           Starhop
         </NavLink>
         <div className="app-tabs">
@@ -68,6 +82,7 @@ export default function App() {
         </div>
         <div className="app-nav-right app-settings">
           <SettingsMenu />
+          <AccountMenu />
         </div>
       </nav>
       <main className={`app-main${fullBleed ? ' app-main--sky' : ''}`}>
@@ -78,6 +93,8 @@ export default function App() {
             <Route path="/learn/*" element={<LearnRoutes />} />
             <Route path="/library/*" element={<LibraryRoutes />} />
             <Route path="/practice/*" element={<QuizRoutes />} />
+            <Route path="/profile" element={<ProfilePage />} />
+            <Route path="/settings" element={<SettingsPage />} />
             {/* Old routes (v1) */}
             <Route path="/explore" element={<Redirect to={() => routes.sky()} />} />
             <Route path="/quiz/*" element={<Redirect to={(x) => quizRedirect(p(x['*']))} />} />
@@ -87,6 +104,12 @@ export default function App() {
         </Suspense>
       </main>
       <ChatLauncher sky={fullBleed} />
+      {signinNotice && (
+        <div className="app-toast panel" role="status">
+          <span>{signinNotice}</span>
+          <button type="button" className="btn btn--quiet btn--sm" onClick={() => setSigninNotice('')}>Dismiss</button>
+        </div>
+      )}
       {needsLocation && <FirstRunLocation />}
     </div>
   );

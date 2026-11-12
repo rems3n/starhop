@@ -1,0 +1,33 @@
+/* Account button, menu and sign-in buttons — prefix .ac- */
+.ac-menu { position: relative; }
+.ac-trigger { display: inline-flex; align-items: center; gap: 8px; min-height: 34px; padding: 0 12px 0 6px; border-radius: 999px; border: 1px solid var(--line-strong); background: transparent; color: var(--text); font: inherit; font-size: var(--fs-sm); font-weight: 600; cursor: pointer; }
+.ac-trigger:hover, .ac-trigger[aria-expanded='true'] { border-color: var(--amber); }
+.ac-trigger--user { padding: 1px; border-color: transparent; }
+.ac-avatar { display: inline-flex; align-items: center; justify-content: center; flex: none; border-radius: 50%; object-fit: cover; background: var(--night-600); color: var(--text); font-weight: 700; }
+.ac-avatar--blank { background: var(--night-600); color: var(--text-dim); }
+.ac-trigger--user .ac-avatar--blank { background: var(--text); color: #000; }
+
+.ac-pop { position: absolute; right: 0; top: calc(100% + 8px); width: min(320px, calc(100vw - 24px)); padding: var(--sp-4); z-index: 60; background: var(--panel-solid); display: flex; flex-direction: column; gap: var(--sp-3); }
+.ac-who { display: flex; align-items: center; gap: var(--sp-3); }
+.ac-who-text { min-width: 0; }
+.ac-name { font-weight: 600; }
+.ac-email { font-size: var(--fs-xs); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ac-guest-lead { margin: 0; font-size: var(--fs-sm); }
+.ac-links { display: flex; flex-direction: column; border-top: 1px solid var(--line); padding-top: var(--sp-2); }
+.ac-links a { padding: 8px 0; color: var(--text); text-decoration: none; font-size: var(--fs-sm); }
+.ac-links a:hover { color: var(--amber); }
+.ac-signout { align-self: flex-start; padding-left: 0; }
+
+.ac-signin { display: flex; flex-wrap: wrap; gap: var(--sp-2); }
+.ac-signin--block { flex-direction: column; }
+.ac-signin--block .ac-provider { width: 100%; }
+.ac-provider { gap: 10px; background: #fff; color: #1f1f1f; border-color: #fff; }
+.ac-provider:hover { background: #e9ecef; border-color: #e9ecef; }
+.ac-note { margin: 0; font-size: var(--fs-sm); }
+
+@media (max-width: 720px) {
+  .ac-trigger-label { display: none; }
+  .ac-trigger { width: 44px; height: 44px; padding: 0; justify-content: center; background: var(--panel); backdrop-filter: blur(8px); }
+  .ac-trigger--user { background: transparent; }
+  .app:not(.app--sky) .ac-trigger { width: 36px; height: 36px; min-height: 32px; }
+}

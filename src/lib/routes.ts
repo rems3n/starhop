@@ -50,4 +50,7 @@ export const routes = {
   lessonQuiz: (lessonId: string) => `/practice/lesson/${lessonId}`,
   review: () => '/practice/review',
   progress: () => '/practice/progress',
+  // Account
+  profile: () => '/profile',
+  settings: () => '/settings',
 };

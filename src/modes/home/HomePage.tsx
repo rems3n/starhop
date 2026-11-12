@@ -1,6 +1,7 @@
 /** Landing page (route "/"): no app navigation. The hero is the real sky engine, slowly turning; "Enter the app" opens the Sky map. */
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useAccount } from '@/lib/account';
 import { SkyView } from '@/sky';
 import { compass } from '@/lib/format';
 import { formatTime } from '@/lib/time';
@@ -20,6 +21,7 @@ const SECTIONS: [string, string, string, string][] = [
 ];
 
 export default function HomePage() {
+  const account = useAccount();
   const observer = useSettings((s) => s.observer);
   const [ctl, setCtl] = useState<SkyController | null>(null);
   const [figures, setFigures] = useState(true);
@@ -82,7 +84,10 @@ export default function HomePage() {
         </div>
         <div className="hm-top">
           <span className="hm-brand">Starhop</span>
-          <Link className="btn hm-enter-sm" to={routes.sky()}>Enter the app</Link>
+          <span className="hm-top-actions">
+            {account.status === 'guest' && account.enabled && <Link className="btn hm-enter-sm" to={routes.profile()}>Sign in</Link>}
+            <Link className="btn hm-enter-sm" to={routes.sky()}>{account.status === 'signed-in' ? 'Open the app' : 'Enter the app'}</Link>
+          </span>
         </div>
         <div className="hm-hud" role="group" aria-label="Live sky controls">
           <div className="hm-hud-row"><span>Live sky</span><b>{observer.name}</b></div>
@@ -100,7 +105,7 @@ export default function HomePage() {
             <h1>Know your <span>sky.</span></h1>
             <p className="hm-lede">This is the real sky over {observer.name} right now, drawn from 850,000 catalogued stars. Starhop is a live planetarium and a course that teaches you to read it.</p>
             <div className="hm-cta">
-              <Link className="btn btn--primary hm-btn" to={routes.sky()}>Enter the app</Link>
+              <Link className="btn btn--primary hm-btn" to={routes.sky()}>{account.status === 'signed-in' ? 'Open the app' : 'Enter the app'}</Link>
               <Link className="btn hm-btn" to={routes.learn()}>Start the course</Link>
             </div>
           </div>

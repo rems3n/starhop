@@ -26,7 +26,7 @@ import { useQuizData } from './useQuizData';
 const LENGTHS: { value: string; label: string }[] = [
   { value: '5', label: '5' }, { value: '10', label: '10' }, { value: '20', label: '20' }, { value: 'all', label: 'All' },
 ];
-function LengthPicker() {
+export function LengthPicker() {
   const length = useQuizPrefs((s) => s.length);
   const set = useQuizPrefs((s) => s.set);
   return <Segmented label="Questions per round" value={String(length)} options={LENGTHS} onChange={(v) => set({ length: v === 'all' ? 'all' : (Number(v) as SessionLength) })} />;
