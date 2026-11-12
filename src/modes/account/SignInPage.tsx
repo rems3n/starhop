@@ -14,7 +14,7 @@ export default function SignInPage() {
   const [params] = useSearchParams();
   const navigate = useNavigate();
   const back = safe(params.get('return'));
-  const [mode, setMode] = useState<'login' | 'signup'>('login');
+  const [mode, setMode] = useState<'login' | 'signup'>(params.get('mode') === 'signup' ? 'signup' : 'login');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
