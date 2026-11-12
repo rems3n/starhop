@@ -15,7 +15,7 @@ import { HelpPanel } from './HelpPanel';
 import { Icon } from './icons';
 import { LocationDialog } from './LocationDialog';
 import { SearchBox, type SearchBoxHandle } from './SearchBox';
-import { choosePresentation } from './present';
+import { choosePresentation, defaultSkyTime } from './present';
 import { LayersPanel, LightPollutionPanel } from './SkyPanels';
 import { TimeBar, type TimeBarHandle } from './TimeBar';
 import { fovWords, lookingWords } from './timeRates';
@@ -63,6 +63,9 @@ export default function ExplorePage() {
   const timeParam = params.get('t');
   const startTime = timeParam && !isNaN(Date.parse(timeParam)) ? new Date(timeParam) : null;
 
+  // Opened with no moment or object asked for while the Sun is up: start at tonight's dusk, where there are stars to see.
+  const autoTime = useRef(!startTime && !targetParam ? defaultSkyTime(new Date(), observer) : null);
+
   const [ctl, setCtl] = useState<SkyController | null>(null);
   const ctlRef = useRef<SkyController | null>(null);
   const [selected, setSelected] = useState<TargetRef | null>(null);
@@ -74,7 +77,7 @@ export default function ExplorePage() {
   const [sheetOpen, setSheetOpen] = useState(false);
   const [mode, setModeState] = useState<SkyMode>('live');
   const modeRef = useRef<SkyMode>('live');
-  const [notice, setNotice] = useState<Notice | null>(null);
+  const [notice, setNotice] = useState<Notice | null>(() => (autoTime.current ? { text: autoTime.current.message, action: 'now' } : null));
   const search = useRef<SearchBoxHandle>(null);
   const timeBar = useRef<TimeBarHandle | null>(null);
   const handledParam = useRef<string | null>(null);
@@ -83,7 +86,7 @@ export default function ExplorePage() {
   // Engine options are read once; later changes go through the controller.
   const options = useRef<SkyEngineOptions>({
     observer,
-    time: startTime ?? new Date(),
+    time: startTime ?? autoTime.current?.time ?? new Date(),
     timeRate: startTime ? 0 : 1,
     layers,
     limitingMag: limitFor(bortle),
@@ -99,6 +102,15 @@ export default function ExplorePage() {
 
   // Settings → engine
   useEffect(() => { ctl?.setObserver(observer); }, [ctl, observer]);
+  // Still on the automatic dusk when the location changes (the first-run prompt, usually): move to that place's dusk.
+  useEffect(() => {
+    if (!ctl || !autoTime.current) return;
+    const next = defaultSkyTime(new Date(), observer);
+    if (next && next.time.getTime() === autoTime.current.time.getTime()) return;
+    autoTime.current = next;
+    ctl.setTime(next ? next.time : new Date());
+    setNotice(next ? { text: next.message, action: 'now' } : null);
+  }, [ctl, observer]);
   useEffect(() => { ctl?.setLimitingMag(limitFor(bortle)); }, [ctl, bortle]);
   // The atlas is a chart of the whole sky: nothing hides below a horizon and there is no daylight.
   useEffect(() => { ctl?.setLayers(mode === 'atlas' ? { ...layers, ground: false, atmosphere: false, horizon: false, azimuthalGrid: false } : layers); }, [ctl, layers, mode]);
@@ -236,6 +248,7 @@ export default function ExplorePage() {
     }
     const p = choosePresentation(t, c.getTime(), c.getObserver(), catalog);
     if (p.mode === 'time') {
+      autoTime.current = null;
       c.setTime(p.time);
       setNotice({ text: p.message, action: 'now' });
       // the engine needs a frame at the new time before a glide lands in the right place
@@ -256,6 +269,7 @@ export default function ExplorePage() {
   const backToNow = () => {
     const c = ctlRef.current;
     if (!c) return;
+    autoTime.current = null;
     c.setTime(new Date());
     c.setTimeRate(1);
     setNotice(null);

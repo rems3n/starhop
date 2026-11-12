@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { altAzOf } from '@/astro';
-import { choosePresentation } from '@/modes/explore/present';
+import { altAzOf, getBody } from '@/astro';
+import { choosePresentation, defaultSkyTime } from '@/modes/explore/present';
 import { DEFAULT_OBSERVER } from '@/types';
 import { learnCatalog } from './learn-catalog';
 
@@ -50,5 +50,38 @@ describe('how a searched object is presented', () => {
     expect(choosePresentation(t('body:Sun', afternoonNov), afternoonNov, bk, catalog)).toEqual({ mode: 'live' });
     expect(choosePresentation(t('body:Sun', eveningNov), eveningNov, bk, catalog).mode).toBe('atlas');
     expect(['live', 'time']).toContain(choosePresentation(t('body:Saturn', eveningNov), eveningNov, bk, catalog).mode);
+  });
+});
+
+describe('the time the sky map opens at', () => {
+  it('stays on the live clock when it is already dark', () => {
+    expect(defaultSkyTime(eveningNov, bk)).toBeNull();
+    expect(defaultSkyTime(at('2026-11-12T08:00:00Z'), bk)).toBeNull(); // 3 am EST
+  });
+  it('opens at the coming dusk in the afternoon, with the Sun 18 degrees down', () => {
+    const d = defaultSkyTime(afternoonNov, bk)!;
+    expect(d.time.getTime()).toBeGreaterThan(afternoonNov.getTime());
+    expect(d.time.getTime() - afternoonNov.getTime()).toBeLessThan(6 * 3600e3);
+    expect(getBody('Sun', d.time, bk).alt).toBeCloseTo(-18, 0);
+    expect(d.message).toMatch(/The stars are not out yet in Brooklyn, NY\. Showing tonight's sky at \d+:\d\d PM/);
+  });
+  it('opens at this evening, not last night, in the morning', () => {
+    const morning = at('2026-11-11T12:30:00Z'); // 7:30 am EST, after sunrise
+    const d = defaultSkyTime(morning, bk)!;
+    expect(d.time.getTime()).toBeGreaterThan(morning.getTime());
+    expect(d.time.getTime() - morning.getTime()).toBeLessThan(13 * 3600e3);
+  });
+  it('works in the southern hemisphere, and uses the darkest dusk there is on bright summer nights', () => {
+    const noonSydney = at('2026-11-11T01:00:00Z');
+    expect(getBody('Sun', defaultSkyTime(noonSydney, sydney)!.time, sydney).alt).toBeCloseTo(-18, 0);
+    const juneNoon = at('2026-06-20T12:00:00Z');
+    const london = { name: 'London', lat: 51.5074, lon: -0.1278, tz: 'Europe/London' };
+    expect(getBody('Sun', defaultSkyTime(juneNoon, london)!.time, london).alt).toBeCloseTo(-12, 0);
+    const edinburgh = { name: 'Edinburgh', lat: 55.9533, lon: -3.1883, tz: 'Europe/London' };
+    expect(getBody('Sun', defaultSkyTime(juneNoon, edinburgh)!.time, edinburgh).alt).toBeCloseTo(-6, 0);
+  });
+  it('stays live where it does not get dark at all', () => {
+    const tromso = { name: 'Tromsø', lat: 69.6492, lon: 18.9553, tz: 'Europe/Oslo' };
+    expect(defaultSkyTime(at('2026-06-20T12:00:00Z'), tromso)).toBeNull();
   });
 });

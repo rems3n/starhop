@@ -2,7 +2,7 @@
  * How to present an object the learner asked for by name (search, assistant, links): the live sky if it is up in a
  * dark sky now, otherwise tonight at its best time, otherwise the atlas (no horizon, no clock). Pure logic.
  */
-import { altAzOf, bestMonths, currentNightDate, getBody, visibilityOn } from '@/astro';
+import { altAzOf, bestMonths, currentNightDate, getBody, nightWindow, visibilityOn } from '@/astro';
 import { monthRanges } from '@/components/object/describe';
 import { visTargetOf } from '@/components/object/targets';
 import type { Catalog } from '@/data/catalog';
@@ -43,4 +43,23 @@ export function choosePresentation(t: ResolvedTarget, date: Date, observer: Obse
     } catch { /* optional */ }
   }
   return { mode: 'atlas', message: `${t.name} is not visible from ${observer.name} tonight.${when} Showing it on the atlas, which has no horizon or time of day.` };
+}
+
+/**
+ * The time the sky map opens at when nothing asked for a particular moment. In a dark sky that is simply now.
+ * In daylight or bright twilight the live sky shows no stars, so open at the coming dusk instead: full darkness
+ * (Sun 18° down) where it happens, otherwise the darkest dusk the night reaches (12° or 6° down). Returns null to stay on the live clock,
+ * which also covers places where it does not get dark at all tonight.
+ */
+export function defaultSkyTime(now: Date, observer: Observer): { time: Date; message: string } | null {
+  if (getBody('Sun', now, observer).alt <= DARK_ENOUGH_SUN_ALT) return null;
+  // Before sunrise "the night I am in" began yesterday and its dusk has passed, so also look at today's.
+  for (const day of [currentNightDate(now, observer), now]) {
+    const w = nightWindow(day, observer);
+    const dusk = w.astroDusk ?? w.nauticalDusk ?? w.civilDusk;
+    if (dusk && dusk.getTime() > now.getTime()) {
+      return { time: dusk, message: `The stars are not out yet in ${observer.name}. Showing tonight's sky at ${formatTime(dusk, observer.tz)}, once it is dark.` };
+    }
+  }
+  return null;
 }
