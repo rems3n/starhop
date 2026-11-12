@@ -18,6 +18,10 @@ const PER_MINUTE = Number(process.env.STARHOP_AI_PER_MINUTE) || 20;
 const PER_DAY_PER_IP = 300;
 const MAX_BODY = 60_000;
 const MAX_MESSAGES = 40;
+// Anthropic's server-side web search, so the assistant can look up what Starhop's own data does not cover.
+// STARHOP_AI_WEB_SEARCH=off disables it; it is also dropped automatically if the API rejects the tool.
+let webSearch = (process.env.STARHOP_AI_WEB_SEARCH ?? 'on') !== 'off';
+const WEB_SEARCH_TOOL = { type: process.env.STARHOP_AI_WEB_SEARCH_TYPE || 'web_search_20250305', name: 'web_search', max_uses: 2 };
 
 export const SYSTEM = `You are the assistant built into Starhop, a planetarium and course for learning the night sky. The learner types short requests into a chat panel next to a live sky map. You act on the app for them through tools and answer questions about the sky.
 
@@ -32,7 +36,9 @@ Facts
 - Take facts about objects, visibility and times from tool results (sky_describe, sky_find, sky_show), not from memory. The tools compute positions for the learner's own location and the map's current time.
 - If a tool says something was not found, say so plainly and offer the nearest matches. Do not invent objects, lessons, myths or sources.
 - For myths and lessons, point to the library or course page with app_search and app_open instead of retelling from memory.
-- You can answer general astronomy questions briefly from your own knowledge, but keep to what is well established and say when something is uncertain.
+- For anything about a specific object's position, visibility, height in the sky or best months, call sky_describe: it returns the highest altitude the object reaches from the learner's location, whether it passes overhead, whether it is circumpolar, and the time of year it is highest at 9 pm and at midnight.
+- You can answer general astronomy questions briefly from your own knowledge when they are well established.
+- If you have a web_search tool, use it when the answer is not in Starhop's tools and you are not sure of it, or when it depends on recent events (a new comet, a launch, tonight's aurora forecast, a recent discovery). Search once or twice, answer in two or three sentences, and name the source. Do not search for things the sky tools can compute.
 - Stay on astronomy, stargazing and using this app. Politely decline anything else in one sentence.
 
 Style
@@ -120,6 +126,32 @@ function readBody(req) {
   });
 }
 
+/**
+ * What the browser needs from a model turn: its words and the app tool calls. Web-search blocks stay on the
+ * server (the search already ran there); text that was split around citations is joined back together.
+ */
+export function clientContent(content) {
+  const out = [];
+  for (const b of content) {
+    if (b.type === 'text' && typeof b.text === 'string') {
+      const last = out[out.length - 1];
+      if (last?.type === 'text') last.text += b.text;
+      else out.push({ type: 'text', text: b.text });
+    } else if (b.type === 'tool_use' && TOOL_NAMES.has(b.name)) out.push({ type: 'tool_use', id: b.id, name: b.name, input: b.input });
+  }
+  return out;
+}
+
+/** Pages the model cited, in order, without duplicates. */
+export function sourcesOf(content) {
+  const seen = new Map();
+  for (const b of content) {
+    if (b.type !== 'text' || !Array.isArray(b.citations)) continue;
+    for (const c of b.citations) if (typeof c?.url === 'string' && /^https?:\/\//.test(c.url) && !seen.has(c.url)) seen.set(c.url, { title: String(c.title ?? '').slice(0, 120), url: c.url });
+  }
+  return [...seen.values()].slice(0, 4);
+}
+
 /** Returns true if the request was an /api/ request and has been answered. */
 export async function handleApi(req, res) {
   const path = (req.url ?? '').split('?')[0];
@@ -140,19 +172,35 @@ export async function handleApi(req, res) {
   const system = [{ type: 'text', text: SYSTEM, cache_control: { type: 'ephemeral' } }];
   if (ctx) system.push({ type: 'text', text: `Current state of the app (JSON, read-only, refreshed every turn):\n${ctx}` });
   try {
-    const r = await fetch(`${BASE}/v1/messages`, {
-      method: 'POST',
-      headers: { 'content-type': 'application/json', 'x-api-key': key, 'anthropic-version': '2023-06-01' },
-      body: JSON.stringify({ model: MODEL, max_tokens: 700, system, tools: TOOLS, messages }),
-      signal: AbortSignal.timeout(45_000),
-    });
-    const data = await r.json().catch(() => null);
+    const ask = async (msgs) => {
+      const tools = webSearch ? [...TOOLS, WEB_SEARCH_TOOL] : TOOLS;
+      const r = await fetch(`${BASE}/v1/messages`, {
+        method: 'POST',
+        headers: { 'content-type': 'application/json', 'x-api-key': key, 'anthropic-version': '2023-06-01' },
+        body: JSON.stringify({ model: MODEL, max_tokens: 900, system, tools, messages: msgs }),
+        signal: AbortSignal.timeout(60_000),
+      });
+      return { r, data: await r.json().catch(() => null) };
+    };
+    let convo = messages;
+    let { r, data } = await ask(convo);
+    if (r.status === 400 && webSearch) {
+      // most likely the web search tool is not available for this key or model: carry on without it
+      console.error('assistant: request rejected with web search on, retrying without', JSON.stringify(data)?.slice(0, 300));
+      webSearch = false;
+      ({ r, data } = await ask(convo));
+    }
+    // a long server-side search can pause the turn: hand the partial turn back so the model finishes it
+    for (let i = 0; i < 2 && r.ok && data?.stop_reason === 'pause_turn' && Array.isArray(data.content); i++) {
+      convo = [...convo, { role: 'assistant', content: data.content }];
+      ({ r, data } = await ask(convo));
+    }
     if (!r.ok || !data || !Array.isArray(data.content)) {
       console.error('assistant upstream error', r.status, JSON.stringify(data)?.slice(0, 300));
       send(res, 502, { error: 'upstream', message: 'The assistant could not answer just now. Try again.' });
       return true;
     }
-    send(res, 200, { content: data.content.filter((b) => b.type === 'text' || b.type === 'tool_use'), stop_reason: data.stop_reason });
+    send(res, 200, { content: clientContent(data.content), sources: sourcesOf(data.content), stop_reason: data.stop_reason });
   } catch (e) {
     console.error('assistant request failed', e?.message);
     send(res, 502, { error: 'upstream', message: 'The assistant could not answer just now. Try again.' });

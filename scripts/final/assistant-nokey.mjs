@@ -49,7 +49,9 @@ try {
     ['is there a lesson on moon phases', /opened the lesson/i],
     ['what is the myth of andromeda', /opened the myth/i],
     ['hey can you bring up the ring nebula for me real quick', /took that as.*Ring Nebula/],
-    ['why is the sky blue', /did not catch/],
+    ['what month is cats eye nebula directly overhead of nyc', /never passes straight overhead from Brooklyn, NY.*9 pm in early August/],
+    ['why is the cats eye nebula green', /question for the full assistant/],
+    ['why is the sky blue', /question for the full assistant/],
   ]) {
     r = await ask(q);
     check(`"${q}"`, re.test(r), r);

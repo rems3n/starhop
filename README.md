@@ -135,6 +135,9 @@ A chat panel (button at the bottom left of every app page) that acts on the app:
 - **Setup.** Set `ANTHROPIC_API_KEY` on the server (Railway: service → Variables). Without it the panel still handles
   plain commands and says the full assistant is unavailable. Optional: `STARHOP_AI_MODEL` (default
   `claude-haiku-5-5`), `STARHOP_AI_DAILY_LIMIT` (default 3000 requests a day across all visitors).
+- **Web search.** With a key set, the model can also search the web (Anthropic's server-side web search tool, at most
+  two searches a request) for things Starhop's data does not cover; replies list their sources. Turn it off with
+  `STARHOP_AI_WEB_SEARCH=off`. Searches are billed by Anthropic on top of tokens.
 - **Guards.** The server owns the system prompt and tools, validates every message, limits each visitor to 20 requests
   a minute and 300 a day, and caps replies at 700 tokens. Set a spend limit on the API key as well.
 - **Tests.** `tests/ai-local.test.ts` (matcher, schema, validation) and `node scripts/final/assistant-e2e.mjs`

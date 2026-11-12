@@ -6,7 +6,7 @@ import { LAYER_PARAMS, SECTIONS, type ToolInput } from './actions';
 
 export interface LocalCall { name: string; input: ToolInput }
 /** What kind of sentence to build from the results when a question was answered without the model */
-export type AnswerKind = 'about' | 'when' | 'distance' | 'brightness' | 'find' | 'photo' | 'content' | 'tonight';
+export type AnswerKind = 'about' | 'when' | 'highest' | 'distance' | 'brightness' | 'find' | 'photo' | 'content' | 'tonight';
 export interface LocalPlan { calls: LocalCall[]; answer?: AnswerKind }
 
 /** Words people use for each layer (matched against the whole remaining phrase). */
@@ -106,6 +106,9 @@ const end = '(?: (?:tonight|right now|now|from here|today|this evening))?$';
 const QUESTIONS: [RegExp, AnswerKind][] = [
   [new RegExp(`^(?:show me|show|open|get me|give me|display|see|let me see|i want to see|can i see)? ?(?:a |an |the |some )?(?:photos?|pictures?|pics?|images?|photographs?) of ${OBJ}$`), 'photo'],
   [new RegExp(`^(?:what does|how does) ${OBJ} look like$`), 'photo'],
+  [new RegExp(`^(?:what|which) (?:month|months|time of year|season|part of the year) (?:is|does|are|will|can)(?: i see)? ${OBJ}(?: (?:directly |straight |right )?(?:overhead|highest|at its highest|high(?:est)? in the sky|best|best seen|visible|up|culminate|culminates|pass overhead)| best seen| at its best)?(?: (?:of|over|in|from|above|at) .+)?$`), 'highest'],
+  [new RegExp(`^(?:when is|when does|is|does) ${OBJ} (?:ever )?(?:(?:directly |straight |right )?overhead|highest|at its highest|highest in the sky|culminate|culminates|pass overhead|go overhead)(?: (?:of|over|in|from|above|at) .+)?$`), 'highest'],
+  [new RegExp(`^how high does ${OBJ} get(?: (?:in|from|over) .+)?$`), 'highest'],
   [new RegExp(`^(?:when can i see|when is the best time to see|when is|when does|whens|when will i see|what time (?:can i see|is|does)) ${OBJ}(?: visible| up| rise| rising| out| best| best seen)?${end}`), 'when'],
   [new RegExp(`^(?:can i see|is) ${OBJ}(?: visible| up| out)?${end}`), 'when'],
   [new RegExp(`^how (?:far|far away|distant) is ${OBJ}(?: from (?:earth|us|here))?$`), 'distance'],
@@ -114,6 +117,9 @@ const QUESTIONS: [RegExp, AnswerKind][] = [
   [new RegExp(`^(?:what is|whats|what are|who is|tell me about|tell me more about|describe|explain|info on|information on|information about|about|facts about|more about) ${OBJ}$`), 'about'],
 ];
 const SHOW_RE = /^(?:show me|show|go to|goto|find|where is|wheres|where are|take me to|point at|point to|look at|center on|centre on|center|centre|fly to|jump to|locate|i want to see|let me see|see|search for|search|select)\s+(.+)$/;
+
+/** Reads as a question rather than a command */
+export const isQuestion = (text: string) => /\?\s*$/.test(text) || /^(?:what|whats|when|whens|why|how|which|who|whose|whom|is|are|was|were|does|do|did|can|could|will|would|should|has|have)\b/.test(clean(text));
 
 export type Lookup = (phrase: string) => string | null;
 
@@ -143,6 +149,9 @@ export function matchLocal(raw: string, lookup: Lookup): LocalPlan | null {
   if (m) return { calls: [{ name: 'app_search', input: { query: m[1], prefer: 'myth', open: true } }], answer: 'content' };
   m = /^(?:how do i |how to |show me how to )?(?:star ?hop|hop) to (.+)$/.exec(t);
   if (m) return { calls: [{ name: 'app_search', input: { query: m[1], prefer: 'star-hop', open: true } }], answer: 'content' };
+
+  // a question the patterns above did not answer is for the model, not a "show it" guess
+  if (isQuestion(t)) return null;
 
   // objects: "show me X", or just "X"
   const s = SHOW_RE.exec(t);

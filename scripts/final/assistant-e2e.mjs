@@ -113,7 +113,7 @@ async function run(viewport, tag) {
   check(`${tag}: correction re-targets to Alcyone`, /target=star:/.test(await hash()) && /Alcyone/.test(r.text), `${await hash()} ${r.text}`);
   const corr = seen.at(-1).body;
   check(`${tag}: correction request carries the earlier turns and local commands`, JSON.stringify(corr.messages).includes('seven sisters') && JSON.stringify(corr.messages).includes('local_'));
-  check(`${tag}: request carries context, tools and the key`, /map_time/.test(corr.system.at(-1).text) && corr.tools.length === 10 && seen.at(-1).headers['x-api-key'] === 'test-key');
+  check(`${tag}: request carries context, tools and the key`, /map_time/.test(corr.system.at(-1).text) && corr.tools.length === 11 && corr.tools.some((t) => t.name === 'web_search') && seen.at(-1).headers['x-api-key'] === 'test-key');
 
   const offsetBefore = await page.evaluate(() => window.__explore.getTime().getTime() - Date.now());
   r = await ask('show the sky from sydney at christmas');

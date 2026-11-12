@@ -1,9 +1,9 @@
 import { describe, expect, it } from 'vitest';
-import { matchLocal } from '@/ai/local';
+import { isQuestion, matchLocal } from '@/ai/local';
 import { trimHistory } from '@/ai/chat';
 // @ts-expect-error plain JS server module
-import { sanitizeMessages, contextText, TOOLS } from '../scripts/ai.mjs';
-import { LAYER_PARAMS } from '@/ai/actions';
+import { sanitizeMessages, contextText, TOOLS, clientContent, sourcesOf } from '../scripts/ai.mjs';
+import { LAYER_PARAMS, culminationFacts, describeSentence } from '@/ai/actions';
 import { buildNameIndex } from '@/ai/names';
 import { angularSeparation, positionAngle } from '@/astro';
 import { startView } from '@/modes/quiz/logic/sky';
@@ -77,6 +77,17 @@ describe('local command matcher', () => {
     expect(plan('how do i find polaris')).toEqual({ calls: d(index.lookup('Polaris')!), answer: 'find' });
     expect(plan("what's up tonight?")).toEqual({ calls: [{ name: 'app_open', input: { path: 'tonight' } }], answer: 'tonight' });
   });
+  it('answers "what month is it overhead" from the catalogue', () => {
+    const d = { calls: [{ name: 'sky_describe', input: { target: 'dso:NGC6543' } }], answer: 'highest' };
+    for (const t of ['what month is cats eye nebula directly overhead of nyc', 'which month is the cats eye nebula highest?', 'when is the cats eye nebula overhead', 'what time of year is the cats eye nebula best seen', 'how high does the cats eye nebula get'])
+      expect(plan(t), t).toEqual(d);
+  });
+  it('never turns an unanswered question into a "show it" guess', () => {
+    expect(plan('why is the cats eye nebula green')).toBeNull();
+    expect(plan('who discovered the orion nebula?')).toBeNull();
+    expect(isQuestion('what month is cats eye nebula directly overhead of nyc')).toBe(true);
+    expect(isQuestion('hey bring up the ring nebula')).toBe(false);
+  });
   it('finds lessons, myths and star-hops', () => {
     expect(plan('is there a lesson on moon phases')).toEqual({ calls: [{ name: 'app_search', input: { query: 'moon phases', prefer: 'lesson', open: true } }], answer: 'content' });
     expect(plan('what is the myth of andromeda')).toEqual({ calls: [{ name: 'app_search', input: { query: 'andromeda', prefer: 'myth', open: true } }], answer: 'content' });
@@ -132,6 +143,43 @@ describe('find-it start view', () => {
     expect(bearings.size).toBe(4);
     const c = startView({ target, diff: { randomRotation: false, startNearTarget: true }, aspect: 1.6, rng, centred: true });
     expect(angularSeparation({ ra: c.lon, dec: c.lat }, target)).toBeLessThan(0.01);
+  });
+});
+
+describe('when an object is highest', () => {
+  const nyc = { lat: 40.68, name: 'Brooklyn, NY' };
+  it('Cat\'s Eye Nebula from Brooklyn: circumpolar, 64° up at best, highest at 9 pm in early August', () => {
+    const f = culminationFacts(66.63, 269.64, nyc);
+    expect(f.highest_altitude_deg).toBe(64);
+    expect(String(f.passes_overhead)).toMatch(/^no: at its highest it is 64° up, 26° north/);
+    expect(f.circumpolar).toBeTruthy();
+    expect(f.highest_at_midnight).toMatch(/June/);
+    expect(f.highest_at_9pm).toMatch(/August/);
+    const s = describeSentence('highest', { ok: true, name: "Cat's Eye Nebula", observing_from: 'Brooklyn, NY', ...f });
+    expect(s).toMatch(/never passes straight overhead from Brooklyn, NY/);
+    expect(s).toMatch(/highest around 9 pm in early August/);
+    expect(s).toMatch(/never sets/);
+  });
+  it('Vega passes nearly overhead from Brooklyn; Orion is highest at 9 pm in late January; Crux never rises', () => {
+    expect(String(culminationFacts(38.78, 279.23, nyc).passes_overhead)).toMatch(/^yes/);
+    expect(culminationFacts(-1.2, 84.05, nyc).highest_at_9pm).toMatch(/January|February/);
+    expect(culminationFacts(-60, 187, nyc).highest_it_gets).toMatch(/never rises/);
+  });
+});
+
+describe('model turn handling on the server', () => {
+  it('keeps words and app tool calls, joins cited text, drops web-search blocks, collects sources', () => {
+    const content = [
+      { type: 'server_tool_use', id: 's1', name: 'web_search', input: { query: 'x' } },
+      { type: 'web_search_tool_result', tool_use_id: 's1', content: [] },
+      { type: 'text', text: 'Comet X is ' },
+      { type: 'text', text: 'visible now', citations: [{ url: 'https://example.org/a', title: 'A' }, { url: 'javascript:alert(1)', title: 'bad' }] },
+      { type: 'text', text: '.', citations: [{ url: 'https://example.org/a', title: 'A' }] },
+      { type: 'tool_use', id: 't1', name: 'sky_show', input: { target: 'x' } },
+      { type: 'tool_use', id: 't2', name: 'not_ours', input: {} },
+    ];
+    expect(clientContent(content)).toEqual([{ type: 'text', text: 'Comet X is visible now.' }, { type: 'tool_use', id: 't1', name: 'sky_show', input: { target: 'x' } }]);
+    expect(sourcesOf(content)).toEqual([{ title: 'A', url: 'https://example.org/a' }]);
   });
 });
 

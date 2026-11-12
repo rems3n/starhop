@@ -179,6 +179,29 @@ async function skyShow(input: ToolInput, env: ActionEnv): Promise<ToolResult> {
   return out;
 }
 
+const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const partOfMonth = (d: Date) => `${d.getUTCDate() <= 10 ? 'early' : d.getUTCDate() <= 20 ? 'mid' : 'late'} ${MONTHS[d.getUTCMonth()]}`;
+
+/**
+ * How high a fixed object ever gets from a latitude, and when in the year it is at its highest at a convenient
+ * hour. An object crosses the meridian at local midnight when the Sun is opposite it in right ascension (the Sun's
+ * RA is 0 at the March equinox and grows about 360° a year); it does so two hours earlier each month after that.
+ */
+export function culminationFacts(dec: number, ra: number, observer: Pick<Observer, 'lat' | 'name'>): Record<string, unknown> {
+  const maxAlt = 90 - Math.abs(observer.lat - dec);
+  const out: Record<string, unknown> = {};
+  if (maxAlt <= 0) return { highest_it_gets: `never rises from ${observer.name}` };
+  out.highest_altitude_deg = Math.round(maxAlt);
+  out.passes_overhead = maxAlt >= 85 ? 'yes, it passes within 5° of straight overhead' : `no: at its highest it is ${Math.round(maxAlt)}° up, ${Math.round(90 - maxAlt)}° ${dec > observer.lat ? 'north' : 'south'} of straight overhead`;
+  const circumpolar = Math.abs(dec) > 90 - Math.abs(observer.lat) && Math.sign(dec) === Math.sign(observer.lat);
+  if (circumpolar) out.circumpolar = `yes: it never sets from ${observer.name} and is above the horizon all night, all year`;
+  const equinox = Date.UTC(2026, 2, 20);
+  const day = (offsetDeg: number) => new Date(equinox + ((((ra - 180 + offsetDeg) % 360) + 360) % 360) / 360 * 365.25 * 86400e3);
+  out.highest_at_midnight = partOfMonth(day(0));
+  out.highest_at_9pm = partOfMonth(day(45));
+  return out;
+}
+
 async function skyDescribe(input: ToolInput): Promise<ToolResult> {
   const catalog = await loadCatalog();
   let target = text(input.target);
@@ -226,6 +249,7 @@ async function skyDescribe(input: ToolInput): Promise<ToolResult> {
       } catch { /* optional */ }
     }
   }
+  if (!t.body) Object.assign(out, culminationFacts(t.dec, t.ra, observer));
   out.observing_from = observer.name;
   return out;
 }
@@ -456,7 +480,7 @@ export function resultSentence(name: string, result: ToolResult): string {
 const plain = (s: string) => s.replace(/\[\[([^\]|]+)(?:\|([^\]]*))?\]\]/g, (_m, ref: string, label?: string) => label ?? ref.replace(/^[a-z]+:/, '').replace(/-/g, ' '));
 
 /** Answer a question from a sky_describe result, using only Starhop's own data. */
-export function describeSentence(kind: 'about' | 'when' | 'distance' | 'brightness' | 'find', r: ToolResult): string {
+export function describeSentence(kind: 'about' | 'when' | 'distance' | 'brightness' | 'find' | 'highest', r: ToolResult): string {
   if (!r.ok) return String(r.error ?? 'I could not find that.');
   const name = String(r.name);
   const tonight = () => {
@@ -467,6 +491,12 @@ export function describeSentence(kind: 'about' | 'when' | 'distance' | 'brightne
   };
   switch (kind) {
     case 'when': return tonight();
+    case 'highest': {
+      if (r.highest_it_gets) return `${name} ${String(r.highest_it_gets)}.`;
+      if (!r.highest_at_9pm) return `${name} moves against the stars, so it has no fixed month. ${tonight()}`;
+      const over = String(r.passes_overhead).startsWith('yes') ? `${name} passes almost straight overhead from ${String(r.observing_from)}.` : `${name} never passes straight overhead from ${String(r.observing_from)} (${String(r.passes_overhead).replace(/^no: /, '')}).`;
+      return `${over} It is at its highest around 9 pm in ${String(r.highest_at_9pm)}, and around midnight in ${String(r.highest_at_midnight)}.${r.circumpolar ? ' It never sets from here, so it is up all night in every month.' : ''}`;
+    }
     case 'distance': return r.distance ? `${name} is ${String(r.distance)} away.` : `Starhop does not have a distance for ${name}.`;
     case 'brightness': return r.magnitude ? `${name} is magnitude ${String(r.magnitude)}${r.equipment_needed ? ` (${String(r.equipment_needed).replace(/-/g, ' ')})` : ''}. Lower numbers are brighter.` : `Starhop does not have a brightness for ${name}.`;
     case 'find': return r.how_to_find ? plain(String(r.how_to_find)) : `Starhop has no directions for ${name} yet. ${tonight()}`;

@@ -6,7 +6,7 @@
 import { create } from 'zustand';
 import { loadCatalog, loadDeepDsos } from '@/data/catalog';
 import { actionLabel, CHANGES_STATE, describeSentence, describeState, restoreSnapshot, resultSentence, runTool, takeSnapshot, type ActionEnv, type Snapshot, type ToolInput, type ToolResult } from './actions';
-import { matchLocal, type LocalCall, type LocalPlan } from './local';
+import { isQuestion, matchLocal, type LocalCall, type LocalPlan } from './local';
 import { buildNameIndex, type NameIndex } from './names';
 
 export interface ChatItem {
@@ -21,6 +21,8 @@ export interface ChatItem {
   error?: boolean;
   /** One-tap follow-ups */
   chips?: { label: string; calls: LocalCall[] }[];
+  /** Web pages the model used */
+  sources?: { title: string; url: string }[];
 }
 
 type Block = { type: 'text'; text: string } | { type: 'tool_use'; id: string; name: string; input: ToolInput } | { type: 'tool_result'; tool_use_id: string; content: string; is_error?: boolean };
@@ -41,6 +43,7 @@ interface ChatState {
 
 const MAX_STEPS = 6;
 const MAX_HISTORY = 24;
+const NEEDS_MODEL = 'That is a question for the full assistant, which looks things up and works them out. It is not switched on for this site yet (the server needs an API key).';
 const OFFLINE = 'I did not catch an object or command in that. Without the full assistant (not set up on this server) I can show any object by name, show its photo, answer what, when, how far and how to find it, switch layers, change the view or time, and open lessons, myths and star-hops.';
 
 let nextId = 1;
@@ -64,7 +67,7 @@ async function names(): Promise<NameIndex> {
   return nameIndex.index;
 }
 
-async function callModel(messages: ApiMessage[], context: unknown): Promise<{ content: Block[]; stop_reason?: string } | { unavailable: true } | { error: string }> {
+async function callModel(messages: ApiMessage[], context: unknown): Promise<{ content: Block[]; stop_reason?: string; sources?: { title: string; url: string }[] } | { unavailable: true } | { error: string }> {
   let r: Response;
   try {
     r = await fetch('api/chat', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ messages, context }) });
@@ -116,8 +119,9 @@ export const useChat = create<ChatState>()((set, get) => {
         return result;
       };
       let chips: ChatItem['chips'];
+      const sources: NonNullable<ChatItem['sources']> = [];
       const finish = (reply: string, error = false) => {
-        add({ role: 'assistant', text: reply, actions: actions.length ? actions : undefined, undo: changed ? snap : undefined, error, chips });
+        add({ role: 'assistant', text: reply, actions: actions.length ? actions : undefined, undo: changed ? snap : undefined, error, chips, sources: sources.length ? sources : undefined });
         set({ busy: false });
       };
       try {
@@ -147,7 +151,7 @@ export const useChat = create<ChatState>()((set, get) => {
           finish(reply);
         };
         // 1. instant path
-        const local: LocalPlan | null = preset ? { calls: preset } : matchLocal(text, index.lookup);
+        const local: LocalPlan | null = preset ? { calls: preset, answer: preset[0]?.name === 'sky_describe' ? 'about' : undefined } : matchLocal(text, index.lookup);
         if (local) {
           await runLocal(local);
           return;
@@ -166,6 +170,20 @@ export const useChat = create<ChatState>()((set, get) => {
               set({ aiEnabled: false });
               // no model: if the request names an object anywhere, showing it is the most useful reading
               const ref = step === 0 ? index.scan(text) : null;
+              if (ref && isQuestion(text)) {
+                // do not guess at a question: say so, and offer what can be done without the model
+                const name = (await loadCatalog()).resolve(ref)?.name ?? 'it';
+                chips = [
+                  { label: `Show ${name}`, calls: [{ name: 'sky_show', input: { target: ref } }] },
+                  { label: `About ${name}`, calls: [{ name: 'sky_describe', input: { target: ref } }] },
+                ];
+                finish(NEEDS_MODEL, true);
+                return;
+              }
+              if (isQuestion(text)) {
+                finish(NEEDS_MODEL, true);
+                return;
+              }
               if (ref) {
                 const photo = /\b(?:photos?|pictures?|pics?|images?|look like)\b/i.test(text);
                 await runLocal({ calls: [{ name: 'sky_show', input: { target: ref, ...(photo ? { open_photo: true } : {}) } }], answer: photo ? 'photo' : undefined }, 'I took that as a request to show it. ');
@@ -176,6 +194,7 @@ export const useChat = create<ChatState>()((set, get) => {
             return;
           }
           set({ aiEnabled: true });
+          for (const src of res.sources ?? []) if (/^https?:\/\//.test(src.url) && !sources.some((x) => x.url === src.url) && sources.length < 4) sources.push(src);
           history.push({ role: 'assistant', content: res.content });
           const calls = res.content.filter((b): b is Extract<Block, { type: 'tool_use' }> => b.type === 'tool_use');
           if (!calls.length) {
