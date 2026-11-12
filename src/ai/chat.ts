@@ -23,6 +23,8 @@ export interface ChatItem {
   chips?: { label: string; calls: LocalCall[] }[];
   /** Web pages the model used */
   sources?: { title: string; url: string }[];
+  /** True when the more capable model answered */
+  detailed?: boolean;
 }
 
 type Block = { type: 'text'; text: string } | { type: 'tool_use'; id: string; name: string; input: ToolInput } | { type: 'tool_result'; tool_use_id: string; content: string; is_error?: boolean };
@@ -67,10 +69,10 @@ async function names(): Promise<NameIndex> {
   return nameIndex.index;
 }
 
-async function callModel(messages: ApiMessage[], context: unknown): Promise<{ content: Block[]; stop_reason?: string; sources?: { title: string; url: string }[] } | { unavailable: true } | { error: string }> {
+async function callModel(messages: ApiMessage[], context: unknown, tier: 'fast' | 'smart'): Promise<{ content: Block[]; stop_reason?: string; sources?: { title: string; url: string }[]; tier?: 'fast' | 'smart' } | { unavailable: true } | { error: string }> {
   let r: Response;
   try {
-    r = await fetch('api/chat', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ messages, context }) });
+    r = await fetch('api/chat', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ messages, context, tier }) });
   } catch {
     return { unavailable: true };
   }
@@ -120,8 +122,10 @@ export const useChat = create<ChatState>()((set, get) => {
       };
       let chips: ChatItem['chips'];
       const sources: NonNullable<ChatItem['sources']> = [];
+      // once a turn has moved to the capable model, its follow-up steps stay there
+      let tier: 'fast' | 'smart' = 'fast';
       const finish = (reply: string, error = false) => {
-        add({ role: 'assistant', text: reply, actions: actions.length ? actions : undefined, undo: changed ? snap : undefined, error, chips, sources: sources.length ? sources : undefined });
+        add({ role: 'assistant', text: reply, actions: actions.length ? actions : undefined, undo: changed ? snap : undefined, error, chips, sources: sources.length ? sources : undefined, detailed: tier === 'smart' && !error ? true : undefined });
         set({ busy: false });
       };
       try {
@@ -161,7 +165,7 @@ export const useChat = create<ChatState>()((set, get) => {
         history.push(userMsg);
         for (let step = 0; step < MAX_STEPS; step++) {
           history = trimHistory(history);
-          const res = await callModel(history, describeState(env));
+          const res = await callModel(history, describeState(env), tier);
           if ('unavailable' in res || 'error' in res) {
             // drop the unanswered turn so the next request starts from a consistent conversation
             const at = history.indexOf(userMsg);
@@ -194,6 +198,7 @@ export const useChat = create<ChatState>()((set, get) => {
             return;
           }
           set({ aiEnabled: true });
+          if (res.tier === 'smart') tier = 'smart';
           for (const src of res.sources ?? []) if (/^https?:\/\//.test(src.url) && !sources.some((x) => x.url === src.url) && sources.length < 4) sources.push(src);
           history.push({ role: 'assistant', content: res.content });
           const calls = res.content.filter((b): b is Extract<Block, { type: 'tool_use' }> => b.type === 'tool_use');

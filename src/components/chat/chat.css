@@ -36,6 +36,7 @@
 .ch-undo { background: none; border: 1px solid var(--line-strong); color: var(--text); padding: 3px 10px; font: 600 0.78rem var(--font-ui); cursor: pointer; }
 .ch-undo:hover { border-color: var(--amber); color: var(--amber); }
 .ch-chip { border-color: var(--amber); color: var(--amber); }
+.ch-tier { font: 0.68rem var(--font-mono); color: var(--text-dim); }
 .ch-chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .ch-sources { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 2px; font-size: 0.75rem; max-width: 88%; }
 .ch-sources li::before { content: 'Source: '; color: var(--text-dim); }

@@ -2,7 +2,8 @@
 //   POST /api/chat         { messages, context } -> { content, stop_reason }   one model turn; the browser runs the tools
 //   GET  /api/chat/status  -> { enabled }
 // The server owns the system prompt and the tool list (shared/ai-tools.json), so the endpoint cannot be used as a
-// general-purpose proxy. Configure with env: ANTHROPIC_API_KEY (required), STARHOP_AI_MODEL, STARHOP_AI_DAILY_LIMIT.
+// general-purpose proxy. Configure with env: ANTHROPIC_API_KEY (required), STARHOP_AI_MODEL_FAST, STARHOP_AI_MODEL_SMART,
+// STARHOP_AI_DAILY_LIMIT, STARHOP_AI_WEB_SEARCH.
 import { readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -11,7 +12,33 @@ const here = dirname(fileURLToPath(import.meta.url));
 export const TOOLS = JSON.parse(readFileSync(join(here, '..', 'shared', 'ai-tools.json'), 'utf8'));
 const TOOL_NAMES = new Set(TOOLS.map((t) => t.name));
 
-const MODEL = process.env.STARHOP_AI_MODEL || 'claude-haiku-5-5';
+// Two tiers. Requests start on the fast model; the smart one is used when the request looks complicated
+// (looksComplex) or when the fast model hands it over itself (the ask_expert tool).
+const FAST = process.env.STARHOP_AI_MODEL_FAST || process.env.STARHOP_AI_MODEL || 'claude-haiku-5-5';
+const SMART = process.env.STARHOP_AI_MODEL_SMART || 'claude-sonnet-5-5';
+const ESCALATE_TOOL = {
+  name: 'ask_expert',
+  description: "Hand this request to a more capable model that reasons more carefully (it has the same tools and sees the same conversation). Use it when a good answer needs several steps of reasoning or planning: an observing plan for a night or a trip, comparing several objects or pieces of equipment, explaining the physics behind something in depth, a calculation, a request with many parts, or any question where you are not confident your answer would be correct. Do not use it for commands (show, hide, zoom, change time or place), single look-ups, or short factual answers: handle those yourself. When you use it, call it alone, with no other tool calls and no text.",
+  input_schema: { type: 'object', properties: { reason: { type: 'string', description: 'A few words on why this needs the more capable model.' } }, required: ['reason'] },
+};
+
+const COMPLEX = /\b(?:compare|comparison|versus|vs\.?|difference between|differences between|pros and cons|plan|itinerary|schedule|step[- ]by[- ]step|in detail|in depth|derive|calculate|work out|walk me through|recommend|which (?:telescope|binoculars|eyepiece|camera|mount)|should i buy|best way to|strategy)\b/i;
+/** Cheap first-pass triage on the learner's latest message: true sends the turn straight to the smart model. */
+export function looksComplex(text) {
+  const t = String(text ?? '');
+  return t.length > 240 || (t.match(/\?/g) ?? []).length >= 2 || COMPLEX.test(t);
+}
+
+/** The learner's words in the most recent plain user message (not a tool result). */
+export function lastUserText(messages) {
+  for (let i = messages.length - 1; i >= 0; i--) {
+    const m = messages[i];
+    if (m.role !== 'user') continue;
+    const text = m.content.filter((b) => b.type === 'text').map((b) => b.text).join(' ');
+    if (text) return text;
+  }
+  return '';
+}
 const BASE = process.env.STARHOP_AI_BASE_URL || 'https://api.anthropic.com';
 const DAILY_LIMIT = Number(process.env.STARHOP_AI_DAILY_LIMIT) || 3000;
 const PER_MINUTE = Number(process.env.STARHOP_AI_PER_MINUTE) || 20;
@@ -42,7 +69,7 @@ Facts
 - Stay on astronomy, stargazing and using this app. Politely decline anything else in one sentence.
 
 Style
-- Reply in one or two short plain sentences, sentence case, no markdown, no headings, no lists unless the learner asks for a list.
+- Reply in one or two short plain sentences, sentence case, no markdown, no headings, no lists unless the learner asks for a list. A question that needs explaining, comparing or planning may take a short paragraph or a few numbered lines, still without markdown symbols.
 - Say what you did and one useful thing about it, for example where to look or when it is best seen. Do not narrate tool calls or mention tool names or refs.
 - Times are in the learner's local time zone. Use the 12-hour clock.`;
 
@@ -172,12 +199,14 @@ export async function handleApi(req, res) {
   const system = [{ type: 'text', text: SYSTEM, cache_control: { type: 'ephemeral' } }];
   if (ctx) system.push({ type: 'text', text: `Current state of the app (JSON, read-only, refreshed every turn):\n${ctx}` });
   try {
+    let tier = body?.tier === 'smart' || looksComplex(lastUserText(messages)) ? 'smart' : 'fast';
+    const why = body?.tier === 'smart' ? 'continuing' : tier === 'smart' ? 'looks complex' : '';
     const ask = async (msgs) => {
-      const tools = webSearch ? [...TOOLS, WEB_SEARCH_TOOL] : TOOLS;
+      const tools = [...TOOLS, ...(webSearch ? [WEB_SEARCH_TOOL] : []), ...(tier === 'fast' ? [ESCALATE_TOOL] : [])];
       const r = await fetch(`${BASE}/v1/messages`, {
         method: 'POST',
         headers: { 'content-type': 'application/json', 'x-api-key': key, 'anthropic-version': '2023-06-01' },
-        body: JSON.stringify({ model: MODEL, max_tokens: 900, system, tools, messages: msgs }),
+        body: JSON.stringify({ model: tier === 'smart' ? SMART : FAST, max_tokens: tier === 'smart' ? 1500 : 900, system, tools, messages: msgs }),
         signal: AbortSignal.timeout(60_000),
       });
       return { r, data: await r.json().catch(() => null) };
@@ -190,17 +219,34 @@ export async function handleApi(req, res) {
       webSearch = false;
       ({ r, data } = await ask(convo));
     }
+    let reason = why;
+    // the fast model asked for the capable one: run the same turn there instead
+    const handoff = r.ok && Array.isArray(data?.content) ? data.content.find((b) => b.type === 'tool_use' && b.name === 'ask_expert') : null;
+    if (handoff) {
+      tier = 'smart';
+      reason = `handed over: ${String(handoff.input?.reason ?? '').slice(0, 80)}`;
+      ({ r, data } = await ask(convo));
+    }
+    if (!r.ok && tier === 'smart') {
+      // the capable model is unavailable: answer with the fast one rather than fail
+      console.error('assistant: smart model failed, falling back', r.status, JSON.stringify(data)?.slice(0, 200));
+      tier = 'fast';
+      reason = 'smart model unavailable';
+      ({ r, data } = await ask(convo));
+      if (r.ok && Array.isArray(data?.content)) data.content = data.content.filter((b) => !(b.type === 'tool_use' && b.name === 'ask_expert'));
+    }
     // a long server-side search can pause the turn: hand the partial turn back so the model finishes it
     for (let i = 0; i < 2 && r.ok && data?.stop_reason === 'pause_turn' && Array.isArray(data.content); i++) {
       convo = [...convo, { role: 'assistant', content: data.content }];
       ({ r, data } = await ask(convo));
     }
+    if (r.ok && data?.usage) console.log(`assistant ${tier}${reason ? ` (${reason})` : ''} in=${data.usage.input_tokens} out=${data.usage.output_tokens}`);
     if (!r.ok || !data || !Array.isArray(data.content)) {
       console.error('assistant upstream error', r.status, JSON.stringify(data)?.slice(0, 300));
       send(res, 502, { error: 'upstream', message: 'The assistant could not answer just now. Try again.' });
       return true;
     }
-    send(res, 200, { content: clientContent(data.content), sources: sourcesOf(data.content), stop_reason: data.stop_reason });
+    send(res, 200, { content: clientContent(data.content), sources: sourcesOf(data.content), stop_reason: data.stop_reason, tier });
   } catch (e) {
     console.error('assistant request failed', e?.message);
     send(res, 502, { error: 'upstream', message: 'The assistant could not answer just now. Try again.' });

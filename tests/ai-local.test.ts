@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { isQuestion, matchLocal } from '@/ai/local';
 import { trimHistory } from '@/ai/chat';
 // @ts-expect-error plain JS server module
-import { sanitizeMessages, contextText, TOOLS, clientContent, sourcesOf } from '../scripts/ai.mjs';
+import { sanitizeMessages, contextText, TOOLS, clientContent, sourcesOf, looksComplex, lastUserText } from '../scripts/ai.mjs';
 import { LAYER_PARAMS, culminationFacts, describeSentence } from '@/ai/actions';
 import { buildNameIndex } from '@/ai/names';
 import { angularSeparation, positionAngle } from '@/astro';
@@ -180,6 +180,21 @@ describe('model turn handling on the server', () => {
     ];
     expect(clientContent(content)).toEqual([{ type: 'text', text: 'Comet X is visible now.' }, { type: 'tool_use', id: 't1', name: 'sky_show', input: { target: 'x' } }]);
     expect(sourcesOf(content)).toEqual([{ title: 'A', url: 'https://example.org/a' }]);
+  });
+});
+
+describe('model triage', () => {
+  it('keeps commands and short questions on the fast model', () => {
+    for (const t of ['show me orion with the figures on', 'why is the sky blue?', 'what is the brightest star up now', 'no, the star', 'the sky from Sydney at 10pm'])
+      expect(looksComplex(t), t).toBe(false);
+  });
+  it('sends planning, comparing and many-part requests to the capable model', () => {
+    for (const t of ['plan an observing night for me this Saturday', 'compare the Orion Nebula and the Lagoon Nebula', 'what is the difference between a reflector and a refractor', 'which telescope should I buy for planets', 'What is a nebula? And how do they form?', 'x'.repeat(260)])
+      expect(looksComplex(t), t.slice(0, 40)).toBe(true);
+  });
+  it('triages on the learner\'s words, not on tool results', () => {
+    const msgs = [{ role: 'user', content: [{ type: 'text', text: 'plan my night' }] }, { role: 'assistant', content: [{ type: 'tool_use', id: 'a', name: 'sky_find', input: {} }] }, { role: 'user', content: [{ type: 'tool_result', tool_use_id: 'a', content: 'compare compare' }] }];
+    expect(lastUserText(msgs)).toBe('plan my night');
   });
 });
 

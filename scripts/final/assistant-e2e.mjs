@@ -23,6 +23,8 @@ function script(body) {
     const shown = results.find((r) => r.shown);
     return [say(shown ? `Here is ${shown.shown}, ${shown.where}.` : 'Done.')];
   }
+  if (text.includes('tricky')) return body.model.includes('haiku') ? [tool('ask_expert', { reason: 'needs reasoning' })] : [say('Expert answer.')];
+  if (text.includes('plan my')) return [say(`Plan from ${body.model}.`)];
   if (text.includes('seven sisters')) return [tool('sky_show', { target: 'Pleiades' }), tool('sky_set_layers', { constellation_figures: true })];
   if (text.includes('no, i meant')) return [tool('sky_show', { target: 'Alcyone' })];
   if (text.includes('sydney')) return [tool('sky_set_location', { city: 'Sydney' }), tool('sky_set_time', { time: '2026-12-25T22:00' })];
@@ -113,7 +115,7 @@ async function run(viewport, tag) {
   check(`${tag}: correction re-targets to Alcyone`, /target=star:/.test(await hash()) && /Alcyone/.test(r.text), `${await hash()} ${r.text}`);
   const corr = seen.at(-1).body;
   check(`${tag}: correction request carries the earlier turns and local commands`, JSON.stringify(corr.messages).includes('seven sisters') && JSON.stringify(corr.messages).includes('local_'));
-  check(`${tag}: request carries context, tools and the key`, /map_time/.test(corr.system.at(-1).text) && corr.tools.length === 11 && corr.tools.some((t) => t.name === 'web_search') && seen.at(-1).headers['x-api-key'] === 'test-key');
+  check(`${tag}: request carries context, tools and the key`, /map_time/.test(corr.system.at(-1).text) && corr.tools.length === 12 && corr.tools.some((t) => t.name === 'web_search') && corr.tools.some((t) => t.name === 'ask_expert') && seen.at(-1).headers['x-api-key'] === 'test-key');
 
   const offsetBefore = await page.evaluate(() => window.__explore.getTime().getTime() - Date.now());
   r = await ask('show the sky from sydney at christmas');
@@ -126,6 +128,13 @@ async function run(viewport, tag) {
 
   r = await ask('is there a lesson on moon phases');
   check(`${tag}: finds and opens a lesson`, (await hash()).startsWith('/learn/lesson/'), await hash());
+  r = await ask('here is a tricky one');
+  const models = seen.slice(-2).map((x) => x.body.model);
+  check(`${tag}: fast model hands a hard question to the capable one`, r.text === 'Expert answer.' && /haiku/.test(models[0]) && /sonnet/.test(models[1]) && !seen.at(-1).body.tools.some((t) => t.name === 'ask_expert'), `${models.join(' -> ')} | ${r.text}`);
+  r = await ask('plan my observing night');
+  check(`${tag}: a planning request goes straight to the capable model`, /sonnet/.test(r.text), r.text);
+  r = await ask('zoom in a lot please');
+  check(`${tag}: ordinary requests use the fast model`, /haiku/.test(seen.at(-1).body.model), seen.at(-1).body.model);
   r = await ask('nonsense object please');
   check(`${tag}: unknown object is reported, not invented`, r.actions.length === 0, r.text);
   await page.screenshot({ path: `${out}/assistant-${tag}-thread.png` });

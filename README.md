@@ -133,8 +133,13 @@ A chat panel (button at the bottom left of every app page) that acts on the app:
   (`scripts/ai.mjs`), which calls the Anthropic Messages API with the tool list; the browser runs the returned tool
   calls and reports the results until the model replies (`src/ai/chat.ts`).
 - **Setup.** Set `ANTHROPIC_API_KEY` on the server (Railway: service → Variables). Without it the panel still handles
-  plain commands and says the full assistant is unavailable. Optional: `STARHOP_AI_MODEL` (default
-  `claude-haiku-5-5`), `STARHOP_AI_DAILY_LIMIT` (default 3000 requests a day across all visitors).
+  plain commands and says the full assistant is unavailable. Optional: `STARHOP_AI_MODEL_FAST` (default
+  `claude-haiku-5-5`), `STARHOP_AI_MODEL_SMART` (default `claude-sonnet-5-5`), `STARHOP_AI_DAILY_LIMIT` (default 3000 requests a day across all visitors).
+- **Choosing the model.** Three tiers, cheapest first: (1) plain commands and catalogue questions are answered in the
+  browser with no model; (2) everything else starts on the fast model; (3) the capable model takes the turn when the
+  message looks complicated (`looksComplex` in `scripts/ai.mjs`: planning, comparing, several questions, long
+  requests) or when the fast model hands it over itself with the `ask_expert` tool. If the capable model fails, the
+  fast one answers. Each request logs its tier and token counts.
 - **Web search.** With a key set, the model can also search the web (Anthropic's server-side web search tool, at most
   two searches a request) for things Starhop's data does not cover; replies list their sources. Turn it off with
   `STARHOP_AI_WEB_SEARCH=off`. Searches are billed by Anthropic on top of tokens.

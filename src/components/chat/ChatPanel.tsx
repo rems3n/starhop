@@ -81,6 +81,7 @@ export default function ChatPanel({ onClose }: { onClose: () => void }) {
         {items.map((it) => (
           <div key={it.id} className={`ch-msg ch-msg--${it.role}${it.error ? ' is-error' : ''}`}>
             <div className="ch-bubble">{it.text}</div>
+            {it.detailed && <span className="ch-tier" title="Answered by the more capable model">Detailed answer</span>}
             {it.sources && (
               <ul className="ch-sources" aria-label="Sources">
                 {it.sources.map((src) => <li key={src.url}><a href={src.url} target="_blank" rel="noopener noreferrer">{src.title || new URL(src.url).hostname}</a></li>)}
