@@ -53,4 +53,5 @@ export const routes = {
   // Account
   profile: () => '/profile',
   settings: () => '/settings',
+  signin: (returnTo?: string) => `/signin${qs({ return: returnTo })}`,
 };

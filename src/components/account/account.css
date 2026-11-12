@@ -23,6 +23,8 @@
 .ac-signin--block .ac-provider { width: 100%; }
 .ac-provider { gap: 10px; background: #fff; color: #1f1f1f; border-color: #fff; }
 .ac-provider:hover { background: #e9ecef; border-color: #e9ecef; }
+.ac-provider--email { background: var(--night-700); color: var(--text); border-color: rgba(255, 255, 255, 0.28); }
+.ac-provider--email:hover { background: var(--night-600); border-color: var(--amber); }
 .ac-note { margin: 0; font-size: var(--fs-sm); }
 
 @media (max-width: 720px) {

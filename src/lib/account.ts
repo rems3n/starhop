@@ -15,8 +15,10 @@ import { useProgress, type ItemProgress } from '@/store/progress';
 import { useQuizPrefs } from '@/modes/quiz/prefs';
 import { useLearnLocal } from '@/modes/learn/hooks';
 
-export type Provider = 'google' | 'github';
-export const PROVIDER_LABEL: Record<Provider, string> = { google: 'Google', github: 'GitHub' };
+export type OAuthProvider = 'google' | 'github';
+export type Provider = OAuthProvider | 'email';
+export const PROVIDER_LABEL: Record<Provider, string> = { google: 'Google', github: 'GitHub', email: 'email and password' };
+export const PASSWORD_MIN = 10;
 
 export interface AccountUser {
   id: string;
@@ -230,9 +232,38 @@ export async function initAccount() {
 }
 
 /** Where the sign-in button goes: the provider, then back to the page the learner was on. */
-export function signInUrl(provider: Provider, returnTo?: string) {
+export function signInUrl(provider: OAuthProvider, returnTo?: string) {
   const here = returnTo ?? (window.location.hash.replace(/^#/, '') || '/sky');
   return `/auth/${provider}/start?return=${encodeURIComponent(here === '/' ? '/sky' : here)}`;
+}
+
+/** The page the learner is on, as a path to come back to after signing in. */
+export function currentPath() {
+  const here = window.location.hash.replace(/^#/, '') || '/sky';
+  return here === '/' || here.startsWith('/signin') ? '/sky' : here;
+}
+
+async function post<T>(path: string, body: unknown): Promise<T> {
+  let r: Response;
+  try {
+    r = await fetch(path, { method: 'POST', credentials: 'same-origin', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) });
+  } catch {
+    throw new Error('Could not reach the server. Check your connection and try again.');
+  }
+  const j = (await r.json().catch(() => null)) as (T & { message?: string }) | null;
+  if (!r.ok || !j) throw new Error(j?.message ?? 'That did not work. Try again in a moment.');
+  return j;
+}
+
+/** Sign in or create an account with an email and password. Throws an Error whose message can be shown as is. */
+export async function emailAuth(mode: 'login' | 'signup', fields: { email: string; password: string; name?: string }) {
+  const { user } = await post<{ user: AccountUser }>(mode === 'signup' ? '/api/signup' : '/api/login', fields);
+  useAccount.setState({ user, status: 'signed-in' });
+  await pull(user).catch(() => useAccount.setState({ sync: 'offline' }));
+}
+
+export async function changePassword(current: string, next: string) {
+  await post('/api/password', { current, next });
 }
 
 export async function signOut() {

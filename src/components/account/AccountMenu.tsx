@@ -2,10 +2,10 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { routes } from '@/lib/routes';
-import { signInUrl, signOut, useAccount, PROVIDER_LABEL, type Provider } from '@/lib/account';
+import { currentPath, signInUrl, signOut, useAccount, PROVIDER_LABEL, type OAuthProvider } from '@/lib/account';
 import './account.css';
 
-export function ProviderIcon({ provider }: { provider: Provider }) {
+export function ProviderIcon({ provider }: { provider: OAuthProvider }) {
   if (provider === 'google')
     return (
       <svg width="18" height="18" viewBox="0 0 48 48" aria-hidden focusable="false">
@@ -22,19 +22,25 @@ export function ProviderIcon({ provider }: { provider: Provider }) {
   );
 }
 
-/** "Continue with Google" / "Continue with GitHub", or a note when accounts are not switched on. */
-export function SignInButtons({ returnTo, block }: { returnTo?: string; block?: boolean }) {
+/** "Continue with Google" / "Continue with GitHub" / "Continue with email", or a note when accounts are not switched on. */
+export function SignInButtons({ returnTo, block, onPick, email = true }: { returnTo?: string; block?: boolean; onPick?: () => void; email?: boolean }) {
   const { enabled, providers, status } = useAccount();
   if (status === 'loading') return null;
   if (!enabled || !providers.length) return <p className="faint ac-note">Accounts are not switched on for this site yet. Your settings and progress are saved in this browser.</p>;
   return (
     <div className={`ac-signin${block ? ' ac-signin--block' : ''}`}>
-      {providers.map((p) => (
+      {providers.filter((p): p is OAuthProvider => p !== 'email').map((p) => (
         <a key={p} className="btn ac-provider" href={signInUrl(p, returnTo)}>
           <ProviderIcon provider={p} />
           Continue with {PROVIDER_LABEL[p]}
         </a>
       ))}
+      {email && providers.includes('email') && (
+        <Link className="btn ac-provider ac-provider--email" to={routes.signin(returnTo ?? currentPath())} onClick={onPick}>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden focusable="false"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 8.2L4.6 7H4v.9l8 6.6 8-6.6V7h-.6z" /></svg>
+          Continue with email
+        </Link>
+      )}
     </div>
   );
 }
@@ -96,7 +102,7 @@ export function AccountMenu() {
           ) : (
             <div className="ac-guest">
               <p className="ac-guest-lead">Sign in to save your progress and settings, and pick up on any device.</p>
-              <SignInButtons block />
+              <SignInButtons block onPick={close} />
             </div>
           )}
           <nav className="ac-links" aria-label="Account pages">

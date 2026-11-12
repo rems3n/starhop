@@ -39,6 +39,7 @@ createServer(async (req, res) => {
     const ext = extname(p).toLowerCase();
     let body = await readFile(p);
     const headers = { 'content-type': types[ext] ?? 'application/octet-stream', 'x-content-type-options': 'nosniff' };
+    if (ext === '.html') Object.assign(headers, { 'x-frame-options': 'DENY', 'referrer-policy': 'strict-origin-when-cross-origin', 'strict-transport-security': 'max-age=31536000' });
     headers['cache-control'] = p.includes(`${'/assets/'}`) ? 'public, max-age=31536000, immutable' : ext === '.html' ? 'no-cache' : 'public, max-age=86400';
     if (compressible.has(ext) && /\bgzip\b/.test(req.headers['accept-encoding'] ?? '')) {
       let gz = gzCache.get(p);

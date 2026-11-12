@@ -17,6 +17,7 @@ const LibraryRoutes = lazy(() => import('@/modes/library/LibraryRoutes'));
 const QuizRoutes = lazy(() => import('@/modes/quiz/QuizRoutes'));
 const ProfilePage = lazy(() => import('@/modes/account/ProfilePage'));
 const SettingsPage = lazy(() => import('@/modes/account/SettingsPage'));
+const SignInPage = lazy(() => import('@/modes/account/SignInPage'));
 
 const p = (s: string | undefined) => s ?? '';
 const quizRedirect = (splat: string) => (splat.startsWith('unit/') ? routes.practice() : `${routes.practice()}${splat ? `/${splat}` : ''}`);
@@ -95,6 +96,7 @@ export default function App() {
             <Route path="/practice/*" element={<QuizRoutes />} />
             <Route path="/profile" element={<ProfilePage />} />
             <Route path="/settings" element={<SettingsPage />} />
+            <Route path="/signin" element={<SignInPage />} />
             {/* Old routes (v1) */}
             <Route path="/explore" element={<Redirect to={() => routes.sky()} />} />
             <Route path="/quiz/*" element={<Redirect to={(x) => quizRedirect(p(x['*']))} />} />

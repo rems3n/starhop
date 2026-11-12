@@ -85,7 +85,7 @@ export default function HomePage() {
         <div className="hm-top">
           <span className="hm-brand">Starhop</span>
           <span className="hm-top-actions">
-            {account.status === 'guest' && account.enabled && <Link className="btn hm-enter-sm" to={routes.profile()}>Sign in</Link>}
+            {account.status === 'guest' && account.enabled && <Link className="btn hm-enter-sm" to={routes.signin()}>Sign in</Link>}
             <Link className="btn hm-enter-sm" to={routes.sky()}>{account.status === 'signed-in' ? 'Open the app' : 'Enter the app'}</Link>
           </span>
         </div>

@@ -71,7 +71,7 @@ describe.skipIf(!DB)('accounts on the server', () => {
 
   it('reports which providers are switched on', async () => {
     const me = await (await fetch(`${base}/api/me`)).json();
-    expect(me).toEqual({ enabled: true, providers: ['google'], user: null });
+    expect(me).toEqual({ enabled: true, providers: ['google', 'email'], user: null });
   });
 
   it('signs in with PKCE, sets an HttpOnly session cookie and returns to the page', async () => {
@@ -132,5 +132,81 @@ describe.skipIf(!DB)('accounts on the server', () => {
   it('sends sign-in for a provider that is not set up back with a note', async () => {
     const r = await fetch(`${base}/auth/github/start`, { redirect: 'manual' });
     expect(r.headers.get('location')).toBe('/#/sky?signin=unavailable');
+  });
+
+  describe('email and password', () => {
+    const json = { 'content-type': 'application/json' };
+    const post = (path: string, body: unknown, headers: Record<string, string> = {}) => fetch(`${base}${path}`, { method: 'POST', headers: { ...json, ...headers }, body: JSON.stringify(body) });
+    const sessionOf = (r: Response) => r.headers.getSetCookie().find((c) => c.startsWith('sh_session='))?.split(';')[0] ?? '';
+    const email = `fay-${Date.now()}@example.com`;
+    const password = 'correct horse battery';
+    let cookie = '';
+
+    it('refuses weak passwords and bad emails', async () => {
+      expect((await post('/api/signup', { email, password: 'short' })).status).toBe(400);
+      expect((await post('/api/signup', { email, password: 'password123' })).status).toBe(400);
+      expect((await post('/api/signup', { email, password: email })).status).toBe(400);
+      expect((await post('/api/signup', { email: 'not-an-email', password })).status).toBe(400);
+    });
+
+    it('creates an account, signs it in, and stores only a hash', async () => {
+      const r = await post('/api/signup', { email: ` ${email.toUpperCase()} `, password, name: 'Fay' });
+      expect(r.status).toBe(200);
+      const body = await r.json();
+      expect(body.user).toMatchObject({ name: 'Fay', email, provider: 'email' });
+      expect(JSON.stringify(body)).not.toMatch(/password|scrypt/);
+      cookie = sessionOf(r);
+      expect(r.headers.getSetCookie()[0]).toMatch(/HttpOnly; SameSite=Lax/);
+      expect((await (await fetch(`${base}/api/me`, { headers: { cookie } })).json()).user.email).toBe(email);
+    });
+
+    it('does not create a second account for the same email', async () => {
+      expect((await post('/api/signup', { email, password: 'another long password' })).status).toBe(409);
+    });
+
+    it('signs in with the right password only, with the same answer for a wrong password and an unknown email', async () => {
+      const wrong = await post('/api/login', { email, password: 'wrong password here' });
+      const unknown = await post('/api/login', { email: 'nobody@example.com', password });
+      expect(wrong.status).toBe(401);
+      expect(unknown.status).toBe(401);
+      expect(await wrong.json()).toEqual(await unknown.json());
+      const ok = await post('/api/login', { email, password });
+      expect(ok.status).toBe(200);
+      expect(sessionOf(ok)).toMatch(/^sh_session=.{20,}/);
+    });
+
+    it('only accepts JSON from this site', async () => {
+      const form = await fetch(`${base}/api/login`, { method: 'POST', headers: { 'content-type': 'application/x-www-form-urlencoded' }, body: `email=${email}&password=${password}` });
+      expect(form.status).toBe(415);
+      expect((await post('/api/login', { email, password }, { origin: 'https://evil.example' })).status).toBe(403);
+    });
+
+    it('changes the password and signs out other devices', async () => {
+      const other = sessionOf(await post('/api/login', { email, password }));
+      expect((await post('/api/password', { current: 'not it at all', next: 'a brand new password' }, { cookie })).status).toBe(401);
+      expect((await post('/api/password', { current: password, next: 'tiny' }, { cookie })).status).toBe(400);
+      expect((await post('/api/password', { current: password, next: 'a brand new password' }, { cookie })).status).toBe(200);
+      expect((await (await fetch(`${base}/api/me`, { headers: { cookie } })).json()).user).not.toBeNull();
+      expect((await (await fetch(`${base}/api/me`, { headers: { cookie: other } })).json()).user).toBeNull();
+      expect((await post('/api/login', { email, password })).status).toBe(401);
+      expect((await post('/api/login', { email, password: 'a brand new password' })).status).toBe(200);
+    });
+
+    it('keeps an email account separate from a Google account with the same address', async () => {
+      nextUser = { sub: 'g-same', email, name: 'Fay G', picture: '' };
+      const g = await signIn();
+      const me = await (await fetch(`${base}/api/me`, { headers: { cookie: g.cookie } })).json();
+      expect(me.user.provider).toBe('google');
+      expect((await (await fetch(`${base}/api/state`, { headers: { cookie: g.cookie } })).json()).stores).toEqual({});
+    });
+
+    it('locks out repeated wrong passwords for an email', async () => {
+      const victim = `gus-${Date.now()}@example.com`;
+      await post('/api/signup', { email: victim, password });
+      let last = 0;
+      for (let i = 0; i < 9; i++) last = (await post('/api/login', { email: victim, password: 'guess number ' + i })).status;
+      expect(last).toBe(429);
+      expect((await post('/api/login', { email: victim, password })).status).toBe(429);
+    });
   });
 });

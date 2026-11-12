@@ -2,7 +2,10 @@
 //
 //   GET    /auth/:provider/start?return=/sky   redirect to the provider (provider = google | github)
 //   GET    /auth/:provider/callback            provider redirects back here; sets the session cookie, returns to the app
-//   GET    /api/me                             { user | null, providers: ['google', ...], enabled }
+//   POST   /api/signup                         { name, email, password } -> { user }   email-and-password account
+//   POST   /api/login                          { email, password } -> { user }
+//   POST   /api/password                       { current, next } -> { ok }   change password; signs out other devices
+//   GET    /api/me                             { user | null, providers: ['google', ..., 'email'], enabled }
 //   POST   /api/logout                         ends this session
 //   DELETE /api/me                             deletes the account and everything saved for it
 //   GET    /api/state                          { stores: { [key]: { data, updatedAt } } }
@@ -13,7 +16,7 @@
 // STARHOP_PUBLIC_URL (optional; else RAILWAY_PUBLIC_DOMAIN, else the request's host).
 // Provider endpoints can be overridden (GOOGLE_AUTH_URL, GOOGLE_TOKEN_URL, GOOGLE_USERINFO_URL, GITHUB_AUTH_URL,
 // GITHUB_TOKEN_URL, GITHUB_API_URL) so the flow can be tested against a local stand-in.
-import { createHash, createHmac, randomBytes, timingSafeEqual } from 'node:crypto';
+import { createHash, createHmac, randomBytes, scrypt, timingSafeEqual } from 'node:crypto';
 import pg from 'pg';
 
 export const STATE_KEYS = new Set(['settings', 'progress', 'quiz', 'learn']);
@@ -81,6 +84,7 @@ function db() {
         last_seen_at TIMESTAMPTZ NOT NULL DEFAULT now(),
         UNIQUE (provider, provider_id)
       );
+      ALTER TABLE users ADD COLUMN IF NOT EXISTS password_hash TEXT;
       CREATE TABLE IF NOT EXISTS sessions (
         id_hash TEXT PRIMARY KEY,
         user_id BIGINT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
@@ -98,9 +102,11 @@ function db() {
   return ready.then(() => pool);
 }
 
+/** Accounts need only the database: email-and-password sign-up always works; Google and GitHub when configured. */
 export function accountsEnabled() {
-  return Boolean(env.DATABASE_URL) && configured().length > 0;
+  return Boolean(env.DATABASE_URL);
 }
+const providerList = () => (accountsEnabled() ? [...configured(), 'email'] : []);
 
 // ───────────────────────────── Helpers ─────────────────────────────
 
@@ -193,16 +199,18 @@ export async function handleAccount(req, res) {
   const url = new URL(req.url ?? '/', 'http://x');
   const path = url.pathname;
   const auth = path.match(/^\/auth\/(google|github)\/(start|callback)$/);
-  if (!auth && path !== '/api/me' && path !== '/api/logout' && !path.startsWith('/api/state')) return false;
+  if (!auth && !['/api/me', '/api/logout', '/api/signup', '/api/login', '/api/password'].includes(path) && !path.startsWith('/api/state')) return false;
   try {
     if (auth) return await (auth[2] === 'start' ? start(req, res, auth[1], url) : callback(req, res, auth[1], url));
     if (path === '/api/me' && req.method === 'GET') {
       const user = accountsEnabled() ? await currentUser(req) : null;
-      send(res, 200, { enabled: accountsEnabled(), providers: env.DATABASE_URL ? configured() : [], user: publicUser(user) });
+      send(res, 200, { enabled: accountsEnabled(), providers: providerList(), user: publicUser(user) });
       return true;
     }
     if (!accountsEnabled()) { send(res, 503, { error: 'not_configured' }); return true; }
     if (req.method !== 'GET' && !sameOrigin(req)) { send(res, 403, { error: 'bad_origin' }); return true; }
+    if (path === '/api/signup' && req.method === 'POST') return await signup(req, res);
+    if (path === '/api/login' && req.method === 'POST') return await login(req, res);
     if (path === '/api/logout' && req.method === 'POST') {
       const raw = cookies(req)[SESSION_COOKIE];
       if (raw) await (await db()).query('DELETE FROM sessions WHERE id_hash = $1', [sha256(raw)]);
@@ -212,6 +220,7 @@ export async function handleAccount(req, res) {
     const user = await currentUser(req);
     if (!user) { send(res, 401, { error: 'signed_out' }); return true; }
     const p = await db();
+    if (path === '/api/password' && req.method === 'POST') return await changePassword(req, res, user, p);
     if (path === '/api/me' && req.method === 'DELETE') {
       await p.query('DELETE FROM users WHERE id = $1', [user.id]);
       send(res, 200, { ok: true }, { 'set-cookie': cookie(req, SESSION_COOKIE, '', 0) });
@@ -287,9 +296,127 @@ async function callback(req, res, name, url) {
      RETURNING id`,
     [name, who.providerId, who.email, String(who.name).slice(0, 120), who.avatar],
   );
+  redirect(res, `/#${flow.ret}`, [clear, await newSession(req, p, u.rows[0].id)]);
+  return true;
+}
+
+/** Starts a session for the user and returns its Set-Cookie value. Only a hash of the session id is stored. */
+async function newSession(req, p, userId) {
   const sid = b64url(randomBytes(32));
-  await p.query(`INSERT INTO sessions (id_hash, user_id, expires_at) VALUES ($1, $2, now() + interval '${SESSION_DAYS} days')`, [sha256(sid), u.rows[0].id]);
+  await p.query(`INSERT INTO sessions (id_hash, user_id, expires_at) VALUES ($1, $2, now() + interval '${SESSION_DAYS} days')`, [sha256(sid), userId]);
   await p.query('DELETE FROM sessions WHERE expires_at < now()');
-  redirect(res, `/#${flow.ret}`, [clear, cookie(req, SESSION_COOKIE, sid, SESSION_DAYS * 86400)]);
+  return cookie(req, SESSION_COOKIE, sid, SESSION_DAYS * 86400);
+}
+
+// ───────────────────────────── Email and password ─────────────────────────────
+// Passwords are never stored: only a salted scrypt hash (memory-hard, so slow to guess even if the database leaks).
+// Email accounts are separate from Google/GitHub accounts with the same address: the address is not verified here,
+// so linking them would let anyone who signs up with your address into your account.
+
+const SCRYPT = { N: 32768, r: 8, p: 1, maxmem: 96 * 1024 * 1024 };
+export const PASSWORD_MIN = 10;
+const PASSWORD_MAX = 200;
+const COMMON = new Set(['password', 'password1', 'password12', 'password123', '1234567890', '12345678910', 'qwertyuiop', 'iloveyou12', 'starhop123', 'letmein123', 'qwerty12345', 'abcdefghij', '0123456789', '1q2w3e4r5t', 'passwordpassword']);
+
+function scryptKey(password, salt, opts) {
+  return new Promise((resolve, reject) => scrypt(password.normalize('NFKC'), salt, 64, opts, (e, k) => (e ? reject(e) : resolve(k))));
+}
+export async function hashPassword(password) {
+  const salt = randomBytes(16);
+  const key = await scryptKey(password, salt, SCRYPT);
+  return `scrypt$${SCRYPT.N}$${SCRYPT.r}$${SCRYPT.p}$${salt.toString('base64url')}$${key.toString('base64url')}`;
+}
+export async function verifyPassword(password, stored) {
+  const [alg, N, r, p, salt, hash] = String(stored ?? '').split('$');
+  if (alg !== 'scrypt' || !hash) return false;
+  const want = Buffer.from(hash, 'base64url');
+  const got = await scryptKey(password, Buffer.from(salt, 'base64url'), { N: Number(N), r: Number(r), p: Number(p), maxmem: SCRYPT.maxmem });
+  return want.length === got.length && timingSafeEqual(want, got);
+}
+// Checked when the email is unknown, so a wrong email takes as long as a wrong password.
+const dummyHash = hashPassword(randomBytes(16).toString('hex'));
+
+/** Why a password is not acceptable, or '' when it is. */
+export function passwordProblem(password, email = '') {
+  if (typeof password !== 'string' || password.length < PASSWORD_MIN) return `Use at least ${PASSWORD_MIN} characters.`;
+  if (password.length > PASSWORD_MAX) return `Use at most ${PASSWORD_MAX} characters.`;
+  const low = password.toLowerCase();
+  if (COMMON.has(low) || /^(.)\1+$/.test(password)) return 'That password is too easy to guess. Choose another.';
+  if (email && (low === email || low === email.split('@')[0])) return 'Do not use your email address as the password.';
+  return '';
+}
+const normEmail = (e) => (typeof e === 'string' ? e.trim().toLowerCase() : '');
+const validEmail = (e) => e.length <= 254 && /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(e);
+
+// Attempt limits, in memory (one server process): slows password guessing and mass sign-ups.
+const attempts = new Map();
+function tooMany(key, max, windowMs) {
+  const now = Date.now();
+  if (attempts.size > 20000) for (const [k, v] of attempts) if (v.reset < now) attempts.delete(k);
+  let a = attempts.get(key);
+  if (!a || a.reset < now) attempts.set(key, (a = { n: 0, reset: now + windowMs }));
+  a.n += 1;
+  return a.n > max;
+}
+const ipOf = (req) => String(req.headers['x-forwarded-for'] ?? req.socket.remoteAddress ?? '').split(',')[0].trim() || 'unknown';
+const SLOW_DOWN = { error: 'rate_limited', message: 'Too many attempts. Wait a few minutes and try again.' };
+
+/** JSON body of a same-site request. A cross-site form cannot send this content type. */
+async function jsonBody(req, res) {
+  if (!/^application\/json\b/i.test(String(req.headers['content-type'] ?? ''))) { send(res, 415, { error: 'bad_request' }); return null; }
+  try { const b = JSON.parse(await readBody(req, 10_000)); if (b && typeof b === 'object') return b; } catch { /* below */ }
+  send(res, 400, { error: 'bad_request' });
+  return null;
+}
+
+async function signup(req, res) {
+  if (tooMany(`signup:${ipOf(req)}`, 10, 3600e3)) { send(res, 429, SLOW_DOWN); return true; }
+  const body = await jsonBody(req, res);
+  if (!body) return true;
+  const email = normEmail(body.email);
+  if (!validEmail(email)) { send(res, 400, { error: 'bad_email', message: 'Enter a valid email address.' }); return true; }
+  const problem = passwordProblem(body.password, email);
+  if (problem) { send(res, 400, { error: 'weak_password', message: problem }); return true; }
+  const name = (typeof body.name === 'string' ? body.name.trim() : '').slice(0, 80) || email.split('@')[0];
+  const p = await db();
+  const r = await p.query(
+    `INSERT INTO users (provider, provider_id, email, name, password_hash) VALUES ('email', $1, $1, $2, $3)
+     ON CONFLICT (provider, provider_id) DO NOTHING RETURNING id, name, email, avatar, provider, created_at`,
+    [email, name, await hashPassword(body.password)],
+  );
+  if (!r.rows[0]) { send(res, 409, { error: 'email_taken', message: 'There is already an account with this email. Sign in instead.' }); return true; }
+  send(res, 200, { user: publicUser(r.rows[0]) }, { 'set-cookie': await newSession(req, p, r.rows[0].id) });
+  return true;
+}
+
+async function login(req, res) {
+  const body = await jsonBody(req, res);
+  if (!body) return true;
+  const email = normEmail(body.email);
+  if (tooMany(`login-ip:${ipOf(req)}`, 30, 900e3) || tooMany(`login:${email}`, 8, 900e3)) { send(res, 429, SLOW_DOWN); return true; }
+  const p = await db();
+  const r = await p.query("SELECT id, name, email, avatar, provider, created_at, password_hash FROM users WHERE provider = 'email' AND provider_id = $1", [email]);
+  const u = r.rows[0];
+  const ok = await verifyPassword(typeof body.password === 'string' ? body.password.slice(0, PASSWORD_MAX) : '', u?.password_hash ?? (await dummyHash));
+  if (!u || !ok) { send(res, 401, { error: 'bad_login', message: 'Email or password is incorrect.' }); return true; }
+  attempts.delete(`login:${email}`);
+  await p.query('UPDATE users SET last_seen_at = now() WHERE id = $1', [u.id]);
+  send(res, 200, { user: publicUser(u) }, { 'set-cookie': await newSession(req, p, u.id) });
+  return true;
+}
+
+async function changePassword(req, res, user, p) {
+  if (user.provider !== 'email') { send(res, 400, { error: 'no_password', message: 'This account signs in with Google or GitHub and has no password.' }); return true; }
+  if (tooMany(`pw:${user.id}`, 8, 900e3)) { send(res, 429, SLOW_DOWN); return true; }
+  const body = await jsonBody(req, res);
+  if (!body) return true;
+  const r = await p.query('SELECT password_hash FROM users WHERE id = $1', [user.id]);
+  if (!(await verifyPassword(String(body.current ?? '').slice(0, PASSWORD_MAX), r.rows[0]?.password_hash))) { send(res, 401, { error: 'bad_login', message: 'Your current password is incorrect.' }); return true; }
+  const problem = passwordProblem(body.next, user.email ?? '');
+  if (problem) { send(res, 400, { error: 'weak_password', message: problem }); return true; }
+  await p.query('UPDATE users SET password_hash = $1 WHERE id = $2', [await hashPassword(body.next), user.id]);
+  // Every other device is signed out; this one keeps its session.
+  await p.query('DELETE FROM sessions WHERE user_id = $1 AND id_hash <> $2', [user.id, sha256(cookies(req)[SESSION_COOKIE])]);
+  send(res, 200, { ok: true });
   return true;
 }

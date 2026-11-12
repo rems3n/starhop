@@ -1,7 +1,7 @@
 /** Settings: display, account, and the learner's data (download, reset, delete). */
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { deleteAccount, exportData, resetProgress, signOut, useAccount, PROVIDER_LABEL } from '@/lib/account';
+import { changePassword, deleteAccount, exportData, resetProgress, signOut, useAccount, PASSWORD_MIN, PROVIDER_LABEL } from '@/lib/account';
 import { routes } from '@/lib/routes';
 import { useSettings } from '@/store/settings';
 import { SignInButtons } from '@/components/account/AccountMenu';
@@ -44,6 +44,60 @@ function Confirm({ label, confirmLabel, onConfirm, testId }: { label: string; co
   );
 }
 
+function PasswordForm() {
+  const [open, setOpen] = useState(false);
+  const [current, setCurrent] = useState('');
+  const [next, setNext] = useState('');
+  const [busy, setBusy] = useState(false);
+  const [msg, setMsg] = useState<{ ok: boolean; text: string } | null>(null);
+  if (!open)
+    return (
+      <div className="pf-row">
+        <div>
+          <div className="pf-value">Password</div>
+          {msg?.ok && <p className="pf-ok" role="status">{msg.text}</p>}
+        </div>
+        <Button onClick={() => { setOpen(true); setMsg(null); }}>Change password</Button>
+      </div>
+    );
+  return (
+    <form
+      className="pf-row pf-pwform"
+      onSubmit={async (e) => {
+        e.preventDefault();
+        setBusy(true);
+        setMsg(null);
+        try {
+          await changePassword(current, next);
+          setCurrent('');
+          setNext('');
+          setOpen(false);
+          setMsg({ ok: true, text: 'Password changed. Other devices have been signed out.' });
+        } catch (err) {
+          setMsg({ ok: false, text: (err as Error).message });
+        } finally {
+          setBusy(false);
+        }
+      }}
+    >
+      <label className="field">
+        <span>Current password</span>
+        <input className="input" type="password" autoComplete="current-password" required value={current} onChange={(e) => setCurrent(e.target.value)} />
+      </label>
+      <label className="field">
+        <span>New password</span>
+        <input className="input" type="password" autoComplete="new-password" required minLength={PASSWORD_MIN} value={next} onChange={(e) => setNext(e.target.value)} />
+        <span className="faint">At least {PASSWORD_MIN} characters.</span>
+      </label>
+      {msg && !msg.ok && <p className="pf-warn" role="alert">{msg.text}</p>}
+      <span className="pf-confirm">
+        <Button variant="primary" type="submit" disabled={busy}>Save new password</Button>
+        <Button variant="quiet" type="button" onClick={() => setOpen(false)}>Cancel</Button>
+      </span>
+    </form>
+  );
+}
+
 export default function SettingsPage() {
   const { status, user } = useAccount();
   const redMode = useSettings((s) => s.redMode);
@@ -77,6 +131,7 @@ export default function SettingsPage() {
               <Button onClick={() => { void signOut(); navigate(routes.sky()); }}>Sign out</Button>
             </div>
             <p className="dim pf-help">Signing out clears your data from this browser. It stays in your account.</p>
+            {user.provider === 'email' && <PasswordForm />}
           </>
         ) : (
           <>
