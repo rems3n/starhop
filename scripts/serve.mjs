@@ -14,7 +14,7 @@ const port = Number(process.env.PORT) || 4173;
 const types = {
   '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8',
   '.json': 'application/json; charset=utf-8', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg',
-  '.jpeg': 'image/jpeg', '.webp': 'image/webp', '.ico': 'image/x-icon', '.woff2': 'font/woff2', '.woff': 'font/woff', '.txt': 'text/plain; charset=utf-8',
+  '.jpeg': 'image/jpeg', '.webp': 'image/webp', '.ico': 'image/x-icon', '.woff2': 'font/woff2', '.woff': 'font/woff', '.txt': 'text/plain; charset=utf-8', '.mp4': 'video/mp4',
 };
 const compressible = new Set(['.html', '.js', '.css', '.json', '.svg', '.txt']);
 const gzCache = new Map();
@@ -53,6 +53,18 @@ createServer(async (req, res) => {
       body = gz;
       headers['content-encoding'] = 'gzip';
       headers.vary = 'Accept-Encoding';
+    }
+    // Video needs byte ranges (seeking, and Safari will not play without them).
+    const range = ext === '.mp4' ? /^bytes=(\d*)-(\d*)$/.exec(String(req.headers.range ?? '')) : null;
+    if (ext === '.mp4') headers['accept-ranges'] = 'bytes';
+    if (range && (range[1] || range[2])) {
+      const size = body.length;
+      const start = Math.max(0, range[1] ? Number(range[1]) : size - Number(range[2]));
+      const end = Math.min(size - 1, range[1] && range[2] ? Number(range[2]) : size - 1);
+      if (start > end) { res.writeHead(416, { 'content-range': `bytes */${size}` }); res.end(); return; }
+      res.writeHead(206, { ...headers, 'content-range': `bytes ${start}-${end}/${size}`, 'content-length': end - start + 1 });
+      res.end(req.method === 'HEAD' ? undefined : body.subarray(start, end + 1));
+      return;
     }
     res.writeHead(200, headers);
     res.end(req.method === 'HEAD' ? undefined : body);
