@@ -34,6 +34,8 @@ interface SettingsState {
   layers: LayerState;
   /** Red night-vision mode for use outdoors */
   redMode: boolean;
+  /** The first-visit walkthrough has been shown (or skipped) */
+  tourSeen: boolean;
   difficulty: QuizDifficulty;
   /** What the sky map opens with each visit (Profile → Sky map defaults). `layers` and `bortle` are this visit's values. */
   defaultLayers: LayerState;
@@ -42,6 +44,7 @@ interface SettingsState {
   setBortle: (n: number) => void;
   setLayers: (patch: Partial<LayerState>) => void;
   setRedMode: (on: boolean) => void;
+  setTourSeen: (seen: boolean) => void;
   setDifficulty: (patch: Partial<QuizDifficulty>) => void;
   setDefaultLayers: (patch: Partial<LayerState>) => void;
   setDefaultBortle: (n: number) => void;
@@ -66,6 +69,7 @@ export const useSettings = create<SettingsState>()(
       bortle: 6,
       layers: DEFAULT_LAYERS,
       redMode: false,
+      tourSeen: false,
       difficulty: DIFFICULTY_PRESETS.easy,
       defaultLayers: DEFAULT_LAYERS,
       defaultBortle: 6,
@@ -73,6 +77,7 @@ export const useSettings = create<SettingsState>()(
       setBortle: (bortle) => set({ bortle: clampBortle(bortle) }),
       setLayers: (patch) => set((s) => ({ layers: { ...s.layers, ...patch } })),
       setRedMode: (redMode) => set({ redMode }),
+      setTourSeen: (tourSeen) => set({ tourSeen }),
       setDifficulty: (patch) => set((s) => ({ difficulty: { ...s.difficulty, ...patch } })),
       setDefaultLayers: (patch) => set((s) => ({ defaultLayers: { ...s.defaultLayers, ...patch }, layers: { ...s.layers, ...patch } })),
       setDefaultBortle: (n) => set({ defaultBortle: clampBortle(n), bortle: clampBortle(n) }),

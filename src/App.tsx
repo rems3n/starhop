@@ -8,6 +8,7 @@ import { SettingsMenu } from '@/components/settings/SettingsMenu';
 import { FirstRunLocation } from '@/components/settings/FirstRunLocation';
 import { ChatLauncher } from '@/components/chat/ChatLauncher';
 import { AccountMenu } from '@/components/account/AccountMenu';
+import { Tour } from '@/components/tour/Tour';
 
 const HomePage = lazy(() => import('@/modes/home/HomePage'));
 const ExplorePage = lazy(() => import('@/modes/explore/ExplorePage'));
@@ -113,6 +114,7 @@ export default function App() {
         </div>
       )}
       {needsLocation && <FirstRunLocation />}
+      <Tour />
     </div>
   );
 }

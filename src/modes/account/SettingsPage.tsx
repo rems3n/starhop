@@ -6,6 +6,7 @@ import { routes } from '@/lib/routes';
 import { useSettings } from '@/store/settings';
 import { SignInButtons } from '@/components/account/AccountMenu';
 import { Button, Switch } from '@/ui';
+import { useTour } from '@/components/tour/Tour';
 import { SyncLine } from './SyncLine';
 import './account.css';
 
@@ -116,6 +117,14 @@ export default function SettingsPage() {
         <h2 id="st-display" className="pf-h">Display</h2>
         <Switch checked={redMode} onChange={setRedMode} label="Night vision" />
         <p className="dim pf-help">Turns the screen red so your eyes stay dark-adapted outdoors.</p>
+      </section>
+
+      <section className="card pf-card" aria-labelledby="st-tour">
+        <h2 id="st-tour" className="pf-h">Tour</h2>
+        <div className="pf-row">
+          <p className="dim pf-help pf-help--top">A one-minute walkthrough of the sky map and the main areas of the app.</p>
+          <Button data-testid="replay-tour" onClick={() => { navigate(routes.sky()); window.setTimeout(() => useTour.getState().start(), 900); }}>Take the tour</Button>
+        </div>
       </section>
 
       <section className="card pf-card" aria-labelledby="st-account">
